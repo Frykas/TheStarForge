@@ -1,0 +1,10 @@
+{
+  "name" : "novalime",
+  "category" : "novalime",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "novalime.png",
+	"bodyfullbright" : "novalimefullbright.png"
+  }
+}

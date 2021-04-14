@@ -1,0 +1,75 @@
+{
+  "type" : "starforge-krythers",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Krythers",
+	"seed" : "1286",
+    "species" : "hylotl",
+	"facialHairType":"",
+	"facialHairGroup":"",
+    "hairGroup" : "hair",
+    "hairType" : "17",
+	"bodyDirectives":"?replace;a85636=7C4992;e0975c=B374D4;ffca8a=E2B2FF;6f2919=4B2655?replace;735e3a=272665;d9c189=758BF8;f7e7b2=B5C2FA;a38d59=4A5BA5?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF",
+	"hairDirectives":"?replace;735e3a=272665;d9c189=758BF8;f7e7b2=B5C2FA;a38d59=4A5BA5?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF",
+    "gender" : "male"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "behavior" : "villager",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hi! Nice to meet you.",
+            "I heard from the Captain that you escaped Earth when it was destroyed. Well me & her too! We were students at the Protectorate Academy.",
+            "If you think you lost something, it's probably Strelitzia, she likes to hide your stuff. She's quite the pranker, especially towards me.",
+			"The Captain isn't here sadly, she's taking care of the Unbound. If you need anything, Morpheus can probably help.",
+            "I'm the first person to join the Thalasso, time sure flies by.",
+			"I don't like this planet. At least we secured a Starforge."
+          ]
+        }
+      },
+      "complain" : {
+        "default" : {
+          "default" : [
+            "Where did I put my blue solution again?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "starforge-krythershead"}
+            ],
+            "chest" : [
+              { "name" : "starforge-krytherschest" }
+            ],
+            "legs" : [
+              { "name" : "starforge-krytherspants" }
+            ]
+            
+          }
+      ]]
+    ]
+  }
+}
+
+

@@ -1,0 +1,40 @@
+{
+  "itemName" : "starforge-katahelgreaves",
+  "price" : 2560,
+  "inventoryIcon" : "icons.png:pants",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "legwear",
+  "description" : "Katahel was one of the first to unite all the Glitches of a planet under a single banner.  ",
+  "shortdescription" : "^darkgray;Territory of the Warlord^white;",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "level" : 7,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.1
+    },
+    {
+      "levelFunction" : "separatorArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.2
+    },
+    {
+      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 2
+    },
+    {
+      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 6
+    }
+  ],
+
+  "itemTags" : [ "tier7armour" ]
+  }

@@ -1,0 +1,26 @@
+{
+  "projectileName" : "starforge-imperviumbolt",
+  "physics" : "arrow",
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_arrow.ogg"
+      ]
+    }
+  ],
+  "image" : "imperviumbolt.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "emitters" : [ "daggerblue" ],
+  "statusEffects" : [ "starforge-bleeding" ],
+  "damageKind" : "bow",
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "timeToLive" : 10,
+  "pointLight" : false,
+  "power" : 5.0,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "piercing" : true,
+  "speed" : 175
+}

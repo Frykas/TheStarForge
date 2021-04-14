@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 1 },
+    { "item" : "plantfibre", "count" : 30 },
+	{ "item" : "fleshstrand", "count" : 12 },
+	{ "item" : "cellmatter", "count" : 3},
+	{ "item" : "essence", "count" : 20}
+  ],
+  "output" : {
+    "item" : "starforge-undyingfibre",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

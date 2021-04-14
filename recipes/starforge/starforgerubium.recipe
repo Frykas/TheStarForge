@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 3 },
+	{ "item" : "goldbar", "count" : 3 },
+	{ "item" : "corefragmentore", "count" : 10 },
+	{ "item" : "essence", "count" : 10}
+  ],
+  "output" : {
+    "item" : "starforge-rubium",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

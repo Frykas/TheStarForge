@@ -1,0 +1,13 @@
+[  
+  //===============================================================================
+  // QUEST OBJECTIVE DESCRIPTIONS
+  //===============================================================================
+  { "op" : "add",
+	"path" : "/objectiveDescriptions/nebStarforgeDamageTypeKill",
+	"value" : "Kill <current> / <required> enemies with <damageType>"
+  },
+  { "op" : "add",
+	"path" : "/objectiveDescriptions/nebStarforgeKillMonsterWithWeapon",
+	"value" : "Kill<monsterName><itemName>: <current> / <required>"
+  }
+]

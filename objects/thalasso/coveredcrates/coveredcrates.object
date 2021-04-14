@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-coveredcrates",
+  "colonyTags" : ["outpost"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 90,
+  "description" : "A bunch of crates covered by a tarp.",
+  "shortdescription" : "Covered Crates",
+
+  "apexDescription" : "A mysterious cargo crate.",
+  "avianDescription" : "I wonder what's in here.",
+  "floranDescription" : "Floran ship Floran in cargo crate. Leap out. Sssurprise!",
+  "glitchDescription" : "Intrigued. A cargo container - anything could be inside.",
+  "humanDescription" : "Ooh, cargo!",
+  "hylotlDescription" : "A cargo crate of modern design.",
+  "novakidDescription" : "A basic lookin' crate. Could hold valuable cargo...",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "coveredcrates.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+
+}

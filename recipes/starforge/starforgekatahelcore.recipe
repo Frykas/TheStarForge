@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "starforge-ancientcore", "count" : 1 },
+	{ "item" : "vaultkey", "count" : 1 },
+	{ "item" : "upgrademodule", "count" : 3 },
+	{ "item" : "essence", "count" : 500}
+  ],
+  "output" : {
+    "item" : "starforge-katahelcore",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

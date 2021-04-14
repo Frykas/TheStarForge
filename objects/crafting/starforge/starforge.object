@@ -1,0 +1,59 @@
+{
+  "objectName" : "starforge-starforge",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Essential",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/starforge.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "The Star Forge",
+        "subtitle" : "Break past your limits",
+        "icon" : {
+          "file" : "/interface/SEmerchant/merchanticon.png"
+        }
+      }
+    },
+    "filter" : ["starforge-starforge"]
+  },
+  "printable" : false,
+  "description" : "An Ancient Forge, capable of making anything out of very few materials. ",
+  "shortdescription" : "^magenta;The Star Forge^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 5000,
+
+  "apexDescription" : "Every bit of technology I've seen this far doesn't even come close to this...",
+  "avianDescription" : "The shiny star in it reminds me of the sky at night !",
+  "floranDescription" : "Floran like ssssshiny lights... ",
+  "glitchDescription" : "Inspired. This forge will allow me to craft wonderful items. ",
+  "humanDescription" : "This forge resonates with a power I can barely understand, this is scary.",
+  "hylotlDescription" : "Such a wonderful craftsmanship, simple and yet so... perfect.",
+  
+  "turnInQuests" : ["thalassointromission3"],
+  
+  "lightColor" : [102, 102, 204],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "starforgeicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "starforge.png:<frame>" }, { "image" : "starforgefullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [-40, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 14,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   
+  ]}

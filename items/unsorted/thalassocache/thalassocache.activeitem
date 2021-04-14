@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-thalassocache",
+  "price" : 0,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "A cache containing a wide range of planetary materials & rare items.",
+  "shortdescription" : "Thalasso Cache",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "thalassocacheicon.png",
+  "animation" : "thalassocache.animation",
+  "animationCustom" : {},
+  "scripts" : ["thalassocache.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "starforge-thalassoTreasure",
+    "level" : 1
+  }
+}

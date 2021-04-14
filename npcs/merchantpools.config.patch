@@ -1,0 +1,38 @@
+[
+	//=========================================================================================================
+	// THALASSO WILL
+	//=========================================================================================================
+	{ "op" : "add", "path" : "/starforge-willmerchant",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "starforge-creightonhead" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-creightonchest" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-creightonpants" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-elanachest" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-elanapants" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-krythershead" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-krytherschest" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-krytherspants" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-morpheushead" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-morpheuschest" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-morpheuspants" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-rondinhead" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-rondinchest" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-rondinpants" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-bunnybeanie" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-strelitziachest" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-strelitziapants" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-strelitziahead" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-tweeterschest" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-tweeterspants" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-willhead" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-willchest" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-willpants" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-marikobackfalse" }, "rarity": 0.5},
+			  { "item": { "name": "starforge-katahelbackfalse" }, "rarity": 0.5},
+			  { "item": { "name": "starforge-sedgebackfalse" }, "rarity": 0.5},
+			  { "item": { "name": "starforge-soultakerbackfalse" }, "rarity": 0.5}
+			] ]					
+		]
+	}
+]

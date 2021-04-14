@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-undyingfibre", "count" : 6 },
+	{ "item" : "syntheticmaterial", "count" : 12 },
+	{ "item" : "essence", "count" : 1000}
+  ],
+  "output" : {
+    "item" : "starforge-sedgechest",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "armours" ],
+  "duration" : 2
+}
+

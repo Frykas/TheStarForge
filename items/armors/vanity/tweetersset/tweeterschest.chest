@@ -1,0 +1,30 @@
+{
+	"itemName": "starforge-tweeterschest",
+	"price": 500,
+	"inventoryIcon": "icons.png:chest",
+	"maxStack": 1,
+	"rarity": "Rare",
+	"category": "chestwear",
+	"description": "When you can't hit your target with a gun, try with your fists. It usually works! ^gray;*Tweeters' guide at galactic conflict, page 1 out of 1.*^white; ",
+	"shortdescription": "Tweeters' Gauntlets",
+	"tooltipKind": "armor",
+
+	"maleFrames": {
+		"body": "chestm.png",
+		"backSleeve": "bsleeve.png",
+		"frontSleeve": "fsleeve.png"
+	},
+
+	"femaleFrames": {
+		"body": "chestf.png",
+		"backSleeve": "bsleeve.png",
+		"frontSleeve": "fsleeve.png"
+	},
+	"level": 4,
+	"leveledStatusEffects": [{
+		"levelFunction": "acceleratorArmorLevelPowerMultiplierMultiplier",
+		"stat": "powerMultiplier",
+		"baseMultiplier": 1.8
+	}]
+
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-infusedtitanium",
+  "price" : 350,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "infusedtitanium.png",
+  "description" : "A titanium bar, but enhanced with Ancient Essence. ",
+  "shortdescription" : "^pink;Infused Titanium^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-morpheushelmet",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Helmet worn by Morpheus, but this time you can't wear it!",
+  "shortdescription" : "Morpheus' Helmet (object)",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 105,
+
+  "apexDescription" : "Isn't this helmet from the Unbound ? Weird.",
+  "avianDescription" : "I can see myself on the visor!",
+  "floranDescription" : "Floran sssee reflection easssily...",
+  "glitchDescription" : "Suspicious. I have seen this helmet somewhere before...",
+  "humanDescription" : "What a cool helmet. Too bad we don't have those.",
+  "hylotlDescription" : "While it is not very elegant, this helmet is well made.",
+  "novakidDescription" : "Eh, this helmet doesn't really look like it'll protect the head.",
+
+  "inventoryIcon" : "morpheushelmeticon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "morpheushelmet.png:<color>",
+      "imageLayers" : [ { "image" : "morpheushelmet.png" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+
+}

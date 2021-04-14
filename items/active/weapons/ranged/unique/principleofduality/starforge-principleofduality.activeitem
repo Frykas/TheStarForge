@@ -1,0 +1,101 @@
+{
+  "itemName" : "starforge-principleofduality",
+  "price" : 3000,
+  "inventoryIcon" : "starforge-principleofduality.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A powerful rocketlauncher with the ability to fire twin elemental missiles.",
+  "shortdescription" : "Principle of Duality",
+  "level" : 7,
+  "fixedLevel" : false,
+  "tooltipKind" : "base",
+  "category" : "Rocket Launcher",
+  "itemTags" : ["weapon","ranged","rocketlauncher"],
+  "twoHanded" : true,
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "starforge-principleofduality.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+		  { "particle" : "rocketbarreldownpuff", "offset" : [0.1, -0.5] }
+        ]
+      }
+    },
+	"sounds" : {
+      "fire" : [ "/sfx/gun/rocket2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.0, 0.375],
+  "muzzleOffset" : [2.0, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-multibarrelfire.lua"],
+    "class" : "StarForgeMultiBarrelFire",
+
+    "fireTime" : 0.85,
+    "baseDps" : 10.5,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.0,
+	
+    "projectileCount" : 2,
+
+    //"burstCount" : 30,
+    //"burstTime" : 0.1,
+    "fireType" : "auto",
+
+	"muzzleOffsets" : [[2.5, 1], [2.5, 0.5]],//, [2.5, 1.5], [2.5, 2], [2.5, 2.5], [2.5, 3], [2.5, 3.5], [2.5, 4], [2.5, 4.5], [2.5, 5], [2.5, 5.5], [2.5, 6], [2.5, 6.5], [2.5, 7], [2.5, 7.5], [2.5, 8], [2.5, 8.5], [2.5, 9], [2.5, 9.5], [2.5, 10], [2.5, 10.5], [2.5, 11], [2.5, 11.5], [2.5, 12], [2.5, 12.5], [2.5, 13], [2.5, 13.5], [2.5, 14], [2.5, 14.5], [2.5, 15]],
+	"fireAllProjectileCount" : true,		//If true, fires projectile count from individual barrels, so if 3 shots and 6 barrels, the first 3 barrels fire, if 3 shots and 2 barrels, the first will fire twice and the second will fire once
+	"preventIdenticalProjectiles" : true,	//If true, makes it so the projectiletype of the different barrels, cannot equal the first (primarily for when the barrels fire at once)
+	"projectileTypePerBarrel" : [
+	  ["starforge-dualitypoisonrocket", "starforge-dualityfirerocket", "starforge-dualityicerocket", "starforge-dualityelectricrocket"],
+	  ["starforge-dualitypoisonrocket", "starforge-dualityfirerocket", "starforge-dualityicerocket", "starforge-dualityelectricrocket"]
+	],
+    "projectileParameters" : {},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

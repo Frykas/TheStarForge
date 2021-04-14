@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-katahelcore",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "katahelcore.png",
+  "description" : "An ancient core modified by a Glitch Scholar who worked for Katahel. It is now activated.",
+  "shortdescription" : "^orange;Activated Ancient Core^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

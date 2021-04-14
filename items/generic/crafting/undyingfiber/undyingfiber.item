@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-undyingfibre",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "undyingfiber.png",
+  "description" : "A self replicating strand of organic fibre. It slowly regenerates itself after being cut. ",
+  "shortdescription" : "^orange;Undying Fibre^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

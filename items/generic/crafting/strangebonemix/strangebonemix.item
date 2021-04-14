@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-strangebonemix",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "strangebonemix.png",
+  "description" : "A material made using bone & other strange hunting trophies. ",
+  "shortdescription" : "^orange;Strange Bone Mix^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

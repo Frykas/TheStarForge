@@ -1,0 +1,82 @@
+{
+  "itemName" : "starforge-hawkmoon",
+  "price" : 3000,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "With each shot, a deafening shriek. ",
+  "shortdescription" : "Hawkmoon",
+  "level" : 7,
+  "tooltipKind" : "base",
+  "category" : "Revolver",
+  "itemTags" : ["weapon","ranged","revolver"],
+  "twoHanded" : true,
+  
+"inventoryIcon" : "hawkmoon.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+    "animationParts" : {
+    "middle" : "hawkmoon.png",
+	 "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+	},
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/starforge_hawkmoon.ogg"]
+    }
+  }, 
+  "baseOffset" : [1.0, 0.125],
+  "muzzleOffset" : [1.750,0.750],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 2.00,
+    "baseDps" : 15,
+    "energyUsage" : 120,
+    "inaccuracy" : 0.001,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "hawkmoonbullet",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+
+       "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  "altAbilityType" : "",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

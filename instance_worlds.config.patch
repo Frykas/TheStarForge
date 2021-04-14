@@ -1,0 +1,38 @@
+[
+	{
+		"op": "add",
+		"path": "/thalassooutpost",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "thalassooutpost",
+			"seed": 1234,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": true},
+			"skyParameters": {
+				"spaceLevel": 850,
+				"ambientLightLevel": [24, 28, 24],
+				"skyType": "atmospheric",
+				"skyColoring" : {
+		        "mainColor" : [40, 20, 60],
+
+		        "morningColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+		        "dayColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+		        "eveningColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+		        "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+		       "morningLightColor" : [40, 20, 60],
+		       "dayLightColor" : [40, 20, 60],
+		       "eveningLightColor" : [40, 20, 60],
+		       "nightLightColor" : [40, 20, 60]},
+			   
+				"horizonImages": [],
+				"dayLength": 1153.36,
+				"surfaceLevel": 500,
+				"seed": -5288806180628667000
+		
+			}
+		}
+	}
+]

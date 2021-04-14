@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-coveredcontainer",
+  "colonyTags" : ["outpost"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 90,
+  "description" : "A container covered by a tarp.",
+  "shortdescription" : "Covered Container",
+
+  "apexDescription" : "A large container.",
+  "avianDescription" : "A large shipping container.",
+  "floranDescription" : "It'ss a shipping container.",
+  "glitchDescription" : "Intrigued. A shipping container - it could contain anything.",
+  "humanDescription" : "A shipping container.",
+  "hylotlDescription" : "A container for shipping all manner of items.",
+  "novakidDescription" : "I could ship all kindsa cargo in this.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "coveredcontainer.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+
+}

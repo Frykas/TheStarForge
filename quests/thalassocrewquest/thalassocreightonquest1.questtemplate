@@ -1,0 +1,30 @@
+{
+  "id" : "thalassocreightonquest1",
+  "title" : "^green;Creighton's Errand",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2" ],
+  "text" : "Oy, since you're here now, grab me somethin to drink will ya? I've been cleaning Strelitzia's last prank on Tweeters for at least an hour now.^orange,Coffee^reset, will do.",
+  "completionText" : "You got it? Nice, give it to me.",
+  "moneyRange" : [750, 750],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-infusedtitanium", 5] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "coffee",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;coffee^reset; to ^green;Creighton^reset;."
+  }
+}

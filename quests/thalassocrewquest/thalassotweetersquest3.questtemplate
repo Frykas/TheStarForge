@@ -1,0 +1,30 @@
+{
+  "id" : "thalassotweetersquest3",
+  "title" : "^green;Proof of Might",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassotweetersquest1", "thalassotweetersquest2" ],
+  "text" : "You're very strong, I admit it. You know what? I have one last request, bring me the trophy of an incredible beast, an ^orange;Ixodoom Claw^reset;, and I'll show you how to make my strongest weapon! ",
+  "completionText" : "Woah! Amazing! Hey hey, will you teach me how to be as strong as you one day? Let's become friends so you can teach me later!! ",
+  "moneyRange" : [5000, 5000],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-principleofduality-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "ixodoomclaw",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;Ixodoom Claw^reset; to ^green;Tweeters^reset;."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id" : "starforge-marikostory3",
+  "species" : "hylotl",
+  "title" : "^cornflowerblue;The Hylotl Captain^reset; - III",
+  "description" : "The story of a rising Hylotl Captain. ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "marikocover1.png",
+  "contentPages" : [
+
+"PART III - The Warlord & the betrayal
+
+Words of a dangerous Glitch Warlord terrorizing an entire planet spread fast accross space explorers and merchants. It eventually came to the ears of crime-fighting companies & factions, and Katahel was then quickly targeted by multiple bounty hunters & peacekeepers. ",
+
+"The more he conquered, the more often he was targeted. Using the beheader sword *Decapitator* I made a long time ago, he kept fighting them head on and leaving victorious. He truly was an amazing warrior. Nothing could break him, and with his Impervium armor, crafted using the ^magenta;Starforge^reset;, nothing could stop him.",
+
+"Except 1 person who did. A Hylotl warrior invaded his court once, slaying every guard she found on her way. She was swift and silent, each fight seemed like a dance. When I saw her, I saw a chance of redemption, a chance to atone for my sins and all the destruction I caused. I managed to get into contact with her, and together we planned an assassination, the perfect plan was set up.",
+
+"Her weapons couldn't go past his impervium armor. Nothing could, well in theory. But I had access to the ^magenta;Starforge^reset;, I could make something to end him for good. I crafted the Hunter's Avarice, a powerful weapon capable of firing massive bolts, if we load an Impervium bolt, and shoot it directly at him, he won't survive. ",
+
+"The Hylotl warrior fought hard, in the throne room lied dozens of fallen Glitch who fought to protect the Warlord, and in front of her, the lord himself was standing. Strong, unshakeable. She was quick and he was strong, it was a beautiful fight. But it wasn't the real fight. I was hidden, waiting for the perfect opportunity to strike him. ",
+
+"Once fired, the bolt flew at an incredible speed. So fast that I could barely see it. When it reached Katahel, it pierced his chestplate completely and stuck on the throne that was behind him. Katahel fell on his knees, and looked behind him, looking at me. *I knew it, deep down I knew it would happen.* He removed his helmet, looked at the Hylotl warrior and said : *Everything I've done, was to free them, free them from the curse that we're all born with.*",
+
+"For the very first time, he didn't look like a Warlord, nor did he act like one. The Hylotl didn't hesitate a second, and finished the job. His head rolled on the red & gold carpet. That was the day the Warlord fell. His army scattered accross different Kingdoms & Factions, some, Awakaned, took on to the stars, while the artificial army that I created still roams the galaxy, obeying orders now outdated."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Essential",
+    "price" : 8000
+  }
+}

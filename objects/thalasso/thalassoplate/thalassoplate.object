@@ -1,0 +1,32 @@
+{
+  "objectName" : "starforge-thalassoplate",
+  "colonyTags" : ["generic","cooking"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 30,
+  "description" : "A sturdy Thalasso plate.",
+  "shortdescription" : "Thalasso Plate",
+  "race" : "apex",
+
+  "apexDescription" : "A sturdy metal plate. The Apex are usually given plates made of plastic.",
+  "avianDescription" : "Avians traditionally eat only from bowls.",
+  "floranDescription" : "Floran try to eat food freshh from kill.",
+  "glitchDescription" : "Dissapointed. This plate won't break even when thrown.",
+  "humanDescription" : "Pretty fancy kitchenware.",
+  "hylotlDescription" : "The Hylotls tend to use more traditional materials when making plates.",
+  "novakidDescription" : "This pretty plate's so clean I can see my reflection.",
+
+  "inventoryIcon" : "thalassoplateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "thalassoplate.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

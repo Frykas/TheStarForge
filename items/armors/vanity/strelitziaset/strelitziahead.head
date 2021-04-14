@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-strelitziahead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "A facemask worn by Strelitzia. It's supposed to filter her paralyzing breath. On you ? It just looks cool.",
+  "shortdescription" : "Strelitzia's Face Mask",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

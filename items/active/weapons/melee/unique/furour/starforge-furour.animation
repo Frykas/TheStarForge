@@ -1,0 +1,192 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 3,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire4" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire5" : {
+            "frames" : 3,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "status" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {},
+          "active" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
+          "offset" : [0, 1.875],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
+        }
+      },
+      "bladeFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 1.875],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "status" : {
+            "inactive" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            }
+          }
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/furour/swoosh/downcut.png:<frame>?flipy",
+                "offset" : [-0.2, -2.69],
+                "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/furour/swoosh/slash.png:<frame>",
+                "offset" : [4.0, 0.8],
+                "damageArea" : [[-4, 1], [2.5, 1], [2.5, -2], [-4, -2]]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/furour/swoosh/downcut.png:<frame>",
+                "offset" : [-0.2, 2.69],
+                "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
+              }
+            },
+            "fire4" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/furour/swoosh/slash.png:<frame>?flipy",
+                "offset" : [4.0, -0.8],
+                "damageArea" : [[-4, 1], [2.5, 1], [2.5, -2], [-4, -2]]
+              }
+            },
+            "fire5" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/furour/swoosh/downcut.png:<frame>",
+                "offset" : [-0.2, 2.69],
+                "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "physicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 1,
+      "burstCount" : 1,
+      "particles" : []
+    },
+	"statusReady" : {
+      "burstCount" : 1,
+      "particles" : [
+        {
+          "particle" : {
+			"type" : "text",
+			"text" : "^shadow;Enrage Ready",
+			"color" : [225, 25, 12, 180],
+			"light" : [70, 0, 0],
+			"fullbright" : true,
+			"initialVelocity" : [0.0, 1.0],
+			"finalVelocity" : [0.0, 2.5],
+			"size" : 0.5,
+			"approach" : [0, 40],
+			"angularVelocity" : 20,
+			"timeToLive" : 0.7,
+			"layer" : "front",
+			"destructionAction" : "fade",
+			"destructionTime" : 0.5,
+			"variance" : {
+			  "initialVelocity" : [0.0, 1.5]
+			},
+			"flippable" : false
+          }
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+    "fire2" : [ ],
+    "fire3" : [ ]
+  }
+}

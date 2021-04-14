@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 1 },
+	{ "item" : "essence", "count" : 10}
+  ],
+  "output" : {
+    "item" : "starforge-infusedtitanium",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

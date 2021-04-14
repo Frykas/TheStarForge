@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-infusedtitanium", "count" : 10 },
+	{ "item" : "solariumstar", "count" : 1 },
+	{ "item" : "scorchedcore", "count" : 5},
+	{ "item" : "essence", "count" : 250}
+  ],
+  "output" : {
+    "item" : "starforge-marikogun",
+    "count" : 1
+  },
+  "groups" : [ "starforge-weaponshop" ],
+  "duration" : 2
+}

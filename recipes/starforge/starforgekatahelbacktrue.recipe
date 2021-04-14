@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-katahelcore", "count" : 1 },
+	{ "item" : "starforge-katahelbackfalse", "count" : 1 },
+	{ "item" : "essence", "count" : 5000}
+  ],
+  "output" : {
+    "item" : "starforge-katahelbacktrue",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "backwear" ],
+  "duration" : 2
+}
+

@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-krythershead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "Messing around with chemicals is never safe. The goggles for protection, and a facemask to avoid the spread of a pandemic.",
+  "shortdescription" : "Kryther's Safety headwear",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

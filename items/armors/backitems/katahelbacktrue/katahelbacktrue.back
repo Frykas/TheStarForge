@@ -1,0 +1,38 @@
+{
+  "itemName" : "starforge-katahelbacktrue",
+  "price" : 3500,
+  "inventoryIcon" : "katahelbacktrueicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "backwear",
+  "description" : "Enhanced with ancient technology, this cape protects the weilder. ",
+  "shortdescription" : "^darkgray;Might of the Warlord^white;",
+  "tooltipKind" : "back",
+  "tooltipFields" : {"rarityLabel" : "Exalted"},
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+
+  "statusEffects" : [
+  "thorns", "peacekeeperaugment3",
+
+    {
+      "stat" : "biomeheatImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeradiationImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "breathProtection",
+      "amount" : 1.0
+    }
+  ],
+
+  "acceptsAugmentType" : "back"
+}

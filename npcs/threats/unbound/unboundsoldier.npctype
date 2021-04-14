@@ -1,0 +1,48 @@
+{
+    "type": "unboundsoldier",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundSoldierDeathTreasure"],
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "You can't stop us, no matter how hard you try!",
+                        "We'll find the God Forge and ascend !",
+                        "For the Unbound!",
+                        "The Unbound will ascend and triumph over all!",
+                        "Order received, target in sight.",
+                        "This is the wrong place for you to be!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundhead"
+                }],
+                "chest": [{
+                    "name": "starforge-unboundchest"
+                }],
+                "legs": [{
+                    "name": "starforge-unboundpants"
+                }],
+                "primary": [
+                    "starforge-unboundar"
+                ]
+            }]]
+        ]
+    }
+}

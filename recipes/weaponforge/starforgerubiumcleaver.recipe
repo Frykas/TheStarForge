@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "starforge-infusedtitanium", "count" : 6 },
+	{ "item" : "starforge-rubium", "count" : 10 },
+	{ "item" : "scorchedcore", "count" : 2},
+	{ "item" : "essence", "count" : 250}
+  ],
+  "output" : {
+    "item" : "starforge-rubiumcleaver",
+    "count" : 1
+  },
+  "groups" : [ "starforge-weaponshop" ],
+  "duration" : 2
+}
+

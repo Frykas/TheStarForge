@@ -1,0 +1,83 @@
+{
+  "itemName" : "starforge-unboundcptsniper",
+  "price" : 750,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Extremely powerful Sniper used by the Unbound Sniper Captains.",
+  "shortdescription" : "Unbound Heavy Sniper Rifle",
+  "tooltipKind" : "gun",
+  "category" : "sniperRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","sniperrifle"],
+  "level" : 6,
+
+"inventoryIcon" : "unboundcptsniper.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "unboundcptsniper.png",
+    "barrel" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/unboundcptsniper.ogg"]
+    }
+  },
+  "baseOffset" : [1.50, 0.250],
+  "muzzleOffset" : [2.500, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.7,
+    "baseDps" : 8.5,
+    "energyUsage" : 100,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "fireplasma",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  "altAbilityType" : "explosiveshot",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

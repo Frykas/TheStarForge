@@ -1,0 +1,9 @@
+{
+  "name" : "florant",
+  "category" : "florant",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "florant.png"
+  }
+}

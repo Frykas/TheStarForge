@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-openbook",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "It's just a book.",
+  "shortdescription" : "Open Book",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 105,
+
+  "apexDescription" : "A book. I Wonder what's in it.",
+  "avianDescription" : "A book?",
+  "floranDescription" : "Floran can't read.",
+  "glitchDescription" : "Surprised. Oh, a book.",
+  "humanDescription" : "A book. Yeah, I've seen this one before.",
+  "hylotlDescription" : "Too bad I don't have the time to read it.",
+  "novakidDescription" : "Eh, boring.",
+
+  "inventoryIcon" : "openbookicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "openbook.png:<color>",
+      "imageLayers" : [ { "image" : "openbook.png" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+
+}

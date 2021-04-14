@@ -1,0 +1,68 @@
+{
+  "objectName" : "starforge-thalassooutpostteleporter",
+  "objectType" : "teleporter",
+  "rarity" : "Legendary",
+  "description" : "A teleporter that leads to the Thalasso Outpost. \n^red;Destroyed when broken.",
+  "shortdescription" : "Thalasso Teleporter",
+  "price" : 3000,
+  "printable" : false,
+  
+  "pickupQuestTemplates" : [ "thalassointromission1" ],
+
+  "apexDescription" : "This teleporter is linked to a set location.",
+  "avianDescription" : "This teleporter is linked to a set location.",
+  "floranDescription" : "Alien teleporter makesss Floran sssick...",
+  "glitchDescription" : "Analysis. This teleporter is linked to a set location.",
+  "humanDescription" : "This teleporter is linked to a set location.",
+  "hylotlDescription" : "This teleporter is linked to a set location.",
+  "novakidDescription" : "This teleporter is linked to a set location.",
+  
+  "category" : "teleporter",
+  "lightColor" : [99, 132, 153],
+  "lightPosition" : [0, 5],
+
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/thalassooutpostwarp.config",
+
+  "inventoryIcon" : "thalassooutpostteleportericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "thalassooutpostteleporter.png:<color>", "fullbright" : true }, { "image" : "thalassooutpostteleporterlit.png:<color>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-2, 0], [-1, 0], [0, 0], [1, 0] ]
+    }
+  ],
+
+  "health" : 20,
+  
+  "breakDropPool" : "remoteteleporter",
+  
+  "teleporterFootPosition" : [0, 1],
+
+  "scripts" : [ "/scripts/npcToyObject.lua"],
+  "npcToy" : {
+    "influence" : [
+      "teleporter",
+      "teleporterComplete"
+    ],
+    "defaultReactions" : {
+      "teleporter" : [
+        [1.0, "beamaway"]
+      ],
+      "teleporterComplete" : [
+        [1.0, "vomit"],
+        [1.0, "smile"]
+      ]
+    },
+    "preciseStandPositionLeft" : [0, 0.0],
+    "preciseStandPositionRight" : [0, 0.0],
+    "maxNpcs" : 1
+  }
+}

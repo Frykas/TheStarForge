@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 1 },
+    { "item" : "syntheticmaterial", "count" : 1 },
+	{ "item" : "coralfragment", "count" : 8 },
+	{ "item" : "glowfibre", "count" : 5},
+	{ "item" : "essence", "count" : 20}
+  ],
+  "output" : {
+    "item" : "starforge-emberfabric",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

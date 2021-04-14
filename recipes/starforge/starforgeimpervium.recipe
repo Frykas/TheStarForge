@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 3 },
+	{ "item" : "refinedviolium", "count" : 3 },
+	{ "item" : "diamond", "count" : 1},
+	{ "item" : "corefragmentore", "count" : 5 },
+	{ "item" : "essence", "count" : 20}
+  ],
+  "output" : {
+    "item" : "starforge-impervium",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

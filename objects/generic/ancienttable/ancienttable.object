@@ -1,0 +1,45 @@
+{
+  "objectName" : "starforge-ancienttable",
+  "colonyTags" : ["ancient"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 200,
+  "description" : "A table that's as old as time.",
+  "shortdescription" : "Ancient Table",
+
+  "apexDescription" : "This table is sturdy, almost indestructible.",
+  "avianDescription" : "That table glows!",
+  "floranDescription" : "Glowing table ssshine in the dark.",
+  "glitchDescription" : "Surprised. This table makes me comfortable.",
+  "humanDescription" : "A fancy table, I wonder who used it.",
+  "hylotlDescription" : "This table was made to last, and it sure did.",
+  "novakidDescription" : "The glow on the table remind me of some of my people!",
+
+  
+  "lightColor" : [102, 102, 204],
+  "lightPosition" : [0,9],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "ancienttableicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "ancienttable.png:<frame>" }, { "image" : "ancienttablefullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 5,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
+    }
+   
+  ]}

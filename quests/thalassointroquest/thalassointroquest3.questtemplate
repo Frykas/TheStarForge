@@ -1,0 +1,30 @@
+{
+  "id" : "thalassointromission3",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2" ],
+  "title" : "^#b4f5c3;Using the Starforge",
+  "text" : "You should go and check the ^magenta;Starforge^reset;, the Captain left something for you, might be useful. You're free to use it now. ",
+ "completionText" : "^gray;The Starforge resonate with power^reset; I can use this to make powerful items now.",
+  "moneyRange" : [150, 150],
+  "rewards" : [
+    [ [ "starforge-marikorkatana-recipe", 1 ], ["starforge-marikolkatana-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "player"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "I should make my way to the ^magenta;Starforge^reset; now."
+  }
+}

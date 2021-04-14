@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-bunnybeanie",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "The beloved beanie worn by Tweeters, one of the Thalasso's crew member.",
+  "shortdescription" : "Bunny Beanie",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+}

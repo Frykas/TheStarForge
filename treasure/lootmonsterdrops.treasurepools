@@ -1,0 +1,83 @@
+{
+  // ==============================================================================================
+  //                                        LOOT MONSTERS ITEM DROPS
+  // ==============================================================================================
+  "luckjootyfishTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.25, "item" : "starforge-marikohood-recipe"},
+        {"weight" : 0.25, "item" : "starforge-marikochest-recipe"},
+		{"weight" : 0.25, "item" : "starforge-marikopants-recipe"},
+		{"weight" : 0.05, "item" : "starforge-hawkmoon"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+    "roboblinTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.25, "item" : "starforge-katahelhead-recipe"},
+        {"weight" : 0.25, "item" : "starforge-katahelchest-recipe"},
+		{"weight" : 0.25, "item" : "starforge-katahelgreaves-recipe"},
+		{"weight" : 0.05, "item" : "starforge-hawkmoon"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+    "florantTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.25, "item" : "starforge-sedgehead-recipe"},
+        {"weight" : 0.25, "item" : "starforge-sedgechest-recipe"},
+		{"weight" : 0.25, "item" : "starforge-sedgepants-recipe"},
+		{"weight" : 0.05, "item" : "starforge-hawkmoon"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+    "novalimeTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.25, "item" : "starforge-soultakerhead-recipe"},
+        {"weight" : 0.25, "item" : "starforge-soultakerchest-recipe"},
+		{"weight" : 0.25, "item" : "starforge-soultakerpants-recipe"},
+		{"weight" : 0.05, "item" : "starforge-hawkmoon"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+    "essenceDrop2" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.5, "item" : ["essence", 60]},
+        {"weight" : 0.75, "item" : ["essence", 80]},
+        {"weight" : 1.00, "item" : ["essence", 100]},
+        {"weight" : 0.75, "item" : ["essence", 120]},
+        {"weight" : 0.5, "item" : ["essence", 140]}
+      ]
+    }]
+  ]
+  
+  
+  }
+  

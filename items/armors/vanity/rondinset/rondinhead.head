@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-rondinhead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "A welding helmet worn by Rondin.",
+  "shortdescription" : "Rondin's Welding Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

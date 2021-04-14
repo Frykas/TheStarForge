@@ -1,0 +1,12 @@
+[
+	
+	{
+        "op": "add",
+        "path": "/spawnProfile/groups/0/pool/-",
+        "value": [
+            1,
+            "starforge-roboblin"
+        ]
+    }
+	
+	]

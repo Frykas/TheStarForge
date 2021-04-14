@@ -1,0 +1,19 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 7500},
+	{ "item" : "starforge-cerulium", "count" : 3},
+	{ "item" : "starforge-infusedtitanium", "count" : 20},
+	{ "item" : "scorchedcore", "count" : 10},
+	{ "item" : "staticcell", "count" : 10},
+	{ "item" : "cryonicextract", "count" : 10},
+	{ "item" : "venomsample", "count" : 10}
+  ],
+  
+  "output" : {
+    "item" : "starforge-principleofduality",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

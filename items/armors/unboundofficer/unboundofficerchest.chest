@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-unboundofficerchest",
+  "price" : 120,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "chestwear",
+  "description" : "The standard uniform of the Unbound Officer. They command the troops on the battlefield.",
+  "shortdescription" : "Unbound Officer Jacket",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  }
+}

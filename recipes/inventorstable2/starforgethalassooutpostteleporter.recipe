@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 5 },
+	{ "item" : "teleportercore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "starforge-thalassooutpostteleporter",
+    "count" : 1
+  },
+  "groups" : [ "inventorstable2", "teleporter", "all" ],
+  "duration" : 2
+}
+

@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-willhead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "It looks sparkly, but actually isn't ? How ?",
+  "shortdescription" : "Will's Fancy Hat",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

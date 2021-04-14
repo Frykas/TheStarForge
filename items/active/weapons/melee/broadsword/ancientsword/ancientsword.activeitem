@@ -1,0 +1,50 @@
+{
+  "itemName" : "starforge-ancientsword",
+  "price" : 950,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "This blade is as old as the Ancient temples found in the galaxy. Its power is unbelievable.",
+  "shortdescription" : "Ancient Energy Blade",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "melee", "broadsword"],
+
+  "inventoryIcon" : "ancientswordicon.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/ancientsword/ancientsword.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 11.5,
+
+    "stances" : {
+      "windup1" : {
+        "duration" : 0.15
+      }
+    }
+  },
+
+  "altAbilityType" : "flipslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

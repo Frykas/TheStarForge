@@ -1,0 +1,65 @@
+{
+  "type" : "starforge-elana",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Elana",
+    "species" : "human",
+	"facialHairType":"",
+    "hairGroup" : "hair",
+    "hairType" : "fem12",
+	"bodyDirectives":"?replace;d39c6c=d3a57c;ffc181=f9d3a9;c7815b=b37c5d;ffe2c5=fff7ec?replace;951500=111111;dc1f00=535353;be1b00=363636",
+	"hairDirectives":"?replace;a38d59=6a2e53;735e3a=4b1d30;d9c189=7f3b6d?replace;951500=111111;dc1f00=535353;be1b00=363636",
+    "gender" : "female"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "behavior" : "villager",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Oh you're the Protectorate Hero Mi-... Mariko told us about? Welcome then! Make yourself at home.",
+            "I cook for the Thalasso. Yep, it's as hard as it sounds, they can be a real pain sometimes haha.",
+            "Nothing much to see here sadly. Since we found that Starforge, the crew spend most of its time here.",
+			"You should go and check on Strelitzia sometime, she's on the floor below. It gets lonely in her office.",
+            "Is it dinner time yet? Or are you just here to keep me company?",
+			"Been a while since I've seen Rondin, is he still at the Starforge?"
+          ]
+        }
+      },
+      "complain" : {
+        "default" : {
+          "default" : [
+            "Feew, I kinda miss her."
+          ]
+        }
+      }
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+                "chest": [{
+                    "name": "starforge-elanachest"
+                }],
+                "legs": [{
+                    "name": "starforge-elanapants"
+                }]
+            }]]
+        ]
+    }
+}

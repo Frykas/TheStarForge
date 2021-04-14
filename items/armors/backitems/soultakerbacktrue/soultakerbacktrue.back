@@ -1,0 +1,38 @@
+{
+  "itemName" : "starforge-soultakerbacktrue",
+  "price" : 3500,
+  "inventoryIcon" : "soultakerbacktrueicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "backwear",
+  "description" : "The tools used by the Novakid mentionned in countless legends. They are tainted by some sort of ethereal matter.",
+  "shortdescription" : "^pink;Ghost Digger's Tools^white;",
+  "tooltipKind" : "back",
+  "tooltipFields" : {"rarityLabel" : "Exalted"},
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+
+  "statusEffects" : [
+  "maxenergyboostaugment2", "electricblockaugment",
+
+    {
+      "stat" : "biomeheatImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeradiationImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "breathProtection",
+      "amount" : 1.0
+    }
+  ],
+
+  "acceptsAugmentType" : "back"
+}

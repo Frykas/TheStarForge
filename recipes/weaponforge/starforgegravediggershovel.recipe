@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "starforge-infusedtitanium", "count" : 5},
+	{ "item" : "essence", "count" : 250}
+  ],
+  "output" : {
+    "item" : "starforge-gravediggershovel",
+    "count" : 1
+  },
+  "groups" : [ "starforge-weaponshop" ],
+  "duration" : 2
+}
+

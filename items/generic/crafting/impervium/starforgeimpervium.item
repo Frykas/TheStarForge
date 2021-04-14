@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-impervium",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "starforgeimpervium.png",
+  "description" : "Said to be unbreakable, Impervium is an alloy that needs a star to smelt. ",
+  "shortdescription" : "^orange;Starforged Impervium^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

@@ -1,0 +1,64 @@
+{
+  "type" : "starforge-strelitzia",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Strelitzia",
+    "species" : "floran",
+    "hairGroup" : "hair",
+    "hairType" : "14",
+	"bodyDirectives":"?replace;e0975c=a3af83;a85636=7f8760;ffca8a=c4d0a5;6f2919=5e6142?replace;735e3a=705f32;d9c189=c5bd6d;f7e7b2=e3da89;a38d59=9a8d4c",
+	"hairDirectives":"?replace;be1b00=896d22;f32200=e6e756;dc1f00=bea439?replace;735e3a=705f32;d9c189=c5bd6d;f7e7b2=e3da89;a38d59=9a8d4c",
+    "gender" : "female"
+  },
+  
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "offeredQuests" : ["thalassostrelisupply"],
+    "turnInQuests" : ["thalassostrelisupply"],
+    "behavior" : "villager",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Nice meeting new facesss... Welcome.",
+            "Krythersss isss ssscared of me... Hehehe, too many pranksss.",
+            "Yesss... Facemask protectsss you. Streli wasss born with strange mutation, breath is no good. ",
+			"I can heal you... But it can hurt hehehe.",
+			"When the Captain isss not here, we obey Morpheusss. Streli don't like Morpheusss, no fun...",
+            "Haven't scared Tweetersss in a while... Hehehehe.",
+			"You hurt? No? Then why are you here?"
+          ]
+        }
+      }
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-strelitziahead"
+                }],
+                "chest": [{
+                    "name": "starforge-strelitziachest"
+                }],
+                "legs": [{
+                    "name": "starforge-strelitziapants"
+                }]
+            }]]
+        ]
+    }
+}

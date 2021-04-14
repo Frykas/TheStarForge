@@ -1,0 +1,20 @@
+{
+  "name" : "starforge-furourrage",
+  "effectConfig" : {
+	"directive" : "fade=FF0000=0.15",
+    "powerModifier" : 1.25,
+    "speedModifier" : 1.1,
+	"airJumpModifier" : 1.1,
+	"protectionModifier" : 0.85
+  },
+  "defaultDuration" : 5.0,
+
+  "scripts" : [
+    "starforge-furourrage.lua"
+  ],
+
+  "animationConfig" : "starforge-furourrage.animation",
+
+  "label" : "Enraged",
+  "icon" : "/interface/statuses/rage.png"
+}

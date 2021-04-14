@@ -1,0 +1,72 @@
+{
+  "objectName" : "starforge-morpheusshop",
+  "rarity" : "Legendary",
+  "colonyTags" : ["commerce"],
+  "price" : 8500,
+  "printable" : false,
+  "description" : "A shady Apex selling placeholder stuff.",
+  "shortdescription" : "Morpheus' Shady Blueprints",
+  "race" : "generic",
+  
+   "offeredQuests" : ["thalassointromission2"],
+   "turnInQuests" : ["thalassointromission1"],
+
+  "apexDescription" : "This Apex reminds me of the Miniknog officers, better not trust him...",
+  "avianDescription" : "This Apex is somewhat scary looking.",
+  "floranDescription" : "Floran dislikessss staring eye, Floran hatessss thisss Apex...",
+  "glitchDescription" : "Interested. This merchant seem to be trading interesting goods.",
+  "humanDescription" : "I wonder if he's trading vintage stuff from back then, better take a look.",
+  "hylotlDescription" : "What a strange and scary man. At least he trades valuable items.",
+  "novakidDescription" : "WOW! What a cool guy! His sense of style would make me cry if I had eyes!",
+  
+"interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/SEmerchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "PRE-RELEASE SHOP",
+        "subtitle" : "Selling unobtaible (yet) items!",
+		 
+		 "imgPlayerMoneyIcon" : {
+        "visible" : false
+      },
+      "lblPlayerMoney" : {
+        "visible" : false
+      }
+      }
+    },
+    "buyFactor" : 4.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "starforge-sedgebacktrue-recipe"},
+	  { "item" : "starforge-soultakerbacktrue-recipe"},
+	  { "item" : "starforge-beheader-recipe"},
+	  { "item" : "starforge-furour-recipe"}
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "morpheusshop.png:<color>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 2.0,
+
+	  "spaceScan" : 0.1,
+      "interactiveSpaces" : [
+        [3, 3], [4, 3],
+        [3, 2], [4, 2],
+        [3, 1], [4, 1],
+        [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+	]
+}
+
+    
+	
+  

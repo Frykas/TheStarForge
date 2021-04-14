@@ -1,0 +1,258 @@
+{
+  "itemName" : "starforge-beheader",
+  "price" : 3000,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A former warlord's claymore fitted with a heated blade for executing glitch.",
+  "shortdescription" : "^gray;Decapitator^reset;",
+  "tooltipKind" : "base",
+  "category" : "Claymore",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","greatsword","claymore"],
+
+  "inventoryIcon" : "starforge-beheadericon.png",
+
+  "animation" : "starforge-beheader.animation",
+  "animationParts" : {
+    "sword" : "starforge-beheader.png",
+    "swordfullbright" : "starforge-beheaderfullbright.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["starforge-beheader.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 10,
+	
+	"comboSteps" : 5,
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, -5.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [1.5, -1.0, 5.5, 1.0]
+    ],
+
+	"stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.35,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.75,
+        "knockback" : 12.5
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.25,
+        "knockback" : 35
+      }
+    ],
+	
+    "stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "aimAngle" : 0,
+        "armRotation" : -15,
+        "weaponRotation" : 50,
+        "twoHanded" : false,
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.15,
+        "armRotation" : 135,
+        "weaponRotation" : -15,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.03,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.25,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.175,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.2,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "twoHanded" : true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire2" : {
+        "duration" : 0.225,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "wait2" : {
+        "duration" : 0.15,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.175,
+        "armRotation" : -155,
+        "weaponRotation" : 215,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash3" : {
+        "duration" : 0.03,
+        "armRotation" : 5,
+        "weaponRotation" : 185,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire3" : {
+        "duration" : 0.25,
+        "armRotation" : 80,
+        "weaponRotation" : 200,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.15,
+        "armRotation" : 60,
+        "weaponRotation" : 210,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 4
+      "windup4" : {
+        "duration" : 0.15,
+        "armRotation" : 135,
+        "weaponRotation" : -15,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash4" : {
+        "duration" : 0.03,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire4" : {
+        "duration" : 0.175,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait4" : {
+        "duration" : 0.125,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 5
+      "windup5" : {
+        "duration" : 0.125,
+        "armRotation" : 135,
+        "weaponRotation" : -15,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire5" : {
+        "duration" : 0.25,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  //INACTIVE and ACTIVE stats
+  "inactiveBaseDps" : 10,
+  "activeBaseDps" : 10,
+  "inactiveEnergyUsage" : 0,
+  "activeEnergyUsage" : 15,
+  
+  "statusEffects" : ["starforge-morehealthmoredamage"],
+
+  "altAbility" : {
+    "name" : "Activate Blade",
+    "scripts" : ["/items/active/weapons/melee/abilities/other/activateblade/starforge-activateblade.lua"],
+    "class" : "StarForgeActivateBlade",
+
+    "energyPerSecond" : 5,
+
+    "cooldownTime" : 1.0,
+	
+    "durationBefore" : 0.2,
+    "durationAfter" : 0.5
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

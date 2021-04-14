@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-sedgebackfalse",
+  "price" : 1000,
+  "inventoryIcon" : "sedgebackfalseicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "backwear",
+  "description" : "This quiver can probably be used to store spears & other hunting gear.",
+  "shortdescription" : "Empty Spear Quiver",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png"
+
+}

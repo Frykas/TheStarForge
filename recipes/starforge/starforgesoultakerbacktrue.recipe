@@ -1,0 +1,15 @@
+{
+  "input" : [
+  	{ "item" : "starforge-etherealgoo", "count" : 2},
+	{ "item" : "starforge-gravediggershovel", "count" : 1 },
+	{ "item" : "starforge-soultakerbackfalse", "count" : 1 },
+	{ "item" : "essence", "count" : 5000}
+  ],
+  "output" : {
+    "item" : "starforge-soultakerbacktrue",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "backwear" ],
+  "duration" : 2
+}
+

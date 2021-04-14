@@ -1,0 +1,9 @@
+{
+  "name" : "roboblin",
+  "category" : "roboblin",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "roboblin.png"
+  }
+}

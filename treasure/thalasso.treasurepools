@@ -1,0 +1,47 @@
+{
+  // ==============================================================================================
+  //                                       THALASSO ITEM DROPS
+  // ==============================================================================================
+  "marikobackTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "item" : "starforge-marikostory4-codex"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-thalassoTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.06, "item" : ["cellmatter", 5]},
+		{"weight" : 0.06, "item" : ["bone", 5]},
+		{"weight" : 0.06, "item" : ["larva", 5]},
+		{"weight" : 0.06, "item" : ["coralfragment", 5]},
+		{"weight" : 0.05, "item" : ["diamond", 2]},
+		{"weight" : 0.06, "item" : ["giantflowerpetal", 5]},
+		{"weight" : 0.06, "item" : ["glowfibre", 5]},
+		{"weight" : 0.06, "item" : ["corefragmentore", 10]},
+		{"weight" : 0.06, "item" : ["fleshstrand", 5]},
+		{"weight" : 0.06, "item" : ["phasematter", 1]},
+		{"weight" : 0.06, "item" : ["hardenedcarapace", 1]},
+		{"weight" : 0.06, "item" : ["sharpenedclaw", 1]},
+		{"weight" : 0.06, "item" : ["scorchedcore", 1]},
+		{"weight" : 0.06, "item" : ["staticcell", 1]},
+		{"weight" : 0.05, "item" : ["cryonicextract", 1]},
+		{"weight" : 0.05, "item" : ["venomsample", 1]},
+        {"weight" : 0.04, "item" : "vaultkey"},
+        {"weight" : 0.03, "pool" : "uniqueWeapon"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ]
+     
+  }
+  

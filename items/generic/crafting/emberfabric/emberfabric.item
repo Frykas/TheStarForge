@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-emberfabric",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "emberfabric.png",
+  "description" : "This warm fabric is one of the strongest you can find in the galaxy. ",
+  "shortdescription" : "^orange;Emberglow Fabric^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

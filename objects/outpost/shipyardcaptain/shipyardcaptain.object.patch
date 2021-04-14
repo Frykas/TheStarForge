@@ -1,0 +1,9 @@
+[
+{
+		"op": "add",
+		"path": "/interactData/items/-",
+		"value": {
+			"item": ["starforge-thalassooutpostteleporter", 1]
+		}
+	}
+]

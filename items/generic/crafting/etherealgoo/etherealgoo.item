@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-etherealgoo",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "etherealgoo.png",
+  "description" : "A strange otherwordly goo. You can hear faint sobbing when holding it.",
+  "shortdescription" : "^orange;Ethereal Goo^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

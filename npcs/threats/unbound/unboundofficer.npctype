@@ -1,0 +1,48 @@
+{
+    "type": "unboundofficer",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundOfficerDeathTreasure"],
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Engage the enemy!",
+                        "Order the captains to get started already!.",
+                        "For the Unbound!",
+                        "The Unbound will ascend and triumph over all!",
+                        "Order sent, preparing the next target",
+                        "We won't go down easily."
+                    ]
+                }
+            }
+        }
+    },
+ 
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundofficerhead"
+                }],
+                "chest": [{
+                    "name": "starforge-unboundofficerchest"
+                }],
+                "legs": [{
+                    "name": "starforge-unboundofficerpants"
+                }],
+                "primary": [
+                    "starforge-unboundofficerpistol", "starforge-unboundofficerpistol2", "starforge-unboundofficerpistol3"
+                ]
+            }]]
+        ]
+    }
+}

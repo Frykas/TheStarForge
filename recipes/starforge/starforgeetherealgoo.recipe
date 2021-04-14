@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 2},
+	{ "item" : "refinedferozium", "count" : 5},
+	{ "item" : "phasematter", "count" : 1},
+	{ "item" : "essence", "count" : 20}
+  ],
+  "output" : {
+    "item" : "starforge-etherealgoo",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

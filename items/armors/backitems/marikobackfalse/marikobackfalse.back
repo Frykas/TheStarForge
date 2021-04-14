@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-marikobackfalse",
+  "price" : 1000,
+  "inventoryIcon" : "marikobackfalseicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "backwear",
+  "description" : "A pair of black sheath made of Durasteel.",
+  "shortdescription" : "Pair of Durasteel sheath",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png"
+
+}

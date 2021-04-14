@@ -1,0 +1,21 @@
+{
+  "projectileName" : "unboundrailbullet",
+  "physics" : "laser",
+  "image" : "unboundrailbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionknockback.config"
+    }
+  ],
+  "lightColor" : [35, 60, 75],
+  "fullbright" : true,
+  "damageKind" : "default",
+  
+  "piercing" : true
+}

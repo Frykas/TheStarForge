@@ -1,0 +1,20 @@
+{
+  "name" : "starforge-bleeding",
+  "effectConfig" : {
+    "minMaxHealth" : 5,
+    "directives" : "fade=960000",
+	"movementMultiplier" : 0.85,
+	"tickDamagePercentage" : 0.015,
+	"tickTime" : 0.5
+  },
+  "defaultDuration" : 3.5,
+
+  "scripts" : [
+    "starforge-bleeding.lua"
+  ],
+
+  "animationConfig" : "starforge-bleeding.animation",
+
+  "label" : "Bleeding",
+  "icon" : "/interface/statuses/absorb.png"
+}

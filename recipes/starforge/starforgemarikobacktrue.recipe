@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "starforge-marikolkatana", "count" : 1 },
+	{ "item" : "starforge-marikorkatana", "count" : 1 },
+	{ "item" : "starforge-marikobackfalse", "count" : 1 },
+	{ "item" : "essence", "count" : 5000}
+  ],
+  "output" : {
+    "item" : "starforge-marikobacktrue",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "backwear" ],
+  "duration" : 2
+}
+

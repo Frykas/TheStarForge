@@ -1,0 +1,9 @@
+{
+  "name" : "jootyfish",
+  "category" : "jootyfish",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "jootyfish.png"
+  }
+}

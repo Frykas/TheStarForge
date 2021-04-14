@@ -1,0 +1,20 @@
+[
+	{
+		"op": "add",
+		"path": "/thalassooutpost",
+		"value": {
+			"primaryDungeon": "thalassooutpost",
+			 "weatherPool" : [
+		[1, "duststorm"]
+		],
+			"threatLevel": 1,
+			"gravity": 80,
+			"biome" : "midnight",
+			"worldSize": [600, 830],
+			"dungeonBaseHeight": 800,
+			"ambientLightLevel": [40, 20, 60],
+			"ambientNoises": "/sfx/environmental/space_loop4.ogg",
+			"musicTrack": "/music/the-eternal-tide.ogg"
+		}
+	}
+]

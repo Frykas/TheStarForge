@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-rubium",
+  "price" : 350,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "rubium.png",
+  "description" : "A Rubium shard, crafted using materials only found deep within a planet.",
+  "shortdescription" : "^pink;Rubium Shard^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

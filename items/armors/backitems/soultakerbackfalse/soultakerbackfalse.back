@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-soultakerbackfalse",
+  "price" : 1000,
+  "inventoryIcon" : "soultakerbackfalseicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "backwear",
+  "description" : "Seriously, who would wear that?",
+  "shortdescription" : "(Empty) Wooden Coffin",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png"
+
+}

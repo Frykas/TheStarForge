@@ -1,0 +1,30 @@
+{
+  "id" : "thalassocreightonquest2",
+  "title" : "^green;The Lost Bucket",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassocreightonquest1" ],
+  "text" : "Urgh, I lost another bucket today. I swear I keep losing stuff since we settled here. Do you think you could get me one? Can't clean much without it.",
+  "completionText" : "You got it? Nice, give it to me, I have some old useless junk that was left in the containers, could be useful for you.",
+  "moneyRange" : [1250, 1250],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-gravediggershovel", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "medievalbucket",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;bucket^reset; to ^green;Creighton^reset;."
+  }
+}

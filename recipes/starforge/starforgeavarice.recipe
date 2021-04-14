@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 7500},
+	{ "item" : "starforge-impervium", "count" : 5},
+	{ "item" : "starforge-infusedtitanium", "count" : 10},
+	{ "item" : "darkwoodmaterial", "count" : 500}
+  ],
+  "output" : {
+    "item" : "starforge-avarice",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

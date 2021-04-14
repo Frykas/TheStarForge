@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-cerulium", "count" : 8 },
+	{ "item" : "starforge-rubium", "count" : 1 },
+	{ "item" : "essence", "count" : 250}
+  ],
+  "output" : {
+    "item" : "starforge-marikolkatana",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

@@ -1,0 +1,57 @@
+{
+  "objectName" : "starforge-loreshop",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/crafting.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Chemist Krythers",
+        "subtitle" : "Can develop blueprints out of rare codices!",
+        "icon" : {
+          "file" : "/interface/SEmerchant/merchanticon.png"
+        }
+      }
+    },
+    "filter" : ["starforge-loreshop"]
+	
+  },
+  "printable" : false,
+  "description" : "The Thalasso's Chemist, believe it or not. He just love books.  ",
+  "shortdescription" : "Kryther's Blueprints",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 5000,
+
+  "apexDescription" : "What a nerdy looking Hylotl.",
+  "avianDescription" : "This Hylotl looks more like a librarian than a chemist.",
+  "floranDescription" : "Hylotl seemssss weak. Floran not interesssted, can't read.",
+  "glitchDescription" : "Interested. This person can develop strong items using old records.",
+  "humanDescription" : "What kind of items could he develop? Better bring him what I find.",
+  "hylotlDescription" : "Surprising to see a fellow Hylotl around. He takes good care of these books.",
+  "novakidDescription" : "Books? How boring ...",
+
+  "inventoryIcon" : "loreshopicon.png",
+  "orientations" : [
+   {
+      "dualImage" : "loreshop.png",
+	  "imageLayers" : [ { "image" : "loreshop.png" }, { "image" : "loreshopfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "anchors" : [ "bottom" ]
+    }
+   
+  ]}
+
+
+
+	
+  
+

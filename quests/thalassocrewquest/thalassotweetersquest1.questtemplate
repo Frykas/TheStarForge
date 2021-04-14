@@ -1,0 +1,30 @@
+{
+  "id" : "thalassotweetersquest1",
+  "title" : "^green;Proof of Strength",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2" ],
+  "text" : "Heya! They say you're strong, but no one is stronger than me! You wanna bet? You're gonna have to prove it, try to gather more ^orange;Sharpened Claws^reset; than I have!",
+  "completionText" : "Woow! Maybe you are strong after all?",
+  "moneyRange" : [500, 500],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "capturepod", 3] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "sharpenedclaw",
+        "count" : 5,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;Sharpened Claws^reset; to ^green;Tweeters^reset;."
+  }
+}

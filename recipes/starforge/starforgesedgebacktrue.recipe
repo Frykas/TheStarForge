@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-undyingfibre", "count" : 15 },
+	{ "item" : "starforge-sedgebackfalse", "count" : 1 },
+	{ "item" : "essence", "count" : 5000}
+  ],
+  "output" : {
+    "item" : "starforge-sedgebacktrue",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "backwear" ],
+  "duration" : 2
+}
+

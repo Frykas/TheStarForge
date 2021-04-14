@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-katahelbackfalse",
+  "price" : 1000,
+  "inventoryIcon" : "katahelbackfalseicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "backwear",
+  "description" : "This old fancy cape is a bit dirty.",
+  "shortdescription" : "Old Glitch lord cape",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png"
+
+}

@@ -1,0 +1,55 @@
+{
+  "objectName" : "starforge-weaponforge",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/crafting.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Mechanic Rondin",
+        "subtitle" : "Crafting genius, will gladly help you make powerful weapons.",
+        "icon" : {
+          "file" : "/interface/SEmerchant/merchanticon.png"
+        }
+      }
+    },
+    "filter" : ["starforge-weaponshop"]
+	
+  },
+  "printable" : false,
+  "description" : "The Thalasso's Mechanic. A Glitch that somehow bypassed the glitch of his species. ",
+  "shortdescription" : "Rondin's Crafting Table",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 5000,
+  
+  "offeredQuests" : ["thalassointromission3", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3"],
+  "turnInQuests" : ["thalassointromission2", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3"],
+
+  "apexDescription" : "It's surprising to see a glitch that smart. I wonder how he became like that.",
+  "avianDescription" : "This Glitch sure knows how to make cool things!",
+  "floranDescription" : "Floran wondersss if the Mechanic ssstrong.",
+  "glitchDescription" : "Surprised. This person doesn't feel like a Glitch at all. ",
+  "humanDescription" : "This guy sure is surprising, he knows how to make strong weapons with Ancient Essence. ",
+  "hylotlDescription" : "A very talented Glitch. It's refreshing to see one like that.",
+  
+
+  "inventoryIcon" : "weaponforgeicon.png",
+  "orientations" : [
+   {
+      "dualImage" : "weaponforge.png:<frame>",
+      "imageLayers" : [ { "image" : "weaponforge.png:<frame>" }, { "image" : "weaponforgefullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 5,
+      "animationCycle" : 8.0,
+      "anchors" : [ "bottom" ]
+    }
+   
+  ]}

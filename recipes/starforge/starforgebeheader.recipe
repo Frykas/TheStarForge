@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 7500}
+  ],
+  "output" : {
+    "item" : "starforge-beheader",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

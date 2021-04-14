@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-ancientcore",
+  "price" : 900,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ancientcore.png",
+  "description" : "This Ancient Core lost its power source a long time ago.",
+  "shortdescription" : "^pink;Dormant Ancient Core^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

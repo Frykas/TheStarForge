@@ -1,0 +1,73 @@
+{
+  "objectName" : "starforge-thalassoceilinglight",
+  "colonyTags" : ["light"],
+  "rarity" : "Common",
+  "description" : "A Thalasso Ceiling light. Fancy.",
+  "shortdescription" : "Thalasso Ceiling Light",
+  "race" : "generic",
+
+  "category" : "light",
+  "price" : 90,
+  "lightColor" : [182, 255, 159],
+  "pointLight" : true,
+  "pointBeam" : 2,
+  "beamAmbience" : 0.3,
+
+  "apexDescription" : "This glowing geode has been fitted inside.",
+  "avianDescription" : "I've seen many crystal powered lights, but this one definitely isn't Avian in design.",
+  "floranDescription" : "Glowing rockss make hanging light.",
+  "glitchDescription" : "Amazed. Somehow this fixture is able to trigger this geode's natural light electronically.",
+  "humanDescription" : "The natural luminescence from this geode has been constructed into a lamp.",
+  "hylotlDescription" : "This light is an interesting synthesis of nature and modern manufacturing.",
+  "novakidDescription" : "A lamp made outta green glowin' rocks.",
+
+  "inventoryIcon" : "thalassoceilinglighticon.png",
+  "orientations" : [
+    {
+      "image" : "thalassoceilinglight.png:<color>.<frame>",
+      "imagePosition" : [-12, 0],
+      "animationParts" : {
+        "bg" : "thalassoceilinglight.png",
+        "fg" : "thalassoceilinglightlit.png"
+      },
+      "animationPosition" : [-12, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "lightPosition" : [0, -1],
+      "beamAngle" : 270
+    },
+    {
+      "image" : "thalassoceilinglight.png:<color>.<frame>",
+      "imagePosition" : [-12, 0],
+      "animationParts" : {
+        "bg" : "thalassoceilinglight.png",
+        "fg" : "thalassoceilinglightlit.png"
+      },
+      "animationPosition" : [-12, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "lightPosition" : [0, -1],
+      "beamAngle" : 270
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "thalassoceilinglight.png",
+    "fg" : "thalassoceilinglightlit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

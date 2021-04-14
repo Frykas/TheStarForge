@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-etherealgoo", "count" : 12 },
+	{ "item" : "leather", "count" : 16 },
+	{ "item" : "essence", "count" : 1000}
+  ],
+  "output" : {
+    "item" : "starforge-soultakerchest",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "armours" ],
+  "duration" : 2
+}
+

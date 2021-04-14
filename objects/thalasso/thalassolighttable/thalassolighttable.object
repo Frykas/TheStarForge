@@ -1,0 +1,58 @@
+{
+  "objectName" : "starforge-thalassolighttable",
+  "colonyTags" : ["commerce","wave"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A round table with a lamp on it.",
+  "shortdescription" : "Thalasso Light Table",
+  "race" : "generic",
+  "category" : "light",
+  "price" : 145,
+
+  "apexDescription" : "A sleek table.",
+  "avianDescription" : "This table has a lamp in it!.",
+  "floranDescription" : "Table good enough for Floran to ssslice meatsss.",
+  "glitchDescription" : "Approving. A very well-made table.",
+  "humanDescription" : "A cool table.",
+  "hylotlDescription" : "An incredible table.",
+  "novakidDescription" : "A good ol' table.",
+
+  "lightColor" : [182, 255, 159],
+
+  "inventoryIcon" : "thalassolighttableicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "thalassolighttable.png:<color>",
+
+      "imagePosition" : [-16, 0],
+	  "animationPosition" : [-16, 0],
+      "frames" : 2,
+      "animationCycle" : 1.0,
+	  "spaces" : [ [-1, 0], [0,0], [1,0], [0,1], [0,2], [-2,1], [-1,1], [0,1], [1,1], [2,1] ],
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "collisionSpaces" : [[-2,1], [-1,1], [0,1], [1,1], [2,1]  ]
+    }
+  ],
+    "animation" : "thalassolighttable.animation",
+  "animationParts" : {
+    "bg" : "thalassolighttable.png",
+    "fg" : "thalassolighttablelit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/oillantern_on.ogg" ],
+      "off" : [ "/sfx/objects/oillantern_off.ogg" ]
+    }
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+
+}
+

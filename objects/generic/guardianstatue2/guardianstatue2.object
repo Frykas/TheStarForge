@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-guardianstatue2",
+  "colonyTags" : ["ancient","light","pretty"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "price" : 0,
+  "printable" : true,
+  "lightColor" : [36, 159, 184],
+
+  "description" : "An ancient Guardian serving as a statue.",
+  "shortdescription" : "Guardian Statue",
+  "race" : "ancient",
+
+  "apexDescription" : "The shield is part physical and part hologram, amazing.",
+  "avianDescription" : "This statue reminds me of the Stargazer guards.",
+  "floranDescription" : "Glowing ssshield ... Boring.",
+  "glitchDescription" : "Observant. This statue has been here for a long time.",
+  "humanDescription" : "These statues sure love being creepy and imposing.",
+  "hylotlDescription" : "What a beautiful statue, representing a Guardian. It was made to be durable.",
+  "novakidDescription" : "What an ol' and dirty statue. Lookin' creepy tho.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "guardianstatue2.png:<color>.<frame>",
+      "renderLayer" : "Object+1",
+      "imagePosition" : [-32, 0],
+      "frames" : 2,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

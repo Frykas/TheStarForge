@@ -1,0 +1,11 @@
+{
+  "name" : "starforge-morehealthmoredamage",
+  "blockingStat" : "fireStatusImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.01,
+
+  "scripts" : [
+    "starforge-morehealthmoredamage.lua"
+  ]
+}

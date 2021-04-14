@@ -1,0 +1,151 @@
+{
+  "itemName" : "starforge-avarice",
+  "price" : 3000,
+  "inventoryIcon" : "starforge-avarice.png:reload.1",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A heavy underslung bowgun, capable of firing bolts at incredibly high speeds.",
+  "shortdescription" : "Hunter's Avarice",
+  "level" : 7,
+  "tooltipKind" : "base",
+  "category" : "Bowgun",
+  "itemTags" : ["weapon","ranged","bowgun"],
+  "twoHanded" : true,
+
+  "animation" : "starforge-avarice.animation",
+  "animationParts" : {
+    "gun" : "starforge-avarice.png",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ]
+    },
+    "particleEmitters" : {
+      "ammoIndicator" : {
+        "active" : false,
+        "emissionRate" : 8,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [-1.375, -0.25, -1.375, -0.25],
+        "particles" : [
+          { "particle" : "daggerblue"},
+          { "particle" : "daggerblue"},
+          { "particle" : "daggerblue"}
+        ]
+      }
+    }
+  },
+
+  "baseOffset" : [1.125, -0.875],
+  "muzzleOffset" : [2.5, 0.25],
+  
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-bowgunfire.lua"],
+    "class" : "StarForgeBowGunFire",
+
+    "fireTime" : 0.625,
+    "baseDps" : 11,
+    "energyUsage" : 30,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 1,
+
+    "burstCount" : 3,
+    "burstTime" : 0.2875,
+    "fireType" : "burst",
+	
+	"animatedFire" : true,
+
+    "projectileType" : "woodenbolt",
+    "projectileParameters" : {
+      "speed" : 135,
+      "knockback" : 10
+    },
+
+    "stances" : {
+      "idle" : {
+		"frontArmFrame": "idle.3",
+		"backArmFrame": "fall.1",
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+		"frontArmFrame": "idle.3",
+		"backArmFrame": "fall.1",
+		"weaponOffset" : [-0.125, 0],
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+		
+      },
+      "cooldown" : {
+		"frontArmFrame": "idle.3",
+		"backArmFrame": "fall.1",
+        "duration" : 0.4,
+        "armRotation" : 7,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Load Impervium Bolt",
+    "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadalternateammo.lua"],
+    "class" : "StarForgeLoadAlternateAmmo",
+
+	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+	
+	//The new stats which will overwrite the primary ability
+	"newAbility" : {
+	  "projectileType" : "starforge-imperviumbolt",
+	  "projectileParameters" : {
+		"speed" : 200,
+		"knockback" : 25
+	  },
+	  
+	  "projectileCount" : 1,
+	  
+	  "fireType" : "auto",
+	
+      "baseDps" : 15.0,	
+      "fireTime" : 2,
+      "energyUsage" : 50,
+      "inaccuracy" : 0.0
+	},
+
+    "stances" : {
+      "load" : {
+		"frontArmFrame": "idle.3",
+		"backArmFrame": "fall.1",
+        "aimAngle" : 0,
+        "armRotation" : -7,
+        "weaponRotation" : 60,
+        "weaponAngularVelocity" : -150,
+        "armAngularVelocity" : 100,
+        "twoHanded" : true,
+        "duration" : 0.4,
+  
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

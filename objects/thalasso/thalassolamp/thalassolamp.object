@@ -1,0 +1,50 @@
+{
+  "objectName" : "starforge-thalassolamp",
+  "colonyTags" : ["generic","light"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 60,
+  "lightColor" : [182, 255, 159],
+
+  "shortdescription" : "Thalasso Lamp",
+  "description" : "A small lamp that gives off a low green light.",
+
+  "apexDescription" : "I wonder what this lamp is made of?",
+  "avianDescription" : "This looks similar in concept to Avian crystal lamps.",
+  "floranDescription" : "Shiny, glowing lamp.",
+  "glitchDescription" : "Intrigued. I wonder how such lamps are made?",
+  "humanDescription" : "It looks a little like the kind of lamps we make. I wonder what it's made of?",
+  "hylotlDescription" : "This lamp resemble the ones we have. It gives off a very atmospheric light.",
+  "novakidDescription" : "A lamp. It's okay.",
+
+  "inventoryIcon" : "thalassolampicon.png",
+  "orientations" : [
+    {
+      "image" : "thalassolamp.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "thalassolamp.png",
+    "fg" : "thalassolamplit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

@@ -1,0 +1,48 @@
+{
+    "type": "unboundsnipercaptain",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundSniperCaptainDeathTreasure"],
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Engage the enemy!",
+                        "Unit 2 and 3, moving.",
+                        "For the Unbound!",
+                        "The Unbound will ascend and triumph over all!",
+                        "Order received, target in sight.",
+                        "I won't go down easily."
+                    ]
+                }
+            }
+        }
+    },
+ 
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundsnipercaptainhead"
+                }],
+                "chest": [{
+                    "name": "starforge-unboundsnipercaptainchest"
+                }],
+                "legs": [{
+                    "name": "starforge-unboundsnipercaptainpants"
+                }],
+                "primary": [
+                    "starforge-unboundcptsniper"
+                ]
+            }]]
+        ]
+    }
+}

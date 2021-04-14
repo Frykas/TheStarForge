@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-impervium", "count" : 6 },
+	{ "item" : "starforge-infusedtitanium", "count" : 7 },
+	{ "item" : "essence", "count" : 800}
+  ],
+  "output" : {
+    "item" : "starforge-katahelgreaves",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "armours" ],
+  "duration" : 2
+}
+

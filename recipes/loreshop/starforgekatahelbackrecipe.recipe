@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-katahelstory1-codex", "count" : 1},
+	{ "item" : "starforge-katahelstory2-codex", "count" : 1},
+	{ "item" : "starforge-katahelstory3-codex", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-katahelbacktrue-recipe",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "weapons" ],
+  "duration" : 2
+}
+

@@ -1,0 +1,30 @@
+{
+  "id" : "thalassorondinquest3",
+  "title" : "^green;Solarium for Days",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassorondinquest1", "thalassorondinquest2" ],
+  "text" : "One last request, we're missing some ^orange;Solarium Ore^reset; to craft a bunch of items using the Starforge, if you could bring me some that'd be nice, in exchange I have a blueprint for an old weapon of mine, I'm sure you'll love it.",
+  "completionText" : "I'm glad you're here, this is all we needed. Here, take this blueprint. It's an old weapon I made a long time ago to help the Captain slay a powerful enemy. I'm sure it'll be of good use with you.",
+  "moneyRange" : [750, 750],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-avarice-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "solariumore",
+        "count" : 250,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;Solarium Ore^reset; to ^green;Rondin^reset;."
+  }
+}

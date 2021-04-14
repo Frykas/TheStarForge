@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-creightonhead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "Creighton's favorite headband.",
+  "shortdescription" : "Creighton's Headband",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

@@ -1,0 +1,85 @@
+{
+  "objectName" : "starforge-thalassoshop",
+  "rarity" : "Legendary",
+  "colonyTags" : ["commerce"],
+  "price" : 8500,
+  "printable" : false,
+  "description" : "Buy your favorite Thalasso themed furniture here!",
+  "shortdescription" : "Thalasso Furniture Shop",
+  "race" : "generic",
+
+  "apexDescription" : "I can buy Thalasso furniture here.",
+  "avianDescription" : "This console is where I can buy Thalasso furniture!",
+  "floranDescription" : "Floran can buy furniture here.",
+  "glitchDescription" : "Interested. This console can sell Thalasso furniture.",
+  "humanDescription" : "I can buy Thalasso furniture here. Cool.",
+  "hylotlDescription" : "I can purchase Thalasso furniture at this console. Perfect.",
+  "novakidDescription" : "Thalasso furniture are purchasable here.",
+  
+"interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Thalasso Shop",
+        "subtitle" : "Furniture themed after the Thalasso!",
+		 
+		 "imgPlayerMoneyIcon" : {
+        "visible" : false
+      },
+      "lblPlayerMoney" : {
+        "visible" : false
+      }
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.2,
+    "items" : [
+      { "item" : "starforge-coveredcontainer" },
+	  { "item" : "starforge-coveredcrates" },
+	  { "item" : "starforge-thalassotable" },
+	  { "item" : "starforge-thalassoplate" },
+	  { "item" : "starforge-thalassoplant" },
+	  { "item" : "starforge-thalassomonitor" },
+	  { "item" : "starforge-thalassolighttable" },
+	  { "item" : "starforge-thalassolantern"},
+	  { "item" : "starforge-thalassolamp"},
+	  { "item" : "starforge-thalassocup"},
+	  { "item" : "starforge-thalassocounter"},
+	  { "item" : "starforge-thalassocouch"},
+	  { "item" : "starforge-thalassocookingtable"},
+	  { "item" : "starforge-thalassochair"},
+	  { "item" : "starforge-thalassoceilinglight"},
+	  { "item" : "starforge-thalassobeds"},
+	  { "item" : "starforge-morpheushelmet"},
+	  { "item" : "starforge-marikokatanarack"},
+	  { "item" : "starforge-marikobed"}
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "thalassoshop.png:<color>",
+	  "imageLayers" : [ { "image" : "thalassoshop.png" }, { "image" : "thalassoshopfullbright.png", "fullbright" : true } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 2.0,
+
+	  "spaceScan" : 0.1,
+      "interactiveSpaces" : [
+        [3, 3], [4, 3],
+        [3, 2], [4, 2],
+        [3, 1], [4, 1],
+        [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+	]
+}
+
+    
+	
+  

@@ -1,0 +1,38 @@
+{
+  "projectileName" : "starforge-dualitypoisonrocket",
+  "image" : "dualitypoisonrocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "fallSpeed" : 0,
+  "lightColor" : [67, 110, 32],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/poisonexplosionknockback.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "poisonplasmarocket", "poisondrip" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 1.0,
+  "acceleration" : 150,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "poisonplasma",
+
+  "scripts" : ["/projectiles/scripts/starforge-homingbullet-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.25,
+  "waveAmplitude" : 0.125,
+  
+  //Homing
+  "homingStyle" : "rotateToTarget",
+  "searchRadius" : 45,
+  "rotationRate" : 1.0,
+  "trackingLimit" : 1.5
+}

@@ -1,0 +1,31 @@
+{
+  "id" : "thalassostrelisupply",
+  "title" : "^green;Strelitzia's Supply",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2" ],
+  "text" : "Streli very hungry... But Elana sssaid no more food today... Hey! If you bring food to Streli, Streli will trade something ussseful! Trussst!",
+  "completionText" : "You got the food ! Gimme gimme gimme !",
+  "moneyRange" : [100, 100],
+  "ephemeral" : true,
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "alienmeat",
+        "count" : 3,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;steaks^reset; to ^green;Strelitzia^reset;."
+  }
+}

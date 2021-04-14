@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-emberfabric", "count" : 4 },
+	{ "item" : "starforge-infusedtitanium", "count" : 8 },
+	{ "item" : "essence", "count" : 1000}
+  ],
+  "output" : {
+    "item" : "starforge-marikopants",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "armours" ],
+  "duration" : 2
+}
+

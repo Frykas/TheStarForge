@@ -1,0 +1,33 @@
+{
+  "id" : "thalassointromission2",
+  "prerequisites" : [ "thalassointromission1" ],
+  "title" : "^#b4f5c3;Meeting the Thalasso",
+  "text" : "Hey there. I'm Morpheus, I'll be replacing ^cornflowerblue;Mariko^reset; while she's away on an important mission. Welcome to the Thalasso outpost. You may be wondering why you're here eh? Well the Captain think it may be smart to let you use our ^magenta;Starforge^reset;. What is it you're wondering? I'll let our ^green;Mechanic Rondin^reset; do the explaining. ",
+ "completionText" : "So here you are. ^cornflowerblue;Mariko^reset; told me you'd come. I'm ^green;Rondin^reset;, and I'm the Mechanic of the Thalasso, and I'm the one who discovered the ^magenta;Starforge^reset;.",
+  "moneyRange" : [150, 150],
+  "rewards" : [
+    [ [ "titaniumbar", 10 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "I should go and meet ^orange;Rondin^reset; now."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "type" : "starforge-will",
+  "baseType" : "merchant",
+
+  "identity" : {
+    "name" : "Will",
+    "species" : "novakid",
+	"seed" : "6559",
+	"facialHairType":"8",
+	"facialHairGroup":"brand",
+    "hairGroup" : "hair",
+    "hairType" : "male1",
+	"facialHairDirectives":"?replace;fde03f=feb05c;fff8b5=ffedc4;806319=40110a;f6b919=fa8131",
+	"bodyDirectives":"?replace;fde03f=feb05c;fff8b5=ffedc4;806319=40110a;f6b919=fa8131?replace;dc1f00=85ccf5;951500=36627c;be1b00=558db2;f32200=d4fdff",
+	"hairDirectives":"?replace;fde03f=feb05c;fff8b5=ffedc4;806319=40110a;f6b919=fa8131",
+    "gender" : "male"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+	  "merchant" : {
+		"categories" : {
+		  "override" : [ "starforge-willmerchant" ]
+		},
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.4, 0.4 ],
+      "numItems" : 27,
+      "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Tailor Will",
+        "subtitle" : "You want to look cool? He's the man!"}
+		}
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "What ya wanna buy?",
+              "Got somethin' ya want?",
+              "I've got good stuff, made all by myself."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Yeah come back when you have style.",
+              "Ya better be lookin' good when we talk again.",
+              "Sorry to disappoint, you can't look as cool as me."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "The drip? You want it? Follow me.",
+              "Wanna buy somethin' ? Follow me."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Have you seen Pepperbox somewhere? Oh I'm holding it.",
+              "So ya wanna look cool or not?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Why would I be possessed by a ... Skeletron? Because I'm a tailor? Did Strelitzia make a joke again?",
+              "The drip? Of course I've heard of it, I bath in it since birth."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "starforge-willhead"}
+            ],
+            "chest" : [
+              { "name" : "starforge-willchest" }
+            ],
+            "legs" : [
+              { "name" : "starforge-willpants" }
+            ],
+			"primary" : [
+			  { "name" : "starforge-pepperbox" }
+			]
+            
+          }
+      ]]
+    ]
+  }
+  }
+
+
+

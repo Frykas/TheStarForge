@@ -1,0 +1,40 @@
+{
+  "objectName" : "starforge-thalassochair",
+  "colonyTags" : ["misc","wave"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A very comfortable chair.",
+  "shortdescription" : "Thalasso Chair",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 105,
+
+  "apexDescription" : "A very comfortable chair, a pleasure to sit in.",
+  "avianDescription" : "A highly decent place to sit.",
+  "floranDescription" : "Floran sssit on chair and think about hunting.",
+  "glitchDescription" : "Relaxed. This chair is exceptionally comfortable for the Glitch.",
+  "humanDescription" : "A very strange shaped chair. It's very comfortable though.",
+  "hylotlDescription" : "Almost the luxury Hylotl are used to. There's plenty of satisfaction to be gained here.",
+  "novakidDescription" : "I can rest a spell in this chair.",
+
+  "inventoryIcon" : "thalassochairicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "thalassochair.png:<color>",
+      "imageLayers" : [ { "image" : "thalassochair.png" }, { "image" : "thalassochairfullbright.png", "fullbright" : true } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [2, 22]
+
+}

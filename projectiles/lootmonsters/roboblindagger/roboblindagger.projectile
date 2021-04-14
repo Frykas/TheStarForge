@@ -1,0 +1,23 @@
+{
+  "projectileName" : "starforge-roboblindagger",
+  "image" : "roboblindagger.png",
+  "physics" : "grenade",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "statusEffects" : [ "starforge-bleeding" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 350.0,
+  "speed" : 30,
+  "damageKind" : "bow",
+  "emitters" : [ "daggerblue" ],
+  "damagePoly" : [ [-12, -1], [14, -1], [14, 3], [-12, 3] ],
+  
+  "renderLayer" : "Monster+50"
+}

@@ -1,0 +1,67 @@
+{
+  "type" : "starforge-tweeters",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Tweeters",
+    "species" : "avian",
+	"facialHairType":"10",
+	"facialHairGroup":"fluff",
+    "hairGroup" : "hair",
+    "hairType" : "14",
+	"bodyDirectives":"?replace;ffca8a=deeded;6f2919=6f807e;dc1f00=d7e8e8;a38d59=c1a24e;f32200=f6fbfb;e0975c=c5d8d8;d9c189=eacf60;be1b00=8fa7a3;a85636=96aba9;951500=5d6d69;735e3a=977841",
+	"facialHairDirectives":"?replace;ffca8a=d18bd5;6f2919=693367;dc1f00=d7e8e8;a38d59=c5813e;f32200=f6fbfb;e0975c=a766bc;d9c189=efad56;be1b00=8fa7a3;a85636=814797;951500=5d6d69;735e3a=9b6638",
+	"hairDirectives":"?replace;ffca8a=deeded;6f2919=6f807e;dc1f00=d7e8e8;a38d59=c1a24e;f32200=f6fbfb;e0975c=c5d8d8;d9c189=eacf60;be1b00=8fa7a3;a85636=96aba9;951500=5d6d69;735e3a=977841",
+    "gender" : "female"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "offeredQuests" : ["thalassotweetersquest1", "thalassotweetersquest2", "thalassotweetersquest3"],
+    "turnInQuests" : ["thalassotweetersquest1", "thalassotweetersquest2", "thalassotweetersquest3"],
+    "behavior" : "villager",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hello stranger!!",
+            "Don't listen to Will he's lying, I never miss my shots hehe.",
+            "I have an amazing figurine collection! I'd show it to you, but I forgot them on the ship and the Captain is elsewhere with it!",
+			"I can lift the crates outside all alone! I could probably lift you too!",
+			"Cres aerf? Sorry, brain fart.",
+            "Creighton is really mean sometimes, not all Avians are dumb!!",
+			"Elana says I'm pretty!!! She's always right, trust her!"
+          ]
+        }
+      }
+
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-bunnybeanie"
+                }],
+                "chest": [{
+                    "name": "starforge-tweeterschest"
+                }],
+                "legs": [{
+                    "name": "starforge-tweeterspants"
+                }]
+            }]]
+        ]
+    }
+}

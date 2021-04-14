@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-morpheushead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "A helmet designed for space exploration. It belongs to Morpheus, but he seems to rarely wear it.",
+  "shortdescription" : "Morpheus' Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

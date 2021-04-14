@@ -1,0 +1,82 @@
+{
+  "objectName" : "starforge-thalassolantern",
+  "colonyTags" : ["light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 20,
+
+  "description" : "A bio lantern made with a plant that originates from an ocean world.",
+  "shortdescription" : "Thalasso Lantern",
+  "race" : "generic",
+  "printable" : false,
+
+  "apexDescription" : "A lantern using a plant to shine.",
+  "avianDescription" : "This lantern doesn't seem to be using any fuel.",
+  "floranDescription" : "Lantern hasss no flame. Floran sssafe.",
+  "glitchDescription" : "Observant. This lantern shines brightly.",
+  "humanDescription" : "A cool lantern.",
+  "hylotlDescription" : "This lantern is really pretty and well made.",
+  "novakidDescription" : "A lantern.",
+
+  "statusEffects" : [ ],
+
+  "lightColor" : [182, 255, 159],
+
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "thalassolanternicon.png",
+  "orientations" : [
+
+    {
+      "image" : "thalassolantern.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "fgAnchors" : [ [0, -1] ]
+    },
+
+    {
+      "image" : "thalassolantern.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "bgAnchors" : [ [0, 1] ]
+    },
+
+    {
+      "image" : "thalassolantern.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "bgAnchors" : [ [0, 0] ]
+    }
+  ],
+
+  "animation" : "thalassolantern.animation",
+  "animationParts" : {
+    "bg" : "thalassolantern.png",
+    "fg" : "thalassolanternlit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/oillantern_on.ogg" ],
+      "off" : [ "/sfx/objects/oillantern_off.ogg" ]
+    }
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+
+}

@@ -1,0 +1,136 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+      "weapon" : {
+        "default" : "loaded",
+        "states" : {
+          "unloaded" : {
+            "frames" : 1,
+            "cycle" : 1,
+            "mode" : "loop"
+          },
+          "reload" : {
+            "frames" : 4,
+            "cycle" : 0.225,
+            "mode" : "transition",
+            "transition" : "loaded",
+            "properties" : {
+              "immediateSound" : "/sfx/gun/starforge_bowgundraw.ogg"
+            }
+          },
+          "loaded" : {
+            "frames" : 1,
+            "cycle" : 1,
+            "mode" : "loop"
+          },
+          "fire" : {
+            "frames" : 1,
+            "cycle" : 0.05,
+            "mode" : "transition",
+            "transition" : "reload"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0, -0.875], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "weapon" : {
+            "unloaded" : {
+              "properties" : {
+                "image" : "<partImage>:reload.1<paletteSwaps>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame><paletteSwaps>"
+              }
+            },
+            "loaded" : {
+              "properties" : {
+                "image" : "<partImage>:loaded<paletteSwaps>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire<paletteSwaps>"
+              }
+            }
+          }
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.75, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [90, 90, 0]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ "/sfx/gun/starforge_bowgunfire.ogg" ]
+  }
+}

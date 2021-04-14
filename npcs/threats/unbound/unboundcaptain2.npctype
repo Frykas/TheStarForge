@@ -1,0 +1,49 @@
+{
+    "type": "unboundcaptain2",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundCaptain2DeathTreasure"],
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Engage the enemy!",
+                        "Unit 2 and 3, moving.",
+                        "For the Unbound!",
+                        "The Unbound will ascend and triumph over all!",
+                        "Order received, target in sight.",
+                        "I won't go down easily."
+                    ]
+                }
+            }
+        }
+    },
+ 
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundcaptain2head"
+                }],
+                "chest": [{
+                    "name": "starforge-unboundcaptain2chest"
+                }],
+                "legs": [{
+                    "name": "starforge-unboundcaptain2pants"
+                }],
+                "primary": [
+                    "starforge-unboundcptsmg"
+                ],
+				 "alt" : [ "starforge-unboundcptsmg" ]
+            }]]
+        ]
+    }
+}
