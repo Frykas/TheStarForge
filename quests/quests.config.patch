@@ -8,6 +8,6 @@
   },
   { "op" : "add",
 	"path" : "/objectiveDescriptions/nebStarforgeKillMonsterWithWeapon",
-	"value" : "Kill<monsterName><itemName>: <current> / <required>"
+	"value" : "Kill <monsterName><itemName>: <current> / <required>"
   }
 ]
