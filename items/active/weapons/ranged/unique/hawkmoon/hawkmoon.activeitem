@@ -3,7 +3,7 @@
   "price" : 3000,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "With each shot, a deafening shriek. Kills people pretty ok.",
+  "description" : "With each shot, a deafening shriek.",
   "shortdescription" : "Hawkmoon",
   "level" : 7,
   "tooltipKind" : "base",
