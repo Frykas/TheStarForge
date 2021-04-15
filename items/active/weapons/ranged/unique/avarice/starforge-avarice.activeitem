@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "A heavy underslung bowgun, capable of firing bolts at incredibly high speeds.",
-  "shortdescription" : "Hunter's Avarice",
+  "shortdescription" : "^#b4f5c3;Hunter's Avarice^reset;",
   "level" : 7,
   "tooltipKind" : "base",
   "category" : "Bowgun",

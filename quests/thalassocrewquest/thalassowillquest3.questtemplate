@@ -1,0 +1,30 @@
+{
+  "id" : "thalassowillquest3",
+  "title" : "^green;Not Satisfied?",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassowillquest1", "thalassowillquest2" ],
+  "text" : "Why are ya still here? I made ya somethin' fancy and you're still not satisfied? Talk about being annoying. I know, stop staring at Pepperbox like that it's awkward. Listen, I can make ya a blueprint for it, but ya better bring me somethin' amazing, like a ^orange;Dragonhead Pistol^reset; for example haha! ",
+  "completionText" : "I can't believe ya actually did it. What kind of crazy dude are ya to bring me somethin' this rare? Here, take this blueprint. But ya better treat it well!",
+  "moneyRange" : [1200, 1200],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-pepperbox-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "dragonhead",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;Dragonhead Pistol^reset; to ^green;Will^reset;."
+  }
+}

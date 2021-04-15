@@ -1,0 +1,30 @@
+{
+  "id" : "thalassowillquest2",
+  "title" : "^green;A Dept to Pay",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassowillquest1" ],
+  "text" : "Ya helped get my revenge, I owe you that. If ya bring me some materials, I can give ya somethin' in return, how does that sound ? Y'know I'm a Tailor, so bring me some ^orange;Woven Fabric^reset;.",
+  "completionText" : "Well well well. That's some nice fabric ya bring me. Here, take this. it's not much but I made it with what was available here. it's ^cornflowerblue;Mariko^reset;'s favorite instrument.",
+  "moneyRange" : [200, 200],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "ocarina", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "fabric",
+        "count" : 25,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;Woven Fabric^reset; to ^green;Will^reset;."
+  }
+}
