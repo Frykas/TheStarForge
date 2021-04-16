@@ -6,31 +6,28 @@
         "default" : "idle",
         "states" : {
           "idle" : {
-            "frames" : 1
-          },
-          "walk" : {
-            "frames" : 12,
-            "cycle" : 0.5,
+            "frames" : 6,
+            "cycle" : 0.9,
             "mode" : "loop"
           },
-          "fall" : {
-            "frames" : 1
-          },
-          "chargewindup" : {
+          "fly" : {
             "frames" : 6,
-            "cycle" : 0.35
+            "cycle" : 0.6,
+            "mode" : "loop"
           },
-          "charge" : {
-            "frames" : 6,
-            "cycle" : 0.25,
-            "mode" : "loop",
+          "firewindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
             "properties" : {
-              "immediateSound" : "/sfx/npc/monsters/crustoise_charge.ogg"
+              "immediateSound" : "/sfx/npc/monsters/wisper_windup1.ogg"
             }
           },
-          "chargewinddown" : {
-            "frames" : 6,
-            "cycle" : 0.35
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "properties" : {
+              "immediateSound" : "/sfx/projectiles/blast_small_fire1.ogg"
+            }
           }
         }
       },
@@ -71,39 +68,29 @@
     "parts" : {
       "body" : {
         "properties" : {
-          "transformationGroups" : [ "facing", "body" ],
-          "offset" : [0.0, 1.25]
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, 0.125]
         },
         "partStates" : {
           "body" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:fly.<frame>"
               }
             },
-            "walk" : {
+            "fly" : {
               "properties" : {
-                "image" : "<partImage>:walk.<frame>"
+                "image" : "<partImage>:fly.<frame>"
               }
             },
-            "fall" : {
-              "properties" : {
-                "image" : "<partImage>:fall.<frame>"
-              }
-            },
-            "chargewindup" : {
+            "firewindup" : {
               "properties" : {
                 "image" : "<partImage>:windup.<frame>"
               }
             },
-            "charge" : {
+            "fire" : {
               "properties" : {
-                "image" : "<partImage>:charge.<frame>"
-              }
-            },
-            "chargewinddown" : {
-              "properties" : {
-                "image" : "<partImage>:winddown.<frame>"
+                "image" : "<partImage>:fire.<frame>"
               }
             }
           },
@@ -120,8 +107,7 @@
   },
 
   "transformationGroups" : {
-    "body" : { "interpolated" : true },
-    "facing" : { "interpolated" : false }
+    "body" : { "interpolated" : true }
   },
 
   "effects" : {
@@ -133,17 +119,35 @@
   },
 
   "particleEmitters" : {
+    "flames" : {
+      "active" : true,
+      "emissionRate" : 5.0,
+      "offsetRegion" : [-0.5, -0.5, 0.5, 0.5],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "size" : 1.5,
+            "color" : [255, 153, 145],
+            "fade" : 0.9,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.8,
+            "position" : [0.0, 0.0],
+            "offsetRegion" : [0, 0, 0, 0],
+            "initialVelocity" : [0, -5.0],
+            "finalVelocity" : [0, -10],
+            "approach" : [0, 10],
+            "timeToLive" : 0.6,
+            "variance" : {
+              "initialVelocity" : [0.2, 0],
+              "size" : 0.5
+            }
+          }
+        }
+      ]
+    },
     "deathPoof" : {
       "particles" : [
-        { "particle" : "monstersplosion" },
-        { "particle" : "deathember" },
-        { "particle" : "deathember" },
-        { "particle" : "deathember" },
-        { "particle" : "deathember" },
-        { "particle" : "deathember" },
-        { "particle" : "deathember" },
-        { "particle" : "deathember" },
-        { "particle" : "deathember" },
         { "particle" : "deathfizz1left" },
         { "particle" : "deathfizz1right" },
         { "particle" : "deathfizz2left" },
@@ -183,7 +187,6 @@
 
   "sounds" : {
     "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
-    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
-    "wallCrash" : [ "/sfx/npc/monsters/peblit_drop1.ogg" ]
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ]
   }
 }
