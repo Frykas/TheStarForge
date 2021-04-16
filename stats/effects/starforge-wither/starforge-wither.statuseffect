@@ -1,0 +1,19 @@
+{
+  "name" : "starforge-wither",
+  "blockingStat" : "poisonStatusImmunity",
+
+  "effectConfig" : {
+    "decayRate" : 0.065
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "starforge-wither.lua"
+  ],
+
+  "animationConfig" : "starforge-wither.animation",
+
+  "label" : "Your armor is withering away!",
+  "icon" : "/interface/statuses/starforge-wither.png"
+}
+	

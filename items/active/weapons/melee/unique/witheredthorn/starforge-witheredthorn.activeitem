@@ -1,0 +1,393 @@
+{
+  "itemName" : "starforge-witheredthorn",
+  "price" : 1500,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "A spear fashioned with the withered roots of an ancient tree, capable to decaying its foes.",
+  "shortdescription" : "Withered Thorn",
+  "tooltipKind" : "base",
+  "category" : "Spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","floran"],
+
+  "inventoryIcon" : "starforge-witheredthorn.png",
+  
+  "animation" : "starforge-witheredthorn.animation",
+  "animationParts" : {
+    "blade" : "starforge-witheredthorn.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire5" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire6" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire7" : [ "/sfx/melee/swing_hammer.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "baseDps" : 9.5,
+	
+	"comboSteps" : 7,
+	
+	"swooshOffsetRegions" : [
+      [1.5, -1.0, 5.5, 1.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [0.75, 0.0, 4.25, 5.0]
+    ],
+	
+	"damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ "starforge-wither" ],
+      "knockbackMode" : "aim",
+      "timeout" : 0.25
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 0.85,
+		"damageSourceKind" : "spear",
+        "knockback" : 5
+      },
+      {
+        "baseDamageFactor" : 0.85,
+		"damageSourceKind" : "spear",
+        "knockback" : 5
+      },
+      {
+        "baseDamageFactor" : 0.85,
+		"damageSourceKind" : "spear",
+        "knockback" : 5
+      },
+      {
+        "baseDamageFactor" : 1.25,
+		"damageSourceKind" : "spear",
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.9,
+		"damageSourceKind" : "spear",
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.9,
+		"damageSourceKind" : "spear",
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.35,
+		"damageSourceKind" : "spear",
+        "knockback" : 20
+      }
+    ],
+	
+    "comboSpeedFactor" : 0.79,
+	
+	"stances" : {
+      //IDLE - DEFAULT
+	  "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.075,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.15,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.075,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash2" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.15,
+        "armRotation" : -10,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : -10,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.075,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash3" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire3" : {
+        "duration" : 0.15,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.1,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 4
+      "windup4" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 0.625],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash4" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire4" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait4" : {
+        "duration" : 0.15,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 5
+      "windup5" : {
+        "duration" : 0.075,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash5" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire5" : {
+        "duration" : 0.15,
+        "armRotation" : -15,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait5" : {
+        "duration" : 0.1,
+        "armRotation" : -15,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 6
+      "windup6" : {
+        "duration" : 0.075,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash6" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire6" : {
+        "duration" : 0.15,
+        "armRotation" : -25,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait6" : {
+        "duration" : 0.1,
+        "armRotation" : -25,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 7
+      "windup7" : {
+        "duration" : 0.2,
+        "armRotation" : -110,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash7" : {
+        "duration" : 0.025,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire7" : {
+        "duration" : 0.2,
+        "armRotation" : 80,
+        "weaponRotation" : 20,
+        "weaponOffset" : [0, -1],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "thea-staffspinslash",
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}
