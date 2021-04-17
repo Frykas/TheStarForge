@@ -6,14 +6,14 @@
     [1, {
       "pool" : [
         {"weight" : 0.20, "pool" : "essenceDrop2"},
-        {"weight" : 0.25, "item" : "starforge-marikohood-recipe"},
-        {"weight" : 0.25, "item" : "starforge-marikochest-recipe"},
-		{"weight" : 0.25, "item" : "starforge-marikopants-recipe"},
-		{"weight" : 0.05, "item" : "starforge-hawkmoon"}
+        {"weight" : 0.26, "item" : "starforge-marikohood-recipe"},
+        {"weight" : 0.26, "item" : "starforge-marikochest-recipe"},
+		{"weight" : 0.26, "item" : "starforge-marikopants-recipe"},
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.10, 0],
+        [0.90, 1]
       ],
       "allowDuplication" : false
     }]
@@ -22,14 +22,14 @@
     [1, {
       "pool" : [
         {"weight" : 0.20, "pool" : "essenceDrop2"},
-        {"weight" : 0.25, "item" : "starforge-katahelhead-recipe"},
-        {"weight" : 0.25, "item" : "starforge-katahelchest-recipe"},
-		{"weight" : 0.25, "item" : "starforge-katahelgreaves-recipe"},
-		{"weight" : 0.05, "item" : "starforge-hawkmoon"}
+        {"weight" : 0.26, "item" : "starforge-katahelhead-recipe"},
+        {"weight" : 0.26, "item" : "starforge-katahelchest-recipe"},
+		{"weight" : 0.26, "item" : "starforge-katahelgreaves-recipe"},
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.10, 0],
+        [0.90, 1]
       ],
       "allowDuplication" : false
     }]
@@ -38,14 +38,14 @@
     [1, {
       "pool" : [
         {"weight" : 0.20, "pool" : "essenceDrop2"},
-        {"weight" : 0.25, "item" : "starforge-sedgehead-recipe"},
-        {"weight" : 0.25, "item" : "starforge-sedgechest-recipe"},
-		{"weight" : 0.25, "item" : "starforge-sedgepants-recipe"},
-		{"weight" : 0.05, "item" : "starforge-hawkmoon"}
+        {"weight" : 0.26, "item" : "starforge-sedgehead-recipe"},
+        {"weight" : 0.26, "item" : "starforge-sedgechest-recipe"},
+		{"weight" : 0.26, "item" : "starforge-sedgepants-recipe"},
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.10, 0],
+        [0.90, 1]
       ],
       "allowDuplication" : false
     }]
@@ -54,14 +54,30 @@
     [1, {
       "pool" : [
         {"weight" : 0.20, "pool" : "essenceDrop2"},
-        {"weight" : 0.25, "item" : "starforge-soultakerhead-recipe"},
-        {"weight" : 0.25, "item" : "starforge-soultakerchest-recipe"},
-		{"weight" : 0.25, "item" : "starforge-soultakerpants-recipe"},
-		{"weight" : 0.05, "item" : "starforge-hawkmoon"}
+        {"weight" : 0.26, "item" : "starforge-soultakerhead-recipe"},
+        {"weight" : 0.26, "item" : "starforge-soultakerchest-recipe"},
+		{"weight" : 0.26, "item" : "starforge-soultakerpants-recipe"},
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.10, 0],
+        [0.90, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+    "cacochiusTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.26, "item" : "starforge-praetorianhead-recipe"},
+        {"weight" : 0.26, "item" : "starforge-praetorianchest-recipe"},
+		{"weight" : 0.26, "item" : "starforge-praetorianpants-recipe"},
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
+      ],
+      "poolRounds" : [
+        [0.10, 0],
+        [0.90, 1]
       ],
       "allowDuplication" : false
     }]

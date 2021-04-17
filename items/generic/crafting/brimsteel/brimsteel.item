@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-brimsteel",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "brimsteel.png",
+  "description" : "A complex alloy capable of accumulating energy and transmitting it to living being.",
+  "shortdescription" : "^orange;Brimsteel^reset;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

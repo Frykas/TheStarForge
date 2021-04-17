@@ -6,7 +6,7 @@
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "A cursed Floran artifact born out of withered roots and Floran corpses.",
-  "shortdescription" : "^#374729;Cursebringer^reset;",
+  "shortdescription" : "^#758468;Cursebringer^reset;",
   "tooltipKind" : "base",
   "category" : "Spear",
   "twoHanded" : true,

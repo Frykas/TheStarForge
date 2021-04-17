@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "starforge-brimsteel", "count" : 8 },
+	{ "item" : "durasteelbar", "count" : 8 },
+	{ "item" : "greendye", "count" : 1},
+	{ "item" : "essence", "count" : 1000}
+  ],
+  "output" : {
+    "item" : "starforge-praetorianpants",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "armours" ],
+  "duration" : 2
+}
+

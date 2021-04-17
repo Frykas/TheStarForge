@@ -8,7 +8,7 @@
 
   "animation" : "cacochius.animation",
 
-  "dropPools" : [ { "default" : "wisperTreasure", "bow" : "wisperHunting" } ],
+  "dropPools" : [ { "default" : "cacochiusTreasure" } ],
   
   "level" : 6,
 

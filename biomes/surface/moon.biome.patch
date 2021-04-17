@@ -1,6 +1,6 @@
 [
-	
-  {
+{
+  
     "op": "add",
     "path": "/spawnProfile/groups/-",
     "value": {
@@ -8,10 +8,9 @@
       "pool": [
         [
           1,
-          "starforge-jootyfish"
+          "starforge-cacochius"
         ]
       ]
     }
   }
-	
 	]

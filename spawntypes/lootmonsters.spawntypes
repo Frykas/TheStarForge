@@ -14,6 +14,20 @@
         "aggressive" : true
       }
     },
+{
+	  "name" : "starforge-cacochius",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.0008,
+      "monsterType" : "starforge-cacochius",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    },
   {
 	  "name" : "starforge-florant",
       "spawnParameters" : {
@@ -37,7 +51,7 @@
 	  },
 	  
 	  "groupSize" : [1, 1],
-	  "spawnChance" : 0.005,
+	  "spawnChance" : 0.004,
 	  "monsterType" : "starforge-roboblin",
 	  "monsterParameters" : {
 		"aggressive" : true
@@ -52,7 +66,7 @@
 	  },
 	  
 	  "groupSize" : [1, 1],
-	  "spawnChance" : 0.003,
+	  "spawnChance" : 0.004,
 	  "monsterType" : "starforge-novalime",
 	  "monsterParameters" : {
 		"aggressive" : true

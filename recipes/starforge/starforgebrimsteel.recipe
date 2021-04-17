@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 3 },
+	{ "item" : "durasteelbar", "count" : 1},
+    { "item" : "metallic", "count" : 6 },
+	{ "item" : "liquidlava", "count" : 30},
+	{ "item" : "essence", "count" : 20}
+  ],
+  "output" : {
+    "item" : "starforge-brimsteel",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}
