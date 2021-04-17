@@ -161,6 +161,11 @@
         { "particle" : "starforge-wither"}
       ]
     },
+    "chargeShockwave" : {
+      "active" : false,
+      "emissionRate" : 30,
+      "particles" : [ ]
+    },
     "idleFrontBladeParticles" : {
       "active" : true,
       "transformationGroups" : ["weapon"],
@@ -198,6 +203,6 @@
 	"fire5" : [],
 	"fire6" : [],
 	"fire7" : [],
-	"readyBlade" : []
+	"chargeShockwave" : []
   }
 }

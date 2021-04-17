@@ -1,0 +1,34 @@
+{
+  "projectileName" : "starforge-witheredground",
+  "image" : "starforge-witheredground.png",
+  "animationCycle" : 0.25,
+  "animationLoops" : false,
+  "timeToLive" : 7,
+  "frameNumber" : 5,
+  "power" : 50,
+  "speed" : 0,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "damagePoly" : [ [-4, 0], [4, 0], [4, -11], [-4, -11] ],
+  "damageKind" : "hidden",
+  "damageType" : "status",
+  "periodicActions" : [
+    {
+      "action" : "particle",
+      "specification" : "starforge-witherrise",
+      "time" : 0.1,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "starforge-witherrise",
+      "time" : 0.1,
+      "repeat" : true
+    }
+  ],
+  "statusEffects" : [ "starforge-wither" ],
+  "emitters" : []
+}

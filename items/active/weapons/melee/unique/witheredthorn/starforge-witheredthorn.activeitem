@@ -6,11 +6,11 @@
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "A cursed Floran artifact born out of withered roots and Floran corpses.",
-  "shortdescription" : "^green;Withered Thorn^reset;",
+  "shortdescription" : "^#374729;Cursebringer^reset;",
   "tooltipKind" : "base",
   "category" : "Spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear","floran"],
+  "itemTags" : ["weapon","melee","spear","floran","wither"],
 
   "inventoryIcon" : "starforge-witheredthorn.png",
   
@@ -26,7 +26,9 @@
       "fire4" : [ "/sfx/melee/swing_broadsword.ogg" ],
       "fire5" : [ "/sfx/melee/swing_spear.ogg" ],
       "fire6" : [ "/sfx/melee/swing_spear.ogg" ],
-      "fire7" : [ "/sfx/melee/swing_hammer.ogg" ]
+      "fire7" : [ "/sfx/melee/swing_hammer.ogg" ],
+	  "chargeShockwave" : [],
+      "shockwaveImpact" : [ "/sfx/melee/shockwave_physical_slam.ogg" ]
     }
   },
 
@@ -62,17 +64,17 @@
       {
         "baseDamageFactor" : 0.85,
 		"damageSourceKind" : "spear",
-        "knockback" : 5
+        "knockback" : 10
       },
       {
         "baseDamageFactor" : 0.85,
 		"damageSourceKind" : "spear",
-        "knockback" : 5
+        "knockback" : 10
       },
       {
         "baseDamageFactor" : 0.85,
 		"damageSourceKind" : "spear",
-        "knockback" : 5
+        "knockback" : 10
       },
       {
         "baseDamageFactor" : 1.25,
@@ -82,12 +84,12 @@
       {
         "baseDamageFactor" : 0.9,
 		"damageSourceKind" : "spear",
-        "knockback" : 10
+        "knockback" : 12
       },
       {
         "baseDamageFactor" : 0.9,
 		"damageSourceKind" : "spear",
-        "knockback" : 10
+        "knockback" : 12
       },
       {
         "baseDamageFactor" : 1.35,
@@ -387,7 +389,65 @@
     }
   },
 
-  "altAbilityType" : "thea-staffspinslash",
+  "altAbility" : {
+    "name" : "Withered Ground",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/upgradedshockwave/starforge-upgradedshockwave.lua"],
+    "class" : "StarForgeUpgradedShockWave",
 
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+    "energyUsage" : 60.0,
+    "cooldownTime" : 7,
+	"projectileTimeToLive" : 5.5,
+
+    "chargeTime" : 2.0,
+    "minChargeTime" : 0.5,
+
+    "projectileType" : "starforge-witheredground",
+    "projectileParameters" : {
+      "power" : 0,
+      "speed" : 0,
+      "knockback" : 0,
+	  "actionOnReap" : [
+	    {
+          "action" : "projectile",
+          "inheritDamageFactor" : 0,
+          "type" : "starforge-grassrot"
+        }
+	  ]
+    },
+	"moveInDirection" : false,
+    "shockWaveBounds" : [-0.4, -1.375, 0.4, 0.0],
+    "shockwaveHeight" : 1.375,
+	"yOffset" : 0,
+    "maxDistance" : 15,
+    "bothDirections" : true,
+
+    "impactLine" : [ [1.25, -1.5], [1.25, -4.5] ],
+    "impactWeaponOffset" : 0.75,
+
+    "stances" : {
+      "windup" : {
+        "aimAngle" : 0,
+        "armRotation" : -90,
+        "endArmRotation" : 110,
+        "weaponRotation" : -15,
+        "endWeaponRotation" : -620,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.5,
+        "armRotation" : 0,
+        "weaponRotation" : -180,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }
