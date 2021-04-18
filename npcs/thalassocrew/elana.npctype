@@ -25,6 +25,7 @@
 
   "scriptConfig" : {
     "behavior" : "villager",
+	"offeredQuests" : ["thalassoelanaquest1"],
 
     "dialogMode" : "sequence",
     "dialog" : {

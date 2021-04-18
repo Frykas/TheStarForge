@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "currentcorn", "count" : 3 },
+	{ "item" : "boltbulb", "count" : 1},
+	{ "item" : "nutsandbolts", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-robotblinfood",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "mains" ], 
+  "duration" : 0
+}

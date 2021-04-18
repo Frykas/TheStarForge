@@ -14,8 +14,11 @@
   "scriptConfig" : {
      "portraits" : {
       "questStarted" : "questGiver",
-      "questComplete" : "questReceiver"
-    },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      }
+	 },
     "requireTurnIn" : true,
     "conditions" : [
       {
