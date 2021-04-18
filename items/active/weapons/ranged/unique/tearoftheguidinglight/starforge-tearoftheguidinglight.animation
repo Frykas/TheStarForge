@@ -1,0 +1,125 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : "",
+	"firingDirectives" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+      "crystal" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 24,
+            "cycle" : 2,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "ring" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.5, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["crystal", "weapon"]
+        }
+      },
+      "crystal" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0.5, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["crystal", "weapon"]
+        },
+
+        "partStates" : {
+          "crystal" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame><firingDirectives>"
+              }
+            }
+          }
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.75, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["crystal", "muzzle"]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "crystal" : {},
+    "weapon" : {},
+    "muzzle" : {},
+    "beamEnd" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "transformationGroups" : ["crystal", "muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    },
+    "beamCollision" : {
+      "active" : false,
+      "transformationGroups" : ["crystal", "muzzle", "beamEnd"],
+      "emissionRate" : 30,
+      "particles" : [
+        {"particle" : "barriericeaura"}
+      ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "color" : [0, 0, 0]
+    }
+  },
+
+  "sounds" : {
+    "fireStart" : [],
+    "fireLoop" : [],
+    "fireEnd" : [],
+    "beamImpact" : []
+  }
+}
