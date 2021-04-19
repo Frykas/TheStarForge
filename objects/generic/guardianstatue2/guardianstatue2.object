@@ -22,7 +22,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "image" : "guardianstatue2.png:<color>.<frame>",
+     "imageLayers" : [ { "image" : "guardianstatue2.png:default.<frame>" }, { "image" : "guardianstatue2fullbright.png:default.<frame>", "fullbright" : true } ],
       "renderLayer" : "Object+1",
       "imagePosition" : [-32, 0],
       "frames" : 2,

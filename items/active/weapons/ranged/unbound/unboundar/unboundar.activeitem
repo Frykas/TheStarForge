@@ -22,13 +22,14 @@
     "butt": "",
     "middle": "unboundrifle.png",
     "barrel": "",
-	"middleFullbright": "unboundarfullbright.png"
+	"middleFullbright": "unboundarfullbright.png",
+	"muzzleFlash": "muzzleflash.png"
   },
   "animationCustom": {
       "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-2.8, 0.3, -2.8, 0.3],
+		"offsetRegion" : [-2.1, 0.1, -2.1, 0.1],
         "particles" : [
           { "particle" : "starforge-unboundrifle" }
         ]
@@ -41,8 +42,8 @@
     }
   },
   
-  "baseOffset": [0.875, 0.3],
-  "muzzleOffset": [3.0, 0.5],
+  "baseOffset": [0.52, 0.3],
+  "muzzleOffset": [2.0, 0.275],
   "scripts": [
     "/items/active/weapons/ranged/gun.lua"
   ],
@@ -62,32 +63,45 @@
     "projectileParameters": {
       "knockback": 3
     },
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
       },
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : true,
+      "fire": {
+        "duration": 0,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
 
-        "allowRotate" : false,
-        "allowFlip" : false
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
       },
-      "cooldown" : {
-        "duration" : 0.11,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : false
+      "cooldown": {
+        "duration": 0.05,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
       }
     }
   },
