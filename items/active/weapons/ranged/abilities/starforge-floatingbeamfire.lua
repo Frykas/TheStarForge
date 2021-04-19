@@ -57,45 +57,87 @@ function StarForgeFloatingBeamFire:fire()
 	activeItem.emote(self.fireEmote)
 	
     animator.setGlobalTag("firingDirectives", self.firingDirectives)
+	local aimAngle, aimDirection = activeItem.aimAngleAndDirection(activeItem.handPosition(vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset))[2], activeItem.ownerAimPosition())
+
+	local damageStart = vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset)
 
     local collidePoint = world.lineCollision(beamStart, beamEnd)
+	
+	if self.laserPiercing == false then
+	  local targets = world.entityLineQuery(beamStart, beamEnd, {
+		withoutEntityId = activeItem.ownerEntityId(),
+		includedTypes = {"creature"},
+		order = "nearest"
+	  })
+	  --Set the default distance to nearest target to max search distance
+	  local nearestTargetDistance = beamLength
+	  for _, target in ipairs(targets) do
+		--Make sure we can damage the targeted entity
+		if world.entityCanDamage(activeItem.ownerEntityId(), target) then
+		  local targetPosition = world.entityPosition(target)
+		  --Make sure we have line of sight on this entity
+		  if not world.lineCollision(beamStart, targetPosition) then
+			local targetDistance = world.magnitude(beamStart, targetPosition)
+			--If the target currently being processed is closer than the nearest target found so far, make this target the nearest target
+			if targetDistance < nearestTargetDistance then
+			  nearestTargetDistance = targetDistance
+			  local beamDirection = vec2.rotate({1, 0}, aimAngle)
+			  beamDirection[1] = beamDirection[1] * mcontroller.facingDirection()
+			  local beamVector = vec2.mul(beamDirection, nearestTargetDistance)
+			  collidePoint = vec2.add(beamStart, beamVector)
+			  beamIsColliding = true
+			end
+		  end
+		end
+	  end
+	end
+	
     if collidePoint then
       beamEnd = collidePoint
 
       beamLength = world.magnitude(beamStart, beamEnd)
+	  
+	  local translateEndPoint = vec2.add(beamEnd, vec2.mul(mcontroller.position(), -1))
+	  translateEndPoint[1] = translateEndPoint[1] * mcontroller.facingDirection()
 
       animator.setParticleEmitterActive("beamCollision", true)
       animator.resetTransformationGroup("beamEnd")
-      animator.translateTransformationGroup("beamEnd", {beamLength, 0})
+      animator.translateTransformationGroup("beamEnd", translateEndPoint)
 
       if self.impactSoundTimer == 0 then
-        animator.setSoundPosition("beamImpact", {beamLength, 0})
+        animator.setSoundPosition("beamImpact", translateEndPoint)
         animator.playSound("beamImpact")
         self.impactSoundTimer = self.fireTime
       end
     else
       animator.setParticleEmitterActive("beamCollision", false)
     end
-
-	local damageStart = vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset)
+	
 	local damageEnd = vec2.add(beamEnd, vec2.mul(mcontroller.position(), -1))
 	damageEnd[1] = damageEnd[1] * mcontroller.facingDirection()
+	
+	--Code for particles along the length of the beam
+	animator.setParticleEmitterActive("beamParticles", true)
+	animator.setParticleEmitterEmissionRate("beamParticles", beamLength*2)
+	animator.resetTransformationGroup("beam")
+	animator.scaleTransformationGroup("beam", vec2.add(vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset), vec2.mul(damageEnd, 2)))
+	animator.translateTransformationGroup("beam", vec2.add(vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset), vec2.mul(damageEnd, 0.5)))
 	
 	--Box collision type (uses beamWidth)
 	if self.beamCollisionType == "box" then
 	  local damagePoly = {
-		vec2.add(damageStart, {0, self.beamWidth/2}),
-		vec2.add(damageStart, {0, -self.beamWidth/2}),
-		{damageEnd[1] + beamLength, damageEnd[2] - self.beamWidth/2},
-		{damageEnd[1] + beamLength, damageEnd[2] + self.beamWidth/2}
+		vec2.add(damageStart, vec2.mul(vec2.norm(vec2.rotate({1, 0}, aimAngle)), self.beamWidth/2)),
+		vec2.add(damageStart, vec2.mul(vec2.norm(vec2.rotate({1, 0}, aimAngle)), -self.beamWidth/2)),
+		vec2.add(damageEnd, vec2.mul(vec2.norm(vec2.rotate({1, 0}, aimAngle)), -self.beamWidth/2)),
+		vec2.add(damageEnd, vec2.mul(vec2.norm(vec2.rotate({1, 0}, aimAngle)), self.beamWidth/2))
 	  }
 	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
 	
 	--Taper collision type (uses beamWidth, tapers to a point)
 	elseif self.beamCollisionType == "taper" then
 	  local damagePoly = {
-		vec2.add(damageStart, {0, self.beamWidth/2}),
-		vec2.add(damageStart, {0, -self.beamWidth/2}),
+		vec2.add(damageStart, vec2.mul(vec2.norm(self:aimVector(0)), self.beamWidth/2)),
+		vec2.add(damageStart, vec2.mul(vec2.norm(self:aimVector(0)), -self.beamWidth/2)),
 		damageEnd
 	  }
 	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
@@ -184,6 +226,7 @@ function StarForgeFloatingBeamFire:reset()
   self.weapon:setDamage()
   activeItem.setScriptedAnimationParameter("chains", {})
   animator.setParticleEmitterActive("beamCollision", false)
+  animator.setParticleEmitterActive("beamParticles", false)
   animator.stopAllSounds("fireStart")
   animator.stopAllSounds("fireLoop")
 end

@@ -91,6 +91,7 @@
     "crystal" : {},
     "weapon" : {},
     "muzzle" : {},
+    "beam" : {},
     "beamEnd" : {}
   },
 
@@ -100,12 +101,22 @@
       "offsetRegion" : [0, 0, 0, 0],
       "particles" : [ ]
     },
+    "beamParticles" : {
+      "active" : false,
+      "transformationGroups" : ["beam"],
+      "emissionRate" : 10,
+      "particles" : [
+        {"particle" : "starforge-tearbeamparticles"},
+        {"particle" : "starforge-tearbeamparticles2"}
+      ]
+    },
     "beamCollision" : {
       "active" : false,
-      "transformationGroups" : ["crystal", "muzzle", "beamEnd"],
+      "transformationGroups" : ["muzzle", "beamEnd"],
       "emissionRate" : 30,
       "particles" : [
-        {"particle" : "barriericeaura"}
+        {"particle" : "starforge-tearbeamparticles"},
+        {"particle" : "starforge-tearbeamparticles2"}
       ]
     }
   },
