@@ -40,7 +40,6 @@
     "items" : [
 	  { "item" : "starforge-sedgebacktrue-recipe"},
 	  { "item" : "starforge-soultakerbacktrue-recipe"},
-	  { "item" : "starforge-beheader-recipe"},
 	  { "item" : "starforge-furour-recipe"}
     ]
   },

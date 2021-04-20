@@ -1,0 +1,20 @@
+{
+  // ==============================================================================================
+  //                                       KATAHEL RUIN ITEM DROPS
+  // ==============================================================================================
+  "starforge-uniquebookTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.3, "item" : "starforge-katahelstory1-codex"},
+		{"weight" : 0.3, "item" : "starforge-katahelstory2-codex"},
+		{"weight" : 0.3, "item" : "starforge-katahelstory3-codex"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ]
+     
+  }
+  

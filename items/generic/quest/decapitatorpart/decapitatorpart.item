@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-decapitatorpart",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "inventoryIcon" : "decapitatorpart.png",
+  "description" : "Old, broken parts of a beheading blade. It is of Glitch origin.",
+  "shortdescription" : "^orange;Beheading blade parts^white;",
+  "itemTags" : [ "questitem" ],
+  "pickupQuestTemplates" : [ "starforge-decapitatorswordquest" ]
+}

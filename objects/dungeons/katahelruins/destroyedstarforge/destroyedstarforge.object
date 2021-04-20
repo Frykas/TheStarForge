@@ -1,0 +1,28 @@
+{
+  "objectName" : "starforge-destroyedstarforge",
+  "colonyTags" : ["ancient"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 200,
+  "description" : "A Starforge, but destroyed. What a shame.",
+  "shortdescription" : "Destroyed Starforge",
+
+  "humanDescription" : "A destroyed Starforge. What a shame.",
+
+  "inventoryIcon" : "brokenstarforgeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "destroyedstarforge.png" ,
+      "imagePosition" : [-32, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+   
+  ]}
