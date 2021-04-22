@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-furourblade",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "inventoryIcon" : "furourblade.png",
+  "description" : "An Impervium blade used in some sort of ritual. You feel strange when holding it.",
+  "shortdescription" : "^orange;Impervium Blade^white;",
+  "itemTags" : [ "questitem" ],
+  "pickupQuestTemplates" : [ "starforge-furourswordquest1" ]
+}

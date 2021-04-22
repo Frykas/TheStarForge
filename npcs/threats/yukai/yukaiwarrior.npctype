@@ -1,0 +1,59 @@
+{
+    "type": "starforge-yukaiwarrior",
+    "baseType": "hostile",
+ 
+    "dropPools": ["guardtreasure"],
+	
+	"identity" : {
+    "species" : "hylotl",
+	"facialHairType":"",
+	"facialHairGroup":"",
+	"bodyDirectives":"?replace;a85636=652626;e0975c=8E3C36;ffca8a=B55953;6f2919=3D1C1C?replace;735e3a=652626;d9c189=8E3C36;f7e7b2=B55953;a38d59=3D1C1C?replace;be1b00=4E4F42;dc1f00=8A897A;951500=2C2915;f32200=B4B3AD?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF",
+	"hairDirectives":"?replace;735e3a=2C2915;d9c189=8A897A;f7e7b2=B4B3AD;a38d59=4E4F42?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF",
+    "gender" : "male",
+	"level" : 7
+  },
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "hylotl": {
+                    "default": [
+                        "Arrrgh!",
+                        "Mmrrrh....",
+                        "Skash!",
+                        "Rukana!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-yukaimalehead"
+                }],
+                "chest": [{
+                    "name": "starforge-yukaimalechest"
+                }],
+                "legs": [{
+                    "name": "starforge-yukaimalepants"
+                }],
+                "primary": [
+                    "rareaxe",
+					"rarespear",
+					"rarebroadsword"
+                ]
+				 
+            }]]
+        ]
+    }
+}

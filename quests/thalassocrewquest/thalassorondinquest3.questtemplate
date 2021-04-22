@@ -1,19 +1,22 @@
 {
   "id" : "thalassorondinquest3",
-  "title" : "^green;Solarium for Days",
+  "title" : "^green;The Hunter",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassorondinquest1", "thalassorondinquest2" ],
-  "text" : "One last request, we're missing some ^orange;Solarium Ore^reset; to craft a bunch of items using the Starforge, if you could bring me some that'd be nice, in exchange I have a blueprint for an old weapon of mine, I'm sure you'll love it.",
-  "completionText" : "I'm glad you're here, this is all we needed. Here, take this blueprint. It's an old weapon I made a long time ago to help the Captain slay a powerful enemy. I'm sure it'll be of good use with you.",
-  "moneyRange" : [750, 750],
+  "text" : "So have you made something using the Starforge? It's incredibly hard to use, isn't it? I have the blueprint of an old weapon I made using a Starforge a long time ago, ^orange;prove yourself a worthy hunter^reset;, and it's yours.",
+  "completionText" : "So you've slain them all uh? Impressive. There you go, the Hunter's Avarice. It took me years to learn how to use a Starforge, using pre-made blueprints is most likely the easiest way for you to use it.",
+  "moneyRange" : [1750, 1750],
   "rewards" : [
     [ [ "starforge-thalassocache", 1 ], [ "starforge-avarice-recipe", 1] ]
   ],
 
   "updateDelta" : 10,
-  "script" : "/quests/scripts/main.lua",
+  "script" : "/quests/scripts/starforgekill.lua",
   "scriptConfig" : {
      "portraits" : {
-      "questStarted" : "questGiver",
+      "questStarted" : {
+	   "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      },
       "questComplete" : {
         "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
         "title" : "Rondin"
@@ -22,10 +25,10 @@
     "requireTurnIn" : true,
     "conditions" : [
       {
-        "type" : "gatherItem",
-        "itemName" : "solariumore",
-        "count" : 250,
-        "consume" : true
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Adult Poptop",
+        "targetMonster" : "adultpoptop",
+        "count" : 1
       }
     ],
 	"turnInDescription" : "Bring the ^orange;Solarium Ore^reset; to ^green;Rondin^reset;."

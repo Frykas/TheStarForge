@@ -25,7 +25,7 @@
   "price" : 5000,
   
   "offeredQuests" : ["thalassointromission3", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3"],
-  "turnInQuests" : ["thalassointromission2", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3", "thalassoelanaquest1", "starforge-decapitatorswordquest" ],
+  "turnInQuests" : ["thalassointromission2", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3", "thalassoelanaquest1", "starforge-decapitatorswordquest", "starforge-furourswordquest2" ],
 
   "apexDescription" : "It's surprising to see a glitch that smart. I wonder how he became like that.",
   "avianDescription" : "This Glitch sure knows how to make cool things!",

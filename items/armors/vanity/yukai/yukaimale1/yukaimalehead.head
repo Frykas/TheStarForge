@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-yukaimalehead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "You shouldn't be wearing that... You cheated didn't you?",
+  "shortdescription" : "Yukai Male Head",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

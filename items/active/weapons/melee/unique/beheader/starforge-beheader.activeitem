@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "A former warlord's claymore fitted with a heated blade for executing glitch.",
-  "shortdescription" : "^gray;Decapitator^reset;",
+  "shortdescription" : "^orange;Decapitator^reset;",
   "tooltipKind" : "base",
   "category" : "Claymore",
   "twoHanded" : true,

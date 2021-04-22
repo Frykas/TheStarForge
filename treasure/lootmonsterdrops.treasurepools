@@ -21,7 +21,8 @@
     "roboblinTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.10, "pool" : "essenceDrop2"},
+		{"weight" : 0.10, "pool" : "katahelstoryDrop"},
         {"weight" : 0.26, "item" : "starforge-katahelhead-recipe"},
         {"weight" : 0.26, "item" : "starforge-katahelchest-recipe"},
 		{"weight" : 0.26, "item" : "starforge-katahelgreaves-recipe"},
@@ -82,6 +83,22 @@
       "allowDuplication" : false
     }]
   ],
+      "katahelstoryDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-katahelstory1-codex"},
+        {"weight" : 0.33, "item" : "starforge-katahelstory2-codex"},
+        {"weight" : 0.33, "item" : "starforge-katahelstory3-codex"}
+      ],
+      "poolRounds" : [
+	    [0.70, 0],
+        [0.27, 1],
+        [0.03, 2]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
     "essenceDrop2" : [
     [0, {
       "pool" : [

@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-furourstand",
+  "rarity" : "essential",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "A strange altar with a broken Impervium blade on it. You feel uneasy around it.",
+  "shortdescription" : "Furour Altar",
+  "race" : "hylotl",
+
+  "floranDescription" : "Floran knowsss ssstrength ritual...",
+  "glitchDescription" : "Confused. What were they doing with this blade?",
+  "novakidDescription" : "Weird folks trynna play with blades eh? Lookin' like some ritual.",
+  "humanDescription" : "An altar made with bones. Just looking at it makes me uneasy.",
+  "hylotlDescription" : "An altar made by the Yukai. I can feel their anger emanating from the blade, how sad.",
+  "avianDescription" : "It looks like the blade was used in some kind of ritual.", 
+  "apexDescription" : "The blade looks like it's made of Impervium, how did these savages obtain such a rare item?",
+
+  "inventoryIcon" : "furourstandicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "furourstand.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "starforge-furourblade",
+
+  "animation" : "furourstand.animation",
+  "animationParts" : {
+    "object" : "furourstand.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

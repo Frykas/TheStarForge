@@ -5,7 +5,7 @@
   "marikobackTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 1, "item" : "starforge-marikostory4-codex"}
+        {"weight" : 1, "item" : "starforge-marikobacktrue-recipe"}
       ],
       "poolRounds" : [
         [1, 1]

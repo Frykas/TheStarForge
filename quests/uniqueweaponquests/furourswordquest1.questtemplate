@@ -1,0 +1,30 @@
+{
+  "id" : "starforge-furourswordquest1",
+  "title" : "^orange;Rage Ritual I",
+  "text" : "While exploring I found this strange Impervium blade on a Hylotl altar. These Hylotls were different from the ones I've seen before, more aggressive and savage. The blade itself seems... Strange, almost alive. As if it was imbued with a strong emotion. I should probably talk to ^orange;Krythers^reset; at the ^green;Thalasso Outpost^reset;.",
+  "completionText" : "Ah yes... I know about the ones you met. They are the Yukai, a savage Hylotl clan who swore to never forgive the Florans. They often do strange rituals and try to call upon demons and spirits. This rare blade was probably used in one of them, but I can't do anything with it.",
+  "moneyRange" : [2500, 2500],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "questReceiver"
+	 },
+	"followUp" : "starforge-furourswordquest2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "starforge-furourblade",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;Impervium Blade^reset; to ^green;Krythers^reset;."
+  }
+}

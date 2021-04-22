@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starforge-furouraltar",
+    "species" : "hylotl",
+    "rules" : [
+    ],
+    "protected" : true,
+    "anchor" : [ "starforge-furouraltar" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100
+  },
+
+  "parts" : [
+    {
+      "name" : "starforge-furouraltar",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "furouraltar.json" ]
+    }
+  ]
+}
