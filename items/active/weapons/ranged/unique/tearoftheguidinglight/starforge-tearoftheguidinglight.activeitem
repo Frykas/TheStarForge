@@ -17,7 +17,8 @@
   "animation" : "starforge-tearoftheguidinglight.animation",
   "animationParts" : {
     "ring" : "starforge-tearoftheguidinglightring.png",
-    "crystal" : "starforge-tearoftheguidinglightcrystal.png"
+    "crystal" : "starforge-tearoftheguidinglightcrystal.png",
+	"firingPulse" : "starforge-tearoftheguidinglightbeamcharge.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -40,8 +41,8 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/starforge-floatingbeamfire.lua"],
     "class" : "StarForgeFloatingBeamFire",
 
-    "fireTime" : 0.2,
-    "baseDps" : 6.5,
+    "fireTime" : 0.05,
+    "baseDps" : 5.5,
     "energyUsage" : 19.5,
 
     "damageConfig" : {
@@ -69,15 +70,17 @@
 	"beamWidth" : 0.875,
 
     "chain" : {
-      "startOffset" : [1, 0],
-      "startSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamstart.png",
+	  "directives" : "?flipx",
+      "startOffset" : [1.25, 0],
+      "startSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
       "segmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beam.png",
       "endSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
+      "endCollideSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
       "segmentSize" : 0.375,
       "overdrawLength" : 0.2,
       "taper" : 0,
       "waveform" : {
-        "frequency" : 2.0,
+        "frequency" : 4.0,
         "amplitude" : 0.125,
         "movement" : 40.0
       },

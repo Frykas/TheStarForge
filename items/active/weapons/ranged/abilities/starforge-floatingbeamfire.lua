@@ -40,6 +40,7 @@ function StarForgeFloatingBeamFire:update(dt, fireMode, shiftHeld)
   end
   
   self:updateTransformationGroup()
+  self.aimAngle = math.atan(self:firePosition()[2] - activeItem.ownerAimPosition()[2], self:firePosition()[1] - activeItem.ownerAimPosition()[1])
 end
 
 function StarForgeFloatingBeamFire:fire()
@@ -47,6 +48,8 @@ function StarForgeFloatingBeamFire:fire()
 
   animator.playSound("fireStart")
   animator.playSound("fireLoop", -1)
+  animator.setLightActive("firingPulse", true)
+  animator.setAnimationState("firing", "fire")
 
   local wasColliding = false
   while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) do
@@ -57,10 +60,8 @@ function StarForgeFloatingBeamFire:fire()
 	activeItem.emote(self.fireEmote)
 	
     animator.setGlobalTag("firingDirectives", self.firingDirectives)
-	local aimAngle, aimDirection = activeItem.aimAngleAndDirection(activeItem.handPosition(vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset))[2], activeItem.ownerAimPosition())
-
+	
 	local damageStart = vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset)
-
     local collidePoint = world.lineCollision(beamStart, beamEnd)
 	
 	if self.laserPiercing == false then
@@ -81,9 +82,7 @@ function StarForgeFloatingBeamFire:fire()
 			--If the target currently being processed is closer than the nearest target found so far, make this target the nearest target
 			if targetDistance < nearestTargetDistance then
 			  nearestTargetDistance = targetDistance
-			  local beamDirection = vec2.rotate({1, 0}, aimAngle)
-			  beamDirection[1] = beamDirection[1] * mcontroller.facingDirection()
-			  local beamVector = vec2.mul(beamDirection, nearestTargetDistance)
+			  local beamVector = vec2.mul(self:aimVector(0), nearestTargetDistance)
 			  collidePoint = vec2.add(beamStart, beamVector)
 			  beamIsColliding = true
 			end
@@ -97,7 +96,7 @@ function StarForgeFloatingBeamFire:fire()
 
       beamLength = world.magnitude(beamStart, beamEnd)
 	  
-	  local translateEndPoint = vec2.add(beamEnd, vec2.mul(mcontroller.position(), -1))
+	  local translateEndPoint = vec2.add(vec2.add(beamEnd, vec2.mul(mcontroller.position(), -1)), vec2.mul({self.crystalPosition[1], 0}, {mcontroller.facingDirection(), 0}))
 	  translateEndPoint[1] = translateEndPoint[1] * mcontroller.facingDirection()
 
       animator.setParticleEmitterActive("beamCollision", true)
@@ -125,11 +124,13 @@ function StarForgeFloatingBeamFire:fire()
 	
 	--Box collision type (uses beamWidth)
 	if self.beamCollisionType == "box" then
+	  local newAngle = mcontroller.facingDirection() * -self.aimAngle
+	  local angleFactor = vec2.norm(vec2.rotate({0, 1}, newAngle))
 	  local damagePoly = {
-		vec2.add(damageStart, vec2.mul(vec2.norm(vec2.rotate({1, 0}, aimAngle)), self.beamWidth/2)),
-		vec2.add(damageStart, vec2.mul(vec2.norm(vec2.rotate({1, 0}, aimAngle)), -self.beamWidth/2)),
-		vec2.add(damageEnd, vec2.mul(vec2.norm(vec2.rotate({1, 0}, aimAngle)), -self.beamWidth/2)),
-		vec2.add(damageEnd, vec2.mul(vec2.norm(vec2.rotate({1, 0}, aimAngle)), self.beamWidth/2))
+		vec2.add(damageStart, vec2.mul(self:aimVector(0), self.beamWidth/2)),
+		vec2.add(damageStart, vec2.mul(self:aimVector(0), -self.beamWidth/2)),
+		vec2.add(damageEnd, vec2.mul(self:aimVector(0), -self.beamWidth/2)),
+		vec2.add(damageEnd, vec2.mul(self:aimVector(0), self.beamWidth/2))
 	  }
 	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
 	
@@ -147,11 +148,13 @@ function StarForgeFloatingBeamFire:fire()
 	  self.weapon:setDamage(self.damageConfig, {damageStart, damageEnd}, self.fireTime)
 	end
 	
-    self:drawBeam(beamEnd, collidePoint)
+    self:drawBeam(beamEnd, didCollide)
 
     coroutine.yield()
   end
   
+  animator.setAnimationState("firing", "off")
+  animator.setLightActive("firingPulse", false)
   animator.setGlobalTag("firingDirectives", "")
 
   self:reset()
@@ -175,6 +178,8 @@ function StarForgeFloatingBeamFire:drawBeam(endPos, didCollide)
   newChain.startOffset = vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset)
   newChain.endPosition = endPos
   
+  local currentEndSegmentImage = didCollide and self.chain.endCollideSegmentImage or self.chain.endSegmentImage
+  
   --Optionally animate the chain beam
   if self.animatedChain then
 	self.chainAnimationTimer = math.min(self.chainAnimationTime, self.chainAnimationTimer + self.dt)
@@ -185,13 +190,13 @@ function StarForgeFloatingBeamFire:drawBeam(endPos, didCollide)
 	local chainAnimationFrame = 1
 	chainAnimationFrame = math.floor(self.chainAnimationTimer / self.chainAnimationTime * self.chainAnimationFrames)
 	
-	newChain.startSegmentImage = self.chain.startSegmentImage .. ":" .. chainAnimationFrame
+	if newChain.startSegmentImage then
+	  newChain.startSegmentImage = self.chain.startSegmentImage .. ":" .. chainAnimationFrame .. newChain.directives
+	end
 	newChain.segmentImage = self.chain.segmentImage .. ":" .. chainAnimationFrame
-	newChain.endSegmentImage = self.chain.endSegmentImage .. ":" .. chainAnimationFrame
-  end
-  
-  if didCollide then
-    newChain.endSegmentImage = nil
+	if newChain.endSegmentImage then
+	  newChain.endSegmentImage = currentEndSegmentImage .. ":" .. chainAnimationFrame
+	end
   end
 
   activeItem.setScriptedAnimationParameter("chains", {newChain})
@@ -211,10 +216,8 @@ function StarForgeFloatingBeamFire:firePosition()
 end
 
 function StarForgeFloatingBeamFire:aimVector(inaccuracy)
-  local aimAngle, aimDirection = activeItem.aimAngleAndDirection(activeItem.handPosition(vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset))[2], activeItem.ownerAimPosition())
-  
-  local aimVector = vec2.rotate({1, 0}, aimAngle + sb.nrand(inaccuracy, 0))
-  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+  local aimVector = vec2.rotate({1, 0}, self.aimAngle - math.pi + sb.nrand(inaccuracy, 0))
+  --aimVector[1] = aimVector[1] * -1 --mcontroller.facingDirection()
   return aimVector
 end
 

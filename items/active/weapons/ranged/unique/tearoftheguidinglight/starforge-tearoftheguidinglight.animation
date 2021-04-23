@@ -11,10 +11,9 @@
         "states" : {
           "off" : {},
           "fire" : {
-            "frames" : 2,
-            "cycle" : 0.07,
-            "mode" : "transition",
-            "transition" : "off"
+            "frames" : 8,
+            "cycle" : 0.5,
+            "mode" : "loop"
           }
         }
       },
@@ -59,11 +58,11 @@
           }
         }
       },
-      "muzzleFlash" : {
+      "firingPulse" : {
         "properties" : {
-          "zLevel" : -1,
+          "zLevel" : 2,
           "centered" : true,
-          "offset" : [0.75, 0],
+          "offset" : [0, 0],
           "fullbright" : true,
           "transformationGroups" : ["crystal", "muzzle"]
         },
@@ -72,7 +71,7 @@
           "firing" : {
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:<variant>.<frame>"
+                "image" : "<partImage>:<frame>"
               }
             }
           }
@@ -122,7 +121,7 @@
   },
 
   "lights" : {
-    "muzzleFlash" : {
+    "firingPulse" : {
       "color" : [0, 0, 0]
     }
   },

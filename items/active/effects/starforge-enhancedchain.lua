@@ -80,13 +80,11 @@ function update()
         local currentBaseOffset = vec2.add(startPosition, vec2.mul(segmentOffset, 0.5))
         local lastDrawnSegment = chain.drawPercentage and math.ceil(segmentCount * chain.drawPercentage) or segmentCount
         for i = 1, lastDrawnSegment do
-		  local image
+          local image = chain.segmentImage
           if i == 1 and chain.startSegmentImage then
             image = chain.startSegmentImage
           elseif i == lastDrawnSegment and chain.endSegmentImage then
             image = chain.endSegmentImage
-		  else
-		    image = chain.segmentImage
           end
 
           -- taper applies evenly from full size at the start to (1.0 - chain.taper) size at the end
