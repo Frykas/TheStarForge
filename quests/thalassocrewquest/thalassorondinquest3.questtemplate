@@ -3,7 +3,7 @@
   "title" : "^green;The Hunter",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassorondinquest1", "thalassorondinquest2" ],
   "text" : "So have you made something using the Starforge? It's incredibly hard to use, isn't it? I have the blueprint of an old weapon I made using a Starforge a long time ago, ^orange;prove yourself a worthy hunter^reset;, and it's yours.",
-  "completionText" : "So you've slain them all uh? Impressive. There you go, the Hunter's Avarice. It took me years to learn how to use a Starforge, using pre-made blueprints is most likely the easiest way for you to use it.",
+  "completionText" : "So you've slain one uh? Impressive. There you go, the Hunter's Avarice. It took me years to learn how to use a Starforge, using pre-made blueprints is most likely the easiest way for you to use it.",
   "moneyRange" : [1750, 1750],
   "rewards" : [
     [ [ "starforge-thalassocache", 1 ], [ "starforge-avarice-recipe", 1] ]
@@ -26,11 +26,35 @@
     "conditions" : [
       {
         "type" : "killMonstersWithWeapon",
-        "displayMonsterName" : "Adult Poptop",
-        "targetMonster" : "adultpoptop",
+        "displayMonsterName" : "any loot monster",
+        "targetMonster" : "starforge-jootyfish",
+        "count" : 1
+      },
+	  {
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Roboblin",
+        "targetMonster" : "starforge-roboblin",
+        "count" : 1
+      },
+	  {
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Florant",
+        "targetMonster" : "starforge-florant",
+        "count" : 1
+      },
+	  {
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Novalime",
+        "targetMonster" : "starforge-novalime",
+        "count" : 1
+      },
+	  {
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Cacochius",
+        "targetMonster" : "starforge-cacochius",
         "count" : 1
       }
     ],
-	"turnInDescription" : "Bring the ^orange;Solarium Ore^reset; to ^green;Rondin^reset;."
+	"turnInDescription" : "Meet ^orange;Rondin^reset; at the ^green;Starforge^reset;."
   }
 }
