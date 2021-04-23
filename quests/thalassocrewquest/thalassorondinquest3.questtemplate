@@ -10,7 +10,7 @@
   ],
 
   "updateDelta" : 10,
-  "script" : "/quests/scripts/starforgekill.lua",
+  "script" : "/quests/scripts/starforge-main.lua",
   "scriptConfig" : {
      "portraits" : {
       "questStarted" : {
