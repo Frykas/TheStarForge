@@ -95,7 +95,7 @@
                  "type":"",
                  "visible":true,
                  "width":48,
-                 "x":504,
+                 "x":528,
                  "y":888
                 }, 
                 {
@@ -115,11 +115,17 @@
                  "height":24,
                  "id":9,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-katahelruinsTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":552,
+                 "x":584,
                  "y":888
                 }, 
                 {
@@ -131,7 +137,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"evilfortressTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-katahelruinsTreasure\"]}"
                         }],
                  "rotation":0,
                  "type":"",
@@ -257,7 +263,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"evilfortressTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-katahelruinsTreasure\"]}"
                         }],
                  "rotation":0,
                  "type":"",
@@ -737,7 +743,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"evilfortressTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-katahelruinsTreasure\"]}"
                         }],
                  "rotation":0,
                  "type":"",
@@ -1163,7 +1169,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"evilfortressTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-katahelruinsTreasure\"]}"
                         }],
                  "rotation":0,
                  "type":"",
@@ -1181,7 +1187,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"evilfortressTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-katahelruinsTreasure\"]}"
                         }],
                  "rotation":0,
                  "type":"",
@@ -1379,7 +1385,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"evilfortressTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-katahelruinsTreasure\"]}"
                         }],
                  "rotation":0,
                  "type":"",

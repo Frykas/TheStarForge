@@ -1,0 +1,18 @@
+{
+  "id" : "starforge-glitchkatahel3",
+  "species" : "glitch",
+  "title" : "Report of suspicious activity",
+  "description" : "Our lord must be warned.",
+  "icon" : "glitchkatahelcover2.png",
+  "contentPages" : [
+
+"My dear lord,
+
+Ever since the reports regarding the Outsider multiplied, our Master Crafter Rondin started behaving strangely. I suspect he is trying to contact the Outsider using a method unknown to us. While I have no proof regarding that, he seems to be spending twice as much time in his workshop than usual. I suggest you start monitoring him closely."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 25
+  }
+}

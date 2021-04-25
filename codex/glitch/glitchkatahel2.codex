@@ -1,0 +1,18 @@
+{
+  "id" : "starforge-glitchkatahel2",
+  "species" : "glitch",
+  "title" : "Caution : Outsider spotted",
+  "description" : "A note written to warn villagers.",
+  "icon" : "glitchkatahelcover2.png",
+  "contentPages" : [
+
+"To all villagers residing within the castle walls
+
+A female Hylotl has been spotted multiple times lurking near the walls. Please exercise caution whenever you find yourself outside. Outsiders are known to be the source of a lot of problems especially to our Lord Katahel. If you ever spot them, please report it to the nearest Dark Knight."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 25
+  }
+}
