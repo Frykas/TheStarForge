@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-luminesilk",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "luminesilk.png",
+  "description" : "An extremely thin silk that shines when exposed to sunlight.",
+  "shortdescription" : "^orange;Lumine Silk^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

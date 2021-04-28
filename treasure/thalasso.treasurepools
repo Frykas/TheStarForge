@@ -28,7 +28,7 @@
 		{"weight" : 0.06, "item" : ["corefragmentore", 15]},
 		{"weight" : 0.06, "item" : ["fleshstrand", 10]},
 		{"weight" : 0.05, "item" : ["phasematter", 2]},
-		{"weight" : 0.05, "item" : ["hardenedcarapace", 2]},
+		{"weight" : 0.05, "item" : ["prisiliteore", 10]},
 		{"weight" : 0.05, "item" : ["sharpenedclaw", 2]},
 		{"weight" : 0.05, "item" : ["scorchedcore", 2]},
 		{"weight" : 0.05, "item" : ["staticcell", 2]},

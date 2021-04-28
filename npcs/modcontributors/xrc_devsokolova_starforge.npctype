@@ -32,7 +32,7 @@
         "default" : {
           "default" : [
             "Hi there! I'm a historian.",
-            "Have you heard of Starforge? It's super cool!",
+            "Have you heard of the Starforge? It's super cool! I'm here to study it!",
             "Have you tried Betabound? It's amazing!",
             "Hi! My name is <selfname>, and your name is <entityname>^reset;!",
             "Have you ever had hair as long as mine? ... Oh, I see!",
@@ -41,10 +41,6 @@
             "Huh?",
             "Have you seen someone named ^orange;Tiy^reset; wandering around?",
             "Can you fly? I can fly; I have rocket boots!",
-            "I'm sorry if I accidentally slapped you with my hair!",
-            "",
-            "^;",
-            "\n\n\n\n\n",
             "Matter Manipulator? Ohh, can it run ^orange;Doom^reset;?",
             "You look tired-- no offence! You should take some time off.",
             "I got the flower in my hair from a different universe! ...Probably!",

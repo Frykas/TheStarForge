@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legarmour",
-  "description" : "Follow us in our journey, Heaven awaits at the end of it.",
-  "shortdescription" : "^red;Benediction of Siaxaa^reset;",
+  "description" : "... And to those who learn of her Truth, blessings await.",
+  "shortdescription" : "^red;Siaxaa's Blessing^reset;",
   "tooltipKind" : "armor",
 
   "maleFrames" : "pants.png",
@@ -15,9 +15,9 @@
   "level" : 7,
   "leveledStatusEffects" : [
     {
-      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.12
+      "baseMultiplier" : 1.1071428
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
@@ -25,14 +25,14 @@
       "amount" : 0.2
     },
     {
-      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 3
+      "amount" : 6
     },
     {
-      "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 3
+      "amount" : 2
     }
   ],
 

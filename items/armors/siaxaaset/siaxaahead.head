@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headarmour",
-  "description" : "For thousands of years, you were deceived. Brothers and sisters, open yourself to the Truth.",
-  "shortdescription" : "^red;Voice of Siaxaa^reset;",
+  "description" : "Betrayed thousands of years ago by her bloodthirsty brother, Siaxaa was forgotten...",
+  "shortdescription" : "^red;Siaxaa's Crown^reset;",
   "tooltipKind" : "armor",
 
   "maleFrames" : "head.png",
@@ -16,24 +16,24 @@
   "level" : 7,
   "leveledStatusEffects" : [
     {
-      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.171428
+      "baseMultiplier" : 1.142857
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.3
+      "amount" : 0.31
     },
     {
-      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 4.285715
+      "amount" : 8
     },
     {
       "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 4
+      "amount" : 4.14285
     }
   ],
 
