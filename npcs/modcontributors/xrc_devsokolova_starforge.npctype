@@ -21,8 +21,7 @@
   },
 
   "scriptConfig" : {
-  //  "behavior" : "tutorial",
-"dialogMode":"random",
+    "dialogMode":"random",
 
     "personalities" : [
         [1.0, { "personality" : "cheerful", "reactions" : {} }]
@@ -33,7 +32,7 @@
         "default" : {
           "default" : [
             "Hi there! I'm a historian.",
-            "Have you heard of Starforge? It's super cool!",
+            "Have you heard of the Starforge? It's super cool! I'm here to study it!",
             "Have you tried Betabound? It's amazing!",
             "Hi! My name is <selfname>, and your name is <entityname>^reset;!",
             "Have you ever had hair as long as mine? ... Oh, I see!",
