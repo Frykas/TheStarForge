@@ -1,7 +1,7 @@
 {
   "itemName" : "starforge-jamsandwich",
   "rarity" : "uncommon",
-  "price" : 500,
+  "price" : 70,
   "category" : "preparedFood",
   "inventoryIcon" : "jamsandwich.png",
   "description" : "The Thalasso's favorite snack. Easy to make and light on the stomach! Very light...",

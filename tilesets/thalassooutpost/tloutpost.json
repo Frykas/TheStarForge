@@ -36,7 +36,7 @@
      "tilesetDirection":"string"
     },
  "spacing":0,
- "tilecount":28,
+ "tilecount":29,
  "tiledversion":"1.4.3",
  "tileheight":97,
  "tileproperties":
@@ -249,6 +249,16 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-loreshop",
+         "tilesetDirection":"right"
+        },
+     "28":
+        {
+         "\/\/description":"This teleporter makes a great demonstration and a handy return point!",
+         "\/\/name":"starforge-thalassomainteleporter",
+         "\/\/shortdescription":"Thalasso Outpost Teleporter",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-thalassomainteleporter",
          "tilesetDirection":"right"
         },
      "3":
@@ -534,6 +544,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "28":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "3":
         {
          "\/\/description":"string",
@@ -732,6 +752,12 @@
          "image":"loreshop.png",
          "imageheight":35,
          "imagewidth":40
+        },
+     "28":
+        {
+         "image":"thalassomainteleporter.png",
+         "imageheight":62,
+         "imagewidth":43
         },
      "3":
         {

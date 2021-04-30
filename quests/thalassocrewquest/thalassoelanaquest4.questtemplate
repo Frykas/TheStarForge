@@ -1,0 +1,30 @@
+{
+  "id" : "thalassoelanaquest4",
+  "title" : "^green;Pranking the Prankster",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassoelanaquest1", "thalassoelanaquest2", "thalassoelanaquest3" ],
+  "text" : "You're still around? Perfect timing! You see ^green;Strelitzia^reset; is quite the little prankster, if you leave her without anything to do she WILL prepare a prank or steal something. How about we turn the tide? She came to me asking for food earlier, let's bring her a ^orange;Hellbowl^reset;! ",
+  "completionText" : "Elana finally made food for Ssstreli??? Thanksss, Ssstreli wasss ssstarving... Wait! Why isss bowl ssso hot???",
+  "moneyRange" : [200, 200],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-thefork-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+	 },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "starforge-hellbowl",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;Hellbowl^reset; for ^green;Strelitzia^reset;."
+  }
+}
