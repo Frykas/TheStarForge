@@ -59,7 +59,7 @@
       [0, [
           {
             "head" : [
-              { "name" : "eyepatchhead", "parameters" : { "directives" : "?setcolor=fff?replace;fff0=fff?crop;0;0;2;2?blendmult=/items/active/weapons/protectorate/aegisaltpistol/beamend.png;0;0?replace;a355c0a5=00010000;a355c07b=2a010000;ffffffa5=00012a00;ffffff7b=2a012a00?scale=43;43?crop;1;1;44;44?replace;11011c00=d80000;11011d00=d80000;12011b00=d80000;12011c00=d80000;12011d00=f93d3d;12011e00=d80000;13011b00=d80000;13011c00=f93d3d;13011d00=d80000;13011e00=f93d3d;14011c00=d80000;14011d00=f93d3d" } }
+              { "name" : "eyepatchhead", "parameters" : { "directives" : "?setcolor=fff?replace;fff0=fff?crop;0;0;2;2?blendmult=/items/active/weapons/protectorate/aegisaltpistol/beamend.png;0;0?replace;a355c0a5=00010000;a355c07b=2a010000;ffffffa5=00012a00;ffffff7b=2a012a00?scale=43;43?crop;1;1;44;44?replace;10011b00=d80000;10011c00=d80000;11011a00=d80000;11011b00=d80000;11011c00=f93d3d;11011d00=d80000;12011a00=d80000;12011b00=f93d3d;12011c00=d80000;12011d00=f93d3d;13011b00=d80000;13011c00=f93d3d" } }
             ],
             "chest" : [
               { "name" : "tshirtchest", "parameters" : { "colorIndex" : 4 } }
