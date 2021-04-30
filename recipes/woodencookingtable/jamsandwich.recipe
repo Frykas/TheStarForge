@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "alienfruitjam", "count" : 1 },
+	{ "item" : "bread", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-jamsandwich",
+    "count" : 2
+  },
+  "groups" : [ "craftingfood", "mains" ], 
+  "duration" : 0
+}

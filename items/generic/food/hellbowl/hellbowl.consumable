@@ -1,0 +1,40 @@
+{
+  "itemName" : "starforge-hellbowl",
+  "rarity" : "essential",
+  "price" : 500,
+  "category" : "preparedFood",
+  "inventoryIcon" : "hellbowl.png",
+  "description" : "Elana recommends you stay near a toilet for a few hours after eating this.",
+  "shortdescription" : "Elana's Hellbowl",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 1200
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 1200
+    },
+	{
+        "effect" : "ragefood",
+        "duration" : 270
+    },
+    {
+        "effect" : "nova",
+        "duration" : 60
+    },
+    {
+        "effect" : "burning",
+        "duration" : 20
+    }
+  ] ],
+  "foodValue" : 100,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

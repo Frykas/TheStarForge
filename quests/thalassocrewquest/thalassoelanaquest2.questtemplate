@@ -1,0 +1,30 @@
+{
+  "id" : "thalassoelanaquest2",
+  "title" : "^green;Out of Jam",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassoelanaquest1" ],
+  "text" : "Okay so I tend to make sandwiches with jam for everyone here as a snack, thing is... We're out of jam!! Could you bring me some? But let's add some spice to it, let's make ^orange;Alien Fruit Jam^reset; sandwiches!",
+  "completionText" : "Thanks a lot! That jam doesn't even taste that bad, so it's great! Here, have your share as well! ",
+  "moneyRange" : [100, 100],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-jamsandwich-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questGiver"
+	 },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "alienfruitjam",
+        "count" : 3,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring ^orange;Alien Jam^reset; to ^green;Elana^reset;."
+  }
+}

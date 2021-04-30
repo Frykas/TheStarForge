@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "spicyribs", "count" : 1 },
+    { "item" : "pearlpearisotto", "count" : 2},
+	{ "item" : "volcanicsalsa", "count" : 3},
+	{ "item" : "liquidlava", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-hellbowl",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "mains" ], 
+  "duration" : 0
+}
