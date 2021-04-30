@@ -6,7 +6,7 @@
   "rarity" : "Essential",
   "category" : "backwear",
   "description" : "A quiver holding spears made of a strange mix of bone and other materials. ",
-  "shortdescription" : "^Green;Berserker's Quiver^white;",
+  "shortdescription" : "^#758468;Berserker's Quiver^white;",
   "tooltipKind" : "back",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
 

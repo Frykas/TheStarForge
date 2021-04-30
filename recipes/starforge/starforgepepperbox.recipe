@@ -1,6 +1,9 @@
 {
   "input" : [
-	{ "item" : "essence", "count" : 7500}
+	{ "item" : "essence", "count" : 5000},
+    { "item" : "starforge-infusedtitanium", "count" : 30},
+	{ "item" : "aegisaltpistol", "count" : 1},
+	{ "item" : "money", "count" : 5000}
   ],
   "output" : {
     "item" : "starforge-pepperbox",

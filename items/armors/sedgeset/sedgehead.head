@@ -6,7 +6,7 @@
   "rarity" : "Essential",
   "category" : "headarmour",
   "description" : "The cult of Berserking worshipped a Floran hunter that was said to come from another World.",
-  "shortdescription" : "^green;Hood of Berserking^reset;",
+  "shortdescription" : "^#758468;Hood of Berserking^reset;",
   "tooltipKind" : "armor",
 
   "maleFrames" : "head.png",

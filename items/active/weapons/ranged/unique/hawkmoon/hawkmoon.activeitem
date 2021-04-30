@@ -3,15 +3,15 @@
   "price" : 3000,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "With each shot, a deafening shriek. ",
-  "shortdescription" : "Hawkmoon",
+  "description" : "With each shot, a deafening shriek.",
+  "shortdescription" : "^orange;Hawkmoon^reset;",
   "level" : 7,
   "tooltipKind" : "base",
   "category" : "Revolver",
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
   
-"inventoryIcon" : "hawkmoon.png",
+  "inventoryIcon" : "hawkmoon.png",
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
     "animationParts" : {
@@ -23,8 +23,8 @@
       "fire" : ["/sfx/gun/starforge_hawkmoon.ogg"]
     }
   }, 
-  "baseOffset" : [1.0, 0.125],
-  "muzzleOffset" : [1.750,0.750],
+  "baseOffset" : [0.750, 0.125],
+  "muzzleOffset" : [0.875,0.250],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
   

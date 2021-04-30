@@ -1,0 +1,32 @@
+{
+  "objectName" : "starforge-katahelbanner",
+  "colonyTags" : ["glitch","glitchcastle","pretty"],
+  "rarity" : "Common",
+  "description" : "A Glitch banner.",
+  "shortdescription" : "Large Glitch Banner",
+  "race" : "glitch",
+  "category" : "decorative",
+  "printable" : true,
+  "price" : 80,
+
+  "humanDescription" : "A Glitch banner, it is quite beautiful.",
+
+
+  "inventoryIcon" : "katahelbannericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "katahelbanner.png:<color>",
+      "imagePosition" : [-8, -32],
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [ [-1, 0], [0, 0], [1, 0] ]
+    },
+    {
+      "dualImage" : "katahelbanner.png:<color>",
+      "imagePosition" : [-8, -32],
+
+      "spaceScan" : 0.1,
+      "fgAnchors" : [ [-1, 1], [0, 1], [1, 1] ]
+    }
+  ]
+}

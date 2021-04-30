@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starforge-katahelruinsdungeon",
+    "species" : "glitch",
+    "rules" : [
+    ],
+    "protected" : true,
+    "anchor" : [ "starforge-katahelruinsdungeon" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100
+  },
+
+  "parts" : [
+    {
+      "name" : "starforge-katahelruinsdungeon",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "katahelruinsdungeon.json" ]
+    }
+  ]
+}

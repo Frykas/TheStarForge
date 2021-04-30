@@ -1,0 +1,29 @@
+{
+  "id" : "thalassowillquest1",
+  "title" : "^green;Cotton Problem",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2" ],
+  "text" : "Hey, I know it's surprising, but me, the Great Will, need help. I used to own a ^green;Cotton farm^reset; back in the days, but it was RUINED by those ^orange;Gleaps^reset; eating and destroying everything. Since I can't leave the outpost, you'll avenge my farm, right?",
+  "completionText" : "Ya killed that many? I'm impressed. Here, some leftovers from my personal stock. Maybe ya're not that useless after all.",
+  "moneyRange" : [1000, 1000],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "syntheticmaterial", 10] ]
+  ],
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/starforge-main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+     "conditions" : [
+      {
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Gleaps",
+        "targetMonster" : "gleap",
+        "count" : 12
+      }
+    ],
+	"turnInDescription" : "Speak to ^green;Will^reset;."
+  }
+}

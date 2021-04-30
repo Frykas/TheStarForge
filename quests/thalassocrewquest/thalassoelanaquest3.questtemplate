@@ -1,0 +1,30 @@
+{
+  "id" : "thalassoelanaquest3",
+  "title" : "^green;Spicy Ingredient",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassoelanaquest1", "thalassoelanaquest2" ],
+  "text" : "I'm preparing a new recipe! You know, I love spicy food. Most of the crew don't mind it, well except Mariko because she can't stand it, and Creighton for another reason haha. Could you bring me ingredients? I need some ^orange;Chili^reset; but we're out of stock. Hey, I swear it's not my fault!",
+  "completionText" : "Perfect! Thanks to you I can finish this recipe I've been working on! Everyone is gonna love it! Well except those two but let's ignore them haha! Here, you should try to make it yourself!",
+  "moneyRange" : [100, 100],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-hellbowl-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questGiver"
+	 },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "chili",
+        "count" : 10,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Bring the ingredients to ^green;Elana^reset;."
+  }
+}

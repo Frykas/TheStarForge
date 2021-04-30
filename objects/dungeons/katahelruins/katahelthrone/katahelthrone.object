@@ -1,0 +1,27 @@
+{
+  "objectName" : "starforge-katahelthrone",
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 200,
+  "description" : "A golden Glitch throne. This one has a massive bolt stuck in it.",
+  "shortdescription" : "Katahel's Throne",
+
+  "humanDescription" : "A golden Glitch throne, there is a massive bolt stuck in it.",
+
+  "inventoryIcon" : "katahelthroneicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "katahelthrone.png" ,
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+   
+  ]}

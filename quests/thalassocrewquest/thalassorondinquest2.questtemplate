@@ -13,9 +13,15 @@
   "script" : "/quests/scripts/main.lua",
   "scriptConfig" : {
      "portraits" : {
-      "questStarted" : "questGiver",
-      "questComplete" : "questReceiver"
-    },
+      "questStarted" : {
+	   "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      }
+	 },
     "requireTurnIn" : true,
     "conditions" : [
       {

@@ -6,7 +6,7 @@
   "rarity" : "Essential",
   "category" : "chestarmour",
   "description" : "After the passing of the worshipped Berserking, the best hunter among the cult was bestowed an armor, and a name; Sedge.",
-  "shortdescription" : "^green;Chest of Berserking^reset;",
+  "shortdescription" : "^#758468;Chest of Berserking^reset;",
   "tooltipKind" : "armor",
 
   "maleFrames" : {

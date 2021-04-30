@@ -11,11 +11,11 @@
   "itemTags" : ["weapon","ranged","assaultrifle"],
   "level" : 6,
 
-"inventoryIcon" : "default.png",
+"inventoryIcon" : "marikogun.png",
 
   "animation": "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
-    "middle" : "default.png"
+    "middle" : "marikogun.png"
   },
   "animationCustom" : {
     "sounds" : {

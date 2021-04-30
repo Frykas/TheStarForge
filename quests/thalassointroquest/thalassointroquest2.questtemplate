@@ -9,6 +9,7 @@
     [ [ "titaniumbar", 10 ] ]
   ],
 
+  "compassUpdate" : 0.2,
   "updateDelta" : 10,
   "script" : "/quests/scripts/main.lua",
   "scriptConfig" : {

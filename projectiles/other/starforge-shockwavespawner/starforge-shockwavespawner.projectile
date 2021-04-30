@@ -1,0 +1,13 @@
+{
+  "projectileName" : "starforge-shockwavespawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "vhighgravgrenade",
+  "timeToLive" : 0.5,
+  "power" : 1,
+  "speed" : 0,
+  "bounces" : -1,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "default"
+}

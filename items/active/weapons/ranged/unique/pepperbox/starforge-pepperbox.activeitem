@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "A durable revolver, capable of charging for increased performance.",
-  "shortdescription" : "Pepperbox",
+  "shortdescription" : "^#b4f5c3;Pepperbox^reset;",
   "level" : 7,
   "tooltipKind" : "base",
   "category" : "Revolver",

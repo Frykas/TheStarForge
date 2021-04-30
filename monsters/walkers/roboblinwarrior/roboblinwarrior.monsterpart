@@ -1,9 +1,0 @@
-{
-  "name" : "roboblinwarrior",
-  "category" : "roboblinwarrior",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "roboblinwarrior.png"
-  }
-}

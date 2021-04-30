@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-robotblinfood",
+  "rarity" : "rare",
+  "price" : 365,
+  "category" : "preparedFood",
+  "inventoryIcon" : "robo_blin.png",
+  "description" : "Not to be confused with the sassy and walking variant.",
+  "shortdescription" : "Robotblin",
+  "effects" : [ [
+      {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 405
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 405
+    }
+  ] ],
+  "foodValue" : 45,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

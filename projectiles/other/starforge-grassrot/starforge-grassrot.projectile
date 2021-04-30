@@ -1,0 +1,129 @@
+{
+  "projectileName" : "starforge-grassrot",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "grenade",
+  "timeToLive" : 0.5,
+  "power" : 1,
+  "speed" : 0,
+  "bounces" : 0,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "actionOnReap" : [
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "aliengrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "alpinegrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "aridgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "roots",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "charredgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "colourfulgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "crystalgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "fleshgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "flowerygrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "grass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "heckgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "hivegrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "junglegrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "savannahgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "slimegrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "snowygrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "tentaclegrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "thickgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	},
+	{
+	  "action" : "applySurfaceMod",
+	  "previousMod" : "toxicgrass",
+	  "newMod" : "blackash",
+	  "radius" : 2
+	}
+  ],
+  "damageKind" : "hidden"
+}

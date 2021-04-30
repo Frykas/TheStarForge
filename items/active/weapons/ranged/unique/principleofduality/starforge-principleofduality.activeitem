@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "A powerful rocketlauncher with the ability to fire twin elemental missiles.",
-  "shortdescription" : "Principle of Duality",
+  "shortdescription" : "^#b4f5c3;Principle of Duality^reset;",
   "level" : 7,
   "fixedLevel" : false,
   "tooltipKind" : "base",

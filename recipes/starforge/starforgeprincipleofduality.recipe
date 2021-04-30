@@ -1,6 +1,6 @@
 {
   "input" : [
-	{ "item" : "essence", "count" : 7500},
+	{ "item" : "essence", "count" : 5000},
 	{ "item" : "starforge-cerulium", "count" : 3},
 	{ "item" : "starforge-infusedtitanium", "count" : 20},
 	{ "item" : "scorchedcore", "count" : 10},

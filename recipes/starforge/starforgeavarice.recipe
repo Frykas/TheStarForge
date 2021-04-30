@@ -1,8 +1,9 @@
 {
   "input" : [
-	{ "item" : "essence", "count" : 7500},
+	{ "item" : "essence", "count" : 5000},
 	{ "item" : "starforge-impervium", "count" : 5},
-	{ "item" : "starforge-infusedtitanium", "count" : 10},
+	{ "item" : "starforge-infusedtitanium", "count" : 15},
+	{ "item" : "bow", "count" : 1},
 	{ "item" : "darkwoodmaterial", "count" : 500}
   ],
   "output" : {

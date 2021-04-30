@@ -13,7 +13,8 @@
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-katahelcore"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-etherealgoo"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-gravediggershovel"} },
-{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-marikobacktrue-recipe"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-katahelbacktrue-recipe"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-brimsteel"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-luminesilk"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-undyingfibre"} }
 ]

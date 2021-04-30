@@ -1,10 +1,17 @@
 [
-{
-        "op": "add",
-        "path": "/spawnProfile/groups/0/pool/-",
-        "value": [
-            1,
-            "starforge-jootyfish"
+	
+  {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-jootyfish"
         ]
+      ]
     }
+  }
+	
 	]

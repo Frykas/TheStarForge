@@ -1,0 +1,33 @@
+{
+  "id" : "starforge-furourswordquest2",
+  "title" : "^orange;Rage Ritual II",
+  "text" : "Sadly Koichi can't do anything with the blade as it is made with Impervium. But maybe with the help of ^orange;Rondin^reset; and the Starforge we could make something out of it. I better meet him at the ^green;Thalasso Outpost^reset;.",
+  "completionText" : "What do you bring me this time? An Impervium blade uh... I remember the Captain having one. Here, take this blueprint replica of Mariko's katana. It's the only katana made of Impervium that I know.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-furour-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      }
+	 },
+	"followUp" : "starforge-furourswordquest2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "starforge-furourblade",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Show the ^orange;Impervium Blade^reset; to ^green;Rondin^reset;."
+  }
+}

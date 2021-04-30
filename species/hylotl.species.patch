@@ -1,0 +1,42 @@
+[ 
+{
+"op" : "add",
+"path" : "/bodyColor/-",
+"value" : { "ffca8a" : "B55953", "e0975c" : "8E3C36", "a85636" : "652626", "6f2919" : "3D1C1C" }
+},
+{
+"op" : "add",
+"path" : "/bodyColor/-",
+"value" : { "ffca8a" : "B4B3AD", "e0975c" : "8A897A", "a85636" : "4E4F42", "6f2919" : "2C2915" }
+},
+{
+"op" : "add",
+"path" : "/bodyColor/-",
+"value" : { "ffca8a" : "BC7A6F", "e0975c" : "88292C", "a85636" : "601E3D", "6f2919" : "3D1C3C" }
+},
+{
+"op" : "add",
+"path" : "/undyColor/-",
+"value" : { "f32200" : "B55953", "dc1f00" : "8E3C36", "be1b00" : "652626", "951500" : "3D1C1C" }
+},
+{
+"op" : "add",
+"path" : "/undyColor/-",
+"value" : { "f32200" : "B4B3AD", "dc1f00" : "8A897A", "be1b00" : "4E4F42", "951500" : "2C2915" }
+},
+{
+"op" : "add",
+"path" : "/hairColor/-",
+"value" : { "f7e7b2" : "B55953", "d9c189" : "8E3C36", "a38d59" : "652626", "735e3a" : "3D1C1C" }
+},
+{
+"op" : "add",
+"path" : "/hairColor/-",
+"value" : { "f7e7b2" : "B4B3AD", "d9c189" : "8A897A", "a38d59" : "4E4F42", "735e3a" : "2C2915" }
+},
+{
+"op" : "add",
+"path" : "/hairColor/-",
+"value" : { "f7e7b2" : "A26FBC", "d9c189" : "A26FBC", "a38d59" : "572988", "735e3a" : "211E60" }
+}
+]

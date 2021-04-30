@@ -1,0 +1,42 @@
+{
+  "itemName" : "starforge-siaxaahead",
+  "price" : 1440,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "headarmour",
+  "description" : "Betrayed thousands of years ago by her bloodthirsty brother, Siaxaa was forgotten...",
+  "shortdescription" : "^red;Siaxaa's Crown^reset;",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "level" : 7,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.142857
+    },
+    {
+      "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.31
+    },
+    {
+      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 8
+    },
+    {
+      "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 4.14285
+    }
+  ],
+
+  "itemTags" : [ "tier7armour" ]
+
+}

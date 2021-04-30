@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 1 },
+    { "item" : "silk", "count" : 2 },
+	{ "item" : "prisiliteore", "count" : 8 },
+	{ "item" : "sand2", "count" : 15},
+	{ "item" : "essence", "count" : 20}
+  ],
+  "output" : {
+    "item" : "starforge-luminesilk",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

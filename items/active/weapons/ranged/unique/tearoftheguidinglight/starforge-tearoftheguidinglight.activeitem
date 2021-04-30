@@ -1,0 +1,127 @@
+{
+  "itemName" : "starforge-tearoftheguidinglight",
+  "price" : 3000,
+  "level" : 7,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A tainted avolite, taking on an azure hue, said to guide its followers to the truth. ^red;[PROTOTYPE]^reset;",
+  "shortdescription" : "Tear of Perception",
+  "tooltipKind" : "base",
+  "category" : "Artifact",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","pistol"],
+
+  "inventoryIcon" : "starforge-tearoftheguidinglightringicon.png",
+  
+  "animation" : "starforge-tearoftheguidinglight.animation",
+  "animationParts" : {
+    "ring" : "starforge-tearoftheguidinglightring.png",
+    "crystal" : "starforge-tearoftheguidinglightcrystal.png",
+	"firingPulse" : "starforge-tearoftheguidinglightbeamcharge.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/starforge_tearofperceptionblast1.ogg", "/sfx/gun/starforge_tearofperceptionblast2.ogg" ],
+      "fireLoop" : [ "/sfx/gun/starforge_tearofperceptionloop.ogg" ],
+      "fireEnd" : [],
+      "beamImpact" : []
+    }
+  },
+  "animationScripts" : ["/items/active/effects/starforge-enhancedchain.lua"],
+
+  "muzzleOffset" : [2, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+  "handGrip" : "wrap",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-floatingbeamfire.lua"],
+    "class" : "StarForgeFloatingBeamFire",
+
+    "fireTime" : 0.05,
+    "baseDps" : 5.5,
+    "energyUsage" : 19.5,
+
+    "damageConfig" : {
+      "statusEffects" : [ ],
+      "damageSourceKind" : "plasma",
+      "knockback" : 2
+    },
+
+	"crystalPosition" : [-4, 1],
+
+	"firingDirectives" : "?replace;002F7E=0073D9;003EA8=60A8EA;0071D4=B6DAFA;067DFF=DEEEFD;5898FF=FEFEFE",
+	"fireEmote" : "annoyed",
+
+    "beamLength" : 75,
+	"laserPiercing" : false,
+	
+	"animatedChain" : true,
+    "chainAnimationTime" : 0.5,
+    "chainAnimationFrames" : 8,
+	
+    "hoverCycle" : 2.0,
+    "hoverAmplitude" : 0.5,
+
+	"beamCollisionType" : "line",
+	"beamWidth" : 0.875,
+
+    "chain" : {
+	  "directives" : "?flipx",
+      "startOffset" : [1.25, 0],
+      "startSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
+      "segmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beam.png",
+      "endSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
+      "endCollideSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
+      "segmentSize" : 0.375,
+      "overdrawLength" : 0.2,
+      "taper" : 0,
+      "waveform" : {
+        "frequency" : 4.0,
+        "amplitude" : 0.125,
+        "movement" : 40.0
+      },
+      "fullbright" : true
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"frontArmFrame" : "swim.2",
+		"backArmFrame" : "swim.2",
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"frontArmFrame" : "swim.2",
+		"backArmFrame" : "swim.2",
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"frontArmFrame" : "swim.2",
+		"backArmFrame" : "swim.2",
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

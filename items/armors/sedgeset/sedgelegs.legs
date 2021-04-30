@@ -6,7 +6,7 @@
   "rarity" : "Essential",
   "category" : "legarmour",
   "description" : "Elusive, stalking, preying on anything worth hunting. This is the way of the Berserking.",
-  "shortdescription" : "^green;Legs of Berserking^reset;",
+  "shortdescription" : "^#758468;Legs of Berserking^reset;",
   "tooltipKind" : "armor",
 
   "maleFrames" : "pants.png",

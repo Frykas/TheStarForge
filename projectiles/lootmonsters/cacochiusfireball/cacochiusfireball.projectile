@@ -1,0 +1,21 @@
+{
+  "projectileName" : "starforge-cacochiusfireball",
+  "physics" : "bullet",
+  "image" : "cacochiusfireball.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 19,
+   "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config"
+    }
+	],
+  "emitters" : [ "fireplasma", "defaultblue", "fireplasma", "defaultblue", "fireplasma", "defaultblue"  ],
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "fireplasma",
+  "lightColor" : [173, 112, 255],
+  "fullbright" : true
+}

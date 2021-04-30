@@ -1,0 +1,41 @@
+{
+  // ==============================================================================================
+  //                                       KATAHEL RUIN ITEM DROPS
+  // ==============================================================================================
+ 
+   "starforge-katahelruinsTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.66, "pool" : "basicTreasure"},
+        {"weight" : 0.10, "item" : "starforge-glitchkatahel1-codex"},
+		{"weight" : 0.10, "item" : "starforge-glitchkatahel2-codex"},
+		{"weight" : 0.10, "item" : "starforge-glitchkatahel3-codex"},
+        {"weight" : 0.02, "item" : [ "throwingaxe", 3]},
+        {"weight" : 0.02, "item" : [ "bomb", 3]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+ "starforge-uniquebookTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.3, "item" : "starforge-katahelstory1-codex"},
+		{"weight" : 0.3, "item" : "starforge-katahelstory2-codex"},
+		{"weight" : 0.3, "item" : "starforge-katahelstory3-codex"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ]
+     
+  }
+  

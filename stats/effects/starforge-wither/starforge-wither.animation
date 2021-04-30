@@ -1,0 +1,11 @@
+{
+  "particleEmitters" : {
+    "decay" : {
+      "enabled" : true,
+      "emissionRate" : 20.0,
+      "particles" : [
+        { "particle" : "starforge-wither" }
+      ]
+    }
+  }
+}

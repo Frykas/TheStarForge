@@ -39,9 +39,7 @@
     "sellFactor" : 0.2,
     "items" : [
 	  { "item" : "starforge-sedgebacktrue-recipe"},
-	  { "item" : "starforge-soultakerbacktrue-recipe"},
-	  { "item" : "starforge-beheader-recipe"},
-	  { "item" : "starforge-furour-recipe"}
+	  { "item" : "starforge-soultakerbacktrue-recipe"}
     ]
   },
 

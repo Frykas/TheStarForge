@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-jamsandwich",
+  "rarity" : "uncommon",
+  "price" : 500,
+  "category" : "preparedFood",
+  "inventoryIcon" : "jamsandwich.png",
+  "description" : "The Thalasso's favorite snack. Easy to make and light on the stomach! Very light...",
+  "shortdescription" : "Alien Jam Slice",
+  "effects" : [ [
+    {
+        "effect" : "lowgrav",
+        "duration" : 10
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 240
+    }
+  ] ],
+  "foodValue" : 25,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

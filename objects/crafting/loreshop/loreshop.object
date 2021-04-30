@@ -23,6 +23,8 @@
   "race" : "generic",
   "category" : "crafting",
   "price" : 5000,
+  
+  "turnInQuests" : ["starforge-furourswordquest1"],
 
   "apexDescription" : "What a nerdy looking Hylotl.",
   "avianDescription" : "This Hylotl looks more like a librarian than a chemist.",

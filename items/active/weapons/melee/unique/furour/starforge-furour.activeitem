@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "An unusual katana, able to throw the user into a fit of rage for increased efficiency.",
-  "shortdescription" : "^cornflowerblue;Furour^reset;",
+  "shortdescription" : "^orange;Furour^reset;",
   "tooltipKind" : "base",
   "category" : "Katana",
   "twoHanded" : true,

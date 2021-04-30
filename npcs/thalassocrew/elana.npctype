@@ -25,6 +25,8 @@
 
   "scriptConfig" : {
     "behavior" : "villager",
+	"offeredQuests" : ["thalassoelanaquest1", "thalassoelanaquest2", "thalassoelanaquest3"],
+	"turnInQuests" : ["thalassoelanaquest2", "thalassoelanaquest3"],
 
     "dialogMode" : "sequence",
     "dialog" : {

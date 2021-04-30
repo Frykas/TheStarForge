@@ -1,0 +1,31 @@
+{
+  "objectName" : "starforge-katahelhelmet",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A very old helmet made of Impervium.",
+  "shortdescription" : "Katahel's Helmet",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 105,
+
+  "humanDescription" : "A very old, dirty helmet helmet.",
+
+
+  "inventoryIcon" : "katahelhelmeticon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "katahelhelmet.png:<color>",
+      "imageLayers" : [ { "image" : "katahelhelmet.png" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+
+}

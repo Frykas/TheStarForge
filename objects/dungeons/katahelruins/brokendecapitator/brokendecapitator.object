@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-brokendecapitator",
+  "rarity" : "essential",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "An old beheading sword. There are faint traces of Ancient Essence emanating from the blade.",
+  "shortdescription" : "Broken Decapitator",
+  "race" : "glitch",
+
+  "floranDescription" : "Floran hate heavy blade. Can't ssstab.",
+  "glitchDescription" : "Confused. This sword is surprisingly complex despite being Glitch-made.",
+  "novakidDescription" : "Uh, this blade ain't shiny anymore.",
+  "humanDescription" : "A very old blade, seems like it's broken now.",
+  "hylotlDescription" : "This blade has a very rough shape. Maybe it can be repaired?",
+  "avianDescription" : "There are lots of wires coming out of the sword.", 
+  "apexDescription" : "This blade has a strange feeling to it.",
+
+  "inventoryIcon" : "brokendecapitatoricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "brokendecapitator.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "starforge-decapitatorpart",
+
+  "animation" : "brokendecapitator.animation",
+  "animationParts" : {
+    "object" : "brokendecapitator.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

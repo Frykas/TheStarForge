@@ -1,0 +1,9 @@
+{
+  "name" : "ancientfloatbagcritter",
+  "category" : "ancientfloatbagcritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

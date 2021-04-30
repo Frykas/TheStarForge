@@ -27,6 +27,8 @@
   },
 
   "scriptConfig" : {
+     "offeredQuests" : ["thalassowillquest1", "thalassowillquest2", "thalassowillquest3"],
+     "turnInQuests" : ["thalassowillquest1", "thalassowillquest2", "thalassowillquest3"],
 	  "merchant" : {
 		"categories" : {
 		  "override" : [ "starforge-willmerchant" ]

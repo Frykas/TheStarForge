@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-luminesilk", "count" : 2 },
+	{ "item" : "goldbar", "count" : 8 },
+	{ "item" : "essence", "count" : 1000}
+  ],
+  "output" : {
+    "item" : "starforge-siaxaahead",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "armours" ],
+  "duration" : 2
+}
+
