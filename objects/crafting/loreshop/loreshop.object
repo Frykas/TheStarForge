@@ -24,6 +24,7 @@
   "category" : "crafting",
   "price" : 5000,
   
+  "offeredQuests" : ["starforge-furourswordquest2"],
   "turnInQuests" : ["starforge-furourswordquest1"],
 
   "apexDescription" : "What a nerdy looking Hylotl.",

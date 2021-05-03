@@ -1,6 +1,6 @@
 {
   "type" : "starforge-anomnom",
-  "baseType" : "base",
+  "baseType" : "outpostvisitor",
 
   "identity" : {
     "name" : "Zoey Constella",
@@ -25,7 +25,6 @@
   },
 
   "scriptConfig" : {
-    "behavior" : "villager",
 
     "dialogMode":"tutorial",
     "dialog" : {

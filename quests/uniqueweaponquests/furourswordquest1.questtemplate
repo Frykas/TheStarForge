@@ -5,7 +5,7 @@
   "completionText" : "Ah yes... I know about the ones you met. They are the Yukai, a savage Hylotl clan who swore to never forgive the Florans. They often do strange rituals and try to call upon demons and spirits. This rare blade was probably used in one of them, but I can't do anything with it.",
   "moneyRange" : [2500, 2500],
   "rewards" : [
-    [ [ "starforge-thalassocache", 1 ] ]
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-hylotlyukai1-codex" ] ]
   ],
 
   "updateDelta" : 10,
