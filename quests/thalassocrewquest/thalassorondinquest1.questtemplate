@@ -2,7 +2,7 @@
   "id" : "thalassorondinquest1",
   "title" : "^green;Lacking Materials",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassointromission3" ],
-  "text" : "Hey, since you're going to be around here for a while, mind helping us out a bit? We're almost running out of ^orange;Titanium Bars^reset;, and since the captain is on a mission, gathering ressources is complicated. I can reward you well.",
+  "text" : "Hey, since you're going to be around here for a while, mind helping us out a bit? We're almost running out of ^orange;Titanium Bars^reset;, and since the captain is on a mission, gathering resources is complicated. I can reward you well.",
   "completionText" : "Thanks, this is going to keep our gear in shape for some time. ",
   "moneyRange" : [800, 800],
   "rewards" : [

@@ -1,0 +1,51 @@
+{
+  "metadata" : {
+    "name" : "yukaivillagemicrodungeons",
+    "species" : "hylotl",
+    "rules" : [
+    ],
+    "anchor" : [ "yukaihouse1", "yukaihouse2", "yukaihouse3", "yukaigarden", "yukaiabandonnedhouse" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "yukaihouse1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaihouse1.json" ]
+    },
+    {
+      "name" : "yukaihouse2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaihouse2.json" ]
+    },
+    {
+      "name" : "yukaihouse3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaihouse3.json" ]
+    },
+    {
+      "name" : "yukaigarden",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaigarden.json" ]
+    },
+    {
+      "name" : "yukaiabandonnedhouse",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaiabandonnedhouse.json" ]
+    }
+  ]
+}

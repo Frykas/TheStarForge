@@ -2,7 +2,7 @@
   "id" : "thalassocreightonquest1",
   "title" : "^green;Creighton's Errand",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2" ],
-  "text" : "Oy, since you're here now, grab me somethin to drink will ya? I've been cleaning Strelitzia's last prank on Tweeters for at least an hour now.^orange,Coffee^reset, will do.",
+  "text" : "Oy, since you're here now, grab me somethin to drink will ya? I've been cleaning Strelitzia's last prank on Tweeters for at least an hour now.^orange;Coffee^reset; will do.",
   "completionText" : "You got it? Nice, give it to me.",
   "moneyRange" : [750, 750],
   "rewards" : [

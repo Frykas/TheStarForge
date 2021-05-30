@@ -1,0 +1,31 @@
+{
+  "objectName" : "starforge-maidennpc",
+  "rarity" : "Essential",
+  "description" : "Why is she in your pocket? You monster.",
+  "shortdescription" : "Maiden, Voice of Siaxaa",
+  "printable" : false,
+ 
+  "apexDescription" : "This tall lady is so pale she almost blends with her clothing.",
+  "avianDescription" : "It's so rare to see a Siaxaa follower! Seeing how pale she is, she's probably albino. Incredible.",
+  "floranDescription" : "Tall lady can't sssee floran. Easssy prey.",
+  "glitchDescription" : "Appreciative. This Avian is very pretty.",
+  "humanDescription" : "What a strange Avian. Her paleness blends with her clothes, she's quite pretty.",
+  "hylotlDescription" : "It is very rare to see this kind of Avian, especially albino. She is beautiful.",
+  "novakidDescription" : "What a tall lady. Never seen one like that before.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "maiden.png:<frames>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 36,
+      "animationCycle" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}
