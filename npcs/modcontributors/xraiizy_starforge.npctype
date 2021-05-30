@@ -1,0 +1,68 @@
+{
+  "type" : "starforge-xraiizy",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Raiizy",
+    "species" : "human",
+	"personalityIdle" : "idle.2",
+	"personalityArmIdle" : "idle.2",
+	"facialHairType":"",
+	"facialHairGroup":"",
+	"facialHairDirectives":"?replace;fff8b5=420400;fde03f=420400;806319=420400;f6b919=420400;ffffff=FFD900",
+    "hairGroup" : "hair",
+    "hairType" : "",
+	"bodyDirectives": "?replace;FFE2C5=FFF5E8;FFC181=F8D7B5;D39C6C=D0A57F;C7815B=D0A57F;506464=178800;78A08C=178800;3C5000=167C02;648C78=167C02;503C3C=000;463232=000;645050=000;DC1F00=714F3C;BE1B00=976750;951500=513A2D",
+	"hairDirectives": "?replace=ffffff=FFD900?replace=fff8b5=FF9A00?replace=fde03f=FF5600?replace=f6b919=FF1100",
+	"emoteDirectives" : "?replace=ffffff=FFD900",
+    "gender" : "male"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+
+    "dialogMode":"tutorial",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "No, you can't have a shotgun like this. Not yet, at least.",
+            "Hi! I'm Raiizy, a gunsmith and the most Christian atheist there is.",
+            "Do you like ultraviolence? I like ultraviolence.",
+            "It's a miracle I didn't set my hair on fire at least once during all these fights.",
+            "Anyone got any hair styling gel?",
+            "Met Silver yet? She might not look like a gunsmith, but she helped me a lot with guns",
+            "You can find my guns all around the universe. I've worked with a LOT of people, you know.",
+			"I often come here to bring some of the weapons I make, the Thalasso need it!"
+            
+          ]
+        }
+      }
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+			
+			    "head": [{
+				    "name": "starforge-raiizywig"
+				}],
+                "chest": [{
+                    "name": "starforge-praetorianchest"
+                }],
+                "legs": [{
+                    "name": "starforge-praetorianpants"
+                }],
+				"primary": [{
+				    "name": "starforge-xraiizyshotgun"
+				}]	
+            }]]
+        ]
+    }
+}

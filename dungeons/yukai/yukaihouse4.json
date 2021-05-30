@@ -1,18 +1,11 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":60,
  "infinite":false,
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt2bENwjAUBNA0rAR7MA0FBSUboEyUjpkgUn5jESW2774\/8Z10EoVBfvqRg5JpGB6TqqqqqqqqqqrQDsHTg3EtvTjT9GS19GS1yHtcq0XeY6cnq0XeY0feY8fDewG3JmzvjdTSML0sa42Z5WVbS80Mr5e1xIz0os8lxjmGnm9k6xzmeXVf+gLXfrckHt4zuNG9J3CjeyPOl2FO5zt+e106DttzXFtf6mU\/35j3yPKOBfvx8jKuZ4QXbU7nizyvcr0ez58jzdfjHYN5Gf83crxe75DQc02LsqLcdt94LkV+3rof5TrX7O+gRRmtrT057claa269b3l51n8y2z6RZ1ZkO9oZ2cy0RnN7WVubvZ015r3f+7WupTPXv3d96\/3XmFvvQ+2vH\/rCsGQ=",
+         "data":"eJzt2U0KwjAQBeBu9Eh6tS5cuPQGpSfqzjNpoAMlNP3JvPnRzIMHgq3mozSxceq65xSNRqPRaDQajUah7ZynBWMprTjztGSltGSlePCO394KHcHfZW1NSaZXoWhvihdvnn\/y9nNTtkz03vJ4bqysS+\/e9c3P4UbL23dl79b9u3YeJ5be4dtrocPGeZxYr7trVslYe7Wj4b2Dy4m0N7\/\/UK2NpFfKyjFLeaWttWYJr5a1xoz0oucliXkMfX09W1Mk56vH3AFc+tyaaHhLz\/S19e69gBve45F8Bvbmld7fSM+wUt6a\/Z7WvWizJ6\/G\/jN5JdYjlBdpJq\/E740zXq3\/kNDXNS\/KinLTukF7jsjXe+vRWWfJ\/nZalJFq7TnTlqxcs\/W4wytn\/SUzjRM5Z3m2o52ezZJWb24tq7VZ28kxHz1v7ThL51n\/0eOtx88xW48j2l4\/sIPARA==",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -26,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt1VEKwjAQRdEIgjvSrfnRBbg5XZMILZTQxkwySV\/oPTAomibzTFpDAAAAAAAAAAAA0PJwLmXPRqWoVVbFzK2zKmXulfXozN7PpRGeY2fKGpvmGmXeWuTVnrcWebXnBYAzuF1CuIe29VtDwdLH8r\/xmsvz\/RSt1dJ747PrXJ\/MsozNKW9b\/cYVf7eXc+uaf9ftzdMie6pnS55UrznXWcZ6Zc393VM9l+y9dY0eea33cG31Os+KFVavno7O5X1+c3iePfWsa5asuc9e1ayLkrwemY9U2mvJOEXWPVHau1Ij946xfQHmu4Pz",
+         "data":"eJztmVkKwyAURe1Pu6N2a35kAd2Bq2qXVNpCAhJiBn1jvAcuCcHoO4hGSAgAAAAAAAAAAIAMj53xztznXsiZvOMYqnaWieG4r0fnmrV5pvU8ELXxAnzr2njhrL5rZ4n0y7WQtPGudeJC0kaW3rHK3vNia6yxNEcUsQiXq0VnbldLzlKu2s5Se5Slvasn1zlD4DkjcfXbCnxt99sKfPfzyULZLwAA9M7tUv5XQpX\/GBaY6pi+G88xlPfDbCxOXoXnb8VQo+ki7a5dv6Szdt3w5XP15ByyKyXaXlxzuoa2m6RrjranpOtEL545tbXWtLPI0TmxNHe1eK4d+OYLU97Tiw==",
          "encoding":"base64",
          "height":60,
          "id":2,
@@ -46,68 +39,7 @@
          "objects":[
                 {
                  "height":8,
-                 "id":991,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"ravencritter"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":200,
-                 "y":192
-                }, 
-                {
-                 "height":8,
-                 "id":994,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":176,
-                 "x":184,
-                 "y":216
-                }, 
-                {
-                 "height":8,
-                 "id":995,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":192,
-                 "x":176,
-                 "y":224
-                }, 
-                {
-                 "height":8,
-                 "id":996,
+                 "id":957,
                  "name":"",
                  "properties":[
                         {
@@ -129,7 +61,7 @@
                 }, 
                 {
                  "height":8,
-                 "id":997,
+                 "id":958,
                  "name":"",
                  "properties":[
                         {
@@ -151,51 +83,183 @@
                 }, 
                 {
                  "height":8,
-                 "id":998,
+                 "id":959,
                  "name":"",
                  "properties":[
                         {
                          "name":"colorVariant",
                          "type":"string",
-                         "value":"1"
+                         "value":"7"
                         }, 
                         {
                          "name":"front",
                          "type":"string",
-                         "value":"ornatetiles"
+                         "value":"ornateroofing"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":208,
-                 "x":168,
-                 "y":208
+                 "width":192,
+                 "x":176,
+                 "y":224
                 }, 
                 {
                  "height":8,
-                 "id":999,
+                 "id":960,
                  "name":"",
                  "properties":[
                         {
                          "name":"colorVariant",
                          "type":"string",
-                         "value":"1"
+                         "value":"7"
                         }, 
                         {
                          "name":"front",
                          "type":"string",
-                         "value":"ornatetiles"
+                         "value":"ornateroofing"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":256,
-                 "x":144,
-                 "y":248
+                 "width":176,
+                 "x":184,
+                 "y":216
                 }, 
                 {
                  "height":8,
-                 "id":1000,
+                 "id":961,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":200,
+                 "y":200
+                }, 
+                {
+                 "height":8,
+                 "id":962,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":304,
+                 "y":200
+                }, 
+                {
+                 "height":8,
+                 "id":963,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":304,
+                 "y":144
+                }, 
+                {
+                 "height":8,
+                 "id":964,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":216,
+                 "y":144
+                }, 
+                {
+                 "height":8,
+                 "id":965,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":224,
+                 "y":136
+                }, 
+                {
+                 "height":8,
+                 "id":966,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":304,
+                 "y":136
+                }, 
+                {
+                 "height":8,
+                 "id":967,
                  "name":"",
                  "properties":[
                         {
@@ -217,6 +281,292 @@
                 }, 
                 {
                  "height":8,
+                 "id":968,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":256,
+                 "x":144,
+                 "y":248
+                }, 
+                {
+                 "height":8,
+                 "id":969,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":208,
+                 "x":168,
+                 "y":208
+                }, 
+                {
+                 "height":8,
+                 "id":970,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":56,
+                 "x":184,
+                 "y":192
+                }, 
+                {
+                 "height":8,
+                 "id":971,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":56,
+                 "x":304,
+                 "y":192
+                }, 
+                {
+                 "height":8,
+                 "id":972,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":80,
+                 "x":232,
+                 "y":120
+                }, 
+                {
+                 "height":8,
+                 "id":973,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":216,
+                 "y":128
+                }, 
+                {
+                 "height":8,
+                 "id":974,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":296,
+                 "y":128
+                }, 
+                {
+                 "height":8,
+                 "id":975,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":200,
+                 "y":152
+                }, 
+                {
+                 "height":8,
+                 "id":976,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"ornatetiles"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":304,
+                 "y":152
+                }, 
+                {
+                 "height":8,
+                 "id":977,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":216,
+                 "y":160
+                }, 
+                {
+                 "height":8,
+                 "id":978,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":208,
+                 "y":168
+                }, 
+                {
+                 "height":8,
+                 "id":979,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":312,
+                 "y":168
+                }, 
+                {
+                 "height":8,
+                 "id":980,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"ornateroofing"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":312,
+                 "y":160
+                }, 
+                {
+                 "height":16,
                  "id":1001,
                  "name":"",
                  "properties":[
@@ -233,12 +583,12 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":8,
-                 "x":176,
-                 "y":216
+                 "width":32,
+                 "x":200,
+                 "y":176
                 }, 
                 {
-                 "height":8,
+                 "height":16,
                  "id":1002,
                  "name":"",
                  "properties":[
@@ -255,141 +605,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":8,
-                 "x":168,
-                 "y":224
-                }, 
-                {
-                 "height":8,
-                 "id":1003,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":160,
-                 "y":232
-                }, 
-                {
-                 "height":8,
-                 "id":1004,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":152,
-                 "y":240
-                }, 
-                {
-                 "height":8,
-                 "id":1005,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":360,
-                 "y":216
-                }, 
-                {
-                 "height":8,
-                 "id":1006,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":368,
-                 "y":224
-                }, 
-                {
-                 "height":8,
-                 "id":1007,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":376,
-                 "y":232
-                }, 
-                {
-                 "height":8,
-                 "id":1008,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":384,
-                 "y":240
+                 "width":32,
+                 "x":312,
+                 "y":176
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -428,21 +646,33 @@
                  "y":344
                 }, 
                 {
-                 "gid":925,
-                 "height":32,
-                 "id":913,
+                 "gid":3959,
+                 "height":24,
+                 "id":920,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":32,
-                 "x":192,
+                 "width":16,
+                 "x":160,
+                 "y":296
+                }, 
+                {
+                 "gid":3959,
+                 "height":24,
+                 "id":921,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":368,
                  "y":296
                 }, 
                 {
                  "gid":926,
                  "height":32,
-                 "id":914,
+                 "id":940,
                  "name":"",
                  "rotation":0,
                  "type":"",
@@ -452,69 +682,45 @@
                  "y":296
                 }, 
                 {
-                 "gid":8970,
-                 "height":24,
-                 "id":1010,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":248,
-                 "y":344
-                }, 
-                {
-                 "gid":8915,
-                 "height":16,
-                 "id":1011,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":136,
-                 "y":360
-                }, 
-                {
-                 "gid":7089,
+                 "gid":925,
                  "height":32,
-                 "id":1012,
+                 "id":941,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":192,
+                 "y":296
+                }, 
+                {
+                 "gid":3364,
+                 "height":48,
+                 "id":956,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":48,
+                 "x":248,
+                 "y":184
+                }, 
+                {
+                 "gid":3134,
+                 "height":16,
+                 "id":987,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":304,
-                 "y":328
-                }, 
-                {
-                 "gid":2147486808,
-                 "height":16,
-                 "id":1013,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":40,
-                 "x":296,
+                 "x":264,
                  "y":344
                 }, 
                 {
-                 "gid":3117,
-                 "height":20,
-                 "id":1014,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":280,
-                 "y":344
-                }, 
-                {
-                 "gid":7199,
-                 "height":24,
-                 "id":1015,
+                 "gid":3195,
+                 "height":36,
+                 "id":988,
                  "name":"",
                  "rotation":0,
                  "type":"",
@@ -524,76 +730,106 @@
                  "y":344
                 }, 
                 {
-                 "gid":6511,
-                 "height":8,
-                 "id":1016,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":288,
-                 "y":272
-                }, 
-                {
-                 "gid":6514,
-                 "height":8,
-                 "id":1017,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":256,
-                 "y":272
-                }, 
-                {
-                 "gid":6516,
-                 "height":8,
-                 "id":1018,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":296,
-                 "y":272
-                }, 
-                {
-                 "gid":6511,
-                 "height":8,
-                 "id":1019,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":232,
-                 "y":272
-                }, 
-                {
-                 "gid":4033,
+                 "gid":2147486778,
                  "height":24,
-                 "id":1020,
+                 "id":989,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":52,
-                 "x":248,
-                 "y":312
+                 "width":16,
+                 "x":320,
+                 "y":344
                 }, 
                 {
-                 "gid":7032,
+                 "gid":3204,
+                 "height":16,
+                 "id":990,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":272,
+                 "y":280
+                }, 
+                {
+                 "gid":3218,
+                 "height":24,
+                 "id":991,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":144,
+                 "y":360
+                }, 
+                {
+                 "gid":3243,
                  "height":8,
-                 "id":1022,
+                 "id":992,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":296,
+                 "y":344
+                }, 
+                {
+                 "gid":3243,
+                 "height":8,
+                 "id":993,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":240,
+                 "y":344
+                }, 
+                {
+                 "gid":3230,
+                 "height":12,
+                 "id":994,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":232,
+                 "x":200,
                  "y":344
+                }, 
+                {
+                 "gid":2147486825,
+                 "height":14,
+                 "id":996,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"basicChestTreasure\"]}"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":296,
+                 "y":296
+                }, 
+                {
+                 "gid":3157,
+                 "height":40,
+                 "id":998,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":240,
+                 "y":320
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -618,7 +854,51 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":999,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"hylotl"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-yukaiwarrior"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":296,
+                 "y":320
+                }, 
+                {
+                 "height":8,
+                 "id":1000,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"hylotl"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-yukaiwarrior"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":112,
+                 "y":344
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -863,7 +1143,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1023,
+ "nextobjectid":1003,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -1007,7 +1287,7 @@
         }, 
         {
          "firstgid":8801,
-         "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/breakable.json"
+         "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }],
  "tilewidth":8,
  "type":"map",

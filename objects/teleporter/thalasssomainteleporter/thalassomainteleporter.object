@@ -65,7 +65,13 @@
 	  {
       "type" : "starforge-anomnom",
       "species" : [ "novakid" ]
-    }
+    },
+	
+	  {
+	  "type" : "starforge-xraiizy",
+	  "species" : [ "human" ]
+	 
+	 }
 
   ]
 }

@@ -4,7 +4,7 @@
     {
      "export":
         {
-         "target":"."
+         "target":"..\/..\/..\/..\/assets\/_unpacked\/dungeons\/hylotl\/hylotlvillage"
         }
     },
  "height":60,
@@ -12,7 +12,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt2UEKwjAQheGeSq\/m0qU3kJyoO8+kLgIhtKXpvMwkM+\/Bv6s0H4pgXZfluTLGGGOMMcagLYMvgnFvUZz1IlnzIlnz6PVrzaPX9yJZ8+j1PXp9j17fo9f36PU9en1P6r0rhRri\/X10DjmJt7ezh\/vKb2CtzzD6sy19vpF+3ZRKV5HFEN63Uj28rWbEGbTuhXj+7MHbYp7Fi\/oPyer76lOEsB65y3v9z\/BSKlX3rpM6tzq63wghjLNYkW7r82uarc9Nbz\/rTOZ8TuR31sh2tHNkc0\/raG4tq7VZ2ykxn33d1nWWzlb\/2eutzy8xW5+DxesLgcF6YA==",
+         "data":"eJzt2TEOwjAQRFEfnZIbRDlROs4EKbZBseTIa68z+0f6XRD7GopwlPI6iIiIiIjItbL4Mhhry+L8XyarLZPVhlfXasOrvUxWG17t4dUeXu3h1R5e7eHVHl7tZfVmMGd+v5HRq2zm\/bOu2es\/pP3XNql9oLXVfd7wnpR5P5V6nVfVvmuVPIxPsXq6o++faY6+G+8465PMdqfnb9bKdm\/nyuaR1tXcs6zR5tnOHnPr566ei3Te9bc+H31\/jzn6DsrXF8U0PvY=",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -26,7 +26,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt0lsKwyAUBUA\/sv+dtcvoOko\/AlJuU5+poTMggWDiOWpKAAAAAAAAAAAAAJDSPRiPwSNaIxovt7dcs7uO7lzatWQvRnXdTuy7fVhvZucoQ\/T\/KNvRu5YuNfNH9T3qWpMn+ubbXpau0asnf8+drLnbKXuONCPriDHTzNyrdc39uueZXXf\/0jPXmrVl3opqz2Sls2t15exc2xM3NEVN",
+         "data":"eJzt1TEOhCAQQFGLvf\/R9kxWm1CoM8OCYvJeQmNU\/KBx2wAAAAAAAAAAAABY3bcZd8zRjk8zzo5HI7rmbO5Z3dFclbZMe7V1ZHd2nt62zH2OzpnRHPVl1+Go56o12uNo70f39nxf1XXqHf\/KNFfWflbjiNZse2Ydqu9A5fqZZr+3T\/6HrszuXqn1585v9MnOVu+z9py3ouqerLR3vd787LzbDuQSFlA=",
          "encoding":"base64",
          "height":60,
          "id":2,
@@ -43,95 +43,7 @@
          "draworder":"topdown",
          "id":3,
          "name":"mods",
-         "objects":[
-                {
-                 "height":8,
-                 "id":909,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":192,
-                 "x":128,
-                 "y":280
-                }, 
-                {
-                 "height":8,
-                 "id":910,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":224,
-                 "x":112,
-                 "y":288
-                }, 
-                {
-                 "height":8,
-                 "id":911,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornatetiles"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"1"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":208,
-                 "x":120,
-                 "y":272
-                }, 
-                {
-                 "height":8,
-                 "id":912,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornatetiles"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"1"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":256,
-                 "x":96,
-                 "y":296
-                }],
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -145,76 +57,112 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":6989,
-                 "height":32,
-                 "id":903,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":168,
-                 "y":384
-                }, 
-                {
-                 "gid":6988,
-                 "height":24,
-                 "id":904,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":224,
-                 "y":384
-                }, 
-                {
-                 "gid":7199,
-                 "height":24,
-                 "id":905,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":248,
-                 "y":384
-                }, 
-                {
-                 "gid":7199,
-                 "height":24,
-                 "id":906,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":136,
-                 "y":384
-                }, 
-                {
                  "gid":3951,
                  "height":24,
-                 "id":907,
+                 "id":823,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":88,
+                 "x":136,
                  "y":360
                 }, 
                 {
-                 "gid":7032,
-                 "height":8,
-                 "id":913,
+                 "gid":3822,
+                 "height":24,
+                 "id":824,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":8,
-                 "x":208,
-                 "y":384
+                 "width":24,
+                 "x":304,
+                 "y":360
+                }, 
+                {
+                 "gid":3899,
+                 "height":24,
+                 "id":825,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":272,
+                 "y":360
+                }, 
+                {
+                 "gid":3218,
+                 "height":24,
+                 "id":881,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":96,
+                 "y":360
+                }, 
+                {
+                 "gid":3218,
+                 "height":24,
+                 "id":882,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":336,
+                 "y":360
+                }, 
+                {
+                 "gid":8849,
+                 "height":24,
+                 "id":883,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":168,
+                 "y":360
+                }, 
+                {
+                 "gid":8915,
+                 "height":16,
+                 "id":884,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":288,
+                 "y":360
+                }, 
+                {
+                 "gid":8970,
+                 "height":24,
+                 "id":885,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":232,
+                 "y":360
+                }, 
+                {
+                 "gid":8915,
+                 "height":16,
+                 "id":888,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":200,
+                 "y":360
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -242,7 +190,7 @@
          "objects":[
                 {
                  "height":8,
-                 "id":902,
+                 "id":880,
                  "name":"",
                  "properties":[
                         {
@@ -259,8 +207,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":312,
-                 "y":344
+                 "x":112,
+                 "y":336
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -506,7 +454,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":914,
+ "nextobjectid":889,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -647,6 +595,10 @@
         {
          "firstgid":8700,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/huge-objects.json"
+        }, 
+        {
+         "firstgid":8801,
+         "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/breakable.json"
         }],
  "tilewidth":8,
  "type":"map",
