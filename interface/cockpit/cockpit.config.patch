@@ -1,0 +1,53 @@
+[
+  [  // TEST INFO
+    {
+      "inverse": true,
+      "op": "test",
+      "path": "/mods_present"
+    },
+    {
+      "op": "add",
+      "path": "/mods_present",
+      "value": {}
+    }
+  ],
+
+  [  //THIS MOD PRESENT
+    {
+      "op": "add",
+      "path": "/mods_present/The Starforge",
+      "value": true
+    }
+  ],
+
+  [  //CLEAR TEST FOR MPI
+    {
+      "inverse": false,
+      "op": "test",
+      "path": "/displayDungeons"
+    },
+    {
+      "op": "add",
+      "path": "/mods_present/MorePlanetInfo",
+      "value": true
+    }
+  ],
+
+ [ //ONLY WITH MPI
+    {
+      "op": "test",
+      "path": "/mods_present/MorePlanetInfo",
+      "inverse": false
+    },
+    
+    { "op": "add", "path": "/displayDungeons/starforge-katahelruinsdungeon", "value": 
+    {"description" : "Ruined Glitch castle detected. Reading faint traces of Ancient Essence from the structure. ", "icon" : "/interface/cockpit/dungeons/katahelruinsicon.png" }
+    },
+	
+	{ "op": "add", "path": "/displayDungeons/starforge-furouraltar", "value": 
+    {"description" : "Strange Hylotls are preparing an obscure ritual on the planet.", "icon" : "/interface/cockpit/dungeons/furouraltaricon.png" }
+    }
+  
+  ]
+
+]

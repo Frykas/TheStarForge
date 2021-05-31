@@ -6,5 +6,6 @@
   "name" : "The Starforge",
   "steamContentId" : "2431875552",
   "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|NPCs and Creatures|Weapons|Quests|Dungeons|Furniture and Objects|In-Game Tools|Armor and Clothes",
-  "version" : "pre-release v2"
+  "version" : "pre-release v2",
+  "includes" : ["MorePlanetInfo"]
 }
