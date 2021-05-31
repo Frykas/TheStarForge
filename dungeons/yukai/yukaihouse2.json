@@ -1,5 +1,12 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":60,
  "infinite":false,
  "layers":[
@@ -834,24 +841,6 @@
                  "y":304
                 }, 
                 {
-                 "gid":8063,
-                 "height":14,
-                 "id":985,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"smallChestTreasure\"]}"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":208,
-                 "y":328
-                }, 
-                {
                  "height":8,
                  "id":986,
                  "name":"",
@@ -906,6 +895,24 @@
                  "width":16,
                  "x":352,
                  "y":360
+                }, 
+                {
+                 "gid":9112,
+                 "height":16,
+                 "id":989,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-yukaismallchestTreasure\"]}"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":208,
+                 "y":328
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1209,7 +1216,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":989,
+ "nextobjectid":990,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -1354,6 +1361,10 @@
         {
          "firstgid":8801,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/breakable.json"
+        }, 
+        {
+         "firstgid":9111,
+         "source":"..\/..\/tilesets\/yukaivillage\/yukaivillage.json"
         }],
  "tilewidth":8,
  "type":"map",

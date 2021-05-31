@@ -1,0 +1,46 @@
+{
+  // ==============================================================================================
+  //                                       YUKAI CHEST DROPS
+  // ==============================================================================================
+ 
+   "starforge-yukaismallchestTreasure" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.32, "pool" : "chestMoney"},
+        {"weight" : 0.16, "pool" : "healingItem"},
+        {"weight" : 0.28, "pool" : "ore"},
+        {"weight" : 0.05, "pool" : "weapon"},
+        {"weight" : 0.05, "pool" : "tool"},
+        {"weight" : 0.12, "item" : "starforge-yukaipearl"},
+        {"weight" : 0.01, "pool" : "instrument"},
+        {"weight" : 0.01, "pool" : "costume"}
+      ],
+	        "poolRounds" : [
+        [0.1, 1],
+        [0.4, 2],
+        [0.4, 3],
+        [0.1, 4]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+     "starforge-yukaibigchestTreasure" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.10, "pool" : "chestMoney"},
+        {"weight" : 0.32, "pool" : "ore"},
+        {"weight" : 0.28, "pool" : "goodWeapon"},
+        {"weight" : 0.30, "item" : "starforge-yukaipearl"}
+      ],
+	        "poolRounds" : [
+        [0.2, 2],
+        [0.6, 3],
+        [0.2, 4]
+      ],
+      "allowDuplication" : false
+    }]
+  ]
+     
+  }
+  

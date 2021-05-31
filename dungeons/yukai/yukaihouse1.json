@@ -1097,42 +1097,6 @@
                  "y":344
                 }, 
                 {
-                 "gid":8095,
-                 "height":14,
-                 "id":1004,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"basicChestTreasure\"]}"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":136,
-                 "y":208
-                }, 
-                {
-                 "gid":2147491711,
-                 "height":14,
-                 "id":1005,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"smallChestTreasure\"]}"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":248,
-                 "y":296
-                }, 
-                {
                  "gid":3230,
                  "height":12,
                  "id":1006,
@@ -1365,6 +1329,42 @@
                  "width":32,
                  "x":112,
                  "y":344
+                }, 
+                {
+                 "gid":8801,
+                 "height":16,
+                 "id":1049,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-yukaibigchestTreasure\"]}"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":136,
+                 "y":208
+                }, 
+                {
+                 "gid":2147492450,
+                 "height":16,
+                 "id":1050,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-yukaismallchestTreasure\"]}"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":248,
+                 "y":296
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1575,7 +1575,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1049,
+ "nextobjectid":1051,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -1716,6 +1716,10 @@
         {
          "firstgid":8700,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/huge-objects.json"
+        }, 
+        {
+         "firstgid":8801,
+         "source":"..\/..\/tilesets\/yukaivillage\/yukaivillage.json"
         }],
  "tilewidth":8,
  "type":"map",
