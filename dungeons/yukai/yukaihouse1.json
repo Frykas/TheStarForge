@@ -1450,6 +1450,28 @@
                  "width":8,
                  "x":168,
                  "y":104
+                }, 
+                {
+                 "height":8,
+                 "id":1051,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"hylotl"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-yukaislicer"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":192,
+                 "y":288
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1575,7 +1597,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1051,
+ "nextobjectid":1052,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",

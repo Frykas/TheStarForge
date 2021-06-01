@@ -1,5 +1,12 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":60,
  "infinite":false,
  "layers":[
@@ -762,7 +769,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-yukaiwarrior"
+                         "value":"starforge-yukaislicer"
                         }],
                  "rotation":0,
                  "type":"",
@@ -784,7 +791,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-yukaiwarrior"
+                         "value":"starforge-yukaislicer"
                         }],
                  "rotation":0,
                  "type":"",
