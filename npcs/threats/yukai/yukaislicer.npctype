@@ -38,18 +38,22 @@
     "items": {
         "override": [
             [0, [{
-                "head": [{
-                    "name": "starforge-yukaislicerhead"
-                }],
+                "head": [
+				{"name": "starforge-yukaislicerhead"},
+				{"name": "starforge-yukaimalehead"}
+				
+				],
                 "chest": [{
                     "name": "starforge-yukaislicerchest"
                 }],
                 "legs": [{
                     "name": "starforge-yukaislicerpants"
                 }],
-				"back": [{
-				    "name": "spearback"
-			    }],
+				"back": [
+				{ "name": "spearback" },
+				{ "name": "" }
+				
+				],
                 "primary": [
 					"starforge-yukaisword2"
                 ]

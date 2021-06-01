@@ -8,10 +8,8 @@
       "pool" : [
         {"weight" : 0.32, "pool" : "chestMoney"},
         {"weight" : 0.16, "pool" : "healingItem"},
-        {"weight" : 0.28, "pool" : "ore"},
-        {"weight" : 0.05, "pool" : "weapon"},
-        {"weight" : 0.05, "pool" : "tool"},
-        {"weight" : 0.12, "item" : "starforge-yukaipearl"},
+        {"weight" : 0.33, "pool" : "ore"},
+        {"weight" : 0.17, "pool" : "weapon"},
         {"weight" : 0.01, "pool" : "instrument"},
         {"weight" : 0.01, "pool" : "costume"}
       ],
