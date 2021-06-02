@@ -34,7 +34,8 @@
         }
     },
  
- 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":75}],
+	
     "items": {
         "override": [
             [0, [{

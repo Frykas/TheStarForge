@@ -34,6 +34,7 @@
         }
     },
  
+    "innateStatusEffects" : [{"stat":"maxHealth","amount":30}],
  
     "items": {
         "override": [
