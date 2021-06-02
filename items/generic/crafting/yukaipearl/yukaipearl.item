@@ -4,7 +4,7 @@
   "rarity" : "Essential",
   "category" : "craftingMaterial",
   "inventoryIcon" : "yukaipearl.png",
-  "description" : "A rare pearl that originates from the Yukai homeworld. It holds an incredible amount of energy.",
+  "description" : "A rare pearl that originates from the Yukai homeworld. It holds a lot of energy.",
   "shortdescription" : "^orange;Yukai Pearl^white;",
   "itemTags" : ["starforge-starforge", "reagent"]
 }

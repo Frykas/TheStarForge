@@ -11,7 +11,7 @@
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword"],
 
-  "inventoryIcon" : "yukaisword1.png",
+  "inventoryIcon" : "yukaisword2.png",
 
   "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
   "animationParts" : {

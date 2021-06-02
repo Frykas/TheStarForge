@@ -1,0 +1,86 @@
+{
+  "itemName": "starforge-yukaiwristspell",
+  "price": 1000,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "A Yukai Pearl carved into a crystal, embed on a wrist weapon. Casts deadly spells.",
+  "shortdescription": "Yukai Wrist Spell",
+  "tooltipKind": "gun",
+  "category": "Yukai Spell",
+  "tooltipFields" : {"subtitle":"Wrist Spell"},
+  "twoHanded": false,
+  "level" : 6,
+  "itemTags": [
+    "weapon",
+    "ranged"
+  ],
+  "inventoryIcon": "wristspellicon.png",
+  "animation": "wristspell.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "wristspell.png",
+    "barrel": "",
+	"middleFullbright": "wristspellfullbright.png"
+  },
+  "animationCustom": {
+    "sounds": {
+      "fire": [
+        "/sfx/gun/dragonhead_fire1.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [-0.3, 0.3],
+  "muzzleOffset": [2.0, 0.275],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "handGrip" : "wrap",
+  "elementalType": "fire",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 1.40,
+    "baseDps": 25,
+    "energyUsage": 100,
+    "inaccuracy": 0.003,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "starforge-cacochiusfireball",
+    "projectileParameters": {
+      "knockback": 3
+    },
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

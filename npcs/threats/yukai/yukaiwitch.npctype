@@ -1,0 +1,61 @@
+{
+    "type": "starforge-yukaiwitch",
+    "baseType": "hostile",
+ 
+    "dropPools": ["starforge-yukaiwitchTreasure"],
+	
+	"identity" : {
+    "species" : "hylotl",
+	"facialHairType":"",
+	"facialHairGroup":"",
+	"bodyDirectives":"?replace;a85636=601E3D;e0975c=88292C;ffca8a=BC7A6F;6f2919=3D1C3C?replace;735e3a=572988;d9c189=A26FBC;f7e7b2=A26FBC;a38d59=1C2B3D?replace;be1b00=4E4F42;dc1f00=8A897A;951500=2C2915;f32200=B4B3AD?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF",
+	"hairDirectives":"?replace;735e3a=211E60;d9c189=A26FBC;f7e7b2=A26FBC;a38d59=572988?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF",
+    "gender" : "female",
+	"level" : 7
+  },
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "hylotl": {
+                    "default": [
+                        "Arrrgh!",
+                        "Mmrrrh....",
+                        "Skash!",
+                        "Rukana!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : ["rage", "foodrage",{"stat":"maxHealth","amount":5}],
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-yukaiwitchhead"
+                }],
+                "chest": [{
+                    "name": "starforge-yukaiwitchchest"
+                }],
+                "legs": [{
+                    "name": "starforge-yukaiwitchpants"
+                }],
+                "primary": [
+                    "starforge-yukaiwristspell"
+                ],
+				"alt": [
+				    "starforge-yukaiknife"
+				]
+				 
+            }]]
+        ]
+    }
+}

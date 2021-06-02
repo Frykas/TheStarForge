@@ -253,13 +253,35 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-yukaiwarrior"
+                         "value":"starforge-yukaislicer"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
                  "x":312,
+                 "y":344
+                }, 
+                {
+                 "height":8,
+                 "id":914,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"hylotl"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-yukaiwarrior"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":288,
                  "y":344
                 }],
          "opacity":1,
@@ -506,7 +528,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":914,
+ "nextobjectid":915,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",

@@ -38,6 +38,21 @@
       ],
       "allowDuplication" : false
     }]
+  ],
+     "starforge-yukaiwitchTreasure" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.32, "pool" : "money"},
+        {"weight" : 0.33, "pool" : "ore"},
+        {"weight" : 0.35, "item" : "starforge-yukaipearl"}
+      ],
+	        "poolRounds" : [
+        [0.2, 1],
+        [0.7, 2],
+        [0.1, 3]
+      ],
+      "allowDuplication" : false
+    }]
   ]
      
   }
