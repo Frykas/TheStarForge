@@ -1,0 +1,81 @@
+{
+  "itemName" : "starforge-thespork",
+  "price" : 0,
+  "inventoryIcon" : "thespork.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "Really?",
+  "shortdescription" : "^#b4f5c3;The Spork^reset;",
+  "level" : 10,
+  "tooltipKind" : "base",
+  "category" : "Kitchenware",
+  "itemTags" : ["weapon","ranged","kitchenware"],
+  "twoHanded" : false,
+  
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "middle" : "thespork.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/projectiles/throw_item_small.ogg"]
+    }
+  },
+  "baseOffset" : [0.375, 0.125],
+  "muzzleOffset" : [0.125, -0.750],
+
+  "scripts" : ["/items/active/weapons/ranged/unique/thespork/thespork.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.45,
+    "baseDps" : 0.1,
+    "energyUsage" : 1,
+    "inaccuracy" : 0.15,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "starforge-sporkprojectile",
+    "projectileParameters" : {
+      "knockback" : 30
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  "altAbilityType" : "",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
+

@@ -1,22 +1,20 @@
 {
   "id" : "starforge-marikostory2",
   "species" : "hylotl",
-  "title" : "^cornflowerblue;The Hylotl Warrior^reset; - II",
-  "description" : "The story of a rising Hylotl Captain. ^orange;Can be traded for blueprints^reset;.",
+  "title" : "^cornflowerblue;The First Crew Member^reset; - II",
+  "description" : "The Earth fell, and yet we rise. ^orange;Can be traded for blueprints^reset;.",
   "icon" : "marikocover1.png",
   "contentPages" : [
 
-"PART II - An army
+"PART II - Chemist Krythers
 
-*For thousands of Cycles, this ... forge was waiting. My castle was built on top of that temple generations ago, hoping to understand it, to make use of its power. I've seen your creations Rondin. You have potential, the potential to understand & use this ancient power. Help me seize it, and together we'll rule over all!* 
+Luckily, me and Krythers ended up not too far away from a space station. Main problem was that the sector we were in was pretty isolated from the rest of the galaxy. We had to settle on it for some time. Our problem now was money. Our ship was pretty damaged and we couldn't stay on the space station for more than a couple of days with the few pixels we had.",
 
-It was hard to believe. ",
+"Krythers applied at the stim boost supplier, but got turned down. Turns out it's really hard to find a job, even small, when you didn't graduate. He was quite disappointed, but ended up getting a job at the small library near the core part of the space station. It honestly wasn't too bad, but the pay was just enough to cover the expense of a single person.",
 
-"I knew he was at war against other Glitch kingdoms on the planet, but that was all I was told. I never expected these wars to be caused by him & his thirst for power. ",
+"I on the other hand, registered myself and the ship to the Space Worker Terminal, aka SWT for short. Since I kinda knew how to pilot, I could run errands and transport wares for people. However it wasn't enough, I didn't take into consideration the repairs and the fuel cost, at this rate I would be thrown off the space station with nothing but what I'm wearing.",
 
-"Thing is, backing out would lead to my death. Katahel showed me something that had to be kept secret and I couldn't refuse. So I agreed and worked under him. I took me a while before finally understanding what that forge was. A ^magenta;Starforge^reset;. An amazing station capable of making almost anything, it was hard to believe.",
-
-"Katahel wanted a bigger army, but as time went on fewer soldiers were willing to fight for him. So I built him an army. I created the Robogres & the Roboblins using  the forge, soldiers smart enough to obey orders, but not enough to defy them. With countless more soldiers at his disposal almost nothing could stand on Katahel's way. Except one lone Hylotl, crew captain and bounty hunter."
+"I was born and raised in a clan of swordsmen, I knew how to fight and I really, really needed money right now. I ended up registering to the Bounty Hunting section of the SWT. Since you need a crew of more than one person to take on bounties, Krythers agreed to becoming my first crew member, officially registered as a Chemist aboard the Thalasso. We didn't know it yet, but it was the beginning of quite an adventure."
 
   ],
     "itemConfig" : {

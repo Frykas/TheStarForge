@@ -6,7 +6,7 @@
   "completionText" : "Elana finally made food for Ssstreli??? Thanksss, Ssstreli wasss ssstarving... Wait! Why isss bowl ssso hot???",
   "moneyRange" : [200, 200],
   "rewards" : [
-    [ [ "starforge-thalassocache", 1 ], [ "starforge-thefork-recipe", 1] ]
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-thespork-recipe", 1] ]
   ],
 
   "updateDelta" : 10,
