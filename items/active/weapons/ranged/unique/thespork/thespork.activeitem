@@ -4,7 +4,7 @@
   "inventoryIcon" : "thespork.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "Really?",
+  "description" : "The best of both worlds         ^gray;-Elana^reset;",
   "shortdescription" : "^#b4f5c3;The Spork^reset;",
   "level" : 10,
   "tooltipKind" : "base",
@@ -21,10 +21,10 @@
       "fire" : ["/sfx/projectiles/throw_item_small.ogg"]
     }
   },
-  "baseOffset" : [0.375, 0.125],
-  "muzzleOffset" : [0.125, -0.750],
+  "baseOffset" : [0.0, 0.125],
+  "muzzleOffset" : [0.125, 0.500],
 
-  "scripts" : ["/items/active/weapons/ranged/unique/thespork/thespork.lua"],
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
   "elementalType" : "physical",
 
@@ -42,7 +42,7 @@
 
     "projectileType" : "starforge-sporkprojectile",
     "projectileParameters" : {
-      "knockback" : 30
+      "knockback" : 55
     },
 
     "stances" : {

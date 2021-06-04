@@ -1,26 +1,26 @@
 {
   "id" : "starforge-marikostory3",
   "species" : "hylotl",
-  "title" : "^cornflowerblue;The Hylotl Captain^reset; - III",
-  "description" : "The story of a rising Hylotl Captain. ^orange;Can be traded for blueprints^reset;.",
+  "title" : "^cornflowerblue;Our Growth^reset; - III",
+  "description" : "A few years has passed... ^orange;Can be traded for blueprints^reset;.",
   "icon" : "marikocover1.png",
   "contentPages" : [
 
-"PART III - The Warlord & the betrayal
+"PART III - The S.E. Thalasso 
 
-Words of a dangerous Glitch Warlord terrorizing an entire planet spread fast accross space explorers and merchants. It eventually came to the ears of crime-fighting companies & factions, and Katahel was then quickly targeted by multiple bounty hunters & peacekeepers. ",
+We've been working on our own for a few years already. It feels weird writing again after all this time. There are now 7 people working with me in the Thalasso, which today is an entirely different ship than what it first was when we fled Earth. We're pretty well known in this sector, and still working with the SWT of that space station we ended up stuck in. If you told me that I was gonna stick to this station when we first arrived I don't think I would have believed you.",
 
-"The more he conquered, the more often he was targeted. Using the beheader sword *Decapitator* I made a long time ago, he kept fighting them head on and leaving victorious. He truly was an amazing warrior. Nothing could break him, and with his Impervium armor, crafted using the ^magenta;Starforge^reset;, nothing could stop him.",
+"The first member we recruited was a rather interesting Floran. We were on a mission to capture a few prison escapees and take them back to their cells. They were hiding on a planet devastated by a plague known as the *Great Weathering*. This is where we met her, Strelitzia. She was a survivor of the plague, a lonely Floran who's knowledge of medecine was very impressive. We quickly became friends, and she eventually joined us as the crew's medic. ",
 
-"Except 1 person who did. A Hylotl warrior invaded his court once, slaying every guard she found on her way. She was swift and silent, each fight seemed like a dance. When I saw her, I saw a chance of redemption, a chance to atone for my sins and all the destruction I caused. I managed to get into contact with her, and together we planned an assassination, the perfect plan was set up.",
+"Rondin, our mechanic, is the second person who joined our crew. I was targeting someone with quite the large bounty on their head, a Glitch warlord who used a strange ancient forge in order to make himself an army. I went alone this time, and it's thanks to Rondin that I managed to put an end to his reign. Rondin wanted to see the stars, to explore and learn, surprising for a Glitch. I saw a bit of myself in him, and we needed more hands on the ship, he was more than welcome.  ",
 
-"Her weapons couldn't go past his impervium armor. Nothing could, well in theory. But I had access to the ^magenta;Starforge^reset;, I could make something to end him for good. I crafted the Hunter's Avarice, a powerful weapon capable of firing massive bolts, if we load an Impervium bolt, and shoot it directly at him, he won't survive. ",
+"Then came Elana, our lovely cook. She owned a very small restaurant on the Space Station. When we just arrived and started working, me and Krythers used to eat here all the time, food was pretty cheap and really good. Seeing her bright smile after an exhausting mission was amazing. We eventually became close friends, and things happened. Sadly she had to close the restaurant due to the lack of customers, I couldn't leave her like that so I took her in. ",
 
-"The Hylotl warrior fought hard, in the throne room lied dozens of fallen Glitch who fought to protect the Warlord, and in front of her, the lord himself was standing. Strong, unshakeable. She was quick and he was strong, it was a beautiful fight. But it wasn't the real fight. I was hidden, waiting for the perfect opportunity to strike him. ",
+"One day, on our way back to the station we received a distress signal coming from the wreck of a ship, which apparently crashed on some planet. Turns out it was a group of Grounded Avians fleeing the Stargazers. The ship was shut down and the few survivors sent that distress signal. We called a rescue ship and waited with them. I met Tweeters this day. Her parents didn't survive the crash and she didn't want to follow her people. She wasn't very bright, but she had a pure heart. I recruited her as our soldier.",
 
-"Once fired, the bolt flew at an incredible speed. So fast that I could barely see it. When it reached Katahel, it pierced his chestplate completely and stuck on the throne that was behind him. Katahel fell on his knees, and looked behind him, looking at me. *I knew it, deep down I knew it would happen.* He removed his helmet, looked at the Hylotl warrior and said : *Everything I've done, was to free them, free them from the curse that we're all born with.*",
+"Next was Creighton. Oh boy, this old man gave us troubles. At first we recruited him as a janitor to repay the damage caused to some of our cargo during a delivery mission, he was just a passenger that we had to take there as well. But he ended up getting along very well with Tweeters and being an ex USCM soldier gave him a lot of knowledge with ranged weaponry. Since I needed more people capable of protecting the crew and the ship while I was away, he agreed on staying with us.  ",
 
-"For the very first time, he didn't look like a Warlord, nor did he act like one. The Hylotl didn't hesitate a second, and finished the job. His head rolled on the red & gold carpet. That was the day the Warlord fell. His army scattered accross different Kingdoms & Factions, some, Awakaned, took on to the stars, while the artificial army that I created still roams the galaxy, obeying orders now outdated."
+"We met our last crew member on a recent mission. It was in a Novakid town, and the Sheriff tasked us with finding & eradicating the bandits and outlaws hiding in a camp near a town. The Sheriff also wanted us to take his brother, Will, with us. Saying that he was meant for crime fighting and wasn't suited to be a tailor. After the completion of the mission, I agreed to take in Will as the Sheriff asked, but seeing how Will desperately wanted to become a tailor, I recruited him as that instead. He was very thankful. "
 
   ],
     "itemConfig" : {
