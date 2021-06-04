@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-marikobacktrue-recipe",
+  "price" : 3500,
+  "inventoryIcon" : "marikobacktrueicon.png",
+  "rarity" : "Essential",
+  "category" : "Blueprint",
+  "description" : "Two Cerulium Katanas that belonged to a Hylotl captain named Mariko. Their power is now yours. ",
+  "shortdescription" : "^cornflowerblue;Yogosha & Isamu^white;",
+  "tooltipFields" : {"rarityLabel" : "Exalted"}
+}
