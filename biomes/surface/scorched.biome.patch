@@ -53,6 +53,19 @@
       ]
     }
   },
+    {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-potlot"
+        ]
+      ]
+    }
+  },
   {
     "op": "add",
     "path": "/spawnProfile/groups/-",

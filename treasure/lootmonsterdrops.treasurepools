@@ -5,10 +5,9 @@
   "luckjootyfishTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.20, "pool" : "essenceDrop2"},
-        {"weight" : 0.26, "item" : "starforge-marikohood-recipe"},
-        {"weight" : 0.26, "item" : "starforge-marikochest-recipe"},
-		{"weight" : 0.26, "item" : "starforge-marikopants-recipe"},
+        {"weight" : 0.12, "pool" : "essenceDrop2"},
+		{"weight" : 0.43, "pool" : "marikostoryDrop"},
+        {"weight" : 0.43, "pool" : "marikoarmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
@@ -18,14 +17,12 @@
       "allowDuplication" : false
     }]
   ],
-    "roboblinTreasure" : [
+  "roboblinTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.10, "pool" : "essenceDrop2"},
-		{"weight" : 0.10, "pool" : "katahelstoryDrop"},
-        {"weight" : 0.26, "item" : "starforge-katahelhead-recipe"},
-        {"weight" : 0.26, "item" : "starforge-katahelchest-recipe"},
-		{"weight" : 0.26, "item" : "starforge-katahelgreaves-recipe"},
+        {"weight" : 0.12, "pool" : "essenceDrop2"},
+		{"weight" : 0.43, "pool" : "katahelstoryDrop"},
+        {"weight" : 0.43, "pool" : "katahelarmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
@@ -39,9 +36,7 @@
     [1, {
       "pool" : [
         {"weight" : 0.20, "pool" : "essenceDrop2"},
-        {"weight" : 0.26, "item" : "starforge-sedgehead-recipe"},
-        {"weight" : 0.26, "item" : "starforge-sedgechest-recipe"},
-		{"weight" : 0.26, "item" : "starforge-sedgepants-recipe"},
+        {"weight" : 0.78, "pool" : "sedgearmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
@@ -55,9 +50,7 @@
     [1, {
       "pool" : [
         {"weight" : 0.20, "pool" : "essenceDrop2"},
-        {"weight" : 0.26, "item" : "starforge-soultakerhead-recipe"},
-        {"weight" : 0.26, "item" : "starforge-soultakerchest-recipe"},
-		{"weight" : 0.26, "item" : "starforge-soultakerpants-recipe"},
+        {"weight" : 0.78, "pool" : "soultakerarmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
@@ -71,14 +64,105 @@
     [1, {
       "pool" : [
         {"weight" : 0.20, "pool" : "essenceDrop2"},
-        {"weight" : 0.26, "item" : "starforge-praetorianhead-recipe"},
-        {"weight" : 0.26, "item" : "starforge-praetorianchest-recipe"},
-		{"weight" : 0.26, "item" : "starforge-praetorianpants-recipe"},
+        {"weight" : 0.78, "pool" : "praetorianarmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
       ],
       "poolRounds" : [
         [0.10, 0],
         [0.90, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+     "potlotTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.78, "pool" : "siaxaaarmorDrop"},
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
+      ],
+      "poolRounds" : [
+        [0.10, 0],
+        [0.90, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+     "marikoarmorDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-marikohood-recipe"},
+        {"weight" : 0.33, "item" : "starforge-marikochest-recipe"},
+        {"weight" : 0.33, "item" : "starforge-marikopants-recipe"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+     "katahelarmorDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-katahelhead-recipe"},
+        {"weight" : 0.33, "item" : "starforge-katahelchest-recipe"},
+        {"weight" : 0.33, "item" : "starforge-katahelgreaves-recipe"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+    
+	 "sedgearmorDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-sedgehead-recipe"},
+        {"weight" : 0.33, "item" : "starforge-sedgechest-recipe"},
+        {"weight" : 0.33, "item" : "starforge-sedgepants-recipe"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  	 "soultakerarmorDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-soultakerhead-recipe"},
+        {"weight" : 0.33, "item" : "starforge-soultakerchest-recipe"},
+        {"weight" : 0.33, "item" : "starforge-soultakerpants-recipe"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+     "praetorianarmorDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-praetorianhead-recipe"},
+        {"weight" : 0.33, "item" : "starforge-praetorianchest-recipe"},
+        {"weight" : 0.33, "item" : "starforge-praetorianpants-recipe"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+     "siaxaaarmorDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-siaxaahead-recipe"},
+        {"weight" : 0.33, "item" : "starforge-siaxaachest-recipe"},
+        {"weight" : 0.33, "item" : "starforge-siaxaapants-recipe"}
+      ],
+      "poolRounds" : [
+        [1, 1]
       ],
       "allowDuplication" : false
     }]
@@ -91,9 +175,22 @@
         {"weight" : 0.33, "item" : "starforge-katahelstory3-codex"}
       ],
       "poolRounds" : [
-	    [0.70, 0],
-        [0.27, 1],
-        [0.03, 2]
+        [0.8, 1],
+        [0.2, 2]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+       "marikostoryDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-marikostory1-codex"},
+        {"weight" : 0.33, "item" : "starforge-marikostory2-codex"},
+        {"weight" : 0.33, "item" : "starforge-marikostory3-codex"}
+      ],
+      "poolRounds" : [
+        [0.8, 1],
+        [0.2, 2]
       ],
       "allowDuplication" : false
     }]

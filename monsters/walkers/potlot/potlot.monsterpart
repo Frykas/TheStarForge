@@ -1,0 +1,9 @@
+{
+  "name" : "potlot",
+  "category" : "potlot",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "potlot.png"
+  }
+}

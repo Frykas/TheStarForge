@@ -34,7 +34,7 @@
         }
     },
  
-    "innateStatusEffects" : ["rage", "foodrage",{"stat":"maxHealth","amount":5}],
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":5}],
  
     "items": {
         "override": [
