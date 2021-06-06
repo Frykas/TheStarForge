@@ -25,7 +25,7 @@
         {"weight" : 0.06, "item" : "starforge-unboundcaptainhead"},
         {"weight" : 0.06, "item" : "starforge-unboundcaptainchest"},
 		{"weight" : 0.06, "item" : "starforge-unboundcaptainpants"},
-		{"weight" : 0.06, "item" : "starforge-unboundcptpistol"},
+		{"weight" : 0.06, "item" : "starforge-unboundrailpistol"},
 		{"weight" : 0.06, "item" : "starforge-unboundcptshield"}
       ],
       "poolRounds" : [
@@ -42,7 +42,7 @@
         {"weight" : 0.06, "item" : "starforge-unboundcaptain2head"},
         {"weight" : 0.06, "item" : "starforge-unboundcaptain2chest"},
 		{"weight" : 0.06, "item" : "starforge-unboundcaptain2pants"},
-		{"weight" : 0.12, "item" : "starforge-unboundcptsmg"}
+		{"weight" : 0.12, "item" : "starforge-unboundsmg"}
       ],
       "poolRounds" : [
         [0.20, 0],

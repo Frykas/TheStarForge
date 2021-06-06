@@ -1,5 +1,5 @@
 {
-    "type": "unboundcaptain1",
+    "type": "starforge-unboundcaptain1",
     "baseType": "hostile",
  
     "dropPools": ["unboundCaptain1DeathTreasure"],
@@ -40,7 +40,7 @@
                     "name": "starforge-unboundcaptainpants"
                 }],
                 "primary": [
-                    "starforge-unboundcptpistol"
+                    "starforge-unboundrailpistol"
                 ],
 				 "alt" : [ "starforge-unboundcptshield" ]
             }]]

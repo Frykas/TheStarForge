@@ -1,0 +1,108 @@
+{
+  "itemName": "starforge-unboundsmg",
+  "price": 1000,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "An Unbound SMG loaded with elemental bullets. Often used by Unbound \"Harasser\" Commando types.",
+  "shortdescription": "Unbound \"Harasser\" SMG",
+  "tooltipKind": "gun",
+  "category": "SMG",
+  "twoHanded": true,
+  "level" : 6,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "assaultrifle"
+  ],
+  "inventoryIcon": "unboundsmgicon.png",
+  "animation": "unboundsmg.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundsmg.png",
+    "barrel": "",
+	"middleFullbright": "unboundsmgfullbright.png",
+	"muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-2.1, 0.1, -2.1, 0.1],
+        "particles" : [
+          { "particle" : "starforge-unboundrifle" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/pistol2.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [0.750, 0.0],
+  "muzzleOffset": [2.0, 0.500],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "electric",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.08,
+    "baseDps": 10,
+    "energyUsage": 25,
+    "inaccuracy": 0.003,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "unboundriflebullet",
+    "projectileParameters": {
+      "knockback": 3
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.05,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

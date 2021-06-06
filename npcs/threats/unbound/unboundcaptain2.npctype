@@ -1,5 +1,5 @@
 {
-    "type": "unboundcaptain2",
+    "type": "starforge-unboundcaptain2",
     "baseType": "hostile",
  
     "dropPools": ["unboundCaptain2DeathTreasure"],
@@ -31,18 +31,17 @@
         "override": [
             [0, [{
                 "head": [{
-                    "name": "starforge-unboundcaptain2head"
+                    "name": "starforge-unboundcaptainhead", "parameters" : { "colorIndex" : 3 }
                 }],
                 "chest": [{
-                    "name": "starforge-unboundcaptain2chest"
+                    "name": "starforge-unboundcaptainchest", "parameters" : { "colorIndex" : 3 }
                 }],
                 "legs": [{
-                    "name": "starforge-unboundcaptain2pants"
+                    "name": "starforge-unboundcaptainpants", "parameters" : { "colorIndex" : 3 }
                 }],
                 "primary": [
-                    "starforge-unboundcptsmg"
-                ],
-				 "alt" : [ "starforge-unboundcptsmg" ]
+                    "starforge-unboundsmg"
+                ]
             }]]
         ]
     }
