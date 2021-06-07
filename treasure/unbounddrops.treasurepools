@@ -69,13 +69,13 @@
       "allowDuplication" : false
     }]
 ],
-  "unboundSniperCaptainDeathTreasure" : [
+  "unboundStalkerDeathTreasure" : [
     [1, {
       "pool" : [
         {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.08, "item" : "starforge-unboundsnipercaptainhead"},
-        {"weight" : 0.08, "item" : "starforge-unboundsnipercaptainchest"},
-		{"weight" : 0.08, "item" : "starforge-unboundsnipercaptainpants"},
+        {"weight" : 0.08, "item" : "starforge-unboundstalkerhead"},
+        {"weight" : 0.08, "item" : "starforge-unboundstalkerchest"},
+		{"weight" : 0.08, "item" : "starforge-unboundstalkerpants"},
 		{"weight" : 0.06, "item" : "starforge-unboundcptsniper"}
       ],
       "poolRounds" : [

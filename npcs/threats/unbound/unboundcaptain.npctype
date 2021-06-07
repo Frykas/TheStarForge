@@ -18,8 +18,8 @@
                 },
                 "apex": {
                     "default": [
-                        "Engage the enemy!",
-                        "Unit 2 and 3, moving.",
+                        "Unit 1 and 4, shielding formation.",
+                        "Shield deployed, ready to engage.",
                         "For the Unbound!",
                         "The Unbound will ascend and triumph over all!",
                         "Order received, target in sight.",
@@ -30,7 +30,7 @@
         }
     },
  
-    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":30}, {"stat":"powerMultiplier","amount":2.0}],
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":50}, {"stat":"powerMultiplier","amount":2.0}],
 	
     "items": {
         "override": [

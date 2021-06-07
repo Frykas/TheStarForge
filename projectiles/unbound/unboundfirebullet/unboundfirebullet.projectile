@@ -16,6 +16,7 @@
     }
   ],
   "statusEffects" : [ ],
-  "lightColor" : [102, 32, 110],
+  "lightColor" : [255, 162, 0],
+  "fullbright" : true,
   "damageKind" : "fireplasmabullet"
 }

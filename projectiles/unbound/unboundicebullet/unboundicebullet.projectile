@@ -16,6 +16,7 @@
     }
   ],
   "statusEffects" : [ ],
-  "lightColor" : [102, 32, 110],
+  "lightColor" : [58, 207, 254],
+  "fullbright" : true,
   "damageKind" : "iceplasmabullet"
 }

@@ -1,47 +1,56 @@
 {
-  "itemName" : "starforge-unboundhead",
-  "price" : 500,
-  "inventoryIcon" : "icons.png:head",
+  "itemName" : "starforge-unboundstalkerchest",
+  "price" : 750,
+  "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
-  "rarity" : "Rare",
-  "category" : "headwear",
-  "description" : "\"We are stuck in this space age. Bound to the stars forever.\"\n\n - ^#686F5D;Grand Leader Apolleon^reset;",
-  "shortdescription" : "^#686F5D;UNBD^reset; Trooper Helmet",
+  "rarity" : "Legendary",
+  "category" : "chestwear",
+  "description" : "The Unbound Stalkers are masters of stealth, infiltration & assassination.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Stalker Poncho",
   "tooltipKind" : "armor",
 
-  "maleFrames" : "head.png",
-  "femaleFrames" : "head.png",
-  "mask" : "mask.png",
-  
-  "level" : 5,
+  "maleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+
+  "level" : 6,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.15
+      "baseMultiplier" : 1.25
     },
     {
       "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.3
+      "amount" : 0.5
     },
     {
       "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 3
+      "amount" : 5
     },
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 2
+      "amount" : 3
     }
   ],
 
-  "itemTags" : [ "tier5armour" ],
+  "itemTags" : [ "tier6armour" ],
   
     "colorOptions" : [
-    // PURPLE, DEFAULT
-    { "ffca8a" : "d29ce7", "e0975c" : "a451c4", "a85636" : "6a2284", "6f2919" : "320c40" },
+    // ORANGE, DEFAULT
+    { "ffca8a" : "ffd495", "e0975c" : "ea9931", "a85636" : "af4e00", "6f2919" : "6e2900" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY
@@ -57,7 +66,7 @@
     // GREEN
     { "ffca8a" : "b2e89d", "e0975c" : "51bd3b", "a85636" : "247824", "6f2919" : "144216" },
     // BLUE
-    { "ffca8a" : "96cbe7", "e0975c" : "5588d4", "a85636" : "344495", "6f2919" : "1a1c51" },
+    { "ffca8a" : "B0FFFF", "e0975c" : "3ACFFE", "a85636" : "1278CF", "6f2919" : "1a1c51" },
     // PURPLE
     { "ffca8a" : "d29ce7", "e0975c" : "a451c4", "a85636" : "6a2284", "6f2919" : "320c40" },
     // PINK
