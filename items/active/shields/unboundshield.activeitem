@@ -1,31 +1,32 @@
 {
-  "itemName" : "starforge-unboundcptshield",
+  "itemName" : "starforge-unboundshield",
   "fixedLevel" : 6,
   "price" : 720,
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "shield",
-  "description" : "A sturdy shield used by the Unbound Captains.",
-  "shortdescription" : "Unbound Captain Shield",
+  "description" : "A compact energy shield used by the Unbound.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Energy Shield",
   "tooltipKind" : "Shield",
   "twoHanded" : false,
   "itemTags" : ["shield"],
 
-  "inventoryIcon" : "images/unboundcpt.png:nearidle",
+  "inventoryIcon" : "images/unboundshield.png:nearidle",
 
-  "animation" : "shield.animation",
+  "animation" : "shieldfullbright.animation",
   "animationParts" : {
-    "shield" : "images/unboundcpt.png"
+    "shield" : "images/unboundshield.png",
+	"shieldFullbright" : "images/unboundshieldfullbright.png"
   },
   "animationCustom" : {
     "animatedParts" : { "parts" : { "shield" : { "properties" : {
         "shieldPoly" : [ [-0.5, -2.5], [-0.5, 2.25], [0.75, 1.5], [0.75, -1.75] ]
     }}}},
     "sounds" : {
-      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
-      "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],
-      "block" : [ "/sfx/melee/shield_block_metal.ogg" ],
-      "break" : [ "/sfx/melee/shield_break_metal.ogg" ]
+      "raiseShield" : [ "/sfx/tech/vehicle_appear1.ogg" ],
+      "perfectBlock" : [ "/sfx/melee/vehicle_disappear1.ogg" ],
+      "block" : [ "/sfx/tech/vehicle_disappear2.ogg" ],
+      "break" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
     }
   },
 

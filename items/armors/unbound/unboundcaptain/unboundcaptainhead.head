@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headwear",
-  "description" : "Sturdy helmet worn by the Unbound Captains. They receive orders from officers when they're on the field",
-  "shortdescription" : "Unbound Captain Helmet",
+  "description" : "Unbound commandos come into two types, the RIOT & the HARASSER types, each using different weapons.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Commando Helmet",
   "tooltipKind" : "armor",
 
   "maleFrames" : "head.png",
@@ -40,8 +40,8 @@
   "itemTags" : [ "tier6armour" ],
   
     "colorOptions" : [
-    // YELLOW, DEFAULT
-    { "ffca8a" : "ffffa7", "e0975c" : "e2c344", "a85636" : "a46e06", "6f2919" : "642f00" },
+    // ORANGE, DEFAULT
+    { "ffca8a" : "ffd495", "e0975c" : "ea9931", "a85636" : "af4e00", "6f2919" : "6e2900" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

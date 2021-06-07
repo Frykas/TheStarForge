@@ -1,0 +1,134 @@
+{
+  "globalTagDefaults": {
+    "paletteSwaps": ""
+  },
+  "animatedParts": {
+    "stateTypes": {
+      "firing": {
+        "default": "off",
+        "states": {
+          "off": {},
+          "fire": {
+            "frames": 2,
+            "cycle": 0.07,
+            "mode": "transition",
+            "transition": "off"
+          }
+        }
+      }
+    },
+    "parts": {
+      "middle": {
+        "properties": {
+          "zLevel": 1,
+          "centered": true,
+          "image": "unboundchaingun.png:slide.1",
+          "offset": [
+            0,
+            0
+          ],
+          "transformationGroups": [
+            "weapon"
+          ]
+        },
+        "partStates": {
+          "firing": {
+            "fire": {
+              "properties": {
+                "image": "unboundchaingun.png:slide.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "middleFullbright": {
+        "properties": {
+          "zLevel": 2,
+          "centered": true,
+          "image": "unboundchaingunfullbright.png:slide.1",
+          "offset": [
+            0,
+            0
+          ],
+          "transformationGroups": [
+            "weapon"
+          ],
+          "anchorPart": "middle",
+          "fullbright": true
+        },
+        "partStates": {
+          "firing": {
+            "fire": {
+              "properties": {
+                "image": "unboundchaingunfullbright.png:slide.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "muzzleFlash": {
+        "properties": {
+          "zLevel": -1,
+          "centered": true,
+          "offset": [
+            0.75,
+            0
+          ],
+          "fullbright": true,
+          "transformationGroups": [
+            "muzzle"
+          ]
+        },
+        "partStates": {
+          "firing": {
+            "fire": {
+              "properties": {
+                "image": "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rotationGroups": {
+    "weapon": {
+      "angularVelocity": 0
+    }
+  },
+  "transformationGroups": {
+    "weapon": {},
+    "muzzle": {}
+  },
+  "particleEmitters": {
+    "muzzleFlash": {
+      "transformationGroups": [
+        "muzzle"
+      ],
+      "offsetRegion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "particles": []
+    }
+  },
+  "lights": {
+    "muzzleFlash": {
+      "active": false,
+      "position": [
+        0,
+        0
+      ],
+      "color": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "sounds": {
+    "fire": []
+  }
+}

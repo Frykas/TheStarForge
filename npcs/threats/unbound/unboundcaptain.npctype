@@ -4,6 +4,10 @@
  
     "dropPools": ["unboundCaptain1DeathTreasure"],
  
+    "identity" : {
+    "species" : "apex"
+	},
+ 
     "scriptConfig" : {
         "dialog": {
             "attack": {
@@ -26,7 +30,8 @@
         }
     },
  
- 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":30}, {"stat":"powerMultiplier","amount":2.0}],
+	
     "items": {
         "override": [
             [0, [{
@@ -42,7 +47,7 @@
                 "primary": [
                     "starforge-unboundrailpistol"
                 ],
-				 "alt" : [ "starforge-unboundcptshield" ]
+				 "alt" : [ "starforge-unboundshield" ]
             }]]
         ]
     }

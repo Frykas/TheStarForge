@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "A sturdy chestpiece used by the Unbound Captains. Wherever they go, they inspire fear among their enemies. ",
-  "shortdescription" : "Unbound Commando Chestplate",
+  "description" : "Trained for versatility, Unbound commandos are some of the fiercest soldiers you will find on the battlefield.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Commando Chestplate",
   "tooltipKind" : "armor",
 
   "maleFrames" : {
@@ -49,8 +49,8 @@
   "itemTags" : [ "tier6armour" ],
   
     "colorOptions" : [
-    // YELLOW, DEFAULT
-    { "ffca8a" : "ffffa7", "e0975c" : "e2c344", "a85636" : "a46e06", "6f2919" : "642f00" },
+    // ORANGE, DEFAULT
+    { "ffca8a" : "ffd495", "e0975c" : "ea9931", "a85636" : "af4e00", "6f2919" : "6e2900" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

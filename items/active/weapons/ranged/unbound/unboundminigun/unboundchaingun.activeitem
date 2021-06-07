@@ -1,67 +1,66 @@
 {
-  "itemName": "starforge-unboundar",
-  "price": 500,
+  "itemName": "starforge-unboundchaingun",
+  "price": 1000,
   "maxStack": 1,
-  "rarity": "Rare",
-  "description": "An Unbound assault rifle loaded with elemental bullets. Often used by regular Unbound troopers.",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Valiant\" AR",
+  "rarity": "Legendary",
+  "description": "A Chain Gun used by Unbound Fortress units, \"Unstoppable\" type.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Melter\" CG",
   "tooltipKind": "gun",
-  "category": "assaultRifle",
-  "tooltipFields" : {"subtitle":"Unbound Rifle"},
+  "category": "Chain Gun",
   "twoHanded": true,
-  "level" : 5,
+  "level" : 6,
   "itemTags": [
     "weapon",
     "ranged",
     "assaultrifle"
   ],
-  "inventoryIcon": "unboundaricon.png",
-  "animation": "unboundar.animation",
+  "inventoryIcon": "unboundchaingunicon.png",
+  "animation": "unboundchaingun.animation",
 
   "animationParts": {
     "butt": "",
-    "middle": "unboundrifle.png",
+    "middle": "unboundchaingun.png",
     "barrel": "",
-	"middleFullbright": "unboundarfullbright.png",
+	"middleFullbright": "unboundchaingunfullbright.png",
 	"muzzleFlash": "muzzleflash.png"
   },
   "animationCustom": {
       "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-2.1, 0.1, -2.1, 0.1],
+		"offsetRegion" : [-3.1, 0.350, -3.1, 0.350],
         "particles" : [
-          { "particle" : "starforge-unboundrifle" }
+          { "particle" : "starforge-unboundlmg" }
         ]
       }
     },
     "sounds": {
       "fire": [
-        "/sfx/gun/sniper3.ogg"
+        "/sfx/gun/sniper4.ogg"
       ]
     }
   },
   
-  "baseOffset": [0.52, 0.3],
-  "muzzleOffset": [2.0, 0.275],
+  "baseOffset": [1.0, -0.5],
+  "muzzleOffset": [2.5, 0.1],
   "scripts": [
     "/items/active/weapons/ranged/gun.lua"
   ],
-  "elementalType": "electric",
+  "elementalType": "fire",
   "primaryAbility": {
     "scripts": [
       "/items/active/weapons/ranged/gunfire.lua"
     ],
     "class": "GunFire",
-    "fireTime": 0.15,
-    "baseDps": 11,
-    "energyUsage": 20,
-    "inaccuracy": 0.003,
+    "fireTime": 0.09,
+    "baseDps": 10.0,
+    "energyUsage": 40,
+    "inaccuracy": 0.02,
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "unboundriflebullet",
+    "projectileType": "unboundfirebullet",
     "projectileParameters": {
-      "knockback": 3
+      "knockback": 10
     },
     "stances": {
       "idle": {
