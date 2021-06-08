@@ -3,6 +3,10 @@
     "baseType": "hostile",
  
     "dropPools": ["unboundStalkerDeathTreasure"],
+	
+	"identity" : {
+     "species" : "apex"
+	 },
  
     "scriptConfig" : {
         "dialog": {

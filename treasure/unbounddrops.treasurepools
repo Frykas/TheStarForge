@@ -69,6 +69,23 @@
       "allowDuplication" : false
     }]
 ],
+ "unboundSniperDeathTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.7, "pool" : "money"},
+        {"weight" : 0.06, "item" : "starforge-unboundsniperhead"},
+        {"weight" : 0.06, "item" : "starforge-unboundsniperchest"},
+		{"weight" : 0.06, "item" : "starforge-unboundsniperpants"},
+		{"weight" : 0.06, "item" : "starforge-unbounddmr"},
+		{"weight" : 0.06, "item" : "starforge-unboundsniper"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+],
   "unboundStalkerDeathTreasure" : [
     [1, {
       "pool" : [

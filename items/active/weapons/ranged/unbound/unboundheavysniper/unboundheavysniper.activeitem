@@ -4,7 +4,7 @@
   "maxStack": 1,
   "rarity": "Legendary",
   "description": "A heavy sniper rifle loaded with ice elemental bullets.",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Tundra\" HS",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Blizzard\" HS",
   "tooltipKind": "gun",
   "category": "Heavy Sniper",
   "twoHanded": true,

@@ -1,8 +1,8 @@
 {
-    "type": "starforge-unboundsoldier",
+    "type": "starforge-unboundsniper",
     "baseType": "hostile",
  
-    "dropPools": ["unboundSoldierDeathTreasure"],
+    "dropPools": ["unboundSniperDeathTreasure"],
 	
 	"identity" : {
      "species" : "apex"
@@ -19,8 +19,8 @@
                 },
                 "apex": {
                     "default": [
-                        "Trooper unit reporting, target on sight!",
-                        "Reporting, target sighted!",
+                        "Sharpshooter unit reporting, eyes on target.",
+                        "Eyes on target, awaiting orders from Stalker.",
                         "Orders received, begin operation!",
                         "Backup requested, target approaching!",
                         "Orders received, target in sight.",
@@ -31,22 +31,22 @@
         }
     },
  
-    "innateStatusEffects" : [{"stat":"maxHealth","amount":40}, {"stat":"powerMultiplier","amount":1.20}],
+    "innateStatusEffects" : [{"stat":"maxHealth","amount":40}, {"stat":"powerMultiplier","amount":2.20}],
  
     "items": {
         "override": [
             [0, [{
                 "head": [{
-                    "name": "starforge-unboundhead"
+                    "name": "starforge-unboundsniperhead","parameters" : { "colorIndex" : 8 }
                 }],
                 "chest": [{
-                    "name": "starforge-unboundchest"
+                    "name": "starforge-unboundsniperchest","parameters" : { "colorIndex" : 8 }
                 }],
                 "legs": [{
-                    "name": "starforge-unboundpants"
+                    "name": "starforge-unboundsniperpants","parameters" : { "colorIndex" : 8 }
                 }],
                 "primary": [
-                    "starforge-unboundar"
+                    "starforge-unbounddmr", "starforge-unboundsniper"
                 ]
             }]]
         ]
