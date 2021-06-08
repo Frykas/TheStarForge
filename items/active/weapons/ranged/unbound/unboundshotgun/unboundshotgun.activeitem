@@ -1,0 +1,110 @@
+{
+  "itemName": "starforge-unboundshotgun",
+  "price": 500,
+  "maxStack": 1,
+  "rarity": "Rare",
+  "description": "A slug shotgun loaded with deadly fire-elemental shells.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Salamander\" SSG",
+  "tooltipKind": "gun",
+  "category": "Slug Shotgun",
+  "twoHanded": true,
+  "level" : 5,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "shotgun"
+  ],
+  "inventoryIcon": "unboundshotgunicon.png",
+  "animation": "unboundshotgun.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundshotgun:slides.png",
+    "barrel": "",
+	"middleFullbright": "unboundshotgunfullbright.png",
+	"muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+    "particleEmitters": {
+      "casing": {
+        "emissionRate": 1,
+        "offsetRegion": [0, 0.35, 0, 0.35],
+        "particles": [
+          { "particle": "starforge-unboundfireshell"}
+        ],
+        "transformationGroups": [
+          "weapon"
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/shotgun3.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [0.625, -0.250],
+  "muzzleOffset": [1.875, 0.375],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "fire",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.95,
+    "baseDps": 12,
+    "energyUsage": 45,
+    "inaccuracy": 0.005,
+    "projectileCount": 4,
+    "fireType": "auto",
+    "projectileType": "unboundfirebullet",
+    "projectileParameters": {
+      "knockback": 8
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "jump.1",
+        "backArmFrame": "rotation"
+      },
+      "fire": {
+        "duration": 0.3,
+        "armRotation": 3,
+        "weaponRotation": 3,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "jump.1",
+        "backArmFrame": "rotation"
+      },
+      "cooldown": {
+        "duration": 0.35,
+        "armRotation": -2,
+        "weaponRotation": -2,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded": true,
+        "burstParticleEmitters": [
+          "casing"
+        ],
+        "animationStates": {
+          "firing": "reload"
+        },
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "jump.1",
+        "backArmFrame": "rotation"
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

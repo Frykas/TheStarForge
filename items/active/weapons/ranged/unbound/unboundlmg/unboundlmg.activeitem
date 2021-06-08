@@ -60,7 +60,7 @@
     "fireType": "auto",
     "projectileType": "unboundfirebullet",
     "projectileParameters": {
-      "knockback": 10
+      "knockback": 8
     },
     "stances": {
       "idle": {

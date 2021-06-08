@@ -62,6 +62,12 @@
 	  "type" : "starforge-xraiizy",
 	  "species" : [ "human" ]
 	 
+	 },
+	 
+	  {
+	  "type" : "starforge-omeruin",
+	  "species" : [ "human" ]
+	 
 	 }
 
   ]

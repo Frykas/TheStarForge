@@ -86,6 +86,23 @@
       "allowDuplication" : false
     }]
 ],
+ "unboundHeavyDeathTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.7, "pool" : "money"},
+        {"weight" : 0.06, "item" : "starforge-unboundheavyhead"},
+        {"weight" : 0.06, "item" : "starforge-unboundheavychest"},
+		{"weight" : 0.06, "item" : "starforge-unboundheavypants"},
+		{"weight" : 0.06, "item" : "starforge-unboundshotgun"},
+		{"weight" : 0.06, "item" : "starforge-unboundautoshotgun"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+],
   "unboundStalkerDeathTreasure" : [
     [1, {
       "pool" : [

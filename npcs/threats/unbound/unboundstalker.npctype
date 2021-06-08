@@ -30,7 +30,7 @@
         }
     },
  
-    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":30}, {"stat":"powerMultiplier","amount":3.0}],
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":30}, {"stat":"powerMultiplier","amount":1.70}],
  
     "items": {
         "override": [

@@ -1,0 +1,54 @@
+{
+    "type": "starforge-unboundheavy",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundHeavyDeathTreasure"],
+	
+	"identity" : {
+     "species" : "apex"
+	 },
+	
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Heavy unit reporting, eyes on target.",
+                        "Eyes on target, awaiting orders from Fortress.",
+                        "Orders received, begin operation!",
+                        "Backup requested, target approaching!",
+                        "Orders received, target in sight.",
+                        "Target approaching, opening fire!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : [{"stat":"maxHealth","amount":90}, {"stat":"powerMultiplier","amount":1.60}],
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundheavyhead"
+                }],
+                "chest": [{
+                    "name": "starforge-unboundheavychest"
+                }],
+                "legs": [{
+                    "name": "starforge-unboundheavypants"
+                }],
+                "primary": [
+                    "starforge-unboundshotgun", "starforge-unboundautoshotgun"
+                ]
+            }]]
+        ]
+    }
+}

@@ -1,32 +1,33 @@
 {
-  "itemName" : "starforge-sedgechest",
-  "price" : 3200,
+  "itemName" : "starforge-unboundheavychest",
+  "price" : 750,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
-  "rarity" : "Essential",
-  "category" : "chestarmour",
-  "description" : "After the passing of the worshipped Berserking, the best hunter among the cult was bestowed an armor, and a name; Sedge.",
-  "shortdescription" : "^#758468;Chest of Berserking^reset;",
+  "rarity" : "Rare",
+  "category" : "chestwear",
+  "description" : "The Heavy division of the Unbound is lead by ^#686F5D;Tremor^reset; the Fistguard.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Heavy Chestplate",
   "tooltipKind" : "armor",
 
   "maleFrames" : {
-    "body" : "chest.png",
+    "body" : "chestm.png",
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
 
   "femaleFrames" : {
-    "body" : "chest.png",
+    "body" : "chestf.png",
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
 
-  "level" : 7,
+
+  "level" : 5,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.26
+      "baseMultiplier" : 1.25
     },
     {
       "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
@@ -34,21 +35,22 @@
       "amount" : 0.5
     },
     {
-      "levelFunction" : "manipulatorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 2
+      "amount" : 5
     },
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 4.5
+      "amount" : 3
     }
   ],
-  "itemTags" : [ "tier7armour" ],
 
-  "colorOptions" : [
-    // LIGHT GREEN, DEFAULT
-    { "ffca8a" : "ABCB05", "e0975c" : "77AA08", "a85636" : "4A760A", "6f2919" : "335125" },
+  "itemTags" : [ "tier5armour" ],
+  
+    "colorOptions" : [
+    // RED, DEFAULT
+    { "ffca8a" : "FFFE9F", "e0975c" : "FFA200", "a85636" : "D92E00", "6f2919" : "880000" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

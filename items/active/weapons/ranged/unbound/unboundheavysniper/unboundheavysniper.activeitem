@@ -41,7 +41,7 @@
     }
   },
   
-  "baseOffset": [1.500, 0.250],
+  "baseOffset": [1.250, 0.375],
   "muzzleOffset": [2.875, 0.125],
   "scripts": [
     "/items/active/weapons/ranged/gun.lua"
@@ -60,7 +60,7 @@
     "fireType": "auto",
     "projectileType": "unboundicebullet",
     "projectileParameters": {
-      "knockback": 10
+      "knockback": 13
     },
     "stances": {
       "idle": {

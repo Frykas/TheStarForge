@@ -1,48 +1,48 @@
 {
-  "itemName": "starforge-unboundchaingun",
-  "price": 1000,
+  "itemName": "starforge-unboundautoshotgun",
+  "price": 500,
   "maxStack": 1,
-  "rarity": "Legendary",
-  "description": "A Chain Gun used by Unbound Fortress units, \"Unstoppable\" type.",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Melter\" CG",
+  "rarity": "Rare",
+  "description": "An Unbound Auto-shotgun loaded with fire elemental shells. Unstoppable.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Dragon\" ASG",
   "tooltipKind": "gun",
-  "category": "Chain Gun",
+  "category": "Auto Shotgun",
   "twoHanded": true,
-  "level" : 6,
+  "level" : 5,
   "itemTags": [
     "weapon",
     "ranged",
-    "assaultrifle"
+    "shotgun"
   ],
-  "inventoryIcon": "unboundchaingunicon.png",
-  "animation": "unboundchaingun.animation",
+  "inventoryIcon": "unboundautoshotgunicon.png",
+  "animation": "unboundautoshotgun.animation",
 
   "animationParts": {
     "butt": "",
-    "middle": "unboundchaingun.png",
+    "middle": "unboundautoshotgun.png",
     "barrel": "",
-	"middleFullbright": "unboundchaingunfullbright.png",
+	"middleFullbright": "unboundaautoshotgunfullbright.png",
 	"muzzleFlash": "muzzleflash.png"
   },
   "animationCustom": {
       "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-3.1, 0.350, -3.1, 0.350],
+		"offsetRegion" : [-2.1, 0.1, -2.1, 0.1],
         "particles" : [
-          { "particle" : "starforge-unboundlmg" }
+          { "particle" : "starforge-unboundfireshell" }
         ]
       }
     },
     "sounds": {
       "fire": [
-        "/sfx/gun/sniper4.ogg"
+        "/sfx/gun/shotgun2.ogg"
       ]
     }
   },
   
-  "baseOffset": [1.250, -0.125],
-  "muzzleOffset": [2.5, 0.1],
+  "baseOffset": [0.375, 0.3],
+  "muzzleOffset": [2.125, 0.275],
   "scripts": [
     "/items/active/weapons/ranged/gun.lua"
   ],
@@ -52,11 +52,11 @@
       "/items/active/weapons/ranged/gunfire.lua"
     ],
     "class": "GunFire",
-    "fireTime": 0.09,
-    "baseDps": 10.0,
-    "energyUsage": 40,
-    "inaccuracy": 0.02,
-    "projectileCount": 1,
+    "fireTime": 0.30,
+    "baseDps": 9,
+    "energyUsage": 25,
+    "inaccuracy": 0.07,
+    "projectileCount": 8,
     "fireType": "auto",
     "projectileType": "unboundfirebullet",
     "projectileParameters": {
