@@ -58,9 +58,9 @@
         {"weight" : 0.06, "item" : "starforge-unboundofficerhead"},
         {"weight" : 0.06, "item" : "starforge-unboundofficerchest"},
 		{"weight" : 0.06, "item" : "starforge-unboundofficerpants"},
-		{"weight" : 0.04, "item" : "starforge-unboundofficerpistol"},
-		{"weight" : 0.04, "item" : "starforge-unboundofficerpistol2"},
-		{"weight" : 0.04, "item" : "starforge-unboundofficerpistol3"}
+		{"weight" : 0.04, "item" : "starforge-unboundpistol"},
+		{"weight" : 0.04, "item" : "starforge-unboundburstpistol"},
+		{"weight" : 0.04, "item" : "starforge-unboundsilencedpistol"}
       ],
       "poolRounds" : [
         [0.20, 0],

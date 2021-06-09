@@ -7,7 +7,7 @@
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "power" : 50,
-  "speed" : 180,
+  "speed" : 200,
   "supportsProcessing" : true,
   "actionOnReap" : [
     {
