@@ -1,0 +1,129 @@
+{
+  "itemName": "starforge-unboundrocketlauncher",
+  "price": 1250,
+  "maxStack": 1,
+  "rarity": "legendary",
+  "description": "A devastating rocket launcher fire thermite-type rockets.",
+  "tooltipKind": "gun",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Imolater\" RL",
+  "category": "Thermite Rocket Launcher",
+  "twoHanded": true,
+  "level": 6,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "rocketlauncher"
+  ],
+  "inventoryIcon": "unboundrocketlauncher.png",
+  "animation": "unboundrocketlauncher.animation",
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundrocketlauncheranim.png:cock.1",
+    "middleFullbright": "unboundrocketlauncherfb.png",
+    "barrel": "",
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom": {
+    "particleEmitters": {
+      "muzzleFlash": {
+        "transformationGroups": [
+          "muzzle"
+        ],
+        "offsetRegion": [
+          -1,
+          0.2,
+          -1,
+          0.2
+        ],
+        "particles": [
+          {
+            "particle": "starforge-unboundrocket"
+          }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/starforge-rocketfire.ogg"
+      ]
+    }
+  },
+  "baseOffset": [
+    -1,
+    0.4
+  ],
+  "muzzleOffset": [
+    2,
+    0.2
+  ],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "fire",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 1.20,
+    "baseDps": 3,
+    "energyUsage": 50,
+    "inaccuracy": 0,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "starforge-unboundfirerocket",
+    "projectileParameters": {
+      "knockback": 20
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset": [
+          0,
+          0
+        ],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "run.2",
+        "backArmFrame": "rotation"
+      },
+      "fire": {
+        "duration": 0.5,
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset": [
+          -0.2,
+          0
+        ],
+        "twoHanded": true,
+        "animationStates": {
+          "firing": "shoot"
+        },
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "run.2",
+        "backArmFrame": "rotation"
+      },
+      "cooldown": {
+        "duration": 0.35,
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset": [
+          -0.2,
+          0
+        ],
+        "twoHanded": true,
+        "animationStates": {
+          "firing": "reload"
+        },
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "run.2",
+        "backArmFrame": "rotation"
+      }
+    }
+  },
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
+}
