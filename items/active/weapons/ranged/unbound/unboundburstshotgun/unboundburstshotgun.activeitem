@@ -1,66 +1,68 @@
 {
-  "itemName": "starforge-unboundautoshotgun",
-  "price": 500,
+  "itemName": "starforge-unboundburstshotgun",
+  "price": 1500,
   "maxStack": 1,
-  "rarity": "Rare",
-  "description": "An Unbound Auto-shotgun loaded with fire elemental shells. Unstoppable.",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Dragon\" ASG",
+  "rarity": "Essential",
+  "description": "An experimental Unbound shotgun. Fires deadly poisonous shells.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Aspic\" ^#9BBA3D;EXP SG^reset;",
   "tooltipKind": "gun",
-  "category": "Auto Shotgun",
+  "category": "Experimental Shotgun",
   "twoHanded": true,
-  "level" : 5,
+  "level" : 7,
   "itemTags": [
     "weapon",
     "ranged",
     "shotgun"
   ],
-  "inventoryIcon": "unboundautoshotgunicon.png",
-  "animation": "unboundautoshotgun.animation",
+  "inventoryIcon": "unboundburstshotgunicon.png",
+  "animation": "unboundburstshotgun.animation",
 
   "animationParts": {
     "butt": "",
-    "middle": "unboundautoshotgun.png",
+    "middle": "unboundburstshotgun.png",
     "barrel": "",
-	"middleFullbright": "unboundautoshotgunfullbright.png",
+	"middleFullbright": "unboundburstshotgunfullbright.png",
 	"muzzleFlash": "muzzleflash.png"
   },
   "animationCustom": {
       "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-2.1, 0.1, -2.1, 0.1],
+		"offsetRegion" : [-3.250, 0.250, -3.250, 0.250],
         "particles" : [
-          { "particle" : "starforge-unboundfireshell" }
+          { "particle" : "starforge-unboundpoisonshell" }
         ]
       }
     },
     "sounds": {
       "fire": [
-        "/sfx/gun/shotgun2.ogg"
+        "/sfx/gun/gristlegun1.ogg"
       ]
     }
   },
   
-  "baseOffset": [0.375, 0.3],
+  "baseOffset": [1.0, 0.3],
   "muzzleOffset": [2.125, 0.275],
   "scripts": [
     "/items/active/weapons/ranged/gun.lua"
   ],
-  "elementalType": "fire",
+  "elementalType": "poison",
   "primaryAbility": {
     "scripts": [
       "/items/active/weapons/ranged/gunfire.lua"
     ],
     "class": "GunFire",
-    "fireTime": 0.30,
-    "baseDps": 9,
+    "fireTime": 0.55,
+    "baseDps": 9.5,
     "energyUsage": 25,
-    "inaccuracy": 0.07,
-    "projectileCount": 8,
-    "fireType": "auto",
-    "projectileType": "unboundfirebullet",
+    "inaccuracy": 0.03,
+    "projectileCount": 3,
+    "fireType": "burst",
+	"burstTime" : 0.35,
+    "burstCount" : 3,
+    "projectileType": "unboundpoisonbullet",
     "projectileParameters": {
-      "knockback": 6
+      "knockback": 7
     },
     "stances": {
       "idle": {
@@ -91,7 +93,7 @@
         "backArmFrame" : "swim.4"
       },
       "cooldown": {
-        "duration": 0.05,
+        "duration": 0.15,
         "armRotation": 2,
         "weaponRotation": 1,
         "weaponOffset" : [-0.1, 0],
