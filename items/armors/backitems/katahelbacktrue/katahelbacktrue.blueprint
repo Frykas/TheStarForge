@@ -5,6 +5,7 @@
   "rarity" : "Essential",
   "category" : "Blueprint",
   "description" : "Enhanced with ancient technology, this cape protects the weilder.",
+  "recipe":{"parameters":{},"count":1,"name":"starforge-katahelbacktrue"},
   "shortdescription" : "^darkgray;Might of the Warlord^white;",
   "tooltipFields" : {"rarityLabel" : "Exalted"}
 }

@@ -5,6 +5,7 @@
   "rarity" : "Essential",
   "category" : "Blueprint",
   "description" : "Two Cerulium Katanas that belonged to a Hylotl captain named Mariko. Their power is now yours. ",
+"recipe":{"parameters":{},"count":1,"name":"starforge-marikobacktrue"},
   "shortdescription" : "^cornflowerblue;Yogosha & Isamu^white;",
   "tooltipFields" : {"rarityLabel" : "Exalted"}
 }
