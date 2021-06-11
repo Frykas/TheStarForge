@@ -1,0 +1,53 @@
+{
+    "type": "starforge-unboundfortress2",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundFortress2DeathTreasure"],
+ 
+    "identity" : {
+    "species" : "apex"
+	},
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Thermites loaded, ready to burn!",
+                        "Heavy units, make it rain!",
+                        "For the Unbound!",
+                        "Heavy units engage combat!",
+                        "beginning supress fire.",
+                        "Try to take me down!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":80}, {"stat":"powerMultiplier","amount":1.40}],
+	
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundfortresshead", "parameters" : { "colorIndex" : 6 }
+                }],
+                "chest": [{
+                    "name": "starforge-unboundfortresschest", "parameters" : { "colorIndex" : 6 }
+                }],
+                "legs": [{
+                    "name": "starforge-unboundfortresspants", "parameters" : { "colorIndex" : 6 }
+                }],
+                "primary": [
+                    "starforge-unboundrocketlauncher"
+                ]
+            }]]
+        ]
+    }
+}

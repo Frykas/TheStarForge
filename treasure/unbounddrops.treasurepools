@@ -118,6 +118,39 @@
       ],
       "allowDuplication" : false
     }]
+],
+"unboundFortress1DeathTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.7, "pool" : "money"},
+        {"weight" : 0.06, "item" : "starforge-unboundfortresshead"},
+        {"weight" : 0.06, "item" : "starforge-unboundfortresschest"},
+		{"weight" : 0.06, "item" : "starforge-unboundfortresspants"},
+		{"weight" : 0.06, "item" : "starforge-unboundchaingun"},
+		{"weight" : 0.06, "item" : "starforge-unboundlmg"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  "unboundFortress2DeathTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.7, "pool" : "money"},
+        {"weight" : 0.06, "item" : "starforge-unboundfortresshead"},
+        {"weight" : 0.06, "item" : "starforge-unboundfortresschest"},
+		{"weight" : 0.06, "item" : "starforge-unboundfortresspants"},
+		{"weight" : 0.12, "item" : "starforge-unboundrocketlauncher"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
 ]
   
   

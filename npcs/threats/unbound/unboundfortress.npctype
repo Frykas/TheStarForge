@@ -1,0 +1,53 @@
+{
+    "type": "starforge-unboundfortress1",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundFortress1DeathTreasure"],
+ 
+    "identity" : {
+    "species" : "apex"
+	},
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Heavy units with me, destruction awaits.",
+                        "Weapon loaded, ready to engage.",
+                        "For the Unbound!",
+                        "Heavy units engage combat!",
+                        "beginning supress fire.",
+                        "Try to take me down!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":120}, {"stat":"powerMultiplier","amount":7.1}],
+	
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundfortresshead"
+                }],
+                "chest": [{
+                    "name": "starforge-unboundfortresschest"
+                }],
+                "legs": [{
+                    "name": "starforge-unboundfortresspants"
+                }],
+                "primary": [
+                    "starforge-unboundlmg", "starforge-unboundchaingun"
+                ]
+            }]]
+        ]
+    }
+}
