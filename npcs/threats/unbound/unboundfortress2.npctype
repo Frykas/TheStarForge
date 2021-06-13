@@ -36,14 +36,14 @@
         "override": [
             [0, [{
                 "head": [{
-                    "name": "starforge-unboundfortresshead", "parameters" : { "colorIndex" : 6 }
+                    "name": "starforge-unboundfortressalthead", "parameters" : { "colorIndex" : 5 }
                 }],
                 "chest": [{
-                    "name": "starforge-unboundfortresschest", "parameters" : { "colorIndex" : 6 }
+                    "name": "starforge-unboundfortresschest", "parameters" : { "colorIndex" : 5 }
                 }],
                 "legs": [{
-                    "name": "starforge-unboundfortresspants", "parameters" : { "colorIndex" : 6 }
-                }],
+                    "name": "starforge-unboundfortresspants", "parameters" : { "colorIndex" : 5 }
+				}],
                 "primary": [
                     "starforge-unboundrocketlauncher"
                 ]

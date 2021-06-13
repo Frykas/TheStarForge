@@ -28,7 +28,7 @@
       "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-3.250, 0.250, -3.250, 0.250],
+		"offsetRegion" : [-3.0, 0.375, -3.0, 0.375],
         "particles" : [
           { "particle" : "starforge-unboundpoisonshell" }
         ]
@@ -53,7 +53,7 @@
     ],
     "class": "GunFire",
     "fireTime": 0.55,
-    "baseDps": 9.5,
+    "baseDps": 7.5,
     "energyUsage": 25,
     "inaccuracy": 0.03,
     "projectileCount": 3,

@@ -9,12 +9,18 @@
   "power" : 50,
   "speed" : 180,
   "supportsProcessing" : true,
-  "actionOnReap" : [
-    {
-      "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
-    }
-  ],
+"actionOnReap": [{
+				"file": "/projectiles/explosions/heavybulletexplosion/heavybulletexplosion.config",
+				"action": "config"
+			},
+			{
+				"inheritDamageFactor": 0.05,
+				"angleAdjust": 0,
+				"fuzzAngle": 30,
+				"type": "smallpoisoncloud",
+				"action": "projectile"
+			}
+		],
   "statusEffects" : [ ],
   "lightColor" : [155, 186, 61],
   "emitters": ["poisonplasma"],
