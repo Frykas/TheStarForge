@@ -7,7 +7,7 @@
   "category" : "backwear",
   "description" : "Enhanced with ancient technology, this cape protects the weilder. ",
   "shortdescription" : "^darkgray;Might of the Warlord^white;",
-  "tooltipKind" : "back",
+  "tooltipKind" : "armor",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
 
   "maleFrames" : "back.png",

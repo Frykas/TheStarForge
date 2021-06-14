@@ -1,20 +1,19 @@
 {
-  "itemName" : "starforge-marikobacktrue",
+  "itemName" : "starforge-unboundjumpkit",
   "price" : 3500,
-  "inventoryIcon" : "marikobacktrueicon.png",
+  "inventoryIcon" : "unboundjumpkiticon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
-  "description" : "Two Cerulium Katanas that belonged to a Hylotl captain named Mariko. Their power is now yours. ",
-  "shortdescription" : "^cornflowerblue;Yogosha & Isamu^white;",
+  "description" : "A jump kit used by Unbound Vanguard unit to quickly move around the battlefield.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Jump Kit ^#69729E;VNGD^reset;",
   "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "shiprunboost", "swimboost",
+  "shiprunboost", "shipjumpboost",
 
     {
       "stat" : "biomeheatImmunity",
