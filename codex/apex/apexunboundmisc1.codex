@@ -1,0 +1,38 @@
+{
+  "id" : "starforge-apexunboundmisc1",
+  "species" : "apex",
+  "title" : "Hammer Munitions Transaction ",
+  "description" : "A folder containing multiple files regarding Unbound transactions to a weapon manufacturer.",
+  "icon" : "hammermunitioncover.png",
+  "contentPages" : [
+
+"Dear customer,
+
+Thank you for reaching out to us. We, Hammer Munitions, are flattered that you are looking to purchase our services. 
+We would like to inform you that we are aware of the Unbound projects and researches. In exchange of a reduced price on weapon blueprints, we want you to share with us the knowledge your Scientific Division will be developing in your ^#9BBA3D;EXPERIMENTAL^reset; and ^#69729E;VANGUARD^reset; branches.",
+
+"Dear customer, 
+
+We are glad we could find an agreement. Hammer Munitions is certain that our partnership will bear amazing fruits. As requested, we will provide the 16 weapon blueprints you requested after payment, in exchange, the Unbound will share with us its knowledge regarding the infusion of Essence in ammo & weaponry. Waiting for you to complete the transaction.
+May our future together be filled with success and prosperity.",
+
+"Dear customer,
+
+Hammer Munitions thanks you for your order. Please find enclosed the blueprints for the following weapons : 
+
+* Hornet BP - Fang P - Whisper SP - Dauntless RP
+* Valiant AR - Justice DMR 
+* Harasser SMG
+* Tundra SR - Blizzard HSR
+* Dragon ASG - Salamender SSG 
+* Scorcher LMG - Melter CG
+* Imolater RL"
+
+
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 25
+  }
+}
