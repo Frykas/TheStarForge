@@ -1,0 +1,53 @@
+{
+  "projectileName" : "unboundsmartshell",
+  "image" : "unboundsmartshell.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "timeToLive" : 1.0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "unboundtarbullet",
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : -180
+    },
+    {
+      "action" : "projectile",
+      "type" : "unboundtarbullet",
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : -160
+    },
+	{
+      "action" : "projectile",
+      "type" : "unboundtarbullet",
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : -200
+    },
+    {
+      "action" : "projectile",
+      "type" : "unboundtarbullet",
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : -240
+    },
+    {
+      "action" : "projectile",
+      "type" : "unboundtarbullet",
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : -260
+    },
+	{
+      "action" : "projectile",
+      "type" : "unboundtarbullet",
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : -220
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "physics" : "arrow",
+  "emitters" : [ "rockettrail" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}
