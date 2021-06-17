@@ -1,4 +1,12 @@
 { "columns":0,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"",
+         "target":"."
+        }
+    },
  "grid":
     {
      "height":1,
@@ -8,7 +16,7 @@
  "margin":0,
  "name":"thalassooutpost",
  "spacing":0,
- "tilecount":30,
+ "tilecount":31,
  "tiledversion":"1.4.3",
  "tileheight":151,
  "tileproperties":
@@ -241,6 +249,16 @@
          "imagePositionX":"-32",
          "imagePositionY":"0",
          "object":"starforge-guardianstatue2",
+         "tilesetDirection":"right"
+        },
+     "30":
+        {
+         "\/\/description":"A broken automaton next to a book.",
+         "\/\/name":"starforge-rondinlore1",
+         "\/\/shortdescription":"Broken Automaton",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-rondinlore1",
          "tilesetDirection":"right"
         },
      "4":
@@ -536,6 +554,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "30":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "4":
         {
          "\/\/description":"string",
@@ -742,6 +770,12 @@
          "image":"guardianstatue2.png",
          "imageheight":97,
          "imagewidth":62
+        },
+     "30":
+        {
+         "image":"rondinlore1.png",
+         "imageheight":8,
+         "imagewidth":20
         },
      "4":
         {

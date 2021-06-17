@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-exaltedenergy",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "exaltedenergy.png",
+  "description" : "A rare variation of Ancient Essence, powering the Vault Guardians. ",
+  "shortdescription" : "^#FFB2B2;Exalted Energy^white;",
+  "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
+}

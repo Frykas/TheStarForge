@@ -1,0 +1,16 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "starforge-exaltedenergy", "count" : 3},
+	{ "item" : "starforge-salvagedunboundtech", "count" : 1},
+	{ "item" : "starforge-katahelcore", "count" : 1},
+    { "item" : "solariumstar", "count" : 30 },
+	{ "item" : "essence", "count" : 3000}
+  ],
+  "output" : {
+    "item" : "starforge-exaltingcharge",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}
