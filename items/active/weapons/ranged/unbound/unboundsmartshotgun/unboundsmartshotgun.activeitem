@@ -19,7 +19,7 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "fire" : ["/sfx/gun/uzi1.ogg"]
+      "fire" : ["/sfx/gun/tank_shot.ogg"]
     }
   },
   "baseOffset" : [0.375, 0.250],

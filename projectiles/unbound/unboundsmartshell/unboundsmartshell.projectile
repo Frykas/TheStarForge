@@ -5,48 +5,47 @@
   "frameNumber" : 1,
   "damageKindImage" : "icon.png",
   "pointLight" : false,
-  "timeToLive" : 1.0,
+  "timeToLive" : 0.1,
   "actionOnReap" : [
     {
       "action" : "projectile",
       "type" : "unboundtarbullet",
       "inheritDamageFactor" : 0.1,
-      "angleAdjust" : -180
+      "angleAdjust" : 10
     },
     {
       "action" : "projectile",
       "type" : "unboundtarbullet",
       "inheritDamageFactor" : 0.1,
-      "angleAdjust" : -160
+      "angleAdjust" : 20
     },
 	{
       "action" : "projectile",
       "type" : "unboundtarbullet",
       "inheritDamageFactor" : 0.1,
-      "angleAdjust" : -200
+      "angleAdjust" : -20
     },
     {
       "action" : "projectile",
       "type" : "unboundtarbullet",
       "inheritDamageFactor" : 0.1,
-      "angleAdjust" : -240
+      "angleAdjust" : -10
     },
     {
       "action" : "projectile",
       "type" : "unboundtarbullet",
       "inheritDamageFactor" : 0.1,
-      "angleAdjust" : -260
+      "angleAdjust" : -30
     },
 	{
       "action" : "projectile",
       "type" : "unboundtarbullet",
       "inheritDamageFactor" : 0.1,
-      "angleAdjust" : -220
+      "angleAdjust" : 30
     }
   ],
   "power" : 5.0,
-  "speed" : 75,
-  "physics" : "arrow",
+  "speed" : 35,
   "emitters" : [ "rockettrail" ],
   "damageType" : "NoDamage",
   "damageKind" : "default"
