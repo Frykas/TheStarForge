@@ -35,14 +35,31 @@
 		{"weight" : 0.05, "item" : ["cryonicextract", 2]},
 		{"weight" : 0.05, "item" : ["venomsample", 2]},
         {"weight" : 0.04, "item" : "vaultkey"},
-        {"weight" : 0.03, "pool" : "uniqueWeapon"}
+        {"weight" : 0.03, "pool" : "starforge-thalassoweapons"}
       ],
       "poolRounds" : [
         [1, 1]
       ],
       "allowDuplication" : false
     }]
-  ]
+  ],
+  
+  "starforge-thalassoweapons" : [
+  [1, {
+   "pool" : [
+    {"weight" : 0.2, "item" : "starforge-marikopistol"},
+	{"weight" : 0.2, "item" : "starforge-marikogun"},
+	{"weight" : 0.1, "item" : "starforge-rubiumcleaver"},
+	{"weight" : 0.1, "item" : "starforge-infusedbroadsword"},
+	{"weight" : 0.3, "item" : "starforge-gravediggershovel"},
+	{"weight" : 0.1, "item" : "starforge-starforge-infusedsword"}
+	],
+	"poolRounds" : [
+	  [1, 1]
+	 ],
+	 "allowDuplication" : false
+	}]
+	]
      
   }
   

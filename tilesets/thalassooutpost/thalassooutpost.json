@@ -16,7 +16,7 @@
  "margin":0,
  "name":"thalassooutpost",
  "spacing":0,
- "tilecount":31,
+ "tilecount":32,
  "tiledversion":"1.4.3",
  "tileheight":151,
  "tileproperties":
@@ -259,6 +259,16 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"starforge-rondinlore1",
+         "tilesetDirection":"right"
+        },
+     "31":
+        {
+         "\/\/description":"A jellyfish in a jar.",
+         "\/\/name":"starforge-jellyjar",
+         "\/\/shortdescription":"Jellyfish in a jar",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-jellyjar",
          "tilesetDirection":"right"
         },
      "4":
@@ -564,6 +574,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "31":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "4":
         {
          "\/\/description":"string",
@@ -776,6 +796,12 @@
          "image":"rondinlore1.png",
          "imageheight":8,
          "imagewidth":20
+        },
+     "31":
+        {
+         "image":"jellyjar.png",
+         "imageheight":14,
+         "imagewidth":11
         },
      "4":
         {

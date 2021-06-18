@@ -1,0 +1,39 @@
+{
+  "objectName" : "starforge-jellyjar",
+  "colonyTags" : ["pretty", "hylotl"],
+  "rarity" : "common",
+  "printable" : true,
+  "description" : "A jellyfish in a jar.",
+  "shortdescription" : "Jellyfish in a jar",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "apexDescription" : "Why would you catch a jellyfish?",
+  "avianDescription" : "It glows!",
+  "floranDescription" : "Floran can't eat thisss... Boring...",
+  "glitchDescription" : "Curious. Why would you capture a jellyfish and display it here? ",
+  "humanDescription" : "Jellyfishes are very pretty. But I wonder why would you keep one here.",
+  "hylotlDescription" : "It makes me sad to see it displayed in such a small jar.",
+  "novakidDescription" : "Glowy fish? Never seen one!",
+  
+  "lightColor" : [134, 42, 171],
+
+  "inventoryIcon" : "jellyjaricon.png",
+  "orientations" : [
+   {
+      "dualImage" : "jellyjar.png:<frame>",
+      "imageLayers" : [ { "image" : "jellyjar.png:<frame>" }, { "image" : "jellyjarfullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 17,
+      "animationCycle" : 2.5,
+      "anchors" : [ "bottom" ]
+    }
+   
+  ]}
