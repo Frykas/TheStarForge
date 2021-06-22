@@ -35,6 +35,9 @@
     }
    ],
    
+  "soundEffect" : "/sfx/object/thesealed/thesealedsound.ogg",
+  "soundEffectRangeMultiplier" : 3.0,
+   
   "scripts" : [ "/scripts/chattyObject.lua" ],
   "scriptDelta" : 20,
 
@@ -42,11 +45,8 @@
    "COME CLOSER. FREE ME",
    "YOU MUST. FREE ME.",
    "I DO NOT. BELONG HERE.",
-   "COME FROM. SOMEWHERE ELSE.",
-   "NOW SEALED AWAY. FEARED.",
-   "FOR ETERNITY. PAIN.",
    "I NEED TO. GO BACK.",
-   "GO."
+   "FREE. ME."
   ],
 
   "mouthPosition" : [0, 0]

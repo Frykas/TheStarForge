@@ -4119,8 +4119,63 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":648,
-                 "y":488
+                 "x":1544,
+                 "y":408
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":7,
+         "name":"anchors etc",
+         "objects":[
+                {
+                 "height":864,
+                 "id":715,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"messageType\" : \"playAltMusic\", \"messageArgs\" : [[\"\/music\/temple-of-kluex.ogg\"], 5.0] }"
+                        }, 
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"messenger"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":304,
+                 "x":4192,
+                 "y":968
+                }, 
+                {
+                 "height":1024,
+                 "id":716,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"messageType\" : \"stopAltMusic\", \"messageArgs\" : 5.0 }"
+                        }, 
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"messenger"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":904,
+                 "x":3168,
+                 "y":960
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -4427,7 +4482,7 @@
                 }, 
                 {
                  "height":0,
-                 "id":714,
+                 "id":717,
                  "name":"",
                  "polyline":[
                         {
@@ -4435,15 +4490,15 @@
                          "y":0
                         }, 
                         {
-                         "x":3840,
-                         "y":584
+                         "x":2944,
+                         "y":664
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":648,
-                 "y":480
+                 "x":1544,
+                 "y":400
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -5005,8 +5060,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":7,
- "nextobjectid":715,
+ "nextlayerid":8,
+ "nextobjectid":718,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
