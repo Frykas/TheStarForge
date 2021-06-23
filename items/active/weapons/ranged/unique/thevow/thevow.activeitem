@@ -1,0 +1,82 @@
+{
+  "itemName" : "starforge-thevow",
+  "price" : 3000,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "\"They lost everything to the Unbound. Make a promise for me, please make them pay.\" ",
+  "shortdescription" : "^orange;The Vow^reset;",
+  "level" : 7,
+  "tooltipKind" : "base",
+  "category" : "Hand Cannon",
+  "itemTags" : ["weapon","ranged","revolver"],
+  "twoHanded" : true,
+  
+  "inventoryIcon" : "thevow.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+    "animationParts" : {
+    "middle" : "thevow.png",
+	 "muzzleFlash" : "muzzleflash.png"
+	},
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/starforge-thevow.ogg"]
+    }
+  }, 
+  "baseOffset" : [0.875, 0.250],
+  "muzzleOffset" : [1.750,0.250],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 2.00,
+    "baseDps" : 11,
+    "energyUsage" : 110,
+    "inaccuracy" : 0.001,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "hawkmoonbullet",
+    "projectileParameters" : {
+      "knockback" : 6
+    },
+
+       "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 35,
+        "weaponRotation" : 35,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.40,
+        "armRotation" : 32,
+        "weaponRotation" : 32,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  "altAbilityType" : "",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
