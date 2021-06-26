@@ -1,0 +1,58 @@
+{
+  "objectName" : "starforge-unboundcanister",
+  "colonyTags" : ["storage", "apex"],
+  "rarity" : "Legendary",
+  "tooltipKind" : "base",
+  "race" : "apex",
+  "health" : 1.5,
+
+  "category" : "storage",
+  "price" : 0,
+  "printable" : false,
+  "description" : "An Unbound canister, contains ancient essence inside..",
+  "shortdescription" : "Unbound Canister",
+
+  "apexDescription" : "This chest looks very old and creepy.",
+  "avianDescription" : "This chest looks very old and creepy.",
+  "floranDescription" : "Ssscary chessst makes Floran nervousss.",
+  "glitchDescription" : "Unsettled. The eye adorning this chest seems to be judging me.",
+  "humanDescription" : "A creepy old chest. Dare I open it?",
+  "hylotlDescription" : "I was taught to be wary of mysterious chests.",
+  "novakidDescription" : "I don't care much for the way this chest is lookin' at me.",
+
+  "inventoryIcon" : "unboundcanistericon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "unboundcanister.png:default", "fullbright" : true }, { "image" : "unboundcanisterlit.png:default" } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "unboundcanister.png:default", "fullbright" : true }, { "image" : "unboundcanisterlit.png:default" } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "unboundcanister.animation",
+  "animationPosition" : [-8, 0],
+
+  "scripts" : ["/objects/scripts/treasureburst.lua"],
+  "scriptDelta" : 0,
+
+  "burstTreasurePool" : "essenceBurst",
+  "burstItemVelocityRange" : [15, 30],
+  "burstAngleVariance" : 0.5,
+  "burstOffset" : [0.5, 0],
+  "burstIntangibleTimeRange" : [0.25, 0.5]
+}

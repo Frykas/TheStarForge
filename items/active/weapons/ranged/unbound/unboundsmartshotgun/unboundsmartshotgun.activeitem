@@ -1,0 +1,93 @@
+{
+  "itemName" : "starforge-unboundsmartshotgun",
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A shotgun firing special slowing ammo. Used by the Vanguard units.",
+  "shortdescription" : "^#686F5D;UNBD^reset; \"Marauder\" ^#69729E;VNGD SG^reset;",
+  "tooltipKind" : "gun",
+  "category" : "Smart Shotgun",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","shotgun"],
+  "level" : 7,
+
+"inventoryIcon" : "unboundsmartshotgun.png",
+
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "middle" : "unboundsmartshotgun.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/tank_shot.ogg"]
+    }
+  },
+  "baseOffset" : [0.375, 0.250],
+  "muzzleOffset" : [2.500, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.10,
+    "baseDps" : 9,
+    "energyUsage" : 50,
+    "inaccuracy" : 0.001,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "unboundsmartshell",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 15,
+        "weaponRotation": 12,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.8,
+        "armRotation": 16,
+        "weaponRotation": 13,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

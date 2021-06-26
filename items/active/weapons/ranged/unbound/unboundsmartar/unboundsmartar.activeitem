@@ -28,7 +28,7 @@
       "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-2.250, 0.0, -2.250, 0.0],
+		"offsetRegion" : [-2.0, 0.125, -2.0, 0.125],
         "particles" : [
           { "particle" : "starforge-unboundrifle" }
         ]

@@ -7,8 +7,8 @@
     "config" : "/interface/windowconfig/crafting.config",
     "paneLayoutOverride" : {
       "windowtitle" : {
-        "title" : "Mechanic Rondin",
-        "subtitle" : "Crafting genius, will gladly help you make powerful weapons.",
+        "title" : "Exalting station",
+        "subtitle" : "With the help of Rondin, reach even beyond.",
         "icon" : {
           "file" : "/interface/SEmerchant/merchanticon.png"
         }
@@ -18,8 +18,8 @@
 	
   },
   "printable" : false,
-  "description" : "The Thalasso's Mechanic. A Glitch that somehow bypassed the glitch of his species. ",
-  "shortdescription" : "Rondin's Crafting Table",
+  "description" : "A station capable of infusing more power into Starforged items.",
+  "shortdescription" : "Exalting Station",
   "race" : "generic",
   "category" : "crafting",
   "price" : 5000,
@@ -27,12 +27,13 @@
   "offeredQuests" : ["thalassointromission3", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3"],
   "turnInQuests" : ["thalassointromission2", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3", "thalassoelanaquest1", "starforge-decapitatorswordquest", "starforge-furourswordquest2" ],
 
-  "apexDescription" : "It's surprising to see a glitch that smart. I wonder how he became like that.",
-  "avianDescription" : "This Glitch sure knows how to make cool things!",
-  "floranDescription" : "Floran wondersss if the Mechanic ssstrong.",
+  "apexDescription" : "It seems like this station can infuse Starforged gear with even more power.",
+  "avianDescription" : "I can upgrade my stuff here!!",
+  "floranDescription" : "Floran can become ssstronger here...",
   "glitchDescription" : "Surprised. This person doesn't feel like a Glitch at all. ",
-  "humanDescription" : "This guy sure is surprising, he knows how to make strong weapons with Ancient Essence. ",
-  "hylotlDescription" : "A very talented Glitch. It's refreshing to see one like that.",
+  "humanDescription" : "This guy sure is surprising, he knows how to make strong weapons with Ancient Essence.",
+  "hylotlDescription" : "This station is full of wonders. And the Glitch even more.",
+  "novakidDescription" : "This shiny stone in the middle sure be lookin' expensive eh!",
   
 
   "inventoryIcon" : "weaponforgeicon.png",
@@ -40,15 +41,15 @@
    {
       "dualImage" : "weaponforge.png:<frame>",
       "imageLayers" : [ { "image" : "weaponforge.png:<frame>" }, { "image" : "weaponforgefullbright.png:<frame>", "fullbright" : true } ],
-      "imagePosition" : [-16, 0],
+      "imagePosition" : [-32, 0],
 
       "direction" : "left",
       "flipImages" : false,
 
       "spaceScan" : 0.1,
 
-      "frames" : 5,
-      "animationCycle" : 8.0,
+      "frames" : 60,
+      "animationCycle" : 7.3,
       "anchors" : [ "bottom" ]
     }
    

@@ -1,0 +1,11 @@
+[ 
+  {
+    "op": "add",
+    "path": "/guardianTreasure/0/1/fill",
+    "value": [
+      {
+        "item": "starforge-exaltedenergy"
+      }
+    ]
+  }
+]

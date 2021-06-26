@@ -1,0 +1,50 @@
+{
+  "objectName" : "starforge-unboundkeystand",
+  "colonyTags" : ["apex, ancient"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 750,
+  "description" : "An Ancient Key floating on an Unbound stand.",
+  "shortdescription" : "Vault Key Stand",
+  
+  "health" : 5,
+
+  "apexDescription" : "A vault key. Why do the Unbound keep that?",
+  "avianDescription" : "A vault key! Awesome!",
+  "floranDescription" : "Floran found key... Where isss chessst???",
+  "glitchDescription" : "Intrigued. I wonder why they would keep a key here.",
+  "humanDescription" : "Free vault key? Don't mind if I do!",
+  "hylotlDescription" : "A vault key. Exposed like that, it almost looks like art.",
+  "novakidDescription" : "Weird key floatin' like that.",
+
+  "inventoryIcon" : "vaultkey.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "stand.png:<color>", "fullbright" : true }, { "image" : "standlit.png:<color>" } ],
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "unboundkeystand.animation",
+  "animationParts" : {
+    "pedestal" : "stand.png",
+    "pedestallit" : "standlit.png",
+    "item" : "key.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 1,
+  
+  "spawnableItem" : "vaultkey",
+  
+  "useFloatingObject" : true,			//If true, the item will smoothly float up and down
+  "floatingObjectCycle" : 2.0,			//Time for the item to move a full cycle
+  "floatingObjectMaxTransform" : 0.15	//Maximum up and down movement from origin
+}
