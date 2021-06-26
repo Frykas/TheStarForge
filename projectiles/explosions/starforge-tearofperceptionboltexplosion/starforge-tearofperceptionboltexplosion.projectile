@@ -1,0 +1,18 @@
+{
+  "projectileName" : "starforge-tearofperceptionboltexplosion",
+  "image" : "starforge-tearofperceptionboltexplosion.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [15, 0, 0],
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "fullbright" : true,
+  
+  "statusEffects" : [],
+  "renderLayer" : "ForegroundEntity",
+  "damageKind" : "plasma"
+}

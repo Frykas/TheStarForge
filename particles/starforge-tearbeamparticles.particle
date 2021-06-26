@@ -1,24 +1,20 @@
 {
   "kind" : "starforge-tearbeamparticles",
   "definition" : {
-    "type" : "animated",
-    "animation" : "/animations/starforge-tearbeamparticles/starforge-tearbeamparticles.animation",
-    "position" : [0.5, 0],
-    "finalVelocity" : [0, 0],
-    "approach" : [50, 50],
-    "destructionAction" : "shrink",
-    "destructionTime" : 0.7,
-    "fade" : 1,
-    "size" : 0.3,
-    "layer" : "middle",
-    "timeToLive" : 5.7,
+	"type" : "animated",
+	"animation" : "/animations/starforge-tearbeamparticles/starforge-tearbeamparticles.animation",
+	"position" : [1.375, 0],
+	"light" : [30, 60, 75],
+	"layer" : "middle",
+	"timeToLive" : 0.5,
+	"destructionTime" : 0.1,
+	"destructionAction" : "fade",
+	"size" : 0.75,
 	"fullbright" : true,
-	"light" : [72, 96, 128],
     "variance" : {
-      "finalVelocity" : [1.5, 1.5],
-	  "size" : 0.1,
+	  "size" : 0.65,
       "rotation" : 180,
-      "angularVelocity" : 180
+      "angularVelocity" : 30
     }
   }
 }

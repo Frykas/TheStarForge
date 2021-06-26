@@ -41,14 +41,36 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/starforge-floatingbeamfire.lua"],
     "class" : "StarForgeFloatingBeamFire",
 
-    "fireTime" : 0.05,
-    "baseDps" : 5.5,
+    "fireTime" : 0.1,
+    "baseDps" : 6.5,
     "energyUsage" : 19.5,
 
     "damageConfig" : {
       "statusEffects" : [ ],
       "damageSourceKind" : "plasma",
       "knockback" : 2
+    },
+	
+	//Projectiles along beam
+    "beamProjectileType" : "watersplash",
+    "beamProjectileParameters" : {
+	  "speed" : 0,
+	  "timeToLive" : 1,
+	  "periodicActions" : [
+		{
+		  "time" : 0.01,
+		  "repeat" : false,
+		  "action" : "particle",
+		  "rotate" : true,
+		  "specification" : "starforge-tearbeamparticles"
+		}
+	  ]
+    },
+	
+	"chargeTime" : 2,
+	"projectileCount" : 5,
+    "projectileType" : "starforge-tearofperceptionbolt",
+    "projectileParameters" : {
     },
 
 	"crystalPosition" : [-4, 1],
@@ -66,18 +88,15 @@
     "hoverCycle" : 2.0,
     "hoverAmplitude" : 0.5,
 
-	"beamCollisionType" : "line",
-	"beamWidth" : 0.875,
-
     "chain" : {
 	  "directives" : "?flipx",
-      "startOffset" : [1.25, 0],
+      "startOffset" : [-1, 0.25],
       "startSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
       "segmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beam.png",
       "endSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
       "endCollideSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
-      "segmentSize" : 0.375,
-      "overdrawLength" : 0.2,
+      "segmentSize" : 0.25,
+      "overdrawLength" : 0.25,
       "taper" : 0,
       "waveform" : {
         "frequency" : 4.0,

@@ -1,0 +1,95 @@
+{
+  "projectileName" : "starforge-tearofperceptionbolt",
+  "image" : "starforge-tearofperceptionbolt.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "fallSpeed" : 0,
+  //"lightColor" : [67, 110, 32],
+  "pointLight" : true,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "starforge-tearofperceptionboltexplosion"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "streak",
+        "layer" : "front",
+        "fullbright" : true,
+        "destructionAction" : "shrink",
+        "size" : 5,
+		"color" : [96, 168, 234, 255],
+		"collidesForeground" : false,
+		"length" : 7,
+        "position" : [-0.5, 0],
+        "timeToLive" : 0.01,
+        "destructionTime" : 0.2,
+		"initialVelocity" : [0.5, 0],
+		"variance" : {
+		  "size" : 0,
+          "destructionTime" : 0.2,
+		  "initialVelocity" : [0.5, -0],
+		  "length" : 0
+		}
+      }
+    },
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "streak",
+        "layer" : "front",
+        "fullbright" : true,
+        "destructionAction" : "shrink",
+        "size" : 3,
+		"color" : [255, 255, 255, 255],
+		"collidesForeground" : false,
+		"length" : 8,
+        "position" : [-0.5, 0],
+        "timeToLive" : 0.01,
+        "destructionTime" : 0.15,
+		"initialVelocity" : [0.5, 0],
+		"variance" : {
+		  "size" : 0,
+          "destructionTime" : 0.15,
+		  "initialVelocity" : [0.5, -0],
+		  "length" : 0
+		}
+      }
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ ],
+  "flippable" : true,
+  "fullbright" : true,
+  "power" : 10.0,
+  "speed" : 45.0,
+  "timeToLive" : 2,
+  "physics" : "illusion",
+  "damageType" : "NoDamage",
+  "damageKind" : "plasma",
+
+  "scripts" : ["/projectiles/scripts/starforge-homingbullet-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0,
+  "waveAmplitude" : 0,
+  
+  //Homing
+  "homingStartDelay" : 0.05,
+  "homingStyle" : "controlVelocity",
+  "searchRadius" : 100,
+  "baseHomingControlForce" : 4,
+  "requireLineOfSight" : false,
+  "dieDistance" : 2
+}

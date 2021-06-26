@@ -26,7 +26,7 @@ function init()
   --Seting up the sine wave movement
   self.wavePeriod = config.getParameter("wavePeriod") / (2 * math.pi)
   self.waveAmplitude = config.getParameter("waveAmplitude") * (config.getParameter("barrel", 1) % 2 == 1 and -1 or 1)
-  sb.logInfo("%s and %s", config.getParameter("barrel"), self.waveAmplitude)
+  --sb.logInfo("%s and %s", config.getParameter("barrel"), self.waveAmplitude)
 
   self.timer = self.wavePeriod * 0.25
   local vel = mcontroller.velocity()
@@ -57,11 +57,16 @@ function update(dt)
       order = "nearest"
     })
 
-	for _, target in ipairs(targets) do
-	  if entity.entityInSight(target) and world.entityCanDamage(projectile.sourceEntity(), target) and not (world.getProperty("entityinvisible" .. tostring(target)) and not config.getParameter("ignoreInvisibility", false)) then
+	if targets[1] then
+	  target = targets[1]
+	end
+
+	if target then
+	  if (config.getParameter("requireLineOfSight", true) and entity.entityInSight(target) or true) and world.entityCanDamage(projectile.sourceEntity(), target) and not (world.getProperty("entityinvisible" .. tostring(target)) and not config.getParameter("ignoreInvisibility", false)) then
 		local targetPos = world.entityPosition(target)
 		local myPos = mcontroller.position()
 		local dist = world.distance(targetPos, myPos)
+		local mag = world.magnitude(targetPos, myPos)
 
 		if self.homingStyle == "controlVelocity" then
 		  mcontroller.approachVelocity(vec2.mul(vec2.norm(dist), self.targetSpeed), self.controlForce)
@@ -78,10 +83,11 @@ function update(dt)
 
 		  vel = vec2.rotate(vel, rotateAngle)
 		  mcontroller.setVelocity(vel)
-		  
-		  break
 		end
-		return
+		
+		if config.getParameter("dieDistance", false) and mag < config.getParameter("dieDistance", 2) then
+		  projectile.die()
+		end
 	  end
 	end
   else
