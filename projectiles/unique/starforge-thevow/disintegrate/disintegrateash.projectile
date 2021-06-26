@@ -1,0 +1,32 @@
+{
+  "projectileName" : "disintegrateash",
+  "image" : "disintegrateash.png",
+  "physics" : "arrownosticky",
+  "animationCycle" : 2,
+  "frameNumber" : 1,
+  "renderLayer" : "Object+1",
+  "power" : 0,
+  "speed" : 0,
+  "piercing" : true,
+  "initialVelocity" : 0,
+  "timeToLive" : 10,
+  "bounces" : 0,
+  "flippable" : true,
+  "orientationLocked" : false,
+  "emitters" : [],
+
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "disintegrateashgrounded",
+      "inheritDamageFactor" : 0.0,
+	  "fuzzAngle" : 0,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-uprightprojectile.lua" ],
+  "alwaysUpright" : true
+}
