@@ -1,0 +1,30 @@
+{
+  "id" : "starforge-vowquest1",
+  "title" : "^orange;A Vow of Vengeance I^reset;",
+  "text" : "During an exploration I found an Avian town raided by Unbound troops. While it seems no Avian made it out alive, I managed to recover a curious energy cell from an inactive weapon exposed in one of the houses. Maybe ^orange;Tweeters^reset; at the ^green;Thalasso Outpost^reset; knows something about them and that strange energy cell.",
+  "completionText" : "Sorry, I really don't know anything about that town or this weird cell thingy... Learning that the Unbound attacks small towns and villages really makes me sad. I'm sure Rondin will be able to help you make a weapon out of that small thing, avenge them.",
+  "moneyRange" : [2500, 2500],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "questReceiver"
+	 },
+	"followUp" : "starforge-vowquest2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "starforge-vowenergycell",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Bring the ^orange;Empty Energy Cell^reset; to ^green;Tweeters^reset;."
+  }
+}

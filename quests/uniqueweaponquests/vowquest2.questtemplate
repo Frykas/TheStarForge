@@ -1,0 +1,34 @@
+{
+  "id" : "starforge-vowquest2",
+  "prerequisites" : [ "starforge-vowquest1" ],
+  "title" : "^orange;A Vow of Vengeance II^reset;",
+  "text" : "Tweeters, saddened by the news of Unbound troops raiding a small Avian town, asked me to make a weapon using that empty energy cell I found. She's sure ^orange;Rondin^reset; will be able to make something out of it. I should talk to him at the ^green;Thalasso Outpost^reset;.",
+  "completionText" : "That energy cell you bring me sure is well made, incredible. Tweeters want you to avenge them uh. She may not be the smartest, but she's the best when it comes to protecting people and doing the right thing. Take this, and head to the Starforge.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ], [ "starforge-thevow-recipe", 1] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      }
+	 },
+	"followUp" : "starforge-vowquest2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "starforge-vowenergycell",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Show the ^orange;Empty Enercy Cell^reset; to ^green;Rondin^reset;."
+  }
+}

@@ -25,7 +25,7 @@
   "price" : 5000,
   
   "offeredQuests" : ["thalassointromission3", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3"],
-  "turnInQuests" : ["thalassointromission2", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3", "thalassoelanaquest1", "starforge-decapitatorswordquest", "starforge-furourswordquest2" ],
+  "turnInQuests" : ["thalassointromission2", "thalassorondinquest1", "thalassorondinquest2", "thalassorondinquest3", "thalassoelanaquest1", "starforge-decapitatorswordquest", "starforge-furourswordquest2", "starforge-vowquest2" ],
 
   "apexDescription" : "It seems like this station can infuse Starforged gear with even more power.",
   "avianDescription" : "I can upgrade my stuff here!!",

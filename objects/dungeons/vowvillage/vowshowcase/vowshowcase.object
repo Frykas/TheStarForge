@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-vowshowcase",
+  "rarity" : "essential",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "A strange looking weapon exposed behind an avian showcasing frame.",
+  "shortdescription" : "Vow Showcase Frame",
+  "race" : "avian",
+
+  "floranDescription" : "Curiousss weapon ssshowcasssed behind the frame. Floran interesssted.",
+  "glitchDescription" : "Curious. The weapon showcased here is unlike any I've seen.",
+  "novakidDescription" : "Oh. Quite an interestin' looking gun right there.",
+  "humanDescription" : "I know a hand canon when I see one! Seems like it can pack a punch. I wonder if it works?",
+  "hylotlDescription" : "Despite the rough and experimental look, this weapon seems very strong.",
+  "avianDescription" : "I wonder how my people got their hands on such a weapon? It doesn't look like an Avian made it.", 
+  "apexDescription" : "This blade has a strange feeling to it.",
+
+  "inventoryIcon" : "vowshowcaseicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "vowshowcase.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "starforge-vowenergycell",
+
+  "animation" : "vowshowcase.animation",
+  "animationParts" : {
+    "object" : "vowshowcase.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

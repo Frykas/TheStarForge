@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-vowenergycell",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "inventoryIcon" : "vowenergycell.png",
+  "description" : "An empty, solarium infused energy cell taken from an old collection weapon..",
+  "shortdescription" : "^orange;Empty Energy Cell^white;",
+  "itemTags" : [ "questitem" ],
+  "pickupQuestTemplates" : [ "starforge-vowquest1" ]
+}

@@ -26,8 +26,8 @@
   },
 
   "scriptConfig" : {
-    "offeredQuests" : ["thalassotweetersquest1", "thalassotweetersquest2", "thalassotweetersquest3"],
-    "turnInQuests" : ["thalassotweetersquest1", "thalassotweetersquest2", "thalassotweetersquest3"],
+    "offeredQuests" : ["thalassotweetersquest1", "thalassotweetersquest2", "thalassotweetersquest3", "starforge-vowquest2"],
+    "turnInQuests" : ["thalassotweetersquest1", "thalassotweetersquest2", "thalassotweetersquest3", "starforge-vowquest1"],
     "behavior" : "villager",
 
     "dialogMode" : "sequence",

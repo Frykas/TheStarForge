@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 5000},
+	{ "item" : "starforge-brimsteel", "count" : 6},
+	{ "item" : "starforge-infusedtitanium", "count" : 15},
+	{ "item" : "corefragmentore", "count" : 100}
+  ],
+  "output" : {
+    "item" : "starforge-thevow",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+
