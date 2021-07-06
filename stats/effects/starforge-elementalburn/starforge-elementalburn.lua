@@ -1,5 +1,6 @@
 function init()
   self.movementMultiplier = config.getParameter("movementMultiplier", 0.85)
+  self.elementType = "default"
 
   animator.setParticleEmitterOffsetRegion("drips", mcontroller.boundBox())
   animator.setParticleEmitterActive("drips", true)
@@ -28,7 +29,7 @@ function update(dt)
 	status.applySelfDamageRequest({
         damageType = "IgnoresDef",
         damage = tickDamage,
-        damageSourceKind = "default",
+        damageSourceKind = self.elementType,
         sourceEntityId = entity.id()
     })
   end

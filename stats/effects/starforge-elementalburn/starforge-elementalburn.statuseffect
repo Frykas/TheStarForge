@@ -1,0 +1,20 @@
+{
+  "name" : "starforge-elementalburn",
+  "effectConfig" : {
+    "minMaxHealth" : 5,
+    "directives" : "fade=960000",
+	"movementMultiplier" : 0.85,
+	"tickDamagePercentage" : 0.015,
+	"tickTime" : 0.5
+  },
+  "defaultDuration" : 3.5,
+
+  "scripts" : [
+    "starforge-elementalburn.lua"
+  ],
+
+  "animationConfig" : "starforge-elementalburn.animation",
+
+  "label" : "Burning",
+  "icon" : "/interface/statuses/absorb.png"
+}
