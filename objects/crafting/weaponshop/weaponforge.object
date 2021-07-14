@@ -52,5 +52,8 @@
       "animationCycle" : 7.3,
       "anchors" : [ "bottom" ]
     }
-   
-  ]}
+	],
+	
+  "questIndicatorPosition" : [-4, -15]
+    
+  }

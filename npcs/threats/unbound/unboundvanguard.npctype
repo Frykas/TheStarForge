@@ -1,0 +1,60 @@
+{
+    "type": "starforge-unboundvanguard",
+    "baseType": "hostile",
+	
+	"scripts" : ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+	"initialScriptDelta" : 5,
+ 
+    "dropPools": ["unboundVanguardTreasure"],
+	
+ 
+    "identity" : {
+    "species" : "apex"
+	},
+ 
+    "scriptConfig" : {
+	  "bossName" : "Vanguard Primary Target",
+	  
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "You can't stop us.",
+                        "You're struggling for nothing!",
+                        "For the Unbound!",
+                        "Apolleon is unstoppable. You're a pebble on his path.",
+                        "I will be the one to put an end to you and your ridiculous group.",
+                        "I won't go down easily."
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":500}, {"stat":"maxEnergy","amount":150}],
+	
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundvanguardhead"
+                }],
+                "chest": [{
+                    "name": "starforge-unboundvanguardchest"
+                }],
+                "legs": [{
+                    "name": "starforge-unboundvanguardpants"
+                }],
+                "primary": [
+                    "starforge-unboundsmartpistol", "starforge-unboundsmartar", "starforge-unboundsmartshotgun"
+                ],
+				 "alt" : [ "starforge-unboundsmartpistol" ]
+            }]]
+        ]
+    }
+}

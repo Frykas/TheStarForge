@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-unboundvanguardrack",
+  "colonyTags" : ["apex","combat"],
+  "rarity" : "legendary",
+  "category" : "decorative",
+  "price" : 450,
+  "description" : "A rack exposing a few Vanguard weapons.",
+  "shortdescription" : "Unbound Vanguard Rack",
+  "race" : "apex",
+
+  "apexDescription" : "An impressive display of Unbound weaponry.",
+  "avianDescription" : "An entire rack filled with Unbound rifles.",
+  "floranDescription" : "Boring gunsss.",
+  "glitchDescription" : "Fascinated. The methods used to make these weapons are quite unusual.",
+  "humanDescription" : "A whole rack of rifles... Is it okay if I take one?",
+  "hylotlDescription" : "Popular weapons. Apex troops are trained to use these.",
+  "novakidDescription" : "A rack of rifles? I'm in.",
+
+
+  "inventoryIcon" : "unboundvanguardrackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundvanguardrack.png" ,
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
