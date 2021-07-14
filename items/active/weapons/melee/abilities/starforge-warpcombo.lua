@@ -97,7 +97,7 @@ function StarforgeWarpCombo:teleport()
   local stance = self.stances["fire"..self.comboStep]
   
   --Create the teleportation effect and add 0.5 for both animations to take effect
-  status.addEphemeralEffect("starforge-teleporteffect", stance.duration + 0.5)
+  status.addEphemeralEffect(stance.teleportStatus or "starforge-teleporteffect", stance.duration + 0.5)
 
   animator.setGlobalTag("stanceDirectives", stance.directives or "")
   self.weapon:setStance(stance)

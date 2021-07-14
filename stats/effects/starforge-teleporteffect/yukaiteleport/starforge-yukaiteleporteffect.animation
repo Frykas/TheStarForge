@@ -104,7 +104,11 @@
               "timeToLive" : 0.2
             }
           }
-        }
+        },
+        {
+          "count" : 30,
+		  "particle" : "starforge-torporcloud"
+		}
       ]
     }
   },

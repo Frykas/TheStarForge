@@ -2,6 +2,8 @@ function init()
   animator.setAnimationState("blink", "blinkout")
   effect.setParentDirectives("?multiply=ffffff00")
   animator.playSound("activate")
+  animator.setParticleEmitterOffsetRegion("teleport", mcontroller.boundBox())
+  animator.burstParticleEmitter("teleport")
   effect.addStatModifierGroup({{stat = "activeMovementAbilities", amount = 1}})
   
   effect.addStatModifierGroup({{stat = "invulnerable", amount = 1}})
@@ -16,7 +18,7 @@ end
 function teleport()
   effect.setParentDirectives("")
   animator.playSound("deactivate")
-  animator.burstParticleEmitter("translocate")
+  animator.burstParticleEmitter("teleport")
   animator.setAnimationState("blink", "blinkin")
 end
 
