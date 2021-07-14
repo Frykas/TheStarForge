@@ -1,6 +1,6 @@
 {
   "projectileName" : "starforge-bladestorm",
-  "image" : "starforge-bladestorm.png",
+  "image" : "starforge-bladestormpowerful.png",
   "animationCycle" : 0.35,
   "frameNumber" : 7,
   "speed" : 0,
@@ -40,6 +40,6 @@
   
   "persistentAudio" : "/sfx/projectiles/starforge_bladestorm.ogg",
   
-  "statusEffects" : [],
+  "statusEffects" : ["starforge-yukaibleed"],
   "damageKind" : "broadsword"
 }

@@ -1,0 +1,12 @@
+{
+  "name" : "starforge-yukaiteleporteffect",
+  "effectConfig" : {
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "/stats/effects/starforge-teleporteffect/starforge-teleporteffect.lua"
+  ],
+
+  "animationConfig" : "starforge-yukaiteleporteffect.animation"
+}

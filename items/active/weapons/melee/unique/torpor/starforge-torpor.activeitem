@@ -41,26 +41,37 @@
 	
 	"stepDamageConfig" : [
       {
-        "baseDamageFactor" : 1.0,
-        "knockback" : 12.5
+        "baseDamageFactor" : 0.5,
+        "knockback" : 12.5,
+        "timeout" : 0.075
+      },
+      {
+        "baseDamageFactor" : 0.25,
+        "knockback" : 10,
+        "timeout" : 0.075
       },
       {
         "baseDamageFactor" : 0.5,
-        "knockback" : 10
+        "knockback" : 12.5,
+        "timeout" : 0.075
       },
       {
-        "baseDamageFactor" : 1,
-        "knockback" : 12.5
+        "baseDamageFactor" : 0.25,
+        "knockback" : 12.5,
+        "timeout" : 0.075
       },
       {
         "baseDamageFactor" : 0.5,
-        "knockback" : 12.5
-      },
-      {
-        "baseDamageFactor" : 1,
-        "knockback" : 15
+        "knockback" : 15,
+        "timeout" : 1
       }
     ],
+	
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : ["starforge-yukaibleed"],
+      "knockbackMode" : "facing"
+    },
 	
 	"comboSteps" : 5,
     "comboSpeedFactor" : 0.8,
@@ -251,6 +262,7 @@
         "allowRotate" : false,
         "allowFlip" : false,
 		
+		"teleportStatus" : "starforge-yukaiteleporteffect",
 		"teleportOffset" : [0, 1],
 		"teleportTarget" : [10, 0],
 		"teleportTolerance" : 3.0,
