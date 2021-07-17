@@ -5,7 +5,7 @@
   "rarity": "Legendary",
   "description": "An LMG used by Unbound Fortress units, \"Unstoppable\" type.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Scorcher\" LMG",
-  "tooltipKind": "gun",
+  "tooltipKind": "starforge-unboundgun",
   "category": "Light Machine Gun",
   "twoHanded": true,
   "level" : 6,

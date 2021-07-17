@@ -5,7 +5,7 @@
   "rarity": "Legendary",
   "description": "An Unbound SMG loaded with elemental bullets. Often used by Unbound \"Harasser\" Commando types.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Harasser\" SMG",
-  "tooltipKind": "gun",
+  "tooltipKind": "starforge-unboundgun",
   "category": "SMG",
   "twoHanded": true,
   "level" : 6,

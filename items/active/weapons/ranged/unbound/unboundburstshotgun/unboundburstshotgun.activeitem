@@ -4,9 +4,9 @@
   "maxStack": 1,
   "rarity": "Essential",
   "description": "An experimental Unbound shotgun. Fires deadly poisonous shells.",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Aspic\" ^#9BBA3D;EXP SG^reset;",
-  "tooltipKind": "gun",
-  "category": "Experimental Shotgun",
+  "shortdescription": "^#41453B;UNBD^reset; \"Aspic\" ^#9BBA3D;EXP SG^reset;",
+  "tooltipKind": "starforge-experimentalgun",
+  "category": "^white;Experimental Shotgun^reset;",
   "twoHanded": true,
   "level" : 7,
   "itemTags": [

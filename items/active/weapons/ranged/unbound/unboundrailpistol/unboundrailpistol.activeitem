@@ -5,7 +5,7 @@
   "rarity": "Legendary",
   "description": "A rail pistol used by the \"Riot\" Unbound Commando",
   "shortdescription": "^#686F5D;UNBD^reset; \"Dauntless\" RP",
-  "tooltipKind": "gun",
+  "tooltipKind": "starforge-unboundgun",
   "category": "Rail Pistol",
   "twoHanded": false,
   "level": 6,

@@ -4,7 +4,7 @@
   "maxStack": 1,
   "rarity": "legendary",
   "description": "A devastating rocket launcher fire thermite-type rockets.",
-  "tooltipKind": "gun",
+  "tooltipKind": "starforge-unboundgun",
   "shortdescription": "^#686F5D;UNBD^reset; \"Imolater\" RL",
   "category": "Thermite Rocket Launcher",
   "twoHanded": true,

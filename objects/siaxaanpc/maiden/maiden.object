@@ -19,9 +19,9 @@
       "dualImage" : "maiden.png:<frames>",
       "direction" : "right",
 
-      "imagePosition" : [0, 0],
+      "imagePosition" : [-8, 0],
       "frames" : 36,
-      "animationCycle" : 1,
+      "animationCycle" : 5,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

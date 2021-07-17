@@ -5,7 +5,7 @@
   "rarity": "Rare",
   "description": "An Unbound assault rifle loaded with elemental bullets. Often used by regular Unbound troopers.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Valiant\" AR",
-  "tooltipKind": "gun",
+  "tooltipKind": "starforge-unboundgun",
   "category": "assaultRifle",
   "tooltipFields" : {"subtitle":"Unbound Rifle"},
   "twoHanded": true,

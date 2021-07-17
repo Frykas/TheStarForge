@@ -5,7 +5,7 @@
   "rarity": "Rare",
   "description": "A  sniper rifle loaded with ice elemental bullets.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Tundra\" SR",
-  "tooltipKind": "gun",
+  "tooltipKind": "starforge-unboundgun",
   "category": "Sniper Rifle",
   "twoHanded": true,
   "level" : 5,
