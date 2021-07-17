@@ -5,20 +5,14 @@
     "starforge-unboundWeapon" : [
     [0, {
       "pool" : [
-        {"weight" : 0.125, "item" : "starforge-unboundar"},
-        {"weight" : 0.125, "item" : "starforge-unbounddmr"},
-        {"weight" : 0.125, "item" : "starforge-unboundpistol"},
-		{"weight" : 0.125, "item" : "starforge-unboundsilencedpistol"},
-		{"weight" : 0.125, "item" : "starforge-unboundburstpistol"},
-		{"weight" : 0.125, "item" : "starforge-unboundsniper"},
-		{"weight" : 0.125, "item" : "starforge-unboundautoshotgun"},
-		{"weight" : 0.125, "item" : "starforge-unboundshotgun"}
+        {"weight" : 0.16, "item" : "starforge-unboundrailpistol"},
+        {"weight" : 0.17, "item" : "starforge-unboundsmg"},
+        {"weight" : 0.17, "item" : "starforge-unboundheavysniper"},
+		{"weight" : 0.17, "item" : "starforge-unboundlmg"},
+		{"weight" : 0.17, "item" : "starforge-unboundchaingun"},
+		{"weight" : 0.16, "item" : "starforge-unboundrocketlauncher"}
       ],
-	        "poolRounds" : [
-        [0.4, 1],
-		[0.5, 2],
-		[0.1, 3]
-      ],
+	        "poolRounds" : 1,
       "allowDuplication" : false
     }]
   ],
@@ -26,14 +20,74 @@
   
    "starforge-unboundCache" : [
     [0, {
-      "pool" : [
+      "fill" : [
         {"weight" : 1, "item" : ["money", 5000]},
         {"weight" : 1, "item" : ["essence", 1250]},
-        {"weight" : 1, "pool" : "starforge-unboundWeapon"}
+        {"weight" : 1, "pool" : "starforge-unboundWeapon"},
+		{"weight" : 1, "item" : ["starforge-salvagedunboundtech", 1]}
+      ],  
+	       "poolRounds" : 4,
+      "allowDuplication" : false
+    }]
+  ],
+      "starforge-unboundIngotsDrops" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.125, "item" : ["durasteelbar", 20]},
+        {"weight" : 0.125, "item" : ["titaniumbar", 25]},
+        {"weight" : 0.125, "item" : ["ironbar", 35]},
+		{"weight" : 0.125, "item" : ["tungstenbar", 30]},
+		{"weight" : 0.125, "item" : ["refinedaegisalt", 15]},
+		{"weight" : 0.125, "item" : ["refinedferozium", 15]},
+		{"weight" : 0.125, "item" : ["refinedviolium", 15]},
+		{"weight" : 0.125, "item" : ["solariumstar", 30]}
       ],
-	        "poolRounds" : [
-        [1, 3]
+	     "poolRounds" : [
+        [0.20, 3],
+        [0.40, 4],
+		[0.30, 5],
+		[0.10, 6]
       ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+    "starforge-unboundCache2" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "pool" : "starforge-unboundIngotsDrops"},
+        {"weight" : 1, "item" : ["essence", 1250]},
+		{"weight" : 1, "item" : ["starforge-salvagedunboundtech", 1]}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+        "starforge-unboundVanguardDrops" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.125, "item" : "starforge-unboundvanguardhead"},
+        {"weight" : 0.125, "item" : "starforge-unboundvanguardchest"},
+        {"weight" : 0.125, "item" : "starforge-unboundvanguardpants"},
+		{"weight" : 0.125, "item" : "starforge-unboundjumpkit"},
+		{"weight" : 0.125, "item" : "starforge-unboundsmartar"},
+		{"weight" : 0.125, "item" : "starforge-unboundsmartpistol"},
+		{"weight" : 0.125, "item" : "starforge-unboundsmartshotgun"},
+		{"weight" : 0.125, "item" : "starforge-unboundsmartsniper"}
+      ],
+	     "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+  
+     "starforge-unboundCache3" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "pool" : "starforge-unboundVanguardDrops"},
+		{"weight" : 1, "item" : ["starforge-salvagedunboundtech", 1]}
+      ],  
+	       "poolRounds" : 2,
       "allowDuplication" : false
     }]
   ]

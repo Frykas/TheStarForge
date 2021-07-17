@@ -37,25 +37,25 @@
           "burstState" : {
             "closed" : {
               "properties" : {
-                "image" : "unboundrewardcache1.png:closed"
+                "image" : "unboundrewardcache2.png:closed"
               }
             },
 			
 			 "opening" : {
               "properties" : {
-                "image" : "unboundrewardcache1.png:opening"
+                "image" : "unboundrewardcache2.png:opening"
               }
             },
 
             "burst" : {
               "properties" : {
-                "image" : "unboundrewardcache1.png:burst"
+                "image" : "unboundrewardcache2.png:burst"
               }
             },
 
             "open" : {
               "properties" : {
-                "image" : "unboundrewardcache1.png:open"
+                "image" : "unboundrewardcache2.png:open"
               }
             }
           }
@@ -71,25 +71,25 @@
           "burstState" : {
             "closed" : {
               "properties" : {
-                "image" : "unboundrewardcache1lit.png:closed"
+                "image" : "unboundrewardcache2lit.png:closed"
               }
             },
 			
 			 "opening" : {
               "properties" : {
-                "image" : "unboundrewardcache1lit.png:opening"
+                "image" : "unboundrewardcache2lit.png:opening"
               }
             },
 
             "burst" : {
               "properties" : {
-                "image" : "unboundrewardcache1lit.png:burst"
+                "image" : "unboundrewardcache2lit.png:burst"
               }
             },
 
             "open" : {
               "properties" : {
-                "image" : "unboundrewardcache1lit.png:open"
+                "image" : "unboundrewardcache2lit.png:open"
               }
             }
           }
@@ -101,11 +101,9 @@
   "particleEmitters" : {
     "burst" : {
       "active" : false,
-      "offsetRegion" : [2.5, 3, 5.5, 3],
+      "offsetRegion" : [1.5, 2, 4.5, 2],
       "particles" : [
-        {"particle" : "ancientenergy3", "count" : 25},
-        {"particle" : "ancientsmoke1", "count" : 5},
-        {"particle" : "ancientsmoke2", "count" : 5}
+        {"particle" : "smoke", "count" : 3}
       ]
     }
   },

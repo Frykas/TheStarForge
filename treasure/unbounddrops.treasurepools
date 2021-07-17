@@ -22,10 +22,9 @@
     [1, {
       "pool" : [
         {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.06, "item" : "starforge-unboundcaptainhead"},
-        {"weight" : 0.06, "item" : "starforge-unboundcaptainchest"},
-		{"weight" : 0.06, "item" : "starforge-unboundcaptainpants"},
-		{"weight" : 0.06, "item" : "starforge-unboundrailpistol"},
+        {"weight" : 0.08, "item" : "starforge-unboundcaptainhead"},
+        {"weight" : 0.08, "item" : "starforge-unboundcaptainchest"},
+		{"weight" : 0.08, "item" : "starforge-unboundcaptainpants"},
 		{"weight" : 0.06, "item" : "starforge-unboundshield"}
       ],
       "poolRounds" : [
@@ -39,10 +38,9 @@
     [1, {
       "pool" : [
         {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.06, "item" : "starforge-unboundcaptainhead"},
-        {"weight" : 0.06, "item" : "starforge-unboundcaptainchest"},
-		{"weight" : 0.06, "item" : "starforge-unboundcaptainpants"},
-		{"weight" : 0.12, "item" : "starforge-unboundsmg"}
+        {"weight" : 0.1, "item" : "starforge-unboundcaptainhead"},
+        {"weight" : 0.1, "item" : "starforge-unboundcaptainchest"},
+		{"weight" : 0.1, "item" : "starforge-unboundcaptainpants"}
       ],
       "poolRounds" : [
         [0.20, 0],
@@ -107,10 +105,9 @@
     [1, {
       "pool" : [
         {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.08, "item" : "starforge-unboundstalkerhead"},
-        {"weight" : 0.08, "item" : "starforge-unboundstalkerchest"},
-		{"weight" : 0.08, "item" : "starforge-unboundstalkerpants"},
-		{"weight" : 0.06, "item" : "starforge-unboundcptsniper"}
+        {"weight" : 0.1, "item" : "starforge-unboundstalkerhead"},
+        {"weight" : 0.1, "item" : "starforge-unboundstalkerchest"},
+		{"weight" : 0.1, "item" : "starforge-unboundstalkerpants"}
       ],
       "poolRounds" : [
         [0.20, 0],
@@ -123,11 +120,9 @@
     [1, {
       "pool" : [
         {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.06, "item" : "starforge-unboundfortresshead"},
-        {"weight" : 0.06, "item" : "starforge-unboundfortresschest"},
-		{"weight" : 0.06, "item" : "starforge-unboundfortresspants"},
-		{"weight" : 0.06, "item" : "starforge-unboundchaingun"},
-		{"weight" : 0.06, "item" : "starforge-unboundlmg"}
+        {"weight" : 0.1, "item" : "starforge-unboundfortresshead"},
+        {"weight" : 0.1, "item" : "starforge-unboundfortresschest"},
+		{"weight" : 0.1, "item" : "starforge-unboundfortresspants"}
       ],
       "poolRounds" : [
         [0.20, 0],
@@ -140,10 +135,9 @@
     [1, {
       "pool" : [
         {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.06, "item" : "starforge-unboundfortresshead"},
-        {"weight" : 0.06, "item" : "starforge-unboundfortresschest"},
-		{"weight" : 0.06, "item" : "starforge-unboundfortresspants"},
-		{"weight" : 0.12, "item" : "starforge-unboundrocketlauncher"}
+        {"weight" : 0.1, "item" : "starforge-unboundfortresshead"},
+        {"weight" : 0.1, "item" : "starforge-unboundfortresschest"},
+		{"weight" : 0.1, "item" : "starforge-unboundfortresspants"} 
       ],
       "poolRounds" : [
         [0.20, 0],
@@ -157,10 +151,6 @@
       "pool" : [
         {"weight" : 1, "item" : ["money", 2500]},
         {"weight" : 1, "item" : ["essence", 750]}
-      ],
-      "poolRounds" : [
-	    [0, 0],
-        [1, 2]
       ],
       "allowDuplication" : false
     }]
