@@ -1,0 +1,70 @@
+{
+  "objectName" : "starforge-unboundlight",
+  "colonyTags" : ["light"],
+  "rarity" : "uncommon",
+  "category" : "light",
+  "price" : 20,
+
+  "description" : "A light used by the Unbound. It shines brightly.",
+  "shortdescription" : "Unbound Light",
+  "race" : "apex",
+  "printable" : true,
+
+  "apexDescription" : "A light on a tripod. Easy to place and remove.",
+  "avianDescription" : "This light is easy to move around!",
+  "floranDescription" : "Light hasss no flame. Floran sssafe.",
+  "glitchDescription" : "Observant. This light is very well made.",
+  "humanDescription" : "A cool light. Kinda want one now",
+  "hylotlDescription" : "This light looks plain. But I guess it makes up for that by being easy to move around.",
+  "novakidDescription" : "A light on a stick, eh.",
+
+  "lightColor" : [252, 220, 133],
+
+  "inventoryIcon" : "unboundlighticon.png",
+  "orientations" : [
+    {
+      "image" : "unboundlight.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "unboundlight.png",
+        "fg" : "unboundlightlit.png"
+      },
+      "animationPosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 1]
+    },
+    {
+      "image" : "unboundlight.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "unboundlight.png",
+        "fg" : "unboundlightlit.png"
+      },
+      "animationPosition" : [-8, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 1]
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "unboundlight.png",
+    "fg" : "unboundlightlit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

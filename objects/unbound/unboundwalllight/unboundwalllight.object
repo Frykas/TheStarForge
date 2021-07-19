@@ -1,0 +1,73 @@
+{
+  "objectName" : "starforge-unboundwalllight",
+  "colonyTags" : ["light"],
+  "rarity" : "uncommon",
+  "category" : "light",
+  "price" : 20,
+
+  "description" : "A wall light commonly found inside Unbound structures.",
+  "shortdescription" : "Unbound Wall Light",
+  "race" : "apex",
+  "printable" : true,
+
+  "apexDescription" : "A wall light. It is used by the Unbound.",
+  "avianDescription" : "This light doesn't seem to be using any fuel.",
+  "floranDescription" : "Floran bored. Ssstaring at light for too long.",
+  "glitchDescription" : "Observant. This light is rather strange.",
+  "humanDescription" : "A cool wall light.",
+  "hylotlDescription" : "This wall light doesn't shine really bright.",
+  "novakidDescription" : "A light on walls? Interestin'.",
+
+  "lightColor" : [252, 220, 133],
+
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "unboundwalllighticon.png",
+  "orientations" : [
+
+  {
+      "image" : "unboundwalllight.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+    {
+      "image" : "unboundwalllight.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "animation" : "unboundwalllight.animation",
+  "animationParts" : {
+    "bg" : "unboundwalllight.png",
+    "fg" : "unboundwalllight.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/oillantern_on.ogg" ],
+      "off" : [ "/sfx/objects/oillantern_off.ogg" ]
+    }
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+
+}
