@@ -20,7 +20,7 @@
   "inventoryIcon" : "thalassotableicon.png",
   "orientations" : [
     {
-	 "dualImage" : "thalassoplate.png:<color>",
+	 "dualImage" : "thalassotable.png:<color>",
      "imageLayers" : [ { "image" : "thalassotable.png" }, { "image" : "thalassotablefullbright.png", "fullbright" : true } ],
 
       "imagePosition" : [-16, 0],
