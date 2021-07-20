@@ -50,6 +50,10 @@
                 "legs": [{
                     "name": "starforge-unboundvanguardpants"
                 }],
+				"back": [{ 
+				    "name": "starforge-unboundjumpkit" 
+				}],
+				   
                 "primary": [
                     "starforge-unboundsmartpistol", "starforge-unboundsmartar", "starforge-unboundsmartshotgun"
                 ],

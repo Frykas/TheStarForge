@@ -14,7 +14,7 @@
   "script" : "/quests/scripts/main.lua",
   "scriptConfig" : {
      "portraits" : {
-      "questStarted" : "player",
+      "questStarted" : "questGiver",
       "questComplete" : {
         "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
         "title" : "Rondin"

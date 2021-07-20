@@ -1,0 +1,64 @@
+{
+  "type" : "starforge-morpheus",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Morpheus",
+    "species" : "apex",
+	"facialHairGroup":"beardmale",
+	"facialHairType":"17",
+    "hairGroup" : "hairmale",
+    "hairType" : "1",
+	"facialHairDirectives":"?replace;e0975c=595760;a85636=3f3e43;6f2919=212123",
+	"bodyDirectives":"?replace;e0975c=6f6d85;a85636=525269;6f2919=3e4352?replace;735e3a=787069;d9c189=b6b0ae;f7e7b2=d6cecb;a38d59=978d88",
+	"hairDirectives":"?replace;e0975c=595760;a85636=3f3e43;6f2919=212123",
+	"emoteDirectives":"?replace;e0975c=6f6d85;a85636=525269;6f2919=3e4352?replace;735e3a=787069;d9c189=b6b0ae;f7e7b2=d6cecb;a38d59=978d88",
+    "gender" : "male"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "behavior" : "villager",
+	"offeredQuests" : ["thalassointromission2"],
+    "turnInQuests" : ["thalassointromission1"],
+
+    "dialogMode" : "random",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hey there <entityname>. Need anything?",
+            "Our fight against the Unbound is far from over. I'm glad you're here to help.",
+            "It's important to remember what you fight for. I have a family waiting for me to come back.",
+			"Mariko was right to contact you. You're strong.",
+            "The Unbound are expanding fast, we don't have time to laze around.",
+			"Most of the people in the Thalasso aren't fighter, it's mostly just me, Rondin, Tweeters and the captain.",
+			"Oh it's you <entityname>. I'm just working as usual."
+          ]
+        }
+      }
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+                "chest": [{
+                    "name": "starforge-morpheuschest"
+                }],
+                "legs": [{
+                    "name": "starforge-morpheuspants"
+                }]
+            }]]
+        ]
+    }
+}

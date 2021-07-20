@@ -1,0 +1,38 @@
+{
+  "objectName" : "starforge-hackedradio",
+  "colonyTags" : ["apex","combat"],
+  "rarity" : "uncommon",
+  "category" : "decorative",
+  "price" : 150,
+  "printable" : false,
+  "description" : "An Unbound communication relay hacked by Morpheus.",
+  "shortdescription" : "Hacked Com. Relay",
+  "race" : "apex",
+
+  "apexDescription" : "A hacked Unbound relay. Morpheus uses it to gain information on Unbound operations.",
+  "avianDescription" : "What a strange box! There are lots of wires coming out of it.",
+  "floranDescription" : "Floran confusssed looking at metal box.",
+  "glitchDescription" : "Impressed. It seems Morpheus managed to hack into an Unbound communication relay.",
+  "humanDescription" : "Morpheus managed to hack into an Unbound communication relay, bet that's how he can keep track of the Unbound's operations.",
+  "hylotlDescription" : "A crudely hacked communication relay by Morpheus.",
+  "novakidDescription" : "Why would ya put wires & connect things like that?",
+
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "hackedradio.png",
+	  "imageLayers" : [ { "image" : "hackedradio.png" }, { "image" : "hackedradiofullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-24, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

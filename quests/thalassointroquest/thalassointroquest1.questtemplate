@@ -13,10 +13,7 @@
   "scriptConfig" : {
      "portraits" : {
       "questStarted" : "player",
-      "questComplete" : {
-        "portrait" : [ {"image" : "/objects/crafting/morpheusshop/morpheusshopportait.png"} ],
-        "title" : "Morpheus"
-      }
+      "questComplete" : "questReceiver"
     },
     "followUp" : "thalassointromission2",
     "requireTurnIn" : true,
