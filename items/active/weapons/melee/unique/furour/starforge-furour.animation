@@ -56,11 +56,24 @@
         "properties" : {
           "zLevel" : 0,
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
           "offset" : [0, 1.875],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0],
           "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
+        },
+        "partStates" : {
+          "status" : {
+            "inactive" : {
+              "properties" : {
+				"image" : "<partImage>:idle<paletteSwaps>?<directives>?<bladeDirectives>"
+              }
+            },
+            "active" : {
+              "properties" : {
+				"image" : "<partImage>:enraged<paletteSwaps>?<directives>?<bladeDirectives>"
+              }
+            }
+          }
         }
       },
       "bladeFullbright" : {
@@ -76,12 +89,12 @@
           "status" : {
             "inactive" : {
               "properties" : {
-                "image" : ""
+                "image" : "<partImage>:idle"
               }
             },
             "active" : {
               "properties" : {
-                "image" : "<partImage>"
+                "image" : "<partImage>:enraged"
               }
             }
           }

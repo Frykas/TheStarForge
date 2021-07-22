@@ -142,7 +142,7 @@
     "idleParticles" : {
       "active" : true,
       "transformationGroups" : ["weapon"],
-      "offsetRegion" : [0, 0.375, 0, 5],
+      "offsetRegion" : [-0.125, 0.375, -0.125, 5],
       "emissionRate" : 25,
       "particles" : [
         { "particle" : "starforge-torporcloud"}
