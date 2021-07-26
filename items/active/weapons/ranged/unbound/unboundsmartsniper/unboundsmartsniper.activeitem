@@ -21,7 +21,7 @@
     "butt": "",
     "middle": "unboundsmartsniper.png",
     "barrel": "",
-	"muzzleFlash": "muzzleflash.png"
+	"muzzleFlash": ""
   },
   "animationCustom": {
       "particleEmitters" : {
@@ -41,23 +41,23 @@
   },
   
   "baseOffset": [0.750, 0.250],
-  "muzzleOffset": [2.250, 0.125],
+  "muzzleOffset": [2.250, 0.750],
   "scripts": [
     "/items/active/weapons/ranged/gun.lua"
   ],
-  "elementalType": "ice",
+  "elementalType": "fire",
   "primaryAbility": {
     "scripts": [
       "/items/active/weapons/ranged/gunfire.lua"
     ],
     "class": "GunFire",
-    "fireTime": 1.30,
-    "baseDps": 9.5,
-    "energyUsage": 45,
+    "fireTime": 1.80,
+    "baseDps": 4.5,
+    "energyUsage": 70,
     "inaccuracy": 0.001,
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "unboundicebullet",
+    "projectileType": "unboundsmartsniperbullet",
     "projectileParameters": {
       "knockback": 10
     },

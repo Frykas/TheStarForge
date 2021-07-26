@@ -55,7 +55,7 @@
 				}],
 				   
                 "primary": [
-                    "starforge-unboundsmartpistol", "starforge-unboundsmartar", "starforge-unboundsmartshotgun"
+                    "starforge-unboundsmartpistol", "starforge-unboundsmartar", "starforge-unboundsmartshotgun", "starforge-unboundsmartsniper"
                 ],
 				 "alt" : [ "starforge-unboundsmartpistol" ]
             }]]

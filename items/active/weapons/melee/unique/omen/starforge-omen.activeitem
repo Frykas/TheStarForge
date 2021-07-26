@@ -7,7 +7,7 @@
   "description" : "A cursed Yukai artefact used a long time ago to slay countless Florans. ",
   "shortdescription" : "^orange;The Omen^reset;",
   "tooltipKind" : "base",
-  "category" : "Cursed Artefact",
+  "category" : "Cursed Axe",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","axe","artefact"],
 
