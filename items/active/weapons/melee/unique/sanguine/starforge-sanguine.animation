@@ -82,7 +82,7 @@
           },
           "extend" : {
             "frames" : 4,
-            "cycle" : 0.2,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "active",
             "properties" : {
