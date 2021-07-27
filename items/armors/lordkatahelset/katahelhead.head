@@ -8,6 +8,7 @@
   "description" : "With the help of a Starforge and a Glitch Scholar, Katahel grasped true power. ",
   "shortdescription" : "^darkgray;Ambitions of the Warlord^white;",
   "tooltipKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedkatahelhead" ],
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",

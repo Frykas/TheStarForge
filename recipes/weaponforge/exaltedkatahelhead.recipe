@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "starforge-exaltingcharge", "count" : 1},
+    { "item" : "starforge-katahelhead", "count" : 1 },
+	{ "item" : "starforge-impervium", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-exaltedkatahelhead",
+    "count" : 1
+  },
+  "groups" : [ "starforge-weaponshop", "armor" ],
+  "duration" : 0
+}

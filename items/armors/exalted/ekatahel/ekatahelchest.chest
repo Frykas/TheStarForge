@@ -1,14 +1,14 @@
 {
-  "itemName" : "starforge-katahelchest",
-  "price" : 3200,
+  "itemName" : "starforge-exaltedkatahelchest",
+  "price" : 4000,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
   "description" : "An impenetrable armor made of Impervium. Using this and his beheading Claymore, Katahel brought death wherever he walked.",
-  "shortdescription" : "^darkgray;Fortress of the Warlord^white;",
+  "shortdescription" : "^darkgray;Fortress of the Warlord ^#FFB2B2;^reset;",
   "tooltipKind" : "armor",
-  "learnBlueprintsOnPickup" : [ "starforge-exaltedkatahelchest" ],
+  "tooltipFields" : {"rarityLabel" : "Exalted"},
 
   "maleFrames" : {
     "body" : "chest.png",
@@ -23,12 +23,12 @@
   },
 
 
-  "level" : 7,
+  "level" : 8,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 1.30
     },
     {
       "levelFunction" : "separatorArmorLevelProtectionMultiplier",
@@ -43,15 +43,15 @@
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 10.42854
+      "amount" : 10.5
     }
   ],
 
-  "itemTags" : [ "tier7armour" ],
+  "itemTags" : [ "tier8armour" ],
   
     "colorOptions" : [
-    // IMPERVIUM, DEFAULT
-    { "ffca8a" : "D2D2D2", "e0975c" : "777777", "a85636" : "3B3B3B", "6f2919" : "1C1C1C" },
+    // BLACK, DEFAULT
+    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

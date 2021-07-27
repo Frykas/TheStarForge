@@ -1,57 +1,48 @@
 {
-  "itemName" : "starforge-katahelchest",
-  "price" : 3200,
-  "inventoryIcon" : "icons.png:chest",
+  "itemName" : "starforge-exaltedkatahelhead",
+  "price" : 2260,
+  "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "category" : "chestwear",
-  "description" : "An impenetrable armor made of Impervium. Using this and his beheading Claymore, Katahel brought death wherever he walked.",
-  "shortdescription" : "^darkgray;Fortress of the Warlord^white;",
+  "category" : "headwear",
+  "description" : "\"Everything I've done, was to free them, free them from the curse that we're all born with.\"",
+  "shortdescription" : "^darkgray;Ambitions of the Warlord ^#FFB2B2;^reset;",
   "tooltipKind" : "armor",
-  "learnBlueprintsOnPickup" : [ "starforge-exaltedkatahelchest" ],
+  "tooltipFields" : {"rarityLabel" : "Exalted"},
 
-  "maleFrames" : {
-    "body" : "chest.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
-
-  "femaleFrames" : {
-    "body" : "chest.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
-
-
-  "level" : 7,
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+  
+  "level" : 8,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 1.15
     },
     {
       "levelFunction" : "separatorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.53
+      "amount" : 0.3
     },
     {
       "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 5
+      "amount" : 3
     },
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 10.42854
+      "amount" : 5.5
     }
   ],
 
-  "itemTags" : [ "tier7armour" ],
+  "itemTags" : [ "tier8armour" ],
   
     "colorOptions" : [
-    // IMPERVIUM, DEFAULT
-    { "ffca8a" : "D2D2D2", "e0975c" : "777777", "a85636" : "3B3B3B", "6f2919" : "1C1C1C" },
+    // BLACK, DEFAULT
+    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY
