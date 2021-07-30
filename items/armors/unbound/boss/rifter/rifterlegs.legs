@@ -1,40 +1,39 @@
 {
-  "itemName" : "starforge-rifterhead",
-  "price" : 2260,
-  "inventoryIcon" : "icons.png:head",
+  "itemName" : "starforge-rifterpants",
+  "price" : 3000,
+  "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "category" : "headwear",
-  "description" : "Genius, lead scientist of the Research Division, Starva is the brain behind most of the Unbound tech.",
-  "shortdescription" : "^#9BBA3D;UNBD^reset; Rifter's Eye^reset;",
+  "category" : "legwear",
+  "description" : "Knowing the limits of reality only pushed her to find a way to break them.",
+  "shortdescription" : "^#9BBA3D;UNBD^reset; Rifter's Curse^reset;",
   "tooltipKind" : "armor",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
 
-  "maleFrames" : "head.png",
-  "femaleFrames" : "head.png",
-  "mask" : "mask.png",
-  
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
   "level" : 8,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.125
+      "baseMultiplier" : 1.145833
     },
     {
       "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.3
+      "amount" : 0.2
     },
     {
-      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
+    "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 6
+      "amount" : 5
     },
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 1.25
+      "amount" : 2
     }
   ],
 
