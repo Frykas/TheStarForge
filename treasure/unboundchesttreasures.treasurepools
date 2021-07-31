@@ -1,0 +1,40 @@
+{
+  // ==============================================================================================
+  //                                       UNBOUND CHEST DROPS
+  // ==============================================================================================
+ 
+   "starforge-unboundsmallchestTreasure" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.32, "pool" : "chestMoney"},
+        {"weight" : 0.16, "pool" : "healingItem"},
+        {"weight" : 0.35, "pool" : "ore"},
+        {"weight" : 0.17, "pool" : "weapon"}
+      ],
+	        "poolRounds" : [
+        [0.1, 3],
+        [0.4, 4],
+        [0.4, 5],
+        [0.1, 6]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+     "starforge-unboundbigchestTreasure" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.10, "pool" : "chestMoney"},
+        {"weight" : 0.62, "pool" : "ore"},
+        {"weight" : 0.28, "pool" : "goodWeapon"}
+      ],
+	        "poolRounds" : [
+        [0.2, 2],
+        [0.6, 3],
+        [0.2, 4]
+      ],
+      "allowDuplication" : false
+    }]
+  ]    
+  }
+  

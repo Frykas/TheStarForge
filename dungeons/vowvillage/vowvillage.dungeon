@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starforge-vowvillage",
+    "species" : "avian",
+    "rules" : [
+    ],
+    "protected" : true,
+    "anchor" : [ "starforge-vowvillage" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100
+  },
+
+  "parts" : [
+    {
+      "name" : "starforge-vowvillage",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "vowvillage.json" ]
+    }
+  ]
+}

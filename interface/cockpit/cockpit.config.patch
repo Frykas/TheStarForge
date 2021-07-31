@@ -44,6 +44,10 @@
     {"description" : "Ruined Glitch castle detected. Reading faint traces of Ancient Essence from the structure. ", "icon" : "/interface/cockpit/dungeons/katahelruinsicon.png" }
     },
 	
+	{ "op": "add", "path": "/displayDungeons/starforge-vowvillage", "value": 
+    {"description" : "Avian mining village detected. Recent Unbound invasion reported, no trace of Avian survivor. ", "icon" : "/interface/cockpit/dungeons/vowvillageicon.png" }
+    },
+	
 	{ "op": "add", "path": "/displayDungeons/starforge-furouraltar", "value": 
     {"description" : "Strange Hylotls are preparing an obscure ritual on the planet.", "icon" : "/interface/cockpit/dungeons/furouraltaricon.png" }
     }

@@ -3,7 +3,7 @@
   "price" : 3000,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "\"They lost everything to the Unbound. Make a promise for me, please make them pay.\" ",
+  "description" : "A strong weapon which fires super heated rounds, capable of piercing shields. ",
   "shortdescription" : "^orange;The Vow^reset;",
   "level" : 7,
   "tooltipKind" : "base",

@@ -1,4 +1,12 @@
 { "columns":0,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"",
+         "target":"."
+        }
+    },
  "grid":
     {
      "height":1,
@@ -8,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":14,
+ "tilecount":16,
  "tiledversion":"1.4.3",
  "tileheight":48,
  "tileproperties":
@@ -73,6 +81,26 @@
          "object":"starforge-unboundwartable",
          "tilesetDirection":"right"
         },
+     "14":
+        {
+         "\/\/description":"An Unbound canister, contains ancient essence inside.",
+         "\/\/name":"starforge-unboundcanister",
+         "\/\/shortdescription":"Unbound Canister",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundcanister",
+         "tilesetDirection":"right"
+        },
+     "15":
+        {
+         "\/\/description":"An Ancient Key floating on an Unbound stand.",
+         "\/\/name":"starforge-unboundkeystand",
+         "\/\/shortdescription":"Vault Key Stand",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundkeystand",
+         "tilesetDirection":"right"
+        },
      "2":
         {
          "\/\/description":"A very sturdy chair used by the Unbound.",
@@ -101,7 +129,7 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-unboundcover",
-         "tilesetDirection":"right"
+         "tilesetDirection":"left"
         },
      "5":
         {
@@ -207,6 +235,26 @@
          "tilesetDirection":"string"
         },
      "13":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "14":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "15":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -334,6 +382,18 @@
          "image":"unboundwartable.png",
          "imageheight":25,
          "imagewidth":64
+        },
+     "14":
+        {
+         "image":"unboundcanister.png",
+         "imageheight":32,
+         "imagewidth":16
+        },
+     "15":
+        {
+         "image":"keystand.png",
+         "imageheight":40,
+         "imagewidth":16
         },
      "2":
         {
