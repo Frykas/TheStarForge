@@ -1972,6 +1972,12 @@
                  "height":40,
                  "id":448,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-vowlore\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1996,6 +2002,12 @@
                  "height":16,
                  "id":450,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"evilfortressRareTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

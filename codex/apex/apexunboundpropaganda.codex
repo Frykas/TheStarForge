@@ -1,0 +1,18 @@
+{
+  "id" : "starforge-apexunboundpropaganda",
+  "species" : "apex",
+  "title" : "Join the Unbound now!",
+  "description" : "Propaganda used by the Unbound to gather troops.",
+  "icon" : "unboundpaper.png",
+  "contentPages" : [
+
+"JOIN THE UNBOUND NOW!
+
+The galaxy we live is currently changing. My apex brothers & sisters, I, Apolleon, promise that our race will too, finally know change. Prisoners of our own people, we have lived as slaves for the people governing us. But today, we change that. The Unbound promise you freedom, protection and progress. We seek ascension, free from our bond with stars! Help us on this journey, and let the galaxy know that we don't need them anymore."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 10
+  }
+}

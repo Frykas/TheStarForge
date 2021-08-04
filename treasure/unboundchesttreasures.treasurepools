@@ -9,7 +9,7 @@
         {"weight" : 0.32, "pool" : "chestMoney"},
         {"weight" : 0.16, "pool" : "healingItem"},
         {"weight" : 0.35, "pool" : "ore"},
-        {"weight" : 0.17, "pool" : "weapon"}
+        {"weight" : 0.17, "pool" : "starforge-unboundlore"}
       ],
 	        "poolRounds" : [
         [0.1, 3],
@@ -21,11 +21,36 @@
     }]
   ],
   
+   "starforge-unboundlore" : [
+    [0, {
+      "pool" : [
+        {"weight" : 1, "item" : "starforge-apexunboundpropaganda-codex"}
+      ],
+	        "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+   "starforge-vowlore" : [
+    [0, {
+      "pool" : [
+        {"weight" : 1, "item" : "starforge-vowstory-codex"}
+      ],
+	        "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
      "starforge-unboundbigchestTreasure" : [
     [0, {
       "pool" : [
         {"weight" : 0.10, "pool" : "chestMoney"},
-        {"weight" : 0.62, "pool" : "ore"},
+        {"weight" : 0.32, "pool" : "ore"},
+		{"weight" : 0.30, "pool" : "starforge-unboundlore"},
         {"weight" : 0.28, "pool" : "goodWeapon"}
       ],
 	        "poolRounds" : [
