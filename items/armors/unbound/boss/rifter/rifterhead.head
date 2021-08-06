@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headwear",
-  "description" : "Genius, lead scientist of the Research Division, Starva is the brain behind most of the Unbound tech.",
+  "description" : "Genius, lead scientist of the Scientific Division, Starva is the brain behind most of the Unbound tech.",
   "shortdescription" : "^#9BBA3D;UNBD^reset; Rifter's Eye^reset;",
   "tooltipKind" : "armor",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
