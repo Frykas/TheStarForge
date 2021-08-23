@@ -14,7 +14,7 @@
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "thorns", "peacekeeperaugment3",
+  "starforge-warlordprotection", "starforge-warlordthorns",
 
     {
       "stat" : "biomeheatImmunity",
