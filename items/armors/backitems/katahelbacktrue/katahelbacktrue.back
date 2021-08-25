@@ -6,7 +6,7 @@
   "rarity" : "Essential",
   "category" : "backwear",
   "description" : "Enhanced with ancient technology, this cape protects the weilder. ",
-  "shortdescription" : "^darkgray;Might of the Warlord^white;",
+  "shortdescription" : "^#FFBC47;Might of the Warlord^white;",
   "tooltipKind" : "armor",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
 

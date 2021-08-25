@@ -1,0 +1,78 @@
+{
+  "itemName" : "starforge-armokscythe",
+  "price" : 500,
+  "level" : 10,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "This scythe doesn't belong to you!",
+  "shortdescription" : "Armok's Scythe",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : [
+    {"image" : "armokscythe.png"}
+  ],
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+//"bladefullbright" : "armokscythefullbright.png",
+    "blade" : "armokscythe.png"
+  },
+  "animationCustom": {
+    "animatedParts": {
+      "parts": {
+        "blade": {
+          "properties": {
+"zLevel": 0,
+            "offset": [
+              0.75,
+              1.0
+            ]
+          }
+        },
+//"bladefullbright": {
+//          "properties": {
+//"zLevel": 1,
+//"fullbright": true,
+//           "offset": [
+//             0.75,
+//             0.25
+//           ]
+//         }
+//       },
+        "swoosh": {
+          "properties": {
+            "offset": [
+              0.75,
+              0.25
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 100,
+    "stances": {
+      "idle": {
+        "armRotation": -10,
+        "weaponRotation": 55,
+        "allowRotate": false,
+        "allowFlip": true
+      }
+}
+  },
+  "altAbilityType" : "",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

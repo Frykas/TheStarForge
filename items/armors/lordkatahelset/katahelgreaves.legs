@@ -6,7 +6,7 @@
   "rarity" : "Essential",
   "category" : "legwear",
   "description" : "Katahel was one of the first to unite all the Glitches of a planet under a single banner.  ",
-  "shortdescription" : "^darkgray;Territory of the Warlord^white;",
+  "shortdescription" : "^#FFBC47;Territory of the Warlord^white;",
   "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "starforge-exaltedkatahelgreaves" ],
 

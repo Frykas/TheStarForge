@@ -6,7 +6,7 @@
   "rarity" : "Essential",
   "category" : "headwear",
   "description" : "\"Everything I've done, was to free them, free them from the curse that we're all born with.\"",
-  "shortdescription" : "^darkgray;Ambitions of the Warlord ^#FFB2B2;^reset;",
+  "shortdescription" : "^#FFBC47;Ambitions of the Warlord ^#FFB2B2;^reset;",
   "tooltipKind" : "armor",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
 

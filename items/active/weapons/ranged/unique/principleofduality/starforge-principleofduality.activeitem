@@ -4,7 +4,7 @@
   "inventoryIcon" : "starforge-principleofduality.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "A powerful rocketlauncher with the ability to fire twin elemental missiles.",
+  "description" : "A powerful rocket launcher with the ability to fire twin elemental missiles.",
   "shortdescription" : "^#b4f5c3;Principle of Duality^reset;",
   "level" : 7,
   "fixedLevel" : false,

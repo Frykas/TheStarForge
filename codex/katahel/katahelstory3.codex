@@ -1,7 +1,7 @@
 {
   "id" : "starforge-katahelstory3",
   "species" : "glitch",
-  "title" : "^gray;Lord of the Glitch^reset; - III",
+  "title" : "^#FFBC47;Lord of the Glitch^reset; - III",
   "description" : "The story of a past Legend, now gone. ^orange;Can be traded for blueprints^reset;.",
   "icon" : "katahelcover3.png",
   "contentPages" : [

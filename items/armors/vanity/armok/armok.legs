@@ -1,57 +1,46 @@
 {
-  "itemName" : "starforge-katahelchest",
-  "price" : 3200,
-  "inventoryIcon" : "icons.png:chest",
+  "itemName" : "starforge-armokpants",
+  "price" : 2560,
+  "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
-  "rarity" : "Essential",
-  "category" : "chestwear",
-  "description" : "An impenetrable armor made of Impervium. Using this and his beheading Claymore, Katahel brought death wherever he walked.",
-  "shortdescription" : "^#FFBC47;Fortress of the Warlord^white;",
+  "rarity" : "Legendary",
+  "category" : "legarmour",
+  "description" : "You stole a poor overlord's legs. You monster!",
+  "shortdescription" : "Armok's Greaves",
   "tooltipKind" : "armor",
-  "learnBlueprintsOnPickup" : [ "starforge-exaltedkatahelchest" ],
 
-  "maleFrames" : {
-    "body" : "chest.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
 
-  "femaleFrames" : {
-    "body" : "chest.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
-
-
-  "level" : 7,
+  "level" : 10,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 1.1
     },
     {
       "levelFunction" : "separatorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.53
+      "amount" : 0.2
     },
     {
       "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 5
+      "amount" : 2
     },
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 10.42854
+      "amount" : 2
     }
   ],
 
-  "itemTags" : [ "tier7armour" ],
-  
-    "colorOptions" : [
-    // IMPERVIUM, DEFAULT
-    { "ffca8a" : "D2D2D2", "e0975c" : "777777", "a85636" : "3B3B3B", "6f2919" : "1C1C1C" },
+  "itemTags" : [ "tier6armour" ],
+
+  "colorOptions" : [
+    // BLACK
+    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY
@@ -75,4 +64,4 @@
     // BROWN
     { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
   ]
-  }
+}

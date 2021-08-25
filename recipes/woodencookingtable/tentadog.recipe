@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "bread", "count" : 1 },
+	{ "item" : "rawtentacle", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-tentadog",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "mains" ], 
+  "duration" : 0
+}

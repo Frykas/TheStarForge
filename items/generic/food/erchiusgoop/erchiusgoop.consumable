@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-erchiusgoop",
+  "rarity" : "common",
+  "price" : 20,
+  "category" : "preparedFood",
+  "inventoryIcon" : "erchiusgoop.png",
+  "description" : "Flesh liquified by the erchius... Why would anyone eat that?",
+  "shortdescription" : "Erchius Goop",
+  "effects" : [ [
+       {
+        "effect" : "glow",
+        "duration" : 5
+      },
+    {
+        "effect" : "lowgrav",
+        "duration" : 10
+    }
+  ] ],
+  "foodValue" : 3,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

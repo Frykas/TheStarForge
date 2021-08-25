@@ -68,6 +68,12 @@
 	  "type" : "starforge-omeruin",
 	  "species" : [ "human" ]
 	 
+	 },
+	 
+	 {
+	  "type" : "starforge-armok",
+	  "species" : [ "shadow" ]
+	 
 	 }
 
   ]
