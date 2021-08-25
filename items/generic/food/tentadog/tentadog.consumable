@@ -8,7 +8,7 @@
   "shortdescription" : "Tentadog",
   "effects" : [ [
     {
-      "effect" : "healingwater",
+      "effect" : "bandageheal",
       "duration" : 30
     }
   ] ],

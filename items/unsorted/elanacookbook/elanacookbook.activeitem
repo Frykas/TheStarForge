@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-cookbook",
+  "rarity" : "legendary",
+  "price" : 2000,
+  "description" : "Years of training & experimenting in a single book! ",
+  "shortdescription" : "^#b4f5c3;Elana's Cookbook",
+  "category" : "Blueprint",
+  "twoHanded" : false,
+  "inventoryIcon" : "elanacookbook.png",
+  "recipes" : ["starforge-tentadog","starforge-erchiusgoop","starforge-novalimejelly","starforge-pinacolada","starforge-hatredcoffee"],
+  "animation" : "elanacookbook.animation",
+  "scripts" : ["elanacookbook.lua"],
+  "swingTime" : 0.15
+}

@@ -53,6 +53,12 @@
         "displayMonsterName" : "Cacochius",
         "targetMonster" : "starforge-cacochius",
         "count" : 1
+      },
+	  {
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Potlot",
+        "targetMonster" : "starforge-potlot",
+        "count" : 1
       }
     ],
 	"turnInDescription" : "Meet ^orange;Rondin^reset; at the ^green;Starforge^reset;."

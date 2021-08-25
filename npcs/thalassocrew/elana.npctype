@@ -33,7 +33,7 @@
 		},
       "buyFactorRange" : [ 1.5, 1.5 ],
       "sellFactorRange" : [ 0.4, 0.4 ],
-      "numItems" : 18,
+      "numItems" : 50,
       "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : "Cook Elana",

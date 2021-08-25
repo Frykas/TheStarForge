@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-ixodoommeat",
+  "rarity" : "Legendary",
+  "price" : 650,
+  "category" : "preparedFood",
+  "inventoryIcon" : "ixodoommeat.png",
+  "description" : "The raw meat of a gigantic creature. Especially valued by Floran Hunters as a trophy.",
+  "shortdescription" : "Ixodoom Meat",
+  "effects" : [ [
+       {
+        "effect" : "foodpoison",
+        "duration" : 30
+      },
+    {
+        "effect" : "ragefood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 60,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

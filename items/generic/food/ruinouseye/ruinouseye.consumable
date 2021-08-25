@@ -1,0 +1,32 @@
+{
+  "itemName" : "starforge-ruinouseye",
+  "rarity" : "Legendary",
+  "price" : 1500,
+  "category" : "preparedFood",
+  "inventoryIcon" : "ruinouseye.png",
+  "description" : "Eating this opens a door to new strengths, assuming you can endure the taste & survive the digestion.",
+  "shortdescription" : "Ruinous Eye",
+  "effects" : [ [
+       {
+        "effect" : "foodpoison",
+        "duration" : 45
+      },
+	  {
+	   "effect" : "slimeslow",
+	   "duration" : 5
+	  },
+    {
+        "effect" : "largedamageboost",
+        "duration" : 5
+    }
+  ] ],
+  "foodValue" : 5,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

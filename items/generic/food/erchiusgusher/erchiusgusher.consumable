@@ -1,22 +1,22 @@
 {
-  "itemName" : "starforge-erchiusgoop",
-  "rarity" : "common",
-  "price" : 20,
+  "itemName" : "starforge-erchiusgusher",
+  "rarity" : "Legendary",
+  "price" : 620,
   "category" : "preparedFood",
-  "inventoryIcon" : "erchiusgoop.png",
-  "description" : "Flesh liquified by the erchius... Why would anyone eat that?",
-  "shortdescription" : "Moon Goop",
+  "inventoryIcon" : "erchiusgusher.png",
+  "description" : "A crunchy Erchius candy! The eye is filled with a fruity-juice!",
+  "shortdescription" : "Erchius Gusher",
   "effects" : [ [
        {
         "effect" : "glow",
-        "duration" : 5
+        "duration" : 500
       },
     {
-        "effect" : "bouncy",
+        "effect" : "bandageheal",
         "duration" : 10
     }
   ] ],
-  "foodValue" : 3,
+  "foodValue" : 10,
   "tooltipKind" : "food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 1,
