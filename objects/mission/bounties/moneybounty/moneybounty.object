@@ -1,0 +1,38 @@
+{
+  "objectName" : "starforge-moneybounty",
+  "colonyTags" : ["apex"],
+  "rarity" : "rare",
+  "printable" : false,
+  "description" : "Takes you to an Unbound settlement containing currency.",
+  "shortdescription" : "Currency Bounty",
+  "race" : "apex",
+  "category" : "decorative",
+  "price" : 10000,
+
+  "apexDescription" : "This console can teleport me to an Unbound settlement. Dangerous.",
+  "avianDescription" : "If I press this button, I will be transported! Woo!",
+  "floranDescription" : "Floran press button, get fighting. Floran likesss thisss.",
+  "glitchDescription" : "Weary. This console is connected to potential battlefields.",
+  "humanDescription" : "This console is connected to various Unbound settlements in the galaxy.",
+  "hylotlDescription" : "I can be teleporter to an Unbound settlement thanks to this console.",
+  "novakidDescription" : "Aye free transportation to bad guys? Sign me up'",
+
+  "inventoryIcon" : "unboundbountyicon.png",
+  "orientations" : [
+   {
+      "dualImage" : "moneybounty:<frame>",
+      "imageLayers" : [ { "image" : "moneybounty.png:<frame>" }, { "image" : "moneybountyfullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 4,
+      "animationCycle" : 0.6,
+      "anchors" : [ "background" ]
+    }
+   ]
+  
+  }

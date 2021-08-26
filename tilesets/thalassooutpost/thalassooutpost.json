@@ -16,7 +16,7 @@
  "margin":0,
  "name":"thalassooutpost",
  "spacing":0,
- "tilecount":34,
+ "tilecount":38,
  "tiledversion":"1.4.3",
  "tileheight":151,
  "tileproperties":
@@ -289,6 +289,46 @@
          "imagePositionX":"-24",
          "imagePositionY":"0",
          "object":"starforge-hackedradio",
+         "tilesetDirection":"right"
+        },
+     "34":
+        {
+         "\/\/description":"Takes you to an Unbound settlement containing currency.",
+         "\/\/name":"starforge-moneybounty",
+         "\/\/shortdescription":"Currency Bounty",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-moneybounty",
+         "tilesetDirection":"right"
+        },
+     "35":
+        {
+         "\/\/description":"Takes you to an Unbound settlement containing research operations.",
+         "\/\/name":"starforge-sciencebounty",
+         "\/\/shortdescription":"Research Bounty",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-sciencebounty",
+         "tilesetDirection":"right"
+        },
+     "36":
+        {
+         "\/\/description":"Takes you to an Unbound settlement where an Unbound Vanguard was recently spotted.",
+         "\/\/name":"starforge-vanguardbounty",
+         "\/\/shortdescription":"Assassination Bounty",
+         "imagePositionX":"0",
+         "imagePositionY":"3",
+         "object":"starforge-vanguardbounty",
+         "tilesetDirection":"right"
+        },
+     "37":
+        {
+         "\/\/description":"Takes you to an Unbound settlement containing ores.",
+         "\/\/name":"starforge-orebounty",
+         "\/\/shortdescription":"Ore Bounty",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-orebounty",
          "tilesetDirection":"right"
         },
      "4":
@@ -624,6 +664,46 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "34":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "35":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "36":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "37":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "4":
         {
          "\/\/description":"string",
@@ -854,6 +934,30 @@
          "image":"hackedradio.png",
          "imageheight":25,
          "imagewidth":40
+        },
+     "34":
+        {
+         "image":"moneybounty.png",
+         "imageheight":16,
+         "imagewidth":16
+        },
+     "35":
+        {
+         "image":"sciencebounty.png",
+         "imageheight":16,
+         "imagewidth":16
+        },
+     "36":
+        {
+         "image":"vanguardbounty.png",
+         "imageheight":16,
+         "imagewidth":16
+        },
+     "37":
+        {
+         "image":"orebounty.png",
+         "imageheight":16,
+         "imagewidth":16
         },
      "4":
         {
