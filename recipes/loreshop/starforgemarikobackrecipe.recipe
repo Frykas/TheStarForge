@@ -9,7 +9,7 @@
     "item" : "starforge-marikobacktrue-recipe",
     "count" : 1
   },
-  "groups" : [ "starforge-loreshop", "weapons" ],
+  "groups" : [ "starforge-loreshop", "blueprint" ],
   "duration" : 2
 }
 

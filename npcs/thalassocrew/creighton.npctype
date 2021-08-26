@@ -25,7 +25,7 @@
   "scriptConfig" : {
     "offeredQuests" : ["thalassocreightonquest1", "thalassocreightonquest2"],
     "turnInQuests" : ["thalassocreightonquest1", "thalassocreightonquest2"],
-    "behavior" : "protectoratejanitor",
+    "behavior" : "starforge-creightonjanitor",
 
     "dialogMode" : "sequence",
     "dialog" : {
