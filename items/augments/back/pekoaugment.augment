@@ -1,0 +1,21 @@
+{
+  "itemName" : "starforge-pekoaugment",
+  "price" : 8000,
+  "rarity" : "Legendary",
+  "category" : "eppAugment",
+  "inventoryIcon" : "pekoaugment.png",
+  "description" : "Summons ^cornflowerblue;Peko^reset;, Mariko's pet and the Thalasso's best friend!",
+  "shortdescription" : "^#b4f5c3;Crasberry Friend Augment^reset;",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "starforge-pekoaugment",
+    "displayName" : "Crasberry Friend",
+    "displayIcon" : "/items/augments/back/pekoaugment.png",
+    "effects" : [ "starforge-pekoaugment" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

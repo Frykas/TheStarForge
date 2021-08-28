@@ -1,0 +1,42 @@
+{
+  "objectName" : "starforge-pekohouse",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "legendary",
+  "category" : "furniture",
+  "price" : 10000,
+
+  "description" : "Peko's mighty house! Don't you dare wake him up!",
+  "shortdescription" : "Peko's house",
+  "race" : "hylotl",
+  
+  "apexDescription" : "The home of a little crasberry.",
+  "avianDescription" : "A tiny house for Peko the crasberry! Awesome!",
+  "floranDescription" : "Floran wait in front of houssse. When sssee crab, try to ssstab, but crab ssstrong...",
+  "glitchDescription" : "Curious. What a funny little home.",
+  "humanDescription" : "Usually you would see a dog in a house like that... Not a crasberry.",
+  "hylotlDescription" : "Quite the luxurious home for a crasberry. Wish mine had one like that.",
+  "novakidDescription" : "Lil' home for a lil' fella eh?",
+
+  "inventoryIcon" : "pekohouseicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "pekohouse.png:<color>",
+
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : ["background"]
+
+    }
+  ],
+
+  "scripts" : [
+    "/objects/spawner/techstation.lua"
+  ],
+  "scriptDelta" : 20,
+  "shipPetType" : "starforge-peko",
+  "spawnOffset" : [0, 0],
+
+  "inputNodes" : [ [0, 0] ]
+}

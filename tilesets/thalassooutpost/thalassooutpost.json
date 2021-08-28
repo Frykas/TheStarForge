@@ -16,7 +16,7 @@
  "margin":0,
  "name":"thalassooutpost",
  "spacing":0,
- "tilecount":38,
+ "tilecount":39,
  "tiledversion":"1.4.3",
  "tileheight":151,
  "tileproperties":
@@ -329,6 +329,16 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"starforge-orebounty",
+         "tilesetDirection":"right"
+        },
+     "38":
+        {
+         "\/\/description":"Peko's mighty house! Don't you dare wake him up!",
+         "\/\/name":"starforge-pekohouse",
+         "\/\/shortdescription":"Peko's house",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-pekohouse",
          "tilesetDirection":"right"
         },
      "4":
@@ -704,6 +714,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "38":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "4":
         {
          "\/\/description":"string",
@@ -958,6 +978,12 @@
          "image":"orebounty.png",
          "imageheight":16,
          "imagewidth":16
+        },
+     "38":
+        {
+         "image":"pekohouse.png",
+         "imageheight":16,
+         "imagewidth":32
         },
      "4":
         {

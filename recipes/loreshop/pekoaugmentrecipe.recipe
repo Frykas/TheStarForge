@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "starforge-impervium", "count" : 2},
+	{ "item" : "coralfragment", "count" : 30},
+	{ "item" : "reefpodseed", "count" : 5},
+	{ "item" : "coralcreepseed", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-pekoaugment",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "augment" ],
+  "duration" : 2
+}
+
