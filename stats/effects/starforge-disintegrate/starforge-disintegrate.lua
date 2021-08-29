@@ -31,7 +31,7 @@ end
 
 function onExpire()
   if self.effectsOnExpire and not self.exploded then
-    for effect in pairs(self.effectsOnExpire) do
+    for _, effect in pairs(self.effectsOnExpire) do
 	  status.addEphemeralEffect(effect, config.getParameter("effectOnExpireDuration", 5), effect.sourceEntity())
     end
   end
