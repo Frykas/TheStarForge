@@ -9,7 +9,7 @@
   "defaultDuration" : 15,
 
   "scripts" : [
-    "pekoaugment.lua"
+    "monstersummon.lua"
   ],
 
   "label" : "Crasberry Friend",

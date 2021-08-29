@@ -1,0 +1,17 @@
+{
+  "name" : "starforge-yukaighost",
+  "effectConfig" : {
+    "monsterType" : "starforge-yukaiinvocation",
+	"monsterParameters" : {},
+	"monsterLevel" : 6,
+	"droneCount" : 1
+  },
+  "defaultDuration" : 15,
+
+  "scripts" : [
+    "/stats/effects/starforge-pekoaugment/monstersummon.lua"
+  ],
+
+  "label" : "Yukai Wisp",
+  "icon" : "/interface/statuses/yukaiwisp.png"
+}
