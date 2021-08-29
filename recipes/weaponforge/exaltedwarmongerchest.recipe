@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "starforge-exaltingcharge", "count" : 1},
+    { "item" : "starforge-warmongerchest", "count" : 1 },
+	{ "item" : "starforge-cerulium", "count" : 2},
+	{ "item" : "starforge-infusedscrap", "count" : 2}
+  ],
+  "output" : {
+    "item" : "starforge-exaltedwarmongerchest",
+    "count" : 1
+  },
+  "groups" : [ "starforge-weaponshop", "armor" ],
+  "duration" : 0
+}

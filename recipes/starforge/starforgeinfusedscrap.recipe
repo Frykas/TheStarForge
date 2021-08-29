@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 1 },
+    { "item" : "starforge-infusedtitanium", "count" : 10 },
+	{ "item" : "durasteelbar", "count" : 5 },
+	{ "item" : "copperbar", "count" : 7},
+	{ "item" : "essence", "count" : 20}
+  ],
+  "output" : {
+    "item" : "starforge-infusedscrap",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}

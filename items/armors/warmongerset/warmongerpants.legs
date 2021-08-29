@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legwear",
-  "description" : "Katahel was one of the first to unite all the Glitches of a planet under a single banner.  ",
-  "shortdescription" : "^#FFBC47;Territory of the Warlord^white;",
+  "description" : "Not every Apex is willing to join the Unbound and blindly follow Apolleon's orders. This armor is a proof of that.",
+  "shortdescription" : "^cyan;WARMONGER Greaves^reset;",
   "tooltipKind" : "armor",
 
 
@@ -18,7 +18,7 @@
     {
       "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.1
+      "baseMultiplier" : 1.12
     },
     {
       "levelFunction" : "separatorArmorLevelProtectionMultiplier",
@@ -28,12 +28,12 @@
     {
       "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 2
+      "amount" : 1
     },
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 6
+      "amount" : 7.14289
     }
   ],
 

@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
-  "description" : "An impenetrable armor made of Impervium. Using this and his beheading Claymore, Katahel brought death wherever he walked.",
-  "shortdescription" : "^#FFBC47;Fortress of the Warlord^white;",
+  "description" : "This powersuit was designed as a last resort by Apex resistants trying to fight off the Unbound.",
+  "shortdescription" : "^cyan;WARMONGER Powersuit^reset;",
   "tooltipKind" : "armor",
 
 
@@ -28,17 +28,17 @@
     {
       "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 1.28
     },
     {
       "levelFunction" : "separatorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.53
+      "amount" : 0.5
     },
     {
       "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 5
+      "amount" : 2
     },
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
