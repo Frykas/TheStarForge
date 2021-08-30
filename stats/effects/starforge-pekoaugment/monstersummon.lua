@@ -24,7 +24,7 @@ function update(dt)
 	params.aggressive = true
     params.parentEntity = entity.id()
 	
-	world.spawnProjectile("alliancecenturiondroneteleport", releasePosition())
+	world.spawnProjectile("starforge-yukaighostteleport", releasePosition())
     --Spawn the drone
     local droneId = world.spawnMonster(
 	  self.monsterType,

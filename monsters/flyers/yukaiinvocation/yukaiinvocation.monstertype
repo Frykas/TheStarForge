@@ -45,7 +45,7 @@
             "windupState" : "idle",
             "windupTime" : 0.2,
 
-            "projectileType" : "starforge-cacochiusfireball",
+            "projectileType" : "starforge-dimensionalshard",
             "projectileParameters": {
 			  "power" : 10.0
 			},
@@ -103,7 +103,7 @@
           "name" : "action-projectile",
           "parameters" : {
             "projectileCount" : 1,
-            "projectileType" : "alliancecenturiondroneteleportout",
+            "projectileType" : "starforge-yukaighostteleportout",
             "projectileParameters" : {
               "damageTeam" : { "type" : "enemy", "team" : 0 },
 			  "power" : 10.0
@@ -152,7 +152,7 @@
       "flySpeed" : 70
     },
 
-    "bodyMaterialKind" : "robotic",
+    "bodyMaterialKind" : "organic",
 
     "knockoutTime" : 0.3,
     "knockoutAnimationStates" : {
@@ -163,7 +163,7 @@
 
     "statusSettings" : {
       "statusProperties" : {
-        "targetMaterialKind" : "robotic"
+        "targetMaterialKind" : "organic"
       },
 
       "appliesEnvironmentStatusEffects" : false,
@@ -183,7 +183,7 @@
           "baseValue" : 9
         },
         "maxHealth" : {
-          "baseValue" : 48
+          "baseValue" : 90
         },
         "protection" : {
           "baseValue" : 0.0
@@ -192,7 +192,7 @@
           "baseValue" : 0.0
         },
         "powerMultiplier" : {
-          "baseValue" : 1.0
+          "baseValue" : 0.8
         },
         "physicalResistance" : {
           "baseValue" : 0.0
@@ -219,24 +219,6 @@
           "baseValue" : 0.5
         },
         "poisonStatusImmunity" : {
-          "baseValue" : 1.0
-        },
-        "linerifleResistance" : {
-          "baseValue" : -0.5
-        },
-        "linerifleStatusImmunity" : {
-          "baseValue" : 0.0
-        },
-        "centensianenergyResistance" : {
-          "baseValue" : 0.0
-        },
-        "centensianenergyStatusImmunity" : {
-          "baseValue" : 0.0
-        },
-        "xanafianStatusImmunity" : {
-          "baseValue" : 1.0
-        },
-        "bleedingImmunity" : {
           "baseValue" : 1.0
         }
       },

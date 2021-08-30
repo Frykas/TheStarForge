@@ -278,12 +278,12 @@ end
 
 function teleportToPlayer(previousPosition, targetPosition)
   --Spawn the teleport out projectile for animation
-  world.spawnProjectile("alliancecenturiondroneteleportout", previousPosition)
+  world.spawnProjectile("starforge-yukaighostteleportout", previousPosition)
   local teleportTolerance = 1
   local resolvedPoint = world.resolvePolyCollision(mcontroller.collisionPoly(), targetPosition, teleportTolerance)
   mcontroller.setPosition(resolvedPoint)
   --Spawn the teleport in projectile for animation
-  world.spawnProjectile("alliancecenturiondroneteleport", mcontroller.position())
+  world.spawnProjectile("starforge-yukaighostteleport", mcontroller.position())
 end
 
 function skillBehaviorConfig()

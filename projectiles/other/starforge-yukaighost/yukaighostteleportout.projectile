@@ -1,0 +1,12 @@
+{
+  "projectileName" : "starforge-yukaighostteleportout",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/other/starforge-yukaighost/yukaighostteleportout.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

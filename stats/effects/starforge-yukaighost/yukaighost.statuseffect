@@ -3,7 +3,7 @@
   "effectConfig" : {
     "monsterType" : "starforge-yukaiinvocation",
 	"monsterParameters" : {},
-	"monsterLevel" : 6,
+	"monsterLevel" : 4,
 	"droneCount" : 1
   },
   "defaultDuration" : 15,

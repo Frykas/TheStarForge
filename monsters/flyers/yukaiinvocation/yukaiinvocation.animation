@@ -189,10 +189,8 @@
   "particleEmitters" : {
     "deathPoof" : {
       "particles" : [
-        { "particle" : "electricswoosh1" },
-        { "particle" : "electricswoosh2" },
-        { "particle" : "electricswoosh1" },
-        { "particle" : "electricswoosh2" },
+        { "particle" : "boneshard" },
+        { "particle" : "boneshard" },
 
         { "particle" : "deathfizz1left" },
         { "particle" : "deathfizz1right" },
@@ -234,6 +232,6 @@
   "sounds" : {
     "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
     "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
-    "fire" : [ "/sfx/gun/plasma_sniper4.ogg" ]
+    "fire" : [ "/sfx/projectiles/yukaienergy.ogg" ]
   }
 }
