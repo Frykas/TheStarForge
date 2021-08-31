@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legwear",
-  "description" : "Placeholder desc & stats",
-  "shortdescription" : "^cyan;WARMONGER Greaves^reset; ^#FFB2B2;^reset;",
+  "description" : "\"Each step you take against the Unbound motivates others to join our fight.\"",
+  "shortdescription" : "^#80F4FF;WARMONGER Greaves^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "armor",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
 
@@ -19,7 +19,7 @@
     {
       "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.12
+      "baseMultiplier" : 1.15
     },
     {
       "levelFunction" : "separatorArmorLevelProtectionMultiplier",
@@ -34,7 +34,7 @@
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 7.14289
+      "amount" : 7.5
     }
   ],
 

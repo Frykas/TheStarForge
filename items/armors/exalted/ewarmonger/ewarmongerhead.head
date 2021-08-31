@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headwear",
-  "description" : "Placeholder desc & stats",
-  "shortdescription" : "^cyan;WARMONGER Helmet^reset; ^#FFB2B2;^reset;",
+  "description" : "\"You can tell these blueprints were made in haste. Let's help them finish what they started.\"",
+  "shortdescription" : "^#80F4FF;WARMONGER Helmet^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "armor",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
 
@@ -19,7 +19,7 @@
     {
       "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.171428
+      "baseMultiplier" : 1.20
     },
     {
       "levelFunction" : "separatorArmorLevelProtectionMultiplier",
@@ -34,7 +34,7 @@
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 6
+      "amount" : 6.25
     }
   ],
 

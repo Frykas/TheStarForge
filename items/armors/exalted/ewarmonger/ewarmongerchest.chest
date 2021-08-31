@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
-  "description" : "Placeholder desc & stats",
-  "shortdescription" : "^cyan;WARMONGER Powersuit^reset; ^#FFB2B2;^reset;",
+  "description" : "\"You upgraded a symbol of hope & rebellion to its prime. Be the beacon of light they need.\"",
+  "shortdescription" : "^#80F4FF;WARMONGER Powersuit^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "armor",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
 
@@ -29,7 +29,7 @@
     {
       "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.28
+      "baseMultiplier" : 1.3
     },
     {
       "levelFunction" : "separatorArmorLevelProtectionMultiplier",
@@ -44,7 +44,7 @@
     {
       "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 10.42854
+      "amount" : 10
     }
   ],
 

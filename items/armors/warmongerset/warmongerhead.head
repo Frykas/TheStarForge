@@ -6,8 +6,9 @@
   "rarity" : "Essential",
   "category" : "headwear",
   "description" : "The armor was made to remain extremely resillient despite the materials used for its conception.",
-  "shortdescription" : "^cyan;WARMONGER Helmet^reset;",
+  "shortdescription" : "^#80F4FF;WARMONGER Helmet^reset;",
   "tooltipKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedwarmongerhead" ],
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
