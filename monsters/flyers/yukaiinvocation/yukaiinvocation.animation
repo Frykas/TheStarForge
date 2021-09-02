@@ -85,34 +85,34 @@
           "body" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             },
             "fly" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             },
             "firewindup" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             },
             "winduploop" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             },
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             }
           },
           "damage" : {
             "stunned" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             }
           }
@@ -129,34 +129,34 @@
           "body" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             },
             "fly" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             },
             "firewindup" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             },
             "winduploop" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             },
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             }
           },
           "damage" : {
             "stunned" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:idle.1"
               }
             }
           }

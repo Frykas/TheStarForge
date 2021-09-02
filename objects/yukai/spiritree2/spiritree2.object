@@ -1,0 +1,41 @@
+{
+  "objectName" : "starforge-spiritree2",
+  "colonyTags" : ["bone"],
+  "rarity" : "rare",
+  "category" : "breakable",
+  "printable" : false,
+
+  "description" : "A strange solidified resin coming out of bones.",
+  "shortdescription" : "Yukai Spiritree",
+  "race" : "hylotl",
+
+  "lightColor" : [87, 41, 136],
+
+  "apexDescription" : "Looks like a pearl that formed around bones... Strange.",
+  "avianDescription" : "A bight and lovely piece of coral.",
+  "floranDescription" : "Crissspy.",
+  "glitchDescription" : "Greedy. A golden coral shrub.",
+  "humanDescription" : "A curious, purple resin is coming out of those bones... The center is solidified to look like a pearl.",
+  "hylotlDescription" : "The Yukai put some kind of paste made from rare ingredients onto these bones to create what we call Yukai pearl. Looks like this one already solidified.",
+  "novakidDescription" : "I ain't got an idea what's in that pile o' bones, but it's shiny so it must be good.",
+
+  "inventoryIcon" : "capsulebigicon.png",
+  "orientations" : [
+    {
+      "image" : "spiritree1.png:<color>",
+	  "imageLayers" : [ { "image" : "spiritree2.png" }, { "image" : "spiritree2fullbright.png", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/objects/capsule_break1.ogg", "/sfx/objects/capsule_break2.ogg", "/sfx/objects/capsule_break3.ogg" ],
+  "smashDropOptions" : [
+    [ [ "starforge-yukaipearl", 1, { } ], [ "bone", 3, { } ] ]
+  ]
+}
