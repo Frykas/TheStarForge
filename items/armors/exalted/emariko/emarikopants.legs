@@ -7,8 +7,7 @@
   "category" : "legwear",
   "description" : "\"To victory, hopefully.\"",
   "shortdescription" : "^cornflowerblue;Mariko's Path^reset; ^#FFB2B2;^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",

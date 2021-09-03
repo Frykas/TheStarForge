@@ -7,8 +7,7 @@
   "category" : "backwear",
   "description" : "Tools used by a Novakid gnawed by loneliness. They are tainted by some sort of ethereal matter.",
   "shortdescription" : "^pink;Ghost Digger's Tools^white;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-backitemexalted",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",

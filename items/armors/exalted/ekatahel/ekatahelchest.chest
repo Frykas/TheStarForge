@@ -7,8 +7,7 @@
   "category" : "chestwear",
   "description" : "An impenetrable armor made of Impervium. Using this and his beheading Claymore, Katahel brought death wherever he walked.",
   "shortdescription" : "^#FFBC47;Fortress of the Warlord ^#FFB2B2;^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : {
     "body" : "chest.png",

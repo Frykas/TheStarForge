@@ -7,8 +7,7 @@
   "category" : "headwear",
   "description" : "\"We're only moving forward.\"",
   "shortdescription" : "^cornflowerblue;Mariko's Vision^reset; ^#FFB2B2;^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",

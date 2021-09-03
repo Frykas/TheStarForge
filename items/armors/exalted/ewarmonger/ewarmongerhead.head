@@ -7,8 +7,7 @@
   "category" : "headwear",
   "description" : "\"You can tell these blueprints were made in haste. Let's help them finish what they started.\"",
   "shortdescription" : "^#80F4FF;WARMONGER Helmet^reset; ^#FFB2B2;^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",

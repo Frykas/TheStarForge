@@ -11,7 +11,7 @@
     "starforge-kataheldefence.lua"
   ],
   
-  "label" : "Your defence is empowered!",
+  "label" : "Warlord's Resilience",
   "icon" : "/interface/statuses/starforge-warlordprotection.png",
   
   "animationConfig" : "warlordprotection.animation"

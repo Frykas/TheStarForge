@@ -7,8 +7,7 @@
   "category" : "chestwear",
   "description" : "\"You mean so much to me.\"",
   "shortdescription" : "^cornflowerblue;Mariko's Heart^reset; ^#FFB2B2;^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : {
     "body" : "chestm.png",

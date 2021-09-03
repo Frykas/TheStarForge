@@ -7,9 +7,7 @@
   "category" : "chestwear",
   "description" : "\"You upgraded a symbol of hope & rebellion to its prime. Be the beacon of light they need.\"",
   "shortdescription" : "^#80F4FF;WARMONGER Powersuit^reset; ^#FFB2B2;^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
-
+  "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : {
     "body" : "chestm.png",

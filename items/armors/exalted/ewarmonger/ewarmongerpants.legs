@@ -7,8 +7,7 @@
   "category" : "legwear",
   "description" : "\"Each step you take against the Unbound motivates others to join our fight.\"",
   "shortdescription" : "^#80F4FF;WARMONGER Greaves^reset; ^#FFB2B2;^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-exalted",
 
 
   "maleFrames" : "pants.png",
