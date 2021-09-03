@@ -5,14 +5,15 @@
   "luckjootyfishTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.12, "pool" : "essenceDrop2"},
+        {"weight" : 0.11, "pool" : "essenceDrop2"},
 		{"weight" : 0.43, "pool" : "marikostoryDrop"},
         {"weight" : 0.43, "pool" : "marikoarmorDrop"},
-		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
+		{"weight" : 0.01, "item" : "starforge-jootyfishaf"}
       ],
       "poolRounds" : [
-        [0.10, 0],
-        [0.90, 1]
+        [0.001, 0],
+        [0.999, 1]
       ],
       "allowDuplication" : false
     }]
@@ -20,14 +21,15 @@
   "roboblinTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.12, "pool" : "essenceDrop2"},
+        {"weight" : 0.11, "pool" : "essenceDrop2"},
 		{"weight" : 0.43, "pool" : "katahelstoryDrop"},
         {"weight" : 0.43, "pool" : "katahelarmorDrop"},
-		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
+		{"weight" : 0.01, "item" : "starforge-roboblinaf"}
       ],
       "poolRounds" : [
-        [0.10, 0],
-        [0.90, 1]
+        [0.001, 0],
+        [0.999, 1]
       ],
       "allowDuplication" : false
     }]
@@ -35,13 +37,14 @@
     "florantTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.19, "pool" : "essenceDrop2"},
         {"weight" : 0.78, "pool" : "sedgearmorDrop"},
-		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
+		{"weight" : 0.01, "item" : "starforge-florantaf"}
       ],
       "poolRounds" : [
-        [0.10, 0],
-        [0.90, 1]
+        [0.001, 0],
+        [0.999, 1]
       ],
       "allowDuplication" : false
     }]
@@ -49,13 +52,14 @@
     "novalimeTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.19, "pool" : "essenceDrop2"},
         {"weight" : 0.78, "pool" : "soultakerarmorDrop"},
-		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
+		{"weight" : 0.01, "item" : "starforge-novalimeaf"}
       ],
       "poolRounds" : [
-        [0.10, 0],
-        [0.90, 1]
+        [0.001, 0],
+        [0.999, 1]
       ],
       "allowDuplication" : false
     }]
@@ -63,13 +67,14 @@
     "cacochiusTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.19, "pool" : "essenceDrop2"},
         {"weight" : 0.78, "pool" : "praetorianarmorDrop"},
-		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
+		{"weight" : 0.01, "item" : "starforge-cacochiusaf"}
       ],
       "poolRounds" : [
-        [0.10, 0],
-        [0.90, 1]
+        [0.001, 0],
+        [0.999, 1]
       ],
       "allowDuplication" : false
     }]
@@ -77,13 +82,14 @@
      "potlotTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.20, "pool" : "essenceDrop2"},
+        {"weight" : 0.19, "pool" : "essenceDrop2"},
         {"weight" : 0.78, "pool" : "siaxaaarmorDrop"},
-		{"weight" : 0.02, "item" : "starforge-hawkmoon"}
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
+		{"weight" : 0.01, "item" : "starforge-potlotaf"}
       ],
       "poolRounds" : [
-        [0.10, 0],
-        [0.90, 1]
+        [0.001, 0],
+        [0.999, 1]
       ],
       "allowDuplication" : false
     }]

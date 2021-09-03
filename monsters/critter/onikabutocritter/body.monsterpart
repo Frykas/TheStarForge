@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-onikabutocritter",
+  "category" : "onikabutocritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

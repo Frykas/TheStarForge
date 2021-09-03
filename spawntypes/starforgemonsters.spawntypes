@@ -1,0 +1,21 @@
+[
+  //===================================== LIL & BIG FRIENDS =====================================
+  {
+	  "name" : "starforge-onikabutos",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 4],
+      "spawnChance" : 0.02,
+      "monsterType" : [
+      [0.30, "starforge-onikabutofemale"],
+      [0.70, "starforge-onikabutocritter"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : false
+      }
+    }
+  
+  ]

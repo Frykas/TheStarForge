@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-onikabutofemale",
+  "category" : "onikabutofemale",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "onikabutofemale.png",
+	"bodyfullbright" : "onikabutofemalefullbright.png"
+  }
+}
