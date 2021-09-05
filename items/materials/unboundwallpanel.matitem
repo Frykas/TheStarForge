@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unboundwallpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "unboundwallpanel.png",
+  "shortdescription" : "Unbound Hull Panel",
+  "description" : "Resilient panelling used for Unbound structures.",
+  "glitchdescription" : "Observant. This is panelling widely used for Unbound structures.",
+  "florandescription" : "Shiny sssmooth space metal.",
+  "novakiddescription" : "Some thick metal plating, looks mighty solid.",
+
+  "materialId" : 2901
+}

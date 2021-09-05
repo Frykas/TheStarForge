@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-yukaikabutohead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "headwear",
+  "description" : "An Onikabuto shell repurposed as a helmet. Used by strong Yukai warriors.",
+  "shortdescription" : "Kabuto Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }
