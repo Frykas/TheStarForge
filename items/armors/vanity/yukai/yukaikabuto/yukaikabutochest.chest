@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "An Onikabuto shell used as a chestplate. It protects the strongest Yukai warriors.",
-  "shortdescription" : "Kabuto Chestplate",
+  "description" : "Onikabuto warriors often protect the important Witches of their clan. Acting as their guards.",
+  "shortdescription" : "Onikabuto Chestplate",
   "tooltipKind" : "armor",
 
   "maleFrames" : {

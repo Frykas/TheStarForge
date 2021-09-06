@@ -8,6 +8,7 @@
   "description" : "Elusive, stalking, preying on anything worth hunting. This is the way of the Berserking.",
   "shortdescription" : "^#758468;Legs of Berserking^reset;",
   "tooltipKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedsedgepants" ],
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",

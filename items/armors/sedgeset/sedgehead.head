@@ -8,6 +8,7 @@
   "description" : "The cult of Berserking worshipped a Floran hunter that was said to come from another World.",
   "shortdescription" : "^#758468;Hood of Berserking^reset;",
   "tooltipKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedsedgehead" ],
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",

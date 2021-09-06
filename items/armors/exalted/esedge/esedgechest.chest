@@ -1,15 +1,14 @@
 {
-  "itemName" : "starforge-sedgechest",
-  "price" : 3200,
+  "itemName" : "starforge-exaltedsedgechest",
+  "price" : 4000,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestarmour",
-  "description" : "After the passing of the worshipped Berserking, the best hunter among the cult was bestowed an armor, and a name; Sedge.",
-  "shortdescription" : "^#758468;Chest of Berserking^reset;",
-  "tooltipKind" : "armor",
-  "learnBlueprintsOnPickup" : [ "starforge-exaltedsedgechest" ],
-  
+  "description" : "\"The Great Hunter came back to us bearing a terrible curse. Those who lived on learned, became stronger.\"",
+  "shortdescription" : "^#758468;Chest of Berserking^reset; ^#FFB2B2;^reset;",
+  "tooltipKind" : "starforge-exalted",
+
   "maleFrames" : {
     "body" : "chest.png",
     "backSleeve" : "bsleeve.png",
@@ -22,12 +21,12 @@
     "frontSleeve" : "fsleeve.png"
   },
 
-  "level" : 7,
+  "level" : 8,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.26
+      "baseMultiplier" : 1.3208333
     },
     {
       "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
@@ -48,8 +47,8 @@
   "itemTags" : [ "tier7armour" ],
 
   "colorOptions" : [
-    // LIGHT GREEN, DEFAULT
-    { "ffca8a" : "ABCB05", "e0975c" : "77AA08", "a85636" : "4A760A", "6f2919" : "335125" },
+    // WITHERED FLORA, DEFAULT
+    { "ffca8a" : "758468", "e0975c" : "4E654B", "a85636" : "374729", "6f2919" : "1A241B" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

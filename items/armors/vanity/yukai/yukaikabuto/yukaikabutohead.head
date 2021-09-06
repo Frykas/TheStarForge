@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headwear",
-  "description" : "An Onikabuto shell repurposed as a helmet. Used by strong Yukai warriors.",
-  "shortdescription" : "Kabuto Helmet",
+  "description" : "A helmet worn by respected warriors. It is a proof of both strength and status in the Yukai society.",
+  "shortdescription" : "Onikabuto Helmet",
   "tooltipKind" : "armor",
 
   "maleFrames" : "head.png",
