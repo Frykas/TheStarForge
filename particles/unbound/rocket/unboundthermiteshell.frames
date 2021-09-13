@@ -1,0 +1,7 @@
+{
+  "image" : "unboundthermiteshell.png",
+  "frameGrid" : {
+    "size" : [9, 4],
+    "dimensions" : [1, 1]
+  }
+}

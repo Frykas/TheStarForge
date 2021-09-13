@@ -1,0 +1,114 @@
+{
+  "itemName": "starforge-theleviathan",
+  "price": 3000,
+  "maxStack": 1,
+  "rarity": "Essential",
+  "description": "A massive tank cannon, repurposed & made portable.",
+  "shortdescription": "^orange; The Leviathan^reset;",
+  "tooltipKind": "base",
+  "category": "Portable Cannon",
+  "twoHanded": true,
+  "level": 7,
+  "itemTags": ["weapon","ranged","cannon"],
+  "inventoryIcon": "theleviathanicon.png",
+  "animation": "theleviathan.animation",
+
+    "animationParts": {
+    "butt": "",
+    "middle": "unboundrocketlauncheranim.png:cock.1",
+    "middleFullbright": "unboundrocketlauncherfb.png",
+    "barrel": "",
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash.png"
+  },
+      "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-1.875, 0.1, -1.875, 0.1],
+        "particles" : [
+          { "particle" : "starforge-thermiteshell" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/starforge-rocketfire.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [0.500,-1.125],
+  
+  "muzzleOffset":  [1.125,0.125],
+  
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "fire",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 2.1,
+    "baseDps": 7,
+    "energyUsage": 100,
+    "inaccuracy": 0.001,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "starforge-unboundthermiteshell",
+    "projectileParameters": {
+      "knockback": 4
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset": [
+          0,
+          0
+        ],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "idle.3",
+        "backArmFrame": "fall.1"
+      },
+      "fire": {
+        "duration": 0.5,
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset": [
+          -0.2,
+          0
+        ],
+        "twoHanded": true,
+        "animationStates": {
+          "firing": "shoot"
+        },
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "idle.3",
+        "backArmFrame": "fall.1"
+      },
+      "cooldown": {
+        "duration": 0.35,
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset": [
+          -0.2,
+          0
+        ],
+        "twoHanded": true,
+        "animationStates": {
+          "firing": "reload"
+        },
+        "allowRotate": true,
+        "allowFlip": true,
+        "frontArmFrame": "idle.3",
+        "backArmFrame": "fall.1"
+      }
+    }
+  },
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
+}
