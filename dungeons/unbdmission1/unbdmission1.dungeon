@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "unbdmission1",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "unbdmission1" ],
+    "gravity" : 60,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true,
+	"persistent" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "unbdmission1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unbdmission1.json" ]
+    }
+  ]
+}
