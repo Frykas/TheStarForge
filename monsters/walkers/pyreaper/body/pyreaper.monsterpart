@@ -1,0 +1,10 @@
+{
+  "name" : "pyreaperbody",
+  "category" : "pyreaper",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "pyreaper.png",
+    "bodynobright" : "pyreapernobright.png"
+  }
+}
