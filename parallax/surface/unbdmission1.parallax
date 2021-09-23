@@ -1,0 +1,141 @@
+{
+  "verticalOrigin" : -10,
+  
+  "layers" : [
+    {
+      "kind" : "divider/rock",
+      "offset" : [0, 400],
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "parallax" : 1.199
+    },
+    {
+      "kind" : "tile/rock",
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "repeatY" : true,
+      "tileLimitTop" : 325,
+      "parallax" : 1.2
+    },
+
+    {
+      "kind" : "moonbelow1",
+      "offset" : [0, 190],
+      "parallax" : [1.8, 2]
+    },
+    {
+      "kind" : "moonbelow2",
+      "offset" : [0, 190],
+      "parallax" : [1.8001, 2]
+    },
+    {
+      "kind" : "moonbelow3",
+      "offset" : [0, 190],
+      "parallax" : [1.8002, 2]
+    },
+    {
+      "kind" : "moonbelow3",
+      "offset" : [0, 330],
+      "parallax" : [1.8, 2]
+    },
+    {
+      "kind" : "moon1",
+      "offset" : [0, 50],
+      "parallax" : [1.8, 2]
+    },
+    {
+      "kind" : "moon1",
+      "offset" : [0, 50],
+      "parallax" : [1.8, 2.2]
+    },
+    {
+      "kind" : "moon2",
+      "offset" : [0, 50],
+      "parallax" : [2, 2.4]
+    },
+    {
+      "kind" : "moon3",
+      "offset" : [0, 50],
+      "parallax" : [3, 2.6]
+    },
+    {
+      "kind" : "moon4",
+      "offset" : [0, 50],
+      "parallax" : [4, 2.8]
+    },
+    {
+      "kind" : "moon5",
+      "offset" : [0, 50],
+      "parallax" : [5, 3]
+    },
+    {
+      "kind" : "moon6",
+      "offset" : [0, 50],
+      "parallax" : [6, 3.2]
+    },
+    {
+      "kind" : "moon7",
+      "offset" : [0, 50],
+      "parallax" : [7, 3.4]
+    },
+
+	 {
+      "kind" : "unbdretribution",
+      "offset" : [0, 80],
+      "parallax" : [7.5, 3.5],
+      "minSpeed" : 3500,
+      "maxSpeed" : 3500,
+      "fadePercent" : 0.05
+    },
+	{
+      "kind" : "unbdfrigate1",
+      "offset" : [0, 80],
+      "parallax" : [6.5, 3.5],
+      "minSpeed" : 4000,
+      "maxSpeed" : 4000,
+      "fadePercent" : 0.05
+    },
+	{
+      "kind" : "unbdfrigate2",
+      "offset" : [0, 80],
+      "parallax" : [6.4, 3.5],
+      "minSpeed" : 4020,
+      "maxSpeed" : 4020,
+      "fadePercent" : 0.05
+    },
+	{
+      "kind" : "unbdfighters",
+      "offset" : [0, 80],
+      "parallax" : [6.4, 3.5],
+      "minSpeed" : 60000,
+      "maxSpeed" : 60000,
+      "fadePercent" : 0.05
+    },
+    {
+      "kind" : "moon8",
+      "offset" : [0, 50],
+      "parallax" : [8, 3.6]
+    },
+    {
+      "kind" : "moon9",
+      "offset" : [0, 50],
+      "parallax" : [8, 3.8]
+    },
+    {
+      "kind" : "moonpeach",
+      "offset" : [0, 454],
+      "parallax" : [8.01, 4.1]
+    },
+    {
+      "kind" : "moonglow",
+      "offset" : [0, 15],
+      "parallax" : [8.01, 4]
+    },
+    {
+      "kind" : "glitters",
+      "baseCount" : 7,
+      "offset" : [0, 35],
+      "parallax" : [20, 20]
+    }
+  ]
+}

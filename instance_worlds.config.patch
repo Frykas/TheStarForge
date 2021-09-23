@@ -34,5 +34,47 @@
 		
 			}
 		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/unbdmission1",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "unbdmission1",
+			"seed": 1234,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": false},
+			"skyParameters" : {
+      "spaceLevel" : 3000,
+      "ambientLightLevel" : [184, 197, 182],
+
+      "planet" : {
+        "pos" : [ 0.46, 0.46 ],
+        "layers" : [ {
+          "scale" : 0.17,
+          "image" : "/celestial/system/gas_giant/gas_giant_base.png?hueshift=230"
+        }, {
+          "scale" : 0.17,
+          "image" : "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=220?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+        }, {
+          "scale" : 0.17,
+          "image" : "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=223?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+        }, {
+          "scale" : 0.17,
+          "image" : "/celestial/system/gas_giant/shadows/3.png"
+        } ]
+      },
+      "skyType" : "barren",
+			   
+				"horizonImages": [],
+				"dayLength": 5000.36,
+				"surfaceLevel": 800,
+				"seed": -5288806180628667000
+		
+			}
+		}
 	}
 ]

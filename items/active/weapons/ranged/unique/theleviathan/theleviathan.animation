@@ -1,0 +1,144 @@
+{
+  "globalTagDefaults": {
+    "paletteSwaps": ""
+  },
+  "animatedParts": {
+    "stateTypes": {
+      "firing": {
+        "default": "off",
+        "states": {
+          "off": {},
+          "fire": {
+            "frames": 2,
+            "cycle": 0.07,
+            "mode": "transition",
+            "transition": "shoot"
+          },
+          "shoot": {
+            "frames": 2,
+            "cycle": 0.07,
+            "mode": "loop"
+          },
+          "reload": {
+            "frames": 2,
+            "cycle": 0.2,
+            "mode": "transition",
+            "transition": "off",
+            "frameProperties": {
+              "immediateSound": [
+                "/sfx/gun/starforge-rocketreload.ogg"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "parts": {
+      "middle": {
+        "properties": {
+          "zLevel": 1,
+          "centered": true,
+          "image": "theleviathan.png:cock.1",
+          "offset": [
+            0,
+            0
+          ],
+          "transformationGroups": [
+            "weapon"
+          ]
+        },
+        "partStates": {
+          "firing": {
+		    "fire": {
+              "properties": {
+                "image": "theleviathan.png:cock.<frame>"
+              }
+            },
+		    "shoot": {
+              "properties": {
+                "image": "theleviathan.png:stay.<frame>"
+              }
+            },
+            "reload": {
+              "properties": {
+                "image": "theleviathan.png:uncock.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "middleFullbright": {
+        "properties": {
+          "zLevel": 2,
+          "centered": true,
+          "image": "<partImage><paletteSwaps>",
+          "anchorPart": "middle",
+          "fullbright": true
+        }
+      },
+      "muzzleFlash": {
+        "properties": {
+          "zLevel": -1,
+          "centered": true,
+          "offset": [
+            0.75,
+            0
+          ],
+          "fullbright": true,
+          "transformationGroups": [
+            "muzzle"
+          ]
+        },
+        "partStates": {
+          "firing": {
+            "fire": {
+              "properties": {
+                "image": "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rotationGroups": {
+    "weapon": {
+      "angularVelocity": 0
+    }
+  },
+  "transformationGroups": {
+    "weapon": {},
+    "muzzle": {}
+  },
+  "particleEmitters": {
+    "muzzleFlash": {
+      "transformationGroups": [
+        "muzzle"
+      ],
+      "offsetRegion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "particles": []
+    }
+  },
+  "lights": {
+    "muzzleFlash": {
+      "active": false,
+      "position": [
+        0,
+        0
+      ],
+      "color": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "sounds": {
+    "fire": []
+  }
+}
