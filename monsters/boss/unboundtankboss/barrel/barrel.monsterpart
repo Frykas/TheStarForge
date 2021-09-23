@@ -1,0 +1,10 @@
+{
+  "name" : "unboundtankbossbarrel",
+  "category" : "unboundtankboss",
+  "type" : "barrel",
+
+  "frames" : {
+    "barrel" : "barrel.png",
+    "barrelFullbright" : "barrelfullbright.png"
+  }
+}

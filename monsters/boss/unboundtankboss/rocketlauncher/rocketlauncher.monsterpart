@@ -1,0 +1,10 @@
+{
+  "name" : "unboundtankbossrocketlauncher",
+  "category" : "unboundtankboss",
+  "type" : "rocketlauncher",
+
+  "frames" : {
+    "rocketLauncher" : "rocketlauncher.png",
+    "rocketLauncherFullbright" : "rocketlauncherfullbright.png"
+  }
+}

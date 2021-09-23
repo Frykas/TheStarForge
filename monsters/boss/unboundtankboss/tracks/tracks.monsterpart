@@ -1,0 +1,9 @@
+{
+  "name" : "unboundtankbosstracks",
+  "category" : "unboundtankboss",
+  "type" : "tracks",
+
+  "frames" : {
+    "tracks" : "tracks.png"
+  }
+}

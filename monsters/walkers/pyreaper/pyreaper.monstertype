@@ -54,7 +54,7 @@
 		"projectileParameters" : {
 		  "power" : 5
 		},
-		"distanceBetweenAction" : 2.87				//3 blocks away from the other action or time, 3 seconds
+		"distanceBetweenAction" : 3.87				//3 blocks away from the other action or time, 3 seconds
 	  }
 	],
 

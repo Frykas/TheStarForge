@@ -12,7 +12,8 @@ require "/scripts/actions/animator.lua"
 
 -- Engine callback - called on initialization of entity
 function init()
-  status.setPersistentEffects("turretgunstatuspool", config.getParameter("statusEffects", {}))
+  self.randomName = sb.makeUuid()
+  status.setPersistentEffects(self.randomName, config.getParameter("statusEffects", {}))
   self.pathing = {}
 
   self.shouldDie = true
