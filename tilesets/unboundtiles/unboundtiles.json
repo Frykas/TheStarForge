@@ -1,0 +1,46 @@
+{ "columns":0,
+ "grid":
+    {
+     "height":1,
+     "orientation":"orthogonal",
+     "width":1
+    },
+ "margin":0,
+ "name":"unboundtiles",
+ "spacing":0,
+ "tilecount":1,
+ "tiledversion":"1.4.3",
+ "tileheight":8,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/description":"Resilient panelling used for Unbound structures.",
+         "\/\/name":"starforge-unboundwallpanel",
+         "\/\/shortdescription":"Unbound Hull Panel",
+         "material":"starforge-unboundwallpanel"
+        }
+    },
+ "tilepropertytypes":
+    {
+     "0":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "material":"string"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"unboundwallpanel.png",
+         "imageheight":8,
+         "imagewidth":8
+        }
+    },
+ "tilewidth":8,
+ "type":"tileset",
+ "version":1.1
+}

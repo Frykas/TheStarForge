@@ -107,8 +107,8 @@
       "kind" : "unbdfighters",
       "offset" : [0, 80],
       "parallax" : [6.4, 3.5],
-      "minSpeed" : 8500,
-      "maxSpeed" : 8500,
+      "minSpeed" : 60000,
+      "maxSpeed" : 60000,
       "fadePercent" : 0.05
     },
     {
