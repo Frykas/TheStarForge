@@ -95,7 +95,7 @@
             "frames" : 1
           },
           "moving" : {
-            "frames" : 2,
+            "frames" : 3,
             "cycle" : 0.2,
             "mode" : "loop"
           }

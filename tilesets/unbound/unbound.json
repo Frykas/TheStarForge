@@ -16,9 +16,9 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":25,
+ "tilecount":28,
  "tiledversion":"1.4.3",
- "tileheight":48,
+ "tileheight":120,
  "tileproperties":
     {
      "0":
@@ -199,6 +199,36 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"starforge-unboundsciencewalllight",
+         "tilesetDirection":"right"
+        },
+     "25":
+        {
+         "\/\/description":"An Unbound mech body, being tinkered with.",
+         "\/\/name":"starforge-unboundmechbody1",
+         "\/\/shortdescription":"Unbound Mech Body",
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"starforge-unboundmechbody1",
+         "tilesetDirection":"right"
+        },
+     "26":
+        {
+         "\/\/description":"An experimental Unbound weapon, probably used by Unbound mechs.",
+         "\/\/name":"starforge-unboundmechweapon1",
+         "\/\/shortdescription":"Unbound Mech Weapon",
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"starforge-unboundmechweapon1",
+         "tilesetDirection":"right"
+        },
+     "27":
+        {
+         "\/\/description":"There seems to be an unknown alien in there, connected to a bunch of wires and tubes.",
+         "\/\/name":"starforge-unboundscienceengi",
+         "\/\/shortdescription":"Unbound Experiment Pod",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundscienceengi",
          "tilesetDirection":"right"
         },
      "3":
@@ -454,6 +484,36 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "25":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "26":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "27":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "3":
         {
          "\/\/description":"string",
@@ -635,6 +695,24 @@
          "imageheight":7,
          "imagewidth":16
         },
+     "25":
+        {
+         "image":"mechbody1.png",
+         "imageheight":120,
+         "imagewidth":87
+        },
+     "26":
+        {
+         "image":"mechweapon1.png",
+         "imageheight":31,
+         "imagewidth":85
+        },
+     "27":
+        {
+         "image":"scienceengi.png",
+         "imageheight":48,
+         "imagewidth":32
+        },
      "3":
         {
          "image":"unboundcomrelay.png",
@@ -678,7 +756,7 @@
          "imagewidth":32
         }
     },
- "tilewidth":64,
+ "tilewidth":87,
  "type":"tileset",
  "version":1.1
 }

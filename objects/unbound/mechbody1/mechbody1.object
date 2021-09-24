@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-unboundmechbody1",
+  "colonyTags" : ["weapon","apex"],
+  "printable" : true,
+  "rarity" : "legendary",
+  "description" : "An Unbound mech body, being tinkered with.",
+  "shortdescription" : "Unbound Mech Body",
+  "race" : "apex",
+  "category" : "furniture",
+  "price" : 2500,
+
+  "apexDescription" : "What a monstrous mech.",
+  "avianDescription" : "This does not make me feel safe.",
+  "floranDescription" : "Floran can't ssstab...",
+  "glitchDescription" : "Curious. This is quite the robust frame.",
+  "humanDescription" : "What a cool mech. Wish it was working.",
+  "hylotlDescription" : "Whatever they have reserved for us in the future, I sure hope it's nothing like that.",
+  "novakidDescription" : "Quite scary lookin'.",
+
+  "inventoryIcon" : "mechbody1icon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "mechbody1.png:<color>",
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
+
