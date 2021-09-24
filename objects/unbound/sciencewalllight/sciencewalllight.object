@@ -1,0 +1,46 @@
+{
+  "objectName" : "starforge-unboundsciencewalllight",
+  "colonyTags" : ["light"],
+  "rarity" : "uncommon",
+  "category" : "light",
+  "lightColor" : [167, 217, 251],
+  "price" : 60,
+  "description" : "An Unbound science light.",
+  "shortdescription" : "Unbound Science Wall Light",
+  "race" : "apex",
+
+  "apexDescription" : "These lights are commonly used on labs.",
+  "avianDescription" : "A vibrant light.",
+  "floranDescription" : "Lab light is harsh on Floran eyesss.",
+  "glitchDescription" : "Impressed. This lighting fixture generates more light than heat.",
+  "humanDescription" : "A bright, white light.",
+  "hylotlDescription" : "A bright, white light. It creates a neutral atmosphere.",
+  "novakidDescription" : "That's one bright lightbulb.",
+
+  "inventoryIcon" : "sciencewalllighticon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "sciencewalllight.png:<color>.<frame>", "fullbright" : true }, { "image" : "sciencewalllightlit.png:<color>.<frame>" } ],
+      "imagePosition" : [-8, 0],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "sciencewalllight.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+  
+}

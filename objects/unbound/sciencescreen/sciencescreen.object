@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-unboundsciencescreen",
+  "colonyTags" : ["apex"],
+  "rarity" : "uncommon",
+  "category" : "decorative",
+  "price" : 150,
+  "description" : "A flat screen used by the Unbound Science Division.",
+  "shortdescription" : "Unbound Science Screen",
+  "race" : "apex",
+
+  "apexDescription" : "Just your standard lab screen.",
+  "avianDescription" : "A cool lab screen.",
+  "floranDescription" : "Floran uninteresssted in flat screen.",
+  "glitchDescription" : "Interested. This is a nice screen.",
+  "humanDescription" : "Ah! We have those on Earth!",
+  "hylotlDescription" : "A simple yet stylish flat screen.",
+  "novakidDescription" : "Where do ya even turn it on?",
+
+
+  "inventoryIcon" : "sciencescreenicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "sciencescreen.png" ,
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

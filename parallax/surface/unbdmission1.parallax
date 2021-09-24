@@ -82,10 +82,7 @@
 	 {
       "kind" : "unbdretribution",
       "offset" : [0, 80],
-      "parallax" : [7.5, 3.5],
-      "minSpeed" : 3500,
-      "maxSpeed" : 3500,
-      "fadePercent" : 0.05
+      "parallax" : [7.5, 3.5]
     },
 	{
       "kind" : "unbdfrigate1",

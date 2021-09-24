@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":16,
+ "tilecount":25,
  "tiledversion":"1.4.3",
  "tileheight":48,
  "tileproperties":
@@ -101,6 +101,46 @@
          "object":"starforge-unboundkeystand",
          "tilesetDirection":"right"
         },
+     "16":
+        {
+         "\/\/description":"An Unbound cabinet, used by the Science Division.",
+         "\/\/name":"starforge-unboundsciencecabinet",
+         "\/\/shortdescription":"Unbound Science Cabinet",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencecabinet",
+         "tilesetDirection":"right"
+        },
+     "17":
+        {
+         "\/\/description":"A short Unbound chair used by the Science Division.",
+         "\/\/name":"starforge-unboundsciencechair",
+         "\/\/shortdescription":"Unbound Science Chair",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencechair",
+         "tilesetDirection":"right"
+        },
+     "18":
+        {
+         "\/\/description":"That big green lever should probably be left alone.",
+         "\/\/name":"starforge-unboundscienceconsole",
+         "\/\/shortdescription":"Unbound Science Console",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundscienceconsole",
+         "tilesetDirection":"right"
+        },
+     "19":
+        {
+         "\/\/description":"An Unbound cupboard, used by the Science Division.",
+         "\/\/name":"starforge-unboundsciencecupboard",
+         "\/\/shortdescription":"Unbound Science Cupboard",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencecupboard",
+         "tilesetDirection":"right"
+        },
      "2":
         {
          "\/\/description":"A very sturdy chair used by the Unbound.",
@@ -109,6 +149,56 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"starforge-unboundchair",
+         "tilesetDirection":"right"
+        },
+     "20":
+        {
+         "\/\/description":"A sturdy desk used by the Unbound Science Division.",
+         "\/\/name":"starforge-unboundsciencedesk",
+         "\/\/shortdescription":"Unbound Science Desk",
+         "imagePositionX":"-20",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencedesk",
+         "tilesetDirection":"right"
+        },
+     "21":
+        {
+         "\/\/description":"A strange liquid being experimented on by the Unbound Science Division.",
+         "\/\/name":"starforge-unboundscienceextract",
+         "\/\/shortdescription":"Unbound Science Extract",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundscienceextract",
+         "tilesetDirection":"right"
+        },
+     "22":
+        {
+         "\/\/description":"A light used by the Science Division of the Unbound. It shines brightly.",
+         "\/\/name":"starforge-unboundsciencelamp",
+         "\/\/shortdescription":"Unbound Science Light",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencelamp",
+         "tilesetDirection":"right"
+        },
+     "23":
+        {
+         "\/\/description":"A flat screen used by the Unbound Science Division.",
+         "\/\/name":"starforge-unboundsciencescreen",
+         "\/\/shortdescription":"Unbound Science Screen",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencescreen",
+         "tilesetDirection":"right"
+        },
+     "24":
+        {
+         "\/\/description":"An Unbound science light.",
+         "\/\/name":"starforge-unboundsciencewalllight",
+         "\/\/shortdescription":"Unbound Science Wall Light",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencewalllight",
          "tilesetDirection":"right"
         },
      "3":
@@ -264,7 +354,97 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "16":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "17":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "18":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "19":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "2":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "20":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "21":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "22":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "23":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "24":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -395,10 +575,64 @@
          "imageheight":40,
          "imagewidth":16
         },
+     "16":
+        {
+         "image":"sciencecabinet.png",
+         "imageheight":24,
+         "imagewidth":32
+        },
+     "17":
+        {
+         "image":"sciencechair.png",
+         "imageheight":11,
+         "imagewidth":16
+        },
+     "18":
+        {
+         "image":"scienceconsole.png",
+         "imageheight":30,
+         "imagewidth":32
+        },
+     "19":
+        {
+         "image":"sciencecupboard.png",
+         "imageheight":40,
+         "imagewidth":32
+        },
      "2":
         {
          "image":"unboundchair.png",
          "imageheight":28,
+         "imagewidth":16
+        },
+     "20":
+        {
+         "image":"sciencedesk.png",
+         "imageheight":24,
+         "imagewidth":40
+        },
+     "21":
+        {
+         "image":"scienceextract.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "22":
+        {
+         "image":"sciencelamp.png",
+         "imageheight":10,
+         "imagewidth":8
+        },
+     "23":
+        {
+         "image":"sciencescreen.png",
+         "imageheight":14,
+         "imagewidth":16
+        },
+     "24":
+        {
+         "image":"sciencewalllight.png",
+         "imageheight":7,
          "imagewidth":16
         },
      "3":

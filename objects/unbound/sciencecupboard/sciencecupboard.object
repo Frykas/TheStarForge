@@ -1,0 +1,45 @@
+{
+  "objectName" : "starforge-unboundsciencecupboard",
+  "colonyTags" : ["storage"],
+  "rarity" : "uncommon",
+  "category" : "storage",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "price" : 180,
+  "description" : "An Unbound cupboard, used by the Science Division.",
+  "shortdescription" : "Unbound Science Cupboard",
+  "health" : 1.5,
+  "printable" : true,
+
+  "apexDescription" : "I bet there are a few skeletons in this closet.",
+  "avianDescription" : "Is there anything inside?",
+  "floranDescription" : "Ssstorage.",
+  "glitchDescription" : "Curious. Could contain items.",
+  "humanDescription" : "A sleek-looking cupboard.",
+  "hylotlDescription" : "I should check the contents.",
+  "novakidDescription" : "Let's take a look inside.",
+
+
+  "inventoryIcon" : "sciencecupboardicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "sciencecupboard.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/locker_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/locker_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+
+}
