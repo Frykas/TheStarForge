@@ -101,7 +101,7 @@
           }
         }
       }
-    }
+    },
 
     "parts" : {
       "body" : {
@@ -135,7 +135,8 @@
       "bodyFullbright" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 4,
+          "zLevel" : 14,
+          "offset" : [0, 2.875],
           "transformationGroups" : ["all"],
           "fullbright" : true
         },
@@ -165,6 +166,7 @@
         "properties" : {
           "centered" : true,
           "zLevel" : 2,
+          "offset" : [5.25, 0],
           "transformationGroups" : ["barrel"]
         },
 
@@ -192,7 +194,8 @@
       "barrelFullbright" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 3,
+          "zLevel" : 13,
+          "offset" : [5.25, 0],
           "transformationGroups" : ["barrel"],
           "fullbright" : true
         },
@@ -249,7 +252,8 @@
       "bodyBackFullbright" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 1,
+          "zLevel" : 11,
+          "offset" : [0, 2.875],
           "transformationGroups" : ["all"],
           "fullbright" : true
         },
@@ -279,6 +283,7 @@
         "properties" : {
           "centered" : true,
           "zLevel" : 7,
+          "offset" : [-3.75, 0.25],
           "transformationGroups" : ["rocketlauncher"]
         },
 
@@ -316,7 +321,8 @@
       "rocketLauncherFullbright" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 8,
+          "zLevel" : 18,
+          "offset" : [-3.75, 0.25],
           "transformationGroups" : ["rocketlauncher"],
           "fullbright" : true
         },

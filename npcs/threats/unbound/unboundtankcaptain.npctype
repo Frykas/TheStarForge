@@ -1,0 +1,51 @@
+{
+    "type": "starforge-unboundtankcaptain",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundCaptain1DeathTreasure"],
+ 
+    "identity" : {
+      "species" : "apex"
+	},
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "AAAAAAAHHHHHHH.",
+                        "DIE DIE DIE!!!!!",
+                        "WE UNBOUND WILL NOT DIE SO EASILY!",
+                        "MY TAAAANK!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":3}, {"stat":"powerMultiplier","amount":0.5}],
+	
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundcaptainalthead"
+                }],
+                "chest": [{
+                    "name": "starforge-unboundcaptainchest"
+                }],
+                "legs": [{
+                    "name": "starforge-unboundcaptainpants"
+                }],
+                "primary": [
+                    "starforge-unboundrailpistol"
+                ]
+            }]]
+        ]
+    }
+}

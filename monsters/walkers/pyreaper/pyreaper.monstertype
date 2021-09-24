@@ -49,7 +49,7 @@
     ],
 	"periodicActions" : [
 	  {
-	    "action" : "projectile",				//only supported at the moment
+	    "action" : "projectile",					//only supported at the moment
 		"projectileType" : "pyreaperorb",
 		"projectileParameters" : {
 		  "power" : 5,
