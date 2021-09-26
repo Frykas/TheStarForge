@@ -1,0 +1,32 @@
+{
+  "name" : "unboundTankCannonFire",
+  "label" : "BALLISTIC CANNON",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/unboundtankboss/skills/unboundTankCannonFire.lua" ],
+
+    "unboundTankCannonFire" : {
+      "targetingTime" : 1, 			//Time spent aiming
+      "fireDelay" : 1,		 		//Time spent not rotating before firing
+      "shots" : 3,		 			//Shots fired in succession
+	  "adjustAimAfterShot" : true,	//If false, will lock aim and fire all shots in that direction ignoring targetingTime, if true, will rotate after shooting and account for targetingTime
+	  
+	  "barrelOffset" : [0, -1.125],
+	  "barrelMuzzleOffset" : [8.125, 0],
+	  
+	  "rotationBounds" : [-45, 90],		//[MIN ANGLE, MAX ANGLE]
+	  
+      "projectileType" : "starforge-unboundfireshell",
+      "projectileParameters" : {
+        "power" : 25
+      }
+    }
+  },
+
+  "animationParameters" : {
+    "sounds" : {
+      "fireCannon" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+    }
+  }
+}

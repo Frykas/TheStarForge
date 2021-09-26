@@ -2,7 +2,7 @@
     "type": "starforge-unboundtankcaptain",
     "baseType": "hostile",
  
-    "dropPools": ["unboundCaptain1DeathTreasure"],
+    "dropPools": [],
  
     "identity" : {
       "species" : "apex"
@@ -43,7 +43,7 @@
                     "name": "starforge-unboundcaptainpants"
                 }],
                 "primary": [
-                    "starforge-unboundrailpistol"
+                    "starforge-unboundsmg"
                 ]
             }]]
         ]
