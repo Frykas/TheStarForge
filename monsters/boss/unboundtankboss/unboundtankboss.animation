@@ -43,7 +43,7 @@
             "frames" : 1
           },
           "fire" : {
-            "frames" : 2,
+            "frames" : 3,
             "cycle" : 0.6,
             "mode" : "transition",
             "transition" : "idle"
@@ -95,8 +95,8 @@
             "frames" : 1
           },
           "moving" : {
-            "frames" : 3,
-            "cycle" : 0.2,
+            "frames" : 4,
+            "cycle" : 0.5,
             "mode" : "loop"
           }
         }

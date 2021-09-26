@@ -1,9 +1,9 @@
 {
   "frameGrid" : {
     "size" : [147, 73],
-    "dimensions" : [5, 1],
+    "dimensions" : [6, 1],
     "names" : [
-      [null, "idle.1", "moving.1", "moving.2", "moving.3"]
+      [null, "idle.1", "moving.1", "moving.2", "moving.3", "moving.4"]
     ]
   }
 }
