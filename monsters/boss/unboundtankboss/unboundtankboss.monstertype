@@ -26,12 +26,12 @@
 
 	"dropPools" : ["unboundTankBossTreasure"],
 	
-    "skillCount" : 0,
-    "skills" : [],
+    "skillCount" : 1,
+    "skills" : ["unboundTankCannonFire"],
 
     "phases" : [
       {
-        "skills" : []
+        "skills" : ["unboundTankCannonFire"]
       }
     ],
 
