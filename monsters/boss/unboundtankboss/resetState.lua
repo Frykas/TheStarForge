@@ -6,5 +6,5 @@ function bossReset()
   animator.setAnimationState("barrel", "idle")
   animator.setAnimationState("body", "stage1")
   
-  --SET POSITION TO SPAWN POSITION
+  mcontroller.setPosition(config.getParameter("spawnPosition", mcontroller.position()))
 end

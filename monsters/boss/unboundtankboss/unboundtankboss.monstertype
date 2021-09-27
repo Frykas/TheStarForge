@@ -21,26 +21,30 @@
 
       "/monsters/boss/unboundtankboss/dieState.lua",
       "/monsters/boss/unboundtankboss/idleState.lua",
-      "/monsters/boss/unboundtankboss/resetState.lua"
+      "/monsters/boss/unboundtankboss/resetState.lua",
+	  
+      "/monsters/boss/unboundtankboss/passiveFunctionsHook.lua"
     ],
 
 	"dropPools" : ["unboundTankBossTreasure"],
 	
-    "skillCount" : 1,
-    "skills" : ["unboundTankCannonFire"],
+	"renderLayer" : "Projectile-1",
+	
+    "skillCount" : 2,
+    "skills" : ["unboundTankCannonFire", "unboundTankRocketLauncherFire"],
 
     "phases" : [
       {
-        "skills" : ["unboundTankCannonFire"]
+        "skills" : ["unboundTankCannonFire", "unboundTankRocketLauncherFire", "unboundTankRocketLauncherFire"]
       }
     ],
 
     "projectileSourcePosition" : [-2.5, -1.25],
     "projectileSourceOffset" : [7, 0],
 
-    "trackTargetDistance" : 50.0,
+    "trackTargetDistance" : 10000.0,
     "switchTargetDistance" : 0,
-    "keepTargetInSight" : false,
+    "keepTargetInSight" : true,
 
     "knockoutTime" : 0,
     "knockoutEffect" : "blink",
@@ -105,10 +109,10 @@
           "baseValue" : 1.0
         },
         "maxHealth" : {
-          "baseValue" : 5000
+          "baseValue" : 1500
         },
         "protection" : {
-          "baseValue" : 85
+          "baseValue" : 75
         },
         "healthRegen" : {
           "baseValue" : 0.0

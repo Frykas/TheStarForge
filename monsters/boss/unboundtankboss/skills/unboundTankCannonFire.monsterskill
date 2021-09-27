@@ -7,15 +7,20 @@
     "scripts" : [ "/monsters/boss/unboundtankboss/skills/unboundTankCannonFire.lua" ],
 
     "unboundTankCannonFire" : {
-      "targetingTime" : 1, 			//Time spent aiming
-      "fireDelay" : 1,		 		//Time spent not rotating before firing
+      "targetingTime" : 1.25, 			//Time spent aiming
+      "fireDelay" : 0.25,		 		//Time spent not rotating before firing
       "shots" : 3,		 			//Shots fired in succession
 	  "adjustAimAfterShot" : true,	//If false, will lock aim and fire all shots in that direction ignoring targetingTime, if true, will rotate after shooting and account for targetingTime
 	  
-	  "barrelOffset" : [0, -1.125],
-	  "barrelMuzzleOffset" : [8.125, 0],
+	  "barrelRotationCenter" : [-0.725, -0.25],
+	  "barrelMuzzleOffset" : [8, -0.25],
+	  "barrelOffset" : [0, -0.5],
 	  
-	  "rotationBounds" : [-45, 90],		//[MIN ANGLE, MAX ANGLE]
+	  "controlRotation" : {
+		"maxSpeed" : 0.045,
+		"controlForce" : 3,
+		"friction" : 4
+	  },
 	  
       "projectileType" : "starforge-unboundthermiteshell",
       "projectileParameters" : {
@@ -26,7 +31,7 @@
 
   "animationParameters" : {
     "sounds" : {
-      "fireCannon" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+      "fireLauncher" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
     }
   }
 }

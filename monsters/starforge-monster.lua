@@ -102,9 +102,7 @@ end
 function update(dt)
   -- Periodic actions
   for _, action in pairs(self.periodicActions) do
-    sb.logInfo("before: %s", action)
     action = periodicActions(action, dt)
-    sb.logInfo("after: %s", action)
   end
 
   capturable.update(dt)

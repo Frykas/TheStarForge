@@ -5,5 +5,9 @@
     "names" : [
       [null, "idle.1", "moving.1", "moving.2", "moving.3", "moving.4"]
     ]
+  },
+  
+  "aliases" : {
+    "moving.5" : "idle.1"
   }
 }

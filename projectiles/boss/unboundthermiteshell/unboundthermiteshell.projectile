@@ -108,27 +108,6 @@
 			"fuzzAngle": 0,
 			"inheritDamageFactor": 0.005,
 			"angleAdjust": -55
-		},
-		{
-			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
-			"inheritDamageFactor": 0.005,
-			"angleAdjust": -1
-		},
-		{
-			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
-			"inheritDamageFactor": 0.005,
-			"angleAdjust": -65
-		},
-		{
-			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
-			"inheritDamageFactor": 0.005,
-			"angleAdjust": 65
 		}
 	],
 	"timeToLive": 1.5,

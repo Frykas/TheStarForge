@@ -1,4 +1,8 @@
 {
+  "globalTagDefaults" : {
+    "shotFrame" : "1"
+  },
+
   "animatedParts" : {
     "stateTypes" : {
 	  //IDLE ENGINE
@@ -10,8 +14,8 @@
           },
           "on" : {
             "properties" : {
-              "persistentSound" : "/sfx/npc/boss/crystalboss_hum.ogg",
-              "persistentSoundRangeMultiplier" : 1.5
+              "persistentSound" : "/sfx/objects/shipengine.ogg",
+              "persistentSoundRangeMultiplier" : 2
             }
           }
         }
@@ -44,7 +48,7 @@
           },
           "fire" : {
             "frames" : 3,
-            "cycle" : 0.6,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
           },
@@ -74,8 +78,11 @@
             "mode" : "loop"
           },
           "fire" : {
-            "frames" : 6,
-            "cycle" : 0.6,
+            "frames" : 3
+          },
+          "recover" : {
+            "frames" : 3,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "load"
           },
@@ -95,8 +102,8 @@
             "frames" : 1
           },
           "moving" : {
-            "frames" : 4,
-            "cycle" : 0.5,
+            "frames" : 5,
+            "cycle" : 0.6,
             "mode" : "loop"
           }
         }
@@ -306,7 +313,12 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:fire.<frame>"
+                "image" : "<partImage>:fire.<shotFrame>"
+              }
+            },
+            "recover" : {
+              "properties" : {
+                "image" : "<partImage>:recover.<frame>"
               }
             },
             "broken" : {
@@ -346,7 +358,12 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:fire.<frame>"
+                "image" : "<partImage>:fire.<shotFrame>"
+              }
+            },
+            "recover" : {
+              "properties" : {
+                "image" : "<partImage>:recover.<frame>"
               }
             },
             "broken" : {

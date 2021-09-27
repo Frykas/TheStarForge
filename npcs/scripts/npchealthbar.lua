@@ -2,13 +2,15 @@
 --- Created by Lyrthras#7199.
 --- DateTime: 6/26/2021 11:48 AM UTC+08
 ---
+--- Edited by Nebulox#3969
+--- DateTime: 9/27/2021 10:11 PM UTC+10
+---
 
 local companionMonsterName = "starforge-npchealthbar"
 
-
-local oInit = init or function() end
+local oldInit = init or function() end
 function init()
-  oInit()
+  if oldInit then oldInit() end
 
   self.companionId = spawnCompanion()
 
@@ -16,16 +18,20 @@ function init()
 end
 
 
-local oUpdate = update or function(dt) end
+local oldUpdate = update or function(dt) end
 function update(dt)
-  oUpdate(dt)
+  if oldUpdate then oldUpdate(dt) end
 
   if world.entityTypeName(self.companionId) ~= companionMonsterName then
     self.companionSpawnAttempts = self.companionSpawnAttempts + 1
     self.companionId = spawnCompanion()
-    if not self.companionId or self.companionSpawnAttempts > 30 then    -- prevent spam
-      error("Failing to spawn companion monster, dying...")
+    if not self.companionId or self.companionSpawnAttempts > 33 then    -- prevent spam
+      error("Repeated failure in spawning companion monster, terminating...")
     end
+  end
+  
+  if config.getParameter("nameTag") then
+    npc.setDisplayNametag(config.getParameter("nameTag"))
   end
 
   world.callScriptedEntity(self.companionId, "status.setResourcePercentage", "health", status.resourcePercentage("health"))

@@ -1,0 +1,37 @@
+{
+  "name" : "unboundTankRocketLauncherFire",
+  "label" : "ROCKET LAUNCHER",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/unboundtankboss/skills/unboundTankRocketLauncherFire.lua" ],
+
+    "unboundTankRocketLauncherFire" : {
+      "fireDelay" : 0.075,
+      "shots" : 3,
+	  "adjustAimAfterShot" : false,
+	  
+	  "launcherRotationCenter" : [-4, 0],
+	  "launcherMuzzles" : [[0, 0.5], [0, 0], [0, -0.5]],
+	  "launcherOffset" : [0, -0.725],
+	  
+	  "controlRotation" : {
+		"maxSpeed" : 0.15,
+		"controlForce" : 3,
+		"friction" : 4
+	  },
+	  
+      "projectileType" : "starforge-unboundfirerocket",
+      "projectileParameters" : {
+        "power" : 10,
+        "speed" : 70
+      }
+    }
+  },
+
+  "animationParameters" : {
+    "sounds" : {
+      "fireCannon" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+    }
+  }
+}

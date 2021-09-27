@@ -1,51 +1,144 @@
 {
-    "type": "starforge-unboundtankcaptain",
-    "baseType": "hostile",
- 
-    "dropPools": [],
- 
-    "identity" : {
-      "species" : "apex"
-	},
- 
-    "scriptConfig" : {
-        "dialog": {
-            "attack": {
-                "default": {
-                    "default": [
-                        "Attack!"
-                    ]
-                },
-                "apex": {
-                    "default": [
-                        "AAAAAAAHHHHHHH.",
-                        "DIE DIE DIE!!!!!",
-                        "WE UNBOUND WILL NOT DIE SO EASILY!",
-                        "MY TAAAANK!"
-                    ]
-                }
-            }
-        }
-    },
- 
-    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":3}, {"stat":"powerMultiplier","amount":0.5}],
+  "type": "starforge-unboundtankcaptain",
+  "baseType": "hostile",
 	
-    "items": {
-        "override": [
-            [0, [{
-                "head": [{
-                    "name": "starforge-unboundcaptainalthead"
-                }],
-                "chest": [{
-                    "name": "starforge-unboundcaptainchest"
-                }],
-                "legs": [{
-                    "name": "starforge-unboundcaptainpants"
-                }],
-                "primary": [
-                    "starforge-unboundsmg"
-                ]
-            }]]
+  "scripts" : ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+  "initialScriptDelta" : 5,
+ 
+  "dropPools": [],
+ 
+  "identity" : {
+    "name" : "Maurice",
+    "species" : "apex",
+    "gender" : "male"
+  },
+
+  "movementParameters" : {
+    "walkSpeed" : 0.1
+  },
+ 
+  "scriptConfig" : {
+	"bossName" : "Unbound Centurion Tank Commander of the Highest Order, Maurice, Age 42, Height 163 cm",
+	"nameTag" : "Maurice",
+	
+    "behaviorConfig" : {
+      "rangedAimTime" : 0.1,
+      "rangedWindupTime" : 0,
+      "rangedMinFireTime": 100,
+      "rangedMaxFireTime": 10000000
+    },
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/cinematics/protectorate/stage_panic.ogg"
         ]
+      }
+    },
+	
+    "dialog": {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "AAAAAAAHHHHHHH.",
+            "DIE DIE DIE!!!!!",
+            "WE UNBOUND WILL NOT DIE SO EASILY!",
+            "MY TAAAANK!"
+          ]
+        }
+      },
+      "reattack" : {
+        "default" : {
+          "default" : [
+            "AAAAAAAHHHHHHH.",
+            "DIE DIE DIE!!!!!",
+            "WE UNBOUND WILL NOT DIE SO EASILY!",
+            "MY TAAAANK!"
+          ]
+        }
+      },
+      "killedTarget" : {
+        "default" : {
+          "default" : [
+            "AAAAAAAHHHHHHH.",
+            "DIE DIE DIE!!!!!",
+            "WE UNBOUND WILL NOT DIE SO EASILY!",
+            "MY TAAAANK!"
+          ]
+        }
+      },
+      "lostTarget" : {
+        "default" : {
+          "default" : [
+            "AAAAAAAHHHHHHH.",
+            "DIE DIE DIE!!!!!",
+            "WE UNBOUND WILL NOT DIE SO EASILY!",
+            "MY TAAAANK!"
+          ]
+        }
+      },
+      "outOfSight" : {
+        "default" : {
+          "default" : [
+            "AAAAAAAHHHHHHH.",
+            "DIE DIE DIE!!!!!",
+            "WE UNBOUND WILL NOT DIE SO EASILY!",
+            "MY TAAAANK!"
+          ]
+        }
+      },
+      "cheerOn" : {
+        "default" : {
+          "default" : [
+            "AAAAAAAHHHHHHH.",
+            "DIE DIE DIE!!!!!",
+            "WE UNBOUND WILL NOT DIE SO EASILY!",
+            "MY TAAAANK!"
+          ]
+        }
+      },
+      "cantReach" : {
+        "default" : {
+          "default" : [
+            "AAAAAAAHHHHHHH.",
+            "DIE DIE DIE!!!!!",
+            "WE UNBOUND WILL NOT DIE SO EASILY!",
+            "MY TAAAANK!"
+          ]
+        }
+      }
     }
+  },
+
+  "touchDamage" : {
+    "damage" : 0,
+    "teamType" : "enemy",
+    "damageType" : "knockback",
+    "damageSourceKind" : "nodamage",
+    "damageRepeatGroup" : "npcTouchKnockback",
+    "damageRepeatTimeout" : 0.5,
+    "knockback" : 35,
+    "statusEffects" : [ ]
+  },
+ 
+  "innateStatusEffects" : [{"stat":"maxHealth","amount":5}, {"stat":"powerMultiplier","amount":0.01}, {"stat":"maxEnergy","amount":10000}],
+	
+  "items": {
+    "override": [
+      [0, [{
+        "head": [{
+          "name": "starforge-unboundstalkerhead"
+        }],
+        "chest": [{
+          "name": "starforge-unboundofficerchest"
+        }],
+        "legs": [{
+          "name": "starforge-unboundofficerpants"
+        }],
+        "primary": [
+          "starforge-unboundpistol"
+        ]
+      }]]
+    ]
+  }
 }

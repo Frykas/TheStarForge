@@ -6,6 +6,10 @@
 	"damageKindImage": "icon.png",
 	"lightColor": [115, 119, 38],
 	"pointLight": true,
+	"piercing": true,
+	"movementSettings" : {
+		"gravityMultiplier" : 0.2
+	},
 	"actionOnReap": [{
 				"file": "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config",
 				"action": "config"

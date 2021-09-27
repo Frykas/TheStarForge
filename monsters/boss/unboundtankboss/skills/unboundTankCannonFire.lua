@@ -7,8 +7,8 @@ function unboundTankCannonFire.enter()
   
   self.targetingTime = config.getParameter("unboundTankCannonFire.targetingTime")
   self.fireDelay = config.getParameter("unboundTankCannonFire.fireDelay")
-  self.aimAngle = 0
-	  
+  self.rotationSpeed = 0
+  
   self.rotatedMuzzle = {0, 0}
   self.newMuzzleOffset = {0, 0}
   self.toTarget = vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(self.newMuzzleOffset)))
@@ -21,7 +21,8 @@ function unboundTankCannonFire.enter()
     adjustAimAfterShot = config.getParameter("unboundTankCannonFire.adjustAimAfterShot"),
     barrelMuzzleOffset = config.getParameter("unboundTankCannonFire.barrelMuzzleOffset"),
     barrelOffset = config.getParameter("unboundTankCannonFire.barrelOffset"),
-    rotationBounds = config.getParameter("unboundTankCannonFire.rotationBounds")
+    barrelRotationCenter = config.getParameter("unboundTankCannonFire.barrelRotationCenter"),
+    controlRotation = config.getParameter("unboundTankCannonFire.controlRotation")
   }
 end
 
@@ -31,16 +32,14 @@ end
 
 function unboundTankCannonFire.update(dt, stateData)
   if not hasTarget() then return true end
-	
-  animator.resetTransformationGroup("barrel")
-  animator.rotateTransformationGroup("barrel", self.aimAngle)
   
   if stateData.shots > 0 then
     self.targetingTime = math.max(0, self.targetingTime - dt)
 	if self.targetingTime > 0 then
-	  self.aimAngle = vec2.angle(vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(self.newMuzzleOffset))))
+	  self.targetAngle = vec2.angle(vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(stateData.barrelOffset))))
+	  self.aimAngle = unboundTankCannonFire.adjustAim(self.aimAngle or 0, self.targetAngle, dt, stateData)
 	
-	  self.rotatedMuzzle = vec2.rotate(stateData.barrelMuzzleOffset, self.aimAngle - math.pi)
+	  self.rotatedMuzzle = vec2.rotate(stateData.barrelMuzzleOffset, -(self.aimAngle or 0) - math.pi)
 	  self.newMuzzleOffset = vec2.add(stateData.barrelOffset, self.rotatedMuzzle)
 	  self.toTarget = vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(stateData.barrelOffset)))
 	else
@@ -53,7 +52,21 @@ function unboundTankCannonFire.update(dt, stateData)
     return true
   end
 
+  animator.resetTransformationGroup("barrel")
+  animator.rotateTransformationGroup("barrel", self.aimAngle, stateData.barrelRotationCenter)
+
   return false
+end
+
+function unboundTankCannonFire.adjustAim(currentAngle, angleTo, dt, stateData)
+  local angleDiff = util.angleDiff(currentAngle, angleTo)
+  local diffSign = angleDiff > 0 and 1 or -1
+
+  local targetSpeed = math.max(0.1, math.min(1, math.abs(angleDiff) / 0.5)) * stateData.controlRotation.maxSpeed
+  local acceleration = diffSign * stateData.controlRotation.controlForce * dt
+  self.rotationSpeed = math.max(-targetSpeed, math.min(targetSpeed, self.rotationSpeed + acceleration))
+  self.rotationSpeed = self.rotationSpeed - self.rotationSpeed * stateData.controlRotation.friction * dt
+  return currentAngle + self.rotationSpeed
 end
 
 function unboundTankCannonFire.fireCannon(stateData, offset, target)
@@ -63,6 +76,7 @@ function unboundTankCannonFire.fireCannon(stateData, offset, target)
   animator.setAnimationState("barrel", "fire")
   stateData.shots = stateData.shots - 1
   animator.playSound("fireCannon")
+  self.rotationSpeed = 0
 
   if stateData.adjustAimAfterShot == true then
     self.targetingTime = stateData.targetingTime
