@@ -31,7 +31,7 @@
         }
     },
  
-    "innateStatusEffects" : [{"stat":"maxHealth","amount":40}, {"stat":"powerMultiplier","amount":1.20}, {"stat":"maxEnergy","amount":150}],
+    "innateStatusEffects" : [{"stat":"maxHealth","amount":30}, {"stat":"powerMultiplier","amount":1.05}, {"stat":"maxEnergy","amount":150}],
  
     "items": {
         "override": [

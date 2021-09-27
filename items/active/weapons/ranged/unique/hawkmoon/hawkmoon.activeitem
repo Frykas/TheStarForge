@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "description" : "With each shot, a deafening shriek.",
   "shortdescription" : "^orange;Hawkmoon^reset;",
-  "level" : 7,
+  "fixedLevel" : false,
   "tooltipKind" : "base",
   "category" : "Revolver",
   "itemTags" : ["weapon","ranged","revolver"],

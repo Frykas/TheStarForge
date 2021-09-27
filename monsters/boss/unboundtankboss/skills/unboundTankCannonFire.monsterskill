@@ -17,7 +17,7 @@
 	  
 	  "rotationBounds" : [-45, 90],		//[MIN ANGLE, MAX ANGLE]
 	  
-      "projectileType" : "starforge-unboundfireshell",
+      "projectileType" : "starforge-unboundthermiteshell",
       "projectileParameters" : {
         "power" : 25
       }

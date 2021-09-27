@@ -1,24 +1,24 @@
 {
-  "itemName": "starforge-theleviathan",
+  "itemName": "starforge-thecenturion",
   "price": 3000,
   "maxStack": 1,
   "rarity": "Essential",
   "description": "A massive tank cannon, repurposed & made portable.",
-  "shortdescription": "^orange; The Leviathan^reset;",
+  "shortdescription": "^orange; The Centurion^reset;",
   "tooltipKind": "base",
   "category": "Portable Cannon",
   "twoHanded": true,
   "level": 7,
   "itemTags": ["weapon","ranged","cannon"],
-  "inventoryIcon": "theleviathanicon.png",
-  "animation": "theleviathan.animation",
+  "inventoryIcon": "thecenturionicon.png",
+  "animation": "thecenturion.animation",
 
     "animationParts": {
     "butt": "",
-    "middle": "unboundrocketlauncheranim.png:cock.1",
-    "middleFullbright": "unboundrocketlauncherfb.png",
+    "middle": "thecenturion.png:cock.1",
+    "middleFullbright": "thecenturionfullbright.png",
     "barrel": "",
-    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash.png"
+    "muzzleFlash": ""
   },
       "animationCustom": {
       "particleEmitters" : {

@@ -38,7 +38,7 @@
         "properties": {
           "zLevel": 1,
           "centered": true,
-          "image": "theleviathan.png:cock.1",
+          "image": "thecenturion.png:cock.1",
           "offset": [
             0,
             0
@@ -51,17 +51,17 @@
           "firing": {
 		    "fire": {
               "properties": {
-                "image": "theleviathan.png:cock.<frame>"
+                "image": "thecenturion.png:cock.<frame>"
               }
             },
 		    "shoot": {
               "properties": {
-                "image": "theleviathan.png:stay.<frame>"
+                "image": "thecenturion.png:stay.<frame>"
               }
             },
             "reload": {
               "properties": {
-                "image": "theleviathan.png:uncock.<frame>"
+                "image": "thecenturion.png:uncock.<frame>"
               }
             }
           }
