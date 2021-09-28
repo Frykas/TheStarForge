@@ -16,9 +16,9 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":28,
+ "tilecount":35,
  "tiledversion":"1.4.3",
- "tileheight":120,
+ "tileheight":126,
  "tileproperties":
     {
      "0":
@@ -231,6 +231,26 @@
          "object":"starforge-unboundscienceengi",
          "tilesetDirection":"right"
         },
+     "28":
+        {
+         "\/\/description":"The banner representing the Unbound.",
+         "\/\/name":"starforge-unboundbanner",
+         "\/\/shortdescription":"Unbound Banner",
+         "imagePositionX":"-8",
+         "imagePositionY":"-32",
+         "object":"starforge-unboundbanner",
+         "tilesetDirection":"right"
+        },
+     "29":
+        {
+         "\/\/description":"A baggage scanner used in Unbound spaceports.",
+         "\/\/name":"starforge-unboundbaggagescanner",
+         "\/\/shortdescription":"Unbound Baggage Scanner",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundbaggagescanner",
+         "tilesetDirection":"right"
+        },
      "3":
         {
          "\/\/description":"A communication relay used by Unbound troops when they're on the field.",
@@ -239,6 +259,56 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"starforge-unboundcomrelay",
+         "tilesetDirection":"right"
+        },
+     "30":
+        {
+         "\/\/description":"The banner representing the Unbound.",
+         "\/\/name":"starforge-unboundlargebanner",
+         "\/\/shortdescription":"Large Unbound Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-64",
+         "object":"starforge-unboundlargebanner",
+         "tilesetDirection":"right"
+        },
+     "31":
+        {
+         "\/\/description":"A scanner used in Unbound spaceports.",
+         "\/\/name":"starforge-unboundscanner",
+         "\/\/shortdescription":"Unbound Scanner",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundscanner",
+         "tilesetDirection":"right"
+        },
+     "32":
+        {
+         "\/\/description":"An Unbound wall lamp.",
+         "\/\/name":"starforge-unboundwalllamp",
+         "\/\/shortdescription":"Unbound Wall Lamp",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundwalllamp",
+         "tilesetDirection":"right"
+        },
+     "33":
+        {
+         "\/\/description":"An Unbound lamp.",
+         "\/\/name":"starforge-unboundwalllamp",
+         "\/\/shortdescription":"Unbound Tall Lamp",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundtalllamp",
+         "tilesetDirection":"right"
+        },
+     "34":
+        {
+         "\/\/description":"A massive communication console.",
+         "\/\/name":"starforge-unboundcomconsole",
+         "\/\/shortdescription":"Unbound Com. Console",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"starforge-unboundcomconsole",
          "tilesetDirection":"right"
         },
      "4":
@@ -514,7 +584,77 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "28":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "29":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "3":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "30":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "31":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "32":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "33":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "34":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -713,11 +853,53 @@
          "imageheight":48,
          "imagewidth":32
         },
+     "28":
+        {
+         "image":"unboundbanner.png",
+         "imageheight":51,
+         "imagewidth":23
+        },
+     "29":
+        {
+         "image":"unboundbaggagescanner.png",
+         "imageheight":16,
+         "imagewidth":40
+        },
      "3":
         {
          "image":"unboundcomrelay.png",
          "imageheight":48,
          "imagewidth":28
+        },
+     "30":
+        {
+         "image":"unboundlargebanner.png",
+         "imageheight":126,
+         "imagewidth":39
+        },
+     "31":
+        {
+         "image":"unboundscanner.png",
+         "imageheight":40,
+         "imagewidth":34
+        },
+     "32":
+        {
+         "image":"unboundwalllamp.png",
+         "imageheight":8,
+         "imagewidth":24
+        },
+     "33":
+        {
+         "image":"unboundtalllamp.png",
+         "imageheight":24,
+         "imagewidth":8
+        },
+     "34":
+        {
+         "image":"unboundcomconsole.png",
+         "imageheight":41,
+         "imagewidth":96
         },
      "4":
         {
@@ -756,7 +938,7 @@
          "imagewidth":32
         }
     },
- "tilewidth":87,
+ "tilewidth":96,
  "type":"tileset",
  "version":1.1
 }

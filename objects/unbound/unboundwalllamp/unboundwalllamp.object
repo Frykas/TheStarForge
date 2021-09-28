@@ -1,0 +1,46 @@
+{
+  "objectName" : "starforge-unboundwalllamp",
+  "colonyTags" : ["light"],
+  "rarity" : "uncommon",
+  "category" : "light",
+  "lightColor" : [253, 209, 77],
+  "price" : 70,
+  "description" : "An Unbound wall lamp.",
+  "shortdescription" : "Unbound Wall Lamp",
+  "race" : "apex",
+
+  "apexDescription" : "These lights are commonly used on Unbound settlements.",
+  "avianDescription" : "A vibrant light.",
+  "floranDescription" : " light is harsh on Floran eyesss.",
+  "glitchDescription" : "Impressed. This lighting fixture generates more light than heat.",
+  "humanDescription" : "A bright, yellow light.",
+  "hylotlDescription" : "A bright, yellow light. It creates a warm atmosphere.",
+  "novakidDescription" : "That's one bright lightbulb.",
+
+  "inventoryIcon" : "unboundwalllampicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "unboundwalllamp.png:<color>.<frame>" }, { "image" : "unboundwalllampfullbright.png:<color>.<frame>", "fullbright" : true } ],
+      "imagePosition" : [-8, 0],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "unboundwalllamp.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+  
+}

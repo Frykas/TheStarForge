@@ -1,0 +1,32 @@
+{
+  "objectName" : "starforge-unboundlargebanner",
+  "colonyTags" : ["apex"],
+  "rarity" : "legendary",
+  "description" : "The banner representing the Unbound.",
+  "shortdescription" : "Large Unbound Banner",
+  "race" : "apex",
+  "category" : "decorative",
+  "printable" : true,
+  "price" : 500,
+
+  "humanDescription" : "A large Unbound banner.",
+
+
+  "inventoryIcon" : "unboundlargebannericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundlargebanner.png:<color>",
+      "imagePosition" : [-16, -64],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+    {
+      "dualImage" : "unboundlargebanner.png:<color>",
+      "imagePosition" : [-16, -64],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}
