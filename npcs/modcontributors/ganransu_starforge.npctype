@@ -1,0 +1,124 @@
+{
+  "type": "starforge-ganransu",
+  "baseType": "outpostvisitor",
+
+  "identity": {
+    "facialHairType": "",
+    "hairType": "bedhead",
+    "facialHairGroup": "",
+    "hairGroup": "hair",
+    "personalityArmOffset": [ 0, 0 ],
+    "personalityArmIdle": "idle.1",
+    "personalityIdle": "idle.2",
+    "name": "Ganransu",
+    "gender": "male",
+    "imagePath": "gan",
+    "personalityHeadOffset": [ -1, 0 ],
+    "facialHairDirectives": "",
+    "bodyDirectives": "?replace;FFE2C5=FFE2C5;FFC181=;FFC181;D39C6C=D39C6C;C7815B=C7815B;506464=506464;78A08C=78A08C;3C5000=3C5000;648C78=648C78;503C3C=503C3C;463232=463232;645050=645050;DC1F00=DC1F00;BE1B00=BE1B00;951500=951500",
+    "emoteDirectives": "",
+    "hairDirectives": "?replace;f5e3c1=bbbbbb;735e3a=151515;d9c189=3b3b3b?replace;a38d59=313130;735e3a=222222;482c0f=151515;d9c189=3b3b3b"
+  },
+
+  "damageTeamType": "ghostly",
+
+  "scriptConfig": {
+    "dialogMode": "random",
+
+    "dialog": {
+      "converse": {
+        "default": {
+          "default": [
+            "Hello. If you had coffee on you I'd be happy to take it off your hands.",
+            "The Starforge is a cool looking thingy. Maybe I can make a sweet weapon on it if I stop being lazy.",
+            "Being a Peacekeeper is kinda hard and annoying. Some days there's nothing and others you haven't got a chance for a coffee break.",
+            "Hi. My name is <selfname>, and you're <entityname>^reset;. Nice to meet ya.",
+            "*yawns* Yes, this is bedhead.",
+            "HElLo",
+            "I once remember drinking some weird looking coffee... Last thing I remember after that I threw a table through the window.",
+            "You ought to meet this guy Frykas. He's a cool dude.",
+            "This zweihander is stupidly heavy. I still wonder why I just carry it around.",
+            "Tired just about sums up 90% of my day.",
+            "I once delivered over 300 pieces of meat to Streli. She had a real field day.",
+            "Raiizy is cool. He makes guns so he's cool.",
+            "Sometimes a good cup of coffee is the only thing keeping me running... then again though I've got a crippling addiction to the stuff.",
+            "Yes the hat is nice. No, it is not comfortable in the slightest. Sadly have to wear it as part of the uniform.",
+            "There's some pretty spooky stuff on midnight planets... like clowns. *shudders*",
+            "You want a mint? Too bad, got none of 'em on me.",
+            "Sometimes I wanna sit down and comprehend the universe. And then realize most of it is out of my reach.",
+            ".........okay quiet time is over",
+            "Goodbye birthday t- YOU. SAW. NOTHING.",
+            "Yep, I always look like I rolled out of bed... I'm not exactly the epitome of neat or organized honestly.",
+            "At least this isn't Detroit.",
+            "Say have you ever had dreams about a certain kitsune named Rin? No? Eh, must be a coincidence.",
+            "Drawing is nice sorta. Except I lack any motivation or energy for it nowadays.",
+            "Yes my name translates to gunlance. No, you may not ask why that's my name because it's a long embarassing story.",
+            "Sharknado~!",
+            "Open the curtains/Lights on/Don't miss a mome- aaaaaand there I was singing lyrics again...",
+            "Sometimes I must scream, for I am confused.",
+            "Lava balloons. Never again. I had burns and crispy hair for days.",
+            "Do I look sleep deprived? If you said yes then you're right. If you said no you're a liar.",
+            "There's a guy that's known the by the name of Armok. He's a nice person.",
+            "I am your shield.",
+            "^#FFBC47;Katahel^white; was a menace to the entire sector he was in and I'm rather glad that ^cornflowerblue;Mariko^white; managed to get the situation under control.",
+            "I've heard some old rumors of a guy known as the ^pink;Ghost Digger^reset;. A rather mysterious figure, no?",
+            "I've heard of a floran known as ^#758468;Sedge^reset;. Seems he was also a menace on the world he was on before being taken down by an army led by some princess.",
+            "There is a being known as the ^yellow;Doomslayer^reset;. Whoever they are, their name indicates some rather badass exploits.",
+            "The ^#686F5D;Unbound^reset; are a dangerous lot, tread carefully if you're in their territory.",
+            "There are rumors of an old Avian god known as ^red;Siaxaa^reset;. I would investigate these rumors if I had the time...",
+            "The Ruin was not the only menace to this universe, with the coming of the ^#686F5D;Unbound^reset;, there is bound to be more turmoil.",
+            "The fall of the Peacekeepers after the destruction of Earth was tragic, many were noted to have died during its destruction.",
+            "We do not talk about the incident known as ^red;'Love Town'^reset;.",
+            "Esther is a nice old woman, albeit annoying what with all the fetching.",
+            "Yes, I have worked with the bounty hunters known as ^red;Rin^reset; and ^Cyan;Void^reset;. They were a rather deadly pair and I'm happy they're on our side.",
+            "With the loss of the Protectorate, chaos has overtaken the universe once again. Take up your arms and prepare for the storm to come.",
+            "Since the comeback of the Peacekeepers, their arsenal seems to have been bolstered. Maybe check it out some time.",
+            "There are a few odd weapons known as EGO weapons. I would be tempted to investigate them but never have the time to.",
+            "Krythers is certainly a source of entertainment around here. Although I should return that book to him soon...",
+            "Tweeters may not be the er... brightest, but she has spirit. And a nice action figure collection.",
+            "I feel rather bad for Creighton. For some reason everyone suspects he is a kitsune in disguise.",
+            "Rondin is a fantastic mechanic and has even helped me when my sword broke in a clash with someone wielding an odd, red energy sword.",
+            "Not everyone wants to actually join the ^#686F5D;Unbound^reset;. Why else do you think the secret project ^#80F4FF;WARMONGER^reset; exists?",
+            "My condolences if you're an Earth survivor.",
+            "I've never been to a withered planet personally, however from what I've heard the repurcussions of setting foot on one without proper protection are rather severe.",
+            "Omeruin is a rather accomplished artist and a nice person. I advise you talk to them sometime.",
+            "There is a person known as Silver Sokolova. She seems to make friends easily.",
+            "I hope you have a good day"
+          ]
+        }
+      }
+    }
+  },
+
+  "items": {
+    "override": [
+      [
+        0,
+        [
+          {
+            "head": [
+              {
+                "name": "starforge-ganhat"
+              }
+            ],
+            "chest": [
+              {
+                "name": "starforge-gancoat"
+              }
+            ],
+            "legs": [
+              {
+                "name": "starforge-ganpants"
+              }
+            ],
+            "primary": [
+              {
+                "name": "starforge-ganzweihander"
+              }
+            ]
+          }
+        ]
+      ]
+    ]
+  }
+}

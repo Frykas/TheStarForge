@@ -21,7 +21,7 @@
   "orientations" : [
     {
       "dualImage" : "unboundscanner.png",
-	  "imageLayers" : [ { "image" : "unboundscannerback.png" }, { "image" : "unboundscannerbackfullbright.png", "fullbright" : true }, {"image" : "unboundscannerfront.png", "renderLayer" : "Player+6"} ],
+	  "imageLayers" : [ { "image" : "unboundscannerback.png"}, { "image" : "unboundscannerbackfullbright.png", "fullbright" : true }, {"image" : "unboundscannerfront.png", "renderLayer" : "Player+6"} ],
       "imagePosition" : [-16, 0],
 
       "direction" : "left",

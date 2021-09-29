@@ -74,6 +74,11 @@
 	  "type" : "starforge-armok",
 	  "species" : [ "shadow" ]
 	 
+	 },
+	 
+	 {
+	  "type" : "starforge-ganransu",
+	  "species" : [ "human" ]
 	 }
 
   ]
