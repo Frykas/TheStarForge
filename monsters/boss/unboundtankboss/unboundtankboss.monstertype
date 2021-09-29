@@ -1,6 +1,6 @@
 {
   "type" : "unboundtankboss",
-  "shortdescription" : "Unbound Centurion",
+  "shortdescription" : "The Centurion",
 
   "categories" : [ "unboundtankboss" ],
   "parts" : [ "barrel", "body", "rocketlauncher", "tracks"],

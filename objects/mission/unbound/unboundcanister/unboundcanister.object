@@ -4,7 +4,6 @@
   "rarity" : "Legendary",
   "tooltipKind" : "base",
   "race" : "apex",
-  "health" : 1.5,
 
   "category" : "storage",
   "price" : 0,
@@ -47,8 +46,15 @@
   "animation" : "unboundcanister.animation",
   "animationPosition" : [-8, 0],
 
-  "scripts" : ["/objects/scripts/treasureburst.lua"],
+  "scripts" : ["/objects/scripts/starforge-treasureburst.lua"],
   "scriptDelta" : 0,
+  
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/objects/capsule_break1.ogg", "/sfx/objects/capsule_break2.ogg", "/sfx/objects/capsule_break3.ogg" ],
+  "health" : 1,
+
+  "smashParticles" : [ ],
+  "brokenObjectName" : "starforge-unboundcanisterbroken",
 
   "burstTreasurePool" : "essenceBurst",
   "burstItemVelocityRange" : [15, 30],
