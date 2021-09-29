@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":35,
+ "tilecount":43,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -311,6 +311,56 @@
          "object":"starforge-unboundcomconsole",
          "tilesetDirection":"right"
         },
+     "35":
+        {
+         "\/\/description":"A pack of rifle ammo used by Unbound weaponry.",
+         "\/\/name":"starforge-unboundrifleammopack",
+         "\/\/shortdescription":"Unbound Ammo Pack",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundrifleammopack",
+         "tilesetDirection":"right"
+        },
+     "36":
+        {
+         "\/\/description":"A pack of rifle ammo used by Unbound weaponry.",
+         "\/\/name":"starforge-unboundrifleammopackopen",
+         "\/\/shortdescription":"Unbound Ammo Pack",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundrifleammopackopen",
+         "tilesetDirection":"right"
+        },
+     "37":
+        {
+         "\/\/description":"A pack of rockets used by Unbound weaponry.",
+         "\/\/name":"starforge-unboundrocketpack",
+         "\/\/shortdescription":"Unbound Rocket Pack",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundrocketpack",
+         "tilesetDirection":"right"
+        },
+     "38":
+        {
+         "\/\/description":"A pack of rockets used by Unbound weaponry.",
+         "\/\/name":"starforge-unboundrocketpackopen",
+         "\/\/shortdescription":"Unbound Rocket Pack",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundrocketpackopen",
+         "tilesetDirection":"right"
+        },
+     "39":
+        {
+         "\/\/description":"A pack of sniper ammo used by Unbound weaponry.",
+         "\/\/name":"starforge-unboundsniperammopack",
+         "\/\/shortdescription":"Unbound Ammo Pack",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsniperammopack",
+         "tilesetDirection":"right"
+        },
      "4":
         {
          "\/\/description":"A metal cover used by Unbound troops to cover themselves.",
@@ -320,6 +370,36 @@
          "imagePositionY":"0",
          "object":"starforge-unboundcover",
          "tilesetDirection":"left"
+        },
+     "40":
+        {
+         "\/\/description":"A pack of sniper ammo used by Unbound weaponry.",
+         "\/\/name":"starforge-unboundsniperammopackopen",
+         "\/\/shortdescription":"Unbound Ammo Pack",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsniperammopackopen",
+         "tilesetDirection":"right"
+        },
+     "41":
+        {
+         "\/\/description":"An empty Unbound wall shelf.",
+         "\/\/name":"starforge-unboundwallshelf",
+         "\/\/shortdescription":"Unbound Wall Shelf",
+         "imagePositionX":"-16",
+         "imagePositionY":"1",
+         "object":"starforge-unboundwallshelf",
+         "tilesetDirection":"right"
+        },
+     "42":
+        {
+         "\/\/description":"An Unbound console.",
+         "\/\/name":"starforge-unboundconsole",
+         "\/\/shortdescription":"Unbound Console",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundconsole",
+         "tilesetDirection":"right"
         },
      "5":
         {
@@ -664,7 +744,87 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "35":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "36":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "37":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "38":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "39":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "4":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "40":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "41":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "42":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -901,11 +1061,59 @@
          "imageheight":41,
          "imagewidth":96
         },
+     "35":
+        {
+         "image":"unboundrifleammopack.png",
+         "imageheight":8,
+         "imagewidth":12
+        },
+     "36":
+        {
+         "image":"unboundrifleammopackopen.png",
+         "imageheight":5,
+         "imagewidth":16
+        },
+     "37":
+        {
+         "image":"unboundrocketpack.png",
+         "imageheight":10,
+         "imagewidth":12
+        },
+     "38":
+        {
+         "image":"unboundrocketpackopen.png",
+         "imageheight":8,
+         "imagewidth":12
+        },
+     "39":
+        {
+         "image":"unboundsniperammopack.png",
+         "imageheight":8,
+         "imagewidth":12
+        },
      "4":
         {
          "image":"unboundcover.png",
          "imageheight":24,
          "imagewidth":38
+        },
+     "40":
+        {
+         "image":"unboundsniperammopackopen.png",
+         "imageheight":6,
+         "imagewidth":15
+        },
+     "41":
+        {
+         "image":"unboundwallshelf.png",
+         "imageheight":7,
+         "imagewidth":32
+        },
+     "42":
+        {
+         "image":"unboundconsole.png",
+         "imageheight":18,
+         "imagewidth":32
         },
      "5":
         {

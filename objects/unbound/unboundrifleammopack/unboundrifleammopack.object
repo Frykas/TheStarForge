@@ -1,0 +1,31 @@
+{
+  "objectName" : "starforge-unboundrifleammopack",
+  "colonyTags" : ["apex", "weapons"],
+  "rarity" : "uncommon",
+  "category" : "decorative",
+  "price" : 75,
+  "description" : "A pack of rifle ammo used by Unbound weaponry.",
+  "shortdescription" : "Unbound Ammo Pack",
+  "race" : "apex",
+
+  "humanDescription" : "A bunch of Unbound ammo packed in it.",
+
+
+
+  "inventoryIcon" : "unboundrifleammopackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundrifleammopack.png",
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

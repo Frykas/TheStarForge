@@ -4,7 +4,7 @@
   "maxStack": 1,
   "rarity": "Rare",
   "description": "A silenced pistol, often used by Unbound officers.",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Wisper\" SP",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Whisper\" SP",
   "tooltipKind": "starforge-unboundgun",
   "category": "Silenced Pistol",
   "twoHanded": false,
