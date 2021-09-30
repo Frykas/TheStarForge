@@ -1,0 +1,87 @@
+{
+	"type": "starforge-teskredotexe",
+	"baseType": "outpostvisitor",
+
+	"identity": {
+		"name": "^shadow;^#463E5A;TeSKREdotEXE^reset;",
+		"species": "human",
+		"personalityIdle": "idle.4",
+		"personalityArmIdle": "idle.4",
+		"facialHairType": "",
+		"facialHairGroup": "",
+		"facialHairDirectives": "?replace;fff8b5=420400;fde03f=420400;806319=420400;f6b919=420400;ffffff=FFD900",
+		"hairGroup": "hair",
+		"hairType": "",
+		"bodyDirectives": "?replace;FFE2C5=FFF5E8;FFC181=F8D7B5;D39C6C=D0A57F;C7815B=D0A57F;506464=178800;78A08C=178800;3C5000=167C02;648C78=167C02;503C3C=000;463232=000;645050=000;DC1F00=714F3C;BE1B00=976750;951500=513A2D",
+		"hairDirectives": "?replace=ffffff=FFD900?replace=fff8b5=FF9A00?replace=fde03f=FF5600?replace=f6b919=FF1100",
+		"emoteDirectives": "?replace=ffffff=FFD900",
+		"gender": "male"
+	},
+
+	"damageTeamType": "ghostly",
+
+	"movementParameters": {
+		"walkSpeed": 2.0
+	},
+
+	"scriptConfig": {
+
+		"dialogMode": "tutorial",
+		"dialog": {
+			"converse": {
+				"default": {
+					"default": [
+						"The meme fiend of your nightmares is here, at your service.",
+						"Thanks but it's not a mask, it's actually my face, butthead!",
+						"The name is ^#463E5A;TeSKREdotEXE^reset;. That's a meme name for ^#463E5A;Testament^reset;. Other's call me ^#463E5A;Tesy^reset; or ^#463E5A;Tessu^reset;.",
+						"Why am I here? Well, sometimes ships tend to crash in the most oddist of places...~",
+						"Am I a guy? Am I girl? Hell if I care, everyone loves me or hates me!.",
+						"Hey... pssst... I'M IN YOUR WALLS, I'M IN YOUR WALLS, I'M IN YOUR WALLS-!",
+						"<entityname>^reset;, I miss them a lot...",
+						"^red;IF THERE'S A MAN WHO CAN MAKE ANYTHING! GIVE ME THE TOOLS TO LIVE IN THE PAST!~^reset;",
+						"My skills? If you gotta ask... I make outfits, guns, some bounty hunting. I also work on vehicles and robotics.",
+						"You saw me talking to a pink robot? Her name is Matilda and she's my drone AND SHE IS NOT MY GIRLFRIEND.",
+						"I have a VERY unhealthy obsession with the color red, especially red mechs.",
+						"Membah, red mechs are three times faster!",
+						"^orange;Those who dream of heaven!~^reset;",
+						"I'll be honest, the food here isn't that bad.",
+						"No, I'm related to some other marketed white masked folk. The audacity of some...",
+						"Oh my god! Look at this, the creater of TheStarForge mod died! *They show you a vid on their phone of a brown blob chewing*.",
+						"Swag, does a kickflip.",
+						"I don't have a crush on a moonlizard...",
+						"^green;I'm terrified to see the man in the mirror~^reset;",
+						"This isn't a joke and I do mean this. If anyone you know is suffering from depression or struggling, talk to them for a bit. Every second counts. Trust me.",
+						"I was told I'm not allowed to enter the basement after the pizza pocket incident...",
+						"Yes, I created the Buffalot. No, I won't tell you why.",
+						"You ever had a chopped cheese? Honest to Aggeris, I suggest it.",
+						"No, I don't watch asian cartoons anymore but I suggest .Hack and Cowboy beebop. This mod has no affiliation with those groups either.",
+						"If you couldn't tell, I REALLY love guilty gear.",
+						"Yes, I'm annoying. Thank you, I don't try at all.",
+						"It takes skills to be good as me... it's a shame I suck at everything I do!",
+						"Remember, even trying still counts. To the moon and back, kiddo.",
+						"My age? Old enough to b-",
+						"I'M NOT A FRIGGIN CAT, I'M A DOG AND I'M NOT TSUNDERE EITHER!",
+						"Ever been to a giant space station known as Hollypon? Great times."
+					]
+				}
+			}
+		}
+	},
+
+	"items": {
+		"override": [
+			[0, [{
+
+				"head": [{
+					"name": "starforge-teskrehead"
+				}],
+				"chest": [{
+					"name": "starforge-teskrechest"
+				}],
+				"legs": [{
+					"name": "starforge-teskrelegs"
+				}]
+			}]]
+		]
+	}
+}

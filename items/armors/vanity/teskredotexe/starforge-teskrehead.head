@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-teskrehead",
+  "price" : 0,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "Okay gang let's see what this mask hi- Oh... it's actually Tes's face...",
+  "shortdescription" : "Tes's Face",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }
