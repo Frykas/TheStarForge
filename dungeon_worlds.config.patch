@@ -20,9 +20,9 @@
 	
 	{
 		"op": "add",
-		"path": "/unbdmission1",
+		"path": "/starforge-unbdmission1",
 		"value": {
-			"primaryDungeon" : "unbdmission1",
+			"primaryDungeon" : "starforge-unbdmission1",
             "threatLevel" : 7,
 			"biome" : "starforge-unbdmission1",
             "gravity" : 80,

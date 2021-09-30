@@ -38,10 +38,10 @@
 	
 	{
 		"op": "add",
-		"path": "/unbdmission1",
+		"path": "/starforge-unbdmission1",
 		"value": {
 			"type": "FloatingDungeon",
-			"dungeonWorld": "unbdmission1",
+			"dungeonWorld": "starforge-unbdmission1",
 			"seed": 1234,
 			"spawningEnabled": false,
 			"beamUpRule": "Anywhere",

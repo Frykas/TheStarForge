@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":43,
+ "tilecount":44,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -399,6 +399,16 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"starforge-unboundconsole",
+         "tilesetDirection":"right"
+        },
+     "43":
+        {
+         "\/\/description":"An Unbound tank barrel.",
+         "\/\/name":"starforge-unboundtanktop",
+         "\/\/shortdescription":"Unbound Tank Barrel",
+         "imagePositionX":"-56",
+         "imagePositionY":"4",
+         "object":"starforge-unboundtanktop",
          "tilesetDirection":"right"
         },
      "5":
@@ -834,6 +844,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "43":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "5":
         {
          "\/\/description":"string",
@@ -1115,6 +1135,12 @@
          "imageheight":18,
          "imagewidth":32
         },
+     "43":
+        {
+         "image":"tanktop.png",
+         "imageheight":61,
+         "imagewidth":111
+        },
      "5":
         {
          "image":"unboundcrate.png",
@@ -1146,7 +1172,7 @@
          "imagewidth":32
         }
     },
- "tilewidth":96,
+ "tilewidth":111,
  "type":"tileset",
  "version":1.1
 }
