@@ -11,8 +11,8 @@
 
   "maleFrames" : {
     "body" : "chest.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
+    "backSleeve" : "bsleeves.png",
+    "frontSleeve" : "fsleeves.png"
   },
 
   "femaleFrames" : {

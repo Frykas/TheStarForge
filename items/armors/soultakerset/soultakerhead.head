@@ -8,6 +8,7 @@
   "description" : "Rumors of a lone vagabond stealing the souls of the dead are common in Novakid taverns. ",
   "shortdescription" : "^pink;Mask of the Ghost Digger^reset;",
   "tooltipKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedghostdiggerhead" ],
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",

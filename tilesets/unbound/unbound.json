@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":44,
+ "tilecount":46,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -409,6 +409,26 @@
          "imagePositionX":"-56",
          "imagePositionY":"4",
          "object":"starforge-unboundtanktop",
+         "tilesetDirection":"right"
+        },
+     "44":
+        {
+         "\/\/description":"A sturdy desk used by the Unbound.",
+         "\/\/name":"starforge-unbounddesk",
+         "\/\/shortdescription":"Unbound Desk",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unbounddesk",
+         "tilesetDirection":"right"
+        },
+     "45":
+        {
+         "\/\/description":"A flat screen used by the Unbound",
+         "\/\/name":"starforge-unboundscreen",
+         "\/\/shortdescription":"Unbound Screen",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundscreen",
          "tilesetDirection":"right"
         },
      "5":
@@ -854,6 +874,26 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "44":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "45":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "5":
         {
          "\/\/description":"string",
@@ -1140,6 +1180,18 @@
          "image":"tanktop.png",
          "imageheight":61,
          "imagewidth":111
+        },
+     "44":
+        {
+         "image":"unbounddesk.png",
+         "imageheight":16,
+         "imagewidth":32
+        },
+     "45":
+        {
+         "image":"unboundscreen.png",
+         "imageheight":14,
+         "imagewidth":24
         },
      "5":
         {

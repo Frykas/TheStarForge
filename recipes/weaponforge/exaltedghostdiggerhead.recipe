@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "starforge-exaltingcharge", "count" : 1},
+    { "item" : "starforge-soultakerhead", "count" : 1 },
+	{ "item" : "starforge-etherealgoo", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-exaltedghostdiggerhead",
+    "count" : 1
+  },
+  "groups" : [ "starforge-weaponshop", "armor" ],
+  "duration" : 0
+}

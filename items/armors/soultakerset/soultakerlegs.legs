@@ -8,6 +8,7 @@
   "description" : "During lonely cold nights, some say that they can hear a person crying just outside their house.",
   "shortdescription" : "^pink;Pants of the Ghost Digger^reset;",
   "tooltipKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedghostdiggerpants" ],
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",

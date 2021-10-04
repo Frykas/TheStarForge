@@ -7,6 +7,7 @@
   "description" : "A flat screen used by the Unbound Science Division.",
   "shortdescription" : "Unbound Science Screen",
   "race" : "apex",
+  "printable" : true,
 
   "apexDescription" : "Just your standard lab screen.",
   "avianDescription" : "A cool lab screen.",

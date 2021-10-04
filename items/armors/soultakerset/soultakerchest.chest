@@ -8,6 +8,7 @@
   "description" : "The Ghost Digger is said to roam around small villages waiting to take away those foolish enough to talk to him.",
   "shortdescription" : "^pink;Plate of the Ghost Digger^reset;",
   "tooltipKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedghostdiggerchest" ],
 
   "maleFrames" : {
     "body" : "chest.png",
