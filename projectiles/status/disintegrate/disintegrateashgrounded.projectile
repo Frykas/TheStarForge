@@ -1,7 +1,7 @@
 {
   "projectileName" : "disintegrateashgrounded",
   "image" : "disintegrateashgrounded.png",
-  "physics" : "arrow",
+  "physics" : "starforge-disintegrateash",
   "animationCycle" : 2,
   "frameNumber" : 1,
   "renderLayer" : "Object+1",

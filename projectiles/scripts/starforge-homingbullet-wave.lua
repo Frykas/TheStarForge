@@ -26,7 +26,6 @@ function init()
   --Seting up the sine wave movement
   self.wavePeriod = config.getParameter("wavePeriod") / (2 * math.pi)
   self.waveAmplitude = config.getParameter("waveAmplitude") * (config.getParameter("barrel", 1) % 2 == 1 and -1 or 1)
-  --sb.logInfo("%s and %s", config.getParameter("barrel"), self.waveAmplitude)
 
   self.timer = self.wavePeriod * 0.25
   local vel = mcontroller.velocity()

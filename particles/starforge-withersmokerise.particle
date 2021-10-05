@@ -1,8 +1,8 @@
 {
-  "kind" : "starforge-witherrise",
+  "kind" : "starforge-withersmokerise",
   "definition" : {
     "type" : "textured",
-    "image" : "/animations/starforge-wither/starforge-wither.png",
+    "image" : "/animations/starforge-withersmoke/starforge-withersmoke.png",
     "fade" : 1.0,
     "destructionAction" : "fade",
     "destructionTime" : 1.0,

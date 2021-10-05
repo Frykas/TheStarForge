@@ -1,0 +1,16 @@
+[
+  //WITHERING ROT
+  { "op" : "add",
+	"path" : "/starforge-wither",
+	"value" : {
+	  "resistanceStat" : "poisonResistance",
+	  "damageNumberParticles" : {
+		"hit" : "starforge-witherdamagenumber",
+		"stronghit" : "starforge-witherdamagenumberstrong",
+		"weakhit" : "starforge-witherdamagenumberweak",
+		"shieldhit" : "starforge-witherdamagenumber",
+		"kill" : "starforge-witherdamagenumber"
+	  }
+	}
+  }
+]

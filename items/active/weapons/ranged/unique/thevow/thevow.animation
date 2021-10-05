@@ -34,6 +34,16 @@
           }
         }
       },
+      "flame" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 5,
+            "cycle" : 0.35,
+            "mode" : "loop"
+		  }
+        }
+      },
 	  "firing" : {
         "default" : "off",
         "states" : {
@@ -49,8 +59,27 @@
     },
 
     "parts" : {
+      "flame" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [1, 0.5], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "flame" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
       "middle" : {
         "properties" : {
+          "zLevel" : 1,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>",
           "offset" : [0, 0], // x offset is set dynamically

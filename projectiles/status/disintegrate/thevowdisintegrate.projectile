@@ -4,7 +4,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/unique/starforge-thevow/disintegrate/thevowdisintegrate.config"
+      "file" : "/projectiles/status/disintegrate/thevowdisintegrate.config"
     }
   ],
   "damageType" : "NoDamage",

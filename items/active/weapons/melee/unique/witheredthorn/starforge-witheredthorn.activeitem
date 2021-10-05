@@ -34,7 +34,7 @@
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "starforge-wither",
 
   "aimOffset" : -1.0,
 
@@ -55,7 +55,7 @@
     ],
 	
 	"damageConfig" : {
-      "damageSourceKind" : "spear",
+      "damageSourceKind" : "starforge-wither",
       "knockbackMode" : "aim",
       "statusEffects" : [ "starforge-wither" ],
       "timeout" : 0.25
@@ -63,37 +63,30 @@
     "stepDamageConfig" : [
       {
         "baseDamageFactor" : 0.85,
-		"damageSourceKind" : "spear",
         "knockback" : 10
       },
       {
         "baseDamageFactor" : 0.85,
-		"damageSourceKind" : "spear",
         "knockback" : 10
       },
       {
         "baseDamageFactor" : 0.85,
-		"damageSourceKind" : "spear",
         "knockback" : 10
       },
       {
         "baseDamageFactor" : 1.25,
-		"damageSourceKind" : "spear",
         "knockback" : 15
       },
       {
         "baseDamageFactor" : 0.9,
-		"damageSourceKind" : "spear",
         "knockback" : 12
       },
       {
         "baseDamageFactor" : 0.9,
-		"damageSourceKind" : "spear",
         "knockback" : 12
       },
       {
         "baseDamageFactor" : 1.35,
-		"damageSourceKind" : "spear",
         "knockback" : 20
       }
     ],
