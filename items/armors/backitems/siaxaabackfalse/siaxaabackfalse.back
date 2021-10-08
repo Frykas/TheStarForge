@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-siaxaabackfalse",
+  "price" : 1000,
+  "inventoryIcon" : "siaxaabackfalse.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "backwear",
+  "description" : "A fancy mark used by the people of Siaxaa to show their fate to their goddess.",
+  "shortdescription" : "Mark of Siaxaa",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png"
+
+}

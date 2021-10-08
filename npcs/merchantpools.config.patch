@@ -31,7 +31,8 @@
 			  { "item": { "name": "starforge-marikobackfalse" }, "rarity": 0.5},
 			  { "item": { "name": "starforge-katahelbackfalse" }, "rarity": 0.5},
 			  { "item": { "name": "starforge-sedgebackfalse" }, "rarity": 0.5},
-			  { "item": { "name": "starforge-soultakerbackfalse" }, "rarity": 0.5}
+			  { "item": { "name": "starforge-soultakerbackfalse" }, "rarity": 0.5},
+			  { "item": { "name": "starforge-siaxaabackfalse" }, "rarity": 0.5}
 			] ]					
 		]
 	},

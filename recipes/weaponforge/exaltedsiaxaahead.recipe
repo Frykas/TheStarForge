@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "starforge-exaltingcharge", "count" : 1},
+    { "item" : "starforge-siaxaahead", "count" : 1 },
+	{ "item" : "starforge-luminesilk", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-exaltedsiaxaahead",
+    "count" : 1
+  },
+  "groups" : [ "starforge-weaponshop", "armor" ],
+  "duration" : 0
+}

@@ -1,43 +1,42 @@
 {
-  "itemName" : "starforge-siaxaahead",
-  "price" : 1440,
+  "itemName" : "starforge-exaltedsiaxaahead",
+  "price" : 2260,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headarmour",
   "description" : "Betrayed thousands of years ago by her bloodthirsty brother, Siaxaa was forgotten...",
-  "shortdescription" : "^red;Siaxaa's Crown^reset;",
-  "tooltipKind" : "armor",
-  "learnBlueprintsOnPickup" : [ "starforge-exaltedsiaxaahead" ],
+  "shortdescription" : "^red;Siaxaa's Crown^reset; ^#FFB2B2;^reset;",
+  "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
 
-  "level" : 7,
-  "leveledStatusEffects" : [
+  "level" : 8,
+  "statusEffects" : [
     {
-      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.142857
+      "baseMultiplier" : 2.25
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.31
+      "amount" : 25.2
     },
     {
-      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 8
+      "amount" : 65
     },
     {
       "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 4.14285
+      "amount" : 30
     }
   ],
 
-  "itemTags" : [ "tier7armour" ]
+  "itemTags" : [ "tier8armour" ]
 
 }

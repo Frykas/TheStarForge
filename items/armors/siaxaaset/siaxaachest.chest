@@ -7,6 +7,7 @@
   "category" : "chestarmour",
   "description" : "... And it was thanks to a little crack in her prison that she managed to spread her Truth to her Children...",
   "shortdescription" : "^red;Siaxaa's Truth^reset;",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedsiaxaachest" ],
   "tooltipKind" : "armor",
 
   "maleFrames" : {

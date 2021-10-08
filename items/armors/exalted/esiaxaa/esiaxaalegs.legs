@@ -1,47 +1,46 @@
 {
-  "itemName" : "starforge-exaltedghostdiggerhead",
-  "price" : 2260,
-  "inventoryIcon" : "icons.png:head",
+  "itemName" : "starforge-exaltedsiaxaapants",
+  "price" : 3000,
+  "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "category" : "headarmour",
-  "description" : "Rumors of a lone vagabond stealing the souls of the dead are common in Novakid taverns. ",
-  "shortdescription" : "^pink;Mask of the Ghost Digger^reset; ^#FFB2B2;^reset;",
+  "category" : "legarmour",
+  "description" : "... And to those who learn of her Truth, blessings await.",
+  "shortdescription" : "^red;Siaxaa's Blessing^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
 
-  "maleFrames" : "head.png",
-  "femaleFrames" : "head.png",
-  "mask" : "mask.png",
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
 
   "level" : 8,
-  "statusEffects" : [
+  "leveledStatusEffects" : [
     {
-      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 2.25
+      "baseMultiplier" : 1.1071428
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 25.2
+      "amount" : 0.2
     },
     {
-      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 85
+      "amount" : 6
     },
     {
-      "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 35
+      "amount" : 2
     }
   ],
 
   "itemTags" : [ "tier8armour" ],
   
     "colorOptions" : [
-    // SHITBROWN, DEFAULT
-    { "ffca8a" : "E1C476", "e0975c" : "C18046", "a85636" : "873F35", "6f2919" : "481A27" },
+    // LUMINE, DEFAULT
+    { "ffca8a" : "FFF4DB", "e0975c" : "CCBC9B", "a85636" : "B5A073", "6f2919" : "7F7051" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

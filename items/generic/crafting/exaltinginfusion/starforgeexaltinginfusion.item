@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-exaltinginfusion",
+  "price" : 18000,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "exaltinginfusion.png",
+  "description" : "A fragment of divine power. Used to empower your weapons at the Exalting station.",
+  "shortdescription" : "^#FFB2B2;Exalting Infusion^white;",
+  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
+}

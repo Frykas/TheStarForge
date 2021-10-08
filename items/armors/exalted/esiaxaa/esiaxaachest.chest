@@ -1,47 +1,54 @@
 {
-  "itemName" : "starforge-exaltedghostdiggerhead",
-  "price" : 2260,
-  "inventoryIcon" : "icons.png:head",
+  "itemName" : "starforge-exaltedsiaxaachest",
+  "price" : 4000,
+  "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "category" : "headarmour",
-  "description" : "Rumors of a lone vagabond stealing the souls of the dead are common in Novakid taverns. ",
-  "shortdescription" : "^pink;Mask of the Ghost Digger^reset; ^#FFB2B2;^reset;",
+  "category" : "chestarmour",
+  "description" : "... And it was thanks to a little crack in her prison that she managed to spread her Truth to her Children...",
+  "shortdescription" : "^red;Siaxaa's Truth^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
 
-  "maleFrames" : "head.png",
-  "femaleFrames" : "head.png",
-  "mask" : "mask.png",
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
 
   "level" : 8,
-  "statusEffects" : [
+  "leveledStatusEffects" : [
     {
-      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 2.25
+      "baseMultiplier" : 1.25
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 25.2
+      "amount" : 0.4
     },
     {
-      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 85
+      "amount" : 14.5714
     },
     {
-      "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 35
+      "amount" : 4.5
     }
   ],
-
   "itemTags" : [ "tier8armour" ],
   
     "colorOptions" : [
-    // SHITBROWN, DEFAULT
-    { "ffca8a" : "E1C476", "e0975c" : "C18046", "a85636" : "873F35", "6f2919" : "481A27" },
+    // LUMINE, DEFAULT
+    { "ffca8a" : "FFF4DB", "e0975c" : "CCBC9B", "a85636" : "B5A073", "6f2919" : "7F7051" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

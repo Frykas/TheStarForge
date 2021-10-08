@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaitear", "count" : 1},
+	{ "item" : "starforge-exaltingcharge", "count" : 1},
+	{ "item" : "essence", "count" : 6000}
+  ],
+  "output" : {
+    "item" : "starforge-exaltinginfusion",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "ingredients" ],
+  "duration" : 0
+}
