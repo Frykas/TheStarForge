@@ -1,0 +1,103 @@
+{
+  "name" : "starforge-lightningstorm",
+
+  "particles" : [
+    {
+
+      "density" : 0.05,
+      "autoRotate" : true,
+
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/rain/1.png",
+        "velocity" : [0, -35.5],
+        "approach" : [15, 15],
+        "angularVelocity" : 0,
+        "timeToLive" : 20,
+        "destructionAction" : "Image",
+        "destructionTime" : 0.1,
+        "destructionImage" : "/particles/splash/1.png",
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.05,
+      "autoRotate" : true,
+
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/rain/2.png",
+        "velocity" : [0, -25.5],
+        "approach" : [15, 15],
+        "angularVelocity" : 0,
+        "timeToLive" : 20,
+        "destructionAction" : "Image",
+        "destructionTime" : 0.1,
+        "destructionImage" : "/particles/splash/1.png",
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.05,
+      "autoRotate" : true,
+
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/rain/3.png",
+        "velocity" : [0, -20.5],
+        "approach" : [15, 15],
+        "angularVelocity" : 0,
+        "timeToLive" : 20,
+        "destructionAction" : "Image",
+        "destructionTime" : 0.1,
+        "destructionImage" : "/particles/splash/1.png",
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    }
+  ],
+
+  "projectiles" : [
+    {
+      "projectile" : "lightwater",
+      "parameters" : {
+        "power" : 0
+      },
+      "velocity" : [0, -100],
+      "ratePerX" : 0.1,
+      "spawnAboveRegion" : 30,
+      "spawnHorizontalPad" : 10,
+      "windAffectAmount" : 1
+    },
+    {
+      "projectile" : "shockwavespawner",
+      "parameters" : {
+	    "timeToLive" : 0,
+		"actionOnReap" : [
+		  {
+		    "action" : "projectile",
+		    "type" : "starforge-lightningbolt",
+			"config" : {}
+		  }
+		]
+	  },
+      "velocity" : [0, -100],
+      "ratePerX" : 0.01,
+      "spawnAboveRegion" : 30,
+      "spawnHorizontalPad" : 10,
+      "windAffectAmount" : -0.5
+    }
+  ],
+
+  "statusEffects" : ["wet"],
+
+  "duration" : [40, 100],
+  "maximumWind" : 15.0,
+
+  "weatherNoises" : [ "/sfx/weather/rain_medium.ogg" ]
+}
