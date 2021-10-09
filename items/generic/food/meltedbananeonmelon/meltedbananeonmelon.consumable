@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-bananeonmelon",
+  "rarity" : "rare",
+  "price" : 320,
+  "category" : "preparedFood",
+  "inventoryIcon" : "meltedbananeonmelon.png",
+  "description" : "A Neonmelon with melted banana. Morpheus' favorite!",
+  "shortdescription" : "Bananeonmelon",
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 360
+    },
+    {
+        "effect" : "runboost",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

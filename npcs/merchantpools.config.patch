@@ -32,6 +32,7 @@
 			  { "item": { "name": "starforge-katahelbackfalse" }, "rarity": 0.5},
 			  { "item": { "name": "starforge-sedgebackfalse" }, "rarity": 0.5},
 			  { "item": { "name": "starforge-soultakerbackfalse" }, "rarity": 0.5},
+			  { "item": { "name": "starforge-warmongerbackfalse" }, "rarity": 0.5},
 			  { "item": { "name": "starforge-siaxaabackfalse" }, "rarity": 0.5}
 			] ]					
 		]
@@ -55,6 +56,12 @@
 			  { "item": { "name": "starforge-novalimejelly" }, "rarity": 0.5 },
 			  { "item": { "name": "starforge-erchiusgoop" }, "rarity": 0.5 },
 			  { "item": { "name": "starforge-pinacolada" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-stuffedreefpod" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-creightonmre" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-strawberryseeddonut" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-coralcreepbrochette" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-carnivoredelight" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-bananeonmelon" }, "rarity": 0.5 },
 			  { "item": { "name": "starforge-robotblinfood" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest1" },
 			  { "item": { "name": "starforge-robotblinfood-recipe" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest1" },
 			  { "item": { "name": "starforge-jamsandwich" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest2" },

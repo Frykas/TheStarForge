@@ -1,22 +1,23 @@
 {
-  "itemName" : "starforge-robotblinfood",
+  "itemName" : "starforge-stuffedreefpod",
   "rarity" : "rare",
-  "price" : 365,
+  "price" : 345,
   "category" : "preparedFood",
-  "inventoryIcon" : "robo_blin.png",
-  "description" : "Not to be confused with the sassy and walking variant. Also Rondin's favorite!",
-  "shortdescription" : "Robotblin",
+  "inventoryIcon" : "stuffedreefpod.png",
+  "description" : "A Reefpod stuffed with fish and tomato sauce. Mariko loves it!",
+  "shortdescription" : "Stuffed Reefpod",
   "effects" : [ [
-      {
+    {
         "effect" : "maxhealthscalingboostfood",
-        "duration" : 405
+        "duration" : 360
     },
     {
-        "effect" : "maxenergyscalingboostfood",
-        "duration" : 405
+        "effect" : "runboost",
+        "duration" : 120
     }
   ] ],
-  "foodValue" : 45,
+
+  "foodValue" : 50,
   "tooltipKind" : "food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 1,

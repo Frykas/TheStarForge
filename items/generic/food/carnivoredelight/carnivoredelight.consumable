@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-carnivoredelight",
+  "rarity" : "rare",
+  "price" : 420,
+  "category" : "preparedFood",
+  "inventoryIcon" : "carnivoredelight.png",
+  "description" : "Strelitzia's favorite, a burger but there is only meat!",
+  "shortdescription" : "Carnivore's Delight",
+  "effects" : [ [
+       {
+        "effect" : "foodpoison",
+        "duration" : 30
+      },
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 100,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
