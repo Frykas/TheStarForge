@@ -1,0 +1,16 @@
+{
+  "id" : "starforge-sedgestory1",
+  "species" : "floran",
+  "title" : "^#758468;The Hunter from Elsewhere^reset; - I",
+  "description" : "The tale of the Berserking. ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "sedgecover1.png",
+  "contentPages" : [
+
+"todo"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 8000
+  }
+}

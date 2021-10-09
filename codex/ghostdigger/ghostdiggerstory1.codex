@@ -1,0 +1,16 @@
+{
+  "id" : "starforge-ghostdiggerstory1",
+  "species" : "novakid",
+  "title" : "^pink;Tainted Old Journal^reset; - I",
+  "description" : "A long lost journal. ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "ghostdiggercover.png",
+  "contentPages" : [
+
+"todo"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 8000
+  }
+}

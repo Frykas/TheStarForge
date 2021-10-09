@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-soultakerbacktrue-recipe",
+  "price" : 3500,
+  "inventoryIcon" : "soultakerbacktrueicon.png",
+  "rarity" : "Essential",
+  "category" : "Blueprint",
+  "description" : "Tools used by a Novakid gnawed by loneliness. They are tainted by some sort of ethereal matter.",
+  "recipe" : {"parameters":{},"count":1,"name":"starforge-soultakerbacktrue"},
+  "shortdescription" : "^pink;Ghost Digger's Tools^white;",
+  "tooltipFields" : {"rarityLabel" : "Exalted"}
+}

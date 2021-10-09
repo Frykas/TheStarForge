@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-siaxaastory1-codex", "count" : 1},
+	{ "item" : "starforge-siaxaastory2-codex", "count" : 1},
+	{ "item" : "starforge-siaxaastory3-codex", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-siaxaabacktrue-recipe",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "blueprint" ],
+  "duration" : 2
+}
+

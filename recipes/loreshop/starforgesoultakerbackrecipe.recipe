@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-ghostdiggerstory1-codex", "count" : 1},
+	{ "item" : "starforge-ghostdiggerstory2-codex", "count" : 1},
+	{ "item" : "starforge-ghostdiggerstory3-codex", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-soultakerbacktrue-recipe",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "blueprint" ],
+  "duration" : 2
+}
+

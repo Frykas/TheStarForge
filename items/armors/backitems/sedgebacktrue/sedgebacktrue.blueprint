@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-sedgebacktrue-recipe",
+  "price" : 3500,
+  "inventoryIcon" : "sedgebacktrueicon.png",
+  "rarity" : "Essential",
+  "category" : "Blueprint",
+  "description" : "A quiver holding spears made of a strange mix of bone and other materials.",
+  "recipe" : {"parameters":{},"count":1,"name":"starforge-sedgebacktrue"},
+  "shortdescription" : "^#758468;Berserker's Quiver^white;",
+  "tooltipFields" : {"rarityLabel" : "Exalted"}
+}
