@@ -75,7 +75,7 @@
 
 	"crystalPosition" : [-4, 1],
 
-	"firingDirectives" : "?replace;002F7E=0073D9;003EA8=60A8EA;0071D4=B6DAFA;067DFF=DEEEFD;5898FF=FEFEFE",
+	"firingDirectives" : "?replace;002776=0073D9;104EB8=60A8EA;4ABBFF=B6DAFA;68DFFF=DEEEFD;5898FF=FEFFFF",
 	"fireEmote" : "annoyed",
 
     "beamLength" : 75,
