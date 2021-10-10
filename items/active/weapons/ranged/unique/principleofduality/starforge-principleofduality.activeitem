@@ -10,7 +10,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "base",
   "category" : "Rocket Launcher",
-  "itemTags" : ["weapon","ranged","rocketlauncher"],
+  "itemTags" : ["weapon", "ranged", "rocketlauncher"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/gun.animation",
@@ -18,10 +18,59 @@
     "butt" : "",
     "middle" : "starforge-principleofduality.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    "muzzleFlash" : ""
   },
   "animationCustom" : {
+	"animatedParts" : {
+      "stateTypes" : {
+		"altSwoosh" : {
+		  "default" : "idle",
+		  "states" : {
+			"idle" : {
+			},
+			"fire" : {
+			  "frames" : 3,
+			  "cycle" : 0.08,
+			  "mode" : "transition",
+			  "transition" : "idle"
+			}
+		  }
+		}
+	  },
+	  "parts" : {
+		"altSwoosh" : {
+		  "properties" : {
+			"zLevel" : -3,
+			"centered" : true,
+			"offset" : [-2.875, 1.75],
+			"transformationGroups" : ["muzzle"]
+		  },
+		  "partStates" : {
+			"altSwoosh" : {
+			  "idle" : {
+				"properties" : {
+				  "image" : ""
+				}
+			  },
+			  "fire" : {
+				"properties" : {
+				  "image" : "swoosh/slash.png:<frame>",
+				  "damageArea" : [[-3.75, 1.5], [-1.875, 2.25], [0.75, 2.25], [3, 1.25], [3.75, -0.15], [3.75, -1.675], [3, -2.375], [0, -1.875]]
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	},
     "particleEmitters" : {
+	  "altSwoosh" : {
+        "active" : false,
+        "emissionRate" : 5,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+        "particles" : []
+      },
       "muzzleFlash" : {
         "particles" : [
           { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
@@ -30,7 +79,8 @@
       }
     },
 	"sounds" : {
-      "fire" : [ "/sfx/gun/rocket2.ogg" ]
+      "fire" : [ "/sfx/gun/rocket2.ogg" ],
+	  "altFire" : [ "/sfx/melee/swing_hammer.ogg" ]
     }
   },
 
@@ -87,6 +137,45 @@
       "cooldown" : {
         "duration" : 0.35,
         "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Gun Bash",
+    "scripts" : ["/items/active/weapons/melee/abilities/starforge-meleeslash.lua"],
+    "class" : "StarforgeMeleeSlash",
+
+    "fireTime" : 1.2,
+    "baseDps" : 6.5,
+    "damageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.2,
+        "armRotation" : 75,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -30,
         "weaponRotation" : 3,
         "weaponOffset" : [-0.1, 0],
         "twoHanded" : true,
