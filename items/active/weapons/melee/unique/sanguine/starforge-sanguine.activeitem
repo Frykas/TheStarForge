@@ -24,7 +24,7 @@
 
   "elementalType" : "physical",
 
-   "primaryAbilityType" : "broadswordcombo",
+  "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime" : 0.75,
     "baseDps" : 10,
@@ -242,10 +242,59 @@
     "class" : "StarForgeBloodEmpowerment",
 
     "healthPerSecond" : 25,
+	
+	"minimumHealth" : 30,		//Stop when at this health
 
     "projectileOffset" : [1, 0],
-    "projectileType" : "bonechain1",
-    "baseDamage" : 10.5,
+	"projectileCount" : 5,
+    "projectileType" : "starforge-lightningbolt",
+    "projectileParameters" : {
+	  "timeToLive" : 0.1,
+	  
+	  "minChangeInterval" : 0.01,
+	  "maxChangeInterval" : 0.02,
+	  "minAngle" : 45,
+	  "maxAngle" : 75,
+	  
+	  "damageType" : "damage",
+	  "damageKind" : "broadsword",
+	  "statusEffects" : [],
+	  
+	  "processing" : "?replace;A451C4=D91D14;D29CE7=D91D14",
+	  "periodicActions" : [
+		{
+		  "time" : 0.01,
+		  "repeat" : true,
+		  "action" : "particle",
+		  "rotate" : true,
+		  "specification" : {
+			"type" : "animated",
+			"animation" : "/items/active/weapons/melee/unique/sanguine/lightningtrail/trail.animation",
+			"position" : [-1.25, 0],
+			"layer" : "back",
+			"collidesForeground" : false,
+			"timeToLive" : 2,
+			"destructionTime" : 0.1,
+			"destructionAction" : "fade",
+			"fullbright" : true
+		  }
+		},
+		{
+		  "time" : 0.01,
+		  "repeat" : true,
+		  "action" : "projectile",
+		  "rotate" : true,
+		  "type" : "starforge-trailprojectile",
+		  "config" : {},
+		  "inheritDamageFactor" : 0.025,
+		  "direction" : [0, -1],
+		  "offsetRange" : [0.0, 0.0, 0.0, 0.0]
+		}
+	  ],
+	  
+	  "actionOnReap" : []
+	},
+    "baseDamage" : 5.5,
 
     "cooldownTime" : 1.0,
 
@@ -268,7 +317,7 @@
         "weaponRotation" : 0,
         "twoHanded" : true,
 
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : false
       },
       "fire" : {

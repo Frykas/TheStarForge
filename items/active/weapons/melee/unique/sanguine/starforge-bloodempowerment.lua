@@ -11,7 +11,7 @@ function StarForgeBloodEmpowerment:update(dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
-  if self.active and not status.overConsumeResource("health", self.healthPerSecond * self.dt) then
+  if self.active and (status.resource("health") < self.minimumHealth) and not status.overConsumeResource("health", self.healthPerSecond * self.dt) then
     self.active = false
   end
 
@@ -53,11 +53,14 @@ function StarForgeBloodEmpowerment:fire()
   self.weapon:updateAim()
 
   local position = vec2.add(mcontroller.position(), {self.projectileOffset[1] * mcontroller.facingDirection(), self.projectileOffset[2]})
-  local params = {
-    powerMultiplier = activeItem.ownerPowerMultiplier(),
-    power = self:damageAmount()
-  }
-  world.spawnProjectile(self.projectileType, position, activeItem.ownerEntityId(), self:aimVector(), false, params)
+  local params = self.projectileParameters or {}
+  
+  params.powerMultiplier = activeItem.ownerPowerMultiplier()
+  params.power = self:damageAmount()
+  
+  for i = 1, self.projectileCount do
+    world.spawnProjectile(self.projectileType, position, activeItem.ownerEntityId(), self:aimVector(), false, params)
+  end
 
   animator.playSound("slash")
   status.overConsumeResource("energy", status.resourceMax("energy"))
@@ -73,7 +76,9 @@ function StarForgeBloodEmpowerment:uninit()
 end
 
 function StarForgeBloodEmpowerment:aimVector()
-  return {mcontroller.facingDirection(), 0}
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle)
+  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+  return aimVector
 end
 
 function StarForgeBloodEmpowerment:damageAmount()
