@@ -18,14 +18,19 @@
   "animationParts" : {
     "ring" : "starforge-tearoftheguidinglightring.png",
     "crystal" : "starforge-tearoftheguidinglightcrystal.png",
-	"firingPulse" : "starforge-tearoftheguidinglightbeamcharge.png"
+	"firingPulse" : "starforge-tearoftheguidinglightbeamcharge.png",
+	
+	"shield" : "starforge-beamshield.png"
   },
   "animationCustom" : {
     "sounds" : {
       "fireStart" : [ "/sfx/gun/starforge_tearofperceptionblast1.ogg", "/sfx/gun/starforge_tearofperceptionblast2.ogg" ],
       "fireLoop" : [ "/sfx/gun/starforge_tearofperceptionloop.ogg" ],
       "fireEnd" : [],
-      "beamImpact" : []
+      "beamImpact" : [],
+      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
+	  "shieldHit" : [ "/sfx/melee/shield_block_metal.ogg" ],
+	  "shieldBurst" : [ "/sfx/melee/sword_guard.ogg" ]
     }
   },
   "animationScripts" : ["/items/active/effects/starforge-enhancedchain.lua"],
@@ -42,8 +47,8 @@
     "class" : "StarForgeFloatingBeamFire",
 
     "fireTime" : 0.1,
-    "baseDps" : 6.5,
-    "energyUsage" : 19.5,
+    "baseDps" : 11.5,
+    "energyUsage" : 60.5,
 
     "damageConfig" : {
       "statusEffects" : [ ],
@@ -130,6 +135,52 @@
       },
       "cooldown" : {
         "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"frontArmFrame" : "swim.2",
+		"backArmFrame" : "swim.2",
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Reflector",
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-floatingshield.lua"],
+    "class" : "StarForgeFloatingShield",
+
+    "cooldownTime" : 1.0,
+	"energyUsage" : 55,
+	"knockback" : 12,
+	
+	//Projectile config
+	"blastOnShieldHit" : true,
+	"baseDamage" : 8,
+	"projectileCount" : 3,
+    "blastCooldownTime" : 0.75,
+	"projectileType" : "starforge-tearofperceptionbolt",
+	"projectileParameters" : {
+    },
+	
+	"shieldOffset" : [1, 0],
+
+    "stances" : {
+      "defendwindup" : {
+        "duration" : 0.01,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"frontArmFrame" : "swim.2",
+		"backArmFrame" : "swim.2",
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  "defend" : {
+        "duration" : 0,
         "armRotation" : 0,
         "weaponRotation" : 0,
 		"frontArmFrame" : "swim.2",
