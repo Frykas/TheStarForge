@@ -1,0 +1,40 @@
+{
+  "projectileName" : "starforge-riftstrikefirst",
+  "image" : "starforge-riftstrikefirst.png",
+  "animationCycle" : 0.15,
+  "frameNumber" : 4,
+  "timeToLive" : 0.2,
+  "speed" : 5,
+  "damagePoly" : [ [-40, 0], [-28, -28], [0, -40], [28, -28], [40, 0], [28, 28], [0, 40], [-28, 28] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "fullbright" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  
+  "periodicActions" : [
+    {
+	  "repeat" : false,
+	  "time" : 0,
+      "action" : "sound",
+      "options" : [ 
+	    "/sfx/melee/laser_weapon_swing1.ogg", 
+	    "/sfx/melee/laser_weapon_swing2.ogg", 
+	    "/sfx/melee/laser_weapon_swing3.ogg" 
+	  ]
+    }
+  ],
+  
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "rotate" : true,
+      "type" : "starforge-riftstrikesecond",
+      "inheritDamageFactor" : 1,
+      "angleAdjust" : 180
+    }
+  ],
+  
+  "statusEffects" : [],
+  "damageKind" : "broadsword"
+}

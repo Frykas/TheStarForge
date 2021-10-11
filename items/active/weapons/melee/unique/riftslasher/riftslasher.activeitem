@@ -4,12 +4,12 @@
   "level" : 8,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "An experimental energy blade used by Starva from the Unbound Scientific Division.",
+  "description" : "An experimental energy dagger with functional warp technology.",
   "shortdescription" : "Rift Slasher",
   "tooltipKind" : "base",
-  "category" : "^red;PROTOTYPE, DOES NOT WORK PROPERLY^reset;",
+  "category" : "Dagger",
   "twoHanded" : true,
-  "itemTags" : ["weapon", "melee", "broadsword"],
+  "itemTags" : ["weapon", "melee", "broadsword", "apex", "unbound"],
 
   "inventoryIcon" : "riftslashericon.png",
 
@@ -22,8 +22,7 @@
   "animationCustom" : {
     "sounds" : {
       "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+      "fire2" : [ "/sfx/melee/charge_traildash3.ogg" ]
     }
   },
 
@@ -35,17 +34,124 @@
 
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
-    "fireTime" : 0.66,
+    "scripts" : ["/items/active/weapons/melee/abilities/starforge-warpcombo.lua"],
+	"class" : "StarforgeWarpCombo",
+    "fireTime" : 0.55,
     "baseDps" : 10.5,
+	
+	"stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 0.5,
+        "knockback" : 12.5
+      },
+      {
+        "baseDamageFactor" : 0.25,
+        "knockback" : 10
+      }
+    ],
+	
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [],
+      "knockbackMode" : "facing",
+      "timeout" : 0.11
+    },
+	
+	"comboSteps" : 2,
+    "comboSpeedFactor" : 0.8,
+	
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, -5.0],
+      [0.75, 0.0, 4.25, 5.0]
+    ],
 
     "stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -210,
+        "allowRotate" : false,
+        "twoHanded" : false,
+        "allowFlip" : true,
+		"aimAngle" : 0
+      },
+	  //UPSLASH
       "windup1" : {
-        "duration" : 0.15
+        "duration" : 0.075,
+        "armRotation" : -90,
+        "weaponRotation" : -170,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : -45,
+        "weaponRotation" : -140,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.1,
+        "armRotation" : 55,
+        "weaponRotation" : -125,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.2,
+        "armRotation" : 45,
+        "weaponRotation" : -125,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : false
+      },
+	  //RIFTSTRIKE
+      "windup2" : {
+        "duration" : 0.0,
+        "weaponRotation" : 145,
+        "armRotation" : -45,
+        "aimAngle" : 0,
+        "twoHanded" : true,
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+        "teleport" : true,
+		"hold" : true,
+		
+		"directives" : "flipx?fade=FFFFFFFF=0.15"
+      },
+      "fire2" : {
+        "duration" : 0.325,
+        "weaponRotation" : 145,
+        "armRotation" : -45,
+        "aimAngle" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false,
+		
+		"teleportStatus" : "starforge-teleporteffect",
+		"teleportOffset" : [0, 0],
+		"teleportTarget" : [10, 0],
+		"teleportTolerance" : 3.0,
+		
+		//Slightly marks enemies within forgivenessRange which moves the slash a little
+		"forgivenessRange" : 25,
+		
+		"projectileType" : "starforge-riftstrikefirst",
+		"projectileParameters" : {},
+		"projectileDamage" : 3,
+		
+		"directives" : "flipx"
       }
     }
   },
-
-  "altAbilityType" : "flipslash",
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

@@ -1,0 +1,116 @@
+{
+  "itemName": "starforge-type44gauntlet",
+  "price" : 5000,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "category" : "fistWeapon",
+  "level" : 7,
+  "twoHanded" : false,
+  "tooltipKind" : "fistWeapon",
+  "inventoryIcon" : [
+    {"image" : "type44gauntlet.png:front"},
+    {"image" : "type44gauntletfullbright.png:front"}
+  ],
+  "description" : "An experimental gauntlet made of ancient rock and unbound technology.",
+  "shortdescription" : "Type-44 Gauntlet",
+  "itemTags" : ["weapon", "melee", "fist", "apex", "unbound"],
+
+  "animation" : "type44gauntlet.animation",
+  "animationParts" : {
+    "weapon" : "type44gauntlet.png",
+    "weaponFullbright" : "type44gauntletfullbright.png",
+    "swoosh" : "swoosh/swoosh.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_dagger.ogg" ]
+    }
+  },
+  "scripts" : [
+    "/items/active/weapons/fist/fistweapon.lua"
+  ],
+
+  "needsEdgeTrigger" : true,
+  "edgeTriggerGrace" : 0.1,
+
+  "elementalType" : "physical",
+
+  "comboSteps" : 3,
+  "comboTiming" : [0.2, 0.5],
+  "comboCooldown" : 0.3,
+  "comboFinisherSource" : "/items/active/weapons/melee/unique/type44gauntlet/finisher/type44gauntletfistshot.combofinisher",
+
+  "primaryAbility" : {
+    "scripts" : [ "/items/active/weapons/fist/punch.lua" ],
+    "class" : "Punch",
+
+    "freezeTime" : 0.15,
+    "fireTime" : 0.2,
+    "baseDps" : 6.0,
+    "damageConfig" : {
+      "statusEffects" : [ ],
+      "damageSourceKind" : "fist",
+      "knockback" : [0, 15],
+      "timeoutGroup" : "primary",
+      "timeout" : 0.1
+    },
+    "stances" : {
+      "idle" : {
+        "aimAngle" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 45,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [-0.25, -0.575],
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "run.2",
+        "backArmFrame" : "jump.3"
+      },
+      "windup" : {
+        "duration" : 0.05,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [-0.625, -0.125],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.1",
+        "backArmFrame" : "swim.1"
+      },
+      "windup2" : {
+        "duration" : 0.05,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [-0.75, -0.125],
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swimIdle.1",
+        "backArmFrame" : "swim.1",
+
+        "recoil" : true
+      },
+      "fire" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [0.125, -0.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildfist.lua"
+}

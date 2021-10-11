@@ -80,7 +80,7 @@
           "zLevel" : 0,
           "centered" : true,
           "fullbright" : true,
-          "offset" : [0, 1.875],
+          "offset" : [0, 0.75],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0],
           "damageArea" : [[-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0]]
@@ -95,17 +95,17 @@
             },
             "extend" : {
               "properties" : {
-                "image" : "<partImage>:extend.<frame>?<directives>?<bladeDirectives>"
+                "image" : "<partImage>:extend.<frame>?<directives>?<bladeDirectives>?flipx"
               }
             },
             "active" : {
               "properties" : {
-                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>?flipx"
               }
             },
             "retract" : {
               "properties" : {
-                "image" : "<partImage>:retract.<frame>?<directives>?<bladeDirectives>"
+                "image" : "<partImage>:retract.<frame>?<directives>?<bladeDirectives>?flipx"
               }
             }
           }
@@ -115,8 +115,8 @@
         "properties" : {
           "zLevel" : 1,
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>?<directives>",
-          "offset" : [0, 1.875],
+          "image" : "<partImage><paletteSwaps>?<directives>?flipx",
+          "offset" : [0, 0.75],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0]
         }
@@ -126,8 +126,8 @@
           "zLevel" : 2,
           "centered" : true,
           "fullbright" : true,
-          "image" : "<partImage><paletteSwaps>?<directives>",
-          "offset" : [0, 1.875],
+          "image" : "<partImage><paletteSwaps>?<directives>?flipx",
+          "offset" : [0, 0.75],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0]
         }
@@ -150,23 +150,13 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/broadsword/swoosh/energyswoosh.png:<frame>",
-                "offset" : [0, 2.5],
-                "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
+                "image" : "swoosh/slash.png:<frame>?flipy",
+				"offset" : [-1.25, -2],
+				"damageArea" : [[-3.75, 1.5], [-1.875, 2.25], [0.75, 2.25], [3, 1.25], [3.75, -0.15], [3.75, -1.675], [3, -2.375], [0, -1.875]]
               }
             },
             "fire2" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/broadsword/swoosh2/energyswoosh.png:<frame>",
-                "offset" : [5.0, 1.0],
-                "damageArea" : [[-4, 1], [2.5, 1], [2.5, -2], [-4, -2]]
-              }
-            },
-            "fire3" : {
-              "properties" : {
-                "image" : "/items/active/weapons/melee/broadsword/swoosh3/energyswoosh.png:<frame>",
-                "offset" : [3.5, 0],
-                "damageArea" : [[-4.75, 1.5], [3, 1], [3, -1], [-4.75, -1.5]]
               }
             }
           }
@@ -186,8 +176,6 @@
       "transformationGroups" : ["swoosh"],
       "burstCount" : 4,
       "particles" : [
-        { "particle" : "energyblade"},
-        { "particle" : "energyblade2"}
       ]
     },
     "blade" : {
@@ -196,8 +184,6 @@
       "offsetRegion" : [-0.5, 1.5, 0.5, 4.0],
       "emissionRate" : 5,
       "particles" : [
-        { "particle" : "energyblade"},
-        { "particle" : "energyblade2"}
       ]
     }
   },
@@ -205,7 +191,7 @@
   "lights" : {
     "glow" : {
       "position" : [0, 2.0],
-      "color" : [209, 225, 96],
+      "color" : [104, 110, 45],
       "transformationGroups" : ["weapon"]
     }
   },

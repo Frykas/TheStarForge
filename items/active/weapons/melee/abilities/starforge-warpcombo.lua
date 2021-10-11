@@ -104,7 +104,7 @@ function StarforgeWarpCombo:teleport()
   self.weapon:updateAim()
 
   local oldPosition = mcontroller.position()
-  local targetPosition = vec2.add(oldPosition, {mcontroller.facingDirection() * stance.teleportTarget[1], stance.teleportTarget[2]})
+  local targetPosition = vec2.add(oldPosition, vec2.rotate({mcontroller.facingDirection() * stance.teleportTarget[1], stance.teleportTarget[2]}, self.weapon.aimAngle * mcontroller.facingDirection()))
 
   local groundCollision = world.lineTileCollisionPoint(mcontroller.position(), targetPosition)
   if groundCollision then
@@ -126,8 +126,9 @@ function StarforgeWarpCombo:teleport()
   util.wait(0.25)
   
   if stance.projectileType and targetPosition then
-	local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle)
-	aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+	local angleToTarget = vec2.angle({targetPosition[2] - mcontroller.position()[2], targetPosition[1] - mcontroller.position()[1]})
+	local aimVector = vec2.rotate({0, 1}, -angleToTarget)
+	--aimVector[1] = aimVector[1] * mcontroller.facingDirection()
 	
 	local params = stance.projectileParameters or {}
 	params.power = stance.projectileDamage * config.getParameter("damageLevelMultiplier")
@@ -146,8 +147,8 @@ function StarforgeWarpCombo:teleport()
   
   util.wait(stance.duration, function()
 	--Reset player momentum, prevents fall damage
-	mcontroller.setXVelocity(0,0)
-	mcontroller.setYVelocity(0,0)
+	mcontroller.setXVelocity(0, 0)
+	mcontroller.setYVelocity(0, 0)
 	mcontroller.setPosition(targetPosition)
   end)
   animator.setGlobalTag("stanceDirectives", "")
