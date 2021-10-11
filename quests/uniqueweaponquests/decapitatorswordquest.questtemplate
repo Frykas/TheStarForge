@@ -2,7 +2,7 @@
   "id" : "starforge-decapitatorswordquest",
   "title" : "^orange;Katahel's Legacy",
   "text" : "I found a very old, broken beheading blade in an old ruined castle. Despite being made by Glitches, the weapon was quite complex. I salvaged some core parts of its system. I should bring it to ^orange;Rondin^reset; at the ^green;Thalasso Outpost^reset;, he will definitely be able to make something out of it.",
-  "completionText" : "Wow... That's a blade I haven't seen in a long time. I'm the one who made it years ago for a Glitch Warlord I worked for, but it's a long story, maybe I'll tell you one day. The parts are totaly useless, but I still have the blueprint, take it. ",
+  "completionText" : "Wow... That's a blade I haven't seen in a long time. I'm the one who made it years ago for a Glitch Warlord I worked for, but it's a long story, maybe I'll tell you one day. The parts are totally useless, but I still have the blueprint, take it. ",
   "moneyRange" : [2500, 2500],
   "rewards" : [
     [ [ "starforge-thalassocache", 1 ], [ "starforge-beheader-recipe", 1] ]

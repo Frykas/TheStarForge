@@ -16,16 +16,32 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "maiden.png:<frames>",
-      "direction" : "right",
+      "dualImage" : "maiden.png:<frame>",
+      "direction" : "left",
+	  "flipImages" : false,
 
       "imagePosition" : [-8, 0],
       "frames" : 36,
-      "animationCycle" : 5,
+      "animationCycle" : 5.5,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
-  ]
+  ],
+  
+  "scripts" : [ "/scripts/chattyObject.lua" ],
+  "scriptDelta" : 20,
 
-}
+  "chatOptions" : [
+   "Hello, little one.",
+   "I am Maiden, it is always nice meeting new people.",
+   "No, I am not blind. My eyes are just very sensible to light.",
+   "Captain Mariko help us. Perhaps one day you too shall see the City of Commence.",
+   "We are not Stargazers. We do not worship Kluex. We trust in Siaxaa instead."
+  ],
+
+  "mouthPosition" : [0, 0]
+  
+  }
+
+
