@@ -31,7 +31,7 @@
       "repeat" : false,
       "action" : "projectile",
       "inheritDamageFactor" : 0.0,
-      "type" : "neb-burstring"
+      "type" : "starforge-burstring"
     }
   ],
   "advancedPeriodicActions" : [

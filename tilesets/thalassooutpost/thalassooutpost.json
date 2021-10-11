@@ -16,7 +16,7 @@
  "margin":0,
  "name":"thalassooutpost",
  "spacing":0,
- "tilecount":39,
+ "tilecount":40,
  "tiledversion":"1.4.3",
  "tileheight":151,
  "tileproperties":
@@ -339,6 +339,16 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-pekohouse",
+         "tilesetDirection":"right"
+        },
+     "39":
+        {
+         "\/\/description":"Why is she in your pocket? You monster.",
+         "\/\/name":"starforge-maidennpc",
+         "\/\/shortdescription":"Maiden, Voice of Siaxaa",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-maidennpc",
          "tilesetDirection":"right"
         },
      "4":
@@ -724,6 +734,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "39":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "4":
         {
          "\/\/description":"string",
@@ -984,6 +1004,12 @@
          "image":"pekohouse.png",
          "imageheight":16,
          "imagewidth":32
+        },
+     "39":
+        {
+         "image":"maiden.png",
+         "imageheight":45,
+         "imagewidth":19
         },
      "4":
         {

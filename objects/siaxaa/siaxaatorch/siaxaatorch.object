@@ -1,0 +1,66 @@
+{
+  "objectName" : "starforge-siaxaatorch",
+  "colonyTags" : ["avian","light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 60,
+  "printable" : true,
+
+  "description" : "A crystal levitates above its frame, emitting a calming light.",
+  "shortdescription" : "Siaxaa Torch",
+  "race" : "avian",
+
+  "apexDescription" : "The crystal is floating in place. It appears to be generating the light.",
+  "avianDescription" : "Where more permanent light is required, the Avians use crystals in place of torches. They last many thousands of years.",
+  "floranDescription" : "Calm glowing. Colour of sky.",
+  "glitchDescription" : "Intrigued. This crystal appears to float, generating its own gravitational field and also produces its own light.",
+  "humanDescription" : "The crystal glows but is entirely cold to the touch.",
+  "hylotlDescription" : "Such beautiful technology. How did the Avians learn to harness it?",
+  "novakidDescription" : "This floating shiny rock is glowin' just a like a torch.",
+
+  "statusEffects" : [ ],
+
+  "lightColor" : [16, 78, 184],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.725,
+  "flickerMaxIntensity" : 0.8,
+  "flickerPeriodVariance" : 0,
+  "flickerIntensityVariance" : 0,
+
+  "inventoryIcon" : "siaxaatorchicon.png",
+  "orientations" : [
+    {
+      "image" : "siaxaatorch.png:<frame>",
+      "imagePosition" : [0, 0],
+      
+      "direction" : "left",
+      "flipImages" : true,
+      "animationPosition" : [0, 0],
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "background" ]
+    },
+    {
+      "image" : "siaxaatorch.png:<frame>",
+      "imagePosition" : [0, 0],
+      
+      "direction" : "right",
+      "animationPosition" : [0, 0],
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "animation" : "siaxaatorch.animation",
+  "animationParts" : {
+    "bg" : "siaxaatorch.png",
+    "fg" : "siaxaatorchlit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

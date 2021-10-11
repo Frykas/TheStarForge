@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-siaxaabanner",
+  "colonyTags" : ["misc"],
+  "printable" : true,
+  "rarity" : "Common",
+  "description" : "A pretty banner bearing the symbol of the People of Siaxaa.",
+  "shortdescription" : "Siaxaa Banner",
+  "race" : "avian",
+  "category" : "furniture",
+  "price" : 200,
+
+  "apexDescription" : "The banner representing the people of Siaxaa. It is quite pretty.",
+  "avianDescription" : "I always dreamed of seeing them!",
+  "floranDescription" : "Floran sssee strange colors...",
+  "glitchDescription" : "Impressed. This is one pretty banner.",
+  "humanDescription" : "I didn't know the Avians had such a friendly group.",
+  "hylotlDescription" : "A very elegant banner. It is surprising to see the Avians with such talent and taste.",
+  "novakidDescription" : "Weird banner.",
+
+  "inventoryIcon" : "siaxaabannericon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "siaxaabanner.png",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+
+}
