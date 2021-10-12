@@ -20,6 +20,18 @@
           }
         }
       },
+      "parryShield" : {
+        "default" : "hidden",
+        "states" : {
+          "active" : {
+            "frames" : 4,
+            "cycle" : 0.1,
+            "mode" : "loop"
+          },
+          "hidden" : {
+          }
+        }
+      },
       "fist" : {
         "default" : "visible",
         "states" : {
@@ -32,6 +44,31 @@
     },
 
     "parts" : {
+      "parryShield" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.0, -1.0],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "shieldPoly" : [[-1.5, -1.1], [1.9, -0.25], [1.75, 1.5], [-1.5, 1.3]]
+        },
+
+        "partStates" : {
+          "parryShield" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            },
+            "hidden" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
       "weapon" : {
         "properties" : {
           "transformationGroups" : ["weapon"],
@@ -112,6 +149,8 @@
     }
   },
   "sounds" : {
+    "guard" : [ "/sfx/melee/sword_guard.ogg" ],
+    "parry" : [ "/sfx/melee/sword_parry.ogg" ],
     "fire" : [ ]
   }
 }

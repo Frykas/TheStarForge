@@ -2,7 +2,7 @@
   "itemName": "starforge-type44gauntlet",
   "price" : 5000,
   "maxStack" : 1,
-  "rarity" : "legendary",
+  "rarity" : "Essential",
   "category" : "fistWeapon",
   "level" : 7,
   "twoHanded" : false,
@@ -19,7 +19,8 @@
   "animationParts" : {
     "weapon" : "type44gauntlet.png",
     "weaponFullbright" : "type44gauntletfullbright.png",
-    "swoosh" : "swoosh/swoosh.png"
+    "swoosh" : "swoosh/swoosh.png",
+	"parryShield" : "swoosh/parryshield.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -27,7 +28,7 @@
     }
   },
   "scripts" : [
-    "/items/active/weapons/fist/fistweapon.lua"
+    "/items/active/weapons/fist/starforge-fistweapon.lua"
   ],
 
   "needsEdgeTrigger" : true,
@@ -41,8 +42,8 @@
   "comboFinisherSource" : "/items/active/weapons/melee/unique/type44gauntlet/finisher/type44gauntletfistshot.combofinisher",
 
   "primaryAbility" : {
-    "scripts" : [ "/items/active/weapons/fist/punch.lua" ],
-    "class" : "Punch",
+    "scripts" : [ "/items/active/weapons/fist/starforge-punch.lua" ],
+    "class" : "StarforgePunch",
 
     "freezeTime" : 0.15,
     "fireTime" : 0.2,
@@ -69,7 +70,7 @@
         "backArmFrame" : "jump.3"
       },
       "windup" : {
-        "duration" : 0.05,
+        "duration" : 0.03,
         "armRotation" : 0,
         "weaponRotation" : 0,
         "weaponRotationCenter" : [-1.0, 0.0],
@@ -82,7 +83,7 @@
         "backArmFrame" : "swim.1"
       },
       "windup2" : {
-        "duration" : 0.05,
+        "duration" : 0.03,
         "armRotation" : 0,
         "weaponRotation" : 0,
         "weaponRotationCenter" : [-1.0, 0.0],
@@ -108,6 +109,59 @@
 
         "frontArmFrame" : "rotation",
         "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "scripts" : [ "/items/active/weapons/fist/abilities/starforge-parry.lua" ],
+    "class" : "StarforgeParry",
+
+    "energyUsage" : 0.0,
+    "fireTime" : 0.7,
+    "baseDps" : 6.0,
+	
+    "stances" : {
+      "windup" : {
+        "duration" : 0.015,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [-0.625, -0.125],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.1",
+        "backArmFrame" : "swim.1"
+      },
+      "windup2" : {
+        "duration" : 0.015,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [-0.75, -0.125],
+
+        "allowRotate" : true,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swimIdle.1",
+        "backArmFrame" : "swim.1",
+
+        "recoil" : true
+      },
+      "parry" : {
+        "duration" : 0.2,
+        "armRotation" : 25,
+        "weaponRotation" : 65,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [-0.25, -0.575],
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "run.1",
+        "backArmFrame" : "jump.3"
       }
     }
   },
