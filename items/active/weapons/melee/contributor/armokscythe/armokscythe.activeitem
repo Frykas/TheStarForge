@@ -4,7 +4,7 @@
   "level" : 10,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "This scythe doesn't belong to you!",
+  "description" : "^red;This scythe doesn't belong to you!",
   "shortdescription" : "Armok's Scythe",
   "tooltipKind" : "sword",
   "category" : "broadsword",
