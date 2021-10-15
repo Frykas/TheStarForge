@@ -14,7 +14,7 @@
   "floranDescription" : "Floran not feeling well...",
   "glitchDescription" : "Co2Fus3D. I C4ann0T AN5leSye haE6D ",
   "humanDescription" : "Whatever this is... I was not meant to find it... I feel dizzy...",
-  "hylotlDescription" : "A voice keeps wispering to me... It wants to be freed.",
+  "hylotlDescription" : "A voice keeps whispering to me... It wants to be freed.",
   "novakidDescription" : "Somethin' inside me is tellin' me to run away.",
 
   "inventoryIcon" : "thesealedicon.png",
@@ -35,7 +35,7 @@
     }
    ],
    
-  "soundEffect" : "/sfx/object/thesealed/thesealedsound.ogg",
+  "soundEffect" : "/sfx/object/thesealedsound.ogg",
   "soundEffectRangeMultiplier" : 1.5,
    
   "scripts" : [ "/scripts/chattyObject.lua" ],

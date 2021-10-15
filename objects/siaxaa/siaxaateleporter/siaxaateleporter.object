@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-siaxaafaketeleporter",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A fake teleporter.",
+  "shortdescription" : "Siaxaa Teleporter",
+  "race" : "avian",
+  "category" : "furniture",
+  "price" : 200,
+
+  "apexDescription" : "A teleporter leading to the City of Commence, sadly, I cannot access it.",
+  "avianDescription" : "This leads to the City of Commence! I wonder if Maiden will let me travel there?",
+  "floranDescription" : "Floran want to ssstab big birds...",
+  "glitchDescription" : "Excited. I wonder what lies inside this City.",
+  "humanDescription" : "That's one fancy teleporter. Maiden says the City of Commence lies beyond it.",
+  "hylotlDescription" : "A teleporter leading to the City of Commence, sadly I am not allowed there yet.",
+  "novakidDescription" : "A strange teleporter, the birdfolks sure do surprisin' things.",
+
+  "inventoryIcon" : "siaxaateleportericon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "siaxaateleporter.png",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+
+}

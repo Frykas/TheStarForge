@@ -79,6 +79,11 @@
 	 {
 	  "type" : "starforge-ganransu",
 	  "species" : [ "human" ]
+	 },
+	 
+	 {
+	  "type" : "starforge-teskredotexe",
+	  "species" : [ "human" ]
 	 }
 
   ]

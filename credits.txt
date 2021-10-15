@@ -1,0 +1,41 @@
+-- STARFORGE V.1.0 CREDITS --
+
+Huge thanks to : 
+
+• Nebulox#3969, for being a great friend and providing a lot of help 
+& ideas to the mod. Thanks to you that we have amazing stuff!
+
+• Raiizy#2985, for also being a good friend and helping me with a ton
+of weapon sprites, feedback and ideas.
+
+• Aegonian#2352, for allowing me to use Elithian Races as a stepping 
+stone to learn modding & spriting. Also allowing me to use a few of his
+scripts. 
+
+---General credits :---
+
+• Silver Sokolova#3576, for providing me with scripts and general help
+regarding modding. You helped a lot!
+
+• anomnum#6969, for helping me learn how to use Tiled and a few other things
+
+• Omeruin#8787, for teaching me how to do compatibility patches with
+MPI, as well as helping me with Tiled and doing proofreading on quests & dialogues.
+
+• Ganransu#0385, for doing a lot of proofreading, and for a few food item ideas.
+
+• TeSkreDOTexe#7034, for making the Buffalot, the original sprites of the Unbound drones 
+and giving general feedback.
+
+• Nitrosteel#0002, for making an early sprite that was then used by Nebulox
+to make the Principle of Duality rocket launcher.
+
+---Music credits  :---
+
+• loib#5351, for making the Rumble of the Centurion boss track
+
+• Facebook.com/FoolBoyMedia, for making the SF 1.0 cinematic music "Sky Loop"
+
+• BloodPixelHero, for making "Alien Landing" - used as "Yukai March"
+
+• https://soundcloud.com/dannybamboo, for making "Etude" and "PianoAmbient" used as the city of commence night & day musics.
