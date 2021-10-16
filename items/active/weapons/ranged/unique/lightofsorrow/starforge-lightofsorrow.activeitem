@@ -28,12 +28,12 @@
       "parts" : {
         "weaponFullbright" : {
 		  "properties" : {
-		    "offset" : [0.125, -1.5]
+		    "offset" : [0, -1.5]
 		  }
 		},
 		"charge" : {
 		  "properties" : {
-			"offset" : [0.125, -1.5]
+			"offset" : [0, -1.5]
 		  }
 		}
       }
