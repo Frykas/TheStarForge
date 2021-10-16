@@ -105,7 +105,6 @@
 	  "piercing" : true,
 	  "damageKind" : "broadsword",
 	  "statusEffects" : [],
-	  "emitters" : [],
 	  
 	  "processing" : "?multiply=00000000",
 	  "advancedPeriodicActions" : [

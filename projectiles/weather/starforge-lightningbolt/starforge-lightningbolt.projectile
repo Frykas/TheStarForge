@@ -8,7 +8,6 @@
   "power" : 50,
   "speed" : 150,
   "supportsProcessing" : true,
-  "emitters" : [ "barrierelectric", "electricswoosh" ],
   "actionOnReap" : [
     //EXPLOSION
     {
