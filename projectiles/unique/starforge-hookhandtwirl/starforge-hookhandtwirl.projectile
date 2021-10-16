@@ -1,0 +1,22 @@
+{
+  "projectileName" : "starforge-hookhandtwirl",
+  "image" : "starforge-hookhandtwirl.png",
+  "animationCycle" : 0.35,
+  "frameNumber" : 8,
+  "flippable" : false,
+  "fullbright" : false,
+  "physics" : "sticky",
+  "piercing" : true,
+  "emitters" : [ ],
+  "actionOnReap" : [],
+  "periodicActions" : [],
+  "damagePoly" : [ [-8, 0], [2, 3], [8, 0], [2, -3] ],
+  "damageKind" : "slash",
+
+  "speed" : 25,
+  "timeToLive" : 2.5,
+  "knockback" : 1,
+  "knockbackDirectional" : true,
+  
+  "damageRepeatTimeout" : 0.1
+}

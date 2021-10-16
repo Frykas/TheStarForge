@@ -9,6 +9,14 @@ function StarforgePunch:init()
 
   self.weapon:setStance(self.stances.idle)
 
+  self.flippedStances = sb.jsonMerge(self.stances, {})
+  for _, stance in pairs(self.flippedStances) do
+	stance.armRotation = stance.armRotation * -1
+	if stance.backWeaponOffset then
+	  stance.weaponOffset = stance.backWeaponOffset
+	end
+  end
+
   self.cooldownTimer = self:cooldownTime()
 
   self.freezesLeft = self.freezeLimit
@@ -37,7 +45,12 @@ end
 
 -- used by fist weapon combo system
 function StarforgePunch:startAttack()
-  self:setState(self.windup)
+  local stance = self.stances
+  if self.flipRotationWhenBack and not self.weapon:isFrontHand() then
+	stance = self.flippedStances
+    animator.setGlobalTag("flippedY", "?flipy")
+  end
+  self:setState(self.windup, stance)
 
   if self.weapon.freezesLeft > 0 then
     self.weapon.freezesLeft = self.weapon.freezesLeft - 1
@@ -46,39 +59,40 @@ function StarforgePunch:startAttack()
 end
 
 -- State: windup
-function StarforgePunch:windup()
-  self.weapon:setStance(self.stances.windup)
+function StarforgePunch:windup(stance)
+  self.weapon:setStance(stance.windup)
 
-  util.wait(self.stances.windup.duration)
+  util.wait(stance.windup.duration)
 
-  self:setState(self.windup2)
+  self:setState(self.windup2, stance)
 end
 
 -- State: windup2
-function StarforgePunch:windup2()
-  self.weapon:setStance(self.stances.windup2)
+function StarforgePunch:windup2(stance)
+  self.weapon:setStance(stance.windup2)
 
-  util.wait(self.stances.windup2.duration)
+  util.wait(stance.windup2.duration)
 
-  self:setState(self.fire)
+  self:setState(self.fire, stance)
 end
 
 -- State: fire
-function StarforgePunch:fire()
-  self.weapon:setStance(self.stances.fire)
+function StarforgePunch:fire(stance)
+  self.weapon:setStance(stance.fire)
   self.weapon:updateAim()
 
   animator.setAnimationState("attack", "fire")
   animator.playSound("fire")
 
-  status.addEphemeralEffect("invulnerable", self.stances.fire.duration + 0.1)
+  status.addEphemeralEffect("invulnerable", stance.fire.duration + 0.1)
 
-  util.wait(self.stances.fire.duration, function()
+  util.wait(stance.fire.duration, function()
     local damageArea = partDamageArea("swoosh")
     
     self.weapon:setDamage(self.damageConfig, damageArea, self.fireTime)
   end)
 
+  animator.setGlobalTag("flippedY", "")
   self.cooldownTimer = self:cooldownTime()
 end
 

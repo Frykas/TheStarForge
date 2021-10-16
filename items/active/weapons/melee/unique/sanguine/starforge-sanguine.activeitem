@@ -261,7 +261,7 @@
 	  "statusEffects" : [],
 	  
 	  "processing" : "?replace;A451C4=D91D14;D29CE7=D91D14",
-	  "periodicActions" : [
+	  "advancedPeriodicActions" : [
 		{
 		  "time" : 0.01,
 		  "repeat" : true,
@@ -273,7 +273,7 @@
 			"position" : [-1.25, 0],
 			"layer" : "back",
 			"collidesForeground" : false,
-			"timeToLive" : 2,
+			"timeToLive" : 0.15,
 			"destructionTime" : 0.1,
 			"destructionAction" : "fade",
 			"fullbright" : true

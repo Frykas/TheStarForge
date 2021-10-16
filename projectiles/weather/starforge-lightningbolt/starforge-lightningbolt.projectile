@@ -117,12 +117,12 @@
 	  }
     }
   ],
-  "periodicActions" : [
+  "advancedPeriodicActions" : [
     {
-      "time" : 0.01,
-      "repeat" : true,
-      "action" : "particle",
-      "rotate" : true,
+	  "loopTime" : 0.01,
+	  "action" : "particle",
+	  "rotate" : true,
+	  "terminateOnDeath" : true,
       "specification" : {
 		"type" : "animated",
         "animation" : "/projectiles/weather/starforge-lightningbolt/trail.animation",
@@ -136,7 +136,7 @@
       }
     }
   ],
-  "statusEffects" : ["electrified", "overload"],
+  "statusEffects" : [],
   "lightColor" : [210, 156, 231],
   "damageType" : "NoDamage",
   "damageKind" : "electric",

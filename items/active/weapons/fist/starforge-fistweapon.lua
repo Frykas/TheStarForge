@@ -13,7 +13,9 @@ function init()
   self.primaryAbility = getPrimaryAbility()
   self.weapon:addAbility(self.primaryAbility)
   self.altAbility = getAltAbility()
-  self.weapon:addAbility(self.altAbility)
+  if self.altAbility then
+    self.weapon:addAbility(self.altAbility)
+  end
 
   local comboFinisherConfig = config.getParameter("comboFinisher")
   self.comboFinisher = getAbility("comboFinisher", comboFinisherConfig)
@@ -54,11 +56,7 @@ function update(dt, fireMode, shiftHeld)
   end
   self.lastFireMode = fireMode
 
-  if fireMode ~= "none" then
-    sb.logInfo("Firemode is: %s", fireMode)
-  end
-
-  if activeItem.hand() == "alt" and fireMode == "primary" and activeItem.callOtherHandScript("resetFistCombo") then
+  if self.altAbility and activeItem.hand() == "alt" and fireMode == "primary" and activeItem.callOtherHandScript("resetFistCombo") then
     if self.altAbility:canStartAttack() then
       self.altAbility:startAttack()
     end

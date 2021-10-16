@@ -1,0 +1,122 @@
+{
+  "globalTagDefaults" : {
+    "flippedY" : ""
+  },
+  
+  "animatedParts" : {
+    "stateTypes" : {
+      "attack" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "properties" : {
+              "particleEmittersOff" : ["swoosh"]
+            }
+          },
+          "fire" : {
+            "frames" : 4,
+            "cycle" : 0.074,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "particleEmittersOn" : ["swoosh"]
+            }
+          }
+        }
+      },
+      "fist" : {
+        "default" : "visible",
+        "states" : {
+          "visible" : {
+          },
+          "hidden" : {
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "weapon" : {
+        "properties" : {
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [-1, 0],
+          "centered" : true
+        },
+
+        "partStates" : {
+          "fist" : {
+            "visible" : {
+              "properties" : {
+                "image" : "<partImage>:<hand><flippedY>"
+              }
+            },
+            "hidden" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+      "weaponFullbright" : {
+        "properties" : {
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [-1, 0],
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "fist" : {
+            "visible" : {
+              "properties" : {
+                "image" : "<partImage>:<hand><flippedY>"
+              }
+            },
+            "hidden" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "transformationGroups" : ["weapon","swoosh"],
+          "centered" : true,
+          "offset" : [-0.5, 0.125],
+          "zLevel" : -1
+        },
+
+        "partStates" : {
+          "attack" : {
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>",
+                "damageArea" : [[-1, -1.1], [1.0, -0.6], [1.0, 0.8], [-1, 1.3]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "swoosh" : {
+      "particles" : []
+    }
+  },
+  "sounds" : {
+    "guard" : [ "/sfx/melee/sword_guard.ogg" ],
+    "parry" : [ "/sfx/melee/sword_parry.ogg" ],
+    "fire" : [ ]
+  }
+}
