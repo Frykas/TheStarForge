@@ -16,8 +16,7 @@ function StarforgeLanternChargedShot:init()
   
   self.lastBaseFactor = vec2.norm(mcontroller.velocity())
   
-  self.chargeHasStarted = false
-  self.shouldDischarge = false
+  self.trueFirePosition = self.projectileFirePosition
   
   --Optional animation set-up
   if self.activeAnimation then
@@ -34,11 +33,16 @@ end
 function StarforgeLanternChargedShot:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
   
+  world.debugPoint(vec2.add(mcontroller.position(), activeItem.handPosition(self.trueFirePosition)), "red")
+  
   --Lantern jingle  
   self.graceTime = math.min(math.pi/2, self.graceTime)
   self.graceTime = math.max(0, self.graceTime - self.dt)
   
   local baseFactor = vec2.norm(mcontroller.velocity())
+  if mcontroller.walking() then
+    baseFactor[1] = baseFactor[1] * 0.5
+  end
   local targetRotation = baseFactor[1] * -0.75 * mcontroller.facingDirection()
   
   if self.graceTime > 0 then
@@ -49,7 +53,8 @@ function StarforgeLanternChargedShot:update(dt, fireMode, shiftHeld)
   self.rotationMemory = self.currentRotation
   
   animator.resetTransformationGroup("lantern")
-  animator.rotateTransformationGroup("lantern", self.currentRotation, {-0.125, -0.5})
+  animator.rotateTransformationGroup("lantern", self.currentRotation, self.anchorPoint)
+  self.trueFirePosition = vec2.rotate(self.projectileFirePosition, self.currentRotation - self.weapon.relativeArmRotation)
   
   if mcontroller.running() or mcontroller.walking() then
     self.graceTime = 0
@@ -73,37 +78,30 @@ function StarforgeLanternChargedShot:update(dt, fireMode, shiftHeld)
   --If holding fire, and nothing is holding back the charging process
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
     and not self.weapon.currentAbility
-	and self.cooldownTimer == 0
     and not status.resourceLocked("energy")
 	and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
-    self:setState(self.charge)
+    self.weapon:setStance(self.stances.hold)
+	  
+	if self.cooldownTimer == 0 then
+      self:setState(self.charge)
+    end
   --If the charge was prematurely stopped or interrupted somehow
-  elseif self.chargeHasStarted == true and (self.fireMode ~= (self.activatingFireMode or self.abilitySlot) or world.lineTileCollision(mcontroller.position(), self:firePosition())) then
+  elseif (self.fireMode ~= (self.activatingFireMode or self.abilitySlot) or world.lineTileCollision(mcontroller.position(), self:firePosition())) and self.chargeTimer ~= self.chargeTime then
     animator.stopAllSounds("chargeLoop")
 	animator.setAnimationState("charge", "off")
 	animator.setParticleEmitterActive("chargeparticles", false)
 	self.chargeTimer = self.chargeTime
-  end
-  
-  --Optional animation while firing
-  if self.activeAnimation then
-	if self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.cooldownTimer == 0 and animator.animationState("gun") == "idle" then
-	  animator.setAnimationState("gun", "activate")
-	elseif (self.fireMode ~= (self.activatingFireMode or self.abilitySlot) or self.cooldownTimer > 0) and animator.animationState("gun") == "active" then
-	  animator.setAnimationState("gun", "deactivate")
-	end
+    self:setState(self.cooldown)
   end
 end
 
 function StarforgeLanternChargedShot:charge()
-  self.weapon:setStance(self.stances.charge)
-  
-  self.chargeHasStarted = true
-
   animator.playSound("chargeLoop", -1)
   animator.setAnimationState("charge", "charging")
   animator.setParticleEmitterActive("chargeparticles", true)
+  
+  self.chargeTimer = self.chargeTime
   
   --While charging, but not yet ready, count down the charge timer
   while self.chargeTimer > 0 and self.fireMode == (self.activatingFireMode or self.abilitySlot) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
@@ -125,29 +123,19 @@ function StarforgeLanternChargedShot:charge()
 	self:setState(self.fire)
   --If not charging and charge isn't ready, go to cooldown
   else
-    self.shouldDischarge = true
 	animator.playSound("discharge")
     self:setState(self.cooldown)
   end
 end
 
-function StarforgeLanternChargedShot:fire()
-  self.weapon:setStance(self.stances.fire)
-  
+function StarforgeLanternChargedShot:fire()  
   animator.stopAllSounds("chargeLoop")
   animator.setAnimationState("charge", "off")
   animator.setParticleEmitterActive("chargeparticles", false)
   
-  self.chargeHasStarted = false
-  
   --Fire a projectile and show a muzzleflash, then continue on with this state
   self:fireProjectile()
   self:muzzleFlash()
-  
-  --Optionally play a firing animation
-  if self.singleFireAnimation then
-	animator.setAnimationState("gun", "active")
-  end
   
   --Optionally apply self-damage
   if self.selfDamage then
@@ -159,32 +147,7 @@ function StarforgeLanternChargedShot:fire()
 	})
   end
   
-  if self.recoilKnockbackVelocity then
-	--If not crouching or if crouch does not impact recoil
-	if not (self.crouchStopsRecoil and mcontroller.crouching()) then
-	  local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.recoilKnockbackVelocity)
-	  --If aiming down and not in zero G, reset Y velocity first to allow for breaking of falls
-	  if (self.weapon.aimAngle <= 0 and not mcontroller.zeroG()) then
-		mcontroller.setYVelocity(0)
-	  end
-	  mcontroller.addMomentum(recoilVelocity)
-	  mcontroller.controlJump()
-	--If crouching
-	elseif self.crouchRecoilKnockbackVelocity then
-	  local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.crouchRecoilKnockbackVelocity)
-	  mcontroller.setYVelocity(0)
-	  mcontroller.addMomentum(recoilVelocity)
-	end
-  end
-
-  if self.stances.fire.duration then
-    util.wait(self.stances.fire.duration)
-  end
-
-  self.chargeTimer = self.chargeTime
-  
   self.cooldownTimer = self.cooldownTime
-  self:setState(self.cooldown)
 end
 
 function StarforgeLanternChargedShot:fireProjectile(burstNumber)
@@ -213,7 +176,7 @@ function StarforgeLanternChargedShot:fireProjectile(burstNumber)
 
     projectileId = world.spawnProjectile(
         projectileType,
-        firePosition or self:firePosition(),
+        projectileFirePosition or self:firePosition(),
         activeItem.ownerEntityId(),
         self:aimVector(self.inaccuracy, shotNumber, burstNumber),
         false,
@@ -242,42 +205,24 @@ function StarforgeLanternChargedShot:muzzleFlash()
 end
 
 function StarforgeLanternChargedShot:cooldown()
-  if self.shouldDischarge == true then
-    self.weapon:updateAim()
-	self.weapon:setStance(self.stances.discharge)
-	self.shouldDischarge = false
+  self.weapon:updateAim()
+  self.weapon:setStance(self.stances.discharge)
 	
-	local progress = 0
-    util.wait(self.stances.discharge.duration, function()
-      local from = self.stances.discharge.weaponOffset or {0,0}
-      local to = self.stances.idle.weaponOffset or {0,0}
-      self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+  local progress = 0
+  util.wait(self.stances.discharge.duration, function()
+    local from = self.stances.discharge.weaponOffset or {0,0}
+    local to = self.stances.idle.weaponOffset or {0,0}
+    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
 
-      self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.discharge.weaponRotation, self.stances.idle.weaponRotation))
-      self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.discharge.armRotation, self.stances.idle.armRotation))
+    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.discharge.weaponRotation, self.stances.idle.weaponRotation))
+    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.discharge.armRotation, self.stances.idle.armRotation))
 
-      progress = math.min(1.0, progress + (self.dt / self.stances.discharge.duration))
-    end)
-  else
-    self.weapon:updateAim()
-	self.weapon:setStance(self.stances.cooldown)
-	
-    local progress = 0
-    util.wait(self.stances.cooldown.duration, function()
-      local from = self.stances.cooldown.weaponOffset or {0,0}
-      local to = self.stances.idle.weaponOffset or {0,0}
-      self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-      self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.weaponRotation, self.stances.idle.weaponRotation))
-      self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.armRotation, self.stances.idle.armRotation))
-
-      progress = math.min(1.0, progress + (self.dt / self.stances.cooldown.duration))
-    end)
-  end
+    progress = math.min(1.0, progress + (self.dt / self.stances.discharge.duration))
+  end)
 end
 
 function StarforgeLanternChargedShot:firePosition()
-  return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
+  return vec2.add(mcontroller.position(), activeItem.handPosition(self.trueFirePosition))
 end
 
 function StarforgeLanternChargedShot:aimVector(inaccuracy, shotNumber, burstNumber)
@@ -296,19 +241,11 @@ function StarforgeLanternChargedShot:aimVector(inaccuracy, shotNumber, burstNumb
 end
 
 function StarforgeLanternChargedShot:energyPerShot()
-  if self.fireType == "burst" then
-	return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0) / self.burstCount
-  else
-	return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0)
-  end
+  return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0)
 end
 
 function StarforgeLanternChargedShot:damagePerShot()
-  if self.fireType == "burst" then
-	return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount / self.burstCount
-  else
-	return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
-  end
+  return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
 function StarforgeLanternChargedShot:uninit()
@@ -318,6 +255,5 @@ end
 function StarforgeLanternChargedShot:reset()
   animator.setAnimationState("charge", "off")
   animator.setParticleEmitterActive("chargeparticles", false)
-  self.chargeHasStarted = false
   self.weapon:setStance(self.stances.idle)
 end

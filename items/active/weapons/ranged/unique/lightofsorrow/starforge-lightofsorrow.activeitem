@@ -57,8 +57,8 @@
       }
     },
     "sounds" : {
-      "fire" : [ ],
-      "chargeLoop" : [ ]
+      "fire" : [ "/sfx/gun/starforge-yukaifire.ogg" ],
+      "chargeLoop" : [ "/sfx/gun/starforge-yukaicharge.ogg" ]
     }
   },
 
@@ -73,16 +73,19 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/starforge-lanternchargedshot.lua"],
     "class" : "StarforgeLanternChargedShot",
 
-    "chargeTime" : 0.5,
+    "chargeTime" : 0.7,
     "baseDamage" : 12.0,
     "baseEnergyUsage" : 28,
     "inaccuracy" : 0.075,
 	
 	"allowIndependantAim" : true,
 	
+	"projectileFirePosition" : [0, -1.5],
+	
+	"anchorPoint" : [-0.125, -0.5],
 	"shakeVelocity" : 6,
 	
-	"cooldownTime" : 0.3,
+	"cooldownTime" : 0.4,
 	
 	"selfDamage" : 0.125,
 	"selfDamageSource" : "slash",
@@ -95,11 +98,11 @@
 	  
 	  "minChangeInterval" : 0.0,
 	  "maxChangeInterval" : 0.01,
-	  "minAngle" : -25,
-	  "maxAngle" : 25,
+	  "minAngle" : -20,
+	  "maxAngle" : 20,
   
 	  //Homing
-	  "homingStrength" : 1000, // In angle rotated per second
+	  "homingStrength" : 55, // In angle rotated per second
 	  "searchRadius" : 55,
 	  
 	  "piercing" : true,
@@ -122,7 +125,7 @@
 		}
 	  ],
 	  
-	  "lightColor" : [0, 0, 0],
+	  "lightColor" : [107, 15, 10],
 	  "actionOnReap" : []
 	},
 
@@ -135,7 +138,7 @@
         "allowRotate" : false,
         "allowFlip" : true
       },
-      "charge" : {
+      "hold" : {
         "armRotation" : 45,
         "weaponRotation" : -45,
         "twoHanded" : false,
@@ -143,32 +146,14 @@
         "allowRotate" : false,
         "allowFlip" : true
       },
-      "fire" : {
-        "duration" : 0.3,
-        "armRotation" : 55,
-        "weaponRotation" : -55,
-        "twoHanded" : false,
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      },
-      "cooldown" : {
-        "duration" : 0.25,
-        "armRotation" : 55,
-        "weaponRotation" : -55,
-        "twoHanded" : false,
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      },
       "discharge" : {
         "duration" : 0.25,
-        "armRotation" : 35,
-        "weaponRotation" : -35,
+        "armRotation" : 45,
+        "weaponRotation" : -45,
         "twoHanded" : false,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : true
       }
 	}
   },

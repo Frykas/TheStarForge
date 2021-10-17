@@ -55,7 +55,7 @@ function update(dt)
     })
 
 	for _, target in ipairs(targets) do
-	  if entity.entityInSight(target) and not (world.getProperty("entityinvisible" .. tostring(target)) and not config.getParameter("ignoreInvisibility", false)) then
+	  if entity.entityInSight(target) then
 		local distance = world.distance(world.entityPosition(target), mcontroller.position())
 		local angleToTarget = util.toDegrees(vec2.angle(distance))
 		

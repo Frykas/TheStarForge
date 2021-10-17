@@ -12,6 +12,7 @@
   "supportsProcessing" : true,
   "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
   "emitters" : [],
+  "lightColor" : [107, 15, 10],
   "actionOnReap" : [],
   "periodicActions" : [
     {
@@ -101,5 +102,7 @@
   ],
   "statusEffects" : ["starforge-yukaibleed"],
   "fullbright" : true,
-  "damageKind" : "broadsword"
+  "damageKind" : "broadsword",
+  
+  "persistentAudio" : "/sfx/weapon/sanguine/sanguineidle.ogg"
 }

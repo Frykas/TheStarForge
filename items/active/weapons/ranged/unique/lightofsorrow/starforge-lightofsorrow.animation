@@ -143,7 +143,7 @@
     "muzzleFlash" : {
       "active" : false,
       "position" : [0, 0],
-      "color" : [255, 112, 0]
+      "color" : [175, 20, 15]
     },
     "lantern" : {
       "active" : true,
