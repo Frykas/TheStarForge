@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headarmour",
-  "description" : "You stole a poor overlord's head. You monster!",
+  "description" : "You stole a poor overlord's head. ^red;You monster!^reset;",
   "shortdescription" : "Armok's Helm",
   "tooltipKind" : "armor",
 
