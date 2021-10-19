@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-luciawig",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "common",
+  "category" : "headwear",
+  "description" : "Is it a wig, or is it hair? God knows, how did you even get it anyways?",
+  "shortdescription" : "Lucia's hair",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }
