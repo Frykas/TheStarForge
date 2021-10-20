@@ -1,0 +1,32 @@
+{
+  "objectName" : "starforge-warmongerdroneaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 10000,
+  "printable" : false,
+  "description" : "The label reads, \"An old abandonned drone, carrying blueprints in hopes of them falling into good hands.\"",
+  "shortdescription" : "WRMGR Drone Figurine ^orange;^reset;",
+
+
+  "inventoryIcon" : "warmongerdroneaf.png",
+  "orientations" : [
+    {
+      "image" : "warmongerdroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "warmongerdroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

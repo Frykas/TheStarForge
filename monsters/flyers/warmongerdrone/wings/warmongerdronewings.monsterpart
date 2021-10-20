@@ -1,0 +1,10 @@
+{
+  "name" : "warmongerdronewings",
+  "category" : "warmongerdrone",
+  "type" : "wings",
+
+  "frames" : {
+    "backWings" : "warmongerdronebwing.png",
+    "frontWings" : "warmongerdronefwing.png"
+  }
+}

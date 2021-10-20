@@ -37,8 +37,9 @@
     "florantTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.19, "pool" : "essenceDrop2"},
-        {"weight" : 0.78, "pool" : "sedgearmorDrop"},
+        {"weight" : 0.11, "pool" : "essenceDrop2"},
+		{"weight" : 0.43, "pool" : "sedgestoryDrop"},
+        {"weight" : 0.43, "pool" : "sedgearmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
 		{"weight" : 0.01, "item" : "starforge-florantaf"}
       ],
@@ -52,8 +53,9 @@
     "novalimeTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.19, "pool" : "essenceDrop2"},
-        {"weight" : 0.78, "pool" : "soultakerarmorDrop"},
+        {"weight" : 0.11, "pool" : "essenceDrop2"},
+		{"weight" : 0.43, "pool" : "ghostdiggerstoryDrop"},
+        {"weight" : 0.43, "pool" : "soultakerarmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
 		{"weight" : 0.01, "item" : "starforge-novalimeaf"}
       ],
@@ -82,10 +84,27 @@
      "potlotTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.19, "pool" : "essenceDrop2"},
-        {"weight" : 0.78, "pool" : "siaxaaarmorDrop"},
+        {"weight" : 0.11, "pool" : "essenceDrop2"},
+		{"weight" : 0.43, "pool" : "siaxaastoryDrop"},
+        {"weight" : 0.43, "pool" : "siaxaaarmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
 		{"weight" : 0.01, "item" : "starforge-potlotaf"}
+      ],
+      "poolRounds" : [
+        [0.001, 0],
+        [0.999, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+      "warmongerdroneTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.11, "pool" : "essenceDrop2"},
+		{"weight" : 0.43, "pool" : "warmongerstoryDrop"},
+        {"weight" : 0.43, "pool" : "warmongerarmorDrop"},
+		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
+		{"weight" : 0.01, "item" : "starforge-warmongerdroneaf"}
       ],
       "poolRounds" : [
         [0.001, 0],
@@ -173,6 +192,20 @@
       "allowDuplication" : false
     }]
   ],
+  
+  "warmongerarmorDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-warmongerhead-recipe"},
+        {"weight" : 0.33, "item" : "starforge-warmongerchest-recipe"},
+        {"weight" : 0.33, "item" : "starforge-warmongerpants-recipe"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
       "katahelstoryDrop" : [
     [1, {
       "pool" : [
@@ -193,6 +226,66 @@
         {"weight" : 0.33, "item" : "starforge-marikostory1-codex"},
         {"weight" : 0.33, "item" : "starforge-marikostory2-codex"},
         {"weight" : 0.33, "item" : "starforge-marikostory3-codex"}
+      ],
+      "poolRounds" : [
+        [0.8, 1],
+        [0.2, 2]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+      "warmongerstoryDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-warmongerstory1-codex"},
+        {"weight" : 0.33, "item" : "starforge-warmongerstory2-codex"},
+        {"weight" : 0.33, "item" : "starforge-warmongerstory3-codex"}
+      ],
+      "poolRounds" : [
+        [0.8, 1],
+        [0.2, 2]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+      "siaxaastoryDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-siaxaarstory1-codex"},
+        {"weight" : 0.33, "item" : "starforge-siaxaastory2-codex"},
+        {"weight" : 0.33, "item" : "starforge-siaxaastory3-codex"}
+      ],
+      "poolRounds" : [
+        [0.8, 1],
+        [0.2, 2]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+    "ghostdiggerstoryDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-ghostdiggerstory1-codex"},
+        {"weight" : 0.33, "item" : "starforge-ghostdiggerstory2-codex"},
+        {"weight" : 0.33, "item" : "starforge-ghostdiggerstory3-codex"}
+      ],
+      "poolRounds" : [
+        [0.8, 1],
+        [0.2, 2]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+   "sedgestoryDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-sedgestory1-codex"},
+        {"weight" : 0.33, "item" : "starforge-sedgestory2-codex"},
+        {"weight" : 0.33, "item" : "starforge-sedgestory3-codex"}
       ],
       "poolRounds" : [
         [0.8, 1],
