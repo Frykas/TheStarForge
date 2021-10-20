@@ -302,7 +302,7 @@
 
   "sounds" : {
     "aggroHop" : [  ],
-    "fire" : [ "sfx/projectiles/plasma1.ogg", "sfx/projectiles/plasma2.ogg", "sfx/projectiles/plasma3.ogg" ],
+    "fire" : [ "/sfx/gun/sniper3.ogg" ],
     "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ]
   },
 
