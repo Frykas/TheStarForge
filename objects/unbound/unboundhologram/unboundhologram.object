@@ -1,0 +1,38 @@
+{
+  "objectName" : "starforge-unboundhologram",
+  "colonyTags" : ["apex"],
+  "rarity" : "rare",
+  "printable" : true,
+  "description" : "An Unbound hologram, connected to a Commando unit.",
+  "shortdescription" : "Unbound Hologram",
+  "race" : "Apex",
+  "category" : "decorative",
+  "price" : 1000,
+
+  "apexDescription" : "An Unbound hologram, connected to a Commando unit.",
+  "avianDescription" : "There is a person standing there! Can they see me?",
+  "floranDescription" : "Floran can't ssstab transssparent person... Confusssed...",
+  "glitchDescription" : "Curious. I wonder if the other person is seeing me as I see them?",
+  "humanDescription" : "What a fancy way to communicate. ",
+  "hylotlDescription" : "We Hylotls started to develop similar technology. It is very useful.",
+  "novakidDescription" : "Eh, pretty neatly done.",
+
+  "inventoryIcon" : "unboundhologramicon.png",
+  "orientations" : [
+   {
+      "dualImage" : "unboundvanguardhologram.png:<frame>",
+      "imageLayers" : [ { "image" : "unboundhologram.png:<frame>" }, { "image" : "unboundhologramfullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 5,
+      "animationCycle" : 1.3,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+  
+  }

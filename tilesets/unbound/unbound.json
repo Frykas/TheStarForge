@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":46,
+ "tilecount":51,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -431,6 +431,46 @@
          "object":"starforge-unboundscreen",
          "tilesetDirection":"right"
         },
+     "46":
+        {
+         "\/\/description":"A sturdy Unbound cache, contaning various rewards.",
+         "\/\/name":"starforge-unboundrewardcache1",
+         "\/\/shortdescription":"Unbound Reward Cache",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundrewardcache1",
+         "tilesetDirection":"right"
+        },
+     "47":
+        {
+         "\/\/description":"A sturdy Unbound cache, contaning various rewards.",
+         "\/\/name":"starforge-unboundrewardcache2",
+         "\/\/shortdescription":"Unbound Reward Cache",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundrewardcache2",
+         "tilesetDirection":"right"
+        },
+     "48":
+        {
+         "\/\/description":"A sturdy Unbound cache, contaning various rewards.",
+         "\/\/name":"starforge-unboundrewardcache3",
+         "\/\/shortdescription":"Unbound Reward Cache",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundrewardcache3",
+         "tilesetDirection":"right"
+        },
+     "49":
+        {
+         "\/\/description":"An Unbound hologram, connected to a Commando unit.",
+         "\/\/name":"starforge-unboundhologram",
+         "\/\/shortdescription":"Unbound Hologram",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundhologram",
+         "tilesetDirection":"right"
+        },
      "5":
         {
          "\/\/description":"A regular Unbound crate, reinforced to protect whatever is inside.",
@@ -439,6 +479,16 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"starforge-unboundcrate",
+         "tilesetDirection":"right"
+        },
+     "50":
+        {
+         "\/\/description":"An Unbound hologram, connected to a Vanguardunit.",
+         "\/\/name":"starforge-unboundvanguardhologram",
+         "\/\/shortdescription":"Unbound Hologram",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundvanguardhologram",
          "tilesetDirection":"right"
         },
      "6":
@@ -894,7 +944,57 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "46":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "47":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "48":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "49":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "5":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "50":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -1193,11 +1293,41 @@
          "imageheight":14,
          "imagewidth":24
         },
+     "46":
+        {
+         "image":"unboundrewardcache1.png",
+         "imageheight":20,
+         "imagewidth":50
+        },
+     "47":
+        {
+         "image":"unboundrewardcache2.png",
+         "imageheight":20,
+         "imagewidth":50
+        },
+     "48":
+        {
+         "image":"unboundrewardcache3.png",
+         "imageheight":20,
+         "imagewidth":51
+        },
+     "49":
+        {
+         "image":"unboundhologram.png",
+         "imageheight":40,
+         "imagewidth":16
+        },
      "5":
         {
          "image":"unboundcrate.png",
          "imageheight":16,
          "imagewidth":24
+        },
+     "50":
+        {
+         "image":"unboundvanguardhologram.png",
+         "imageheight":40,
+         "imagewidth":16
         },
      "6":
         {

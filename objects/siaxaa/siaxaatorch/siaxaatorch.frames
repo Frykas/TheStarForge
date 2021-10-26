@@ -4,12 +4,12 @@
     "size" : [6, 11],
     "dimensions" : [5, 1],
     "names" : [
-      [ "default.1", "default.2", "default.3", "default.4", "default" ]
+      [ "default.1", "default.2", "default.3", "default.4", "default.off" ]
     ]
   },
 
   "aliases" : {
-    "default.default" : "default",
-    "default.on" : "default.1"
+    "default.default" : "default.off",
+    "default" : "default.1"
   }
 }
