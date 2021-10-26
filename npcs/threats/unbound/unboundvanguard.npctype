@@ -13,7 +13,7 @@
 	},
  
     "scriptConfig" : {
-	  "bossName" : "Vanguard Primary Target",
+	  "bossName" : "Unbound Vanguard",
 	  
         "dialog": {
             "attack": {
@@ -36,7 +36,7 @@
         }
     },
  
-    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":500}, {"stat":"maxEnergy","amount":150}],
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":500}, {"stat":"maxEnergy","amount":150}, {"stat":"powerMultiplier","amount":1.3}],
 	
     "items": {
         "override": [

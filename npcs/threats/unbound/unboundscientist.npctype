@@ -1,0 +1,54 @@
+{
+    "type": "starforge-unboundscientist",
+    "baseType": "hostile",
+ 
+    "dropPools": ["money"],
+	
+	"identity" : {
+     "species" : "apex"
+	 },
+	
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "You're not supposed to be here!",
+                        "Stop right there!",
+                        "What are you doing here??",
+                        "Backup requested, target approaching!",
+                        "Orders received, target in sight.",
+                        "Target approaching, opening fire!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : [{"stat":"powerMultiplier","amount":1.05}, {"stat":"maxEnergy","amount":150}],
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundscientisthead"
+                }],
+                "chest": [{
+                    "name": "scientistchest"
+                }],
+                "legs": [{
+                    "name": "scientistlegs"
+                }],
+                "primary": [
+                    "starforge-unboundpistol", "starforge-unboundburstpistol", "starforge-unboundsilencedpistol"
+                ]
+            }]]
+        ]
+    }
+}

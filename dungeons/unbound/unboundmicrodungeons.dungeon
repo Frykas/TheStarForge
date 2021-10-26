@@ -1,0 +1,58 @@
+{
+  "metadata" : {
+    "name" : "unboundmicrodungeons",
+    "species" : "apex",
+    "rules" : [
+    ],
+    "anchor" : [ "unboundminilab", "unboundbarack", "unboundcomstation", "unboundstorage", "unboundscouttower", "unboundvanguardpost" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "unboundminilab",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundminilab.json" ]
+    },
+	{
+      "name" : "unboundcomstation",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundcomstation.json" ]
+    },
+	{
+      "name" : "unboundstorage",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundstorage.json" ]
+    },
+	{
+      "name" : "unboundscouttower",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundscouttower.json" ]
+    },
+	{
+      "name" : "unboundvanguardpost",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundvanguardpost.json" ]
+    },
+	{
+      "name" : "unboundbarack",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundbarack.json" ]
+    }
+  ]
+}
