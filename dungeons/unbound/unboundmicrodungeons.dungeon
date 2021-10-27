@@ -4,7 +4,7 @@
     "species" : "apex",
     "rules" : [
     ],
-    "anchor" : [ "unboundminilab", "unboundbarack", "unboundcomstation", "unboundstorage", "unboundscouttower", "unboundvanguardpost" ],
+    "anchor" : [ "unboundminilab", "unboundbarack", "unboundcomstation", "unboundstorage", "unboundscouttower", "unboundvanguardpost", "unboundlab", "unboundbigstorage" ],
     "gravity" : 80,
     "maxRadius" : 1000000,
     "maxParts" : 100,
@@ -20,6 +20,13 @@
       "def" : [ "tmx", "unboundminilab.json" ]
     },
 	{
+      "name" : "unboundlab",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundlab.json" ]
+    },
+	{
       "name" : "unboundcomstation",
       "rules" : [
         [ "maxSpawnCount", [1] ]
@@ -32,6 +39,13 @@
         [ "maxSpawnCount", [1] ]
       ],
       "def" : [ "tmx", "unboundstorage.json" ]
+    },
+	{
+      "name" : "unboundbigstorage",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundbigstorage.json" ]
     },
 	{
       "name" : "unboundscouttower",
