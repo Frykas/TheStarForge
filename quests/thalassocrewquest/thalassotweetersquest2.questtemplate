@@ -23,6 +23,18 @@
         "displayMonsterName" : "Adult Poptop",
         "targetMonster" : "adultpoptop",
         "count" : 1
+      },
+	  {
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Adult Poptop",
+        "targetMonster" : "motherpoptop",
+        "count" : 1
+      },
+	  {
+        "type" : "killMonstersWithWeapon",
+        "displayMonsterName" : "Adult Poptop",
+        "targetMonster" : "albinoadultpoptop",
+        "count" : 1
       }
     ],
 	"turnInDescription" : "Speak to ^green;Tweeters^reset;."

@@ -24,7 +24,9 @@
    "starforge-unboundlore" : [
     [0, {
       "pool" : [
-        {"weight" : 1, "item" : "starforge-apexunboundpropaganda-codex"}
+        {"weight" : 0.33, "item" : "starforge-apexunboundpropaganda-codex"},
+		{"weight" : 0.33, "item" : "starforge-apexunboundmisc2-codex"},
+		{"weight" : 0.33, "item" : "starforge-apexunboundmisc3-codex"}
       ],
 	        "poolRounds" : [
         [1, 1]

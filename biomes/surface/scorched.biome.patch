@@ -97,9 +97,9 @@
       "path" : "/surfacePlaceables/items/-", 
       "value" : {
         "mode" : "floor",
-        "priority" : 10.0,
+        "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+        "distribution" : "/biomes/starforge-microdungeons.config:starforge-microdungeon",
 		
         "type" : "microdungeon",
         "microdungeons" : [ "unboundmicrodungeons" ]

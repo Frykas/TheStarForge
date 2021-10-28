@@ -1,0 +1,22 @@
+{
+  "id" : "starforge-apexunboundmisc2",
+  "species" : "apex",
+  "title" : "Letter to a loved one",
+  "description" : "A letter wrote by an Unbound soldier.",
+  "icon" : "unboundpaper.png",
+  "contentPages" : [
+
+"My Dear, 
+
+It has been 2 months since I joined the Unbound. They treat me well. I am paid, fed and even allowed to sleep in a proper bed. How long has it been since we were treated like this? I understand your concerns, and their methods are more than questionable, but the Unbound only want our good. Please, consider getting in one of their infrastructure for civilians. 
+
+Love you."
+
+
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}
