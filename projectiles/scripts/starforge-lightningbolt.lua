@@ -14,6 +14,8 @@ function init()
   self.originalAngle = util.toDegrees(vec2.angle(mcontroller.velocity()))
   self.cooldownTimer = math.random(self.minChangeInterval * 1000, self.maxChangeInterval * 1000) / 1000
   
+  self.advancedPeriodicActions = config.getParameter("advancedPeriodicActions", {})
+  
   if config.getParameter("randomStartAngle") then
 	if math.random() >= 0.5 then
 	  self.lastAngleUp = true
@@ -25,8 +27,8 @@ end
 
 function update(dt)
   --Advanced Periodic Action
-  for _, action in pairs(config.getParameter("advancedPeriodicActions", {})) do
-    advancedPeriodicActions(action, dt)
+  for _, action in pairs(self.advancedPeriodicActions) do
+    action = advancedPeriodicActions(action, dt, _)
   end
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
@@ -66,7 +68,6 @@ function update(dt)
 		  world.debugLine(mcontroller.position(), vec2.add(mcontroller.position(), vec2.withAngle(util.toRadians(angleToTarget), 2)), "pink")
 		  self.originalAngle = self.originalAngle - (self.homingStrength * dt)
 		end
-		
 		return
 	  end
 	end
@@ -80,7 +81,11 @@ function update(dt)
   mcontroller.setVelocity(newVelocity)
 end
 
-function advancedPeriodicActions(action, dt)
+function advancedPeriodicActions(action, dt, index)
+  if action.action == "projectile" and action.taperTrailParticle then
+	local modifier = 0.625 + (projectile.timeToLive() * 2)
+    action.config.scaleModifier = modifier
+  end
   if action.terminateOnDeath then
 	if action.action == "projectile" then
 	  action.config.timeToLive = projectile.timeToLive()
@@ -105,11 +110,11 @@ function advancedPeriodicActions(action, dt)
 	action.loopTimer = action.loopTimer or 0
 	action.loopTimer = math.max(0, action.loopTimer - dt)
 	if action.loopTimer == 0 then
-	  projectile.processAction(action)
 	  action.loopTimer = action.loopTime
 	  if action.loopTimeVariance then
 	    action.loopTimer = action.loopTimer + (2 * math.random() - 1) * action.loopTimeVariance
 	  end
+	  projectile.processAction(action)
 	end
   else
 	projectile.processAction(action)

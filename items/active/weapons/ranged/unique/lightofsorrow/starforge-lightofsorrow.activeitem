@@ -91,7 +91,7 @@
 	"selfDamageSource" : "slash",
 	
 	"projectileCount" : 4,
-    "projectileType" : "starforge-lightningbolt",
+    "projectileType" : "starforge-sorrowtendril",
     "projectileParameters" : {
 	  "timeToLive" : 0.15,
 	  "bounces" : -1,
