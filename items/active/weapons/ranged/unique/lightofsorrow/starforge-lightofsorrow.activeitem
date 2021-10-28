@@ -91,42 +91,8 @@
 	"selfDamageSource" : "slash",
 	
 	"projectileCount" : 4,
-    "projectileType" : "starforge-lightningbolt",
+    "projectileType" : "starforge-sorrowtendril",
     "projectileParameters" : {
-	  "timeToLive" : 0.15,
-	  "bounces" : -1,
-	  
-	  "minChangeInterval" : 0.0,
-	  "maxChangeInterval" : 0.01,
-	  "minAngle" : -20,
-	  "maxAngle" : 20,
-  
-	  //Homing
-	  "homingStrength" : 55, // In angle rotated per second
-	  "searchRadius" : 55,
-	  
-	  "piercing" : true,
-	  "damageKind" : "broadsword",
-	  "statusEffects" : [],
-	  
-	  "processing" : "?multiply=00000000",
-	  "advancedPeriodicActions" : [
-		{
-		  "loopTime" : 0,
-		  "action" : "projectile",
-		  "rotate" : true,
-		  "beginDestructionOnDeath" : true,
-		  "type" : "starforge-sorrowtrail",
-		  "config" : {
-		  },
-		  "inheritDamageFactor" : 0.25,
-		  "direction" : [0, -1],
-		  "offsetRange" : [0.0, 0.0, 0.0, 0.0]
-		}
-	  ],
-	  
-	  "lightColor" : [107, 15, 10],
-	  "actionOnReap" : []
 	},
 
     "stances" : {

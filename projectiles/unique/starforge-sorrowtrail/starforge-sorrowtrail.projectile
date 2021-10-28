@@ -14,11 +14,9 @@
   "emitters" : [],
   "lightColor" : [107, 15, 10],
   "actionOnReap" : [],
-  "periodicActions" : [
+  "advancedPeriodicActions" : [
     {
       "action" : "particle",
-      "time" : 0,
-      "repeat" : true,
 	  "rotate" : true,
       "specification" :  {
 		"type" : "textured",
@@ -29,14 +27,14 @@
 		"initialVelocity" : [0, 0],
 		"finalVelocity" : [0, 0],
 		"approach" : [0, 0],
-		"position" : [-0.625, -0.625],
+		"position" : [-0.375, -0.375],
 		"timeToLive" : 0.125,
-		"size" : 0.45,
+		"size" : 1,
 		"layer" : "middle",
 		"fullbright" : true,
 		"variance" : {
 		  "size" : 0.15,
-		  "position" : [1.25, 1.25],
+		  "position" : [0.75, 0.75],
 		  "rotation" : 180,
 		  "angularVelocity" : 30
 		},
@@ -45,8 +43,6 @@
     },
     {
       "action" : "particle",
-      "time" : 0,
-      "repeat" : true,
 	  "rotate" : true,
       "specification" :  {
 		"type" : "textured",
@@ -57,42 +53,14 @@
 		"initialVelocity" : [0, 0],
 		"finalVelocity" : [0, 0],
 		"approach" : [0, 0],
-		"position" : [-0.625, -0.625],
+		"position" : [-0.375, -0.375],
 		"timeToLive" : 0.125,
-		"size" : 0.45,
+		"size" : 1,
 		"layer" : "middle",
-		"fullbright" : true,
+		"fullbright" : false,
 		"variance" : {
 		  "size" : 0.15,
-		  "position" : [1.25, 1.25],
-		  "rotation" : 180,
-		  "angularVelocity" : 30
-		},
-		"collidesLiquid" : false
-	  }
-    },
-    {
-      "action" : "particle",
-      "time" : 0,
-      "repeat" : true,
-	  "rotate" : true,
-      "specification" :  {
-		"type" : "textured",
-		"image" : "/animations/starforge-torporcloud/starforge-torporcloud.png",
-		"fade" : 1.0,
-		"destructionAction" : "fade",
-		"destructionTime" : 1.0,
-		"initialVelocity" : [0, 0],
-		"finalVelocity" : [0, 0],
-		"approach" : [0, 0],
-		"position" : [-0.625, -0.625],
-		"timeToLive" : 0.125,
-		"size" : 0.45,
-		"layer" : "middle",
-		"fullbright" : true,
-		"variance" : {
-		  "size" : 0.15,
-		  "position" : [1.25, 1.25],
+		  "position" : [0.75, 0.75],
 		  "rotation" : 180,
 		  "angularVelocity" : 30
 		},
@@ -104,5 +72,6 @@
   "fullbright" : true,
   "damageKind" : "broadsword",
   
-  "persistentAudio" : "/sfx/weapon/sanguine/sanguineidle.ogg"
+  "scripts" : ["/projectiles/scripts/starforge-advancedperiodicactions.lua"],
+  "scriptDelta" : 1
 }
