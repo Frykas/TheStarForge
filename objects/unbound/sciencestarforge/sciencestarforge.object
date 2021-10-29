@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-unboundsciencestarforge",
+  "rarity" : "Essential",
+
+  "printable" : false,
+  "description" : "An Ancient Forge, capable of making anything out of very few materials.",
+  "shortdescription" : "^magenta;Unbound Starforge^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 5000,
+
+  "apexDescription" : "So the Unbound really do have access to Starforges... Explains why they grew so fast.",
+  "avianDescription" : "The Unbound have a Starforge too? Oh no!",
+  "floranDescription" : "Floran confusssed... Why big forge here?",
+  "glitchDescription" : "Distraught. A Starforge in the hands of the Unbound? This can't be good...",
+  "humanDescription" : "So the Unbound has Starforges uh? This is bad news.",
+  "hylotlDescription" : "I can't believe the Unbound tried to tinker with such technology. Fools.",
+  
+  "lightColor" : [102, 102, 204],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "starforgeicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "sciencestarforge.png:<frame>" }, { "image" : "sciencestarforgefullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [-40, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 14,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   }
