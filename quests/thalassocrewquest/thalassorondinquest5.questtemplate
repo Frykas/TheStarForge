@@ -1,0 +1,36 @@
+{
+  "id" : "thalassorondinquest5",
+  "title" : "^green;Going Even Beyond II",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassomission1", "thalassorondinquest4" ],
+  "text" : "Next, we need something called a ^orange;Yukai Pearl^reset;. It is a strange orb found on ^green;Yukai Grounds^reset;, usually on ^green;Lava Planets^reset;. We'll need around 5 of them to continue.",
+  "completionText" : "Great job. So what did you think of those Yukai folks? Pretty scary right? They may be strange, but their pearls can store some insane amount of energy, and we're using them to store the exalted energy.",
+  "moneyRange" : [450, 450],
+  "rewards" : [
+    [ [ "starforge-yukaipearl", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/starforge-main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : {
+	   "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      }
+	 },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "starforge-yukaipearl",
+        "count" : 5,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Meet ^orange;Rondin^reset; at the ^green;Starforge^reset;."
+  }
+}

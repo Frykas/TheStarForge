@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":56,
+ "tilecount":59,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -539,6 +539,36 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-unboundvendingmachine",
+         "tilesetDirection":"right"
+        },
+     "56":
+        {
+         "\/\/description":"An Unbound bed. Looks comfy, it even has a storage compartment under it!",
+         "\/\/name":"starforge-unboundbed",
+         "\/\/shortdescription":"Unbound Bed",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-unboundbed",
+         "tilesetDirection":"right"
+        },
+     "57":
+        {
+         "\/\/description":"Strange flowers, put on an Unbound flower bed.",
+         "\/\/name":"starforge-unboundflowerbed",
+         "\/\/shortdescription":"Unbound Flower Bed",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundflowerbed",
+         "tilesetDirection":"right"
+        },
+     "58":
+        {
+         "\/\/description":"A strange flower pot.",
+         "\/\/name":"\"starforge-unboundflowerpot",
+         "\/\/shortdescription":"Unbound Flower Pot",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundflowerpot",
          "tilesetDirection":"right"
         },
      "6":
@@ -1104,6 +1134,36 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "56":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "57":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "58":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "6":
         {
          "\/\/description":"string",
@@ -1458,6 +1518,24 @@
          "image":"unboundvendingmachine.png",
          "imageheight":36,
          "imagewidth":30
+        },
+     "56":
+        {
+         "image":"unboundbed.png",
+         "imageheight":17,
+         "imagewidth":48
+        },
+     "57":
+        {
+         "image":"unboundflowerbed.png",
+         "imageheight":16,
+         "imagewidth":24
+        },
+     "58":
+        {
+         "image":"unboundflowerpot.png",
+         "imageheight":16,
+         "imagewidth":8
         },
      "6":
         {

@@ -1,0 +1,50 @@
+{
+  //Starforge - Rise of the Unbound mission 1 
+  "unboundmission1-intro" : {
+    "type" : "mission",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/lana.png:<frame>",
+    "text" : "I cleared a path to the facility through the sewers. The Unbound is an Apex faction led by ^orange;Apolleon^reset;, they are all well trained so be on your guard when going through the facility. We're looking for clues on their insanely quick growth. Look all around.",
+    "persistTime" : 5.0
+  },
+  
+    "unboundmission1-theredemption" : {
+    "type" : "mission",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/lana.png:<frame>",
+    "text" : "NO WAY! Is that the Unbound Redemption in the atmosphere? How could they build themselves a fleet so big and so fast?? Change of plans, find the communication console and cut the communication with the fleet!",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission1-cutcom" : {
+    "type" : "mission",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/lana.png:<frame>",
+    "text" : "Ok, the communication console is near, turn it off before they can warn the fleet! The console should be the biggest one, with the ship holograms. We can't afford to be detected now!",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission1-labs" : {
+    "type" : "mission",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/lana.png:<frame>",
+    "text" : "See that white building over there? Unbound science buildings are white with green stripes. This one is probably going deep down the ground, what we're looking for is probably down there. Have a look around.",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission1-starforgediscovery" : {
+    "type" : "mission",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/lana.png:<frame>",
+    "text" : "So that explains it. They have access to a Starforge. And you know what? I bet it's not even the only one. It seems they are making weapons and vehicle parts here, place some explosives on the Starforge, we have to destroy it if we want to slow them down.",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission1-thecenturion" : {
+    "type" : "mission",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/lana.png:<frame>",
+    "text" : "A tank?? They were making tank prototypes here?? You have to DESTROY IT! We can't let it be completed! Imagine all the innocent people who will have to face this!",
+    "persistTime" : 5.0
+  }
+}

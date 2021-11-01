@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-unboundflowerpot",
+  "colonyTags" : ["apex"],
+  "rarity" : "uncommon",
+  "category" : "decorative",
+  "price" : 75,
+  "description" : "A strange flower pot.",
+  "shortdescription" : "Unbound Flower Pot",
+  "race" : "apex",
+
+  "apexDescription" : "Strange to see the Unbound care about stuff like this. I guess even them like to have plants around.",
+  "avianDescription" : "Some pretty flowers!",
+  "floranDescription" : "I sssee hiding spot...",
+  "glitchDescription" : "Surprised. I have never seen those flowers before!.",
+  "humanDescription" : "A flower pot. Surprised to see them with the Unbound.",
+  "hylotlDescription" : "A pretty flower pot.",
+  "novakidDescription" : "A flower pot. Boring.",
+
+
+  "inventoryIcon" : "unboundflowerpoticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundflowerpot.png" ,
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

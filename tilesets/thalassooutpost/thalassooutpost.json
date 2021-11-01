@@ -16,7 +16,7 @@
  "margin":0,
  "name":"thalassooutpost",
  "spacing":0,
- "tilecount":40,
+ "tilecount":41,
  "tiledversion":"1.4.3",
  "tileheight":151,
  "tileproperties":
@@ -359,6 +359,16 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"starforge-layingbook",
+         "tilesetDirection":"right"
+        },
+     "40":
+        {
+         "\/\/description":"A teleporter that leads to the Thalasso Outpost. \n^red;Destroyed when broken.",
+         "\/\/name":"starforge-thalassooutpostteleporter",
+         "\/\/shortdescription":"Thalasso Teleporter",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-thalassooutpostteleporter",
          "tilesetDirection":"right"
         },
      "5":
@@ -754,6 +764,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "40":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "5":
         {
          "\/\/description":"string",
@@ -1016,6 +1036,12 @@
          "image":"layingbook.png",
          "imageheight":8,
          "imagewidth":8
+        },
+     "40":
+        {
+         "image":"thalassooutpostteleporter.png",
+         "imageheight":48,
+         "imagewidth":48
         },
      "5":
         {

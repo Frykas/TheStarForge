@@ -1,0 +1,66 @@
+{
+  "type" : "starforge-morpheusmission1",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Morpheus",
+    "species" : "apex",
+	"facialHairGroup":"beardmale",
+	"facialHairType":"17",
+    "hairGroup" : "hairmale",
+    "hairType" : "1",
+	"facialHairDirectives":"?replace;e0975c=595760;a85636=3f3e43;6f2919=212123",
+	"bodyDirectives":"?replace;e0975c=6f6d85;a85636=525269;6f2919=3e4352?replace;735e3a=787069;d9c189=b6b0ae;f7e7b2=d6cecb;a38d59=978d88",
+	"hairDirectives":"?replace;e0975c=595760;a85636=3f3e43;6f2919=212123",
+	"emoteDirectives":"?replace;e0975c=6f6d85;a85636=525269;6f2919=3e4352?replace;735e3a=787069;d9c189=b6b0ae;f7e7b2=d6cecb;a38d59=978d88",
+    "gender" : "male"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "behavior" : "villager",
+    "turnInQuests" : ["thalassomission1"],
+
+    "dialogMode" : "random",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Good job, <entityname>. We learned a lot today, and that's all thanks to you.",
+            "I'll take care of things from here, you can escape safely using the teleporter.",
+            "To think that they were mass producing weapons and vehicles using a Starforge... That's unbelievable...",
+			"The Centurion prototype... Quite the impressive vehicle if you ask me. Thankfully you destroyed the first prototype, should slow them down.",
+            "I didn't expect the Unbound fleet to appear so suddenly here. This shows the importance of this facility. You hit them hard, good job again.",
+			"You should go now, ^cornflowerblue;Mariko^reset; is waiting for you at the ^green;Thalasso Outpost^reset;.",
+			"Grab the loot and get out of here, I'll clean up behind you."
+          ]
+        }
+      }
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+			    "head": [{
+                    "name": "starforge-morpheushead"
+                }],
+                "chest": [{
+                    "name": "starforge-morpheuschest"
+                }],
+                "legs": [{
+                    "name": "starforge-morpheuspants"
+                }]
+            }]]
+        ]
+    }
+}
