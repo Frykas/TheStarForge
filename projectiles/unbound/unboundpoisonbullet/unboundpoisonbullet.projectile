@@ -10,7 +10,7 @@
   "speed" : 180,
   "supportsProcessing" : true,
 "actionOnReap": [{
-				"file": "/projectiles/explosions/heavybulletexplosion/heavybulletexplosion.config",
+				"file": "/projectiles/explosions/bulletimpact/unbound/starforge-unboundpoisonbulletexplosion.config",
 				"action": "config"
 			},
 			{

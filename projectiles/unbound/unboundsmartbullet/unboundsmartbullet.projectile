@@ -10,7 +10,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundriflebulletexplosion.config"
     }
   ],
   "emitters" : [ "rockettrail" ],

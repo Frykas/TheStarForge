@@ -41,7 +41,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "fireplasma",
+    "projectileType" : "unboundfirebullet",
     "projectileParameters" : {
       "knockback" : 4
     },
