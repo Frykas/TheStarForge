@@ -2,7 +2,7 @@
   "id" : "thalassorondinquest3",
   "title" : "^green;The Hunter",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassorondinquest1", "thalassorondinquest2" ],
-  "text" : "So, have you made something using the Starforge, yet? It's incredibly hard to use, isn't it? I have the blueprint of an old weapon I made a long time ago, using the Starforge. ^orange;Prove yourself to be a worthy hunter^reset;, and it'll be yours.",
+  "text" : "The Starforge is incredibly hard to use, isn't it? I have the blueprint of an old weapon I made a long time ago. How about you go ^orange;hunting loot monsters^reset;? Prove you're worthy of it. ^green;Krythers knows things about Loot Monsters^reset;, he could help you.",
   "completionText" : "So you've slain one uh? Impressive. There you go, the Hunter's Avarice. It took me years to learn how to use a Starforge, using pre-made blueprints is most likely the easiest way for you to use it.",
   "moneyRange" : [1750, 1750],
   "rewards" : [
