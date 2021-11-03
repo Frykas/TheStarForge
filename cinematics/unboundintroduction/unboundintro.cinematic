@@ -1,0 +1,604 @@
+{
+  "muteSfx" : false,
+  "muteMusic" : true,
+  "skippable" : true,
+  "letterbox" : false,
+  "backgroundColor" : [0, 0, 0, 255],
+  "backgroundFadeTime" : 0.5,
+  "panels" : [
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/unboundicon.png:<frame>"
+        }
+      ],
+      "animationFrames" : 10,
+      "keyframes" : [
+        {
+          "timecode" : 0.6,
+          "zoom" : 2,
+          "alpha" : 0,
+          "position" : [479, 450],
+          "frame" : 0
+        },
+        {
+          "timecode" : 1.1,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 450]
+        },
+        {
+          "timecode" : 23,
+          "zoom" : 2,
+          "alpha" : 1,
+		  "frame" : 200,
+          "position" : [479, 450]
+        },
+        {
+          "timecode" : 26.8,
+          "zoom" : 0.5,
+          "alpha" : 0,
+          "frame" : 200,
+          "position" : [479, 450]
+        }
+      ]
+    },
+  {
+      "text" : "THE UNBOUND",
+      "fontSize" : 24,
+      "textPosition" : {
+        "position" : [50, 100],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "zoom" : 500,
+          "alpha" : 1,
+          "textPercentage" : 0,
+          "position" : [350, 300]
+        },
+        {
+          "timecode" : 0.5,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 1.5,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 32.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 37.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    },
+	
+	{
+      "text" : "A new dangerous Apex faction is rising. Led by a man named ^orange;Apolleon^reset;, the Unbound is freeing the Apex from the Miniknog, and is blaming the other races for turning a blind eye toward its actions. They seek revenge.",
+      "fontSize" : 16,
+      "textPosition" : {
+        "position" : [-50, 60],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "zoom" : 500,
+          "alpha" : 1,
+          "textPercentage" : 0,
+          "position" : [350, 300]
+        },
+        {
+          "timecode" : 0.5,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 1.5,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 10.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 11.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    },
+	
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/skyspace.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 11.2,
+          "zoom" : 0.57,
+          "alpha" : 0,
+          "position" : [450, 275]
+        },
+        {
+          "timecode" : 12.3,
+          "zoom" : 0.57,
+          "alpha" : 1,
+          "position" : [450, 275]
+        },
+        {
+          "timecode" : 14.0,
+          "zoom" : 0.57,
+          "alpha" : 1,
+          "position" : [450, 275]
+        },
+        {
+          "timecode" : 15.8,
+          "zoom" : 0.57,
+          "alpha" : 0,
+          "position" : [450, 275]
+        }
+      ]
+    },
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/unboundhand.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 11.5,
+          "zoom" : 1.2,
+          "alpha" : 0,
+          "position" : [480, 300]
+        },
+        {
+          "timecode" : 12.8,
+          "zoom" : 1.2,
+          "alpha" : 0,
+          "position" : [480, 300]
+        },
+        {
+          "timecode" : 13.2,
+          "zoom" : 1.2,
+          "alpha" : 0.1,
+          "position" : [480, 300]
+        },
+        {
+          "timecode" : 16,
+          "zoom" : 1.2,
+          "alpha" : 0,
+          "position" : [480, 300]
+        }
+      ]
+    },
+	
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/retribution.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 11.3,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [750, 320],
+          "frame" : 90
+        },
+        {
+          "timecode" : 12.5,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [700, 320]
+        },
+        {
+          "timecode" : 14.0,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [650, 320]
+        },
+        {
+          "timecode" : 16,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [600, 320]
+        }
+      ]
+    },
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/leviathan.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 11.6,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [700, 260],
+          "frame" : 90
+        },
+        {
+          "timecode" : 12.8,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [650, 260]
+        },
+        {
+          "timecode" : 14.3,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [600, 260]
+        },
+        {
+          "timecode" : 16,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [550, 260]
+        }
+      ]
+    },
+	
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/triumph.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 11.5,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [500, 240],
+          "frame" : 90
+        },
+        {
+          "timecode" : 12.8,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [450, 240]
+        },
+        {
+          "timecode" : 14.2,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [400, 240]
+        },
+        {
+          "timecode" : 16,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [350, 240]
+        }
+      ]
+    },
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/fighters.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 11.5,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [750, 210],
+          "frame" : 90
+        },
+        {
+          "timecode" : 12.8,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [700, 210]
+        },
+        {
+          "timecode" : 14.2,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [650, 210]
+        },
+        {
+          "timecode" : 16,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [600, 210]
+        }
+      ]
+    },
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/fighters.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 11.5,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [450, 210],
+          "frame" : 90
+        },
+        {
+          "timecode" : 12.8,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [400, 210]
+        },
+        {
+          "timecode" : 14.2,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [350, 210]
+        },
+        {
+          "timecode" : 16,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [300, 210]
+        }
+      ]
+    },
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/fighters.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 11.5,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [550, 330],
+          "frame" : 90
+        },
+        {
+          "timecode" : 12.8,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [500, 330]
+        },
+        {
+          "timecode" : 14.2,
+          "zoom" : 0.8,
+          "alpha" : 1,
+          "position" : [450, 330]
+        },
+        {
+          "timecode" : 16,
+          "zoom" : 0.8,
+          "alpha" : 0,
+          "position" : [400, 330]
+        }
+      ]
+    },
+	
+	{
+      "text" : "With each day, they are growing stronger and stronger. Seeking the mysterious \"^violet;Godforge^reset;\", they are exploring the galaxy searching for Ancient technology, and would not hesitate to steal or kill for any clue about it.",
+      "fontSize" : 16,
+      "textPosition" : {
+        "position" : [-50, 60],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 16.0,
+          "zoom" : 500,
+          "alpha" : 0,
+          "textPercentage" : 0,
+          "position" : [350, 300]
+        },
+        {
+          "timecode" : 16.3,
+		  "alpha" : 1,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 16.5,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 23.0,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 26.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    },
+	
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/morpheusshadow.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 23.0,
+          "zoom" : 1.5,
+          "alpha" : 0,
+          "textPercentage" : 0,
+          "position" : [470, 230]
+        },
+        {
+          "timecode" : 23.5,
+		  "alpha" : 0
+        },
+        {
+          "timecode" : 26.8,
+          "alpha" : 0
+        },
+        {
+          "timecode" : 32.9,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 35.3,
+          "alpha" : 0
+        }
+      ]
+    },
+	
+	{
+      "drawables" : [
+        {
+          "image" : "/cinematics/unboundintroduction/morpheus.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 23.0,
+          "zoom" : 0.7,
+          "alpha" : 0,
+          "textPercentage" : 0,
+          "position" : [470, 260]
+        },
+        {
+          "timecode" : 23.5,
+		  "alpha" : 0
+        },
+        {
+          "timecode" : 26.8,
+          "alpha" : 0
+        },
+        {
+          "timecode" : 32.9,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 35.3,
+          "alpha" : 0
+        }
+      ]
+    },
+	
+	
+	{
+      "text" : "Your mission today is to infiltrate one of their facilities, discover how they're expanding so fast, and escape with as much information about them as possible. Good luck friend.",
+      "fontSize" : 16,
+      "textPosition" : {
+        "position" : [-50, -100],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 26.0,
+          "zoom" : 500,
+          "alpha" : 0,
+          "textPercentage" : 0,
+          "position" : [350, 300]
+        },
+        {
+          "timecode" : 23.5,
+		  "alpha" : 1,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 23.8,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 32.9,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 35.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    },
+	
+	{
+      "text" : "THE RISE OF",
+      "fontSize" : 24,
+      "textPosition" : {
+        "position" : [55, 125],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 26.0,
+          "zoom" : 500,
+          "alpha" : 0,
+          "textPercentage" : 0,
+          "position" : [350, 300]
+        },
+        {
+          "timecode" : 26.5,
+		  "alpha" : 1,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 26.8,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 32.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 37.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    }
+  ],
+  
+  "audio" : [
+    {
+      "timecode" : 11.3,
+      "resource" : "/sfx/others/theretribution.ogg"
+    },
+	{
+      "timecode" : 1.5,
+      "endTimecode" : 10.0,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+	{
+      "timecode" : 16.5,
+      "endTimecode" : 22.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+	{
+      "timecode" : 26.0,
+      "endTimecode" : 32.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    }
+  ]
+}

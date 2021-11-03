@@ -4,7 +4,7 @@
   "price" : 350,
   "category" : "preparedFood",
   "inventoryIcon" : "coralcreepbrochette.png",
-  "description" : "A mix of cooked and raw coralcreeps, on a brochette. Krythers love it!",
+  "description" : "A mix of cooked and raw coralcreeps, on a brochette. Krythers loves it!",
   "shortdescription" : "Coralcreep Brochette",
   "effects" : [ [
     {

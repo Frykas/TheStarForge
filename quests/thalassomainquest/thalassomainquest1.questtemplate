@@ -8,7 +8,8 @@
   "rewards" : [
     [ [ "starforge-thecenturion-recipe", 1 ] ]
   ],
-
+  "canBeAbandoned" : false,
+  
   "updateDelta" : 10,
   "script" : "/quests/scripts/main.lua",
   "scriptConfig" : {
@@ -29,10 +30,10 @@
     "goalTrigger" : "proximity",
     "proximityRange" : 5,
 
-    "goalEntityUid" : "starforge-thalassooutpostteleporter",
+    "goalEntityUid" : "starforge-unboundrewardcache1",
     "indicateGoal" : false,
     "trackGoalEntity" : false,
 
-    "turnInEntityUid" : "starforge-morpheusmission1"
+    "turnInEntityUid" : "starforge-mariko"
   }
 }

@@ -157,13 +157,14 @@
 ],
   "unboundTankBossTreasure" : [
     [1, {
-      "pool" : [
+      "fill" : [
         {"weight" : 0.7, "pool" : "money"},
+		{"weight" : 1, "item" : "starforge-unboundcenturion-codex"},
         {"weight" : 1, "item" : ["essence", 750]}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.20, 2],
+        [0.80, 2]
       ],
       "allowDuplication" : false
     }]
