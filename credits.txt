@@ -12,10 +12,14 @@ of weapon sprites, feedback and ideas.
 stone to learn modding & spriting. Also allowing me to use a few of his
 scripts. 
 
+• Omega#9191, for making the Unbound Centurion & mech sprites !
+
 ---General credits :---
 
 • Silver Sokolova#3576, for providing me with scripts and general help
 regarding modding. You helped a lot!
+
+• Inferus#9279, for making awesome projectiel VFX & cleaning the object files
 
 • anomnum#6969, for helping me learn how to use Tiled and a few other things
 

@@ -74,7 +74,7 @@
           "alpha" : 1
         },
         {
-          "timecode" : 37.3,
+          "timecode" : 39.3,
           "textPercentage" : 1,
           "alpha" : 0
         }
@@ -149,39 +149,6 @@
           "zoom" : 0.57,
           "alpha" : 0,
           "position" : [450, 275]
-        }
-      ]
-    },
-	{
-      "drawables" : [
-        {
-          "image" : "/cinematics/unboundintroduction/unboundhand.png"
-        }
-      ],
-      "keyframes" : [
-        {
-          "timecode" : 11.5,
-          "zoom" : 1.2,
-          "alpha" : 0,
-          "position" : [480, 300]
-        },
-        {
-          "timecode" : 12.8,
-          "zoom" : 1.2,
-          "alpha" : 0,
-          "position" : [480, 300]
-        },
-        {
-          "timecode" : 13.2,
-          "zoom" : 1.2,
-          "alpha" : 0.1,
-          "position" : [480, 300]
-        },
-        {
-          "timecode" : 16,
-          "zoom" : 1.2,
-          "alpha" : 0,
-          "position" : [480, 300]
         }
       ]
     },
@@ -458,7 +425,7 @@
           "alpha" : 1
         },
         {
-          "timecode" : 35.3,
+          "timecode" : 37.3,
           "alpha" : 0
         }
       ]
@@ -491,7 +458,7 @@
           "alpha" : 1
         },
         {
-          "timecode" : 35.3,
+          "timecode" : 37.3,
           "alpha" : 0
         }
       ]
@@ -499,7 +466,7 @@
 	
 	
 	{
-      "text" : "Your mission today is to infiltrate one of their facilities, discover how they're expanding so fast, and escape with as much information about them as possible. Good luck friend.",
+      "text" : "We need your help, friend. If we stand by and do nothing, a lot of people could lose their lives. I infiltrated the Unbound before, and while I don't know what they're planning exactly, I know what they're capable of. Will you help us?",
       "fontSize" : 16,
       "textPosition" : {
         "position" : [-50, -100],
@@ -530,7 +497,7 @@
           "alpha" : 1
         },
         {
-          "timecode" : 35.3,
+          "timecode" : 37.3,
           "textPercentage" : 1,
           "alpha" : 0
         }
@@ -569,7 +536,45 @@
           "alpha" : 1
         },
         {
-          "timecode" : 37.3,
+          "timecode" : 39.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    },
+	{
+      "text" : "CHAPTER I",
+      "fontSize" : 20,
+      "textPosition" : {
+        "position" : [75, 70],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 26.0,
+          "zoom" : 500,
+          "alpha" : 0,
+          "textPercentage" : 0,
+          "position" : [350, 300]
+        },
+        {
+          "timecode" : 26.5,
+		  "alpha" : 1,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 26.8,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 32.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 39.3,
           "textPercentage" : 1,
           "alpha" : 0
         }

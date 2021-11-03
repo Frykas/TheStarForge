@@ -159,7 +159,7 @@
     [1, {
       "fill" : [
         {"weight" : 0.7, "pool" : "money"},
-		{"weight" : 1, "item" : "starforge-unboundcenturion-codex"},
+		{"weight" : 1, "item" : "starforge-apexunboundcenturion-codex"},
         {"weight" : 1, "item" : ["essence", 750]}
       ],
       "poolRounds" : [
