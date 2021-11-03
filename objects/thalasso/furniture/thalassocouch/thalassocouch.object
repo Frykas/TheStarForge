@@ -22,7 +22,7 @@
   "orientations" : [
     {
       "imageLayers" : [{"image" : "thalassocouch.png:<color>"}, { "image" : "thalassocouchfullbright.png:<color>", "fullbright" : true } ],
-      "sitCoverImage" : "/objects/thalasso/thalassocouch/thalassocouchcover.png",
+      "sitCoverImage" : "/objects/thalasso/furniture/thalassocouch/thalassocouchcover.png",
       "imagePosition" : [-16, 0],
       "direction" : "left",
       "flipImages" : true,
@@ -38,7 +38,7 @@
     },
     {
       "imageLayers" : [{"image" : "thalassocouch.png:<color>"}, { "image" : "thalassocouchfullbright.png:<color>", "fullbright" : true } ],
-      "sitCoverImage" : "/objects/thalasso/thalassocouch/thalassocouchcover.png",
+      "sitCoverImage" : "/objects/thalasso/furniture/thalassocouch/thalassocouchcover.png",
       "imagePosition" : [-16, 0],
       "direction" : "right",
 

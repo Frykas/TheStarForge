@@ -30,7 +30,7 @@
     {
       "image" : "thalassobeds.png:<color>",
 	  "imageLayers" : [ { "image" : "thalassobeds.png" }, { "image" : "thalassobedsfullbright.png", "fullbright" : true } ],
-      "sitCoverImage" : "/objects/thalasso/thalassobeds/thalassobedscover.png",
+      "sitCoverImage" : "/objects/thalasso/furniture/thalassobeds/thalassobedscover.png",
       "flipImages" : true,
       "imagePosition" : [-24, 0],
       "spaceScan" : 0.1,
@@ -41,7 +41,7 @@
     {
       "image" : "starforge-thalassobeds.png:<color>",
 	  "imageLayers" : [ { "image" : "thalassobeds.png" }, { "image" : "thalassobedsfullbright.png", "fullbright" : true } ],
-      "sitCoverImage" : "/objects/thalasso/thalassobeds/thalassobedscover.png",
+      "sitCoverImage" : "/objects/thalasso/furniture/thalassobeds/thalassobedscover.png",
       "imagePosition" : [-24, 0],
       "spaceScan" : 0.1,
       "anchors" : [],

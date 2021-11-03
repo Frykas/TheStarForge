@@ -13,7 +13,7 @@
   "sitPosition" : [-10, 11],
   "sitOrientation" : "lay",
   "sitAngle" : 90,
-  "sitCoverImage" : "/objects/thalasso/marikobed/marikobedcover.png",
+  "sitCoverImage" : "/objects/thalasso/furniture/marikobed/marikobedcover.png",
   "sitEmote" : "sleep",
   "sitStatusEffects" : [
     "bed1"
