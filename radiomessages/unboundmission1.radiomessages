@@ -8,11 +8,11 @@
     "persistTime" : 5.0
   },
   
-    "unboundmission1-theredemption" : {
+    "unboundmission1-theretribution" : {
     "type" : "mission",
     "senderName" : "Morpheus",
     "portraitImage" : "/interface/chatbubbles/morpheussurprised.png:<frame>",
-    "text" : "NO WAY! Is that the Unbound Redemption in the atmosphere? How could they build themselves a fleet so big and so fast?? Change of plans, find the communication console and cut the communication with the fleet!",
+    "text" : "NO WAY! Is that the Unbound Retribution in the atmosphere? How could they build themselves a fleet so big and so fast?? Change of plans, find the communication console and cut the communication with the fleet!",
     "persistTime" : 5.0
   },
   

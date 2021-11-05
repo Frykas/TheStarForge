@@ -1,7 +1,8 @@
 {
   "id" : "thalassomission1",
+  "mainQuest" : true,
   "prerequisites" : [ "thalassointromission3" ],
-  "title" : "^#b4f5c3;Rise of the Unbound I",
+  "title" : "^#b4f5c3;Rise of the Unbound ",
   "text" : "A new faction is rising. They call themselves the ^#686F5D;Unbound^reset;. We've dealt with them before, but now something's strange. They're growing extremely fast, and we need to understand why. I have the coordinates of a facility I want you to check out.",
   "completionText" : "This is terrible, it seems that they were using this facility to mass manufacture weapons and test vehicle prototypes. Luckily, you were here to slow them down. But now that the Unbound are aware of your interference, what will happen?",
   "moneyRange" : [5000, 5000],
@@ -11,29 +12,33 @@
   "canBeAbandoned" : false,
   
   "updateDelta" : 10,
-  "script" : "/quests/scripts/main.lua",
+  "script" : "/quests/scripts/instance.lua",
   "scriptConfig" : {
     "portraits" : {
-      "default" : "questGiver"
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
     },
 
     "descriptions" : {
       "enterInstance" : "Talk to ^orange;Morpheus^reset; to travel to the ^orange;Unbound Facility^reset;.",
       "findGoal" : "Make your way through the facility.",
-      "turnIn" : "Return to ^orange;Mariko^reset; at the ^orange;Thalasso Outpost^reset;"
+      "turnIn" : "Return to ^orange;Morpheus^reset; at the ^orange;Thalasso Outpost^reset;"
     },
 
     "warpEntityUid" : "starforge-morpheus",
     "warpAction" : "instanceworld:starforge-unbdmission1",
     "warpDialog" : "/interface/confirmation/starforgeteleportconfirmation.config:starforge-mission1",
 
-    "goalTrigger" : "proximity",
-    "proximityRange" : 5,
-
+    "goalTrigger" : "interact",
+    "interactEntityUid" : "starforge-unboundrewardcache1",
     "goalEntityUid" : "starforge-unboundrewardcache1",
     "indicateGoal" : false,
     "trackGoalEntity" : false,
+	
+	"followUp" : "thalassomission1b",
 
-    "turnInEntityUid" : "starforge-mariko"
-  }
+    "turnInEntityUid" : "starforge-morpheus"
+  },
+  
+  "setUniverseFlags" : ["unboundmission1"]
 }

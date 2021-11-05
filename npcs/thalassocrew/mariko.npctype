@@ -25,6 +25,8 @@
   },
 
   "scriptConfig" : {
+    "offeredQuests" : ["thalassomission1b"],
+	"turnInQuests" : ["thalassomission1b"],
     "behavior" : "villager",
 
     "dialogMode" : "sequence",
