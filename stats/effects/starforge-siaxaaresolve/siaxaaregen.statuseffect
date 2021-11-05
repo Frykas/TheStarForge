@@ -1,0 +1,15 @@
+{
+  "name" : "starforge-siaxaaregen",
+  "effectConfig" : {
+    "regenBonusAmount" : 1.5,
+    "emissionRate" : 0
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "siaxaaregen.lua"
+  ],
+  
+  "animationConfig" : "siaxaaregen.animation",
+  "scriptDelta" : 0
+}

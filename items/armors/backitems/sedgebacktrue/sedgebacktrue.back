@@ -13,7 +13,7 @@
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "regenerationaugment2", "jumpboostaugment",
+  "starforge-hunterhealing", "jumpboostaugment",
 
     {
       "stat" : "biomeheatImmunity",

@@ -13,7 +13,7 @@
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "shiprunboost", "swimboost",
+  "starforge-marikorunboost", "starforge-marikoswimboost", "starforge-marikojumpboost",
 
     {
       "stat" : "biomeheatImmunity",
