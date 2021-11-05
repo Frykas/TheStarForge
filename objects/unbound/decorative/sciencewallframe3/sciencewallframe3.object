@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-unboundsciencewallframe3",
+  "colonyTags" : ["apex"],
+  "printable" : true,
+  "rarity" : "uncommon",
+  "description" : "An Unbound wall frame, used by the Science Division.",
+  "shortdescription" : "Unbound Science Wall Frame",
+  "race" : "apex",
+  "category" : "decorative",
+  "price" : 200,
+
+  "apexDescription" : "An Unbound frame, but this one is empty.",
+  "avianDescription" : "An emtpy wall frame.",
+  "floranDescription" : "No blue papersss thisss time.",
+  "glitchDescription" : "Statement. This Unbound frame is empty.",
+  "humanDescription" : "This frame is empty.",
+  "hylotlDescription" : "An Unbound wall frame. Seems like there is nothing pinned on it.",
+  "novakidDescription" : "A good frame. nothing is pinned on it.",
+
+  "inventoryIcon" : "sciencewallframeicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "sciencewallframe3.png:<color>",
+
+      "imagePosition" : [-16, 1],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}
+

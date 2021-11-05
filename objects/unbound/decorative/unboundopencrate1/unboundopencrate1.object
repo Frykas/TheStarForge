@@ -1,0 +1,31 @@
+{
+  "objectName" : "starforge-unboundopencrate1",
+  "colonyTags" : ["apex", "weapons"],
+  "rarity" : "uncommon",
+  "category" : "decorative",
+  "price" : 140,
+  "description" : "An Unbound crate, opened and containing weapons.",
+  "shortdescription" : "Open Unbound Crate ",
+  "race" : "apex",
+
+  "humanDescription" : "A bunch of Unbound weapons packed in it.",
+
+
+
+  "inventoryIcon" : "unboundopenbigcrateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundopencrate1.png",
+      "imagePosition" : [-32, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-unboundscienceweapontable1",
+  "colonyTags" : ["apex"],
+  "printable" : true,
+  "rarity" : "rare",
+  "description" : "An Unbound weapon being built.",
+  "shortdescription" : "Unbound Science Table",
+  "race" : "apex",
+  "category" : "decorative",
+  "price" : 360,
+
+  "apexDescription" : "A Valiant assault rifle being made.",
+  "avianDescription" : "This table is pretty sturdy. It has a rifle on it.",
+  "floranDescription" : "Table hasss gun... Floran interesssted.",
+  "glitchDescription" : "Approving. This is quite the weapon.",
+  "humanDescription" : "A cool table. Cool rifle too.",
+  "hylotlDescription" : "A crude looking table. It seems they are making rifles here.",
+  "novakidDescription" : "A good ol' table. Cool rifle.",
+
+  "inventoryIcon" : "scienceweapontableicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "scienceweapontable1.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
+

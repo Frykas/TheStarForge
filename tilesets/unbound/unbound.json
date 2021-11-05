@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":59,
+ "tilecount":69,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -571,6 +571,16 @@
          "object":"starforge-unboundflowerpot",
          "tilesetDirection":"right"
         },
+     "59":
+        {
+         "\/\/description":"A sturdy table used by the Unbound Science Division.",
+         "\/\/name":"starforge-unboundscienceinventortable",
+         "\/\/shortdescription":"Unbound Science Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundscienceinventortable",
+         "tilesetDirection":"right"
+        },
      "6":
         {
          "\/\/description":"An empty Unbound rack.",
@@ -579,6 +589,96 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-unboundemptyrack",
+         "tilesetDirection":"right"
+        },
+     "60":
+        {
+         "\/\/description":"A sturdy table used by the Unbound Science Division.",
+         "\/\/name":"starforge-unboundsciencetable",
+         "\/\/shortdescription":"Unbound Science Table",
+         "imagePositionX":"-17",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencetable",
+         "tilesetDirection":"right"
+        },
+     "61":
+        {
+         "\/\/description":"An Unbound wall frame, used by the Science Division.\"",
+         "\/\/name":"starforge-unboundsciencewallframe1",
+         "\/\/shortdescription":"Unbound Science Wall Frame",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencewallframe1",
+         "tilesetDirection":"right"
+        },
+     "62":
+        {
+         "\/\/description":"An Unbound wall frame, used by the Science Division.\"",
+         "\/\/name":"starforge-unboundsciencewallframe2",
+         "\/\/shortdescription":"Unbound Science Wall Frame",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencewallframe2",
+         "tilesetDirection":"right"
+        },
+     "63":
+        {
+         "\/\/description":"An Unbound wall frame, used by the Science Division.\"",
+         "\/\/name":"starforge-unboundsciencewallframe3",
+         "\/\/shortdescription":"Unbound Science Wall Frame",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencewallframe3",
+         "tilesetDirection":"right"
+        },
+     "64":
+        {
+         "\/\/description":"An Unbound weapon being built.",
+         "\/\/name":"starforge-unboundscienceweapontable1",
+         "\/\/shortdescription":"Unbound Science Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundscienceweapontable1",
+         "tilesetDirection":"right"
+        },
+     "65":
+        {
+         "\/\/description":"An Unbound experimental weapon being built.",
+         "\/\/name":"starforge-unboundscienceweapontable2",
+         "\/\/shortdescription":"Unbound Science Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundscienceweapontable2",
+         "tilesetDirection":"right"
+        },
+     "66":
+        {
+         "\/\/description":"An Unbound crate, opened and containing weapons.",
+         "\/\/name":"starforge-unboundopencrate1",
+         "\/\/shortdescription":"Open Unbound Crate",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"starforge-unboundopencrate1",
+         "tilesetDirection":"right"
+        },
+     "67":
+        {
+         "\/\/description":"An Unbound crate, opened and containing canisters.",
+         "\/\/name":"starforge-unboundopencrate2",
+         "\/\/shortdescription":"Open Unbound Crate",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-unboundopencrate2",
+         "tilesetDirection":"right"
+        },
+     "68":
+        {
+         "\/\/description":"An Unbound crate, opened and containing caches.",
+         "\/\/name":"starforge-unboundopencrate3",
+         "\/\/shortdescription":"Open Unbound Crate",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-unboundopencrate3",
          "tilesetDirection":"right"
         },
      "7":
@@ -1164,7 +1264,107 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "59":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "6":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "60":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "61":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "62":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "63":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "64":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "65":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "66":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "67":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "68":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -1537,11 +1737,71 @@
          "imageheight":16,
          "imagewidth":8
         },
+     "59":
+        {
+         "image":"scienceinventortable.png",
+         "imageheight":31,
+         "imagewidth":34
+        },
      "6":
         {
          "image":"unboundemptyrack.png",
          "imageheight":32,
          "imagewidth":32
+        },
+     "60":
+        {
+         "image":"sciencetable.png",
+         "imageheight":16,
+         "imagewidth":34
+        },
+     "61":
+        {
+         "image":"sciencewallframe1.png",
+         "imageheight":24,
+         "imagewidth":33
+        },
+     "62":
+        {
+         "image":"sciencewallframe2.png",
+         "imageheight":23,
+         "imagewidth":33
+        },
+     "63":
+        {
+         "image":"sciencewallframe3.png",
+         "imageheight":23,
+         "imagewidth":33
+        },
+     "64":
+        {
+         "image":"scienceweapontable1.png",
+         "imageheight":22,
+         "imagewidth":34
+        },
+     "65":
+        {
+         "image":"scienceweapontable2.png",
+         "imageheight":24,
+         "imagewidth":34
+        },
+     "66":
+        {
+         "image":"unboundopencrate1.png",
+         "imageheight":45,
+         "imagewidth":65
+        },
+     "67":
+        {
+         "image":"unboundopencrate2.png",
+         "imageheight":32,
+         "imagewidth":48
+        },
+     "68":
+        {
+         "image":"unboundopencrate3.png",
+         "imageheight":30,
+         "imagewidth":48
         },
      "7":
         {
