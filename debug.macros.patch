@@ -1,0 +1,18 @@
+[
+  //OUTPOST WARP SHORTCUTS
+  {
+    "op": "add",
+    "path": "/thalassooutpost",
+    "value": [
+	  "/warp instanceworld:thalassooutpost"
+	]
+  },
+  
+  //TECH UNLOCKS
+  {
+    "op": "add",
+    "path": "/starforge-unlocktechs",
+    "value": [
+	]
+  }
+]

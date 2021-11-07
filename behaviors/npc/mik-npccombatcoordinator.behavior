@@ -1,0 +1,15 @@
+{
+  "name": "mik-npccombatcoordinator",
+  "description": "",
+  "scripts": [],
+  "parameters": {},
+  "root": {
+    "title": "runFunction",
+    "type": "action",
+    "name": "runFunction",
+    "parameters": {
+      "func": {"value": "npcCombat"},
+      "script": {"value": "/stagehands/npcveteran/mik-npccombatcoordinator.lua"}
+    }
+  }
+}

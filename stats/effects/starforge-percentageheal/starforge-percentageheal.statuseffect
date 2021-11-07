@@ -1,0 +1,11 @@
+{
+  "name" : "starforge-percentageheal",
+  "effectConfig" : {},
+  "defaultDuration" : 500.05,
+
+  "scripts" : [
+    "starforge-percentageheal.lua"
+  ],
+
+  "animationConfig" : "starforge-percentageheal.animation"
+}

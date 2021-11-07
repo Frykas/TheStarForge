@@ -25,19 +25,20 @@
       "turnIn" : "Return to ^orange;Morpheus^reset; at the ^orange;Thalasso Outpost^reset;"
     },
 
-    "warpEntityUid" : "starforge-morpheus",
+    "warpEntityUid" : "starforge-morpheusoutpost",
     "warpAction" : "instanceworld:starforge-unbdmission1",
     "warpDialog" : "/interface/confirmation/starforgeteleportconfirmation.config:starforge-mission1",
 
-    "goalTrigger" : "interact",
-    "interactEntityUid" : "starforge-unboundrewardcache1",
-    "goalEntityUid" : "starforge-unboundrewardcache1",
+    "goalTrigger" : "message",
+    "triggerMessage" : "starforge-missioncomplete",
+	
+    "goalEntityUid" : "starforge-morpheusmission",
     "indicateGoal" : false,
     "trackGoalEntity" : false,
 	
 	"followUp" : "thalassomission1b",
 
-    "turnInEntityUid" : "starforge-morpheus"
+    "turnInEntityUid" : "starforge-morpheusoutpost"
   },
   
   "setUniverseFlags" : ["unboundmission1"]

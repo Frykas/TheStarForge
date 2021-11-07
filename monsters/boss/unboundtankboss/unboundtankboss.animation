@@ -1,6 +1,7 @@
 {
   "globalTagDefaults" : {
-    "shotFrame" : "1"
+    "shotFrame" : "1",
+	"trackAnimationFrame" : "1"
   },
 
   "animatedParts" : {
@@ -96,16 +97,9 @@
 	  //TRACKS
       "tracks" : {
         "priority" : 0,
-        "default" : "idle",
+        "default" : "default",
         "states" : {
-          "idle" : {
-            "frames" : 1
-          },
-          "moving" : {
-            "frames" : 5,
-            "cycle" : 0.6,
-            "mode" : "loop"
-          }
+          "default" : {}
         }
       }
     },
@@ -384,14 +378,9 @@
 
         "partStates" : {
           "tracks" : {
-            "idle" : {
+            "default" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
-              }
-            },
-            "moving" : {
-              "properties" : {
-                "image" : "<partImage>:moving.<frame>"
+                "image" : "<partImage>:moving.<trackAnimationFrame>"
               }
             }
           }

@@ -1,0 +1,460 @@
+{
+  "name": "mik-npcmeleecombat",
+  "description": "",
+  "scripts": [
+    "/scripts/behavior.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/npc/actions/mik-data.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "leapCooldown": 2,
+    "leapChance": 0.5
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setFlag",
+        "type": "action",
+        "name": "setFlag",
+        "parameters": {
+          "name": {"value": "avoidLiquid"}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "succeeder",
+            "type": "decorator",
+            "name": "succeeder",
+            "parameters": {},
+            "child": {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "entityInSight",
+                  "type": "action",
+                  "name": "entityInSight",
+                  "parameters": {
+                    "entity": {"key": "target"}
+                  }
+                },
+                {
+                  "title": "faceEntity",
+                  "type": "action",
+                  "name": "faceEntity",
+                  "parameters": {
+                    "entity": {"key": "target"}
+                  }
+                },
+                {
+                  "title": "entityPosition",
+                  "type": "action",
+                  "name": "entityPosition",
+                  "parameters": {
+                    "entity": {"key": "target"}
+                  },
+                  "output": {
+                    "position": "targetPosition"
+                  }
+                },
+                {
+                  "title": "offsetPosition",
+                  "type": "action",
+                  "name": "offsetPosition",
+                  "parameters": {
+                    "offset": {"value": [0, 0]},
+                    "position": {"key": "targetPosition"}
+                  },
+                  "output": {
+                    "position": "aimPosition"
+                  }
+                },
+                {
+                  "title": "setAimPosition",
+                  "type": "action",
+                  "name": "setAimPosition",
+                  "parameters": {
+                    "position": {"key": "aimPosition"}
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "primaryWeaponTiming",
+            "type": "action",
+            "name": "primaryWeaponTiming",
+            "parameters": {},
+            "output": {
+              "cooldown": "meleeCooldown",
+              "windup": "meleeWindup"
+            }
+          },
+          {
+            "title": "mik-npcmeleecombat-approach",
+            "type": "module",
+            "name": "mik-npcmeleecombat-approach",
+            "parameters": {
+              "liquidHesitationTime": {"value": 3},
+              "forceRunRange": {"value": 0},
+              "cantReachDialog": {"value": true}
+            }
+          },
+          {
+            "title": "dynamic",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "selector",
+                "type": "composite",
+                "name": "selector",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "groupResource",
+                        "type": "action",
+                        "name": "groupResource",
+                        "parameters": {
+                          "groupId": {"value": "combat"},
+                          "name": {"value": "altChance"}
+                        },
+                        "output": {
+                          "number": "altChance"
+                        }
+                      },
+                      {
+                        "title": "chance",
+                        "type": "action",
+                        "name": "chance",
+                        "parameters": {
+                          "chance": {"key": "altChance"}
+                        }
+                      },
+                      {
+                        "title": "groupResource",
+                        "type": "action",
+                        "name": "groupResource",
+                        "parameters": {
+                          "groupId": {"value": "combat"},
+                          "name": {"value": "altRange"}
+                        },
+                        "output": {
+                          "number": "altRange"
+                        }
+                      },
+                      {
+                        "title": "groupResource",
+                        "type": "action",
+                        "name": "groupResource",
+                        "parameters": {
+                          "groupId": {"value": "combat"},
+                          "name": {"value": "altCharge"}
+                        },
+                        "output": {
+                          "number": "altCharge"
+                        }
+                      },
+                      {
+                        "title": "entityInRange",
+                        "type": "action",
+                        "name": "entityInRange",
+                        "parameters": {
+                          "entity": {"key": "target"},
+                          "position": {"key": "self"},
+                          "xRange": {"key": "altRange"}
+                        }
+                      },
+                      {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                        "child": {
+                          "title": "parallel",
+                          "type": "composite",
+                          "name": "parallel",
+                          "parameters": {
+                            "fail": {"value": 1},
+                            "success": {"value": -1}
+                          },
+                          "children": [
+                            {
+                              "title": "entityInRange",
+                              "type": "action",
+                              "name": "entityInRange",
+                              "parameters": {
+                                "entity": {"key": "target"},
+                                "position": {"key": "self"},
+                                "xRange": {"key": "altRange"}
+                              }
+                            },
+                            {
+                              "title": "altFire",
+                              "type": "action",
+                              "name": "altFire",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "setSelfValue",
+                              "type": "action",
+                              "name": "setSelfValue",
+                              "parameters": {
+                                "key": {"value": "altCharge"},
+                                "numValue": {"key": "altCharge"}
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"key": "altCharge"}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "groupResource",
+                        "type": "action",
+                        "name": "groupResource",
+                        "parameters": {
+                          "groupId": {"value": "combat"},
+                          "name": {"value": "maxRange"}
+                        },
+                        "output": {
+                          "number": "maxXRange"
+                        }
+                      },
+                      {
+                        "title": "groupResource",
+                        "type": "action",
+                        "name": "groupResource",
+                        "parameters": {
+                          "groupId": {"value": "combat"},
+                          "name": {"value": "maxYRange"}
+                        },
+                        "output": {
+                          "number": "maxYRange"
+                        }
+                      },
+                      {
+                        "title": "groupResource",
+                        "type": "action",
+                        "name": "groupResource",
+                        "parameters": {
+                          "groupId": {"value": "combat"},
+                          "name": {"value": "primaryCharge"}
+                        },
+                        "output": {
+                          "number": "primaryCharge"
+                        }
+                      },
+                      {
+                        "title": "entityInRange",
+                        "type": "action",
+                        "name": "entityInRange",
+                        "parameters": {
+                          "entity": {"key": "target"},
+                          "position": {"key": "self"},
+                          "xRange": {"key": "maxXRange"},
+                          "yRange": {"key": "maxYValue"}
+                        }
+                      },
+                      {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                        "child": {
+                          "title": "parallel",
+                          "type": "composite",
+                          "name": "parallel",
+                          "parameters": {
+                            "fail": {"value": 1},
+                            "success": {"value": -1}
+                          },
+                          "children": [
+                            {
+                              "title": "entityInRange",
+                              "type": "action",
+                              "name": "entityInRange",
+                              "parameters": {
+                                "entity": {"key": "target"},
+                                "position": {"key": "self"},
+                                "xRange": {"key": "maxXRange"}
+                              }
+                            },
+                            {
+                              "title": "primaryFire",
+                              "type": "action",
+                              "name": "primaryFire",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "setSelfValue",
+                              "type": "action",
+                              "name": "setSelfValue",
+                              "parameters": {
+                                "key": {"value": "primaryCharge"},
+                                "numValue": {"key": "primaryCharge"}
+                              }
+                            },
+                            {
+                              "title": "timer",
+                              "type": "action",
+                              "name": "timer",
+                              "parameters": {
+                                "time": {"key": "meleeWindup"}
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"key": "primaryCharge"}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                        "child": {
+                          "title": "sequence",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+                            {
+                              "title": "groupResource",
+                              "type": "action",
+                              "name": "groupResource",
+                              "parameters": {
+                                "groupId": {"value": "combat"},
+                                "name": {"value": "permaChargePrimary"}
+                              },
+                              "output": {
+                                "number": "permaPrimary"
+                              }
+                            },
+                            {
+                              "title": "setSelfValue",
+                              "type": "action",
+                              "name": "setSelfValue",
+                              "parameters": {
+                                "key": {"value": "OORChargePrimary"},
+                                "numValue": {"key": "permaPrimary"}
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                        "child": {
+                          "title": "sequence",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+                            {
+                              "title": "groupResource",
+                              "type": "action",
+                              "name": "groupResource",
+                              "parameters": {
+                                "groupId": {"value": "combat"},
+                                "name": {"value": "permaChargeAlt"}
+                              },
+                              "output": {
+                                "number": "permaAlt"
+                              }
+                            },
+                            {
+                              "title": "setSelfValue",
+                              "type": "action",
+                              "name": "setSelfValue",
+                              "parameters": {
+                                "key": {"value": "OORChargeAlt"},
+                                "numValue": {"key": "permaAlt"}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "faceEntity",
+                "type": "action",
+                "name": "faceEntity",
+                "parameters": {
+                  "entity": {"key": "target"}
+                }
+              }
+            ]
+          },
+          {
+            "title": "runner",
+            "type": "action",
+            "name": "runner",
+            "parameters": {}
+          }
+        ]
+      }
+    ]
+  }
+}

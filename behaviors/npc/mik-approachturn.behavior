@@ -1,0 +1,176 @@
+{
+  "name": "mik-approach-turn",
+  "description": "",
+  "scripts": [
+    "/scripts/npc/actions/mik-movement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/math.lua"
+  ],
+  "parameters": {
+    "turnSpeed": 1,
+    "leftState": "",
+    "rightState": "",
+    "flyState": "",
+    "idleState": "",
+	"checkCollision" : true,
+	"minRange" : -1
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "approachTurn",
+            "type": "action",
+            "name": "approachTurn",
+            "parameters": {
+              "entity": {"key": "target"},
+              "turnSpeed": {"key": "<turnSpeed>"},
+			  "checkCollision": {"key": "<checkCollision>"},
+			  "minRange": {"key": "<minRange>"}
+            },
+            "output": {
+              "angle": "heading",
+              "direction": "turnDirection"
+            }
+          },
+          {
+            "title": "succeeder",
+            "type": "decorator",
+            "name": "succeeder",
+            "parameters": {},
+            "child": {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "resetTransformationGroup",
+                  "type": "action",
+                  "name": "resetTransformationGroup",
+                  "parameters": {
+                    "transformationGroup": {"value": "body"}
+                  }
+                },
+                {
+                  "title": "rotateTransformationGroup",
+                  "type": "action",
+                  "name": "rotateTransformationGroup",
+                  "parameters": {
+                    "angle": {"key": "heading"},
+                    "transformationGroup": {"value": "body"}
+                  }
+                },
+                {
+                  "title": "faceDirection",
+                  "type": "action",
+                  "name": "faceDirection",
+                  "parameters": {
+                    "direction": {"value": 1}
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "dynamic",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "greaterThan",
+                    "type": "action",
+                    "name": "greaterThan",
+                    "parameters": {
+                      "first": {"key": "turnDirection"},
+                      "second": {"value": 0.1}
+                    }
+                  },
+                  {
+                    "title": "animate",
+                    "type": "action",
+                    "name": "animate",
+                    "parameters": {
+                      "fallback": {"value": "<idleState>"},
+                      "state": {"value": "<leftState>"},
+                      "type": {"value": "body"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "greaterThan",
+                      "type": "action",
+                      "name": "greaterThan",
+                      "parameters": {
+                        "first": {"key": "turnDirection"},
+                        "second": {"value": -0.1}
+                      }
+                    }
+                  },
+                  {
+                    "title": "animate",
+                    "type": "action",
+                    "name": "animate",
+                    "parameters": {
+                      "fallback": {"value": "<idleState>"},
+                      "state": {"value": "<rightState>"},
+                      "type": {"value": "body"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "animate",
+                "type": "action",
+                "name": "animate",
+                "parameters": {
+                  "fallback": {"value": "<idleState>"},
+                  "state": {"value": "<flyState>"},
+                  "type": {"value": "body"}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

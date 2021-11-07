@@ -27,6 +27,8 @@
   },
 
   "scriptConfig" : {
+    "uniqueId" : "starforge-morpheusmission",
+  
     "behavior" : "villager",
     "turnInQuests" : ["thalassomission1"],
 

@@ -1,0 +1,249 @@
+{
+  "name": "mik-npcmeleecombat-approach",
+  "description": "",
+  "scripts": [
+    "/scripts/behavior.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/npc/actions/mik-movement.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/dialog.lua"
+  ],
+  "parameters": {
+    "liquidHesitationTime": 3,
+    "forceRunRange": 0,
+    "cantReachDialog": true,
+    "leapCooldown": 3,
+    "leapChance": 0.5,
+    "targetObtainable": true,
+    "rangedSwapTime": 2
+  },
+  "root": {
+    "title": "parallel",
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": -1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "groupResource",
+        "type": "action",
+        "name": "groupResource",
+        "parameters": {
+          "groupId": {"value": "combat"},
+          "name": {"value": "meleePosition"}
+        },
+        "output": {
+          "position": "meleePosition"
+        }
+      },
+      {
+        "title": "dynamic",
+        "type": "composite",
+        "name": "dynamic",
+        "parameters": {},
+        "children": [
+          {
+            "title": "failer",
+            "type": "decorator",
+            "name": "failer",
+            "parameters": {},
+            "child": {
+              "title": "mik-npcmeleecombat-leap",
+              "type": "module",
+              "name": "mik-npcmeleecombat-leap",
+              "parameters": {}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "onGround",
+                "type": "action",
+                "name": "onGround",
+                "parameters": {}
+              },
+              {
+                "title": "moveToPosition",
+                "type": "action",
+                "name": "moveToPosition",
+                "parameters": {
+                  "avoidLiquid": {"key": "avoidLiquid"},
+                  "groundPosition": {"value": false},
+                  "maxGround": {"value": 10},
+                  "minGround": {"value": -10},
+                  "closeDoors": {"value": false},
+                  "position": {"key": "meleePosition"},
+                  "run": {"value": true}
+                },
+                "output": {
+                  "pathfinding": "meleePathing",
+				  "targetReachable": "targetReachable"
+                }
+              },
+              {
+                "title": "setFlag",
+                "type": "action",
+                "name": "setFlag",
+                "parameters": {
+                  "name": {"value": "targetReachable"}
+                }
+              }
+            ]
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "setFlag",
+                "type": "action",
+                "name": "setFlag",
+                "parameters": {
+                  "name": {"value": "avoidLiquid"}
+                }
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": "<liquidHesitationTime>"}
+                }
+              },
+              {
+                "title": "unsetFlag",
+                "type": "action",
+                "name": "unsetFlag",
+                "parameters": {
+                  "name": {"value": "avoidLiquid"}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "dynamic",
+        "type": "composite",
+        "name": "dynamic",
+        "parameters": {},
+        "children": [
+          {
+            "title": "hasFlag",
+            "type": "action",
+            "name": "hasFlag",
+            "parameters": {
+              "name": {"key": "targetReachable"}
+            }
+          },
+          {
+            "title": "inverter",
+            "type": "decorator",
+            "name": "inverter",
+            "parameters": {},
+            "child": {
+              "title": "onGround",
+              "type": "action",
+              "name": "onGround",
+              "parameters": {}
+            }
+          },
+          {
+            "title": "failer",
+            "type": "decorator",
+            "name": "failer",
+            "parameters": {},
+            "child": {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"key": "<rangedSwapTime>"}
+                      }
+                    },
+                    {
+                      "title": "hasRangedSheathed",
+                      "type": "action",
+                      "name": "hasRangedSheathed",
+                      "parameters": {}
+                    },
+                    {
+                      "title": "swapItemSlots",
+                      "type": "action",
+                      "name": "swapItemSlots",
+                      "parameters": {}
+                    }
+                  ]
+                },
+                {
+                  "title": "optional",
+                  "type": "decorator",
+                  "name": "optional",
+                  "parameters": {
+                    "shouldRun": {"key": "<cantReachDialog>"}
+                  },
+                  "child": {
+                    "title": "cooldown",
+                    "type": "decorator",
+                    "name": "cooldown",
+                    "parameters": {
+                      "cooldown": {"value": 10},
+                      "onFail": {"value": false}
+                    },
+                    "child": {
+                      "title": "selector",
+                      "type": "composite",
+                      "name": "selector",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "chance",
+                          "type": "action",
+                          "name": "chance",
+                          "parameters": {
+                            "chance": {"value": 0.75}
+                          }
+                        },
+                        {
+                          "title": "sayToEntity",
+                          "type": "action",
+                          "name": "sayToEntity",
+                          "parameters": {
+                            "dialogType": {"value": "dialog.cantReach"},
+                            "entity": {"key": "target"},
+                            "tags": {"value": {}}
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

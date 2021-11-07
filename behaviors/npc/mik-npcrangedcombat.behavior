@@ -1,0 +1,1177 @@
+{
+  "name": "mik-npcrangedcombat",
+  "description": "",
+  "scripts": [
+    "/scripts/behavior.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/npc/actions/mik-movement.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/behavior/bdata.lua",
+    "/scripts/actions/projectiles.lua",
+    "/scripts/npc/actions/mik-data.lua"
+  ],
+  "parameters": {
+    "rangedAimTime": 0,
+    "rangedWindupTime": 0.05,
+    "rangedMinFireTime": 0,
+    "rangedMaxFireTime": 0,
+    "arrowSpeed": 62.5,
+    "meleeSwapTime": 2,
+    "meleeSwapDistance": 12.5,
+    "leapCooldown": 3,
+    "leapChance": 0.5
+  },
+  "root": {
+    "title": "parallel",
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": -1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "selector",
+        "type": "composite",
+        "name": "selector",
+        "parameters": {},
+        "children": [
+          {
+            "title": "groupResource",
+            "type": "action",
+            "name": "groupResource",
+            "parameters": {
+              "groupId": {"value": "combat"},
+              "name": {"value": "movePosition"}
+            },
+            "output": {
+              "position": "rangedPosition"
+            }
+          },
+          {
+            "title": "entityPosition",
+            "type": "action",
+            "name": "entityPosition",
+            "parameters": {
+              "entity": {"key": "target"}
+            },
+            "output": {
+              "position": "movePosition"
+            }
+          }
+        ]
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": 1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "moveToPosition",
+            "type": "action",
+            "name": "moveToPosition",
+            "parameters": {
+              "avoidLiquid": {"value": true},
+              "groundPosition": {"value": false},
+              "maxGround": {"value": 10},
+              "minGround": {"value": -5},
+              "position": {"key": "rangedPosition"},
+              "run": {"value": true}
+            },
+            "output": {
+              "pathfinding": "rangedPathing"
+            }
+          },
+          {
+            "title": "succeeder",
+            "type": "decorator",
+            "name": "succeeder",
+            "parameters": {},
+            "child": {
+              "title": "cooldown",
+              "type": "decorator",
+              "name": "cooldown",
+              "parameters": {
+                "cooldown": {"key": "<leapCooldown>"},
+                "onFail": {"value": false},
+                "onSuccess": {"value": true}
+              },
+              "child": {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "mik-npcrangedcombat-leap",
+                    "type": "module",
+                    "name": "mik-npcrangedcombat-leap",
+                    "parameters": {
+                      "leapWindup": {"value": 0.1}
+                    }
+                  },
+                  {
+                    "title": "chance",
+                    "type": "action",
+                    "name": "chance",
+                    "parameters": {
+                      "chance": {"key": "<leapChance>"}
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "title": "sequence",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": "inverter",
+            "type": "decorator",
+            "name": "inverter",
+            "parameters": {},
+            "child": {
+              "title": "selector",
+              "type": "composite",
+              "name": "selector",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "hasFlag",
+                  "type": "action",
+                  "name": "hasFlag",
+                  "parameters": {
+                    "name": {"value": "primaryArcing"}
+                  }
+                },
+                {
+                  "title": "hasFlag",
+                  "type": "action",
+                  "name": "hasFlag",
+                  "parameters": {
+                    "name": {"value": "altArcing"}
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "entityInSight",
+            "type": "action",
+            "name": "entityInSight",
+            "parameters": {
+              "entity": {"key": "target"}
+            }
+          },
+          {
+            "title": "faceEntity",
+            "type": "action",
+            "name": "faceEntity",
+            "parameters": {
+              "entity": {"key": "target"}
+            }
+          },
+          {
+            "title": "entityPosition",
+            "type": "action",
+            "name": "entityPosition",
+            "parameters": {
+              "entity": {"key": "target"}
+            },
+            "output": {
+              "position": "targetPosition"
+            }
+          },
+          {
+            "title": "offsetPosition",
+            "type": "action",
+            "name": "offsetPosition",
+            "parameters": {
+              "offset": {"value": [0, 0]},
+              "position": {"key": "targetPosition"}
+            },
+            "output": {
+              "position": "aimPosition"
+            }
+          },
+          {
+            "title": "setAimPosition",
+            "type": "action",
+            "name": "setAimPosition",
+            "parameters": {
+              "position": {"key": "aimPosition"}
+            }
+          }
+        ]
+      },
+      {
+        "title": "failer",
+        "type": "decorator",
+        "name": "failer",
+        "parameters": {},
+        "child": {
+          "title": "sequence",
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": "entityInSight",
+              "type": "action",
+              "name": "entityInSight",
+              "parameters": {
+                "entity": {"key": "target"}
+              }
+            },
+            {
+              "title": "canFire",
+              "type": "action",
+              "name": "canFire",
+              "parameters": {}
+            },
+            {
+              "title": "inverter",
+              "type": "decorator",
+              "name": "inverter",
+              "parameters": {},
+              "child": {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "groupResource",
+                    "type": "action",
+                    "name": "groupResource",
+                    "parameters": {
+                      "groupId": {"value": "combat"},
+                      "name": {"value": "altChance"}
+                    },
+                    "output": {
+                      "number": "altChance"
+                    }
+                  },
+                  {
+                    "title": "chance",
+                    "type": "action",
+                    "name": "chance",
+                    "parameters": {
+                      "chance": {"key": "altChance"}
+                    }
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                        "child": {
+                          "title": "groupResource",
+                          "type": "action",
+                          "name": "groupResource",
+                          "parameters": {
+                            "groupId": {"value": "combat"},
+                            "name": {"value": "minAltRange"}
+                          },
+                          "output": {
+                            "number": "minAltRange"
+                          }
+                        }
+                      },
+                      {
+                        "title": "inverter",
+                        "type": "decorator",
+                        "name": "inverter",
+                        "parameters": {},
+                        "child": {
+                          "title": "entityInRange",
+                          "type": "action",
+                          "name": "entityInRange",
+                          "parameters": {
+                            "entity": {"key": "target"},
+                            "position": {"key": "self"},
+                            "range": {"key": "minAltRange"}
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "groupResource",
+                        "type": "action",
+                        "name": "groupResource",
+                        "parameters": {
+                          "groupId": {"value": "combat"},
+                          "name": {"value": "maxAltRange"}
+                        },
+                        "output": {
+                          "number": "maxAltRange"
+                        }
+                      },
+                      {
+                        "title": "entityInRange",
+                        "type": "action",
+                        "name": "entityInRange",
+                        "parameters": {
+                          "entity": {"key": "target"},
+                          "position": {"key": "self"},
+                          "range": {"key": "maxAltRange"}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"key": "<rangedAimTime>"}
+                    }
+                  },
+                  {
+                    "title": "selector",
+                    "type": "composite",
+                    "name": "selector",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "hasFlag",
+                        "type": "action",
+                        "name": "hasFlag",
+                        "parameters": {
+                          "name": {"value": "primaryArcing"}
+                        }
+                      },
+                      {
+                        "title": "hasFlag",
+                        "type": "action",
+                        "name": "hasFlag",
+                        "parameters": {
+                          "name": {"value": "altArcing"}
+                        }
+                      },
+                      {
+                        "title": "sequence",
+                        "type": "composite",
+                        "name": "sequence",
+                        "parameters": {},
+                        "children": [
+                          {
+                            "title": "groupResource",
+                            "type": "action",
+                            "name": "groupResource",
+                            "parameters": {
+                              "groupId": {"value": "combat"},
+                              "name": {"value": "altArcGravity"}
+                            },
+                            "output": {
+                              "number": "altArcGravity"
+                            }
+                          },
+                          {
+                            "title": "groupResource",
+                            "type": "action",
+                            "name": "groupResource",
+                            "parameters": {
+                              "groupId": {"value": "combat"},
+                              "name": {"value": "altArcSpeed"}
+                            },
+                            "output": {
+                              "number": "altArcSpeed"
+                            }
+                          },
+                          {
+                            "title": "succeeder",
+                            "type": "decorator",
+                            "name": "succeeder",
+                            "parameters": {},
+                            "child": {
+                              "title": "parallel",
+                              "type": "composite",
+                              "name": "parallel",
+                              "parameters": {
+                                "fail": {"value": -1},
+                                "success": {"value": -1}
+                              },
+                              "children": [
+                                {
+                                  "title": "sequence",
+                                  "type": "composite",
+                                  "name": "sequence",
+                                  "parameters": {},
+                                  "children": [
+                                    {
+                                      "title": "setVector",
+                                      "type": "action",
+                                      "name": "setVector",
+                                      "parameters": {
+                                        "vector": {"value": ["facingDirection", 0]}
+                                      },
+                                      "output": {
+                                        "vector": "aimOffset"
+                                      }
+                                    },
+                                    {
+                                      "title": "parallel",
+                                      "type": "composite",
+                                      "name": "parallel",
+                                      "parameters": {
+                                        "fail": {"value": 1},
+                                        "success": {"value": -1}
+                                      },
+                                      "children": [
+                                        {
+                                          "title": "entityInSight",
+                                          "type": "action",
+                                          "name": "entityInSight",
+                                          "parameters": {
+                                            "entity": {"key": "target"}
+                                          }
+                                        },
+                                        {
+                                          "title": "entityPosition",
+                                          "type": "action",
+                                          "name": "entityPosition",
+                                          "parameters": {
+                                            "entity": {"key": "target"}
+                                          },
+                                          "output": {
+                                            "position": "targetPosition"
+                                          }
+                                        },
+                                        {
+                                          "title": "sequence",
+                                          "type": "composite",
+                                          "name": "sequence",
+                                          "parameters": {},
+                                          "children": [
+                                            {
+                                              "title": "projectileAimVector",
+                                              "type": "action",
+                                              "name": "projectileAimVector",
+                                              "parameters": {
+                                                "collisionCheck": {"value": false},
+                                                "fromPosition": {"key": "self"},
+                                                "gravityMultiplier": {"key": "altArcGravity"},
+                                                "speed": {"key": "altArcSpeed"},
+                                                "toPosition": {"key": "targetPosition"},
+                                                "useHighArc": {"value": false}
+                                              },
+                                              "output": {
+                                                "aimVector": "aimVector"
+                                              }
+                                            },
+                                            {
+                                              "title": "vecMultiply",
+                                              "type": "action",
+                                              "name": "vecMultiply",
+                                              "parameters": {
+                                                "first": {"key": "aimVector"},
+                                                "second": {"value": [10, 10]}
+                                              },
+                                              "output": {
+                                                "vector": "aimOffset"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "title": "setAimPosition",
+                                          "type": "action",
+                                          "name": "setAimPosition",
+                                          "parameters": {
+                                            "offset": {"key": "aimOffset"},
+                                            "position": {"key": "self"}
+                                          }
+                                        },
+                                        {
+                                          "title": "altFire",
+                                          "type": "action",
+                                          "name": "altFire",
+                                          "parameters": {}
+                                        },
+                                        {
+                                          "title": "groupResource",
+                                          "type": "action",
+                                          "name": "groupResource",
+                                          "parameters": {
+                                            "groupId": {"value": "combat"},
+                                            "name": {"value": "altCharge"}
+                                          },
+                                          "output": {
+                                            "number": "altCharge"
+                                          }
+                                        },
+                                        {
+                                          "title": "setSelfValue",
+                                          "type": "action",
+                                          "name": "setSelfValue",
+                                          "parameters": {
+                                            "key": {"value": "altCharge"},
+                                            "numValue": {"key": "altCharge"}
+                                          }
+                                        },
+                                        {
+                                          "title": "setFlag",
+                                          "type": "action",
+                                          "name": "setFlag",
+                                          "parameters": {
+                                            "name": {"value": "altArcing"}
+                                          }
+                                        },
+                                        {
+                                          "title": "timer",
+                                          "type": "action",
+                                          "name": "timer",
+                                          "parameters": {
+                                            "time": {"value": 0.2}
+                                          }
+                                        },
+                                        {
+                                          "title": "unsetFlag",
+                                          "type": "action",
+                                          "name": "unsetFlag",
+                                          "parameters": {
+                                            "name": {"value": "altArcing"}
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "title": "parallel",
+                        "type": "composite",
+                        "name": "parallel",
+                        "parameters": {
+                          "fail": {"value": 1},
+                          "success": {"value": -1}
+                        },
+                        "children": [
+                          {
+                            "title": "timer",
+                            "type": "action",
+                            "name": "timer",
+                            "parameters": {
+                              "time": {"value": 0.2}
+                            }
+                          },
+                          {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "timer",
+                                "type": "action",
+                                "name": "timer",
+                                "parameters": {
+                                  "time": {"value": "<rangedWindupTime>"}
+                                }
+                              },
+                              {
+                                "title": "parallel",
+                                "type": "composite",
+                                "name": "parallel",
+                                "parameters": {
+                                  "fail": {"value": -1},
+                                  "success": {"value": -1}
+                                },
+                                "children": [
+                                  {
+                                    "title": "altFire",
+                                    "type": "action",
+                                    "name": "altFire",
+                                    "parameters": {}
+                                  },
+                                  {
+                                    "title": "groupResource",
+                                    "type": "action",
+                                    "name": "groupResource",
+                                    "parameters": {
+                                      "groupId": {"value": "combat"},
+                                      "name": {"value": "altCharge"}
+                                    },
+                                    "output": {
+                                      "number": "altCharge"
+                                    }
+                                  },
+                                  {
+                                    "title": "setSelfValue",
+                                    "type": "action",
+                                    "name": "setSelfValue",
+                                    "parameters": {
+                                      "key": {"value": "altCharge"},
+                                      "numValue": {"key": "altCharge"}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "groupResource",
+                  "type": "action",
+                  "name": "groupResource",
+                  "parameters": {
+                    "groupId": {"value": "combat"},
+                    "name": {"value": "minRange"}
+                  },
+                  "output": {
+                    "number": "minRange"
+                  }
+                },
+                {
+                  "title": "inverter",
+                  "type": "decorator",
+                  "name": "inverter",
+                  "parameters": {},
+                  "child": {
+                    "title": "entityInRange",
+                    "type": "action",
+                    "name": "entityInRange",
+                    "parameters": {
+                      "entity": {"key": "target"},
+                      "position": {"key": "self"},
+                      "range": {"value": 3}
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "groupResource",
+                  "type": "action",
+                  "name": "groupResource",
+                  "parameters": {
+                    "groupId": {"value": "combat"},
+                    "name": {"value": "maxRange"}
+                  },
+                  "output": {
+                    "number": "maxRange"
+                  }
+                },
+                {
+                  "title": "entityInRange",
+                  "type": "action",
+                  "name": "entityInRange",
+                  "parameters": {
+                    "entity": {"key": "target"},
+                    "position": {"key": "self"},
+                    "range": {"key": "maxRange"}
+                  }
+                }
+              ]
+            },
+            {
+              "title": "timer",
+              "type": "action",
+              "name": "timer",
+              "parameters": {
+                "time": {"key": "<rangedAimTime>"}
+              }
+            },
+            {
+              "title": "selector",
+              "type": "composite",
+              "name": "selector",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "hasFlag",
+                  "type": "action",
+                  "name": "hasFlag",
+                  "parameters": {
+                    "name": {"value": "altArcing"}
+                  }
+                },
+                {
+                  "title": "hasFlag",
+                  "type": "action",
+                  "name": "hasFlag",
+                  "parameters": {
+                    "name": {"value": "primaryArcing"}
+                  }
+                },
+                {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "groupResource",
+                      "type": "action",
+                      "name": "groupResource",
+                      "parameters": {
+                        "groupId": {"value": "combat"},
+                        "name": {"value": "primaryArcGravity"}
+                      },
+                      "output": {
+                        "number": "primaryArcGravity"
+                      }
+                    },
+                    {
+                      "title": "groupResource",
+                      "type": "action",
+                      "name": "groupResource",
+                      "parameters": {
+                        "groupId": {"value": "combat"},
+                        "name": {"value": "primaryArcSpeed"}
+                      },
+                      "output": {
+                        "number": "primaryArcSpeed"
+                      }
+                    },
+                    {
+                      "title": "succeeder",
+                      "type": "decorator",
+                      "name": "succeeder",
+                      "parameters": {},
+                      "child": {
+                        "title": "parallel",
+                        "type": "composite",
+                        "name": "parallel",
+                        "parameters": {
+                          "fail": {"value": -1},
+                          "success": {"value": -1}
+                        },
+                        "children": [
+                          {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "setVector",
+                                "type": "action",
+                                "name": "setVector",
+                                "parameters": {
+                                  "vector": {"value": ["facingDirection", 0]}
+                                },
+                                "output": {
+                                  "vector": "aimOffset"
+                                }
+                              },
+                              {
+                                "title": "parallel",
+                                "type": "composite",
+                                "name": "parallel",
+                                "parameters": {
+                                  "fail": {"value": 1},
+                                  "success": {"value": -1}
+                                },
+                                "children": [
+                                  {
+                                    "title": "entityInSight",
+                                    "type": "action",
+                                    "name": "entityInSight",
+                                    "parameters": {
+                                      "entity": {"key": "target"}
+                                    }
+                                  },
+                                  {
+                                    "title": "entityPosition",
+                                    "type": "action",
+                                    "name": "entityPosition",
+                                    "parameters": {
+                                      "entity": {"key": "target"}
+                                    },
+                                    "output": {
+                                      "position": "targetPosition"
+                                    }
+                                  },
+                                  {
+                                    "title": "sequence",
+                                    "type": "composite",
+                                    "name": "sequence",
+                                    "parameters": {},
+                                    "children": [
+                                      {
+                                        "title": "projectileAimVector",
+                                        "type": "action",
+                                        "name": "projectileAimVector",
+                                        "parameters": {
+                                          "collisionCheck": {"value": false},
+                                          "fromPosition": {"key": "self"},
+                                          "gravityMultiplier": {"key": "primaryArcGravity"},
+                                          "speed": {"key": "primaryArcSpeed"},
+                                          "toPosition": {"key": "targetPosition"},
+                                          "useHighArc": {"value": false}
+                                        },
+                                        "output": {
+                                          "aimVector": "aimVector"
+                                        }
+                                      },
+                                      {
+                                        "title": "vecMultiply",
+                                        "type": "action",
+                                        "name": "vecMultiply",
+                                        "parameters": {
+                                          "first": {"key": "aimVector"},
+                                          "second": {"value": [10, 10]}
+                                        },
+                                        "output": {
+                                          "vector": "aimOffset"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "title": "setAimPosition",
+                                    "type": "action",
+                                    "name": "setAimPosition",
+                                    "parameters": {
+                                      "offset": {"key": "aimOffset"},
+                                      "position": {"key": "self"}
+                                    }
+                                  },
+                                  {
+                                    "title": "primaryFire",
+                                    "type": "action",
+                                    "name": "primaryFire",
+                                    "parameters": {}
+                                  },
+                                  {
+                                    "title": "groupResource",
+                                    "type": "action",
+                                    "name": "groupResource",
+                                    "parameters": {
+                                      "groupId": {"value": "combat"},
+                                      "name": {"value": "primaryCharge"}
+                                    },
+                                    "output": {
+                                      "number": "primaryCharge"
+                                    }
+                                  },
+                                  {
+                                    "title": "setSelfValue",
+                                    "type": "action",
+                                    "name": "setSelfValue",
+                                    "parameters": {
+                                      "key": {"value": "primaryCharge"},
+                                      "numValue": {"key": "primaryCharge"}
+                                    }
+                                  },
+                                  {
+                                    "title": "setFlag",
+                                    "type": "action",
+                                    "name": "setFlag",
+                                    "parameters": {
+                                      "name": {"value": "primaryArcing"}
+                                    }
+                                  },
+                                  {
+                                    "title": "timer",
+                                    "type": "action",
+                                    "name": "timer",
+                                    "parameters": {
+                                      "time": {"value": 0.2}
+                                    }
+                                  },
+                                  {
+                                    "title": "unsetFlag",
+                                    "type": "action",
+                                    "name": "unsetFlag",
+                                    "parameters": {
+                                      "name": {"value": "primaryArcing"}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "parallel",
+                  "type": "composite",
+                  "name": "parallel",
+                  "parameters": {
+                    "fail": {"value": 1},
+                    "success": {"value": -1}
+                  },
+                  "children": [
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"value": 0.2}
+                      }
+                    },
+                    {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "timer",
+                          "type": "action",
+                          "name": "timer",
+                          "parameters": {
+                            "time": {"value": "<rangedWindupTime>"}
+                          }
+                        },
+                        {
+                          "title": "parallel",
+                          "type": "composite",
+                          "name": "parallel",
+                          "parameters": {
+                            "fail": {"value": -1},
+                            "success": {"value": -1}
+                          },
+                          "children": [
+                            {
+                              "title": "primaryFire",
+                              "type": "action",
+                              "name": "primaryFire",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "groupResource",
+                              "type": "action",
+                              "name": "groupResource",
+                              "parameters": {
+                                "groupId": {"value": "combat"},
+                                "name": {"value": "primaryCharge"}
+                              },
+                              "output": {
+                                "number": "primaryCharge"
+                              }
+                            },
+                            {
+                              "title": "setSelfValue",
+                              "type": "action",
+                              "name": "setSelfValue",
+                              "parameters": {
+                                "key": {"value": "primaryCharge"},
+                                "numValue": {"key": "primaryCharge"}
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "succeeder",
+                      "type": "decorator",
+                      "name": "succeeder",
+                      "parameters": {},
+                      "child": {
+                        "title": "sequence",
+                        "type": "composite",
+                        "name": "sequence",
+                        "parameters": {},
+                        "children": [
+                          {
+                            "title": "groupResource",
+                            "type": "action",
+                            "name": "groupResource",
+                            "parameters": {
+                              "groupId": {"value": "combat"},
+                              "name": {"value": "permaChargePrimary"}
+                            },
+                            "output": {
+                              "number": "permaPrimary"
+                            }
+                          },
+                          {
+                            "title": "setSelfValue",
+                            "type": "action",
+                            "name": "setSelfValue",
+                            "parameters": {
+                              "key": {"value": "OORChargePrimary"},
+                              "numValue": {"key": "permaPrimary"}
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "title": "succeeder",
+                      "type": "decorator",
+                      "name": "succeeder",
+                      "parameters": {},
+                      "child": {
+                        "title": "sequence",
+                        "type": "composite",
+                        "name": "sequence",
+                        "parameters": {},
+                        "children": [
+                          {
+                            "title": "groupResource",
+                            "type": "action",
+                            "name": "groupResource",
+                            "parameters": {
+                              "groupId": {"value": "combat"},
+                              "name": {"value": "permaChargeAlt"}
+                            },
+                            "output": {
+                              "number": "permaAlt"
+                            }
+                          },
+                          {
+                            "title": "setSelfValue",
+                            "type": "action",
+                            "name": "setSelfValue",
+                            "parameters": {
+                              "key": {"value": "OORChargeAlt"},
+                              "numValue": {"key": "permaAlt"}
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "sequence",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": "hasMeleeSheathed",
+            "type": "action",
+            "name": "hasMeleeSheathed",
+            "parameters": {}
+          },
+          {
+            "title": "inverter",
+            "type": "decorator",
+            "name": "inverter",
+            "parameters": {},
+            "child": {
+              "title": "dynamic",
+              "type": "composite",
+              "name": "dynamic",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "inverter",
+                  "type": "decorator",
+                  "name": "inverter",
+                  "parameters": {},
+                  "child": {
+                    "title": "entityInRange",
+                    "type": "action",
+                    "name": "entityInRange",
+                    "parameters": {
+                      "entity": {"key": "target"},
+                      "position": {"key": "self"},
+                      "range": {"key": "<meleeSwapDistance>"}
+                    }
+                  }
+                },
+                {
+                  "title": "failer",
+                  "type": "decorator",
+                  "name": "failer",
+                  "parameters": {},
+                  "child": {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"key": "<meleeSwapTime>"}
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "entityInSight",
+            "type": "action",
+            "name": "entityInSight",
+            "parameters": {
+              "entity": {"key": "target"}
+            }
+          },
+          {
+            "title": "swapItemSlots",
+            "type": "action",
+            "name": "swapItemSlots",
+            "parameters": {}
+          }
+        ]
+      },
+      {
+        "title": "runner",
+        "type": "action",
+        "name": "runner",
+        "parameters": {}
+      }
+    ]
+  }
+}

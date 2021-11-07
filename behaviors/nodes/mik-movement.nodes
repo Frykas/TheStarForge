@@ -1,0 +1,43 @@
+{
+  "approachTurn": {
+    "type": "action",
+    "name": "approachTurn",
+    "title": "",
+    "properties": {
+      "entity": {"type": "entity", "value": null},
+      "turnSpeed": {"type": "number", "value": 1},
+	  "checkCollision": {"type": "bool", "value": true},
+	  "minRange": {"type": "number", "value": -1}
+    },
+    "category": "flying",
+    "script": "/scripts/npc/actions/mik-movement.lua",
+    "output": {
+      "angle": {"type": "number", "key": null},
+      "direction": {"type": "number", "key": null}
+    }
+  },
+  "moveToPosition": {
+    "type": "action",
+    "name": "moveToPosition",
+    "title": "",
+    "properties": {
+      "avoidLiquid": {"type": "bool", "value": true},
+      "groundPosition": {"type": "bool", "value": true},
+      "maxGround": {"type": "number", "value": 5},
+      "minGround": {"type": "number", "value": -5},
+      "closeDoors": {"type": "bool", "value": true},
+      "pathOptions": {"type": "json", "value": {}},
+      "position": {"type": "position", "value": "target"},
+      "run": {"type": "bool", "value": false},
+      "runSpeed": {"type": "number", "value": null}
+    },
+    "category": "movement",
+    "script": "/scripts/npc/actions/mik-movement.lua",
+    "output": {
+      "direction": {"type": "number", "key": null},
+      "pathfinding": {"type": "bool", "key": null},
+	  "targetReachable": {"type": "bool", "key": null},
+	  "targetPosition": {"type": "vec2", "key": null}
+    }
+  }
+}

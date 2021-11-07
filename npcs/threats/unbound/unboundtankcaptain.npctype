@@ -1,6 +1,8 @@
 {
   "type": "starforge-unboundtankcaptain",
   "baseType": "hostile",
+
+  "persistent" : true,
 	
   "scripts" : ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
   "initialScriptDelta" : 5,
@@ -12,21 +14,26 @@
     "species" : "apex",
     "gender" : "male"
   },
-
-  "movementParameters" : {
-    "walkSpeed" : 0.1
-  },
  
   "scriptConfig" : {
 	"bossName" : "Unbound Centurion Tank Commander of the Highest Order, Maurice, Age 42, Height 163 cm",
 	"nameTag" : "Maurice",
 	
-    "behaviorConfig" : {
-      "rangedAimTime" : 0.1,
-      "rangedWindupTime" : 0,
-      "rangedMinFireTime": 100,
-      "rangedMaxFireTime": 10000000
-    },
+	"behavior" : "mik-hostilenpc",
+	
+	"bandageTime" : 60,
+
+	"aggressive" : true,
+
+	"behaviorConfig" : {
+	  "leapWindup" : 0.15,
+	  "leapCooldown": 2,
+	  "rangedAimTime" : 0.1,
+	  "rangedWindupTime" : 0.1,
+	  "leapChance" : 0.95,
+	  "rangedSwapTime" : 1,
+	  "meleeSwapTime" : 1.5
+	},
 
     "chatSounds" : {
       "default" : {
@@ -42,7 +49,6 @@
           "default" : [
             "AAAAAAAHHHHHHH.",
             "DIE DIE DIE!!!!!",
-            "WE UNBOUND WILL NOT DIE SO EASILY!",
             "MY TAAAANK!"
           ]
         }
@@ -52,7 +58,6 @@
           "default" : [
             "AAAAAAAHHHHHHH.",
             "DIE DIE DIE!!!!!",
-            "WE UNBOUND WILL NOT DIE SO EASILY!",
             "MY TAAAANK!"
           ]
         }
@@ -62,7 +67,6 @@
           "default" : [
             "AAAAAAAHHHHHHH.",
             "DIE DIE DIE!!!!!",
-            "WE UNBOUND WILL NOT DIE SO EASILY!",
             "MY TAAAANK!"
           ]
         }
@@ -72,7 +76,6 @@
           "default" : [
             "AAAAAAAHHHHHHH.",
             "DIE DIE DIE!!!!!",
-            "WE UNBOUND WILL NOT DIE SO EASILY!",
             "MY TAAAANK!"
           ]
         }
@@ -82,7 +85,6 @@
           "default" : [
             "AAAAAAAHHHHHHH.",
             "DIE DIE DIE!!!!!",
-            "WE UNBOUND WILL NOT DIE SO EASILY!",
             "MY TAAAANK!"
           ]
         }
@@ -92,7 +94,6 @@
           "default" : [
             "AAAAAAAHHHHHHH.",
             "DIE DIE DIE!!!!!",
-            "WE UNBOUND WILL NOT DIE SO EASILY!",
             "MY TAAAANK!"
           ]
         }
@@ -102,10 +103,30 @@
           "default" : [
             "AAAAAAAHHHHHHH.",
             "DIE DIE DIE!!!!!",
-            "WE UNBOUND WILL NOT DIE SO EASILY!",
             "MY TAAAANK!"
           ]
         }
+      }
+    },
+	
+    "combat" : {
+      "meleeWeaponWindups" : {
+        "default" : 0,
+        "broadsword" : 0,
+        "dagger" : 0,
+        "axe" : 0.45,
+        "hammer" : 0.45,
+        "shortsword" : 0,
+        "spear" : 0
+      },
+      "meleeWeaponCooldowns" : {
+        "default" : 1.0,
+        "broadsword" : 1.7,
+        "dagger" : 0.7,
+        "axe" : 1.4,
+        "hammer" : 2.0,
+        "shortsword" : 1.0,
+        "spear" : 1.4
       }
     }
   },
@@ -137,8 +158,78 @@
         }],
         "primary": [
           "starforge-unboundpistol"
-        ]
+        ],
+        "sheathedprimary" : [
+		  "starforge-infusedbroadsword" 
+		]
       }]]
     ]
+  },
+  
+  "movementParameters" : {
+    "mass" : 2.0,
+    "runSpeed" : 14,
+    "airJumpProfile" : {
+      "jumpSpeed": 60,
+      "jumpHoldTime": 0,
+      "autoJump": false,
+      "collisionCancelled": true,
+      "multiJump": false,
+      "jumpControlForce": 900,
+      "reJumpDelay": 0.05,
+      "jumpInitialPercentage": 1
+    }
+  },
+  
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "hitInvulnerabilityThreshold" : 0.1,
+      "hitInvulnerabilityTime" : 1,
+      "hitInvulnerabilityFlash" : 0.15,
+      "shieldHitInvulnerabilityTime" : 1.0,
+      "damageFlashOnDirectives" : "",
+      "damageFlashOffDirectives" : "multiply=ffffff00=0.85"
+    },
+	
+    "primaryScriptSources" : [
+      "/stats/neb-verterannpcmain.lua",
+      "/scripts/vec2.lua"
+    ],
+	
+    "primaryScriptDelta" : 5,
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 1.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 1.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.01
+      },
+      "protection" : {
+        "baseValue" : 0.0
+      },
+      "healthRegen" : {
+        "baseValue" : 1000.0
+      },
+      "jumpModifier" : {
+        "baseValue" : 0.5
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 1
+      },
+      "grit" : {
+        "baseValue" : -1
+      }
+    },
+	
+    "resources" : {
+      "stunned" : {
+        "deltaValue" : -1.0,
+        "initialValue" : 0.0,
+        "maxValue" : 0.0
+      }
+    }
   }
 }

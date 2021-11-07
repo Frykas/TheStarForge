@@ -11,6 +11,10 @@
 
   "baseParameters" : {
     "monsterClass" : "boss",
+	
+	//Track Animation
+	"trackAnimationSpeed" : 0.6,
+	"trackAnimationFrames" : 4,
 
     "scripts" : [
       "/monsters/boss/bossMonster.lua",

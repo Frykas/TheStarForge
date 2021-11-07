@@ -1,0 +1,68 @@
+{
+  "mik-npcmeleecombat": {
+    "type": "module",
+    "name": "mik-npcmeleecombat",
+    "title": "mik-npcmeleecombat",
+    "properties": {
+      "switchToRangedCooldown": {"type": "number", "value": 8},
+      "leapCooldown": {"type": "number", "value": 4},
+      "leapChance": {"type": "number", "value": 0.5}
+    }
+  },
+  "mik-npcrangedcombat": {
+    "type": "module",
+    "name": "mik-npcrangedcombat",
+    "title": "mik-npcrangedcombat",
+    "properties": {
+      "rangedAimTime": {"type": "number", "value": 0},
+      "rangedWindupTime": {"type": "number", "value": 0.05},
+      "rangedMinFireTime": {"type": "number", "value": 0.5},
+      "rangedMaxFireTime": {"type": "number", "value": 1},
+      "arrowSpeed": {"type": "number", "value": 62.5},
+	  "meleeSwapTime": {"type": "number", "value": 2},
+	  "meleeSwapDistance": {"type": "number", "value": 12.5},
+	  "leapCooldown": {"type": "number", "value": 3},
+	  "leapChance": {"type": "number", "value": 0.5}
+    }
+  },
+  "mik-npchostiletracking": {
+    "type": "module",
+    "name": "mik-npchostiletracking",
+    "title": "mik-npchostiletracking",
+    "properties": {
+      "queryRange": {"type": "number", "value": 50},
+      "trackingRange": {"type": "number", "value": 50},
+	  "outOfSightTime": {"type": "number", "value": 60}
+    }
+  },
+  "mik-npcmeleecombat-approach": {
+    "type": "module",
+    "name": "mik-npcmeleecombat-approach",
+    "title": "mik-npcmeleecombat-approach",
+    "properties": {
+      "liquidHesitationTime": {"type": "number", "value": 3},
+      "forceRunRange": {"type": "number", "value": 0},
+      "cantReachDialog": {"type": "bool", "value": true},
+	  "leapCooldown": {"type": "number", "value": 3},
+	  "leapChance": {"type": "number", "value": 0.5},
+	  "targetObtainable": {"type": "bool", "value": true},
+	  "rangedSwapTime": {"type": "number", "value": 2}
+    }
+  },
+  "mik-npcmeleecombat-leap": {
+    "type": "module",
+    "name": "mik-npcmeleecombat-leap",
+    "title": "",
+    "properties": {
+      "leapWindup": {"type": "number", "value": 0.1}
+    }
+  },
+  "mik-npcrangedcombat-leap": {
+    "type": "module",
+    "name": "mik-npcrangedcombat-leap",
+    "title": "",
+    "properties": {
+      "leapWindup": {"type": "number", "value": 0.1}
+    }
+  }
+}

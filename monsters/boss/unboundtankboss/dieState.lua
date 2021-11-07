@@ -20,7 +20,6 @@ function dieState.enteringState(stateData)
   animator.setAnimationState("body", "stage3")
   animator.setAnimationState("barrel", "broken")
   animator.setAnimationState("rocketLauncher", "broken")
-  animator.setAnimationState("tracks", "idle")
   
   animator.playSound("death")
   
