@@ -37,6 +37,13 @@ function unboundTankCannonFire.update(dt, stateData)
     self.targetingTime = math.max(0, self.targetingTime - dt)
 	if self.targetingTime > 0 then
 	  self.targetAngle = vec2.angle(vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(stateData.barrelOffset))))
+	  if self.targetAngle > 0.6 and self.targetAngle < 5.8 then
+		if self.targetAngle > 3.8 then
+		  self.targetAngle = 5.8
+		else
+	   	  self.targetAngle = 0.6
+	    end
+	  end
 	  self.aimAngle = unboundTankCannonFire.adjustAim(self.aimAngle or 0, self.targetAngle, dt, stateData)
 	
 	  self.rotatedMuzzle = vec2.rotate(stateData.barrelMuzzleOffset, -(self.aimAngle or 0) - math.pi)
