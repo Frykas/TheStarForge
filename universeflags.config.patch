@@ -12,5 +12,20 @@
                 }
             ]
         }
+    },
+	
+	{
+        "op": "add",
+        "path": "/unboundstart",
+        "value": {
+            "actions": [
+                {
+                    "type": "placeDungeon",
+                    "dungeonId": "thalassooutpost_unboundstart",
+                    "targetInstance": "thalassooutpost",
+                    "targetPosition": [170, 500]
+                }
+            ]
+        }
     }
 ]

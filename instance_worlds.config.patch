@@ -76,5 +76,30 @@
 		
 			}
 		}
+	},
+	{
+		"op": "add",
+		"path": "/starforge-unbdmission2",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "starforge-unbdmission2",
+			"seed": 1234,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": false},
+			"skyParameters" : {
+      "spaceLevel" : 3000,
+      "ambientLightLevel" : [184, 197, 182],
+
+      "skyType" : "barren",
+			   
+				"horizonImages": [],
+				"dayLength": 5000.36,
+				"surfaceLevel": 800,
+				"seed": -5288806180628667000
+		
+			}
+		}
 	}
 ]

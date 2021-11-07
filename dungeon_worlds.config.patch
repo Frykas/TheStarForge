@@ -30,7 +30,24 @@
             "dungeonBaseHeight" : 1120,
             "dungeonSurfaceHeight" : 1070,
             "ambientLightLevel" : [128, 128, 128],
-            "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
+            "musicTrack" : "/music/planetarium.ogg"
+	}
+	},
+	
+	{
+		"op": "add",
+		"path": "/starforge-unbdmission2",
+		"value": {
+			"primaryDungeon" : "starforge-unbdmission2",
+            "threatLevel" : 7,
+			"biome" : "asteroids",
+            "gravity" : 55,
+            "worldSize" : [2000, 2000],
+            "dungeonBaseHeight" : 1120,
+            "dungeonSurfaceHeight" : 1070,
+            "ambientLightLevel" : [128, 128, 128],
+            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
             "musicTrack" : "/music/planetarium.ogg"
 	}
 	}

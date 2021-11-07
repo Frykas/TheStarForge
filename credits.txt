@@ -31,6 +31,8 @@ MPI, as well as helping me with Tiled and doing proofreading on quests & dialogu
 • TeSkreDOTexe#7034, for making the Buffalot, the original sprites of the Unbound drones 
 giving general feedback, and naming the Potlots! 
 
+• PRODIGY#1887, for recoloring the Jootyfish when I was lazy about it.
+
 • Nitrosteel#0002, for making an early sprite that was then used by Nebulox
 to make the Principle of Duality rocket launcher.
 
