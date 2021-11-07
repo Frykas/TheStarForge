@@ -16,7 +16,7 @@
   },
  
   "scriptConfig" : {
-	"bossName" : "Unbound Centurion Tank Commander of the Highest Order, Maurice, Age 42, Height 163 cm",
+	"bossName" : "Unbound Centurion Tank Commander of the Highest Order, Maurice, Age 26, Height 163 cm",
 	"nameTag" : "Maurice",
 	
 	"behavior" : "mik-hostilenpc",
