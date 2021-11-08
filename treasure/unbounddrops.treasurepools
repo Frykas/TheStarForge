@@ -5,15 +5,15 @@
   "unboundSoldierDeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.9, "pool" : "money"},
-        {"weight" : 0.02, "item" : "starforge-unboundhead"},
-        {"weight" : 0.02, "item" : "starforge-unboundchest"},
-		{"weight" : 0.02, "item" : "starforge-unboundpants"},
-		{"weight" : 0.04, "item" : "starforge-unboundar"}
+        {"weight" : 0.975, "pool" : "money"},
+        {"weight" : 0.005, "item" : "starforge-unboundhead"},
+        {"weight" : 0.005, "item" : "starforge-unboundchest"},
+		{"weight" : 0.005, "item" : "starforge-unboundpants"},
+		{"weight" : 0.01, "item" : "starforge-unboundar"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]
@@ -21,15 +21,15 @@
     "unboundCaptain1DeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.9, "pool" : "money"},
-        {"weight" : 0.02, "item" : "starforge-unboundcaptainhead"},
-        {"weight" : 0.02, "item" : "starforge-unboundcaptainchest"},
-		{"weight" : 0.02, "item" : "starforge-unboundcaptainpants"},
-		{"weight" : 0.04, "item" : "starforge-unboundshield"}
+        {"weight" : 0.975, "pool" : "money"},
+        {"weight" : 0.005, "item" : "starforge-unboundcaptainhead"},
+        {"weight" : 0.005, "item" : "starforge-unboundcaptainchest"},
+		{"weight" : 0.005, "item" : "starforge-unboundcaptainpants"},
+		{"weight" : 0.01, "item" : "starforge-unboundshield"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]
@@ -37,14 +37,14 @@
   "unboundCaptain2DeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.1, "item" : "starforge-unboundcaptainhead"},
-        {"weight" : 0.1, "item" : "starforge-unboundcaptainchest"},
-		{"weight" : 0.1, "item" : "starforge-unboundcaptainpants"}
+        {"weight" : 0.85, "pool" : "money"},
+        {"weight" : 0.05, "item" : "starforge-unboundcaptainhead"},
+        {"weight" : 0.05, "item" : "starforge-unboundcaptainchest"},
+		{"weight" : 0.05, "item" : "starforge-unboundcaptainpants"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]
@@ -52,17 +52,17 @@
   "unboundOfficerDeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.9, "pool" : "money"},
-        {"weight" : 0.02, "item" : "starforge-unboundofficerhead"},
-        {"weight" : 0.01, "item" : "starforge-unboundofficerchest"},
-		{"weight" : 0.01, "item" : "starforge-unboundofficerpants"},
-		{"weight" : 0.02, "item" : "starforge-unboundpistol"},
-		{"weight" : 0.02, "item" : "starforge-unboundburstpistol"},
-		{"weight" : 0.02, "item" : "starforge-unboundsilencedpistol"}
+        {"weight" : 0.95, "pool" : "money"},
+        {"weight" : 0.01, "item" : "starforge-unboundofficerhead"},
+        {"weight" : 0.005, "item" : "starforge-unboundofficerchest"},
+		{"weight" : 0.005, "item" : "starforge-unboundofficerpants"},
+		{"weight" : 0.01, "item" : "starforge-unboundpistol"},
+		{"weight" : 0.01, "item" : "starforge-unboundburstpistol"},
+		{"weight" : 0.01, "item" : "starforge-unboundsilencedpistol"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]
@@ -70,16 +70,16 @@
  "unboundSniperDeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.9, "pool" : "money"},
-        {"weight" : 0.02, "item" : "starforge-unboundsniperhead"},
-        {"weight" : 0.02, "item" : "starforge-unboundsniperchest"},
-		{"weight" : 0.02, "item" : "starforge-unboundsniperpants"},
-		{"weight" : 0.02, "item" : "starforge-unbounddmr"},
-		{"weight" : 0.02, "item" : "starforge-unboundsniper"}
+        {"weight" : 0.95, "pool" : "money"},
+        {"weight" : 0.01, "item" : "starforge-unboundsniperhead"},
+        {"weight" : 0.01, "item" : "starforge-unboundsniperchest"},
+		{"weight" : 0.01, "item" : "starforge-unboundsniperpants"},
+		{"weight" : 0.01, "item" : "starforge-unbounddmr"},
+		{"weight" : 0.01, "item" : "starforge-unboundsniper"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]
@@ -87,16 +87,16 @@
  "unboundHeavyDeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.9, "pool" : "money"},
-        {"weight" : 0.02, "item" : "starforge-unboundheavyhead"},
-        {"weight" : 0.02, "item" : "starforge-unboundheavychest"},
-		{"weight" : 0.02, "item" : "starforge-unboundheavypants"},
-		{"weight" : 0.02, "item" : "starforge-unboundshotgun"},
-		{"weight" : 0.02, "item" : "starforge-unboundautoshotgun"}
+        {"weight" : 0.95, "pool" : "money"},
+        {"weight" : 0.01, "item" : "starforge-unboundheavyhead"},
+        {"weight" : 0.01, "item" : "starforge-unboundheavychest"},
+		{"weight" : 0.01, "item" : "starforge-unboundheavypants"},
+		{"weight" : 0.01, "item" : "starforge-unboundshotgun"},
+		{"weight" : 0.01, "item" : "starforge-unboundautoshotgun"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]
@@ -104,14 +104,14 @@
   "unboundStalkerDeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.1, "item" : "starforge-unboundstalkerhead"},
-        {"weight" : 0.1, "item" : "starforge-unboundstalkerchest"},
-		{"weight" : 0.1, "item" : "starforge-unboundstalkerpants"}
+        {"weight" : 0.85, "pool" : "money"},
+        {"weight" : 0.05, "item" : "starforge-unboundstalkerhead"},
+        {"weight" : 0.05, "item" : "starforge-unboundstalkerchest"},
+		{"weight" : 0.05, "item" : "starforge-unboundstalkerpants"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]
@@ -119,14 +119,14 @@
 "unboundFortress1DeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.1, "item" : "starforge-unboundfortresshead"},
-        {"weight" : 0.1, "item" : "starforge-unboundfortresschest"},
-		{"weight" : 0.1, "item" : "starforge-unboundfortresspants"}
+        {"weight" : 0.85, "pool" : "money"},
+        {"weight" : 0.05, "item" : "starforge-unboundfortresshead"},
+        {"weight" : 0.05, "item" : "starforge-unboundfortresschest"},
+		{"weight" : 0.05, "item" : "starforge-unboundfortresspants"}
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]
@@ -134,14 +134,14 @@
   "unboundFortress2DeathTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.7, "pool" : "money"},
-        {"weight" : 0.1, "item" : "starforge-unboundfortresshead"},
-        {"weight" : 0.1, "item" : "starforge-unboundfortresschest"},
-		{"weight" : 0.1, "item" : "starforge-unboundfortresspants"} 
+        {"weight" : 0.85, "pool" : "money"},
+        {"weight" : 0.05, "item" : "starforge-unboundfortresshead"},
+        {"weight" : 0.05, "item" : "starforge-unboundfortresschest"},
+		{"weight" : 0.05, "item" : "starforge-unboundfortresspants"} 
       ],
       "poolRounds" : [
-        [0.20, 0],
-        [0.80, 1]
+        [0.40, 0],
+        [0.60, 1]
       ],
       "allowDuplication" : false
     }]

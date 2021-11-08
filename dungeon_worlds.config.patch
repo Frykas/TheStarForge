@@ -42,7 +42,7 @@
 			"primaryDungeon" : "starforge-unbdmission2",
             "threatLevel" : 7,
 			"biome" : "asteroids",
-            "gravity" : 55,
+            "gravity" : 45,
             "worldSize" : [2000, 2000],
             "dungeonBaseHeight" : 1120,
             "dungeonSurfaceHeight" : 1070,

@@ -1,7 +1,7 @@
 {
   "id" : "starforge-apexunboundthermites",
   "species" : "apex",
-  "title" : "Thermites weaponry",
+  "title" : "Thermite weaponry",
   "description" : "Development notes regarding Unbound weaponry.",
   "icon" : "unboundresearchpad.png",
   "contentPages" : [

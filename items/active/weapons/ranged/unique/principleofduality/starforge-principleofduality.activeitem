@@ -96,7 +96,7 @@
     "class" : "StarForgeMultiBarrelFire",
 
     "fireTime" : 0.85,
-    "baseDps" : 21,
+    "baseDps" : 16,
     "energyUsage" : 40,
     "inaccuracy" : 0.0,
 	
