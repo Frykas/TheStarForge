@@ -39,5 +39,19 @@
       "animationCycle" : 1.5,
       "anchors" : [ "bottom" ]
     }
-   ]
-   }
+  ],
+  
+  "animation" : "sciencestarforge.animation",
+  "animationParts" : {
+    "forge" : "sciencestarforge.png",
+    "forgefullbright" : "sciencestarforgefullbright.png"
+  },
+  "animationPosition" : [-40, 0],
+  
+  "scripts" : [
+    "/objects/scripts/starforge-terrorism.lua"
+  ],
+  "message" : "starforge-setwaveactive",
+  "messageRadius" : 55,
+  "messageArgs" : 1.25
+}

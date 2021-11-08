@@ -12,8 +12,10 @@ function dieState.enterWith(params)
 end
 
 function dieState.enteringState(stateData)
-  --world.objectQuery(mcontroller.position(), 50, { name = "lunarbaselaser", callScript = "openLunarBaseDoor" })
+  if animator.animationState("engine") ~= "off" then triggerDeath() end
+end
 
+function triggerDeath()
   --Make it look dead
   animator.setAnimationState("engine", "off")
   
@@ -36,7 +38,7 @@ function dieState.enteringState(stateData)
   --Spawn some explosions
   explode(15)
 
-  --And spawn an unbound soldier
+  --And spawn an Maurice
   world.spawnNpc(vec2.add(mcontroller.position(), {0, 2}), "apex", "starforge-unboundtankcaptain", monster.level())
 end
 

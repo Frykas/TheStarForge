@@ -2,7 +2,7 @@
   "particleEmitters" : {
     "drips" : {
       "enabled" : true,
-      "emissionRate" : 20.0,
+      "emissionRate" : 35.0,
       "particles" : [
         {
           "particle" : {
@@ -26,5 +26,9 @@
         }
       ]
     }
+  },
+
+  "sounds" : {
+    "idleLoop" : [ "/sfx/gun/aegisaltpistol_loop.ogg" ]
   }
 }

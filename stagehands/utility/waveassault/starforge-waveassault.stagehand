@@ -4,103 +4,31 @@
   "scripts" : ["/stagehands/utility/waveassault/starforge-waveassault.lua"],
   "scriptDelta" : 1,
   
-  "monsterTypes" : [
-    //Poptops
-	"poptop",
-	"poptop",
-	"poptop",
-	"poptop",
-	"poptop",
-	"poptop",
-	"poptop",
-	"poptop",
-	"poptop",
-	"adultpoptop",
-	"adultpoptop",
-	"motherpoptop",
-	"albinopoptop",
-	
-	//Gleaps
-	"gleap",
-	"gleap",
-	"gleap",
-	"gleap",
-	"gleap",
-	"gleap",
-	"gleap",
-	"gleap",
-	"gleap",
-	"firegleap",
-	
-	//Hemogoblin
-	"hemogoblin",
-	"hemogoblin",
-	"hemogoblin",
-	"hemogoblin",
-	"hemogoblin",
-	"hemogoblin",
-	"hemogoblin",
-	"hemogoblin",
-	"hemogoblin",
-	"electrichemogoblin",
-	
-	//Nutmidge
-	"nutmidge",
-	"nutmidge",
-	"nutmidge",
-	"nutmidge",
-	"nutmidge",
-	"nutmidge",
-	"nutmidge",
-	"nutmidge",
-	"nutmidge",
-	"poisonnutmidge",
-	
-	//Scaveran
-	"scaveran",
-	"scaveran",
-	"scaveran",
-	"scaveran",
-	"scaveran",
-	"scaveran",
-	"scaveran",
-	"scaveran",
-	"scaveran",
-	"poisonscaveran",
-	
-	//Crabcano
-	"crabcano",
-	"crabcano",
-	"crabcano",
-	"crabcano",
-	"crabcano",
-	"crabcano",
-	"crabcano",
-	"crabcano",
-	"crabcano",
-	"icecrabcano",
-	
-	//Orbide
-	"orbide",
-	"orbide",
-	"orbide",
-	"orbide",
-	"orbide",
-	"iceorbide"
-  ],
+  //Template
+  "monsterTypes" : [],
   
   "npcTypes" : [
+    "starforge-unboundsoldier",
+    "starforge-unboundsoldier",
+    "starforge-unboundsoldier",
+	"starforge-unboundofficer"
   ],
   "npcSpecies" : [
+    "apex"
   ],
   
-  "enemyCount" : [ 10, 20 ],
-  "monsterTestPoly" : [ [0.8125, 1.25], [1.3125, 0.75],  [1.3125, -1.05], [0.8125, -1.55],  [-0.8125, -1.55], [-1.3125, -1.05],  [-1.3125, 0.75], [-0.8125, 1.25] ],
+  "enemyCount" : [ 5, 7 ],
+  "testPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
   "spawnOnGround" : true,
-  "spawnEffects" : ["beamin"],
-  "minDistanceToPlayer" : 10,
-  "spawnRangeX" : 50,
-  "spawnRangeY" : 5,
+  "spawnEffects" : [ "beamin" ],
+  "spawnRangeX" : 17,
+  "spawnRangeY" : 0,
   "spawnTolerance" : 25,
-  "waveTime" : 5
+  "waveTime" : 1,
+  //"survivalTimer" : 5,
+  "waves" : 3,
+  
+  "messageRadius" : 32,
+  "startMessages" : [ "lockDoor" ],
+  "endMessages" : [ "openDoor" ]
 }

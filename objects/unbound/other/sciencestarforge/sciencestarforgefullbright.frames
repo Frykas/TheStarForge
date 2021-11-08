@@ -1,14 +1,15 @@
 {
-
   "frameGrid" : {
     "size" : [96, 72],
-   "dimensions" : [14, 1],
+    "dimensions" : [14, 3],
     "names" : [
-    [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13" ]
+      [ "idle.1", "idle.2", "idle.3", "idle.4", "idle.5", "idle.6", "idle.7", "idle.8", "idle.9", "idle.10", "idle.11", "idle.12", "idle.13", "idle.14" ],
+      [ "rigged.1", "rigged.2", "rigged.3", "rigged.4", "rigged.5", "rigged.6", "rigged.7", "rigged.8", "rigged.9", "rigged.10", "rigged.11", "rigged.12", "rigged.13", "rigged.14" ],
+      [ "destroyed", null, null, null, null, null, null, null, null, null, null, null, null, null ]
     ]
   },
 
   "aliases" : {
-    "default" : "0"
+    "default" : "idle.1"
   }
 }

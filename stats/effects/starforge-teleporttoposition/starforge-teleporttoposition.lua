@@ -8,6 +8,8 @@ function init()
   self.blinkOffset = config.getParameter("blinkOffset")
   self.blinkTolerance = config.getParameter("blinkTolerance")
   self.targetPosition = mcontroller.position()
+  self.maxPitch = config.getParameter("maxPitch", 2) - 1
+  animator.playSound("idleLoop", -1)
   
   self.baseDuration = effect.duration()
   
@@ -17,11 +19,16 @@ function init()
 end
 
 function update(dt)
-  local fade = string.format("=%.1f", effect.duration() / self.baseDuration)
+  local boostPercent = 1 - effect.duration() / self.baseDuration
+  local boostPitch = boostPercent * self.maxPitch
+  animator.setSoundPitch("idleLoop", 1 + boostPercent)
+
+  local fade = string.format("=%.1f", boostPercent)
   effect.setParentDirectives(config.getParameter("directives", "") .. fade)
 end
 
 function onExpire()
+  animator.stopAllSounds("idleLoop")
   local lastPosition = mcontroller.position()
   
   local resolvedPoint = world.resolvePolyCollision(mcontroller.collisionPoly(), vec2.add(self.targetPosition, self.blinkOffset), self.blinkTolerance)

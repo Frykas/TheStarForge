@@ -1,0 +1,13 @@
+{
+  // please don't modify this file, it's a generically configurable stagehand to be used by dungeons
+  "type" : "starforge-messagenearbyentities",
+
+  "scripts" : ["/stagehands/utility/messagenearbyentities/starforge-messagenearbyentities.lua"],
+  "scriptDelta" : 10,
+
+  "broadcastArea" : [-5, -5, 5, 5],
+
+  "messageType" : "",
+  "messageRadius" : 60,
+  "messageArgs" : []
+}

@@ -59,55 +59,40 @@
 			"type": "largefirecloud",
 			"action": "projectile"
 		},
-
 		{
 			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
-			"inheritDamageFactor": 0.005,
-			"angleAdjust": 35
-		},
-		{
-			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
-			"inheritDamageFactor": 0.005,
-			"angleAdjust": -35
-		},
-		{
-			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
 			"inheritDamageFactor": 0.005,
 			"angleAdjust": 1
 		},
 		{
 			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
 			"inheritDamageFactor": 0.005,
 			"angleAdjust": -18
 		},
 		{
 			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
 			"inheritDamageFactor": 0.005,
 			"angleAdjust": 18
 		},
 		{
 			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
 			"inheritDamageFactor": 0.005,
-			"angleAdjust": 55
+			"angleAdjust": -27
 		},
 		{
 			"action": "projectile",
-			"type": "molotovflame",
-			"fuzzAngle": 0,
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
 			"inheritDamageFactor": 0.005,
-			"angleAdjust": -55
+			"angleAdjust": 27
 		}
 	],
 	"timeToLive": 1.5,
