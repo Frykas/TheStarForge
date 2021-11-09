@@ -1,0 +1,25 @@
+{
+  "materialId" : 2902,
+  "materialName" : "starforge-unboundwallpanelwithered",
+  "particleColor" : [124, 145, 86, 255],
+  "itemDrop" : "starforge-unboundwallpanelwithered",
+
+  "description" : "Resilient panelling used for Unbound structures. It is heavily withered.",
+  "glitchDescription" : "Observant. This is panelling widely used for Unbound structures.",
+  "floranDescription" : "Shiny sssmooth space metal.",
+  "novakidDescription" : "Some thick metal plating, looks mighty solid.",
+  "shortdescription" : "Unbound Hull Panel",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "unboundwallpanelwithered.png",
+    "variants" : 8,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2500
+  }
+}

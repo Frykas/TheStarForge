@@ -6,5 +6,6 @@
   "inventoryIcon" : "withersample.png",
   "description" : "A small sample of the Wither, safely contained.",
   "shortdescription" : "Wither Sample",
-  "itemTags" : ["reagent"]
+  "itemTags" : ["reagent"],
+  "radioMessagesOnPickup" : [ "witherlord-firstcontact" ]
 }
