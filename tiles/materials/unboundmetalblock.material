@@ -1,0 +1,24 @@
+{
+  "materialId" : 2903,
+  "materialName" : "starforge-unboundmetalblock",
+  "particleColor" : [227, 174, 47, 255],
+  "itemDrop" : "starforge-unboundmetalblock",
+  "description" : "A solid metal block, used in Unbound structures.",
+  "shortdescription" : "Unbound Metal Block",
+  "glitchDescription" : "Delighted. A block made entirely of solid metal.",
+  "floranDescription" : "Sstrong metal blockss.",
+  "novakidDescription" : "Yeehaw! Strong blocks of solid metal!",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "unboundmetalblock.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 3000
+  }
+}

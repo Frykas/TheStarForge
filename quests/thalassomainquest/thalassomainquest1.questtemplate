@@ -38,8 +38,8 @@
 	
 	"followUp" : "thalassomission1b",
 
-    "turnInEntityUid" : "starforge-morpheusoutpost"
-  },
+    "turnInEntityUid" : "starforge-morpheusoutpost",
   
   "setUniverseFlags" : ["unboundmission1"]
+  }
 }

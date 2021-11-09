@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unboundtiles",
  "spacing":0,
- "tilecount":2,
+ "tilecount":4,
  "tiledversion":"1.4.3",
  "tileheight":8,
  "tileproperties":
@@ -34,6 +34,20 @@
          "\/\/name":"starforge-unboundwallpanelwithered",
          "\/\/shortdescription":"Unbound Hull Panel",
          "material":"starforge-unboundwallpanelwithered"
+        },
+     "2":
+        {
+         "\/\/description":"A solid metal block, used in Unbound structures.",
+         "\/\/name":"starforge-unboundmetalblock",
+         "\/\/shortdescription":"Unbound Metal Block",
+         "material":"starforge-unboundmetalblock"
+        },
+     "3":
+        {
+         "\/\/description":"A wall support used in Unbound constructions.",
+         "\/\/name":"starforge-unboundmetalsupport",
+         "\/\/shortdescription":"Unbound Metal Support",
+         "material":"starforge-unboundmetalsupport"
         }
     },
  "tilepropertytypes":
@@ -46,6 +60,20 @@
          "material":"string"
         },
      "1":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "material":"string"
+        },
+     "2":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "material":"string"
+        },
+     "3":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -64,6 +92,18 @@
      "1":
         {
          "image":"unboundwallpanelwithered.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "2":
+        {
+         "image":"unboundmetalblock.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "3":
+        {
+         "image":"unboundmetalsupport.png",
          "imageheight":8,
          "imagewidth":8
         }

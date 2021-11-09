@@ -1,0 +1,27 @@
+
+{
+  "materialId" : 2904,
+  "materialName" : "starforge-unboundmetalsupport",
+  "frames" : "unboundmetalsupport.png",
+  "particleColor" : [110, 110, 110, 255],
+  "variants" : 1,
+  "itemDrop" : "starforge-unboundmetalsupport",
+  "description" : "A wall support used in Unbound constructions.",
+  "shortdescription" : "Unbound Support",
+  "glitchDescription" : "Informed. Supports like this are often used in ship construction.",
+  "floranDescription" : "Ssship sstructural ssupport.",
+  "novakidDescription" : "Made for holdin' spaceships together.",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "unboundmetalsupport.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 3340
+  }
+}

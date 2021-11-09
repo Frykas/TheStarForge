@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unboundmetalsupport",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "unboundmetalsupport.png",
+  "shortdescription" : "Unbound Metal Support",
+  "description" : "A solid metal block, used in Unbound structures.",
+  "glitchdescription" : "Observant. This is panelling widely used for Unbound structures.",
+  "florandescription" : "Shiny sssmooth space metal.",
+  "novakiddescription" : "Some thick metal plating, looks mighty solid.",
+
+  "materialId" : 2904
+}

@@ -37,7 +37,7 @@
     },
     "sounds": {
       "fire": [
-        "/sfx/gun/sniper3.ogg"
+        "/sfx/gun/starforge-unboundrifle.ogg"
       ]
     }
   },
