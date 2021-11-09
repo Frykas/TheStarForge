@@ -1,0 +1,30 @@
+{
+  "name" : "starforge-powerdash",
+  "type" : "body",
+
+  "scripts" : ["starforge-powerdash.lua"],
+  "animator" : "/tech/dash/starforge-powerdash.animation",
+
+  "description" : "Dash through space! One use every 3s, max 3. ^green;[A][A]^white;, ^green;[D][D]^white;",
+  "shortDescription" : "Power Dash",
+  "rarity" : "Essential",
+  "icon" : "/tech/starforge-powerdash.png",
+
+  "chipCost" : 16,
+
+  "maximumDoubleTapTime" : 0.25,
+  
+  "dashCharges" : 3,
+  "dashRechargeInterval" : 0.05,
+  "dashInternalCooldown" : 0.2,
+  "dashOverchargeTimeout" : 0.75,
+  "dashControlForce" : 2000,
+  "dashSpeed" : 100,
+  "dashDuration" : 0.1,
+  "consecutiveDashTimeout" : 0.3,
+  
+  "groundOnly" : false,
+  "cooldownOnGroundOnly" : true,
+  
+  "maxPitch" : 4
+}

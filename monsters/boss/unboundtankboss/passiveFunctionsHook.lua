@@ -15,8 +15,8 @@ function update(dt, ...)
 	
 	  self.warpGraceTimer = math.max(0, self.warpGraceTimer - dt)
 	  if self.warpGraceTimer == 0 then
-	    for _, target in ipairs(self.targets) do 
-	      if world.distance(world.entityPosition(target), mcontroller.position())[1] < 0 then
+	    for _, target in ipairs(self.targets) do
+	      if world.entityExists(target) and world.distance(world.entityPosition(target), mcontroller.position())[1] < 0 then
 	        world.sendEntityMessage(target, "applyStatusEffect", "burning", 5)
 	        world.sendEntityMessage(target, "applyStatusEffect", "starforge-teleporttoposition", 0.6)
 		

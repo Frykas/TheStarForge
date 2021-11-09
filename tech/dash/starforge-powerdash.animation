@@ -1,0 +1,31 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "dashing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {}
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "dashParticles" : {
+      "emissionRate" : 1000.0,
+      "particles" : [
+        {
+          "particle" : "dash",
+          "flip" : true
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "dash" : [ "/sfx/tech/tech_starforge_powerdash.ogg" ],
+    "dashOvercharge" : [ "/sfx/tech/tech_starforge_powerdash_overcharge.ogg" ],
+    "recharge" : [ "/sfx/tech/tech_dash_cooldown2.ogg" ]
+  }
+}

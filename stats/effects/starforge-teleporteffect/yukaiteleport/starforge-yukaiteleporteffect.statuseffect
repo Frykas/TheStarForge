@@ -2,7 +2,7 @@
   "name" : "starforge-yukaiteleporteffect",
   "effectConfig" : {
   },
-  "defaultDuration" : 0.25,
+  "defaultDuration" : 0.35,
 
   "scripts" : [
     "/stats/effects/starforge-teleporteffect/starforge-teleporteffect.lua"

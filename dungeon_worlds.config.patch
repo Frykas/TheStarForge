@@ -31,7 +31,7 @@
             "dungeonSurfaceHeight" : 1070,
             "ambientLightLevel" : [128, 128, 128],
             "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
-            "musicTrack" : "/music/planetarium.ogg"
+            "musicTrack" : "/music/unshackled_unbound.ogg"
 	}
 	},
 	
@@ -48,7 +48,7 @@
             "dungeonSurfaceHeight" : 1070,
             "ambientLightLevel" : [128, 128, 128],
             "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
-            "musicTrack" : "/music/planetarium.ogg"
+            "musicTrack" : "/music/unshackled_unbound.ogg"
 	}
 	}
 	
