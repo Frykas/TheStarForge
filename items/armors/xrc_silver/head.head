@@ -1,6 +1,6 @@
 {
   "itemName" : "xrc_silverhead",
-  "price" : 2500,
+  "price" : 0,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Rare",
