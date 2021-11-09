@@ -1,0 +1,15 @@
+{
+  "itemName" : "xrc_silverhead",
+  "price" : 0,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "",
+  "shortdescription" : "",
+  "tooltipKind" : "simpletooltip",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+}
