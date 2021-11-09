@@ -1,0 +1,46 @@
+{
+  "objectName" : "starforge-unboundcanisterbroken",
+  "colonyTags" : ["storage", "apex"],
+  "rarity" : "common",
+  "tooltipKind" : "base",
+  "race" : "apex",
+
+  "category" : "storage",
+  "price" : 0,
+  "printable" : false,
+  "description" : "An Unbound canister, contains ancient essence inside.",
+  "shortdescription" : "Unbound Canister",
+
+  "apexDescription" : "This chest looks very old and creepy.",
+  "avianDescription" : "This chest looks very old and creepy.",
+  "floranDescription" : "Ssscary chessst makes Floran nervousss.",
+  "glitchDescription" : "Unsettled. The eye adorning this chest seems to be judging me.",
+  "humanDescription" : "A creepy old chest. Dare I open it?",
+  "hylotlDescription" : "I was taught to be wary of mysterious chests.",
+  "novakidDescription" : "I don't care much for the way this chest is lookin' at me.",
+
+  "inventoryIcon" : "unboundcanisterbrokenicon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "unboundcanisterbroken.png:default", "fullbright" : true }, { "image" : "unboundcanisterbrokenlit.png:default" } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1
+    },
+    {
+      "imageLayers" : [ { "image" : "unboundcanisterbroken.png:default", "fullbright" : true }, { "image" : "unboundcanisterbrokenlit.png:default" } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1
+    }
+  ],
+
+  "animation" : "unboundcanisterbroken.animation",
+  "animationPosition" : [-8, 0]
+}

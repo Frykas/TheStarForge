@@ -1,0 +1,17 @@
+{
+  "setSelfValue": {
+    "type": "action",
+    "name": "wfSetSelfValue",
+    "title": "wfSetSelfValue",
+    "properties": {
+      "key": {"type": "string", "value": null},
+      "stringValue": {"type": "string", "value": null},
+	  "numValue": {"type": "number", "value": null},
+	  "entityValue": {"type": "entity", "value": null},
+	  "boolValue": {"type": "bool", "value": null}
+    },
+    "category": "data",
+    "script": "/scripts/npc/actions/mik-data.lua",
+    "output": {}
+  }
+}

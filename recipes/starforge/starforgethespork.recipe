@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "starforge-infusedtitanium", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-thespork",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

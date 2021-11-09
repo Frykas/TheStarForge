@@ -1,0 +1,16 @@
+{
+  "id" : "starforge-sedgestory2",
+  "species" : "floran",
+  "title" : "^#758468;The Cult^reset; - II",
+  "description" : "The tale of the Berserking. ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "sedgecover2.png",
+  "contentPages" : [
+
+"todo"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 8000
+  }
+}

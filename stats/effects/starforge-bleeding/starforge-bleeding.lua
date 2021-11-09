@@ -35,17 +35,4 @@ function update(dt)
 
   self.fade = string.format("=%.1f", self.tickTimer * 0.4)
   effect.setParentDirectives(config.getParameter("directives", "") .. self.fade)
-  
-  --If the enemy dies calculate the chance to drop a crystal
-  --if not status.resourcePositive("health") and status.resourceMax("health") >= config.getParameter("minMaxHealth", 0) then
-	--goresplode()
-  --end
-end
-
-function goresplode()
-  --local portrait = world.entityPortrait(entity.id(), "full")
-  --sb.logInfo("%s", portrait)
-end
-
-function uninit()
 end

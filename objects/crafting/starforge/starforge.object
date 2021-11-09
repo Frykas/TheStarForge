@@ -17,7 +17,7 @@
     "filter" : ["starforge-starforge"]
   },
   "printable" : false,
-  "description" : "An Ancient Forge, capable of making anything out of very few materials. ",
+  "description" : "An Ancient Forge, capable of making anything out of very few materials.",
   "shortdescription" : "^magenta;The Star Forge^white;",
   "race" : "generic",
   "category" : "crafting",
@@ -55,5 +55,5 @@
       "animationCycle" : 1.5,
       "anchors" : [ "bottom" ]
     }
-   
-  ]}
+   ]
+   }

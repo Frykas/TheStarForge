@@ -2,8 +2,8 @@
   "id" : "thalassoelanaquest1",
   "title" : "^green;Feeding the Hermit",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2" ],
-  "text" : "Hey there! Do you mind helping me out? Everyone ate their meal today except for ^green;Rondin^reset; who's apparently too busy to come up. I swear he's exhausting when he's working like that. I just need you to deliver his favorite meal to him, can you do that?",
-  "completionText" : "Oh, food. I completely forgot Elana asked me to come up there. Sorry you had to come down just for me, and tell Elana I'm sorry as well.",
+  "text" : "Hey there! Do you mind helping me out? Everyone ate their meal today except ^gree;Rondin^reset;. Apparently, he's too busy to come up and eat! I swear, he's exhausting when he's working like that. I just need you to deliver his favorite meal to him. Can you do that?",
+  "completionText" : "Oh, food. I completely forgot that Elana asked me to come up there to eat. Sorry you had to come down here just for me.. And please, tell Elana that I'm sorry, as well.",
   "moneyRange" : [100, 100],
   "rewards" : [
     [ [ "starforge-thalassocache", 1 ], [ "starforge-robotblinfood-recipe", 1] ]

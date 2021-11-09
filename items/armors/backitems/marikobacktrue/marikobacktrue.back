@@ -5,16 +5,15 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
-  "description" : "Two Cerulium Katanas that belonged to a Hylotl captain named Mariko. Their power is now yours. ",
+  "description" : "Two Cerulium Katanas that belonged to a Hylotl captain named Mariko. Their power is now yours.",
   "shortdescription" : "^cornflowerblue;Yogosha & Isamu^white;",
-  "tooltipKind" : "back",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-backitemexalted",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "shiprunboost", "swimboost",
+  "starforge-marikorunboost", "starforge-marikoswimboost", "starforge-marikojumpboost",
 
     {
       "stat" : "biomeheatImmunity",

@@ -17,6 +17,48 @@
           }
         }
       },
+      "shield" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {
+			"properties" : {
+              "lightsOff" : ["glow"],
+              "particleEmittersOff" : ["shield"]
+            }
+		  },
+          "activate" : {
+            "frames" : 4,
+            "cycle" : 0.25,
+            "mode" : "transition",
+			"transition" : "active",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["shield"],
+              "immediateSound" : "/sfx/melee/vhaleihan_start.ogg"
+            }
+          },
+          "active" : {
+            "frames" : 7,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "persistentSound" : "/sfx/melee/vhaleihan_idle.ogg"
+            }
+		  },
+          "deactivate" : {
+            "frames" : 2,
+            "cycle" : 0.125,
+            "mode" : "transition",
+			"transition" : "inactive",
+            "properties" : {
+              "lightsOn" : ["glow"],
+			  "particleEmittersOff" : ["shield"],
+              "immediateSound" : "/sfx/melee/vhaleihan_stop.ogg"
+            }
+          }
+        }
+      },
       "crystal" : {
         "default" : "idle",
         "states" : {
@@ -58,6 +100,42 @@
           }
         }
       },
+      "shield" : {
+        "properties" : {
+          "zLevel" : 5,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0.5, 0], // x offset is set dynamically
+          "transformationGroups" : ["shield"],
+          "shieldPoly" : [ [-0.5, -2.75], [-0.5, 2.75], [0.75, 1.0], [0.75, -1.0] ],
+		  "blastPoint" : [0, 0]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "inactive" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            }
+          }
+        }
+      },
       "firingPulse" : {
         "properties" : {
           "zLevel" : 2,
@@ -90,32 +168,43 @@
     "crystal" : {},
     "weapon" : {},
     "muzzle" : {},
-    "beam" : {},
+    "shield" : {},
     "beamEnd" : {}
   },
 
   "particleEmitters" : {
     "muzzleFlash" : {
-      "transformationGroups" : ["crystal", "muzzle"],
-      "offsetRegion" : [0, 0, 0, 0],
-      "particles" : [ ]
-    },
-    "beamParticles" : {
       "active" : false,
-      "transformationGroups" : ["beam"],
-      "emissionRate" : 10,
+      "transformationGroups" : ["crystal"],
+      "offsetRegion" : [-0.75, -0.75, 1.75, 1.5],
+      "emissionRate" : 30,
       "particles" : [
-        {"particle" : "starforge-tearbeamparticles"},
-        {"particle" : "starforge-tearbeamparticles2"}
-      ]
+        {"particle" : "protectorblade"},
+        {"particle" : "protectorblade2"}
+	  ]
     },
     "beamCollision" : {
       "active" : false,
       "transformationGroups" : ["muzzle", "beamEnd"],
-      "emissionRate" : 30,
+      "emissionRate" : 15,
       "particles" : [
-        {"particle" : "starforge-tearbeamparticles"},
-        {"particle" : "starforge-tearbeamparticles2"}
+        {"particle" : "starforge-tearbeamparticles"}
+      ]
+    },
+    "shield" : {
+      "active" : false,
+      "transformationGroups" : ["shield"],
+      "offsetRegion" : [0.25, -2.5, 0.75, 3.0],
+      "emissionRate" : 5,
+      "particles" : [
+      ]
+    },
+    "burst" : {
+      "active" : false,
+      "transformationGroups" : ["shield"],
+      "emissionRate" : 15,
+      "particles" : [
+        {"particle" : "starforge-tearbeamparticles"}
       ]
     }
   },
@@ -123,6 +212,11 @@
   "lights" : {
     "firingPulse" : {
       "color" : [0, 0, 0]
+    },
+    "glow" : {
+      "position" : [0, 2.0],
+      "color" : [75, 100, 125],
+      "transformationGroups" : ["shield"]
     }
   },
 
@@ -130,6 +224,7 @@
     "fireStart" : [],
     "fireLoop" : [],
     "fireEnd" : [],
+    "chargePing" : [],
     "beamImpact" : []
   }
 }

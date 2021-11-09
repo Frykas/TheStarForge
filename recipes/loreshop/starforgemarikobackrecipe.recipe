@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "starforge-marikostory1-codex", "count" : 1},
+	{ "item" : "starforge-marikostory2-codex", "count" : 1},
+	{ "item" : "starforge-marikostory3-codex", "count" : 1},
+	{ "item" : "starforge-marikostory4-codex", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-marikobacktrue-recipe",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "blueprint" ],
+  "duration" : 2
+}
+

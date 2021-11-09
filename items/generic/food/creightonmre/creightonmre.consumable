@@ -1,0 +1,20 @@
+{
+  "itemName" : "starforge-creightonmre",
+  "rarity" : "rare",
+  "price" : 380,
+  "category" : "preparedFood",
+  "inventoryIcon" : "creightonmre.png",
+  "description" : "A ration of MRE directly from Creighton's old stock!",
+  "shortdescription" : "Creighton's MRE",
+
+
+  "foodValue" : 150,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 20,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 20.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

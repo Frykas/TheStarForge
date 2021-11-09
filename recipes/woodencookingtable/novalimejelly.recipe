@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "starforge-etherealgoo", "count" : 1 }
+
+  ],
+  "output" : {
+    "item" : "starforge-novalimejelly",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "snacks" ], 
+  "duration" : 0
+}

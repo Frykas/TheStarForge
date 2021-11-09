@@ -1,0 +1,77 @@
+{
+  "type" : "starforge-mariko",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Mariko",
+    "species" : "hylotl",
+	"facialHairType":"",
+	"facialHairGroup":"",
+    "hairGroup" : "hair",
+    "hairType" : "17",
+	"bodyDirectives":"?replace;e0975c=F1AFDF;6f2919=AF579A;ffca8a=FDD8F2;a85636=D67EC1?replace;f7e7b2=B1F1FE;d9c189=5DD1EC;a38d59=3491AA;735e3a=196072?replace;f32200=D4FDFF;dc1f00=85CCF5;951500=36627C;be1b00=558DB2?replace;f32200=D4FDFF;dc1f00=85CCF5;951500=36627C;be1b00=558DB2",
+	"hairDirectives":"?replace;f7e7b2=B8F4BB;d9c189=72DD7E;a38d59=4AA559;735e3a=266535?replace;f32200=D4FDFF;dc1f00=85CCF5;951500=36627C;be1b00=558DB2",
+    "gender" : "female"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "offeredQuests" : ["thalassomission1b"],
+	"turnInQuests" : ["thalassomission1b"],
+    "behavior" : "villager",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hey <entityname>! Finally meeting ya! Sorry I was busy for a while, but now I'm here. Make yourself at home.",
+            "Have you made things with the Starforge yet? You're lucky we gave you access to one! I'm kidding of course, I just hope you make good use of it.",
+            "The crew is not giving you trouble are they? I know Strelitzia, Will and Creighton like to mess around.",
+			"With help, we can take down the Unbound. But we have to be fast, glad I can count on you to help. You've done a great job so far.",
+            "Ever heard of the City of Commence? It's a safe place for Grounded Avians to live. It is protected by the People of Siaxaa, worshipping the Avian goddess of Death and Truth.",
+			"I heard rumors that the Great Withering was spreading incredibly fast. Strelitzia's planet was devastated by this plague. Be careful out there.",
+			"I encountered the Yukai before. Luckily, they don't immediatly attack Hylotls, I'd feel uneasy killing people blinded by a long forgotten grudge.",
+			"The Castle of Wonders... I wonder if I'll ever find it...",
+			"Morpheus is very strong, did you know that in order to protect his family, he cut all ties with them when he infiltrated the Unbound? He probably miss them.",
+			"Surprisingly, Strelitzia and I are very good friend. She's very different from the other Florans.",
+			"Elana is a very important person to me, and she's working very hard as a cook for us."
+          ]
+        }
+      }
+	 }
+	},
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "starforge-marikowig"}
+            ],
+            "chest" : [
+              { "name" : "starforge-marikochest" }
+            ],
+            "legs" : [
+              { "name" : "starforge-marikopants" }
+            ],
+				"back": [{ 
+				    "name": "starforge-marikobacktrue" 
+				}]
+            
+          }
+      ]]
+    ]
+  }
+}
+
+

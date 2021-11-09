@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-rondinlore1",
+  "rarity" : "rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "A broken automaton next to a book.",
+  "shortdescription" : "Broken Automaton",
+  "race" : "hylotl",
+
+  "floranDescription" : "Mmmhm, ssstrange floating robot. Hard to ssstab. Sssleeping now, easy to ssstab.",
+  "glitchDescription" : "Curious. It is very impressive to see one of my kind create such things.",
+  "novakidDescription" : "Shouldn't be playin' with life and all that. Givin' me the creeps.",
+  "humanDescription" : "I would love to make automatons like that. This one must be broken?",
+  "hylotlDescription" : "These floating automatons put me at ease. They ressemble a jellyfish.",
+  "avianDescription" : "This automaton is broken, and yet it's still glowing!", 
+  "apexDescription" : "Making automatons like that out of almost nothing sure is impressive.",
+
+  "inventoryIcon" : "rondinloreicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "rondinlore1.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "starforge-rondinlore1-codex",
+
+  "animation" : "rondinlore1.animation",
+  "animationParts" : {
+    "object" : "rondinlore1.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

@@ -1,0 +1,30 @@
+{
+	"projectileName": "starforge-dimensionalshard",
+	"image": "dimensionalshard.png",
+	"animationCycle": 0.3,
+	"fullbright" : true,
+	"frameNumber": 4,
+	"damageKindImage": "icon.png",
+	"lightColor": [162, 111, 188],
+	"pointLight": true,
+	"actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_arrow.ogg"
+      ]
+    }
+  ],
+		"timeToLive": 1.3,
+		"knockback": 6,
+		
+	"emitters": ["smoke"],
+	"statusEffects" : [ "starforge-bleeding" ],
+	"power": 3.0,
+	"speed": 80.0,
+	"physics": "arrow",
+	"damageKind": "default",
+
+	"controlForce": 150,
+	"maxSpeed": 150
+}

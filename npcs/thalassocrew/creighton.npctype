@@ -25,7 +25,7 @@
   "scriptConfig" : {
     "offeredQuests" : ["thalassocreightonquest1", "thalassocreightonquest2"],
     "turnInQuests" : ["thalassocreightonquest1", "thalassocreightonquest2"],
-    "behavior" : "protectoratejanitor",
+    "behavior" : "starforge-creightonjanitor",
 
     "dialogMode" : "sequence",
     "dialog" : {
@@ -37,7 +37,7 @@
             "Make sure to check if there's anything under your shoes. Don't want to give me more work.",
 			"Yeah I used to work for the USCM a few years ago, look where I ended up...",
 			"If Tweeters talks to you about her action figure collection, ignore her, you don't wanna to be stuck for 2 good hours, trust me.",
-            "Pfew, at least we're well paid.",
+            "Phew, at least we're well paid.",
 			"How long are you gonna stare at me like that?"
           ]
         }
@@ -45,8 +45,8 @@
       "complain" : {
         "default" : {
           "default" : [
-            "I hate it when she leave the outpost like that. Keepin the fun all to herself.",
-			"Who let so much dust enter the outpost ?? How many times do I have to tell you to not stand near the door!",
+            "I hate it when Mariko leaves the outpost so suddenly. She's keepin' all the fun all to herself.",
+			"Who let so much dust enter the outpost?! How many times do I have to tell you, do NOT stand near the door!!",
 			"If Will beats me again tonight when we play cards I swear I'll hurt him.",
 			"For how long have I been sweeping again?"
           ]

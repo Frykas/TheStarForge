@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-unboundsciencewallframe2",
+  "colonyTags" : ["apex"],
+  "printable" : true,
+  "rarity" : "uncommon",
+  "description" : "An Unbound wall frame, used by the Science Division.",
+  "shortdescription" : "Unbound Science Wall Frame",
+  "race" : "apex",
+  "category" : "decorative",
+  "price" : 200,
+
+  "apexDescription" : "A frame with lots of blueprints pinned to it.",
+  "avianDescription" : "Blueprints... I wonder what they're for?",
+  "floranDescription" : "Blue paper ssstrange.",
+  "glitchDescription" : "Curious. I wonder what those blueprints are for.",
+  "humanDescription" : "Those blueprints looks like they are for ammunitions.",
+  "hylotlDescription" : "Those blueprints are quite detailed. Seems like they are making ammunition at the Starforges.",
+  "novakidDescription" : "A good frame. Blueprints are pinned on it.",
+
+  "inventoryIcon" : "sciencewallframeicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "sciencewallframe2.png:<color>",
+
+      "imagePosition" : [-16, 1],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}
+

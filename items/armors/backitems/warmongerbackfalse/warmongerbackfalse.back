@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-warmongerbackfalse",
+  "price" : 1000,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "backwear",
+  "description" : "A broken support that was used along a powerful Apex Powersuit.",
+  "shortdescription" : "WARMONGER Back Support",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png"
+
+}

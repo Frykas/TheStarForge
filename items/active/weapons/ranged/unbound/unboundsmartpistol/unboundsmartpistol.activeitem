@@ -1,0 +1,102 @@
+{
+  "itemName": "starforge-unboundsmartpistol",
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Essential",
+  "description": "A deadly pistol firing seeking rounds. Used by Vanguard units.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Assailant\" ^#69729E;VNGD SP^reset;",
+  "tooltipKind": "starforge-vanguardgun",
+  "category": "Smart Pistol",
+  "twoHanded": false,
+  "level": 7,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "pistol"
+  ],
+  "inventoryIcon": "unboundsmartpistolicon.png",
+  "animation": "unboundsmartpistol.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundsmartpistol.png",
+    "barrel": "",
+	"middleFullbright": "unboundsmartpistolfullbright.png",
+    "muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-1.875, 0.125, -1.875, 0.125],
+        "particles" : [
+          { "particle" : "starforge-unboundrifle" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/starforge-unboundsmartpistol.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": 
+  [0.250,0.125],
+  
+  "muzzleOffset": 
+  [1.375,0.250],
+  
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "electric",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.4,
+    "baseDps": 1,
+    "energyUsage": 26,
+    "inaccuracy": 0.07,
+    "projectileCount" : 1,
+    "burstTime" : 0.08,
+    "burstCount" : 4,
+    "fireType" : "burst",
+    "projectileType": "unboundsmartbullet",
+    "projectileParameters": {
+      "knockback": 3
+    },
+          "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+   
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
+}

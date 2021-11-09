@@ -1,0 +1,16 @@
+{
+  "projectileName" : "starforge-burstring",
+  "image" : "starforge-burstring.png",
+  "physics" : "gas",
+  "animationCycle" : 0.5,
+  "frameNumber" : 9,
+  "power" : 0,
+  "speed" : -2,
+  "timeToLive" : 0.5,
+  "bounces" : 1,
+  "damagePoly" : [ [-6, 6], [0, 14 ], [6, 6], [6, -6], [0, -14], [-6, -6] ],
+  "piercing" : true,
+  "emitters" : [],
+
+  "damageKind" : "hidden"
+}

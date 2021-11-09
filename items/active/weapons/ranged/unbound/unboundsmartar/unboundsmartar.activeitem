@@ -1,0 +1,108 @@
+{
+  "itemName": "starforge-unboundsmartar",
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Essential",
+  "description": "An deadly assault rifle that fires seeking bullets, used by the Unbound Vanguards units.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Predator\" ^#69729E;VNGD SAR^reset;",
+  "tooltipKind": "starforge-vanguardgun",
+  "category": "Smart Assault Rifle",
+  "twoHanded": true,
+  "level" : 7,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "assaultrifle"
+  ],
+  "inventoryIcon": "unboundsmartaricon.png",
+  "animation": "unboundsmartar.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundsmartar.png",
+    "barrel": "",
+	"middleFullbright": "unboundsmartarfullbright.png",
+	"muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-2.0, 0.125, -2.0, 0.125],
+        "particles" : [
+          { "particle" : "starforge-unboundrifle" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/starforge-smartar.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [0.250, 0.0],
+  "muzzleOffset": [2.125, 0.275],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "electric",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.11,
+    "baseDps": 7.5,
+    "energyUsage": 32,
+    "inaccuracy": 0.07,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "unboundsmartbullet",
+    "projectileParameters": {
+      "knockback": 3
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.05,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -52,10 +52,21 @@ function StarForgeFloatingBeamFire:fire()
   animator.setAnimationState("firing", "fire")
 
   local wasColliding = false
+  local chargeTimer = 0
+  local beamFireTimer = self.fireTime / 2
   while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) do
     local beamStart = self:firePosition()
     local beamEnd = vec2.add(beamStart, vec2.mul(vec2.norm(self:aimVector(0)), self.beamLength))
     local beamLength = self.beamLength
+	
+	if chargeTimer == self.chargeTime then
+      animator.setParticleEmitterActive("muzzleFlash", true)
+	  animator.playSound("chargePing")
+	else
+	  chargeTimer = math.min(self.chargeTime, chargeTimer + self.dt)
+	end
+	
+	beamFireTimer = math.max(0, beamFireTimer - self.dt)
 	
 	activeItem.emote(self.fireEmote)
 	
@@ -115,44 +126,36 @@ function StarForgeFloatingBeamFire:fire()
 	local damageEnd = vec2.add(beamEnd, vec2.mul(mcontroller.position(), -1))
 	damageEnd[1] = damageEnd[1] * mcontroller.facingDirection()
 	
-	--Code for particles along the length of the beam
-	animator.setParticleEmitterActive("beamParticles", true)
-	animator.setParticleEmitterEmissionRate("beamParticles", beamLength*2)
-	animator.resetTransformationGroup("beam")
-	animator.scaleTransformationGroup("beam", vec2.add(vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset), vec2.mul(damageEnd, 2)))
-	animator.translateTransformationGroup("beam", vec2.add(vec2.add(self.currentCrystalOffset, self.weapon.muzzleOffset), vec2.mul(damageEnd, 0.5)))
+	--if beamFireTimer == 0 then
+	--  local randomX = math.random() * (damageEnd[1] - damageStart[1]) + damageStart[1]
+	--  --local randomY = math.random() * (damageEnd[2] - damageStart[2]) + damageStart[2]
+	--  
+	--  local offset = math.sqrt(((damageEnd[1] - damageStart[1]) ^ 2) + ((damageEnd[2] - damageStart[2]) ^ 2)) + 0.75
+	--  local gradient = (damageEnd[2] - damageStart[2]) / (damageEnd[1] - damageStart[1])
+	--  
+	--  --local finalX = gradient * randomY + offset
+	--  local finalY = gradient * randomX + offset - 10
+	--  local randomPoint = vec2.add({randomX, finalY}, mcontroller.position())
+	--  
+	--  world.debugText("Current Point: %s, Debug Point: %s", mcontroller.position(), randomPoint, vec2.add(mcontroller.position(), {0,2}), "yellow")
+	--  
+    --  self:fireProjectile(self.beamProjectileType, self.beamProjectileParameters, 0.015, randomPoint, 1, self.fireTime / 2, self.baseDps)
+	--  
+	--  beamFireTimer = self.fireTime / 2
+	--end
 	
-	--Box collision type (uses beamWidth)
-	if self.beamCollisionType == "box" then
-	  local newAngle = mcontroller.facingDirection() * -self.aimAngle
-	  local angleFactor = vec2.norm(vec2.rotate({0, 1}, newAngle))
-	  local damagePoly = {
-		vec2.add(damageStart, vec2.mul(self:aimVector(0), self.beamWidth/2)),
-		vec2.add(damageStart, vec2.mul(self:aimVector(0), -self.beamWidth/2)),
-		vec2.add(damageEnd, vec2.mul(self:aimVector(0), -self.beamWidth/2)),
-		vec2.add(damageEnd, vec2.mul(self:aimVector(0), self.beamWidth/2))
-	  }
-	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
-	
-	--Taper collision type (uses beamWidth, tapers to a point)
-	elseif self.beamCollisionType == "taper" then
-	  local damagePoly = {
-		vec2.add(damageStart, vec2.mul(vec2.norm(self:aimVector(0)), self.beamWidth/2)),
-		vec2.add(damageStart, vec2.mul(vec2.norm(self:aimVector(0)), -self.beamWidth/2)),
-		damageEnd
-	  }
-	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
-	
-	--Line collision type (default)
-	elseif self.beamCollisionType == "line" or not self.beamCollisionType then
-	  self.weapon:setDamage(self.damageConfig, {damageStart, damageEnd}, self.fireTime)
-	end
+	self.weapon:setDamage(self.damageConfig, {damageStart, damageEnd}, self.fireTime)
 	
     self:drawBeam(beamEnd, didCollide)
 
     coroutine.yield()
   end
   
+  if chargeTimer == self.chargeTime then
+    self:fireProjectile(self.projectileType, self.projectileParameters, 0, vec2.add(mcontroller.position(), activeItem.handPosition(self.currentCrystalOffset)), self.projectileCount, self.chargeTime, self.baseDps * self.projectileCount * self.chargeTime, true)
+  end
+  
+  animator.setParticleEmitterActive("muzzleFlash", false)
   animator.setAnimationState("firing", "off")
   animator.setLightActive("firingPulse", false)
   animator.setGlobalTag("firingDirectives", "")
@@ -162,6 +165,46 @@ function StarForgeFloatingBeamFire:fire()
 
   self.cooldownTimer = self.fireTime
   self:setState(self.cooldown)
+end
+
+function StarForgeFloatingBeamFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount, fireTime, projectileDps, randomAngle)
+  local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
+  params.power = self:damagePerShot(fireTime, projectileCount, projectileDps)
+  params.powerMultiplier = activeItem.ownerPowerMultiplier()
+  params.speed = util.randomInRange(params.speed)
+  
+  if not projectileType then
+    projectileType = self.projectileType
+  end
+  if type(projectileType) == "table" then
+    projectileType = projectileType[math.random(#projectileType)]
+  end
+
+  local projectileId = 0
+  for i = 1, (projectileCount or self.projectileCount) do
+    if params.timeToLive then
+      params.timeToLive = util.randomInRange(params.timeToLive)
+    end
+	
+	local aimAngle = self:aimVector(inaccuracy or self.inaccuracy)
+	if randomAngle then
+	  aimAngle = self:aimVector((inaccuracy or self.inaccuracy) + (360 / (self.projectileCount + 1) * i) + math.random(360))
+	end
+
+    projectileId = world.spawnProjectile(
+        projectileType,
+        firePosition or self:firePosition(),
+        activeItem.ownerEntityId(),
+        aimAngle,
+        false,
+        params
+      )
+  end
+  return projectileId
+end
+
+function StarForgeFloatingBeamFire:damagePerShot(fireTime, projectileCount, projectileDps)
+  return (projectileDps * fireTime) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / projectileCount
 end
 
 function StarForgeFloatingBeamFire:updateTransformationGroup()
@@ -216,7 +259,7 @@ function StarForgeFloatingBeamFire:firePosition()
 end
 
 function StarForgeFloatingBeamFire:aimVector(inaccuracy)
-  local aimVector = vec2.rotate({1, 0}, self.aimAngle - math.pi + sb.nrand(inaccuracy, 0))
+  local aimVector = vec2.rotate({1, 0}, (self.aimAngle - math.pi) + sb.nrand(inaccuracy, 0))
   --aimVector[1] = aimVector[1] * -1 --mcontroller.facingDirection()
   return aimVector
 end
@@ -229,7 +272,6 @@ function StarForgeFloatingBeamFire:reset()
   self.weapon:setDamage()
   activeItem.setScriptedAnimationParameter("chains", {})
   animator.setParticleEmitterActive("beamCollision", false)
-  animator.setParticleEmitterActive("beamParticles", false)
   animator.stopAllSounds("fireStart")
   animator.stopAllSounds("fireLoop")
 end

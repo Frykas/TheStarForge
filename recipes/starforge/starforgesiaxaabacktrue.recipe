@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-luminesilk", "count" : 15 },
+	{ "item" : "starforge-siaxaabackfalse", "count" : 1 },
+	{ "item" : "essence", "count" : 5000}
+  ],
+  "output" : {
+    "item" : "starforge-siaxaabacktrue",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "backwear" ],
+  "duration" : 2
+}
+

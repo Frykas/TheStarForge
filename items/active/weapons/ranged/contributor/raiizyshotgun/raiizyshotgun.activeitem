@@ -1,0 +1,85 @@
+{
+  "itemName" : "starforge-xraiizyshotgun",
+  "price" : 450,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Why did you steal his shotgun?",
+  "shortdescription" : "Raiizy's Super Shotgun",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 1,
+
+"inventoryIcon" : "xraiizy_eternalssg.png",
+
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "middle" : "xraiizy_eternalssg.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/plasma_ar3.ogg"]
+    }
+  },
+  "baseOffset" : [1.0, 0.125],
+  "muzzleOffset" : [3.125, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.10,
+    "baseDps" : 8,
+    "energyUsage" : 18,
+    "inaccuracy" : 0.001,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "fireplasma",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+
+    "stances" : {
+       "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+        
+        "frontArmFrame" : "run.2",
+        "backArmFrame" : "rotation"
+		},
+		
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  "altAbilityType" : "explosiveburst",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

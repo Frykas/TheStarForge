@@ -1,0 +1,32 @@
+{
+  "itemName" : "starforge-skullgem",
+  "rarity" : "legendary",
+  "price" : 680,
+  "category" : "preparedFood",
+  "inventoryIcon" : "skullgem.png",
+  "description" : "Gummies shaped like gems inside a dragon skull. Eating the skull is optional.",
+  "shortdescription" : "Gem Gummies",
+  "effects" : [ [
+     {
+        "effect" : "highprotection",
+        "duration" : 5
+    },
+	{
+	    "effect" : "nofalldamage",
+		"duration" : 120
+	},
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 250
+    }
+  ] ],
+  "foodValue" : 35,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

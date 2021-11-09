@@ -1,0 +1,26 @@
+{
+  "projectileName" : "unboundsmartbullet",
+  "image" : "unboundsmartbullet.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [102, 32, 110],
+  "fullbright" : true,
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundriflebulletexplosion.config"
+    }
+  ],
+  "emitters" : [ "rockettrail" ],
+  "power" : 10.0,
+  "speed" : 50.0,
+  "timeToLive" : 30.0,
+  "physics" : "default",
+  "damageKind" : "electricplasmabullet",
+  "rotationRate" : 25.5,
+  "trackingLimit" : 2.0,
+
+  "scripts" : [ "/scripts/projectiles/homingprojectile.lua" ]
+}

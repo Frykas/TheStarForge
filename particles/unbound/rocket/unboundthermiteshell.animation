@@ -1,0 +1,8 @@
+{
+  "frames" : "unboundthermiteshell.png",
+  "variants" : 1,
+  "frameNumber" : 1,
+  "animationCycle" : 0.6,
+  "offset" : [0, 0],
+  "mode" : "LoopForever"
+}

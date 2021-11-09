@@ -1,26 +1,22 @@
 {
   "id" : "starforge-marikostory4",
   "species" : "hylotl",
-  "title" : "^cornflowerblue;The Thalasso^reset; - IV",
-  "description" : "The story of a lively crew. ^orange;Can be traded for blueprints^reset;.",
+  "title" : "^cornflowerblue;The Discovery^reset; - IV",
+  "description" : "The turning point. ^orange;Can be traded for blueprints^reset;.",
   "icon" : "marikocover2.png",
   "contentPages" : [
 
-"PART III - The Warlord & the betrayal
+"PART IV - The Rise of the Unbound
 
-Words of a dangerous Glitch Warlord terrorizing an entire planet spread fast accross space explorers and merchants. It eventually came to the ears of crime-fighting companies & factions, and Katahel was then quickly targeted by multiple bounty hunters & peacekeepers. ",
+Something terrible is coming. I have to hurry and do something about it. Now that the Protectorate is gone, an Apex faction called the Unbound released a statement saying that they're planning to uplift the Apex race and ascend as gods using something they call a ^magenta;Godforge^reset;. They claimed the ownership of ALL ancient technology, isn't that crazy. They also declared war on anyone trying to stop them.",
 
-"The more he conquered, the more often he was targeted. Using the beheader sword *Decapitator* I made a long time ago, he kept fighting them head on and leaving victorious. He truly was an amazing warrior. Nothing could break him, and with his Impervium armor, crafted using the ^magenta;Starforge^reset;, nothing could stop him.",
+"Truth is, we worked for the Unbound before. It was some time before they announced all this mess, mission consisted in recording the location of various Ancient ruins and transmitting it to them. It was then that we discovered our Starforge, Rondin recommended that we keep its existence a secret as it could become dangerous in the wrong hands. Seeing how aggressive they are acting and how much their equipement improved, I wouldn't be surprised if they had access to multiple Starforges. ",
 
-"Except 1 person who did. A Hylotl warrior invaded his court once, slaying every guard she found on her way. She was swift and silent, each fight seemed like a dance. When I saw her, I saw a chance of redemption, a chance to atone for my sins and all the destruction I caused. I managed to get into contact with her, and together we planned an assassination, the perfect plan was set up.",
+"If they do, then surely they know the wonders you can make with it. I don't know how they learned of the existence of that ^magenta;Godforge^reset;, or what it does, but if they really want to fight every other race over it, it must be extremely important. I knew they were a bit fishy, but I can't believe it turned out like that. Without the Protectorate around, and seeing how pitiful the Peacekeepers are looking even now, I think the task of stopping them falls to us. They must be stopped.",
 
-"Her weapons couldn't go past his impervium armor. Nothing could, well in theory. But I had access to the ^magenta;Starforge^reset;, I could make something to end him for good. I crafted the Hunter's Avarice, a powerful weapon capable of firing massive bolts, if we load an Impervium bolt, and shoot it directly at him, he won't survive. ",
+"I contacted a friend of mine I met when I was gathering informations regarding a bounty target. His name is Morpheus, he's an Apex specialised in information gathering and espionage. He infiltrated the Unbound for some time and managed to learn some crucial information. The one who leads the Unbound is named ^green;Apolleon^reset;, with the help of his three commander, ^green;Starvia^reset; the Rifter, ^green;Tremor^reset; the Fistguard and ^green;Silmar^reset; the Technomancer. ",
 
-"The Hylotl warrior fought hard, in the throne room lied dozens of fallen Glitch who fought to protect the Warlord, and in front of her, the lord himself was standing. Strong, unshakeable. She was quick and he was strong, it was a beautiful fight. But it wasn't the real fight. I was hidden, waiting for the perfect opportunity to strike him. ",
-
-"Once fired, the bolt flew at an incredible speed. So fast that I could barely see it. When it reached Katahel, it pierced his chestplate completely and stuck on the throne that was behind him. Katahel fell on his knees, and looked behind him, looking at me. *I knew it, deep down I knew it would happen.* He removed his helmet, looked at the Hylotl warrior and said : *Everything I've done, was to free them, free them from the curse that we're all born with.*",
-
-"For the very first time, he didn't look like a Warlord, nor did he act like one. The Hylotl didn't hesitate a second, and finished the job. His head rolled on the red & gold carpet. That was the day the Warlord fell. His army scattered accross different Kingdoms & Factions, some, Awakaned, took on to the stars, while the artificial army that I created still roams the galaxy, obeying orders now outdated."
+"The main reason they are looking for Ancient technology despite already having access to a Starforge is because they think they found a starmap that leads to the Godforge, but they don't understand how to use it yet. All is not lost yet, Morpheus joined the crew and will help us stop them, luckily we're not alone. Apexes who don't want to be part of his plans are already fighting, it's our turn to join the battle. We'll need more hands though, and I have an idea on who might be very helpful."
 
   ],
     "itemConfig" : {

@@ -3,7 +3,7 @@
   "physics" : "bullet",
   "image" : "cacochiusfireball.png",
   "damageKindImage" : "icon.png",
-  "speed" : 19,
+  "speed" : 50,
    "actionOnReap" : [
     {
       "action" : "config",

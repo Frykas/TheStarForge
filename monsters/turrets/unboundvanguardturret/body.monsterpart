@@ -1,0 +1,11 @@
+{
+  "name" : "starforge-unboundvanguardturret",
+  "category" : "unboundvanguardturret",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png",
+    "bodyfullbright" : "bodyfullbright.png",
+    "turret" : "turret.png"
+  }
+}

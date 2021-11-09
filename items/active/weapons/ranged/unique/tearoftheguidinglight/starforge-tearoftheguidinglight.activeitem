@@ -18,14 +18,19 @@
   "animationParts" : {
     "ring" : "starforge-tearoftheguidinglightring.png",
     "crystal" : "starforge-tearoftheguidinglightcrystal.png",
-	"firingPulse" : "starforge-tearoftheguidinglightbeamcharge.png"
+	"firingPulse" : "starforge-tearoftheguidinglightbeamcharge.png",
+	
+	"shield" : "starforge-beamshield.png"
   },
   "animationCustom" : {
     "sounds" : {
       "fireStart" : [ "/sfx/gun/starforge_tearofperceptionblast1.ogg", "/sfx/gun/starforge_tearofperceptionblast2.ogg" ],
       "fireLoop" : [ "/sfx/gun/starforge_tearofperceptionloop.ogg" ],
       "fireEnd" : [],
-      "beamImpact" : []
+      "beamImpact" : [],
+      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
+	  "shieldHit" : [ "/sfx/melee/shield_block_metal.ogg" ],
+	  "shieldBurst" : [ "/sfx/melee/sword_guard.ogg" ]
     }
   },
   "animationScripts" : ["/items/active/effects/starforge-enhancedchain.lua"],
@@ -41,19 +46,41 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/starforge-floatingbeamfire.lua"],
     "class" : "StarForgeFloatingBeamFire",
 
-    "fireTime" : 0.05,
-    "baseDps" : 5.5,
-    "energyUsage" : 19.5,
+    "fireTime" : 0.1,
+    "baseDps" : 11.5,
+    "energyUsage" : 60.5,
 
     "damageConfig" : {
       "statusEffects" : [ ],
       "damageSourceKind" : "plasma",
       "knockback" : 2
     },
+	
+	//Projectiles along beam
+    "beamProjectileType" : "watersplash",
+    "beamProjectileParameters" : {
+	  "speed" : 0,
+	  "timeToLive" : 1,
+	  "periodicActions" : [
+		{
+		  "time" : 0.01,
+		  "repeat" : false,
+		  "action" : "particle",
+		  "rotate" : true,
+		  "specification" : "starforge-tearbeamparticles"
+		}
+	  ]
+    },
+	
+	"chargeTime" : 2,
+	"projectileCount" : 5,
+    "projectileType" : "starforge-tearofperceptionbolt",
+    "projectileParameters" : {
+    },
 
 	"crystalPosition" : [-4, 1],
 
-	"firingDirectives" : "?replace;002F7E=0073D9;003EA8=60A8EA;0071D4=B6DAFA;067DFF=DEEEFD;5898FF=FEFEFE",
+	"firingDirectives" : "?replace;002776=0073D9;104EB8=60A8EA;4ABBFF=B6DAFA;68DFFF=DEEEFD;5898FF=FEFFFF",
 	"fireEmote" : "annoyed",
 
     "beamLength" : 75,
@@ -66,18 +93,15 @@
     "hoverCycle" : 2.0,
     "hoverAmplitude" : 0.5,
 
-	"beamCollisionType" : "line",
-	"beamWidth" : 0.875,
-
     "chain" : {
 	  "directives" : "?flipx",
-      "startOffset" : [1.25, 0],
+      "startOffset" : [-1, 0.25],
       "startSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
       "segmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beam.png",
       "endSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
       "endCollideSegmentImage" : "/items/active/weapons/ranged/unique/tearoftheguidinglight/beamend.png",
-      "segmentSize" : 0.375,
-      "overdrawLength" : 0.2,
+      "segmentSize" : 0.25,
+      "overdrawLength" : 0.25,
       "taper" : 0,
       "waveform" : {
         "frequency" : 4.0,
@@ -111,6 +135,52 @@
       },
       "cooldown" : {
         "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"frontArmFrame" : "swim.2",
+		"backArmFrame" : "swim.2",
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Reflector",
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-floatingshield.lua"],
+    "class" : "StarForgeFloatingShield",
+
+    "cooldownTime" : 1.0,
+	"energyUsage" : 55,
+	"knockback" : 12,
+	
+	//Projectile config
+	"blastOnShieldHit" : true,
+	"baseDamage" : 8,
+	"projectileCount" : 3,
+    "blastCooldownTime" : 0.75,
+	"projectileType" : "starforge-tearofperceptionbolt",
+	"projectileParameters" : {
+    },
+	
+	"shieldOffset" : [1, 0],
+
+    "stances" : {
+      "defendwindup" : {
+        "duration" : 0.01,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"frontArmFrame" : "swim.2",
+		"backArmFrame" : "swim.2",
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  "defend" : {
+        "duration" : 0,
         "armRotation" : 0,
         "weaponRotation" : 0,
 		"frontArmFrame" : "swim.2",

@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-tamedonikabuto",
+  "category" : "tamedonikabuto",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "tamedonikabuto.png",
+	"bodyfullbright" : "tamedonikabutofullbright.png"
+  }
+}

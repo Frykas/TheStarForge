@@ -1,0 +1,142 @@
+{
+  "muteSfx" : false,
+  "muteMusic" : true,
+  "skippable" : true,
+  "letterbox" : false,
+  "backgroundColor" : [0, 0, 0, 255],
+  "backgroundFadeTime" : 0.5,
+  "panels" : [
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/chapter1ending/apolleon.png:<frame>"
+        }
+      ],
+      "animationFrames" : 12,
+      "keyframes" : [
+        {
+          "timecode" : 0.2,
+          "zoom" : 2,
+          "alpha" : 0,
+          "position" : [479, 450],
+          "frame" : 0
+        },
+        {
+          "timecode" : 1.0,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 450]
+        },
+        {
+          "timecode" : 1.1,
+          "zoom" : 2,
+          "alpha" : 1,
+		  "frame" : 12,
+          "position" : [479, 450]
+        },
+        {
+          "timecode" : 2.5,
+          "zoom" : 2,
+          "alpha" : 0,
+          "position" : [479, 450]
+        }
+      ]
+    },
+  
+  {
+      "drawables" : [
+        {
+          "image" : "/cinematics/chapter1ending/apolleonsingle.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 1.1,
+          "zoom" : 2,
+          "alpha" : 0,
+          "position" : [479, 450]
+        },
+        {
+          "timecode" : 1.1,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 450]
+        },
+        {
+          "timecode" : 1.1,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 450]
+        },
+        {
+          "timecode" : 7.5,
+          "zoom" : 2.0,
+          "alpha" : 0,
+          "position" : [479, 450]
+        }
+      ]
+    },
+	  {
+      "text" : "MONKE",
+      "fontSize" : 24,
+      "textPosition" : {
+        "position" : [50, 100],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 1.1,
+          "zoom" : 500,
+          "alpha" : 1,
+          "textPercentage" : 0,
+          "position" : [350, 300]
+        },
+        {
+          "timecode" : 1.1,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 1.1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 5.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 7.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    }
+  ],
+  
+  "audio" : [
+    {
+      "timecode" : 11.3,
+      "resource" : "/sfx/others/theretribution.ogg"
+    },
+	{
+      "timecode" : 1.5,
+      "endTimecode" : 10.0,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+	{
+      "timecode" : 16.5,
+      "endTimecode" : 22.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+	{
+      "timecode" : 26.0,
+      "endTimecode" : 32.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    }
+  ]
+}

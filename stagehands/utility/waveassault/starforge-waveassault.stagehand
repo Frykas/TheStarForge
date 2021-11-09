@@ -1,0 +1,34 @@
+{
+  "type" : "starforge-waveassault",
+
+  "scripts" : ["/stagehands/utility/waveassault/starforge-waveassault.lua"],
+  "scriptDelta" : 1,
+  
+  //Template
+  "monsterTypes" : [],
+  
+  "npcTypes" : [
+    "starforge-unboundsoldier",
+    "starforge-unboundsoldier",
+    "starforge-unboundsoldier",
+	"starforge-unboundofficer"
+  ],
+  "npcSpecies" : [
+    "apex"
+  ],
+  
+  "enemyCount" : [ 5, 7 ],
+  "testPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+  "spawnOnGround" : true,
+  "spawnEffects" : [ "starforge-teleporteffect" ],
+  "spawnRangeX" : 17,
+  "spawnRangeY" : 0,
+  "spawnTolerance" : 25,
+  "waveTime" : 1,
+  //"survivalTimer" : 5,
+  "waves" : 3,
+  
+  "messageRadius" : 32,
+  "startMessages" : [ "lockDoor" ],
+  "endMessages" : [ "openDoor" ]
+}

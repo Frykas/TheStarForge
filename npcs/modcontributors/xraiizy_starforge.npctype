@@ -1,0 +1,95 @@
+{
+  "type" : "starforge-xraiizy",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Raiizy",
+    "species" : "human",
+	"personalityIdle" : "idle.2",
+	"personalityArmIdle" : "idle.2",
+	"facialHairType":"",
+	"facialHairGroup":"",
+	"facialHairDirectives":"?replace;fff8b5=420400;fde03f=420400;806319=420400;f6b919=420400;ffffff=FFD900",
+    "hairGroup" : "hair",
+    "hairType" : "",
+	"bodyDirectives": "?replace;FFE2C5=FFF5E8;FFC181=F8D7B5;D39C6C=D0A57F;C7815B=D0A57F;506464=178800;78A08C=178800;3C5000=167C02;648C78=167C02;503C3C=000;463232=000;645050=000;DC1F00=714F3C;BE1B00=976750;951500=513A2D",
+	"hairDirectives": "?replace=ffffff=FFD900?replace=fff8b5=FF9A00?replace=fde03f=FF5600?replace=f6b919=FF1100",
+	"emoteDirectives" : "?replace=ffffff=FFD900",
+    "gender" : "male"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+
+    "dialogMode":"tutorial",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "No, you can't have a shotgun like this. Not yet, at least.",
+            "Hi! I'm Raiizy, a gunsmith and the most Christian atheist there is.",
+            "Do you like ultraviolence? I like ultraviolence.",
+            "It's a miracle I didn't set my hair on fire at least once during all these fights.",
+            "Anyone got any hair styling gel?",
+            "Met Silver yet? She might not look like a gunsmith, but she helped me a lot with guns.",
+            "You can find my guns all around the universe. I've worked with a LOT of people, you know.",
+			"I often come here to bring some of the weapons I make, the Thalasso need it.",
+			"Have you seen my helmet? I think I've lost it.",
+            "Wanna see my ammo collection? Let's start off with something small, here's a .50 BMG.",
+            "Wish I had an AK on me right about now.",
+            "Yeah, I do travel between dimensions. No, I won't take you to another one.",
+            "I won't make you a gun, I'm on vacation right now.",
+            "Wanna arm wrestle?",
+            "Ever met Omeruin? She's really nice to talk to.",
+            "No, I won't show you where I store the rest of my arsenal.",
+            "Sometimes I think about making a .22 LR chaingun. Should I?",
+            "I like how some people assume I only work with guns. I'd be glad to, but melees are pretty fun to make too.",
+            "Patrolling Barren planets almost makes you wish for a demonic invasion.",
+            "Don't worry about the blood on me, it's not mine... I think.",
+            "I should show some of my guns to Tweeters. Pretty sure she'll love those.",
+            "Don't expect God to do all the work.",
+            "The Hellbowl could use some hot sauce.",
+            "I've seen a Cacochius on a moon once. Looked really familiar.",
+            "No, I won't build a nuke chaingun. Where do you people even get these ideas?",
+            "I should make an action figure of Tweeters. She'll love it.",
+            "What do you mean I look sleep deprived? I don't need sleep, I need violence!",
+			"Yes, my suit does have a combat music system.",
+            "Last time I visited a doctor, he said \"I don't see why anyone would want to mess with you, you look like you could go deathclaw hunting with a switch!\". What the hell are Deathclaws?",
+            "I heard about some even weirder variations of Moontants, folk say there are fatter one with... arm cannons, I think? I shold look for those later.",
+            "Hammer Munitions have a secret project that really reminds me of those Terminator movies...",
+            "I feel sleepy... I should go get an energy drink.",
+            "God damn it.. I need to oil the hook... Again.",
+            "Ever seen the \"Exterminator\"? That's my work, you can tell by how deadly it is.",
+            "Stumbled upon a funky looking rifle on a dead bandit the other day, then realized it's a mix of the AK and \"Tsar\". That guy did deserve death alright.",
+            "Scorched planets are way less fun to explore than I'd imagine. Nothing like Fallout."
+          ]
+        }
+      }
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+			
+			    "head": [{
+				    "name": "starforge-raiizywig"
+				}],
+                "chest": [{
+                    "name": "starforge-praetorianchest"
+                }],
+                "legs": [{
+                    "name": "starforge-praetorianpants"
+                }],
+				"primary": [{
+				    "name": "starforge-xraiizyshotgun"
+				}]	
+            }]]
+        ]
+    }
+}

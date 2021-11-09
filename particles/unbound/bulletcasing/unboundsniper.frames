@@ -1,0 +1,7 @@
+{
+  "image" : "unboundsniper.png",
+  "frameGrid" : {
+    "size" : [3, 3],
+    "dimensions" : [4, 1]
+  }
+}

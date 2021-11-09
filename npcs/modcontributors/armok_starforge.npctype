@@ -1,0 +1,211 @@
+{
+  "type": "starforge-armok",
+  "baseType": "outpostvisitor",
+  "identity": {
+    "name": "Armok",
+    "species": "shadow",
+    "personalityIdle": "idle.2",
+    "personalityArmIdle": "idle.2",
+    "facialHairType": "",
+    "facialHairGroup": "",
+    "facialHairDirectives": "",
+    "hairGroup": "",
+    "hairType": "",
+    "bodyDirectives": "",
+    "hairDirectives": "",
+    "emoteDirectives": "",
+    "gender": "male"
+  },
+  "damageTeamType": "ghostly",
+  "movementParameters": {
+    "walkSpeed": 5
+  },
+  "scriptConfig": {
+    "chatSounds": {
+      "avian": {
+        "male": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "apex": {
+        "male": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "floran": {
+        "male": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "glitch": {
+        "male": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "human": {
+        "male": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "hylotl": {
+        "male": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "default": {
+        "male": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      }
+    },
+    "dialogMode": "tutorial",
+    "dialog": {
+      "converse": {
+        "default": {
+          "default": [
+            "Greetings mortal, I am ^red;Armok^reset;, Overlord and Loremaster.",
+            "Despite having travelled to countless worlds, I feel the most at home on planets like these.",
+            "Before the Starforge ruins were discovered here I had long felt an unusual fascination with this particular planet.",
+            "The Thalasso crew discovered me on this planet when they first surveyed it, while initially concerned by my appearance they have come to respect me.",
+            "The Starforge is a truly magnificent device...",
+            "I am perhaps the biggest fan of the arcade game \"^yellow;Starbound^reset;\" there is. Now if only its community gave it more respect...",
+            "Do not be alarmed by my appearance, I mean no harm to anyone here.",
+            "I have much respect for Silver, she is a very helpful person despite her unusual sense of humor.",
+            "Omeruin is a very kind individual and a fellow appreciator of the arcade game \"Starbound\".",
+            "I have my disagreements with Raiizy, but I do not think they are a bad person.",
+            "I do not understand why Zoey feels that moons should be \"^orange;less dead^reset;\". Is is it not normal for them to lack life?",
+            "Tell me, have you heard of \"^orange;Project Redemption^reset;\"?",
+            "The Protectorate was a noble cause, it is a shame to see it gone. At least the Peacekeepers appear to be returning.",
+            "The lore behind the \"Starbound\" arcade game is truly underrated.",
+            "I know much about the history of this universe, perhaps more than you.",
+            "If you ever run into a fellow named Tiy, please show him respect. He deserves it for making the \"Starbound\" arcade game. Same for the rest of its dev.",
+            "Be wary, there are many falsehoods and lies out there about this universe. I seek to end them.",
+            "Creighton was part of the Universal Space Corporate Military once, I wonder what he makes of the rumors regarding USCM remnants...",
+            "I have heard that Morpheus defected from the Unbound, they are a ^red;very concerning^reset; organization given what I know of them...",
+            "It is a shame I cannot eat when I want to, Elana is reportedly a wonderful cook.",
+            "I suspect that \"Tweeters\" is just her nickname here, much like the famed Avian, Ironbeak.",
+            "I do not understand why Will calls my sense of aesthetic \"edgy\".",
+            "Krythers is a sort of Lorekeeper around here, I have taught him much in the ways of gathering lore.",
+            "I hold no fear for Strelitzia, her breath can not paralize me. She has more to fear of me when she pranks me.",
+            "I find it unusual that Rondin does not speak like other Glitch do, perhaps he has unlearned Glitch prefixes somehow?",
+            "I have had few opportunities to meet Mariko, it is always a pleasure to hear of her adventures however.",
+            "Have you heard of ^Cyan;Void^reset; and his apprentice ^red;Rin^reset;? They seem to be rather well known bounty hunters around here.",
+            "The Yukai clan disturbs me, they do not understand the power they are meddling with.",
+            "Siaxaa is one of the forgotten deities of Avian mythos, perhaps one of the few who's name the Stargazers could not blot out.",
+            "This armor I inhabit is a temporary vessel, my scythe is due to be reforged into something more practical too.",
+            "I have encountered an entire set of medieval Human civilizations in a land called ^orange;Aurania^reset;. I wonder how they got there...",
+            "You may wonder why I call myself \"Overlord\". In truth I have no domain to rule anymore, but it is a title I hold nevertheless.",
+            "I feel a certain kinship with the Shadow people, yet I do not understand why...",
+            "I always enjoy reading a good codex, as do I enjoy writing them.",
+            "The annihilation of Earth was a terrible tragedy that no one could have predicted. Naturally the ^red;Occasus scum^reset; are capitalizing on it.",
+            "The Unbidden are an unpleasant lot, almost akin to a dark mirror of the Protectorate...",
+	    "I wish you a good day mortal.",
+		"I am not the only Loremaster out there, have you heard of my colleague Ellie?",
+	    "I have heard rumors of Moontants that have retained their Humanity, I wonder if they are true?",
+	    "The Thalasso crew treat me as a friend here, I hope they do the same to you.",
+	    "The galaxy is vast and full of secrets, I seek to unearth them.",
+	    "^#FFBC47;Lord Katahel^reset; could have made for a good adversary for me, but perhaps it is best that Mariko dealt with him...",
+"I have heard that ^conflowerblue;Mariko's lineage^reset; hails from a honorable and ancient Hylotl warrior clan.",
+"Have you heard the reports of ^yellow;the Praetor^reset;? Supposedly they singlehandedly cleared out a Moontant infested mining facility.",
+"There are tales of a Floran Berserking cult, their most prominent member goes by the name of ^#758468;Sedge^reset;...",
+"Supposedly, there are still Avians who worship ^red;Siaxaa^reset; even today.",
+"Have you heard the legend of the ^pink;Ghost Digger^reset;?",
+"There are rumors of another surviving ^#008CD9;Protector^reset; out there. Could you be them?",
+"Tread carefully on Withered planets. Even my armor could not repair itself fast enough against the withering blight...",
+"I have been mistaken at times for a Glitch or Shadow wearing armor, I am neither. I merely am my armor.",
+"I have heard rumors  of a prototype anti-Unbound powersuit codenamed^#80F4FF;WARMONGER^reset;.",
+"I wonder... What would happen if I ^#FFB2B2;exalted^reset; myself?",
+"Have you met Ganransu yet? He is a fine and hardworking individual despite his sleep deprivation",
+"I hope you have not had the misfortune of receiving ^red;a certain ring^reset;...",
+"I am... neutral to Testament."
+          ]
+        }
+      }
+    }
+  },
+  "items": {
+    "override": [
+      [
+        0,
+        [
+          {
+            "head": [
+              {
+                "name": "starforge-armokhead"
+              }
+            ],
+            "chest": [
+              {
+                "name": "starforge-armokchest"
+              }
+            ],
+            "legs": [
+              {
+                "name": "starforge-armokpants"
+              }
+            ],
+            "back": [
+              {
+                "name": "darkcapeback"
+              }
+            ],
+            "primary": [
+              {
+                "name": "starforge-armokscythe"
+              }
+            ]
+          }
+        ]
+      ]
+    ]
+  }
+}

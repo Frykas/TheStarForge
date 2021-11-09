@@ -1,0 +1,53 @@
+{
+    "type": "starforge-unboundstalker",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundStalkerDeathTreasure"],
+	
+	"identity" : {
+     "species" : "apex"
+	 },
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Target in range, get started.",
+                        "Stalker on target, engaging.",
+                        "Stalker to squad, engage combat!",
+                        "Sharpshooter squad spotted target, moving.",
+                        "Combat engaged.",
+                        "Target sighted, sending orders."
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":30}, {"stat":"powerMultiplier","amount":1.70}],
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundstalkerhead","parameters" : { "colorIndex" : 8 }
+                }],
+                "chest": [{
+                    "name": "starforge-unboundstalkerchest","parameters" : { "colorIndex" : 8 }
+                }],
+                "legs": [{
+                    "name": "starforge-unboundstalkerpants","parameters" : { "colorIndex" : 8 }
+                }],
+                "primary": [
+                    "starforge-unboundheavysniper"
+                ]
+            }]]
+        ]
+    }
+}

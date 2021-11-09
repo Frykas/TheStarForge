@@ -8,6 +8,7 @@
   "description" : "Betrayed thousands of years ago by her bloodthirsty brother, Siaxaa was forgotten...",
   "shortdescription" : "^red;Siaxaa's Crown^reset;",
   "tooltipKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedsiaxaahead" ],
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",

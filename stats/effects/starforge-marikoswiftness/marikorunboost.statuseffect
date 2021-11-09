@@ -1,0 +1,12 @@
+{
+  "name" : "starforge-marikorunboost",
+  "effectConfig" : {},
+  "defaultDuration" : 15,
+
+  "scripts" : [
+    "marikorunboost.lua"
+  ],
+  
+  "label" : "Mariko's Swiftness",
+  "icon" : "/interface/statuses/starforge-marikoswiftness.png"
+}

@@ -1,0 +1,108 @@
+{
+  "itemName": "starforge-unbounddmr",
+  "price": 500,
+  "maxStack": 1,
+  "rarity": "Rare",
+  "description": "A DMR used by Unbound sharpshooters. It is loaded with ice elemental bullets.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Justice\" DMR",
+  "tooltipKind": "starforge-unboundgun",
+  "category": "Marksman Rifle",
+  "twoHanded": true,
+  "level" : 5,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "assaultrifle"
+  ],
+  "inventoryIcon": "unbounddmricon.png",
+  "animation": "unbounddmr.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unbounddmr.png",
+    "barrel": "",
+	"middleFullbright": "unbounddmrfullbright.png",
+	"muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-3.1, 0.1, -3.1, 0.1],
+        "particles" : [
+          { "particle" : "starforge-unboundrifle" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/sniper2.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [1.125, 0.3],
+  "muzzleOffset": [2.5, 0.250],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "ice",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.80,
+    "baseDps": 9.5,
+    "energyUsage": 30,
+    "inaccuracy": 0.003,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "unboundicebullet",
+    "projectileParameters": {
+      "knockback": 3
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.05,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

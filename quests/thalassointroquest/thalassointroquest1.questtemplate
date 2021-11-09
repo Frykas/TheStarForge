@@ -1,7 +1,7 @@
 {
   "id" : "thalassointromission1",
   "title" : "^#b4f5c3;Sudden Invitation",
-  "text" : "An acquaintance of ^orange;Penguin Pete^reset; named ^cornflowerblue;Mariko^reset; apparently wants to invite me to their outpost, seems like they were at the Protectorate Academy too when Earth was attacked.",
+  "text" : "Apparently, an acquaintance of ^orange;Penguin Pete^reset;, named ^cornflowerblue;Mariko^reset;, wants to invite me to their outpost! It seems like they were also at the Protectorate Academy when Earth was attacked...",
   "completionText" : "^cornflowerblue;Mariko^reset; discovered something important and wants to share it with me, the invitation says that it'll be very useful and that a person with a promising destiny like me should have access to it. ",
   "moneyRange" : [150, 150],
   "rewards" : [
@@ -13,10 +13,7 @@
   "scriptConfig" : {
      "portraits" : {
       "questStarted" : "player",
-      "questComplete" : {
-        "portrait" : [ {"image" : "/objects/crafting/morpheusshop/morpheusshopportait.png"} ],
-        "title" : "Morpheus"
-      }
+      "questComplete" : "questReceiver"
     },
     "followUp" : "thalassointromission2",
     "requireTurnIn" : true,

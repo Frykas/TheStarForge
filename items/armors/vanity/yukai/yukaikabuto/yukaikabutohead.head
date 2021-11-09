@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-yukaikabutohead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "headwear",
+  "description" : "A helmet worn by respected warriors. It is a proof of both strength and status in the Yukai society.",
+  "shortdescription" : "Onikabuto Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

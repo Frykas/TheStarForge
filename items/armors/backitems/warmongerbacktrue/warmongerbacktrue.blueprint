@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-warmongerbacktrue-recipe",
+  "price" : 3500,
+  "inventoryIcon" : "icon.png",
+  "rarity" : "Essential",
+  "category" : "Blueprint",
+  "description" : "An Apex flag worn as a symbol of rebellion and hope, mounted on a back support.",
+  "recipe" : {"parameters":{},"count":1,"name":"starforge-warmongerbacktrue"},
+  "shortdescription" : "^#80F4FF;WARMONGER Battleflag^white;",
+  "tooltipFields" : {"rarityLabel" : "Exalted"}
+}

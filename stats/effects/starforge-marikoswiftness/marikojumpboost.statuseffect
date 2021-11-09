@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-marikojumpboost",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "marikojumpboost.lua"
+  ]
+}

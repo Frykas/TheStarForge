@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "pineapplejuice", "count" : 1 },
+	{ "item" : "liquidmilk", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-pinacolada",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "drinks" ], 
+  "duration" : 0
+}

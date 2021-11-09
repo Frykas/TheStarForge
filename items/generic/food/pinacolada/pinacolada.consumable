@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-pinacolada",
+  "rarity" : "rare",
+  "price" : 550,
+  "category" : "preparedFood",
+  "inventoryIcon" : "pinacolada.png",
+  "description" : "Will's favorite, Remember to not drink too much of it!",
+  "shortdescription" : "Pina Colada",
+  "effects" : [ [
+    {
+        "effect" : "jumpboostfood",
+        "duration" : 250
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 250
+    }
+  ] ],
+  "foodValue" : 65,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

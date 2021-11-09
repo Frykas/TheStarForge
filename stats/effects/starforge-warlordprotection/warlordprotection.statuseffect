@@ -1,0 +1,18 @@
+{
+  "name" : "starforge-warlordprotection",
+  "effectConfig" : {
+
+	"protection" : 6
+
+  },
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "starforge-kataheldefence.lua"
+  ],
+  
+  "label" : "Warlord's Resilience",
+  "icon" : "/interface/statuses/starforge-warlordprotection.png",
+  
+  "animationConfig" : "warlordprotection.animation"
+}

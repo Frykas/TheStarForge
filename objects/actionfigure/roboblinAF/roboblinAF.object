@@ -1,0 +1,34 @@
+{
+  "objectName" : "starforge-roboblinaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 10000,
+  "printable" : false,
+  "description" : "The label reads, \"A Roboblin thief. Make sure to check your pockets after meeting one!\"",
+  "shortdescription" : "Roboblin Figurine ^orange;^reset;",
+
+
+  "inventoryIcon" : "roboblinAF.png",
+  "orientations" : [
+    {
+      "image" : "roboblinAF.png:<color>",
+	  "imageLayers" : [ { "image" : "roboblinAF.png" }, { "image" : "roboblinAFfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "roboblinAF.png:<color>",
+	  "imageLayers" : [ { "image" : "roboblinAF.png" }, { "image" : "roboblinAFfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

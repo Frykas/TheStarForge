@@ -1,0 +1,80 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "objectState" : {
+        "default" : "normal",
+        "states" : {
+          "normal" : {
+            "frames" : 14,
+            "cycle" : 1.5,
+            "mode" : "loop"
+          },
+          "altered" : {
+            "frames" : 14,
+            "cycle" : 1.5,
+            "mode" : "loop"
+          },
+          "destroyed" : {
+            "frames" : 1,
+            "cycle" : 1.5,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "forge" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : false
+        },
+        "partStates" : {
+          "objectState" : {
+            "normal" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "altered" : {
+              "properties" : {
+                "image" : "<partImage>:rigged.<frame>"
+              }
+            },
+            "destroyed" : {
+              "properties" : {
+                "image" : "<partImage>:destroyed"
+              }
+            }
+          }
+        }
+      },
+      "forgefullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+		  "fullbright" : true,
+          "centered" : false
+        },
+        "partStates" : {
+          "objectState" : {
+            "normal" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "altered" : {
+              "properties" : {
+                "image" : "<partImage>:rigged.<frame>"
+              }
+            },
+            "destroyed" : {
+              "properties" : {
+                "image" : "<partImage>:destroyed"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

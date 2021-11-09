@@ -8,7 +8,8 @@
   "description" : "After the passing of the worshipped Berserking, the best hunter among the cult was bestowed an armor, and a name; Sedge.",
   "shortdescription" : "^#758468;Chest of Berserking^reset;",
   "tooltipKind" : "armor",
-
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedsedgechest" ],
+  
   "maleFrames" : {
     "body" : "chest.png",
     "backSleeve" : "bsleeve.png",
@@ -31,17 +32,17 @@
     {
       "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.37
+      "amount" : 0.5
     },
     {
       "levelFunction" : "manipulatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 5.85714
+      "amount" : 2
     },
     {
-      "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 3
+      "amount" : 4.5
     }
   ],
   "itemTags" : [ "tier7armour" ],

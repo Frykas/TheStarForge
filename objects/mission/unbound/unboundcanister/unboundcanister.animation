@@ -1,0 +1,98 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "burstState" : {
+        "default" : "closed",
+        "states" : {
+          "closed" : {
+            "frames" : 1
+          },
+          "burst" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "open"
+          },
+          "open" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chestFullbright" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "burstState" : {
+            "closed" : {
+              "properties" : {
+                "image" : "unboundcanister.png:closed"
+              }
+            },
+
+            "burst" : {
+              "properties" : {
+                "image" : "unboundcanister.png:burst"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "unboundcanister.png:open"
+              }
+            }
+          }
+        }
+      },
+      "chest" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "burstState" : {
+            "closed" : {
+              "properties" : {
+                "image" : "unboundcanisterlit.png:closed"
+              }
+            },
+
+            "burst" : {
+              "properties" : {
+                "image" : "unboundcanisterlit.png:burst"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "unboundcanisterlit.png:open"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "burst" : {
+      "active" : false,
+      "offsetRegion" : [0.5, 1, 3.5, 1],
+      "particles" : [
+        {"particle" : "ancientenergy3", "count" : 25},
+        {"particle" : "ancientsmoke1", "count" : 5},
+        {"particle" : "ancientsmoke2", "count" : 5}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "burst" : ["/sfx/objects/essencechest_open2.ogg"]
+  }
+}

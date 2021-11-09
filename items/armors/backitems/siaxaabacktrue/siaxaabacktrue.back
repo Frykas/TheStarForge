@@ -1,0 +1,37 @@
+{
+  "itemName" : "starforge-siaxaabacktrue",
+  "price" : 3500,
+  "inventoryIcon" : "siaxaabacktrueicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "backwear",
+  "description" : "Wings which inspires freedom and courage.",
+  "shortdescription" : "^red;Siaxaa's Grace^white;",
+  "tooltipKind" : "starforge-backitemexalted",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+
+  "statusEffects" : [
+  "starforge-siaxaafalldamage", "starforge-siaxaaregen", "jumpboostaugment",
+
+    {
+      "stat" : "biomeheatImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeradiationImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "breathProtection",
+      "amount" : 1.0
+    }
+  ],
+
+  "acceptsAugmentType" : "back"
+}

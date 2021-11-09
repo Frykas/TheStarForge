@@ -1,0 +1,407 @@
+{
+  "name": "mik-npccombat",
+  "description": "NPC Combat",
+  "scripts": [
+    "/scripts/behavior.lua",
+    "/scripts/npc/actions/mik-data.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/behavior/bgroup.lua",
+    "/scripts/actions/entity.lua"
+  ],
+  "parameters": {
+    "meleeStandby": false
+  },
+  "root": {
+    "title": "parallel",
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": 1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "parallel",
+          "type": "composite",
+          "name": "parallel",
+          "parameters": {
+            "fail": {"value": -1},
+            "success": {"value": -1}
+          },
+          "children": [
+            {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "groupResource",
+                  "type": "action",
+                  "name": "groupResource",
+                  "parameters": {
+                    "groupId": {"value": "combat"},
+                    "name": {"value": "permaChargePrimary"}
+                  },
+                  "output": {
+                    "number": "permaPrimary"
+                  }
+                },
+                {
+                  "title": "setSelfValue",
+                  "type": "action",
+                  "name": "setSelfValue",
+                  "parameters": {
+                    "key": {"value": "permaChargePrimary"},
+                    "numValue": {"key": "permaPrimary"}
+                  }
+                }
+              ]
+            },
+            {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "groupResource",
+                  "type": "action",
+                  "name": "groupResource",
+                  "parameters": {
+                    "groupId": {"value": "combat"},
+                    "name": {"value": "permaChargeAlt"}
+                  },
+                  "output": {
+                    "number": "permaAlt"
+                  }
+                },
+                {
+                  "title": "setSelfValue",
+                  "type": "action",
+                  "name": "setSelfValue",
+                  "parameters": {
+                    "key": {"value": "permaChargeAlt"},
+                    "numValue": {"key": "permaAlt"}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "sequence",
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": "inverter",
+              "type": "decorator",
+              "name": "inverter",
+              "parameters": {},
+              "child": {
+                "title": "hasMeleePrimary",
+                "type": "action",
+                "name": "hasMeleePrimary",
+                "parameters": {}
+              }
+            },
+            {
+              "title": "inverter",
+              "type": "decorator",
+              "name": "inverter",
+              "parameters": {},
+              "child": {
+                "title": "hasRangedPrimary",
+                "type": "action",
+                "name": "hasRangedPrimary",
+                "parameters": {}
+              }
+            },
+            {
+              "title": "selector",
+              "type": "composite",
+              "name": "selector",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "hasMeleeSheathed",
+                  "type": "action",
+                  "name": "hasMeleeSheathed",
+                  "parameters": {}
+                },
+                {
+                  "title": "hasRangedSheathed",
+                  "type": "action",
+                  "name": "hasRangedSheathed",
+                  "parameters": {}
+                }
+              ]
+            },
+            {
+              "title": "swapItemSlots",
+              "type": "action",
+              "name": "swapItemSlots",
+              "parameters": {}
+            }
+          ]
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": 1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "group",
+                "type": "action",
+                "name": "group",
+                "parameters": {
+                  "behavior": {"value": "mik-npccombatcoordinator"},
+                  "goal": {"value": "target"},
+                  "goalType": {"value": "entity"},
+                  "groupId": {"value": "combat"},
+                  "maxMembers": {"value": 8},
+                  "minMembers": {"value": 1}
+                }
+              },
+              {
+                "title": "isValidTarget",
+                "type": "action",
+                "name": "isValidTarget",
+                "parameters": {
+                  "entity": {"key": "target"}
+                }
+              },
+              {
+                "title": "controlEntity",
+                "type": "action",
+                "name": "controlEntity",
+                "parameters": {
+                  "entity": {"key": "target"}
+                },
+                "output": {
+                  "entity": "combatTarget"
+                }
+              },
+              {
+                "title": "controlAggressive",
+                "type": "action",
+                "name": "controlAggressive",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "title": "parallel",
+            "type": "composite",
+            "name": "parallel",
+            "parameters": {
+              "fail": {"value": -1},
+              "success": {"value": -1}
+            },
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "hasShield",
+                    "type": "action",
+                    "name": "hasShield",
+                    "parameters": {}
+                  },
+                  {
+                    "title": "altFire",
+                    "type": "action",
+                    "name": "altFire",
+                    "parameters": {}
+                  },
+                  {
+                    "title": "runner",
+                    "type": "action",
+                    "name": "runner",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "title": "dynamic",
+                "type": "composite",
+                "name": "dynamic",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": 1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "hasMeleePrimary",
+                        "type": "action",
+                        "name": "hasMeleePrimary",
+                        "parameters": {}
+                      },
+                      {
+                        "title": "parallel",
+                        "type": "composite",
+                        "name": "parallel",
+                        "parameters": {
+                          "fail": {"value": 1},
+                          "success": {"value": -1}
+                        },
+                        "children": [
+                          {
+                            "title": "task",
+                            "type": "action",
+                            "name": "task",
+                            "parameters": {
+                              "groupId": {"value": "combat"},
+                              "maxMembers": {"value": 8},
+                              "minMembers": {"value": 1},
+                              "taskId": {"value": "melee"}
+                            }
+                          },
+                          {
+                            "title": "NPC Melee",
+                            "type": "module",
+                            "name": "mik-npcmeleecombat",
+                            "parameters": {}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": 1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "hasRangedPrimary",
+                        "type": "action",
+                        "name": "hasRangedPrimary",
+                        "parameters": {}
+                      },
+                      {
+                        "title": "parallel",
+                        "type": "composite",
+                        "name": "parallel",
+                        "parameters": {
+                          "fail": {"value": 1},
+                          "success": {"value": -1}
+                        },
+                        "children": [
+                          {
+                            "title": "task",
+                            "type": "action",
+                            "name": "task",
+                            "parameters": {
+                              "groupId": {"value": "combat"},
+                              "maxMembers": {"value": 8},
+                              "minMembers": {"value": 1},
+                              "taskId": {"value": "ranged"}
+                            }
+                          },
+                          {
+                            "title": "NPC Ranged",
+                            "type": "module",
+                            "name": "mik-npcrangedcombat",
+                            "parameters": {}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "optional",
+                    "type": "decorator",
+                    "name": "optional",
+                    "parameters": {
+                      "shouldRun": {"key": "<meleeStandby>"}
+                    },
+                    "child": {
+                      "title": "parallel",
+                      "type": "composite",
+                      "name": "parallel",
+                      "parameters": {
+                        "fail": {"value": 1},
+                        "success": {"value": -1}
+                      },
+                      "children": [
+                        {
+                          "title": "hasMeleePrimary",
+                          "type": "action",
+                          "name": "hasMeleePrimary",
+                          "parameters": {}
+                        },
+                        {
+                          "title": "task",
+                          "type": "action",
+                          "name": "task",
+                          "parameters": {
+                            "groupId": {"value": "combat"},
+                            "maxMembers": {"value": 8},
+                            "minMembers": {"value": 1},
+                            "taskId": {"value": "meleeStandby"}
+                          }
+                        },
+                        {
+                          "title": "NPC Melee Standby",
+                          "type": "module",
+                          "name": "meleestandby",
+                          "parameters": {}
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title": "runner",
+                    "type": "action",
+                    "name": "runner",
+                    "parameters": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

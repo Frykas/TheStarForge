@@ -31,7 +31,42 @@
 			  { "item": { "name": "starforge-marikobackfalse" }, "rarity": 0.5},
 			  { "item": { "name": "starforge-katahelbackfalse" }, "rarity": 0.5},
 			  { "item": { "name": "starforge-sedgebackfalse" }, "rarity": 0.5},
-			  { "item": { "name": "starforge-soultakerbackfalse" }, "rarity": 0.5}
+			  { "item": { "name": "starforge-soultakerbackfalse" }, "rarity": 0.5},
+			  { "item": { "name": "starforge-warmongerbackfalse" }, "rarity": 0.5},
+			  { "item": { "name": "starforge-siaxaabackfalse" }, "rarity": 0.5}
+			] ]					
+		]
+	},
+	
+	{ "op" : "add", "path" : "/starforge-elanamerchant",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "starforge-hellbowl" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest3" },
+			  { "item": { "name": "starforge-hellbowl-recipe" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest3" },
+			  { "item": { "name": "starforge-hatredcoffee" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-cookbook" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest4" },
+			  { "item": { "name": "starforge-tentadog" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-erchiusgusher" }, "rarity": 0.5, "prerequisiteQuest" : "shiprepair" },
+			  { "item": { "name": "starforge-ixodoommeat" }, "rarity": 0.5, "prerequisiteQuest" : "floran_mission2" },
+			  { "item": { "name": "starforge-solusenergydrink" }, "rarity": 0.5, "prerequisiteQuest" : "hylotl_mission2" },
+			  { "item": { "name": "starforge-kluexchocolate" }, "rarity": 0.5, "prerequisiteQuest" : "avian_mission2" },
+			  { "item": { "name": "starforge-vrbanana" }, "rarity": 0.5, "prerequisiteQuest" : "apex_mission2" },
+			  { "item": { "name": "starforge-skullgem" }, "rarity": 0.5, "prerequisiteQuest" : "glitch_mission2" },
+			  { "item": { "name": "starforge-ruinouseye" }, "rarity": 0.5, "prerequisiteQuest" : "destroyruin" },
+			  { "item": { "name": "starforge-novalimejelly" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-erchiusgoop" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-pinacolada" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-stuffedreefpod" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-creightonmre" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-strawberryseeddonut" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-coralcreepbrochette" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-carnivoredelight" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-bananeonmelon" }, "rarity": 0.5 },
+			  { "item": { "name": "starforge-robotblinfood" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest1" },
+			  { "item": { "name": "starforge-robotblinfood-recipe" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest1" },
+			  { "item": { "name": "starforge-jamsandwich" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest2" },
+			  { "item": { "name": "starforge-jamsandwich-recipe" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest2" }
+			  
 			] ]					
 		]
 	}

@@ -1,7 +1,7 @@
 {
   "itemName" : "starforge-hellbowl",
   "rarity" : "essential",
-  "price" : 500,
+  "price" : 1200,
   "category" : "preparedFood",
   "inventoryIcon" : "hellbowl.png",
   "description" : "Elana recommends you stay near a toilet for a few hours after eating this.",

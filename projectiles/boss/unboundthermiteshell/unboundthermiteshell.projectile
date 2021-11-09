@@ -1,0 +1,110 @@
+{
+	"projectileName": "starforge-unboundthermiteshell",
+	"image": "unboundthermiteshell.png",
+	"animationCycle": 0.4,
+	"frameNumber": 4,
+	"damageKindImage": "icon.png",
+	"lightColor": [115, 119, 38],
+	"pointLight": true,
+	"actionOnReap": [{
+			"file": "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config",
+			"action": "config"
+		},
+		{
+			"inheritDamageFactor": 0.05,
+			"angleAdjust": 0,
+			"fuzzAngle": 30,
+			"type": "largefirecloud",
+			"action": "projectile"
+		},
+		{
+			"inheritDamageFactor": 0.05,
+			"angleAdjust": 60,
+			"fuzzAngle": 30,
+			"type": "largefirecloud",
+			"action": "projectile"
+		},
+		{
+			"inheritDamageFactor": 0.05,
+			"angleAdjust": 90,
+			"fuzzAngle": 30,
+			"type": "largefirecloud",
+			"action": "projectile"
+		},
+		{
+			"inheritDamageFactor": 0.05,
+			"angleAdjust": 120,
+			"fuzzAngle": 30,
+			"type": "largefirecloud",
+			"action": "projectile"
+		},
+		{
+			"inheritDamageFactor": 0.05,
+			"angleAdjust": 180,
+			"fuzzAngle": 30,
+			"type": "largefirecloud",
+			"action": "projectile"
+		},
+		{
+			"inheritDamageFactor": 0.05,
+			"angleAdjust": 240,
+			"fuzzAngle": 30,
+			"type": "largefirecloud",
+			"action": "projectile"
+		},
+		{
+			"inheritDamageFactor": 0.05,
+			"angleAdjust": 270,
+			"fuzzAngle": 30,
+			"type": "largefirecloud",
+			"action": "projectile"
+		},
+		{
+			"action": "projectile",
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
+			"inheritDamageFactor": 0.005,
+			"angleAdjust": 1
+		},
+		{
+			"action": "projectile",
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
+			"inheritDamageFactor": 0.005,
+			"angleAdjust": -18
+		},
+		{
+			"action": "projectile",
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
+			"inheritDamageFactor": 0.005,
+			"angleAdjust": 18
+		},
+		{
+			"action": "projectile",
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
+			"inheritDamageFactor": 0.005,
+			"angleAdjust": -27
+		},
+		{
+			"action": "projectile",
+			"type": "starforge-flame",
+			"fuzzAngle": 9,
+			"inheritDamageFactor": 0.005,
+			"angleAdjust": 27
+		}
+	],
+	"timeToLive": 1.5,
+	"knockback": 6,
+
+	"emitters": ["fireplasma", "smoke", "flames", "sparks"],
+	"power": 10.0,
+	"speed": 80.0,
+	"physics": "bullet",
+	"damageType": "NoDamage",
+	"damageKind": "default",
+
+	"controlForce": 150,
+	"maxSpeed": 150
+}

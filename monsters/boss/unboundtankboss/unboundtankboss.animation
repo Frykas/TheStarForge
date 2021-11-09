@@ -1,0 +1,446 @@
+{
+  "globalTagDefaults" : {
+    "shotFrame" : "1",
+	"trackAnimationFrame" : "1"
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+	  //IDLE ENGINE
+      "engine" : {
+        "priority" : 1,
+        "default" : "on",
+        "states" : {
+          "off" : {
+          },
+          "on" : {
+            "properties" : {
+              "persistentSound" : "/sfx/objects/shipengine.ogg",
+              "persistentSoundRangeMultiplier" : 2
+            }
+          }
+        }
+      },
+
+	  //BODY
+      "body" : {
+        "priority" : 1,
+        "default" : "stage1",
+        "states" : {
+          "stage1" : {
+            "frames" : 1
+          },
+          "stage2" : {
+            "frames" : 1
+          },
+          "stage3" : {
+            "frames" : 1
+          }
+        }
+      },
+
+	  //BARREL
+      "barrel" : {
+        "priority" : 1,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "broken" : {
+            "frames" : 1
+          }
+        }
+      },
+
+	  //ROCKET LAUNCHER
+      "rocketLauncher" : {
+        "priority" : 1,
+        "default" : "load",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "load" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "loaded"
+          },
+          "loaded" : {
+            "frames" : 1,
+            "cycle" : 1,
+            "mode" : "loop"
+          },
+          "fire" : {
+            "frames" : 3
+          },
+          "recover" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "load"
+          },
+          "broken" : {
+            "frames" : 1,
+            "cycle" : 1,
+            "mode" : "loop"
+          }
+        }
+      },
+	  //TRACKS
+      "tracks" : {
+        "priority" : 0,
+        "default" : "default",
+        "states" : {
+          "default" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 5,
+          "transformationGroups" : ["all"]
+        },
+
+        "partStates" : {
+          "body" : {
+            "stage1" : {
+              "properties" : {
+                "image" : "<partImage>:stage1"
+              }
+            },
+            "stage2" : {
+              "properties" : {
+                "image" : "<partImage>:stage2"
+              }
+            },
+            "stage3" : {
+              "properties" : {
+                "image" : "<partImage>:stage3"
+              }
+            }
+          }
+        }
+      },
+
+      "bodyFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 14,
+          "offset" : [0, 2.875],
+          "transformationGroups" : ["all"],
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "body" : {
+            "stage1" : {
+              "properties" : {
+                "image" : "<partImage>:stage1"
+              }
+            },
+            "stage2" : {
+              "properties" : {
+                "image" : "<partImage>:stage2"
+              }
+            },
+            "stage3" : {
+              "properties" : {
+                "image" : "<partImage>:stage3"
+              }
+            }
+          }
+        }
+      },
+
+      "barrel" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "offset" : [5.25, 0],
+          "transformationGroups" : ["barrel"]
+        },
+
+        "partStates" : {
+          "barrel" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "broken" : {
+              "properties" : {
+                "image" : "<partImage>:broken.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "barrelFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 13,
+          "offset" : [5.25, 0],
+          "transformationGroups" : ["barrel"],
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "barrel" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "broken" : {
+              "properties" : {
+                "image" : "<partImage>:broken.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "bodyBack" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 0,
+          "transformationGroups" : ["all"]
+        },
+
+        "partStates" : {
+          "body" : {
+            "stage1" : {
+              "properties" : {
+                "image" : "<partImage>:stage1"
+              }
+            },
+            "stage2" : {
+              "properties" : {
+                "image" : "<partImage>:stage2"
+              }
+            },
+            "stage3" : {
+              "properties" : {
+                "image" : "<partImage>:stage3"
+              }
+            }
+          }
+        }
+      },
+
+      "bodyBackFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 11,
+          "offset" : [0, 2.875],
+          "transformationGroups" : ["all"],
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "body" : {
+            "stage1" : {
+              "properties" : {
+                "image" : "<partImage>:stage1"
+              }
+            },
+            "stage2" : {
+              "properties" : {
+                "image" : "<partImage>:stage2"
+              }
+            },
+            "stage3" : {
+              "properties" : {
+                "image" : "<partImage>:stage3"
+              }
+            }
+          }
+        }
+      },
+	  
+      "rocketLauncher" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 7,
+          "offset" : [-3.75, 0.25],
+          "transformationGroups" : ["rocketlauncher"]
+        },
+
+        "partStates" : {
+          "rocketLauncher" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "load" : {
+              "properties" : {
+                "image" : "<partImage>:load.<frame>"
+              }
+            },
+            "loaded" : {
+              "properties" : {
+                "image" : "<partImage>:loaded.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<shotFrame>"
+              }
+            },
+            "recover" : {
+              "properties" : {
+                "image" : "<partImage>:recover.<frame>"
+              }
+            },
+            "broken" : {
+              "properties" : {
+                "image" : "<partImage>:broken.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  
+      "rocketLauncherFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 18,
+          "offset" : [-3.75, 0.25],
+          "transformationGroups" : ["rocketlauncher"],
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "rocketLauncher" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "load" : {
+              "properties" : {
+                "image" : "<partImage>:load.<frame>"
+              }
+            },
+            "loaded" : {
+              "properties" : {
+                "image" : "<partImage>:loaded.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<shotFrame>"
+              }
+            },
+            "recover" : {
+              "properties" : {
+                "image" : "<partImage>:recover.<frame>"
+              }
+            },
+            "broken" : {
+              "properties" : {
+                "image" : "<partImage>:broken.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  
+      "tracks" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 7,
+          "transformationGroups" : ["all"]
+        },
+
+        "partStates" : {
+          "tracks" : {
+            "default" : {
+              "properties" : {
+                "image" : "<partImage>:moving.<trackAnimationFrame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "transformationGroups" : {
+    "all" : {"interpolated" : true},
+    "barrel" : {"interpolated" : true},
+    "rocketlauncher" : {"interpolated": true}
+  },
+
+  "particleEmitters" : {
+    "damage" : {
+      "emissionRate" : 0.7,
+      "particles" : [
+      ]
+    },
+
+    "deathPoof" : {
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/puff2c/puff2c.animation",
+            "size" : 1,
+            "angularVelocity" : 35,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [0, 0],
+            "finalVelocity" : [0, 0],
+            "approach" : [1, 1],
+            "timeToLive" : 0.4,
+            "layer" : "middle"
+          }
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "turnHostile" : [  ],
+    "hurt" : {
+      "pool" : [ ],
+      "rangeMultiplier" : 1.5
+    },
+    "death" : {
+      "pool" : [ ],
+      "rangeMultiplier" : 1.5
+    }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

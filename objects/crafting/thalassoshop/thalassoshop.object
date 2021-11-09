@@ -22,7 +22,7 @@
     "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : "Thalasso Shop",
-        "subtitle" : "Furniture themed after the Thalasso!",
+        "subtitle" : "Thalasso themed furniture!",
 		 
 		 "imgPlayerMoneyIcon" : {
         "visible" : false

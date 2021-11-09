@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-coralcreepbrochette",
+  "rarity" : "rare",
+  "price" : 350,
+  "category" : "preparedFood",
+  "inventoryIcon" : "coralcreepbrochette.png",
+  "description" : "A mix of cooked and raw coralcreeps, on a brochette. Krythers loves it!",
+  "shortdescription" : "Coralcreep Brochette",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 360
+    }
+  ] ],
+  "foodValue" : 35,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

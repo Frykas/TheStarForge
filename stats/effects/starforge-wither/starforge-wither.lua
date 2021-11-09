@@ -6,7 +6,7 @@ function init()
   self.decayRate = config.getParameter("decayRate", 0.15)
   self.decayTimer = 0
   
-  self.setDamageSourceKind = "direct"
+  self.setDamageSourceKind = "starforge-wither"
   
   self.currentDamageIncrease = 0
   

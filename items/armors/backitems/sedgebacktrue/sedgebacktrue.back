@@ -5,16 +5,15 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
-  "description" : "A quiver holding spears made of a strange mix of bone and other materials. ",
+  "description" : "A quiver holding spears made of a strange mix of bone and other materials.",
   "shortdescription" : "^#758468;Berserker's Quiver^white;",
-  "tooltipKind" : "back",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-backitemexalted",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "regenerationaugment2", "jumpboostaugment",
+  "starforge-hunterhealing", "jumpboostaugment",
 
     {
       "stat" : "biomeheatImmunity",

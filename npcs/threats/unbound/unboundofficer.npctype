@@ -1,5 +1,5 @@
 {
-    "type": "unboundofficer",
+    "type": "starforge-unboundofficer",
     "baseType": "hostile",
  
     "dropPools": ["unboundOfficerDeathTreasure"],
@@ -14,19 +14,20 @@
                 },
                 "apex": {
                     "default": [
-                        "Engage the enemy!",
-                        "Order the captains to get started already!.",
+                        "Everyone, move!",
+                        "Attack on my mark!",
                         "For the Unbound!",
-                        "The Unbound will ascend and triumph over all!",
+                        "It's over, the Unbound won already.",
                         "Order sent, preparing the next target",
-                        "We won't go down easily."
+                        "Apolleon saved us all!"
                     ]
                 }
             }
         }
     },
  
- 
+    "innateStatusEffects" : [{"stat":"maxHealth","amount":30}, {"stat":"powerMultiplier","amount":1.20}, {"stat":"maxEnergy","amount":600}],
+	
     "items": {
         "override": [
             [0, [{
@@ -40,7 +41,7 @@
                     "name": "starforge-unboundofficerpants"
                 }],
                 "primary": [
-                    "starforge-unboundofficerpistol", "starforge-unboundofficerpistol2", "starforge-unboundofficerpistol3"
+                    "starforge-unboundpistol", "starforge-unboundburstpistol", "starforge-unboundsilencedpistol"
                 ]
             }]]
         ]

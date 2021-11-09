@@ -1,0 +1,54 @@
+{
+  "objectName" : "starforge-thesealed",
+  "colonyTags" : ["ancient"],
+  "rarity" : "essential",
+  "printable" : false,
+  "description" : "DO NOT FREE HIM.",
+  "shortdescription" : "Cyenar, the Sealed One",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 10000,
+
+  "apexDescription" : "Whispers... trying to reach me...",
+  "avianDescription" : "It whispers... free me...",
+  "floranDescription" : "Floran not feeling well...",
+  "glitchDescription" : "Co2Fus3D. I C4ann0T AN5leSye haE6D ",
+  "humanDescription" : "Whatever this is... I was not meant to find it... I feel dizzy...",
+  "hylotlDescription" : "A voice keeps whispering to me... It wants to be freed.",
+  "novakidDescription" : "Somethin' inside me is tellin' me to run away.",
+
+  "inventoryIcon" : "thesealedicon.png",
+  "orientations" : [
+   {
+      "dualImage" : "thesealed.png:<frame>",
+      "imageLayers" : [ { "image" : "thesealed.png:<frame>" }, { "image" : "thesealedfullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 2,
+      "animationCycle" : 15.3,
+      "anchors" : [ "bottom" ]
+    }
+   ],
+   
+  "soundEffect" : "/sfx/object/thesealedsound.ogg",
+  "soundEffectRangeMultiplier" : 1.5,
+   
+  "scripts" : [ "/scripts/chattyObject.lua" ],
+  "scriptDelta" : 20,
+
+  "chatOptions" : [
+   "COME CLOSER. FREE ME",
+   "YOU MUST. FREE ME.",
+   "I DO NOT. BELONG HERE.",
+   "I NEED TO. GO BACK.",
+   "FREE. ME."
+  ],
+
+  "mouthPosition" : [0, 0]
+  
+  }

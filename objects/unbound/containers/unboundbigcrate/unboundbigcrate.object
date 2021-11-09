@@ -1,0 +1,41 @@
+{
+  "objectName" : "starforge-unboundbigcrate",
+  "colonyTags" : ["apex","storage"],
+  "rarity" : "Rare",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "category" : "storage",
+  "price" : 200,
+  "description" : "A large Unbound crate, reinforced to protect whatever is inside. ",
+  "shortdescription" : "Large Unbound Crate",
+  "race" : "apex",
+  "health" : 1.5,
+
+  "apexDescription" : "A standard Unbound crate. It is extremely durable.",
+  "avianDescription" : "This container is large, but that means lots of space to store things inside.",
+  "floranDescription" : "Big ssstriped metal box.",
+  "glitchDescription" : "Interested. The metals used in this crate makes it strong, but quite light.",
+  "humanDescription" : "An oversized Unbound crate, this can store a lot inside.",
+  "hylotlDescription" : "A large Unbound container, made for goods transport.",
+  "novakidDescription" : "I'd reckon you could store near anything this big ol' crate.",
+
+  "inventoryIcon" : "unboundbigcrateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundbigcrate.png:<color>",
+      "imagePosition" : [-24, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/metalbox_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/metalbox_close.ogg" ],
+  "slotCount" : 48,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

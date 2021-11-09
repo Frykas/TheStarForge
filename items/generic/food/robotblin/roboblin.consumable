@@ -4,7 +4,7 @@
   "price" : 365,
   "category" : "preparedFood",
   "inventoryIcon" : "robo_blin.png",
-  "description" : "Not to be confused with the sassy and walking variant.",
+  "description" : "Not to be confused with the sassy and walking variant. Also Rondin's favorite!",
   "shortdescription" : "Robotblin",
   "effects" : [ [
       {

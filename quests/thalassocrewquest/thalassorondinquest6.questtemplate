@@ -1,0 +1,36 @@
+{
+  "id" : "thalassorondinquest6",
+  "title" : "^green;Going Even Beyond III",
+  "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassomission1", "thalassorondinquest4", "thalassorondinquest5" ],
+  "text" : "Now, this won't be easy to find in great numbers, but you should have some leftovers from your last mission against them. I'm talking about ^orange;Unbound Salvaged Tech^reset;. We need a bunch to craft a charge.",
+  "completionText" : "Perfect, that's it. Here's the blueprint to craft an ^orange;Exalting Charge^reset;. I'm pretty sure you know how to acquire the other materials. Give it a try, craft one.",
+  "moneyRange" : [400, 400],
+  "rewards" : [
+    [ [ "starforge-exaltingcharge-recipe"] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/starforge-main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : {
+	   "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "title" : "Rondin"
+      }
+	 },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "starforge-salvagedunboundtech",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Meet ^orange;Rondin^reset; at the ^green;Starforge^reset;."
+  }
+}

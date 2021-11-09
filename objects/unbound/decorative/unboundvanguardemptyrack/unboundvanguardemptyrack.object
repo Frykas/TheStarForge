@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-unboundvanguardemptyrack",
+  "colonyTags" : ["apex","combat"],
+  "rarity" : "rare",
+  "category" : "decorative",
+  "price" : 200,
+  "description" : "An empty Unbound rack, used for Vanguard gear.",
+  "shortdescription" : "Vanguard Empty Rack",
+  "race" : "apex",
+
+  "apexDescription" : "An empty Unbound rack. How rare.",
+  "avianDescription" : "An empty Unbound rack.",
+  "floranDescription" : "Boring...",
+  "glitchDescription" : "Disappointed. There are no weapons on this rack.",
+  "humanDescription" : "A whole rack filled with nothing but emptiness. How sad.",
+  "hylotlDescription" : "An empty Unbound rack.",
+  "novakidDescription" : "A rack with nothing on it? Disappointing.",
+
+
+  "inventoryIcon" : "unboundvanguardemptyrackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundvanguardemptyrack.png" ,
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

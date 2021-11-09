@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-siaxaabacktrue-recipe",
+  "price" : 3500,
+  "inventoryIcon" : "siaxaabacktrueicon.png",
+  "rarity" : "Essential",
+  "category" : "Blueprint",
+  "description" : "Wings which inspires freedom and courage.",
+  "recipe" : {"parameters":{},"count":1,"name":"starforge-siaxaabacktrue"},
+  "shortdescription" : "^red;Siaxaa's Grace^white;",
+  "tooltipFields" : {"rarityLabel" : "Exalted"}
+}

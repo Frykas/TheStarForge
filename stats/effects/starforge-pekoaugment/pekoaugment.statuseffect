@@ -1,0 +1,17 @@
+{
+  "name" : "starforge-pekoaugment",
+  "effectConfig" : {
+    "monsterType" : "anglure",
+	"monsterParameters" : {},
+	"monsterLevel" : 6,
+	"droneCount" : 1
+  },
+  "defaultDuration" : 15,
+
+  "scripts" : [
+    "monstersummon.lua"
+  ],
+
+  "label" : "Crasberry Friend",
+  "icon" : "/interface/statuses/pekoaugment.png"
+}

@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-erchiusgusher",
+  "rarity" : "Legendary",
+  "price" : 620,
+  "category" : "preparedFood",
+  "inventoryIcon" : "erchiusgusher.png",
+  "description" : "A crunchy Erchius candy! The eye is filled with a fruity-juice!",
+  "shortdescription" : "Erchius Gusher",
+  "effects" : [ [
+       {
+        "effect" : "glow",
+        "duration" : 500
+      },
+    {
+        "effect" : "bandageheal",
+        "duration" : 10
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

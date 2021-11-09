@@ -1,0 +1,12 @@
+{
+  "name" : "unboundtankbossbody",
+  "category" : "unboundtankboss",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png",
+    "bodyFullbright" : "bodyfullbright.png",
+    "bodyBack" : "bodyback.png",
+    "bodyBackFullbright" : "bodybackfullbright.png"
+  }
+}

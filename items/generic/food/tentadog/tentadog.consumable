@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-tentadog",
+  "rarity" : "uncommon",
+  "price" : 90,
+  "category" : "preparedFood",
+  "inventoryIcon" : "tentadog.png",
+  "description" : "Taste it before saying \"ew!\"",
+  "shortdescription" : "Tentadog",
+  "effects" : [ [
+    {
+      "effect" : "bandageheal",
+      "duration" : 30
+    }
+  ] ],
+  "foodValue" : 85,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

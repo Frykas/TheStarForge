@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-unboundscienceinventortable",
+  "colonyTags" : ["apex"],
+  "printable" : true,
+  "rarity" : "Uncommon",
+  "description" : "A sturdy table used by the Unbound Science Division.",
+  "shortdescription" : "Unbound Science Table",
+  "race" : "apex",
+  "category" : "furniture",
+  "price" : 150,
+
+  "apexDescription" : "A sturdy table.",
+  "avianDescription" : "This table is pretty sturdy.",
+  "floranDescription" : "Table good enough for Floran to ssslice meatsss.",
+  "glitchDescription" : "Approving. A very well-made table.",
+  "humanDescription" : "A cool table.",
+  "hylotlDescription" : "A crude looking table. It works I guess.",
+  "novakidDescription" : "A good ol' table.",
+
+  "inventoryIcon" : "scienceinventortableicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "scienceinventortable.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
+

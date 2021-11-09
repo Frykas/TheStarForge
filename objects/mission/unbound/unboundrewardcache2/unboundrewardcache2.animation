@@ -1,0 +1,114 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "burstState" : {
+        "default" : "closed",
+        "states" : {
+          "closed" : {
+            "frames" : 1
+          },
+		  "opening" : {
+            "frames" : 1,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "burst"
+          },
+          "burst" : {
+            "frames" : 1,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "open"
+          },
+          "open" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chestFullbright" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "burstState" : {
+            "closed" : {
+              "properties" : {
+                "image" : "unboundrewardcache2.png:closed"
+              }
+            },
+			
+			 "opening" : {
+              "properties" : {
+                "image" : "unboundrewardcache2.png:opening"
+              }
+            },
+
+            "burst" : {
+              "properties" : {
+                "image" : "unboundrewardcache2.png:burst"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "unboundrewardcache2.png:open"
+              }
+            }
+          }
+        }
+      },
+      "chest" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "burstState" : {
+            "closed" : {
+              "properties" : {
+                "image" : "unboundrewardcache2lit.png:closed"
+              }
+            },
+			
+			 "opening" : {
+              "properties" : {
+                "image" : "unboundrewardcache2lit.png:opening"
+              }
+            },
+
+            "burst" : {
+              "properties" : {
+                "image" : "unboundrewardcache2lit.png:burst"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "unboundrewardcache2lit.png:open"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "burst" : {
+      "active" : false,
+      "offsetRegion" : [1.5, 2, 4.5, 2],
+      "particles" : [
+        {"particle" : "smoke", "count" : 3}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "burst" : ["/sfx/objects/essencechest_open2.ogg"]
+  }
+}

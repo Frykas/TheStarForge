@@ -1,0 +1,42 @@
+{
+  "objectName" : "starforge-siaxaaaltar",
+  "rarity" : "Essential",
+  "printable" : false,
+  "description" : "A mystical altar, old as time. How it came to be is unknown.",
+  "shortdescription" : "^orange;Avian Altar^white;",
+  "race" : "avian",
+  "category" : "crafting",
+  "price" : 5000,
+
+  "apexDescription" : "What a mysterious looking mural... I assume the deity pictured here is Siaxaa, the goddess of the City of Commence?",
+  "avianDescription" : "Woah, I never imagined I would see this... Very few avians laid their eyes on this... It is such an honnor. ",
+  "floranDescription" : "Floran confusssed. How doesss cryssstal float? Why is wall crying??",
+  "glitchDescription" : "Inspired. This mural is very old, and very beautiful.",
+  "humanDescription" : "That's one fancy crystal floating there. I wonder what is the story behind this mural?",
+  "hylotlDescription" : "What a beautiful mural. It seems like it represents a deity of some sort, perhaps it is the one mentionned by the people in the City of Commence?",
+  
+  "lightColor" : [16, 78, 184],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.005,
+
+  "inventoryIcon" : "siaxaaaltaricon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "siaxaaaltar.png:<frame>" }, { "image" : "siaxaaaltarfullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [-40, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 24,
+      "animationCycle" : 2.2,
+      "anchors" : [ "background" ]
+    }
+   
+  ]}

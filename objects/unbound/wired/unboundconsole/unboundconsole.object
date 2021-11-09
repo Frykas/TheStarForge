@@ -1,0 +1,68 @@
+{
+  "objectName" : "starforge-unboundconsole",
+  "colonyTags" : ["apex","wired"],
+  "rarity" : "uncommon",
+  "category" : "wire",
+  "printable" : true,
+  "price" : 180,
+  "description" : "An Unbound console.",
+  "shortdescription" : "Unbound Console",
+  "race" : "apex",
+  "lightColor" : [146, 69, 175],
+
+  "humanDescription" : "An Unbound console.",
+
+
+  "inventoryIcon" : "unboundconsoleicon.png",
+  "orientations" : [
+    {
+	  "image" : "unboundconsole.png:<color>.<frame>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 3,
+      "animationCycle" : 0.4,
+      "lightPosition" : [2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "image" : "unboundconsole.png:<color>.<frame>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 3,
+      "animationCycle" : 0.4,
+      "lightPosition" : [2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+
+  "animation" : "unboundconsole.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "unboundconsole.png",
+    "fg" : "unboundconsolelit.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "outputNodes" : [ [1, 0] ]
+}

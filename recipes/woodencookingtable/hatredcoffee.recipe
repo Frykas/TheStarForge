@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "coffee", "count" : 1 },
+    { "item" : "fleshstrand", "count" : 5}
+
+  ],
+  "output" : {
+    "item" : "starforge-hatredcoffee",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "drinks", "coffee" ], 
+  "duration" : 0
+}

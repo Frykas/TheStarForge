@@ -1,0 +1,14 @@
+{
+  "name" : "starforge-siaxaafalldamage",
+  "effectConfig" : {},
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "siaxaafalldamage.lua"
+  ],
+
+  "animationConfig" : "siaxaafalldamage.animation",
+  
+  "label" : "Siaxaa's Resolve",
+  "icon" : "/interface/statuses/starforge-siaxaaresolve.png"
+}

@@ -1,0 +1,15 @@
+{
+  "frameGrid" : {
+    "size" : [39, 14],
+    "dimensions" : [3, 1],
+    "names" : [
+      ["cock.1", "cock.2", "cock.3"]
+    ]
+  },
+   "aliases" : {
+	"uncock.1" : "cock.2",
+	"uncock.2" : "cock.1",
+	"stay.1" : "cock.2",
+	"stay.2" : "cock.3"
+  }
+}

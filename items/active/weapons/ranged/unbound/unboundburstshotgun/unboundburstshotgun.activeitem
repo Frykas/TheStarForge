@@ -1,0 +1,110 @@
+{
+  "itemName": "starforge-unboundburstshotgun",
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Essential",
+  "description": "An experimental Unbound shotgun. Fires deadly poisonous shells.",
+  "shortdescription": "^#41453B;UNBD^reset; \"Aspic\" ^#9BBA3D;EXP SG^reset;",
+  "tooltipKind": "starforge-experimentalgun",
+  "category": "^white;Experimental Shotgun^reset;",
+  "twoHanded": true,
+  "level" : 7,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "shotgun"
+  ],
+  "inventoryIcon": "unboundburstshotgunicon.png",
+  "animation": "unboundburstshotgun.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundburstshotgun.png",
+    "barrel": "",
+	"middleFullbright": "unboundburstshotgunfullbright.png",
+	"muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-3.0, 0.375, -3.0, 0.375],
+        "particles" : [
+          { "particle" : "starforge-unboundpoisonshell" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/gristlegun1.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [1.0, 0.0],
+  "muzzleOffset": [2.125, 0.275],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "poison",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.55,
+    "baseDps": 7.5,
+    "energyUsage": 25,
+    "inaccuracy": 0.03,
+    "projectileCount": 3,
+    "fireType": "burst",
+	"burstTime" : 0.35,
+    "burstCount" : 3,
+    "projectileType": "unboundpoisonbullet",
+    "projectileParameters": {
+      "knockback": 7
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.15,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

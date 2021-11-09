@@ -1,0 +1,31 @@
+[
+    {
+        "op": "add",
+        "path": "/unboundmission1",
+        "value": {
+            "actions": [
+                {
+                    "type": "placeDungeon",
+                    "dungeonId": "thalassooutpost_mariko",
+                    "targetInstance": "thalassooutpost",
+                    "targetPosition": [165, 598]
+                }
+            ]
+        }
+    },
+	
+	{
+        "op": "add",
+        "path": "/unboundstart",
+        "value": {
+            "actions": [
+                {
+                    "type": "placeDungeon",
+                    "dungeonId": "thalassooutpost_unboundstart",
+                    "targetInstance": "thalassooutpost",
+                    "targetPosition": [170, 500]
+                }
+            ]
+        }
+    }
+]

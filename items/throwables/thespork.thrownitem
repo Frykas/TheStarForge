@@ -1,0 +1,30 @@
+{
+  "itemName" : "starforge-thespork",
+  "rarity" : "Essential",
+  "category" : "Kitchenware",
+  "inventoryIcon" : "thespork.png",
+  "image" : "thespork.png",
+  "shortdescription" : "^#b4f5c3;The Spork^reset;",
+  "description" : "The best of both worlds \n^gray;-Elana^reset;",
+  "maxStack" : 1,
+
+  "ammoUsage" : 0,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.45,
+  "projectileType" : "starforge-sporkprojectile",
+  "projectileConfig" : {
+    "speed" : 55,
+    "power" : 0.01,
+    "knockback" : 35,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item.ogg" ]
+      }
+    ]
+  }
+}

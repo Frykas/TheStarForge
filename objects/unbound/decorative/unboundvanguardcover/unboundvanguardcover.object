@@ -1,0 +1,50 @@
+{
+  "objectName" : "starforge-unboundvanguardcover",
+  "colonyTags" : ["misc"],
+  "rarity" : "rare",
+  "description" : "A hardlight cover used by Vanguard units to cover themselves.",
+  "shortdescription" : "Unbound Hardlight Cover",
+  "race" : "apex",
+
+  "category" : "decorative",
+  "price" : 1020,
+
+  "apexDescription" : "A hardlight cover. Almost nothing can pierce it.",
+  "avianDescription" : "Some sort of light protection?",
+  "floranDescription" : "Ssstupid hiding... Floran ssstab!",
+  "glitchDescription" : "Curious. They use hardlight as cover. Interesting.",
+  "humanDescription" : "A hardlight shield? So cool!",
+  "hylotlDescription" : "I'm surprised the Unbound managed to reverse-engineer hardlight technology.",
+  "novakidDescription" : "Hey they can hide n' shoot! Not fair.",
+
+  "inventoryIcon" : "icon.png",
+   "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "unboundvanguardcover.png" }, { "image" : "unboundvanguardcoverfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "flipImages" : false,
+      "renderLayer" : "Player+6",
+      "direction" : "left",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-1, 0], [-2, 0], [-2, 1], [-2, 2] ]
+    },
+    {
+      "imageLayers" : [ { "image" : "unboundvanguardcover.png" }, { "image" : "unboundvanguardcoverfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "flipImages" : true,
+      "renderLayer" : "Player+6",
+      "direction" : "right",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [1, 0], [2, 0], [2, 1], [2, 2] ]
+    }
+  ]
+
+}

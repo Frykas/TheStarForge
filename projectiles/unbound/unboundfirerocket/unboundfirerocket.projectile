@@ -1,0 +1,58 @@
+{
+	"projectileName": "starforge-unboundfirerocket",
+	"image": "unboundfirerocket.png",
+	"animationCycle": 0.4,
+	"frameNumber": 4,
+	"damageKindImage": "icon.png",
+	"lightColor": [115, 119, 38],
+	"pointLight": true,
+	"piercing": true,
+	"movementSettings" : {
+		"gravityMultiplier" : 0.2
+	},
+	"actionOnReap": [{
+				"file": "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config",
+				"action": "config"
+			},
+			{
+				"inheritDamageFactor": 0.5,
+				"angleAdjust": 0,
+				"fuzzAngle": 30,
+				"type": "largefirecloud",
+				"action": "projectile"
+			},
+			{
+				"inheritDamageFactor": 0.5,
+				"angleAdjust": 90,
+				"fuzzAngle": 30,
+				"type": "largefirecloud",
+				"action": "projectile"
+			},
+			{
+				"inheritDamageFactor": 0.5,
+				"angleAdjust": 180,
+				"fuzzAngle": 30,
+				"type": "largefirecloud",
+				"action": "projectile"
+			},
+			{
+				"inheritDamageFactor": 0.5,
+				"angleAdjust": 270,
+				"fuzzAngle": 30,
+				"type": "largefirecloud",
+				"action": "projectile"
+			}
+		],
+		"timeToLive": 1.5,
+		"knockback": 6,
+		
+	"emitters": ["fireplasma", "smoke", "flames"],
+	"power": 10.0,
+	"speed": 65.0,
+	"physics": "arrow",
+	"damageType": "NoDamage",
+	"damageKind": "default",
+
+	"controlForce": 150,
+	"maxSpeed": 150
+}

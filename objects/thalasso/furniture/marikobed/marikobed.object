@@ -1,0 +1,45 @@
+{
+  "objectName" : "starforge-marikobed",
+  "colonyTags" : ["hylotl","hylotlvillage"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 125,
+  "description" : "Legend has it that if you spend the night in this bed, you'll lose consciousness.",
+  "shortdescription" : "Thalasso Bed",
+  "race" : "hylotl",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-10, 11],
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/thalasso/furniture/marikobed/marikobedcover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "apexDescription" : "This bed is simple without being basic.",
+  "avianDescription" : "A plain bed, it looks comfortable.",
+  "floranDescription" : "Flat bed. Boring.",
+  "glitchDescription" : "Critical. This bed seems almost too simple, but its materials are high quality.",
+  "humanDescription" : "This bed looks like it has a tradional style that hasn't needed to change.",
+  "hylotlDescription" : "An exquisite traditional bed. Many species could learn from this.",
+  "novakidDescription" : "Seen worse beds than this. Seen better too.",
+
+  "inventoryIcon" : "marikobedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "marikobed.png:<color>",
+	  "imageLayers" : [ { "image" : "marikobed.png" }, { "image" : "marikobedfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

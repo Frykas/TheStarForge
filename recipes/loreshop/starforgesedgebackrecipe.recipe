@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-sedgestory1-codex", "count" : 1},
+	{ "item" : "starforge-sedgestory2-codex", "count" : 1},
+	{ "item" : "starforge-sedgestory3-codex", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-sedgebacktrue-recipe",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "blueprint" ],
+  "duration" : 2
+}
+

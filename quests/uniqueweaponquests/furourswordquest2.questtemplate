@@ -1,7 +1,8 @@
 {
   "id" : "starforge-furourswordquest2",
+  "prerequisites" : [ "starforge-furourswordquest1" ],
   "title" : "^orange;Rage Ritual II",
-  "text" : "Sadly Koichi can't do anything with the blade as it is made with Impervium. But maybe with the help of ^orange;Rondin^reset; and the Starforge we could make something out of it. I better meet him at the ^green;Thalasso Outpost^reset;.",
+  "text" : "Sadly Krythers can't do anything with the blade as it is made with Impervium. But maybe with the help of ^orange;Rondin^reset; and the Starforge we could make something out of it. I better meet him at the ^green;Thalasso Outpost^reset;.",
   "completionText" : "What do you bring me this time? An Impervium blade uh... I remember the Captain having one. Here, take this blueprint replica of Mariko's katana. It's the only katana made of Impervium that I know.",
   "moneyRange" : [50, 50],
   "rewards" : [

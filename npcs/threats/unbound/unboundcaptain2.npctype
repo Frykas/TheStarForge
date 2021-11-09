@@ -1,8 +1,12 @@
 {
-    "type": "unboundcaptain2",
+    "type": "starforge-unboundcaptain2",
     "baseType": "hostile",
  
     "dropPools": ["unboundCaptain2DeathTreasure"],
+ 
+    "identity" : {
+     "species" : "apex"
+	 },
  
     "scriptConfig" : {
         "dialog": {
@@ -26,23 +30,23 @@
         }
     },
  
- 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":75}, {"stat":"powerMultiplier","amount":10.0}],
+	
     "items": {
         "override": [
             [0, [{
                 "head": [{
-                    "name": "starforge-unboundcaptain2head"
+                    "name": "starforge-unboundcaptainhead", "parameters" : { "colorIndex" : 9 }
                 }],
                 "chest": [{
-                    "name": "starforge-unboundcaptain2chest"
+                    "name": "starforge-unboundcaptainchest", "parameters" : { "colorIndex" : 9 }
                 }],
                 "legs": [{
-                    "name": "starforge-unboundcaptain2pants"
+                    "name": "starforge-unboundcaptainpants", "parameters" : { "colorIndex" : 9 }
                 }],
                 "primary": [
-                    "starforge-unboundcptsmg"
-                ],
-				 "alt" : [ "starforge-unboundcptsmg" ]
+                    "starforge-unboundsmg"
+                ]
             }]]
         ]
     }

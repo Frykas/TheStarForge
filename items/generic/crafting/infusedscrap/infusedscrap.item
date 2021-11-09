@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-infusedscrap",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "infusedscrap.png",
+  "description" : "Armor parts scavenged from a battlefield, infused with Ancient Essence.",
+  "shortdescription" : "^orange;Infused Armor Scraps ^white;",
+  "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
+}

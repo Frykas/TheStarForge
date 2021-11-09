@@ -1,0 +1,8 @@
+{
+  "type" : "starforge-areastatus",
+
+  "scripts" : ["/stagehands/utility/areastatus/starforge-areastatus.lua"],
+  "scriptDelta" : 10,
+  
+  "broadcastArea" : [-5, -5, 5, 5]
+}

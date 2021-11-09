@@ -14,6 +14,21 @@
         "aggressive" : true
       }
     },
+  {
+	  "name" : "starforge-potlot",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "all",
+		"time" : "all"
+	  },
+	  
+	  "groupSize" : [1, 1],
+	  "spawnChance" : 0.004,
+      "monsterType" : "starforge-potlot",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    },
 {
 	  "name" : "starforge-cacochius",
 	  "spawnParameters" : {
@@ -55,6 +70,22 @@
 	  "monsterType" : "starforge-roboblin",
 	  "monsterParameters" : {
 		"aggressive" : true
+	  }
+    },
+	
+   {
+	  "name" : "starforge-warmongerdrone",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "all",
+		"time" : "all"
+	  },
+	  
+	  "groupSize" : [1, 1],
+	  "spawnChance" : 0.0008,
+	  "monsterType" : "starforge-warmongerdrone",
+	  "monsterParameters" : {
+		"aggressive" : false
 	  }
     },
   {

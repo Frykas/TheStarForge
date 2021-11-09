@@ -1,15 +1,15 @@
 {
   "itemName": "starforge-unboundar",
-  "price": 1000,
+  "price": 500,
   "maxStack": 1,
-  "rarity": "Legendary",
+  "rarity": "Rare",
   "description": "An Unbound assault rifle loaded with elemental bullets. Often used by regular Unbound troopers.",
-  "shortdescription": "Unbound Assault Rifle",
-  "tooltipKind": "gun",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Valiant\" AR",
+  "tooltipKind": "starforge-unboundgun",
   "category": "assaultRifle",
   "tooltipFields" : {"subtitle":"Unbound Rifle"},
   "twoHanded": true,
-  "level" : 6,
+  "level" : 5,
   "itemTags": [
     "weapon",
     "ranged",
@@ -42,8 +42,8 @@
     }
   },
   
-  "baseOffset": [0.52, 0.3],
-  "muzzleOffset": [2.0, 0.275],
+  "baseOffset": [0.625, 0.3],
+  "muzzleOffset": [2.125, 0.275],
   "scripts": [
     "/items/active/weapons/ranged/gun.lua"
   ],
@@ -53,7 +53,7 @@
       "/items/active/weapons/ranged/gunfire.lua"
     ],
     "class": "GunFire",
-    "fireTime": 0.13,
+    "fireTime": 0.15,
     "baseDps": 11,
     "energyUsage": 20,
     "inaccuracy": 0.003,

@@ -1,0 +1,90 @@
+{
+  "objectName" : "starforge-thalassomainteleporter",
+  "objectType" : "teleporter",
+  "rarity" : "Legendary",
+
+  "description" : "This teleporter makes a great demonstration and a handy return point!",
+  "shortdescription" : "Thalasso Outpost Teleporter",
+  "printable" : false,
+
+  "apexDescription" : "If I mark this teleporter I can return here from a different teleporter at any point.",
+  "avianDescription" : "A functioning teleporter! If I mark it I can return here from a different teleporter at any point.",
+  "floranDescription" : "If Floran marksss this teleporter Floran can return here from other teleport machines!",
+  "glitchDescription" : "Eager. By marking this teleporter I should be able to return to this point from any other teleporter!",
+  "humanDescription" : "It's a teleporter! If I mark it I should be able to return here from a different teleporter whenever I like.",
+  "hylotlDescription" : "A teleporter. If I mark it I should be able to return to this point from a different teleporter.",
+  "novakidDescription" : "By markin' this teleporter I can teleport straight back here if n' when I find another teleporter.",
+
+  "category" : "teleporter",
+  "lightColor" : [99, 132, 153],
+  "lightPosition" : [0, 5],
+
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/thalassomainteleporter.config",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "thalassomainteleporter.png:<color>", "fullbright" : true }, { "image" : "thalassomainteleporterlit.png:<color>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "collisionSpaces" : [ [-2, 0], [-1, 0], [0, 0], [1, 0] ]
+    }
+  ],
+  
+  "teleporterFootPosition" : [0, 1],
+
+  "scripts" : [ "thalassomainteleporter.lua" ],
+  "scriptDelta" : 60,
+
+  "spawnInterval" : [80, 180],
+  "spawnOffset" : [0, 3.5],
+
+  "npctypes" : [
+    {
+      "type" : "xrc_devsokolova_starforge",
+      "species" : [ "human" ]
+    },
+	
+	  {
+      "type" : "starforge-anomnom",
+      "species" : [ "novakid" ]
+    },
+	
+	  {
+	  "type" : "starforge-xraiizy",
+	  "species" : [ "human" ]
+	 
+	 },
+	 
+	  {
+	  "type" : "starforge-omeruin",
+	  "species" : [ "human" ]
+	 
+	 },
+	 
+	 {
+	  "type" : "starforge-armok",
+	  "species" : [ "shadow" ]
+	 
+	 },
+	 
+	 {
+	  "type" : "starforge-ganransu",
+	  "species" : [ "human" ]
+	 },
+	 
+	 {
+	  "type" : "starforge-teskredotexe",
+	  "species" : [ "human" ]
+	 }
+
+  ]
+}

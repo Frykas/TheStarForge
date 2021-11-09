@@ -1,0 +1,17 @@
+{
+  "name" : "starforge-marikoswimboost",
+  "effectConfig" : {
+    "movementParameters" : {
+      "liquidImpedance" : 0.05,
+      "liquidForce" : 150,
+      "liquidJumpProfile" : {
+        "jumpSpeed" : 75.0
+      }
+    }
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "marikoswimboost.lua"
+  ]
+}

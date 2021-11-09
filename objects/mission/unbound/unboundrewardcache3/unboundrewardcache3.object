@@ -1,0 +1,58 @@
+{
+  "objectName" : "starforge-unboundrewardcache3",
+  "colonyTags" : ["apex","storage"],
+  "rarity" : "essential",
+  "tooltipKind" : "base",
+  "race" : "apex",
+  "health" : 1.5,
+
+  "category" : "storage",
+  "price" : 0,
+  "printable" : false,
+  "description" : "A sturdy Unbound cache, contaning various rewards.",
+  "shortdescription" : "Unbound Reward Cache",
+
+  "apexDescription" : "This cache contains various items from the Unbound.",
+  "avianDescription" : "This cache looks sturdy. What does it protect?",
+  "floranDescription" : "Sssturdy chessst Floran can't ssstab.",
+  "glitchDescription" : "Wary. Is it okay for me to take what's inside?",
+  "humanDescription" : "A very durable cache. What's inside is mine!",
+  "hylotlDescription" : "This cache looks durable, I wonder what's inside.",
+  "novakidDescription" : "I don't care much if this chest' hard or not. I'mma get what's inside.",
+
+  "inventoryIcon" : "icon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "unboundrewardcache3.png:default", "fullbright" : true }, { "image" : "unboundrewardcache3lit.png:default" } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "unboundrewardcache3.png:default", "fullbright" : true }, { "image" : "unboundrewardcache3lit.png:default" } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "unboundrewardcache3.animation",
+  "animationPosition" : [-16, 0],
+
+  "scripts" : ["/objects/scripts/cacheburst.lua"],
+  "scriptDelta" : 0,
+
+  "burstTreasurePool" : "starforge-unboundCache3",
+  "burstItemVelocityRange" : [15, 30],
+  "burstAngleVariance" : 0.5,
+  "burstOffset" : [2.5, 0],
+  "burstIntangibleTimeRange" : [0.25, 0.5]
+}

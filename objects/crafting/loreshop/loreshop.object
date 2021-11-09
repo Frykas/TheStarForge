@@ -4,11 +4,11 @@
   "rarity" : "Legendary",
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
-    "config" : "/interface/windowconfig/crafting.config",
+    "config" : "/interface/windowconfig/krythersloreshop.config",
     "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : "Chemist Krythers",
-        "subtitle" : "Can develop blueprints out of rare codices!",
+        "subtitle" : "Will help you develop blueprints!",
         "icon" : {
           "file" : "/interface/SEmerchant/merchanticon.png"
         }
@@ -18,12 +18,13 @@
 	
   },
   "printable" : false,
-  "description" : "The Thalasso's Chemist, believe it or not. He just love books.  ",
-  "shortdescription" : "Kryther's Blueprints",
+  "description" : "The Thalasso's Chemist, he knows a lot!",
+  "shortdescription" : "Kryther's Research",
   "race" : "generic",
   "category" : "crafting",
   "price" : 5000,
   
+  "offeredQuests" : ["starforge-furourswordquest2"],
   "turnInQuests" : ["starforge-furourswordquest1"],
 
   "apexDescription" : "What a nerdy looking Hylotl.",

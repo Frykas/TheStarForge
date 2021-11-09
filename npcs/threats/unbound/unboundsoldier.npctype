@@ -1,8 +1,13 @@
 {
-    "type": "unboundsoldier",
+    "type": "starforge-unboundsoldier",
     "baseType": "hostile",
  
     "dropPools": ["unboundSoldierDeathTreasure"],
+	
+	"identity" : {
+     "species" : "apex"
+	 },
+	
  
     "scriptConfig" : {
         "dialog": {
@@ -14,18 +19,19 @@
                 },
                 "apex": {
                     "default": [
-                        "You can't stop us, no matter how hard you try!",
-                        "We'll find the God Forge and ascend !",
-                        "For the Unbound!",
-                        "The Unbound will ascend and triumph over all!",
-                        "Order received, target in sight.",
-                        "This is the wrong place for you to be!"
+                        "Trooper unit reporting, target on sight!",
+                        "Reporting, target sighted!",
+                        "Orders received, begin operation!",
+                        "Backup requested, target approaching!",
+                        "Orders received, target in sight.",
+                        "Target approaching, opening fire!"
                     ]
                 }
             }
         }
     },
  
+    "innateStatusEffects" : [{"stat":"maxHealth","amount":30}, {"stat":"powerMultiplier","amount":1.05}, {"stat":"maxEnergy","amount":150}],
  
     "items": {
         "override": [

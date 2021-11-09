@@ -1,0 +1,31 @@
+{
+  "projectileName" : "starforge-witchgravity",
+  "image" : "witchgravity.png",
+  "animationCycle" : 0.7,
+  "animationLoops" : false,
+  "physics" : "illusion",
+  "frameNumber" : 6,
+  "pointLight" : false,
+  "speed" : 0,
+  "power" : 0.0,
+
+  "bounces" : -1,
+
+  "timeToLive" : 0.7,
+
+  "orientationLocked" : true,
+
+  "boundBox" : [-10, -10, 10, 10],
+  "physicsForces" : {
+    "vacuum" : {
+      "type" : "RadialForceRegion",
+      "outerRadius" : 10,
+      "innerRadius" : 0,
+      "targetRadialVelocity" : -50,
+      "controlForce" : 500,
+      "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop"]
+    }
+  },
+
+  "clientEntityMode" : "ClientSlaveOnly"
+}

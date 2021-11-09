@@ -1,0 +1,34 @@
+{
+  "objectName" : "starforge-novalimeaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 10000,
+  "printable" : false,
+  "description" : "The label reads, \"A strange blob-like monster very similar to Novakids. They like to steal stuff.\"",
+  "shortdescription" : "Novalime Figurine ^orange;^reset;",
+
+
+  "inventoryIcon" : "novalimeAF.png",
+  "orientations" : [
+    {
+      "image" : "novalimeAF.png:<color>",
+	  "imageLayers" : [ { "image" : "novalimeAF.png" }, { "image" : "novalimeAFfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "novalimeAF.png:<color>",
+	  "imageLayers" : [ { "image" : "novalimeAF.png" }, { "image" : "novalimeAFfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

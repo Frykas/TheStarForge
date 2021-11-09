@@ -1,0 +1,18 @@
+[
+  //===================================== LIL FRIENDS =====================================
+  {
+	  "name" : "starforge-yukaicritters1",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 2],
+      "spawnChance" : 0.02,
+      "monsterType" : "starforge-onikabutocritter",
+      "monsterParameters" : {
+        "aggressive" : false
+      }
+    }
+  
+  ]

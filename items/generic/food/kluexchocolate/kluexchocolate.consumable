@@ -1,0 +1,32 @@
+{
+  "itemName" : "starforge-kluexchocolate",
+  "rarity" : "legendary",
+  "price" : 660,
+  "category" : "preparedFood",
+  "inventoryIcon" : "kluexchocolate.png",
+  "description" : "Delicious white chocolate, said to be Kluex's favorite.",
+  "shortdescription" : "Kluex White Chocolate",
+  "effects" : [ [
+     {
+        "effect" : "lowgrav",
+        "duration" : 60
+    },
+	{
+	    "effect" : "nofalldamage",
+		"duration" : 60
+	},
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 250
+    }
+  ] ],
+  "foodValue" : 30,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

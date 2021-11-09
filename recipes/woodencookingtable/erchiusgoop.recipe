@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "liquidfuel", "count" : 1 },
+	{ "item" : "alienmeat", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-erchiusgoop",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "snacks" ], 
+  "duration" : 0
+}

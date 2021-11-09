@@ -1,0 +1,32 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "state" : {
+        "default" : "broken",
+        "states" : {
+          "broken" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "canisterFullbright" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "state" : {
+            "broken" : {
+              "properties" : {
+                "image" : "unboundcanisterbroken.png:default"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

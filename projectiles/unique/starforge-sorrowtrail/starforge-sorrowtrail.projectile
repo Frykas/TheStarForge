@@ -1,0 +1,77 @@
+{
+  "projectileName" : "starforge-sorrowtrail",
+  "physics" : "illusion",
+  "bounces" : -1,
+  "image" : "starforge-sorrowtrail.png",
+  "animationCycle" : 1.0,
+  "timeToLive" : 2.0,
+  "frameNumber" : 1,
+  "power" : 1,
+  "speed" : 0,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "emitters" : [],
+  "lightColor" : [107, 15, 10],
+  "actionOnReap" : [],
+  "advancedPeriodicActions" : [
+    {
+      "action" : "particle",
+	  "rotate" : true,
+      "specification" :  {
+		"type" : "textured",
+		"image" : "/animations/starforge-torporcloud/starforge-torporcloud.png",
+		"fade" : 1.0,
+		"destructionAction" : "fade",
+		"destructionTime" : 1.0,
+		"initialVelocity" : [0, 0],
+		"finalVelocity" : [0, 0],
+		"approach" : [0, 0],
+		"position" : [-0.375, -0.375],
+		"timeToLive" : 0.125,
+		"size" : 1,
+		"layer" : "middle",
+		"fullbright" : true,
+		"variance" : {
+		  "size" : 0.15,
+		  "position" : [0.75, 0.75],
+		  "rotation" : 180,
+		  "angularVelocity" : 30
+		},
+		"collidesLiquid" : false
+	  }
+    },
+    {
+      "action" : "particle",
+	  "rotate" : true,
+      "specification" :  {
+		"type" : "textured",
+		"image" : "/animations/starforge-torporcloud/starforge-torporcloud.png",
+		"fade" : 1.0,
+		"destructionAction" : "fade",
+		"destructionTime" : 1.0,
+		"initialVelocity" : [0, 0],
+		"finalVelocity" : [0, 0],
+		"approach" : [0, 0],
+		"position" : [-0.375, -0.375],
+		"timeToLive" : 0.125,
+		"size" : 1,
+		"layer" : "middle",
+		"fullbright" : false,
+		"variance" : {
+		  "size" : 0.15,
+		  "position" : [0.75, 0.75],
+		  "rotation" : 180,
+		  "angularVelocity" : 30
+		},
+		"collidesLiquid" : false
+	  }
+    }
+  ],
+  "statusEffects" : ["starforge-yukaibleed"],
+  "fullbright" : true,
+  "damageKind" : "broadsword",
+  
+  "scripts" : ["/projectiles/scripts/starforge-advancedperiodicactions.lua"],
+  "scriptDelta" : 1
+}

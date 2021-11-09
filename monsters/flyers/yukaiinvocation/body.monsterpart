@@ -1,0 +1,9 @@
+{
+  "name" : "yukaiinvocation",
+  "category" : "yukaiinvocation",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "yukaiinvocation.png"
+  }
+}

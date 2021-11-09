@@ -1,0 +1,46 @@
+{
+  "projectileName" : "starforge-sorrowtendril",
+  "physics" : "laser",
+  "image" : "starforge-sorrowtrail.png",
+  "animationCycle" : 1.0,
+  "timeToLive" : 0.3,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 75,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "bounces" : -1,
+  "lightColor" : [255, 15, 10],
+  "piercing" : true,
+  "damageKind" : "broadsword",
+  "damageType" : "NoDamage",
+  "statusEffects" : [],
+  "advancedPeriodicActions" : [
+	{
+	  "action" : "projectile",
+	  "loopTime" : 0.03,
+	  "delayTime" : 0.025,
+	  "rotate" : true,
+	  "taperTrailParticle" : true,
+	  "beginDestructionOnDeath" : true,
+	  "type" : "starforge-sorrowtrail",
+	  "config" : {
+	  },
+	  "inheritDamageFactor" : 0.25,
+	  "direction" : [0, -1],
+	  "offsetRange" : [0.0, 0.0, 0.0, 0.0]
+	}
+  ],
+
+  "scripts" : ["/projectiles/scripts/starforge-lightningbolt.lua"],
+  "scriptDelta" : 1,
+  
+  "minChangeInterval" : 0.0,
+  "maxChangeInterval" : 0.01,
+  "minAngle" : -20,
+  "maxAngle" : 20,
+
+  //Homing
+  "homingStrength" : 55, // In angle rotated per second
+  "searchRadius" : 55
+}

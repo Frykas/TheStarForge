@@ -25,7 +25,7 @@
 
   "scriptConfig" : {
     "offeredQuests" : ["thalassostrelisupply"],
-    "turnInQuests" : ["thalassostrelisupply"],
+    "turnInQuests" : ["thalassostrelisupply", "thalassoelanaquest4"],
     "behavior" : "villager",
 
     "dialogMode" : "sequence",

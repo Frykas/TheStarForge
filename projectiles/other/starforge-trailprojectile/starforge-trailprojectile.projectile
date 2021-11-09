@@ -1,0 +1,19 @@
+{
+  "projectileName" : "starforge-trailprojectile",
+  "physics" : "illusion",
+  "bounces" : -1,
+  "image" : "starforge-trailprojectile.png",
+  "animationCycle" : 1.0,
+  "timeToLive" : 2.0,
+  "frameNumber" : 1,
+  "power" : 1,
+  "speed" : 0,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "emitters" : [],
+  "actionOnReap" : [ ],
+  "statusEffects" : [],
+  "fullbright" : true,
+  "damageKind" : "broadsword"
+}

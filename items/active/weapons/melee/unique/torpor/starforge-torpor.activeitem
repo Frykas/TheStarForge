@@ -1,0 +1,283 @@
+{
+  "itemName" : "starforge-torpor",
+  "price" : 3000,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "\"Stillness. A state of being; numb. You feel nothing. You will do nothing.\" ",
+  "shortdescription" : "^orange;Torpor^reset;",
+  "tooltipKind" : "base",
+  "category" : "Katana",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","katana"],
+
+  "inventoryIcon" : "starforge-torpor.png",
+
+  "animation" : "starforge-torpor.animation",
+  "animationParts" : {
+    "blade" : "starforge-torpor.png",
+    "bladeFullbright" : "starforge-torporlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire5" : [ "/sfx/melee/charge_traildash3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/starforge-warpcombo.lua"],
+	"class" : "StarforgeWarpCombo",
+    "fireTime" : 0.55,
+    "baseDps" : 10.5,
+	
+	"stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 0.5,
+        "knockback" : 12.5,
+        "timeout" : 0.075
+      },
+      {
+        "baseDamageFactor" : 0.25,
+        "knockback" : 10,
+        "timeout" : 0.075
+      },
+      {
+        "baseDamageFactor" : 0.5,
+        "knockback" : 12.5,
+        "timeout" : 0.075
+      },
+      {
+        "baseDamageFactor" : 0.25,
+        "knockback" : 12.5,
+        "timeout" : 0.075
+      },
+      {
+        "baseDamageFactor" : 0.5,
+        "knockback" : 15,
+        "timeout" : 1
+      }
+    ],
+	
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : ["starforge-yukaibleed"],
+      "knockbackMode" : "facing"
+    },
+	
+	"comboSteps" : 5,
+    "comboSpeedFactor" : 0.8,
+	
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, -5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, 5.0]
+    ],
+
+	"stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "armRotation" : -105,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true,
+		"aimAngle" : 0
+      },
+	  //UPSLASH
+      "windup1" : {
+        "duration" : 0.125,
+        "armRotation" : -90,
+        "weaponRotation" : -170,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"directives" : "flipx"
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : -45,
+        "weaponRotation" : -140,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+		
+		"directives" : "flipx"
+      },
+      "fire1" : {
+        "duration" : 0.175,
+        "armRotation" : 45,
+        "weaponRotation" : -125,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+		
+		"directives" : "flipx"
+      },
+      "wait1" : {
+        "duration" : 0.2,
+        "armRotation" : 45,
+        "weaponRotation" : -125,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+		
+		"directives" : "flipx"
+      },
+	  //HORIZONTAL SLASH
+      "windup2" : {
+        "duration" : 0.175,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire2" : {
+        "duration" : 0.225,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait2" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+	  //SWEEP
+      "windup3" : {
+        "duration" : 0.2,
+        "armRotation" : -110,
+        "weaponRotation" : 220,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"directives" : "flipx"
+      },
+      "fire3" : {
+        "duration" : 0.225,
+        "armRotation" : -5,
+        "weaponRotation" : -80,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+		"directives" : "flipx"
+      },
+      "wait3" : {
+        "duration" : 0.1,
+        "armRotation" : -5,
+        "weaponRotation" : -80,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+		"directives" : "flipx"
+      },
+	  //DOWNSLASH
+      "windup4" : {
+        "duration" : 0.125,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash4" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire4" : {
+        "duration" : 0.175,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait4" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+	  //BLADESTORM
+      "windup5" : {
+        "duration" : 0.3,
+        "weaponRotation" : 145,
+        "armRotation" : -45,
+        "aimAngle" : 0,
+        "twoHanded" : true,
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+        "teleport" : true,
+		"hold" : true,
+		
+		"directives" : "flipx?fade=FFFFFFFF=0.15"
+      },
+      "fire5" : {
+        "duration" : 0.75,
+        "weaponRotation" : 145,
+        "armRotation" : -45,
+        "aimAngle" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+		
+		"teleportStatus" : "starforge-yukaiteleporteffect",
+		"teleportOffset" : [0, 1],
+		"teleportTarget" : [10, 0],
+		"teleportTolerance" : 3.0,
+		
+		//Slightly marks enemies within forgivenessRange which moves the slash a little
+		"forgivenessRange" : 20,
+		
+		"projectileType" : "starforge-bladestorm",
+		"projectileParameters" : {},
+		"projectileDamage" : 3,
+		
+		"directives" : "flipx"
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

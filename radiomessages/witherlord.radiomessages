@@ -1,0 +1,10 @@
+{
+  //Starforge - The Witherlord 
+  "witherlord-firstcontact" : {
+    "type" : "mission",
+    "senderName" : "The Witherlord",
+    "portraitImage" : "/interface/chatbubbles/witherlord.png:<frame>",
+    "text" : "-.-. --- -. ... ..- -- . --..--  .-. . ..- ... . --..--  .-. . .- -. .. -- .- - .",
+    "persistTime" : 5.0
+  }
+}

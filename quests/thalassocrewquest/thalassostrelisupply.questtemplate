@@ -2,9 +2,8 @@
   "id" : "thalassostrelisupply",
   "title" : "^green;Strelitzia's Supply",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2" ],
-  "text" : "Streli very hungry... But Elana sssaid no more food today... Hey! If you bring food to Streli, Streli will trade something ussseful! Trussst!   
-^yellow;(repeatable)^reset; ",
-  "completionText" : "You got the food ! Gimme gimme gimme !",
+  "text" : "Streli very hungry... But Elana sssaid no more food today... Hey! If you bring food to Streli, Streli will trade something ussseful! Trussst!  ^yellow;(repeatable)^reset; ",
+  "completionText" : "You got the food! Gimme gimme gimme!",
   "moneyRange" : [100, 100],
   "ephemeral" : true,
   "rewards" : [

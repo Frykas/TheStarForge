@@ -1,0 +1,12 @@
+{
+  "name" : "starforge-teleporteffect",
+  "effectConfig" : {
+  },
+  "defaultDuration" : 0.25,
+
+  "scripts" : [
+    "starforge-teleporteffect.lua"
+  ],
+
+  "animationConfig" : "starforge-teleporteffect.animation"
+}

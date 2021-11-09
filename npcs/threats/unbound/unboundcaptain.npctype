@@ -1,8 +1,12 @@
 {
-    "type": "unboundcaptain1",
+    "type": "starforge-unboundcaptain1",
     "baseType": "hostile",
  
     "dropPools": ["unboundCaptain1DeathTreasure"],
+ 
+    "identity" : {
+    "species" : "apex"
+	},
  
     "scriptConfig" : {
         "dialog": {
@@ -14,8 +18,8 @@
                 },
                 "apex": {
                     "default": [
-                        "Engage the enemy!",
-                        "Unit 2 and 3, moving.",
+                        "Unit 1 and 4, shielding formation.",
+                        "Shield deployed, ready to engage.",
                         "For the Unbound!",
                         "The Unbound will ascend and triumph over all!",
                         "Order received, target in sight.",
@@ -26,12 +30,13 @@
         }
     },
  
- 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":50}, {"stat":"powerMultiplier","amount":2.0}],
+	
     "items": {
         "override": [
             [0, [{
                 "head": [{
-                    "name": "starforge-unboundcaptainhead"
+                    "name": "starforge-unboundcaptainalthead"
                 }],
                 "chest": [{
                     "name": "starforge-unboundcaptainchest"
@@ -40,9 +45,9 @@
                     "name": "starforge-unboundcaptainpants"
                 }],
                 "primary": [
-                    "starforge-unboundcptpistol"
+                    "starforge-unboundrailpistol"
                 ],
-				 "alt" : [ "starforge-unboundcptshield" ]
+				 "alt" : [ "starforge-unboundshield" ]
             }]]
         ]
     }

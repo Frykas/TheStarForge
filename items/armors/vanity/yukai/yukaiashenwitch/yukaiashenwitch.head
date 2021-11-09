@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-yukaiashenwitchhead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "headwear",
+  "description" : "You've seen the horrors of the world. Never again.",
+  "shortdescription" : "Ashen Witch Cover",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

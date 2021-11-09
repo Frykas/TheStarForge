@@ -1,0 +1,128 @@
+{
+  "itemName" : "starforge-lightofsorrow",
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A strange lantern bringing sorrow to all it shines upon.",
+  "shortdescription" : "^orange;Light of Sorrow^white;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "base",
+  "category" : "Artefact",
+  "itemTags" : ["weapon","ranged","artefact","remnant","theaUnique"],
+  "twoHanded" : true,
+  
+  "inventoryIcon" : "starforge-lightofsorrow.png",
+  //"largeImage" : "starforge-lightofsorrowlarge.png",
+  
+  "animation" : "starforge-lightofsorrow.animation",
+  "animationParts" : {
+    "handle" : "starforge-lightofsorrowhandle.png",
+    "weapon" : "starforge-lightofsorrow.png",
+    "weaponFullbright" : "starforge-lightofsorrowlights.png",
+    "muzzleFlash" : "",
+    "charge" : "starforge-lightofsorrowcharge.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "weaponFullbright" : {
+		  "properties" : {
+		    "offset" : [0, -1.5]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			"offset" : [0, -1.5]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" },
+		  { "particle" : "blood" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/starforge-yukaifire.ogg" ],
+      "chargeLoop" : [ "/sfx/gun/starforge-yukaicharge.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.125, 0.0],
+  "muzzleOffset" : [-0.125, -1.5],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-lanternchargedshot.lua"],
+    "class" : "StarforgeLanternChargedShot",
+
+    "chargeTime" : 0.7,
+    "baseDamage" : 12.0,
+    "baseEnergyUsage" : 28,
+    "inaccuracy" : 0.075,
+	
+	"allowIndependantAim" : true,
+	
+	"projectileFirePosition" : [0, -1.5],
+	
+	"anchorPoint" : [-0.125, -0.5],
+	"shakeVelocity" : 6,
+	
+	"cooldownTime" : 0.4,
+	
+	"selfDamage" : 0.125,
+	"selfDamageSource" : "slash",
+	
+	"projectileCount" : 4,
+    "projectileType" : "starforge-sorrowtendril",
+    "projectileParameters" : {
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 15,
+        "weaponRotation" : -15,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "hold" : {
+        "armRotation" : 45,
+        "weaponRotation" : -45,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "discharge" : {
+        "duration" : 0.25,
+        "armRotation" : 45,
+        "weaponRotation" : -45,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

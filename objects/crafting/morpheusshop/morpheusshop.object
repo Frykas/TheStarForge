@@ -25,7 +25,7 @@
     "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : "PRE-RELEASE SHOP",
-        "subtitle" : "Selling unobtaible (yet) items!",
+        "subtitle" : "Selling unobtainable (yet) items!",
 		 
 		 "imgPlayerMoneyIcon" : {
         "visible" : false

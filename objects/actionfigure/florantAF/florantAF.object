@@ -1,0 +1,32 @@
+{
+  "objectName" : "starforge-florantaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 10000,
+  "printable" : false,
+  "description" : "The label reads, \"A shy insect that eats anything and digest it inside its belly.\"",
+  "shortdescription" : "Florant Figurine ^orange;^reset;",
+
+
+  "inventoryIcon" : "florantAF.png",
+  "orientations" : [
+    {
+      "image" : "florantAF.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "florantAF.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

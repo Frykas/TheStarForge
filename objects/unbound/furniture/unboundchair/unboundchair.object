@@ -1,0 +1,39 @@
+{
+  "objectName" : "starforge-unboundchair",
+  "colonyTags" : ["misc","apex"],
+  "printable" : true,
+  "rarity" : "Uncommon",
+  "description" : "A very sturdy chair used by the Unbound.",
+  "shortdescription" : "Unbound Chair",
+  "race" : "Apex",
+  "category" : "furniture",
+  "price" : 125,
+
+  "apexDescription" : "A very sturdy chair, I wouldn't sit on it for too long.",
+  "avianDescription" : "A decent place to sit.",
+  "floranDescription" : "Floran sssit on chair and think about hunting.",
+  "glitchDescription" : "Perplexed. This chair does not seem very comfortable.",
+  "humanDescription" : "A very strange shaped chair. Who made this?",
+  "hylotlDescription" : "I really wonder what went through the mind of the person who designed it.",
+  "novakidDescription" : "I don't really like this chair.",
+
+  "inventoryIcon" : "unboundchairicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "unboundchair.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [2, 22]
+
+}

@@ -1,0 +1,37 @@
+{
+  "objectName" : "starforge-unboundscienceextract",
+  "colonyTags" : ["apex"],
+  "rarity" : "uncommon",
+  "category" : "decorative",
+  "price" : 50,
+  "description" : "A strange liquid being experimented on by the Unbound Science Division.",
+  "shortdescription" : "Unbound Science Extract",
+  "race" : "apex",
+
+  "apexDescription" : "Knowing the Unbound, I wouldn't touch this liquid.",
+  "avianDescription" : "This sure is a strange liquid...",
+  "floranDescription" : "Floran doesssn't like glowy water...",
+  "glitchDescription" : "Curious. I wonder what kind of liquid this is.",
+  "humanDescription" : "Hey, this looks like the kind of soda we had on Earth. Wonder if I can drink it.",
+  "hylotlDescription" : "I wouldn't touch this strange liquid...",
+  "novakidDescription" : "Eh, this looks like the remains of one of my ol' pal.",
+
+
+  "inventoryIcon" : "scienceextracticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "scienceextract.png" ,
+	  "imageLayers" : [ { "image" : "scienceextract.png" }, { "image" : "scienceextractfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

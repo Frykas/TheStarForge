@@ -1,0 +1,213 @@
+{
+  "type" : "unboundtankboss",
+  "shortdescription" : "The Centurion",
+
+  "categories" : [ "unboundtankboss" ],
+  "parts" : [ "barrel", "body", "rocketlauncher", "tracks"],
+
+  "animation" : "unboundtankboss.animation",
+  "reversed" : true,
+  "dropPools" : [],
+
+  "baseParameters" : {
+    "monsterClass" : "boss",
+	
+	//Track Animation
+	"trackAnimationSpeed" : 0.6,
+	"trackAnimationFrames" : 4,
+
+    "scripts" : [
+      "/monsters/boss/bossMonster.lua",
+      "/monsters/simpleRangedAttack.lua",
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua",
+
+      "/monsters/boss/unboundtankboss/dieState.lua",
+      "/monsters/boss/unboundtankboss/idleState.lua",
+      "/monsters/boss/unboundtankboss/resetState.lua",
+	  
+      "/monsters/boss/unboundtankboss/passiveFunctionsHook.lua"
+    ],
+
+	"dropPools" : ["unboundTankBossTreasure"],
+	
+	"renderLayer" : "Projectile-1",
+	
+    "skillCount" : 2,
+    "skills" : ["unboundTankCannonFire", "unboundTankRocketLauncherFire"],
+
+    "phases" : [
+      {
+        "skills" : ["unboundTankCannonFire", "unboundTankRocketLauncherFire", "unboundTankRocketLauncherFire"]
+      }
+    ],
+
+    "projectileSourcePosition" : [-2.5, -1.25],
+    "projectileSourceOffset" : [7, 0],
+
+    "trackTargetDistance" : 10000.0,
+    "switchTargetDistance" : 0,
+    "keepTargetInSight" : true,
+
+    "knockoutTime" : 0,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "",
+
+    "alwaysAggressive" : true,
+
+    "scale" : 1.0,
+
+    "portraitIcon" : "/monsters/boss/unboundtankboss/unboundtankbossicon.png",
+
+    "movementSettings" : {
+      "gravityEnabled" : true,
+
+      "collisionPoly" : [ [4.5, 2], [9, -1.75], [9, -4.625], [-9, -4.625], [-9, -1.75], [-4.5, 2] ],
+      "mass" : 10.0,
+      "walkSpeed" : 5,
+      "runSpeed" : 13,
+      "airForce" : 200,
+      "airJumpProfile" : {
+        "jumpControlForce" : 0,
+        "jumpInitialPercentage" : 0
+      },
+      "physicsEffectCategories" : ["boss"]
+    },
+    "jumpTargetDistance" : 4,
+    "jumpTime" : [0.4, 0.7],
+
+    "metaBoundBox" : [-9, -3, 9, 3],
+
+    "blockedSensors" : [ [1.5, -4.5], [1.5, -3.5], [1.5, -2.5], [1.5, -1.5], [1.5, -0.5], [1.5, 0.5] ],
+    "fallSensors" : [ [2, -3.5], [2, -5.5], [2, -6.5], [4, -4.5], [4, -5.5], [4, -6.5] ],
+
+    "touchDamage" : {
+      "poly" : [ [-4, -3], [0, -3], [0, 0], [-4, 0] ],
+      "damage" : 20,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "default",
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 1000
+        },
+        "protection" : {
+          "baseValue" : 35
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : -0.25
+        },
+        "iceResistance" : {
+          "baseValue" : 0.25
+        },
+        "electricResistance" : {
+          "baseValue" : 0.5
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+		
+		//Other... we dont talk about all this
+        "bleedingImmunity" : { "baseValue" : 1 },
+        "linerifleStatusImmunity" : { "baseValue" : 1 },
+        "centensianenergyStatusImmunity" : { "baseValue" : 1 },
+        "xanafianStatusImmunity" : { "baseValue" : 1 },
+        "akkimariacidStatusImmunity" : { "baseValue" : 1 },
+        "ucObliteratingBurnImmunity" : { "baseValue" : 1 },  
+        "pusImmunity" : {"baseValue" : 1},
+        "shadowImmunity" : {"baseValue" : 1},
+        "radiationburnImmunity" : {"baseValue" : 1},
+        "insanityImmunity" : {"baseValue" : 1},
+        "biooozeImmunity" : {"baseValue" : 1}
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0,
+          "maxValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "projectiles" : {
+      "deathexplosion" : {
+        "type" : "regularexplosionknockback",
+        "config" : {
+          "speed" : 0.1,
+          "power" : 2,
+
+          "actionOnReap" : [
+            {
+              "action" : "config",
+              "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+            }
+          ]
+        },
+
+        "fireTime" : 8.0,
+        "fireInterval" : 0.2,
+        "cooldown" : 0.1
+      }
+    },
+
+    "mouthOffset" : [1.0, -1.5],
+    "feetOffset" : [0, -21]
+  }
+}

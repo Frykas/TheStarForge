@@ -1,0 +1,29 @@
+{
+  "itemName" : "starforge-vrbanana",
+  "rarity" : "legendary",
+  "price" : 610,
+  "category" : "preparedFood",
+  "inventoryIcon" : "vrbanana.png",
+  "description" : "The VR banana doesn't need you to use your mouth to eat! *Secondary effects registered*",
+  "shortdescription" : "VR Banana",
+  "effects" : [ [
+    {
+        "effect" : "nude",
+        "duration" : 10
+    },
+	{   
+	   "effect" : "hologramglow",
+	   "duration" : 120
+	}
+	
+  ] ],
+  "foodValue" : 1,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

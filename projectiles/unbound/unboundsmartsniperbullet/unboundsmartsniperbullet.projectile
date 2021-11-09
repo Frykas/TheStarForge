@@ -1,0 +1,32 @@
+{
+  "projectileName" : "unboundsmartsniperbullet",
+  "image" : "unboundsmartsniperbullet.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [115, 119, 38],
+  "fullbright" : true,
+  "pointLight" : true,
+	"actionOnReap": [{
+				"file": "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config",
+				"action": "config"
+			},
+			{
+				"inheritDamageFactor": 0.1,
+				"angleAdjust": 0,
+				"fuzzAngle": 30,
+				"type": "largefirecloud",
+				"action": "projectile"
+			}
+  ],
+  "emitters" : [ "rockettrail", "fireplasma", "flames" ],
+  "power" : 15.0,
+  "speed" : 35.0,
+  "timeToLive" : 30.0,
+  "physics" : "default",
+  "damageKind" : "fireplasmabullet",
+  "rotationRate" : 5.5,
+  "trackingLimit" : 2.0,
+
+  "scripts" : [ "/scripts/projectiles/homingprojectile.lua" ]
+}

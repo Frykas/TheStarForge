@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-novalimejelly",
+  "rarity" : "legendary",
+  "price" : 850,
+  "category" : "preparedFood",
+  "inventoryIcon" : "novalimejelly.png",
+  "description" : "It's a little Novalime! You're not gonna eat it, are you?",
+  "shortdescription" : "Novalime Jelly",
+  "effects" : [ [
+       {
+        "effect" : "glow",
+        "duration" : 360
+      },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 360
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "frames" : "starforge-tearbeamparticles.png",
   "variants" : 1,
-  "frameNumber" : 5,
-  "fullbright" : true,
+  "frameNumber" : 4,
   "animationCycle" : 0.25,
-  "offset" : [0, 0]
+  "offset" : [0, 0],
+  "mode" : "LoopForever"
 }

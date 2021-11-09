@@ -1,0 +1,336 @@
+{
+  "itemName" : "starforge-sanguine",
+  "price" : 3000,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A cursed Yukai artefact powered by the life force of its previous owners.",
+  "shortdescription" : "Sanguine",
+  "tooltipKind" : "base",
+  "category" : "Cursed Katana",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword", "katana"],
+
+  "inventoryIcon" : "starforge-sanguine.png:inactive",
+
+  "animation" : "starforge-sanguine.animation",
+  "animationParts" : {
+    "sword" : "starforge-sanguine.png",
+    "swordfullbright" : "starforge-sanguinefullbright.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/unique/sanguine/starforge-sanguine.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.75,
+    "baseDps" : 10,
+	
+	"stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 12.5
+      },
+      {
+        "baseDamageFactor" : 0.5,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1,
+        "knockback" : 12.5
+      },
+      {
+        "baseDamageFactor" : 0.5,
+        "knockback" : 12.5
+      },
+      {
+        "baseDamageFactor" : 1,
+        "knockback" : 15
+      }
+    ],
+	
+	"comboSteps" : 5,
+	
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, -5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, 5.0]
+    ],
+
+	"stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "armRotation" : -105,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true,
+		"aimAngle" : 0
+      },
+	  //UPSLASH
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : -90,
+        "weaponRotation" : -170,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : -45,
+        "weaponRotation" : -140,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.15,
+        "armRotation" : 45,
+        "weaponRotation" : -125,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.2,
+        "armRotation" : 45,
+        "weaponRotation" : -125,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+	  //HORIZONTAL SLASH
+      "windup2" : {
+        "duration" : 0.15,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire2" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait2" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+	  //DOWNSLASH
+      "windup3" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash3" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire3" : {
+        "duration" : 0.15,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+	  //REVERSE HORIZONTAL SLASH
+      "windup4" : {
+        "duration" : 0.15,
+		"armRotation": -30,
+		"weaponRotation": -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire4" : {
+        "duration" : 0.2,
+		"armRotation": 80,
+		"weaponRotation": -180,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait4" : {
+        "duration" : 0.2,
+		"armRotation": 80,
+		"weaponRotation": -180,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+	  //DOWNSLASH
+      "windup5" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash5" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire5" : {
+        "duration" : 0.25,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "inactiveBaseDps" : 10,
+  "activeBaseDps" : 16,
+
+  "altAbility" : {
+    "name" : "Blood Empowerment",
+    "type" : "empowerment",
+    "scripts" : ["/items/active/weapons/melee/unique/sanguine/starforge-bloodempowerment.lua"],
+    "class" : "StarForgeBloodEmpowerment",
+
+    "healthPerSecond" : 25,
+	
+	"minimumHealth" : 30,		//Stop when at this health
+
+    "projectileOffset" : [1, 0],
+	"projectileCount" : 5,
+    "projectileType" : "starforge-lightningbolt",
+    "projectileParameters" : {
+	  "timeToLive" : 0.1,
+	  
+	  "minChangeInterval" : 0.01,
+	  "maxChangeInterval" : 0.02,
+	  "minAngle" : 45,
+	  "maxAngle" : 75,
+	  
+	  "damageType" : "damage",
+	  "damageKind" : "broadsword",
+	  "statusEffects" : [],
+	  
+	  "processing" : "?replace;A451C4=D91D14;D29CE7=D91D14",
+	  "advancedPeriodicActions" : [
+		{
+		  "time" : 0.01,
+		  "repeat" : true,
+		  "action" : "particle",
+		  "rotate" : true,
+		  "specification" : {
+			"type" : "animated",
+			"animation" : "/items/active/weapons/melee/unique/sanguine/lightningtrail/trail.animation",
+			"position" : [-1.25, 0],
+			"layer" : "back",
+			"collidesForeground" : false,
+			"timeToLive" : 0.15,
+			"destructionTime" : 0.1,
+			"destructionAction" : "fade",
+			"fullbright" : true
+		  }
+		},
+		{
+		  "time" : 0.01,
+		  "repeat" : true,
+		  "action" : "projectile",
+		  "rotate" : true,
+		  "type" : "starforge-trailprojectile",
+		  "config" : {},
+		  "inheritDamageFactor" : 0.025,
+		  "direction" : [0, -1],
+		  "offsetRange" : [0.0, 0.0, 0.0, 0.0]
+		}
+	  ],
+	  
+	  "actionOnReap" : []
+	},
+    "baseDamage" : 5.5,
+
+    "cooldownTime" : 1.0,
+
+    "stances" : {
+      "empower" : {
+        "durationBefore" : 0.2,
+        "durationAfter" : 0.5,
+        "armRotation" : 90,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "weaponOffset" : [0.5, -0.375],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "windup" : {
+        "duration" : 0.25,
+        "armRotation" : 70,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

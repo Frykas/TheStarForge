@@ -1,0 +1,9 @@
+{
+  "name" : "yukaiinvocationlights",
+  "category" : "yukaiinvocation",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "yukaiinvocationlights.png"
+  }
+}

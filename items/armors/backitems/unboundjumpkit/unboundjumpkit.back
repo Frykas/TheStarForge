@@ -1,0 +1,37 @@
+{
+  "itemName" : "starforge-unboundjumpkit",
+  "price" : 3500,
+  "inventoryIcon" : "unboundjumpkiticon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "backwear",
+  "description" : "A jump kit used by Unbound Vanguard units to quickly move around the battlefield.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Jump Kit ^#69729E;VNGD^reset;",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+
+  "statusEffects" : [
+  "shiprunboost", "shipjumpboost",
+
+    {
+      "stat" : "biomeheatImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeradiationImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "breathProtection",
+      "amount" : 1.0
+    }
+  ],
+
+  "acceptsAugmentType" : "back"
+}

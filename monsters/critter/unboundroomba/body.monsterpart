@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-unboundroombacritter",
+  "category" : "unboundroombacritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

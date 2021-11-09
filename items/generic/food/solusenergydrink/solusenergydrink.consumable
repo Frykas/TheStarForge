@@ -1,0 +1,36 @@
+{
+  "itemName" : "starforge-solusenergydrink",
+  "rarity" : "legendary",
+  "price" : 630,
+  "category" : "preparedFood",
+  "inventoryIcon" : "solusenergydrink.png",
+  "description" : "It burns in your stomarch when you drink it... Maybe not that healthy?",
+  "shortdescription" : "Solus Energy Drink",
+  "effects" : [ [
+     {
+        "effect" : "nova",
+        "duration" : 75
+    },
+    {
+        "effect" : "burning",
+        "duration" : 30
+    },
+	{
+        "effect" : "runboost",
+        "duration" : 60
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

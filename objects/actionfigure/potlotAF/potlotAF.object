@@ -1,0 +1,32 @@
+{
+  "objectName" : "starforge-potlotaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 10000,
+  "printable" : false,
+  "description" : "The label reads, \"A fluffy-worm like monster that likes to hide treasures in their pot.\"",
+  "shortdescription" : "Potlot Figurine ^orange;^reset;",
+
+
+  "inventoryIcon" : "potlotAF.png",
+  "orientations" : [
+    {
+      "image" : "potlotAF.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "potlotAF.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

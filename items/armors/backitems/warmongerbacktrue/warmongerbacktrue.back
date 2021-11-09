@@ -1,0 +1,37 @@
+{
+  "itemName" : "starforge-warmongerbacktrue",
+  "price" : 3500,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "backwear",
+  "description" : "An Apex flag worn as a symbol of rebellion and hope, mounted on a back support.",
+  "shortdescription" : "^#80F4FF;WARMONGER Battleflag^white;",
+  "tooltipKind" : "starforge-backitemexalted",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+
+  "statusEffects" : [
+  "halogenglow", "rageaugment1",
+
+    {
+      "stat" : "biomeheatImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeradiationImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "breathProtection",
+      "amount" : 1.0
+    }
+  ],
+
+  "acceptsAugmentType" : "back"
+}

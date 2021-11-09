@@ -1,0 +1,154 @@
+{
+  "projectileName" : "starforge-lightningbolt",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "starforge-lightningbolt.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 50,
+  "speed" : 150,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    //EXPLOSION
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/electricexplosionknockback.config"
+    },
+	//SPARKS
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "railgunlightning",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "config" : {
+		"timeToLive" : 0.1
+	  }
+    }
+  ],
+  "advancedPeriodicActions" : [
+    {
+	  "loopTime" : 0.01,
+	  "action" : "particle",
+	  "rotate" : true,
+	  "terminateOnDeath" : true,
+      "specification" : {
+		"type" : "animated",
+        "animation" : "/projectiles/weather/starforge-lightningbolt/trail.animation",
+        "position" : [-1.25, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 2,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [],
+  "lightColor" : [210, 156, 231],
+  "damageType" : "NoDamage",
+  "damageKind" : "electric",
+
+  "scripts" : ["/projectiles/scripts/starforge-lightningbolt.lua"],
+  "scriptDelta" : 1,
+
+  "minChangeInterval" : 0.05,
+  "maxChangeInterval" : 0.07,
+  "minAngle" : 35,
+  "maxAngle" : 85,
+  
+  //Homing
+  "homingStrength" : 150, // In angle rotated per second
+  "searchRadius" : 25
+}

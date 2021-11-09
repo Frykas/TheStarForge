@@ -18,13 +18,13 @@
   "periodicActions" : [
     {
       "action" : "particle",
-      "specification" : "starforge-witherrise",
+      "specification" : "starforge-withersmokerise",
       "time" : 0.1,
       "repeat" : true
     },
     {
       "action" : "particle",
-      "specification" : "starforge-witherrise",
+      "specification" : "starforge-withersmokerise",
       "time" : 0.1,
       "repeat" : true
     }

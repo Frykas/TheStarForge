@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-unboundscientisthead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "A helmet used by the Unbound scientists. Protects from the hazards of the world.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Scientist Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

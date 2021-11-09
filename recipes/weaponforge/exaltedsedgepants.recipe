@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "starforge-exaltingcharge", "count" : 1},
+    { "item" : "starforge-sedgepants", "count" : 1 },
+    { "item" : "starforge-undyingfibre", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-exaltedsedgepants",
+    "count" : 1
+  },
+  "groups" : [ "starforge-weaponshop", "armor" ],
+  "duration" : 0
+}

@@ -1,0 +1,222 @@
+{
+  "name": "starforge-creightonjanitor",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/query.lua",
+    "/scripts/actions/dialog.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/npc.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {
+          "direction": {"value": 1}
+        },
+        "output": {
+          "direction": "sweepDirection"
+        }
+      },
+      {
+        "title": "dynamic",
+        "type": "composite",
+        "name": "dynamic",
+        "parameters": {},
+        "children": [
+          {
+            "title": null,
+            "type": "module",
+            "name": "converse",
+            "parameters": {}
+          },
+          {
+            "title": "cooldown",
+            "type": "decorator",
+            "name": "cooldown",
+            "parameters": {
+              "cooldown": {"value": 120}
+            },
+            "child": {
+              "title": "Converse",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "cooldown",
+                  "type": "decorator",
+                  "name": "cooldown",
+                  "parameters": {
+                    "cooldown": {"value": 1},
+                    "onFail": {"value": true}
+                  },
+                  "child": {
+                    "title": "queryEntity",
+                    "type": "action",
+                    "name": "queryEntity",
+                    "parameters": {
+                      "entityTypes": {"value": ["player"]},
+                      "range": {"value": 10}
+                    },
+                    "output": {
+                      "entity": "player"
+                    }
+                  }
+                },
+                {
+                  "title": "succeeder",
+                  "type": "decorator",
+                  "name": "succeeder",
+                  "parameters": {},
+                  "child": {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "",
+                        "type": "action",
+                        "name": "faceEntity",
+                        "parameters": {
+                          "entity": {"key": "player"}
+                        }
+                      },
+                      {
+                        "title": "sayToEntity",
+                        "type": "action",
+                        "name": "sayToEntity",
+                        "parameters": {
+                          "dialogType": {"value": "dialog.complain"},
+                          "entity": {"key": "player"}
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "repeater",
+            "type": "decorator",
+            "name": "repeater",
+            "parameters": {},
+            "child": {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "timer",
+                  "type": "action",
+                  "name": "timer",
+                  "parameters": {
+                    "time": {"value": [2, 10]}
+                  }
+                },
+                {
+                  "title": "reverseDirection",
+                  "type": "action",
+                  "name": "reverseDirection",
+                  "parameters": {
+                    "direction": {"key": "sweepDirection"}
+                  },
+                  "output": {
+                    "direction": "sweepDirection"
+                  }
+                },
+                {
+                  "title": "faceDirection",
+                  "type": "action",
+                  "name": "faceDirection",
+                  "parameters": {
+                    "direction": {"key": "sweepDirection"}
+                  }
+                },
+                {
+                  "title": "timer",
+                  "type": "action",
+                  "name": "timer",
+                  "parameters": {
+                    "time": {"value": [1, 3]}
+                  }
+                },
+                {
+                  "title": "parallel",
+                  "type": "composite",
+                  "name": "parallel",
+                  "parameters": {
+                    "fail": {"value": -1},
+                    "success": {"value": -1}
+                  },
+                  "children": [
+                    {
+                      "title": "primaryFire",
+                      "type": "action",
+                      "name": "primaryFire",
+                      "parameters": {}
+                    },
+                    {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "timer",
+                          "type": "action",
+                          "name": "timer",
+                          "parameters": {
+                            "time": {"value": 0.5}
+                          }
+                        },
+                        {
+                          "title": "parallel",
+                          "type": "composite",
+                          "name": "parallel",
+                          "parameters": {
+                            "fail": {"value": 1},
+                            "success": {"value": 1}
+                          },
+                          "children": [
+                            {
+                              "title": "move",
+                              "type": "action",
+                              "name": "move",
+                              "parameters": {
+                                "direction": {"key": "sweepDirection"}
+                              }
+                            },
+                            {
+                              "title": "timer",
+                              "type": "action",
+                              "name": "timer",
+                              "parameters": {
+                                "time": {"value": 2}
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

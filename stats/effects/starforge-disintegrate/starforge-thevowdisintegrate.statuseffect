@@ -1,0 +1,30 @@
+{
+  "name" : "starforge-thevowdisintegrate",
+  "blockingStat" : "fireStatusImmunity",
+
+  "effectConfig" : {
+	//Directives while affected
+	"directive" : "fade=EB9127=0.25",
+	
+	//Directives when dying
+	"deathDirective" : "fade=EB9127=1.0?border=2;EB912780;00000000",
+	"deathProjectileType" : "thevowdisintegrate",
+	
+	//Follow-up status effect configuration
+	"effectsOnExpire" : ["burning"],
+	"effectOnExpireDuration" : 5.0,
+	
+	//Misc
+    "minMaxHealth" : 5
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "starforge-disintegrate.lua"
+  ],
+
+  "animationConfig" : "starforge-thevowdisintegrate.animation",
+
+  "label" : "Burning",
+  "icon" : "/interface/statuses/fire.png"
+}

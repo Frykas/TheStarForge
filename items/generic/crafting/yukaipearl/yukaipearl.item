@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-yukaipearl",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "yukaipearl.png",
+  "description" : "Only known to be made by Yukai Hylotls, this rare pearl can store any kind of energy.",
+  "shortdescription" : "^#FFB2B2;Yukai Pearl^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

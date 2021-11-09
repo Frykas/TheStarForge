@@ -1,0 +1,147 @@
+{
+  // ==============================================================================================
+  //                                       UNBOUND CHEST DROPS
+  // ==============================================================================================
+ 
+   "starforge-unboundsmallchestTreasure" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.39, "pool" : "chestMoney"},
+        {"weight" : 0.23, "pool" : "healingItem"},
+        {"weight" : 0.35, "pool" : "ore"},
+        {"weight" : 0.03, "pool" : "starforge-unboundlore"}
+      ],
+	        "poolRounds" : [
+        [0.1, 3],
+        [0.4, 4],
+        [0.4, 5],
+        [0.1, 6]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+   "starforge-unboundlore" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-apexunboundpropaganda-codex"},
+		{"weight" : 0.33, "item" : "starforge-apexunboundmisc2-codex"},
+		{"weight" : 0.33, "item" : "starforge-apexunboundmisc3-codex"}
+      ],
+	        "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+   "starforge-vowlore" : [
+    [0, {
+      "pool" : [
+        {"weight" : 1, "item" : "starforge-vowstory-codex"}
+      ],
+	        "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-unboundmission1small" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.32, "pool" : "chestMoney"},
+        {"weight" : 0.23, "pool" : "healingItem"},
+        {"weight" : 0.35, "pool" : "ore"},
+		{"weight" : 0.10, "pool" : "apexmissionBasic"}
+      ],
+	        "poolRounds" : [
+        [0.1, 3],
+        [0.4, 4],
+        [0.4, 5],
+        [0.1, 6]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "starforge-unboundmission1large" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.32, "pool" : "chestMoney"},
+        {"weight" : 0.23, "pool" : "healingItem"},
+        {"weight" : 0.35, "pool" : "ore"},
+		{"weight" : 0.10, "pool" : "apexmissionBasic"}
+      ],
+	        "poolRounds" : [
+        [0.1, 5],
+        [0.4, 6],
+        [0.4, 7],
+        [0.1, 8]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "starforge-unboundmission1special1" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-apexunboundmisc1-codex", 1]},
+        {"item" : [ "starforge-hookhand", 1]}
+      ]
+    }]
+  ],
+  
+  "starforge-unboundmission1special2" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-apexunboundthermites-codex", 1]},
+        {"item" : [ "starforge-unboundscientisthead", 1]}
+      ]
+    }]
+  ],
+  
+  "starforge-unboundmission1special3" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-apexunboundmisc5-codex", 1]},
+        {"item" : [ "starforge-unboundpistol", 1]}
+      ]
+    }]
+  ],
+  
+  "starforge-unboundmission1special4" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-apexunboundmisc6-codex", 1]},
+        {"item" : [ "essence", 35]}
+      ]
+    }]
+  ],
+  
+  "starforge-unboundmissionhealing" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "nanowrap", 3]},
+        {"item" : [ "bandage", 5]}
+      ]
+    }]
+  ],
+     "starforge-unboundbigchestTreasure" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.35, "pool" : "chestMoney"},
+        {"weight" : 0.32, "pool" : "ore"},
+		{"weight" : 0.05, "pool" : "starforge-unboundlore"},
+        {"weight" : 0.28, "pool" : "goodWeapon"}
+      ],
+	        "poolRounds" : [
+        [0.2, 2],
+        [0.6, 3],
+        [0.2, 4]
+      ],
+      "allowDuplication" : false
+    }]
+  ]    
+  }
+  

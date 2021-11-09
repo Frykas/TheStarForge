@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-withersample",
+  "price" : 50,
+  "rarity" : "rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "withersample.png",
+  "description" : "A small sample of the Wither, safely contained.",
+  "shortdescription" : "Wither Sample",
+  "itemTags" : ["reagent"],
+  "radioMessagesOnPickup" : [ "witherlord-firstcontact" ]
+}

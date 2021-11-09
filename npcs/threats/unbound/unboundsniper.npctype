@@ -1,0 +1,54 @@
+{
+    "type": "starforge-unboundsniper",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundSniperDeathTreasure"],
+	
+	"identity" : {
+     "species" : "apex"
+	 },
+	
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Sharpshooter unit reporting, eyes on target.",
+                        "Eyes on target, awaiting orders from Stalker.",
+                        "Orders received, begin operation!",
+                        "Backup requested, target approaching!",
+                        "Orders received, target in sight.",
+                        "Target approaching, opening fire!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : [{"stat":"maxHealth","amount":40}, {"stat":"powerMultiplier","amount":2.20}],
+ 
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundsniperhead","parameters" : { "colorIndex" : 8 }
+                }],
+                "chest": [{
+                    "name": "starforge-unboundsniperchest","parameters" : { "colorIndex" : 8 }
+                }],
+                "legs": [{
+                    "name": "starforge-unboundsniperpants","parameters" : { "colorIndex" : 8 }
+                }],
+                "primary": [
+                    "starforge-unbounddmr", "starforge-unboundsniper"
+                ]
+            }]]
+        ]
+    }
+}

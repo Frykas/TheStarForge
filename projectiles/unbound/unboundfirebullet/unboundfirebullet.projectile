@@ -1,0 +1,22 @@
+{
+  "projectileName" : "unboundfirebullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "unboundfirebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundfirebulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [255, 162, 0],
+  "fullbright" : true,
+  "damageKind" : "fireplasmabullet"
+}

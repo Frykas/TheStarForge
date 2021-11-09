@@ -1,0 +1,108 @@
+{
+  "itemName": "starforge-unboundchaingun",
+  "price": 1000,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "A Chain Gun used by Unbound Fortress units, \"Unstoppable\" type.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Melter\" CG",
+  "tooltipKind": "starforge-unboundgun",
+  "category": "Chain Gun",
+  "twoHanded": true,
+  "level" : 6,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "assaultrifle"
+  ],
+  "inventoryIcon": "unboundchaingunicon.png",
+  "animation": "unboundchaingun.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundchaingun.png",
+    "barrel": "",
+	"middleFullbright": "unboundchaingunfullbright.png",
+	"muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-3.1, 0.350, -3.1, 0.350],
+        "particles" : [
+          { "particle" : "starforge-unboundlmg" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/sniper4.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [1.250, -0.125],
+  "muzzleOffset": [2.5, 0.1],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "fire",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.09,
+    "baseDps": 10.0,
+    "energyUsage": 40,
+    "inaccuracy": 0.02,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "unboundfirebullet",
+    "projectileParameters": {
+      "knockback": 6
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.05,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

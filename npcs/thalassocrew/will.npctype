@@ -35,7 +35,7 @@
 		},
       "buyFactorRange" : [ 1.0, 1.0 ],
       "sellFactorRange" : [ 0.4, 0.4 ],
-      "numItems" : 27,
+      "numItems" : 30,
       "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : "Tailor Will",

@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-unboundflowerbed",
+  "colonyTags" : ["apex"],
+  "rarity" : "uncommon",
+  "category" : "decorative",
+  "price" : 100,
+  "description" : "Strange flowers, put on an Unbound flower bed.",
+  "shortdescription" : "Unbound Flower Bed",
+  "race" : "apex",
+
+  "apexDescription" : "Strange to see the Unbound care about stuff like this. I guess even them like to have plants around.",
+  "avianDescription" : "Some pretty flowers!",
+  "floranDescription" : "I sssee hiding spot...",
+  "glitchDescription" : "Surprised. I have never seen those flowers before!.",
+  "humanDescription" : "A flower bed. Surprised to see them with the Unbound.",
+  "hylotlDescription" : "A pretty flower bed.",
+  "novakidDescription" : "A flower bed. Boring.",
+
+
+  "inventoryIcon" : "unboundflowerbedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundflowerbed.png" ,
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

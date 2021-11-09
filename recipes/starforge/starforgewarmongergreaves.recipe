@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-infusedscrap", "count" : 6 },
+	{ "item" : "tungstenbar", "count" : 7 },
+	{ "item" : "essence", "count" : 800}
+  ],
+  "output" : {
+    "item" : "starforge-warmongerpants",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "armours" ],
+  "duration" : 2
+}
+

@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-katahelbacktrue-recipe",
+  "price" : 3500,
+  "inventoryIcon" : "katahelbacktrueicon.png",
+  "rarity" : "Essential",
+  "category" : "Blueprint",
+  "description" : "Enhanced with ancient technology, this cape protects the weilder.",
+  "recipe":{"parameters":{},"count":1,"name":"starforge-katahelbacktrue"},
+  "shortdescription" : "^#FFBC47;Might of the Warlord^white;",
+  "tooltipFields" : {"rarityLabel" : "Exalted"}
+}

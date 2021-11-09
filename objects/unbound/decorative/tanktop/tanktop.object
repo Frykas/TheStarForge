@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-unboundtanktop",
+  "colonyTags" : ["weapon","apex"],
+  "printable" : true,
+  "rarity" : "legendary",
+  "description" : "An Unbound tank barrel.",
+  "shortdescription" : "Unbound Tank Barrel",
+  "race" : "apex",
+  "category" : "furniture",
+  "price" : 2500,
+
+  "apexDescription" : "What a monstrous cannon.",
+  "avianDescription" : "This does not make me feel safe.",
+  "floranDescription" : "Floran can't ssstab...",
+  "glitchDescription" : "Curious. This is quite the robust frame.",
+  "humanDescription" : "What a cool cannon. Wish I could use it.",
+  "hylotlDescription" : "Whatever they have reserved for us in the future, I sure hope it's nothing like that.",
+  "novakidDescription" : "Quite scary lookin'.",
+
+  "inventoryIcon" : "tanktopicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "tanktop.png:<color>",
+
+      "imagePosition" : [-56, 4],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}
+

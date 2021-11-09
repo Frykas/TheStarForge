@@ -1,0 +1,70 @@
+{
+  "objectName" : "starforge-unboundsciencelamp",
+  "colonyTags" : ["light"],
+  "rarity" : "uncommon",
+  "category" : "light",
+  "price" : 20,
+
+  "description" : "A light used by the Science Division of the Unbound. It shines brightly.",
+  "shortdescription" : "Unbound Science Light",
+  "race" : "apex",
+  "printable" : true,
+
+  "apexDescription" : "A bright light. Easy to place and remove.",
+  "avianDescription" : "This light is easy to move around!",
+  "floranDescription" : "Light hasss no flame. Floran sssafe.",
+  "glitchDescription" : "Observant. This light is very well made.",
+  "humanDescription" : "A cool light. Kinda want one now",
+  "hylotlDescription" : "This light looks plain. But I guess it makes up for that by being easy to move around.",
+  "novakidDescription" : "A light, eh.",
+
+  "lightColor" : [167, 217, 251],
+
+  "inventoryIcon" : "sciencelampicon.png",
+  "orientations" : [
+    {
+      "image" : "sciencelamp.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "sciencelamp.png",
+        "fg" : "sciencelamplit.png"
+      },
+      "animationPosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 1]
+    },
+    {
+      "image" : "sciencelamp.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "sciencelamp.png",
+        "fg" : "sciencelamplit.png"
+      },
+      "animationPosition" : [-8, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 1]
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "sciencelamp.png",
+    "fg" : "sciencelamplit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

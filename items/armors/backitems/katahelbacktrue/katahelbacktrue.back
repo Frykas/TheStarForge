@@ -5,16 +5,15 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
-  "description" : "Enhanced with ancient technology, this cape protects the weilder. ",
-  "shortdescription" : "^darkgray;Might of the Warlord^white;",
-  "tooltipKind" : "back",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "description" : "Enhanced with ancient technology, this cape protects the weilder.",
+  "shortdescription" : "^#FFBC47;Might of the Warlord^white;",
+  "tooltipKind" : "starforge-backitemexalted",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "thorns", "peacekeeperaugment3",
+  "starforge-warlordprotection", "starforge-warlordthorns",
 
     {
       "stat" : "biomeheatImmunity",
