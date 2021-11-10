@@ -1,0 +1,14 @@
+{
+  "itemName" : "xrc_silverpants",
+  "price" : 0,
+  "inventoryIcon" : "icons.png:pants",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "legarmour",
+  "description" : "",
+  "shortdescription" : "",
+  "tooltipKind" : "simpletooltip",
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png"
+}
