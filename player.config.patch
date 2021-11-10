@@ -15,5 +15,8 @@
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-brimsteel"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-luminesilk"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-undyingfibre"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-witherlore1-codex"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-onikabutolore-codex"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-lootmonsterlore-codex"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-infusedscrap"} }
 ]

@@ -1,7 +1,6 @@
 {
   "input" : [
 	{ "item" : "starforge-cerulium", "count" : 8 },
-	{ "item" : "starforge-rubium", "count" : 1 },
 	{ "item" : "bandage", "count" : 1},
 	{ "item" : "essence", "count" : 250}
   ],

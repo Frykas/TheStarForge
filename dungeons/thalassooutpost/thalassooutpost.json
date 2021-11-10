@@ -2995,7 +2995,7 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1704,
+                 "x":1696,
                  "y":480
                 }, 
                 {
@@ -3019,7 +3019,7 @@
                  "type":"",
                  "visible":true,
                  "width":33,
-                 "x":1696,
+                 "x":1688,
                  "y":440
                 }, 
                 {
@@ -3267,14 +3267,12 @@
                  "height":62,
                  "id":649,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"interactData\" : \"\/interface\/warping\/thalassomainteleporter.config\" , \"uniqueId\" : \"thalassooutpost\"}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"interactData\" : \"\/interface\/warping\/thalassomainteleporter.config\" , \"uniqueId\" : \"thalassooutpost\"}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -3659,14 +3657,12 @@
                  "height":24,
                  "id":681,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"treasurePools\":[\"marikobackTreasure\"]}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"marikobackTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4209,6 +4205,18 @@
                  "width":16,
                  "x":1960,
                  "y":120
+                }, 
+                {
+                 "gid":6040,
+                 "height":24,
+                 "id":760,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":1728,
+                 "y":480
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -4225,16 +4233,17 @@
                  "height":864,
                  "id":715,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"messageType\" : \"playAltMusic\", \"messageArgs\" : [[\"\/music\/temple-of-kluex.ogg\"], 5.0] }",
-                     "stagehand":"messenger"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string",
-                     "stagehand":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"messageType\" : \"playAltMusic\", \"messageArgs\" : [[\"\/music\/temple-of-kluex.ogg\"], 5.0] }"
+                        }, 
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"messenger"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4246,16 +4255,17 @@
                  "height":1024,
                  "id":716,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"messageType\" : \"stopAltMusic\", \"messageArgs\" : 5.0 }",
-                     "stagehand":"messenger"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string",
-                     "stagehand":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"messageType\" : \"stopAltMusic\", \"messageArgs\" : 5.0 }"
+                        }, 
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"messenger"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4601,14 +4611,12 @@
                  "height":8,
                  "id":450,
                  "name":"",
-                 "properties":
-                    {
-                     "vehicle":"stationtram"
-                    },
-                 "propertytypes":
-                    {
-                     "vehicle":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"vehicle",
+                         "type":"string",
+                         "value":"stationtram"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4783,18 +4791,22 @@
                  "height":8,
                  "id":482,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"human",
-                     "seed":"2057",
-                     "typeName":"starforge-creighton"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "seed":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"human"
+                        }, 
+                        {
+                         "name":"seed",
+                         "type":"string",
+                         "value":"2057"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-creighton"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4806,18 +4818,22 @@
                  "height":8,
                  "id":484,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"avian",
-                     "seed":"2057",
-                     "typeName":"starforge-tweeters"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "seed":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"avian"
+                        }, 
+                        {
+                         "name":"seed",
+                         "type":"string",
+                         "value":"2057"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-tweeters"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4829,18 +4845,22 @@
                  "height":8,
                  "id":519,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"human",
-                     "seed":"1456",
-                     "typeName":"starforge-elana"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "seed":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"human"
+                        }, 
+                        {
+                         "name":"seed",
+                         "type":"string",
+                         "value":"1456"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-elana"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4852,16 +4872,17 @@
                  "height":8,
                  "id":558,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"floran",
-                     "typeName":"starforge-strelitzia"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"floran"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-strelitzia"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4873,16 +4894,17 @@
                  "height":8,
                  "id":577,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"novakid",
-                     "typeName":"starforge-will"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"novakid"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-will"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4894,14 +4916,12 @@
                  "height":8,
                  "id":622,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4913,14 +4933,12 @@
                  "height":8,
                  "id":623,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4932,14 +4950,12 @@
                  "height":8,
                  "id":624,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4951,14 +4967,12 @@
                  "height":8,
                  "id":625,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4970,14 +4984,12 @@
                  "height":8,
                  "id":626,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4989,14 +5001,12 @@
                  "height":8,
                  "id":627,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5008,14 +5018,12 @@
                  "height":8,
                  "id":628,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5027,14 +5035,12 @@
                  "height":8,
                  "id":629,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5046,14 +5052,12 @@
                  "height":8,
                  "id":630,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5065,14 +5069,12 @@
                  "height":8,
                  "id":631,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5084,14 +5086,12 @@
                  "height":8,
                  "id":632,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5103,14 +5103,12 @@
                  "height":8,
                  "id":633,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5122,14 +5120,12 @@
                  "height":8,
                  "id":634,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5141,14 +5137,12 @@
                  "height":8,
                  "id":701,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-ancientfloatbagcritter"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-ancientfloatbagcritter"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5160,18 +5154,22 @@
                  "height":8,
                  "id":737,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"apex",
-                     "seed":"14932",
-                     "typeName":"starforge-morpheus"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "seed":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"apex"
+                        }, 
+                        {
+                         "name":"seed",
+                         "type":"string",
+                         "value":"14932"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-morpheus"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5183,14 +5181,12 @@
                  "height":8,
                  "id":742,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-peko"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-peko"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -5205,10 +5201,10 @@
          "y":0
         }],
  "nextlayerid":8,
- "nextobjectid":759,
+ "nextobjectid":761,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.3.2",
+ "tiledversion":"1.4.3",
  "tileheight":8,
  "tilesets":[
         {
@@ -5294,9 +5290,13 @@
         {
          "firstgid":6034,
          "source":"..\/..\/tilesets\/cityofcommence\/cityofcommence.json"
+        }, 
+        {
+         "firstgid":6040,
+         "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/techmanagement.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.1,
+ "version":1.4,
  "width":600
 }

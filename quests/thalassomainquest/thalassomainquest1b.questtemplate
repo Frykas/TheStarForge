@@ -2,7 +2,7 @@
   "id" : "thalassomission1b",
   "prerequisites" : [ "thalassomission1" ],
   "title" : "^#b4f5c3;Meeting the Captain",
-  "text" : "The Thalasso captain, ^cornflowerblue;Mariko^reset; is now back at the Outpost after hearing what we found in the Unbound facility. She wants me to see her, down the ^green;Thalasso Outpost^reset; near ^orange;Rondin^reset;.",
+  "text" : "The Thalasso captain, ^cornflowerblue;Mariko^reset; is now back at the Outpost after learning of what we found in the Unbound facility. She wants me to see her, down the ^green;Thalasso Outpost^reset; near ^orange;Rondin^reset;.",
  "completionText" : "Heya! It's nice to finally meet our hero of the day. I'm the one who invited you here, and I know meeting you only now is rude, but I was quite busy on my side too. Thank you for what you've done, but we can't exactly celebrate. We must prepare for what's to come.",
   "moneyRange" : [10, 10],
   "rewards" : [
