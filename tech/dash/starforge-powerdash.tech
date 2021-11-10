@@ -5,8 +5,8 @@
   "scripts" : ["starforge-powerdash.lua"],
   "animator" : "/tech/dash/starforge-powerdash.animation",
 
-  "description" : "Dash through space! One use every 3s, max 3. ^green;[A][A]^white;, ^green;[D][D]^white;",
-  "shortDescription" : "Power Dash",
+  "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to dash! Dashing 3 times consecutively overcharges, increasing cooldown.",
+  "shortDescription" : "Warp Dash",
   "rarity" : "Essential",
   "icon" : "/tech/starforge-powerdash.png",
 
