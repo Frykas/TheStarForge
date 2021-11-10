@@ -1,54 +1,48 @@
 {
-  "itemName" : "starforge-exaltedsiaxaachest",
-  "price" : 4000,
-  "inventoryIcon" : "icons.png:chest",
+  "itemName" : "starforge-exaltedpraetorianhead",
+  "price" : 2260,
+  "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "category" : "chestarmour",
-  "description" : "\"You grew strong and smart. But my time to fall has come, and so I must leave you, and you must guide them.\"",
-  "shortdescription" : "^red;Siaxaa's Truth^reset; ^#FFB2B2;^reset;",
+  "category" : "headwear",
+  "description" : "\"We opened a gate to somewhere... else. May we never open it again.\"",
+  "shortdescription" : "^yellow;Praetorian Helmet^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
 
-  "maleFrames" : {
-    "body" : "chestm.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
-
-  "femaleFrames" : {
-    "body" : "chestf.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
-
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+  
   "level" : 8,
-  "leveledStatusEffects" : [
+  "statusEffects" : [
     {
-      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 2.10
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.4
+      "amount" : 25.2
     },
     {
-      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 14.5714
+      "amount" : 60
     },
     {
-      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 4.5
+      "amount" : 60
     }
   ],
+
+
   "itemTags" : [ "tier8armour" ],
   
     "colorOptions" : [
-    // LUMINE, DEFAULT
-    { "ffca8a" : "FFF4DB", "e0975c" : "CCBC9B", "a85636" : "B5A073", "6f2919" : "7F7051" },
+    // BRIMSTEEL, DEFAULT
+    { "ffca8a" : "A75B79", "e0975c" : "9A2E50", "a85636" : "531043", "6f2919" : "2F122E" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY
@@ -72,5 +66,4 @@
     // BROWN
     { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
   ]
-
-}
+  }

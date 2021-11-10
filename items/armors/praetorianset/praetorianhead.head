@@ -7,6 +7,7 @@
   "category" : "headwear",
   "description" : "Records from the helmet shows the previous weilder killing hundreds of Erchius horror bare handed, and all alone.",
   "shortdescription" : "^yellow;Praetorian Helmet^reset;",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedpraetorianhead" ],
   "tooltipKind" : "armor",
 
   "maleFrames" : "head.png",

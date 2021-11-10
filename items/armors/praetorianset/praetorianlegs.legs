@@ -7,6 +7,7 @@
   "category" : "legarmour",
   "description" : "The suit enhances the wearer's reflexes & combat abilities. It is made to be very durable & withstand extreme amounts of damage. ",
   "shortdescription" : "^yellow;Praetorian Legwear^reset;",
+  "learnBlueprintsOnPickup" : [ "starforge-exaltedpraetorianpants" ],
   "tooltipKind" : "armor",
 
   "maleFrames" : "pants.png",

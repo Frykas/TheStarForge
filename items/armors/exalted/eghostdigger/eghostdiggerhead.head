@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headarmour",
-  "description" : "Rumors of a lone vagabond stealing the souls of the dead are common in Novakid taverns. ",
+  "description" : "\"I woke up alone that day. With that horrible feeling of loss, gnawing me\"",
   "shortdescription" : "^pink;Mask of the Ghost Digger^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
 

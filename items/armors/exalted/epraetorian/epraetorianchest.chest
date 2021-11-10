@@ -1,12 +1,12 @@
 {
-  "itemName" : "starforge-exaltedsiaxaachest",
+  "itemName" : "starforge-exaltedpraetorianchest",
   "price" : 4000,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "category" : "chestarmour",
-  "description" : "\"You grew strong and smart. But my time to fall has come, and so I must leave you, and you must guide them.\"",
-  "shortdescription" : "^red;Siaxaa's Truth^reset; ^#FFB2B2;^reset;",
+  "category" : "chestwear",
+  "description" : "\"Opening the gate was everything to us... Our biggest mistake.\"",
+  "shortdescription" : "^yellow;Praetorian Suit^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : {
@@ -21,34 +21,37 @@
     "frontSleeve" : "fsleeve.png"
   },
 
+
   "level" : 8,
-  "leveledStatusEffects" : [
+  "statusEffects" : [
     {
-      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 2.80
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.4
+      "amount" : 42
     },
     {
-      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 14.5714
+      "amount" : 110
     },
     {
-      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 4.5
+      "amount" : 110
     }
   ],
+
+
   "itemTags" : [ "tier8armour" ],
   
     "colorOptions" : [
-    // LUMINE, DEFAULT
-    { "ffca8a" : "FFF4DB", "e0975c" : "CCBC9B", "a85636" : "B5A073", "6f2919" : "7F7051" },
+    // BRIMSTEEL, DEFAULT
+    { "ffca8a" : "A75B79", "e0975c" : "9A2E50", "a85636" : "531043", "6f2919" : "2F122E" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY
@@ -72,5 +75,4 @@
     // BROWN
     { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
   ]
-
-}
+  }
