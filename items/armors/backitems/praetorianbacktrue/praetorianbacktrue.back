@@ -1,0 +1,37 @@
+{
+  "itemName" : "starforge-praetorianbacktrue",
+  "price" : 3500,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "backwear",
+  "description" : "Is that whispering you hear? Is it the skull, or is it loneliness getting to you?",
+  "shortdescription" : "^yellow;Abomination Skull Trophy^white;",
+  "tooltipKind" : "starforge-backitemexalted",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+
+  "statusEffects" : [
+  "starforge-praetorianfalldamage", "starforge-praetorianrage",
+
+    {
+      "stat" : "biomeheatImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeradiationImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "breathProtection",
+      "amount" : 1.0
+    }
+  ],
+
+  "acceptsAugmentType" : "back"
+}

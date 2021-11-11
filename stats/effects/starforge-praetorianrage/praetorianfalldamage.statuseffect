@@ -1,0 +1,14 @@
+{
+  "name" : "starforge-praetorianfalldamage",
+  "effectConfig" : {},
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "praetorianfalldamage.lua"
+  ],
+
+  "animationConfig" : "praetorianfalldamage.animation",
+  
+  "label" : "Praetorian Rage",
+  "icon" : "/interface/statuses/starforge-slayerrage.png"
+}

@@ -69,8 +69,9 @@
     "cacochiusTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.19, "pool" : "essenceDrop2"},
-        {"weight" : 0.78, "pool" : "praetorianarmorDrop"},
+        {"weight" : 0.11, "pool" : "essenceDrop2"},
+		{"weight" : 0.43, "pool" : "praetorianstoryDrop"},
+        {"weight" : 0.43, "pool" : "praetorianarmorDrop"},
 		{"weight" : 0.02, "item" : "starforge-hawkmoon"},
 		{"weight" : 0.01, "item" : "starforge-cacochiusaf"}
       ],
@@ -286,6 +287,21 @@
         {"weight" : 0.33, "item" : "starforge-sedgestory1-codex"},
         {"weight" : 0.33, "item" : "starforge-sedgestory2-codex"},
         {"weight" : 0.33, "item" : "starforge-sedgestory3-codex"}
+      ],
+      "poolRounds" : [
+        [0.8, 1],
+        [0.2, 2]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "praetorianstoryDrop" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-praetorianstory1-codex"},
+        {"weight" : 0.33, "item" : "starforge-praetorianstory2-codex"},
+        {"weight" : 0.33, "item" : "starforge-praetorianstory3-codex"}
       ],
       "poolRounds" : [
         [0.8, 1],

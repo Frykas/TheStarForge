@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-praetorianbacktrue-recipe",
+  "price" : 3500,
+  "inventoryIcon" : "icon.png",
+  "rarity" : "Essential",
+  "category" : "Blueprint",
+  "description" : "Is that whispering you hear? Is it the skull, or is it loneliness getting to you?",
+  "recipe" : {"parameters":{},"count":1,"name":"starforge-praetorianbacktrue"},
+  "shortdescription" : "^yellow;Abomination Skull Trophy^white;",
+  "tooltipFields" : {"rarityLabel" : "Exalted"}
+}

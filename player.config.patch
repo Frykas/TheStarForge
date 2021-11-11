@@ -12,6 +12,7 @@
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-sedgebacktrue-recipe"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-soultakerbacktrue-recipe"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-warmongerbacktrue-recipe"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-praetorianbacktrue-recipe"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-brimsteel"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-luminesilk"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-undyingfibre"} },

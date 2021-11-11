@@ -1,0 +1,11 @@
+{
+  "name" : "starforge-praetorianrage",
+  "effectConfig" : {
+    "powerModifier" : 1.20
+  },
+  "defaultDuration" : 15,
+
+  "scripts" : [
+    "praetorianrage.lua"
+  ]
+}

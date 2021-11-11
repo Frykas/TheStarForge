@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-praetorianbackfalse",
+  "price" : 1000,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "backwear",
+  "description" : "A human skull, displayed like a trophy.",
+  "shortdescription" : "Human Skull Trophy",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png"
+
+}

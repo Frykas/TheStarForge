@@ -1,0 +1,16 @@
+{
+  "id" : "starforge-praetorianstory1",
+  "species" : "human",
+  "title" : "^yellow;The Praetorian Project^reset; - I",
+  "description" : "How far are you willing to go for revenge? ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "praetoriancover1.png",
+  "contentPages" : [
+
+"todo"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 8000
+  }
+}

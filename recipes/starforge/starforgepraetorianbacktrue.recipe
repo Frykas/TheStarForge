@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "bone", "count" : 150 },
+	{ "item" : "starforge-etherealgoo", "count" : 10 },
+	{ "item" : "starforge-praetorianbackfalse", "count" : 1 },
+	{ "item" : "essence", "count" : 5000}
+  ],
+  "output" : {
+    "item" : "starforge-praetorianbacktrue",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "backwear" ],
+  "duration" : 2
+}
+

@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "starforge-praetorianstory1-codex", "count" : 1},
+	{ "item" : "starforge-praetorianstory2-codex", "count" : 1},
+	{ "item" : "starforge-praetorianstory3-codex", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-praetorianbacktrue-recipe",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "blueprint" ],
+  "duration" : 2
+}
+
