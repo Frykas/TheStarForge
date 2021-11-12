@@ -3,7 +3,7 @@
   "blockingStat" : "healingStatusImmunity",
 
   "effectConfig" : {
-    "healTime" : 75
+    "healTime" : 55
   },
   "defaultDuration" : 5,
 
@@ -11,6 +11,6 @@
     "huntershealing.lua"
   ],
   
-  "label" : "Hunter's Resilience",
+  "label" : "Hunter's Recovery",
   "icon" : "/interface/statuses/starforge-huntersresilience.png"
 }

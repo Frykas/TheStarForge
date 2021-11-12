@@ -13,7 +13,7 @@
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "halogenglow", "rageaugment1",
+  "starforge-warmongerbattery", "starforge-siaxaaregen",
 
     {
       "stat" : "biomeheatImmunity",

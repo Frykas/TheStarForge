@@ -1,0 +1,48 @@
+{
+  "itemName" : "starforge-unboundthrower",
+  "level" : 7,
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "An experimental Unbound weapon. Delivers a stream of deadly poison.",
+  "shortdescription" : "^#41453B;UNBD^reset; \"Strychnine\" ^#9BBA3D;EXP T^reset;",
+  "tooltipKind": "starforge-experimentalgun",
+  "category" : "^white;Experimental Thrower^reset;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+
+  "inventoryIcon" : "unboundthrower.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "unboundthrower.png",
+	"middleFullbright": "unboundthrowerfullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ]
+    }
+  },
+  "baseOffset" : [0.75, 0],
+  "muzzleOffset" : [2.5, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "poison",
+
+  "primaryAbilityType" : "flamethrower",
+  "primaryAbility" : {
+    "baseDps" : 10,
+    "energyUsage" : 30
+  },
+
+  "altAbilityType" : "fuelairtrail",
+  "altAbility" : {},
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

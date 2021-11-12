@@ -1,0 +1,16 @@
+{
+  "name" : "starforge-warmongerbattery",
+  "effectConfig" : {
+    "protection" : 5
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "warmongerbattery.lua"
+  ],
+
+  "label" : "Warmonger Hope",
+  "icon" : "/interface/statuses/starforge-warmongerresolve.png",
+  
+  "animationConfig" : "warmongerbattery.animation"
+}
