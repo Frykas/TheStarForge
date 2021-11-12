@@ -17,6 +17,20 @@
       ],
       "allowDuplication" : false
     }]
+  ],
+  
+  "pyreaperTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.99, "item" : ["corefragmentore", 1]},
+		{"weight" : 0.01, "item" : "starforge-pyreaperaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
   ]
   
   

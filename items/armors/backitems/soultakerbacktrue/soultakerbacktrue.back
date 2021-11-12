@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
-  "description" : "Tools used by a Novakid gnawed by loneliness. They are tainted by some sort of ethereal matter.",
+  "description" : "Tools used by a Novakid who was gnawed by loneliness. They are tainted by some sort of ethereal matter.",
   "shortdescription" : "^pink;Ghost Digger's Tools^white;",
   "tooltipKind" : "starforge-backitemexalted",
 
@@ -13,7 +13,7 @@
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
-  "maxenergyboostaugment2", "electricblockaugment",
+  "starforge-unstableglow", "starforge-unstablenova",
 
     {
       "stat" : "biomeheatImmunity",

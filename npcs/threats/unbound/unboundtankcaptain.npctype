@@ -211,7 +211,7 @@
         "baseValue" : 0.0
       },
       "healthRegen" : {
-        "baseValue" : 1000.0
+        "baseValue" : 0.0
       },
       "jumpModifier" : {
         "baseValue" : 0.5

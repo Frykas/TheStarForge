@@ -1,0 +1,11 @@
+{
+  "name" : "starforge-unstableglow",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "unstableglow.lua"
+  ],
+
+  "animationConfig" : "unstableglow.animation"
+}

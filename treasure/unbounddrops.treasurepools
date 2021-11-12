@@ -162,9 +162,12 @@
 		{"weight" : 1, "item" : "starforge-apexunboundcenturion-codex"},
         {"weight" : 1, "item" : ["essence", 750]}
       ],
+	  "pool" : [
+		{"weight" : 1, "item" : "starforge-centurionaf"}
+	],
       "poolRounds" : [
-        [0.20, 2],
-        [0.80, 2]
+        [0.25, 1],
+        [0.75, 0]
       ],
       "allowDuplication" : false
     }]
