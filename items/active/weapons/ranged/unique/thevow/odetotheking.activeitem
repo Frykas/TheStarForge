@@ -21,7 +21,7 @@
 	},
   "animationCustom" : {
     "sounds" : {
-      "fire" : ["/sfx/gun/starforge-thevow.ogg"],
+      "fire" : ["/sfx/gun/starforge-odetotheking.ogg"],
 	  "reloadLoop" : [ ],
 	  "reload" : [ "/sfx/gun/reload/pistol_reload_clip3.ogg" ]
     },

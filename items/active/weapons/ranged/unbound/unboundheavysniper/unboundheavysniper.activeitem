@@ -36,7 +36,7 @@
     },
     "sounds": {
       "fire": [
-        "/sfx/gun/starforge_heavysniper.ogg"
+        "/sfx/gun/starforge-heavysniper.ogg"
       ]
     }
   },
@@ -49,18 +49,19 @@
   "elementalType": "ice",
   "primaryAbility": {
     "scripts": [
-      "/items/active/weapons/ranged/gunfire.lua"
+      "/items/active/weapons/ranged/starforge-gunfire.lua"
     ],
-    "class": "GunFire",
-    "fireTime": 1.70,
-    "baseDps": 11.0,
-    "energyUsage": 75,
-    "inaccuracy": 0.001,
+    "class": "StarforgeGunFire",
+    "fireTime": 1.25,
+    "baseDps": 12.5,
+    "energyUsage": 77.5,
+    "inaccuracy": 0.0,
     "projectileCount": 1,
     "fireType": "auto",
     "projectileType": "unboundicebullet",
     "projectileParameters": {
-      "knockback": 13
+      "knockback": 13,
+      "piercing": true
     },
     "stances": {
       "idle": {
@@ -75,12 +76,12 @@
         "backArmFrame" : "swim.4"
       },
       "fire": {
-        "duration": 0,
+        "duration": 0.1,
         "armRotation": 15,
         "weaponRotation": 11,
         "weaponOffset" : [-0.1, 0],
         "twoHanded": true,
-        "allowRotate": true,
+        "allowRotate": false,
         "allowFlip": true,
 
         "animationStates" : {
@@ -91,7 +92,7 @@
         "backArmFrame" : "swim.4"
       },
       "cooldown": {
-        "duration": 0.8,
+        "duration": 1.0,
         "armRotation": 13,
         "weaponRotation": 8,
         "weaponOffset" : [-0.1, 0],

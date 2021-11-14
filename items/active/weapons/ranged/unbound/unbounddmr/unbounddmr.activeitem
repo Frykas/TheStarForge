@@ -36,7 +36,7 @@
     },
     "sounds": {
       "fire": [
-        "/sfx/gun/sniper2.ogg"
+        "/sfx/gun/starforge-sniper.ogg"
       ]
     }
   },
@@ -49,9 +49,9 @@
   "elementalType": "ice",
   "primaryAbility": {
     "scripts": [
-      "/items/active/weapons/ranged/gunfire.lua"
+      "/items/active/weapons/ranged/starforge-gunfire.lua"
     ],
-    "class": "GunFire",
+    "class": "StarforgeGunFire",
     "fireTime": 0.80,
     "baseDps": 9.5,
     "energyUsage": 30,

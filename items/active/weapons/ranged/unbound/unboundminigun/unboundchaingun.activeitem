@@ -36,7 +36,7 @@
     },
     "sounds": {
       "fire": [
-        "/sfx/gun/sniper4.ogg"
+        "/sfx/gun/starforge-minigunfire.ogg"
       ]
     }
   },
@@ -47,15 +47,16 @@
     "/items/active/weapons/ranged/gun.lua"
   ],
   "elementalType": "fire",
+  
   "primaryAbility": {
     "scripts": [
-      "/items/active/weapons/ranged/gunfire.lua"
+      "/items/active/weapons/ranged/starforge-gunfire.lua"
     ],
-    "class": "GunFire",
-    "fireTime": 0.09,
-    "baseDps": 10.0,
-    "energyUsage": 40,
-    "inaccuracy": 0.02,
+    "class": "StarforgeGunFire",
+    "fireTime": 0.085,
+    "baseDps": 11.5,
+    "energyUsage": 42,
+    "inaccuracy": 0.025,
     "projectileCount": 1,
     "fireType": "auto",
     "projectileType": "unboundfirebullet",
@@ -92,6 +93,64 @@
       },
       "cooldown": {
         "duration": 0.05,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  "altAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+	"name" : "Spray n' Pray",
+    "fireTime": 0.001,
+    "baseDps": 600.0,
+    "energyUsage": 7000,
+    "inaccuracy": 0.05,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "unboundfirebullet",
+    "projectileParameters": {
+      "knockback": 3
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.001,
         "armRotation": 2,
         "weaponRotation": 1,
         "weaponOffset" : [-0.1, 0],

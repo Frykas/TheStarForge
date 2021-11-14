@@ -34,6 +34,7 @@ function init()
   
   self.startMessages = config.getParameter("startMessages")
   self.endMessages = config.getParameter("endMessages")
+  self.resetMessages = config.getParameter("resetMessages")
   self.messageRadius = config.getParameter("messageRadius", 2)
   
   self.hasSpawnedEnemies = false
@@ -56,10 +57,13 @@ function update(dt)
 	end
   end
   
+  local playersFound = broadcastAreaQuery({
+    includedTypes = {"player"}
+  })
+  if #playersFound == 0 then
+    reset()
+  end
   if not self.player then
-    local playersFound = broadcastAreaQuery({
-      includedTypes = {"player"}
-    })
 	self.player = playersFound[1]
 	
 	if self.startMessages and self.player then
@@ -70,6 +74,38 @@ function update(dt)
         end
 	  end
 	end
+  end
+end
+
+function reset()
+  self.player = nil
+  self.active = config.getParameter("startActive", false)
+  self.delayTime = config.getParameter("delayTime", 0)
+  self.waveTime = config.getParameter("waveTime")
+  self.waves = config.getParameter("waves")
+  self.timer = 0
+  
+  self.hasSpawnedEnemies = false
+	
+  if self.progressBarId then
+    world.sendEntityMessage(self.progressBarId, "starforge-reset")
+  end
+  
+  --Cull existing monsters
+  local remainingMonsters = broadcastAreaQuery({
+    includedTypes = self.validTypes
+  })
+  for _, enemy in pairs(remainingMonsters) do
+	world.sendEntityMessage(enemy, "applyStatusEffect", "monsterdespawn")
+	world.sendEntityMessage(enemy, "despawn")
+	world.sendEntityMessage(enemy, "applyStatusEffect", "beamoutanddie")
+  end
+  
+  for _, message in ipairs(self.resetMessages) do
+    local entitiesToMessage = world.entityQuery(stagehand.position(), self.messageRadius)
+    for _, entity in pairs(entitiesToMessage) do
+	  world.sendEntityMessage(entity, message)
+    end
   end
 end
 

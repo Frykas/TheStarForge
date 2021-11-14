@@ -30,5 +30,6 @@
   
   "messageRadius" : 32,
   "startMessages" : [ "lockDoor" ],
-  "endMessages" : [ "openDoor" ]
+  "endMessages" : [ "openDoor" ],
+  "resetMessages" : [ "openDoor" ]
 }

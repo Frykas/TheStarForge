@@ -1,0 +1,24 @@
+{
+  "projectileName" : "unboundmauricebullet",
+  "image" : "unboundmauricebullet.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "fullbright" : true,
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundicebulletexplosion.config"
+    }
+  ],
+  "emitters" : [],
+  "power" : 50,
+  "speed" : 180,
+  "timeToLive" : 30.0,
+  "physics" : "laser",
+  "damageKind" : "iceplasmabullet",
+
+  "scripts" : [ "/projectiles/scripts/starforge-homingbullet.lua" ],
+  "searchRadius" : 5,
+  "baseHomingControlForce" : -1000.0
+}

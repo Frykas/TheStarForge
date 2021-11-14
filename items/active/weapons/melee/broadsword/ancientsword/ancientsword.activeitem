@@ -13,7 +13,7 @@
 
   "inventoryIcon" : "ancientswordicon.png",
 
-  "animation" : "/items/active/weapons/melee/broadsword/ancientsword/ancientsword.animation",
+  "animation" : "ancientsword.animation",
   "animationParts" : {
     "handle" : "handle.png",
     "blade" : "blade.png"

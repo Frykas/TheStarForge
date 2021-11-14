@@ -49,9 +49,9 @@
   "elementalType": "ice",
   "primaryAbility": {
     "scripts": [
-      "/items/active/weapons/ranged/gunfire.lua"
+      "/items/active/weapons/ranged/starforge-gunfire.lua"
     ],
-    "class": "GunFire",
+    "class": "StarforgeGunFire",
     "fireTime": 1.30,
     "baseDps": 9.5,
     "energyUsage": 45,

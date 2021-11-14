@@ -77,7 +77,7 @@
     "parts" : {
       "blade" : {
         "properties" : {
-          "zLevel" : 0,
+          "zLevel" : 1,
           "centered" : true,
           "fullbright" : true,
           "offset" : [0, 1.875],
@@ -111,9 +111,9 @@
           }
         }
       },
-	        "handle" : {
+	  "handle" : {
         "properties" : {
-          "zLevel" : 0,
+          "zLevel" : 2,
           "centered" : true,
           "fullbright" : false,
           "offset" : [0, 1.875],
@@ -123,10 +123,10 @@
         },
 
         "partStates" : {
-          "handle" : {
+          "blade" : {
             "inactive" : {
               "properties" : {
-                "image" : ""
+                "image" : "<partImage>:idle?<directives>?<bladeDirectives>"
               }
             },
             "extend" : {
@@ -136,7 +136,7 @@
             },
             "active" : {
               "properties" : {
-                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+                "image" : "<partImage>:active?<directives>?<bladeDirectives>"
               }
             },
             "retract" : {
@@ -147,19 +147,9 @@
           }
         }
       },
-      "handle" : {
-        "properties" : {
-          "zLevel" : 1,
-          "centered" : true,
-          "image" : "<partImage><paletteSwaps>?<directives>",
-          "offset" : [0, 1.875],
-          "transformationGroups" : ["weapon"],
-          "rotationCenter" : [0, 0]
-        }
-      },
       "handleFullbright" : {
         "properties" : {
-          "zLevel" : 2,
+          "zLevel" : 3,
           "centered" : true,
           "fullbright" : true,
           "image" : "<partImage><paletteSwaps>?<directives>",

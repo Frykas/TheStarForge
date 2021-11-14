@@ -49,7 +49,7 @@
       "spaceScan" : 0.1,
 
       "frames" : 60,
-      "animationCycle" : 7.3,
+      "animationCycle" : 6.0,
       "anchors" : [ "bottom" ]
     }
 	],

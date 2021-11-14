@@ -49,9 +49,9 @@
   "elementalType": "electric",
   "primaryAbility": {
     "scripts": [
-      "/items/active/weapons/ranged/gunfire.lua"
+      "/items/active/weapons/ranged/starforge-gunfire.lua"
     ],
-    "class": "GunFire",
+    "class": "StarforgeGunFire",
     "fireTime": 0.1,
     "baseDps": 12,
     "energyUsage": 25,

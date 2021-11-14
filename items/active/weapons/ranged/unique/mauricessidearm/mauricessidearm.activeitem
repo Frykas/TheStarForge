@@ -1,34 +1,35 @@
 {
-  "itemName": "starforge-unboundburstpistol",
+  "itemName": "starforge-mauricessidearm",
   "price": 1000,
   "maxStack": 1,
-  "rarity": "Rare",
-  "description": "A burst pistol, often used by Unbound officers.",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Hornet\" BP",
-  "tooltipKind": "starforge-unboundgun",
-  "category": "Burst Pistol",
-  "twoHanded": false,
-  "level": 5,
+  "rarity": "Essential",
+  "description": "Maurice's trusty sidearm. He appears to have \"improved\" it's homing efficiency.",
+  "shortdescription": "^#686F5D;Maruice's Sidearm^reset;",
+  "tooltipKind": "base",
+  "category": "Pistol",
+  "twoHanded": true,
+  "level": 8,
   "itemTags": [
     "weapon",
     "ranged",
-    "pistol"
+    "pistol",
+    "chad"
   ],
-  "inventoryIcon": "unboundburstpistolicon.png",
-  "animation": "unboundburstpistol.animation",
+  "inventoryIcon": "mauricessidearmicon.png",
+  "animation": "mauricessidearm.animation",
 
   "animationParts": {
     "butt": "",
-    "middle": "unboundburstpistol.png",
+    "middle": "mauricessidearm.png",
     "barrel": "",
-	"middleFullbright": "unboundburstpistolfullbright.png",
+	"middleFullbright": "mauricessidearmfullbright.png",
     "muzzleFlash": "muzzleflash.png"
   },
   "animationCustom": {
       "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-0.250, 0.1, -0.250, 0.1],
+		"offsetRegion" : [-1.875, 0.1, -1.875, 0.1],
         "particles" : [
           { "particle" : "starforge-unboundrifle" }
         ]
@@ -36,52 +37,50 @@
     },
     "sounds": {
       "fire": [
-        "/sfx/gun/pistol1.ogg"
+        "/sfx/gun/pistol3.ogg"
       ]
     }
   },
   
   "baseOffset": 
-  [0.250,0.125],
+  [0.500,0.125],
   
   "muzzleOffset": 
-  [1.125,0.375],
+  [1.125,0.25],
   
   "scripts": [
     "/items/active/weapons/ranged/gun.lua"
   ],
-  "elementalType": "fire",
+  "elementalType": "ice",
   "primaryAbility": {
     "scripts": [
       "/items/active/weapons/ranged/starforge-gunfire.lua"
     ],
     "class": "StarforgeGunFire",
-    "fireTime": 0.4,
-    "baseDps": 9,
-    "energyUsage": 17,
-    "inaccuracy": 0.001,
-    "projectileCount" : 1,
-    "burstTime" : 0.08,
-    "burstCount" : 3,
-    "fireType" : "burst",
-    "projectileType": "unboundfirebullet",
+    "fireTime": 0.5,
+    "baseDps": 11,
+    "energyUsage": 20,
+    "inaccuracy": 0.03,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "unboundmauricebullet",
     "projectileParameters": {
-      "knockback": 3
+      "knockback": 4
     },
-          "stances" : {
+    "stances" : {
       "idle" : {
         "armRotation" : 0,
         "weaponRotation" : 0,
-        "twoHanded" : false,
+        "twoHanded" : true,
 
         "allowRotate" : true,
         "allowFlip" : true
       },
       "fire" : {
-        "duration" : 0,
+        "duration" : 0.05,
         "armRotation" : 5,
         "weaponRotation" : 5,
-        "twoHanded" : false,
+        "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : true
@@ -90,7 +89,7 @@
         "duration" : 0.15,
         "armRotation" : 5,
         "weaponRotation" : 5,
-        "twoHanded" : false,
+        "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : true

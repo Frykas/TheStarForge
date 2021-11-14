@@ -38,11 +38,9 @@
   "primaryAbilityType" : "flamethrower",
   "primaryAbility" : {
     "baseDps" : 10,
-    "energyUsage" : 30
+    "energyUsage" : 30,
+	"projectileType" : "poisonthrower"
   },
-
-  "altAbilityType" : "fuelairtrail",
-  "altAbility" : {},
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }
