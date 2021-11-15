@@ -212,6 +212,6 @@
   "sounds" : {
     "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
     "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
-    "fire" : [ "/sfx/gun/starforge_heavysniper.ogg" ]
+    "fire" : [ "/sfx/gun/starforge-heavysniper.ogg" ]
   }
 }
