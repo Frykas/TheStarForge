@@ -1,0 +1,27 @@
+{
+  "projectileName" : "starforge-unboundtankwave",
+  "image" : "unboundtankwave.png",
+  "animationCycle" : 0.2,
+  "timeToLive" : 0.6,
+  "frameNumber" : 3,
+  "fullbright" : true,
+
+  "physics" : "illusion",
+  "emitters" : [ ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "starforge-unboundtankpulsetransition",
+      "angleAdjust" : 90
+    }
+  ],
+  "damagePoly" : [ [28, -11], [24, 2], [2, 0], [-12, -11] ],
+  "damageKind" : "fireplasma",
+
+  "flippable" : true,
+  "piercing" : true,
+  "speed" : 25,
+
+  "scripts" : [ "/projectiles/tracksourcestatus.lua" ],
+  "scriptDelta" : 1
+}

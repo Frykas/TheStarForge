@@ -1,0 +1,13 @@
+{
+  "name" : "unboundTankStop",
+  "label" : "OH FUCK OH SHIT OH FUCK",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/unboundtankboss/skills/unboundTankStop.lua" ],
+
+    "unboundTankStop" : {
+      "skillDuration" : 2.25
+	}
+  }
+}

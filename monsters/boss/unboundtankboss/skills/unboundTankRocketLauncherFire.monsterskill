@@ -21,7 +21,7 @@
 		"friction" : 4
 	  },
 	  
-      "projectileType" : "starforge-unboundfirerocket",
+      "projectileType" : "starforge-unboundtankrocket",
       "projectileParameters" : {
         "power" : 10,
         "speed" : 70

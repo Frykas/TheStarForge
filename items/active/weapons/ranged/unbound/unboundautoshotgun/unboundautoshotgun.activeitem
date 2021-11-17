@@ -25,19 +25,29 @@
 	"muzzleFlash": "muzzleflash.png"
   },
   "animationCustom": {
-      "particleEmitters" : {
+    "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],
 		"offsetRegion" : [-2.1, 0.1, -2.1, 0.1],
         "particles" : [
           { "particle" : "starforge-unboundfireshell" }
         ]
+      },
+      "ammoIndicator" : {
+        "active" : false,
+        "emissionRate" : 8,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "daggerblue"},
+          { "particle" : "daggerblue"},
+          { "particle" : "daggerblue"}
+        ]
       }
     },
     "sounds": {
-      "fire": [
-        "/sfx/gun/shotgun2.ogg"
-      ]
+      "fire": [ "/sfx/gun/shotgun2.ogg" ],
+      "loadAmmo" : [ "/sfx/gun/reload/shotgun_reload_clip2.ogg" ]
     }
   },
   
@@ -52,10 +62,10 @@
       "/items/active/weapons/ranged/starforge-gunfire.lua"
     ],
     "class": "StarforgeGunFire",
-    "fireTime": 0.30,
+    "fireTime": 0.25,
     "baseDps": 11,
     "energyUsage": 25,
-    "inaccuracy": 0.07,
+    "inaccuracy": 0.0775,
     "projectileCount": 8,
     "fireType": "auto",
     "projectileType": "unboundfirebullet",
@@ -104,5 +114,48 @@
       }
     }
   },
+  
+  "altAbility" : {
+    "name" : "Change Firemode",
+    "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadalternateammo.lua"],
+    "class" : "StarForgeLoadAlternateAmmo",
+
+	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+	
+	//The new stats which will overwrite the primary ability
+	"newAbility" : {
+	  "projectileParameters" : {
+		"knockback": 15
+	  },
+	  
+	  "projectileCount" : 6,
+	  
+	  "fireType" : "auto",
+	
+      "baseDps" : 10.0,	
+      "fireTime" : 0.4,
+      "energyUsage" : 35,
+	  "inaccuracy": 0.0275
+	},
+
+    "stances" : {
+      "load" : {
+        "duration" : 0.2,
+        "aimAngle" : 0,
+        "weaponAngularVelocity" : -150,
+        "armAngularVelocity" : 100,
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

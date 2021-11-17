@@ -24,7 +24,13 @@
 	  
       "projectileType" : "starforge-unboundthermiteshell",
       "projectileParameters" : {
-        "power" : 25
+        "power" : 20,
+	    "actionOnReap": [
+		  {
+			"file": "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config",
+			"action": "config"
+		  }
+		]
       }
     }
   },

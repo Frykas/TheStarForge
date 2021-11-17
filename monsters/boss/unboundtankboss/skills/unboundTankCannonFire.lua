@@ -4,16 +4,13 @@ function unboundTankCannonFire.enter()
   if not hasTarget() then return nil end
 	
   rangedAttack.setConfig(config.getParameter("unboundTankCannonFire.projectileType"), config.getParameter("unboundTankCannonFire.projectileParameters"))
-  
-  self.targetingTime = config.getParameter("unboundTankCannonFire.targetingTime")
-  self.fireDelay = config.getParameter("unboundTankCannonFire.fireDelay")
-  self.rotationSpeed = 0
-  
-  self.rotatedMuzzle = {0, 0}
-  self.newMuzzleOffset = {0, 0}
-  self.toTarget = vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(self.newMuzzleOffset)))
 
   return {
+    targetingTime = config.getParameter("unboundTankCannonFire.targetingTime"),
+    rotationSpeed = 0,
+    rotatedMuzzle = {0, 0},
+    newMuzzleOffset = {0, 0},
+    toTarget = vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition({0, 0}))),
     basePosition = self.spawnPosition,
     targetingTime = config.getParameter("unboundTankCannonFire.targetingTime"),
     fireDelay = config.getParameter("unboundTankCannonFire.fireDelay"),
@@ -34,25 +31,25 @@ function unboundTankCannonFire.update(dt, stateData)
   if not hasTarget() then return true end
   
   if stateData.shots > 0 then
-    self.targetingTime = math.max(0, self.targetingTime - dt)
-	if self.targetingTime > 0 then
-	  self.targetAngle = vec2.angle(vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(stateData.barrelOffset))))
-	  if self.targetAngle > 0.6 and self.targetAngle < 5.8 then
-		if self.targetAngle > 3.8 then
-		  self.targetAngle = 5.8
+    stateData.targetingTime = math.max(0, stateData.targetingTime - dt)
+	if stateData.targetingTime > 0 then
+	  stateData.targetAngle = vec2.angle(vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(stateData.barrelOffset))))
+	  if stateData.targetAngle > 0.6 and stateData.targetAngle < 5.8 then
+		if stateData.targetAngle > 3.8 then
+		  stateData.targetAngle = 5.8
 		else
-	   	  self.targetAngle = 0.6
+	   	  stateData.targetAngle = 0.6
 	    end
 	  end
-	  self.aimAngle = unboundTankCannonFire.adjustAim(self.aimAngle or 0, self.targetAngle, dt, stateData)
+	  stateData.aimAngle = unboundTankCannonFire.adjustAim(stateData.aimAngle or 0, stateData.targetAngle, dt, stateData)
 	
-	  self.rotatedMuzzle = vec2.rotate(stateData.barrelMuzzleOffset, -(self.aimAngle or 0) - math.pi)
-	  self.newMuzzleOffset = vec2.add(stateData.barrelOffset, self.rotatedMuzzle)
-	  self.toTarget = vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(stateData.barrelOffset)))
+	  stateData.rotatedMuzzle = vec2.rotate(stateData.barrelMuzzleOffset, -(stateData.aimAngle or 0) - math.pi)
+	  stateData.newMuzzleOffset = vec2.add(stateData.barrelOffset, stateData.rotatedMuzzle)
+	  stateData.toTarget = vec2.norm(world.distance(self.targetPosition, monster.toAbsolutePosition(stateData.barrelOffset)))
 	else
-      self.fireDelay = math.max(0, self.fireDelay - dt)
-	  if self.fireDelay == 0 then
-	    unboundTankCannonFire.fireCannon(stateData, self.newMuzzleOffset, self.toTarget)
+      stateData.fireDelay = math.max(0, stateData.fireDelay - dt)
+	  if stateData.fireDelay == 0 then
+	    unboundTankCannonFire.fireCannon(stateData, stateData.newMuzzleOffset, stateData.toTarget)
 	  end
 	end
   else
@@ -60,7 +57,7 @@ function unboundTankCannonFire.update(dt, stateData)
   end
 
   animator.resetTransformationGroup("barrel")
-  animator.rotateTransformationGroup("barrel", self.aimAngle, stateData.barrelRotationCenter)
+  animator.rotateTransformationGroup("barrel", stateData.aimAngle, stateData.barrelRotationCenter)
 
   return false
 end
@@ -71,9 +68,9 @@ function unboundTankCannonFire.adjustAim(currentAngle, angleTo, dt, stateData)
 
   local targetSpeed = math.max(0.1, math.min(1, math.abs(angleDiff) / 0.5)) * stateData.controlRotation.maxSpeed
   local acceleration = diffSign * stateData.controlRotation.controlForce * dt
-  self.rotationSpeed = math.max(-targetSpeed, math.min(targetSpeed, self.rotationSpeed + acceleration))
-  self.rotationSpeed = self.rotationSpeed - self.rotationSpeed * stateData.controlRotation.friction * dt
-  return currentAngle + self.rotationSpeed
+  stateData.rotationSpeed = math.max(-targetSpeed, math.min(targetSpeed, stateData.rotationSpeed + acceleration))
+  stateData.rotationSpeed = stateData.rotationSpeed - stateData.rotationSpeed * stateData.controlRotation.friction * dt
+  return currentAngle + stateData.rotationSpeed
 end
 
 function unboundTankCannonFire.fireCannon(stateData, offset, target)
@@ -83,14 +80,14 @@ function unboundTankCannonFire.fireCannon(stateData, offset, target)
   animator.setAnimationState("barrel", "fire")
   stateData.shots = stateData.shots - 1
   animator.playSound("fireCannon")
-  self.rotationSpeed = 0
+  stateData.rotationSpeed = 0
 
   if stateData.adjustAimAfterShot == true then
-    self.targetingTime = stateData.targetingTime
+    unboundTankRocketLauncherFire.targetingTime = stateData.targetingTime
   end
-  self.fireDelay = stateData.fireDelay
+  unboundTankRocketLauncherFire.fireDelay = config.getParameter("unboundTankCannonFire.fireDelay")
 end
 
-function unboundTankCannonFire.leavingState(stateData)
+function unboundTankCannonFire.leavingState(stateData)  
   rangedAttack.stopFiring()
 end

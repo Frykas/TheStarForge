@@ -1,0 +1,57 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stone" : {
+        "default" : "swordPresent",
+        "states" : {
+          "swordPresent" : {
+            "frames" : 1
+          },
+          "swordBroken" : {
+            "frames" : 1
+          },
+          "swordAbsent" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "stone" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false
+        },
+        "partStates" : {
+          "stone" : {
+            "swordPresent" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.swordPresent"
+              }
+            },
+            "swordBroken" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.swordBroken"
+              }
+            },
+            "swordAbsent" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.swordAbsent"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "sword" : {}
+  },
+
+  "sounds" : {
+    "pullSword" : [ "/sfx/projectiles/throwingboulder_impact1.ogg" ],
+    "breakSword" : [ "/sfx/blocks/footstep_rock.ogg" ]
+  }
+}

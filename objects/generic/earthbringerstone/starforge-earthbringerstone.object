@@ -1,0 +1,50 @@
+{
+  "objectName" : "starforge-earthbringerstone",
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "A strange sword, wedged into some rocks.",
+  "shortdescription" : "Sword in a stone",
+  "race" : "human",
+  
+  "health" : 5,
+
+  "apexDescription" : "A sword stuck in some stone. What might this be?",
+  "avianDescription" : "A blade of ancient times, no doubt.",
+  "floranDescription" : "Floran wondersss what it can cut...",
+  "glitchDescription" : "Intrigued. It appears to be familiar.",
+  "humanDescription" : "An ancient sword, I wonder what it might be worth...",
+  "hylotlDescription" : "A timelost sword, maybe we shoulder preserve it?",
+  "novakidDescription" : "A funky lookin' sword, it doesn't shoot enough though.",
+
+  "inventoryIcon" : "starforge-earthbringerstoneicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "starforge-earthbringerstone.png:<color>",
+      "imagePosition" : [0, 0],
+
+	  "spaces" : [
+        [0, 3], [1, 3], [2, 3],
+        [0, 2], [1, 2], [2, 2],
+        [0, 1], [1, 1], [2, 1],
+        [0, 0], [1, 0], [2, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "starforge-earthbringerstone.animation",
+  "animationParts" : {
+    "stone" : "starforge-earthbringerstone.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "scripts" : [
+    "starforge-earthbringerstone.lua"
+  ],
+  
+  "itemId" : "starforge-earthbringer",
+  "brokenItemId" : "starforge-earthbringerbroken",
+  "breakChance" : 0.65
+}

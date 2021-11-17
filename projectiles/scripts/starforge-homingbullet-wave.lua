@@ -61,7 +61,7 @@ function update(dt)
 	end
 
 	if target then
-	  if (config.getParameter("requireLineOfSight", true) and entity.entityInSight(target) or true) and world.entityCanDamage(projectile.sourceEntity(), target) and not (world.getProperty("entityinvisible" .. tostring(target)) and not config.getParameter("ignoreInvisibility", false)) then
+	  if (config.getParameter("requireLineOfSight", true) and entity.entityInSight(target) or true) and world.entityCanDamage(projectile.sourceEntity(), target) then
 		local targetPos = world.entityPosition(target)
 		local myPos = mcontroller.position()
 		local dist = world.distance(targetPos, myPos)

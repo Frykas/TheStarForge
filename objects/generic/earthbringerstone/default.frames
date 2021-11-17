@@ -1,0 +1,13 @@
+{
+  "frameGrid" : {
+    "size" : [29, 50],
+    "dimensions" : [3, 1],
+    "names" : [
+      [ "default.swordPresent", "default.swordBroken", "default.swordAbsent" ]
+    ]
+  },
+  
+  "aliases" : {
+    "default" : "default.swordPresent"
+  }
+}

@@ -34,12 +34,24 @@
 	
 	"renderLayer" : "Projectile-1",
 	
-    "skillCount" : 2,
-    "skills" : ["unboundTankCannonFire", "unboundTankRocketLauncherFire"],
+    "skillCount" : 5,
+    "skills" : ["unboundTankCannonFire", "unboundTankRocketLauncherFire", "unboundTankCharge", "unboundTankWave", "unboundTankStop"],
 
     "phases" : [
       {
-        "skills" : ["unboundTankCannonFire", "unboundTankRocketLauncherFire", "unboundTankRocketLauncherFire"]
+        "skills" : ["unboundTankCannonFire", "unboundTankRocketLauncherFire", "unboundTankRocketLauncherFire", "unboundTankStop"]
+      },
+      {
+        "enterPhase" : "unboundTankCharge",
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.65,
+        "skills" : ["unboundTankCannonFire", "unboundTankWave", "unboundTankWave", "unboundTankRocketLauncherFire", "unboundTankStop", "unboundTankRocketLauncherFire", "unboundTankWave", "unboundTankCannonFire", "unboundTankRocketLauncherFire"]
+      },
+      {
+        "enterPhase" : "unboundTankCharge",
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.25,
+        "skills" : ["unboundTankCannonFire", "unboundTankWave", "unboundTankCannonFire", "unboundTankWave", "unboundTankRocketLauncherFire", "unboundTankStop", "unboundTankWave", "unboundTankWave", "unboundTankRocketLauncherFire", "unboundTankRocketLauncherFire"]
       }
     ],
 
@@ -83,11 +95,12 @@
     "fallSensors" : [ [2, -3.5], [2, -5.5], [2, -6.5], [4, -4.5], [4, -5.5], [4, -6.5] ],
 
     "touchDamage" : {
-      "poly" : [ [-4, -3], [0, -3], [0, 0], [-4, 0] ],
-      "damage" : 20,
+      "poly" : [ [4.5, 2], [9, -1.75], [9, -4.625], [-9, -4.625], [-9, -1.75], [-4.5, 2] ],
+      "damage" : 55,
+	  "knockback" : 55,
 
       "teamType" : "enemy",
-      "damageSourceKind" : "default",
+      "damageSourceKind" : "hammer",
       "statusEffects" : [ ]
     },
 

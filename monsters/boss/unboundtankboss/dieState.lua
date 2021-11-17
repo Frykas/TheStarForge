@@ -12,18 +12,19 @@ function dieState.enterWith(params)
 end
 
 function dieState.enteringState(stateData)
-  if animator.animationState("engine") ~= "off" then triggerDeath() end
+  if animator.animationState("engine") ~= "off" and not self.dieStated then triggerDeath() end
 end
 
 function triggerDeath()
   --Make it look dead
   animator.setAnimationState("engine", "off")
-  
   animator.setAnimationState("body", "stage3")
   animator.setAnimationState("barrel", "broken")
   animator.setAnimationState("rocketLauncher", "broken")
+  animator.setParticleEmitterActive("smoking", false)
   
   animator.playSound("death")
+  self.dieStated = true
   
   --Unbossify it and stop it from taking damage
   monster.setDamageBar("None")

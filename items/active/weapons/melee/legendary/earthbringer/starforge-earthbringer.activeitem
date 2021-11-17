@@ -1,0 +1,77 @@
+{
+  "itemName" : "starforge-earthbringer",
+  "price" : 1000,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A sturdy sword, worn from its ventures into the earth.",
+  "shortdescription" : "Earthbringer",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "starforge-earthbringer.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/starforge-broadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "starforge-earthbringer.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "swoosh" : {
+          "partStates" : {
+            "swoosh" : {
+              "fire" : {
+                "properties" : {
+                  "offset" : [1, 2.5]
+                }
+              },
+              "fire2" : {
+                "properties" : {
+                  "offset" : [6, 1]
+                }
+              },
+              "fire3" : {
+                "properties" : {
+                  "offset" : [1, 2.5]
+                }
+              },
+              "fire4" : {
+                "properties" : {
+                  "offset" : [4.5, 0]
+                }
+              }
+		    }
+		  }
+	    }
+	  }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "starforge-broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 10,
+    "damageConfig" : {
+      "damageSourceKind" : "hammer"
+    }
+  },
+
+  "altAbilityType" : "physicalshockwave",
+  "altAbility" : {
+    "name" : "Quake",
+    "chargeTime" : 0.6,
+    "minChargeTime" : 0.3,
+    "maxDistance" : 11,
+    "bothDirections" : false
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

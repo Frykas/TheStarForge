@@ -1,0 +1,14 @@
+{
+  "name" : "unboundTankCharge",
+  "label" : "PRIMITIVE METHODS",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/unboundtankboss/skills/unboundTankCharge.lua" ],
+
+    "unboundTankCharge" : {
+      "skillDuration" : 1,
+      "speedMultiplier" : 2.5
+	}
+  }
+}

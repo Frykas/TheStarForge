@@ -1,0 +1,36 @@
+{
+  "projectileName" : "starforge-unboundtankwaveceiling",
+  "image" : "unboundtankwaveceiling.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 3,
+  "fullbright" : true,
+
+  "physics" : "illusion",
+  "emitters" : [ ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "starforge-unboundtankpulse",
+      "angleAdjust" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "starforge-unboundtankpulse",
+      "angleAdjust" : -75
+    },
+    {
+      "action" : "projectile",
+      "type" : "starforge-unboundtankpulse",
+      "angleAdjust" : -105
+    }
+  ],
+  "damagePoly" : [ [28, -11], [24, 2], [2, 0], [-12, -11] ],
+  "damageKind" : "fireplasma",
+
+  "flippable" : true,
+  "piercing" : true,
+  "speed" : 45,
+
+  "scripts" : [ "unboundtankwaveceiling.lua" ],
+  "scriptDelta" : 1
+}

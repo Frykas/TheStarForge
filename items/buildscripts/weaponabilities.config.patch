@@ -1,0 +1,7 @@
+[
+  {
+	"op": "add",
+	"path": "/starforge-broadswordcombo",
+	"value": "/items/active/weapons/melee/abilities/broadsword/starforge-broadswordcombo.weaponability"
+  }
+]

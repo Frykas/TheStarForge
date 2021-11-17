@@ -1,0 +1,25 @@
+{
+  "name" : "unboundTankWave",
+  "label" : "BALLISTIC CANNON",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/unboundtankboss/skills/unboundTankWave.lua" ],
+
+    "unboundTankWave" : {
+	  "preDelay" : 1,
+	  "postDelay" : 1,
+	  
+      "projectileType" : "starforge-unboundtankwave",
+      "projectileParameters" : {
+        "power" : 25
+      }
+    }
+  },
+
+  "animationParameters" : {
+    "sounds" : {
+      "fireLauncher" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+    }
+  }
+}

@@ -62,7 +62,7 @@
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime" : 0.8,
-    "baseDps" : 100,
+    "baseDps" : 0,
     "stances": {
       "idle": {
         "armRotation": -10,

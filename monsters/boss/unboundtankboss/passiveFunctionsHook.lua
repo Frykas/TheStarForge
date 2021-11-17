@@ -29,7 +29,9 @@ function update(dt, ...)
       mcontroller.setXVelocity(0)
     end
 	
-	updateTankTracks(dt)
+	if not self.stopped then
+	  updateTankTracks(dt)
+    end
   end
   
   return oldUpdate(dt, ...)
