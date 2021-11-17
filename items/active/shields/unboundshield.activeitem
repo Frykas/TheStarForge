@@ -35,7 +35,7 @@
   "minActiveTime" : 0.3,
 
   "forceWalk" : false,
-  "baseShieldHealth" : 90,
+  "baseShieldHealth" : 65,
   "cooldownTime" : 0.9,
 
   "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
