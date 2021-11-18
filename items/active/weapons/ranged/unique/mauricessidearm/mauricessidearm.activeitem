@@ -57,14 +57,15 @@
       "/items/active/weapons/ranged/starforge-gunfire.lua"
     ],
     "class": "StarforgeGunFire",
-    "fireTime": 0.5,
-    "baseDps": 11,
+    "fireTime": 0.7,
+    "baseDps": 20,
     "energyUsage": 20,
     "inaccuracy": 0.03,
     "projectileCount": 1,
     "fireType": "auto",
     "projectileType": "unboundmauricebullet",
     "projectileParameters": {
+      "bounces": 10,
       "knockback": 4
     },
     "stances" : {

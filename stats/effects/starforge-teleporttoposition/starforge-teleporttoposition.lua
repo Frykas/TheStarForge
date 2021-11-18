@@ -5,8 +5,8 @@ function init()
   animator.setParticleEmitterActive("drips", true)
   
   self.teleportProjectileConfig = config.getParameter("teleportProjectileConfig", {})
-  self.blinkOffset = config.getParameter("blinkOffset")
-  self.blinkTolerance = config.getParameter("blinkTolerance")
+  self.blinkOffset = config.getParameter("blinkOffset", {})
+  self.blinkTolerance = config.getParameter("blinkTolerance", 2)
   self.targetPosition = mcontroller.position()
   self.maxPitch = config.getParameter("maxPitch", 2) - 1
   animator.playSound("idleLoop", -1)
@@ -36,4 +36,5 @@ function onExpire()
 
   world.spawnProjectile("whipcrackphysical", lastPosition, entity.id(), {0, 0}, false, self.teleportProjectileConfig)
   status.addEphemeralEffect("blinkin")
+  animator.playSound("teleport")
 end

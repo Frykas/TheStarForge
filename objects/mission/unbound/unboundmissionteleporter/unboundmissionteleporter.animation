@@ -1,0 +1,50 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "teleporter" : {
+        "default" : "appear",
+        "states" : {
+          "appear" : {
+            "frames" : 1,
+            "cycle" : 3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 0.25,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "teleporter" : {
+        "properties" : {
+          "fullbright" : false,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "teleporter" : {
+            "appear" : {
+              "properties" : {
+                "image" : "<partImage>:appear.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "applyEffect" : ["/sfx/object/torch_on1.ogg"]
+  }
+}

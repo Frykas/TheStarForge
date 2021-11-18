@@ -22,7 +22,7 @@ function die(smash)
   end
   
   if config.getParameter("brokenObjectName") and smash then
-    world.spawnProjectile("starforge-brokenobjectdelay", object.position(), entity.id(), {object.direction(), 0}, false, {
+    world.spawnProjectile("starforge-placeobject", object.position(), entity.id(), {object.direction(), 0}, false, {
 		objectToSpawn = config.getParameter("brokenObjectName"),
 		objectDirection = object.direction(),
 		timeToLive = 0

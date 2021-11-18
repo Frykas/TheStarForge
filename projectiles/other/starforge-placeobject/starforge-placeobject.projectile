@@ -1,0 +1,16 @@
+{
+  "projectileName" : "starforge-placeobject",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "timeToLive" : 0.5,
+  "power" : 0,
+  "speed" : 0,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "default",
+
+  "scripts" : [
+    "starforge-placeobject.lua"
+  ],
+  "scriptDelta" : 0
+}

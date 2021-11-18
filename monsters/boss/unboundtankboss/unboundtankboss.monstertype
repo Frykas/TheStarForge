@@ -12,6 +12,8 @@
   "baseParameters" : {
     "monsterClass" : "boss",
 	
+	"movementSpeed" : 15,
+	
 	//Track Animation
 	"trackAnimationSpeed" : 0.6,
 	"trackAnimationFrames" : 4,
@@ -29,6 +31,13 @@
 	  
       "/monsters/boss/unboundtankboss/passiveFunctionsHook.lua"
     ],
+	
+	//Death teleporter
+	"deathObjectName" : "starforge-unboundmissionteleporter",
+	"deathObjectParameters" : {
+	  "targetId" : "starforge-bossdefeatteleporter",
+	  "uniqueId" : "starforge-bossdefeatteleporterstart"
+    },
 
 	"dropPools" : ["unboundTankBossTreasure"],
 	

@@ -1,0 +1,57 @@
+{
+  "objectName" : "starforge-unboundmissionteleporter",
+  "colonyTags" : ["storage", "apex"],
+  "rarity" : "Legendary",
+  "tooltipKind" : "base",
+  "race" : "apex",
+
+  "category" : "storage",
+  "price" : 0,
+  "printable" : false,
+  "description" : "",
+  "shortdescription" : "Un",
+
+  "apexDescription" : "",
+  "avianDescription" : "",
+  "floranDescription" : "",
+  "glitchDescription" : "",
+  "humanDescription" : "",
+  "hylotlDescription" : "",
+  "novakidDescription" : "",
+
+  "inventoryIcon" : "unboundmissionteleportericon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "unboundmissionteleporter.png:default", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "unboundmissionteleporter.png:default", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "unboundmissionteleporter.animation",
+  "animationParts" : {
+    "teleporter" : "unboundmissionteleporter.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : ["/objects/scripts/starforge-applystatusoninteract.lua"],
+  "scriptDelta" : 0,
+
+  "statusEffectsOnInteract" : ["starforge-teleporttoposition"],
+  "statusDuration" : [0]
+}

@@ -16,8 +16,8 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":69,
- "tiledversion":"1.4.3",
+ "tilecount":70,
+ "tiledversion":"1.3.2",
  "tileheight":126,
  "tileproperties":
     {
@@ -679,6 +679,16 @@
          "imagePositionX":"-24",
          "imagePositionY":"0",
          "object":"starforge-unboundopencrate3",
+         "tilesetDirection":"right"
+        },
+     "69":
+        {
+         "\/\/description":"TODO",
+         "\/\/name":"starforge-unboundmissionteleporter",
+         "\/\/shortdescription":"Unbound Mission Teleporter",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundmissionteleporter",
          "tilesetDirection":"right"
         },
      "7":
@@ -1374,6 +1384,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "69":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "7":
         {
          "\/\/description":"string",
@@ -1802,6 +1822,12 @@
          "image":"unboundopencrate3.png",
          "imageheight":30,
          "imagewidth":48
+        },
+     "69":
+        {
+         "image":"..\/..\/objects\/mission\/unbound\/unboundmissionteleporter\/unboundmissionteleportertiled.png",
+         "imageheight":32,
+         "imagewidth":24
         },
      "7":
         {

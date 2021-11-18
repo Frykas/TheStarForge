@@ -29,6 +29,7 @@
   },
 
   "sounds" : {
-    "idleLoop" : [ "/sfx/gun/aegisaltpistol_loop.ogg" ]
+    "idleLoop" : [ "/sfx/tech/tech_hoverloop.ogg" ],
+    "teleport" : [ "/sfx/tech/tech_blink1.ogg" ]
   }
 }

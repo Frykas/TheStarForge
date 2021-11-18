@@ -39,6 +39,16 @@ function triggerDeath()
   --Spawn some explosions
   explode(15)
 
+  --Spawn exit teleporter
+  local groundPositionAndNormal = world.lineTileCollisionPoint(vec2.add(mcontroller.position(), {15, 0}), vec2.add(mcontroller.position(), {15, -15})) or {mcontroller.position()}
+  world.spawnProjectile("starforge-placeobject", groundPositionAndNormal[1], entity.id(), {mcontroller.facingDirection(), 0}, false, {
+	  objectToSpawn = config.getParameter("deathObjectName"),
+	  objectDirection = mcontroller.facingDirection(),
+	  objectParameters = config.getParameter("deathObjectParameters", {}),
+	  timeToLive = 0
+	}
+  )
+
   --And spawn an Maurice
   world.spawnNpc(vec2.add(mcontroller.position(), {0, 2}), "apex", "starforge-unboundtankcaptain", monster.level())
 end
