@@ -3,7 +3,7 @@
   "shortdescription" : "The Centurion",
 
   "categories" : [ "unboundtankboss" ],
-  "parts" : [ "barrel", "body", "rocketlauncher", "tracks"],
+  "parts" : [ "barrel", "body", "rocketlauncher", "tracks", "charge"],
 
   "animation" : "unboundtankboss.animation",
   "reversed" : true,

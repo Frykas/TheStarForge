@@ -31,7 +31,7 @@
 
   "animationParameters" : {
     "sounds" : {
-      "fireCannon" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+      "fireLauncher" : [ "/sfx/gun/rocket3.ogg" ]
     }
   }
 }

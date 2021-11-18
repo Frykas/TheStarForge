@@ -14,6 +14,7 @@ function unboundTankCharge.enteringState(stateData)
   monster.setDamageOnTouch(true)
   monster.setActiveSkillName("unboundTankCharge")
   animator.setParticleEmitterActive("smoking", true)
+  animator.setAnimationState("charge", "charging")
 end
 
 function unboundTankCharge.update(dt, stateData)
@@ -27,6 +28,7 @@ function unboundTankCharge.update(dt, stateData)
     status.removeEphemeralEffect("invulnerable")
     monster.setDamageOnTouch(false)
     animator.setParticleEmitterActive("smoking", false)
+    animator.setAnimationState("charge", "idle")
     return true
   end
   return false

@@ -15,7 +15,7 @@
           },
           "on" : {
             "properties" : {
-              "persistentSound" : "/sfx/objects/shipengine.ogg",
+              "persistentSound" : "/sfx/tech/hoverbike_drive_loop.ogg",
               "persistentSoundRangeMultiplier" : 2
             }
           }
@@ -94,6 +94,21 @@
           }
         }
       },
+	  //CHARGE EFFECT
+      "charge" : {
+        "priority" : 1,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "charging" : {
+            "frames" : 4,
+            "cycle" : 0.25,
+            "mode" : "loop"
+          }
+        }
+      },
 	  //TRACKS
       "tracks" : {
         "priority" : 0,
@@ -105,6 +120,29 @@
     },
 
     "parts" : {
+      "charge" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 55,
+          "offset" : [0.0, 0],
+          "fullbright" : false
+        },
+
+        "partStates" : {
+          "charge" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+			},
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
       "body" : {
         "properties" : {
           "centered" : true,

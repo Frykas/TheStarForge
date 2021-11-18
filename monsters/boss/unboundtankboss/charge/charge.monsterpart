@@ -1,0 +1,9 @@
+{
+  "name" : "unboundtankbosscharge",
+  "category" : "unboundtankboss",
+  "type" : "charge",
+
+  "frames" : {
+    "charge" : "charge.png"
+  }
+}

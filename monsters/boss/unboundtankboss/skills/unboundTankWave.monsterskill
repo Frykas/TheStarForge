@@ -19,7 +19,7 @@
 
   "animationParameters" : {
     "sounds" : {
-      "fireLauncher" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+      "fireWave" : [ "/sfx/gun/aegisaltpistol_start.ogg" ]
     }
   }
 }

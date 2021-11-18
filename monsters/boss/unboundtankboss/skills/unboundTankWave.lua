@@ -33,6 +33,7 @@ function unboundTankWave.update(dt, stateData)
 end
 
 function unboundTankWave.spawnWave(stateData)
+  animator.playSound("fireWave")
   world.spawnProjectile(stateData.projectileType, vec2.add(mcontroller.position(), {0, -4}), entity.id(), {1, 0}, false, stateData.projectileParameters)
 end
 

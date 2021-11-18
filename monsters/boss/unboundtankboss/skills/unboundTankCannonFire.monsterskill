@@ -37,7 +37,7 @@
 
   "animationParameters" : {
     "sounds" : {
-      "fireLauncher" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+      "fireCannon" : [ "/sfx/monsters/boss/tankboss/starforge-tankcannonfire.ogg" ]
     }
   }
 }
