@@ -29,7 +29,7 @@
   "teleportRange" : 1000,
   "teleportPiercing" : false,
   "teleportDelay" : 0.2,
-  "teleportGenerosity" : 6,		//How far away from its destination it will teleport to, 0 would be directly on top, 3 would be 3 blocks away
+  "teleportGenerosity" : 5,		//How far away from its destination it will teleport to, 0 would be directly on top, 3 would be 3 blocks away
   "teleportOutActions" : [
 	{
 	  "action" : "sound",

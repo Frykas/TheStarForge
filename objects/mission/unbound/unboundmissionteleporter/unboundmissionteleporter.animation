@@ -5,8 +5,8 @@
         "default" : "appear",
         "states" : {
           "appear" : {
-            "frames" : 1,
-            "cycle" : 3,
+            "frames" : 6,
+            "cycle" : 1,
             "mode" : "transition",
             "transition" : "idle"
           },
