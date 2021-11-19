@@ -112,7 +112,7 @@
       "converse": {
         "default": {
           "default": [
-            "Greetings mortal, I am ^red;Armok^reset;, Overlord and Loremaster.",
+            "Greetings mortal, I am ^black;Armok^reset;, Overlord and Loremaster.",
             "Despite having travelled to countless worlds, I feel the most at home on planets like these.",
             "Before the Starforge ruins were discovered here I had long felt an unusual fascination with this particular planet.",
             "The Thalasso crew discovered me on this planet when they first surveyed it, while initially concerned by my appearance they have come to respect me.",
@@ -165,8 +165,10 @@
 "I have heard rumors  of a prototype anti-Unbound powersuit codenamed^#80F4FF;WARMONGER^reset;.",
 "I wonder... What would happen if I ^#FFB2B2;exalted^reset; myself?",
 "Have you met Ganransu yet? He is a fine and hardworking individual despite his sleep deprivation",
-"I hope you have not had the misfortune of receiving ^red;a certain ring^reset;...",
-"I am... neutral to Testament."
+"I hope you have not had the misfortune of receiving ^black;a certain ring^reset;...",
+"I am... neutral to Testament.",
+"Whatever you do, do not try drinking ^black;Essentia Obscura^reset.",
+"I have came across statues of myself in the bowls of certain planets, the fools..."
           ]
         }
       }
