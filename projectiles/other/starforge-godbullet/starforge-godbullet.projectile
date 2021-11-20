@@ -8,18 +8,17 @@
   "frameNumber" : 1,
   "knockback": 0,
   "speed" : 300,
+  "power" : 1000000,
   "supportsProcessing" : true,
-  "damageTeam" : { "type" : "indiscriminate" },
-  "damageKind" : "hidden",
+  "damageKind" : "plasma",
   "damageType" : "ignoresDef",
+  "damageTeam" : { "type" : "indiscriminate" },
   "statusEffects": ["starforge-terminate"],
-  "supportsProcessing" : true,
   "actionOnReap" : [
     {
       "action" : "config",
       "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundfirebulletexplosion.config"
     }
   ],
-  "lightColor" : [255, 162, 0],
   "fullbright" : true
 }
