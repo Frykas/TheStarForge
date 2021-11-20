@@ -79,8 +79,6 @@ end
 
 function reset()
   self.player = nil
-  self.active = config.getParameter("startActive", false)
-  self.delayTime = config.getParameter("delayTime", 0)
   self.waveTime = config.getParameter("waveTime")
   self.waves = config.getParameter("waves")
   self.timer = 0
@@ -89,6 +87,7 @@ function reset()
 	
   if self.progressBarId then
     world.sendEntityMessage(self.progressBarId, "starforge-reset")
+	self.progressBarId = nil
   end
   
   --Cull existing monsters
@@ -96,9 +95,7 @@ function reset()
     includedTypes = self.validTypes
   })
   for _, enemy in pairs(remainingMonsters) do
-	world.sendEntityMessage(enemy, "applyStatusEffect", "monsterdespawn")
-	world.sendEntityMessage(enemy, "despawn")
-	world.sendEntityMessage(enemy, "applyStatusEffect", "beamoutanddie")
+	world.sendEntityMessage(enemy, "applyStatusEffect", "starforge-terminate")
   end
   
   for _, message in ipairs(self.resetMessages) do

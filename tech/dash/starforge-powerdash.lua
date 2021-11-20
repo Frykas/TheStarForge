@@ -26,6 +26,8 @@ function init()
   self.cooldownTimer = 0
   self.rechargeTimer = 0
   self.rechargeEffectTimer = 0
+  animator.setAnimationState("dashing", "off")
+  animator.setParticleEmitterActive("dashParticles", false)
   
   self.doubleTap = DoubleTap:new({"left", "right"}, config.getParameter("maximumDoubleTapTime"), function(dashKey)
     -- Special key pressed and internal cooldown off
@@ -166,4 +168,6 @@ function uninit()
   status.removeEphemeralEffect("invulnerable")
   status.clearPersistentEffects("movementAbility")
   tech.setParentDirectives()
+  animator.setAnimationState("dashing", "off")
+  animator.setParticleEmitterActive("dashParticles", false)
 end

@@ -1,0 +1,25 @@
+{
+  "projectileName" : "starforge-godbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "starforge-godbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "knockback": 0,
+  "speed" : 300,
+  "supportsProcessing" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageKind" : "hidden",
+  "damageType" : "ignoresDef",
+  "statusEffects": ["starforge-terminate"],
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundfirebulletexplosion.config"
+    }
+  ],
+  "lightColor" : [255, 162, 0],
+  "fullbright" : true
+}

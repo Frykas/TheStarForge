@@ -1,0 +1,104 @@
+{
+  "itemName": "starforge-truemauricesidearm",
+  "price": 69420,
+  "maxStack": 69,
+  "rarity": "Essential",
+  "description": "Maurice's trusty sidearm.",
+  "shortdescription": "^#686F5D;Maruice's Sidearm (True)^reset;",
+  "tooltipKind": "base",
+  "category": "Pistol",
+  "twoHanded": true,
+  "level": 69,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "pistol",
+    "chad",
+    "sigmagrindset",
+    "god",
+    "godhood",
+    "69",
+    "420"
+  ],
+  "inventoryIcon": "truemauricessidearmicon.png",
+  "animation": "truemauricessidearm.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "truemauricessidearm.png",
+    "barrel": "",
+	"middleFullbright": "truemauricessidearmfullbright.png",
+    "muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-1.875, 0.1, -1.875, 0.1],
+        "particles" : [
+          { "particle" : "starforge-unboundrifle" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/pistol3.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": 
+  [0.500,0.125],
+  
+  "muzzleOffset": 
+  [1.125,0.25],
+  
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "fire",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/starforge-gunfire.lua"
+    ],
+    "class": "StarforgeGunFire",
+    "fireTime": 0.35,
+    "baseDps": 0,
+    "energyUsage": 0,
+    "inaccuracy": 0,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "starforge-godbullet",
+    "projectileParameters": {},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.05,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+   
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
+}

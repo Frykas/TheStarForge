@@ -1,7 +1,7 @@
 {
   "type" : "starforge-liquideffects",
 
-  "scripts" : ["/stagehands/utility/projectileliquid/starforge-projectileliquid.lua"],
+  "scripts" : ["/stagehands/utility/liquideffects/starforge-liquideffects.lua"],
   //"scriptDelta" : 10,
   
   "broadcastArea" : [-0.5, -0.5, 0.5, 0.5],

@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-terminate",
+  "effectConfig" : {},
+  "defaultDuration" : 5.0,
+
+  "scripts" : [
+    "starforge-terminate.lua"
+  ]
+}
