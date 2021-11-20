@@ -1,0 +1,25 @@
+{
+  "type" : "starforge-liquideffects",
+
+  "scripts" : ["/stagehands/utility/projectileliquid/starforge-projectileliquid.lua"],
+  //"scriptDelta" : 10,
+  
+  "broadcastArea" : [-0.5, -0.5, 0.5, 0.5],
+  
+  "minimumLiquidLevel" : 0.75,
+  "onlyConsiderSurface" : false,
+  "ignoreLiquidType" : true,
+  
+  //Liquid liquidID (int)
+  "liquidWhitelist" : [ 
+    //Vanilla waters
+	1, 6, 12,
+	//Other mods waters
+	30, 58, 60, 73, 114, 171, 172, 173, 174, 175, 176, 177, 211, 212, 255
+  ],
+	
+  "projectileType" : "starforge-electrified",
+  "projectileParameters" : {},
+  "projectileCount" : 4,
+  "projectileTime" : [0.0, 0.045]
+}

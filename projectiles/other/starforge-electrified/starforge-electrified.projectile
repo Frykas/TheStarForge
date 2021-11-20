@@ -1,0 +1,23 @@
+{
+  "projectileName" : "starforge-electrified",
+  "image" : "starforge-electrified.png",
+  "physics" : "gas",
+  "frameNumber" : 3,
+  "animationCycle" : 0.15,
+  "power" : 2,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "bounces" : -1,
+  "knockback" : 25,
+  "speed" : 0,
+  "timeToLive" : 0.25,
+  "lightColor" : [100, 100, 255],
+  "fullbright" : true,
+  "actionOnReap" : [],
+  "knockbackDirectional" : true,
+  "orientationLocked" : true,
+  "damagePoly" : [ [2, 4],  [2, -4],  [-2, -4],  [-2, 4] ],
+  "piercing" : true,
+  "renderLayer" : "ForegroundTile+1",
+  "damageKind" : "electricbarrier",
+  "emitters" : [ "barrierelectric" ]
+}
