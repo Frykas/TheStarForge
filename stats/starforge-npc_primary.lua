@@ -12,6 +12,11 @@ function applyDamageRequest(damageRequest)
     return {}
   end
 
+  -- don't get hit by knockback attacks if immune to knockback
+  if damageRequest.damageType == "Knockback" and status.stat("grit") >= 1 then
+    return {}
+  end
+
   local damage = 0
   if damageRequest.damageType == "Damage" or damageRequest.damageType == "Knockback" then
     damage = damage + root.evalFunction2("protection", damageRequest.damage, status.stat("protection"))
@@ -33,13 +38,25 @@ function applyDamageRequest(damageRequest)
     damageRequest.damageSourceKind = "shield"
   end
 
+  local hitType = damageRequest.hitType
   local elementalStat = root.elementalResistance(damageRequest.damageSourceKind)
   local resistance = status.stat(elementalStat)
   damage = damage - (resistance * damage)
+  if resistance ~= 0 and damage > 0 then
+    hitType = resistance > 0 and "weakhit" or "stronghit"
+  end
+  
   local healthLost = math.min(damage, status.resource("health"))
   if healthLost > 0 and damageRequest.damageType ~= "Knockback" then
     status.modifyResource("health", -healthLost)
     self.damageFlashTime = 0.07
+    if hitType == "stronghit" then
+      self.damageFlashType = "strong"
+    elseif hitType == "weakhit" then
+      self.damageFlashType = "weak"
+    else
+      self.damageFlashType = "default"
+    end
     if status.statusProperty("hitInvulnerability") then
       local damageHealthPercentage = healthLost / status.resourceMax("health")
       if damageHealthPercentage > status.statusProperty("hitInvulnerabilityThreshold") then

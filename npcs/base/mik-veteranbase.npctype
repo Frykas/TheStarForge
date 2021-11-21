@@ -9,7 +9,7 @@
   "disableWornArmor" : true,
 
   "scripts" : [
-    "/npcs/scripts/neb-verterannpcmain.lua"
+    "/npcs/scripts/starforge-npc_primary.lua"
   ],
   "initialScriptDelta" : 1,
 
