@@ -192,7 +192,7 @@
     },
 	
     "primaryScriptSources" : [
-      "/stats/neb-verterannpcmain.lua",
+      "/stats/starforge-npc_primary.lua",
       "/scripts/vec2.lua"
     ],
 	

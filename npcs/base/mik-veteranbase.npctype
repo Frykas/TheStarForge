@@ -9,7 +9,7 @@
   "disableWornArmor" : true,
 
   "scripts" : [
-    "/npcs/scripts/starforge-npc_primary.lua"
+    "/npcs/scripts/mik-veterannpcmain.lua"
   ],
   "initialScriptDelta" : 1,
 
