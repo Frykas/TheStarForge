@@ -19,7 +19,7 @@ function update(dt)
 	airJumpModifier = self.movementMultiplier
   })
   
-  self.tickTimer = self.tickTimer - dt  
+  self.tickTimer = self.tickTimer - dt
   if self.tickTimer <= 0 then
     --Calculate tick damage
     local tickDamage = math.min(math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1, 20)

@@ -9,7 +9,7 @@
   "disableWornArmor" : true,
 
   "scripts" : [
-    "/npcs/scripts/neb-verterannpcmain.lua"
+    "/npcs/scripts/mik-veterannpcmain.lua"
   ],
   "initialScriptDelta" : 1,
 

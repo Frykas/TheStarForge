@@ -9,6 +9,9 @@ function init()
 	self.targetProgress = progress
 	self.completed = completed
   end)
+  message.setHandler("starforge-reset", function(_, _)
+	vehicle.destroy()
+  end)
 end
 
 function update(dt)  
