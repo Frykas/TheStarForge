@@ -1,7 +1,7 @@
 {
   "id" : "thalassomission1",
   "mainQuest" : true,
-  "prerequisites" : [ "thalassointromission3" ],
+  "prerequisites" : [ "thalassointromission4" ],
   "title" : "^#b4f5c3;Rise of the Unbound ",
   "text" : "A new faction is rising. They call themselves the ^#686F5D;Unbound^reset;. We've dealt with them before, but now something's strange. They're growing extremely fast, and we need to understand why. I have the coordinates of a facility I want you to check out.",
   "completionText" : "This is terrible, it seems that they were using this facility to mass manufacture weapons and test vehicle prototypes. Luckily, you were here to slow them down. But now that the Unbound are aware of your interference, what will happen?",

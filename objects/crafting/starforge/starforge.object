@@ -31,6 +31,7 @@
   "hylotlDescription" : "Such a wonderful craftsmanship, simple and yet so... perfect.",
   
   "turnInQuests" : ["thalassointromission3"],
+  "offeredQuests" : ["thalassointromission4"],
   
   "lightColor" : [102, 102, 204],
 
@@ -55,5 +56,8 @@
       "animationCycle" : 1.5,
       "anchors" : [ "bottom" ]
     }
-   ]
+   ],
+   
+   "questIndicatorPosition" : [-1, -4.5]
+   
    }
