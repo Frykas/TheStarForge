@@ -18,7 +18,7 @@
     {
       "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 2.25
+      "baseMultiplier" : 2.65
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
@@ -28,12 +28,12 @@
     {
       "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 65
+      "amount" : 61
     },
     {
       "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 30
+      "amount" : 34
     }
   ],
 

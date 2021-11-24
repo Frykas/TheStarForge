@@ -22,26 +22,26 @@
   },
 
   "level" : 8,
-  "leveledStatusEffects" : [
+  "statusEffects" : [
     {
-      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 3.60
     },
     {
       "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.4
+      "amount" : 42
     },
     {
-      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 14.5714
+      "amount" : 137
     },
     {
-      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 4.5
+      "amount" : 73
     }
   ],
   "itemTags" : [ "tier8armour" ],

@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":71,
+ "tilecount":72,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -710,6 +710,16 @@
          "imagePositionY":"0",
          "object":"starforge-unboundcheckpoint",
          "tilesetDirection":"right"
+        },
+     "71":
+        {
+         "\/\/description":"A hardlight cover used by Vanguard units to cover themselves.",
+         "\/\/name":"starforge-unboundvanguardcover",
+         "\/\/shortdescription":"Unbound Hardlight Cover",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundvanguardcover",
+         "tilesetDirection":"left"
         },
      "8":
         {
@@ -1424,6 +1434,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "71":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "8":
         {
          "\/\/description":"string",
@@ -1860,6 +1880,12 @@
          "image":"unboundcheckpoint.png",
          "imageheight":37,
          "imagewidth":32
+        },
+     "71":
+        {
+         "image":"unboundvanguardcover.png",
+         "imageheight":25,
+         "imagewidth":40
         },
      "8":
         {
