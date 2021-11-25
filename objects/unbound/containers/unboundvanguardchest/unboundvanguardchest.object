@@ -1,0 +1,41 @@
+{
+  "objectName" : "starforge-unboundbigvanguardchest",
+  "colonyTags" : ["apex","storage"],
+  "rarity" : "Rare",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "printable" : true,
+
+  "category" : "storage",
+  "price" : 260,
+  "description" : "A sturdy chest, used by the Unbound Vanguard.",
+  "shortdescription" : "Vanguard Chest",
+  "race" : "apex",
+  "health" : 5.5,
+
+  "apexDescription" : "A strong chest, what's inside?",
+  "avianDescription" : "These chests are built undecorated but strong, to protect the contents.",
+  "floranDescription" : "A large chesst! Maybe food insside.",
+  "glitchDescription" : "Eager. No time to waste, there may be valuables inside!",
+  "humanDescription" : "A sturdy chest is always a welcome sight.",
+  "hylotlDescription" : "A large chest, seems like it could hold a lot.",
+  "novakidDescription" : "I could pack a lot into a big ol' chest like this one.",
+
+  "inventoryIcon" : "unboundvanguardchesticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundvanguardchest.png:<color>.<key>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/gunchest_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/gunchest_close.ogg" ],
+  "slotCount" : 48,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

@@ -118,6 +118,14 @@
       ]
     }]
   ],
+  "starforge-unboundmission2special1" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-apexunboundwither1-codex", 1]},
+        {"item" : [ "starforge-hookhand", 1]}
+      ]
+    }]
+  ],
   
   "starforge-unboundmissionhealing" : [
     [1, {

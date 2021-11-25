@@ -25,8 +25,9 @@
   },
 
   "scriptConfig" : {
-    "offeredQuests" : ["thalassomission1b"],
-	"turnInQuests" : ["thalassomission1b"],
+    "uniqueId" : "starforge-marikooutpost",
+    "offeredQuests" : ["thalassomission1b", "thalassomission2"],
+	"turnInQuests" : ["thalassomission1b", "thalassomission2"],
     "behavior" : "villager",
 
     "dialogMode" : "sequence",
@@ -44,7 +45,8 @@
 			"The Castle of Wonders... I wonder if I'll ever find it...",
 			"Morpheus is very strong, did you know that in order to protect his family, he cut all ties with them when he infiltrated the Unbound? He probably miss them.",
 			"Surprisingly, Strelitzia and I are very good friend. She's very different from the other Florans.",
-			"Elana is a very important person to me, and she's working very hard as a cook for us."
+			"Elana is a very important person to me, and she's working very hard as a cook for us.",
+			"Have you seen Peko? It's my little Crasberry, he's been with us for a long time! Give him a good pat for me."
           ]
         }
       }

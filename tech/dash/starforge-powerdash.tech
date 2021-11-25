@@ -6,7 +6,7 @@
   "animator" : "/tech/dash/starforge-powerdash.animation",
 
   "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to dash! Dashing 3 times consecutively overcharges, increasing cooldown.",
-  "shortDescription" : "Warp Dash",
+  "shortDescription" : "^#b4f5c3;Warp Dash^reset;",
   "rarity" : "Essential",
   "icon" : "/tech/starforge-powerdash.png",
 

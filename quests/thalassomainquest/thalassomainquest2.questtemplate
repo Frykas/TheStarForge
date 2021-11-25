@@ -1,0 +1,43 @@
+{
+  "id" : "thalassomission2",
+  "mainQuest" : true,
+  "prerequisites" : [ "thalassomission1b" ],
+  "title" : "^#b4f5c3;The S.S Taurus",
+  "text" : "Looking around the files we stole, Morpheus found some information regarding an Unbound space station, the S.S Taurus. Apparently this space station is hidden away in an asterioid field, and is used to communicate with other important facilities, we need to get into their network.",
+  "completionText" : "You did great today, again. We managed to hack our way inside their network, but sadly we have to act slowly & discretely if we don't want the Unbound to knock on our doors. I thank you, truly. I'll call you once we have news.",
+  "moneyRange" : [1200, 1200],
+  "rewards" : [
+    [ [ "starforge-katahelcore", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+  
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Mariko^reset; to travel to the ^orange;S.S Taurus^reset;.",
+      "findGoal" : "Find a way to enter the Unbound network.",
+      "turnIn" : "Return to ^orange;Mariko^reset; at the ^orange;Thalasso Outpost^reset;"
+    },
+
+    "warpEntityUid" : "starforge-marikooutpost",
+    "warpAction" : "instanceworld:starforge-unbdmission2",
+    "warpDialog" : "/interface/confirmation/starforgeteleportconfirmation.config:starforge-mission2",
+
+    "goalTrigger" : "message",
+    "triggerMessage" : "starforge-missioncomplete",
+	
+    "goalEntityUid" : "starforge-mariko",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+
+    "turnInEntityUid" : "starforge-marikooutpost"
+  
+
+  }
+}
