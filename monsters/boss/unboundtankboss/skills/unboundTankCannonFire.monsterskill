@@ -22,15 +22,9 @@
 		"friction" : 4
 	  },
 	  
-      "projectileType" : "starforge-unboundthermiteshell",
+      "projectileType" : "starforge-unboundbossthermiteshell",
       "projectileParameters" : {
-        "power" : 20,
-	    "actionOnReap": [
-		  {
-			"file": "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config",
-			"action": "config"
-		  }
-		]
+        "power" : 20
       }
     }
   },
