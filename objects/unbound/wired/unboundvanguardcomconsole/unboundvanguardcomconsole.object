@@ -1,0 +1,70 @@
+{
+  "objectName" : "starforge-unboundvanguardcomconsole",
+  "colonyTags" : ["apex","wired"],
+  "rarity" : "legendary",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 7000,
+  "description" : "A massive communication console.",
+  "shortdescription" : "Unbound Com. Console",
+  "race" : "apex",
+  "lightColor" : [146, 69, 175],
+
+  "humanDescription" : "A console that's linked to the UNBD Network.",
+  
+  "turnInQuests" : ["thalassomission2"],
+
+
+  "inventoryIcon" : "unboundvanguardcomconsoleicon.png",
+  "orientations" : [
+    {
+	  "image" : "unboundvanguardcomconsole.png:<color>.<frame>",
+
+      "imagePosition" : [-32, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      "lightPosition" : [2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "image" : "unboundvanguardcomconsole.png:<color>.<frame>",
+
+      "imagePosition" : [-32, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      "lightPosition" : [2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+
+  "animation" : "unboundvanguardcomconsole.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "unboundvanguardcomconsole.png",
+    "fg" : "unboundvanguardcomconsole.png"
+  },
+  "animationPosition" : [-32, 0],
+
+  "outputNodes" : [ [4, 0] ]
+}
