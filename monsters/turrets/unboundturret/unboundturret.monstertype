@@ -1,7 +1,7 @@
 {
   "type" : "starforge-unboundturret",
   "shortdescription" : "Unbound Turret",
-  "description" : "An autonomous defense turret, produced by the Unbound. ",
+  "description" : "An autonomous defense turret, produced by the Unbound.",
 
   "categories" : [ "unboundturret" ],
   "parts" : [ "body" ],

@@ -17,6 +17,9 @@ function init()
   self.scanFrequency = 10
   self.scanTimer = 0
   
+  self.timeToExist = config.getParameter("timeToExist")
+  
+  world.entityType(entity.id())
   reset()
 end
 
@@ -25,6 +28,13 @@ function update(dt)
   if self.projectileTimer == 0 then
 	spawnProjectile(self.liquidSpaces)
     self.projectileTimer = math.random() * self.projectileTime[2] - self.projectileTime[1]
+  end
+  
+  if self.timeToExist then
+	self.timeToExist = math.max(0, self.timeToExist - dt)
+	if self.timeToExist == 0 then
+	  stagehand.die()
+    end
   end
 
   --if self.scanTimer == 0 then
