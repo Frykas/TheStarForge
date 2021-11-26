@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":75,
+ "tilecount":76,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -750,6 +750,16 @@
          "imagePositionY":"0",
          "object":"starforge-unboundvanguardcomconsole",
          "tilesetDirection":"left"
+        },
+     "75":
+        {
+         "\/\/description":"An Unbound tech card.",
+         "\/\/name":"starforge-unboundwarpdashstand",
+         "\/\/shortdescription":"Unbound Tech Card",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-unboundwarpdashstand",
+         "tilesetDirection":"right"
         },
      "8":
         {
@@ -1504,6 +1514,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "75":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "8":
         {
          "\/\/description":"string",
@@ -1964,6 +1984,12 @@
          "image":"unboundvanguardcomconsole.png",
          "imageheight":34,
          "imagewidth":56
+        },
+     "75":
+        {
+         "image":"unboundwarpdashtech.png",
+         "imageheight":18,
+         "imagewidth":16
         },
      "8":
         {

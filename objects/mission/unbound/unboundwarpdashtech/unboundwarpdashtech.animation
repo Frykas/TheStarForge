@@ -1,0 +1,101 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "objectState" : {
+        "default" : "filled",
+        "states" : {
+          "filled" : {
+            "frames" : 2,
+            "cycle" : 1.2,
+            "mode" : "loop",
+			"properties" : {
+              "lightsOn" : [ "glow" ]
+            }
+          },
+          "empty" : {
+            "frames" : 1,
+			"properties" : {
+              "lightsOff" : [ "glow" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "pedestal" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "fullbright" : true,
+          "centered" : false
+        },
+        "partStates" : {
+          "objectState" : {
+            "filled" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.filled"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.empty"
+              }
+            }
+          }
+        }
+      },
+      "pedestallit" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false
+        },
+        "partStates" : {
+          "objectState" : {
+            "filled" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.filled"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.empty"
+              }
+            }
+          }
+        }
+      },
+      "item" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "offset" : [0.375, 1],
+          "centered" : false,
+          "transformationGroups" : [ "floatingObject" ]
+        },
+        "partStates" : {
+          "objectState" : {
+            "filled" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "transformationGroups" : {
+    "floatingObject" : {}
+  },
+  "lights" : {
+    "glow" : {
+      "position" : [1.5, 1.125],
+      "color" : [0, 0, 0]
+    }
+  }
+}

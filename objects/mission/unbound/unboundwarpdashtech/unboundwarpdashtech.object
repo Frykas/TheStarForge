@@ -1,0 +1,50 @@
+{
+  "objectName" : "starforge-unboundwarpdashstand",
+  "colonyTags" : ["apex", "science"],
+  "rarity" : "essential",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 750,
+  "description" : "An Unbound tech card.",
+  "shortdescription" : "Unbound Tech Card",
+  
+  "health" : 5,
+
+  "apexDescription" : "An Unbound tech? I wonder what it is!",
+  "avianDescription" : "A tech! Awesome!",
+  "floranDescription" : "Floran found tech... Floran happy...",
+  "glitchDescription" : "Intrigued. I wonder why they would keep a tech here.",
+  "humanDescription" : "Free tech card? Don't mind if I do!",
+  "hylotlDescription" : "A tech card. Exposed like that, it almost looks like art.",
+  "novakidDescription" : "Weird tech floatin' like that.",
+
+  "inventoryIcon" : "cardicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "stand.png:<color>", "fullbright" : true }, { "image" : "standlit.png:<color>" } ],
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "unboundwarpdashtech.animation",
+  "animationParts" : {
+    "pedestal" : "stand.png",
+    "pedestallit" : "standlit.png",
+    "item" : "card.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 1,
+  
+  "spawnableItem" : "starforge-warpdashtechcard",
+  
+  "useFloatingObject" : true,			//If true, the item will smoothly float up and down
+  "floatingObjectCycle" : 2.0,			//Time for the item to move a full cycle
+  "floatingObjectMaxTransform" : 0.15	//Maximum up and down movement from origin
+}

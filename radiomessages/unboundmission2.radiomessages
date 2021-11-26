@@ -1,0 +1,34 @@
+{
+  //Starforge - Rise of the Unbound mission 2
+  "unboundmission2-intro" : {
+    "type" : "mission",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
+    "text" : "Alright friend, the Taurus space station was built between the two massive asteroids ahead, find a way in, there should be Vanguard buildings nearby with consoles inside, they should open the way in.",
+    "persistTime" : 5.0
+  },
+  
+    "unboundmission2-marikocomment1" : {
+    "type" : "mission",
+    "senderName" : "Mariko",
+    "portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
+    "text" : "Our way inside the Unbound network is near the the bottom of the station according to the map we stole, but be careful, there are probably Vanguard units inside.",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission2-reachcom" : {
+    "type" : "mission",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
+    "text" : "Ok, that's it, here's communication console. With this, I can infiltrate their network and start gathering information on important facilities, perhaps even the whereabouts of Unbound commanders.",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission2-marikocomment2" : {
+    "type" : "mission",
+    "senderName" : "Mariko",
+    "portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
+    "text" : "Good job, we're done here. They shouldn't know we got access to their network, nor that we attacked this station, so you can have a look around see if you missed anything. But be on your guard, don't stay too long.",
+    "persistTime" : 5.0
+  }
+}

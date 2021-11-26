@@ -5,7 +5,7 @@
   "icon" : "ghostdiggercover.png",
   "contentPages" : [
 
-"todo"
+"^gray;The content of this codex is not ready to be read just yet...^reset;"
 
   ],
     "itemConfig" : {

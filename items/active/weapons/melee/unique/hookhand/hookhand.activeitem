@@ -8,7 +8,7 @@
   "twoHanded" : false,
   "tooltipKind" : "fistWeapon",
   "inventoryIcon" : "hookhand.png:front",
-  "description" : "An experimental gauntlet made of ancient rock and unbound technology.",
+  "description" : "Slice & Dice!",
   "shortdescription" : "Hook Hand",
   "itemTags" : ["weapon", "melee", "fist", "apex"],
 
