@@ -1,9 +1,0 @@
-{
-  "itemName" : "starforge-warpdashtechcard",
-  "price" : 1000,
-  "rarity" : "legendary",
-  "category" : "Tech Card",
-  "inventoryIcon" : "warpdashtech.png",
-  "description" : "An Unbound experimental tech, meant to be used by Vanguard units.",
-  "shortdescription" : "^#b4f5c3;Warp Dash Tech^white;"
-}

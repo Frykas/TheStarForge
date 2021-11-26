@@ -1,0 +1,31 @@
+{
+  "itemName" : "starforge-unlockwarpdashtech",
+  "level" : 1,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "category" : "Tech Unlock Card",
+  "description" : "Unlocks the warp dash tech for use.",
+  "shortdescription" : "Warp Dash Unlock Card",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "unlockwarpdashtech.png",
+  "animation" : "unlockwarpdashtech.animation",
+  "animationParts" : {
+    "item" : "unlockwarpdashtech.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "unlock" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+      "fail" : [ "/sfx/interface/clickon_error.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/unlocktech/starforge-unlocktech.lua"],
+  
+  "techToUnlock" : "starforge-powerdash",
+  "enableTech" : false,						//The tech card cost inside the terminal, if true its free, if false it takes some tech cards to unlock
+  "equipTech" : false,						//Force equip the tech, needs to have enable tech active
+  "consumeOnUse" : true,
+  "techUnlockText" : "Warp Dash Unlocked!"
+}

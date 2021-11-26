@@ -42,7 +42,7 @@
   ],
   "scriptDelta" : 1,
   
-  "spawnableItem" : "starforge-warpdashtechcard",
+  "spawnableItem" : "starforge-unlockwarpdashtech",
   
   "useFloatingObject" : true,			//If true, the item will smoothly float up and down
   "floatingObjectCycle" : 2.0,			//Time for the item to move a full cycle

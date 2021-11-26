@@ -1,0 +1,36 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+	  "item" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {}
+        }
+      }
+    },
+
+    "parts" : {
+	  "item" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : false,
+          "offset" : [0.25, 0.0]
+        },
+        "partStates" : {
+          "item" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "sounds" : {
+    "unlock" : [ ],
+	"fail" : [ ]
+  }
+}

@@ -25,7 +25,6 @@ function update(dt)
 	  status.applySelfDamageRequest(damageRequest)
 		
 	  --Kill the effect
-	  sb.logInfo("Effect expired with %s damage taken!", damageTaken)
 	  self.damageMultiplied = true
 	  effect.expire()
 	end
