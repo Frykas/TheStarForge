@@ -2,6 +2,6 @@
   "image" : "unboundrifle.png",
   "frameGrid" : {
     "size" : [2, 2],
-    "dimensions" : [4, 1]
+    "dimensions" : [1, 1]
   }
 }

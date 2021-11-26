@@ -2,6 +2,6 @@
   "image" : "unboundrocket.png",
   "frameGrid" : {
     "size" : [5, 5],
-    "dimensions" : [4, 1]
+    "dimensions" : [1, 1]
   }
 }

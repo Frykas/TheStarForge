@@ -13,6 +13,7 @@
     "layer" : "front",
     "collidesForeground" : true,
 	"variance" : {
+	  "angularVelocity" : 240,
       "initialVelocity" : [2, 2]
     }
   }

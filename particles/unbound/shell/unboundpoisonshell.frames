@@ -2,6 +2,6 @@
   "image" : "unboundpoisonshell.png",
   "frameGrid" : {
     "size" : [4, 4],
-    "dimensions" : [4, 1]
+    "dimensions" : [1, 1]
   }
 }

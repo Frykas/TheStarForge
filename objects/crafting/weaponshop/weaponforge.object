@@ -54,6 +54,24 @@
     }
 	],
 	
-  "questIndicatorPosition" : [-4, -15]
+  "questIndicatorPosition" : [-4, -15],
+  
+  "scripts" : [ "/objects/scripts/starforge-talkingobject.lua" ],
+  "scriptDelta" : 20,
+  
+  "mouthPosition" : [-4, -15],
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "What's the matter?",
+    "Found anything interesting recently?",
+    "Came here to upgrade your gear?",
+	"Come find me if you need any help with weapons.",
+	"If you find a Roboblin, watch out for their daggers, make you bleed easily.",
+	"I hope I'll find the Castle of Wonders one day. Mariko would love to meet the people there.",
+	"I'll help you get stronger. It's expensive, but well worth it.",
+	"Bring your Starforged armor and weapons to the Exalting Station, we can upgrade them here.",
+	"If you're looking for blueprints usable at the Starforge, ask Krythers about loot monsters."
+  ]
     
   }

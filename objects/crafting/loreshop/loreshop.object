@@ -51,7 +51,24 @@
       "anchors" : [ "bottom" ]
     }
    
-  ]}
+  ],
+    "scripts" : [ "/objects/scripts/starforge-talkingobject.lua" ],
+  "scriptDelta" : 20,
+
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "H-hi, what's up?",
+    "If you find interesting codices, bring them to me! I can probably get you something out of it.",
+    "What are you looking for? Codices? Blueprints?",
+	"I may be a Chemist, but I can do many other things! Collect books, sell books...",
+	"You look pretty strong...",
+	"Watch out when exploring Yukai grounds, they can be very aggressive sometimes.",
+	"If you're looking for ways to upgrade your Starforged gear, go see Rondin below the outpost.",
+	"Trying to find loot monsters? Looking for blueprints you can use at the Starforge? I can help!",
+	"Please keep an eye on Strelitzia while you're here... She's creeping me out."
+  ]
+  }
 
 
 
