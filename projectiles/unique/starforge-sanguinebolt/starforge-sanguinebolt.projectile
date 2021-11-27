@@ -1,0 +1,57 @@
+{
+  "projectileName" : "starforge-sanguinebolt",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "starforge-sanguinebolt.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 50,
+  "speed" : 150,
+  "timeToLive" : 0.1,
+  "supportsProcessing" : true,
+  "fullbright" : true,
+  "actionOnReap" : [],
+  "advancedPeriodicActions" : [
+	{
+	  "loopTime" : 0.01,
+	  "action" : "particle",
+	  "rotate" : true,
+	  "specification" : {
+		"type" : "animated",
+        "animation" : "/projectiles/unique/starforge-sanguinebolt/trail.animation",
+		"position" : [-1.25, 0],
+		"layer" : "back",
+		"collidesForeground" : false,
+		"timeToLive" : 0.15,
+		"destructionTime" : 0.1,
+		"destructionAction" : "fade",
+		"fullbright" : true
+	  }
+	},
+	{
+	  "loopTime" : 0.01,
+	  "action" : "projectile",
+	  "rotate" : true,
+	  "type" : "starforge-trailprojectile",
+	  "config" : {},
+	  "inheritDamageFactor" : 0.025,
+	  "direction" : [0, -1],
+	  "offsetRange" : [0.0, 0.0, 0.0, 0.0]
+	}
+  ],
+  "damageType" : "damage",
+  "damageKind" : "broadsword",
+  "statusEffects" : [],
+
+  "scripts" : ["/projectiles/scripts/starforge-lightningbolt.lua"],
+  "scriptDelta" : 1,
+
+  "minChangeInterval" : 0.01,
+  "maxChangeInterval" : 0.02,
+  "minAngle" : 45,
+  "maxAngle" : 75,
+  
+  //Homing
+  "homingStrength" : 150, // In angle rotated per second
+  "searchRadius" : 25
+}

@@ -5,12 +5,12 @@
   "scripts" : ["starforge-powerdash.lua"],
   "animator" : "/tech/dash/starforge-powerdash.animation",
 
-  "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to dash! Dashing 3 times consecutively overcharges, increasing cooldown.",
-  "shortDescription" : "^#b4f5c3;Warp Dash^reset;",
+  "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to dash with 3 charges.",
+  "shortDescription" : "^#C1898D;Warp Dash^reset;",
   "rarity" : "Essential",
   "icon" : "/tech/starforge-powerdash.png",
 
-  "chipCost" : 16,
+  "chipCost" : 24,
 
   "maximumDoubleTapTime" : 0.25,
   

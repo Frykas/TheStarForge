@@ -35,7 +35,7 @@ function advancedPeriodicActions(action, dt, index)
   end
   
   if action.complete then
-	return
+	return action
   elseif action.delayTime then
 	action.delayTime = action.delayTime - dt
 	if action.delayTime <= 0 then

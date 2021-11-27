@@ -1,0 +1,33 @@
+{
+  "name" : "starforge-dodgeroll",
+  "type" : "body",
+
+  "scripts" : ["starforge-dodgeroll.lua"],
+  "animator" : "starforge-dodgeroll.animation",
+
+  "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to dodge! Hold ^green;[S/Down] ^white;to maintain.",
+  "shortDescription" : "^#C1898D;Dodge Roll^reset;",
+  "rarity" : "Rare",
+  "icon" : "/tech/starforge-dodgeroll.png",
+
+  "chipCost" : 8,
+
+  "maximumDoubleTapTime" : 0.25,
+  
+  "rollingJumpModifier" : 1.35,
+  "minimumFallVelocity" : -17.5,
+  
+  "minRollVelocity" : 15,
+  "maxRollVelocity" : 40,
+  "endRollVelocity" : 8,
+  "rollVelocityDegradeFactor" : 15,
+  "fallVelocityFactor" : 0.35,
+  "rollDuration" : 0.35,
+  "maximumRolls" : 4,
+  "rollOffset" : 1.25,
+  "dodgeVelocity" : 15,
+
+  "rollMovementParameters" : {
+    "collisionPoly" : [ [-0.75, -0.35], [-0.35, -0.75], [0.35, -0.75], [0.75, -0.35], [0.75, 0.35], [0.35, 0.75], [-0.35, 0.75], [-0.75, 0.35] ]
+  }
+}

@@ -247,53 +247,8 @@
 
     "projectileOffset" : [1, 0],
 	"projectileCount" : 5,
-    "projectileType" : "starforge-lightningbolt",
-    "projectileParameters" : {
-	  "timeToLive" : 0.1,
-	  
-	  "minChangeInterval" : 0.01,
-	  "maxChangeInterval" : 0.02,
-	  "minAngle" : 45,
-	  "maxAngle" : 75,
-	  
-	  "damageType" : "damage",
-	  "damageKind" : "broadsword",
-	  "statusEffects" : [],
-	  
-	  "processing" : "?replace;A451C4=D91D14;D29CE7=D91D14",
-	  "advancedPeriodicActions" : [
-		{
-		  "time" : 0.01,
-		  "repeat" : true,
-		  "action" : "particle",
-		  "rotate" : true,
-		  "specification" : {
-			"type" : "animated",
-			"animation" : "/items/active/weapons/melee/unique/sanguine/lightningtrail/trail.animation",
-			"position" : [-1.25, 0],
-			"layer" : "back",
-			"collidesForeground" : false,
-			"timeToLive" : 0.15,
-			"destructionTime" : 0.1,
-			"destructionAction" : "fade",
-			"fullbright" : true
-		  }
-		},
-		{
-		  "time" : 0.01,
-		  "repeat" : true,
-		  "action" : "projectile",
-		  "rotate" : true,
-		  "type" : "starforge-trailprojectile",
-		  "config" : {},
-		  "inheritDamageFactor" : 0.025,
-		  "direction" : [0, -1],
-		  "offsetRange" : [0.0, 0.0, 0.0, 0.0]
-		}
-	  ],
-	  
-	  "actionOnReap" : []
-	},
+    "projectileType" : "starforge-sanguinebolt",
+    "projectileParameters" : {},
     "baseDamage" : 5.5,
 
     "cooldownTime" : 1.0,

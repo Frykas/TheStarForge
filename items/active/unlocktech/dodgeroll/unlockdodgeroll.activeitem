@@ -1,18 +1,18 @@
 {
-  "itemName" : "starforge-unlockwarpdashtech",
+  "itemName" : "starforge-unlockdodgeroll",
   "level" : 1,
   "price" : 250,
   "maxStack" : 1,
-  "rarity" : "legendary",
+  "rarity" : "rare",
   "category" : "Tech Unlock Card",
   "description" : "Unlocks the warp dash tech for use.",
   "shortdescription" : "Warp Dash Unlock Card",
   "twoHanded" : true,
 
-  "inventoryIcon" : "unlockwarpdashtech.png",
+  "inventoryIcon" : "unlockdodgeroll.png",
   "animation" : "/items/active/unlocktech/starforge-unlocktech.animation",
   "animationParts" : {
-    "item" : "unlockwarpdashtech.png"
+    "item" : "unlockdodgeroll.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -23,9 +23,9 @@
   
   "scripts" : ["/items/active/unlocktech/starforge-unlocktech.lua"],
   
-  "techToUnlock" : "starforge-powerdash",
+  "techToUnlock" : "starforge-dodgeroll",
   "enableTech" : false,						//The tech card cost inside the terminal, if true its free, if false it takes some tech cards to unlock
   "equipTech" : false,						//Force equip the tech, needs to have enable tech active
   "consumeOnUse" : true,
-  "techUnlockText" : "Warp Dash Unlocked!"
+  "techUnlockText" : "Dodge Roll Unlocked!"
 }
