@@ -2,7 +2,7 @@
 
 Huge thanks to : 
 
-• Nebulox#3969, for being a great friend and providing a lot of help 
+• Nebulox#3969, for being the ultimate friend and providing a lot of help 
 & ideas to the mod. Thanks to you that we have amazing stuff!
 
 • Raiizy#2985, for also being a good friend and helping me with a ton
@@ -19,7 +19,9 @@ scripts.
 • Silver Sokolova#3576, for providing me with scripts and general help
 regarding modding. You helped a lot!
 
-• Inferus#9279, for making awesome projectiel VFX & cleaning the object files
+• "Mik made something in this mod please do not contact him ever" - Mik when donating the Veteran npc behaviours
+
+• Inferus#9279, for making awesome projectile VFX & cleaning the object files
 
 • anomnum#6969, for helping me learn how to use Tiled and a few other things
 
@@ -38,7 +40,7 @@ to make the Principle of Duality rocket launcher.
 
 ---Music credits  :---
 
-• loib#5351, for making the Rumble of the Centurion boss track
+• loib#5351, for making the "Rumble of the Centurion" boss track and "Unshackled, Unbound"
 
 • Facebook.com/FoolBoyMedia, for making the SF 1.0 cinematic music "Sky Loop"
 

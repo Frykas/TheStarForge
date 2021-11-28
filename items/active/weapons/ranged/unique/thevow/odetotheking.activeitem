@@ -6,12 +6,13 @@
   "description" : "\"If a king were to fall, would his men fall too?\"",
   "shortdescription" : "^orange;Ode to the King^reset;",
   "level" : 8,
-  "tooltipKind" : "base",
+  "tooltipKind" : "starforge-exalted",
   "category" : "Hand Cannon",
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
   
-  "inventoryIcon" : "odetotheking.png:ready1",
+  "inventoryIcon" : "/items/active/weapons/ranged/unique/thevow/odetothekingicon.png",
+  "itemBorder" : "/interface/inventory/itemborderexalted.png",
 
   "animation" : "thevow.animation",
     "animationParts" : {
@@ -116,5 +117,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-buildexaltedweapon.lua"
 }
