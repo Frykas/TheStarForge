@@ -8,17 +8,17 @@
   "level" : 8,
   "tooltipKind" : "starforge-exalted",
   "category" : "Hand Cannon",
-  "itemTags" : ["weapon","ranged","revolver"],
+  "itemTags" : ["weapon","ranged","revolver","exalted"],
   "twoHanded" : true,
   
-  "inventoryIcon" : "/items/active/weapons/ranged/unique/thevow/odetothekingicon.png",
+  "inventoryIcon" : "/items/active/weapons/ranged/unique/thevow/exalted/odetothekingicon.png",
   "itemBorder" : "/interface/inventory/itemborderexalted.png",
 
-  "animation" : "thevow.animation",
+  "animation" : "/items/active/weapons/ranged/unique/thevow/thevow.animation",
     "animationParts" : {
       "middle" : "odetotheking.png",
       "flame" : "flame.png",
-	  "muzzleFlash" : "muzzleflash.png"
+	  "muzzleFlash" : "/items/active/weapons/ranged/unique/thevow/muzzleflash.png"
 	},
   "animationCustom" : {
     "sounds" : {
