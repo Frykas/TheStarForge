@@ -12,16 +12,16 @@
 
   "apexDescription" : "A vault key. Why do the Unbound keep that?",
   "avianDescription" : "A vault key! Awesome!",
-  "floranDescription" : "Floran found key... Where isss chessst???",
+  "floranDescription" : "Floran found key... Where isss chessst?",
   "glitchDescription" : "Intrigued. I wonder why they would keep a key here.",
   "humanDescription" : "Free vault key? Don't mind if I do!",
-  "hylotlDescription" : "A vault key. Exposed like that, it almost looks like art.",
+  "hylotlDescription" : "A vault key. Displayed like that, it almost looks like art.",
   "novakidDescription" : "Weird key floatin' like that.",
 
   "inventoryIcon" : "vaultkey.png",
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "stand.png:<color>", "fullbright" : true }, { "image" : "standlit.png:<color>" } ],
+      "imageLayers" : [ { "image" : "stand.png:<color>", "fullbright" : true }, { "image" : "standlit.png:<color>" } ],
       "imagePosition" : [0, 0],
 
       "spaceScan" : 0.1,
