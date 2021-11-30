@@ -2,7 +2,7 @@
   "itemName" : "starforge-pinacolada",
   "rarity" : "rare",
   "price" : 550,
-  "category" : "preparedFood",
+  "category" : "drink",
   "inventoryIcon" : "pinacolada.png",
   "description" : "Will's favorite, Remember to not drink too much of it!",
   "shortdescription" : "Pina Colada",

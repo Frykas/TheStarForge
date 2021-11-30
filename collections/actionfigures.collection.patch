@@ -1,0 +1,13 @@
+[
+ {"op":"add","path":"/collectables/starforge-cacochiusaf","value":{"order":80,"item":"starforge-cacochiusaf"}}
+,{"op":"add","path":"/collectables/starforge-centurionaf","value":{"order":80,"item":"starforge-centurionaf"}}
+,{"op":"add","path":"/collectables/starforge-florantaf","value":{"order":80,"item":"starforge-florantaf"}}
+,{"op":"add","path":"/collectables/starforge-jootyfishaf","value":{"order":80,"item":"starforge-jootyfishaf"}}
+,{"op":"add","path":"/collectables/starforge-novalimeaf","value":{"order":80,"item":"starforge-novalimeaf"}}
+,{"op":"add","path":"/collectables/starforge-onikabutofemaleaf","value":{"order":80,"item":"starforge-onikabutofemaleaf"}}
+,{"op":"add","path":"/collectables/starforge-potlotaf","value":{"order":80,"item":"starforge-potlotaf"}}
+,{"op":"add","path":"/collectables/starforge-pyreaperaf","value":{"order":80,"item":"starforge-pyreaperaf"}}
+,{"op":"add","path":"/collectables/starforge-roboblinaf","value":{"order":80,"item":"starforge-roboblinaf"}}
+,{"op":"add","path":"/collectables/starforge-warmongerdroneaf","value":{"order":80,"item":"starforge-warmongerdroneaf"}}
+]
+//SILBR SOKLOVA PATCH!!!!!!

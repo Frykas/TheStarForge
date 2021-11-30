@@ -13,7 +13,8 @@
     "op": "add",
     "path": "/starforge-unlocktechs",
     "value": [
-	  "/enabletech starforge-powerdash"
+	  "/enabletech starforge-powerdash",
+	  "/enabletech starforge-dodgeroll"
 	]
   }
 ]

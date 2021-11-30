@@ -7,6 +7,7 @@
   "printable" : false,
   "description" : "The label reads, \"A strange blob-like monster very similar to Novakids. They like to steal stuff.\"",
   "shortdescription" : "Novalime Figurine ^orange;^reset;",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-novalimeaf" },
 
 
   "inventoryIcon" : "novalimeAF.png",

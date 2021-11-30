@@ -11,13 +11,13 @@
   "description" : "An Unbound canister, contains ancient essence inside.",
   "shortdescription" : "Unbound Canister",
 
-  "apexDescription" : "This chest looks very old and creepy.",
-  "avianDescription" : "This chest looks very old and creepy.",
-  "floranDescription" : "Ssscary chessst makes Floran nervousss.",
-  "glitchDescription" : "Unsettled. The eye adorning this chest seems to be judging me.",
-  "humanDescription" : "A creepy old chest. Dare I open it?",
-  "hylotlDescription" : "I was taught to be wary of mysterious chests.",
-  "novakidDescription" : "I don't care much for the way this chest is lookin' at me.",
+  "apexDescription" : "A canister. This one contains something.",
+  "avianDescription" : "A canister. Something is inside, I wonder what it is...",
+  "floranDescription" : "Sssmash it open! Get the goodiess insside!",
+  "glitchDescription" : "Destructive. It is difficult to resist the urge to break this canister.",
+  "humanDescription" : "I think there's something in there. I can probably break it open.",
+  "hylotlDescription" : "Sometimes force can yield rewards.",
+  "novakidDescription" : "This canister'd be perfect for target practice.",
 
   "inventoryIcon" : "unboundcanistericon.png",
 

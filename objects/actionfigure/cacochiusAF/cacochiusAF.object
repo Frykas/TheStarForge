@@ -7,7 +7,7 @@
   "printable" : false,
   "description" : "The label reads, \"A strange Erchius experiment gone wrong. It escaped a research lab.\"",
   "shortdescription" : "Cacochius Figurine ^orange;^reset;",
-
+  "collectablesOnPickup" : { "actionfigures" : "starforge-cacochiusaf" },
 
   "inventoryIcon" : "cacochiusAF.png",
   "orientations" : [

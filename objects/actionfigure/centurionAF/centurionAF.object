@@ -7,6 +7,7 @@
   "printable" : false,
   "description" : "The label reads, \"A dangerous Unbound tank prototype. Using thermite weaponry to melt its foes.\"",
   "shortdescription" : "Centurion Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-centurionaf" },
 
 
   "inventoryIcon" : "centurionaficon.png",

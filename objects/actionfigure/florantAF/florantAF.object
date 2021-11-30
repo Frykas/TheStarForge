@@ -7,6 +7,7 @@
   "printable" : false,
   "description" : "The label reads, \"A shy insect that eats anything and digest it inside its belly.\"",
   "shortdescription" : "Florant Figurine ^orange;^reset;",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-florantaf" },
 
 
   "inventoryIcon" : "florantAF.png",
