@@ -31,7 +31,5 @@
       "stat" : "breathProtection",
       "amount" : 1.0
     }
-  ],
-
-  "acceptsAugmentType" : "back"
+  ]
 }
