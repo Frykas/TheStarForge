@@ -7,6 +7,7 @@
   "printable" : false,
   "description" : "The label reads, \"A fluffy-worm like monster that likes to hide treasures in their pot.\"",
   "shortdescription" : "Potlot Figurine ^orange;^reset;",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-potlotaf" },
 
 
   "inventoryIcon" : "potlotAF.png",
