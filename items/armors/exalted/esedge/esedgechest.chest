@@ -44,7 +44,7 @@
       "amount" : 4.5
     }
   ],
-  "itemTags" : [ "tier7armour" ],
+  "itemTags" : [ "tier7armour", "exalted" ],
 
   "colorOptions" : [
     // WITHERED FLORA, DEFAULT

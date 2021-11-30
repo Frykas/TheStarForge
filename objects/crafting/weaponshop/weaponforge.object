@@ -4,7 +4,7 @@
   "rarity" : "Legendary",
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
-    "config" : "/interface/windowconfig/crafting.config",
+    "config" : "/interface/windowconfig/exaltingstation.config",
     "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : "Exalting station",

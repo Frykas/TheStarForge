@@ -38,7 +38,7 @@
   ],
 
 
-  "itemTags" : [ "tier8armour" ],
+  "itemTags" : [ "tier8armour", "exalted" ],
   
     "colorOptions" : [
     // BRIMSTEEL, DEFAULT

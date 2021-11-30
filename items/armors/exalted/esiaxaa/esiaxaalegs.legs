@@ -36,7 +36,7 @@
     }
   ],
 
-  "itemTags" : [ "tier8armour" ],
+  "itemTags" : [ "tier8armour", "exalted" ],
   
     "colorOptions" : [
     // LUMINE, DEFAULT

@@ -44,7 +44,7 @@
       "amount" : 73
     }
   ],
-  "itemTags" : [ "tier8armour" ],
+  "itemTags" : [ "tier8armour", "exalted" ],
   
     "colorOptions" : [
     // LUMINE, DEFAULT
