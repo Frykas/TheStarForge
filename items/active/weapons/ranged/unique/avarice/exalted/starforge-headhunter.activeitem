@@ -1,0 +1,201 @@
+{
+  "itemName" : "starforge-headhunter",
+  "price" : 3000,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "Cum.",
+  "shortdescription" : "^#b4f5c3;Headhunter^reset;",
+  "level" : 8,
+  "tooltipKind" : "starforge-exalted",
+  "category" : "Bowgun",
+  "itemTags" : ["weapon","ranged","bowgun","exalted"],
+  "twoHanded" : true,
+
+  "inventoryIcon" : "/items/active/weapons/ranged/unique/avarice/exalted/starforge-headhuntericon.png",
+  "itemBorder" : "/interface/inventory/itemborderexalted.png",
+  
+  "animation" : "starforge-headhunter.animation",
+  "animationParts" : {
+    "weapon" : "starforge-headhunter.png",
+    "weaponFullbright" : "starforge-headhunterfullbright.png",
+	
+    "topRail" : "starforge-headhuntertoprail.png",
+    "bottomRail" : "starforge-headhunterbottomrail.png",
+	
+    "topBarrel" : "starforge-headhuntertopbarrel.png",
+    "bottomBarrel" : "starforge-headhunterbottombarrel.png",
+	
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ]
+    },
+    "particleEmitters" : {
+      "ammoIndicator" : {
+        "active" : false,
+        "emissionRate" : 1,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [-1.375, -0.25, -1.375, -0.25],
+        "particles" : [
+          { "particle" : "daggerblue"},
+          { "particle" : "daggerblue"},
+          { "particle" : "daggerblue"}
+        ]
+      }
+    }
+  },
+
+  "baseOffset" : [1.125, -0.875],
+  "muzzleOffset" : [2.5, 0.25],
+  
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-headhunterfire.lua"],
+    "class" : "StarForgeBowHeadHunterFire",
+
+    "fireTime" : 0.65,
+    "baseDps" : 12,
+    "energyUsage" : 30,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 1,
+
+    "burstCount" : 3,
+    "burstTime" : 0.125,
+    "fireType" : "burst",
+	
+	"movingParts" : [
+	  {
+	    "transformationGroup" : "topRail",
+		
+		"sineMovement" : true,		
+		"sineFrequency" : 0.75,
+		"sineAmplitude" : 0.1,
+		"sineOffset" : 0,
+
+		"cooldownFactor" : 0.1,				//If this value is positive(+) the cooldown is at this time, offset will be at 0, if negative(-), the offset will be at 0.2 when the cooldown is at 0 
+		"maxOffset" : -1
+	  },
+	  {
+	    "transformationGroup" : "bottomRail",
+		
+		"sineMovement" : true,
+		"sineFrequency" : 0.75,
+		"sineAmplitude" : -0.1,
+		"sineOffset" : 0,
+
+		"cooldownFactor" : 0.1,
+		"maxOffset" : -1.1
+	  },
+	  {
+	    "transformationGroup" : "topBarrel",
+		
+		"sineMovement" : false,
+		"animateOnFire" : false,
+		"animateOnAlt" : true,
+		
+		"maxOffset" : 1
+	  },
+	  {
+	    "transformationGroup" : "bottomBarrel",
+		
+		"sineMovement" : false,
+		"animateOnFire" : false,
+		"animateOnAlt" : true,
+		
+		"maxOffset" : 1
+	  }
+	],
+
+    "projectileType" : "woodenbolt",
+    "projectileParameters" : {
+      "speed" : 135,
+      "knockback" : 10
+    },
+
+    "stances" : {
+      "idle" : {
+		"frontArmFrame": "idle.3",
+		"backArmFrame": "fall.1",
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+		"frontArmFrame": "idle.3",
+		"backArmFrame": "fall.1",
+		"weaponOffset" : [-0.125, 0],
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+		"frontArmFrame": "idle.3",
+		"backArmFrame": "fall.1",
+        "duration" : 0.4,
+        "armRotation" : 7,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Load Impervium Bolt",
+    "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadalternateammo.lua"],
+    "class" : "StarForgeLoadAlternateAmmo",
+
+	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+	
+	//The new stats which will overwrite the primary ability
+	"newAbility" : {
+	  "projectileType" : "starforge-imperviumbolt",
+	  "projectileParameters" : {
+		"speed" : 200,
+		"knockback" : 25
+	  },
+	  
+	  "projectileCount" : 1,
+	  
+	  "fireType" : "auto",
+	
+      "baseDps" : 12.0,	
+      "fireTime" : 1,
+      "energyUsage" : 50,
+      "inaccuracy" : 0.0
+	},
+
+    "stances" : {
+      "load" : {
+		"frontArmFrame": "idle.3",
+		"backArmFrame": "fall.1",
+        "aimAngle" : 0,
+        "armRotation" : -7,
+        "weaponRotation" : 60,
+        "weaponAngularVelocity" : -150,
+        "armAngularVelocity" : 100,
+        "twoHanded" : true,
+        "duration" : 0.4,
+  
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedweapon.lua"
+}

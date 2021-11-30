@@ -2,20 +2,41 @@ require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
 -- Base gun fire ability
-StarforgeGunFire = WeaponAbility:new()
+StarForgeBowHeadHunterFire = WeaponAbility:new()
 
-function StarforgeGunFire:init()
+function StarForgeBowHeadHunterFire:init()
   self.weapon:setStance(self.stances.idle)
 
   self.cooldownTimer = self.fireTime
-
+	
+  for _, part in ipairs(self.movingParts) do
+	part.timer = 0
+	part.yOffset = part.yOffset or 0
+	part.xOffset = part.xOffset or 0
+	animator.resetTransformationGroup(part.transformationGroup)
+  end
+  
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
   end
 end
 
-function StarforgeGunFire:update(dt, fireMode, shiftHeld)
+function StarForgeBowHeadHunterFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
+  
+  for _, part in ipairs(self.movingParts) do
+    if part.sineMovement then
+	  part.timer = part.timer + dt
+	  part.yOffset = math.sin((part.timer + part.sineOffset) / part.sineFrequency) * part.sineAmplitude
+	end
+	
+	if part.animateOnFire ~= false then
+	  part.offsetTimer = part.maxOffset * (self.cooldownTimer - part.cooldownFactor) / (self.fireTime - part.cooldownFactor)
+	  part.xOffset = util.interpolateHalfSigmoid(part.offsetTimer, part.maxOffset, 0) - part.maxOffset
+	end
+	animator.resetTransformationGroup(part.transformationGroup)
+	animator.translateTransformationGroup(part.transformationGroup, {part.xOffset, part.yOffset})
+  end
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
@@ -37,7 +58,7 @@ function StarforgeGunFire:update(dt, fireMode, shiftHeld)
   end
 end
 
-function StarforgeGunFire:auto()
+function StarForgeBowHeadHunterFire:auto()
   self.weapon:setStance(self.stances.fire)
 
   self:fireProjectile()
@@ -51,7 +72,7 @@ function StarforgeGunFire:auto()
   self:setState(self.cooldown)
 end
 
-function StarforgeGunFire:burst()
+function StarForgeBowHeadHunterFire:burst()
   self.weapon:setStance(self.stances.fire)
 
   local shots = self.burstCount
@@ -63,14 +84,14 @@ function StarforgeGunFire:burst()
     self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.weaponRotation))
     self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.armRotation))
 
+	self.cooldownTimer = self.fireTime / (shots + 1)
     util.wait(self.burstTime)
   end
-
-  self.cooldownTimer = (self.fireTime - self.burstTime) * self.burstCount
+  self.cooldownTimer = self.fireTime + self.burstTime
   self:setState(self.cooldown)
 end
 
-function StarforgeGunFire:cooldown()
+function StarForgeBowHeadHunterFire:cooldown()
   self.weapon:setStance(self.stances.cooldown)
   self.weapon:updateAim()
 
@@ -87,7 +108,7 @@ function StarforgeGunFire:cooldown()
   end)
 end
 
-function StarforgeGunFire:muzzleFlash()
+function StarForgeBowHeadHunterFire:muzzleFlash()
   animator.setPartTag("muzzleFlash", "variant", math.random(1, self.muzzleFlashVariants or 3))
   animator.setAnimationState("firing", "fire")
   
@@ -101,7 +122,7 @@ function StarforgeGunFire:muzzleFlash()
   animator.setLightActive("muzzleFlash", true)
 end
 
-function StarforgeGunFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
+function StarForgeBowHeadHunterFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
@@ -131,23 +152,23 @@ function StarforgeGunFire:fireProjectile(projectileType, projectileParams, inacc
   return projectileId
 end
 
-function StarforgeGunFire:firePosition()
+function StarForgeBowHeadHunterFire:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
 
-function StarforgeGunFire:aimVector(inaccuracy)
+function StarForgeBowHeadHunterFire:aimVector(inaccuracy)
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
 
-function StarforgeGunFire:energyPerShot()
+function StarForgeBowHeadHunterFire:energyPerShot()
   return self.energyUsage * self.fireTime * (self.energyUsageMultiplier or 1.0)
 end
 
-function StarforgeGunFire:damagePerShot()
+function StarForgeBowHeadHunterFire:damagePerShot()
   return (self.baseDamage or (self.baseDps * self.fireTime)) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
-function StarforgeGunFire:uninit()
+function StarForgeBowHeadHunterFire:uninit()
 end
