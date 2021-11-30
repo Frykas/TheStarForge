@@ -1,5 +1,5 @@
 if not nebUtil then
-  nebUtil = {};
+  nebUtil = {}
   
   --Initialises every parameter listed in the table, useful for mass grabbing with no default
   function nebUtil.getParameters(parameters)

@@ -31,7 +31,7 @@
             "mode" : "transition",
             "transition" : "loaded",
             "properties" : {
-              "immediateSound" : "/sfx/gun/starforge_bowgundraw.ogg"
+              "immediateSound" : "/sfx/gun/starforge-bowgundraw.ogg"
             }
           },
           "loaded" : {
@@ -131,6 +131,6 @@
   },
 
   "sounds" : {
-    "fire" : [ "/sfx/gun/starforge_bowgunfire.ogg" ]
+    "fire" : [ ]
   }
 }

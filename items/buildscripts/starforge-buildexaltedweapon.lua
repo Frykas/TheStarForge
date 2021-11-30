@@ -40,12 +40,13 @@ function build(directory, config, parameters, level, seed)
       config.paletteSwaps = string.format("%s?replace=%s=%s", config.paletteSwaps, k, v)
     end
   end
+  
   if type(config.inventoryIcon) == "string" then
     config.inventoryIcon = config.inventoryIcon .. config.paletteSwaps
   end
   local invIcon = config.inventoryIcon 
   --SCALE IT ACCORDING TO THE SIZE OF THE ICON
-  local itemBorder = configParameter("itemBorder")
+  local itemBorder = configParameter("itemBorder", "/interface/inventory/itemborderessential.png?crop=1;1;17;17?hueshift=320")
   if itemBorder then
     config.itemBorder = itemBorder
 	local itemBorderSize = root.imageSize(config.itemBorder)
@@ -54,8 +55,8 @@ function build(directory, config, parameters, level, seed)
 	if iconSize[1] > iconSize[2] then
 	  difference = iconSize[1]
 	end
-	local scaleAmount = difference / itemBorderSize[1]
 	--FIND HIGHEST VALUE X OR Y THEN FIND DIFFERENCE
+	local scaleAmount = difference / itemBorderSize[1]
 	config.itemBorder = config.itemBorder .. "?scalenearest=" .. scaleAmount
 	config.inventoryIcon = {
 	  { image = config.itemBorder },

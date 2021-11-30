@@ -19,7 +19,9 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ]
+      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ],
+      "fire" : [ "/sfx/gun/starforge-bowgunfire.ogg" ],
+      "altFire" : [ "/sfx/gun/starforge-bowgunaltfire.ogg" ]
     },
     "particleEmitters" : {
       "ammoIndicator" : {
@@ -57,6 +59,7 @@
     "burstCount" : 3,
     "burstTime" : 0.2875,
     "fireType" : "burst",
+	"fireSound" : "fire",
 	
 	"animatedFire" : true,
 
@@ -122,6 +125,7 @@
 	  "projectileCount" : 1,
 	  
 	  "fireType" : "auto",
+	  "fireSound" : "altFire",
 	
       "baseDps" : 12.0,	
       "fireTime" : 2,
@@ -131,15 +135,13 @@
 
     "stances" : {
       "load" : {
+        "duration" : 0.6,
 		"frontArmFrame": "idle.3",
 		"backArmFrame": "fall.1",
         "aimAngle" : 0,
         "armRotation" : -7,
         "weaponRotation" : 60,
-        "weaponAngularVelocity" : -150,
-        "armAngularVelocity" : 100,
         "twoHanded" : true,
-        "duration" : 0.4,
   
         "allowRotate" : false,
         "allowFlip" : true

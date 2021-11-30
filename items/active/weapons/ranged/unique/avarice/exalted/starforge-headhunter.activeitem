@@ -12,7 +12,7 @@
   "twoHanded" : true,
 
   "inventoryIcon" : "/items/active/weapons/ranged/unique/avarice/exalted/starforge-headhuntericon.png",
-  "itemBorder" : "/interface/inventory/itemborderexalted.png",
+  "itemBorder" : "/interface/inventory/itemborderessential.png?crop=1;1;17;17?hueshift=320",
   
   "animation" : "starforge-headhunter.animation",
   "animationParts" : {
@@ -25,11 +25,13 @@
     "topBarrel" : "starforge-headhuntertopbarrel.png",
     "bottomBarrel" : "starforge-headhunterbottombarrel.png",
 	
-    "muzzleFlash" : ""
+    "muzzleFlash" : "muzzleflash/muzzleflash.png"
   },
   "animationCustom" : {
     "sounds" : {
-      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ]
+      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ],
+      "fire" : [ "/sfx/gun/starforge-headhunterfire.ogg" ],
+      "altFire" : [ "/sfx/gun/starforge-headhunteraltfire.ogg" ]
     },
     "particleEmitters" : {
       "ammoIndicator" : {
@@ -47,7 +49,7 @@
   },
 
   "baseOffset" : [1.125, -0.875],
-  "muzzleOffset" : [2.5, 0.25],
+  "muzzleOffset" : [2, -0.125],
   
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -63,6 +65,8 @@
     "inaccuracy" : 0.01,
 
     "projectileCount" : 1,
+	"fireSound" : "fire",
+	"fireMuzzle" : "fire",
 
     "burstCount" : 3,
     "burstTime" : 0.125,
@@ -107,7 +111,7 @@
 		"animateOnFire" : false,
 		"animateOnAlt" : true,
 		
-		"maxOffset" : 1
+		"maxOffset" : 0.625
 	  }
 	],
 
@@ -143,7 +147,7 @@
       "cooldown" : {
 		"frontArmFrame": "idle.3",
 		"backArmFrame": "fall.1",
-        "duration" : 0.4,
+        "duration" : 0.55,
         "armRotation" : 7,
         "weaponRotation" : 5,
         "twoHanded" : true,
@@ -156,8 +160,8 @@
   
   "altAbility" : {
     "name" : "Load Impervium Bolt",
-    "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadalternateammo.lua"],
-    "class" : "StarForgeLoadAlternateAmmo",
+    "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadheadhunterammo.lua"],
+    "class" : "StarForgeLoadHeadhunterAmmo",
 
 	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
 	
@@ -170,8 +174,11 @@
 	  },
 	  
 	  "projectileCount" : 1,
+	  "cooldownTimer" : 1,
 	  
 	  "fireType" : "auto",
+	  "fireSound" : "altFire",
+	  "fireMuzzle" : "altFire",
 	
       "baseDps" : 12.0,	
       "fireTime" : 1,
@@ -181,17 +188,16 @@
 
     "stances" : {
       "load" : {
+        "duration" : 0.4,
+		
 		"frontArmFrame": "idle.3",
 		"backArmFrame": "fall.1",
         "aimAngle" : 0,
-        "armRotation" : -7,
-        "weaponRotation" : 60,
-        "weaponAngularVelocity" : -150,
-        "armAngularVelocity" : 100,
+        "armRotation" : -8,
+        "weaponRotation" : 0,
         "twoHanded" : true,
-        "duration" : 0.4,
   
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : true
       }
     }
