@@ -2,7 +2,7 @@
   "itemName" : "starforge-solusenergydrink",
   "rarity" : "legendary",
   "price" : 630,
-  "category" : "preparedFood",
+  "category" : "drink",
   "inventoryIcon" : "solusenergydrink.png",
   "description" : "It burns in your stomarch when you drink it... Maybe not that healthy?",
   "shortdescription" : "Solus Energy Drink",
