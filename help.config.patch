@@ -1,0 +1,7 @@
+[
+[{"op":"test","path":"/adminCommands/thalassooutpost","inverse":true},{"op":"add","path":"/adminCommands/thalassooutpost","value":
+"Usage /thalassooutpost. Warps to the Thalasso Outpost."}]
+
+,[{"op":"test","path":"/adminCommands/starforge-unlocktechs","inverse":true},{"op":"add","path":"/adminCommands/starforge-unlocktechs","value":
+"Usage /starforge-unlocktechs. Unlocks Starforge techs, as if the 'enabletech' command was ran."}]
+]
