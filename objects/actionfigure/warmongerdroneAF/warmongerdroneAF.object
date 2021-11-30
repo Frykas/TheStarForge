@@ -7,6 +7,7 @@
   "printable" : false,
   "description" : "The label reads, \"An old abandonned drone, carrying blueprints in hopes of them falling into good hands.\"",
   "shortdescription" : "WRMGR Drone Figurine ^orange;^reset;",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-warmongerdroneaf" },
 
 
   "inventoryIcon" : "warmongerdroneaf.png",
