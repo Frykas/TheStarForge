@@ -2,15 +2,15 @@
   "itemName" : "starforge-galacticslurpee",
   "rarity" : "uncommon",
   "price" : 100,
-  "category" : "preparedFood",
+  "category" : "drink",
   "inventoryIcon" : "galacticslurpee.png",
-  "description" : "It sparkles and shines, and has quite the sweet taste! Particularly  enjoyed by a certain Hydromancer.",
+  "description" : "It sparkles and shines, and has quite the sweet taste! Particularly enjoyed by a certain Hydromancer.",
   "shortdescription" : "Galactic Slurpee",
   "effects" : [ [
-    {
-        "effect" : "maxenergyscalingboostfood",
-        "duration" : 30
-    },
+	{
+	   "effect" : "maxenergyscalingboostfood",
+	   "duration" : 30
+	},
 	{   
 	   "effect" : "hologramglow",
 	   "duration" : 120
