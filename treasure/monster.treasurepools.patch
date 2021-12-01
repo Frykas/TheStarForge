@@ -1,11 +1,17 @@
-[ 
-  {
-    "op": "add",
+[
+  [{
+    "op": "test",
     "path": "/guardianTreasure/0/1/fill",
-    "value": [
-      {
-        "item": "starforge-exaltedenergy"
-      }
-    ]
-  }
+    "inverse": true
+   },
+   {
+     "op": "add",
+     "path": "/guardianTreasure/0/1/fill",
+     "value": []
+   }],
+   [{
+     "op": "add",
+     "path": "/guardianTreasure/0/1/fill/-",
+     "value": {"item": "starforge-exaltedenergy"}
+   }]
 ]

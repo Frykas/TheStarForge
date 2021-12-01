@@ -1,0 +1,29 @@
+{
+  "itemName" : "starforge-galacticslurpee",
+  "rarity" : "uncommon",
+  "price" : 100,
+  "category" : "preparedFood",
+  "inventoryIcon" : "galacticslurpee.png",
+  "description" : "It sparkles and shines, and has quite the sweet taste! Particularly  enjoyed by a certain Hydromancer.",
+  "shortdescription" : "Galactic Slurpee",
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 30
+    },
+	{   
+	   "effect" : "hologramglow",
+	   "duration" : 120
+	}
+	
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

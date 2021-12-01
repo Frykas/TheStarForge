@@ -1,0 +1,25 @@
+{
+  "itemName" : "starforge-shadowmeat",
+  "rarity" : "uncommon",
+  "price" : 150,
+  "category" : "preparedFood",
+  "inventoryIcon" : "shadowmeat.png",
+  "description" : "A strange, otherwordly steak. An Overlord's favorite, even if he can't taste it.",
+  "shortdescription" : "Shadow Creature Steak",
+  "effects" : [ [
+    {
+        "effect" : "colorpurple",
+        "duration" : 15
+    }
+	
+  ] ],
+  "foodValue" : 50,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
