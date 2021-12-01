@@ -1,4 +1,3 @@
-
 function build(directory, config, parameters, level, seed, ...)
   local configParameter = function(keyName, defaultValue)
     if parameters[keyName] ~= nil then
@@ -15,7 +14,7 @@ function build(directory, config, parameters, level, seed, ...)
   end
   local invIcon = config.inventoryIcon 
   --SCALE IT ACCORDING TO THE SIZE OF THE ICON
-  local itemBorder = configParameter("itemBorder", "/interface/inventory/itemborderessential.png?crop=1;1;17;17?hueshift=320")
+  local itemBorder = configParameter("itemBackground", "/interface/inventory/starforge-exalted.png")
   if itemBorder then
     config.itemBorder = itemBorder
     local itemBorderSize = root.imageSize(config.itemBorder)

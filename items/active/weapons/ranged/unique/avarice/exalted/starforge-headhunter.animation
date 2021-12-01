@@ -134,6 +134,72 @@
           }
         }
       },
+      "topRailBack" : {
+        "properties" : {
+          "zLevel" : 5,
+          "centered" : true,
+          "offset" : [0, -0.875], // x offset is set dynamically
+          "transformationGroups" : ["weapon", "topRailBack"]
+        },
+
+        "partStates" : {
+          "weapon" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "transitionToAlt" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToAlt.<frame>"
+              }
+            },
+            "idleAlt" : {
+              "properties" : {
+                "image" : "<partImage>:idleAlt"
+              }
+            },
+            "transitionToPrimary" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToPrimary.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "bottomRailBack" : {
+        "properties" : {
+          "zLevel" : 6,
+          "centered" : true,
+          "offset" : [0.1, -0.875], // x offset is set dynamically
+          "transformationGroups" : ["weapon", "bottomRailBack"]
+        },
+
+        "partStates" : {
+          "weapon" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "transitionToAlt" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToAlt.<frame>"
+              }
+            },
+            "idleAlt" : {
+              "properties" : {
+                "image" : "<partImage>:idleAlt"
+              }
+            },
+            "transitionToPrimary" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToPrimary.<frame>"
+              }
+            }
+          }
+        }
+      },
 	  
 	  //Barrel covers
       "topBarrel" : {
@@ -192,6 +258,8 @@
     "weapon" : {},
     "topRail" : {},
     "bottomRail" : {},
+    "topRailBack" : {},
+    "bottomRailBack" : {},
     "topBarrel" : {},
     "bottomBarrel" : {},
     "muzzle" : {}

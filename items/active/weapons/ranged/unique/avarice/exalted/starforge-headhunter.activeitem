@@ -12,7 +12,7 @@
   "twoHanded" : true,
 
   "inventoryIcon" : "/items/active/weapons/ranged/unique/avarice/exalted/starforge-headhuntericon.png",
-  "itemBorder" : "/interface/inventory/itemborderessential.png?crop=1;1;17;17?hueshift=320",
+  "itemBackground" : "/items/active/weapons/ranged/unique/avarice/exalted/starforge-headhuntericonbackground.png",
   
   "animation" : "starforge-headhunter.animation",
   "animationParts" : {
@@ -21,6 +21,8 @@
 	
     "topRail" : "starforge-headhuntertoprail.png",
     "bottomRail" : "starforge-headhunterbottomrail.png",
+    "topRailBack" : "starforge-headhuntertoprailback.png",
+    "bottomRailBack" : "starforge-headhunterbottomrailback.png",
 	
     "topBarrel" : "starforge-headhuntertopbarrel.png",
     "bottomBarrel" : "starforge-headhunterbottombarrel.png",
@@ -29,7 +31,7 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ],
+      "loadAmmo" : [ "/sfx/gun/starforge-headhunterswitch.ogg" ],
       "fire" : [ "/sfx/gun/starforge-headhunterfire.ogg" ],
       "altFire" : [ "/sfx/gun/starforge-headhunteraltfire.ogg" ]
     },
@@ -40,9 +42,6 @@
         "transformationGroups" : ["muzzle"],
         "offsetRegion" : [-1.375, -0.25, -1.375, -0.25],
         "particles" : [
-          { "particle" : "daggerblue"},
-          { "particle" : "daggerblue"},
-          { "particle" : "daggerblue"}
         ]
       }
     }
@@ -94,6 +93,28 @@
 
 		"cooldownFactor" : 0.1,
 		"maxOffset" : -1.1
+	  },
+	  {
+	    "transformationGroup" : "topRailBack",
+		
+		"sineMovement" : true,		
+		"sineFrequency" : 0.75,
+		"sineAmplitude" : 0.1,
+		"sineOffset" : 1,
+
+		"cooldownFactor" : 0,
+		"maxOffset" : -0.7
+	  },
+	  {
+	    "transformationGroup" : "bottomRailBack",
+		
+		"sineMovement" : true,
+		"sineFrequency" : 0.75,
+		"sineAmplitude" : -0.1,
+		"sineOffset" : 1,
+
+		"cooldownFactor" : 0,
+		"maxOffset" : -0.7
 	  },
 	  {
 	    "transformationGroup" : "topBarrel",

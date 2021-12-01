@@ -9,7 +9,7 @@
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/eghostdigger/icons.png:chest",
-  "itemBorder" : "/interface/inventory/itemborderessential.png?crop=1;1;17;17?hueshift=320",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : {
     "body" : "chest.png",
