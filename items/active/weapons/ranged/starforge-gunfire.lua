@@ -33,14 +33,23 @@ function StarforgeGunFire:update(dt, fireMode, shiftHeld)
       self:setState(self.auto)
     elseif self.fireType == "burst" then
       self:setState(self.burst)
+    elseif self.fireType == "charge" and status.overConsumeResource("energy", self:energyPerShot()) then
+      self:setState(self.charge)
     end
+  end
+  
+  if self.remoteDetonateProjectile then
+    if self.fireMode == "alt" and self.projectileId then
+	  self.projectileId = nil
+	  world.callScriptedEntity(self.projectileId, "detonate")
+	end
   end
 end
 
 function StarforgeGunFire:auto()
   self.weapon:setStance(self.stances.fire)
 
-  self:fireProjectile()
+  self.projectileId = self:fireProjectile()
   self:muzzleFlash()
 
   if self.stances.fire.duration then
@@ -51,12 +60,49 @@ function StarforgeGunFire:auto()
   self:setState(self.cooldown)
 end
 
+function StarforgeGunFire:charge()
+  if animator.hasSound("chargeLoop") then
+    animator.playSound("chargeLoop", -1)
+  end
+  --Timer used for optional shaking
+  local timer = 0
+  util.wait(self.chargeTime, function()
+	--Optional particle emitter
+	if self.chargeParticleEmitter then
+	  animator.setParticleEmitterActive(self.stances.fire.particleEmitter, true)
+	  self.currentParticleEmitter = self.stances.fire.particleEmitter
+	end
+    if self.chargeShake then
+	  local wavePeriod = (self.chargeShakeWavePeriod or 0.125) / (2 * math.pi) / (1 + (timer * (self.chargeShakeFactor or 1)))
+	  local waveAmplitude = (self.chargeShakeWaveAmplitude or 0.075) * (1 + (timer * (self.chargeShakeFactor or 1)))
+	
+	  timer = timer + self.dt
+	  local rotation = waveAmplitude * math.sin(timer / wavePeriod)
+	
+	  self.weapon.relativeArmRotation = rotation + util.toRadians(self.stances.idle.armRotation) --Add weaponRotation again, as relativeWeaponRotation overwrites it
+    end
+  end)
+  animator.stopAllSounds("chargeLoop")
+  
+  if self.windDownAnimation then
+    
+  end
+  
+  self.weapon:setStance(self.stances.fire)
+
+  self.projectileId = self:fireProjectile()
+  self:muzzleFlash()
+
+  self.cooldownTimer = self.fireTime
+  self:setState(self.cooldown)
+end
+
 function StarforgeGunFire:burst()
   self.weapon:setStance(self.stances.fire)
 
   local shots = self.burstCount
   while shots > 0 and status.overConsumeResource("energy", self:energyPerShot()) do
-    self:fireProjectile()
+    self.projectileId = self:fireProjectile()
     self:muzzleFlash()
     shots = shots - 1
 

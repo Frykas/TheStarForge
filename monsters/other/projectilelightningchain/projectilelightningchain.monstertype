@@ -1,11 +1,12 @@
 {
-  "type" : "starforge-npchealthbar",
+  "type" : "starforge-projectilelightningchain",
   "shortdescription" : ".",
+  "clientEntityMode": "ClientMasterAllowed",
 
-  "categories" : [ "npcbosscompanion" ],
+  "categories" : [ "projectilelightningchainhost" ],
   "parts" : [],
 
-  "animation" : "npchealthbar.animation",
+  "animation" : "projectilelightningchain.animation",
 
   "dropPools" : [ ],
 
@@ -13,10 +14,12 @@
     "monsterClass" : "boss",
 
     "scripts" : [
-      "/monsters/npchealthbar/npchealthbarcompanion.lua"
+      "/monsters/other/projectilelightningchain/projectilelightningchain.lua"
     ],
-
-    "renderLayer" : "BackgroundOverlay",
+    "animationScripts" : [
+      "/monsters/scripts/starforge-monsterlightning.lua"
+    ],
+    "renderLayer" : "Projectile-1",
 
     "touchDamage" : {},
 

@@ -1,3 +1,5 @@
+require "/scripts/starforge-util.lua"
+
 if not nebAbilityUtil then
   nebAbilityUtil = {};
   
@@ -9,29 +11,13 @@ if not nebAbilityUtil then
 	  if type(v) == "table" then
 		-- including weapon causes an infinite loop
 		if v ~= "weapon" then
- 		  ret[k] = nebAbilityUtil.copyTable(v, 1);
+ 		  ret[k] = nebUtil.copyTable(v, 1);
 		end
 	  else
 		ret[k] = v;
 	  end
 	end
 	return ret;
-  end
-	
-  --Copy a table
-  function nebAbilityUtil.copyTable(table, count)
-	local ret = {};
-	for k,v in pairs(table) do
-	  if type(v) == "table" then
-		if count > 10 then
-		  sb.logInfo("%s", k);
-		  ret[k] = nebAbilityUtil.copyTable(v, count + 1);
-	    end
-	  else
-	 	ret[k] = v;
-	  end
-	end
-    return ret;
   end
 	
   --Restore an ability DEPRECATED

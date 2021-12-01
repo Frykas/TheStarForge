@@ -1,0 +1,39 @@
+{
+  "projectileName" : "starforge-behemothenergysphere",
+  "image" : "starforge-behemothenergysphere.png",
+  "fullbright" : true,
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "physics" : "laser",
+  "timeToLive" : 10,
+  "windupFrames" : 1,
+  "bounces" : 0,
+  "actionOnReap" : [
+  ],
+  "power" : 0,
+  "speed" : 20,
+  "lightColor" : [253, 209, 77],
+  "damageType" : "nodamage",
+  "damageKind" : "fireplasma",
+  
+  "persistentAudio" : "/sfx/projectiles/starforge-behemonthenergysphere.ogg",
+  
+  "scripts" : ["starforge-behemothenergysphere.lua"],
+  
+  "lightningParameters" : {
+	"chainLightningRadius" : 30,
+	
+	"tickRate" : 0.05,
+    "damageKind" : "fireplasma",
+	"statusEffects" : ["burning"],
+	
+    "lightningConfig" : {
+      "displacement" : 1,
+      "minDisplacement" : 0.125,
+      "forks" : 1,
+      "forkAngleRange" : 0.25,
+      "width" : 1,
+	  "color" : [253, 209, 77, 200]
+    }
+  }
+}
