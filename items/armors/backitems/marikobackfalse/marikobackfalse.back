@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "backwear",
-  "description" : "A pair of black sheath made of Durasteel.",
-  "shortdescription" : "Pair of Durasteel sheath",
+  "description" : "A pair of black sheaths made of Durasteel.",
+  "shortdescription" : "Durasteel Sheaths",
   "tooltipKind" : "back",
 
   "maleFrames" : "back.png",
