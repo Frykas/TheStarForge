@@ -40,8 +40,8 @@ function StarforgeGunFire:update(dt, fireMode, shiftHeld)
   
   if self.remoteDetonateProjectile then
     if self.fireMode == "alt" and self.projectileId then
-	  self.projectileId = nil
 	  world.callScriptedEntity(self.projectileId, "detonate")
+	  self.projectileId = nil
 	end
   end
 end

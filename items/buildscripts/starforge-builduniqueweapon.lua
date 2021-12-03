@@ -40,34 +40,13 @@ function build(directory, config, parameters, level, seed)
       config.paletteSwaps = string.format("%s?replace=%s=%s", config.paletteSwaps, k, v)
     end
   end
-  
   if type(config.inventoryIcon) == "string" then
     config.inventoryIcon = config.inventoryIcon .. config.paletteSwaps
+  else
+    for i, drawable in ipairs(config.inventoryIcon) do
+      if drawable.image then drawable.image = drawable.image .. config.paletteSwaps end
+    end
   end
-  local invIcon = config.inventoryIcon
-  --SCALE IT ACCORDING TO THE SIZE OF THE ICON
-  local itemBackground = configParameter("itemBackground", "/interface/inventory/starforge-exalted.png")
-  if itemBackground then
-    config.itemBackground = itemBackground
-	local itemBackgroundSize = root.imageSize(config.itemBackground)
-	local iconSize = root.imageSize(config.inventoryIcon)
-	local difference = iconSize[2]
-	if iconSize[1] > iconSize[2] then
-	  difference = iconSize[1]
-	end
-	--FIND HIGHEST VALUE X OR Y THEN FIND DIFFERENCE
-	local scaleAmount = difference / itemBackgroundSize[1]
-	config.itemBackground = config.itemBackground .. "?scalenearest=" .. scaleAmount
-	config.inventoryIcon = {
-	  { image = config.itemBackground },
-	  { image = config.inventoryIcon }
-	}
-  end
-  
-  for i, drawable in ipairs(config.inventoryIcon) do
-    if drawable.image then drawable.image = drawable.image .. config.paletteSwaps end
-  end
-  config.objectImage = invIcon
 
   -- gun offsets
   if config.baseOffset then
@@ -82,10 +61,13 @@ function build(directory, config, parameters, level, seed)
   if config.tooltipKind ~= "base" then
     config.tooltipFields = {}
     config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
+	config.tooltipFields.rarityLabel = configParameter("rarity", "Common")
     config.tooltipFields.dpsLabel = util.round((config.primaryAbility.baseDps or 0) * config.damageLevelMultiplier, 1)
     config.tooltipFields.speedLabel = util.round(1 / (config.primaryAbility.fireTime or 1.0), 1)
     config.tooltipFields.damagePerShotLabel = util.round((config.primaryAbility.baseDps or 0) * (config.primaryAbility.fireTime or 1.0) * config.damageLevelMultiplier, 1)
     config.tooltipFields.energyPerShotLabel = util.round((config.primaryAbility.energyUsage or 0) * (config.primaryAbility.fireTime or 1.0), 1)
+	-- Lets you customise tooltip from the weapon... EXTREMELY useful I think!
+	config.tooltipFields = sb.jsonMerge(config.tooltipFields, config.tooltipFieldsOverride or {})
     if elementalType ~= "physical" then
       config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
     end

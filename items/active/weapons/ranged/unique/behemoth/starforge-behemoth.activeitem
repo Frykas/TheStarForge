@@ -4,14 +4,22 @@
   "inventoryIcon" : "starforge-behemoth.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "A weapon wrought of steel and brimstone, unending fury resurging from a former death.",
-  "shortdescription" : "^#b4f5c3;Behemoth Mk-9000^reset;",
+  "description" : "Wrought from brimstone, of unending fury resurging from a former death.",
+  "shortdescription" : "^#b4f5c3;Behemoth ver.9000^reset;",
   "level" : 7,
-  "tooltipKind" : "base",
+  "tooltipKind" : "starforge-uniquegun",
   "category" : "Superweapon",
+  "tooltipFieldsOverride" : {
+    "damagePerShotLabel" : "Too Much",
+    "speedLabel" : "Pretty Slow",
+    "energyPerShotLabel" : "All of it",
+	
+    "altAbilityTitleLabel" : "Special:",
+    "altAbilityLabel" : "Remote Detonation"
+  },
   "itemTags" : ["weapon","ranged","bfg"],
   "twoHanded" : true,
-
+	
   "animation" : "starforge-behemoth.animation",
   "animationParts" : {
     "gun" : "starforge-behemoth.png",
@@ -89,5 +97,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

@@ -99,7 +99,7 @@ function reset()
   end
   
   for _, message in ipairs(self.resetMessages) do
-    local entitiesToMessage = world.entityQuery(stagehand.position(), self.messageRadius)
+    local entitiesToMessage = world.entityQuery(stagehand.position(), self.messageRadius, {includedTypes = {"object", "vehicle"}})
     for _, entity in pairs(entitiesToMessage) do
 	  world.sendEntityMessage(entity, message)
     end

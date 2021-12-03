@@ -28,11 +28,11 @@
 	"statusEffects" : ["burning"],
 	
     "lightningConfig" : {
-      "displacement" : 1,
+      "displacement" : 1.25,
       "minDisplacement" : 0.125,
-      "forks" : 1,
-      "forkAngleRange" : 0.25,
-      "width" : 1,
+      "forks" : 2,
+      "forkAngleRange" : 0.3,
+      "width" : 0.9,
 	  "color" : [253, 209, 77, 200]
     }
   }
