@@ -1,7 +1,6 @@
 {
   "itemName" : "starforge-exaltedsedgehead",
   "price" : 2260,
-  "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headarmour",
@@ -9,6 +8,9 @@
   "shortdescription" : "^#758468;Hood of Berserking^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
 
+  "inventoryIcon" : "/items/armors/exalted/esedge/icons.png:head",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
+  
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
@@ -64,5 +66,7 @@
     { "ffca8a" : "eab3db", "e0975c" : "d35eae", "a85636" : "97276d", "6f2919" : "59163f" },
     // BROWN
     { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

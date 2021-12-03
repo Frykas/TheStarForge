@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-katahelbacktrue",
   "price" : 3500,
-  "inventoryIcon" : "katahelbacktrueicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
   "description" : "Enhanced with ancient technology, this cape protects the weilder.",
   "shortdescription" : "^#FFBC47;Might of the Warlord^white;",
   "tooltipKind" : "starforge-backitemexalted",
+  
+  "inventoryIcon" : "/items/armors/backitems/katahelbacktrue/katahelbacktrueicon.png",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
@@ -58,5 +60,7 @@
     { "ffca8a" : "eab3db", "e0975c" : "d35eae", "a85636" : "97276d", "6f2919" : "59163f" },
     // BROWN
     { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

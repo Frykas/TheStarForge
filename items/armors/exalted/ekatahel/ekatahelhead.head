@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-exaltedkatahelhead",
   "price" : 2260,
-  "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headwear",
   "description" : "\"Everything I've done, was to free them, free them from the curse that we're all born with.\"",
   "shortdescription" : "^#FFBC47;Ambitions of the Warlord ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
+  
+  "inventoryIcon" : "/items/armors/exalted/ekatahel/icons.png:head",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
@@ -64,5 +66,7 @@
     { "ffca8aFE" : "eab3dbFE", "e0975cFE" : "d35eaeFE", "a85636FE" : "97276dFE", "6f2919FE" : "59163fFE" },
     // BROWN
     { "ffca8aFE" : "ccae7cFE", "e0975FEc" : "a47844FE", "a85636FE" : "754c23FE", "6f2919FE" : "472b13FE" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
   }

@@ -1,0 +1,24 @@
+{
+  "materialId" : 2906,
+  "materialName" : "starforge-yukairoofing",
+  "particleColor" : [112, 98, 56, 255],
+  "itemDrop" : "starforge-yukairoofing",
+  "description" : "Traditional looking Yukai roofing.",
+  "shortdescription" : "Yukai Roofing",
+  "glitchDescription" : "Impressed. This ornate roofing is structurally sound.",
+  "floranDescription" : "Ornate roofing iss pretty.",
+  "novakidDescription" : "Ain't what I'm used to, but nice lookin' roofing all the same.",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "yukairoofing.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 3460
+  }
+}

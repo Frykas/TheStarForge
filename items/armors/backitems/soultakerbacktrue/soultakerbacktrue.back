@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-soultakerbacktrue",
   "price" : 3500,
-  "inventoryIcon" : "soultakerbacktrueicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
   "description" : "Tools used by a Novakid who was gnawed by loneliness. They are tainted by some sort of ethereal matter.",
   "shortdescription" : "^pink;Ghost Digger's Tools^white;",
   "tooltipKind" : "starforge-backitemexalted",
+  
+  "inventoryIcon" : "/items/armors/backitems/soultakerbacktrue/soultakerbacktrueicon.png",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
@@ -31,5 +33,7 @@
       "stat" : "breathProtection",
       "amount" : 1.0
     }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-exaltedkatahelchest",
   "price" : 4000,
-  "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
   "description" : "\"The others on this planet do not understand, for they are not Awakened. Help me open their eyes.\"",
   "shortdescription" : "^#FFBC47;Fortress of the Warlord ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
+  
+  "inventoryIcon" : "/items/armors/exalted/ekatahel/icons.png:chest",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : {
     "body" : "chest.png",
@@ -73,5 +75,7 @@
     { "ffca8aFE" : "eab3dbFE", "e0975cFE" : "d35eaeFE", "a85636FE" : "97276dFE", "6f2919FE" : "59163fFE" },
     // BROWN
     { "ffca8aFE" : "ccae7cFE", "e0975FEc" : "a47844FE", "a85636FE" : "754c23FE", "6f2919FE" : "472b13FE" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
   }

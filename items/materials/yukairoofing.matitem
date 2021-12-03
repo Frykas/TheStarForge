@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-yukairoofing",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "yukairoofing.png",
+  "shortdescription" : "Yukai Roofing",
+  "description" : "Traditional, wooden Yukai roofing.",
+  "glitchDescription" : "Impressed. This roofing is structurally sound.",
+  "floranDescription" : "Roofing iss pretty.",
+  "novakidDescription" : "Ain't what I'm used to, but nice lookin' roofing all the same.",
+
+  "materialId" : 2906
+}

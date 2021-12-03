@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-exaltedsiaxaahead",
   "price" : 2260,
-  "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headarmour",
   "description" : "\"When I found you, you were just a little chick, discarded for your anomaly. But in your difference, I found beauty.\".",
   "shortdescription" : "^red;Siaxaa's Crown^reset; ^#FFB2B2;^reset;",
   "tooltipKind" : "starforge-exalted",
+  
+  "inventoryIcon" : "/items/armors/exalted/esiaxaa/icons.png:head",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
@@ -37,6 +39,8 @@
     }
   ],
 
-  "itemTags" : [ "tier8armour", "exalted" ]
+  "itemTags" : [ "tier8armour", "exalted" ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 
 }

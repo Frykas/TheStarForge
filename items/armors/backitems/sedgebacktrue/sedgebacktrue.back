@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-sedgebacktrue",
   "price" : 3500,
-  "inventoryIcon" : "sedgebacktrueicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
   "description" : "A quiver holding spears made of a strange mix of bone and other materials.",
   "shortdescription" : "^#758468;Berserker's Quiver^white;",
   "tooltipKind" : "starforge-backitemexalted",
+  
+  "inventoryIcon" : "/items/armors/backitems/sedgebacktrue/sedgebacktrueicon.png",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
@@ -31,5 +33,7 @@
       "stat" : "breathProtection",
       "amount" : 1.0
     }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }
