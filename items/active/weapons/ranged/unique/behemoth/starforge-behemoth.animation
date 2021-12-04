@@ -27,6 +27,12 @@
             "frames" : 4,
             "cycle" : 0.25,
             "mode" : "loop"
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.25,
+            "mode" : "transition",
+            "transition" : "idle"
           }
         }
       }
@@ -44,12 +50,17 @@
           "gun" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>"
+                "image" : "<partImage>:idle"
               }
             },
 			"charge" : {
               "properties" : {
                 "image" : "<partImage>"
+              }
+            },
+			"fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
               }
             }
           }
@@ -67,12 +78,17 @@
           "gun" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>"
+                "image" : "<partImage>:idle"
               }
             },
 			"charge" : {
               "properties" : {
                 "image" : "<partImage>"
+              }
+            },
+			"fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
               }
             }
           }

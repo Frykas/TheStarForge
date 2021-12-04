@@ -81,6 +81,10 @@
 		"weaponOffset" : [-0.05, 0.0],
         "twoHanded" : true,
 
+        "gun" : {
+          "body" : "fire"
+        },
+
         "allowRotate" : false,
         "allowFlip" : true
       },

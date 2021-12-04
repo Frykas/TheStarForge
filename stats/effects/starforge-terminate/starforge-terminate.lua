@@ -1,6 +1,6 @@
 function init()
   self.baseTime = effect.duration()
-  status.addEphemeralEffect("invulnerable", effect.duration())
+  status.addEphemeralEffect("invulnerable", effect.duration() - 0.1)
 end
 
 function update(dt)
