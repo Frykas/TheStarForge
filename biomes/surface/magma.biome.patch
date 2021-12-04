@@ -40,6 +40,20 @@
     }
 },
 
+{
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-yukaiskyray"
+        ]
+      ]
+    }
+},
+
 	  {
     "op": "add",
     "path": "/surfacePlaceables/items/-",

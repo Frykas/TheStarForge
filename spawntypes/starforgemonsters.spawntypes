@@ -16,6 +16,23 @@
       "monsterParameters" : {
         "aggressive" : false
       }
+    },
+	
+	{
+	  "name" : "starforge-yukaiskyray",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.004,
+      "monsterType" : [
+      [1, "starforge-yukaiskyray"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : false
+      }
     }
   
   ]
