@@ -8,6 +8,8 @@ function StarforgeGunFire:init()
   self.weapon:setStance(self.stances.idle)
 
   self.cooldownTimer = self.fireTime
+  
+  self.unholster = self.stances.unholsterTwirl
 
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
@@ -44,6 +46,11 @@ function StarforgeGunFire:update(dt, fireMode, shiftHeld)
 	  self.projectileId = nil
 	end
   end
+  
+  if self.unholster then
+    self:setState(self.unholsterTwirl)
+	self.unholster = nil
+  end
 end
 
 function StarforgeGunFire:auto()
@@ -58,6 +65,27 @@ function StarforgeGunFire:auto()
 
   self.cooldownTimer = self.fireTime
   self:setState(self.cooldown)
+end
+
+function StarforgeGunFire:unholsterTwirl()
+  self.weapon:setStance(self.stances.unholsterTwirl)
+  self.weapon:updateAim()
+
+  animator.playSound("unholsterTwirl")
+  
+  local progress = 0
+  util.wait(self.stances.unholsterTwirl.duration, function()
+    local from = self.stances.unholsterTwirl.weaponOffset or {0,0}
+    local to = self.stances.idle.weaponOffset or {0,0}
+    self.weapon.weaponOffset = {util.interpolateHalfSigmoid(progress, from[1], to[1]), util.interpolateHalfSigmoid(progress, from[2], to[2])}
+	
+	self.weapon.relativeWeaponRotation = util.toRadians(util.interpolateHalfSigmoid(progress, self.stances.unholsterTwirl.weaponRotation, self.stances.idle.weaponRotation))
+	self.weapon.relativeArmRotation = util.toRadians(util.interpolateHalfSigmoid(progress, self.stances.unholsterTwirl.armRotation, self.stances.idle.armRotation))
+
+	progress = math.min(1.0, progress + (self.dt / self.stances.unholsterTwirl.duration))
+  end)
+  
+  return
 end
 
 function StarforgeGunFire:charge()
@@ -138,6 +166,15 @@ function StarforgeGunFire:muzzleFlash()
   animator.setAnimationState("firing", "fire")
   
   animator.burstParticleEmitter("muzzleFlash")
+
+  --Optional firing animations
+  if self.animatedFire == true then
+	if animator.animationState("gun") == "idle1" then
+	  animator.setAnimationState("gun", "transitionToIdle2")
+	elseif animator.animationState("gun") == "idle2" then
+	  animator.setAnimationState("gun", "transitionToIdle1")
+	end
+  end
   
   --Add normal pitch variance to shots
   local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2))

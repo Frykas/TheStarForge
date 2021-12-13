@@ -1,6 +1,10 @@
 function init()
   self.baseTime = effect.duration()
   status.addEphemeralEffect("invulnerable", effect.duration() - 0.1)
+  mcontroller.controlModifiers({
+	facingSuppressed = true,
+	movementSuppressed = true
+  })
 end
 
 function update(dt)

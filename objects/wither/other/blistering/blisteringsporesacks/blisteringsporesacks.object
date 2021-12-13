@@ -1,0 +1,58 @@
+{
+  "objectName" : "starforge-blisteringsporesacks",
+  "colonyTags" : ["wither"],
+  "rarity" : "Legendary",
+  "tooltipKind" : "base",
+  "race" : "Floran",
+
+  "category" : "storage",
+  "price" : 0,
+  "printable" : false,
+  "description" : "TODO.",
+  "shortdescription" : "Blistering Spore Sack",
+
+  "apexDescription" : "TODO.",
+  "avianDescription" : "TODO.",
+  "floranDescription" : "TODO.",
+  "glitchDescription" : "TODO.",
+  "humanDescription" : "TODO.",
+  "hylotlDescription" : "TODO.",
+  "novakidDescription" : "TODO.",
+
+  "inventoryIcon" : "blisteringsporesacksicon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "blisteringsporesacks.png:default"}, { "image" : "blisteringsporesacksfullbright.png:default", "fullbright" : true } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "blisteringsporesacks.png:default"}, { "image" : "blisteringsporesacksfullbright.png:default", "fullbright" : true } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "blisteringsporesacks.animation",
+  "animationPosition" : [-8, 0],
+
+  "scripts" : ["/objects/scripts/starforge-sporesacks.lua"],
+  
+  "smashable" : true,
+  "smashSounds" : [ ],
+  "health" : 1,
+
+  "smashParticles" : [ ],
+
+  "burstProjectileType" : ["poisonplasmaexplosion", "poisonburstexplosion"]
+}

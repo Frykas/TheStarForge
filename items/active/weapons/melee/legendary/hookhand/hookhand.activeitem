@@ -2,9 +2,9 @@
   "itemName": "starforge-hookhand",
   "price" : 5000,
   "maxStack" : 1,
-  "rarity" : "Essential",
+  "rarity" : "Legendary",
   "category" : "fistWeapon",
-  "level" : 7,
+  "level" : 6,
   "twoHanded" : false,
   "tooltipKind" : "fistWeapon",
   "inventoryIcon" : "hookhand.png:front",
@@ -35,7 +35,7 @@
   "comboSteps" : 3,
   "comboTiming" : [0.2, 0.5],
   "comboCooldown" : 0.3,
-  "comboFinisherSource" : "/items/active/weapons/melee/unique/hookhand/finisher/hookslash.combofinisher",
+  "comboFinisherSource" : "/items/active/weapons/melee/legendary/hookhand/finisher/hookslash.combofinisher",
 
   "primaryAbility" : {
     "scripts" : [ "/items/active/weapons/fist/starforge-punch.lua" ],

@@ -1,7 +1,7 @@
 {
   "itemName" : "starforge-behemoth",
   "price" : 3000,
-  "inventoryIcon" : "starforge-behemoth.png",
+  "inventoryIcon" : "starforge-behemoth.png:idle",
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "Wrought from brimstone, of unending fury resurging from a former death.",

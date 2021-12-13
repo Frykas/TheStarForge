@@ -4,10 +4,10 @@
   "inventoryIcon" : "starforge-pepperbox.png:ready1",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "A durable revolver, capable of charging for increased performance.",
+  "description" : "A small revolver, packing the punch of a gun twice its size.",
   "shortdescription" : "^#b4f5c3;Pepperbox^reset;",
   "level" : 7,
-  "tooltipKind" : "base",
+  "tooltipKind" : "starforge-uniquegun",
   "category" : "Revolver",
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
@@ -15,26 +15,25 @@
   "animation" : "starforge-pepperbox.animation",
   "animationParts" : {
     "gun" : "starforge-pepperbox.png",
-    "charge" : "starforge-pepperboxcharge.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {},
 
   "baseOffset" : [1.25, 0.125],
-  "muzzleOffset" : [1.125, 0.5],
+  "muzzleOffset" : [0.25, 1],
   
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-revolverfire.lua"],
-    "class" : "StarForgeRevolverFire",
+    "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
+    "class" : "StarforgeGunFire",
 
-    "fireTime" : 0.5,
-    "baseDps" : 11,
-    "energyUsage" : 30,
-    "inaccuracy" : 0.001,
+    "fireTime" : 0.325,
+    "baseDps" : 9,
+    "energyUsage" : 25,
+    "inaccuracy" : 0.005,
 
     "projectileCount" : 1,
 
@@ -42,104 +41,63 @@
 	
 	"animatedFire" : true,
 
-    "projectileType" : "standardbullet",
-    "projectileParameters" : {},
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "fire" : {
-        "duration" : 0.05,
-        "armRotation" : 4,
-        "weaponRotation" : 8,
-		"weaponOffset" : [-0.05, 0.0],
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : true
-      },
-      "cooldown" : {
-        "duration" : 0.45,
-        "armRotation" : 4,
-        "weaponRotation" : 8,
-		"weaponOffset" : [-0.05, 0.0],
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      }
-    }
-  },
-  
-  "altAbility" : {
-    "name" : "Revolving Cylinder",
-    "scripts" : ["/items/active/weapons/ranged/abilities/revolvingcylinder/starforge-revolvingcylinder.lua"],
-    "class" : "StarForgeRevolvingCylinder",
-
-    "chargeTime" : 0.8,
-    "cooldownTimer" : 0.75,
-    "baseDps" : 11,
-    "energyUsage" : 30,
-    "inaccuracy" : 0.001,
-
-    "projectileCount" : 1,
-
-    "fireType" : "auto",
-
-    "projectileType" : "iceplasma",
+    "projectileType" : "unboundfirebullet",
     "projectileParameters" : {
-	  "piercing" : true,
-	  "fullbright" : true,
-	  "damageKind" : "plasma",
-	  "speed" : 200,
-      "actionOnReap" : [
-        {
-          "action" : "config",
-          "file" : "/projectiles/explosions/pulsecannonexplosion/pulsecannonexplosion.config"
-	    }
-	  ]
+	  "statusEffects" : ["burning"]
 	},
 
     "stances" : {
       "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
+        "armRotation" : -8,
+        "weaponRotation" : 8,
+		"weaponOffset" : [-0.0, 0.5],
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "swim.3",
+        "backArmFrame" : "swim.4"
       },
-      "charge" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
+      "unholsterTwirl" : {
+        "duration" : 0.5,
+        "armRotation" : -25,
+        "weaponRotation" : -418,
+		"weaponOffset" : [-0.0, 0.5],
+        "weaponRotationCenter" : [0.0, 0.5],
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
-      },
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "swim.3",
+        "backArmFrame" : "swim.4"
+      }, 
       "fire" : {
         "duration" : 0.05,
-        "armRotation" : 7,
-        "weaponRotation" : 14,
+        "armRotation" : -5,
+        "weaponRotation" : 10,
+		"weaponOffset" : [-0.085, 0.5],
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : true
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "swim.3",
+        "backArmFrame" : "swim.4"
       },
       "cooldown" : {
-        "duration" : 0.5,
-        "armRotation" : 7,
-        "weaponRotation" : 14,
+        "duration" : 0.2,
+        "armRotation" : -5,
+        "weaponRotation" : 10,
+		"weaponOffset" : [-0.085, 0.5],
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "swim.3",
+        "backArmFrame" : "swim.4"
       }
     }
   },
