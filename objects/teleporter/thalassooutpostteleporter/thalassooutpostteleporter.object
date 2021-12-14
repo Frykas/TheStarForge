@@ -3,7 +3,7 @@
   "objectType" : "teleporter",
   "rarity" : "Legendary",
   "description" : "A teleporter that leads to the Thalasso Outpost. \n^red;Destroyed when broken.",
-  "shortdescription" : "Thalasso Teleporter",
+  "shortdescription" : "^orange;Thalasso Teleporter^reset;",
   "price" : 3000,
   "printable" : false,
   
