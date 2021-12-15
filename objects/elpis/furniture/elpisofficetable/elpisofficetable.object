@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-elpisofficetable",
+  "colonyTags" : ["commerce", "hylotl", "human"],
+  "printable" : true,
+  "rarity" : "common",
+  "description" : "A high-tech office desk. ",
+  "shortdescription" : "Elpis Office Desk",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 150,
+
+  "apexDescription" : "Quite the high-tech office desk.",
+  "avianDescription" : "This is a pretty high-tech desk.",
+  "floranDescription" : "Floran can sssee through the desssk...",
+  "glitchDescription" : "Approving. A very well-made desk.",
+  "humanDescription" : "A cool desk.",
+  "hylotlDescription" : "Beautiful craftsmanship, truly splendid.",
+  "novakidDescription" : "A good ol' desk.",
+
+  "inventoryIcon" : "elpisofficetableicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "elpisofficetable.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
+

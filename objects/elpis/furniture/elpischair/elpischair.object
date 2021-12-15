@@ -1,0 +1,39 @@
+{
+  "objectName" : "starforge-elpischair",
+  "colonyTags" : ["misc","human", "hylotl"],
+  "printable" : true,
+  "rarity" : "common",
+  "description" : "A high-tech chair.",
+  "shortdescription" : "Elpis Chair",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 125,
+
+  "apexDescription" : "A high-tech chair. It looks uncomfortable, but surprisingly isn't.",
+  "avianDescription" : "A good place to sit.",
+  "floranDescription" : "Floran sssit on chair and think about hunting.",
+  "glitchDescription" : "Surprised. What an interesting design for a chair.",
+  "humanDescription" : "An Elpis chair, surprisingly comfy.",
+  "hylotlDescription" : "A very beautiful design. Amazing.",
+  "novakidDescription" : "I don't really like this chair.",
+
+  "inventoryIcon" : "elpischairicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "elpischair.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [2, 22]
+
+}
