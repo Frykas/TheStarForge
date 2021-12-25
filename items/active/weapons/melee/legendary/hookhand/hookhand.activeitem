@@ -11,6 +11,7 @@
   "description" : "Slice & Dice!",
   "shortdescription" : "Hook Hand",
   "itemTags" : ["weapon", "melee", "fist", "apex"],
+  "learnBlueprintsOnPickup" : [ "starforge-hookhand" ],
 
   "animation" : "hookhand.animation",
   "animationParts" : {

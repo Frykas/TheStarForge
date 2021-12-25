@@ -11,9 +11,10 @@
     {"image" : "type44gauntlet.png:front"},
     {"image" : "type44gauntletfullbright.png:front"}
   ],
-  "description" : "An experimental gauntlet made of ancient rock and unbound technology.",
-  "shortdescription" : "Type-44 Gauntlet",
+  "description" : "An experimental Unbound gauntlet.",
+  "shortdescription" : "^orange;Type-44 Gauntlet^reset;",
   "itemTags" : ["weapon", "melee", "fist", "apex", "unbound"],
+  "learnBlueprintsOnPickup" : [ "starforge-type44gauntlet" ],
 
   "animation" : "type44gauntlet.animation",
   "animationParts" : {

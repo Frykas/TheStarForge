@@ -5,7 +5,7 @@
   "rarity": "legendary",
   "description": "A devastating rocket launcher fire thermite-type rockets.",
   "tooltipKind": "starforge-unboundgun",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Imolator\" RL",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Immolator\" RL",
   "category": "Thermite Rocket Launcher",
   "twoHanded": true,
   "level": 6,

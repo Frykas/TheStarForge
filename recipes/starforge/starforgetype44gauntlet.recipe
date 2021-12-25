@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 5000},
+	{ "item" : "starforge-cerulium", "count" : 5},
+	{ "item" : "starforge-infusedtitanium", "count" : 15}
+  ],
+  "output" : {
+    "item" : "starforge-type44gauntlet",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

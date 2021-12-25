@@ -10,6 +10,7 @@
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword"],
+  "learnBlueprintsOnPickup" : [ "starforge-earthbringer" ],
 
   "inventoryIcon" : "starforge-earthbringer.png",
 

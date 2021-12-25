@@ -45,7 +45,7 @@
     },
 	
 	{ "op": "add", "path": "/displayDungeons/starforge-vowvillage", "value": 
-    {"description" : "Avian mining village detected. Recent Unbound invasion reported, no trace of Avian survivor. ", "icon" : "/interface/cockpit/dungeons/vowvillageicon.png" }
+    {"description" : "Avian mining village detected. Recent Unbound invasion reported, no trace of Avian survivors. ", "icon" : "/interface/cockpit/dungeons/vowvillageicon.png" }
     },
 	
 	{ "op": "add", "path": "/displayDungeons/starforge-furouraltar", "value": 

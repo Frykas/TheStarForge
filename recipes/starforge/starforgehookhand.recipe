@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 250},
+	{ "item" : "starforge-infusedtitanium", "count" : 12},
+	{ "item" : "durasteelbar", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-hookhand",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+
