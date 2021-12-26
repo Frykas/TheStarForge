@@ -1,0 +1,13 @@
+[
+  {
+    "op" : "add",
+    "path" : "/items/starforge:missioncatalogue",
+	"value":{
+	  "label" : "^#ff0;Mission Catalogue",
+	  "action" : [ "pane", "/interface/scripted/starforge-missioncatalogue/missioncatalogue.config" ],
+	  "weight" : -800,
+	  "condition" : [ "admin" ], 
+	  "icon" : "/interface/scripted/starforge-missioncatalogue/icon.png"
+	}
+  }
+]

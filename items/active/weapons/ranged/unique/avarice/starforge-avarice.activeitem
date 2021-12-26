@@ -46,8 +46,8 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-bowgunfire.lua"],
-    "class" : "StarForgeBowGunFire",
+    "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
+    "class" : "StarforgeGunFire",
 
     "fireTime" : 0.625,
     "baseDps" : 12,
