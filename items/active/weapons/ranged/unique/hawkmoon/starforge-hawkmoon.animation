@@ -18,25 +18,31 @@
         }
       },
       "gun" : {
-        "default" : "idle1",
+        "default" : "readyState1",
         "states" : {
-          "idle1" : {
+          "readyState1" : {
 			"frames" : 1
 		  },
-          "transitionToIdle2" : {
+          "startCycle1" : {
             "frames" : 1,
-            "cycle" : 0.125,
+            "cycle" : 0.15,
             "mode" : "transition",
-            "transition" : "idle2"
+            "transition" : "readyState2"
           },
-		  "idle2" : {
+		  "readyState2" : {
 			"frames" : 1
 		  },
-          "transitionToIdle1" : {
+          "startCycle2" : {
             "frames" : 1,
-            "cycle" : 0.125,
+            "cycle" : 0.15,
             "mode" : "transition",
-            "transition" : "idle1"
+            "transition" : "readyState1"
+          },
+          "reload" : {
+            "frames" : 1,
+            "cycle" : 1.2,
+            "mode" : "transition",
+            "transition" : "readyState1"
           }
         }
       }
@@ -51,24 +57,29 @@
         },
         "partStates" : {
           "gun" : {
-            "idle1" : {
+            "readyState1" : {
               "properties" : {
                 "image" : "<partImage>:ready1"
               }
             },
-			"transitionToIdle2" : {
+			"startCycle1" : {
               "properties" : {
                 "image" : "<partImage>:cycle1.<frame>"
               }
             },
-			"idle2" : {
+			"readyState2" : {
               "properties" : {
                 "image" : "<partImage>:ready2"
               }
             },
-			"transitionToIdle1" : {
+			"startCycle2" : {
               "properties" : {
                 "image" : "<partImage>:cycle2.<frame>"
+              }
+            },
+			"reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
               }
             }
           }
@@ -112,6 +123,11 @@
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0, 0, 0, 0],
       "particles" : [ ]
+    },
+    "reload" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
     }
   },
 
@@ -124,7 +140,10 @@
   },
 
   "sounds" : {
-    "fire" : [ "/sfx/gun/starforge-pepperboxfire.ogg" ],
+    "fire" : [ ],
+    "fireHeavy" : [ ],
+	"reloadLoop" : [ ],
+	"reload" : [ ],
 	"unholsterTwirl" : [ "/sfx/interface/item_equip.ogg" ]
   }
 }

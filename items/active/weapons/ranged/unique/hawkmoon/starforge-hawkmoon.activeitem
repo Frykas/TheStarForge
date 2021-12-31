@@ -20,19 +20,23 @@
   "animationCustom" : {
     "sounds" : {
       "fire" : ["/sfx/gun/starforge_hawkmoon.ogg"],
-	  "unholsterTwirl" : [ "/sfx/interface/item_equip.ogg" ]
+      "fireHeavy" : [ "/sfx/gun/starforge_hawkmoonheavy.ogg" ],
+	  "unholsterTwirl" : [ "/sfx/interface/item_equip.ogg" ],
+	  
+	  "reloadLoop" : [ ],
+	  "reload" : [ "/sfx/gun/reload/pistol_reload_clip3.ogg" ]
     }
   }, 
   "baseOffset" : [0.750, 0.125],
-  "muzzleOffset" : [0.875,0.250],
+  "muzzleOffset" : [1.0, 0.875],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
   
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
-    "class" : "StarforgeGunFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-heavyreloadgunfire.lua"],
+    "class" : "StarforgeHeavyReloadGunFire",
 
     "fireTime" : 0.55,
     "baseDps" : 11,
@@ -41,14 +45,19 @@
 
     "projectileCount" : 1,
 
-    "fireType" : "auto",
+	"maxAmmo" : 7,
+	"shotIntervals" : [7],
 	
-	"animatedFire" : true,
+    "fireType" : "auto",
+	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
+	
+	"cycleAfterShot" : true,
+	"fireAnimation" : false,
 
-    "projectileType" : "unboundfirebullet",
-    "projectileParameters" : {
-	  "damageKind" : "default"
-    },
+	"heavyDamageMultiplier" : 1.25,
+	"heavyProjectileType" : "starforge-hawkmoonbullet",
+    "projectileType" : "starforge-physicalbullet",
+    "projectileParameters" : {},
 
     "stances" : {
       "idle" : {
@@ -88,6 +97,26 @@
 
         "allowRotate" : true,
         "allowFlip" : true
+      },
+      "reload" : {
+        "duration" : 1.45,
+        "armRotation" : -25,
+        "weaponRotation" : 55,
+		"weaponOffset" : [-0.25, 0.0],
+        "twoHanded" : true,
+
+        "aimAngle" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+		"frontArmFrameSequence" : [
+		  [0.0, "rotation"],
+		  [0.3, "walk.2"],
+		  [0.6, "run.3"],
+		  [0.9, "run.1"],
+		  [1.2, "run.1"]
+		],
+        "backArmFrame" : "rotation"
       }
     }
   },

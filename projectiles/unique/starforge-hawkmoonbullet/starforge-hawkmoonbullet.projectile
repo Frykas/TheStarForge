@@ -1,0 +1,34 @@
+{
+  "projectileName" : "starforge-hawkmoonbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "starforge-hawkmoonbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 220,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "periodicActions" : [
+	{
+      "time" : 0,
+      "repeat" : false,
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.0,
+      "type" : "starforge-burstring"
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+    //{
+    //  "action" : "config",
+    //  "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundfirebulletexplosion.config"
+    //}
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "daggerblue" ],
+  "damageKind" : "default"
+}

@@ -42,10 +42,8 @@
 	
 	"animatedFire" : true,
 
-    "projectileType" : "unboundfirebullet",
-    "projectileParameters" : {
-	  "damageKind" : "default"
-    },
+    "projectileType" : "starforge-physicalbullet",
+    "projectileParameters" : {},
 
     "stances" : {
       "idle" : {
