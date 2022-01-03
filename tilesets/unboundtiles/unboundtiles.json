@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unboundtiles",
  "spacing":0,
- "tilecount":4,
+ "tilecount":6,
  "tiledversion":"1.4.3",
  "tileheight":8,
  "tileproperties":
@@ -48,6 +48,20 @@
          "\/\/name":"starforge-unboundmetalsupport",
          "\/\/shortdescription":"Unbound Metal Support",
          "material":"starforge-unboundmetalsupport"
+        },
+     "4":
+        {
+         "\/\/description":"Yukai roof tiles.",
+         "\/\/name":"starforge-yukairooftile",
+         "\/\/shortdescription":"Yukai Tiles",
+         "material":"starforge-yukairooftile"
+        },
+     "5":
+        {
+         "\/\/description":"Traditional looking Yukai roofing.",
+         "\/\/name":"starforge-yukairoofing",
+         "\/\/shortdescription":"Yukai Roofing",
+         "material":"starforge-yukairoofing"
         }
     },
  "tilepropertytypes":
@@ -79,6 +93,20 @@
          "\/\/name":"string",
          "\/\/shortdescription":"string",
          "material":"string"
+        },
+     "4":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "material":"string"
+        },
+     "5":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "material":"string"
         }
     },
  "tiles":
@@ -104,6 +132,18 @@
      "3":
         {
          "image":"unboundmetalsupport.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "4":
+        {
+         "image":"yukairoofing.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "5":
+        {
+         "image":"yukairooftiles.png",
          "imageheight":8,
          "imagewidth":8
         }
