@@ -17,14 +17,18 @@
     "gun" : "starforge-pepperbox.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
-  "animationCustom" : {},
+  "animationCustom" : {
+    "sounds" : {
+      "altFire" : [ "/sfx/gun/starforge-assaultriflefire1.ogg" ]
+    }
+  },
 
   "baseOffset" : [1.25, 0.125],
   "muzzleOffset" : [0.25, 1],
   
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "fire",
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
@@ -88,6 +92,83 @@
       },
       "cooldown" : {
         "duration" : 0.2,
+        "armRotation" : -5,
+        "weaponRotation" : 10,
+		"weaponOffset" : [-0.085, 0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "swim.3",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-execute.lua"],
+    "class" : "StarforgeExecute",
+	"name" : "Execution",
+
+    "fireTime" : 3,
+    "baseDps" : 9,
+    "energyUsage" : 100,
+    "inaccuracy" : 0.0,
+
+    "projectileCount" : 1,
+
+    "fireType" : "auto",
+	
+	"animatedFire" : true,
+
+    "projectileType" : "starforge-executionround",
+    "projectileParameters" : {
+	  "statusEffects" : ["burning"]
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -8,
+        "weaponRotation" : 8,
+		"weaponOffset" : [-0.0, 0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "swim.3",
+        "backArmFrame" : "swim.4"
+      },
+      "twirl" : {
+        "duration" : 1,
+        "armRotation" : -35,
+        "weaponRotation" : -778,
+		"weaponOffset" : [-0.0, 0.5],
+        "weaponRotationCenter" : [0.0, 0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "swim.3",
+        "backArmFrame" : "swim.4"
+      }, 
+      "fire" : {
+        "duration" : 0.05,
+        "armRotation" : -5,
+        "weaponRotation" : 10,
+		"weaponOffset" : [-0.085, 0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "swim.3",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown" : {
+        "duration" : 0.5,
         "armRotation" : -5,
         "weaponRotation" : 10,
 		"weaponOffset" : [-0.085, 0.5],
