@@ -1,0 +1,93 @@
+{
+  "projectileName" : "starforge-executionround",
+  "physics" : "stickybullet",
+  "bounces" : 0,
+  "image" : "starforge-executionround.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 275,
+  "supportsProcessing" : true,
+  "piercing" : true,
+  "emitters" : [],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundfirebulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "streak",
+        "layer" : "front",
+        "fullbright" : true,
+        "destructionAction" : "shrink",
+        "size" : 1,
+		"color" : [251, 186, 12, 155],
+		"collidesForeground" : false,
+		"length" : 40,
+        "position" : [-1, 0],
+        "timeToLive" : 0.01,
+        "destructionTime" : 0.5,
+		"initialVelocity" : [0.5, 0],
+		"variance" : {
+		  "size" : 0,
+          "destructionTime" : 0.5,
+		  "initialVelocity" : [0.5, -0],
+		  "length" : 0
+		}
+      }
+    },
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/unique/starforge-thevow/trail.animation",
+        "position" : [-1.0, 0],
+        "size" : 0.75,
+		"light" : [25, 15, 5],
+        "color" : [255, 255, 255, 255],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 0.3,
+        "destructionTime" : 0.10,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  "advancedPeriodicActions" : [
+    {
+      "loopTime" : 0.01,
+	  "loopTimeVariance" : 0.005,
+      "action" : "projectile",
+      "type" : "starforge-executionroundtrail",
+      "rotate" : true,
+      "inheritDamageFactor" : 0.1,
+      "config" : {}
+    },
+    {
+      "loopTime" : 0.01,
+	  "loopTimeVariance" : 0.005,
+      "action" : "projectile",
+      "type" : "starforge-executionroundtrail2",
+      "rotate" : true,
+      "inheritDamageFactor" : 0.1,
+      "config" : {}
+	}
+  ],
+  "statusEffects" : ["burning"],
+  "lightColor" : [100, 100, 100],
+  "fullbright" : true,
+  "damageKind" : "fireplasmabullet",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-advancedPeriodicActions.lua" ]
+}

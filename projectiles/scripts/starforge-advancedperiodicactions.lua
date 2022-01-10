@@ -5,6 +5,10 @@ function init()
 end
 
 function update(dt)
+  if projectile.collision() or mcontroller.isCollisionStuck() or mcontroller.isColliding() then
+	projectile.die()
+  end
+  
   --Advanced Periodic Action
   for _, action in pairs(self.advancedPeriodicActions) do
     advancedPeriodicActions(action, dt, _)
