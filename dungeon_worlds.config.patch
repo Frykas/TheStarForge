@@ -50,6 +50,26 @@
             "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
             "musicTrack" : "/music/unshackled_unbound.ogg"
 	}
-	}
+	},
+	
+	{
+    "op" : "add",
+    "path" : "/unboundship1",
+    "value" : {
+	  "primaryDungeon" : "unboundship1",
+	  "threatLevel" : 7,
+	  "gravity" : 0,
+	  "airless" : true,
+	  "worldSize" : [1300, 200],
+	  "dungeonBaseHeight" : 150,
+	  "dungeonSurfaceHeight" : 150,
+	  "ambientLightLevel" : [32, 32, 32],
+	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+	  "musicTrack" : "/music/lava-exploration1.ogg",
+	  "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+	  "worldEdgeForceRegions" : "TopAndBottom",
+	  "biome" : "space"
+    }
+  }
 	
 ]
