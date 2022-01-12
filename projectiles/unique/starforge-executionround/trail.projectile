@@ -1,0 +1,19 @@
+{
+  "projectileName" : "starforge-executionroundtrail",
+  "image" : "trail.png",
+  "physics" : "laser",
+  "frameNumber" : 10,
+  "animationCycle" : 0.4,
+  "emitters" : [ ],
+  "pointLight" : false,
+  "flippable" : true,
+  "animationLoops" : false,
+  "power" : 5.0,
+  "speed" : 4,
+  "supportsProcessing" : true,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "statusEffects" : ["burning"],
+  "damageKind" : "fireplasmabullet"
+}
