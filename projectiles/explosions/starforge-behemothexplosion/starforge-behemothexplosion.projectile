@@ -1,0 +1,17 @@
+{
+  "projectileName" : "starforge-behemothexplosion",
+  "image" : "starforge-behemothexplosion.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "pointLight" : true,
+  "fullbright" : true,
+  "statusEffects" : [],
+  "damagePoly" : [ [-65, 0], [-49, -49], [0, -65], [49, -49], [65, 0], [49, 49], [0, 65], [-49, 49] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "fireplasma",
+  "knockback" : 5
+}

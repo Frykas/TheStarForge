@@ -9,6 +9,17 @@
   "windupFrames" : 1,
   "bounces" : 0,
   "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/starforge-behemothexplosion/starforge-behemothexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "starforge-behemothlingeringexplosion",
+      "rotate" : true,
+      "inheritDamageFactor" : 0.1,
+      "config" : {}
+    }
   ],
   "power" : 0,
   "speed" : 20,
@@ -18,10 +29,10 @@
   
   "persistentAudio" : "/sfx/projectiles/starforge-behemonthenergysphere.ogg",
   
-  "scripts" : ["starforge-behemothenergysphere.lua"],
+  "scripts" : ["/projectiles/scripts/starforge-electricalprojectile.lua"],
   
   "lightningParameters" : {
-	"chainLightningRadius" : 30,
+	"chainLightningRadius" : 15,
 	
 	"tickRate" : 0.05,
     "damageKind" : "fireplasma",

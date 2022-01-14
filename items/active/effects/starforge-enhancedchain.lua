@@ -81,6 +81,12 @@ function update()
         local lastDrawnSegment = chain.drawPercentage and math.ceil(segmentCount * chain.drawPercentage) or segmentCount
         for i = 1, lastDrawnSegment do
           local image = chain.segmentImage
+		  
+		  --Offset animation along the chain
+		  if chain.segmentImages then
+		    image = chain.segmentImages[(i % (chain.segmentFrameCount - 1)) + 1]
+		  end
+		  
           if i == 1 and chain.startSegmentImage then
             image = chain.startSegmentImage
           elseif i == lastDrawnSegment and chain.endSegmentImage then

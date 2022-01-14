@@ -1,0 +1,131 @@
+{
+  "itemName" : "starforge-raventoxin",
+  "price" : 1500,
+  "level" : 6,
+  "fixedLevel" : false,
+  "inventoryIcon" : "starforge-raventoxinicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A pestilent Unbound prototype developed using stolen technology.",
+  "shortdescription" : "Raventoxin",
+  "tooltipKind" : "base",
+  "category" : "Beam Rifle",
+  "itemTags" : ["weapon","ranged","elpiselements","unbound","beamrifle"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-laserreticle.cursor",
+  
+  "animation" : "starforge-raventoxin.animation",
+  "animationParts" : {
+    "middle" : "starforge-raventoxin.png",
+    "middleFullbright" : "starforge-raventoxinfullbright.png",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.875, 0.5]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+	  //PRIMARY
+      "fireStart" : [ "/sfx/gun/starforge-beamstart1.ogg" ],
+      "fireLoop" : [ "/sfx/melee/charge_full_hold1.ogg" ],
+      "fireEnd" : [],
+      "beamImpact" : []
+    }
+  },
+  "animationScripts" : ["/items/active/effects/starforge-enhancedchain.lua"],
+
+  "baseOffset" : [0.875, 0.5],
+  "muzzleOffset" : [0.375, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "poison",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-beamfire.lua"],
+    "class" : "StarforgeBeamFire",
+
+	"activeAnimation" : true, //Allows a special animation to be played while firing
+	
+    "fireTime" : 0.1,
+    "baseDps" : 9.5,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.0,
+	
+	"beamCollisionType" : "box",
+	"beamWidth" : 0.4,
+	
+	"impactDamageTimeout" : 0.2,
+	"spawnImpactProjectile" : false,
+	"impactProjectile" : "",
+	
+	"laserPiercing" : false,
+
+    "damageConfig" : {
+      "statusEffects" : [ "weakpoison" ],
+      "damageSourceKind" : "poisonplasma",
+      "knockback" : 1
+    },
+
+    "beamLength" : 80,
+
+	"animatedChain" : true,
+	"offsetFrames" : true,
+	"chainAnimationTime" : 0.4,
+	"chainAnimationFrames" : 16,
+    "chain" : {
+      "startOffset" : [0, 0],
+      "segmentImage" : "/items/active/weapons/ranged/legendary/raventoxin/starforge-raventoxinbeam.png",
+      "endSegmentImage" : "/items/active/weapons/ranged/legendary/raventoxin/starforge-raventoxinbeamend.png",
+      "segmentSize" : 2.0,
+      "overdrawLength" : 0.125,
+      "taper" : 0.01,
+      "waveform" : {
+        "frequency" : 15.0,
+        "amplitude" : 0.25,
+        "movement" : 5.0
+      },
+      "fullbright" : true,
+	  "renderLayer" : "Player-1"
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
