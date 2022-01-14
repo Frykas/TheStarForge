@@ -12,7 +12,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt2UGOwjAMBVBvZi7CHeZ0XcySG4y6hMuw40yAGIsqikOafMdG8Ze+hNRS5Sm0TcuF6PcSjUaj0Wg0Go1GoSXnmcEoZRZnGi\/W06GuiFhaU88P5Yt2W87t+fDsSrJ33eyHiLWVvUeha7IvIiO9uXOTvWnYiz6fLed3oadJymPbQnrzizliOdvfJ3tL87uQ3m8aczQ523GnXun8Tb0Is6X3795voY9tn+gtrSXeeTXWIVbze\/73lpr7Tm+0vLXrxd568XJyc4RoazS9WtYes5ZX29pq1vCOsraYkd5R16ieaxd6fj1bNbzbLPRaRyHLx23JCK\/0TN9a794vcMNbH81nYG9e7fcb\/Ayr4S29G5Eyuxdt9uQd8f6ZvRr3I5QXaWavxnpjj3fUf0joeU2LsqLcfN\/gd47Iz+\/uR3udkv3qtCgj19qzpzNZe83W4w6vnvWTzDxO5DXLsx3t9GzWtHpzj7Jam0c7e8y138vtZ+nc66\/d33r8PWbrcUTn6w3VzVKX",
+         "data":"eJzt2UGOwjAMBVBvZi7CHeZ0XcySG4x6ArgJO84EiLGoojikyXdsFH\/pS0gtVZ5C27RciH4v0Wg0Go1Go9FoFFpynhmMUmZxpvFiPR3qioilNfX8UL5ot+Xcng\/PriR7181+iFhb2XsUuib7IjLSmzs32ZuGvejz2XJ+F3qapDy2LaQ3v5gjlrP9fbK3NL8L6f2mMUeTsx136pXO39SLMFt6\/+79FvrY9one0lrinVdjHWI1v+d\/b6m57\/RGy1u7XuytFy8nN0eItkbTq2XtMWt5ta2tZg3vKGuLGekddY3quXah59ezVcO7zUKvdRSyfNyWjPBKz\/St9e79Aje89dF8Bvbm1X6\/wc+wGt7SuxEps3vRZk\/eEe+f2atxP0J5kWb2aqw39nhH\/YeEnte0KCvKzfcNfueI\/PzufrTXKdmvTosycq09ezqTtddsPe7w6lk\/yczjRF6zPNvRTs9mTas39yirtXm0s8dc+73cfpbOvf7a\/a3H32O2Hkd0vt4AUERZDw==",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -26,7 +26,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztmd0NgjAUheuLDsIOTscAbsCz7qMzKdEmDQGEcn\/OhfMlJxBoy\/3SQJuQEiGEEEIIIYQQYsO9WZboDH2uaTx78n4030i1QyY7rPGN6Fzzbu7pfW6F2kSBvnVtorBX37m9RPe5f55I96cvOuXaktM7zWWsDypL94tbg8bYHEkEES1XRGdtVyRnK1dvZ6tvFNK360iuQ9qks0fSGncr9MUedyv0xR6XEEKOwOU0\/a9EKv0zEMh15HXj9ovkeTt4libPiesvx0jj6WLt7l2\/pbN33fTVc43knIqjJN5eWnM6h7ebpWuJt6ela+YoniW1tda0Q2TtnCDNXS2RayexeQNHGzxS",
+         "data":"eJztme0NgjAUResfHYQdnI4B3IARdBmdSYk2aQgglPdxH9yT3ECgLe+kgTYhJUIIIYQQQgghxIZ7syzRGfpc03j25P1ovpFqh0x2WOMb0bnm3dzT+9wKtYkCfevaRGGvvnN7ie5z\/zyR7k9fdMq1Jad3mstYH1SW7he3Bo2xOZIIIlquiM7arkjOVq7ezlbfKKRv15Fch7RJZ4+kNe5W6Is97lboiz0uIYQcgctp+l+JVPpnIJDryOvG7RfJ83bwLE2eE9dfjpHG08Xa3bt+S2fvuumr5xrJORVHSby9tOZ0Dm83S9cSb09L18xRPEtqa61ph8jaOUGau1oi105i8wY6sEIu",
          "encoding":"base64",
          "height":60,
          "id":2,
@@ -141,30 +141,6 @@
                  "y":184
                 }, 
                 {
-                 "gid":3204,
-                 "height":16,
-                 "id":990,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":40,
-                 "x":272,
-                 "y":280
-                }, 
-                {
-                 "gid":3218,
-                 "height":24,
-                 "id":991,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":144,
-                 "y":360
-                }, 
-                {
                  "gid":3230,
                  "height":12,
                  "id":994,
@@ -189,7 +165,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":8806,
+                 "gid":8812,
                  "height":16,
                  "id":1004,
                  "name":"",
@@ -207,7 +183,7 @@
                  "y":336
                 }, 
                 {
-                 "gid":8882,
+                 "gid":8888,
                  "height":16,
                  "id":1006,
                  "name":"",
@@ -241,6 +217,66 @@
                  "width":40,
                  "x":288,
                  "y":312
+                }, 
+                {
+                 "gid":9135,
+                 "height":24,
+                 "id":1014,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":208,
+                 "y":344
+                }, 
+                {
+                 "gid":9135,
+                 "height":24,
+                 "id":1015,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":320,
+                 "y":344
+                }, 
+                {
+                 "gid":9136,
+                 "height":11,
+                 "id":1016,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":232,
+                 "y":280
+                }, 
+                {
+                 "gid":2147492456,
+                 "height":11,
+                 "id":1017,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":296,
+                 "y":280
+                }, 
+                {
+                 "gid":9137,
+                 "height":24,
+                 "id":1018,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":144,
+                 "y":360
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -598,7 +634,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1014,
+ "nextobjectid":1019,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -745,16 +781,20 @@
          "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":8805,
+         "firstgid":8811,
          "source":"..\/..\/tilesets\/yukaivillage\/yukaivillage.json"
         }, 
         {
-         "firstgid":8807,
+         "firstgid":8813,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/breakable.json"
         }, 
         {
-         "firstgid":9117,
+         "firstgid":9123,
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
+        }, 
+        {
+         "firstgid":9129,
+         "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }],
  "tilewidth":8,
  "type":"map",

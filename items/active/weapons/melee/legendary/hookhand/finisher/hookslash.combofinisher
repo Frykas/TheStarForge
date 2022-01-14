@@ -45,7 +45,7 @@
   "comboFinisher" : {
     "name" : "Hook Slash",
     "type" : "hookslash",
-    "scripts" : [ "/items/active/weapons/melee/unique/hookhand/finisher/hookslash.lua" ],
+    "scripts" : [ "/items/active/weapons/melee/legendary/hookhand/finisher/hookslash.lua" ],
     "class" : "StarforgeHookSlash",
 	
 	"projectileType" : "starforge-hookhandtwirl",

@@ -153,18 +153,6 @@
                  "y":296
                 }, 
                 {
-                 "gid":3160,
-                 "height":16,
-                 "id":979,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":40,
-                 "x":192,
-                 "y":344
-                }, 
-                {
                  "gid":6207,
                  "height":22,
                  "id":980,
@@ -297,6 +285,30 @@
                  "width":16,
                  "x":208,
                  "y":328
+                }, 
+                {
+                 "gid":9123,
+                 "height":16,
+                 "id":990,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":36,
+                 "x":200,
+                 "y":344
+                }, 
+                {
+                 "gid":2147492772,
+                 "height":11,
+                 "id":991,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":240,
+                 "y":344
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -600,7 +612,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":990,
+ "nextobjectid":992,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -753,6 +765,10 @@
         {
          "firstgid":9113,
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
+        }, 
+        {
+         "firstgid":9119,
+         "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }],
  "tilewidth":8,
  "type":"map",
