@@ -1,5 +1,5 @@
 {
-    "type": "starforge-yukaislicer",
+    "type": "starforge-yukaikabuto",
     "baseType": "hostile",
  
     "dropPools": ["guardtreasure"],
@@ -34,20 +34,20 @@
         }
     },
  
-    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":75}],
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":110}, {"stat":"powerMultiplier","amount":1.25}],
 	
     "items": {
         "override": [
             [0, [{
                 "head": [
-				{"name": "starforge-yukaislicerhead"}
+				{"name": "starforge-yukaikabutohead"}
 				
 				],
                 "chest": [{
-                    "name": "starforge-yukaislicerchest"
+                    "name": "starforge-yukaikabutochest"
                 }],
                 "legs": [{
-                    "name": "starforge-yukaislicerpants"
+                    "name": "starforge-yukaikabutopants"
                 }],
 				"back": [
 				{ "name": "spearback" },
@@ -55,9 +55,8 @@
 				
 				],
                 "primary": [
-					"starforge-yukaisword2",
-					"starforge-yukaispear2",
-					"starforge-yukaiscythe"
+					"starforge-yukaisword3",
+					"starforge-yukaispear3"
                 ]
 				 
             }]]

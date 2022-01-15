@@ -1,0 +1,46 @@
+{
+  "itemName" : "starforge-yukaispear3",
+  "price" : 650,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A titanium & bone spear. Decorated with Ember coral.",
+  "shortdescription" : "Yukai Ornate Spear",
+  "tooltipKind" : "sword",
+  "category" : "Bone Spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "inventoryIcon" : "yukaispear3.png",
+
+  "animation" : "/items/active/weapons/melee/spear/spear.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "yukaispear3.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.65,
+    "baseDps" : 11.5
+  },
+  
+  "damageConfig" : {
+      "statusEffects" : [ "burning" ]
+    },
+
+  "altAbilityType" : "flurry",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

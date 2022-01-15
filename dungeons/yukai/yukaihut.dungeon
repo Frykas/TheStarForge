@@ -4,7 +4,7 @@
     "species" : "hylotl",
     "rules" : [
     ],
-    "anchor" : [ "yukaihut1" ],
+    "anchor" : [ "yukaihut1", "yukaihut2", "yukaihut3" ],
     "gravity" : 80,
     "maxRadius" : 1000000,
     "maxParts" : 100,
@@ -18,6 +18,22 @@
         [ "maxSpawnCount", [1] ]
       ],
       "def" : [ "tmx", "yukaihut1.json" ]
+    },
+	
+	{
+      "name" : "yukaihut2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaihut2.json" ]
+    },
+	
+	{
+      "name" : "yukaihut3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaihut3.json" ]
     }
   ]
 }

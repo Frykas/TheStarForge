@@ -1,0 +1,40 @@
+{
+  "itemName" : "starforge-yukaiscythe",
+  "price" : 650,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "description" : "A titanium & bone scythe. A powerful weapon.",
+  "shortdescription" : "Yukai Steel Scythe",
+  "tooltipKind" : "sword",
+  "category" : "Bone Scythe",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","scythe"],
+
+  "inventoryIcon" : "yukaiscythe.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "yukaiscythe.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.90,
+    "baseDps" : 8.5
+  },
+  
+  "damageConfig" : {
+      "statusEffects" : [ "starforge-bleeding" ]
+    },
+	
+    "altAbilityType" : "risingslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
