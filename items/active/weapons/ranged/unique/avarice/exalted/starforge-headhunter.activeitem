@@ -136,7 +136,7 @@
 	  }
 	],
 
-    "projectileType" : "woodenbolt",
+    "projectileType" : "starforge-headhunterarrow",
     "projectileParameters" : {
       "speed" : 135,
       "knockback" : 10
@@ -188,7 +188,7 @@
 	
 	//The new stats which will overwrite the primary ability
 	"newAbility" : {
-	  "projectileType" : "starforge-imperviumbolt",
+	  "projectileType" : "starforge-headhunterbolt",
 	  "projectileParameters" : {
 		"speed" : 200,
 		"knockback" : 25

@@ -1,0 +1,23 @@
+{
+  "projectileName" : "starforge-headhunterarrow",
+  "physics" : "laser",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "image" : "headhunterarrow.png",
+  "fullbright" : true,
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "bow",
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "timeToLive" : 10,
+  "pointLight" : false,
+  "power" : 3.0,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "piercing" : true,
+  "speed" : 125
+}

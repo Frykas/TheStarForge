@@ -249,7 +249,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":9127,
+                 "gid":9130,
                  "height":16,
                  "id":1095,
                  "name":"",
@@ -267,18 +267,6 @@
                  "y":240
                 }, 
                 {
-                 "gid":3120,
-                 "height":24,
-                 "id":1100,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":240,
-                 "y":288
-                }, 
-                {
                  "gid":3133,
                  "height":16,
                  "id":1101,
@@ -289,18 +277,6 @@
                  "width":32,
                  "x":280,
                  "y":288
-                }, 
-                {
-                 "gid":2147486820,
-                 "height":16,
-                 "id":1102,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":264,
-                 "y":240
                 }, 
                 {
                  "gid":3204,
@@ -431,7 +407,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":288,
+                 "x":168,
                  "y":328
                 }, 
                 {
@@ -530,6 +506,54 @@
                  "width":8,
                  "x":248,
                  "y":328
+                }, 
+                {
+                 "gid":2147492776,
+                 "height":16,
+                 "id":1123,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":264,
+                 "y":240
+                }, 
+                {
+                 "gid":2147492775,
+                 "height":8,
+                 "id":1124,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":272,
+                 "y":224
+                }, 
+                {
+                 "gid":9127,
+                 "height":8,
+                 "id":1125,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":288,
+                 "y":328
+                }, 
+                {
+                 "gid":9129,
+                 "height":19,
+                 "id":1126,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":232,
+                 "y":288
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -607,7 +631,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1123,
+ "nextobjectid":1127,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -762,7 +786,7 @@
          "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":9127,
+         "firstgid":9130,
          "source":"..\/..\/tilesets\/yukaivillage\/yukaivillage.json"
         }],
  "tilewidth":8,

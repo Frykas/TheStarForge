@@ -1,0 +1,48 @@
+{
+  "objectName" : "starforge-yukaiembercoralpot",
+  "colonyTags" : ["bone", "light"],
+  "rarity" : "uncommon",
+
+  "printable" : true,
+  "description" : "Glowing ember coral, displayed in a pot made of bone.",
+  "shortdescription" : "Yukai Coral Pot",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 140,
+
+  "apexDescription" : "That glowing coral is warm to the touch.",
+  "avianDescription" : "They use corals as decoration? Pretty!",
+  "floranDescription" : "Floran like ssssshiny coral...",
+  "glitchDescription" : "Curious. What a pretty looking coral.",
+  "humanDescription" : "They put ember coral in pots? Aren't they supposed to be underwater?",
+  "hylotlDescription" : "The ember coral makes for very pretty decorations.",
+  "novakidDescription" : "Glowin' coral in a bowl, weirdos.",
+
+  
+  "lightColor" : [182, 78, 0],
+
+  "flickerPeriod" : 0.9,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "yukaiembercoralpoticon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "yukaiembercoralpot.png",
+      "imageLayers" : [ { "image" : "yukaiembercoralpot.png" }, { "image" : "yukaiembercoralpotfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }

@@ -1,0 +1,24 @@
+{
+  "projectileName" : "starforge-headhunterbolt",
+  "physics" : "laser",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "image" : "headhunterbolt.png",
+  "fullbright" : true,
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "statusEffects" : [ "starforge-bleeding" ],
+  "damageKind" : "bow",
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "timeToLive" : 10,
+  "pointLight" : false,
+  "power" : 5.0,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "piercing" : true,
+  "speed" : 175
+}

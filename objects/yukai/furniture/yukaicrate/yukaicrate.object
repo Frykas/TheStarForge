@@ -1,0 +1,37 @@
+{
+  "objectName" : "starforge-yukaicrate",
+  "colonyTags" : ["hylotl"],
+  "printable" : true,
+  "rarity" : "Uncommon",
+  "description" : "A crate made of wood, bones and ember coral.",
+  "shortdescription" : "Yukai Crate",
+  "race" : "hylotl",
+  "category" : "furniture",
+  "price" : 80,
+
+  "apexDescription" : "A crate made of bone, wood and ember coral.",
+  "avianDescription" : "This is quite the primitive crte!",
+  "floranDescription" : "Crate good enough for Floran to ssslice meatsss.",
+  "glitchDescription" : "Curious. They seem to like crystals and ember coral a lot.",
+  "humanDescription" : "The Yukai sure like to use bones on everything huh.",
+  "hylotlDescription" : "While the Yukai kept a primitive style of furniture, they can still make them look pretty.",
+  "novakidDescription" : "A good ol' crate.",
+
+  "inventoryIcon" : "yukaicrateicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "yukaicrate.png",
+	 "imageLayers" : [ { "image" : "yukaicrate.png" }, { "image" : "yukaicratefullbright.png", "fullbright" : true } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
+

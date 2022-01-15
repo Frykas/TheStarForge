@@ -345,18 +345,6 @@
                  "y":344
                 }, 
                 {
-                 "gid":2147486820,
-                 "height":16,
-                 "id":1072,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":152,
-                 "y":344
-                }, 
-                {
                  "gid":7016,
                  "height":16,
                  "id":1073,
@@ -393,7 +381,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":2147492776,
+                 "gid":2147492779,
                  "height":16,
                  "id":1078,
                  "name":"",
@@ -533,6 +521,30 @@
                  "width":8,
                  "x":312,
                  "y":328
+                }, 
+                {
+                 "gid":2147492776,
+                 "height":16,
+                 "id":1090,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":152,
+                 "y":344
+                }, 
+                {
+                 "gid":2147492775,
+                 "height":8,
+                 "id":1091,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":152,
+                 "y":328
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -610,7 +622,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1090,
+ "nextobjectid":1092,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -765,7 +777,7 @@
          "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":9127,
+         "firstgid":9130,
          "source":"..\/..\/tilesets\/yukaivillage\/yukaivillage.json"
         }],
  "tilewidth":8,

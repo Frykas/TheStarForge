@@ -16,7 +16,7 @@
  "margin":0,
  "name":"furouraltar",
  "spacing":0,
- "tilecount":10,
+ "tilecount":13,
  "tiledversion":"1.4.3",
  "tileheight":33,
  "tileproperties":
@@ -39,6 +39,36 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"starforge-spiritree1",
+         "tilesetDirection":"right"
+        },
+     "10":
+        {
+         "\/\/description":"Glowing ember coral, displayed in a pot made of bone.",
+         "\/\/name":"starforge-yukaiembercoralpot",
+         "\/\/shortdescription":"Yukai Coral Pot",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-yukaiembercoralpot",
+         "tilesetDirection":"right"
+        },
+     "11":
+        {
+         "\/\/description":"A crate made of wood, bones and ember coral.",
+         "\/\/name":"starforge-yukaicrate",
+         "\/\/shortdescription":"Yukai Crate",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-yukaicrate",
+         "tilesetDirection":"right"
+        },
+     "12":
+        {
+         "\/\/description":"A rack of traditional swords. One blade is made of bone, the other of titanium.",
+         "\/\/name":"starforge-yukaiswordrack",
+         "\/\/shortdescription":"Yukai Sword Rack",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-yukaiswordrack",
          "tilesetDirection":"right"
         },
      "2":
@@ -144,6 +174,36 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "10":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "11":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "12":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "2":
         {
          "\/\/description":"string",
@@ -239,6 +299,24 @@
          "imageheight":15,
          "imagewidth":16
         },
+     "10":
+        {
+         "image":"yukaiembercoralpot.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "11":
+        {
+         "image":"yukaicrate.png",
+         "imageheight":16,
+         "imagewidth":24
+        },
+     "12":
+        {
+         "image":"yukaiswordrack.png",
+         "imageheight":19,
+         "imagewidth":40
+        },
      "2":
         {
          "image":"spiritree2.png",
@@ -288,7 +366,7 @@
          "imagewidth":8
         }
     },
- "tilewidth":36,
+ "tilewidth":40,
  "type":"tileset",
  "version":1.1
 }

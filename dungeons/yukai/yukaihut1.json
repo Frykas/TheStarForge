@@ -213,7 +213,7 @@
                  "y":320
                 }, 
                 {
-                 "gid":9128,
+                 "gid":9131,
                  "height":16,
                  "id":1038,
                  "name":"",
@@ -239,7 +239,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":392,
+                 "x":400,
                  "y":240
                 }, 
                 {
@@ -476,6 +476,18 @@
                  "width":8,
                  "x":72,
                  "y":344
+                }, 
+                {
+                 "gid":2147492775,
+                 "height":8,
+                 "id":1058,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":392,
+                 "y":240
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -553,7 +565,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1058,
+ "nextobjectid":1059,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -708,7 +720,7 @@
          "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":9127,
+         "firstgid":9130,
          "source":"..\/..\/tilesets\/yukaivillage\/yukaivillage.json"
         }],
  "tilewidth":8,
