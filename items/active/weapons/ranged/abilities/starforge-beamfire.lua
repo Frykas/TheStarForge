@@ -31,6 +31,9 @@ function StarforgeBeamFire:init()
     animator.stopAllSounds("fireLoop")
     self.weapon:setStance(self.stances.idle)
   end
+  
+  --For randomness in pitch
+  self.pitchPerlinNoise = sb.makePerlinSource({seed = math.random(0,65535), type = "perlin"})
 end
 
 function StarforgeBeamFire:update(dt, fireMode, shiftHeld)
@@ -73,7 +76,12 @@ function StarforgeBeamFire:fire()
 
   local wasColliding = false
   while (self.fireMode == (self.activatingFireMode or self.abilitySlot) or (self.minFiringTime and self.timeSpentFiring < self.minFiringTime)) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) and not (self.maxFiringTime and self.timeSpentFiring > self.maxFiringTime) do
-    local beamStart = self:firePosition()
+    --Sound pitch variance
+	local pitchVariance = (1 + (self.pitchPerlinNoise:get(os.clock()) * self.pitchVariance or 0.5))
+	world.debugText("Pitch: %s", pitchVariance, vec2.add(mcontroller.position(), {5, 5}), "cyan")
+	animator.setSoundPitch("fireLoop", pitchVariance)
+	
+	local beamStart = self:firePosition()
     local beamEnd = vec2.add(beamStart, vec2.mul(vec2.norm(self:aimVector(self.inaccuracy or 0)), self.beamLength))
     local beamLength = self.beamLength
 	local beamIsColliding = false

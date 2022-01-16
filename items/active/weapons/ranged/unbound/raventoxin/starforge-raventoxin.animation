@@ -23,7 +23,7 @@
           "idle" : {},
           "activate" : {
             "frames" : 1,
-            "cycle" : 0.05,
+            "cycle" : 0,
             "mode" : "transition",
             "transition" : "active"
           },
@@ -155,7 +155,8 @@
       "emissionRate" : 55,
       "particles" : [
 		{"particle" : "poisonswoosh1"},
-        {"particle" : "largepoisonswoosh1"}
+        {"particle" : "poisonswoosh1"},
+        {"particle" : "poisonswoosh1"}
       ]
     },
     "beamParticles" : {

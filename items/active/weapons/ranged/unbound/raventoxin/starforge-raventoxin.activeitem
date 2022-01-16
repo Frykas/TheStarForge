@@ -35,8 +35,8 @@
     "sounds" : {
 	  //PRIMARY
       "fireStart" : [ "/sfx/gun/starforge-beamstart1.ogg" ],
-      "fireLoop" : [ "/sfx/melee/charge_full_hold1.ogg" ],
-      "fireEnd" : [],
+      "fireLoop" : [ "/sfx/gun/mech_beamdrill_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/mech_beamdrill_winddown.ogg" ],
       "beamImpact" : []
     }
   },
@@ -54,6 +54,7 @@
     "class" : "StarforgeBeamFire",
 
 	"activeAnimation" : true, //Allows a special animation to be played while firing
+	"pitchVariance" : 0.4,
 	
     "fireTime" : 0.1,
     "baseDps" : 9.5,
@@ -83,8 +84,8 @@
 	"chainAnimationFrames" : 16,
     "chain" : {
       "startOffset" : [0, 0],
-      "segmentImage" : "/items/active/weapons/ranged/legendary/raventoxin/starforge-raventoxinbeam.png",
-      "endSegmentImage" : "/items/active/weapons/ranged/legendary/raventoxin/starforge-raventoxinbeamend.png",
+      "segmentImage" : "/items/active/weapons/ranged/unbound/raventoxin/starforge-raventoxinbeam.png",
+      "endSegmentImage" : "/items/active/weapons/ranged/unbound/raventoxin/starforge-raventoxinbeamend.png",
       "segmentSize" : 2.0,
       "overdrawLength" : 0.125,
       "taper" : 0.01,
