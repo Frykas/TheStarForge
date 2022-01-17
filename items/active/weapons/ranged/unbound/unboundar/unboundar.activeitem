@@ -59,8 +59,9 @@
     "inaccuracy": 0.003,
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "unboundriflebullet",
+    "projectileType": "unboundelectricbullet",
     "projectileParameters": {
+	  "speed" : 200,
       "knockback": 3
     },
     "stances": {

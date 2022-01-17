@@ -1,0 +1,12 @@
+{
+  "projectileName" : "starforge-fracturefragment1",
+  "physics" : "shrapnel",
+  "image" : "starforge-fracturefragment1.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 25,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "damageKind" : "dagger"
+}

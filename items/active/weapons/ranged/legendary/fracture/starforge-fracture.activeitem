@@ -1,67 +1,54 @@
 {
-  "itemName": "starforge-unboundsmg",
-  "price": 1000,
+  "itemName": "starforge-fracture",
+  "price": 1500,
   "maxStack": 1,
   "rarity": "Legendary",
-  "description": "An Unbound SMG loaded with elemental bullets. Often used by Unbound \"Harasser\" Commando types.",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Harasser\" SMG",
-  "tooltipKind": "starforge-unboundgun",
-  "category": "SMG",
+  "description": "A large rock blaster that grows attached to your arm.",
+  "shortdescription": "Fracture",
+  "tooltipKind": "starforge-uniquegun",
+  "category": "Rock Arm",
   "twoHanded": true,
-  "level" : 6,
-  "itemTags": [
-    "weapon",
-    "ranged",
-    "assaultrifle"
-  ],
-  "inventoryIcon": "unboundsmgicon.png",
-  "animation": "unboundsmg.animation",
-
+  "level" : 5,
+  "itemTags": [ "weapon", "ranged", "bossdrop" ],
+  "inventoryIcon": "starforge-fracture.png",
+  
+  "animation": "/items/active/weapons/ranged/starforge-gun.animation",
   "animationParts": {
     "butt": "",
-    "middle": "unboundsmg.png",
+    "middle": "starforge-fracture.png",
     "barrel": "",
-	"middleFullbright": "unboundsmgfullbright.png",
-	"muzzleFlash": "muzzleflash.png"
+	"muzzleFlash": ""
   },
   "animationCustom": {
-      "particleEmitters" : {
-      "muzzleFlash" : {
-        "transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-2.1, 0.1, -2.1, 0.1],
-        "particles" : [
-          { "particle" : "starforge-unboundrifle" }
-        ]
-      }
-    },
     "sounds": {
       "fire": [
-        "/sfx/gun/pistol2.ogg"
+        "/sfx/gun/starforge-sniper.ogg"
       ]
     }
   },
   
-  "baseOffset": [0.375, 0.0],
-  "muzzleOffset": [2.0, 0.500],
-  "scripts": [
-    "/items/active/weapons/ranged/gun.lua"
-  ],
-  "elementalType": "electric",
+  "baseOffset": [1.125, 0.3],
+  "muzzleOffset": [2.5, 0.250],
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+  "elementalType": "physical",
+  
   "primaryAbility": {
-    "scripts": [
-      "/items/active/weapons/ranged/starforge-gunfire.lua"
-    ],
+    "scripts": [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],
     "class": "StarforgeGunFire",
-    "fireTime": 0.1,
-    "baseDps": 12,
-    "energyUsage": 25,
+	
+    "fireTime": 0.80,
+    "baseDps": 9.5,
+    "energyUsage": 30,
     "inaccuracy": 0.003,
+	
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "unboundelectricbullet",
+	
+    "projectileType": "starforge-fracturerock",
     "projectileParameters": {
       "knockback": 3
     },
+	
     "stances": {
       "idle": {
         "armRotation": 0,
@@ -82,10 +69,6 @@
         "twoHanded": true,
         "allowRotate": true,
         "allowFlip": true,
-
-        "animationStates" : {
-          "firing" : "fire"
-		},
 		
 		"frontArmFrame" : "run.2",
         "backArmFrame" : "swim.4"
@@ -104,5 +87,6 @@
       }
     }
   },
+  
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

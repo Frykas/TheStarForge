@@ -1,5 +1,5 @@
 {
-  "projectileName" : "unboundpoisonbullet",
+  "projectileName" : "unboundpoisonbulletstatus",
   "physics" : "laser",
   "bounces" : 0,
   "damageKindImage" : "icon.png",
@@ -13,10 +13,18 @@
     {
 	  "file": "/projectiles/explosions/bulletimpact/unbound/starforge-unboundpoisonbulletexplosion.config",
 	  "action": "config"
+	},
+	{
+	  "inheritDamageFactor": 0.05,
+	  "angleAdjust": 0,
+	  "fuzzAngle": 30,
+	  "type": "smallpoisoncloud",
+	  "action": "projectile"
 	}
   ],
   "statusEffects" : [ ],
   "lightColor" : [155, 186, 61],
+  "emitters": ["poisonplasma"],
   "fullbright" : true,
   "damageKind" : "poisonplasmabullet"
 }

@@ -60,7 +60,7 @@
     "fireType": "burst",
 	"burstTime" : 0.35,
     "burstCount" : 3,
-    "projectileType": "unboundpoisonbullet",
+    "projectileType": "unboundpoisonbulletstatus",
     "projectileParameters": {
       "knockback": 7
     },

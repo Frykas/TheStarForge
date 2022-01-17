@@ -1,22 +1,30 @@
 {
-  "projectileName" : "unboundriflebullet",
+  "projectileName" : "unboundelectricbulletstatus",
   "physics" : "laser",
   "bounces" : 0,
   "damageKindImage" : "icon.png",
-  "image" : "unboundriflebullet.png",
+  "image" : "unboundelectricbullet.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "power" : 50,
-  "speed" : 200,
+  "speed" : 180,
   "supportsProcessing" : true,
   "actionOnReap" : [
     {
       "action" : "config",
       "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundriflebulletexplosion.config"
-    }
+    },
+	{
+	  "inheritDamageFactor": 0.05,
+	  "angleAdjust": 0,
+	  "fuzzAngle": 30,
+	  "type": "smallelectriccloud",
+	  "action": "projectile"
+	}
   ],
   "statusEffects" : [ ],
   "lightColor" : [102, 32, 110],
-    "fullbright" : true,
+  "emitters": ["electricplasma"],
+  "fullbright" : true,
   "damageKind" : "electricplasmabullet"
 }

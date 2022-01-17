@@ -8,7 +8,7 @@
   "shortdescription" : "^#b4f5c3;Principle of Duality^reset;",
   "level" : 7,
   "fixedLevel" : false,
-  "tooltipKind" : "base",
+  "tooltipKind" : "starforge-uniquegun",
   "category" : "Rocket Launcher",
   "itemTags" : ["weapon", "ranged", "rocketlauncher"],
   "twoHanded" : true,
