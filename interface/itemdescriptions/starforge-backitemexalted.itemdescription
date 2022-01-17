@@ -12,16 +12,18 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [40, 127],
+    "position" : [30, 130],
     "file" : "",
     "centered" : true,
-    "maxSize" : [ 46, 59 ],
-    "minSize" : [ 46, 59 ]
+    "maxSize" : [ 36, 49 ],
+    "minSize" : [ 36, 49 ]
   },
   "descriptionLabel" : {
     "type" : "label",
-    "position" : [16, 90],
-    "wrapWidth" : 122,
+    "position" : [46, 158],
+    "wrapWidth" : 91,
+    "lineSpacing" : 1.1,
+    "fontSize" : 6,
     "hAnchor" : "left",
     "vAnchor" : "top"
   },
@@ -60,28 +62,30 @@
     "scissoring" : false,
     "type" : "list",
     "fillDown" : true,
-    "position" : [6, 161],
+    "position" : [-16, 104],
     "schema" : {
       "spacing" : [0, 1],
-      "memberSize" : [999, 15],
+      "memberSize" : [999, 13],
       "listTemplate" : {
         "statusLabel" : {
           "type" : "label",
-          "position" : [102, 2],
+          "position" : [58, 2],
           "hAnchor" : "left"
         },
         "statusImage" : {
           "scissoring" : false,
           "type" : "image",
-          "position" : [62, -1],
+          "position" : [32, -1],
           "file" : "",
+          "maxSize" : [ 32, 32 ],
+          "minSize" : [ 15, 15 ],
           "zlevel" : 8
         },
         "backgroundImage" : {
           "scissoring" : false,
           "type" : "image",
-          "position" : [61, 0],
-          "file" : "/interface/tooltips/statlistback.png"
+          "position" : [31, 0],
+          "file" : "/interface/tooltips/statlistback.png?scalenearest=1.65;1"
         }
       }
     }
