@@ -22,30 +22,6 @@
   },
 
 
-  "level" : 5,
-  "leveledStatusEffects" : [
-    {
-      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
-      "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
-    },
-    {
-      "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
-      "stat" : "protection",
-      "amount" : 0.5
-    },
-    {
-      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
-      "stat" : "maxEnergy",
-      "amount" : 5
-    },
-    {
-      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
-      "stat" : "maxHealth",
-      "amount" : 3
-    }
-  ],
-
   "itemTags" : [ "tier5armour" ],
   
     "colorOptions" : [

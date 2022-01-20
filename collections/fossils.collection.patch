@@ -1,0 +1,12 @@
+[
+  { "op": "add", 
+	"path": "/collectables/razortail",
+	"value":	 
+	{
+	  "order" : 30,
+	  "title" : "Razortail Fossil",
+	  "description" : "A super predator from the realm of the Tide, summoned and hunted by the Yukai for centuries.",
+	  "icon" : "/items/fossils/large/razortailfossil/razortailfossilhead.png"
+	}
+  }
+]

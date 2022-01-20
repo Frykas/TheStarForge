@@ -16,7 +16,7 @@
  "margin":0,
  "name":"furouraltar",
  "spacing":0,
- "tilecount":13,
+ "tilecount":14,
  "tiledversion":"1.4.3",
  "tileheight":33,
  "tileproperties":
@@ -69,6 +69,16 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"starforge-yukaiswordrack",
+         "tilesetDirection":"right"
+        },
+     "13":
+        {
+         "\/\/description":"The skull of a deadly predator. Decorated with ember coral and proudly exposed.",
+         "\/\/name":"starforge-razortailskulltrophy",
+         "\/\/shortdescription":"Razortail Trophy",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-razortailskulltrophy",
          "tilesetDirection":"right"
         },
      "2":
@@ -204,6 +214,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "13":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "2":
         {
          "\/\/description":"string",
@@ -316,6 +336,12 @@
          "image":"yukaiswordrack.png",
          "imageheight":19,
          "imagewidth":40
+        },
+     "13":
+        {
+         "image":"razortailskulltrophy.png",
+         "imageheight":31,
+         "imagewidth":34
         },
      "2":
         {

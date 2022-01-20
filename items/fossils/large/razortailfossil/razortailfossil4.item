@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-razortailfossil4",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Razortail Tail",
+  "description" : "Fossilised Razortail tail.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "razortailfossil4icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/razortailfossil/razortailfossil4.png",
+  "displayoffset" :[-4.4, -0.4],
+
+  "fossilSetName" : "razortail",
+  "setIndex" : 4,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

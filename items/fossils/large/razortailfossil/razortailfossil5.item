@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-razortailfossil5",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Razortail Tailblade",
+  "description" : "A fossilised Razortail tailblade.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "razortailfossil5icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/razortailfossil/razortailfossil5.png",
+  "displayoffset" :[-7.4, -0.4],
+
+  "fossilSetName" : "razortail",
+  "setIndex" : 5,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

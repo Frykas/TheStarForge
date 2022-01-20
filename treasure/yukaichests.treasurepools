@@ -32,8 +32,8 @@
         {"weight" : 0.30, "item" : "starforge-yukaipearl"}
       ],
 	        "poolRounds" : [
-        [0.2, 2],
-        [0.6, 3],
+        [0.2, 3],
+        [0.6, 5],
         [0.2, 4]
       ],
       "allowDuplication" : false

@@ -10,7 +10,7 @@
         "distribution" : "/biomes/starforge-raremicrodungeons.config:starforge-raremicrodungeon",
 		
         "type" : "microdungeon",
-        "microdungeons" : [ "starforge-earthbringer", "starforge-roboblinhideout" ]
+        "microdungeons" : [ "starforge-earthbringer", "starforge-roboblinhideout", "starforge-yukaiundergroundcamp", "starforge-unboundunderground" ]
       }
     }
 	

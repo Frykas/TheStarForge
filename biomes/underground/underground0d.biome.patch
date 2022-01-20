@@ -10,7 +10,7 @@
         "distribution" : "/biomes/starforge-raremicrodungeons.config:starforge-raremicrodungeon",
 		
         "type" : "microdungeon",
-        "microdungeons" : [ "starforge-floranthivesmall", "starforge-floranthive", "starforge-roboblinhideout" ]
+        "microdungeons" : [ "starforge-floranthivesmall", "starforge-floranthive", "starforge-roboblinhideout", "starforge-unboundunderground" ]
       }
     }
 	
