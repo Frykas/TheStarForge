@@ -62,7 +62,7 @@
     "scissoring" : false,
     "type" : "list",
     "fillDown" : true,
-    "position" : [-16, 104],
+    "position" : [-16, 93],
     "schema" : {
       "spacing" : [0, 1],
       "memberSize" : [999, 13],
