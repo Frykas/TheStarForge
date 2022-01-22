@@ -50,6 +50,10 @@
 	
 	{ "op": "add", "path": "/displayDungeons/starforge-furouraltar", "value": 
     {"description" : "Strange Hylotls are preparing an obscure ritual on the planet.", "icon" : "/interface/cockpit/dungeons/furouraltaricon.png" }
+    },
+	
+	{ "op": "add", "path": "/displayDungeons/starforge-yukaiforgemasterhut", "value": 
+    {"description" : "A strange Hylotl Forgemaster is living here.", "icon" : "/interface/cockpit/dungeons/yukaiforgemasterhuticon.png" }
     }
   
   ]

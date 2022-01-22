@@ -1,0 +1,100 @@
+{
+  "objectName" : "starforge-masamune",
+  "colonyTags" : ["hylotl"],
+  "rarity" : "essential",
+  "category" : "crafting",
+  "price" : 20000,
+    "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/starforge.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Forgemaster Masamune",
+        "subtitle" : "Yukai Forgemaster",
+        "icon" : {
+          "file" : "/interface/SEmerchant/merchanticon.png"
+        }
+      }
+    },
+    "filter" : ["starforge-starforge"]
+  },
+  "printable" : false,
+  "offeredQuests" : ["yukaiforgemasterquest2"],
+  
+  "description" : "Masamune, a Yukai Forgemaster who joined the Thalasso looking for a greater purpose.",
+  "shortdescription" : "Masamune",
+  "race" : "hylotl",
+
+  "apexDescription" : "Seems like Forgemaster Masamune settled in the Thalasso outpost.",
+  "avianDescription" : "Masamune the Forgemaster joined the Thalasso, awesome!",
+  "floranDescription" : "Angry fissshman allied with strong fissshlady, not good for Floran.",
+  "glitchDescription" : "Pleased. It seems the Forgemaster found a new purpose at the Starforge.",
+  "humanDescription" : "So the Yukai Forgemaster is working with Mariko now? Found a new purpose, good for him.",
+  "hylotlDescription" : "I see Mariko invited the Forgemaster to work with her on the Starforge. A good opportunity for him.",
+  "novakidDescription" : "Masamune's the name of that gramps? I ain't likin' it.",
+
+  "lightColor" : [33, 30, 96],
+
+  "flickerPeriod" : 0.4,
+  "flickerMinIntensity" : 0.97,
+  "flickerMaxIntensity" : 1.0,
+  "flickerPeriodVariance" : 0,
+  "flickerIntensityVariance" : 0,
+
+  "inventoryIcon" : "yukaishopicon.png",
+  "orientations" : [
+    {
+      "image" : "yukaishop.png:<color>.off",
+      "imagePosition" : [-24, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "yukaishop.png:<color>.off",
+      "imagePosition" : [-24, 0],
+      "direction" : "right",
+
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/proximitysensor/proximitysensor.lua", "/objects/scripts/starforge-talkingobject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "yukaishop.animation",
+  "animationParts" : {
+    "bg" : "yukaishop.png",
+    "fg" : "yukaishopfullbright.png"
+  },
+  "animationPosition" : [-24, 0],
+  
+  "interactive" : false,
+
+  "detectDuration" : 3.0,
+  "detectEntityTypes" : [ "creature", "vehicle" ],
+  "detectArea" : [ [-1.0, 0.5], [1.0, 1] ],
+  
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "Greetings. Thanks to you, I have found a new purpose, a new way to increase my mastery.",
+    "The Starforge is quite something. I feel alive again, eager to learn.",
+    "I can help you craft many things. Pearls, weapons, and other rarities.",
+	"I am trying to move on from my past. I am hoping the Starforge will help.",
+	"I have participated in great hunts before with my tribe brothers. Even slain a Razortail once.",
+	"Krythers, is it? This Hylotl is warry of me. I try my best not to scare him.",
+	"Rondin knows the Starforge well. I envy him.",
+	"Mariko is kind and strong. It is great to see a Hylotl who hasn't forsaken the Yukai yet.",
+	"I attain peace of mind through forging. If only the others could find a way."
+  ]
+}

@@ -27,7 +27,7 @@
   "scriptConfig" : {
     "uniqueId" : "starforge-marikooutpost",
     "offeredQuests" : ["thalassomission1b", "thalassomission2"],
-	"turnInQuests" : ["thalassomission1b", "thalassomission2"],
+	"turnInQuests" : ["thalassomission1b", "thalassomission2", "yukaiforgemasterquest1"],
     "behavior" : "villager",
 
     "dialogMode" : "sequence",

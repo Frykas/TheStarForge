@@ -16,14 +16,14 @@
 	
 	{
         "op": "add",
-        "path": "/unboundstart",
+        "path": "/yukaiforgemastermission1",
         "value": {
             "actions": [
                 {
                     "type": "placeDungeon",
-                    "dungeonId": "thalassooutpost_unboundstart",
+                    "dungeonId": "thalassooutpost_masamune",
                     "targetInstance": "thalassooutpost",
-                    "targetPosition": [170, 500]
+                    "targetPosition": [228, 572]
                 }
             ]
         }
