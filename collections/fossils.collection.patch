@@ -3,10 +3,21 @@
 	"path": "/collectables/razortail",
 	"value":	 
 	{
-	  "order" : 30,
+	  "order" : 31,
 	  "title" : "Razortail Fossil",
 	  "description" : "A super predator from the realm of the Tide, summoned and hunted by the Yukai for centuries.",
 	  "icon" : "/items/fossils/large/razortailfossil/razortailfossilhead.png"
+	}
+  },
+  
+  { "op": "add", 
+	"path": "/collectables/tidefragment",
+	"value":	 
+	{
+	  "order" : 30,
+	  "title" : "Tide Fragment",
+	  "description" : "The Tide is home to beautiful flora and fauna, often resembling coral and sea plants.",
+	  "icon" : "/objects/fossils/smallfossils/tidefossil/tidefossil.png"
 	}
   }
 ]

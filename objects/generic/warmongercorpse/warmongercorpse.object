@@ -5,6 +5,7 @@
   "price" : 0,
   "description" : "A fallen warrior.",
   "shortdescription" : "Fallen Warmonger",
+  "breakDropPool" : "warmongerarmorDrop",
 
   "apexDescription" : "This person seems to have fallen during combat.",
   "avianDescription" : "This person seems dead.",

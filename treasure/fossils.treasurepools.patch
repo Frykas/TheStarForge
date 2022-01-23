@@ -24,5 +24,11 @@
 	"path" : "/largefossil/0/1/pool/-",
 	"value" :
 	  {"weight" : 0.1, "item" : "starforge-razortailfossil5"}
+  },
+  
+  {"op" : "add",
+	"path" : "/smallfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-tidefossil"}
   }
 ]

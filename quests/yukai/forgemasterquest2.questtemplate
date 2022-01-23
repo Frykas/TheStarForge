@@ -6,7 +6,7 @@
  "completionText" : "Masamune, your new Yukai Forgemaster ally thanks you for telling Mariko about him. He agreed to provide you with new equipement in exchange for the access to the Starforge. His journey starts anew.",
   "moneyRange" : [100, 100],
   "rewards" : [
-    [ [ "starforge-thalassocache", 1 ] ]
+    [ [ "starforge-tidefossil", 1 ] ]
   ],
 
   "compassUpdate" : 0.2,
@@ -20,7 +20,7 @@
       },
       "questComplete" : "player"
     },
-    "requireTurnIn" : false,
+    "requireTurnIn" : true,
     "conditions" : [
       {
         "type" : "gatherItem",

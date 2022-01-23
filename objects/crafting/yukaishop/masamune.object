@@ -20,6 +20,7 @@
   },
   "printable" : false,
   "offeredQuests" : ["yukaiforgemasterquest2"],
+  "turnInQuests" : ["yukaiforgemasterquest2"],
   
   "description" : "Masamune, a Yukai Forgemaster who joined the Thalasso looking for a greater purpose.",
   "shortdescription" : "Masamune",
