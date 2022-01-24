@@ -1,0 +1,121 @@
+[
+{
+  
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-jootyfish"
+        ]
+      ]
+    }
+  },
+	
+  {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-roboblin"
+        ]
+      ]
+    }
+  },
+	  {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-novalime"
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-cacochius"
+        ]
+      ]
+    }
+  },
+    {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-potlot"
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-warmongerdrone"
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-florant"
+        ]
+      ]
+    }
+  },
+  
+  { "op" : "add", 
+      "path" : "/surfacePlaceables/items/-", 
+      "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-microdungeons.config:starforge-microdungeon",
+		
+        "type" : "microdungeon",
+        "microdungeons" : [ "unboundmicrodungeons" ]
+      }
+    },
+  
+  { "op" : "add", 
+      "path" : "/surfacePlaceables/items/-", 
+      "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-microdungeons.config:starforge-microdungeon",
+		
+        "type" : "microdungeon",
+        "microdungeons" : [ "starforge-warmongerbunker" ]
+      }
+    }
+	]

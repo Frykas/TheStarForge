@@ -1,0 +1,45 @@
+{
+  "objectName" : "starforge-unboundlavacanister",
+  "colonyTags" : ["apex"],
+  "rarity" : "uncommon",
+  "category" : "breakable",
+  "price" : 105,
+  "description" : "An Unbound canister. This one looks unstable.",
+  "shortdescription" : " Unbound Explosive Barrel",
+  "race" : "apex",
+  "breakDropOptions" : [],
+
+  "apexDescription" : "An explosive barrel. I should keep my distance.",
+  "avianDescription" : "Explosive container. I can't get into it.",
+  "floranDescription" : "Liquid insside lookss like fire. Floran keepsss away.",
+  "glitchDescription" : "Alerted. This barrel label warns of a highly explosive substance inside.",
+  "humanDescription" : "The explosive label on the front implies that I probably shouldn't try to open it.",
+  "hylotlDescription" : "Looks like a metal container full of explosives. It's sealed shut for a reason.",
+  "novakidDescription" : "Looks like new fangled dynamite, in barrel form.",
+
+  "inventoryIcon" : "unboundlavacanistericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unboundlavacanister.png:<frame>",
+	  "imageLayers" : [ { "image" : "unboundlavacanister.png:<frame>", "fullbright" : true }, { "image" : "unboundlavacanisterlit.png:<frame>" } ],
+      "imagePosition" : [-8, 0],
+
+      "frames" : 5,
+      "animationCycle" : 1.4,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "smashable" : true,
+  "smashOnBreak" : false,
+  "smashSounds" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ],
+  "smashDropPool" : "empty",
+  
+  "scripts" : [
+    "/objects/scripts/explodingsmashable.lua"
+  ],
+  "explosionProjectile" : "explosivebarrel",
+  "explosionOffset" : [1, 2]
+}
