@@ -10,7 +10,7 @@
         "title" : "Unbound Furnituring",
         "subtitle" : "Interested in expanding Unbound settlements?",
         "icon" : {
-          "file" : "/interface/SEmerchant/merchanticon.png"
+          "file" : "/interface/crafting/unboundicon.png"
         }
       }
     },

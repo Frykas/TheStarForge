@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "durasteelbar", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-unboundmetalsupport",
+    "count" : 25
+  },
+  "groups" : [ "starforge-unboundobject", "materials" ],
+  "duration" : 0
+}
+

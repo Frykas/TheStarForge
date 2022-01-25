@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-unboundofficerpack",
+  "price" : 1000,
+  "level" : 1,
+  "maxStack" : 1000,
+  "rarity" : "legendary",
+  "category" : "Armor Pack",
+  "description" : "An Unbound pack, containing officer armor.",
+  "shortdescription" : "Officer Pack",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "officericon.png",
+  "animation" : "unboundofficerpack.animation",
+  "animationCustom" : {},
+  "scripts" : ["unboundarmorpack.lua"],
+
+  "fireTime" : 0.5,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "starforge-unboundofficercache",
+    "level" : 1
+  }
+}

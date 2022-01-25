@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 2}
+  ],
+  "output" : {
+    "item" : "starforge-unboundsciencewallframe3",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "decoration" ],
+  "duration" : 0
+}
+

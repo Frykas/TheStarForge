@@ -1,6 +1,6 @@
 {
   "itemName" : "starforge-unboundpants",
-  "price" : 750,
+  "price" : 75,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Rare",

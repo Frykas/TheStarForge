@@ -1,6 +1,6 @@
 {
   "itemName" : "starforge-unboundofficerchest",
-  "price" : 120,
+  "price" : 200,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Legendary",

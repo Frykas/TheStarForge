@@ -4,7 +4,7 @@
   "category" : "block",
   "rarity" : "uncommon",
   "inventoryIcon" : "unboundmetalsupport.png",
-  "shortdescription" : "Unbound Metal Support",
+  "shortdescription" : "Unbound Metal Beam",
   "description" : "A solid metal block, used in Unbound structures.",
   "glitchdescription" : "Observant. This is panelling widely used for Unbound structures.",
   "florandescription" : "Shiny sssmooth space metal.",

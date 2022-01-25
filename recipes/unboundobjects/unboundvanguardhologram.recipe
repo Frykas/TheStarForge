@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "durasteelbar", "count" : 8}
+  ],
+  "output" : {
+    "item" : "starforge-unboundvanguardhologram",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "decoration" ],
+  "duration" : 0
+}
+

@@ -1,6 +1,6 @@
 {
   "itemName" : "starforge-unboundfortresschest",
-  "price" : 750,
+  "price" : 200,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Legendary",

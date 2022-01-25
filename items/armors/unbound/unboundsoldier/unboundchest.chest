@@ -1,6 +1,6 @@
 {
   "itemName" : "starforge-unboundchest",
-  "price" : 750,
+  "price" : 100,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Rare",

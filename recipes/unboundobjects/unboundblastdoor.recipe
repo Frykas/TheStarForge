@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-unboundblastdoor",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "doors" ],
+  "duration" : 0
+}
+

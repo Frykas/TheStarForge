@@ -1,6 +1,6 @@
 {
   "itemName" : "starforge-unboundheavyhead",
-  "price" : 500,
+  "price" : 50,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Rare",

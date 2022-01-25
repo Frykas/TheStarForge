@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "silk", "count" : 5},
+	{ "item" : "titaniumbar", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-unboundbanner",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "decoration" ],
+  "duration" : 0
+}
+

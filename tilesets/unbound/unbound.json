@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":79,
+ "tilecount":80,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -789,6 +789,16 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-unboundobjectcrafting",
+         "tilesetDirection":"right"
+        },
+     "79":
+        {
+         "\/\/description":"A crafting station that will help me craft Unbound weapon and armors.",
+         "\/\/name":"starforge-unboundgearcrafting",
+         "\/\/shortdescription":"Unbound Crafting Station",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundgearcrafting",
          "tilesetDirection":"right"
         },
      "8":
@@ -1584,6 +1594,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "79":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "8":
         {
          "\/\/description":"string",
@@ -2068,6 +2088,12 @@
          "image":"unboundobjectcrafting.png",
          "imageheight":31,
          "imagewidth":34
+        },
+     "79":
+        {
+         "image":"unboundgearcrafting.png",
+         "imageheight":32,
+         "imagewidth":32
         },
      "8":
         {

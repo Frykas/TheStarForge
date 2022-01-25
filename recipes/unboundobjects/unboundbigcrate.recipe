@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 4},
+	{ "item" : "ironbar", "count" : 2}
+  ],
+  "output" : {
+    "item" : "starforge-unboundbigcrate",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "storage" ],
+  "duration" : 0
+}
+

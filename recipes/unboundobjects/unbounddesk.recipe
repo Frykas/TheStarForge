@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 2}
+  ],
+  "output" : {
+    "item" : "starforge-unbounddesk",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "beds" ],
+  "duration" : 0
+}
+

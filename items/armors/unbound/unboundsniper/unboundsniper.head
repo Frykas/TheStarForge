@@ -1,6 +1,6 @@
 {
   "itemName" : "starforge-unboundsniperhead",
-  "price" : 300,
+  "price" : 100,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Rare",
