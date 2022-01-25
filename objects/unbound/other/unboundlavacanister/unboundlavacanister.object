@@ -5,7 +5,7 @@
   "category" : "breakable",
   "price" : 105,
   "description" : "An Unbound canister. This one looks unstable.",
-  "shortdescription" : " Unbound Explosive Barrel",
+  "shortdescription" : "Unbound Explosive Barrel",
   "race" : "apex",
   "breakDropOptions" : [],
 

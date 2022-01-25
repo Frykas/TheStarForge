@@ -13,6 +13,20 @@
             ]
         }
     },
+	{
+        "op": "add",
+        "path": "/unboundmission3",
+        "value": {
+            "actions": [
+                {
+                    "type": "placeDungeon",
+                    "dungeonId": "thalassooutpost_sasha",
+                    "targetInstance": "thalassooutpost",
+                    "targetPosition": [253, 572]
+                }
+            ]
+        }
+    },
 	
 	{
         "op": "add",

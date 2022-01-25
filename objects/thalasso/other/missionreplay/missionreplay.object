@@ -1,0 +1,55 @@
+{
+  "objectName" : "starforge-missionreplay",
+  "colonyTags" : ["apex"],
+  "rarity" : "Essential",
+
+  "printable" : false,
+  "description" : "Sasha Beniko, ex-Unbound officer, ex-Unbound prisoner, now working with the Thalasso.",
+  "shortdescription" : "Sasha Beniko",
+  "race" : "apex",
+  "category" : "other",
+  "price" : 5000,
+
+  "apexDescription" : "Sasha Beniko, just like Morpheus she worked with the Unbound before. She makes a great ally.",
+  "avianDescription" : "Sasha helps us take down the Unbound, awesome!",
+  "floranDescription" : "Floran ssstare at ssscreen too long...",
+  "glitchDescription" : "Inspired. Thanks to people like her, we have a chance against the Unbound!",
+  "humanDescription" : "Sasha knows a lot about the Unbound. Together with Morpheus and Mariko, we're unstoppable!",
+  "hylotlDescription" : "Betraying something is never honorable, but betraying the Unbound? Sasha made the right choice.",
+
+  "inventoryIcon" : "missionreplayicon.png",
+  "orientations" : [
+    {
+	  "dualImage": "missionreplay.png:<frame>",
+      "imageLayers" : [ { "image" : "missionreplay.png:<frame>" }, { "image" : "missionreplayfullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 7,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ], 
+  "scripts" : [ "/objects/scripts/starforge-talkingobject.lua" ],
+  "scriptDelta" : 20,
+  "mouthPosition" : [-1, 0],
+
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "Hey there! Looking to strike the Unbound again?",
+    "If you're bored, I always have some work for you!",
+    "Looking for something to do?",
+	"You know, the Unbound aren't that bad. They help the Apex, free them, feed them...",
+	"That Starforge we've got, we must take good care of it.",
+	"If we stand together, we can win this!",
+	"I heard of a group of Apex who tried to fight the Unbound. Just like me, they didn't want to finally be free from a conflict only to join another. I wonder what happened to them...",
+	"Looking for some action?",
+	"Stay strong, and remember what you're fighting for."
+  ]
+   
+   }
