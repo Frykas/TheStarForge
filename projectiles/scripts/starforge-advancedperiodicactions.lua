@@ -11,18 +11,20 @@ function update(dt)
   
   --Advanced Periodic Action
   for _, action in pairs(self.advancedPeriodicActions) do
-    advancedPeriodicActions(action, dt, _)
+    action = advancedPeriodicActions(action, dt, _)
   end
 end
 
 function advancedPeriodicActions(action, dt, index)
   if action.action == "particle" then
     local baseAction = config.getParameter("advancedPeriodicActions", {})[index]
-  
-    action.specification.size = baseAction.specification.size * config.getParameter("scaleModifier", 1)
-	action.specification.position = vec2.mul(baseAction.specification.position, config.getParameter("scaleModifier", 1))
-	action.specification.variance.size = baseAction.specification.variance.size * config.getParameter("scaleModifier", 1)
-	action.specification.variance.position = vec2.mul(baseAction.specification.variance.position, config.getParameter("scaleModifier", 1))
+	
+	if config.getParameter("scaleModifier") then
+      action.specification.size = baseAction.specification.size * config.getParameter("scaleModifier", 1)
+	  action.specification.position = vec2.mul(baseAction.specification.position, config.getParameter("scaleModifier", 1))
+	  action.specification.variance.size = baseAction.specification.variance.size * config.getParameter("scaleModifier", 1)
+	  action.specification.variance.position = vec2.mul(baseAction.specification.variance.position, config.getParameter("scaleModifier", 1))
+    end
   end
   if action.terminateOnDeath then
 	if action.action == "projectile" then
@@ -59,4 +61,5 @@ function advancedPeriodicActions(action, dt, index)
 	projectile.processAction(action)
 	action.complete = true
   end
+  return action
 end

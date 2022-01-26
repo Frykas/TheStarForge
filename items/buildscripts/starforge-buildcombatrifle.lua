@@ -41,12 +41,48 @@ function build(directory, config, parameters, level, seed)
   setupAbility(config, parameters, "alt", builderConfig, seed)
   setupAbility(config, parameters, "primary", builderConfig, seed)
 
-  -- elemental type
-  if not parameters.elementalType and builderConfig.elementalType then
-    parameters.elementalType = randomFromList(builderConfig.elementalType, seed, "elementalType")
+  --Build the combat rifle
+  if builderConfig.buildConfig then
+	local generationConfig = root.assetJson(util.absolutePath(directory, builderConfig.buildConfig))
+	local parts = generationConfig.parts
+	local generationDirectory = generationConfig.basePartDirectory
+	
+	config.animationParts = {}
+	
+	--Default the names
+	local namePrefix = ""
+	local nameRoot = ""
+	local nameSuffix = ""
+	for k, v in pairs(parts) do
+	  local chosenPart = randomFromList(v, seed, "chosen" .. k)
+	  if k == "body" then
+		--Determine basic parameters
+		config.manufacturer = chosenPart.manufacturer
+		parameters.elementalType = randomFromList(chosenPart.elementalTypes, seed, "chosenElement")
+	  end
+	  
+	  --Determine the name of the gun
+	  if chosenPart.namePrefix then
+		namePrefix = randomFromList(chosenPart.namePrefix, seed, "namePrefix")
+	  end
+	  if chosenPart.nameRoot then
+		nameRoot = randomFromList(chosenPart.nameRoot, seed, "nameRoot")
+	  end
+	  if chosenPart.nameSuffix then
+		nameSuffix = randomFromList(chosenPart.nameSuffix, seed, "nameSuffix")
+	  end
+	  
+	  --Determine sprite to use for each part
+	  local chosenSprite = randomFromList(chosenPart.images, seed, "chosen" .. k .. "Sprite")
+	  config.animationParts[k] = util.absolutePath(string.gsub(generationDirectory, "<partName>", k), chosenSprite)
+	end
+	
+	--Apply the name
+	local name = string.gsub((namePrefix .. nameRoot .. nameSuffix), "<elementalType>", parameters.elementalType)
+	parameters.shortdescription = name
   end
-  local elementalType = configParameter("elementalType", "physical")
-
+  local elementalType = parameters.elementalType
+  
   -- elemental config
   if builderConfig.elementalConfig then
     util.mergeTable(config, builderConfig.elementalConfig[elementalType])
@@ -60,9 +96,9 @@ function build(directory, config, parameters, level, seed)
   replacePatternInData(config, nil, "<elementalName>", elementalType:gsub("^%l", string.upper))
 
   -- name
-  if not parameters.shortdescription and builderConfig.nameGenerator then
-    parameters.shortdescription = root.generateName(util.absolutePath(directory, builderConfig.nameGenerator), seed)
-  end
+  --if not parameters.shortdescription and builderConfig.nameGenerator then
+  --  parameters.shortdescription = root.generateName(util.absolutePath(directory, builderConfig.nameGenerator), seed)
+  --end
 
   -- merge damage properties
   if builderConfig.damageConfig then
@@ -86,7 +122,7 @@ function build(directory, config, parameters, level, seed)
 
   -- preprocess ranged primary attack config
   if config.primaryAbility.projectileParameters then
-    config.primaryAbility.projectileType = randomFromList(config.primaryAbility.projectileType, seed, "projectileType")
+    config.primaryAbility.projectileType = "unbound" .. elementalType .. "bullet"--randomFromList(config.primaryAbility.projectileType, seed, "projectileType")
     config.primaryAbility.projectileCount = randomIntInRange(config.primaryAbility.projectileCount, seed, "projectileCount") or 1
     config.primaryAbility.fireType = randomFromList(config.primaryAbility.fireType, seed, "fireType") or "auto"
     config.primaryAbility.burstCount = randomIntInRange(config.primaryAbility.burstCount, seed, "burstCount")
@@ -161,7 +197,7 @@ function build(directory, config, parameters, level, seed)
   -- build inventory icon
   if not config.inventoryIcon and config.animationParts then
     config.inventoryIcon = jarray()
-    local parts = builderConfig.iconDrawables or {}
+    local parts = builderConfig.weaponParts or {}
     for _,partName in pairs(parts) do
       local drawable = {
         image = config.animationParts[partName] .. config.paletteSwaps,

@@ -1,0 +1,53 @@
+{
+  "projectileName" : "starforge-tidewalkertrail-lower",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "image" : "starforge-tidewalkertrail.png",
+  "renderLayer" : "MiddleParticle+1",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 80,
+  "timeToLive" : 3,
+  "piercing" : false,
+  "supportsProcessing" : true,
+  "emitters" : [],
+  "actionOnReap" : [],
+  "advancedPeriodicActions" : [
+    {
+      "loopTime" : 0,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "streak",
+        "layer" : "front",
+        "fullbright" : true,
+        "destructionAction" : "shrink",
+        "size" : 2,
+		"color" : [161, 241, 254, 255],
+		"collidesForeground" : false,
+		"length" : 40,
+        "position" : [-0.875, 0],
+        "timeToLive" : 0.01,
+        "destructionTime" : 0.2,
+		"initialVelocity" : [0.5, 0],
+		"variance" : {
+		  "size" : 0,
+          "destructionTime" : 0.2,
+		  "initialVelocity" : [0.5, -0],
+		  "length" : 0
+		}
+      }
+    }
+  ],
+  "statusEffects" : [ ],
+  "fullbright" : true,
+  "damageKind" : "icedagger",
+
+  "scripts" : ["/projectiles/scripts/starforge-advancedperiodicactions.lua", "/projectiles/scripts/starforge-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.001,
+  "waveAmplitude" : -0.2
+}

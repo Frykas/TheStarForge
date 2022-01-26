@@ -1,0 +1,13 @@
+{
+  "projectileName" : "starforge-fractureexplosion",
+  "physics" : "illusion",
+  "image" : "starforge-fractureexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "speed" : 0,
+  "damagePoly" : [ [-12, 0], [-8, -8], [0, -12], [8, -8], [12, 0], [8, 8], [0, 12], [-8, 8] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "hammer"
+}

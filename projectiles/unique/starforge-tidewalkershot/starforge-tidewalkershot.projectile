@@ -1,0 +1,136 @@
+{
+  "projectileName" : "starforge-tidewalkershot",
+  "physics" : "stickygrenade",
+  "bounces" : 0,
+  "image" : "starforge-tidewalkershot.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 300,
+  "timeToLive" : 3,
+  "supportsProcessing" : true,
+  "piercing" : false,
+  "flippable" : true,
+  "emitters" : [],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "starforge-tidewalkershotsticking",
+      "inheritDamageFactor" : 0.25,
+      "inheritSpeedFactor" : 0.15
+    },
+	{
+	  "inheritDamageFactor": 0.05,
+	  "angleAdjust": 0,
+	  "fuzzAngle": 30,
+	  "type": "smallicecloud",
+	  "action": "projectile"
+	}
+  ],
+  "periodicActions" : [
+	{
+      "time" : 0,
+      "repeat" : false,
+      "action" : "projectile",
+      "type" : "starforge-tidewalkertrail-lower",
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 1
+    },
+	{
+      "time" : 0,
+      "repeat" : false,
+      "action" : "projectile",
+      "type" : "starforge-tidewalkertrail-upper",
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 1
+    },
+	
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "streak",
+        "layer" : "middle",
+        "fullbright" : true,
+        "destructionAction" : "fade",
+        "size" : 40,
+		"color" : [255, 255, 255, 155],
+		"collidesForeground" : false,
+		"length" : 1,
+        "position" : [0, 0],
+        "timeToLive" : 0.01,
+        "destructionTime" : 0.5,
+		"initialVelocity" : [0, 2],
+		"variance" : {
+		  "size" : 0,
+		  "initialVelocity" : [0, -0],
+		  "length" : 0
+		}
+      }
+    },
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "streak",
+        "layer" : "middle",
+        "fullbright" : true,
+        "destructionAction" : "fade",
+        "size" : 40,
+		"color" : [255, 255, 255, 155],
+		"collidesForeground" : false,
+		"length" : 1,
+        "position" : [0, 0],
+        "timeToLive" : 0.01,
+        "destructionTime" : 0.5,
+		"initialVelocity" : [0, -2],
+		"variance" : {
+		  "size" : 0,
+		  "initialVelocity" : [0, -0],
+		  "length" : 0
+		}
+      }
+    },
+	
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "streak",
+        "layer" : "front",
+        "fullbright" : true,
+        "destructionAction" : "shrink",
+        "size" : 1.5,
+		"color" : [44, 172, 219, 155],
+		"collidesForeground" : false,
+		"length" : 40,
+        "position" : [0, 0],
+        "timeToLive" : 0.01,
+        "destructionTime" : 0.5,
+		"initialVelocity" : [0.5, 0],
+		"variance" : {
+		  "size" : 0,
+          "destructionTime" : 0.5,
+		  "initialVelocity" : [0.5, -0],
+		  "length" : 0
+		}
+      }
+    }
+  ],
+  "statusEffects" : [],
+  "lightColor" : [161, 241, 254],
+  "fullbright" : true,
+  "damageKind" : "icespear",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-killonstick.lua" ]
+}

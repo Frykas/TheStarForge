@@ -21,15 +21,18 @@
   },
   "animationCustom": {
     "sounds": {
-      "fire": [
-        "/sfx/gun/starforge-sniper.ogg"
-      ]
+      "fire": [ "/sfx/projectiles/bonerain_throw1.ogg", "/sfx/projectiles/bonerain_throw2.ogg" ]
     }
   },
   
-  "baseOffset": [1.125, 0.3],
-  "muzzleOffset": [2.5, 0.250],
+  "baseOffset": [0.125, 0],
+  "muzzleOffset": [1, 0.250],
+  
   "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+  
+  //Makes the weapon draw in front of the arm
+  "handGrip" : "outside",
+  
   "elementalType": "physical",
   
   "primaryAbility": {
@@ -37,16 +40,16 @@
     "class": "StarforgeGunFire",
 	
     "fireTime": 0.80,
-    "baseDps": 9.5,
+    "baseDps": 6.5,
     "energyUsage": 30,
-    "inaccuracy": 0.003,
+    "inaccuracy": 0.007,
 	
     "projectileCount": 1,
     "fireType": "auto",
 	
     "projectileType": "starforge-fracturerock",
     "projectileParameters": {
-      "knockback": 3
+      "knockback": 10
     },
 	
     "stances": {
@@ -58,31 +61,32 @@
         "allowRotate": true,
         "allowFlip": true,
 		
-		"frontArmFrame" : "run.2",
+		//"frontArmFrame" : "run.2",
         "backArmFrame" : "swim.4"
       },
       "fire": {
-        "duration": 0,
-        "armRotation": 2,
-        "weaponRotation": 1,
-        "weaponOffset" : [-0.1, 0],
-        "twoHanded": true,
-        "allowRotate": true,
-        "allowFlip": true,
-		
-		"frontArmFrame" : "run.2",
-        "backArmFrame" : "swim.4"
-      },
-      "cooldown": {
         "duration": 0.05,
         "armRotation": 2,
         "weaponRotation": 1,
-        "weaponOffset" : [-0.1, 0],
+        "weaponOffset" : [-0.25, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		"recoil" : true,
+		
+		//"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.7,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.25, 0],
         "twoHanded": true,
         "allowRotate": true,
         "allowFlip": true,
 		
-		"frontArmFrame" : "run.2",
+		//"frontArmFrame" : "run.2",
         "backArmFrame" : "swim.4"
       }
     }

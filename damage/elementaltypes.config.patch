@@ -12,5 +12,19 @@
 		"kill" : "starforge-witherdamagenumber"
 	  }
 	}
+  },
+  //TIDALFROST
+  { "op" : "add",
+	"path" : "/starforge-tidalfrost",
+	"value" : {
+	  "resistanceStat" : "tidalfrostResistance",
+	  "damageNumberParticles" : {
+		"hit" : "starforge-tidalfrostdamagenumber",
+		"stronghit" : "starforge-tidalfrostdamagenumberstrong",
+		"weakhit" : "starforge-tidalfrostdamagenumberweak",
+		"shieldhit" : "starforge-tidalfrostdamagenumber",
+		"kill" : "starforge-tidalfrostdamagenumber"
+	  }
+	}
   }
 ]

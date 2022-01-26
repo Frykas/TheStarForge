@@ -1,45 +1,52 @@
 {
   "projectileName" : "starforge-fracturerock",
-  "physics" : "grenade",
+  "physics" : "shrapnel",
   "image" : "starforge-fracturerock.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "power" : 50,
-  "speed" : 55,
+  "speed" : 50,
   "supportsProcessing" : true,
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionknockback.config"
+      "file" : "/projectiles/explosions/starforge-fractureexplosion/starforge-fractureexplosion.config"
     },
 	{
-	  "inheritDamageFactor": 0.05,
+	  "inheritDamageFactor": 0.3,
 	  "angleAdjust": 0,
 	  "fuzzAngle": 360,
 	  "type": "starforge-fracturefragment1",
 	  "action": "projectile"
 	},
 	{
-	  "inheritDamageFactor": 0.05,
+	  "inheritDamageFactor": 0.3,
 	  "angleAdjust": 0,
 	  "fuzzAngle": 360,
 	  "type": "starforge-fracturefragment2",
 	  "action": "projectile"
 	},
 	{
-	  "inheritDamageFactor": 0.05,
+	  "inheritDamageFactor": 0.3,
 	  "angleAdjust": 0,
 	  "fuzzAngle": 360,
 	  "type": "starforge-fracturefragment3",
 	  "action": "projectile"
 	},
 	{
-	  "inheritDamageFactor": 0.05,
+	  "inheritDamageFactor": 0.3,
 	  "angleAdjust": 0,
 	  "fuzzAngle": 360,
 	  "type": "starforge-fracturefragment4",
 	  "action": "projectile"
 	}
   ],
-  "damageKind" : "fist"
+  "damageKind" : "fist",
+
+  "scripts" : ["/projectiles/scripts/thea-velocityspin.lua"],
+  "orientationLocked" : true,
+  "pointToLight" : true,
+  "spinRate" : 0.25,
+  "minSpinSpeed": 25,
+  "spinDirection" : -1
 }

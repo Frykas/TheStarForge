@@ -45,6 +45,14 @@
           "transformationGroups" : ["weapon"]
         }
       },
+      "magazine" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
 	  "attachment" : {
         "properties" : {
           "centered" : true,
@@ -76,7 +84,7 @@
           "firing" : {
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/ranged/generated/combatrifles/muzzleflash.png:<variant>.<frame><elementalDirectives>"
+                "image" : "/items/active/weapons/ranged/muzzleflash/starforge-<elementalType>muzzleflash.png:<variant>.<frame>"
               }
             }
           }

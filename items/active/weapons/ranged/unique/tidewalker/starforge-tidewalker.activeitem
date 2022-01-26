@@ -1,0 +1,134 @@
+{
+  "itemName" : "starforge-tidewalker",
+  "price" : 1500,
+  "inventoryIcon" : "starforge-tidewalker.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "N/A.",
+  "shortdescription" : "Tidewalker",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "starforge-uniquegun",
+  "category" : "Rail Rifle",
+  "itemTags" : ["weapon","ranged","nebulox","tide"],
+  "twoHanded" : true,
+  
+  "animation" : "starforge-tidewalker.animation",
+  "animationParts" : {
+    "gun" : "starforge-tidewalker.png",
+    "lights" : "starforge-tidewalkerfullbright.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidebreakermuzzle.png",
+    "charge" : ""
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.125, -0.25]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.125, -0.25]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.125, -0.25]
+		  }
+		},
+		"muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.375, 0.5]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/starforge-tidewalkerheavyshot.ogg" ],
+	  "chargeLoop" : [ "/sfx/gun/starforge-tidewalkercharge.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.125, -0.25],
+  "muzzleOffset" : [2.75, -0.25],
+  
+  "aimOffset" : 0.1,
+
+  "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
+
+  "elementalType" : "starforge-tidalfrost",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-chargedshot.lua"],
+    "class" : "StarforgeChargedShot",
+
+    "chargeTime" : 0.65,
+    "baseDamage" : 12.5,
+    "baseEnergyUsage" : 8,
+    "inaccuracy" : 0.002,
+	
+	"pitchVariance" : 0.05,
+	
+	"cooldownTime" : 0.135,
+
+    "projectileType" : "starforge-tidewalkershot",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+      "knockback" : 6
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 12,
+        "weaponRotation" : -12,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : 10,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 13,
+        "weaponRotation" : -8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.135,
+        "armRotation" : 13,
+        "weaponRotation" : -8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.135,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildchargedgun.lua"
+}
