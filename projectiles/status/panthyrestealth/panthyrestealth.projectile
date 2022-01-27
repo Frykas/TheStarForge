@@ -1,0 +1,9 @@
+{
+  "projectileName" : "starforge-panthyrestealth",
+  "image" : "/assetmissing.png",
+  "power" : 0,
+  "speed" : 0,
+  
+  "scripts" : [ "/projectiles/scripts/starforge-applyownerstatus.lua" ],
+  "ownerStatusEffects" : [ "starforge-panthyrestealth" ]
+}

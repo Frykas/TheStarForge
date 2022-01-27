@@ -107,7 +107,6 @@ function build(directory, config, parameters, level, seed)
 	end
 	
 	local rarityIndex = rarityFactor / size
-	sb.logInfo("Index = %s, Factor = %s, Part count = %s", rarityIndex, rarityFactor, size)
 	local actualRarity = "Common"
 	if rarityIndex > 4 then
 	  actualRarity = "Uncommon"

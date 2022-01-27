@@ -102,10 +102,10 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [65, 105],
+    "position" : [70, 105],
     "file" : "",
     "centered" : true,
-    "maxSize" : [60, 25],
+    "maxSize" : [65, 25],
     "minSize" : [60, 25]
   },
   

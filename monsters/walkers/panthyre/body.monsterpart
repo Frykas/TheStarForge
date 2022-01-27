@@ -1,0 +1,10 @@
+{
+  "name" : "panthyre",
+  "category" : "panthyre",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "panthyre.png",
+    "bodyFullbright" : "panthyrefullbright.png"
+  }
+}
