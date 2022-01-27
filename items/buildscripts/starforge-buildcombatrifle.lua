@@ -1,4 +1,5 @@
 require "/scripts/util.lua"
+require "/scripts/starforge-util.lua"
 require "/scripts/vec2.lua"
 require "/scripts/versioningutils.lua"
 require "/scripts/staticrandom.lua"
@@ -19,7 +20,7 @@ function build(directory, config, parameters, level, seed)
     parameters.level = level
   end
 
-  -- initialize randomization
+  --Initialize randomization
   if seed then
     parameters.seed = seed
   else
@@ -31,15 +32,11 @@ function build(directory, config, parameters, level, seed)
     end
   end
 
-  -- select the generation profile to use
+  --Determine generation profile
   local builderConfig = {}
   if config.builderConfig then
     builderConfig = randomFromList(config.builderConfig, seed, "builderConfig")
   end
-
-  -- select, load and merge abilities
-  setupAbility(config, parameters, "alt", builderConfig, seed)
-  setupAbility(config, parameters, "primary", builderConfig, seed)
 
   --Build the combat rifle
   if builderConfig.buildConfig then
@@ -53,12 +50,40 @@ function build(directory, config, parameters, level, seed)
 	local namePrefix = ""
 	local nameRoot = ""
 	local nameSuffix = ""
+	local rarityFactor = 0
+	local size = 0
+	
+	parameters.primaryAbilityData = {}
+	parameters.primaryAbilityMultipliers = {}
 	for k, v in pairs(parts) do
+	  size = size + 1
+	
 	  local chosenPart = randomFromList(v, seed, "chosen" .. k)
+	  rarityFactor = rarityFactor + chosenPart.rarity
+	  
+	  if chosenPart.baseStats then
+		util.mergeTable(parameters.primaryAbilityData, chosenPart.baseStats)
+	  end
+	  if chosenPart.multipliers then
+	    for y, x in pairs(chosenPart.multipliers) do
+		  if not parameters.primaryAbilityMultipliers[y] then
+		    parameters.primaryAbilityMultipliers[y] = x
+		  elseif parameters.primaryAbilityMultipliers[y] then
+		    parameters.primaryAbilityMultipliers[y] = parameters.primaryAbilityMultipliers[y] * x
+		  end
+		end
+	  end
+	  
 	  if k == "body" then
 		--Determine basic parameters
-		config.manufacturer = chosenPart.manufacturer
+		parameters.manufacturer = chosenPart.manufacturer
 		parameters.elementalType = randomFromList(chosenPart.elementalTypes, seed, "chosenElement")
+	  end
+	  
+	  --Set altfire in only attachment to avoid conflicts
+	  if k == "attachment" then
+	    builderConfig.altAbilities = {chosenPart.altAbility}
+		config.altAbility = chosenPart.altAbilityConfig
 	  end
 	  
 	  --Determine the name of the gun
@@ -75,37 +100,60 @@ function build(directory, config, parameters, level, seed)
 	  --Determine sprite to use for each part
 	  local chosenSprite = randomFromList(chosenPart.images, seed, "chosen" .. k .. "Sprite")
 	  config.animationParts[k] = util.absolutePath(string.gsub(generationDirectory, "<partName>", k), chosenSprite)
+	  local spriteIndex = nebUtil.findIndex(chosenPart.images, chosenSprite)
+	  if spriteIndex and chosenPart.fullbrightImages then
+  	    config.animationParts[k .. "Fullbright"] = util.absolutePath(string.gsub(generationDirectory, "<partName>", k), chosenPart.fullbrightImages[spriteIndex])
+	  end
 	end
+	
+	local rarityIndex = rarityFactor / size
+	sb.logInfo("Index = %s, Factor = %s, Part count = %s", rarityIndex, rarityFactor, size)
+	local actualRarity = "Common"
+	if rarityIndex > 4 then
+	  actualRarity = "Uncommon"
+	  if rarityIndex > 6.75 then
+	    actualRarity = "Rare"
+		if rarityIndex > 8.75 then
+		  actualRarity = "Legendary"
+		end
+	  end
+	end
+	config.rarity = actualRarity
 	
 	--Apply the name
 	local name = string.gsub((namePrefix .. nameRoot .. nameSuffix), "<elementalType>", parameters.elementalType)
 	parameters.shortdescription = name
+	
+	--Apply directives
+	local elementalDirectives = generationConfig.elementalDirectives[parameters.elementalType]
+	local manufacturerDirectives = generationConfig.manufacturerModifiers[parameters.manufacturer].rarityDirectives[config.rarity:lower()]
+	local randomisedDirectives = randomFromList(generationConfig.randomisedDirectives, seed, "randomisedDirectives")
+	
+	parameters.generatedDirectives = elementalDirectives .. manufacturerDirectives .. randomisedDirectives
   end
   local elementalType = parameters.elementalType
   
-  -- elemental config
+  --Select, load and merge abilities
+  setupAbility(config, parameters, "primary", builderConfig, seed)
+  setupAbility(config, parameters, "alt", builderConfig, seed)
+  
+  --Apply elemental configs
   if builderConfig.elementalConfig then
     util.mergeTable(config, builderConfig.elementalConfig[elementalType])
   end
   if config.altAbility and config.altAbility.elementalConfig then
     util.mergeTable(config.altAbility, config.altAbility.elementalConfig[elementalType])
   end
-
-  -- elemental tag
+  
+  --Replace some tags which are useful in the combat rifles
+  replacePatternInData(config, nil, "<manufacturer>", elementalType)
   replacePatternInData(config, nil, "<elementalType>", elementalType)
   replacePatternInData(config, nil, "<elementalName>", elementalType:gsub("^%l", string.upper))
 
-  -- name
-  --if not parameters.shortdescription and builderConfig.nameGenerator then
-  --  parameters.shortdescription = root.generateName(util.absolutePath(directory, builderConfig.nameGenerator), seed)
-  --end
-
-  -- merge damage properties
-  if builderConfig.damageConfig then
-    util.mergeTable(config.damageConfig or {}, builderConfig.damageConfig)
-  end
-
-  -- preprocess shared primary attack config
+  --Update primary ability
+  util.mergeTable(config.primaryAbility, parameters.primaryAbilityData)
+  
+  --Preprocess shared primary attack config
   parameters.primaryAbility = parameters.primaryAbility or {}
   parameters.primaryAbility.fireTimeFactor = valueOrRandom(parameters.primaryAbility.fireTimeFactor, seed, "fireTimeFactor")
   parameters.primaryAbility.baseDpsFactor = valueOrRandom(parameters.primaryAbility.baseDpsFactor, seed, "baseDpsFactor")
@@ -122,20 +170,31 @@ function build(directory, config, parameters, level, seed)
 
   -- preprocess ranged primary attack config
   if config.primaryAbility.projectileParameters then
-    config.primaryAbility.projectileType = "unbound" .. elementalType .. "bullet"--randomFromList(config.primaryAbility.projectileType, seed, "projectileType")
-    config.primaryAbility.projectileCount = randomIntInRange(config.primaryAbility.projectileCount, seed, "projectileCount") or 1
-    config.primaryAbility.fireType = randomFromList(config.primaryAbility.fireType, seed, "fireType") or "auto"
-    config.primaryAbility.burstCount = randomIntInRange(config.primaryAbility.burstCount, seed, "burstCount")
-    config.primaryAbility.burstTime = randomInRange(config.primaryAbility.burstTime, seed, "burstTime")
+    config.primaryAbility.projectileType = "unbound" .. elementalType .. "bullet"
     if config.primaryAbility.projectileParameters.knockbackRange then
       config.primaryAbility.projectileParameters.knockback = scaleConfig(parameters.primaryAbility.fireTimeFactor, config.primaryAbility.projectileParameters.knockbackRange)
     end
   end
+  
+  --Adjust recoil and firetimes to match firerate
+  local correctedAbility = nebUtil.multiplyTables(config.primaryAbility, parameters.primaryAbilityMultipliers)
+  
+  --Durations
+  correctedAbility.stances.fire.duration = correctedAbility.fireTime * 0.02
+  correctedAbility.stances.cooldown.duration = correctedAbility.fireTime * 0.98
+  
+  --Rotations
+  correctedAbility.stances.fire.weaponRotation = correctedAbility.stances.fire.weaponRotation * correctedAbility.fireTime
+  correctedAbility.stances.fire.armRotation = correctedAbility.stances.fire.weaponRotation * 0.5
+  correctedAbility.stances.cooldown.weaponRotation = correctedAbility.stances.cooldown.weaponRotation * correctedAbility.fireTime
+  correctedAbility.stances.cooldown.armRotation = correctedAbility.stances.cooldown.weaponRotation * 0.5
+  
+  config.primaryAbility = correctedAbility
 
-  -- calculate damage level multiplier
+  --Calculate damage level multiplier
   config.damageLevelMultiplier = root.evalFunction("weaponDamageLevelMultiplier", configParameter("level", 1))
 
-  -- build palette swap directives
+  --Build palette swap directives
   config.paletteSwaps = ""
   if builderConfig.palette then
     local palette = root.assetJson(util.absolutePath(directory, builderConfig.palette))
@@ -145,12 +204,12 @@ function build(directory, config, parameters, level, seed)
     end
   end
 
-  -- merge extra animationCustom
+  --Merge extra animationCustom
   if builderConfig.animationCustom then
     util.mergeTable(config.animationCustom or {}, builderConfig.animationCustom)
   end
 
-  -- animation parts
+  --Animation parts
   if builderConfig.animationParts then
     config.animationParts = config.animationParts or {}
     if parameters.animationPartVariants == nil then parameters.animationPartVariants = {} end
@@ -168,8 +227,10 @@ function build(directory, config, parameters, level, seed)
       end
     end
   end
+  
+  config.paletteSwaps = config.paletteSwaps .. parameters.generatedDirectives
 
-  -- set gun part offsets
+  --Offset combat rifle parts
   local partImagePositions = {}
   if builderConfig.gunParts then
     construct(config, "animationCustom", "animatedParts", "parts")
@@ -187,18 +248,18 @@ function build(directory, config, parameters, level, seed)
     config.muzzleOffset = vec2.add(config.baseOffset, vec2.add(config.muzzleOffset or {0,0}, vec2.div(imageOffset, 8)))
   end
 
-  -- elemental fire sounds
+  --Randomise fire sounds
   if config.fireSounds then
     construct(config, "animationCustom", "sounds", "fire")
     local sound = randomFromList(config.fireSounds, seed, "fireSound")
     config.animationCustom.sounds.fire = type(sound) == "table" and sound or { sound }
   end
 
-  -- build inventory icon
+  --Build the inventory icon
   if not config.inventoryIcon and config.animationParts then
     config.inventoryIcon = jarray()
     local parts = builderConfig.weaponParts or {}
-    for _,partName in pairs(parts) do
+    for _, partName in pairs(parts) do
       local drawable = {
         image = config.animationParts[partName] .. config.paletteSwaps,
         position = partImagePositions[partName]
@@ -207,29 +268,35 @@ function build(directory, config, parameters, level, seed)
     end
   end
 
-  -- populate tooltip fields
-  config.tooltipFields = {}
-  local fireTime = parameters.primaryAbility.fireTime or config.primaryAbility.fireTime or 1.0
-  local baseDps = parameters.primaryAbility.baseDps or config.primaryAbility.baseDps or 0
-  local energyUsage = parameters.primaryAbility.energyUsage or config.primaryAbility.energyUsage or 0
-  config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
-  config.tooltipFields.dpsLabel = util.round(baseDps * config.damageLevelMultiplier, 1)
-  config.tooltipFields.speedLabel = util.round(1 / fireTime, 1)
-  config.tooltipFields.damagePerShotLabel = util.round(baseDps * fireTime * config.damageLevelMultiplier, 1)
-  config.tooltipFields.energyPerShotLabel = util.round(energyUsage * fireTime, 1)
-  if elementalType ~= "physical" then
-    config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
-  end
-  if config.primaryAbility then
-    config.tooltipFields.primaryAbilityTitleLabel = "Primary:"
-    config.tooltipFields.primaryAbilityLabel = config.primaryAbility.name or "unknown"
-  end
-  if config.altAbility then
-    config.tooltipFields.altAbilityTitleLabel = "Special:"
-    config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
+  --Populate tooltip fields
+  if config.tooltipKind ~= "base" then
+    config.tooltipFields = {}
+    local fireTime = parameters.primaryAbility.fireTime or config.primaryAbility.fireTime or 1.0
+    local baseDps = parameters.primaryAbility.baseDps or config.primaryAbility.baseDps or 0
+    local energyUsage = parameters.primaryAbility.energyUsage or config.primaryAbility.energyUsage or 0
+    config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
+    config.tooltipFields.dpsLabel = util.round(baseDps * config.damageLevelMultiplier, 1)
+    config.tooltipFields.speedLabel = util.round(1 / fireTime, 1)
+    config.tooltipFields.damagePerShotLabel = util.round(baseDps * fireTime * config.damageLevelMultiplier, 1)
+    config.tooltipFields.energyPerShotLabel = util.round(energyUsage * fireTime, 1)
+	config.tooltipFields = sb.jsonMerge(config.tooltipFields, config.tooltipFieldsOverride or {})
+    if elementalType ~= "physical" then
+      config.tooltipFields.damageKindImage = "/interface/elements/" .. elementalType .. ".png"
+    end
+    if config.primaryAbility then
+      config.tooltipFields.primaryAbilityTitleLabel = "Primary:"
+      config.tooltipFields.primaryAbilityLabel = config.primaryAbility.name or "unknown"
+    end
+    if config.altAbility then
+      config.tooltipFields.altAbilityTitleLabel = "Special:"
+      config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
+    end
+	
+	--Apply manufacturer icon
+    config.tooltipFields.manufacturerIconImage = "/interface/sf-manufacturers/" .. parameters.manufacturer:lower() .. ".png"
   end
 
-  -- set price
+  --Set price
   config.price = (config.price or 0) * root.evalFunction("itemLevelPriceMultiplier", configParameter("level", 1))
 
   return config, parameters

@@ -1,11 +1,11 @@
 {
-  "itemName" : "starforge-commoncombatrifle",
+  "itemName" : "starforge-combatrifle",
   "price" : 900,
   "maxStack" : 1,
   "rarity" : "Common",
   "description" : "A fully automatic, military grade rifle.",
-  "shortdescription" : "Common Combat Rifle",
-  "tooltipKind" : "gun",
+  "shortdescription" : "Combat Rifle",
+  "tooltipKind" : "starforge-combatrifle",
   "category" : "Combat Rifle",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","combatrifle"],
@@ -14,8 +14,8 @@
   "animation" : "/items/active/weapons/ranged/generated/combatrifle/combatrifle.animation",
   "animationParts" : { },
   "animationCustom" : { },
-  "baseOffset" : [-1.0, 0.25],
-  "muzzleOffset" : [0.0, 0.3125],
+  "baseOffset" : [1.0, 0.25],
+  "muzzleOffset" : [2.0, 0.625],
 
   "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
 
@@ -25,18 +25,16 @@
     "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
     "class" : "StarforgeGunFire",
 
-    "fireTime" : [0.11, 0.18],
-    "baseDps" : [9, 10],
-    "energyUsage" : [27, 30],
+    "fireTime" : 0.2,
+    "baseDps" : 10,
+    "energyUsage" : 30,
     "inaccuracy" : 0.02,
 
-    "burstTime" : 0.075,
-    "burstCount" : [2,4],
-    "fireType" : ["auto", "burst"],
+    "fireType" : "auto",
 
     "projectileType" : "standardbullet",
     "projectileParameters" : {
-      "knockbackRange" : [4,8]
+      "knockbackRange" : [4, 8]
     },
 
     "stances" : {
@@ -68,17 +66,17 @@
       }
     }
   },
-  "fireSounds" : [ "/sfx/gun/starforge-unboundrifle.ogg", "/sfx/gun/starforge-unboundsmartpistol.ogg", "/sfx/gun/starforge-assaultriflefire1.ogg", "/sfx/gun/starforge-minigunfire.ogg", "/sfx/gun/starforge-yukaiplasma.ogg", "/sfx/gun/starforge-ar1.ogg" ],
-
+  "fireSounds" : [ "/sfx/gun/starforge-unboundrifle.ogg", "/sfx/gun/starforge-assaultriflefire1.ogg", "/sfx/gun/starforge-minigunfire.ogg", "/sfx/gun/starforge-yukaiplasma.ogg", "/sfx/gun/starforge-ar1.ogg" ],
+  
   "builder" : "/items/buildscripts/starforge-buildcombatrifle.lua",
   "builderConfig" : [{
 	"buildConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
 	"weaponParts" : [
-	  "body",
-	  "barrel",
-	  "magazine",
 	  "stock",
-	  "attachment"
+	  "magazine",
+	  "attachment",
+	  "barrel",
+	  "body"
 	]
   }]
 }

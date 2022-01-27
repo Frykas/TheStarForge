@@ -24,58 +24,104 @@
       "stock" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
+          "zLevel" : -2,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "stockFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : -1,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0.125], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
       "body" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
+          "zLevel" : 7,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "bodyFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 8,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0.125], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
       "barrel" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
+          "zLevel" : 5,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "barrelFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 6,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0.125], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
       "magazine" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
+          "zLevel" : 3,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "magazineFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 4,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0.125], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
 	  "attachment" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
+          "zLevel" : 1,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
-	  
-      "overlay" : {
+	  "attachmentFullbright" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
+          "fullbright" : true,
+          "zLevel" : 2,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [1, 0], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
 	  
       "muzzleFlash" : {
         "properties" : {
-          "zLevel" : -1,
+          "zLevel" : -5,
           "centered" : true,
-          "offset" : [0.75, 0],
+          "offset" : [1.5, -0.125],
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
@@ -121,6 +167,7 @@
   },
 
   "sounds" : {
-    "fire" : [ ]
+    "fire" : [ ],
+    "chargeLoop" : [ ]
   }
 }

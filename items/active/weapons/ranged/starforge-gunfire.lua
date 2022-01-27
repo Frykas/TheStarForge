@@ -90,7 +90,7 @@ end
 
 function StarforgeGunFire:charge()
   if animator.hasSound("chargeLoop") then
-    animator.playSound("chargeLoop", -1)
+	animator.playSound("chargeLoop", -1)
   end
   --Timer used for optional shaking
   local timer = 0
@@ -229,7 +229,7 @@ function StarforgeGunFire:energyPerShot()
 end
 
 function StarforgeGunFire:damagePerShot()
-  return (self.baseDamage or (self.baseDps * self.fireTime)) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+  return (self.baseDamage or (self.baseDps * (self.fireTime))) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
 function StarforgeGunFire:uninit()
