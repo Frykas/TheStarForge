@@ -3,6 +3,8 @@
   "effectConfig" : {},
   "defaultDuration" : 1.0,
 
+  "animationConfig" : "starforge-terminate.animation",
+  
   "scripts" : [
     "starforge-terminate.lua"
   ]

@@ -5,6 +5,7 @@ function init()
 	facingSuppressed = true,
 	movementSuppressed = true
   })
+  animator.playSound("die")
 end
 
 function update(dt)
