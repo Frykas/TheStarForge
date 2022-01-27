@@ -1,0 +1,265 @@
+{
+  "muteSfx" : false,
+  "muteMusic" : true,
+  "letterbox" : false,
+  "scissor" : false,
+
+  "panels" : [
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/respawn/black.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.01,
+          "zoom" : 500,
+          "alpha" : 0,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 0.3,
+          "zoom" : 500,
+          "alpha" : 0.80,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 6.0,
+          "zoom" : 500,
+          "alpha" : 0.80,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 8.65,
+          "zoom" : 500,
+          "alpha" : 0.0,
+          "position" : [480, 270]
+        }
+      ]
+    },
+	 {
+      "drawables" : [
+        {
+          "image" : "/cinematics/sashajoins/shashabackground.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.01,
+          "zoom" : 3,
+          "alpha" : 0,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 0.3,
+          "zoom" : 3,
+          "alpha" : 0.80,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 6.0,
+          "zoom" : 3,
+          "alpha" : 0.80,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 8.65,
+          "zoom" : 3,
+          "alpha" : 0.0,
+          "position" : [480, 270]
+        }
+      ]
+    },
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/sashajoins/sashashadow.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.01,
+          "zoom" : 0,
+          "alpha" : 0,
+          "position" : [360, 350]
+        },
+        {
+          "timecode" : 0.1,
+          "zoom" : 0,
+          "alpha" : 1,
+          "position" : [360, 350]
+        },
+        {
+          "timecode" : 0.6,
+          "zoom" : 1,
+          "alpha" : 1,
+          "position" : [479, 245]
+        },
+        {
+          "timecode" : 6.0,
+          "zoom" : 1,
+          "alpha" : 1,
+          "position" : [479, 245]
+        },
+        {
+          "timecode" : 8.65,
+          "zoom" : 1,
+          "alpha" : 0,
+          "position" : [479, 245]
+        }
+      ]
+    },
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/sashajoins/sasha.png:<frame>"
+        }
+      ],
+      "animationFrames" : 18,
+      "keyframes" : [
+        {
+          "timecode" : 0.6,
+          "zoom" : 2,
+          "alpha" : 0,
+          "position" : [479, 280],
+          "frame" : 0
+        },
+        {
+          "timecode" : 1.1,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 280]
+        },
+        {
+          "timecode" : 6.0,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 280]
+        },
+        {
+          "timecode" : 8.65,
+          "zoom" : 2,
+          "alpha" : 0,
+          "position" : [479, 280],
+		  "frame" : 18
+        }
+      ]
+    },
+    {
+      "text" : "NEW ALLY RECRUITED",
+      "fontSize" : 24,
+      "textPosition" : {
+        "position" : [-120, 160],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.01,
+          "zoom" : 1,
+          "alpha" : 0,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 1.1,
+          "zoom" : 1,
+          "alpha" : 1,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 6.0,
+          "zoom" : 1,
+          "alpha" : 1,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 8.65,
+          "zoom" : 1,
+          "alpha" : 0.0,
+          "position" : [480, 190]
+        }
+      ]
+    },
+	
+	{
+      "text" : "SASHA BENIKO",
+      "fontSize" : 24,
+      "textPosition" : {
+        "position" : [-80, 35],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.01,
+          "zoom" : 1,
+          "alpha" : 0,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 1.1,
+          "zoom" : 1,
+          "alpha" : 1,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 6.0,
+          "zoom" : 1,
+          "alpha" : 1,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 8.65,
+          "zoom" : 1,
+          "alpha" : 0.0,
+          "position" : [480, 190]
+        }
+      ]
+    },
+	{
+      "text" : "^cornflowerblue;Mission replay & new crafting stations available",
+      "fontSize" : 11,
+      "textPosition" : {
+        "position" : [-135, 10],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.01,
+          "zoom" : 1,
+          "alpha" : 0,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 1.1,
+          "zoom" : 1,
+          "alpha" : 1,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 6.0,
+          "zoom" : 1,
+          "alpha" : 1,
+          "position" : [480, 190]
+        },
+        {
+          "timecode" : 8.65,
+          "zoom" : 1,
+          "alpha" : 0.0,
+          "position" : [480, 190]
+        }
+      ]
+    }
+  ],
+  "audio" : [
+    {
+      "timecode" : 0.65,
+      "resource" : "/sfx/cinematics/character_joined.ogg"
+    }
+  ]
+}

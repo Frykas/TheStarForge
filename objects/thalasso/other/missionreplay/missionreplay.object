@@ -2,6 +2,8 @@
   "objectName" : "starforge-missionreplay",
   "colonyTags" : ["apex"],
   "rarity" : "Essential",
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/starforge-missioncatalogue/missioncatalogue.config",
 
   "printable" : false,
   "description" : "Sasha Beniko, ex-Unbound officer, ex-Unbound prisoner, now working with the Thalasso.",
@@ -44,12 +46,13 @@
     "Hey there! Looking to strike the Unbound again?",
     "If you're bored, I always have some work for you!",
     "Looking for something to do?",
-	"You know, the Unbound aren't that bad. They help the Apex, free them, feed them...",
-	"That Starforge we've got, we must take good care of it.",
+	"You know, the Unbound do a lot of good for my people. If only they cared about the other races...",
+	"I can't believe you guys found a starforge a managed to keep it hidden from the Unbound.",
 	"If we stand together, we can win this!",
-	"I heard of a group of Apex who tried to fight the Unbound. Just like me, they didn't want to finally be free from a conflict only to join another. I wonder what happened to them...",
+	"You, Morpheus and Mariko make a mess of the Unbound while I cover up the tracks, together we got this!",
 	"Looking for some action?",
 	"Stay strong, and remember what you're fighting for."
   ]
    
    }
+   
