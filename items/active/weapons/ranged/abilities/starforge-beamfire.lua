@@ -78,7 +78,6 @@ function StarforgeBeamFire:fire()
   while (self.fireMode == (self.activatingFireMode or self.abilitySlot) or (self.minFiringTime and self.timeSpentFiring < self.minFiringTime)) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) and not (self.maxFiringTime and self.timeSpentFiring > self.maxFiringTime) do
     --Sound pitch variance
 	local pitchVariance = (1 + (self.pitchPerlinNoise:get(os.clock()) * self.pitchVariance or 0.5))
-	world.debugText("Pitch: %s", pitchVariance, vec2.add(mcontroller.position(), {5, 5}), "cyan")
 	animator.setSoundPitch("fireLoop", pitchVariance)
 	
 	local beamStart = self:firePosition()

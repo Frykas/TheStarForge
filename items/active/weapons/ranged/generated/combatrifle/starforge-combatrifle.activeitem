@@ -15,7 +15,7 @@
   "animationParts" : { },
   "animationCustom" : { },
   "baseOffset" : [1.0, 0.25],
-  "muzzleOffset" : [2.0, 0.625],
+  "muzzleOffset" : [2.5, 0.625],
 
   "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
 

@@ -121,7 +121,7 @@
         "properties" : {
           "zLevel" : -5,
           "centered" : true,
-          "offset" : [1.5, -0.25],
+          "offset" : [1, -0.125],
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },

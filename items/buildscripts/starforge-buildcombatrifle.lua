@@ -60,6 +60,15 @@ function build(directory, config, parameters, level, seed)
 	  size = size + 1
 	
 	  local chosenPart = randomFromList(v, seed, "chosen" .. k)
+	  
+	  --Make a better method of rerolling the effect !!
+	  if chosenPart.elementalType and parameters.elementalType then
+	    while chosenPart.elementalType ~= parameters.elementalType do
+		  chosenPart = randomFromList(v, seed, "chosen" .. k)
+		  sb.logInfo("Rerolled part! %s", k)
+	    end
+	  end
+	  
 	  rarityFactor = rarityFactor + chosenPart.rarity
 	  
 	  if chosenPart.baseStats then
@@ -73,6 +82,10 @@ function build(directory, config, parameters, level, seed)
 		    parameters.primaryAbilityMultipliers[y] = parameters.primaryAbilityMultipliers[y] * x
 		  end
 		end
+	  end
+	  
+	  if chosenPart.animationCustom then
+	    config.animationCustom = util.mergeTable(config.animationCustom or {}, chosenPart.animationCustom)
 	  end
 	  
 	  if k == "body" then
@@ -190,6 +203,7 @@ function build(directory, config, parameters, level, seed)
   correctedAbility.stances.cooldown.armRotation = correctedAbility.stances.cooldown.weaponRotation * 0.5
   
   config.primaryAbility = correctedAbility
+  config.primaryAbility.projectileCount = math.max(1, config.primaryAbility.projectileCount)
 
   --Calculate damage level multiplier
   config.damageLevelMultiplier = root.evalFunction("weaponDamageLevelMultiplier", configParameter("level", 1))
@@ -299,6 +313,12 @@ function build(directory, config, parameters, level, seed)
   end
   
   --Replace some tags which are useful in the combat rifles
+  replacePatternInData(parameters, nil, "<manufacturer>", parameters.manufacturer)
+  replacePatternInData(parameters, nil, "<manufacturerName>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].name or "")
+  replacePatternInData(parameters, nil, "<manufacturerNickname>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].nickname or "")
+  replacePatternInData(parameters, nil, "<elementalType>", elementalType)
+  replacePatternInData(parameters, nil, "<elementalName>", elementalType:gsub("^%l", string.upper))
+  
   replacePatternInData(config, nil, "<manufacturer>", parameters.manufacturer)
   replacePatternInData(config, nil, "<manufacturerName>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].name or "")
   replacePatternInData(config, nil, "<manufacturerNickname>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].nickname or "")
