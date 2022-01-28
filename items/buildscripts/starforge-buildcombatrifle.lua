@@ -39,8 +39,9 @@ function build(directory, config, parameters, level, seed)
   end
 
   --Build the combat rifle
+  local generationConfig
   if builderConfig.buildConfig then
-	local generationConfig = root.assetJson(util.absolutePath(directory, builderConfig.buildConfig))
+	generationConfig = root.assetJson(util.absolutePath(directory, builderConfig.buildConfig))
 	local parts = generationConfig.parts
 	local generationDirectory = generationConfig.basePartDirectory
 	
@@ -84,6 +85,11 @@ function build(directory, config, parameters, level, seed)
 	  if k == "attachment" then
 	    builderConfig.altAbilities = {chosenPart.altAbility}
 		config.altAbility = chosenPart.altAbilityConfig
+	  end
+	  
+	  --Offset muzzle
+	  if k == "barrel" then
+	    config.muzzleOffset = chosenPart.muzzleOffset
 	  end
 	  
 	  --Determine the name of the gun
@@ -143,11 +149,6 @@ function build(directory, config, parameters, level, seed)
   if config.altAbility and config.altAbility.elementalConfig then
     util.mergeTable(config.altAbility, config.altAbility.elementalConfig[elementalType])
   end
-  
-  --Replace some tags which are useful in the combat rifles
-  replacePatternInData(config, nil, "<manufacturer>", elementalType)
-  replacePatternInData(config, nil, "<elementalType>", elementalType)
-  replacePatternInData(config, nil, "<elementalName>", elementalType:gsub("^%l", string.upper))
 
   --Update primary ability
   util.mergeTable(config.primaryAbility, parameters.primaryAbilityData)
@@ -169,7 +170,7 @@ function build(directory, config, parameters, level, seed)
 
   -- preprocess ranged primary attack config
   if config.primaryAbility.projectileParameters then
-    config.primaryAbility.projectileType = "unbound" .. elementalType .. "bullet"
+    --config.primaryAbility.projectileType = "unbound" .. elementalType .. "bullet"
     if config.primaryAbility.projectileParameters.knockbackRange then
       config.primaryAbility.projectileParameters.knockback = scaleConfig(parameters.primaryAbility.fireTimeFactor, config.primaryAbility.projectileParameters.knockbackRange)
     end
@@ -273,12 +274,14 @@ function build(directory, config, parameters, level, seed)
     local fireTime = parameters.primaryAbility.fireTime or config.primaryAbility.fireTime or 1.0
     local baseDps = parameters.primaryAbility.baseDps or config.primaryAbility.baseDps or 0
     local energyUsage = parameters.primaryAbility.energyUsage or config.primaryAbility.energyUsage or 0
+	
     config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
     config.tooltipFields.dpsLabel = util.round(baseDps * config.damageLevelMultiplier, 1)
     config.tooltipFields.speedLabel = util.round(1 / fireTime, 1)
     config.tooltipFields.damagePerShotLabel = util.round(baseDps * fireTime * config.damageLevelMultiplier, 1)
     config.tooltipFields.energyPerShotLabel = util.round(energyUsage * fireTime, 1)
 	config.tooltipFields = sb.jsonMerge(config.tooltipFields, config.tooltipFieldsOverride or {})
+	
     if elementalType ~= "physical" then
       config.tooltipFields.damageKindImage = "/interface/elements/" .. elementalType .. ".png"
     end
@@ -294,6 +297,13 @@ function build(directory, config, parameters, level, seed)
 	--Apply manufacturer icon
     config.tooltipFields.manufacturerIconImage = "/interface/sf-manufacturers/" .. parameters.manufacturer:lower() .. ".png"
   end
+  
+  --Replace some tags which are useful in the combat rifles
+  replacePatternInData(config, nil, "<manufacturer>", parameters.manufacturer)
+  replacePatternInData(config, nil, "<manufacturerName>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].name or "")
+  replacePatternInData(config, nil, "<manufacturerNickname>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].nickname or "")
+  replacePatternInData(config, nil, "<elementalType>", elementalType)
+  replacePatternInData(config, nil, "<elementalName>", elementalType:gsub("^%l", string.upper))
 
   --Set price
   config.price = (config.price or 0) * root.evalFunction("itemLevelPriceMultiplier", configParameter("level", 1))
