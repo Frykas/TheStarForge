@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unboundiceblueprint",
+  "rarity" : "rare",
+  "price" : 1250,
+  "description" : "Unbound blueprints of ice elemental weapons.",
+  "shortdescription" : "Weapon Blueprints",
+  "category" : "Blueprint",
+  "twoHanded" : false,
+  "inventoryIcon" : "unboundiceblueprint.png",
+  "recipes" : ["starforge-unbounddmr", "starforge-unboundsniper", "starforge-unboundheavysniper", "starforge-unboundsilencedpistol"],
+  "animation" : "unboundiceblueprint.animation",
+  "scripts" : ["unboundweaponschematic.lua"],
+  "swingTime" : 0.15
+}

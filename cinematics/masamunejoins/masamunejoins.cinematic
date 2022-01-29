@@ -31,7 +31,7 @@
           "position" : [480, 270]
         },
         {
-          "timecode" : 8.65,
+          "timecode" : 6.85,
           "zoom" : 500,
           "alpha" : 0.0,
           "position" : [480, 270]
@@ -64,7 +64,7 @@
           "position" : [480, 270]
         },
         {
-          "timecode" : 8.65,
+          "timecode" : 6.85,
           "zoom" : 3,
           "alpha" : 0.0,
           "position" : [480, 270]
@@ -103,7 +103,7 @@
           "position" : [479, 245]
         },
         {
-          "timecode" : 8.65,
+          "timecode" : 6.85,
           "zoom" : 1,
           "alpha" : 0,
           "position" : [479, 245]
@@ -116,33 +116,33 @@
           "image" : "/cinematics/masamunejoins/masamune.png:<frame>"
         }
       ],
-      "animationFrames" : 18,
+      "animationFrames" : 31,
       "keyframes" : [
         {
           "timecode" : 0.6,
           "zoom" : 2,
           "alpha" : 0,
-          "position" : [479, 280],
+          "position" : [496, 280],
           "frame" : 0
         },
         {
           "timecode" : 1.1,
           "zoom" : 2,
           "alpha" : 1,
-          "position" : [479, 280]
+          "position" : [496, 280]
         },
         {
           "timecode" : 6.0,
           "zoom" : 2,
           "alpha" : 1,
-          "position" : [479, 280]
+          "position" : [496, 280]
         },
         {
-          "timecode" : 8.65,
+          "timecode" : 6.85,
           "zoom" : 2,
           "alpha" : 0,
-          "position" : [479, 280],
-		  "frame" : 18
+          "position" : [496, 280],
+		  "frame" : 31
         }
       ]
     },
@@ -175,7 +175,7 @@
           "position" : [480, 190]
         },
         {
-          "timecode" : 8.65,
+          "timecode" : 6.85,
           "zoom" : 1,
           "alpha" : 0.0,
           "position" : [480, 190]
@@ -212,7 +212,7 @@
           "position" : [480, 190]
         },
         {
-          "timecode" : 8.65,
+          "timecode" : 6.85,
           "zoom" : 1,
           "alpha" : 0.0,
           "position" : [480, 190]
@@ -248,7 +248,7 @@
           "position" : [480, 190]
         },
         {
-          "timecode" : 8.65,
+          "timecode" : 6.85,
           "zoom" : 1,
           "alpha" : 0.0,
           "position" : [480, 190]

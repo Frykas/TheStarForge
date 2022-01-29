@@ -6,16 +6,31 @@
    "starforge-unboundsmallchestTreasure" : [
     [0, {
       "pool" : [
-        {"weight" : 0.39, "pool" : "chestMoney"},
-        {"weight" : 0.23, "pool" : "healingItem"},
+        {"weight" : 0.30, "pool" : "chestMoney"},
+        {"weight" : 0.25, "pool" : "healingItem"},
         {"weight" : 0.35, "pool" : "ore"},
-        {"weight" : 0.03, "pool" : "starforge-unboundlore"}
+        {"weight" : 0.05, "pool" : "starforge-unboundlore"},
+		{"weight" : 0.05, "pool" : "starforge-unboundrareblueprint"}
       ],
 	        "poolRounds" : [
         [0.1, 3],
         [0.4, 4],
         [0.4, 5],
         [0.1, 6]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+   "starforge-unboundrareblueprint" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "starforge-unboundelecblueprint"},
+		{"weight" : 0.33, "item" : "starforge-unboundiceblueprint"},
+		{"weight" : 0.33, "item" : "starforge-unboundfireblueprint"}
+      ],
+	        "poolRounds" : [
+        [1, 1]
       ],
       "allowDuplication" : false
     }]
@@ -141,8 +156,9 @@
       "pool" : [
         {"weight" : 0.33, "pool" : "chestMoney"},
         {"weight" : 0.32, "pool" : "ore"},
-		{"weight" : 0.05, "pool" : "starforge-unboundlore"},
+		{"weight" : 0.03, "pool" : "starforge-unboundlore"},
         {"weight" : 0.28, "pool" : "goodWeapon"},
+		{"weight" : 0.02, "item" : "starforge-unboundspecialblueprint"},
 		{"weight" : 0.02, "item" : "starforge-unlockdodgeroll"}
       ],
 	        "poolRounds" : [
