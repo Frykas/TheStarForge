@@ -14,7 +14,7 @@
   "animation" : "/items/active/weapons/ranged/generated/combatrifle/combatrifle.animation",
   "animationParts" : { },
   "animationCustom" : { },
-  "baseOffset" : [1.0, 0.25],
+  "baseOffset" : [0.75, 0.25],
   "muzzleOffset" : [2.5, 0.625],
 
   "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],

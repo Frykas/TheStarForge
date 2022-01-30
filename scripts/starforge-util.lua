@@ -8,7 +8,7 @@ if not nebUtil then
     end
   end
 	
-  --Copy a table
+  --Copy a table -- thanks C0bra5
   function nebUtil.copyTable(table, count)
 	local ret = {}
 	for k, v in pairs(table) do
@@ -35,12 +35,23 @@ if not nebUtil then
     return multipliedTable
   end
   
+  --Find size of tabe
   function nebUtil.tableSize(table)
     local size = 0
 	for _, x in ipairs(table) do
 	  size = size + 1
 	end
     return size
+  end
+  
+  --Check if table contains a value
+  function nebUtil.tableContains(table, key)
+	for _, v in ipairs(table) do
+	  if v == key then
+		return key
+	  end
+	end
+	return false
   end
   
   --Find index

@@ -56,23 +56,21 @@ function build(directory, config, parameters, level, seed)
 	
 	parameters.primaryAbilityData = {}
 	parameters.primaryAbilityMultipliers = {}
+	
+	parameters.partList = util.mergeTable(config.partList or {}, parameters.partList or {})
 	for k, v in pairs(parts) do
 	  size = size + 1
-	
-	  local chosenPart = randomFromList(v, seed, "chosen" .. k)
-	  
-	  --Make a better method of rerolling the effect !!
-	  if chosenPart.elementalType and parameters.elementalType then
-	    while chosenPart.elementalType ~= parameters.elementalType do
-		  chosenPart = randomFromList(v, seed, "chosen" .. k)
-		  sb.logInfo("Rerolled part! %s", k)
-	    end
+
+	  local chosenPart = parameters.partList[k]
+	  if not chosenPart then
+	    chosenPart = generatePart(k, v, seed, parameters)
+  	    parameters.partList[k] = chosenPart
 	  end
-	  
+
 	  rarityFactor = rarityFactor + chosenPart.rarity
 	  
 	  if chosenPart.baseStats then
-		util.mergeTable(parameters.primaryAbilityData, chosenPart.baseStats)
+		parameters.primaryAbilityData = util.mergeTable(parameters.primaryAbilityData, chosenPart.baseStats)
 	  end
 	  if chosenPart.multipliers then
 	    for y, x in pairs(chosenPart.multipliers) do
@@ -125,26 +123,15 @@ function build(directory, config, parameters, level, seed)
 	  end
 	end
 	
-	local rarityIndex = rarityFactor / size
-	local actualRarity = "Common"
-	if rarityIndex > 4 then
-	  actualRarity = "Uncommon"
-	  if rarityIndex > 6.75 then
-	    actualRarity = "Rare"
-		if rarityIndex > 8.75 then
-		  actualRarity = "Legendary"
-		end
-	  end
-	end
-	config.rarity = actualRarity
+	config.rarity = determineRarity(generationConfig.indexToRarity, rarityFactor / size)
 	
 	--Apply the name
-	local name = string.gsub((namePrefix .. nameRoot .. nameSuffix), "<elementalType>", parameters.elementalType)
+	local name = (namePrefix .. nameRoot .. nameSuffix)
 	parameters.shortdescription = name
 	
 	--Apply directives
 	local elementalDirectives = generationConfig.elementalDirectives[parameters.elementalType]
-	local manufacturerDirectives = generationConfig.manufacturerModifiers[parameters.manufacturer].rarityDirectives[config.rarity:lower()]
+	local manufacturerDirectives = generationConfig.manufacturerConfigs[parameters.manufacturer].rarityDirectives[config.rarity:lower()]
 	local randomisedDirectives = randomFromList(generationConfig.randomisedDirectives, seed, "randomisedDirectives")
 	
 	parameters.generatedDirectives = elementalDirectives .. manufacturerDirectives .. randomisedDirectives
@@ -189,20 +176,7 @@ function build(directory, config, parameters, level, seed)
     end
   end
   
-  --Adjust recoil and firetimes to match firerate
-  local correctedAbility = nebUtil.multiplyTables(config.primaryAbility, parameters.primaryAbilityMultipliers)
-  
-  --Durations
-  correctedAbility.stances.fire.duration = correctedAbility.fireTime * 0.02
-  correctedAbility.stances.cooldown.duration = correctedAbility.fireTime * 0.98
-  
-  --Rotations
-  correctedAbility.stances.fire.weaponRotation = correctedAbility.stances.fire.weaponRotation * correctedAbility.fireTime
-  correctedAbility.stances.fire.armRotation = correctedAbility.stances.fire.weaponRotation * 0.5
-  correctedAbility.stances.cooldown.weaponRotation = correctedAbility.stances.cooldown.weaponRotation * correctedAbility.fireTime
-  correctedAbility.stances.cooldown.armRotation = correctedAbility.stances.cooldown.weaponRotation * 0.5
-  
-  config.primaryAbility = correctedAbility
+  config.primaryAbility = correctAbility(config, parameters)
   config.primaryAbility.projectileCount = math.max(1, config.primaryAbility.projectileCount)
 
   --Calculate damage level multiplier
@@ -294,7 +268,7 @@ function build(directory, config, parameters, level, seed)
     config.tooltipFields.speedLabel = util.round(1 / fireTime, 1)
     config.tooltipFields.damagePerShotLabel = util.round(baseDps * fireTime * config.damageLevelMultiplier, 1)
     config.tooltipFields.energyPerShotLabel = util.round(energyUsage * fireTime, 1)
-	config.tooltipFields = sb.jsonMerge(config.tooltipFields, config.tooltipFieldsOverride or {})
+    config.tooltipFields = sb.jsonMerge(config.tooltipFields, config.tooltipFieldsOverride or {})
 	
     if elementalType ~= "physical" then
       config.tooltipFields.damageKindImage = "/interface/elements/" .. elementalType .. ".png"
@@ -308,27 +282,87 @@ function build(directory, config, parameters, level, seed)
       config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
     end
 	
-	--Apply manufacturer icon
+    --Apply manufacturer icon
     config.tooltipFields.manufacturerIconImage = "/interface/sf-manufacturers/" .. parameters.manufacturer:lower() .. ".png"
   end
   
   --Replace some tags which are useful in the combat rifles
-  replacePatternInData(parameters, nil, "<manufacturer>", parameters.manufacturer)
-  replacePatternInData(parameters, nil, "<manufacturerName>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].name or "")
-  replacePatternInData(parameters, nil, "<manufacturerNickname>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].nickname or "")
-  replacePatternInData(parameters, nil, "<elementalType>", elementalType)
-  replacePatternInData(parameters, nil, "<elementalName>", elementalType:gsub("^%l", string.upper))
-  
   replacePatternInData(config, nil, "<manufacturer>", parameters.manufacturer)
-  replacePatternInData(config, nil, "<manufacturerName>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].name or "")
-  replacePatternInData(config, nil, "<manufacturerNickname>", generationConfig and generationConfig.manufacturerModifiers[parameters.manufacturer].nickname or "")
+  replacePatternInData(config, nil, "<manufacturerName>", generationConfig and generationConfig.manufacturerConfigs[parameters.manufacturer].name or "")
+  replacePatternInData(config, nil, "<manufacturerNickname>", generationConfig and generationConfig.manufacturerConfigs[parameters.manufacturer].nickname or "")
   replacePatternInData(config, nil, "<elementalType>", elementalType)
   replacePatternInData(config, nil, "<elementalName>", elementalType:gsub("^%l", string.upper))
+  
+  replacePatternInData(parameters, nil, "<manufacturer>", parameters.manufacturer)
+  replacePatternInData(parameters, nil, "<manufacturerName>", generationConfig and generationConfig.manufacturerConfigs[parameters.manufacturer].name or "")
+  replacePatternInData(parameters, nil, "<manufacturerNickname>", generationConfig and generationConfig.manufacturerConfigs[parameters.manufacturer].nickname or "")
+  replacePatternInData(parameters, nil, "<elementalType>", elementalType)
+  replacePatternInData(parameters, nil, "<elementalName>", elementalType:gsub("^%l", string.upper))
 
   --Set price
   config.price = (config.price or 0) * root.evalFunction("itemLevelPriceMultiplier", configParameter("level", 1))
 
   return config, parameters
+end
+
+--Determine the rarity to use
+function determineRarity(config, index)
+  local actualRarity = "legendary"
+  for rarity, threshold in pairs(config) do
+	if index < threshold then
+	  actualRarity = rarity
+	end
+  end
+  return actualRarity
+end
+
+--Adjust ability based on new stats
+function correctAbility(config, parameters)
+  --Adjust recoil and firetimes to match firerate
+  local correctedAbility = nebUtil.multiplyTables(config.primaryAbility, parameters.primaryAbilityMultipliers)
+  
+  --Adjust durations to match firetime with some hold on the fire stance
+  correctedAbility.stances.fire.duration = correctedAbility.fireTime * 0.02
+  correctedAbility.stances.cooldown.duration = correctedAbility.fireTime * 0.98
+  
+  --Determine the amount to adjust the rotations by
+  local adjustFactor = ((correctedAbility.fireTime > 1) and math.max(1, (correctedAbility.fireTime - 1) * (correctedAbility.fireTime - 1) + 1) or correctedAbility.fireTime)
+  
+  --Allow rotation if gun is a burst gun
+  correctedAbility.stances.fire.allowRotation = (correctedAbility.fireType == "burst")
+  
+  --Apply new rotations to the both fire and cooldown stances
+  correctedAbility.stances.fire.weaponRotation = correctedAbility.stances.fire.weaponRotation * adjustFactor
+  correctedAbility.stances.fire.armRotation = correctedAbility.stances.fire.weaponRotation * 0.5
+  correctedAbility.stances.cooldown.weaponRotation = correctedAbility.stances.cooldown.weaponRotation * adjustFactor
+  correctedAbility.stances.cooldown.armRotation = correctedAbility.stances.cooldown.weaponRotation * 0.5
+  
+  --Make inaccuracy scale a bit with projectile count
+  correctedAbility.inaccuracy = correctedAbility.projectileCount > 1 and (correctedAbility.inaccuracy * (1 + (correctedAbility.projectileCount - 1) * 0.1)) or correctedAbility.inaccuracy
+  
+  return correctedAbility
+end
+
+--Generate the part for use
+function generatePart(k, v, newSeed, parameters)
+  local chosenPart 
+  repeat
+    chosenPart = randomFromList(v, newSeed, "chosen" .. k)
+    newSeed = newSeed + 1
+  until (isPartValid(chosenPart, parameters))
+  
+  return chosenPart
+end
+
+--Determine if the part is one we can use
+function isPartValid(part, parameters)
+  local success = true
+  if part.elementalTypes and parameters.elementalType then
+    if not nebUtil.tableContains(part.elementalTypes, parameters.elementalType) then
+      success = false
+    end
+  end
+  return success
 end
 
 function scaleConfig(ratio, value)
