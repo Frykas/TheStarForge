@@ -1,10 +1,14 @@
 require "/scripts/util.lua"
-require "/scripts/starforge-util.lua"
 require "/scripts/vec2.lua"
 require "/scripts/versioningutils.lua"
 require "/scripts/staticrandom.lua"
 require "/items/buildscripts/abilities.lua"
 
+require "/scripts/starforge-util.lua"
+require "/scripts/cobra-partpicker.lua"
+
+--Made by Nebulox
+--Thanks to C0bra5 for helping me with the development of a more streamlined generation system!
 function build(directory, config, parameters, level, seed)
   local configParameter = function(keyName, defaultValue)
     if parameters[keyName] ~= nil then
@@ -15,128 +19,175 @@ function build(directory, config, parameters, level, seed)
       return defaultValue
     end
   end
-
-  if level and not configParameter("fixedLevel", false) then
-    parameters.level = level
-  end
-
-  --Initialize randomization
-  if seed then
-    parameters.seed = seed
-  else
-    seed = configParameter("seed")
+  
+  --Initialise randomisation
+  local randomSource
+  if seed or parameters.seed then
+    randomSource = sb.makeRandomSource(seed or parameters.seed)
     if not seed then
-      math.randomseed(util.seedTime())
-      seed = math.random(1, 4294967295)
+      seed = parameters.seed
+    end
+    if not parameters.seed then
       parameters.seed = seed
     end
+  else
+    randomSource = sb.makeRandomSource()
+    seed = randomSource:randu32()
+    parameters.seed = seed
+    randomSource:init(seed)
   end
 
   --Determine generation profile
   local builderConfig = {}
   if config.builderConfig then
-    builderConfig = randomFromList(config.builderConfig, seed, "builderConfig")
+    builderConfig = partPicker.getRandomFromList(config.builderConfig, randomSource)
   end
-
-  --Build the combat rifle
-  local generationConfig
-  if builderConfig.buildConfig then
-	generationConfig = root.assetJson(util.absolutePath(directory, builderConfig.buildConfig))
-	local parts = generationConfig.parts
-	local generationDirectory = generationConfig.basePartDirectory
+  
+  --Generate a list of parts for the weapon
+  local generationConfig = root.assetJson(util.absolutePath(directory, builderConfig.buildConfig))
+  
+  local parts = generationConfig.partPools
+  local partSequence = generationConfig.partSequence
+  local generationDirectory = generationConfig.basePartDirectory
+ 
+  partPicker.filters = {
+    body = {},
+    stock = {partPicker.isElementCompatible},
+    magazine = {partPicker.isElementCompatible},
+    barrel = {partPicker.isElementCompatible},
+    attachment = {partPicker.isElementCompatible}
+  }
+  --Define what function is used to generate the part from the part pool, use those for apply stats when a stat can be in a range
+  partPicker.processors = {
+    body = partPicker.pickBody,
+    stock = partPicker.pickPart,
+    magazine = partPicker.pickPart,
+    barrel = partPicker.pickPart,
+    attachment = partPicker.pickPart
+  }
+  
+  local weaponParts = parameters.weaponParts or partPicker.generateParts(parts, partSequence, randomSource)
+  parameters.weaponParts = weaponParts
+  
+  --Apply stats and features of each part to the weapon
+  --Ensure lack of name works
+  local namePrefix = ""
+  local nameRoot = ""
+  local nameSuffix = ""
+  
+  --Setup rarity calculation
+  local rarityFactor = 0
+  
+  local primaryAbilityData = {}
+  local primaryAbilityMultipliers = {}
+  
+  local attachmentOffset = {0, 0}
+  for x, part in ipairs(weaponParts) do
+	local partName = partSequence[x]
 	
-	config.animationParts = {}
+	--If applicable, apply the stats
+	if part.baseStats then
+	  --Merge the stats we already have with the new stats from the part
+	  primaryAbilityData = util.mergeTable(primaryAbilityData, part.baseStats)
+	end
 	
-	--Default the names
-	local namePrefix = ""
-	local nameRoot = ""
-	local nameSuffix = ""
-	local rarityFactor = 0
-	local size = 0
-	
-	parameters.primaryAbilityData = {}
-	parameters.primaryAbilityMultipliers = {}
-	
-	parameters.partList = util.mergeTable(config.partList or {}, parameters.partList or {})
-	for k, v in pairs(parts) do
-	  size = size + 1
-
-	  local chosenPart = parameters.partList[k]
-	  if not chosenPart then
-	    chosenPart = generatePart(k, v, seed, parameters)
-  	    parameters.partList[k] = chosenPart
-	  end
-
-	  rarityFactor = rarityFactor + chosenPart.rarity
-	  
-	  if chosenPart.baseStats then
-		parameters.primaryAbilityData = util.mergeTable(parameters.primaryAbilityData, chosenPart.baseStats)
-	  end
-	  if chosenPart.multipliers then
-	    for y, x in pairs(chosenPart.multipliers) do
-		  if not parameters.primaryAbilityMultipliers[y] then
-		    parameters.primaryAbilityMultipliers[y] = x
-		  elseif parameters.primaryAbilityMultipliers[y] then
-		    parameters.primaryAbilityMultipliers[y] = parameters.primaryAbilityMultipliers[y] * x
-		  end
+	--If applicable, apply the multipliers
+	if part.multipliers then
+	  for x, y in pairs(part.multipliers) do
+		--Check if we already have the multiplier, if so multiply them together
+		if primaryAbilityMultipliers[x] then
+		  primaryAbilityMultipliers[x] = primaryAbilityMultipliers[x] * y
+		--Otherwise just add the multiplier for the stat
+		else
+		  primaryAbilityMultipliers[x] = y
 		end
-	  end
-	  
-	  if chosenPart.animationCustom then
-	    config.animationCustom = util.mergeTable(config.animationCustom or {}, chosenPart.animationCustom)
-	  end
-	  
-	  if k == "body" then
-		--Determine basic parameters
-		parameters.manufacturer = chosenPart.manufacturer
-		parameters.elementalType = randomFromList(chosenPart.elementalTypes, seed, "chosenElement")
-	  end
-	  
-	  --Set altfire in only attachment to avoid conflicts
-	  if k == "attachment" then
-	    builderConfig.altAbilities = {chosenPart.altAbility}
-		config.altAbility = chosenPart.altAbilityConfig
-	  end
-	  
-	  --Offset muzzle
-	  if k == "barrel" then
-	    config.muzzleOffset = chosenPart.muzzleOffset
-	  end
-	  
-	  --Determine the name of the gun
-	  if chosenPart.namePrefix then
-		namePrefix = randomFromList(chosenPart.namePrefix, seed, "namePrefix")
-	  end
-	  if chosenPart.nameRoot then
-		nameRoot = randomFromList(chosenPart.nameRoot, seed, "nameRoot")
-	  end
-	  if chosenPart.nameSuffix then
-		nameSuffix = randomFromList(chosenPart.nameSuffix, seed, "nameSuffix")
-	  end
-	  
-	  --Determine sprite to use for each part
-	  local chosenSprite = randomFromList(chosenPart.images, seed, "chosen" .. k .. "Sprite")
-	  config.animationParts[k] = util.absolutePath(string.gsub(generationDirectory, "<partName>", k), chosenSprite)
-	  local spriteIndex = nebUtil.findIndex(chosenPart.images, chosenSprite)
-	  if spriteIndex and chosenPart.fullbrightImages then
-  	    config.animationParts[k .. "Fullbright"] = util.absolutePath(string.gsub(generationDirectory, "<partName>", k), chosenPart.fullbrightImages[spriteIndex])
 	  end
 	end
 	
-	config.rarity = determineRarity(generationConfig.indexToRarity, rarityFactor / size)
+	--Apply and merge any animationCustoms the part might have
+	if part.animationCustom then
+	  config.animationCustom = util.mergeTable(config.animationCustom or {}, part.animationCustom)
+	end
 	
-	--Apply the name
-	local name = (namePrefix .. nameRoot .. nameSuffix)
-	parameters.shortdescription = name
+	--Update the rarity factor
+	rarityFactor = rarityFactor + (part.rarity or 0)
 	
-	--Apply directives
-	local elementalDirectives = generationConfig.elementalDirectives[parameters.elementalType]
-	local manufacturerDirectives = generationConfig.manufacturerConfigs[parameters.manufacturer].rarityDirectives[config.rarity:lower()]
-	local randomisedDirectives = randomFromList(generationConfig.randomisedDirectives, seed, "randomisedDirectives")
+	--Specify the prefix, root and suffix of the weapon name
+	if not parameters.name then
+	  if part.namePrefix then
+	    namePrefix = partPicker.getRandomFromList(part.namePrefix, randomSource)
+	  end
+	  if part.nameRoot then
+	    nameRoot = partPicker.getRandomFromList(part.nameRoot, randomSource)
+	  end
+	  if part.nameSuffix then
+	    nameSuffix = partPicker.getRandomFromList(part.nameSuffix, randomSource)
+	  end
+	end
 	
-	parameters.generatedDirectives = elementalDirectives .. manufacturerDirectives .. randomisedDirectives
+	--Determine sprite to use for each part
+	local chosenSprite = partPicker.getRandomFromList(part.images, randomSource)
+	config.animationParts[partName] = util.absolutePath(string.gsub(generationDirectory, "<partName>", partName), chosenSprite)
+	--Find the same position in the array and use it to find the fullbright to use
+	local spriteIndex = nebUtil.findIndex(part.images, chosenSprite)
+	if spriteIndex and part.fullbrightImages then
+  	  config.animationParts[partName .. "Fullbright"] = util.absolutePath(string.gsub(generationDirectory, "<partName>", partName), part.fullbrightImages[spriteIndex])
+	end
+	
+	--While this should only apply to body, specify the manufacturer based on the parts manufacturer
+	if part.currentManufacturer then
+	  parameters.manufacturer = part.currentManufacturer
+	end
+	
+	--While this should only apply to body, specify the elementalType based on the parts elementalType
+	if part.elementalType then
+	  parameters.elementalType = part.elementalType
+	end
+	
+	--If specified, keep adding this
+	if part.muzzleOffset then
+	  parameters.muzzleOffset = vec2.add((config.muzzleOffset or {0, 0}), part.muzzleOffset)
+    end
+	
+	if part.attachmentOffset then
+	  attachmentOffset = vec2.add(attachmentOffset, part.attachmentOffset)
+	end
+	
+	if part.altAbility then
+	  builderConfig.altAbilities = {part.altAbility}
+	  config.altAbility = part.altAbilityConfig
+	  
+	  if config.altAbility.fireOffset then
+	    config.altAbility.fireOffset = vec2.add(config.altAbility.fireOffset, attachmentOffset)
+	  end
+    end
   end
+  parameters.attachmentOffset = attachmentOffset
+  
   local elementalType = parameters.elementalType
+
+  --Apply the level if fixedLevel is false
+  if level and not configParameter("fixedLevel", false) then
+    parameters.level = level
+  end
+  
+  --Determine the rarity based on rarity sum of all parts
+  config.rarity = determineRarity(generationConfig.indexToRarity, rarityFactor, #partSequence)
+  
+  --Apply the name
+  if not parameters.name then
+    local name = (namePrefix .. nameRoot .. nameSuffix)
+    parameters.name = name
+  end
+  parameters.shortdescription = parameters.name
+	
+  --Apply directives
+  if not parameters.generatedDirectives then
+    local elementalDirectives = generationConfig.elementalDirectives[parameters.elementalType]
+    local manufacturerDirectives = generationConfig.manufacturerConfigs[parameters.manufacturer].rarityDirectives[config.rarity:lower()]
+    local randomisedDirectives = partPicker.getRandomFromList(generationConfig.randomisedDirectives, randomSource)
+    parameters.generatedDirectives = elementalDirectives .. manufacturerDirectives .. randomisedDirectives
+  end
   
   --Select, load and merge abilities
   setupAbility(config, parameters, "primary", builderConfig, seed)
@@ -151,7 +202,7 @@ function build(directory, config, parameters, level, seed)
   end
 
   --Update primary ability
-  util.mergeTable(config.primaryAbility, parameters.primaryAbilityData)
+  config.primaryAbility = util.mergeTable(config.primaryAbility, primaryAbilityData)
   
   --Preprocess shared primary attack config
   parameters.primaryAbility = parameters.primaryAbility or {}
@@ -163,12 +214,12 @@ function build(directory, config, parameters, level, seed)
   config.primaryAbility.baseDps = scaleConfig(parameters.primaryAbility.baseDpsFactor, config.primaryAbility.baseDps)
   config.primaryAbility.energyUsage = scaleConfig(parameters.primaryAbility.energyUsageFactor, config.primaryAbility.energyUsage) or 0
 
-  -- preprocess melee primary attack config
+  --Preprocess melee primary attack config
   if config.primaryAbility.damageConfig and config.primaryAbility.damageConfig.knockbackRange then
     config.primaryAbility.damageConfig.knockback = scaleConfig(parameters.primaryAbility.fireTimeFactor, config.primaryAbility.damageConfig.knockbackRange)
   end
 
-  -- preprocess ranged primary attack config
+  --Preprocess ranged primary attack config
   if config.primaryAbility.projectileParameters then
     --config.primaryAbility.projectileType = "unbound" .. elementalType .. "bullet"
     if config.primaryAbility.projectileParameters.knockbackRange then
@@ -176,7 +227,7 @@ function build(directory, config, parameters, level, seed)
     end
   end
   
-  config.primaryAbility = correctAbility(config, parameters)
+  config.primaryAbility = correctAbility(config, primaryAbilityMultipliers)
   config.primaryAbility.projectileCount = math.max(1, config.primaryAbility.projectileCount)
 
   --Calculate damage level multiplier
@@ -246,7 +297,7 @@ function build(directory, config, parameters, level, seed)
   --Build the inventory icon
   if not config.inventoryIcon and config.animationParts then
     config.inventoryIcon = jarray()
-    local parts = builderConfig.weaponParts or {}
+    local parts = builderConfig.partLayerOrder or {}
     for _, partName in pairs(parts) do
       local drawable = {
         image = config.animationParts[partName] .. config.paletteSwaps,
@@ -306,20 +357,33 @@ function build(directory, config, parameters, level, seed)
 end
 
 --Determine the rarity to use
-function determineRarity(config, index)
-  local actualRarity = "legendary"
-  for rarity, threshold in pairs(config) do
-	if index < threshold then
-	  actualRarity = rarity
-	end
+function determineRarity(config, itemRarity, size)
+  local actualRarity
+  --Determine the max rarity
+  local maxRarity = size * 10
+  
+  --Check the rarity against its factors
+  if itemRarity <= maxRarity * config["common"] then
+    --If avgRarity <= 4 then it's a Common
+    actualRarity = "Common"
+  elseif itemRarity <= maxRarity * config["uncommon"] then
+    --If avgRarity <= 0.55 and > 0.4 then it's a 
+    actualRarity = "Uncommon"
+  elseif itemRarity <= maxRarity * config["rare"] then
+    --If avgRarity <= 7 and > 0.55 then rare 
+    actualRarity = "Rare"
+  else
+    --Anything above 7 is legendary
+    actualRarity = "Legendary"
   end
+  
   return actualRarity
 end
 
 --Adjust ability based on new stats
-function correctAbility(config, parameters)
+function correctAbility(config, primaryAbilityMultipliers)
   --Adjust recoil and firetimes to match firerate
-  local correctedAbility = nebUtil.multiplyTables(config.primaryAbility, parameters.primaryAbilityMultipliers)
+  local correctedAbility = nebUtil.multiplyTables(config.primaryAbility, primaryAbilityMultipliers)
   
   --Adjust durations to match firetime with some hold on the fire stance
   correctedAbility.stances.fire.duration = correctedAbility.fireTime * 0.02
@@ -329,7 +393,7 @@ function correctAbility(config, parameters)
   local adjustFactor = ((correctedAbility.fireTime > 1) and math.max(1, (correctedAbility.fireTime - 1) * (correctedAbility.fireTime - 1) + 1) or correctedAbility.fireTime)
   
   --Allow rotation if gun is a burst gun
-  correctedAbility.stances.fire.allowRotation = (correctedAbility.fireType == "burst")
+  correctedAbility.stances.fire.allowRotate = (correctedAbility.fireType == "burst")
   
   --Apply new rotations to the both fire and cooldown stances
   correctedAbility.stances.fire.weaponRotation = correctedAbility.stances.fire.weaponRotation * adjustFactor
@@ -341,28 +405,6 @@ function correctAbility(config, parameters)
   correctedAbility.inaccuracy = correctedAbility.projectileCount > 1 and (correctedAbility.inaccuracy * (1 + (correctedAbility.projectileCount - 1) * 0.1)) or correctedAbility.inaccuracy
   
   return correctedAbility
-end
-
---Generate the part for use
-function generatePart(k, v, newSeed, parameters)
-  local chosenPart 
-  repeat
-    chosenPart = randomFromList(v, newSeed, "chosen" .. k)
-    newSeed = newSeed + 1
-  until (isPartValid(chosenPart, parameters))
-  
-  return chosenPart
-end
-
---Determine if the part is one we can use
-function isPartValid(part, parameters)
-  local success = true
-  if part.elementalTypes and parameters.elementalType then
-    if not nebUtil.tableContains(part.elementalTypes, parameters.elementalType) then
-      success = false
-    end
-  end
-  return success
 end
 
 function scaleConfig(ratio, value)

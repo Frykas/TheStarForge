@@ -162,10 +162,17 @@ function StarforgeGunFire:cooldown()
 end
 
 function StarforgeGunFire:muzzleFlash()
-  animator.setPartTag("muzzleFlash", "variant", math.random(1, self.muzzleFlashVariants or 3))
-  animator.setAnimationState("firing", "fire")
+  --Add normal pitch variance to shots
+  local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2))
+  animator.setSoundPitch("fire", pitchVariance)
+  animator.playSound(self.fireSound or "fire")
   
-  animator.burstParticleEmitter("muzzleFlash")
+  if self.muzzleFlashSuffix == "" then return end
+  
+  animator.setPartTag("muzzleFlash" .. (self.muzzleFlashSuffix or ""), "variant", math.random(1, self.muzzleFlashVariants or 3))
+  animator.setAnimationState("firing", "fire" .. (self.muzzleFlashSuffix or ""))
+  
+  animator.burstParticleEmitter("muzzleFlash" .. (self.muzzleFlashSuffix or ""))
 
   --Optional firing animations
   if self.animatedFire == true then
@@ -175,11 +182,6 @@ function StarforgeGunFire:muzzleFlash()
 	  animator.setAnimationState("gun", "transitionToIdle1")
 	end
   end
-  
-  --Add normal pitch variance to shots
-  local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2))
-  animator.setSoundPitch("fire", pitchVariance)
-  animator.playSound("fire")
 
   animator.setLightActive("muzzleFlash", true)
 end
@@ -215,7 +217,7 @@ function StarforgeGunFire:fireProjectile(projectileType, projectileParams, inacc
 end
 
 function StarforgeGunFire:firePosition()
-  return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
+  return vec2.add(mcontroller.position(), activeItem.handPosition(vec2.add(self[self.abilitySlot .. "FireOffset"] or {0, 0}, self.weapon.muzzleOffset)))
 end
 
 function StarforgeGunFire:aimVector(inaccuracy)

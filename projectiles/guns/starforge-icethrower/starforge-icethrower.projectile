@@ -1,7 +1,7 @@
 {
   "projectileName" : "starforge-icethrower",
   "image" : "starforge-icethrower.png",
-  "physics" : "flame",
+  "physics" : "starforge-cloud",
   "animationCycle" : 1,
   "animationLoops" : false,
   "frameNumber" : 12,

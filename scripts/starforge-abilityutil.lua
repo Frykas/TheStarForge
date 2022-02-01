@@ -1,12 +1,12 @@
 require "/scripts/starforge-util.lua"
 
 if not nebAbilityUtil then
-  nebAbilityUtil = {};
+  nebAbilityUtil = {}
   
   --Thanks to C0bra5 for helping
   --Backup an ability
   function nebAbilityUtil.backupAbility(abilityToBackup)
-	local ret = {};
+	local ret = {}
 	for k,v in pairs(abilityToBackup) do
 	  if type(v) == "table" then
 		-- including weapon causes an infinite loop

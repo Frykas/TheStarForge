@@ -15,6 +15,12 @@
             "cycle" : 0.07,
             "mode" : "transition",
             "transition" : "off"
+          },
+          "fireAlt" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
           }
         }
       }
@@ -26,7 +32,7 @@
           "centered" : true,
           "zLevel" : -2,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
@@ -36,16 +42,17 @@
           "fullbright" : true,
           "zLevel" : -1,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
+	  
       "body" : {
         "properties" : {
           "centered" : true,
           "zLevel" : 7,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
@@ -55,16 +62,17 @@
           "fullbright" : true,
           "zLevel" : 8,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
+	  
       "barrel" : {
         "properties" : {
           "centered" : true,
           "zLevel" : 5,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
@@ -74,16 +82,17 @@
           "fullbright" : true,
           "zLevel" : 6,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
+	  
       "magazine" : {
         "properties" : {
           "centered" : true,
           "zLevel" : 3,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
@@ -93,17 +102,18 @@
           "fullbright" : true,
           "zLevel" : 4,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
+	  
 	  "attachment" : {
         "properties" : {
           "centered" : true,
           "zLevel" : 1,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0], // x offset is set dynamically
-          "transformationGroups" : ["weapon"]
+          "offset" : [0.75, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["weapon", "attachment"]
         }
       },
 	  "attachmentFullbright" : {
@@ -112,8 +122,8 @@
           "fullbright" : true,
           "zLevel" : 2,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [1, 0], // x offset is set dynamically
-          "transformationGroups" : ["weapon"]
+          "offset" : [0.75, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["weapon", "attachment"]
         }
       },
 	  
@@ -147,7 +157,8 @@
 
   "transformationGroups" : {
     "weapon" : {},
-    "muzzle" : {}
+    "muzzle" : {},
+    "attachment" : {}
   },
 
   "particleEmitters" : {

@@ -14,10 +14,12 @@
   "animation" : "/items/active/weapons/ranged/generated/combatrifle/combatrifle.animation",
   "animationParts" : { },
   "animationCustom" : { },
-  "baseOffset" : [0.75, 0.25],
-  "muzzleOffset" : [2.5, 0.625],
+  "baseOffset" : [0.375, 0.25],
+  "muzzleOffset" : [2.25, 0.625],
+  
+  "partWhitelist" : ["body", "stock", "magazine", "barrel", "attachment"],
 
-  "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/generated/combatrifle/starforge-combatrifle.lua"],
 
   "elementalType" : "physical",
 
@@ -69,14 +71,10 @@
   "fireSounds" : [ "/sfx/gun/starforge-unboundrifle.ogg", "/sfx/gun/starforge-assaultriflefire1.ogg", "/sfx/gun/starforge-minigunfire.ogg", "/sfx/gun/starforge-yukaiplasma.ogg", "/sfx/gun/starforge-ar1.ogg" ],
   
   "builder" : "/items/buildscripts/starforge-buildcombatrifle.lua",
-  "builderConfig" : [{
-	"buildConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
-	"weaponParts" : [
-	  "stock",
-	  "magazine",
-	  "attachment",
-	  "barrel",
-	  "body"
-	]
-  }]
+  "builderConfig" : [
+    {
+	  "buildConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
+	  "partLayerOrder" : [ "stock", "magazine", "attachment", "barrel", "body" ]
+    }
+  ]
 }

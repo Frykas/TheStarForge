@@ -17,7 +17,7 @@
           }
         }
       },
-      "weapon" : {
+      "gun" : {
         "default" : "loaded",
         "states" : {
           "unloaded" : {
