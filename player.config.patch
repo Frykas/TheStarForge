@@ -92,5 +92,6 @@
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundstalkerpack"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundfortresspack"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundofficerpack"} },
-{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundvanguardpack"} }
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundvanguardpack"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundholoquin"} }
 ]

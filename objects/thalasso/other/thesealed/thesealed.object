@@ -42,11 +42,7 @@
   "scriptDelta" : 20,
 
   "chatOptions" : [
-   "COME CLOSER. FREE ME",
-   "YOU MUST. FREE ME.",
-   "I DO NOT. BELONG HERE.",
-   "I NEED TO. GO BACK.",
-   "FREE. ME."
+   "..."
   ],
 
   "mouthPosition" : [0, 0]
