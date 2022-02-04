@@ -36,12 +36,16 @@ if not nebUtil then
   end
   
   --Find size of tabe
-  function nebUtil.tableSize(table)
+  function nebUtil.objectSize(table)
     local size = 0
-	for _, x in ipairs(table) do
+	for _, _ in pairs(table) do
 	  size = size + 1
 	end
     return size
+  end
+  
+  function nebUtil.randomLetterKey(list, seed)
+    return string.char(96 + (seed % nebUtil.objectSize(list)) + 1)
   end
   
   --Check if table contains a value

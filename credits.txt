@@ -12,7 +12,9 @@ of weapon sprites, feedback and ideas.
 stone to learn modding & spriting. Also allowing me to use a few of his
 scripts. 
 
-• Omega#9191, for making the Unbound Centurion & mech sprites !
+• Omega#9191, for making the Unbound Centurion & mech sprites!
+
+• C0bra5#5433, for heavily assisting with code development and logic
 
 ---General credits :---
 
@@ -41,6 +43,8 @@ to make the Principle of Duality rocket launcher.
 • Tea-Loving Lad#3308, for chosing the name "Sasha" for Sasha Beniko.
 
 • Tesked#0666, for making the Unbound Holoquin.
+
+• Lyrthras#7199, general code logic help
 
 ---Music credits  :---
 

@@ -16,8 +16,6 @@
   "animationCustom" : { },
   "baseOffset" : [0.375, 0.25],
   "muzzleOffset" : [2.25, 0.625],
-  
-  "partWhitelist" : ["body", "stock", "magazine", "barrel", "attachment"],
 
   "scripts" : ["/items/active/weapons/ranged/generated/combatrifle/starforge-combatrifle.lua"],
 
@@ -34,6 +32,7 @@
 
     "fireType" : "auto",
 
+    "projectileCount" : 1,
     "projectileType" : "standardbullet",
     "projectileParameters" : {
       "knockbackRange" : [4, 8]
@@ -69,12 +68,27 @@
     }
   },
   "fireSounds" : [ "/sfx/gun/starforge-unboundrifle.ogg", "/sfx/gun/starforge-assaultriflefire1.ogg", "/sfx/gun/starforge-minigunfire.ogg", "/sfx/gun/starforge-yukaiplasma.ogg", "/sfx/gun/starforge-ar1.ogg" ],
-  
+
   "builder" : "/items/buildscripts/starforge-buildcombatrifle.lua",
-  "builderConfig" : [
-    {
-	  "buildConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
-	  "partLayerOrder" : [ "stock", "magazine", "attachment", "barrel", "body" ]
+  /* Note from C0bra5:
+   *
+   * Modified this section so that it actually represents what it actually contains
+   * while also assigning names to different configs or archetypes as they are now
+   * named as.
+   *
+   * Any archetype with a property named "unique" that is set to true will never
+   * be picked as part of the random generation allowing you to create special
+   * archetypes that can only be obtained using special means.
+   */
+  "archetypes" : {
+    "default" : {
+      "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
+      "partLayerOrder" : [ "stock", "magazine", "attachment", "barrel", "body" ]
+    },
+    "uniqueExample" : {
+      "unique" : true,
+      "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
+      "partLayerOrder" : [ "stock", "magazine", "attachment", "barrel", "body" ]
     }
-  ]
+  }
 }

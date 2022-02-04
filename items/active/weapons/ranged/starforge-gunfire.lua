@@ -130,7 +130,7 @@ function StarforgeGunFire:burst()
 
   local shots = self.burstCount
   while shots > 0 and status.overConsumeResource("energy", self:energyPerShot()) do
-    self.projectileId = self:fireProjectile()
+    self.projectileId = self:fireProjectile(self.burstCount - shots)
     self:muzzleFlash()
     shots = shots - 1
 
@@ -186,7 +186,7 @@ function StarforgeGunFire:muzzleFlash()
   animator.setLightActive("muzzleFlash", true)
 end
 
-function StarforgeGunFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
+function StarforgeGunFire:fireProjectile(burstNumber)
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
@@ -197,18 +197,22 @@ function StarforgeGunFire:fireProjectile(projectileType, projectileParams, inacc
   if type(projectileType) == "table" then
     projectileType = projectileType[math.random(#projectileType)]
   end
+  
+  local shotNumber = 0
 
   local projectileId = 0
   for i = 1, (projectileCount or self.projectileCount) do
     if params.timeToLive then
       params.timeToLive = util.randomInRange(params.timeToLive)
     end
+	
+	shotNumber = i
 
     projectileId = world.spawnProjectile(
         projectileType,
         firePosition or self:firePosition(),
         activeItem.ownerEntityId(),
-        self:aimVector(inaccuracy or self.inaccuracy),
+        self:aimVector(inaccuracy or self.inaccuracy, shotNumber, burstNumber),
         false,
         params
       )
@@ -217,11 +221,13 @@ function StarforgeGunFire:fireProjectile(projectileType, projectileParams, inacc
 end
 
 function StarforgeGunFire:firePosition()
-  return vec2.add(mcontroller.position(), activeItem.handPosition(vec2.add(self[self.abilitySlot .. "FireOffset"] or {0, 0}, self.weapon.muzzleOffset)))
+  return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
 
-function StarforgeGunFire:aimVector(inaccuracy)
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
+function StarforgeGunFire:aimVector(inaccuracy, shotNumber, burstNumber)
+  local angleAdjustmentList = self.angleAdjustmentsPerShot or {}
+
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy or 0, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (util.toRadians(self.stances.fire.weaponRotation * 0.15) or 0)))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
