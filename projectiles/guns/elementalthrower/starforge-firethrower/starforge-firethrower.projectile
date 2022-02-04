@@ -4,7 +4,7 @@
   "physics" : "flame",
   "animationCycle" : 1,
   "animationLoops" : false,
-  "frameNumber" : 12,
+  "frameNumber" : 13,
   "winddownFrames" : 3,
   "intangibleWinddown" : true,
   "power" : 50,

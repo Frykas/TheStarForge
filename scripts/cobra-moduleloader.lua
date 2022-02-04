@@ -278,8 +278,8 @@ if not c5ModuleLoader then
       if not success then
         module.failed = true
         pcall(module["onError"], err)
-        sb.logInfo("[c5ModuleLoader.doCall] A runtime error occured while executing a module's \"%s\"'s function. The error will follow.")
-        sb.logInfo("%s", err)
+        sb.logError("[c5ModuleLoader.doCall] A runtime error occured while executing a module's \"%s\"'s function. The error will follow.")
+        sb.logError("%s", err)
       end
     end
   end
@@ -301,8 +301,8 @@ if not c5ModuleLoader then
       if not returnValues[1] then
         module.failed = true
         pcall(module["onError"], err)
-        sb.logInfo("[c5ModuleLoader.doCallWithReturn] A runtime error occured while executing a module's \"%s\"'s function. The error will follow.")
-        sb.logInfo("%s", returnValues[2])
+        sb.logError("[c5ModuleLoader.doCallWithReturn] A runtime error occured while executing a module's \"%s\"'s function. The error will follow.")
+        sb.logError("%s", returnValues[2])
         return table.unpack(errorDefault)
       else
         -- remove the success value from the pcall

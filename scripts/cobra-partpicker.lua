@@ -77,7 +77,7 @@ if not partPicker then
       -- if there are processors, add the parameters object
       if partConfig.processors and #partConfig.processors > 0 then
         -- create the parameters object
-        local partParameters = {};
+        local partParameters = currentParts[partType].parameters or {};
         -- save it to the current parts
         currentParts[partType].parameters = partParameters;
         -- load the part data for the processors to use
