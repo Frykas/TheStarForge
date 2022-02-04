@@ -103,6 +103,32 @@
 		}
 	},
 	
+	{
+		"op": "add",
+		"path": "/starforge-unbdmission3",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "starforge-unbdmission3",
+			"seed": 1234,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": false},
+			"skyParameters" : {
+            "spaceLevel" : 3000,
+            "ambientLightLevel" : [24, 28, 24],
+
+            "skyType" : "atmospheric",
+			   
+				"horizonImages": [],
+				"dayLength": 5000.36,
+				"surfaceLevel": 800,
+				"seed": -5288806180628667000
+		
+			}
+		}
+	},
+	
 	  {
 	"op" : "add",
 	"path" : "/unboundship1",
