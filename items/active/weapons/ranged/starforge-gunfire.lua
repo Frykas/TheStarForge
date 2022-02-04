@@ -191,9 +191,7 @@ function StarforgeGunFire:fireProjectile(burstNumber)
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
 
-  if not projectileType then
-    projectileType = self.projectileType
-  end
+  local projectileType = self.projectileType
   if type(projectileType) == "table" then
     projectileType = projectileType[math.random(#projectileType)]
   end

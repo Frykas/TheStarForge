@@ -156,18 +156,15 @@ function build(directory, config, parameters, level, seed)
 			parameters.attachmentOffset = vec2.add(parameters.attachmentOffset, part.attachmentOffset)
 		end
 
-        if part.altAbility then
-            -- transfer the ability from the part to the config
-            config.altAbilityType = part.altAbility;
-            config.altAbility = part.altAbilityConfig;
-            --[[
-            builderConfig.altAbilities = {part.altAbility}
-            config.altAbility = part.altAbilityConfig
-            ]]
-            if config.altAbility.fireOffset then
-                config.altAbility.fireOffset = vec2.add(config.altAbility.fireOffset, parameters.attachmentOffset)
-            end
-        end
+		if part.altAbilityType then
+			-- transfer the ability from the part to the config
+			config.altAbilityType = part.altAbilityType;
+			config.altAbility = part.altAbility;
+
+			if config.altAbility.fireOffset then
+				config.altAbility.fireOffset = vec2.add(config.altAbility.fireOffset, parameters.attachmentOffset)
+			end
+		end
 	end
 
 
@@ -180,9 +177,6 @@ function build(directory, config, parameters, level, seed)
 	--Select, load and merge abilities
 	setupAbility(config, parameters, "primary", archetypeConfig, randomPrimaryAbilitySeed)
 	setupAbility(config, parameters, "alt", archetypeConfig, randomAltAbilitySeed)
-	
-	sb.logInfo("config: %s", sb.printJson(config, 1));
-    sb.logInfo("parameters: %s", sb.printJson(parameters, 1));
 
 	--Apply elemental configs
 	if archetypeConfig.elementalConfig then
