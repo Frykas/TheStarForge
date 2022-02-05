@@ -9,36 +9,112 @@
     {
       "drawables" : [
         {
-          "image" : "/cinematics/chapter1ending/apolleon.png:<frame>"
+          "image" : "/cinematics/chapter1ending/starviashadow.png"
         }
       ],
-      "animationFrames" : 12,
       "keyframes" : [
         {
           "timecode" : 0.2,
           "zoom" : 2,
           "alpha" : 0,
-          "position" : [479, 450],
+          "position" : [479, 180],
           "frame" : 0
         },
         {
           "timecode" : 1.0,
           "zoom" : 2,
           "alpha" : 1,
-          "position" : [479, 450]
+          "position" : [479, 180]
         },
         {
           "timecode" : 1.1,
           "zoom" : 2,
           "alpha" : 1,
 		  "frame" : 12,
-          "position" : [479, 450]
+          "position" : [479, 180]
         },
         {
-          "timecode" : 2.5,
+          "timecode" : 7.5,
           "zoom" : 2,
-          "alpha" : 0,
-          "position" : [479, 450]
+          "alpha" : 1,
+          "position" : [479, 180]
+        }
+      ]
+    },
+	
+	
+	{
+      "text" : "CHAPTER 2",
+      "fontSize" : 24,
+      "textPosition" : {
+        "position" : [220, 270],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.1,
+          "zoom" : 500,
+          "alpha" : 1,
+          "textPercentage" : 1,
+          "position" : [200, 200]
+        },
+        {
+          "timecode" : 1.1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 1.1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 5.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 7.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    },
+	
+	{
+      "text" : "Unbound, Unshackled",
+      "fontSize" : 20,
+      "textPosition" : {
+        "position" : [170, 65],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.1,
+          "zoom" : 500,
+          "alpha" : 1,
+          "textPercentage" : 1,
+          "position" : [200, 380]
+        },
+        {
+          "timecode" : 1.1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 1.1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 5.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 7.3,
+          "textPercentage" : 1,
+          "alpha" : 0
         }
       ]
     },
@@ -46,56 +122,56 @@
   {
       "drawables" : [
         {
-          "image" : "/cinematics/chapter1ending/apolleonsingle.png"
+          "image" : "/cinematics/chapter1ending/starvia.png"
         }
       ],
       "keyframes" : [
         {
-          "timecode" : 1.1,
+          "timecode" : 0.2,
           "zoom" : 2,
           "alpha" : 0,
-          "position" : [479, 450]
+          "position" : [479, 300]
+        },
+        {
+          "timecode" : 1.0,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 300]
         },
         {
           "timecode" : 1.1,
           "zoom" : 2,
           "alpha" : 1,
-          "position" : [479, 450]
-        },
-        {
-          "timecode" : 1.1,
-          "zoom" : 2,
-          "alpha" : 1,
-          "position" : [479, 450]
+          "position" : [479, 300]
         },
         {
           "timecode" : 7.5,
           "zoom" : 2.0,
-          "alpha" : 0,
-          "position" : [479, 450]
+          "alpha" : 1,
+          "position" : [479, 300]
         }
       ]
     },
 	  {
-      "text" : "MONKE",
+      "text" : "COMING SOON",
       "fontSize" : 24,
       "textPosition" : {
-        "position" : [50, 100],
+        "position" : [200, 65],
         "hAnchor" : "mid",
         "vAnchor" : "mid",
         "wrapWidth" : 400
       },
       "keyframes" : [
         {
-          "timecode" : 1.1,
+          "timecode" : 0.1,
           "zoom" : 500,
           "alpha" : 1,
-          "textPercentage" : 0,
-          "position" : [350, 300]
+          "textPercentage" : 1,
+          "position" : [200, 65]
         },
         {
           "timecode" : 1.1,
-          "textPercentage" : 0
+          "textPercentage" : 1
         },
         {
           "timecode" : 1.1,
@@ -117,26 +193,8 @@
   
   "audio" : [
     {
-      "timecode" : 11.3,
+      "timecode" : 1.0,
       "resource" : "/sfx/others/theretribution.ogg"
-    },
-	{
-      "timecode" : 1.5,
-      "endTimecode" : 10.0,
-      "loops" : -1,
-      "resource" : "/sfx/interface/aichatter1_loop.ogg"
-    },
-	{
-      "timecode" : 16.5,
-      "endTimecode" : 22.5,
-      "loops" : -1,
-      "resource" : "/sfx/interface/aichatter1_loop.ogg"
-    },
-	{
-      "timecode" : 26.0,
-      "endTimecode" : 32.5,
-      "loops" : -1,
-      "resource" : "/sfx/interface/aichatter1_loop.ogg"
     }
   ]
 }
