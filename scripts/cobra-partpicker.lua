@@ -44,7 +44,7 @@ if not partPicker then
   -- PP      AA  AA  RR  RR    TT            GGGGGG  EEEEEE  NN  NN  EEEEEE  RR  RR  AA  AA    TT    IIIIII  OOOOOO  NN  NN
 
   --Generate the parts to use for the gun
-  function partPicker.generateParts(currentParts, generatorConfig, seed)
+  function partPicker.generateParts(currentParts, generationConfig, seed)
     -- default the stuff just in case
     currentParts = currentParts or {};
     -- create a random source unique to this so that the generation is more consistent
@@ -52,16 +52,16 @@ if not partPicker then
     -- seems to make it more random
     randomSource:addEntropy(randomSource:randu32());
     -- create the parts in order using the part sequence
-    for _, partType in ipairs(generatorConfig.partSequence) do
+    for _, partType in ipairs(generationConfig.partSequence) do
       -- random seed so that the number or random calls stays the same
       local pickSeed = randomSource:randu32();
       -- get the config for the current part type
-      local partConfig = generatorConfig.partConfigs[partType];
+      local partConfig = generationConfig.partConfigs[partType];
 
       -- pick the part if it's not already specified
       if not currentParts[partType] then
         -- create a list of the usable part ids
-        local usablePool = partPicker.createPickPool(partConfig, currentParts);
+        local usablePool = partPicker.createPickPool(partConfig, currentParts, generationConfig, partType);
         -- if no parts were compatible throw out an error to stop the script in order to prevent further damage
         if #usablePool <= 0 then
           error(string.format("Could not find compatible %s\n Current parts:\n%s", partType, sb.printJson(currentParts, 1)));
@@ -94,7 +94,7 @@ if not partPicker then
   end
 
   -- creates a list of compatible part ids for a given part config
-  function partPicker.createPickPool(partConfig, currentParts)
+  function partPicker.createPickPool(partConfig, currentParts, generationConfig, partType)
     -- a list of compatible part IDs
     local pickPool = {};
 
@@ -114,7 +114,7 @@ if not partPicker then
           local success = true;
           for _, filterName in ipairs(partConfig.filters) do
             -- check if part passes filter
-            if not partPicker.filters[filterName](partData, currentParts) then
+            if not partPicker.filters[filterName](partData, currentParts, generationConfig) then
               success = false;
               break;
             end
@@ -163,11 +163,9 @@ if not partPicker then
   partPicker.filters = {};
 
   -- Returns true if the part allows the elemental type of the part list
-  function partPicker.filters.isCompatibleWithBodyElementalType(partData, currentParts)
+  function partPicker.filters.isCompatibleWithBodyElementalType(partData, currentParts, generationConfig)
     -- If no elements are provided, it works with anything
-    if not partData.elementalTypes then
-      return true;
-    end
+    if not partData.elementalTypes then return true; end
 
     -- Get the element of the current parts
     local bodyElementalType = currentParts.body.parameters.elementalType;
@@ -179,6 +177,15 @@ if not partPicker then
     -- return false the body element type isn't available in this part
     return false;
   end
+	
+	function partPicker.filters.isCompatibleWithBodyManufacturer(partData, currentParts, generationConfig)
+		-- If no elements are provided, it works with anything
+		if not partData.manufacturer then return true; end
+		-- Get the manufacturer for the current body
+		local bodyManufacturer = generationConfig.partConfigs.body.pool[currentParts.body.id].manufacturer;
+		-- check if they are identicalss
+		return partData.manufacturer == bodyManufacturer;
+	end
 
 
 
