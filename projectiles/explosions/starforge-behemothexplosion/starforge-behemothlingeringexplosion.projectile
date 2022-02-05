@@ -6,7 +6,6 @@
   "animationCycle" : 0.4,
   "frameNumber" : 6,
   "physics" : "illusion",
-  "windupFrames" : 1,
   "bounces" : 0,
   "power" : 0,
   "speed" : 0,

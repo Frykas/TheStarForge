@@ -212,7 +212,7 @@ function build(directory, config, parameters, level, seed)
 		end
 	end
 
-	config.primaryAbility = correctAbility(config, primaryAbilityMultipliers)
+	config.primaryAbility = correctAbility(config, primaryAbilityMultipliers, seed)
 
 	--Calculate damage level multiplier
 	config.damageLevelMultiplier = root.evalFunction("weaponDamageLevelMultiplier", configParameter("level", 1))
@@ -460,13 +460,13 @@ function getRandomKeyWithSeed(object, seed)
 end
 
 --Adjust ability based on new stats
-function correctAbility(config, primaryAbilityMultipliers)
+function correctAbility(config, primaryAbilityMultipliers, seed)
 	--Adjust recoil and firetimes to match firerate
 	local correctedAbility = nebUtil.multiplyTables(config.primaryAbility, primaryAbilityMultipliers)
 
 	--Adjust durations to match firetime with some hold on the fire stance
 	correctedAbility.stances.fire.duration = correctedAbility.fireTime * 0.02
-	correctedAbility.stances.cooldown.duration = correctedAbility.fireTime * 0.98
+	--correctedAbility.stances.cooldown.duration = correctedAbility.fireTime * 0.98
 
 	--Determine the amount to adjust the rotations by
 	local adjustFactor = ((correctedAbility.fireTime > 1) and math.max(1, (correctedAbility.fireTime - 1) * (correctedAbility.fireTime - 1) + 1) or correctedAbility.fireTime)
@@ -480,6 +480,10 @@ function correctAbility(config, primaryAbilityMultipliers)
 	correctedAbility.stances.cooldown.weaponRotation = correctedAbility.stances.fire.weaponRotation
 	correctedAbility.stances.cooldown.armRotation = correctedAbility.stances.fire.armRotation
 
+	
+	--local cooldownTime = correctedAbility.stances.cooldown.duration * (correctedAbility.burstCount or 1);
+	--sb.logInfo(string.format("seed %10d | fireType %s | RoF %7.4f | cooldown %7.4f | weaponRotation %7.4f", seed, correctedAbility.fireType, 1 / correctedAbility.fireTime, cooldownTime, correctedAbility.stances.fire.weaponRotation));
+	
 	--Ensure we dont get lower than 1 projectile count
 	correctedAbility.projectileCount = math.max(1, correctedAbility.projectileCount)
 
