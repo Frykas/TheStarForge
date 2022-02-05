@@ -89,6 +89,7 @@ var globOptions = {
 	cwd: directory,
 	ignore: [
 		// Exclude everything that is not a JSON asset: images, documentation, examples, etc.
+		'LICENSE',
 		'tests',
 		'_previewimage',
 		'**/*.{lua,png,xcf,wav,ogg,txt,md,ase,aseprite,tsx,aup,ico,tmx,pdn,zip,au,old,unused}',
