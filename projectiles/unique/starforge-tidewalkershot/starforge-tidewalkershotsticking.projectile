@@ -10,6 +10,8 @@
   "power" : 1,
   "timeToLive" : 2,
   "supportsProcessing" : true,
+  "orientationLocked" : true,
+  "pointToLight" : true,
   "damageKind" : "firespear",
   "statusEffects" : [ ],
   "emitters" : [ ],

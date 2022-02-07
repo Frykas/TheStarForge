@@ -83,12 +83,12 @@
   "archetypes" : {
     "default" : {
       "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
-      "partLayerOrder" : [ "stock", "magazine", "attachment", "barrel", "body" ]
+      "iconParts" : [ "stock", "magazine", "attachment", "barrel", "body" ]
     },
     "uniqueExample" : {
       "unique" : true,
       "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
-      "partLayerOrder" : [ "stock", "magazine", "attachment", "barrel", "body" ]
+      "iconParts" : [ "stock", "magazine", "attachment", "barrel", "body" ]
     }
   }
 }

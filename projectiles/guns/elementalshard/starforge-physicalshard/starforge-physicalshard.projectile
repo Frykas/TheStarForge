@@ -1,0 +1,35 @@
+{
+  "projectileName" : "starforge-physicalshard",
+  "physics" : "arrow",
+  "bounces" : 0,
+  "image" : "starforge-physicalshard.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 125,
+  "timeToLive" : 3,
+  "supportsProcessing" : true,
+  "piercing" : false,
+  "flippable" : true,
+  "emitters" : [],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "starforge-physicalshardsticking",
+      "inheritDamageFactor" : 0.35,
+      "inheritSpeedFactor" : 0.75
+    }
+  ],
+  "periodicActions" : [],
+  "statusEffects" : [],
+  "fullbright" : true,
+  "damageType" : "nodamage",
+  "damageKind" : "spear",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-killonstick.lua" ],
+  "killOnHit" : true
+}

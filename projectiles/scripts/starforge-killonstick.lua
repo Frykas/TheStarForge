@@ -3,3 +3,10 @@ function update()
 	projectile.die()
   end
 end
+
+function hit(entityId)
+  if config.getParameter("killOnHit") then
+    projectile.die()
+  end
+end
+

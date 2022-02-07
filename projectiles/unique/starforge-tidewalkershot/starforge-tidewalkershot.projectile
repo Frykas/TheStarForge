@@ -1,6 +1,6 @@
 {
   "projectileName" : "starforge-tidewalkershot",
-  "physics" : "stickygrenade",
+  "physics" : "stickybullet",
   "bounces" : 0,
   "image" : "starforge-tidewalkershot.png",
   "animationCycle" : 0.5,
@@ -21,7 +21,7 @@
       "action" : "projectile",
       "type" : "starforge-tidewalkershotsticking",
       "inheritDamageFactor" : 0.25,
-      "inheritSpeedFactor" : 0.15
+      "inheritSpeedFactor" : 0.0
     },
 	{
 	  "inheritDamageFactor": 0.05,
@@ -132,5 +132,6 @@
   "fullbright" : true,
   "damageKind" : "icespear",
   
-  "scripts" : [ "/projectiles/scripts/starforge-killonstick.lua" ]
+  "scripts" : [ "/projectiles/scripts/starforge-killonstick.lua" ],
+  "killOnHit" : true
 }

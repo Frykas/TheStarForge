@@ -151,7 +151,7 @@ function StarforgeGunFire:cooldown()
   self.weapon:setStance(self.stances.cooldown)
   self.weapon:updateAim()
 
-  local duration = self.cooldownTimer
+  local duration = self.useStanceDuration and self.stances.cooldown.duration or self.cooldownTimer
   local progress = 0
   --local maxRecoil = self.burstTime and 5 or 1;
   util.wait(duration, function()

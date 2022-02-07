@@ -1,0 +1,52 @@
+{
+  "projectileName" : "starforge-physicalshardsticking",
+  "physics" : "arrow",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "starforge-physicalshardsticking.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "piercing" : true,
+  "power" : 1,
+  "timeToLive" : 2,
+  "supportsProcessing" : true,
+  "orientationLocked" : true,
+  "pointToLight" : true,
+  "damageKind" : "spear",
+  "statusEffects" : [ ],
+  "emitters" : [ ],
+  "fullbright" : true,
+  "flippable" : true,
+  "hydrophobic" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/smallregularexplosion/smallregularexplosion.config"
+    }
+  ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/projectiles/ropehook_impact1.ogg",
+        "/sfx/projectiles/ropehook_impact2.ogg",
+        "/sfx/projectiles/ropehook_impact3.ogg",
+        "/sfx/projectiles/ropehook_impact4.ogg",
+        "/sfx/projectiles/ropehook_impact5.ogg",
+        "/sfx/projectiles/ropehook_impact6.ogg",
+        "/sfx/projectiles/ropehook_impact7.ogg",
+        "/sfx/projectiles/ropehook_impact8.ogg",
+        "/sfx/projectiles/ropehook_impact9.ogg",
+        "/sfx/projectiles/ropehook_impact10.ogg",
+        "/sfx/projectiles/ropehook_impact11.ogg",
+        "/sfx/projectiles/ropehook_impact12.ogg"
+      ]
+    }
+  ],
+  
+  "renderLayer" : "Monster+1",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-stickingprojectile.lua" ],
+  "retainStickingDamage" : true,
+  "searchRadius" : 0.1
+}

@@ -17,18 +17,6 @@
             "transition" : "off"
           }
         }
-      },
-      "altFire" : {
-        "default" : "off",
-        "states" : {
-          "off" : {},
-          "fire" : {
-            "frames" : 2,
-            "cycle" : 0.07,
-            "mode" : "transition",
-            "transition" : "off"
-          }
-        }
       }
     },
 
@@ -118,7 +106,7 @@
           "centered" : true,
           "zLevel" : 1,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [0.75, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon", "attachment"]
         }
       },
@@ -128,7 +116,7 @@
           "fullbright" : true,
           "zLevel" : 2,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
-          "offset" : [0.75, 0.125], // x offset is set dynamically
+          "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon", "attachment"]
         }
       },
