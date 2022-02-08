@@ -60,7 +60,7 @@
 			"weatherPool" : [
 		[1, "snowstorm"]
 		],
-            "threatLevel" : 7,
+            "threatLevel" : 8,
 			"biome" : "snow",
             "gravity" : 80,
             "worldSize" : [2000, 2000],

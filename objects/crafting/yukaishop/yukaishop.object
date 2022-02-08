@@ -4,7 +4,7 @@
   "rarity" : "essential",
   "category" : "crafting",
   "price" : 20000,
-  "breakDropPool" : "",
+  "breakDropPool" : "essenceDrop2",
   
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
