@@ -1,5 +1,5 @@
 {
-  "projectileName" : "starforge-icefluxbolt",
+  "projectileName" : "starforge-icefluxboltstatus",
   "image" : "starforge-icefluxbolt.png",
   "physics" : "stickygrenade",
   "animationCycle" : 0.25,

@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-panthyreaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A conceited feline that makes use of stealth to take down its foes.\"",
+  "shortdescription" : "Panthyre Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-panthyreaf" },
+
+
+  "inventoryIcon" : "panthyreaf.png",
+  "orientations" : [
+    {
+      "image" : "panthyreaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "panthyreaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

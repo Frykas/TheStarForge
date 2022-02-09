@@ -62,6 +62,20 @@
       ],
       "allowDuplication" : false
     }]
+  ],
+  
+  "panthyreTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.99, "item" : ["phasematter", 1]},
+		{"weight" : 0.01, "item" : "starforge-panthyreaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
   ]
   
   

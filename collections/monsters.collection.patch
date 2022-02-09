@@ -1,0 +1,45 @@
+[
+	{
+	  "op": "add",
+	  "path": "/collectables/onikabuto",
+	  "value": 	  
+	  {
+	    "order" : 101,
+	    "monsterType" : "starforge-onikabutofemale",
+	    "icon" : "/monsters/crawlers/onikabutofemale/onikabutoicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/yukaiskyray",
+	  "value": 	  
+	  {
+	    "order" : 102,
+	    "monsterType" : "starforge-yukaiskyray",
+	    "icon" : "/monsters/flyers/yukaiskyray/yukaiskyrayicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/pyreaper",
+	  "value": 	  
+	  {
+	    "order" : 100,
+	    "monsterType" : "pyreaper",
+	    "icon" : "/monsters/walkers/pyreaper/pyreapericon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/panthyre",
+	  "value": 	  
+	  {
+	    "order" : 103,
+	    "monsterType" : "starforge-panthyre",
+	    "icon" : "/monsters/walkers/panthyre/panthyreicon.png"
+	  }
+	}
+]

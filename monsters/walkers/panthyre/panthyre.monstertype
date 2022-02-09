@@ -8,7 +8,7 @@
 
   "animation" : "panthyre.animation",
 
-  "dropPools" : [],
+  "dropPools" : ["panthyreTreasure"],
 
   "baseParameters" : {
     "scripts" : [
@@ -251,6 +251,7 @@
     "feetOffset" : [0, -8],
     "capturable" : true,
     "captureHealthFraction" : 1.0,
-    "nametagColor" : [64, 200, 255]
+    "nametagColor" : [64, 200, 255],
+	"captureCollectables" : { "monsters" : "panthyre" }
   }
 }
