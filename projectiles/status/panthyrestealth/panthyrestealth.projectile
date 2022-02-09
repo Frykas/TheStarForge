@@ -1,6 +1,6 @@
 {
   "projectileName" : "starforge-panthyrestealth",
-  "image" : "/assetmissing.png",
+  "image" : "panthyrestealth.png",
   "power" : 0,
   "speed" : 0,
   "actionOnReap" : [

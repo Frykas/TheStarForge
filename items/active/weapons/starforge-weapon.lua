@@ -113,7 +113,7 @@ function Weapon:addTransformationGroup(name, offset, rotation, rotationCenter)
 end
 
 function Weapon:updateAim()
-  for _,group in pairs(self.transformationGroups) do
+  for _, group in pairs(self.transformationGroups) do
     animator.resetTransformationGroup(group.name)
     animator.translateTransformationGroup(group.name, group.offset)
     animator.rotateTransformationGroup(group.name, group.rotation, group.rotationCenter)
