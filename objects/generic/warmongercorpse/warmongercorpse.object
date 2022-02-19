@@ -6,6 +6,7 @@
   "description" : "A fallen warrior.",
   "shortdescription" : "Fallen Warmonger",
   "breakDropPool" : "warmongerarmorDrop",
+  "printable" : false,
 
   "apexDescription" : "This person seems to have fallen during combat.",
   "avianDescription" : "This person seems dead.",

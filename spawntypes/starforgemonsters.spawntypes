@@ -33,6 +33,40 @@
       "monsterParameters" : {
         "aggressive" : false
       }
+    },
+	
+	{
+	  "name" : "starforge-pyreaper",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "all",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.02,
+      "monsterType" : [
+      [1, "pyreaper"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    },
+	
+	{
+	  "name" : "starforge-panthyre",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "all",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.01,
+      "monsterType" : [
+      [1, "starforge-panthyre"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : true
+      }
     }
   
   ]
