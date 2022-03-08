@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-osmiumshard",
+  "price" : 100,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "osmiumshard.png",
+  "description" : "A very strong metal mysteriously appearing in the depths of Wither planets.",
+  "shortdescription" : "Osmium Shard",
+  "itemTags" : [ "reagent" ]
+}

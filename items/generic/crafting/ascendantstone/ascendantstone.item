@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-ascendantstone",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ascendantstone.png",
+  "description" : "The crystallisation of paracausal power. Obtained from very powerful beings.",
+  "shortdescription" : "^orange;Ascendant Stone^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}
