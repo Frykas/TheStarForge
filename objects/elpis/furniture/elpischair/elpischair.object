@@ -20,20 +20,29 @@
   "inventoryIcon" : "elpischairicon.png",
   "orientations" : [
     {
-	  "dualImage" : "elpischair.png:<color>",
-
+      "image" : "elpischair.png:<color>",
+      "imagePosition" : [-10, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "flipImages" : false,
+      "direction" : "left",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "elpischair.png:<color>",
       "imagePosition" : [-8, 0],
       "frames" : 1,
       "animationCycle" : 1.0,
-
+      "flipImages" : true,
+      "direction" : "right",
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
-
     }
-  ],
+   ],
 
   "objectType" : "loungeable",
-  "sitFlipDirection" : false,
+  "sitFlipDirection" : true,
   "sitPosition" : [2, 22]
 
 }

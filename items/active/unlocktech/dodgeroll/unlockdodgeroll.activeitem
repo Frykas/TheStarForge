@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "rare",
   "category" : "Tech Unlock Card",
-  "description" : "Unlocks the warp dash tech for use.",
-  "shortdescription" : "Warp Dash Unlock Card",
+  "description" : "Unlocks the dodge roll tech for use.",
+  "shortdescription" : "Dodge Roll Unlock Card",
   "twoHanded" : true,
 
   "inventoryIcon" : "unlockdodgeroll.png",

@@ -1,0 +1,95 @@
+{
+  "type" : "starforge-elpissecurity",
+  "baseType" : "base",
+
+  "levelVariance" : [1, 6],
+  "persistent" : true,
+
+  "damageTeamType" : "friendly",
+
+  "scriptConfig" : {
+    "behavior" : "guard",
+
+    "behaviorConfig" : {
+      "greetingChance" : 0.67,
+      "patrolTime" : 3,
+
+      "hostileDamageTeam" : { "type" : "enemy", "team" : 1 }
+    },
+
+    "questGenerator" : {
+      "pools" : ["common", "guard"],
+      "enableParticipation" : true,
+      "timeLimit" : 30,
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmember"],
+          [0.5, "crewmemberengineer"],
+          [0.5, "crewmembermechanic"]
+        ]
+      }
+    },
+    
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "patrol"]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+
+      "greeting" : "/dialog/converse.config:greeting",
+      "converse" : "/dialog/converse.config:converse",
+      
+      "accuse" : "/dialog/thief.config:accuse",
+
+      "attack" : "/dialog/combat.config:attack",
+      "reattack" : "/dialog/combat.config:reattack",
+      "killedTarget" : "/dialog/combat.config:killedTarget",
+      "lostTarget" : "/dialog/combat.config:lostTarget",
+      "outOfSight" : "/dialog/combat.config:outOfSight",
+      "cheerOn" : "/dialog/combat.config:cheerOn",
+      "cantReach" : "/dialog/combat.config:cantReach"
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "starforge-elpissecurityhead" } ],
+            "chest" : [ { "name" : "starforge-elpissecuritychest" } ],
+            "legs" : [ { "name" : "starforge-elpissecuritypants" } ],
+            "primary" : [
+              "starforge-elpissmg"
+            ],
+            "sheathedprimary" : [ "npcbroadsword" ]
+          }
+        ] ]
+    ]
+    
+    
+  }
+}

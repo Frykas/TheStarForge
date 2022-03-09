@@ -1,0 +1,47 @@
+{
+  "objectName" : "starforge-elpislightstick",
+  "colonyTags" : ["light"],
+  "rarity" : "uncommon",
+  "category" : "light",
+  "price" : 20,
+
+  "description" : "A light used nearby Elpis facilities. It shines brightly.",
+  "shortdescription" : "Elpis Light Stick",
+  "race" : "generic",
+  "printable" : true,
+
+  "apexDescription" : "A light on a stick. Easy to place and remove.",
+  "avianDescription" : "This light is easy to move around!",
+  "floranDescription" : "Light hasss no flame. Floran sssafe.",
+  "glitchDescription" : "Observant. This light is very well made.",
+  "humanDescription" : "A cool light. Kinda want one now",
+  "hylotlDescription" : "This light design is very pleasing to look at.",
+  "novakidDescription" : "A light on a stick, eh.",
+
+  "lightColor" : [230, 230, 230],
+
+  "inventoryIcon" : "elpislightstickicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "elpislightstick.png" }, { "image" : "elpislightstickfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 3]
+    },
+    {
+      "imageLayers" : [ { "image" : "elpislightstick.png" }, { "image" : "elpislightstickfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 3]
+    }
+  ]
+}

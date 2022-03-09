@@ -1,0 +1,46 @@
+{
+  "objectName" : "starforge-elpiscover",
+  "colonyTags" : ["misc"],
+  "rarity" : "rare",
+  "description" : "A decorative cover used in Elpis offices.",
+  "shortdescription" : "Elpis Cover",
+  "race" : "generic",
+
+  "category" : "decorative",
+  "price" : 100,
+
+  "apexDescription" : "A transparent cover. Seems to be decorative.",
+  "avianDescription" : "A big glass-like panel!",
+  "floranDescription" : "Floran can sssee through... Stab time hehehehe...",
+  "glitchDescription" : "Curious. This big sheet of glass seems to be used as decoration here.",
+  "humanDescription" : "Ha, reminds me of the anti-theft alarm systems you could find on Earth.",
+  "hylotlDescription" : "The design is exquisite. Elpis offices are great!",
+  "novakidDescription" : "This probably ain't used for protection.",
+
+  "inventoryIcon" : "elpiscovericon.png",
+   "orientations" : [
+    {
+      "image" : "elpiscover.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "flipImages" : false,
+      "renderLayer" : "Player+6",
+      "direction" : "left",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "elpiscover.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "flipImages" : true,
+      "renderLayer" : "Player+6",
+      "direction" : "right",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}
