@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "legwear",
   "description" : "\"The monsters... They are everywhere. Rip and tear.\"",
-  "shortdescription" : "^yellow;Praetorian Legwear^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^yellow;Praetorian Legwear^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/epraetorian/icons.png:pants",

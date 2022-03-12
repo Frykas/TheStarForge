@@ -60,8 +60,8 @@
         }
       },
 
-      "greeting" : "/dialog/converse.config:greeting",
-      "converse" : "/dialog/converse.config:converse",
+      "greeting" : "/dialog/elpissecurity.config:hail",
+      "converse" : "/dialog/elpissecurity.config:hail",
       
       "accuse" : "/dialog/thief.config:accuse",
 

@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "chestarmour",
   "description" : "\"The Great Hunter came back to us bearing a terrible curse. Those who lived on learned, became stronger.\"",
-  "shortdescription" : "^#758468;Chest of Berserking^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^#758468;Chest of Berserking^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/esedge/icons.png:chest",

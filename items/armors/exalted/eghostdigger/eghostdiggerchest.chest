@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "chestarmour",
   "description" : "\"I didn't know who I was, nor what happened. I didn't remember anything.\"",
-  "shortdescription" : "^pink;Plate of the Ghost Digger^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^pink;Plate of the Ghost Digger^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/eghostdigger/icons.png:chest",

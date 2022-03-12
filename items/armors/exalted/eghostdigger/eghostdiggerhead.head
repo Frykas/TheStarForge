@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "headarmour",
   "description" : "\"I woke up alone that day. With that horrible feeling of loss, gnawing me\"",
-  "shortdescription" : "^pink;Mask of the Ghost Digger^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^pink;Mask of the Ghost Digger^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
 
   "inventoryIcon" : "/items/armors/exalted/eghostdigger/icons.png:head",

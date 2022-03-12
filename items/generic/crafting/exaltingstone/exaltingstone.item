@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-exaltingstone",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "exaltingstone.png",
+  "description" : "The crystallisation of divine power. Obtained from very powerful beings.",
+  "shortdescription" : "^#FFE998;Exalting Stone^white;",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

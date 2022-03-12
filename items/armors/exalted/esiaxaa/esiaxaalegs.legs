@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "legarmour",
   "description" : "\"You are my voice, little one. Spread the word, guide your people. My blood, a gift to you and the worthy.\"",
-  "shortdescription" : "^red;Siaxaa's Blessing^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^red;Siaxaa's Blessing^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/esiaxaa/icons.png:pants",

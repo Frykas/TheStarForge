@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "legarmour",
   "description" : "\"When I finally met other people, they forsake me. Was it fear? Was I different than before? I didn't know.\"",
-  "shortdescription" : "^pink;Pants of the Ghost Digger^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^pink;Pants of the Ghost Digger^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
 
   "inventoryIcon" : "/items/armors/exalted/eghostdigger/icons.png:pants",

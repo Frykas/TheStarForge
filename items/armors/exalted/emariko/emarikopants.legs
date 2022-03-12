@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "legwear",
   "description" : "\"To victory, hopefully.\"",
-  "shortdescription" : "^cornflowerblue;Mariko's Path^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^cornflowerblue;Mariko's Path^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/emariko/icons.png:pants",

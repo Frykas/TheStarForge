@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "headarmour",
   "description" : "\"Your ultimate challenge forever changed you. Now it is a race against death, how many hunts left until it gets you?\"",
-  "shortdescription" : "^#758468;Hood of Berserking^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^#758468;Hood of Berserking^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
 
   "inventoryIcon" : "/items/armors/exalted/esedge/icons.png:head",

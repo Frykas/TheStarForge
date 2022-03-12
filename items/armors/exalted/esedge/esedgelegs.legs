@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "legarmour",
   "description" : "\"To this day we still follow the path of the Berserking, he who inspired us to become the fiercest hunters.\"",
-  "shortdescription" : "^#758468;Legs of Berserking^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^#758468;Legs of Berserking^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/esedge/icons.png:pants",

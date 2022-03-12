@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "chestarmour",
   "description" : "\"You grew strong and smart. But my time to fall has come, and so I must leave you, and you must guide them.\"",
-  "shortdescription" : "^red;Siaxaa's Truth^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^red;Siaxaa's Truth^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/esiaxaa/icons.png:chest",

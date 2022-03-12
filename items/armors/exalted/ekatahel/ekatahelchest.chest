@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "chestwear",
   "description" : "\"The others on this planet do not understand, for they are not Awakened. Help me open their eyes.\"",
-  "shortdescription" : "^#FFBC47;Fortress of the Warlord ^#FFB2B2;^reset;",
+  "shortdescription" : "^#FFBC47;Fortress of the Warlord ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/ekatahel/icons.png:chest",

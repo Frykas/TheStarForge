@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "legwear",
   "description" : "\"Each step you take against the Unbound motivates others to join our fight.\"",
-  "shortdescription" : "^#80F4FF;WARMONGER Greaves^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^#80F4FF;WARMONGER Greaves^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/ewarmonger/icons.png:pants",

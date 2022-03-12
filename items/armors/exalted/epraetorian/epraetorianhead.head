@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "headwear",
   "description" : "\"We opened a gate to somewhere... else. May we never open it again.\"",
-  "shortdescription" : "^yellow;Praetorian Helmet^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^yellow;Praetorian Helmet^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/epraetorian/icons.png:head",

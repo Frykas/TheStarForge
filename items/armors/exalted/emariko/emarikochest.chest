@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "chestwear",
   "description" : "\"You mean so much to me.\"",
-  "shortdescription" : "^cornflowerblue;Mariko's Heart^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^cornflowerblue;Mariko's Heart^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/emariko/icons.png:chest",

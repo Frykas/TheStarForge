@@ -5,7 +5,7 @@
   "rarity" : "Essential",
   "category" : "legwear",
   "description" : "\"With your help, my land can become a paradise of Awakened Glitch. If we find a way, we can free them all.\"",
-  "shortdescription" : "^#FFBC47;Territory of the Warlord ^#FFB2B2;^reset;",
+  "shortdescription" : "^#FFBC47;Territory of the Warlord ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   
   "inventoryIcon" : "/items/armors/exalted/ekatahel/icons.png:pants",
