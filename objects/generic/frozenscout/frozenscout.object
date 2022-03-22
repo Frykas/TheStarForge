@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-frozenscout",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Seems to be a frozen scout. Flesh was probably eaten by the Anglures.",
+  "shortdescription" : "Frozen Scout",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 10,
+
+  "apexDescription" : "How did it get its feet frozen up there? Did the Anglures do this?",
+  "avianDescription" : "I wonder how this guy got his feet frozen up there.",
+  "floranDescription" : "Hehehe, Human diesss in ssstupid way. Hunted like prey!",
+  "glitchDescription" : "Confused. How did they get up there?",
+  "humanDescription" : "Poor guy. Curiously similar to something I remember seeing in a movie...",
+  "hylotlDescription" : "How did this person get stuck up there? Surely the Anglures couldn't do something like that?",
+  "novakidDescription" : "Well, at least he had good taste in guns.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "frozenscout.png:<color>",
+      "imageLayers" : [ { "image" : "frozenscout.png" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ]
+
+}

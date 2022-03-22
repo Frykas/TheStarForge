@@ -11,6 +11,7 @@
   "category" : "Revolver",
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
+  "learnBlueprintsOnPickup" : [ "starforge-saltshaker" ],
 
   "animation" : "starforge-saltshaker.animation",
   "animationParts" : {
