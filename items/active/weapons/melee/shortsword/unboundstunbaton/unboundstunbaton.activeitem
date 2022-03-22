@@ -79,7 +79,7 @@
       "blade" : {
         "active" : false,
         "transformationGroups" : ["weapon"],
-        "offsetRegion" : [-0.5, -0.75, 0.5, 1.5],
+        "offsetRegion" : [-0.8, -1.05, 0.0, 0.2],
         "emissionRate" : 5,
         "particles" : [
           { "particle" : "electricswoosh1"},
@@ -111,10 +111,14 @@
     },
 
     "stances" : {
-      "idle" : {
-        "armRotation" : -90,
-        "weaponRotation" : -10,
-        "weaponOffset" : [0, 2.75]
+       "idle" : {
+        "armRotation" : -15,
+        "weaponRotation" : -90,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true,
+		"aimAngle" : 0
       },
       "windup1" : {
         "duration" : 0.1,

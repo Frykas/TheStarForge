@@ -1,0 +1,16 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 3500},
+	{ "item" : "starforge-yukaitear", "count" : 3},
+	{ "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "bone", "count" : 150},
+	{ "item" : "titaniumbar", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-lightofsorrow",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "weapon" ],
+  "duration" : 2
+}
+

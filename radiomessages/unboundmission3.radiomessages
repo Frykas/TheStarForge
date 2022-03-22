@@ -1,0 +1,18 @@
+{
+  //Starforge - Rise of the Unbound mission 3 last
+  "unboundmission3-intro" : {
+    "type" : "mission",
+    "senderName" : "Mariko",
+    "portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
+    "text" : "Here you go we can't beam you any closer, the prison is to your left. We need Sasha, prisoner 52, alive. Be cautious of guards and snipers.",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission3-morpheus1" : {
+    "type" : "mission",
+	"senderName" : "Morpheus",
+	"portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
+	"text" : "Sasha was an officer before being sent here, she will help me go through the Unbound network undetected. She probably also knows what exactly is the Unbound after, I'm counting on you to keep her unharmed.",
+	"persistTime" : 5.0
+}
+}

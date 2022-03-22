@@ -3,7 +3,7 @@
   "price" : 1500,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;A strange lantern bringing sorrow to all it shines upon.",
+  "description" : "A strange lantern bringing sorrow to all it shines upon.",
   "shortdescription" : "^orange;Light of Sorrow^white;",
   "level" : 6,
   "fixedLevel" : false,
