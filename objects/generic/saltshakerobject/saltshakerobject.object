@@ -12,9 +12,9 @@
   "glitchDescription" : "Curious. I wonder how it got stuck there.",
   "novakidDescription" : "Uh, this feels like it could belong to me alright!",
   "humanDescription" : "Mmmhm, I wonder if there are any Wampa around...",
-  "hylotlDescription" : "A rather crude revolved stuck in ice.",
-  "avianDescription" : "This revolved is stuck in ice and covered in snow.", 
-  "apexDescription" : "This rather old revolved has been stuck here for a while.",
+  "hylotlDescription" : "A rather crude revolver stuck in ice.",
+  "avianDescription" : "This revolver is stuck in ice and covered in snow.", 
+  "apexDescription" : "This rather old revolver has been stuck here for a while.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
