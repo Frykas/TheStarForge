@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":80,
+ "tilecount":82,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -809,6 +809,26 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-unboundriflerack",
+         "tilesetDirection":"right"
+        },
+     "80":
+        {
+         "\/\/description":"An Unbound Centurion tank. Luckily, it is not being piloted right now.",
+         "\/\/name":"starforge-unboundcenturionobject",
+         "\/\/shortdescription":"Unbound Centurion",
+         "imagePositionX":"-80",
+         "imagePositionY":"0",
+         "object":"starforge-unboundcenturionobject",
+         "tilesetDirection":"right"
+        },
+     "81":
+        {
+         "\/\/description":"A decorative Unbound hoverbike, from the Vanguard division.",
+         "\/\/name":"starforge-vanguardhoverbikeobject",
+         "\/\/shortdescription":"Vanguard Hoverbike",
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"starforge-vanguardhoverbikeobject",
          "tilesetDirection":"right"
         },
      "9":
@@ -1614,6 +1634,26 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "80":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "81":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "9":
         {
          "\/\/description":"string",
@@ -2101,6 +2141,18 @@
          "imageheight":39,
          "imagewidth":32
         },
+     "80":
+        {
+         "image":"centurionobject.png",
+         "imageheight":57,
+         "imagewidth":147
+        },
+     "81":
+        {
+         "image":"vanguardhoverbikeobject.png",
+         "imageheight":30,
+         "imagewidth":75
+        },
      "9":
         {
          "image":"unboundtable.png",
@@ -2108,7 +2160,7 @@
          "imagewidth":32
         }
     },
- "tilewidth":111,
+ "tilewidth":147,
  "type":"tileset",
  "version":1.1
 }

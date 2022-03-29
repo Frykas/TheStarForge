@@ -20,6 +20,7 @@
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-witherlore1-codex"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-onikabutolore-codex"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-lootmonsterlore-codex"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-manufacturerlore-codex"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-infusedscrap"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundbaggagescanner"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundbanner"} },
@@ -93,5 +94,7 @@
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundfortresspack"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundofficerpack"} },
 {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundvanguardpack"} },
-{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundholoquin"} }
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundholoquin"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundcenturionobject"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-vanguardhoverbikeobject"} }
 ]

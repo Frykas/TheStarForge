@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-vanguardhoverbikeobject",
+  "colonyTags" : ["weapon","apex"],
+  "printable" : true,
+  "rarity" : "legendary",
+  "description" : "A decorative Unbound hoverbike, from the Vanguard division.",
+  "shortdescription" : "Vanguard Hoverbike",
+  "race" : "apex",
+  "category" : "furniture",
+  "price" : 2500,
+
+  "apexDescription" : "Vanguard hoverbikes are designed to fly extremely fast.",
+  "avianDescription" : "This hoverbike doesn't go very high, but it sure goes fast!",
+  "floranDescription" : "Floran go zoom!!",
+  "glitchDescription" : "Fascinated. This is quite the vehicle.",
+  "humanDescription" : "Hoverbikes are great vehicles to explore worlds.",
+  "hylotlDescription" : "The Unbound hoverbikes are designed for speed over anything else. Sure looks fancy.",
+  "novakidDescription" : "Bet ya could go faster on that than on horse he.",
+
+  "inventoryIcon" : "vanguardhoverbikeobjecticon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "vanguardhoverbikeobject.png" ,
+	 "imageLayers" : [ { "image" : "vanguardhoverbikeobject.png" }, { "image" : "vanguardhoverbikeobjectfullbright.png", "fullbright" : true } ],
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
+

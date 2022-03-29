@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-unboundcenturionobject",
+  "colonyTags" : ["weapon","apex"],
+  "printable" : true,
+  "rarity" : "legendary",
+  "description" : "An Unbound Centurion tank. Luckily, it is not being piloted right now.",
+  "shortdescription" : "Unbound Centurion",
+  "race" : "apex",
+  "category" : "furniture",
+  "price" : 2500,
+
+  "apexDescription" : "That's quite the tank.",
+  "avianDescription" : "This does not make me feel safe.",
+  "floranDescription" : "Floran can't ssstab...",
+  "glitchDescription" : "Curious. This is quite the robust frame.",
+  "humanDescription" : "What a big tank. Bet it can take quite a few hits.",
+  "hylotlDescription" : "Whatever they have reserved for us in the future, I sure hope it's nothing like that.",
+  "novakidDescription" : "Quite scary lookin'.",
+
+  "inventoryIcon" : "centurionobjecticon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "centurionobject.png" ,
+	 "imageLayers" : [ { "image" : "centurionobject.png" }, { "image" : "centurionobjectfullbright.png", "fullbright" : true } ],
+
+      "imagePosition" : [-80, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
+
