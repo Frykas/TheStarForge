@@ -1,0 +1,24 @@
+{
+  "materialId" : 2907,
+  "materialName" : "starforge-elpishull",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "starforge-elpishull",
+  "description" : "A shiny block used on Elpis structures.",
+  "shortdescription" : "Elpis Block",
+  "glitchDescription" : "Confused. It is so shiny I expected to see my reflection.",
+  "floranDescription" : "Shiny ssurface.",
+  "novakidDescription" : "Elpis sure knows how to make themselves known. Building is shinier than me!",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "elpishull.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 3000
+  }
+}

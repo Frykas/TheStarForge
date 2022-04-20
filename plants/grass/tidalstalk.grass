@@ -1,0 +1,8 @@
+{
+  "name" : "starforge-tidalstalk",
+  "description" : "Strange flora from the realm of the Tide",
+  "shortdescription" : "Tidal Stalks",
+  "floranDescription" : "Plant ssstaring at Floran. Floran doesssn't like.",
+  "glitchDescription" : "Statement. A very strange plant.",
+  "images" : [ "tidalstalk1.png", "tidalstalk2.png" ]
+}

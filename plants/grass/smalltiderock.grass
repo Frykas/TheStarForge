@@ -1,0 +1,8 @@
+{
+  "name" : "starforge-smalltiderock",
+  "description" : "A small, cold rock from the realm of the Tide",
+  "shortdescription" : "Tidal Rock",
+  "floranDescription" : "Floran kick sssmall cold rock",
+  "glitchDescription" : "Statement. A small cold rock.",
+  "images" : [ "smalltiderock1.png", "smalltiderock2.png", "smalltiderock3.png", "smalltiderock4.png", "smalltiderock5.png", "smalltiderock6.png" ]
+}

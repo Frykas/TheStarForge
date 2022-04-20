@@ -1,0 +1,8 @@
+{
+  "name" : "starforge-tidalice",
+  "description" : "A small tidal ice formation.",
+  "shortdescription" : "Tidal Ice",
+  "floranDescription" : "Floran no like weird ice.",
+  "glitchDescription" : "Statement. Tidal ice is quite strange.",
+  "images" : [ "tidalice1.png", "tidalice2.png", "tidalice3.png", "tidalice4.png", "tidalice5.png", "tidalice6.png" ]
+}

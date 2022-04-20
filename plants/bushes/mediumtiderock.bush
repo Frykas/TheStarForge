@@ -1,0 +1,24 @@
+{
+  "name" : "starforge-mediumtiderock",
+  "description" : "A cold rock from the realm of the Tide.",
+  "shortdescription" : "Tidal rock",
+  "floranDescription" : "Rock isss cold. Floran doesssn't like.",
+  "glitchDescription" : "Statement. A cold rock.",
+  "shapes" : [
+    {
+      "base" : "mediumtiderock1.png"
+    },
+    {
+      "base" : "mediumtiderock2.png"
+    },
+    {
+      "base" : "mediumtiderock3.png"
+    },
+	{
+      "base" : "mediumtiderock4.png"
+    },
+	{
+      "base" : "mediumtiderock5.png"
+    }
+  ]
+}

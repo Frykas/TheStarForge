@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "starforge-biometestzone",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "biometestzone" ],
+    "gravity" : 60,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true,
+	"persistent" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "biometestzone",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "biometestzone.json" ]
+    }
+  ]
+}

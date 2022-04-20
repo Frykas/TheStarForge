@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-elpishull",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "common",
+  "inventoryIcon" : "elpishull.png",
+  "shortdescription" : "Elpis Hull Block",
+  "description" : "A shiny metal block, used in Elpis structures.",
+  "glitchDescription" : "Confused. It is so shiny I expected to see my reflection.",
+  "floranDescription" : "Shiny ssurface.",
+  "novakidDescription" : "Elpis sure knows how to make themselves known. Building is shinier than me!",
+
+  "materialId" : 2907
+}

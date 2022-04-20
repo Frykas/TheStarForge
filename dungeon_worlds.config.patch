@@ -73,6 +73,24 @@
 	},
 	
 	{
+		"op": "add",
+		"path": "/starforge-biometestzone",
+		"value": {
+			"primaryDungeon" : "starforge-biometestzone",
+
+            "threatLevel" : 8,
+			"biome" : "starforge-tidefragment",
+            "gravity" : 80,
+            "worldSize" : [2000, 2000],
+            "dungeonBaseHeight" : 1050,
+            "dungeonSurfaceHeight" : 925,
+            "ambientLightLevel" : [128, 128, 128],
+            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
+            "musicTrack" : "/music/unshackled_unbound.ogg"
+	}
+	},
+	
+	{
     "op" : "add",
     "path" : "/unboundship1",
     "value" : {

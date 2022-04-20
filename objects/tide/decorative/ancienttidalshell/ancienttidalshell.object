@@ -1,0 +1,38 @@
+{
+  "objectName" : "starforge-ancienttidalshell",
+  "rarity" : "rare",
+
+  "printable" : false,
+  "description" : "A very old shell made of Tidal ice.",
+  "shortdescription" : "Ancient Tidal Shell",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 600,
+
+  "apexDescription" : "Whatever was living in this shell, I'm glad it's no more.",
+  "avianDescription" : "This is so big! I wonder what kind of monster lived in it!",
+  "floranDescription" : "Weird ice givesss Floran the ssspook...",
+  "glitchDescription" : "Curious. What an enormous monster shell.",
+  "humanDescription" : "Glad you couldn't find those on Earth!",
+  "hylotlDescription" : "A gigantic monster shell made of Tidal ice, looks like its owner is no more.",
+  "novakidDescription" : "Shell sure is cold.",
+
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "ancienttidalshell.png",
+      "imagePosition" : [-32, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }
