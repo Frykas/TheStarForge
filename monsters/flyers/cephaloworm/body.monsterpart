@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-cephaloworm",
+  "category" : "cephaloworm",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "cephaloworm.png"
+  }
+}

@@ -76,6 +76,20 @@
       ],
       "allowDuplication" : false
     }]
+  ],
+  
+  "cephalowormTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.99, "item" : ["cryonicextract", 1]},
+		{"weight" : 0.01, "item" : "starforge-cephalowormaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
   ]
   
   

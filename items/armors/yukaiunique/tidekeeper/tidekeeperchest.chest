@@ -1,12 +1,12 @@
 {
   "itemName" : "starforge-tidekeeperchest",
-  "price" : 3200,
+  "price" : 2500,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
-  "rarity" : "Essential",
+  "rarity" : "rare",
   "category" : "chestarmour",
   "description" : "todo",
-  "shortdescription" : "^orange;Tidekeeper's Chest^reset;",
+  "shortdescription" : "Tidekeeper's Chest",
   "tooltipKind" : "armor",
 
   "maleFrames" : {
@@ -19,32 +19,8 @@
     "body" : "chestf.png",
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
-  },
+  }
 
-  "level" : 7,
-  "leveledStatusEffects" : [
-    {
-      "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
-      "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
-    },
-    {
-      "levelFunction" : "separatorArmorLevelProtectionMultiplier",
-      "stat" : "protection",
-      "amount" : 0.5
-    },
-    {
-      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
-      "stat" : "maxEnergy",
-      "amount" : 14.5714
-    },
-    {
-      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
-      "stat" : "maxHealth",
-      "amount" : 7.2857
-    }
-  ],
-  
-  "itemTags" : [ "tier7armour" ]
+
 
 }

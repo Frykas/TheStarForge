@@ -41,5 +41,15 @@
 	    "monsterType" : "starforge-panthyre",
 	    "icon" : "/monsters/walkers/panthyre/panthyreicon.png"
 	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/cephaloworm",
+	  "value": 	  
+	  {
+	    "order" : 104,
+	    "monsterType" : "starforge-cephaloworm",
+	    "icon" : "/monsters/flyers/cephaloworm/cephalowormicon.png"
+	  }
 	}
 ]

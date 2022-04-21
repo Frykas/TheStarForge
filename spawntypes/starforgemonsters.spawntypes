@@ -36,6 +36,23 @@
     },
 	
 	{
+	  "name" : "starforge-cephaloworm",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.004,
+      "monsterType" : [
+      [1, "starforge-cephaloworm"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    },
+	
+	{
 	  "name" : "starforge-pyreaper",
 	  "spawnParameters" : {
 		"area" : "surface",
