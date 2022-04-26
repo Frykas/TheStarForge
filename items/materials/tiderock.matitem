@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-tiderock",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "common",
+  "inventoryIcon" : "tiderock.png",
+  "description" : "This strange rock comes from another realm",
+  "shortdescription" : "Tidal Rock",
+  "glitchDescription" : "Amazed. This rock is from another dimension.",
+  "floranDescription" : "Floran doessn't like sstrange rock.",
+  "novakidDescription" : "Some kinda alien lookin' rock.",
+
+  "materialId" : 2908
+}

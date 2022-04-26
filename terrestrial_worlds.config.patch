@@ -147,6 +147,48 @@
       1,
       "starforge-yukaiforgemasterhut"
     ]
-  }
+  },
   
+  { "op":"add",
+    "path": "/planetTypes/forest/layers/surface/secondaryRegions/-", 
+	"value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/planetTypes/jungle/layers/surface/secondaryRegions/-", 
+	"value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/planetTypes/midnight/layers/surface/secondaryRegions/-", 
+	"value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/planetTypes/tundra/layers/surface/secondaryRegions/-", 
+	"value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/planetTypes/volcanic/layers/surface/secondaryRegions/-", 
+	"value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/planetTypes/savannah/layers/surface/secondaryRegions/-", 
+	"value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+	  "path": "/regionTypes/starforge-tidefragment",
+	  "value": {
+			"blockSelector": [ "remixedSpikesSurface" ],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["starforge-tidefragment"]]
+			]
+		}
+  }
+ 
 ]

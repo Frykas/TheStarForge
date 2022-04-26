@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-tidejellycritter",
+  "category" : "tidejellycritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

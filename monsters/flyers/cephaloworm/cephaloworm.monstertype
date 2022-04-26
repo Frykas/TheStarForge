@@ -33,43 +33,44 @@
 
       "fleeActions" : [ ],
 
-      "hostileActions" : [
-
-        {
-          "name" : "action-charge",
-          "cooldown" : 2.5,
+       "hostileActions" : [
+       {
+          "name" : "action-fire",
+          "cooldown" : 0.0,
           "parameters" : {
-            "maximumRange" : 20,
-            "windupStopForce" : 50,
-            "windupTime" : 1,
-            "onGround" : false,
+            "requireLineOfSight" : true,
+            "maximumRange" : 35,
+            "minimumRange" : 5,
+            "windupState" : "firewindup",
+            "windupTime" : 1.0,
 
-            "wallCollide" : true,
+            "projectileType" : "starforge-tidespike",
+            "fireOffset" : [0.0, 0.25],
             "aimAtTarget" : true,
-            "rotateToTarget" : true,
-            "rotationOffset" : 1.57,
-            "chargeTime" : 0.35,
-            "chargeSpeed" : 50,
-            "chargeControlForce" : 250,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+            "fireDelay" : 0.1,
+
+            "fireArc": true,
+            "projectileSpeed": 65,
+            "gravityMultiplier": 0.6,
 
             "winddownState" : "",
-            "winddownStopForce" : 200
+            "winddownTime" : 1.0
           }
         }
-
       ],
 
-      "periodicActions" : [ ],
+      "periodicActions" : [
+       ],
 
       "approachActions" : [
         {
-          "name" : "wander-fly",
+          "name" : "approach-fly",
           "parameters" : {
-            "wanderTime" : [2,4],
-            "groundDistance" : 8,
-            "ceilingDistance" : 8,
-            "xVelocity" : 4,
-            "yVelocity" : 12
+            "minRange" : 4,
+            "maxRange" : 8
           }
         }
       ],
@@ -97,6 +98,20 @@
           }
         }
       ],
+	  
+	  "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "starforge-cephalowormshell",
+            "projectileParameters" : {},
+            "aimDirection" : [-1, 2],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0.4]
+          }
+        }
+      ],
 
       "concurrentActions" : [ ],
 
@@ -104,8 +119,8 @@
     },
 
     "touchDamage" : {
-      "poly" : [ [0.26, 0.625],  [0.625, 0.26], [0.625, -0.26], [0.26, -0.625], [-0.26, -0.625], [-0.625, -0.26], [-0.625, 0.26], [-0.26, 0.625] ],
-      "damage" : 10,
+      "poly" : [ [0.26, 0.625],  [0.625, 0.26], [0.625, -1.26], [0.26, -1.625], [-0.26, -1.625], [-0.625, -1.26], [-0.625, 0.26], [-0.26, 0.625] ],
+      "damage" : 9,
 
       "teamType" : "enemy",
       "damageSourceKind" : "lash",
@@ -117,7 +132,7 @@
     "scale" : 1.0,
 
     "movementSettings" : {
-      "collisionPoly" : [ [0.26, 0.625],  [0.625, 0.26], [0.625, -0.26], [0.26, -0.625], [-0.26, -0.625], [-0.625, -0.26], [-0.625, 0.26], [-0.26, 0.625] ],
+      "collisionPoly" : [ [0.26, 0.625],  [0.625, 0.26], [0.625, -1.26], [0.26, -1.625], [-0.26, -1.625], [-0.625, -1.26], [-0.625, 0.26], [-0.26, 0.625] ],
 
       "mass" : 0.5,
       "walkSpeed" : 4,

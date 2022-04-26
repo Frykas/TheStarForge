@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-tidampreycritter",
+  "category" : "tidampreycritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

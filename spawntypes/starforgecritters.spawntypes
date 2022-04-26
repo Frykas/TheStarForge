@@ -13,6 +13,36 @@
       "monsterParameters" : {
         "aggressive" : false
       }
+    },
+	
+	{
+	  "name" : "starforge-tidamprey",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.05,
+      "monsterType" : "starforge-tidampreycritter",
+      "monsterParameters" : {
+        "aggressive" : false
+      }
+    },
+	
+	{
+	  "name" : "starforge-tidejelly",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "all",
+		"time" : "all"
+      },
+      "groupSize" : [1, 3],
+      "spawnChance" : 0.04,
+      "monsterType" : "starforge-tidejellycritter",
+      "monsterParameters" : {
+        "aggressive" : false
+      }
     }
   
   ]

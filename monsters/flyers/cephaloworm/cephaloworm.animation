@@ -10,7 +10,7 @@
             "cycle" : 0.75,
             "mode" : "loop",
             "frameProperties" : {
-              "immediateSound" : [ "/sfx/npc/monsters/batong_flap1.ogg", "", "", "", "/sfx/npc/monsters/batong_flap2.ogg", "", "", "" ]
+              "immediateSound" : [ "", "/sfx/npc/monsters/batong_flap1.ogg", "", "", "", "/sfx/npc/monsters/batong_flap2.ogg", "", "" ]
             }
           },
           "fly" : {
@@ -18,24 +18,34 @@
             "cycle" : 0.75,
             "mode" : "loop",
             "frameProperties" : {
-              "immediateSound" : [ "/sfx/npc/monsters/batong_flap1.ogg", "", "", "", "/sfx/npc/monsters/batong_flap2.ogg", "", "", "" ]
+              "immediateSound" : [ "", "/sfx/npc/monsters/batong_flap1.ogg", "", "", "", "/sfx/npc/monsters/batong_flap2.ogg", "", "" ]
             }
           },
-          "chargewindup" : {
-            "frames" : 8,
-            "cycle" : 0.25,
-            "mode" : "loop",
-            "properties" : {
-              "immediateSound" : "/sfx/npc/monsters/ignome_windup.ogg"
+          "firewindup" : {
+            "frames" : 4,
+            "cycle" : 0.375,
+            "mode" : "transition",
+            "transition" : "winduploop",
+            "frameProperties" : {
+              "immediateSound" : [ "", "/sfx/npc/monsters/batong_flap1.ogg", "", "" ]
             }
           },
-          "charge" : {
-            "frames" : 2,
-            "cycle" : 0.075,
+          "winduploop" : {
+            "frames" : 4,
+            "cycle" : 0.375,
             "mode" : "loop",
+            "frameProperties" : {
+              "immediateSound" : [ "", "/sfx/npc/monsters/batong_flap2.ogg", "", "" ]
+            },
             "properties" : {
-              "immediateSound" : "/sfx/npc/monsters/ignome_charge2.ogg"
+              "persistentSound" : "/sfx/npc/monsters/pteropod_windup.ogg"
             }
+          },
+          "fire" : {
+            "frames" : 4,
+            "cycle" : 0.375,
+            "mode" : "transition",
+            "transition" : "idle"
           }
         }
       },
@@ -47,7 +57,12 @@
             "frames" : 1
           },
           "stunned" : {
-            "frames" : 1
+            "frames" : 8,
+            "cycle" : 0.75,
+            "mode" : "loop",
+            "frameProperties" : {
+              "immediateSound" : [ "", "/sfx/npc/monsters/batong_flap3.ogg", "", "", "", "/sfx/npc/monsters/batong_flap3.ogg", "", "" ]
+            }
           }
         }
       },
@@ -91,14 +106,19 @@
                 "image" : "<partImage>:fly.<frame>"
               }
             },
-            "chargewindup" : {
+            "firewindup" : {
               "properties" : {
                 "image" : "<partImage>:windup.<frame>"
               }
             },
-            "charge" : {
+            "winduploop" : {
               "properties" : {
-                "image" : "<partImage>:charge.<frame>"
+                "image" : "<partImage>:winduploop.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
               }
             }
           },
@@ -178,6 +198,6 @@
   "sounds" : {
     "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
     "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
-    "crash" : [ "/sfx/melee/blunt_hit_organic.ogg" ]
+    "fire" : [ "/sfx/projectiles/spit1.ogg", "/sfx/projectiles/spit2.ogg" ]
   }
 }
