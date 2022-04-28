@@ -23,7 +23,7 @@
 		"time" : "all"
       },
       "groupSize" : [1, 1],
-      "spawnChance" : 0.05,
+      "spawnChance" : 0.01,
       "monsterType" : "starforge-tidampreycritter",
       "monsterParameters" : {
         "aggressive" : false

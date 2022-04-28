@@ -16,7 +16,7 @@
  "margin":0,
  "name":"tidalremnants",
  "spacing":0,
- "tilecount":9,
+ "tilecount":11,
  "tiledversion":"1.4.3",
  "tileheight":85,
  "tileproperties":
@@ -39,6 +39,16 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"starforge-crimsonjokeytree1",
+         "tilesetDirection":"right"
+        },
+     "10":
+        {
+         "\/\/description":"A Jellycap tree, originating from the realm of the Tide.",
+         "\/\/name":"starforge-jellycaptree4",
+         "\/\/shortdescription":"Jellycap Tree",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-jellycaptree4",
          "tilesetDirection":"right"
         },
      "2":
@@ -110,6 +120,16 @@
          "imagePositionY":"0",
          "object":"starforge-razortailbones",
          "tilesetDirection":"right"
+        },
+     "9":
+        {
+         "\/\/description":"A Jellycap tree, originating from the realm of the Tide.",
+         "\/\/name":"starforge-jellycaptree5",
+         "\/\/shortdescription":"Jellycap Tree",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-jellycaptree5",
+         "tilesetDirection":"right"
         }
     },
  "tilepropertytypes":
@@ -125,6 +145,16 @@
          "tilesetDirection":"string"
         },
      "1":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "10":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -203,6 +233,16 @@
          "imagePositionY":"string",
          "object":"string",
          "tilesetDirection":"string"
+        },
+     "9":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
         }
     },
  "tiles":
@@ -218,6 +258,12 @@
          "image":"crimsonjokeytree1.png",
          "imageheight":43,
          "imagewidth":22
+        },
+     "10":
+        {
+         "image":"jellycaptree4.png",
+         "imageheight":25,
+         "imagewidth":26
         },
      "2":
         {
@@ -260,6 +306,12 @@
          "image":"razortailbones.png",
          "imageheight":54,
          "imagewidth":77
+        },
+     "9":
+        {
+         "image":"jellycaptree5.png",
+         "imageheight":38,
+         "imagewidth":32
         }
     },
  "tilewidth":106,

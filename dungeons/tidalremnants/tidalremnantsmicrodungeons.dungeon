@@ -4,7 +4,7 @@
 	"species" : "generic",
     "rules" : [
     ],
-    "anchor" : [ "giantshellremnants", "ancientshellremnants" ],
+    "anchor" : [ "giantshellremnants", "ancientshellremnants", "densejellycaptrees", "jellycapplateau" ],
     "gravity" : 80,
     "maxRadius" : 1000000,
     "maxParts" : 100,
@@ -25,6 +25,20 @@
         [ "maxSpawnCount", [1] ]
       ],
       "def" : [ "tmx", "ancientshellremnants.json" ]
+    },
+	{
+      "name" : "densejellycaptrees",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "densejellycaptrees.json" ]
+    },
+	{
+      "name" : "jellycapplateau",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "jellycapplateau.json" ]
     }
   ]
 }
