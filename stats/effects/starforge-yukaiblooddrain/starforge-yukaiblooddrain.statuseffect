@@ -1,0 +1,31 @@
+{
+  "name" : "starforge-yukaiblooddrain",
+  "effectConfig" : {
+    //Energy regen effects
+    "regenMultiplier" : 0.8,
+    "regenBlockTimeMultiplier" : 1.2,
+	
+	//Movement modifiers
+	"mcontrollerModifiers" : {
+	  "groundMovementModifier" : 0.75,
+	  "speedModifier" : 0.75,
+	  "airJumpModifier" : 0.90
+	},
+	
+	//Projectile effects
+	"projectileType" : "starforge-blooddrain",
+	"projectileCount" : 2,
+	"tickTime" : 0.3
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "starforge-yukaiblooddrain.lua"
+  ],
+  "scriptDelta" : 1,
+
+  "animationConfig" : "starforge-yukaiblooddrain.animation",
+
+  "label" : "Yukai Wisp Weakness",
+  "icon" : "/interface/statuses/healblock.png"
+}

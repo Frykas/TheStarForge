@@ -1,0 +1,10 @@
+{
+  "name" : "lesserwhisper",
+  "category" : "lesserwhisper",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lesserwhisper.png",
+    "bodynobright" : "lesserwhispernobright.png"
+  }
+}

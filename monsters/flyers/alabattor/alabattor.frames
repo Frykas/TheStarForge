@@ -6,7 +6,7 @@
     "names" : [
       [ "idle.1", "idle.2", "idle.3", "idle.4", null ],
       [ "call.1", "call.2", "call.3", "call.4", "call.5" ],
-      [ "dive.1", "dive.2", "dive.3", "dive.4", null ]
+      [ "divewindup.1", "divewindup.2", "dive.1", "dive.2", null ]
     ]
   },
   "aliases" : {

@@ -1,0 +1,10 @@
+{
+  "name" : "glorbee",
+  "category" : "glorbee",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "glorbee.png",
+    "bodynobright" : "glorbeenobright.png"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name" : "starforge-yukaibloodboost",
+  "blockingStat" : "healingStatusImmunity",
+
+  "effectConfig" : {
+    "healTime" : 55
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "starforge-yukaibloodboost.lua"
+  ],
+
+  "animationConfig" : "starforge-yukaibloodboost.animation",
+  
+  "label" : "Blood Boost",
+  "icon" : "/interface/statuses/largedamageboost.png"
+}

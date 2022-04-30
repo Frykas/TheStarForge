@@ -1,0 +1,60 @@
+{
+  "projectileName" : "starforge-blooddrain",
+  "physics" : "illusion",
+  "bounces" : 0,
+  "image" : "starforge-blooddrain.png",
+  "fullbright" : false,
+  "lightColor" : [15, 0, 0],
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "periodicActions" : [
+	{
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+		"type" : "ember",
+		"size" : 1,
+		"color" : [255, 0, 0, 250],
+		"fade" : 0.9,
+		"fullbright" : false,
+		"destructionAction" : "shrink",
+		"destructionTime" : 0.2,
+		"position" : [0.0, 0.0],
+		"offsetRegion" : [0, 0, 0, 0],
+		"initialVelocity" : [0, 1.0],
+		"finalVelocity" : [0, -3],
+		"approach" : [0, 10],
+		"timeToLive" : 0.1,
+		"variance" : {
+		  "initialVelocity" : [0.2, 0],
+		  "size" : 0.25
+		}
+	  }
+	}
+  ],
+  "power" : 0,
+  "speed" : 0,
+  "actionOnReap" : [],
+  "emitters" : [ ],
+  "onlyHitTerrain" : true,
+  
+  "renderLayer" : "ForegroundEntity",
+
+  "timeToLive" : 2,
+
+  "scripts" : ["starforge-blooddrain.lua"],
+  "scriptDelta" : 1,
+
+  "accelerationFactor" : 2,
+
+  "homingStartDelay" : 0.1,
+  "homingSpeed" : 65,
+  "homingForce" : 226,
+  
+  "pickupRange" : 1,
+  "snapRange" : 2.5,
+  "snapSpeed" : 150,
+  "snapForce" : 500
+}
