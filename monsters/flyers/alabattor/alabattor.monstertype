@@ -34,6 +34,7 @@
       "fleeActions" : [ ],
 
       "hostileActions" : [
+	    //SWOOP
         {
           "name" : "action-swoop",
           "cooldown" : 1.6,
@@ -52,11 +53,36 @@
 			"minSwoopTime": 0.1,
             "swoopTime" : 0.4,
 
+            "winddownTime" : 0.5,
+            "winddownState" : "fly",
+            "winddownStopForce" : 35
+          }
+        },
+		//DIVE
+        {
+          "name" : "action-swoop",
+          "cooldown" : 0.6,
+          "parameters" : {
+            "minimumRange" : 10,
+            "maximumRange" : 36,
+            "onGround" : false,
+			"windupState": "divewindup",
+            "windupTime" : 0.1,
+
+			"swoopState": "dive",
+            "gravityMultiplier" : 1.2,
+            "swoopVelocity" : 45,
+            "collisionCheck" : true,
+            "highArc" : false,
+			"minSwoopTime": 0.1,
+            "swoopTime" : 0.4,
+
             "winddownTime" : 0.8,
             "winddownState" : "fly",
             "winddownStopForce" : 35
           }
         },
+		//CALL FOR HELP
 		{
           "name" : "action-fire",
           "cooldown" : 30.0,
@@ -67,7 +93,7 @@
             "windupState" : "fly",
             "windupTime" : 0.3,
 
-            "projectileType" : "roar",
+            "projectileType" : "starforge-alabattorscreech",
             "projectileParameters": {
 			  "power" : 2.0
 			},

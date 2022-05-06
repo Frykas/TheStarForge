@@ -34,19 +34,44 @@
       "fleeActions" : [ ],
 
       "hostileActions" : [
+	    //DIVE
         {
           "name" : "action-swoop",
-          "cooldown" : 0.8,
+          "cooldown" : 0.6,
           "parameters" : {
-            "minimumRange" : 4,
+            "minimumRange" : 10,
             "maximumRange" : 36,
             "onGround" : false,
 			"windupState": "divewindup",
-            "windupTime" : 0.5,
+            "windupTime" : 0.1,
 
 			"swoopState": "dive",
-            "gravityMultiplier" : -0.85,
-            "swoopVelocity" : 15,
+            "gravityMultiplier" : 1,
+            "swoopVelocity" : 30,
+            "collisionCheck" : true,
+            "highArc" : false,
+			"minSwoopTime": 0.1,
+            "swoopTime" : 0.4,
+
+            "winddownTime" : 0.8,
+            "winddownState" : "fly",
+            "winddownStopForce" : 35
+          }
+        },
+		//SWOOP
+        {
+          "name" : "action-swoop",
+          "cooldown" : 0.6,
+          "parameters" : {
+            "minimumRange" : 10,
+            "maximumRange" : 36,
+            "onGround" : false,
+			"windupState": "divewindup",
+            "windupTime" : 0.3,
+
+			"swoopState": "dive",
+            "gravityMultiplier" : -0.4,
+            "swoopVelocity" : 40,
             "collisionCheck" : true,
             "highArc" : false,
 			"minSwoopTime": 0.1,
@@ -65,7 +90,7 @@
         {
           "name" : "approach-fly",
           "parameters" : {
-			"minRange": 3,
+			"minRange": -1,
 			"maxRange": 5
           }
         }
@@ -79,7 +104,7 @@
         {
           "name" : "approach-fly",
           "parameters" : {
-			"minRange": 2,
+			"minRange": -1,
 			"maxRange": 4
           }
         }
@@ -91,7 +116,7 @@
           "cooldown" : 6,
           "parameters" : {
             "landDirection" : [0, -1],
-            "flySpeed" : 14,
+            "flySpeed" : 12,
             "flyControlForce" : 20,
             "idleTime" : [2,4],
             "landState" : "idle"

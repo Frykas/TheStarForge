@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-fadein",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "starforge-fadein.lua"
+  ]
+}

@@ -499,11 +499,11 @@ function correctAbility(config, primaryAbilityMultipliers, seed)
   --Ensure we dont get lower than 1 projectile count
   correctedAbility.projectileCount = math.max(1, correctedAbility.projectileCount)
   if correctedAbility.projectileCount > 1 then
-    correctedAbility.baseDps = correctedAbility.baseDps + (correctedAbility.projectileCount * 0.3)
+    correctedAbility.baseDps = correctedAbility.baseDps + (correctedAbility.projectileCount * 0.4)
   end
 
   --Make inaccuracy scale a bit with projectile count
-  correctedAbility.inaccuracy = correctedAbility.projectileCount > 1 and (correctedAbility.inaccuracy + 0.01 * (1 + (correctedAbility.projectileCount - 1) * 0.5)) or correctedAbility.inaccuracy
+  correctedAbility.inaccuracy = correctedAbility.projectileCount > 1 and (correctedAbility.inaccuracy + 0.0125 * (1 + (correctedAbility.projectileCount))) or correctedAbility.inaccuracy
 
   return correctedAbility
 end
