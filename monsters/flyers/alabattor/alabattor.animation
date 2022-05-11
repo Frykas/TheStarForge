@@ -18,7 +18,7 @@
             "cycle" : 0.5,
             "mode" : "loop",
             "frameProperties" : {
-              "immediateSound" : [ "/sfx/others/mauriceterminationsoundeffect.ogg" ]
+              "immediateSound" : [ "/sfx/monsters/alabattor_screech.ogg" ]
             }
           },
           "divewindup" : {

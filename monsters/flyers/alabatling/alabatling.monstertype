@@ -1,14 +1,14 @@
 {
   "type" : "starforge-alabatling",
   "shortdescription" : "Alabatling",
-  "description" : "A funny bat.",
+  "description" : "A juvenile bat from the Yukai homeworld. They always hunt in packs.",
 
   "categories" : [ "alabatling" ],
   "parts" : [ "body" ],
 
   "animation" : "alabatling.animation",
-
-  "dropPools" : [ ],
+  
+  "dropPools" : [ { "default" : "alabatlingTreasure" } ],
 
   "baseParameters" : {
     "scripts" : [
@@ -227,9 +227,9 @@
 
     "mouthOffset" : [0, 0],
     "feetOffset" : [0, -8],
-    "capturable" : false,
-    "captureHealthFraction" : 0.0,
-    "nametagColor" : [64, 200, 255]
-    //"captureCollectables" : { "monsters" : "alabattor" }
+    "capturable" : true,
+    "captureHealthFraction" : 50.0,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "alabatling" }
   }
 }

@@ -4,7 +4,7 @@
 
 	"persistent": true,
 
-	"scripts": ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+	"scripts": ["/npcs/bmain.lua"],
 	"initialScriptDelta": 5,
 
 	"dropPools": ["guardtreasure"],
@@ -21,7 +21,6 @@
 
 
 	"scriptConfig": {
-		"bossName": "Yukai Kabuto",
 
 		"behavior": "mik-hostilenpc",
 

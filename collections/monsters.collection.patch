@@ -42,12 +42,24 @@
 	    "icon" : "/monsters/walkers/panthyre/panthyreicon.png"
 	  }
 	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/alabatling",
+	  "value": 	  
+	  {
+	    "order" : 104,
+	    "monsterType" : "starforge-alabatling",
+	    "icon" : "/monsters/flyers/alabatling/alabatlingicon.png"
+	  }
+	},
+	
 	{
 	  "op": "add",
 	  "path": "/collectables/cephaloworm",
 	  "value": 	  
 	  {
-	    "order" : 104,
+	    "order" : 105,
 	    "monsterType" : "starforge-cephaloworm",
 	    "icon" : "/monsters/flyers/cephaloworm/cephalowormicon.png"
 	  }

@@ -60,7 +60,7 @@
 		"time" : "all"
       },
       "groupSize" : [1, 1],
-      "spawnChance" : 0.02,
+      "spawnChance" : 0.015,
       "monsterType" : [
       [1, "pyreaper"]
     ],
@@ -77,7 +77,7 @@
 		"time" : "all"
       },
       "groupSize" : [1, 1],
-      "spawnChance" : 0.01,
+      "spawnChance" : 0.005,
       "monsterType" : [
       [1, "starforge-panthyre"]
     ],

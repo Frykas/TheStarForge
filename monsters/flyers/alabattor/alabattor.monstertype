@@ -1,14 +1,14 @@
 {
   "type" : "starforge-alabattor",
   "shortdescription" : "alabattor",
-  "description" : "A funny bat.",
+  "description" : "An adult bat from the Yukai homeworld. They swarm their prey with their youngs.",
 
   "categories" : [ "alabattor" ],
   "parts" : [ "body" ],
 
   "animation" : "alabattor.animation",
-
-  "dropPools" : [ ],
+  
+  "dropPools" : [ { "default" : "alabattorTreasure" } ],
 
   "baseParameters" : {
     "scripts" : [

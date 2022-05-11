@@ -2,7 +2,7 @@
     "type": "starforge-unboundvanguard",
     "baseType": "hostile",
 	
-	"scripts" : ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+	"scripts" : ["/npcs/bmain.lua"],
 	"initialScriptDelta" : 5,
  
     "dropPools": ["unboundVanguardTreasure"],
@@ -13,7 +13,6 @@
 	},
  
     "scriptConfig" : {
-	  "bossName" : "Unbound Vanguard",
 	  
         "dialog": {
             "attack": {

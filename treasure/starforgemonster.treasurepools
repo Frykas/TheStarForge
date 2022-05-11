@@ -64,6 +64,34 @@
     }]
   ],
   
+  "alabattorTreasure" : [
+    [1, {
+      "pool" : [
+	    {"weight" : 0.99, "pool" : "money"},
+		{"weight" : 0.01, "item" : "starforge-alabattoraf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "alabatlingTreasure" : [
+    [1, {
+      "pool" : [
+	    {"weight" : 0.99, "pool" : "money"},
+		{"weight" : 0.01, "item" : "starforge-alabatlingaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
   "panthyreTreasure" : [
     [1, {
       "pool" : [
