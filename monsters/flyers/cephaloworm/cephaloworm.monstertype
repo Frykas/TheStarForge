@@ -18,6 +18,7 @@
     "rotationOffset" : 0.0,
 
     "behavior" : "monster",
+	"deathBehavior" : "monster-death",
 
     "seeThroughLiquid" : false,
     "behaviorConfig" : {
@@ -106,9 +107,9 @@
             "projectileCount" : 1,
             "projectileType" : "starforge-cephalowormshell",
             "projectileParameters" : {},
-            "aimDirection" : [-1, 2],
+            "aimDirection" : [0.125, 1],
             "inaccuracy" : 0,
-            "fireOffset" : [0, 0.4]
+            "fireOffset" : [0, 0]
           }
         }
       ],

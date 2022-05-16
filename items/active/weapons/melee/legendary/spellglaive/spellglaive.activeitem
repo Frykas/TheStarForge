@@ -1,0 +1,226 @@
+{
+  "itemName" : "starforge-yukaispellglaive",
+  "price" : 600,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A Yukai glaive, capable of firing strong blasts of energy from its blade.",
+  "shortdescription" : "Spellslinger",
+  "tooltipKind" : "base",
+  "category" : "Spellglaive",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","glaive","spear"],
+
+  "inventoryIcon" : "spellglaive.png",
+
+  "animation" : "spellglaive.animation",
+  "animationParts" : {
+    "blade" : "spellglaive.png",
+	"bladeFullbright" : "spellglaivefullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_broadsword.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+  
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "baseDps" : 8.0,
+	
+	"comboSteps" : 4,
+	
+"damageConfig" : {
+      "damageSourceKind" : "bow",
+      "knockbackMode" : "aim",
+      "statusEffects" : [ "starforge-bleeding" ],
+      "timeout" : 0.25
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 0.85,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.85,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.25,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.65,
+        "knockback" : 30
+      }
+    ],
+	
+    "comboSpeedFactor" : 0.90,
+	
+	"stances" : {
+      //IDLE - DEFAULT
+	  "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0.5],
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.075,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.15,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.075,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash2" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.15,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 0.625],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash3" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire3" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.15,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 4
+      "windup4" : {
+        "duration" : 0.3,
+        "armRotation" : -110,
+        "weaponRotation" : -150,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire4" : {
+        "duration" : 0.25,
+        "armRotation" : -30,
+        "weaponRotation" : -250,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.375],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

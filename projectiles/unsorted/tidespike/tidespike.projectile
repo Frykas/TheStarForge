@@ -17,7 +17,8 @@
   "power" : 5.0,
   "speed" : 50,
   "damageKind" : "starforge-tidalfrost",
-  "emitters" : [ "iceplasmarocket" ],
+  "emitters" : [ "iceplasmarocket", "smoke" ],
+  "timeToLive" : 0.95,
 
   "renderLayer" : "Monster+50"
 }

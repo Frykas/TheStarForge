@@ -12,7 +12,7 @@
   "timeToLive" : 100,
   "bounces" : 3,
   "flippable" : true,
-  "orientationLocked" : true,
+  "orientationLocked" : false,
 
   "actionOnCollide" : [
     {
