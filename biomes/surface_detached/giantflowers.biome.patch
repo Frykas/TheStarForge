@@ -25,6 +25,21 @@
         "type" : "microdungeon",
         "microdungeons" : [ "yukaihut" ]
       }
+    },
+  
+  {
+  
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-mothon"
+        ]
+      ]
     }
+  }
 	
 	]

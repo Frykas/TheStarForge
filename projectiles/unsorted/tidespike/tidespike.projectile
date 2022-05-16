@@ -16,7 +16,7 @@
   ],
   "power" : 5.0,
   "speed" : 50,
-  "damageKind" : "bow",
+  "damageKind" : "starforge-tidalfrost",
   "emitters" : [ "iceplasmarocket" ],
 
   "renderLayer" : "Monster+50"

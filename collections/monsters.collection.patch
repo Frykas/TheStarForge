@@ -59,9 +59,20 @@
 	  "path": "/collectables/cephaloworm",
 	  "value": 	  
 	  {
-	    "order" : 105,
+	    "order" : 106,
 	    "monsterType" : "starforge-cephaloworm",
 	    "icon" : "/monsters/flyers/cephaloworm/cephalowormicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/mothon",
+	  "value": 	  
+	  {
+	    "order" : 105,
+	    "monsterType" : "starforge-mothon",
+	    "icon" : "/monsters/flyers/mothon/mothonicon.png"
 	  }
 	}
 ]

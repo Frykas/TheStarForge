@@ -84,6 +84,23 @@
       "monsterParameters" : {
         "aggressive" : true
       }
+    },
+	
+	{
+	  "name" : "starforge-mothon",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "exposed",
+		"time" : "night"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.03,
+      "monsterType" : [
+      [1, "starforge-mothon"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : false
+      }
     }
   
   ]

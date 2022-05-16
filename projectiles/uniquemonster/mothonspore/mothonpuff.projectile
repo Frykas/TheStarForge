@@ -1,0 +1,16 @@
+{
+  "projectileName" : "starforge-mothonpuff",
+  "physics" : "fireworkfall",
+  "image" : "mothonpuff.png",
+  "frameNumber" : 1,
+  "animationCycle" : 0.8,
+  "timeToLive" : 10,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "power" : 5.0,
+  "orientationLocked" : true,
+  "statusEffects" : [
+    "staffslow"
+  ],
+  "damageKind" : "default"
+}

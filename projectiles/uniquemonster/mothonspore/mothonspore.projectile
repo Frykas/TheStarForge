@@ -1,0 +1,24 @@
+{
+  "projectileName" : "starforge-mothonspore",
+  "physics" : "grenade",
+  "image" : "mothonspore.png",
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 1,
+      "type" : "starforge-mothonpuff",
+      "direction" : [1,0],
+      "config" : {
+        "speed" : 0
+      }
+    }
+  ],
+  "power" : 5.0,
+  "timeToLive" : 0.35,
+  "speed" : 25,
+  "orientationLocked" : true,
+  "damageKind" : "default"
+}
