@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-tidejellyjuvenile",
+  "category" : "tidejellyjuvenile",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

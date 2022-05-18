@@ -13,11 +13,11 @@
         ]
       },
       {
-        "select" : 2,
+        "select" : 4,
         "pool" : [
           [ 1.00, "starforge-tidamprey" ],
           [ 1.00, "starforge-tidejelly" ],
-          [ 0.25, "yeticritter" ],
+          [ 1.00, "starforge-tidejellyjuvenile" ],
           [ 0.25, "redbreastcritter" ]
         ]
       }
@@ -89,21 +89,6 @@
         "objectSets" : [
           {
             "pool" : [ [1.0, "starforge-jellycaptree1" ], [1.0, "starforge-jellycaptree2" ], [1.0, "starforge-jellycaptree3" ], [1.0, "starforge-jellycaptree4" ], [1.0, "starforge-jellycaptree5" ] ],
-            "parameters" : { }
-          }
-        ]
-      },
-	  
-	  {
-        "mode" : "floor",
-        "priority" : 3.0,
-        "variants" : 1,
-        "distribution" : "/biomes/tidetreedistribution.config:starforge-tidetreedistrib1",
-
-        "type" : "object",
-        "objectSets" : [
-          {
-            "pool" : [ [1.0, "starforge-jadedippedtree1" ] ],
             "parameters" : { }
           }
         ]

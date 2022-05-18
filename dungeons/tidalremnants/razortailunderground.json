@@ -220,7 +220,7 @@
                         {
                          "name":"monster",
                          "type":"string",
-                         "value":"starforge-tidejellycritter"
+                         "value":"starforge-tidejellyjuvenilecritter"
                         }],
                  "rotation":0,
                  "type":"",
@@ -237,7 +237,7 @@
                         {
                          "name":"monster",
                          "type":"string",
-                         "value":"starforge-tidejellycritter"
+                         "value":"starforge-tidejellyjuvenilecritter"
                         }],
                  "rotation":0,
                  "type":"",
@@ -254,7 +254,7 @@
                         {
                          "name":"monster",
                          "type":"string",
-                         "value":"starforge-tidejellycritter"
+                         "value":"starforge-tidejellyjuvenilecritter"
                         }],
                  "rotation":0,
                  "type":"",
