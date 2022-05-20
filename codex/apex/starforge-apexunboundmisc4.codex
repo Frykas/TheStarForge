@@ -3,7 +3,7 @@
   "species" : "apex",
   "title" : "Sudden Change",
   "description" : "A Vanguard data pad, containing confidential information.",
-  "icon" : "vanguarddatapad.png",
+  "icon" : "starforge-vanguarddatapad.png",
   "contentPages" : [
 
 "Status update to all VANGUARD units.
