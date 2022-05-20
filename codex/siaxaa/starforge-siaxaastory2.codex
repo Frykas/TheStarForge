@@ -1,0 +1,16 @@
+{
+  "id" : "starforge-siaxaastory2",
+  "species" : "avian",
+  "title" : "^red;The Maiden and the vision^reset; - II",
+  "description" : "The origins of the people of Siaxaa. ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "starforge-siaxaacover1.png",
+  "contentPages" : [
+
+"^gray;The content of this codex is not ready to be read just yet...^reset;"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 800
+  }
+}

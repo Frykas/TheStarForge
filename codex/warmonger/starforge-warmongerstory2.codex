@@ -1,0 +1,16 @@
+{
+  "id" : "starforge-warmongerstory2",
+  "species" : "apex",
+  "title" : "^#80F4FF;Apex Data Pad^reset; - II",
+  "description" : "The story of those who stand against the storm. ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "starforge-warmongercover1.png",
+  "contentPages" : [
+
+"^gray;The content of this codex is not ready to be read just yet...^reset;"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 800
+  }
+}
