@@ -3,7 +3,7 @@
   "species" : "apex",
   "title" : "Thermite Weaponry",
   "description" : "Development notes regarding Unbound weaponry.",
-  "icon" : "unboundresearchpad.png",
+  "icon" : "starforge-unboundresearchpad.png",
   "contentPages" : [
 
 "We have finally perfected the development of Thermite Weaponry. Thermites rockets are ready to use by the Heavy Division, they produce enough heat to start melting most metals. We are still trying to make it so even Durasteel will melt, but for now Starvia deemed the current state satisfying.",
