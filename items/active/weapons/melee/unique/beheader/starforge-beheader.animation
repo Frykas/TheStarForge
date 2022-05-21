@@ -160,7 +160,7 @@
         "properties" : {
           "zLevel" : -1,
           "centered" : true,
-          "fullbright" : true,
+          "fullbright" : false,
           "transformationGroups" : ["swoosh"],
           "rotationCenter" : [0, 0]
         },

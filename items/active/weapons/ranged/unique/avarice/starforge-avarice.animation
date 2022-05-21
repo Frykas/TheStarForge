@@ -57,7 +57,7 @@
           "transformationGroups" : ["weapon"]
         },
         "partStates" : {
-          "weapon" : {
+          "gun" : {
             "unloaded" : {
               "properties" : {
                 "image" : "<partImage>:reload.1<paletteSwaps>"

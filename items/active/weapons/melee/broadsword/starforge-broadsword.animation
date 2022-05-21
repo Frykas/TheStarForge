@@ -169,8 +169,9 @@
   },
 
   "sounds" : {
-    "fire" : [ ],
-    "fire2" : [ ],
-    "fire3" : [ ]
+    "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+    "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
+    "fire3" : [ "/sfx/melee/swing_broadsword.ogg" ],
+    "fire4" : [ "/sfx/melee/swing_spear.ogg" ]
   }
 }
