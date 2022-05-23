@@ -32,28 +32,29 @@
 
   "elementalType" : "starforge-tidalfrost",
 
-  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbilityType" : "starforge-broadswordcombo",
   "primaryAbility" : {
     "baseDps" : 8.0,
 	
 	"comboSteps" : 4,
 	
-  "damageConfig" : {
+    "damageConfig" : {
       "damageSourceKind" : "starforge-tidalfrost",
       "knockbackMode" : "aim",
-      "timeout" : 0.25
+      "timeout" : 0.25,
+	  "statusEffects" : []
     },
     "stepDamageConfig" : [
       {
-        "baseDamageFactor" : 0.6,
+        "baseDamageFactor" : 0.45,
         "knockback" : 1
       },
       {
-        "baseDamageFactor" : 0.6,
+        "baseDamageFactor" : 0.45,
         "knockback" : 1
       },
       {
-        "baseDamageFactor" : 0.6,
+        "baseDamageFactor" : 0.45,
         "knockback" : 1
       },
       {
@@ -76,11 +77,13 @@
       },
 	  //COMBO STEP 1
       "windup1" : {
-        "duration" : 0.075,
+        "duration" : 0.025,
         "armRotation" : -110,
         "weaponRotation" : 20,
         "twoHanded" : true,
         "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -91,37 +94,46 @@
         "weaponRotation" : 20,
         "twoHanded" : true,
         "weaponOffset" : [0.5, 1.0],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "fire1" : {
-        "duration" : 0.15,
+        "duration" : 0.075,
         "armRotation" : -30,
         "weaponRotation" : -70,
         "twoHanded" : true,
         "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
+		"continueStep" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "wait1" : {
-        "duration" : 0.1,
+        "duration" : 0.075,
         "armRotation" : -30,
         "weaponRotation" : -70,
         "twoHanded" : true,
         "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : false,
         "allowFlip" : false
       },
 	  //COMBO STEP 2
       "windup2" : {
-        "duration" : 0.075,
+        "duration" : 0.05,
         "armRotation" : -110,
         "weaponRotation" : 20,
         "twoHanded" : true,
         "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -132,16 +144,21 @@
         "weaponRotation" : 20,
         "twoHanded" : true,
         "weaponOffset" : [0, 1.0],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "fire2" : {
-        "duration" : 0.15,
+        "duration" : 0.075,
         "armRotation" : -20,
         "weaponRotation" : -70,
         "twoHanded" : true,
         "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
+		"continueStep" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
@@ -152,17 +169,21 @@
         "weaponRotation" : -70,
         "twoHanded" : true,
         "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : false,
         "allowFlip" : false
       },
 	  //COMBO STEP 3
       "windup3" : {
-        "duration" : 0.075,
+        "duration" : 0.05,
         "armRotation" : -110,
         "weaponRotation" : 20,
         "twoHanded" : true,
         "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -173,16 +194,20 @@
         "weaponRotation" : 20,
         "twoHanded" : true,
         "weaponOffset" : [0.5, 1.0],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "fire3" : {
-        "duration" : 0.15,
+        "duration" : 0.075,
         "armRotation" : -30,
         "weaponRotation" : -70,
         "twoHanded" : true,
         "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : false,
         "allowFlip" : false
@@ -193,6 +218,8 @@
         "weaponRotation" : -70,
         "twoHanded" : true,
         "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
 
         "allowRotate" : false,
         "allowFlip" : false

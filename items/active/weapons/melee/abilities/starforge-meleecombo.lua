@@ -3,6 +3,7 @@ StarforgeMeleeCombo = WeaponAbility:new()
 
 function StarforgeMeleeCombo:init()
   self.comboStep = 1
+  animator.setGlobalTag("comboDirectives", "")
 
   self.energyUsage = self.energyUsage or 0
 
@@ -53,6 +54,16 @@ end
 -- State: windup
 function StarforgeMeleeCombo:windup()
   local stance = self.stances["windup"..self.comboStep]
+  animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
+  
+  -- Optionally flash the weapon
+  if stance.flashTime then
+	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+  end
+  -- Optional Emotes
+  if stance.emote then
+	activeItem.emote(stance.emote)
+  end
 
   self.weapon:setStance(stance)
 
@@ -81,6 +92,16 @@ end
 -- waiting for next combo input
 function StarforgeMeleeCombo:wait()
   local stance = self.stances["wait"..(self.comboStep - 1)]
+  animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
+  
+  -- Optionally flash the weapon
+  if stance.flashTime then
+	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+  end
+  -- Optional Emotes
+  if stance.emote then
+	activeItem.emote(stance.emote)
+  end
 
   self.weapon:setStance(stance)
 
@@ -91,6 +112,7 @@ function StarforgeMeleeCombo:wait()
     end
   end)
 
+  animator.setGlobalTag("comboDirectives", "")
   self.cooldownTimer = math.max(0, self.cooldowns[self.comboStep - 1] - stance.duration)
   self.comboStep = 1
 end
@@ -99,6 +121,7 @@ end
 -- brief frame in between windup and fire
 function StarforgeMeleeCombo:preslash()
   local stance = self.stances["preslash"..self.comboStep]
+  animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
 
   self.weapon:setStance(stance)
   self.weapon:updateAim()
@@ -111,6 +134,16 @@ end
 -- State: fire
 function StarforgeMeleeCombo:fire()
   local stance = self.stances["fire"..self.comboStep]
+  animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
+  
+  -- Optionally flash the weapon
+  if stance.flashTime then
+	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+  end
+  -- Optional Emotes
+  if stance.emote then
+	activeItem.emote(stance.emote)
+  end
 
   self.weapon:setStance(stance)
   self.weapon:updateAim()
@@ -123,15 +156,51 @@ function StarforgeMeleeCombo:fire()
   animator.setParticleEmitterOffsetRegion(swooshKey, self.swooshOffsetRegions[self.comboStep])
   animator.burstParticleEmitter(swooshKey)
 
-  util.wait(stance.duration, function()
-    local damageArea = partDamageArea("swoosh")
-    self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
-  end)
+  -- If this step is configured as a "spin" move, spin the weapon
+  if stance.spinRate then
+	util.wait(stance.duration, function()
+	  local damageArea = partDamageArea("swoosh")
+	  self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
+	
+	  -- Remove the weapon from the player's hand, allowing it to rotate freely
+	  activeItem.setOutsideOfHand(true)
+	
+	  -- Spin the weapon
+	  self.weapon.relativeWeaponRotation = self.weapon.relativeWeaponRotation + util.toRadians(stance.spinRate * self.dt)
+	
+	  -- Optionally force the player to walk while in this stance
+	  if stance.forceWalking then
+		mcontroller.controlModifiers({runningSuppressed=true})
+	  end
+	  
+	  -- Optionally freeze the player in place if so configured
+	  if stance.freezePlayer then
+		mcontroller.setVelocity({0,0})
+	  end
+	end)
+	animator.setAnimationState("swoosh", "idle")
+  -- If this step is a regular attack, simply set the damage area for the duration of the step
+  else
+	util.wait(stance.duration, function()
+	  local damageArea = partDamageArea("swoosh")
+	  self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
+	  
+	  --Optionally freeze the player in place if so configured
+	  if stance.freezePlayer then
+		mcontroller.setVelocity({0,0})
+	  end
+	end)
+  end
+  
+  if stance.continueStep then
+    self.edgeTriggerTimer = self.edgeTriggerGrace
+  end
 
   if self.comboStep < self.comboSteps then
     self.comboStep = self.comboStep + 1
     self:setState(self.wait)
   else
+    animator.setGlobalTag("comboDirectives", "")
     self.cooldownTimer = self.cooldowns[self.comboStep]
     self.comboStep = 1
   end
@@ -145,6 +214,11 @@ function StarforgeMeleeCombo:shouldActivate()
       return self.fireMode == (self.activatingFireMode or self.abilitySlot)
     end
   end
+end
+
+function StarforgeMeleeCombo:animatedFlash(flashTime, flashDirectives)
+  animator.setGlobalTag("bladeDirectives", flashDirectives)
+  self.flashTimer = flashTime or self.flashTime
 end
 
 function StarforgeMeleeCombo:readyFlash()

@@ -52,7 +52,7 @@
         "properties" : {
           "zLevel" : 0,
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
+          "image" : "<partImage><comboDirectives><paletteSwaps>?<directives>?<bladeDirectives>",
           "offset" : [0.125, 1.0],
           "transformationGroups" : ["weapon"],
           "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]]
