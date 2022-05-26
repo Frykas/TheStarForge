@@ -16,9 +16,9 @@
  "margin":0,
  "name":"furouraltar",
  "spacing":0,
- "tilecount":15,
+ "tilecount":16,
  "tiledversion":"1.4.3",
- "tileheight":40,
+ "tileheight":120,
  "tileproperties":
     {
      "0":
@@ -89,6 +89,16 @@
          "imagePositionX":"-24",
          "imagePositionY":"0",
          "object":"starforge-yukaishop",
+         "tilesetDirection":"right"
+        },
+     "15":
+        {
+         "\/\/description":"A big tree originating from the realm of the Tide. The Yukai seem to use it for rituals.",
+         "\/\/name":"starforge-yukaitidetree",
+         "\/\/shortdescription":"Great Tide Tree",
+         "imagePositionX":"-64",
+         "imagePositionY":"0",
+         "object":"starforge-yukaitidetree",
          "tilesetDirection":"right"
         },
      "2":
@@ -244,6 +254,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "15":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "2":
         {
          "\/\/description":"string",
@@ -369,6 +389,12 @@
          "imageheight":40,
          "imagewidth":49
         },
+     "15":
+        {
+         "image":"yukaitidetree.png",
+         "imageheight":120,
+         "imagewidth":98
+        },
      "2":
         {
          "image":"spiritree2.png",
@@ -418,7 +444,7 @@
          "imagewidth":8
         }
     },
- "tilewidth":49,
+ "tilewidth":98,
  "type":"tileset",
  "version":1.1
 }

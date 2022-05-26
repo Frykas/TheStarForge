@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unboundtiles",
  "spacing":0,
- "tilecount":6,
+ "tilecount":8,
  "tiledversion":"1.4.3",
  "tileheight":8,
  "tileproperties":
@@ -62,6 +62,20 @@
          "\/\/name":"starforge-yukairoofing",
          "\/\/shortdescription":"Yukai Roofing",
          "material":"starforge-yukairoofing"
+        },
+     "6":
+        {
+         "\/\/description":"An otherworldly ice that doesn't melt.",
+         "\/\/name":"starforge-tideice",
+         "\/\/shortdescription":"Tidal Ice",
+         "material":"starforge-tideice"
+        },
+     "7":
+        {
+         "\/\/description":"This strange rock comes from another realm",
+         "\/\/name":"starforge-tiderock",
+         "\/\/shortdescription":"Tidal Rock",
+         "material":"starforge-tiderock"
         }
     },
  "tilepropertytypes":
@@ -107,6 +121,20 @@
          "\/\/name":"string",
          "\/\/shortdescription":"string",
          "material":"string"
+        },
+     "6":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "material":"string"
+        },
+     "7":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "material":"string"
         }
     },
  "tiles":
@@ -144,6 +172,18 @@
      "5":
         {
          "image":"yukairooftiles.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "6":
+        {
+         "image":"tidalice.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "7":
+        {
+         "image":"tidalrock.png",
          "imageheight":8,
          "imagewidth":8
         }

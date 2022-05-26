@@ -1,0 +1,13 @@
+{
+  "itemName" : "starforge-tideice",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "common",
+  "inventoryIcon" : "tideice.png",
+  "shortdescription" : "Tidal Ice Block",
+  "description" : "An otherworldly ice that doesn't melt.",
+  "glitchDescription" : "Attentive. This ice is quite peculiar.",
+  "floranDescription" : "Floran hatesss poking weird ice.",
+
+  "materialId" : 2909
+}

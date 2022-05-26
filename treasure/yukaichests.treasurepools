@@ -53,7 +53,25 @@
       ],
       "allowDuplication" : false
     }]
-  ]
+  ],
+  
+  "starforge-yukaiashenwitchTreasure" : [
+    [1, {
+      "fill" : [
+        {"weight" : 0.7, "pool" : "money"},
+		{"weight" : 1, "item" : "starforge-yukaitear"},
+        {"weight" : 1, "item" : ["starforge-yukaipearl", 2]}
+      ],
+	  "pool" : [
+		{"weight" : 1, "item" : "starforge-tidalremnantmicroformer"}
+	],
+      "poolRounds" : [
+        [0.25, 1],
+        [0.75, 0]
+      ],
+      "allowDuplication" : false
+    }]
+]
      
   }
   

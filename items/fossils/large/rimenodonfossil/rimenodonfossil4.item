@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-rimenodonfossil4",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Rimenodon Back Fins",
+  "description" : "Fossilised Rimenodon back fins.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "rimenodonfossil4icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/rimenodonfossil/rimenodonfossil4.png",
+  "displayoffset" :[-5.5, -0.4],
+
+  "fossilSetName" : "rimenodon",
+  "setIndex" : 4,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

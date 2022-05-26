@@ -11,6 +11,17 @@
   },
   
   { "op": "add", 
+	"path": "/collectables/rimenodon",
+	"value":	 
+	{
+	  "order" : 33,
+	  "title" : "Rimenodon Fossil",
+	  "description" : "Called the \"Hunter's Bane\" by Yukai Hylotls, this large Tide predator is as deadly as it is elusive.",
+	  "icon" : "/items/fossils/large/rimenodonfossil/rimenodonfossilhead.png"
+	}
+  },
+  
+  { "op": "add", 
 	"path": "/collectables/tidefragment",
 	"value":	 
 	{

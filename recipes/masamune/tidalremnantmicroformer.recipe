@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaitear", "count" : 1},
+	{ "item" : "essence", "count" : 1500},
+    { "item" : "starforge-yukaipearl", "count" : 3},
+	{ "item" : "starforge-tidalfragment", "count" : 50}
+  ],
+  "output" : {
+    "item" : "starforge-tidalremnantmicroformer",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "material" ],
+  "duration" : 0
+}
+

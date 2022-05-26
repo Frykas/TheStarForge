@@ -1,0 +1,162 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "baseState" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {
+            "frames" : 1,
+            "properties" : {
+              "lightsOn" : ["inactiveGlow"],
+              "lightsOff" : ["activeGlow"]
+            }
+          },
+          "activate" : {
+            "frames" : 2,
+            "cycle" : 0.25,
+            "mode" : "transition",
+            "transition" : "active",
+            "properties" : {
+              "immediateSound" : "/sfx/melee/elemental_aura_activate.ogg",
+              "persistentSound" : "/sfx/objects/terraformer_small_loop.ogg",
+              "persistentSoundRangeMultiplier" : 0.5,
+              "persistentSoundStopTime" : 0.2,
+              "lightsOff" : ["inactiveGlow"],
+              "lightsOn" : ["activeGlow"]
+            }
+          },
+          "active" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/objects/terraformer_small_loop.ogg",
+              "persistentSoundRangeMultiplier" : 0.5,
+              "persistentSoundStopTime" : 0.2,
+              "lightsOff" : ["inactiveGlow"],
+              "lightsOn" : ["activeGlow"]
+            }
+          },
+          "deactivate" : {
+            "frames" : 2,
+            "cycle" : 0.25,
+            "mode" : "transition",
+            "transition" : "depleted",
+            "properties" : {
+              "immediateSound" : "/sfx/objects/terraformer_deactivate.ogg",
+              "lightsOn" : ["inactiveGlow"],
+              "lightsOff" : ["activeGlow"]
+            }
+          },
+          "depleted" : {
+            "frames" : 1,
+            "properties" : {
+			  "immediateSound" : "/sfx/objects/prism_break_large1.ogg",
+              "lightsOff" : ["activeGlow", "inactiveGlow"]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "base" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "baseState" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive"
+              }
+            },
+
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            },
+
+            "depleted" : {
+              "properties" : {
+                "image" : "<partImage>:depleted"
+              }
+            }
+          }
+        }
+      },
+      "baseFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "fullbright" : true,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "baseState" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive"
+              }
+            },
+
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            },
+
+            "depleted" : {
+              "properties" : {
+                "image" : "<partImage>:depleted"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "lights" : {
+    "inactiveGlow" : {
+      "active" : true,
+      "position" : [2.5, 2.0],
+      "color" : [33, 30, 96]
+    },
+    "activeGlow" : {
+      "active" : false,
+      "position" : [2.5, 3.0],
+      "color" : [87, 41, 136]
+    }
+  },
+
+  "particleEmitters" : {},
+
+  "sounds" : {}
+}

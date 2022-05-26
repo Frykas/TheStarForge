@@ -30,7 +30,7 @@
   "hueShiftOptions" : [ 0 ],
 
   "mainBlock" : "starforge-tiderock",
-  "subBlocks" : [ "ice", "crystalblock" ],
+  "subBlocks" : [ "ice", "starforge-tideice" ],
   "ores" : "surface",
   
   "skyOptions" : [
