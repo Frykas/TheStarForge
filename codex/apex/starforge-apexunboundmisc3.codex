@@ -1,0 +1,21 @@
+{
+  "id" : "starforge-apexunboundmisc3",
+  "species" : "apex",
+  "title" : "Status Report",
+  "description" : "A data pad that belonged to an Unbound Commando.",
+  "icon" : "starforge-unbounddatapad.png",
+  "contentPages" : [
+
+"- UNBD COMMANDO Veska R. Reporting to HQ -
+
+Operation is going smoothly, we have seized numerous artefacts alongside a good amount of resources. UNBD OFFICER Ralek was confirmed MIA, awaiting orders from VANGUARD HQ. Until then, I will keep my men on standby near operation ground.
+Glory to the Unbound."
+
+
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 100
+  }
+}

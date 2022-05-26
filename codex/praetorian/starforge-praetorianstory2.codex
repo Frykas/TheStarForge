@@ -1,0 +1,16 @@
+{
+  "id" : "starforge-praetorianstory2",
+  "species" : "human",
+  "title" : "^yellow;The Praetorian Project^reset; - II",
+  "description" : "How far are you willing to go for revenge? ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "starforge-praetoriancover1.png",
+  "contentPages" : [
+
+"^gray;The content of this codex is not ready to be read just yet...^reset;"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 800
+  }
+}

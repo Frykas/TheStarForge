@@ -1,0 +1,18 @@
+{
+  "id" : "starforge-onikabutolore",
+  "title" : "Research : Onikabutos",
+  "description" : "A research conducted by Krythers regarding Onikabutos.",
+  "icon" : "starforge-onikabutolore.png",
+  "contentPages" : [
+
+"During some of our explorations, we found an extremely rare species of giant beetles known as \"Onikabutos\". It seems that Yukai Hylotls have been taming and breeding them, increasing their numbers. On magma planets, we encountered a lot of wild ones.",
+"Male Onikabutos are a lot smaller than the females, and have a pretty, white horn that they use to fight against eachother. The female lacks the horn, but is also a lot bigger. Females have a special gland that allows them to heat up their claws up to incredible temperatures, using them to defend themselves.",
+"They eat all kinds of things, I observed them eat creature corpses, and even Ember Coral, usually harvested by the Yukai for their ornaments. Their shells are also pretty hard and heat resistant, some of the strongest Yukai warriors wear them as armors.",
+"I think they are tamed by the Yukai for their capacity to pull a lot of weight, but it wouldn't be surprising for them to use Onikabutos as hunting partners too, leaving the beetle as bait, which will resist most predator attacks, to then surprise it with a sneak attack."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 10
+  }
+}
