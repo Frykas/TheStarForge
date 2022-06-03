@@ -1,14 +1,15 @@
 {
   "itemName" : "starforge-rifterpants",
   "price" : 3000,
-  "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legwear",
   "description" : "Knowing the limits of reality only pushed her to find a way to break them.",
   "shortdescription" : "^#9BBA3D;UNBD^reset; Rifter's Curse^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "tooltipKind" : "starforge-exalted",
+
+  "inventoryIcon" : "/items/armors/unbound/boss/rifter/icons.png:pants",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",

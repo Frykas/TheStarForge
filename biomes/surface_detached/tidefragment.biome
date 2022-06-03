@@ -26,6 +26,15 @@
       "colors" : "snow"
     }
   },
+  
+   "musicTrack" : {
+    "day" : {
+      "tracks" : [  "/music/Tidal_Depths.ogg" ]
+    },
+    "night" : {
+      "tracks" : [  "/music/Tidal_Depths.ogg" ]
+    }
+  },
 
   "hueShiftOptions" : [ 0 ],
 
@@ -236,7 +245,7 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1.0, "starforge-jadedippedtree1" ] ],
+            "pool" : [ [0.33, "starforge-jadedippedtree1" ], [0.33, "starforge-jadedippedtree2" ], [0.33, "starforge-jadedippedtree3" ] ],
             "parameters" : { }
           }
         ]

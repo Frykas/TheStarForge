@@ -14,7 +14,7 @@
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {
     "texture" : "tideice.png",
-    "variants" : 1,
+    "variants" : 3,
     "lightTransparent" : false,
     "occludesBelow" : false,
     "multiColored" : true,

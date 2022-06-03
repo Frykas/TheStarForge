@@ -91,6 +91,24 @@
 	},
 	
 	{
+		"op": "add",
+		"path": "/starforge-eleuthia1",
+		"value": {
+			"primaryDungeon" : "starforge-eleuthia1",
+
+            "threatLevel" : 4,
+			"biome" : "starforge-eleuthia",
+            "gravity" : 80,
+            "worldSize" : [1000, 300],
+            "dungeonBaseHeight" : 400,
+            "dungeonSurfaceHeight" : 170,
+            "ambientLightLevel" : [128, 128, 128],
+            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
+            "musicTrack" : "/music/yukai_march.ogg"
+	}
+	},
+	
+	{
     "op" : "add",
     "path" : "/unboundship1",
     "value" : {

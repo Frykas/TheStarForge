@@ -1,0 +1,42 @@
+{
+  "objectName" : "starforge-jadedippedtree3",
+  "rarity" : "common",
+
+  "printable" : false,
+  "description" : "A Jade-Dipped Limunus tree, originating from the realm of the Tide.",
+  "shortdescription" : "Jade-Dipped Limunus Tree",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 5,
+
+  "apexDescription" : "This tree has many branches.",
+  "avianDescription" : "I wonder what produce the lights on them!",
+  "floranDescription" : "Floran doesssn't like thisss tree. Weird feelingsss.",
+  "glitchDescription" : "Curious. I wonder what caused this tree to evolve like this.",
+  "humanDescription" : "I've never seen trees like this in the galaxy, I wonder where it comes from?",
+  "hylotlDescription" : "A Jade-Dipped tree. It looks like it belongs underwater, well, kinda like everything from the Tide.",
+  "novakidDescription" : "Never seen a tree like this before.",
+
+  
+  "lightColor" : [61, 118, 83],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "jadedipped3.png",
+      "imageLayers" : [ { "image" : "jadedipped3.png" }, { "image" : "jadedipped3fullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 3]
+    }
+   ]
+   
+   }
