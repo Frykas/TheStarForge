@@ -1,5 +1,5 @@
 {
-  "itemName" : "starforge-yukaispellglaive",
+  "itemName" : "starforge-spellslinger",
   "price" : 600,
   "level" : 6,
   "maxStack" : 1,
@@ -11,11 +11,11 @@
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","glaive","spear"],
 
-  "inventoryIcon" : "spellglaive.png",
+  "inventoryIcon" : "spellslinger.png",
 
-  "animation" : "spellglaive.animation",
+  "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
   "animationParts" : {
-    "blade" : "spellglaive.png",
+    "blade" : "spellslinger.png",
 	"bladeFullbright" : "spellglaivefullbright.png"
   },
   "animationCustom" : {
