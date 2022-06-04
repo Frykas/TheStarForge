@@ -54,6 +54,7 @@ function castBoltMultiple(targets, lightning)
 	  if entity.entityInSight(target) and world.entityCanDamage(self.hostEntity, target) and world.entityExists(target) then		
 	    --Deal damage
 	    local damageRequest = {
+		  damageType = "Damage",
 		  damage = self.power,
 		  damageSourceKind = self.damageKind,
 		  sourceEntityId = self.hostEntity

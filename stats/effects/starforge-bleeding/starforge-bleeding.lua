@@ -7,6 +7,7 @@ function init()
     {stat = "jumpModifier", amount = (self.movementMultiplier - 1)}
   })
   
+  self.movementDamageFactor = config.getParameter("movementDamageFactor", 0.5)
   self.tickDamagePercentage = config.getParameter("tickDamagePercentage", 0.01)
   self.tickTime = config.getParameter("tickTime", 1)
   self.tickTimer = self.tickTime
@@ -19,10 +20,10 @@ function update(dt)
 	airJumpModifier = self.movementMultiplier
   })
   
-  self.tickTimer = self.tickTimer - dt
+  self.tickTimer = self.tickTimer - dt  
   if self.tickTimer <= 0 then
     --Calculate tick damage
-    local tickDamage = math.min(math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1, 20)
+    local tickDamage = math.min(math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1, world.magnitude(mcontroller.velocity())) + (world.magnitude(mcontroller.velocity()) * self.movementDamageFactor)
 	
     self.tickTimer = self.tickTime
 	status.applySelfDamageRequest({
@@ -33,6 +34,6 @@ function update(dt)
     })
   end
 
-  self.fade = string.format("=%.1f", self.tickTimer * 0.4)
+  self.fade = string.format("=%.1f", self.tickTimer * 0.5)
   effect.setParentDirectives(config.getParameter("directives", "") .. self.fade)
 end

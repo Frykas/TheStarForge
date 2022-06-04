@@ -41,7 +41,7 @@
   ],
   "damageType" : "damage",
   "damageKind" : "broadsword",
-  "statusEffects" : [],
+  "statusEffects" : ["starforge-bleeding"],
 
   "scripts" : ["/projectiles/scripts/starforge-lightningbolt.lua"],
   "scriptDelta" : 1,

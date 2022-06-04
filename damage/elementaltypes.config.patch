@@ -3,7 +3,7 @@
   { "op" : "add",
 	"path" : "/starforge-wither",
 	"value" : {
-	  "resistanceStat" : "poisonResistance",
+	  "resistanceStat" : "starforge-witherResistance",
 	  "damageNumberParticles" : {
 		"hit" : "starforge-witherdamagenumber",
 		"stronghit" : "starforge-witherdamagenumberstrong",
@@ -17,13 +17,27 @@
   { "op" : "add",
 	"path" : "/starforge-tidalfrost",
 	"value" : {
-	  "resistanceStat" : "tidalfrostResistance",
+	  "resistanceStat" : "starforge-tidalfrostResistance",
 	  "damageNumberParticles" : {
 		"hit" : "starforge-tidalfrostdamagenumber",
 		"stronghit" : "starforge-tidalfrostdamagenumberstrong",
 		"weakhit" : "starforge-tidalfrostdamagenumberweak",
 		"shieldhit" : "starforge-tidalfrostdamagenumber",
 		"kill" : "starforge-tidalfrostdamagenumber"
+	  }
+	}
+  },
+  //GODFLAME
+  { "op" : "add",
+	"path" : "/starforge-godflame",
+	"value" : {
+	  "resistanceStat" : "starforge-godflameResistance",
+	  "damageNumberParticles" : {
+		"hit" : "starforge-godflamedamagenumber",
+		"stronghit" : "starforge-godflamedamagenumberstrong",
+		"weakhit" : "starforge-godflamedamagenumberweak",
+		"shieldhit" : "starforge-godflamedamagenumber",
+		"kill" : "starforge-godflamedamagenumber"
 	  }
 	}
   }

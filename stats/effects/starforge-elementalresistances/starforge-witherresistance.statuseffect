@@ -1,7 +1,7 @@
 {
   "name" : "starforge-witherresistance",
   "effectConfig" : {
-    "elementalType" : "wither",
+    "elementalType" : "starforge-wither",
 	
     "primaryElementalInfluence" : "poison",
 	"secondaryElementalInfluence" : "fire",

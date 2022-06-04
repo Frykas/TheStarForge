@@ -40,6 +40,6 @@
   
   "persistentAudio" : "/sfx/projectiles/starforge_bladestorm.ogg",
   
-  "statusEffects" : ["starforge-yukaibleed"],
+  "statusEffects" : ["starforge-heavybleeding"],
   "damageKind" : "broadsword"
 }

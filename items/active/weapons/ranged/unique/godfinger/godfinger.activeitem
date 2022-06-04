@@ -1,0 +1,96 @@
+{
+  "itemName" : "starforge-godfinger",
+  "price" : 1080,
+  "maxStack" : 1,
+  "level" : 6,
+  "rarity" : "Essential",
+  "description" : "\"They say it is out of reach, out of sight. No. I can see it. I can reach it. It is within my grasp.\" - Apolleon",
+  "shortdescription" : "Godfinger",
+  "tooltipKind" : "gun",
+  "category" : "Rail Rifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","nebulox","tide","unbound"],
+
+  "inventoryIcon" : "godfingericon.png",
+
+  "animation" : "godfinger.animation",
+  "animationParts" : {
+    "middle" : "godfingericon.png",
+    "middleFullbright" : "godfingerfullbright.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidebreakermuzzle.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/plasma_ar1.ogg"]
+    }
+  },
+  "animationScripts" : [ "/items/active/effects/starforge-enhancedentitymarker.lua" ],
+
+  "baseOffset" : [0.0, 0.125],
+  "muzzleOffset" : [2.25, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
+
+  "elementalType" : "tidalfrost",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
+    "class" : "StarforgeGunFire",
+
+    "fireTime" : 0.5,
+    "baseDps" : 10,
+    "energyUsage" : 29,
+    "projectileCount" : 1,
+    "inaccuracy" : 0.03,
+    "fireType" : "auto",
+
+    "projectileType" : "neotommygunbullet",
+    "projectileParameters" : {
+	  "damageKind" : "starforge-tidalfrost"
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility": {
+    "scripts": [ "/items/active/weapons/ranged/starforge-test.lua"],
+    "class": "StarforgeTest",
+	"name" : "Headseeker",
+	
+	"targetQueryDistance" : 100,
+    "entityMarker" : {
+      "markerImage" : "/items/active/weapons/ranged/unique/godfinger/targetoverlay.png",
+      "fullbright" : true,
+	  "useMouthPosition" : true
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -15,7 +15,7 @@
 
   "inventoryIcon" : "anentropia.png",
 
-  "animation" : "/items/active/weapons/melee/legendary/anentropia/anentropia.animation",
+  "animation" : "/items/active/weapons/melee/dagger/anentropia/anentropia.animation",
   "animationParts" : {
     "blade" : "anentropia.png"
   },

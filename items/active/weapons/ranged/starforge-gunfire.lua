@@ -211,7 +211,7 @@ function StarforgeGunFire:fireProjectile(burstNumber)
       params.timeToLive = util.randomInRange(params.timeToLive)
     end
 	
-  shotNumber = i
+    shotNumber = i
 
     projectileId = world.spawnProjectile(
         projectileType,
