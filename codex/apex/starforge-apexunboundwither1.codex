@@ -1,7 +1,7 @@
 {
   "id" : "starforge-apexunboundwither1",
   "species" : "apex",
-  "title" : "Studies on the Wither.",
+  "title" : "Studies on the Wither",
   "description" : "A broken data pad, barely working.",
   "icon" : "starforge-unboundresearchpadbroken.png",
   "contentPages" : [

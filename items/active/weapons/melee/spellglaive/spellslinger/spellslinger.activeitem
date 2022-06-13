@@ -16,7 +16,7 @@
   "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
   "animationParts" : {
     "blade" : "spellslinger.png",
-	"bladeFullbright" : "spellglaivefullbright.png"
+	"bladeFullbright" : "spellslingerfullbright.png"
   },
   "animationCustom" : {
     "sounds" : {

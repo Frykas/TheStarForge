@@ -61,6 +61,6 @@
   {"op" : "add",
 	"path" : "/smallfossil/0/1/pool/-",
 	"value" :
-	  {"weight" : 0.1, "item" : "starforge-rifterhelmet"}
+	  {"weight" : 0.1, "item" : "starforge-rifterhelmetfossil"}
   }
 ]
