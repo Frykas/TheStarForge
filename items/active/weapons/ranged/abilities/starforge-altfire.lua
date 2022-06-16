@@ -87,11 +87,7 @@ function StarforgeAltFire:muzzleFlash()
     animator.setAnimationState("altFire", "fire")
   end
 
-  if self.usePrimaryFireSound then
-    animator.playSound("fire")
-  else
-    animator.playSound("altFire")
-  end
+  animator.playSound(self.fireSound or "fire")
 end
 
 function StarforgeAltFire:firePosition()

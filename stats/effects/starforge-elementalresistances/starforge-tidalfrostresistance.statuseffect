@@ -2,13 +2,11 @@
   "name" : "starforge-tidalfrostresistance",
   "effectConfig" : {
     "elementalType" : "starforge-tidalfrost",
-	
-    "primaryElementalInfluence" : "ice",
-	"secondaryElementalInfluence" : "electricity",
-	"dualElementFactor" : 0.6,
-	
-	"primaryElementFactor" : -0.1,
-	"secondaryElementFactor" : 0.05
+	"elementalInfluences" : {
+	  "ice" : 0.5,
+	  "electric" : 0.05
+	},
+	"totalFactor" : 0.5
   },
   "defaultDuration" : 15,
   "scripts" : ["starforge-elementalresistance.lua"]

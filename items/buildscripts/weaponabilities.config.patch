@@ -1,7 +1,25 @@
 [
+  //BROADSWORDS
   {
 	"op": "add",
 	"path": "/starforge-broadswordcombo",
 	"value": "/items/active/weapons/melee/abilities/broadsword/starforge-broadswordcombo.weaponability"
+  },
+  //DAGGERS
+  {
+	"op": "add",
+	"path": "/starforge-daggercombo",
+	"value": "/items/active/weapons/melee/abilities/dagger/starforge-daggercombo.weaponability"
+  },
+  //SPELLGLAIVES
+  {
+	"op": "add",
+	"path": "/starforge-spellglaivecombo",
+	"value": "/items/active/weapons/melee/abilities/spellglaive/starforge-spellglaivecombo.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/starforge-spellglaiveblast",
+	"value": "/items/active/weapons/melee/abilities/spellglaive/starforge-spellglaiveblast.weaponability"
   }
 ]

@@ -32,6 +32,12 @@
             "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
+		  },
+		  "fire5" : {
+			"frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
 		  }
         }
       },
@@ -75,37 +81,44 @@
             },
 			"fire" : {
               "properties" : {
-                "image" : "swoosh/stab.png:<frame>",
+                "image" : "/items/active/weapons/melee/dagger/swoosh/stab.png:<frame>",
                 "offset" : [1.75, 0.375],
                 "damageArea" : [[-4.75, 1.5], [3, 1], [1, -2], [-4.75, -1.5]]
               }
             },
             "fire2" : {
               "properties" : {
-                "image" : "swoosh/stab.png:<frame>",
+                "image" : "/items/active/weapons/melee/dagger/swoosh/stab.png:<frame>",
                 "offset" : [1.75, 0.375],
                 "damageArea" : [[-4.75, 1.5], [3, 1], [1, -2], [-4.75, -1.5]]
               }
             },
 			"fire3" : {
               "properties" : {
-                "image" : "swoosh/stab.png:<frame>",
+                "image" : "/items/active/weapons/melee/dagger/swoosh/stab.png:<frame>",
                 "offset" : [1.75, 0.375],
                 "damageArea" : [[-4.75, 1.5], [3, 1], [1, -2], [-4.75, -1.5]]
               }
             },
             "fire4" : {
               "properties" : {
-                "image" : "swoosh/downcut.png:<frame>?flipx",
-                "offset" : [-0.75, 0],
+                "image" : "/items/active/weapons/melee/dagger/swoosh/downcut.png:<frame>?flipy",
+                "offset" : [-0.75, -1.375],
                 "damageArea" : [[5, 2], [2.5, 3], [-1, 3], [-4, 1.75], [-5, -0.25], [-5, -2.25], [-4, -3.25], [0, -2.5]]
               }
-            }
+            },
+            "fire5" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/dagger/swoosh/slash.png:<frame>",
+				"offset" : [3.0, 0.25],
+                "damageArea" : [[0.25, 1.125], [0.75, 1.125], [2.0, 0.25], [2.0, -0.5], [0.5, -1.5], [-1.0, -1.5], [-2.0, -0.75]]
+              }
             }
           }
         }
       }
-    },
+    }
+  },
 
   "transformationGroups" : {
     "weapon" : {},

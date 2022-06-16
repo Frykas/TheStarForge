@@ -159,7 +159,7 @@ function StarforgeGunFire:cooldown()
     local to = self.stances.idle.weaponOffset or {0,0}
     self.weapon.weaponOffset = {c5Easing.easeOut(progress, from[1], to[1]), c5Easing.easeOut(progress, from[2], to[2])}
 
-    self.weapon.relativeWeaponRotation = util.toRadians(c5Easing.customEase(progress, self.burstCount or 1, 0, 5.9, 1.15, 0.65, -0.024))
+    self.weapon.relativeWeaponRotation = util.toRadians(c5Easing.customEase(progress, self.burstCount or self.stances.cooldown.weaponRotation, self.stances.idle.weaponRotation, 5.9, 1.15, 0.65, -0.024))
     self.weapon.relativeArmRotation = util.toRadians(c5Easing.easeOut(progress, self.stances.cooldown.armRotation, self.stances.idle.armRotation))
 
     progress = math.min(1.0, progress + (self.dt / duration))

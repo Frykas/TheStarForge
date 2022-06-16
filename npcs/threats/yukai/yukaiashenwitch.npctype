@@ -151,7 +151,7 @@
 		},
 		{
 			"stat": "maxEnergy",
-			"amount": 80
+			"amount": 180
 		}
 	],
 
@@ -168,7 +168,7 @@
 					"name": "starforge-yukaiashenwitchpants"
 				}],
 				"primary": [
-					"starforge-yukaispellglaive"
+					"starforge-spellslinger"
 				],
 				"alt": [
 					"starforge-yukaiknife", "bandage"
@@ -180,14 +180,14 @@
 
 	"movementParameters": {
 		"mass": 2.0,
-		"runSpeed": 14,
+		"runSpeed": 6,
 		"airJumpProfile": {
-			"jumpSpeed": 60,
+			"jumpSpeed": 30,
 			"jumpHoldTime": 0,
 			"autoJump": false,
 			"collisionCancelled": true,
 			"multiJump": false,
-			"jumpControlForce": 900,
+			"jumpControlForce": 50,
 			"reJumpDelay": 0.05,
 			"jumpInitialPercentage": 1
 		}

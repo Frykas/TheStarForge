@@ -2,13 +2,11 @@
   "name" : "starforge-godflameresistance",
   "effectConfig" : {
     "elementalType" : "starforge-godflame",
-	
-    "primaryElementalInfluence" : "electric",
-	"secondaryElementalInfluence" : "fire",
-	"dualElementFactor" : 0.325,
-	
-	"primaryElementFactor" : 0.1,
-	"secondaryElementFactor" : -0.1
+	"elementalInfluences" : {
+	  "electric" : 0.1,
+	  "fire" : -0.1
+	},
+	"totalFactor" : 0.325
   },
   "defaultDuration" : 15,
   "scripts" : ["starforge-elementalresistance.lua"]

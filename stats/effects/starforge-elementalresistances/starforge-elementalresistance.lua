@@ -1,18 +1,22 @@
 function init()
   local elementalType = config.getParameter("elementalType", "tidalfrost") .. "Resistance"
 
-  local primaryElementalInfluence = config.getParameter("primaryElementalInfluence", "electrical")
-  local secondaryElementalInfluence = config.getParameter("secondaryElementalInfluence", "physical")
-  local dualElementFactor = config.getParameter("dualElementFactor", 0.5)
-  
-  local primaryElementFactor = config.getParameter("primaryElementFactor", 0.05)
-  local secondaryElementFactor = config.getParameter("secondaryElementFactor", -0.1)
-  
-  local elementA = status.stat(primaryElementalInfluence .. "Resistance")
-  local elementB = status.stat(secondaryElementalInfluence .. "Resistance")
+  local elementalInfluences = config.getParameter("elementalInfluences", {})
+  local totalFactor = config.getParameter("totalFactor", 0.5)
 
-  local resistance = ((elementA + elementB) * dualElementFactor) + (primaryElementFactor * elementA) + (secondaryElementFactor * elementB)
-  effect.addStatModifierGroup({{stat = elementalType, amount = resistance}})
+  local resistance = 0
+  local averageFactor = 0
+  local totalRes = 0
+  for element, influence in pairs(elementalInfluences) do
+	local elementRes = status.stat(element .. "Resistance")
+	averageFactor = averageFactor + 1
+	totalRes = totalRes + elementRes
+	resistance = resistance + elementRes * influence
+  end
+  local newInfluence = (totalRes / averageFactor) * totalFactor
+  
+  local finalResistance = resistance + newInfluence
+  effect.addStatModifierGroup({{stat = elementalType, amount = finalResistance}})
 
   script.setUpdateDelta(0)
 end

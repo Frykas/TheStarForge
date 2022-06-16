@@ -1,66 +1,69 @@
 {
-  "itemName" : "starforge-anentropia",
-  "price" : 1000,
-  "level" : 5,
-  "fixedLevel" : false,
-  "maxStack" : 1,
-  "rarity" : "Legendary",
-  "description" : "A dagger that utilises rapid icy slashes to lacerate and wear down foes.",
-  "shortdescription" : "Anentropia",
-  "tooltipKind" : "starforge-uniquesword",
-  "category" : "dagger",
-  "twoHanded" : true,
-  "itemTags" : ["weapon","melee","dagger", "tide"],
-  "learnBlueprintsOnPickup" : [ "starforge-anentropia" ],
-
-  "inventoryIcon" : "anentropia.png",
-
-  "animation" : "/items/active/weapons/melee/dagger/starforge-dagger.animation",
-  "animationParts" : {
-    "blade" : "anentropia.png"
-  },
+  "animationParts" : { },
   "animationCustom" : {
-    "animatedParts" : {
-	  "parts" : {
-		"swoosh" : {
-		  "partStates" : {
-			"swoosh" : {
-			  "fire" : {
-				"properties" : {
-				  "offset" : [1.75, -0.375]
-				}
-			  },
-			  "fire2" : {
-				"properties" : {
-				  "offset" : [1.75, -0.375]
-				}
-			  },
-			  "fire3" : {
-				"properties" : {
-				  "offset" : [1.75, -0.375]
-				}
-			  }
-			}
-		  }
-		}
-	  }
-	}
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire5" : [ "/sfx/melee/swing_shortsword.ogg" ]
+    }
   },
 
-  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+  "ability" : {
+    "name" : "Combo Slash",
+    "type" : "starforge-daggercombo",
+    "scripts" : ["/items/active/weapons/melee/abilities/starforge-meleecombo.lua"],
+    "class" : "StarforgeMeleeCombo",
+	
+	"comboSteps" : 5,
+	
+    "flashTime" : 0.15,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
 
-  "elementalType" : "starforge-tidalfrost",
+    "swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [1.5, -1.0, 5.5, 1.0]
+    ],
 
-  "primaryAbilityType" : "starforge-daggercombo",
-  "primaryAbility" : {
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 0.6,
     "baseDps" : 8.0,
 	
     "damageConfig" : {
-      "damageSourceKind" : "starforge-tidalfrost",
+      "damageSourceKind" : "dagger",
       "knockbackMode" : "aim",
       "timeout" : 0.25,
 	  "statusEffects" : []
     },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 0.4,
+        "knockback" : 3
+      },
+      {
+        "baseDamageFactor" : 0.4,
+        "knockback" : 3
+      },
+      {
+        "baseDamageFactor" : 0.4,
+        "knockback" : 3
+      },
+      {
+        "baseDamageFactor" : 1.2,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 10
+      }
+    ],
+	
+    "comboSpeedFactor" : 0.65,
 	
 	"stances" : {
       //IDLE - DEFAULT
@@ -76,7 +79,7 @@
       "windup1" : {
         "duration" : 0.025,
         "armRotation" : -110,
-        "weaponRotation" : 50,
+        "weaponRotation" : 20,
         "twoHanded" : false,
         "weaponOffset" : [0, 0.5],
 		
@@ -88,7 +91,7 @@
       "preslash1" : {
         "duration" : 0.025,
         "armRotation" : -110,
-        "weaponRotation" : 50,
+        "weaponRotation" : 20,
         "twoHanded" : false,
         "weaponOffset" : [0.5, 1.0],
 		
@@ -100,7 +103,7 @@
       "fire1" : {
         "duration" : 0.075,
         "armRotation" : -30,
-        "weaponRotation" : -50,
+        "weaponRotation" : -70,
         "twoHanded" : false,
         "weaponOffset" : [0, -0.125],
 		
@@ -113,7 +116,7 @@
       "wait1" : {
         "duration" : 0.075,
         "armRotation" : -30,
-        "weaponRotation" : -50,
+        "weaponRotation" : -70,
         "twoHanded" : false,
         "weaponOffset" : [0, -0.25],
 		
@@ -126,7 +129,7 @@
       "windup2" : {
         "duration" : 0.05,
         "armRotation" : -110,
-        "weaponRotation" : 50,
+        "weaponRotation" : 20,
         "twoHanded" : false,
         "weaponOffset" : [0, 0.5],
 		
@@ -138,7 +141,7 @@
       "preslash2" : {
         "duration" : 0.025,
         "armRotation" : -110,
-        "weaponRotation" : 50,
+        "weaponRotation" : 20,
         "twoHanded" : false,
         "weaponOffset" : [0, 1.0],
 		
@@ -258,6 +261,8 @@
         "armRotation" : -20,
         "weaponRotation" : -20,
         "weaponOffset" : [0, 0.125],
+		
+		"comboDirectives" : "?flipx",
 
         "allowFlip" : true,
         "allowRotate" : false
@@ -267,12 +272,12 @@
         "armRotation" : -135,
         "weaponRotation" : 40,
         "weaponOffset" : [0, 0.125],
+		
+		"comboDirectives" : "?flipx",
 
         "allowFlip" : true,
         "allowRotate" : false
       }
     }
-  },
-
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  }
 }

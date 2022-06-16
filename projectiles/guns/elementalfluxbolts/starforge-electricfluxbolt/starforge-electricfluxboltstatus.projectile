@@ -9,7 +9,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundelectricbulletexplosion.config"
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundriflebulletexplosion.config"
     },
 	{
 	  "inheritDamageFactor": 0.05,

@@ -304,10 +304,10 @@ function die()
   tenant.backup()
   spawnDrops()
   if self.dropWeapons then
-    world.spawnItem({name = self.primary.name},mcontroller.position())
-    world.spawnItem({name = self.alt.name},mcontroller.position())
-    world.spawnItem({name = self.sheathedPrimary.name},mcontroller.position())
-    world.spawnItem({name = self.sheathedAlt.name},mcontroller.position())
+    world.spawnItem({name = self.primary.name}, mcontroller.position())
+    world.spawnItem({name = self.alt.name}, mcontroller.position())
+    world.spawnItem({name = self.sheathedPrimary.name}, mcontroller.position())
+    world.spawnItem({name = self.sheathedAlt.name}, mcontroller.position())
   end
 end
 
