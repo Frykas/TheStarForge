@@ -169,7 +169,7 @@
         "duration" : 0.2,
         "armRotation" : 175,
         "weaponRotation" : -105,
-        "weaponOffset" : [0, 0.625],
+        "weaponOffset" : [1, 0.625],
         "twoHanded" : true,
 
         "allowRotate" : true,
@@ -181,7 +181,7 @@
         "duration" : 0.025,
         "armRotation" : 140,
         "weaponRotation" : -140,
-        "weaponOffset" : [0, 1],
+        "weaponOffset" : [1, 1],
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -192,22 +192,26 @@
       "fire3" : {
         "duration" : 0.2,
         "armRotation" : -45,
-        "weaponRotation" : -55,
+        "weaponRotation" : -65,
         "weaponOffset" : [0, 1],
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : false,
+		
+		"frontArmFrame" : "jump.3"
       },
       "wait3" : {
         "duration" : 0.15,
         "armRotation" : -45,
-        "weaponRotation" : -55,
+        "weaponRotation" : -65,
         "weaponOffset" : [0, 1],
         "twoHanded" : true,
 		
         "allowRotate" : false,
-        "allowFlip" : true
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.3"
       },
 	  //COMBO STEP 4
       "windup4" : {

@@ -1,0 +1,69 @@
+{
+  "itemName" : "starforge-existar",
+  "price" : 600,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A golden trident infused with the flame of a dragon.",
+  "shortdescription" : "Existar",
+  "tooltipKind" : "starforge-uniquesword",
+  "category" : "Spellglaive",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spellglaive","spear"],
+
+  "cursor" : "/cursors/reticle0.cursor",
+
+  "inventoryIcon" : "existar.png",
+
+  "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
+  "animationParts" : {
+    "blade" : "existar.png",
+	"bladeFullbright" : "existarfullbright.png",
+	
+	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "starforge-spellglaivecombo",
+  "primaryAbility" : {
+    "baseDps" : 6.5
+  },
+  
+  "altAbilityType" : "starforge-spellglaiveblast",
+  "altAbility" : {
+	"projectileType" : "dragonfirelarge",
+	"projectileParameters" : {
+	  "movementSettings" : {
+		"gravityMultiplier" : 1
+	  },
+	  
+	  "actionOnReap": [
+		{
+		  "action" : "config",
+		  "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnodamage.config"
+		},
+		{
+		  "inheritDamageFactor": 0.5,
+		  "angleAdjust": 0,
+		  "fuzzAngle": 30,
+		  "type": "largefirecloud",
+		  "action": "projectile"
+		}
+	  ]
+	},
+
+	"projectileCount" : 1,
+	"inaccuracy": 0.005,
+	"baseDamage" : 9,
+	"energyUsage" : 35,
+	
+	"fireTime" : 1.9,
+	"fireType" : "auto"
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

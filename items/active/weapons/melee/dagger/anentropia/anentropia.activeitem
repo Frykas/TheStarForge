@@ -13,39 +13,13 @@
   "itemTags" : ["weapon","melee","dagger", "tide"],
   "learnBlueprintsOnPickup" : [ "starforge-anentropia" ],
 
-  "inventoryIcon" : "anentropia.png",
+  "inventoryIcon" : "anentropia.png?flipx",
 
   "animation" : "/items/active/weapons/melee/dagger/starforge-dagger.animation",
   "animationParts" : {
     "blade" : "anentropia.png"
   },
-  "animationCustom" : {
-    "animatedParts" : {
-	  "parts" : {
-		"swoosh" : {
-		  "partStates" : {
-			"swoosh" : {
-			  "fire" : {
-				"properties" : {
-				  "offset" : [1.75, -0.375]
-				}
-			  },
-			  "fire2" : {
-				"properties" : {
-				  "offset" : [1.75, -0.375]
-				}
-			  },
-			  "fire3" : {
-				"properties" : {
-				  "offset" : [1.75, -0.375]
-				}
-			  }
-			}
-		  }
-		}
-	  }
-	}
-  },
+  "animationCustom" : {},
 
   "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
 
