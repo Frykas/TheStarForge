@@ -1,22 +1,23 @@
 {
-  "itemName" : "starforge-kitchenknife",
+  "itemName" : "starforge-carver",
   "price" : 1000,
-  "level" : 4,
+  "level" : 6,
   "fixedLevel" : false,
   "maxStack" : 1,
-  "rarity" : "Rare",
-  "description" : "A sharp chef's knife.",
-  "shortdescription" : "Chef's Knife",
+  "rarity" : "Legendary",
+  "description" : "A terrible weapon that tasted the blood of many innocent people.",
+  "shortdescription" : "Forsaken Carver",
   "tooltipKind" : "starforge-uniquesword",
   "category" : "dagger",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","dagger"],
+  "itemTags" : ["weapon","melee","dagger", "legendary"],
+  "learnBlueprintsOnPickup" : [ "starforge-carver" ],
 
-  "inventoryIcon" : "kitchenknife.png?flipx",
+  "inventoryIcon" : "carver.png?flipx",
 
   "animation" : "/items/active/weapons/melee/dagger/starforge-dagger.animation",
   "animationParts" : {
-    "blade" : "kitchenknife.png"
+    "blade" : "carver.png"
   },
   "animationCustom" : {},
 
@@ -26,7 +27,7 @@
 
   "primaryAbilityType" : "starforge-daggercombo",
   "primaryAbility" : {
-    "baseDps" : 6.5,
+    "baseDps" : 8.0,
 	
     "damageConfig" : {
       "damageSourceKind" : "dagger",

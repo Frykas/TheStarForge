@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaipearl", "count" : 3},
+	{ "item" : "cryonicextract", "count" : 10},
+	{ "item" : "starforge-tidalfragment", "count" : 25}
+  ],
+  "output" : {
+    "item" : "starforge-deluge",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "starforge-yukaishop", "weapon" ],
+  "duration" : 0
+}
+

@@ -32,6 +32,7 @@
         {"weight" : 0.3, "item" : "starforge-tidalchest-recipe"},
 		{"weight" : 0.3, "item" : "starforge-tidalchair-recipe"},
 		{"weight" : 0.3, "item" : "starforge-tidaltable-recipe"},
+		{"weight" : 0.3, "pool" : "starforge-tidalweapons"},
 		{"weight" : 0.3, "pool" : "tidalFragmentTreasure"}
       ]
     }]
@@ -43,6 +44,15 @@
         {"weight" : 0.40, "item" : ["starforge-tidalfragment", 2]},
         {"weight" : 0.15, "item" : ["starforge-tidalfragment", 4]},
 		{"weight" : 0.10, "item" : ["starforge-tidalfragment", 6]}
+      ]
+    }]
+  ],
+  
+  "starforge-tidalweapons" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "starforge-anentropia"},
+		{"weight" : 0.5, "item" : "starforge-deluge"}
       ]
     }]
   ],

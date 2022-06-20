@@ -1,7 +1,7 @@
 {
   "itemName" : "starforge-anentropia",
   "price" : 1000,
-  "level" : 5,
+  "level" : 6,
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",

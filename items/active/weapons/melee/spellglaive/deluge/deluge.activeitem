@@ -1,46 +1,49 @@
 {
-  "itemName" : "starforge-existar",
+  "itemName" : "starforge-deluge",
   "price" : 1000,
   "level" : 6,
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "A golden trident infused with the flame of a dragon.",
-  "shortdescription" : "Existar",
+  "description" : "A spellglaive made to hunt large predators from the Tide using powerful tidal spikes.",
+  "shortdescription" : "Deluge",
   "tooltipKind" : "starforge-uniquesword",
   "category" : "Spellglaive",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spellglaive","spear"],
-  "learnBlueprintsOnPickup" : [ "starforge-existar" ],
+  "learnBlueprintsOnPickup" : [ "starforge-deluge" ],
 
   "cursor" : "/cursors/reticle0.cursor",
 
-  "inventoryIcon" : "existar.png",
+  "inventoryIcon" : "deluge.png",
 
   "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
   "animationParts" : {
-    "blade" : "existar.png",
-	"bladeFullbright" : "existarfullbright.png",
+    "blade" : "deluge.png",
+	"bladeFullbright" : "",
 	
-	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
+	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidemuzzleflash.png"
   },
   "animationCustom" : {},
 
   "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "starforge-tidalfrost",
 
   "primaryAbilityType" : "starforge-spellglaivecombo",
   "primaryAbility" : {
-    "baseDps" : 6.5
+    "baseDps" : 6.5,
+	
+	"damageSourceKind" : "starforge-tidalfrost"
   },
   
   "altAbilityType" : "starforge-spellglaiveblast",
   "altAbility" : {
-	"projectileType" : "dragonfirelarge",
+	"projectileType" : "starforge-tidespike",
 	"projectileParameters" : {
+	  "damageKind" : "starforge-tidalfrost",
 	  "movementSettings" : {
-		"gravityMultiplier" : 1
+		"gravityMultiplier" : 0.3
 	  },
 	  
 	  "actionOnReap": [
@@ -49,10 +52,25 @@
 		  "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnodamage.config"
 		},
 		{
-		  "inheritDamageFactor": 0.5,
-		  "angleAdjust": 0,
-		  "fuzzAngle": 30,
-		  "type": "largefirecloud",
+		  "inheritDamageFactor": 0.3,
+		  "angleAdjust": 200,
+		  "fuzzAngle": 0,
+		  "type": "starforge-tideshard",
+		  "action": "projectile"
+		},
+		
+		{
+		  "inheritDamageFactor": 0.3,
+		  "angleAdjust": 180,
+		  "fuzzAngle": 0,
+		  "type": "starforge-tideshard",
+		  "action": "projectile"
+		},
+		{
+		  "inheritDamageFactor": 0.3,
+		  "angleAdjust": 160,
+		  "fuzzAngle": 0,
+		  "type": "starforge-tideshard",
 		  "action": "projectile"
 		}
 	  ]
@@ -60,8 +78,8 @@
 
 	"projectileCount" : 1,
 	"inaccuracy": 0.005,
-	"baseDamage" : 9,
-	"energyUsage" : 35,
+	"baseDamage" : 8,
+	"energyUsage" : 55,
 	
 	"fireTime" : 1.9,
 	"fireType" : "auto"

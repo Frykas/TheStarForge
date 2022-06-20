@@ -53,6 +53,23 @@
     },
 	
 	{
+	  "name" : "starforge-glorbee",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.003,
+      "monsterType" : [
+      [1, "starforge-glorbee"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    },
+	
+	{
 	  "name" : "starforge-pyreaper",
 	  "spawnParameters" : {
 		"area" : "surface",
@@ -94,7 +111,7 @@
 		"time" : "night"
       },
       "groupSize" : [1, 1],
-      "spawnChance" : 0.03,
+      "spawnChance" : 0.08,
       "monsterType" : [
       [1, "starforge-mothon"]
     ],

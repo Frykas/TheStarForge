@@ -54,6 +54,7 @@
 			  { "item": { "name": "starforge-vrbanana" }, "rarity": 0.5, "prerequisiteQuest" : "apex_mission2" },
 			  { "item": { "name": "starforge-skullgem" }, "rarity": 0.5, "prerequisiteQuest" : "glitch_mission2" },
 			  { "item": { "name": "starforge-ruinouseye" }, "rarity": 0.5, "prerequisiteQuest" : "destroyruin" },
+			  { "item": { "name": "starforge-kitchenknife" }, "rarity": 0.5, "prerequisiteQuest" : "thalassoelanaquest3" },
 			  { "item": { "name": "starforge-novalimejelly" }, "rarity": 0.5 },
 			  { "item": { "name": "starforge-erchiusgoop" }, "rarity": 0.5 },
 			  { "item": { "name": "starforge-pinacolada" }, "rarity": 0.5 },
