@@ -22,6 +22,8 @@
     "blade" : "deluge.png",
 	"bladeFullbright" : "",
 	
+	"swoosh" : "tidalfrost_",
+	
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidemuzzleflash.png"
   },
   "animationCustom" : {},

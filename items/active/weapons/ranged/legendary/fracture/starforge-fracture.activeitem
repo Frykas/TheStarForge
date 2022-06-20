@@ -28,12 +28,13 @@
   "baseOffset": [0.125, 0],
   "muzzleOffset": [1, 0.250],
   
-  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+  "scripts": [ "/items/active/weapons/ranged/starforge-gun.lua" ],
   
   //Makes the weapon draw in front of the arm
   "handGrip" : "outside",
   
   "elementalType": "physical",
+  "passiveStatusEffects" : [ "starforge-elementalshield" ],
   
   "primaryAbility": {
     "scripts": [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],

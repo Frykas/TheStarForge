@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-elementalshield",
+  "effectConfig" : {},
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "starforge-elementalshield.lua"
+  ]
+}
