@@ -17,7 +17,9 @@
 
   "animation" : "/items/active/weapons/melee/dagger/starforge-dagger.animation",
   "animationParts" : {
-    "blade" : "carver.png"
+    "blade" : "carver.png",
+	
+    "swoosh" : ""
   },
   "animationCustom" : {},
 

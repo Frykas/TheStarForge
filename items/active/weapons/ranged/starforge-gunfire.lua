@@ -205,10 +205,15 @@ function StarforgeGunFire:fireProjectile(burstNumber)
   
   local shotNumber = 0
 
+  local baseSpeed = params.speed
+  local baseTTL = params.timeToLive
   local projectileId = 0
   for i = 1, (projectileCount or self.projectileCount) do
-    if params.timeToLive then
-      params.timeToLive = util.randomInRange(params.timeToLive)
+    if baseTTL then
+      params.timeToLive = util.randomInRange(baseTTL)
+    end
+    if baseSpeed then
+      params.speed = util.randomInRange(baseSpeed)
     end
 	
     shotNumber = i

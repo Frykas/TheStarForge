@@ -23,8 +23,7 @@
 	"bladeFullbright" : "",
 	
 	"swoosh" : "tidalfrost_",
-	
-	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidemuzzleflash.png"
+	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidebreakermuzzle.png"
   },
   "animationCustom" : {},
 
@@ -36,52 +35,29 @@
   "primaryAbility" : {
     "baseDps" : 6.5,
 	
-	"damageSourceKind" : "starforge-tidalfrost"
+    "damageConfig" : {
+      "damageSourceKind" : "starforge-tidalfrost",
+      "knockbackMode" : "aim",
+      "timeout" : 0.25,
+	  "statusEffects" : []
+    }
   },
   
   "altAbilityType" : "starforge-spellglaiveblast",
   "altAbility" : {
-	"projectileType" : "starforge-tidespike",
+	"projectileType" : "starforge-tideshard",
 	"projectileParameters" : {
 	  "damageKind" : "starforge-tidalfrost",
 	  "movementSettings" : {
-		"gravityMultiplier" : 0.3
+		"gravityMultiplier" : 1
 	  },
-	  
-	  "actionOnReap": [
-		{
-		  "action" : "config",
-		  "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnodamage.config"
-		},
-		{
-		  "inheritDamageFactor": 0.3,
-		  "angleAdjust": 200,
-		  "fuzzAngle": 0,
-		  "type": "starforge-tideshard",
-		  "action": "projectile"
-		},
-		
-		{
-		  "inheritDamageFactor": 0.3,
-		  "angleAdjust": 180,
-		  "fuzzAngle": 0,
-		  "type": "starforge-tideshard",
-		  "action": "projectile"
-		},
-		{
-		  "inheritDamageFactor": 0.3,
-		  "angleAdjust": 160,
-		  "fuzzAngle": 0,
-		  "type": "starforge-tideshard",
-		  "action": "projectile"
-		}
-	  ]
-	},
+	  "speed" : [45, 125]
+    },
 
-	"projectileCount" : 1,
-	"inaccuracy": 0.005,
-	"baseDamage" : 8,
-	"energyUsage" : 55,
+	"projectileCount" : 6,
+	"inaccuracy": 0.125,
+	"baseDamage" : 10,
+	"energyUsage" : 60,
 	
 	"fireTime" : 1.9,
 	"fireType" : "auto"

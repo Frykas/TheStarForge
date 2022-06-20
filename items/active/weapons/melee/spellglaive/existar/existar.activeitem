@@ -22,13 +22,14 @@
     "blade" : "existar.png",
 	"bladeFullbright" : "existarfullbright.png",
 	
+    "swoosh" : "",	
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
   },
   "animationCustom" : {},
 
   "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "fire",
 
   "primaryAbilityType" : "starforge-spellglaivecombo",
   "primaryAbility" : {
@@ -43,13 +44,15 @@
 		"gravityMultiplier" : 1
 	  },
 	  
+	  "speed" : 45,
+	  
 	  "actionOnReap": [
 		{
 		  "action" : "config",
 		  "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnodamage.config"
 		},
 		{
-		  "inheritDamageFactor": 0.5,
+		  "inheritDamageFactor": 0.2,
 		  "angleAdjust": 0,
 		  "fuzzAngle": 30,
 		  "type": "largefirecloud",
@@ -60,7 +63,7 @@
 
 	"projectileCount" : 1,
 	"inaccuracy": 0.005,
-	"baseDamage" : 9,
+	"baseDamage" : 8,
 	"energyUsage" : 35,
 	
 	"fireTime" : 1.9,
