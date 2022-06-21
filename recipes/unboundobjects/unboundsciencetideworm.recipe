@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 10},
+	{ "item" : "ironbar", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-unboundsciencetideworm",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "decoration" ],
+  "duration" : 0
+}
+

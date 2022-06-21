@@ -80,6 +80,7 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundsciencedesk"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundscienceengi"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundscienceextract"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundsciencetideworm"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundscienceinventortable"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundsciencelamp"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundsciencescreen"} },
@@ -118,5 +119,7 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundholoquin"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundcenturionobject"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-spellslinger"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaipearl"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-starforge-tidalremnantmicroformer"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-vanguardhoverbikeobject"} }
 ]

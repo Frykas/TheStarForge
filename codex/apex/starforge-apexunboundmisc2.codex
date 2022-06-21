@@ -2,7 +2,7 @@
   "id" : "starforge-apexunboundmisc2",
   "species" : "apex",
   "title" : "Letter to a loved one",
-  "description" : "A letter wrote by an Unbound soldier.",
+  "description" : "A letter written by an Unbound soldier.",
   "icon" : "starforge-unboundletter.png",
   "contentPages" : [
 

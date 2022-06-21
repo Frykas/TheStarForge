@@ -57,7 +57,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":9193,
+                 "gid":9195,
                  "height":44,
                  "id":1143,
                  "name":"",
@@ -69,7 +69,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":9194,
+                 "gid":9196,
                  "height":23,
                  "id":1144,
                  "name":"",
@@ -81,7 +81,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147492842,
+                 "gid":2147492844,
                  "height":23,
                  "id":1145,
                  "name":"",
@@ -93,7 +93,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9122,
+                 "gid":9124,
                  "height":16,
                  "id":1146,
                  "name":"",
@@ -111,7 +111,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9155,
+                 "gid":9157,
                  "height":8,
                  "id":1147,
                  "name":"",
@@ -123,7 +123,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":9131,
+                 "gid":9133,
                  "height":32,
                  "id":1148,
                  "name":"",
@@ -135,7 +135,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9184,
+                 "gid":9186,
                  "height":32,
                  "id":1149,
                  "name":"",
@@ -219,7 +219,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundfortress1"
+                         "value":"starforge-unboundsoldier"
                         }],
                  "rotation":0,
                  "type":"",
@@ -247,7 +247,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":304,
+                 "x":312,
                  "y":336
                 }],
          "opacity":1,
@@ -645,7 +645,7 @@
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":9117,
+         "firstgid":9119,
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }],
  "tilewidth":8,

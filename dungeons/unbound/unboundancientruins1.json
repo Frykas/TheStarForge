@@ -57,7 +57,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":9193,
+                 "gid":9195,
                  "height":44,
                  "id":1132,
                  "name":"",
@@ -69,7 +69,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9194,
+                 "gid":9196,
                  "height":23,
                  "id":1133,
                  "name":"",
@@ -81,7 +81,7 @@
                  "y":352
                 }, 
                 {
-                 "gid":2147492842,
+                 "gid":2147492844,
                  "height":23,
                  "id":1134,
                  "name":"",
@@ -93,7 +93,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9184,
+                 "gid":9186,
                  "height":32,
                  "id":1135,
                  "name":"",
@@ -105,7 +105,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9131,
+                 "gid":9133,
                  "height":32,
                  "id":1136,
                  "name":"",
@@ -117,7 +117,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9131,
+                 "gid":9133,
                  "height":32,
                  "id":1137,
                  "name":"",
@@ -189,7 +189,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundheavy"
+                         "value":"starforge-unboundsoldier"
                         }],
                  "rotation":0,
                  "type":"",
@@ -211,35 +211,13 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundheavy"
+                         "value":"starforge-unboundsoldier"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
                  "x":152,
-                 "y":344
-                }, 
-                {
-                 "height":8,
-                 "id":1142,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundfortress1"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":232,
                  "y":344
                 }],
          "opacity":1,
@@ -637,7 +615,7 @@
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":9117,
+         "firstgid":9119,
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }],
  "tilewidth":8,
