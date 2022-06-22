@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "bone", "count" : 15},
+	{ "item" : "string", "count" : 3}
+  ],
+  "output" : {
+    "item" : "starforge-yukaiknife",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "weapon", "starforge-yukaishop"],
+  "duration" : 2
+}
+

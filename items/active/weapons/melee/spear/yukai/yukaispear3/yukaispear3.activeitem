@@ -1,13 +1,13 @@
 {
   "itemName" : "starforge-yukaispear3",
   "price" : 650,
-  "level" : 6,
+  "level" : 4,
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A titanium & bone spear. Decorated with Ember coral.",
   "shortdescription" : "Yukai Ornate Spear",
   "tooltipKind" : "sword",
-  "category" : "Bone Spear",
+  "category" : "spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear"],
 

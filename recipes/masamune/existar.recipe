@@ -1,7 +1,6 @@
 {
   "input" : [
-    { "item" : "essence", "count" : 250},
-    { "item" : "scorchedcore", "count" : 5},
+    { "item" : "starforge-yukaipearl", "count" : 4},
 	{ "item" : "goldbar", "count" : 25},
 	{ "item" : "coralfragment", "count" : 35}
   ],
@@ -9,7 +8,7 @@
     "item" : "starforge-existar",
     "count" : 1
   },
-  "groups" : [ "starforge-starforge", "weapons" ],
+  "groups" : [ "starforge-masamune", "weapon", "starforge-yukaishop" ],
   "duration" : 2
 }
 

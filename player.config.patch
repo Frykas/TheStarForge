@@ -120,6 +120,14 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundcenturionobject"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-spellslinger"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaipearl"} },
-  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-starforge-tidalremnantmicroformer"} },
-  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-vanguardhoverbikeobject"} }
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-tidalremnantmicroformer"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-cephalowormeffigy"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-vanguardhoverbikeobject"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaisword1"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaisword2"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaisword3"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaiknife"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear2"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear3"} }
 ]
