@@ -8,7 +8,7 @@
 
   "animation" : "glorbee.animation",
 
-  "dropPools" : [ { "default" : "spookitTreasure", "bow" : "spookitHunting" } ],
+  "dropPools" : [ { "default" : "glorbeeTreasure"} ],
 
   "baseParameters" : {
     "scripts" : [
@@ -233,7 +233,8 @@
     "feetOffset" : [0, -8],
     "capturable" : true,
     "captureHealthFraction" : 0.5,
-    "nametagColor" : [64, 200, 255]
-    //"captureCollectables" : { "monsters" : "starforge-glorbee" }
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "glorbee" }
   }
 }
+

@@ -121,6 +121,20 @@
     }]
   ],
   
+  "glorbeeTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.99, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.01, "item" : "starforge-glorbeeaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
   "mothonTreasure" : [
     [1, {
       "pool" : [

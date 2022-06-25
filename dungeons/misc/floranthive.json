@@ -95,7 +95,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"basicChestTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-florantstash\"]}"
                         }],
                  "rotation":0,
                  "type":"",

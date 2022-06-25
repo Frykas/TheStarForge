@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":60,
  "infinite":false,
  "layers":[
@@ -88,7 +95,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"smallChestTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-florantstash\"]}"
                         }],
                  "rotation":0,
                  "type":"",

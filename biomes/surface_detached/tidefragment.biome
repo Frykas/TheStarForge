@@ -18,7 +18,7 @@
           [ 1.00, "starforge-tidamprey" ],
           [ 1.00, "starforge-tidejelly" ],
           [ 1.00, "starforge-tidejellyjuvenile" ],
-          [ 0.25, "redbreastcritter" ]
+          [ 1.00, "starforge-cephalowormjuvenile" ]
         ]
       }
     ],
@@ -214,7 +214,7 @@
 	  
 	  {
         "mode" : "floor",
-        "priority" : 3,
+        "priority" : 5,
         "variants" : 1,
         "distribution" : "/biomes/starforge-raremicrodungeons.config:starforge-raremicrodungeon",
 

@@ -1,12 +1,12 @@
 {
   "input" : [
     { "item" : "starforge-yukaipearl", "count" : 5},
-	{ "item" : "solariumstar", "count" : 2},
-	{ "item" : "goldbar", "count" : 25},
-	{ "item" : "coralfragment", "count" : 35}
+	{ "item" : "refinedaegisalt", "count" : 5},
+	{ "item" : "plantfibre", "count" : 125},
+	{ "item" : "darkwoodmaterial", "count" : 100}
   ],
   "output" : {
-    "item" : "starforge-existar",
+    "item" : "starforge-scavenger",
     "count" : 1
   },
   "groups" : [ "starforge-masamune", "weapon", "starforge-yukaishop" ],

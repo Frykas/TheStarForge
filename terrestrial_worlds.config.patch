@@ -3,7 +3,7 @@
     "op": "add",
     "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
     "value": [
-      1,
+      4,
       "starforge-katahelruinsdungeon"
     ]
   },
@@ -11,7 +11,7 @@
     "op": "add",
     "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
     "value": [
-      1,
+      4,
       "starforge-katahelruinsdungeon"
     ]
   },
@@ -65,6 +65,15 @@
     ]
   },
   
+      {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      4,
+      "starforge-vowvillage"
+    ]
+  },
+  
     {
     "op": "add",
     "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
@@ -86,6 +95,15 @@
     "path": "/planetTypes/midnight/layers/surface/dungeons/-",
     "value": [
       1,
+      "starforge-furouraltar"
+    ]
+  },
+  
+      {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      4,
       "starforge-furouraltar"
     ]
   },
@@ -145,6 +163,24 @@
     "path": "/planetTypes/alien/layers/surface/dungeons/-",
     "value": [
       1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+  
+      {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+  
+      {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      4,
       "starforge-yukaiforgemasterhut"
     ]
   },

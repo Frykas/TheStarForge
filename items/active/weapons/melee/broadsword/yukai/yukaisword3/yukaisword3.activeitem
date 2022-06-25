@@ -7,7 +7,7 @@
   "description" : "A titanium & bone blade. Decorated with Ember coral.",
   "shortdescription" : "Yukai Ornate Sword",
   "tooltipKind" : "sword",
-  "category" : "broadword",
+  "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword"],
 

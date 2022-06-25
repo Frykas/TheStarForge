@@ -1,6 +1,7 @@
 {
   "input" : [
     { "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "refinedviolium", "count" : 5},
 	{ "item" : "bone", "count" : 50},
 	{ "item" : "string", "count" : 5}
   ],

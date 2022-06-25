@@ -1,0 +1,39 @@
+{
+  "objectName" : "starforge-brokentidecaller",
+  "colonyTags" : ["bone"],
+  "rarity" : "rare",
+
+  "printable" : false,
+  "description" : "A broken Tidecaller. Looks like the Yukai used it.",
+  "shortdescription" : "Broken Tidecaller",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 240,
+
+  "apexDescription" : "Looks like a strange Yukai device. It appears to be broken.",
+  "avianDescription" : "The strange crystal in the middle is cracked.",
+  "floranDescription" : "Floran not sure how to feel about weird tree.",
+  "glitchDescription" : "Curious. I wonder what this strange device is.",
+  "humanDescription" : "Looks like a Yukai device. The crystal is cracked though.",
+  "hylotlDescription" : "A device made to summon the Tide here. Seems like it worked.",
+  "novakidDescription" : "These Hylotls and their weird crystals and trees I swear.",
+
+  "inventoryIcon" : "yukaitidetreeicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "brokentidecaller.png",
+      "imageLayers" : [ { "image" : "brokentidecaller.png" }, { "image" : "brokentidecallerfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }

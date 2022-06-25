@@ -12,7 +12,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJztl81twzAMRnXJIhqiy3SHTtBDGl+6QZCFmluckRoj+lBaleQfUaSN8AMenMayzBdKNnp17ng1DMMwDMMwDIOVH+fclnkFRy537XolvbVrlHTWrk3aWbsuSV\/tmqSdtesx33a+2rVIO2vXYb779T36\/+TO7cn3a2a9nR9fk7tu7nzSvkNdnS\/XHvu1cGntiz4tcaDjNNxb7l+6J0v7VHIPt\/BNPZ9AKrmxe\/F9Y2LIeQe+B8LlwfcELhwv4ZqTf\/L5+Pzhnsc9+iKxK\/V1wfcQ5nI78UWPcv2lwXe0v\/Ddan+x9mh\/Y1\/07uTHnrEvGOY6b9gXSfki1JUm58tNrS+C\/sIXubhxSs8tSd+1ztQX7xCu91FL15LvnHyS49CbXM\/eAwjGHRJjh7k49y+3L56l8KXvIzjA0QXveGzOd06W+k6t6Vw6P64tfv\/iM\/UEqbHwL\/nW9nZtjzv\/54v+cu3fnC\/HWq7pMZxR25mJqfXM4Vqzrrn6mvvfIZda1ynvVpnyyoXDc23Pb4E+4h64RdwT5+i8fZgXR85elojrpMRJ+faF3yI+X0qpDtDSNeVO\/+6j49RvQX2X3JfLueaeKb\/U9xz32JKvNJLreQ2p59gaRw5XCXcu31Zor1dJ1615S7lqO0t71jjPvS41TtNzqf\/c8dr11zhr12G8Hr\/\/1JlY",
+         "data":"eJztl81twzAMRnXJIhqiy3SHTtBD2\/jQDYIs1NzijNQY0YfSqiT\/iCJthB\/w4DSWZb5QstGLcx8XwzAMwzAMwzBY+XHObZlncORy165X0lu7Rkln7dqknbXrkvTVrknaWbse823nq12LtLN2Hea7X99P\/5\/cuT35fs2st\/Pja3LXzZ1P2neoq\/Pl2mO\/Fi6tfdGnJQ50nIZ7y\/1L92Rpn0ru4Ra+qecTSCU3di++L0wMOe3A90A43\/mewIXjOVxz9A\/e75\/f3OO4R18kdqW+LvgewlxuJ77oUa6\/NPiO9he+W+0v1h7tb+yL3h392DP2BcNcpw37IilfhLrS5Hy5qfVF0F\/4Imc3Tum5Jem71pn64h3C9T5q6VrynZN3chx6k+vZawDBuENi7DAX5\/7l9sWzFL70fQQHOLrgHY\/N+c7JUt+pNZ1L58e1xe9ffKaeIDUW\/iXf2t6u7XHn\/3zRX679m\/PlWMs1PYYzajsxMbWeOVxr1jVXX3P\/O+RS6zrl3SpTXrlweK7t+TXQR9wC14hb4hydtw\/z4sjZyxJxnZQ4Kd++8FvE50sp1QFauqbc6d99dJz6LajvkvtyOdfcM+WX+p7jHlvylUZyPa8h9Rxb48jhKuHO5dsK7fUq6bo1bylXbWdpzxrnudelxml6LvWfO167\/hpn7TqM5+MXv7iZnQ==",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -26,7 +26,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztlu1twjAQhs0KHSFDoE6VCfqDwhBsBR2pjeqTzOFv3yUXeB\/pVZBjzvfE5sM5AAAAAAAAAAAAAAAAAHvlND1HYq4VYj2Hvdc45+pY5Xsqp\/Z91rlM\/2nxrXk+ltypnx7XWB2rzrnPK+Xso1F7LVp76fHtXWtNvv5y9deQEd9UTQto9jbyzLTQ8KVa7+ZrGQ1fq94a+zsL15REujfL38+EtO9RuCYA4L24sfDxV4K7Uo4sCx+H5\/FYlnmU3JwtSPmGv5VXP7ZcZ3\/lrymffnyO3Of\/N7ZwzvlSb6k9IqfSGCWsmVpX6\/PD1\/jxWV7f3eP+3jOZC\/fDhDX5mpr+sZrctyc17rF1S74jzqn1cv31+qccec1bZp60b2z9VK8jfq1raZ\/nVB81Z602Lc\/IORnXknupl9J3DL\/few40adnrGt\/Rc7AWtecwHJPw28KVyPlKem3tGdJ6Vkvvy82zSOueWNq7XvbcO9g3vyyIyuc=",
+         "data":"eJztlu1twjAQhs0KHSFDoE6VCfqHwg5sBR2pjeqTzOFv3yUXeB\/pVZBjzvfE5sM5AAAAAAAAAAAAAAAAAHvlND1HYq4VYj2Hvdc45+pY5Xsqp\/Z91rlM\/2nxrXk+ltypnx7XWB2rzrnPK+Xso1F7LVp76fHtXWtNvv5y9deQEd9UTQto9jbyzLTQ8KVa7+ZrGQ1fq94a+zsL15REujfL38+EtO9RuCYA4L24sfDxV4K7Uo4sCx+H5\/FYlnmU3JwtSPmGv5VXP7ZcZ3\/lrymffnyO3Of\/N7ZwzvlSb6k9IqfSGCWsmVpX6\/PD1\/jxWV7f3eP+3jOZC\/fDhDX5mpr+sZrctyc17rF1S74jzqn1cv31+qccec1bZp60b2z9VK8jfq1raZ\/nVB81Z602Lc\/IORnXknupl9J3DL\/few40adnrGt\/Rc7AWtecwHJPw28KVyPlKem3tGdJ6Vkvvy82zSOueWNq7XvbcO9g3vxJZy2I=",
          "encoding":"base64",
          "height":60,
          "id":2,
@@ -56,18 +56,6 @@
          "id":4,
          "name":"objects",
          "objects":[
-                {
-                 "gid":8827,
-                 "height":120,
-                 "id":822,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":98,
-                 "x":184,
-                 "y":344
-                }, 
                 {
                  "gid":8803,
                  "height":52,
@@ -113,7 +101,7 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":280,
+                 "x":248,
                  "y":344
                 }, 
                 {
@@ -129,7 +117,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":2147492485,
+                 "gid":2147492486,
                  "height":16,
                  "id":829,
                  "name":"",
@@ -144,6 +132,42 @@
                  "visible":true,
                  "width":16,
                  "x":176,
+                 "y":344
+                }, 
+                {
+                 "gid":8828,
+                 "height":36,
+                 "id":831,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":20,
+                 "x":224,
+                 "y":344
+                }, 
+                {
+                 "gid":2147492465,
+                 "height":11,
+                 "id":835,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":272,
+                 "y":344
+                }, 
+                {
+                 "gid":8817,
+                 "height":11,
+                 "id":836,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":200,
                  "y":344
                 }],
          "opacity":1,
@@ -259,6 +283,57 @@
                  "width":8,
                  "x":288,
                  "y":312
+                }, 
+                {
+                 "height":8,
+                 "id":832,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-alabatling"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":176,
+                 "y":248
+                }, 
+                {
+                 "height":8,
+                 "id":833,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-alabatling"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":312,
+                 "y":336
+                }, 
+                {
+                 "height":8,
+                 "id":834,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-alabatling"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":176,
+                 "y":176
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -504,7 +579,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":831,
+ "nextobjectid":837,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -655,11 +730,11 @@
          "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":8828,
+         "firstgid":8829,
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":8836,
+         "firstgid":8837,
          "source":"..\/..\/tilesets\/yukaivillage\/yukaivillage.json"
         }],
  "tilewidth":8,

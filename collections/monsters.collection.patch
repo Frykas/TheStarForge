@@ -67,6 +67,17 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/glorbee",
+	  "value": 	  
+	  {
+	    "order" : 107,
+	    "monsterType" : "starforge-glorbee",
+	    "icon" : "/monsters/ghosts/glorbee/glorbeeicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/mothon",
 	  "value": 	  
 	  {

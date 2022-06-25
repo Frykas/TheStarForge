@@ -1,6 +1,7 @@
 {
   "input" : [
     { "item" : "starforge-yukaipearl", "count" : 3},
+	{ "item" : "refinedferozium", "count" : 5},
 	{ "item" : "cryonicextract", "count" : 8},
 	{ "item" : "starforge-tidalfragment", "count" : 18}
   ],

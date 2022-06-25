@@ -343,50 +343,6 @@
                  "y":280
                 }, 
                 {
-                 "height":8,
-                 "id":244,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundscientist"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":304,
-                 "y":168
-                }, 
-                {
-                 "height":8,
-                 "id":245,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundscientist"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":264,
-                 "y":280
-                }, 
-                {
                  "gid":804,
                  "height":40,
                  "id":246,
@@ -421,21 +377,10 @@
                  "width":32,
                  "x":272,
                  "y":296
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":4,
-         "name":"mod",
-         "objects":[
+                }, 
                 {
                  "height":8,
-                 "id":119,
+                 "id":249,
                  "name":"",
                  "properties":[
                         {
@@ -452,9 +397,42 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":280,
+                 "x":288,
                  "y":168
                 }, 
+                {
+                 "height":8,
+                 "id":250,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"apex"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-unboundscientist"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":264,
+                 "y":280
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":4,
+         "name":"mod",
+         "objects":[
                 {
                  "height":16,
                  "id":120,
@@ -1400,28 +1378,6 @@
                  "width":136,
                  "x":184,
                  "y":192
-                }, 
-                {
-                 "height":8,
-                 "id":178,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundscientist"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":336,
-                 "y":280
                 }, 
                 {
                  "height":16,
@@ -2371,12 +2327,12 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }],
  "nextlayerid":5,
- "nextobjectid":249,
+ "nextobjectid":251,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
