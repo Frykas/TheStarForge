@@ -32,7 +32,7 @@
   ],
   "scriptDelta" : 5,
   
-  "spawnableItem" : "starforge-saltshaker",
+  "spawnableItem" : "starforge-saltshaker-recipe",
 
   "animation" : "saltshakerobject.animation",
   "animationParts" : {

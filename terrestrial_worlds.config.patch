@@ -186,33 +186,33 @@
   },
   
   { "op":"add",
-    "path": "/planetTypes/forest/layers/surface/secondaryRegions/-", 
-	"value": "starforge-tidefragment" 
+    "path": "/regionTypes/forest/subRegion/-", 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
-    "path": "/planetTypes/jungle/layers/surface/secondaryRegions/-", 
-	"value": "starforge-tidefragment" 
+    "path": "/regionTypes/jungle/subRegion/-", 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
-    "path": "/planetTypes/midnight/layers/surface/secondaryRegions/-", 
-	"value": "starforge-tidefragment" 
+    "path": "/regionTypes/midnight/subRegion/-", 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
-    "path": "/planetTypes/tundra/layers/surface/secondaryRegions/-", 
-	"value": "starforge-tidefragment" 
+    "path": "/regionTypes/tundra/subRegion/-", 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
-    "path": "/planetTypes/volcanic/layers/surface/secondaryRegions/-", 
-	"value": "starforge-tidefragment" 
+    "path": "/regionTypes/volcanic/subRegion/-", 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
-    "path": "/planetTypes/savannah/layers/surface/secondaryRegions/-", 
-	"value": "starforge-tidefragment" 
+    "path": "/regionTypes/savannah/subRegion/-", 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
