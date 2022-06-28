@@ -185,6 +185,77 @@
     ]
   },
   
+   {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/alien/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
   { "op":"add",
     "path": "/regionTypes/forest/subRegion/-", 
     "value": "starforge-tidefragment" 

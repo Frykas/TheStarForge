@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":83,
+ "tilecount":85,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -839,6 +839,26 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-unboundsciencetideworm",
+         "tilesetDirection":"right"
+        },
+     "83":
+        {
+         "\/\/description":"A very sturdy chair used by the Unbound.",
+         "\/\/name":"starforge-unboundchair2",
+         "\/\/shortdescription":"Unbound Chair",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundchair2",
+         "tilesetDirection":"right"
+        },
+     "84":
+        {
+         "\/\/description":"A sturdy table often found in Unbound settlements.",
+         "\/\/name":"starforge-unboundtable2",
+         "\/\/shortdescription":"Unbound Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundtable2",
          "tilesetDirection":"right"
         },
      "9":
@@ -1674,6 +1694,26 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "83":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "84":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "9":
         {
          "\/\/description":"string",
@@ -2177,6 +2217,18 @@
         {
          "image":"sciencetideworm.png",
          "imageheight":40,
+         "imagewidth":32
+        },
+     "83":
+        {
+         "image":"unboundchair2.png",
+         "imageheight":11,
+         "imagewidth":16
+        },
+     "84":
+        {
+         "image":"unboundtable2.png",
+         "imageheight":16,
          "imagewidth":32
         },
      "9":

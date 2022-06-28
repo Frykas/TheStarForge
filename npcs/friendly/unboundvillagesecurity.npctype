@@ -93,7 +93,7 @@
                     "name": "starforge-unboundcaptainpants", "parameters" : { "colorIndex" : 8 }
                 }],
             "primary": [
-                    "starforge-unboundpistol"
+                    "starforge-unboundpistol", "starforge-unboundar", "starforge-unboundburstpistol", "starforge-unboundsilencedpistol", "starforge-unbounddmr", "starforge-unboundsmg"
                 ],
 				 "alt" : [ "starforge-unboundshield" ]
           }

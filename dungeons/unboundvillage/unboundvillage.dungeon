@@ -1,0 +1,86 @@
+{
+  "metadata" : {
+    "name" : "starforge-unboundvillage",
+    "species" : "apex",
+    "rules" : [
+    ],
+    "anchor" : [ "unboundvillageleftend", "unboundvillagerightend" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 13,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "unboundvillagefoodstorage",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "unboundvillagefoodstorage" ] ]
+
+      ],
+      "def" : [ "tmx", "unboundvillagefoodstorage.json" ]
+    },
+	
+	{
+      "name" : "unboundvillagecompost",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "unboundvillagecompost" ] ]
+
+      ],
+      "def" : [ "tmx", "unboundvillagecompost.json" ]
+    },
+	
+	{
+      "name" : "unboundvillagearmory",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "unboundvillagearmory" ] ]
+
+      ],
+      "def" : [ "tmx", "unboundvillagearmory.json" ]
+    },
+	
+	{
+      "name" : "unboundrefugeeprefab1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "unboundrefugeeprefab1" ] ]
+
+      ],
+      "def" : [ "tmx", "unboundrefugeeprefab1.json" ]
+    },
+	
+	{
+      "name" : "unboundrefugeeprefab2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "unboundrefugeeprefab2" ] ]
+
+      ],
+      "def" : [ "tmx", "unboundrefugeeprefab2.json" ]
+    },
+	
+	{
+      "name" : "unboundvillageleftend",
+      "rules" : [
+        [ "ignorePartMaximumRule" ], 
+		[ "doNotConnectToPart", [ "unboundvillagerightend" ] ]
+      ],
+      "def" : [ "tmx", [ "unboundvillageleftend.json" ] ],
+      "chance" : 5
+    },
+	
+	{
+      "name" : "unboundvillagerightend",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+		[ "doNotConnectToPart", [ "unboundvillageleftend" ] ]
+      ],
+      "def" : [ "tmx", [ "unboundvillagerightend.json" ] ],
+      "chance" : 5
+    }
+  ]
+}
