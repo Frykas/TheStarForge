@@ -27,7 +27,7 @@
       "name" : "unboundvillagecompost",
       "rules" : [
         [ "maxSpawnCount", [1] ],
-        [ "doNotConnectToPart", [ "unboundvillagecompost" ] ]
+        [ "doNotConnectToPart", [ "unboundvillagecompost", "unboundvillageleftend", "unboundvillagerightend" ] ]
 
       ],
       "def" : [ "tmx", "unboundvillagecompost.json" ]
@@ -37,7 +37,7 @@
       "name" : "unboundvillagearmory",
       "rules" : [
         [ "maxSpawnCount", [1] ],
-        [ "doNotConnectToPart", [ "unboundvillagearmory" ] ]
+        [ "doNotConnectToPart", [ "unboundvillagearmory", "unboundvillageleftend", "unboundvillagerightend" ] ]
 
       ],
       "def" : [ "tmx", "unboundvillagearmory.json" ]

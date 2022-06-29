@@ -1,0 +1,60 @@
+{
+  "itemName" : "starforge-marauder",
+  "price" : 1000,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "An unusual weapon made out of scraps by desperate Apex scientists.",
+  "shortdescription" : "Marauder",
+  "tooltipKind" : "starforge-uniquesword",
+  "category" : "Spellglaive",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spellglaive","spear"],
+  "learnBlueprintsOnPickup" : [ "starforge-scavenger" ],
+
+  "cursor" : "/cursors/reticle0.cursor",
+
+  "inventoryIcon" : "marauder.png",
+
+  "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
+  "animationParts" : {
+    "blade" : "marauder.png",
+	"bladeFullbright" : "",
+	
+    "swoosh" : "",	
+	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-electricmuzzleflash.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbilityType" : "starforge-spellglaivecombo",
+  "primaryAbility" : {
+    "baseDps" : 8.0
+  },
+  
+  "altAbilityType" : "starforge-spellglaiveblast",
+  "altAbility" : {
+	"projectileType" : "stingergunsting",
+	"projectileParameters" : {
+	  "damageConfig" : {
+	  "statusEffects" : [ "weakpoison" ]
+    },
+	  "speed" : 120
+	  
+	},
+
+	"projectileCount" : 4,
+	"inaccuracy": 0.08,
+	"baseDamage" : 6,
+	"energyUsage" : 20,
+	
+	"fireTime" : 0.6,
+	"fireType" : "auto"
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

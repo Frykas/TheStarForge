@@ -238,6 +238,12 @@
                  "height":16,
                  "id":53,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -250,6 +256,12 @@
                  "height":16,
                  "id":54,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -262,6 +274,12 @@
                  "height":16,
                  "id":55,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"chestMoney\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

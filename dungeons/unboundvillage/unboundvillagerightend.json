@@ -317,6 +317,12 @@
                  "height":16,
                  "id":77,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

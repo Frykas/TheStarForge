@@ -226,6 +226,12 @@
                  "height":32,
                  "id":27,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundvillagefood\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -238,6 +244,12 @@
                  "height":16,
                  "id":28,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundvillagefood\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -250,6 +262,12 @@
                  "height":16,
                  "id":29,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"chestMoney\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

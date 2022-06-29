@@ -7,10 +7,10 @@
     [0, {
       "pool" : [
         {"weight" : 0.30, "pool" : "chestMoney"},
-        {"weight" : 0.25, "pool" : "healingItem"},
+        {"weight" : 0.25, "item" : "starforge-combatrifle"},
         {"weight" : 0.35, "pool" : "ore"},
         {"weight" : 0.05, "pool" : "starforge-unboundlore"},
-		{"weight" : 0.05, "pool" : "starforge-unboundrareblueprint"}
+		{"weight" : 0.03, "pool" : "starforge-unboundrareblueprint"}
       ],
 	        "poolRounds" : [
         [0.1, 3],
@@ -157,7 +157,7 @@
         {"weight" : 0.33, "pool" : "chestMoney"},
         {"weight" : 0.32, "pool" : "ore"},
 		{"weight" : 0.03, "pool" : "starforge-unboundlore"},
-        {"weight" : 0.28, "pool" : "goodWeapon"},
+        {"weight" : 0.28, "item" : "starforge-combatrifle"},
 		{"weight" : 0.02, "item" : "starforge-unboundspecialblueprint"},
 		{"weight" : 0.02, "item" : "starforge-unlockdodgeroll"}
       ],
@@ -168,6 +168,42 @@
       ],
       "allowDuplication" : false
     }]
-  ]    
+  ],
+
+     "starforge-unboundvillagearmory" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.35, "pool" : "chestMoney"},
+		{"weight" : 0.35, "item" : "starforge-combatrifle"},
+		{"weight" : 0.25, "pool" : "starforge-unboundrareblueprint"},
+		{"weight" : 0.05, "item" : "starforge-unboundvanguardblueprint"}
+      ],
+	        "poolRounds" : [
+        [0.1, 5],
+        [0.4, 6],
+        [0.4, 7],
+        [0.1, 8]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+
+     "starforge-unboundvillagefood" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.35, "item" : "starforge-unboundfoodration"},
+		{"weight" : 0.35, "item" : "banana"},
+		{"weight" : 0.25, "item" : "bottledwater"},
+		{"weight" : 0.15, "item" : "cannedfood"}
+      ],
+	        "poolRounds" : [
+        [0.1, 5],
+        [0.4, 6],
+        [0.4, 7],
+        [0.1, 8]
+      ],
+      "allowDuplication" : true
+    }]
+  ]  
   }
   

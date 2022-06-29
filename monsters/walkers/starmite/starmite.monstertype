@@ -33,7 +33,7 @@
       "hostileActions" : [
         {
           "name" : "action-fire",
-          "cooldown" : 2.5,
+          "cooldown" : 5.0,
           "parameters" : {
             "requireLineOfSight" : true,
             "maxYRange" : 2,
@@ -53,6 +53,25 @@
             "fireDelay" : 0.2,
 
             "winddownTime" : 0.3
+          }
+        },
+		
+		{
+          "name" : "action-charge",
+          "cooldown" : 2,
+          "parameters" : {
+            "maximumRange" : 5,
+            "windupTime" : 0.4,
+
+            "aimAtTarget" : false,
+            "aimDirection" : [1, 0.5],
+            "chargeTime" : [0.3, 0.3],
+            "chargeSpeed" : 25,
+            "chargeControlForce" : 200,
+            "wallCrashSound" : "",
+            "wallCrashEmitter" : "",
+
+            "winddownTime" : 0.5
           }
         }
       ],

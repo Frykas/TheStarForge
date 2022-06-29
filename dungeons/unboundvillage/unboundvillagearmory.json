@@ -360,6 +360,12 @@
                  "height":16,
                  "id":192,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundvillagearmory\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -444,6 +450,12 @@
                  "height":16,
                  "id":229,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

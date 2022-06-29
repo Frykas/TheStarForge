@@ -24,6 +24,25 @@
             "cycle" : 0.6,
 			"mode" : "loop"
           },
+		  
+		  "chargewindup" : {
+            "frames" : 1,
+            "cycle" : 0.4
+          },
+		  
+		  "charge" : {
+		   "frames" : 3,
+		   "cycle" : 0.3,
+		   "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/monster_bite2.ogg"
+            }
+		  },
+		  
+		  "chargewinddown" : {
+            "frames" : 1,
+            "cycle" : 0.1
+          },
+		  
           "firewindup" : {
             "frames" : 3,
             "cycle" : 0.3
@@ -113,6 +132,25 @@
                 "image" : "<partImage>:transition.<frame>"
               }
             },
+			
+			"chargewindup" : {
+              "properties" : {
+                "image" : "<partImage>:bite.1"
+              }
+            },
+			
+			"charge" : {
+              "properties" : {
+                "image" : "<partImage>:bite.<frame>"
+              }
+            },
+			
+			"chargewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:bite.1"
+              }
+            },
+			
             "jump" : {
               "properties" : {
                 "image" : "<partImage>:jump.<frame>"

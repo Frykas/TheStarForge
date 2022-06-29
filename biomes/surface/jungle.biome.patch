@@ -28,6 +28,20 @@
     }
   },
   
+  {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-starmite"
+        ]
+      ]
+    }
+  },
+  
   { "op" : "add", 
       "path" : "/surfacePlaceables/items/-", 
       "value" : {
