@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-starmite",
+  "category" : "starmite",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "starmite.png"
+  }
+}

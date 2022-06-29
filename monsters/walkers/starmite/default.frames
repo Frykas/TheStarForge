@@ -1,0 +1,17 @@
+{
+  "frameGrid" : {
+    "size" : [24, 35],
+    "dimensions" : [14, 2],
+
+    "names" : [
+      [ null, "idle.1", null, "walk.1", "walk.2", "walk.3", "walk.4", "walk.5", "walk.6", "walk.7", "walk.8", null, "pant.1", "pant.2"],
+      [ null, "attack.1", "attack.2", "attack.3", "attack.4", null, "hurt.1", null, "jump.1", "jump.2", null, "fall.1", "fall.2"]
+    ]
+  },
+  "aliases" : {
+  	"transition.1" : "attack.4",
+  	"transition.2" : "attack.3",
+  	"transition.3" : "attack.2",
+	"transition.4" : "attack.1"
+  }
+}

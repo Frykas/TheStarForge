@@ -78,6 +78,17 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/starmite",
+	  "value": 	  
+	  {
+	    "order" : 108,
+	    "monsterType" : "starforge-starmite",
+	    "icon" : "/monsters/walkers/starmite/starmiteicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/mothon",
 	  "value": 	  
 	  {
