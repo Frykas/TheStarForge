@@ -20,8 +20,46 @@
   "hydrophobic" : false,
   "actionOnReap" : [
     {
-      "action" : "config",
-	  "file" : "/projectiles/explosions/smallregularexplosion/smallregularexplosion.config"
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/starforge-vitriumcrystalboom.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 6,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/dusttest/dusttest.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 0.85,
+                "variance" : {
+                  "position" : [0.5, 0.5],
+                  "initialVelocity" : [1, 1],
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        },
+        {
+          "action" : "spark"
+        }
+      ]
+    },
+	{
+      "action" : "projectile",
+      "type" : "smallregularexplosion",
+      "inheritDamageFactor" : 1,
+	  "config" : {
+	    "damageKind" : "default"
+	  }
     }
   ],
   "actionOnCollide" : [

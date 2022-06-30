@@ -20,8 +20,47 @@
   "hydrophobic" : false,
   "actionOnReap" : [
     {
-      "action" : "config",
-	  "file" : "/projectiles/explosions/burstexplosion/electricburstexplosion.config"
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/starforge-vitriumcrystalboom.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 3,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/mediumflameelectric/mediumflameelectric.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 0.4,
+                "variance" : {
+                  "timeToLive" : 0.15,
+                  "position" : [0.5, 0.5],
+                  "initialVelocity" : [1, 1],
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        },
+        {
+          "action" : "spark"
+        }
+      ]
+    },
+	{
+      "action" : "projectile",
+      "type" : "smallregularexplosion",
+      "inheritDamageFactor" : 1,
+	  "config" : {
+	    "damageKind" : "electric"
+	  }
     }
   ],
   "actionOnCollide" : [

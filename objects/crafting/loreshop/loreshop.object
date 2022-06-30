@@ -10,7 +10,7 @@
         "title" : "Chemist Krythers",
         "subtitle" : "Will help you develop blueprints!",
         "icon" : {
-          "file" : "/interface/SEmerchant/merchanticon.png"
+          "file" : "/interface/crafting/starforge.png"
         }
       }
     },

@@ -92,10 +92,11 @@ function build(directory, config, parameters, level, seed)
 
   -- make sure the name is selected
   config.shortdescription = generateNameFromPartList(parameters.weaponParts)
+  parameters.shortdescription = config.shortdescription
 
 
   -- determine the rarity, not cached as part rarity is not saved as a parameter
-  config.rarity = determineRarity(parameters.weaponParts, generationConfig.partConfigs, multipartWeaponConfig.indexToRarity)
+  config.rarity, config.rarityIndex = determineRarity(parameters.weaponParts, generationConfig.partConfigs, multipartWeaponConfig.indexToRarity)
 
   -- determine the manufacturer and load the config for it
   parameters.manufacturer = generationConfig.partConfigs.body.pool[parameters.weaponParts.body.id].manufacturer;
@@ -348,7 +349,18 @@ function build(directory, config, parameters, level, seed)
   replacePatternInData(parameters, nil, "<elementalName>", parameters.elementalType:gsub("^%l", string.upper))
 
   --Set price
-  config.price = (config.price or 0) * root.evalFunction("itemLevelPriceMultiplier", configParameter("level", 1))
+  local priceMultiplier = 1
+  if config.rarity == "Legendary" then
+    priceMultiplier = 1.3
+  elseif config.rarity == "Rare" then
+    priceMultiplier = 1.2
+  elseif config.rarity == "Uncommon" then
+    priceMultiplier = 1.1
+  end
+  priceMultiplier = priceMultiplier + (config.rarityIndex * 0.1)
+  
+  config.price = math.floor((config.price or 0) * root.evalFunction("itemLevelPriceMultiplier", configParameter("level", 1)) * priceMultiplier)
+  parameters.price = config.price
 
   return config, parameters
 end
@@ -405,9 +417,9 @@ function generateNameFromPartList(partList)
 
   -- apply suffix
   if nameSuffix ~= "" then
-    -- add space when string does not start with - or '
+    -- add space when string does not start with - or ' or . or ,
     local start = nameSuffix:sub(1,1);
-    if start ~= "'" and start ~= "-" then
+    if start ~= "'" and start ~= "-" and start ~= "." and start ~= "," and start ~= " " then
       name = name .. " ";
     end
     name = name .. nameSuffix;
@@ -429,16 +441,16 @@ function determineRarity(partList, partConfigs, rarityConfig)
   --Check the rarity against its factors
   if totalRarity <= maxRarity * rarityConfig["common"] then
     --If avgRarity <= 4 then it's common
-    return "Common"
+    return "Common", totalRarity
   elseif totalRarity <= maxRarity * rarityConfig["uncommon"] then
     --If avgRarity <= 0.55 and > 0.4 then it's uncommon
-    return "Uncommon"
+    return "Uncommon", totalRarity
   elseif totalRarity <= maxRarity * rarityConfig["rare"] then
     --If avgRarity <= 7 and > 0.55 then it's rare
-    return "Rare"
+    return "Rare", totalRarity
   else
     --Anything above 7 is legendary
-    return "Legendary"
+    return "Legendary", totalRarity
   end
 
 end

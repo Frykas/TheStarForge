@@ -57,6 +57,8 @@
   "scripts" : ["starforge-pachinkoball.lua"],
   "scriptDelta" : 1,
 
+  "statusEffectsOnPickup" : ["starforge-pachinkoicebuff"],
+
   "accelerationFactor" : 2,
 
   "searchDistance" : 4,

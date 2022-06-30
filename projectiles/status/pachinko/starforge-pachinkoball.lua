@@ -27,12 +27,15 @@ function update(dt)
     --Exponent Acceleration
     mcontroller.accelerate(vec2.mul(mcontroller.velocity(), self.accelerationFactor))
     if world.entityExists(self.targetEntity) then
-      world.debugPoint(world.entityPosition(self.targetEntity), "blue")
+      --world.debugPoint(world.entityPosition(self.targetEntity), "blue")
 	  
 	  local targetPos = world.entityPosition(self.targetEntity)
       local toTarget = world.distance(targetPos, mcontroller.position())
       local targetDist = vec2.mag(toTarget)
       if targetDist <= self.pickupRange then
+	    for _, effect in ipairs(config.getParameter("statusEffectsOnPickup", {})) do
+          world.sendEntityMessage(self.targetEntity, "applyStatusEffect", effect, nil, self.targetEntity)
+        end
         projectile.die()
       elseif targetDist <= self.snapRange then
         mcontroller.approachVelocity(vec2.mul(vec2.div(toTarget, targetDist), self.snapSpeed), self.snapForce)

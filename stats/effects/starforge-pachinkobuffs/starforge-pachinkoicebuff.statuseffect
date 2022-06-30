@@ -1,0 +1,15 @@
+{
+  "name" : "starforge-pachinkoicebuff",
+  "effectConfig" : {
+    "protection" : 1.085,
+	"grit" : 1.5
+  },
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "starforge-pachinkobuff.lua"
+  ],
+
+  "label" : "Defence",
+  "icon" : "/interface/statuses/starforge-pachinkoice.png"
+}

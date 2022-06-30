@@ -53,9 +53,11 @@
   "fullbright" : true,
   
   "renderLayer" : "ForegroundEntity",
-
+  
   "scripts" : ["starforge-pachinkoball.lua"],
   "scriptDelta" : 1,
+
+  "statusEffectsOnPickup" : ["starforge-pachinkofirebuff"],
 
   "accelerationFactor" : 2,
 

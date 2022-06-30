@@ -1,0 +1,14 @@
+{
+  "name" : "starforge-pachinkofirebuff",
+  "effectConfig" : {
+    "powerModifier" : 1.2
+  },
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "starforge-pachinkobuff.lua"
+  ],
+
+  "label" : "Offence",
+  "icon" : "/interface/statuses/starforge-pachinkofire.png"
+}

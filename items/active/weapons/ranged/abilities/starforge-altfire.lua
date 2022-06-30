@@ -17,8 +17,6 @@ function StarforgeAltFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
-  
-  world.debugText("Projectile Type Alt: " .. sb.print(self.projectileType), vec2.add(mcontroller.position(), {0,1}), "yellow")
 
   if self.fireMode == "alt"
     and not self.weapon.currentAbility
@@ -85,6 +83,7 @@ function StarforgeAltFire:muzzleFlash()
   
   if self.playAltFireAnimation then
     animator.setAnimationState("altFire", "fire")
+    animator.setPartTag("altFire", "variant", math.random(1, 3))
   end
 
   animator.playSound(self.fireSound or "fire")

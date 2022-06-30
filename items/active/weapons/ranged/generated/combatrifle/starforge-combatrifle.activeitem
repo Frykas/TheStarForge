@@ -67,7 +67,14 @@
       }
     }
   },
-  "fireSounds" : [ "/sfx/gun/starforge-unboundrifle.ogg", "/sfx/gun/starforge-assaultriflefire1.ogg", "/sfx/gun/starforge-minigunfire.ogg", "/sfx/gun/starforge-yukaiplasma.ogg", "/sfx/gun/starforge-ar1.ogg" ],
+  "fireSounds" : [ 
+    "/sfx/gun/starforge-unboundrifle.ogg",
+	"/sfx/gun/starforge-assaultriflefire1.ogg",
+	"/sfx/gun/starforge-minigunfire.ogg",
+	"/sfx/gun/starforge-yukaiplasma.ogg",
+	"/sfx/gun/starforge-ar1.ogg",
+	"/sfx/weapon/starforge-energymelee.ogg"
+  ],
 
   "builder" : "/items/buildscripts/starforge-buildcombatrifle.lua",
   /* Note from C0bra5:

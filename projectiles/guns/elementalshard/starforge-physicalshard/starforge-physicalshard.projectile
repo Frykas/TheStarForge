@@ -21,7 +21,7 @@
       "action" : "projectile",
       "type" : "starforge-physicalshardsticking",
       "inheritDamageFactor" : 0.35,
-      "inheritSpeedFactor" : 0.75
+      "inheritSpeedFactor" : 1
     }
   ],
   "periodicActions" : [],

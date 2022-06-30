@@ -8,6 +8,9 @@ function init()
   self.actionOnStick = config.getParameter("actionOnStick", {})
   self.searchDistance = config.getParameter("searchDistance", 0.1)
   self.retainDamage = config.getParameter("retainStickingDamage", false)
+
+  --Store rotation to lock it
+  self.stickingRotation = mcontroller.rotation()
   
   self.stickingTarget = nil
   self.stickingOffset = {0, 0}
@@ -22,7 +25,7 @@ function update(dt)
 
   --Look for a target to stick to
   if not self.stickingTarget then
-    local projectileLengthVector = vec2.norm(mcontroller.velocity())
+	local projectileLengthVector = vec2.norm(mcontroller.velocity())
     self.stuckToGround = world.lineTileCollision(mcontroller.position(), vec2.add(mcontroller.position(), projectileLengthVector))
     targets = world.entityQuery(mcontroller.position(), self.searchDistance, {
       withoutEntityId = projectile.sourceEntity(),
@@ -36,9 +39,8 @@ function update(dt)
     if world.entityExists(targets[1]) then
 	  --Set the sticking target
       self.stickingTarget = targets[1]
+	  
       self.stuckToTarget = true
-	  --Store rotation to lock it
-	  self.stickingRotation = mcontroller.rotation()
 	  --Determine where to stick on the enemy
 	  self.stickingOffset = world.distance(mcontroller.position(), world.entityPosition(self.stickingTarget))
       --If specified set the time to live for when you have stuck to an enemy

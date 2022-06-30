@@ -1,0 +1,48 @@
+{
+  "objectName" : "starforge-elpisvendingmachine",
+  "colonyTags" : ["elpis"],
+  "rarity" : "Legendary",
+  "description" : "A chunky vending machine selling various Elpis Element's combat rifles.",
+  "shortdescription" : "Elpis Element's Vending Machine",
+  "race" : "human",
+  
+  "apexDescription" : "These things are always so overpriced...",
+  "floranDescription" : "New weaponsss for Floran?",
+  "glitchDescription" : "Anticipation. I may be able to acquire new armaments here.",
+  "novakidDescription" : "Might be gettin' some new rifles here.",
+  
+  "printable" : false,
+
+  "inventoryIcon" : "elpisvendingmachine.png",
+  "orientations" : [
+    {
+      "image" : "elpisvendingmachine.png",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+
+	  "spaceScan" : 0.1,
+      "interactiveSpaces" : [
+        [3, 3], [4, 3],
+        [3, 2], [4, 2],
+        [3, 1], [4, 1],
+        [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : ["/objects/scripts/starforge-vendingmachine.lua"],
+  "resetInterval" : 30, //minutes
+  "guiConfig" : {
+    "baseConfig" : "/interface/scripted/starforge-vendingmachine/starforge-vendingmachine.config",
+    "gui" : {
+      "windowtitle" : {
+        "title" : "  Elpis Vending Machine",
+        "subtitle" : "  Quality, simplified."
+      }
+    }
+  }
+}

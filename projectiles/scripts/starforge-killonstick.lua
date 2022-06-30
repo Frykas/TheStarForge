@@ -5,6 +5,7 @@ function update()
 end
 
 function hit(entityId)
+sb.logInfo("hit")
   if config.getParameter("killOnHit") then
     projectile.die()
   end
