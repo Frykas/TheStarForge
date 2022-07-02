@@ -21,5 +21,11 @@
 	"op": "add",
 	"path": "/starforge-spellglaiveblast",
 	"value": "/items/active/weapons/melee/abilities/spellglaive/starforge-spellglaiveblast.weaponability"
+  },
+  //THROWABLES
+  {
+	"op": "add",
+	"path": "/starforge-throwprojectile",
+	"value": "/items/active/weapons/ranged/throwable/abilities/starforge-throwprojectile.weaponability"
   }
 ]

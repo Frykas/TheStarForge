@@ -38,21 +38,15 @@
   
   "altAbilityType" : "starforge-spellglaiveblast",
   "altAbility" : {
-	"projectileType" : "stingergunsting",
-	"projectileParameters" : {
-	  "damageConfig" : {
-	  "statusEffects" : [ "weakpoison" ]
-    },
-	  "speed" : 120
-	  
-	},
+	"projectileType" : "railgunlightning",
+	"projectileParameters" : {},
 
-	"projectileCount" : 4,
-	"inaccuracy": 0.08,
+	"projectileCount" : 1,
+	"inaccuracy": 0.0,
 	"baseDamage" : 6,
 	"energyUsage" : 20,
 	
-	"fireTime" : 0.6,
+	"fireTime" : 1.0,
 	"fireType" : "auto"
   },
 

@@ -34,10 +34,14 @@
     }
   ],
   
-  "scripts" : [ "/scripts/starforge-objectaddons.lua", "/objects/scripts/starforge-summontable.lua" ],
+  "scripts" : [ "/scripts/objectaddons.lua", "/objects/scripts/starforge-summontable.lua" ],
   
+  "stageCount" : 6,
+  "requireItem" : "starforge-yukaipearl",
+  "summonedMonster" : "poptop",
+  "finalRequiredItem" : "starforge-yukaitear",
   "isActive" : false,
-
+  
   "materialSpaces" : [
 	[[0, 0], "metamaterial:anviladdonbase"],
 	[[-1, 0], "metamaterial:anviladdonbase"]
@@ -46,10 +50,27 @@
   "addonConfig" : {
 	"usesAddons" : [
 	  {
-		"name" : "cephalowormeffigy",
+		"name" : "cephalowormEffigy",
 		"position" : [0, 1],
 		"addonData" : {
-		  "isActive" : true
+		  "isActive" : true,
+		  "summonedMonster" : "poptop"
+		}
+	  },
+	  {
+		"name" : "razortailEffigy",
+		"position" : [0, 1],
+		"addonData" : {
+		  "isActive" : true,
+		  "summonedMonster" : "poptop"
+		}
+	  },
+	  {
+		"name" : "rimenodonEffigy",
+		"position" : [0, 1],
+		"addonData" : {
+		  "isActive" : true,
+		  "summonedMonster" : "poptop"
 		}
 	  }
 	]
