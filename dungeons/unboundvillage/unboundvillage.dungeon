@@ -7,8 +7,8 @@
     "anchor" : [ "unboundvillageleftend", "unboundvillagerightend" ],
     "gravity" : 80,
     "maxRadius" : 1000000,
-    "maxParts" : 13,
-    "extendSurfaceFreeSpace" : 100,
+    "maxParts" : 153,
+    "extendSurfaceFreeSpace" : 1000,
     "protected" : false
   },
 
@@ -27,7 +27,7 @@
       "name" : "unboundvillagecompost",
       "rules" : [
         [ "maxSpawnCount", [1] ],
-        [ "doNotConnectToPart", [ "unboundvillagecompost", "unboundvillageleftend", "unboundvillagerightend" ] ]
+        [ "doNotConnectToPart", [ "unboundvillagecompost" ] ]
 
       ],
       "def" : [ "tmx", "unboundvillagecompost.json" ]
@@ -37,7 +37,7 @@
       "name" : "unboundvillagearmory",
       "rules" : [
         [ "maxSpawnCount", [1] ],
-        [ "doNotConnectToPart", [ "unboundvillagearmory", "unboundvillageleftend", "unboundvillagerightend" ] ]
+        [ "doNotConnectToPart", [ "unboundvillagearmory" ] ]
 
       ],
       "def" : [ "tmx", "unboundvillagearmory.json" ]
@@ -61,6 +61,16 @@
 
       ],
       "def" : [ "tmx", "unboundrefugeeprefab2.json" ]
+    },
+	
+	{
+      "name" : "unboundtower",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "unboundtower" ] ]
+
+      ],
+      "def" : [ "tmx", "unboundtower.json" ]
     },
 	
 	{

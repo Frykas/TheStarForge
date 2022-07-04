@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-elpisuncommondye",
+  "price" : 25,
+  "rarity" : "common",
+  "category" : "clothingDye",
+  "inventoryIcon" : "elpisuncommondye.png",
+  "description" : "This coloured dye can be applied to a piece of armour or clothing with a right-click.",
+  "shortdescription" : "Elpis Uncommon Dye",
+
+  "dyeDirectives" : {"ffca8a":"C6D1EB","e0975c":"7193B4","a85636":"2B576E","6f2919":"153940"},
+
+  "radioMessagesOnPickup" : [ "pickupdye" ],
+
+  "scripts" : [ "/scripts/augments/dye.lua" ]
+}
