@@ -1,0 +1,10 @@
+{
+  "name" : "glorbite",
+  "category" : "glorbite",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "glorbite.png",
+	"bodynobright" : "glorbitenobright.png"
+  }
+}

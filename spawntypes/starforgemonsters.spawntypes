@@ -43,7 +43,7 @@
 		"time" : "all"
       },
       "groupSize" : [1, 1],
-      "spawnChance" : 0.004,
+      "spawnChance" : 0.01,
       "monsterType" : [
       [1, "starforge-cephaloworm"]
     ],
@@ -60,12 +60,29 @@
 		"time" : "all"
       },
       "groupSize" : [1, 1],
-      "spawnChance" : 0.003,
+      "spawnChance" : 0.006,
       "monsterType" : [
       [1, "starforge-glorbee"]
     ],
       "monsterParameters" : {
         "aggressive" : true
+      }
+    },
+	
+	{
+	  "name" : "starforge-glorbite",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "enclosed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.01,
+      "monsterType" : [
+      [1, "starforge-glorbite"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : false
       }
     },
 	
