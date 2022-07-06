@@ -74,7 +74,7 @@
             "You may wonder why I call myself \"Overlord\". In truth I have no domain to rule anymore, but it is a title I hold nevertheless.",
             "I feel a certain kinship with the Shadow people, yet I do not understand why...",
             "I always enjoy reading a good codex, as do I enjoy writing them.",
-            "The annihilation of Earth was a terrible tragedy that no one could have predicted. Naturally the ^red;Occasus scum^reset; are capitalizing on it.",
+            "The annihilation of Earth was a terrible tragedy that no one could have predicted. Naturally the ^purple;Occasus scum^reset; are capitalizing on it.",
 	    "I wish you a good day, mortal.",
 	    "I am not the only Loremaster out there, have you heard of my colleague Ellie?",
 	    "I have heard rumors of Moontants that have retained their Humanity, I wonder if they are true?",
@@ -95,8 +95,9 @@
 	    "I hope you have not had the misfortune of receiving ^#2d2d2d;a certain ring^reset;...",
 	    "I am... neutral to Testament.",
 	    "Whatever you do, do not try drinking ^#2d2d2d;Essentia Obscura^reset;.",
-	    "I have came across statues of myself in the bowels of certain planets. The fools...",
-	    "Supposedly, there is an off-the-books Peacekeeper codenamed the ^#ff00ff;Immolator^reset;, specialized in fire based weaponry."
+	    "I have came across statues of myself in the bowels of certain planets of a more Cosmic nature. The fools...",
+	    "Supposedly, there is an off-the-books Peacekeeper codenamed the ^#ff00ff;Immolator^reset;, specialized in fire based weaponry.",
+	    "Have you heard of the extinct \"^orange;K'Rakoth^reset;\" civilization? No, you wont find anything about them in the ruins here."
           ]
         }
       }
