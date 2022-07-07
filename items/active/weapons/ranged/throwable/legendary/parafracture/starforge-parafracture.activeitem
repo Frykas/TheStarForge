@@ -7,7 +7,7 @@
   "description" : "Fling powerful axes that shatter on impact, freezing your targets.",
   "shortdescription" : "Parafracture",
   "tooltipKind" : "gun",
-  "category" : "throwable",
+  "category" : "Throwable",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","throwable"],
 

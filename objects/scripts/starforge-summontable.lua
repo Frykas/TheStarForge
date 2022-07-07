@@ -2,9 +2,11 @@ require "/scripts/vec2.lua"
 require "/scripts/util.lua"
 
 function init()
+  object.setMaterialSpaces(config.getParameter("materialSpaces", {}))
   object.setInteractive(true)
   
   self.currentStage = 1
+  animator.setGlobalTag("stage", self.currentStage)
   self.addonConfig = config.getParameter("addonConfig", {})
   
   if ObjectAddons then
@@ -46,7 +48,8 @@ end
 
 function consumeItem(interactEntityId, item)
   if world.entityHasCountOfItem(interactEntityId, item) > 0 then --THIS FUNCTION IS INCONSISTENT ONLINE, FIND AN ALTERNATIVE!!
-    world.sendEntityMessage(interactEntityId, "starforge-callPlayerFunction", consumeItem, {item})
+    world.sendEntityMessage(interactEntityId, "starforge-callPlayerFunction", "consumeItem", {item})
+	sb.logInfo("%s", "aaashhh")
     return true
   end
   return false

@@ -15,11 +15,13 @@ function init()
   self.statusEffectIntervalTimer = self.statusEffectIntervalTime
   
   ---Entity Messaging Handler---
-  message.setHandler("starforge-callPlayerFunction", localHandler(function(functionType, args)
-    player[functionType](table.unpack(args))
-  end))
+  message.setHandler("starforge-callPlayerFunction", callPlayerFunction)
 end
 
+function callPlayerFunction(_, _, functionType, args)
+  player[functionType](table.unpack(args))
+end
+  
 function update(args)
   originalUpdate(args)
   

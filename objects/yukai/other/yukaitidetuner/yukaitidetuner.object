@@ -13,14 +13,18 @@
   
   "printable" : false,
 
-  //"animation" : "yukaitidetuner.animation",
+  "animation" : "yukaitidetuner.animation",
+  "animationParts" : {
+    "object" : "yukaitidetuner.png"
+  },
   "inventoryIcon" : "yukaitidetuner.png:stage.1",
+  "placementImagePosition" : [-21, 0],
   "orientations" : [
     {
       "image" : "yukaitidetuner.png:stage.1",
       "direction" : "right",
 
-      "imagePosition" : [-21, 0],
+      "imagePosition" : [-0, 0],
       "frames" : 1,
       "animationCycle" : 2.0,
 

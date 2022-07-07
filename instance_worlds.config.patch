@@ -1,172 +1,168 @@
 [
-	{
-		"op": "add",
-		"path": "/thalassooutpost",
-		"value": {
-			"type": "FloatingDungeon",
-			"dungeonWorld": "thalassooutpost",
-			"seed": 1234,
-			"spawningEnabled": false,
-			"beamUpRule": "Anywhere",
-			"disableDeathDrops": true,
-			"worldProperties": {"nonCombat": true},
-			"skyParameters": {
-				"spaceLevel": 850,
-				"ambientLightLevel": [24, 28, 24],
-				"skyType": "atmospheric",
-				"skyColoring" : {
-		        "mainColor" : [40, 20, 60],
+  //OUTPOSTS
+  {
+	"op": "add",
+	"path": "/thalassooutpost",
+	"value": {
+	  "type": "FloatingDungeon",
+	  "dungeonWorld": "thalassooutpost",
+	  "seed": 1234,
+	  "spawningEnabled": false,
+	  "beamUpRule": "Anywhere",
+	  "disableDeathDrops": true,
+	  "worldProperties": {"nonCombat": true},
+	  "skyParameters": {
+		"spaceLevel": 850,
+		"ambientLightLevel": [24, 28, 24],
+		"skyType": "atmospheric",
+		"skyColoring" : {
+		  "mainColor" : [40, 20, 60],
 
-		        "morningColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
-		        "dayColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
-		        "eveningColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
-		        "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+		  "morningColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+		  "dayColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+		  "eveningColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+		  "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
 
-		       "morningLightColor" : [40, 20, 60],
-		       "dayLightColor" : [40, 20, 60],
-		       "eveningLightColor" : [40, 20, 60],
-		       "nightLightColor" : [40, 20, 60]},
-			   
-				"horizonImages": [],
-				"dayLength": 1153.36,
-				"surfaceLevel": 500,
-				"seed": -5288806180628667000
-		
-			}
-		}
-	},
+	      "morningLightColor" : [40, 20, 60],
+	      "dayLightColor" : [40, 20, 60],
+	      "eveningLightColor" : [40, 20, 60],
+	      "nightLightColor" : [40, 20, 60]
+		},
+	   
+		"horizonImages": [],
+		"dayLength": 1153.36,
+		"surfaceLevel": 500,
+		"seed": -5288806180628667000
+	  }
+	}
+  },
 	
-	{
-		"op": "add",
-		"path": "/starforge-unbdmission1",
-		"value": {
-			"type": "FloatingDungeon",
-			"dungeonWorld": "starforge-unbdmission1",
-			"seed": 1234,
-			"spawningEnabled": false,
-			"beamUpRule": "Anywhere",
-			"disableDeathDrops": true,
-			"worldProperties": {"nonCombat": false},
-			"skyParameters" : {
-      "spaceLevel" : 3000,
-      "ambientLightLevel" : [184, 197, 182],
+  //UNBOUND STORY MISSIONS
+  {
+	"op": "add",
+	"path": "/starforge-unbdmission1",
+	"value": {
+	  "type": "FloatingDungeon",
+	  "dungeonWorld": "starforge-unbdmission1",
+	  "seed": 1234,
+	  "spawningEnabled": false,
+	  "beamUpRule": "Anywhere",
+	  "disableDeathDrops": true,
+	  "worldProperties": {"nonCombat": false},
+	  "skyParameters" : {
+        "spaceLevel" : 3000,
+        "ambientLightLevel" : [184, 197, 182],
 
-      "planet" : {
-        "pos" : [ 0.46, 0.46 ],
-        "layers" : [ {
-          "scale" : 0.17,
-          "image" : "/celestial/system/gas_giant/gas_giant_base.png?hueshift=230"
-        }, {
-          "scale" : 0.17,
-          "image" : "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=220?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
-        }, {
-          "scale" : 0.17,
-          "image" : "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=223?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
-        }, {
-          "scale" : 0.17,
-          "image" : "/celestial/system/gas_giant/shadows/3.png"
-        } ]
-      },
-      "skyType" : "barren",
-			   
-				"horizonImages": [],
-				"dayLength": 5000.36,
-				"surfaceLevel": 800,
-				"seed": -5288806180628667000
-		
-			}
-		}
-	},
-	{
-		"op": "add",
-		"path": "/starforge-unbdmission2",
-		"value": {
-			"type": "FloatingDungeon",
-			"dungeonWorld": "starforge-unbdmission2",
-			"seed": 1234,
-			"spawningEnabled": false,
-			"beamUpRule": "Anywhere",
-			"disableDeathDrops": true,
-			"worldProperties": {"nonCombat": false},
-			"skyParameters" : {
-      "spaceLevel" : 3000,
-      "ambientLightLevel" : [184, 197, 182],
+        "planet" : {
+          "pos" : [ 0.46, 0.46 ],
+          "layers" : [ {
+            "scale" : 0.17,
+            "image" : "/celestial/system/gas_giant/gas_giant_base.png?hueshift=230"
+          }, {
+            "scale" : 0.17,
+            "image" : "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=220?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+          }, {
+            "scale" : 0.17,
+            "image" : "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=223?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+          }, {
+            "scale" : 0.17,
+            "image" : "/celestial/system/gas_giant/shadows/3.png"
+          } ]
+        },
+        "skyType" : "barren",
+		"horizonImages": [],
+		"dayLength": 5000.36,
+		"surfaceLevel": 800,
+		"seed": -5288806180628667000
+	  }
+	}
+  },
+  {
+	"op": "add",
+	"path": "/starforge-unbdmission2",
+	"value": {
+	  "type": "FloatingDungeon",
+	  "dungeonWorld": "starforge-unbdmission2",
+	  "seed": 1234,
+	  "spawningEnabled": false,
+	  "beamUpRule": "Anywhere",
+	  "disableDeathDrops": true,
+	  "worldProperties": {"nonCombat": false},
+	  "skyParameters" : {
+		"spaceLevel" : 3000,
+		"ambientLightLevel" : [184, 197, 182],
 
-      "skyType" : "barren",
-			   
-				"horizonImages": [],
-				"dayLength": 5000.36,
-				"surfaceLevel": 800,
-				"seed": -5288806180628667000
+		"skyType" : "barren",
 		
-			}
-		}
-	},
+		"horizonImages": [],
+		"dayLength": 5000.36,
+		"surfaceLevel": 800,
+		"seed": -5288806180628667000
+	  }
+	}
+  },
+  {
+	"op": "add",
+	"path": "/starforge-unbdmission3",
+	"value": {
+	  "type": "FloatingDungeon",
+	  "dungeonWorld": "starforge-unbdmission3",
+	  "seed": 1234,
+	  "spawningEnabled": false,
+	  "beamUpRule": "Anywhere",
+	  "disableDeathDrops": true,
+	  "worldProperties": {"nonCombat": false},
+	  "skyParameters" : {
+        "spaceLevel" : 3000,
+        "ambientLightLevel" : [24, 28, 24],
+
+        "skyType" : "atmospheric",
+		
+		"horizonImages": [],
+		"dayLength": 5000.36,
+		"surfaceLevel": 800,
+		"seed": -5288806180628667000
+	  }
+	}
+  },
+  
+  //OTHER
+  {
+	"op": "add",
+	"path": "/starforge-biometestzone",
+	"value": {
+	  "type": "FloatingDungeon",
+	  "dungeonWorld": "starforge-biometestzone",
+	  "seed": 1234,
+	  "spawningEnabled": false,
+	  "beamUpRule": "Anywhere",
+	  "disableDeathDrops": true,
+	  "worldProperties": {"nonCombat": false},
+	  "skyParameters" : {
+        "spaceLevel" : 3000,
+        "ambientLightLevel" : [24, 28, 24],
+
+        "skyType" : "atmospheric",
+		"horizonImages": [],
+		"dayLength": 5000.36,
+		"surfaceLevel": 800,
+		"seed": -5288806180628667000
+	  }
+	}
+  },
 	
-	{
-		"op": "add",
-		"path": "/starforge-unbdmission3",
-		"value": {
-			"type": "FloatingDungeon",
-			"dungeonWorld": "starforge-unbdmission3",
-			"seed": 1234,
-			"spawningEnabled": false,
-			"beamUpRule": "Anywhere",
-			"disableDeathDrops": true,
-			"worldProperties": {"nonCombat": false},
-			"skyParameters" : {
-            "spaceLevel" : 3000,
-            "ambientLightLevel" : [24, 28, 24],
-
-            "skyType" : "atmospheric",
-			   
-				"horizonImages": [],
-				"dayLength": 5000.36,
-				"surfaceLevel": 800,
-				"seed": -5288806180628667000
-		
-			}
-		}
-	},
-	
-	{
-		"op": "add",
-		"path": "/starforge-biometestzone",
-		"value": {
-			"type": "FloatingDungeon",
-			"dungeonWorld": "starforge-biometestzone",
-			"seed": 1234,
-			"spawningEnabled": false,
-			"beamUpRule": "Anywhere",
-			"disableDeathDrops": true,
-			"worldProperties": {"nonCombat": false},
-			"skyParameters" : {
-            "spaceLevel" : 3000,
-            "ambientLightLevel" : [24, 28, 24],
-
-            "skyType" : "atmospheric",
-			   
-				"horizonImages": [],
-				"dayLength": 5000.36,
-				"surfaceLevel": 800,
-				"seed": -5288806180628667000
-		
-			}
-		}
-	},
-	
-	{
-		"op": "add",
-		"path": "/starforge-eleuthia1",
-		"value": {
-			"type": "FloatingDungeon",
-			"dungeonWorld": "starforge-eleuthia1",
-			"seed": 1234,
-			"spawningEnabled": false,
-			"beamUpRule": "Anywhere",
-			"disableDeathDrops": true,
-			"worldProperties": {"nonCombat": false},
-			 "skyParameters" : {
+  {
+	"op": "add",
+	"path": "/starforge-eleuthia1",
+	"value": {
+	  "type": "FloatingDungeon",
+	  "dungeonWorld": "starforge-eleuthia1",
+	  "seed": 1234,
+	  "spawningEnabled": false,
+	  "beamUpRule": "Anywhere",
+	  "disableDeathDrops": true,
+	  "worldProperties": {"nonCombat": false},
+	  "skyParameters" : {
 		"dayLength" : 10000,
 		"surfaceLevel" : 1000,
 		"spaceLevel" : 3000,
@@ -187,11 +183,11 @@
 		  "nightLightColor" : [120, 120, 120]
 		}
 	  }
-		}
-	},
+	}
+  },
 	
-	
-	  {
+  //ENCOUNTERS
+  {
 	"op" : "add",
 	"path" : "/unboundship1",
 	"value" : {
@@ -224,9 +220,8 @@
 		}
 	  }
 	}
-   },
-   
-   {
+  },
+  {
 	"op" : "add",
 	"path" : "/unboundship2",
 	"value" : {
@@ -259,5 +254,30 @@
 		}
 	  }
 	}
-   }
+  },
+  
+  //PARAGON STORY MISSIONS
+  {
+	"op": "add",
+	"path": "/starforge-paragonmission1",
+	"value": {
+	  "type": "FloatingDungeon",
+	  "dungeonWorld": "starforge-paragonmission1",
+	  "seed": 1234,
+	  "spawningEnabled": false,
+	  "beamUpRule": "Anywhere",
+	  "disableDeathDrops": true,
+	  "worldProperties": {"nonCombat": false},
+	  "skyParameters" : {
+		"spaceLevel" : 3000,
+		"ambientLightLevel" : [24, 28, 24],
+
+		"skyType" : "atmospheric",
+		"horizonImages": [],
+		"dayLength": 5000.36,
+		"surfaceLevel": 800,
+		"seed": -5288806180628667000
+	  }
+	}
+  }
 ]
