@@ -67,6 +67,17 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/puppertooth",
+	  "value": 	  
+	  {
+	    "order" : 109,
+	    "monsterType" : "starforge-puppertooth",
+	    "icon" : "/monsters/walkers/puppertooth/puppertoothicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/glorbee",
 	  "value": 	  
 	  {
@@ -92,7 +103,7 @@
 	  "path": "/collectables/starmite",
 	  "value": 	  
 	  {
-	    "order" : 109,
+	    "order" : 110,
 	    "monsterType" : "starforge-starmite",
 	    "icon" : "/monsters/walkers/starmite/starmiteicon.png"
 	  }

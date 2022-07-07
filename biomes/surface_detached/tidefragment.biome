@@ -10,7 +10,8 @@
         "pool" : [
           [ 1.0, "starforge-cephaloworm" ],
           [ 1.0, "starforge-glorbee"],
-		  [ 1.0, "starforge-glorbite"]
+		  [ 1.0, "starforge-glorbite"],
+		  [ 1.0, "starforge-puppertooth"]
         ]
       },
       {

@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-puppertooth",
+  "category" : "puppertooth",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "puppertooth.png",
+	"bodynobright" : "puppertoothnobright.png"
+  }
+}
