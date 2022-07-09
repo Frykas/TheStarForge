@@ -4,7 +4,7 @@
 	"species" : "generic",
     "rules" : [
     ],
-    "anchor" : [ "giantshellremnants", "ancientshellremnants", "densejellycaptrees", "jellycapplateau", "yukairuins" ],
+    "anchor" : [ "giantshellremnants", "ancientshellremnants", "densejellycaptrees", "jellycapplateau", "yukairuins", "yukaicliffruins", "jellycapsanctuary" ],
     "gravity" : 80,
     "maxRadius" : 1000000,
     "maxParts" : 100,
@@ -47,6 +47,22 @@
         [ "maxSpawnCount", [1] ]
       ],
       "def" : [ "tmx", "yukairuins.json" ]
+    },
+	
+	{
+      "name" : "yukaicliffruins",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaicliffruins.json" ]
+    },
+	
+	{
+      "name" : "jellycapsanctuary",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "jellycapsanctuary.json" ]
     }
   ]
 }
