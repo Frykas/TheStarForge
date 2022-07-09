@@ -784,7 +784,7 @@
                  "y":384
                 }, 
                 {
-                 "gid":4576,
+                 "gid":4578,
                  "height":32,
                  "id":724,
                  "name":"",
@@ -792,11 +792,11 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":192,
+                 "x":184,
                  "y":288
                 }, 
                 {
-                 "gid":4789,
+                 "gid":4791,
                  "height":96,
                  "id":978,
                  "name":"",
@@ -1132,18 +1132,6 @@
                  "y":160
                 }, 
                 {
-                 "gid":2147486410,
-                 "height":120,
-                 "id":1005,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":87,
-                 "x":224,
-                 "y":320
-                }, 
-                {
                  "gid":2769,
                  "height":8,
                  "id":1006,
@@ -1164,7 +1152,7 @@
                  "type":"",
                  "visible":true,
                  "width":38,
-                 "x":192,
+                 "x":184,
                  "y":320
                 }, 
                 {
@@ -1708,18 +1696,6 @@
                  "y":200
                 }, 
                 {
-                 "gid":2763,
-                 "height":31,
-                 "id":1060,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":85,
-                 "x":920,
-                 "y":184
-                }, 
-                {
                  "gid":2147486466,
                  "height":30,
                  "id":1061,
@@ -1876,7 +1852,7 @@
                  "y":368
                 }, 
                 {
-                 "gid":2147487911,
+                 "gid":2147487913,
                  "height":12,
                  "id":1077,
                  "name":"",
@@ -1888,7 +1864,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":4919,
+                 "gid":4921,
                  "height":16,
                  "id":1147,
                  "name":"",
@@ -2274,6 +2250,30 @@
                  "width":32,
                  "x":1024,
                  "y":304
+                }, 
+                {
+                 "gid":2822,
+                 "height":40,
+                 "id":1202,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":52,
+                 "x":920,
+                 "y":192
+                }, 
+                {
+                 "gid":2147486471,
+                 "height":88,
+                 "id":1203,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":80,
+                 "x":216,
+                 "y":288
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2658,7 +2658,7 @@
          "name":"wiring - locked door",
          "objects":[
                 {
-                 "gid":4436,
+                 "gid":4438,
                  "height":40,
                  "id":1145,
                  "name":"",
@@ -2690,7 +2690,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":4584,
+                 "gid":4586,
                  "height":8,
                  "id":1167,
                  "name":"",
@@ -2702,7 +2702,7 @@
                  "y":352
                 }, 
                 {
-                 "gid":4777,
+                 "gid":4779,
                  "height":16,
                  "id":1192,
                  "name":"",
@@ -2790,7 +2790,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":1202,
+ "nextobjectid":1204,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -2829,31 +2829,31 @@
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }, 
         {
-         "firstgid":2822,
+         "firstgid":2824,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/decorative.json"
         }, 
         {
-         "firstgid":4263,
+         "firstgid":4265,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/human.json"
         }, 
         {
-         "firstgid":4551,
+         "firstgid":4553,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-colonytag\/station.json"
         }, 
         {
-         "firstgid":4581,
+         "firstgid":4583,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/wire.json"
         }, 
         {
-         "firstgid":4803,
+         "firstgid":4805,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/rail.json"
         }, 
         {
-         "firstgid":4807,
+         "firstgid":4809,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/railpoint.json"
         }, 
         {
-         "firstgid":4812,
+         "firstgid":4814,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/door.json"
         }],
  "tilewidth":8,
