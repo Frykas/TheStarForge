@@ -1,14 +1,14 @@
 {
-  "objectName" : "starforge-brokentidecaller",
+  "objectName" : "starforge-hangingrimenodon",
   "colonyTags" : ["bone"],
   "rarity" : "rare",
 
   "printable" : false,
-  "description" : "A broken Tidecaller. It cannot be used anymore.",
-  "shortdescription" : "Broken Tidecaller",
+  "description" : "A big, hanging creature.",
+  "shortdescription" : "Hanging Creature Meat",
   "race" : "hylotl",
   "category" : "decorative",
-  "price" : 240,
+  "price" : 520,
 
   "apexDescription" : "Looks like a strange Yukai device. It appears to be broken.",
   "avianDescription" : "The strange crystal in the middle is cracked.",
@@ -18,12 +18,12 @@
   "hylotlDescription" : "A device made to summon the Tide here. Seems like it worked.",
   "novakidDescription" : "These Hylotls and their weird crystals and trees I swear.",
 
-  "inventoryIcon" : "yukaitidetreeicon.png",
+  "inventoryIcon" : "hangingrimenodonicon.png",
   "orientations" : [
     {
-	  "dualImage" : "brokentidecaller.png",
-      "imageLayers" : [ { "image" : "brokentidecaller.png" }, { "image" : "brokentidecallerfullbright.png", "fullbright" : true } ],
-      "imagePosition" : [-8, 0],
+	  "dualImage" : "hangingrimenodon.png",
+      "imageLayers" : [ { "image" : "hangingrimenodon.png" }, { "image" : "hangingrimenodonfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-24, 0],
 
       "direction" : "left",
       "flipImages" : false,

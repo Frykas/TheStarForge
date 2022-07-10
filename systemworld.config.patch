@@ -18,7 +18,7 @@
   {
     "op": "add",
     "path": "/objectSpawnPool/-",
-    "value": [0.06, "unboundasteroids"]
+    "value": [0.10, "unboundasteroids"]
   }
   
 

@@ -1324,18 +1324,6 @@
                  "y":520
                 }, 
                 {
-                 "gid":2147486428,
-                 "height":61,
-                 "id":1208,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":111,
-                 "x":536,
-                 "y":616
-                }, 
-                {
                  "gid":2748,
                  "height":38,
                  "id":1209,
@@ -1758,7 +1746,7 @@
                  "type":"",
                  "visible":true,
                  "width":40,
-                 "x":1424,
+                 "x":1432,
                  "y":824
                 }, 
                 {
@@ -1770,7 +1758,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":1448,
+                 "x":1456,
                  "y":800
                 }, 
                 {
@@ -1938,7 +1926,7 @@
                  "type":"",
                  "visible":true,
                  "width":21,
-                 "x":1600,
+                 "x":1592,
                  "y":752
                 }, 
                 {
@@ -3076,6 +3064,30 @@
                  "width":32,
                  "x":1720,
                  "y":488
+                }, 
+                {
+                 "gid":5548,
+                 "height":16,
+                 "id":1466,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":1312,
+                 "y":888
+                }, 
+                {
+                 "gid":5548,
+                 "height":16,
+                 "id":1467,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":1456,
+                 "y":384
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3664,7 +3676,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":1466,
+ "nextobjectid":1468,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -3733,6 +3745,10 @@
         {
          "firstgid":4946,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/pot.json"
+        }, 
+        {
+         "firstgid":5243,
+         "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/breakable.json"
         }],
  "tilewidth":8,
  "type":"map",

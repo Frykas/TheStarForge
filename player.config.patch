@@ -60,6 +60,7 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundessenceextractor"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundflowerbed"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundflowerpot"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundfence"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundhologram"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundlargebanner"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundlight"} },

@@ -1,0 +1,45 @@
+{
+  "objectName" : "starforge-yukaibed",
+  "colonyTags" : ["hylotl","bone"],
+  "rarity" : "Common",
+  "description" : "A yukai bed, made of bone and ragged cloth.",
+  "shortdescription" : "Yukai Bed",
+  "race" : "hylotl",
+  "category" : "furniture",
+  "price" : 115,
+
+  "apexDescription" : "A basic bed. Comfortable enough.",
+  "avianDescription" : "This is a comfortable enough place to rest my feathers.",
+  "floranDescription" : "Floran ressst in sssimple bed.",
+  "glitchDescription" : "Impressed. A simple but sturdy bed.",
+  "humanDescription" : "A decent bed. Should be able to get some rest here.",
+  "hylotlDescription" : "It's not the best build quality, but it'll do.",
+  "novakidDescription" : "A simple bed to rest my weary head.",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-10, 13],
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/yukai/furniture/yukaibed/yukaibedcover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "inventoryIcon" : "yukaibedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "yukaibed.png:<color>",
+
+      "imagePosition" : [-26, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

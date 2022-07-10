@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-yukaifence",
+  "colonyTags" : ["misc"],
+  "rarity" : "common",
+  "description" : "A fence made of cloth & bone.",
+  "shortdescription" : "Yukai Fence",
+  "race" : "hylotl",
+
+  "category" : "decorative",
+  "price" : 50,
+
+  "apexDescription" : "A rather unstable fence made of bone.",
+  "avianDescription" : "A fence. Cruel mockery for the grounded.",
+  "floranDescription" : "Floran is sssure Floran could jump this fence! But Floran won't try.",
+  "glitchDescription" : "Observant. It is a fence made of bones.",
+  "humanDescription" : "A weird bone fence.",
+  "hylotlDescription" : "If this fence was under the ocean, I could just swim over it. Then again, why would it be?",
+  "novakidDescription" : "A crude fence.",
+
+  "inventoryIcon" : "yukaifenceicon.png",
+   "orientations" : [
+    {
+      "dualImage" : "yukaifence.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "flipImages" : false,
+      "renderLayer" : "Player+6",
+      "direction" : "left",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}
