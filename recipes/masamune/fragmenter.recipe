@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "refinedferozium", "count" : 3},
+	{ "item" : "cryonicextract", "count" : 5},
+	{ "item" : "starforge-tidalfragment", "count" : 15}
+  ],
+  "output" : {
+    "item" : "starforge-fragmenter",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "starforge-yukaishop", "weapon" ],
+  "duration" : 0
+}
+

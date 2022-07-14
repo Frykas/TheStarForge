@@ -10,6 +10,7 @@
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword"],
+  "learnBlueprintsOnPickup" : [ "starforge-harbour" ],
 
   "inventoryIcon" : "starforge-harbour.png",
 
