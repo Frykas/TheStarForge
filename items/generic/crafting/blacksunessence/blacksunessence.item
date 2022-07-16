@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-blacksunessence",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "blacksunessence.png",
+  "description" : "A shiver of power from the mysterious Black Sun, core of the Tide.",
+  "shortdescription" : "Essence of the Black Sun",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

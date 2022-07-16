@@ -10,6 +10,7 @@
   "category" : "Throwable",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","throwable"],
+  "learnBlueprintsOnPickup" : [ "starforge-leviathansteeth" ],
 
   "inventoryIcon" : "starforge-leviathansteeth.png",
 

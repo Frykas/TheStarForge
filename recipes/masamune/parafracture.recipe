@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-blacksunessence", "count" : 6},
+	{ "item" : "refinedferozium", "count" : 8},
+	{ "item" : "cryonicextract", "count" : 5},
+	{ "item" : "starforge-tidalfragment", "count" : 30}
+  ],
+  "output" : {
+    "item" : "starforge-parafracture",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "starforge-yukaishop", "weapon" ],
+  "duration" : 0
+}
+
