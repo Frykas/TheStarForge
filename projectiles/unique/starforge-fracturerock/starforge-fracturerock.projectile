@@ -43,7 +43,7 @@
   ],
   "damageKind" : "fist",
 
-  "scripts" : ["/projectiles/scripts/thea-velocityspin.lua"],
+  "scripts" : ["/projectiles/scripts/starforge-velocityspin.lua"],
   "orientationLocked" : true,
   "pointToLight" : true,
   "spinRate" : 0.25,
