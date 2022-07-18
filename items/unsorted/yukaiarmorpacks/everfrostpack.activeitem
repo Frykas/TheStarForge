@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-yukaieverfrostpack",
+  "price" : 500,
+  "level" : 1,
+  "maxStack" : 1000,
+  "rarity" : "legendary",
+  "category" : "Armor Pack",
+  "description" : "A Yukai pack, containing Everfrost Witch armor.",
+  "shortdescription" : "Everfrost Pack",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "everfrosticon.png",
+  "animation" : "yukaipack.animation",
+  "animationCustom" : {},
+  "scripts" : ["yukaiarmorpack.lua"],
+
+  "fireTime" : 0.5,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "starforge-yukaieverfrostcache",
+    "level" : 1
+  }
+}

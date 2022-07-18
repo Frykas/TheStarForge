@@ -30,11 +30,11 @@
 		"aggressive": true,
 
 		"behaviorConfig": {
-			"leapWindup": 0.15,
-			"leapCooldown": 15,
+			"leapWindup": 0.5,
+			"leapCooldown": 25,
 			"rangedAimTime": 0.1,
 			"rangedWindupTime": 0.1,
-			"leapChance": 0.5,
+			"leapChance": 1.5,
 			"rangedSwapTime": 1,
 			"meleeSwapTime": 1.5
 		},
@@ -180,9 +180,9 @@
 
 	"movementParameters": {
 		"mass": 2.0,
-		"runSpeed": 6,
+		"runSpeed": 4,
 		"airJumpProfile": {
-			"jumpSpeed": 30,
+			"jumpSpeed": 15,
 			"jumpHoldTime": 0,
 			"autoJump": false,
 			"collisionCancelled": true,

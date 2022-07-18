@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaitear", "count" : 1},
+	{ "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "bone", "count" : 25},
+	{ "item" : "silk", "count" : 3}
+  ],
+  "output" : {
+    "item" : "starforge-crownofsorrow",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "armor" ],
+  "duration" : 0
+}
+
