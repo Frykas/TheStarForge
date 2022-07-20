@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starforge-roboblinkeep",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "protected" : false,
+    "anchor" : [ "starforge-roboblinkeep" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100
+  },
+
+  "parts" : [
+    {
+      "name" : "starforge-roboblinkeep",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "roboblinkeep.json" ]
+    }
+  ]
+}
