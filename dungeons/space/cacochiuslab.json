@@ -1,5 +1,12 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":100,
  "infinite":false,
  "layers":[
@@ -41,16 +48,17 @@
                  "height":8,
                  "id":1680,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"girder",
-                     "colorVariant":"7"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"girder"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -62,18 +70,22 @@
                  "height":8,
                  "id":1681,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"pressurisedgirder",
-                     "colorVariant":"7",
-                     "front":"pressurisedgirder"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"pressurisedgirder"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"pressurisedgirder"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -85,16 +97,17 @@
                  "height":8,
                  "id":1682,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"girder",
-                     "colorVariant":"7"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"girder"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -106,18 +119,22 @@
                  "height":8,
                  "id":1683,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"pressurisedgirder",
-                     "colorVariant":"7",
-                     "front":"pressurisedgirder"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"pressurisedgirder"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"pressurisedgirder"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -129,16 +146,17 @@
                  "height":8,
                  "id":1684,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"girder",
-                     "colorVariant":"7"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"girder"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -150,16 +168,17 @@
                  "height":8,
                  "id":1685,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"girder",
-                     "colorVariant":"7"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"girder"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -171,18 +190,22 @@
                  "height":8,
                  "id":1707,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -194,18 +217,22 @@
                  "height":8,
                  "id":1708,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -217,18 +244,22 @@
                  "height":8,
                  "id":1709,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -240,18 +271,22 @@
                  "height":8,
                  "id":1710,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -263,18 +298,22 @@
                  "height":8,
                  "id":1711,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -286,18 +325,22 @@
                  "height":8,
                  "id":1712,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -309,18 +352,22 @@
                  "height":8,
                  "id":1713,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -332,18 +379,22 @@
                  "height":8,
                  "id":1714,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -355,18 +406,22 @@
                  "height":8,
                  "id":1715,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -378,18 +433,22 @@
                  "height":8,
                  "id":1716,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -401,18 +460,22 @@
                  "height":8,
                  "id":1717,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -424,18 +487,22 @@
                  "height":8,
                  "id":1718,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -447,18 +514,22 @@
                  "height":8,
                  "id":1722,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -470,18 +541,22 @@
                  "height":8,
                  "id":1723,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -493,18 +568,22 @@
                  "height":8,
                  "id":1724,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -516,18 +595,22 @@
                  "height":8,
                  "id":1728,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -539,18 +622,22 @@
                  "height":8,
                  "id":1729,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -562,18 +649,22 @@
                  "height":8,
                  "id":1730,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -585,18 +676,22 @@
                  "height":8,
                  "id":1873,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -608,18 +703,22 @@
                  "height":8,
                  "id":1874,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -631,18 +730,22 @@
                  "height":8,
                  "id":1875,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -654,18 +757,22 @@
                  "height":8,
                  "id":1876,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -677,18 +784,22 @@
                  "height":8,
                  "id":1877,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -700,18 +811,22 @@
                  "height":8,
                  "id":1878,
                  "name":"",
-                 "properties":
-                    {
-                     "back":"slopedhullpanel",
-                     "colorVariant":"7",
-                     "front":"slopedhullpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "back":"string",
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"7"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"slopedhullpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -759,14 +874,12 @@
                  "height":8,
                  "id":1676,
                  "name":"",
-                 "properties":
-                    {
-                     "vehicle":"stationtram"
-                    },
-                 "propertytypes":
-                    {
-                     "vehicle":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"vehicle",
+                         "type":"string",
+                         "value":"stationtram"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -875,14 +988,12 @@
                  "height":8,
                  "id":1764,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"interval\" : 5 }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"interval\" : 5 }"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -895,14 +1006,12 @@
                  "height":8,
                  "id":1765,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"interval\" : 5 }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"interval\" : 5 }"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -927,14 +1036,12 @@
                  "height":40,
                  "id":1849,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"treasurePools\":[\"basicSpaceTreasure\"]}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"basicSpaceTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -947,14 +1054,12 @@
                  "height":40,
                  "id":1850,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"treasurePools\":[\"basicSpaceTreasure\"]}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"basicSpaceTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1146,20 +1251,54 @@
                  "height":8,
                  "id":1879,
                  "name":"",
-                 "properties":
-                    {
-                     "monster":"starforge-cacochius"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"starforge-cacochius"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
                  "x":720,
                  "y":432
+                }, 
+                {
+                 "gid":9044,
+                 "height":16,
+                 "id":1880,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":624,
+                 "y":288
+                }, 
+                {
+                 "gid":9045,
+                 "height":16,
+                 "id":1881,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":1000,
+                 "y":672
+                }, 
+                {
+                 "gid":9047,
+                 "height":24,
+                 "id":1882,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":496,
+                 "y":584
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1283,14 +1422,12 @@
                  "height":8,
                  "id":1844,
                  "name":"",
-                 "properties":
-                    {
-                     "connector":"hazard"
-                    },
-                 "propertytypes":
-                    {
-                     "connector":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"connector",
+                         "type":"string",
+                         "value":"hazard"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1316,10 +1453,10 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1880,
+ "nextobjectid":1883,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.4.3",
  "tileheight":8,
  "tilesets":[
         {
@@ -1492,6 +1629,6 @@
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.1,
+ "version":1.4,
  "width":200
 }
