@@ -69,30 +69,6 @@
                  "y":344
                 }, 
                 {
-                 "gid":3959,
-                 "height":24,
-                 "id":880,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":104,
-                 "y":296
-                }, 
-                {
-                 "gid":2147487607,
-                 "height":24,
-                 "id":886,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":336,
-                 "y":296
-                }, 
-                {
                  "gid":3903,
                  "height":40,
                  "id":888,
@@ -287,7 +263,7 @@
                  "y":328
                 }, 
                 {
-                 "gid":9123,
+                 "gid":9125,
                  "height":16,
                  "id":990,
                  "name":"",
@@ -299,7 +275,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":2147492772,
+                 "gid":2147492774,
                  "height":11,
                  "id":991,
                  "name":"",
@@ -309,6 +285,30 @@
                  "width":16,
                  "x":240,
                  "y":344
+                }, 
+                {
+                 "gid":9143,
+                 "height":16,
+                 "id":992,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":336,
+                 "y":280
+                }, 
+                {
+                 "gid":9143,
+                 "height":16,
+                 "id":993,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":104,
+                 "y":280
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -612,7 +612,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":992,
+ "nextobjectid":994,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -767,7 +767,7 @@
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":9119,
+         "firstgid":9121,
          "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }],
  "tilewidth":8,
