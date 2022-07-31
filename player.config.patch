@@ -133,6 +133,7 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear2"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear3"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispellfire"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaiashenpack"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaieverfrostpack"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaikabutopack"} }

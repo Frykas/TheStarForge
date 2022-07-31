@@ -8,6 +8,8 @@ Huge thanks to :
 • Raiizy#2985, for also being a good friend and helping me with a ton
 of weapon sprites, feedback and ideas.
 
+• Monica#2686, for working with us on impressive encounters, mission & ideas! 
+
 • Aegonian#2352, for allowing me to use Elithian Races as a stepping 
 stone to learn modding & spriting. Also allowing me to use a few of his
 scripts. 
@@ -24,8 +26,6 @@ regarding modding. You helped a lot!
 • "Mik made something in this mod please do not contact him ever" - Mik when donating the Veteran npc behaviours
 
 • Inferus#9279, for making awesome projectile VFX & cleaning the object files
-
-• Monica#2686, for making the Unbound large combat vessel ship dungeon!
 
 • anomnum#6969, for helping me learn how to use Tiled and a few other things
 
@@ -50,9 +50,7 @@ to make the Principle of Duality rocket launcher.
 
 ---Music credits  :---
 
-• loib#5351, for making the "Rumble of the Centurion" boss track, "Tidal Depths" and "Unshackled, Unbound"
-
-• Facebook.com/FoolBoyMedia, for making the SF 1.0 cinematic music "Sky Loop"
+• loib#5351, for making the "Rumble of the Centurion" boss track, "Tidal Depths", "Snowswept" and "Unshackled, Unbound"
 
 • BloodPixelHero, for making "Alien Landing" - used as "Yukai March"
 

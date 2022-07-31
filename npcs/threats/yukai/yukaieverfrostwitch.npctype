@@ -4,7 +4,7 @@
 
 	"persistent": true,
 
-	"scripts": ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+	"scripts": ["/npcs/bmain.lua"],
 	"initialScriptDelta": 5,
 
 	"dropPools": ["starforge-yukaiashenwitchTreasure"],
@@ -21,7 +21,6 @@
 
 
 	"scriptConfig": {
-		"bossName": "Yukai Everfrost Witch",
 
 		"behavior": "mik-hostilenpc",
 
@@ -144,7 +143,7 @@
 
 	"innateStatusEffects": ["rage", {
 			"stat": "maxHealth",
-			"amount": 2400
+			"amount": 1900
 		}, {
 			"stat": "powerMultiplier",
 			"amount": 1.60
