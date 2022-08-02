@@ -468,7 +468,7 @@ function determineRarity(partList, partConfigs, rarityConfig)
 
   for partType, partInfo in pairs(partList) do
     local partData = partConfigs[partType].pool[partInfo.id];
-    totalRarity = totalRarity + partData.rarity or 1;
+    totalRarity = totalRarity + (partData.rarity or 1);
   end
 
   --Check the rarity against its factors
