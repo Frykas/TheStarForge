@@ -60,6 +60,7 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundessenceextractor"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundflowerbed"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundflowerpot"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundfence"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundhologram"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundlargebanner"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundlight"} },
@@ -131,5 +132,9 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaiknife"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear2"} },
-  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear3"} }
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispear3"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaispellfire"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaiashenpack"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaieverfrostpack"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaikabutopack"} }
 ]

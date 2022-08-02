@@ -1,131 +1,319 @@
 [
-	{
-		"op": "add",
-		"path": "/thalassooutpost",
-		"value": {
-			"primaryDungeon": "thalassooutpost",
-			 "weatherPool" : [
-		[1, "duststorm"]
-		],
-			"threatLevel": 1,
-			"gravity": 80,
-			"biome" : "midnight",
-			"worldSize": [600, 830],
-			"dungeonBaseHeight": 800,
-			"ambientLightLevel": [40, 20, 60],
-			"ambientNoises": "/sfx/environmental/space_loop4.ogg",
-			"musicTrack": "/music/the-eternal-tide.ogg"
-		}
-	},
-	
-	{
-		"op": "add",
-		"path": "/starforge-unbdmission1",
-		"value": {
-			"primaryDungeon" : "starforge-unbdmission1",
-            "threatLevel" : 7,
-			"biome" : "starforge-unbdmission1",
-            "gravity" : 80,
-            "worldSize" : [2000, 2000],
-            "dungeonBaseHeight" : 1120,
-            "dungeonSurfaceHeight" : 1070,
-            "ambientLightLevel" : [128, 128, 128],
-            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
-            "musicTrack" : "/music/unshackled_unbound.ogg"
-	}
-	},
-	
-	{
-		"op": "add",
-		"path": "/starforge-unbdmission2",
-		"value": {
-			"primaryDungeon" : "starforge-unbdmission2",
-            "threatLevel" : 7,
-			"biome" : "asteroids",
-            "gravity" : 45,
-            "worldSize" : [2000, 2000],
-            "dungeonBaseHeight" : 1120,
-            "dungeonSurfaceHeight" : 1070,
-            "ambientLightLevel" : [128, 128, 128],
-            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
-            "musicTrack" : "/music/unshackled_unbound.ogg"
-	}
-	},
-	
-	{
-		"op": "add",
-		"path": "/starforge-unbdmission3",
-		"value": {
-			"primaryDungeon" : "starforge-unbdmission3",
-			"weatherPool" : [
-		[1, "snowstorm"]
-		],
-            "threatLevel" : 8,
-			"biome" : "snow",
-            "gravity" : 80,
-            "worldSize" : [2000, 2000],
-            "dungeonBaseHeight" : 1050,
-            "dungeonSurfaceHeight" : 925,
-            "ambientLightLevel" : [128, 128, 128],
-            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
-            "musicTrack" : "/music/unshackled_unbound.ogg"
-	}
-	},
-	
-	{
-		"op": "add",
-		"path": "/starforge-biometestzone",
-		"value": {
-			"primaryDungeon" : "starforge-biometestzone",
-
-            "threatLevel" : 8,
-			"biome" : "starforge-tidefragment",
-            "gravity" : 80,
-            "worldSize" : [2000, 2000],
-            "dungeonBaseHeight" : 1050,
-            "dungeonSurfaceHeight" : 925,
-            "ambientLightLevel" : [128, 128, 128],
-            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
-            "musicTrack" : "/music/unshackled_unbound.ogg"
-	}
-	},
-	
-	{
-		"op": "add",
-		"path": "/starforge-eleuthia1",
-		"value": {
-			"primaryDungeon" : "starforge-eleuthia1",
-
-            "threatLevel" : 4,
-			"biome" : "starforge-eleuthia",
-            "gravity" : 80,
-            "worldSize" : [1000, 300],
-            "dungeonBaseHeight" : 400,
-            "dungeonSurfaceHeight" : 170,
-            "ambientLightLevel" : [128, 128, 128],
-            "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
-            "musicTrack" : "/music/yukai_march.ogg"
-	}
-	},
-	
-	{
-    "op" : "add",
-    "path" : "/unboundship1",
-    "value" : {
-	  "primaryDungeon" : "unboundship1",
-	  "threatLevel" : 7,
-	  "gravity" : 0,
-	  "airless" : true,
-	  "worldSize" : [1300, 200],
-	  "dungeonBaseHeight" : 150,
-	  "dungeonSurfaceHeight" : 150,
-	  "ambientLightLevel" : [32, 32, 32],
-	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
-	  "musicTrack" : "/music/lava-exploration1.ogg",
-	  "environmentStatusEffects" : ["biomeairless", "dontstarve"],
-	  "worldEdgeForceRegions" : "TopAndBottom",
-	  "biome" : "space"
+  {
+    "op": "add",
+    "path": "/thalassooutpost",
+    "value": {
+      "primaryDungeon": "thalassooutpost",
+      "weatherPool": [
+        [
+          1,
+          "duststorm"
+        ]
+      ],
+      "threatLevel": 1,
+      "gravity": 80,
+      "biome": "midnight",
+      "worldSize": [
+        600,
+        830
+      ],
+      "dungeonBaseHeight": 800,
+      "ambientLightLevel": [
+        40,
+        20,
+        60
+      ],
+      "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+      "musicTrack": "/music/Snowswept.ogg"
     }
+  },
+  //UNBOUND MISSIONS
+  {
+    "op": "add",
+    "path": "/starforge-unbdmission1",
+    "value": {
+      "primaryDungeon": "starforge-unbdmission1",
+      "threatLevel": 7,
+      "biome": "starforge-unbdmission1",
+      "gravity": 80,
+      "worldSize": [
+        2000,
+        2000
+      ],
+      "dungeonBaseHeight": 1120,
+      "dungeonSurfaceHeight": 1070,
+      "ambientLightLevel": [
+        128,
+        128,
+        128
+      ],
+      "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
+      "musicTrack": "/music/unshackled_unbound.ogg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/starforge-unbdmission2",
+    "value": {
+      "primaryDungeon": "starforge-unbdmission2",
+      "threatLevel": 7,
+      "biome": "asteroids",
+      "gravity": 45,
+      "worldSize": [
+        2000,
+        2000
+      ],
+      "dungeonBaseHeight": 1120,
+      "dungeonSurfaceHeight": 1070,
+      "ambientLightLevel": [
+        128,
+        128,
+        128
+      ],
+      "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
+      "musicTrack": "/music/unshackled_unbound.ogg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/starforge-unbdmission3",
+    "value": {
+      "primaryDungeon": "starforge-unbdmission3",
+      "weatherPool": [
+        [
+          1,
+          "snowstorm"
+        ]
+      ],
+      "threatLevel": 8,
+      "biome": "snow",
+      "gravity": 80,
+      "worldSize": [
+        2000,
+        2000
+      ],
+      "dungeonBaseHeight": 1050,
+      "dungeonSurfaceHeight": 925,
+      "ambientLightLevel": [
+        128,
+        128,
+        128
+      ],
+      "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
+      "musicTrack": "/music/unshackled_unbound.ogg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/starforge-biometestzone",
+    "value": {
+      "primaryDungeon": "starforge-biometestzone",
+      "threatLevel": 8,
+      "biome": "starforge-tidefragment",
+      "gravity": 80,
+      "worldSize": [
+        2000,
+        2000
+      ],
+      "dungeonBaseHeight": 1050,
+      "dungeonSurfaceHeight": 925,
+      "ambientLightLevel": [
+        128,
+        128,
+        128
+      ],
+      "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
+      "musicTrack": "/music/unshackled_unbound.ogg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/starforge-eleuthia1",
+    "value": {
+      "primaryDungeon": "starforge-eleuthia1",
+      "threatLevel": 4,
+      "biome": "starforge-eleuthia",
+      "gravity": 80,
+      "worldSize": [
+        1000,
+        300
+      ],
+      "dungeonBaseHeight": 400,
+      "dungeonSurfaceHeight": 170,
+      "ambientLightLevel": [
+        128,
+        128,
+        128
+      ],
+      "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
+      "musicTrack": "/music/yukai_march.ogg"
+    }
+  },
+  //SPACE ENCOUNTERS
+  {
+    "op": "add",
+    "path": "/unboundship1",
+    "value": {
+      "primaryDungeon": "unboundship1",
+      "threatLevel": 7,
+      "gravity": 0,
+      "airless": true,
+      "worldSize": [
+        1300,
+        200
+      ],
+      "dungeonBaseHeight": 150,
+      "dungeonSurfaceHeight": 150,
+      "ambientLightLevel": [
+        32,
+        32,
+        32
+      ],
+      "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+      "musicTrack": "/music/lava-exploration1.ogg",
+      "environmentStatusEffects": [
+        "biomeairless",
+        "dontstarve"
+      ],
+      "worldEdgeForceRegions": "TopAndBottom",
+      "biome": "space"
+    }
+  },
+  {
+    "path" : "/unboundship2",
+    "op": "add",
+    "value": {
+      "primaryDungeon": "unboundship2",
+      "threatLevel": 7,
+      "gravity": 0,
+      "airless": true,
+      "worldSize": [
+        1300,
+        200
+      ],
+      "dungeonBaseHeight": 150,
+      "dungeonSurfaceHeight": 150,
+      "ambientLightLevel": [
+        32,
+        32,
+        32
+      ],
+      "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+      "musicTrack": "/music/lava-exploration1.ogg",
+      "environmentStatusEffects": [
+        "biomeairless",
+        "dontstarve"
+      ],
+      "worldEdgeForceRegions": "TopAndBottom",
+      "biome": "space"
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/unboundasteroids",
+    "value": {
+      "primaryDungeon": "unboundasteroids",
+      "threatLevel": 7,
+      "gravity": 0,
+      "airless": true,
+      "worldSize": [
+        1300,
+        200
+      ],
+      "dungeonBaseHeight": 150,
+      "dungeonSurfaceHeight": 150,
+      "ambientLightLevel": [
+        32,
+        32,
+        32
+      ],
+      "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+      "musicTrack": "/music/lava-exploration1.ogg",
+      "environmentStatusEffects": [
+        "biomeairless",
+        "dontstarve"
+      ],
+      "worldEdgeForceRegions": "TopAndBottom",
+      "biome": "space"
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/cacochiuslab",
+    "value": {
+      "primaryDungeon": "cacochiuslab",
+      "threatLevel": 7,
+      "gravity": 0,
+      "airless": true,
+      "worldSize": [
+        1300,
+        200
+      ],
+      "dungeonBaseHeight": 150,
+      "dungeonSurfaceHeight": 150,
+      "ambientLightLevel": [
+        32,
+        32,
+        32
+      ],
+      "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+      "musicTrack": "/music/lava-exploration1.ogg",
+      "environmentStatusEffects": [
+        "biomeairless",
+        "dontstarve"
+      ],
+      "worldEdgeForceRegions": "TopAndBottom",
+      "biome": "space"
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/florantnest",
+    "value": {
+      "primaryDungeon": "florantnest",
+      "threatLevel": 7,
+      "gravity": 0,
+      "airless": true,
+      "worldSize": [
+        1300,
+        200
+      ],
+      "dungeonBaseHeight": 150,
+      "dungeonSurfaceHeight": 150,
+      "ambientLightLevel": [
+        32,
+        32,
+        32
+      ],
+      "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+      "musicTrack": "/music/lava-exploration1.ogg",
+      "environmentStatusEffects": [
+        "biomeairless",
+        "dontstarve"
+      ],
+      "worldEdgeForceRegions": "TopAndBottom",
+      "biome": "space"
+    }
+  },
+  
+  //PARAGON MISSION 1
+  {
+	"op": "add",
+	"path": "/starforge-paragonmission1",
+	"value": {
+	  "primaryDungeon" : "starforge-unbdmission1",
+      "threatLevel" : 7,
+	  "biome" : "starforge-paragonmission1",
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1120,
+      "dungeonSurfaceHeight" : 1070,
+      "ambientLightLevel" : [128, 128, 128],
+      "ambientNoises" : "/sfx/others/unboundmission1ambience.ogg",
+      "musicTrack" : "/music/unshackled_unbound.ogg"
+	}
   }
-	
 ]

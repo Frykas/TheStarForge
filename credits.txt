@@ -8,6 +8,8 @@ Huge thanks to :
 • Raiizy#2985, for also being a good friend and helping me with a ton
 of weapon sprites, feedback and ideas.
 
+• Monica#2686, for working with us on impressive encounters, mission & ideas! 
+
 • Aegonian#2352, for allowing me to use Elithian Races as a stepping 
 stone to learn modding & spriting. Also allowing me to use a few of his
 scripts. 
@@ -48,9 +50,7 @@ to make the Principle of Duality rocket launcher.
 
 ---Music credits  :---
 
-• loib#5351, for making the "Rumble of the Centurion" boss track and "Unshackled, Unbound"
-
-• Facebook.com/FoolBoyMedia, for making the SF 1.0 cinematic music "Sky Loop"
+• loib#5351, for making the "Rumble of the Centurion" boss track, "Tidal Depths", "Snowswept" and "Unshackled, Unbound"
 
 • BloodPixelHero, for making "Alien Landing" - used as "Yukai March"
 
@@ -64,4 +64,4 @@ to make the Principle of Duality rocket launcher.
 
 • [cs]#7916, for being one of the winners of the "Create a Manufacturer" contest, being the creator of Pachinko.
 
-• Razyer#9880, for winning the "Dungeon & Discoveries" contest, creator of the Unbound ship dungeon you can find in space.
+• Razyer#9880, for winning the "Dungeon & Discoveries" contest, creator of the Unbound resource transporter ship dungeon you can find in space.

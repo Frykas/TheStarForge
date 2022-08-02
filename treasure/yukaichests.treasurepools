@@ -71,7 +71,43 @@
       ],
       "allowDuplication" : false
     }]
-]
+],
+
+   "starforge-yukaieverfrostcache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-yukaieverfrostwitchhead"},
+        {"weight" : 1, "item" : "starforge-yukaieverfrostwitchchest"},
+        {"weight" : 1, "item" : "starforge-yukaieverfrostwitchpants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-yukaiashencache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-yukaiashenwitchhead"},
+        {"weight" : 1, "item" : "starforge-yukaiashenwitchchest"},
+        {"weight" : 1, "item" : "starforge-yukaiashenwitchpants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-yukaikabutocache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-yukaikabutohead"},
+        {"weight" : 1, "item" : "starforge-yukaikabutochest"},
+        {"weight" : 1, "item" : "starforge-yukaikabutopants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ]
      
   }
   

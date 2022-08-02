@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-elpislegendarydye",
+  "price" : 25,
+  "rarity" : "common",
+  "category" : "clothingDye",
+  "inventoryIcon" : "elpislegendarydye.png",
+  "description" : "This coloured dye can be applied to a piece of armour or clothing with a right-click.",
+  "shortdescription" : "Elpis Legendary Dye",
+
+  "dyeDirectives" : {"ffca8a":"B6F1FF","e0975c":"52A9C9","a85636":"2E7891","6f2919":"143F51"},
+
+  "radioMessagesOnPickup" : [ "pickupdye" ],
+
+  "scripts" : [ "/scripts/augments/dye.lua" ]
+}

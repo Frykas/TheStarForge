@@ -1,0 +1,53 @@
+{
+  "itemName" : "starforge-fragmenter",
+  "level" : 5,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Fling fragments of tidal ice at your foes.",
+  "shortdescription" : "Fragmenter",
+  "tooltipKind" : "gun",
+  "category" : "Throwable",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","throwable"],
+  "learnBlueprintsOnPickup" : [ "starforge-fragmenter" ],
+
+  "inventoryIcon" : "starforge-fragmenter.png",
+
+  "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
+  "animationParts" : {
+    "middle" : ""
+  },
+  "animationCustom" : {
+	"sounds" : {
+      "throw" : [ "/sfx/projectiles/throw_item.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/ranged/throwable/starforge-throwable.lua"],
+
+  "elementalType" : "starforge-tidalfrost",
+
+  "primaryAbilityType" : "starforge-throwprojectile",
+  "primaryAbility" : {
+    "baseDps" : 6,
+    "cooldownTime" : 0.2,
+	
+	"hideItemWhileIdle" : true,
+	
+	"inaccuracy": 0.08,
+    "projectileCount" : 5,
+    "projectileType" : "starforge-tideshard",
+    "projectileParameters" : {
+	  "speed" : [35, 80],
+	  "timeToLive" : [3, 5],
+	  "bounces" : -1,
+	  
+	  "movementSettings" : {
+		"bounceFactor" : 0.5
+	  }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

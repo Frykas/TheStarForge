@@ -4,7 +4,7 @@
 
 	"persistent": true,
 
-	"scripts": ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+	"scripts": ["/npcs/bmain.lua"],
 	"initialScriptDelta": 5,
 
 	"dropPools": ["starforge-yukaiashenwitchTreasure"],
@@ -21,7 +21,6 @@
 
 
 	"scriptConfig": {
-		"bossName": "Yukai Ashen Witch",
 
 		"behavior": "mik-hostilenpc",
 
@@ -30,11 +29,11 @@
 		"aggressive": true,
 
 		"behaviorConfig": {
-			"leapWindup": 0.15,
-			"leapCooldown": 15,
+			"leapWindup": 0.5,
+			"leapCooldown": 100,
 			"rangedAimTime": 0.1,
 			"rangedWindupTime": 0.1,
-			"leapChance": 0.5,
+			"leapChance": 1.5,
 			"rangedSwapTime": 1,
 			"meleeSwapTime": 1.5
 		},
@@ -144,7 +143,7 @@
 
 	"innateStatusEffects": ["rage", {
 			"stat": "maxHealth",
-			"amount": 2550
+			"amount": 2000
 		}, {
 			"stat": "powerMultiplier",
 			"amount": 1.50
@@ -182,7 +181,7 @@
 		"mass": 2.0,
 		"runSpeed": 6,
 		"airJumpProfile": {
-			"jumpSpeed": 30,
+			"jumpSpeed": 15,
 			"jumpHoldTime": 0,
 			"autoJump": false,
 			"collisionCancelled": true,

@@ -1,7 +1,7 @@
 [
  {"op":"add","path":"/collectables/starforge-cacochiusaf","value":{"order":104,"item":"starforge-cacochiusaf"}}
-,{"op":"add","path":"/collectables/starforge-centurionaf","value":{"order":117,"item":"starforge-centurionaf"}}
-,{"op":"add","path":"/collectables/starforge-ancientcephalowormaf","value":{"order":118,"item":"starforge-ancientcephalowormaf"}}
+,{"op":"add","path":"/collectables/starforge-centurionaf","value":{"order":119,"item":"starforge-centurionaf"}}
+,{"op":"add","path":"/collectables/starforge-ancientcephalowormaf","value":{"order":120,"item":"starforge-ancientcephalowormaf"}}
 ,{"op":"add","path":"/collectables/starforge-florantaf","value":{"order":102,"item":"starforge-florantaf"}}
 ,{"op":"add","path":"/collectables/starforge-jootyfishaf","value":{"order":100,"item":"starforge-jootyfishaf"}}
 ,{"op":"add","path":"/collectables/starforge-novalimeaf","value":{"order":103,"item":"starforge-novalimeaf"}}
@@ -12,11 +12,13 @@
 ,{"op":"add","path":"/collectables/starforge-yukaiskyrayaf","value":{"order":109,"item":"starforge-yukaiskyrayaf"}}
 ,{"op":"add","path":"/collectables/starforge-warmongerdroneaf","value":{"order":106,"item":"starforge-warmongerdroneaf"}}
 ,{"op":"add","path":"/collectables/starforge-cephalowormaf","value":{"order":114,"item":"starforge-cephalowormaf"}}
-,{"op":"add","path":"/collectables/starforge-glorbeeaf","value":{"order":115,"item":"starforge-glorbeeaf"}}
+,{"op":"add","path":"/collectables/starforge-glorbeeaf","value":{"order":116,"item":"starforge-glorbeeaf"}}
+,{"op":"add","path":"/collectables/starforge-glorbiteaf","value":{"order":115,"item":"starforge-glorbiteaf"}}
+,{"op":"add","path":"/collectables/starforge-puppertoothaf","value":{"order":117,"item":"starforge-puppertoothaf"}}
 ,{"op":"add","path":"/collectables/starforge-panthyreaf","value":{"order":110,"item":"starforge-panthyreaf"}}
 ,{"op":"add","path":"/collectables/starforge-alabatlingaf","value":{"order":111,"item":"starforge-alabatlingaf"}}
 ,{"op":"add","path":"/collectables/starforge-alabattoraf","value":{"order":112,"item":"starforge-alabattoraf"}}
 ,{"op":"add","path":"/collectables/starforge-mothonaf","value":{"order":113,"item":"starforge-mothonaf"}}
-,{"op":"add","path":"/collectables/starforge-starmiteaf","value":{"order":116,"item":"starforge-starmiteaf"}}
+,{"op":"add","path":"/collectables/starforge-starmiteaf","value":{"order":118,"item":"starforge-starmiteaf"}}
 ]
 //SILBR SOKLOVA PATCH!!!!!!

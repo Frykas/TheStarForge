@@ -40,11 +40,7 @@
   "altAbility" : {
 	"projectileType" : "stingergunsting",
 	"projectileParameters" : {
-	  "damageConfig" : {
-	  "statusEffects" : [ "weakpoison" ]
-    },
 	  "speed" : 120
-	  
 	},
 
 	"projectileCount" : 4,

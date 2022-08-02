@@ -16,7 +16,7 @@
  "margin":0,
  "name":"furouraltar",
  "spacing":0,
- "tilecount":17,
+ "tilecount":24,
  "tiledversion":"1.4.3",
  "tileheight":120,
  "tileproperties":
@@ -111,6 +111,36 @@
          "object":"starforge-brokentidecaller",
          "tilesetDirection":"right"
         },
+     "17":
+        {
+         "\/\/description":"A crutter skull.",
+         "\/\/name":"starforge-crutterskull",
+         "\/\/shortdescription":"Crutter Skull",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-crutterskull",
+         "tilesetDirection":"right"
+        },
+     "18":
+        {
+         "\/\/description":"A taroni skull.",
+         "\/\/name":"starforge-taroniskull",
+         "\/\/shortdescription":"Taroni Skull",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-taroniskull",
+         "tilesetDirection":"right"
+        },
+     "19":
+        {
+         "\/\/description":"A big, hanging creature.",
+         "\/\/name":"starforge-hangingrimenodon",
+         "\/\/shortdescription":"Hanging Creature Meat",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-hangingrimenodon",
+         "tilesetDirection":"right"
+        },
      "2":
         {
          "\/\/description":"A strange solidified resin coming out of bones.",
@@ -119,6 +149,46 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"starforge-spiritree2",
+         "tilesetDirection":"right"
+        },
+     "20":
+        {
+         "\/\/description":"A yukai bed, made of bone and ragged cloth.",
+         "\/\/name":"starforge-yukaibed",
+         "\/\/shortdescription":"Yukai Bed",
+         "imagePositionX":"-26",
+         "imagePositionY":"0",
+         "object":"starforge-yukaibed",
+         "tilesetDirection":"right"
+        },
+     "21":
+        {
+         "\/\/description":"A fence made of cloth & bone.",
+         "\/\/name":"starforge-yukaifence",
+         "\/\/shortdescription":"Yukai Fence",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-yukaifence",
+         "tilesetDirection":"right"
+        },
+     "22":
+        {
+         "\/\/description":"A paper ceiling lamp.",
+         "\/\/name":"starforge-yukaipaperlantern",
+         "\/\/shortdescription":"Yukai Paper Lantern",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"starforge-yukaipaperlantern",
+         "tilesetDirection":"right"
+        },
+     "23":
+        {
+         "\/\/description":"An empty Yukai wall shelf.",
+         "\/\/name":"starforge-yukaiwallshelf",
+         "\/\/shortdescription":"Yukai Wall Shelf",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-yukaiwallshelf",
          "tilesetDirection":"right"
         },
      "3":
@@ -284,7 +354,77 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "17":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "18":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "19":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "2":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "20":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "21":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "22":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "23":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -421,11 +561,53 @@
          "imageheight":36,
          "imagewidth":20
         },
+     "17":
+        {
+         "image":"crutterskull.png",
+         "imageheight":10,
+         "imagewidth":16
+        },
+     "18":
+        {
+         "image":"taroniskull.png",
+         "imageheight":13,
+         "imagewidth":12
+        },
+     "19":
+        {
+         "image":"hangingrimenodon.png",
+         "imageheight":56,
+         "imagewidth":42
+        },
      "2":
         {
          "image":"spiritree2.png",
          "imageheight":20,
          "imagewidth":16
+        },
+     "20":
+        {
+         "image":"yukaibed.png",
+         "imageheight":24,
+         "imagewidth":51
+        },
+     "21":
+        {
+         "image":"yukaifence.png",
+         "imageheight":16,
+         "imagewidth":16
+        },
+     "22":
+        {
+         "image":"yukailantern.png",
+         "imageheight":16,
+         "imagewidth":16
+        },
+     "23":
+        {
+         "image":"yukaiwallshelf.png",
+         "imageheight":8,
+         "imagewidth":32
         },
      "3":
         {

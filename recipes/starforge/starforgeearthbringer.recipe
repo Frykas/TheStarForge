@@ -1,6 +1,7 @@
 {
   "input" : [
 	{ "item" : "essence", "count" : 250},
+	{ "item" : "refinedviolium", "count" : 10},
 	{ "item" : "tungstenbar", "count" : 10},
 	{ "item" : "copperbar", "count" : 7}
   ],

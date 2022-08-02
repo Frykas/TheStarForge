@@ -51,30 +51,6 @@
                  "y":320
                 }, 
                 {
-                 "gid":5,
-                 "height":8,
-                 "id":2,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":456,
-                 "y":240
-                }, 
-                {
-                 "gid":5,
-                 "height":8,
-                 "id":3,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":16,
-                 "y":240
-                }, 
-                {
                  "gid":6,
                  "height":8,
                  "id":6,
@@ -111,7 +87,7 @@
                  "y":304
                 }, 
                 {
-                 "gid":1218,
+                 "gid":1226,
                  "height":54,
                  "id":93,
                  "name":"",
@@ -123,7 +99,7 @@
                  "y":304
                 }, 
                 {
-                 "gid":1217,
+                 "gid":1225,
                  "height":85,
                  "id":94,
                  "name":"",
@@ -135,7 +111,7 @@
                  "y":304
                 }, 
                 {
-                 "gid":1212,
+                 "gid":1220,
                  "height":52,
                  "id":95,
                  "name":"",
@@ -147,7 +123,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1213,
+                 "gid":1221,
                  "height":16,
                  "id":96,
                  "name":"",
@@ -262,6 +238,30 @@
                  "width":8,
                  "x":216,
                  "y":280
+                }, 
+                {
+                 "gid":6,
+                 "height":8,
+                 "id":104,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":48,
+                 "y":136
+                }, 
+                {
+                 "gid":6,
+                 "height":8,
+                 "id":105,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":424,
+                 "y":136
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -281,7 +281,7 @@
          "y":0
         }],
  "nextlayerid":5,
- "nextobjectid":104,
+ "nextobjectid":106,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -308,19 +308,19 @@
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":720,
+         "firstgid":722,
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }, 
         {
-         "firstgid":802,
+         "firstgid":810,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/apex.json"
         }, 
         {
-         "firstgid":1173,
+         "firstgid":1181,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/supports.json"
         }, 
         {
-         "firstgid":1210,
+         "firstgid":1218,
          "source":"..\/..\/tilesets\/tidalremnants\/tidalremnants.json"
         }],
  "tilewidth":8,

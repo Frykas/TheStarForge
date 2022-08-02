@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaipearl", "count" : 2},
+	{ "item" : "bone", "count" : 10},
+	{ "item" : "coralfragment", "count" : 15},
+	{ "item" : "string", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-yukaispellfire",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "weapon", "starforge-yukaishop"],
+  "duration" : 1
+}
+

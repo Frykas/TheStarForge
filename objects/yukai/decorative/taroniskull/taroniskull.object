@@ -1,0 +1,34 @@
+{
+  "objectName" : "starforge-taroniskull",
+  "colonyTags" : ["misc", "bone"],
+  "rarity" : "common",
+  "description" : "A taroni skull.",
+  "shortdescription" : "Taroni Skull",
+  "race" : "hylotl",
+
+  "category" : "decorative",
+  "price" : 50,
+
+  "apexDescription" : "The skull of a common creature. Probably hunted by the Yukai.",
+  "avianDescription" : "A cruel display of violence.",
+  "floranDescription" : "Weird Hylotl hunt like Floran!!",
+  "glitchDescription" : "Observant. It is a Taroni skull.",
+  "humanDescription" : "A monster skull. Weird to think that some people collect those.",
+  "hylotlDescription" : "There is beauty even in death, but displaying it in such a crude manner is rude.",
+  "novakidDescription" : "A skull.",
+
+  "inventoryIcon" : "taroniskullicon.png",
+   "orientations" : [
+    {
+      "dualImage" : "taroniskull.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "flipImages" : false,
+      "direction" : "left",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}

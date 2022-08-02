@@ -1,0 +1,88 @@
+{
+  "itemName": "starforge-yukaispellfire",
+  "price": 450,
+  "maxStack": 1,
+  "rarity": "rare",
+  "description": "A Yukai Pearl carved into a crystal, embed on a weapon. Casts deadly spells.",
+  "shortdescription": "Spellfire",
+  "tooltipKind": "starforge-uniquegun",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Yukai Spell"},
+  "twoHanded": false,
+  "level" : 4,
+  "itemTags": [
+    "weapon",
+    "ranged"
+  ],
+  "inventoryIcon": "spellfireicon.png",
+  "animation": "spellfire.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "spellfire.png",
+    "barrel": "",
+	"middleFullbright": "spellfirefullbright.png"
+  },
+  "animationCustom": {
+    "sounds": {
+      "fire": [
+        "/sfx/gun/dragonhead_fire1.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [0.125, 0.0],
+  "muzzleOffset": [2.0, 0.275],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "fire",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.3,
+    "baseDps": 6.5,
+    "energyUsage": 10,
+    "inaccuracy": 0.02,
+    "projectileCount": 2,
+	"burstTime" : 0.15,
+    "burstCount" : 3,
+    "fireType": "burst",
+    "projectileType": "starforge-electricfluxbolt",
+    "projectileParameters": {
+      "knockback": 1,
+	  "damageKind" : "fireplasmabullet"
+    },
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

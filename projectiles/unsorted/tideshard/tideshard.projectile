@@ -1,19 +1,19 @@
 {
   "projectileName" : "starforge-tideshard",
   "image" : "tideshard.png",
-  "physics" : "grenade",
+  "physics" : "shrapnel",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
   "damageKindImage" : "icon.png",
   "pointLight" : false,
-  "actionOnCollide" : [
-    {
-      "action" : "sound",
-      "options" : [
-        "/sfx/gun/impact_arrow.ogg"
-      ]
-    }
-  ],
+  //"actionOnCollide" : [
+  //  {
+  //    "action" : "sound",
+  //    "options" : [
+  //      "/sfx/gun/impact_arrow.ogg"
+  //    ]
+  //  }
+  //],
   "power" : 1.0,
   "speed" : 25,
   "damageKind" : "starforge-tidalfrost",

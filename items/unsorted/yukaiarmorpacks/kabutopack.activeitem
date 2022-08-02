@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-yukaikabutopack",
+  "price" : 500,
+  "level" : 1,
+  "maxStack" : 1000,
+  "rarity" : "legendary",
+  "category" : "Armor Pack",
+  "description" : "A Yukai pack, containing Onikabuto armor.",
+  "shortdescription" : "Onikabuto Pack",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "kabutoicon.png",
+  "animation" : "yukaipack.animation",
+  "animationCustom" : {},
+  "scripts" : ["yukaiarmorpack.lua"],
+
+  "fireTime" : 0.5,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "starforge-yukaikabutocache",
+    "level" : 1
+  }
+}

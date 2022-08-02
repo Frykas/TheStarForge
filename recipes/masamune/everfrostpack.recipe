@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1250},
+	{ "item" : "bone", "count" : 50},
+	{ "item" : "string", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-yukaieverfrostpack",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "starforge-yukaishop", "armor" ],
+  "duration" : 0
+}
+

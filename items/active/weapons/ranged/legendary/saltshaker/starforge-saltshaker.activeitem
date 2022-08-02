@@ -7,7 +7,7 @@
   "description" : "A durable revolver that can revolve its cylinder to release a piercing shot.",
   "shortdescription" : "Saltshaker",
   "level" : 6,
-  "tooltipKind" : "base",
+  "tooltipKind" : "starforge-uniquegun",
   "category" : "Revolver",
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,

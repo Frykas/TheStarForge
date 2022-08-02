@@ -1,0 +1,71 @@
+{
+  "itemName" : "starforge-harbour",
+  "price" : 1000,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An intensely powerful armament, harnessing the forces of the Tide within its blade.",
+  "shortdescription" : "Harbour",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+  "learnBlueprintsOnPickup" : [ "starforge-harbour" ],
+
+  "inventoryIcon" : "starforge-harbour.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/starforge-broadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "starforge-harbour.png",
+	
+    "swoosh" : "tidalfrost_"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "swoosh" : {
+          "partStates" : {
+            "swoosh" : {
+              "fire" : {
+                "properties" : {
+                  "offset" : [-0.5, 2.5]
+                }
+              },
+              "fire2" : {
+                "properties" : {
+                  "offset" : [3, 1]
+                }
+              },
+              "fire3" : {
+                "properties" : {
+                  "offset" : [-0.5, 2.5]
+                }
+              },
+              "fire4" : {
+                "properties" : {
+                  "offset" : [2.5, 0]
+                }
+              }
+		    }
+		  }
+	    }
+	  }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "starforge-tidalfrost",
+
+  "primaryAbilityType" : "starforge-broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 10,
+    "damageConfig" : {
+      "damageSourceKind" : "starforge-tidalfrost"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

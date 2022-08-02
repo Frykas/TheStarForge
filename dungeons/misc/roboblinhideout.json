@@ -87,7 +87,7 @@
                  "y":312
                 }, 
                 {
-                 "gid":1493,
+                 "gid":1496,
                  "height":21,
                  "id":80,
                  "name":"",
@@ -99,7 +99,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":2147485141,
+                 "gid":2147485144,
                  "height":21,
                  "id":81,
                  "name":"",
@@ -128,7 +128,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1612,
+                 "gid":1615,
                  "height":16,
                  "id":83,
                  "name":"",
@@ -136,7 +136,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"smallChestTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-roboblinstash\"]}"
                         }],
                  "rotation":0,
                  "type":"",
@@ -146,7 +146,7 @@
                  "y":256
                 }, 
                 {
-                 "gid":1636,
+                 "gid":1639,
                  "height":16,
                  "id":84,
                  "name":"",
@@ -158,7 +158,7 @@
                  "y":256
                 }, 
                 {
-                 "gid":1242,
+                 "gid":1245,
                  "height":8,
                  "id":85,
                  "name":"",
@@ -170,7 +170,7 @@
                  "y":280
                 }, 
                 {
-                 "gid":1260,
+                 "gid":1263,
                  "height":16,
                  "id":86,
                  "name":"",
@@ -182,7 +182,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":1269,
+                 "gid":1272,
                  "height":24,
                  "id":87,
                  "name":"",
@@ -194,7 +194,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1275,
+                 "gid":1278,
                  "height":24,
                  "id":88,
                  "name":"",
@@ -206,7 +206,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1355,
+                 "gid":1358,
                  "height":16,
                  "id":91,
                  "name":"",
@@ -218,7 +218,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":1390,
+                 "gid":1393,
                  "height":8,
                  "id":93,
                  "name":"",
@@ -230,7 +230,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1390,
+                 "gid":1393,
                  "height":8,
                  "id":94,
                  "name":"",
@@ -242,7 +242,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1612,
+                 "gid":1615,
                  "height":16,
                  "id":95,
                  "name":"",
@@ -254,7 +254,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1355,
+                 "gid":1358,
                  "height":16,
                  "id":96,
                  "name":"",
@@ -266,7 +266,7 @@
                  "y":280
                 }, 
                 {
-                 "gid":2147485141,
+                 "gid":2147485144,
                  "height":21,
                  "id":97,
                  "name":"",
@@ -278,7 +278,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1493,
+                 "gid":1496,
                  "height":21,
                  "id":98,
                  "name":"",
@@ -290,7 +290,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":1249,
+                 "gid":1252,
                  "height":16,
                  "id":99,
                  "name":"",
@@ -302,7 +302,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":1334,
+                 "gid":1337,
                  "height":8,
                  "id":100,
                  "name":"",
@@ -314,7 +314,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":1378,
+                 "gid":1381,
                  "height":24,
                  "id":101,
                  "name":"",
@@ -322,7 +322,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"basicChestTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"starforge-roboblinstash\"]}"
                         }],
                  "rotation":0,
                  "type":"",
@@ -403,19 +403,19 @@
          "source":"..\/..\/tilesets\/vowvillage\/vowvillage.json"
         }, 
         {
-         "firstgid":753,
+         "firstgid":756,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/light.json"
         }, 
         {
-         "firstgid":1211,
+         "firstgid":1214,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/glitch.json"
         }, 
         {
-         "firstgid":1437,
+         "firstgid":1440,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/door.json"
         }, 
         {
-         "firstgid":1569,
+         "firstgid":1572,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/storage.json"
         }],
  "tilewidth":8,

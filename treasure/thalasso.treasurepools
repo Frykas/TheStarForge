@@ -52,7 +52,7 @@
 	{"weight" : 0.1, "item" : "starforge-rubiumcleaver"},
 	{"weight" : 0.1, "item" : "starforge-infusedbroadsword"},
 	{"weight" : 0.3, "item" : "starforge-gravediggershovel"},
-	{"weight" : 0.1, "item" : "starforge-starforge-infusedsword"}
+	{"weight" : 0.1, "item" : "starforge-infusedsword"}
 	],
 	"poolRounds" : [
 	  [1, 1]

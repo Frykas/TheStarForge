@@ -67,12 +67,34 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/puppertooth",
+	  "value": 	  
+	  {
+	    "order" : 109,
+	    "monsterType" : "starforge-puppertooth",
+	    "icon" : "/monsters/walkers/puppertooth/puppertoothicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/glorbee",
 	  "value": 	  
 	  {
-	    "order" : 107,
+	    "order" : 108,
 	    "monsterType" : "starforge-glorbee",
 	    "icon" : "/monsters/ghosts/glorbee/glorbeeicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/glorbite",
+	  "value": 	  
+	  {
+	    "order" : 107,
+	    "monsterType" : "starforge-glorbite",
+	    "icon" : "/monsters/walkers/glorbite/glorbiteicon.png"
 	  }
 	},
 	
@@ -81,7 +103,7 @@
 	  "path": "/collectables/starmite",
 	  "value": 	  
 	  {
-	    "order" : 108,
+	    "order" : 110,
 	    "monsterType" : "starforge-starmite",
 	    "icon" : "/monsters/walkers/starmite/starmiteicon.png"
 	  }

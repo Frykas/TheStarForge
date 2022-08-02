@@ -9,6 +9,7 @@
     "path": "/unboundship1",
     "value": {
 	  "warpAction" : "InstanceWorld:unboundship1",
+	  "threatLevel" : 6,
 	  "skyParameters" : {
 		"seed" : 0,
 		"horizonClouds" : false,
@@ -22,6 +23,57 @@
 		"icon" : "/celestial/system/ships/unboundship.png",
 		"displayName" : "Hostile Unbound Ship",
 		"description" : "This ship emits a signal that fits with Unbound resource transporters. Proceed with caution."
+	  }
+	}
+  },
+  
+  {
+    "op": "add",
+    "path": "/unboundship2",
+    "value": {
+	  "warpAction" : "InstanceWorld:unboundship2",
+	  "threatLevel" : 6,
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/ships/shiphorizonleft.png", "right": "/celestial/system/ships/shiphorizonright.png" } ]
+	  },
+	  "moving" : true,
+	  "speed" : 15.0,
+	  "orbitRange" : [1, 1],
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/ships/unboundship2.png",
+		"displayName" : "Hostile Unbound Ship",
+		"description" : "This ship emits a signal that fits with large Unbound combat vessels. Proceed with caution."
+	  }
+	}
+  },
+  
+  //SPACE ENCOUNTERS
+  
+    {
+    "op": "add",
+    "path": "/unboundasteroids",
+	"value": {
+	  "warpAction" : "InstanceWorld:unboundasteroids",
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/blindspot/blindspothorizonleft.png", "right": "/celestial/system/blindspot/blindspothorizonright.png" } ]
+	  },
+
+	  "moving" : false,
+	  "speed" : 0,
+	  "orbitRange" : [0, 0],
+	  "generatedParameters" : {
+		"displayName" : "/celestial/blindspotnames.config:nameGen"
+	  },
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/blindspot/blindspot.png",
+		"displayName" : "Blindspot",
+		"description" : "Scans in this area are totally jammed by some sort of interference. An investigation is warranted."
 	  }
 	}
   }

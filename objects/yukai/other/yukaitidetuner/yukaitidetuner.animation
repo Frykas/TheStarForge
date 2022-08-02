@@ -1,0 +1,36 @@
+{
+  "globalTagDefaults" : {
+    "stage" : "1"
+  },
+  
+  "animatedParts" : {
+    "stateTypes" : {
+      "objectState" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "object" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "objectState" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:stage.<stage>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

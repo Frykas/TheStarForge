@@ -13,8 +13,15 @@ function init()
   self.statusEffectQueryRange = 100
   self.statusEffectIntervalTime = 1
   self.statusEffectIntervalTimer = self.statusEffectIntervalTime
+  
+  ---Entity Messaging Handler---
+  message.setHandler("starforge-callPlayerFunction", callPlayerFunction)
 end
 
+function callPlayerFunction(_, _, functionType, args)
+  player[functionType](table.unpack(args))
+end
+  
 function update(args)
   originalUpdate(args)
   

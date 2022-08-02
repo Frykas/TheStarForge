@@ -59,12 +59,12 @@
     "addonfullbright" : "cephalowormeffigyfullbright.png"
   },
 
-  "scripts" : [ "/scripts/starforge-objectaddons.lua", "/objects/crafting/upgradeablecraftingobjects/craftinganvil/addons/anviladdon.lua" ],
+  "scripts" : [ "/scripts/objectaddons.lua", "/objects/crafting/upgradeablecraftingobjects/craftinganvil/addons/anviladdon.lua" ],
 
   "addonConfig" : {
     "isAddons" : [
       {
-        "name" : "cephalowormeffigy"
+        "name" : "cephalowormEffigy"
       }
     ]
   }

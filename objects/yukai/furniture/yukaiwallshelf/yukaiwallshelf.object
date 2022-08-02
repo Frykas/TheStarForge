@@ -1,0 +1,32 @@
+{
+  "objectName" : "starforge-yukaiwallshelf",
+  "colonyTags" : ["hylotl"],
+  "rarity" : "common",
+  "category" : "decorative",
+  "price" : 75,
+  "description" : "An empty Yukai wall shelf.",
+  "shortdescription" : "Yukai Wall Shelf",
+  "race" : "apex",
+
+  "humanDescription" : "A Yukai wall shelf.",
+
+
+
+  "inventoryIcon" : "yukaiwallshelficon.png",
+  "orientations" : [
+    {
+      "dualImage" : "yukaiwallshelf.png" ,
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "background" ],
+	  "collision" : "platform"
+    }
+  ]
+}
