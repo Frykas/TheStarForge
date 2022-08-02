@@ -23,9 +23,45 @@ require "/scripts/cobra-partpicker.lua"
 
 ]]
 
+local arrMeta = getmetatable(jarray());
+local objMeta = getmetatable(jobject());
+local function deepcopy_json(toCopy)
+  if type(toCopy) == "table" then
+      local ret = {};
+      for orig_key, orig_value in next, toCopy, nil do
+        ret[orig_key] = deepcopy_json(orig_value)
+      end
+      local meta = getmetatable(toCopy);
+      if meta ~= nil then
+        if meta.__typehint == 1 then
+          setmetatable(ret, arrMeta)
+        elseif meta.__typehint == 2 then
+          setmetatable(ret, objMeta)
+        end
+      end
+      return ret;
+  else
+      return toCopy;
+  end
+end
+
+local oldAsset = nil;
+local function getAssets(path, nocopy)
+  math.sf_bld_assetCache = math.sf_bld_assetCache or {};
+  if math.sf_bld_assetCache[path] == nil then
+    --print("caching", path)
+    math.sf_bld_assetCache[path] = oldAsset(path);
+  end
+  return nocopy and math.sf_bld_assetCache[path] or deepcopy_json(math.sf_bld_assetCache[path])
+end
+
 --Made by Nebulox
 --Thanks to C0bra5 for helping me with the development of a more streamlined generation system!
 function build(directory, config, parameters, level, seed)
+  if oldAsset == nil then
+    oldAsset = root.assetJson;
+    root.assetJson = getAssets;
+  end
   local configParameter = function(keyName, defaultValue)
     if parameters[keyName] ~= nil then
       return parameters[keyName]
@@ -68,7 +104,7 @@ function build(directory, config, parameters, level, seed)
 
 
   -- load in the generic config for all multi-part weapons and pick a random color directive
-  local multipartWeaponConfig = root.assetJson("/items/active/weapons/ranged/generated/starforge-multipartweapons.config");
+  local multipartWeaponConfig = getAssets("/items/active/weapons/ranged/generated/starforge-multipartweapons.config", true);
   if not parameters.randomisedDirective then
     parameters.randomisedDirective = getRandomKeyWithSeed(multipartWeaponConfig.randomisedDirectives, randomisedDirectivesSeed);
   end
@@ -79,7 +115,7 @@ function build(directory, config, parameters, level, seed)
   end
   local archetypeConfig = config.archetypes[parameters.archetype];
   -- load the configs we need
-  local generationConfig = root.assetJson(util.absolutePath(directory, archetypeConfig.generationConfig))
+  local generationConfig = getAssets(util.absolutePath(directory, archetypeConfig.generationConfig), true)
 
   -- make sure the parts exist
   -- it won't actually do anything if all the parts are pre-generated
@@ -87,7 +123,7 @@ function build(directory, config, parameters, level, seed)
 
   function getPartData(partType)
     local partId = parameters.weaponParts[partType].id;
-    return generationConfig.partConfigs[partType].pool[partId];
+    return deepcopy_json(generationConfig.partConfigs[partType].pool[partId]);
   end
 
   -- make sure the name is selected
@@ -285,10 +321,10 @@ function build(directory, config, parameters, level, seed)
 
   --Build the inventory icon
   local partOrder = archetypeConfig.iconParts or {}
-  table.sort(partOrder, function(a, b)
-    return getZLevelOfPart(a, config, config.animationCustom or {}) < getZLevelOfPart(b, config, config.animationCustom or {})
-  end)
-  
+  for i,v in ipairs(partOrder) do partOrder[i] = {getZLevelOfPart(v, config, config.animationCustom or {}), v}; end
+  table.sort(partOrder, function(a, b) return a[1] < b[1]; end)
+  for i = 1, #partOrder do partOrder[i] = partOrder[i][2]; end;
+
   if not config.inventoryIcon and config.animationParts then
     config.inventoryIcon = jarray()
     local parts = partOrder
