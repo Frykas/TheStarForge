@@ -1,40 +1,85 @@
 if not partPicker then
   partPicker = {};
+  partPicker.filters = {};
+  partPicker.selectors = {};
+  partPicker.version = 1;
+  -- set to -1 to force all weapons to rebuild
+  -- partPicker.version = -1;
 
-  --[[ Note from C0bra5
-    I changed the behaviour of the part generator in order to make it easier
-    to work with in the future and more logical in it's approach.
+  --- @class PartDescriptor # a descriptor for a part list
+  --- @field id string # the id of the part
+  --- @field elementalType string # **optional** the elemental type of the part
+  --- @field namePrefix string # **optional** the id of the string
+  --- @field nameRoot string # **optional** the id of the string
+  --- @field nameSuffix string # **optional** the id of the string
 
-    Instead of repeatedly trying to find a compatible parts for an item;
-    I create a list of items filtered part ids that are compatible and pick
-    randomly from that filtered list. I also throw an error when there are no
-    compatible parts as this condition should never occur and would likely
-    cause unknown behaviours down the line if it were to occure.
+  -- for when you add other kind of part pickers add and @field line to this block with the new type of part
+  --- @class PartList # A list of parts and the parameters chosen for them.
+  --- @field body PartDescriptor
+  --- @field stock PartDescriptor
+  --- @field barrel PartDescriptor
+  --- @field magazine PartDescriptor
+  --- @field attachment PartDescriptor
 
-    I also decoupled the processor code from the picking code itself; This
-    should help with making this framework more re-usable in the future.
+  --- @class PartParameters # The parameters passed onto the part picker.
+  --- @field all PartDescriptor
+  --- @field body PartDescriptor
+  --- @field stock PartDescriptor
+  --- @field barrel PartDescriptor
+  --- @field magazine PartDescriptor
+  --- @field attachment PartDescriptor
 
-    I also made it so that the seed is passed to the generator function. This
-    allows the other uses of the random source to be more consistent across
-    multiple runs of the build script since this part may not be ran and therefore
-    causing calls to the random source to differ past the first run of the buildscript.
+  --- @class PartGenerationConfiguration # the id of the string
+  --- @field basePartDirectory string # This is the folder where the visual assets are stored for the parts described in this file.
+  --- @field partSequence string[] # This is the order in which the parts are generated
+  --- @field partConfigs table<string, PartGeneratorPartConfig> # the id of the string
 
+  --- @class PartGeneratorPartConfig # The configuration for a specific part type.
+  --- @field filters table<string, string|table> # The set of filters to apply when selecting a part.
+  --- @field selectors string[] # The set of value selectors for each parts.
+  --- @field pool table<string, table> # The list of part all indexed by their ids.
+
+
+
+  --[[
     The returned object now looks like this in json
     {
-      "partType" : {
+      "body" : {
         "id" : "partId",
-        "parameters" : {
-          "paramName" : "paramValue"
-        }
+        "elementalType" : "fire"
       },
       "partType" : {
         "id" : "partId",
-        "parameters" : {
-          "paramName" : "paramValue"
-        }
+        "paramName" : "paramValue"
       },
       ...
     }
+  ]]
+
+  --[[ example of part params
+  /spawnitem starforge-combatrifle 1 '
+  {
+    "partParams" : {
+      "all" : {
+        // all parts must either be from elpis or lack a manifacturer
+        "manufacturer" : "elpisElements"
+      },
+      "body" : {
+        // elemental type of the body will need to be fire-compatible and automatically set to fire element
+        "elementalType" : "fire"
+      },
+      "barrel" : {
+        // just use the vitrium 3 barrel, you can also force a unique part to show up this way
+        "id" : "vitrium3",
+        // some pre-selected values
+        "suffix" : "of the edge";
+      },
+      // just use the grenade launcher 1 attachment but also generate the rest of the data naturally for it.
+      // you can use this to specify a unique part
+      "attachment" : "grenadeLauncher1"
+    }
+  }
+  '
   ]]
 
   -- PPPPPP  AAAAAA  RRRRRR  TTTTTT          GGGGGG  EEEEEE  NN  NN  EEEEEE  RRRRRR  AAAAAA  TTTTTT  IIIIII  OOOOOO  NN  NN
@@ -43,96 +88,121 @@ if not partPicker then
   -- PP      AA  AA  RR RR     TT            GG  GG  EE      NN NNN  EE      RR RR   AA  AA    TT      II    OO  OO  NN NNN
   -- PP      AA  AA  RR  RR    TT            GGGGGG  EEEEEE  NN  NN  EEEEEE  RR  RR  AA  AA    TT    IIIIII  OOOOOO  NN  NN
 
-  --Generate the parts to use for the gun
-  function partPicker.generateParts(currentParts, generationConfig, seed)
-    -- default the stuff just in case
-    currentParts = currentParts or {};
-    -- create a random source unique to this so that the generation is more consistent
-    local randomSource = sb.makeRandomSource(seed);
-    -- seems to make it more random
-    randomSource:addEntropy(randomSource:randu32());
-    -- create the parts in order using the part sequence
+  --- Generates a list of part specifications for use by a modular item.
+  --- @param params PartParameters # Allows you to manually set parameters for a given part.
+  --- @param generationConfig PartGenerationConfiguration # Allows you to specify filters that can be used to narrow the part selection process to specific parts.
+  --- @param seed integer # The contents of the file that document every part that can be used to form a modular item.
+  --- @return PartList, integer
+  function partPicker.generateParts(params, generationConfig, seed)
+    -- Start with a blank slate.
+    params = params or {};
+    local currentParts = {};
+
+    -- Create the parts in the orider specified by the generation config's part sequence property.
     for _, partType in ipairs(generationConfig.partSequence) do
-      -- random seed so that the number or random calls stays the same
-      local pickSeed = randomSource:randu32();
-      -- get the config for the current part type
-      local partConfig = generationConfig.partConfigs[partType];
 
-      -- pick the part if it's not already specified
-      if not currentParts[partType] then
-        -- create a list of the usable part ids
-        local usablePool = partPicker.createPickPool(partConfig, currentParts, generationConfig, partType);
-        -- if no parts were compatible throw out an error to stop the script in order to prevent further damage
-        if #usablePool <= 0 then
-          error(string.format("Could not find compatible %s\n Current parts:\n%s", partType, sb.printJson(currentParts, 1)));
-        end
-        -- get id of the generated part
-        local partId = partPicker.getRandomFromList(usablePool, pickSeed);
-        -- save it to the current parts
-        currentParts[partType] = {
-          id = partId
-        }
-      end
+      -- create final filter
+      local filters = {};
+      mergeFilters(filters, generationConfig.partConfigs[partType].filters); -- <partList>.config
+      mergeFilters(filters, params.all); -- partParams.all
+      mergeFilters(filters, params[partType]); -- partParams.<partTypes>
 
-      -- if there are processors, add the parameters object
-      if partConfig.processors and #partConfig.processors > 0 then
-        -- create the parameters object
-        local partParameters = currentParts[partType].parameters or {};
-        -- save it to the current parts
-        currentParts[partType].parameters = partParameters;
-        -- load the part data for the processors to use
-        local partData = partConfig.pool[currentParts[partType].id];
-        -- run the processors
-        for _, processorName in ipairs(partConfig.processors) do
-          partPicker.processors[processorName](partData, partParameters, randomSource:randu32());
+      -- Generate the part descriptor.
+      local partDescriptor = partPicker.pickPart(generationConfig, partType, filters, currentParts, seed);
+
+      -- caching
+      local partTypeConfig = generationConfig.partConfigs[partType];
+      -- Get the list of selector functions for the the current part type from the generator config.
+      local selectors = partTypeConfig.selectors;
+      if selectors ~= nil then
+        -- Get the config for the part
+        local partConfig = partTypeConfig.pool[partDescriptor.id];
+        -- run the selectors
+        for _, selectorName in ipairs(selectors) do
+          if type(partConfig[selectorName]) == 'table' then
+
+            if (params[partType] or {})[selectorName] == nil then
+              partDescriptor[selectorName] = partPicker.getRandomFromList(partConfig[selectorName], seed, selectorName) ;
+            elseif params[partType][selectorName] ~= nil then
+              partDescriptor[selectorName] = params[partType][selectorName];
+            end
+          end
         end
       end
+      currentParts[partType] = partDescriptor;
     end
 
     -- return the picked parts
-    return currentParts;
+    return currentParts, partPicker.version
   end
 
-  -- creates a list of compatible part ids for a given part config
-  function partPicker.createPickPool(partConfig, currentParts, generationConfig, partType)
-    -- a list of compatible part IDs
-    local pickPool = {};
-
-    if not partConfig.filters or #partConfig.filters <= 0 then
-      -- if we don't need to filter don't filter
-      for partId, partData in pairs(partConfig.pool) do
-        -- prevent parts marked as unique from being generated automatically
-        if not partData.unique then
-          table.insert(pickPool, partId);
-        end
-      end
+  ---Merges filters on top of each other. Newer values override older values.
+  ---@param filterList table # The current list of filters.
+  ---@param newFilters table # The list of filters to overlay on top of the current ones.
+  function mergeFilters(filterList, newFilters)
+    newFilters = newFilters or {}; -- may not exist.
+    if type(newFilters) == "string" then
+      filterList.id = newFilters; -- for set parts
     else
-      -- look for parts that pass the filters
-      for partId, partData in pairs(partConfig.pool) do
-        -- prevent parts marked as unique from being generated automatically
-        if not partData.unique then
-          local success = true;
-          for _, filterName in ipairs(partConfig.filters) do
-            -- check if part passes filter
-            if not partPicker.filters[filterName](partData, currentParts, generationConfig) then
-              success = false;
-              break;
-            end
-          end
-
-          -- add part id to pool if the part passed inspection
-          if success then
-            table.insert(pickPool, partId);
-          end
-        end
+      for k,v in pairs(newFilters) do
+        filterList[k] = v; -- for procedural generation
       end
     end
-
-    -- return all parts that passed the filter.
-    return pickPool;
   end
 
+  --- creates a list of compatible part ids for a given part config
+  --- @param generationConfig PartGenerationConfiguration
+  --- @param partType string
+  --- @param filters table<string, any>
+  --- @param currentParts table<string, PartDescriptor>
+  --- @param seed integer
+  --- @return PartDescriptor 
+  function partPicker.pickPart(generationConfig, partType, filters, currentParts, seed)
+    -- if the filter has an id already set we don't need to do anything.
+    if type(filters.id) == "string" then return filters; end
+    -- Create a list of allowed parts
+    local pickPool = {};
 
+    
+
+    -- we need to sort here because the loaded data doesn't have the same order everytime
+    local partIds = {};
+    for partId in pairs(generationConfig.partConfigs[partType].pool) do
+      table.insert(partIds, partId);
+    end
+    table.sort(partIds, function (a,b) return a < b; end)
+
+    for _, partId in ipairs(partIds) do
+      local partConfig = generationConfig.partConfigs[partType].pool[partId];
+      -- Unique parts will be set manually using the block above.
+      if not partConfig.unique then
+        -- All filters must pass
+        if partPicker.runFilters(filters, partConfig, currentParts, generationConfig) then
+          table.insert(pickPool, partId);
+        end;
+      end
+    end
+    -- pick a usable part
+    if #pickPool <= 0 then
+      sb.logError("[PartPicker] There were no viable parts for the following settings:");
+      sb.logError("[PartPicker] partType: " .. sb.printJson(partType));
+      sb.logError("[PartPicker] filters: " .. sb.printJson(filters));
+      error("[PartPicker] There were no viable parts during the part selection process. See previous messages.")
+    else
+      return {
+        id = partPicker.getRandomFromList(pickPool, seed, partType)
+      };
+    end
+  end
+
+  function partPicker.runFilters(filters, partConfig, currentParts, generationConfig)
+    for filterName, filterConfig in pairs(filters or {}) do
+      if not partPicker.filters[filterName](partConfig, filterConfig, currentParts, generationConfig) then
+        return false;
+      end
+    end
+    return true;
+  end
 
   -- UU  UU  TTTTTT  IIIIII  LL      SSSSSS
   -- UU  UU    TT      II    LL      SS
@@ -141,12 +211,19 @@ if not partPicker then
   -- UUUUUU    TT    IIIIII  LLLLLL  SSSSSS
 
   -- Randomly pick a value from the a list
-  function partPicker.getRandomFromList(list, seed)
-    local rand = (seed % #list) + 1
-    return list[rand]
+  -- @param: [Array] - list - A list of values.
+  -- @param: [Any] - seed - A seed to generate a specific part.
+  -- @param: [Any] - salt - Additional salt for the seed.
+  -- @return: [bool]
+  function partPicker.getRandomFromList(list, seed, salt)
+    return list[sb.staticRandomI32Range(
+      1, -- min inclusive
+      #list, -- max inclusive
+      seed, -- seed
+      salt -- salt (the engine uses xxHash to generare the actual seed)
+    )]
   end
-
-
+  
 
 
   -- FFFFFF  IIIIII  LL      TTTTTT  EEEEEE  RRRRRR  SSSSSS
@@ -160,66 +237,40 @@ if not partPicker then
 
     I moved the filters to their own section inorder to prevent name collisions in the future.
   ]]
-  partPicker.filters = {};
 
-  -- Returns true if the part allows the elemental type of the part list
-  function partPicker.filters.isCompatibleWithBodyElementalType(partData, currentParts, generationConfig)
-    -- If no elements are provided, it works with anything
-    if not partData.elementalTypes then return true; end
 
-    -- Get the element of the current parts
-    local bodyElementalType = currentParts.body.parameters.elementalType;
-    for _, partElementalType in ipairs(partData.elementalTypes, currentParts) do
-      if bodyElementalType == partElementalType then
-        return true
+  -- Checks if a part matches a specific elementalType
+  function partPicker.filters.elementalType(partConfig, params, currentParts, generationConfig)
+    local targetType;
+
+    if type(params) == 'string' then -- fetches the elemental type as the value of the parameter
+      targetType = params;
+    elseif params.fromPart ~= nil then -- fetches the elemental type from an other part
+      targetType = currentParts[params.fromPart].elementalType; -- no need to default as we generate the data.
+      -- if the part is physical and physical parts are accepted no matter the parent type; allow the part.
+      if
+        partConfig.elementalType == targetType or
+        (params.isPhysicalOK and (partConfig.elementalType == nil or partConfig.elementalType == "physical"))
+      then
+        return true;
       end
     end
-    -- return false the body element type isn't available in this part
+    if type(partConfig.elementalType) == 'string' then
+      return partConfig.elementalType == targetType;
+    elseif type(partConfig.elementalType) == 'table' then
+      for _, partElementalType in ipairs(partConfig.elementalType) do
+        -- if the part allows for the same elemental type as the parent; allow the part.
+        if targetType == partElementalType then return true; end
+      end
+    end
+
     return false;
   end
-	
-	function partPicker.filters.isCompatibleWithBodyManufacturer(partData, currentParts, generationConfig)
-		-- If no elements are provided, it works with anything
-		if not partData.manufacturer then return true; end
-		-- Get the manufacturer for the current body
-		local bodyManufacturer = generationConfig.partConfigs.body.pool[currentParts.body.id].manufacturer;
-		-- check if they are identicalss
-		return partData.manufacturer == bodyManufacturer;
-	end
 
-
-
-  -- PPPPPP  RRRRRR  OOOOOO  CCCCCC  EEEEEE  SSSSSS  SSSSSS  OOOOOO  RRRRRR  SSSSSS
-  -- PP  PP  RR  RR  OO  OO  CC      EE      SS      SS      OO  OO  RR  RR  SS
-  -- PPPPPP  RRRRRR  OO  OO  CC      EEEEEE  SSSSSS  SSSSSS  OO  OO  RRRRRR  SSSSSS
-  -- PP      RR RR   OO  OO  CC      EE          SS      SS  OO  OO  RR RR       SS
-  -- PP      RR  RR  OOOOOO  CCCCCC  EEEEEE  SSSSSS  SSSSSS  OOOOOO  RR  RR  SSSSSS
-
-  --[[
-    Notes from C0bra5:
-
-    I moved the processors to their own section inorder to prevent name collisions in the future
-  ]]
-  partPicker.processors = {};
-
-  -- Picks an elemental type when a part declares many.
-  function partPicker.processors.pickElementalType(partData, partParameters, seed)
-    partParameters.elementalType = partParameters.elementalType or (partData.elementalTypes and partPicker.getRandomFromList(partData.elementalTypes, seed)) or "physical";
+  -- Checks if a part matches a specific manufacturer
+  function partPicker.filters.manufacturer(partConfig, params, currentParts, generationConfig)
+    -- Allow if no manufacturer specified in part data.
+    return partConfig.manufacturer == nil or partConfig.manufacturer == params;
   end
-
-  -- Picks a name prefix when a part declares many
-  function partPicker.processors.pickNamePrefix(partData, partParameters, seed)
-    partParameters.prefix = partParameters.prefix or partPicker.getRandomFromList(partData.namePrefix, seed);
-  end
-
-  -- Picks a name root when a part declares many
-  function partPicker.processors.pickNameRoot(partData, partParameters, seed)
-    partParameters.root = partParameters.root or partPicker.getRandomFromList(partData.nameRoot, seed);
-  end
-
-  -- Picks a name suffix when a part declares many
-  function partPicker.processors.pickNameSuffix(partData, partParameters, seed)
-    partParameters.suffix = partParameters.suffix or partPicker.getRandomFromList(partData.nameSuffix, seed);
-  end
-
 end
+
