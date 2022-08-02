@@ -91,11 +91,11 @@
     "default" : {
       "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
       "iconParts" : [ "stock", "magazine", "attachment", "barrel", "body" ]
-    },
-    "uniqueExample" : {
-      "unique" : true,
-      "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
-      "iconParts" : [ "stock", "magazine", "attachment", "barrel", "body" ]
-    }
+    }//,
+    //"uniqueExample" : {
+    //  "unique" : true,
+    //  "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
+    //  "iconParts" : [ "stock", "magazine", "attachment", "barrel", "body" ]
+    //}
   }
 }

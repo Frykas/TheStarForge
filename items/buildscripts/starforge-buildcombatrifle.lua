@@ -9,18 +9,18 @@ require "/scripts/cobra-partpicker.lua"
 
 --[[
   Note from C0bra5:
+  Build scripts are run in their own context.
+  Build scripts are ran synchronously.
+  Build scripts cannot recieve smuggled data from anything (it seems).
 
-  Here are the changes:
-  - Names are computed in their own section in order to keep the code more self-contained
-  - Rarity is computed in it's own function, isolated from any changes
-  - Directly loads elemental types out of the part partParameters.
-  - Directly loads the manufacturer out of the body part data.
-  - Changed builderConfig.gunParts to builder.partLayerOrder in order to match the .activeitem
-  - renamed builderConfig to archetypeConfig to better match the actual contents
-  - removed the elementalType local variable out of the build function in order to reduce issues potential data desync issues
-  - removed the attachmentOffset local variable from the build function as it's actually what it ends up being
-  - removed the generationDirectory local variable as it's redundent from generationConfig.basePartDirectory
-  - removed parameters.generatedDirectives as it is no longer needed.
+  Actions to executions: ( solo | client | server)
+  grab item in any inventory: 3 | 1 | 2
+  put item in any inventory:  2 | 1 | 1
+
+  Any root.assetJson a buildscript for an item that is displayed in
+  an inventory will result in a blocking file IO call on the UI thread.
+  This causes noticable lag even at lower amouts.
+
 ]]
 
 --Made by Nebulox
@@ -83,7 +83,7 @@ function build(directory, config, parameters, level, seed)
 
   -- make sure the parts exist
   -- it won't actually do anything if all the parts are pre-generated
-  parameters.weaponParts = partPicker.generateParts(parameters.weaponParts, generationConfig, generatePartSeed)
+  parameters.weaponParts = partPicker.generateParts(parameters.partParams, generationConfig, generatePartSeed)
 
   function getPartData(partType)
     local partId = parameters.weaponParts[partType].id;
@@ -103,7 +103,7 @@ function build(directory, config, parameters, level, seed)
   local manufacturerConfig = root.assetJson("/items/active/weapons/ranged/generated/starforge-manufacturer.config:" .. parameters.manufacturer);
 
   -- determine the elemental type
-  parameters.elementalType = parameters.weaponParts.body.parameters.elementalType;
+  parameters.elementalType = parameters.weaponParts.body.elementalType;
 
 
 
@@ -375,27 +375,24 @@ end
 -- Generates the name of a weapon given a part list
 -- this also removes the elements it takes the data from from the parameter list
 -- in order to remove duplicated data.
+--- @param partList table<string, PartDescriptor>
 function generateNameFromPartList(partList)
   local namePrefix = "";
   local nameRoot = "";
   local nameSuffix = "";
 
   for _, partInfo in pairs(partList) do
-    if partInfo.parameters then
-
       -- prefix
-      if partInfo.parameters.prefix then
-        namePrefix = partInfo.parameters.prefix;
+    if partInfo.namePrefix then
+      namePrefix = partInfo.namePrefix;
       end
       -- root
-      if partInfo.parameters.root then
-        nameRoot = partInfo.parameters.root;
+    if partInfo.nameRoot then
+      nameRoot = partInfo.nameRoot;
       end
       -- suffix
-      if partInfo.parameters.suffix then
-        nameSuffix = partInfo.parameters.suffix;
-      end
-
+    if partInfo.nameSuffix then
+      nameSuffix = partInfo.nameSuffix;
     end
   end
 
