@@ -73,7 +73,7 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/starforge-microdungeons.config:starforge-microdungeon",
+        "distribution" : "/biomes/starforge-raremicrodungeons.config:starforge-raremicrodungeon",
 		
         "type" : "microdungeon",
         "microdungeons" : [ "starforge-roboblinsurface" ]

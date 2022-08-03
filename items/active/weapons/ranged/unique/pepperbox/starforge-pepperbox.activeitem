@@ -8,7 +8,8 @@
   "shortdescription" : "^#b4f5c3;Pepperbox^reset;",
   "level" : 7,
   "tooltipKind" : "starforge-uniquegun",
-  "category" : "Revolver",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Revolver"},
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
 

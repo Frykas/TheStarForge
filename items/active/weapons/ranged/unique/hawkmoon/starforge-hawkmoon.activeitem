@@ -9,7 +9,8 @@
   "level" : 7,
   "fixedLevel" : false,
   "tooltipKind" : "starforge-uniquegun",
-  "category" : "Revolver",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Revolver"},
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
 

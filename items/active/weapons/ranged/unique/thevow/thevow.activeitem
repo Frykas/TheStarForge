@@ -7,7 +7,8 @@
   "shortdescription" : "^orange;The Vow^reset;",
   "level" : 7,
   "tooltipKind" : "base",
-  "category" : "Hand Cannon",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Hand Cannon"},
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
   

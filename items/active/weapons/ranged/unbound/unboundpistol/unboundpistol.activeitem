@@ -6,7 +6,7 @@
   "description": "A pistol, often used by Unbound officers.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Fang\" P",
   "tooltipKind": "starforge-unboundgun",
-  "category": "Pistol",
+  "category": "pistol",
   "twoHanded": false,
   "level": 5,
   "itemTags": [

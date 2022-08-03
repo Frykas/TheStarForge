@@ -9,7 +9,8 @@
   "description" : "A pestilent Unbound prototype developed using stolen technology.",
   "shortdescription" : "Raventoxin",
   "tooltipKind" : "base",
-  "category" : "Beam Rifle",
+  "category" : "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Beam Rifle"},
   "itemTags" : ["weapon","ranged","elpiselements","unbound","beamrifle"],
   "twoHanded" : true,
   

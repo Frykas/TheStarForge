@@ -9,7 +9,7 @@
   "level" : 7,
   "fixedLevel" : false,
   "tooltipKind" : "starforge-uniquegun",
-  "category" : "Rocket Launcher",
+  "category" : "rocketLauncher",
   "itemTags" : ["weapon", "ranged", "rocketlauncher"],
   "twoHanded" : true,
   

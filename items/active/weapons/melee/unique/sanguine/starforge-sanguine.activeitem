@@ -7,7 +7,8 @@
   "description" : "A cursed Yukai artefact powered by the life force of its previous owners.",
   "shortdescription" : "^orange;Sanguine^reset;",
   "tooltipKind" : "base",
-  "category" : "Cursed Katana",
+  "category": "broadsword",
+  "tooltipFields" : {"subtitle":"Cursed Katana"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword", "katana"],
 

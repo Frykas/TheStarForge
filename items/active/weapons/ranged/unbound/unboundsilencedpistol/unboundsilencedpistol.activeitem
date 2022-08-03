@@ -6,7 +6,8 @@
   "description": "A silenced pistol, often used by Unbound officers.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Whisper\" SP",
   "tooltipKind": "starforge-unboundgun",
-  "category": "Silenced Pistol",
+  "category": "pistol",
+  "tooltipFields" : {"subtitle":"Silenced Pistol"},
   "twoHanded": false,
   "level": 5,
   "itemTags": [

@@ -8,6 +8,7 @@
   "shortdescription": "Twin Shot",
   "tooltipKind": "starforge-uniquegun",
   "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Double Crossbow"},
   "twoHanded": false,
   "level": 7,
   "itemTags": ["weapon","ranged","pistol"],

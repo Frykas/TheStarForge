@@ -6,7 +6,8 @@
   "description": "A Chain Gun used by Unbound Fortress units, \"Unstoppable\" type.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Melter\" CG",
   "tooltipKind": "starforge-unboundgun",
-  "category": "Chain Gun",
+  "category": "assaultRifle",
+  "tooltipFields" : {"subtitle":"Chain Gun"},
   "twoHanded": true,
   "level" : 6,
   "itemTags": [

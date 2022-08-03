@@ -6,7 +6,8 @@
   "description": "An Unbound SMG loaded with elemental bullets. Often used by Unbound \"Harasser\" Commando types.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Harasser\" SMG",
   "tooltipKind": "starforge-unboundgun",
-  "category": "SMG",
+  "category": "machinePistol",
+  "tooltipFields" : {"subtitle":"SMG"},
   "twoHanded": true,
   "level" : 6,
   "itemTags": [

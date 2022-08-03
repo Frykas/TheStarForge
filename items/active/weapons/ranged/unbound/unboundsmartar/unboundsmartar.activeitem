@@ -6,7 +6,8 @@
   "description": "An deadly assault rifle that fires seeking bullets, used by the Unbound Vanguards units.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Predator\" ^#69729E;VNGD SAR^reset;",
   "tooltipKind": "starforge-vanguardgun",
-  "category": "Smart Assault Rifle",
+  "category": "assaultRifle",
+  "tooltipFields" : {"subtitle":"Smart Assault Rifle"},
   "twoHanded": true,
   "level" : 7,
   "itemTags": [

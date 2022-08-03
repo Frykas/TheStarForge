@@ -9,7 +9,8 @@
   "level" : 6,
   "fixedLevel" : false,
   "tooltipKind" : "starforge-uniquegun",
-  "category" : "Rail Rifle",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Rail Rifle"},
   "itemTags" : ["weapon","ranged","nebulox","tide"],
   "twoHanded" : true,
   

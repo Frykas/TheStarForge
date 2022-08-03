@@ -8,7 +8,8 @@
   "shortdescription" : "^#b4f5c3;Behemoth ver.9000^reset;",
   "level" : 7,
   "tooltipKind" : "starforge-uniquegun",
-  "category" : "Superweapon",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Superweapons"},
   "tooltipFieldsOverride" : {
     "damagePerShotLabel" : "Too Much",
     "speedLabel" : "Pretty Slow",

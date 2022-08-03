@@ -6,7 +6,8 @@
   "description": "A rail pistol used by the \"Riot\" Unbound Commando",
   "shortdescription": "^#686F5D;UNBD^reset; \"Dauntless\" RP",
   "tooltipKind": "starforge-unboundgun",
-  "category": "Rail Pistol",
+  "category": "pistol",
+  "tooltipFields" : {"subtitle":"Rail Pistol"},
   "twoHanded": false,
   "level": 6,
   "itemTags": [

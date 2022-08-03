@@ -7,7 +7,8 @@
   "description" : "A former warlord's claymore fitted with a heated blade for executing glitch.",
   "shortdescription" : "^orange;Decapitator^reset;",
   "tooltipKind" : "base",
-  "category" : "Claymore",
+  "category": "broadsword",
+  "tooltipFields" : {"subtitle":"Claymore"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","greatsword","claymore"],
 

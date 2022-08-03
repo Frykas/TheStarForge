@@ -8,7 +8,8 @@
   "level" : 6,
   "fixedLevel" : false,
   "tooltipKind" : "base",
-  "category" : "Artefact",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Artefact"},
   "itemTags" : ["weapon","ranged","artefact","remnant","theaUnique"],
   "twoHanded" : true,
   

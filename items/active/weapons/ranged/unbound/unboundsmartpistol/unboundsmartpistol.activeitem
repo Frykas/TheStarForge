@@ -6,7 +6,8 @@
   "description": "A deadly pistol firing seeking rounds. Used by Vanguard units.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Assailant\" ^#69729E;VNGD SP^reset;",
   "tooltipKind": "starforge-vanguardgun",
-  "category": "Smart Pistol",
+  "category": "pistol",
+  "tooltipFields" : {"subtitle":"Smart Pistol"},
   "twoHanded": false,
   "level": 7,
   "itemTags": [

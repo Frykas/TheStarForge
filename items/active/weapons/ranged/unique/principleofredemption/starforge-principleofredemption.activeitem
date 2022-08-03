@@ -9,7 +9,8 @@
   "level" : 7,
   "fixedLevel" : false,
   "tooltipKind" : "starforge-uniquegun",
-  "category" : "Hand Cannon",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Hand Cannon"},
   "itemTags" : ["weapon", "ranged", "handcannon"],
   "twoHanded" : true,
   

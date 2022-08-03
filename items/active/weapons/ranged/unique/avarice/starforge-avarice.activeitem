@@ -8,7 +8,8 @@
   "shortdescription" : "^#b4f5c3;Hunter's Avarice^reset;",
   "level" : 7,
   "tooltipKind" : "base",
-  "category" : "Bowgun",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Bowgun"},
   "itemTags" : ["weapon","ranged","bowgun"],
   "twoHanded" : true,
 

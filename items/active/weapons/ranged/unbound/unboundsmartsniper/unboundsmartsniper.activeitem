@@ -6,7 +6,8 @@
   "description": "A deadly sniper rifle loaded with ice elemental bullets.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Invader\" ^#69729E;VNGD SSR^reset;",
   "tooltipKind": "starforge-vanguardgun",
-  "category": "Smart Sniper Rifle",
+  "category": "sniperRifle",
+  "tooltipFields" : {"subtitle":"Smart Sniper Rifle"},
   "twoHanded": true,
   "level" : 7,
   "itemTags": [

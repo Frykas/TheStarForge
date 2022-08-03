@@ -7,7 +7,8 @@
   "description" : "A Yukai glaive, capable of firing strong blasts of energy from its blade.",
   "shortdescription" : "Spellslinger",
   "tooltipKind" : "starforge-uniquesword",
-  "category" : "Spellglaive",
+  "category": "spear",
+  "tooltipFields" : {"subtitle":"Spellglaive"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spellglaive","spear"],
 

@@ -6,7 +6,8 @@
   "description": "A devastating rocket launcher fire thermite-type rockets.",
   "tooltipKind": "starforge-unboundgun",
   "shortdescription": "^#686F5D;UNBD^reset; \"Immolator\" RL",
-  "category": "Thermite Rocket Launcher",
+  "category": "rocketLauncher",
+  "tooltipFields" : {"subtitle":"Thermite Rocket Launcher"},
   "twoHanded": true,
   "level": 6,
   "itemTags": [

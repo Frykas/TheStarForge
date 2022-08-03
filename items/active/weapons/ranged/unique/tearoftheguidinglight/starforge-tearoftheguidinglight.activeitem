@@ -8,7 +8,8 @@
   "description" : "A tainted avolite, taking on an azure hue, said to guide its followers to the truth. ^red;[PROTOTYPE]^reset;",
   "shortdescription" : "Tear of Perception",
   "tooltipKind" : "base",
-  "category" : "Artifact",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Artefact"},
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","pistol"],
 
