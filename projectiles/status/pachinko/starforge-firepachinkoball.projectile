@@ -1,6 +1,6 @@
 {
   "projectileName" : "starforge-firepachinkoball",
-  "physics" : "mechbattery",
+  "physics" : "shrapnel",
   "movementSettings" : {
     "bounceFactor" : 0.0,
     "collisionPoly" : [ [0.25, 0.25], [0.25, -0.25], [-0.25, -0.25], [-0.25, 0.25] ]

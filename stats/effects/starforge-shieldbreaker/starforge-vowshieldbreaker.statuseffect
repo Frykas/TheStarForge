@@ -1,0 +1,13 @@
+{
+  "name" : "starforge-vowshieldbreaker",
+
+  "effectConfig" : {
+    "breakProjectileType" : "fireplasmaexplosionstatus",
+	"healthDamageFactor" : 0.75
+  },
+  "defaultDuration" : 25,
+
+  "scripts" : [
+    "starforge-shieldbreaker.lua"
+  ]
+}

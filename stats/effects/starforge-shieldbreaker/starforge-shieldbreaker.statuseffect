@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-shieldbreaker",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "starforge-shieldbreaker.lua"
+  ]
+}
