@@ -1,0 +1,114 @@
+{
+  "type" : "starforge-sashaprison",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Sasha Beniko",
+    "species" : "apex",
+	"facialHairGroup":"beardfemale",
+	"facialHairType":"14",
+    "hairGroup" : "hairfemale",
+    "hairType" : "",
+	"facialHairDirectives":"?replace;a85636=7e62d0;e0975c=aa97f1;6f2919=5e499c",
+	"bodyDirectives":"?replace;a85636=7e62d0;e0975c=aa97f1;6f2919=5e499c?replace;735e3a=c7815b;d9c189=ffc181;a38d59=d39c6c;f7e7b2=ffe2c5",
+	"hairDirectives":"?replace;a85636=7e62d0;e0975c=aa97f1;6f2919=5e499c",
+	"emoteDirectives":"?replace;a85636=7e62d0;e0975c=aa97f1;6f2919=5e499c?replace;735e3a=c7815b;d9c189=ffc181;a38d59=d39c6c;f7e7b2=ffe2c5",
+    "gender" : "female"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "uniqueId" : "starforge-sashaprisoner",
+  
+    "behavior" : "follower",
+    "turnInQuests" : ["thalassomission1"],
+
+    "dialogMode" : "random",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hey! Who the hell are you? Think you can get me out of here?",
+            "I have no idea who you are, but thanks.",
+            "I need to get the hell out of here before they learn I escaped!",
+			"Know a way out? We need to keep going!",
+            "I'll introduce myself later! We don't have time!",
+			"Hurry!",
+			"Let's go! We have to leave!"
+          ]
+        }
+      },
+	  "follower" : {
+        "attack" : {
+          "default" : {
+            "default" : [
+              "I can help out!",
+              "Let me help!"
+            ]
+          }
+        },
+        "join" : {
+          "default" : {
+            "default" : [
+              "I don't know why you're here for me, but thanks! We need to get out of here!",
+              "We need to hurry before they find out!"
+            ]
+          }
+        },
+        "returnFromCombat" : {
+          "default" : {
+            "default" : [
+              "You fight well!",
+              "Phew! You handle yourself well..."
+            ]
+          }
+        },
+        "wait" : {
+          "default" : {
+            "default" : [
+              "Don't take too long! I can barely defend myself!"
+            ]
+          }
+        },
+        "returnFromWait" : {
+          "default" : {
+            "default" : [
+              "You came back!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+			    "head": [{
+                    "name": "starforge-sashawig"
+                }],
+                "chest": [{
+				    "name" : "workoutchest", "parameters" : { "colorIndex" : 5 } 
+                }],
+                "legs": [{
+                    "name": "starforge-unboundofficerpants"
+                }],
+            "primary" : [
+              ""
+            ],
+            "sheathedprimary" : [
+              "starforge-unboundsilencedpistol"
+            ]
+            }]]
+        ]
+    }
+}
