@@ -24,7 +24,7 @@
     }}}},
     "sounds" : {
       "raiseShield" : [ "/sfx/tech/vehicle_appear1.ogg" ],
-      "perfectBlock" : [ "/sfx/melee/vehicle_disappear1.ogg" ],
+      "perfectBlock" : [ "/sfx/tech/vehicle_disappear1.ogg" ],
       "block" : [ "/sfx/tech/vehicle_disappear2.ogg" ],
       "break" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
     }
