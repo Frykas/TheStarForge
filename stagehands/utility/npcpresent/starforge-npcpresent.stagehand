@@ -1,0 +1,8 @@
+{
+  "type" : "starforge-npcpresent",
+
+  "scripts" : ["/stagehands/utility/npcpresent/starforge-npcpresent.lua"],
+  "scriptDelta" : 10,
+  
+  "broadcastArea" : [-5, -5, 5, 5]
+}

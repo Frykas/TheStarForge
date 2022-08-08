@@ -6,7 +6,7 @@ function init()
 end
 
 function update(dt)
-  --Find all entites in stagehand and kill them
+  --Find all entites in stagehand and apply an effect
   local whitelistedEntities = broadcastAreaQuery({
     includedTypes = self.entityWhitelist
   })

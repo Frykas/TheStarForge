@@ -75,6 +75,26 @@ if not nebUtil then
     return string.char(96 + (seed % nebUtil.objectSize(list)) + 1)
   end
   
+  function nebUtil.tablesAreSame(table, lastTable)
+	local valid = true
+  
+	if #lastTable == #table then
+      valid = false
+	end
+  
+	if valid then
+      for _, lastValue in ipairs(lastTable) do
+        for _, value in pairs(table) do
+	      if lastValue == value then
+	        valid = false
+	      end
+        end
+	  end
+	end
+  
+	return valid
+  end
+  
   --Check if table contains a value
   function nebUtil.tableContains(table, key)
     for _, v in ipairs(table) do
