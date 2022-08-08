@@ -29,7 +29,7 @@
   "scriptConfig" : {
     "uniqueId" : "starforge-morpheusoutpost",
     "behavior" : "villager",
-	"offeredQuests" : ["thalassointromission2", "thalassomission1"],
+	"offeredQuests" : ["thalassointromission2", "thalassomission1", "thalassomission3"],
     "turnInQuests" : ["thalassointromission1","thalassointromission4", "thalassomission1"],
 
     "dialogMode" : "random",

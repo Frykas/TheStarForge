@@ -1,0 +1,70 @@
+{
+  "type" : "starforge-miniknogprison",
+  "baseType" : "villageguard",
+
+  "scriptConfig" : {
+    "behavior" : "follower",
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/miniknog.config:converse",
+	  "follower" : {
+        "attack" : {
+          "default" : {
+            "default" : [
+              "I can help out!",
+              "Let me help!"
+            ]
+          }
+        },
+        "join" : {
+          "default" : {
+            "default" : [
+              "I don't know why you're here for me, but thanks! We need to get out of here!",
+              "We need to hurry before they find out!"
+            ]
+          }
+        },
+        "returnFromCombat" : {
+          "default" : {
+            "default" : [
+              "You fight well!",
+              "Phew! You handle yourself well..."
+            ]
+          }
+        },
+        "wait" : {
+          "default" : {
+            "default" : [
+              "Don't take too long! I can barely defend myself!"
+            ]
+          }
+        },
+        "returnFromWait" : {
+          "default" : {
+            "default" : [
+              "You came back!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "visorhead" }, { "name" : "miniknoghead" }, "" ],
+            "chest" : [ { "name" : "miniknogchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "miniknogpants", "parameters" : { "colorIndex" : 0 } } ],
+            "sheathedprimary" : [
+              "npcmachinepistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}
