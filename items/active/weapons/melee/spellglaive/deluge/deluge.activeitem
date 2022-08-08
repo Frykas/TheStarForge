@@ -9,7 +9,7 @@
   "shortdescription" : "Deluge",
   "tooltipKind" : "starforge-uniquesword",
   "category": "spear",
-  "tooltipFields" : {"subtitle":"Spellglaive"},
+  "tooltipFieldsOverride" : {"subtitle":"Spellglaive"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spellglaive","spear"],
   "learnBlueprintsOnPickup" : [ "starforge-deluge" ],
@@ -64,5 +64,5 @@
 	"fireType" : "auto"
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

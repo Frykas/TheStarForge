@@ -7,7 +7,7 @@
   "shortdescription": "^#686F5D;UNBD^reset; \"Melter\" CG",
   "tooltipKind": "starforge-unboundgun",
   "category": "assaultRifle",
-  "tooltipFields" : {"subtitle":"Chain Gun"},
+  "tooltipFieldsOverride" : {"subtitle":"Chain Gun"},
   "twoHanded": true,
   "level" : 6,
   "itemTags": [
@@ -164,5 +164,5 @@
       }
     }
   },
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

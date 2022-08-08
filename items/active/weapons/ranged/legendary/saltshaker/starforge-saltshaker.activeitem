@@ -9,7 +9,7 @@
   "level" : 6,
   "tooltipKind" : "starforge-uniquegun",
   "category" : "pistol",
-  "tooltipFields" : {"subtitle":"Revolver"},
+  "tooltipFieldsOverride" : {"subtitle":"Revolver"},
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
   "learnBlueprintsOnPickup" : [ "starforge-saltshaker" ],
@@ -156,5 +156,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

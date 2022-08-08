@@ -8,7 +8,7 @@
   "shortdescription" : "Fragmenter",
   "tooltipKind" : "gun",
   "category" : "throwableItem",
-  "tooltipFields" : {"subtitle":"Throwable"},
+  "tooltipFieldsOverride" : {"subtitle":"Throwable"},
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","throwable"],
   "learnBlueprintsOnPickup" : [ "starforge-fragmenter" ],
@@ -50,5 +50,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

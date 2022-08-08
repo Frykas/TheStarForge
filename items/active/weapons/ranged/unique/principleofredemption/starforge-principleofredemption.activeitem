@@ -10,7 +10,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "starforge-uniquegun",
   "category": "uniqueWeapon",
-  "tooltipFields" : {"subtitle":"Hand Cannon"},
+  "tooltipFieldsOverride" : {"subtitle":"Hand Cannon"},
   "itemTags" : ["weapon", "ranged", "handcannon"],
   "twoHanded" : true,
   
@@ -140,5 +140,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

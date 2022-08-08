@@ -4,7 +4,6 @@
   "title" : "^#b4f5c3;Escorting Sasha",
   "text" : "^pink;Sasha Beniko^reset; is now free from her cell, I now need to bring her to the landing pad on a building on the surface directly on top of us.",
   "completionText" : "Great! Thanks again, I'll clean up this place quickly before leaving so that we leave no trace, you can go about your business for a while, I will meet you at the ^green;Thalasso Outpost^reset;.",
-  "completionCinema" : "/cinematics/sashajoins/sashajoins.cinematic",
   "moneyRange" : [10, 10],
   "canBeAbandoned" : false,
   "rewards" : [
@@ -23,8 +22,7 @@
     "goalTrigger" : "message",
     "triggerMessage" : "starforge-missioncomplete2",
 	
-	"turnInDescription" : "I should make my way up to the landing pad above.",
+	"turnInDescription" : "I should make my way up to the landing pad above."
   
-  "setUniverseFlags" : ["unboundmission3"]
   }
 }

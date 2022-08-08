@@ -7,7 +7,7 @@
   "shortdescription": "^#686F5D;UNBD^reset; \"Dauntless\" RP",
   "tooltipKind": "starforge-unboundgun",
   "category": "pistol",
-  "tooltipFields" : {"subtitle":"Rail Pistol"},
+  "tooltipFieldsOverride" : {"subtitle":"Rail Pistol"},
   "twoHanded": false,
   "level": 6,
   "itemTags": [
@@ -88,5 +88,5 @@
     }
   },
    
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

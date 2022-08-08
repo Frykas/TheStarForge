@@ -8,7 +8,7 @@
   "shortdescription" : "Spellslinger",
   "tooltipKind" : "starforge-uniquesword",
   "category": "spear",
-  "tooltipFields" : {"subtitle":"Spellglaive"},
+  "tooltipFieldsOverride" : {"subtitle":"Spellglaive"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spellglaive","spear"],
 
@@ -52,5 +52,5 @@
 	"fireType" : "auto"
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

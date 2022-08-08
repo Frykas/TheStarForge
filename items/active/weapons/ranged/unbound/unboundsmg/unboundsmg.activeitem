@@ -7,7 +7,7 @@
   "shortdescription": "^#686F5D;UNBD^reset; \"Harasser\" SMG",
   "tooltipKind": "starforge-unboundgun",
   "category": "machinePistol",
-  "tooltipFields" : {"subtitle":"SMG"},
+  "tooltipFieldsOverride" : {"subtitle":"SMG"},
   "twoHanded": true,
   "level" : 6,
   "itemTags": [
@@ -105,5 +105,5 @@
       }
     }
   },
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }
