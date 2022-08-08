@@ -8,7 +8,7 @@
   "shortdescription": "Twin Shot",
   "tooltipKind": "starforge-uniquegun",
   "category": "uniqueWeapon",
-  "tooltipFields" : {"subtitle":"Double Crossbow"},
+  "tooltipFieldsOverride" : {"subtitle":"Double Crossbow"},
   "twoHanded": false,
   "level": 7,
   "itemTags": ["weapon","ranged","pistol"],
@@ -84,5 +84,5 @@
     }
   },
    
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

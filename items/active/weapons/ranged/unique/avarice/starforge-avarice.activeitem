@@ -7,9 +7,9 @@
   "description" : "A heavy underslung bowgun, capable of firing bolts at incredibly high speeds.",
   "shortdescription" : "^#b4f5c3;Hunter's Avarice^reset;",
   "level" : 7,
-  "tooltipKind" : "base",
+  "tooltipKind" : "starforge-uniquegun",
   "category": "uniqueWeapon",
-  "tooltipFields" : {"subtitle":"Bowgun"},
+  "tooltipFieldsOverride" : {"subtitle":"Bowgun"},
   "itemTags" : ["weapon","ranged","bowgun"],
   "twoHanded" : true,
 
@@ -150,5 +150,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

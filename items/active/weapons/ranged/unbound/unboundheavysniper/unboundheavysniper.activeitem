@@ -7,7 +7,7 @@
   "shortdescription": "^#686F5D;UNBD^reset; \"Blizzard\" HS",
   "tooltipKind": "starforge-unboundgun",
   "category": "sniper",
-  "tooltipFields" : {"subtitle":"Heavy Sniper"},
+  "tooltipFieldsOverride" : {"subtitle":"Heavy Sniper"},
   "twoHanded": true,
   "level" : 6,
   "itemTags": [
@@ -106,5 +106,5 @@
       }
     }
   },
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

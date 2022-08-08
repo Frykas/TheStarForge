@@ -7,7 +7,7 @@
   "shortdescription": "Yukai Wrist Spell",
   "tooltipKind": "gun",
   "category": "Yukai Spell",
-  "tooltipFields" : {"subtitle":"Wrist Spell"},
+  "tooltipFieldsOverride" : {"subtitle":"Wrist Spell"},
   "twoHanded": false,
   "level" : 6,
   "itemTags": [
@@ -82,5 +82,5 @@
       }
     }
   },
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

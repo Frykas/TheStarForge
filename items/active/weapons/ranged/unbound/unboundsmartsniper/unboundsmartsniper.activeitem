@@ -7,7 +7,7 @@
   "shortdescription": "^#686F5D;UNBD^reset; \"Invader\" ^#69729E;VNGD SSR^reset;",
   "tooltipKind": "starforge-vanguardgun",
   "category": "sniperRifle",
-  "tooltipFields" : {"subtitle":"Smart Sniper Rifle"},
+  "tooltipFieldsOverride" : {"subtitle":"Smart Sniper Rifle"},
   "twoHanded": true,
   "level" : 7,
   "itemTags": [
@@ -104,5 +104,5 @@
       }
     }
   },
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

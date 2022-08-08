@@ -1,6 +1,6 @@
 {
   "type" : "starforge-sashaprison",
-  "baseType" : "base",
+  "baseType" : "guard",
 
   "identity" : {
     "name" : "Sasha Beniko",
@@ -30,7 +30,7 @@
     "uniqueId" : "starforge-sashaprisoner",
   
     "behavior" : "follower",
-    "turnInQuests" : ["thalassomission1"],
+    "turnInQuests" : ["thalassomission3", "thalassomission3b"],
 
     "dialogMode" : "random",
     "dialog" : {

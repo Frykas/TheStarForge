@@ -43,7 +43,7 @@
   "unboundmission3-mariko2" : {
     "type" : "mission",
 	"senderName" : "Mariko",
-	"portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
+	"portraitImage" : "/interface/chatbubbles/marikosurprised.png:<frame>",
 	"text" : "What are Yukai Hylotls doing there?? They're armed too? I'd ignore them if I were you, unless you feel up for a challenge.",
 	"persistTime" : 5.0
 },

@@ -7,7 +7,7 @@
   "shortdescription": "^#686F5D;UNBD^reset; \"Whisper\" SP",
   "tooltipKind": "starforge-unboundgun",
   "category": "pistol",
-  "tooltipFields" : {"subtitle":"Silenced Pistol"},
+  "tooltipFieldsOverride" : {"subtitle":"Silenced Pistol"},
   "twoHanded": false,
   "level": 5,
   "itemTags": [
@@ -97,5 +97,5 @@
     }
   },
    
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

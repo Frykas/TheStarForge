@@ -8,7 +8,7 @@
   "shortdescription" : "Parafracture",
   "tooltipKind" : "gun",
   "category" : "throwableItem",
-  "tooltipFields" : {"subtitle":"Throwable"},
+  "tooltipFieldsOverride" : {"subtitle":"Throwable"},
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","throwable"],
   "learnBlueprintsOnPickup" : [ "starforge-parafracture" ],
@@ -88,7 +88,7 @@
 
   "primaryAbilityType" : "starforge-throwprojectile",
   "primaryAbility" : {
-    "baseDps" : 6,
+    "baseDps" : 7.5,
     "cooldownTime" : 0.2,
 	
 	"projectileFacesDirection" : true, //when facing left, flip to make the blade always face away
@@ -138,5 +138,5 @@
 	}
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

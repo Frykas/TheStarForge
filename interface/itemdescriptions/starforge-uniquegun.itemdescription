@@ -86,8 +86,8 @@
     "position" : [70, 120],
     "file" : "",
     "centered" : true,
-    "maxSize" : [60, 60],
-    "minSize" : [60, 60]
+    "maxSize" : [50, 50],
+    "minSize" : [50, 50]
   },
   "title" : {
     "type" : "label",
