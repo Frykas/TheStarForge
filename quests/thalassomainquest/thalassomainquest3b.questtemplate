@@ -12,15 +12,19 @@
 
   "compassUpdate" : 0.2,
   "updateDelta" : 10,
-  "script" : "/quests/scripts/main.lua",
+  "script" : "/quests/scripts/starforge-main.lua",
   "scriptConfig" : {
      "portraits" : {
       "questStarted" : "player",
       "questComplete" : "questReceiver"
     },
-    "requireTurnIn" : true,
-    "goalTrigger" : "message",
-    "triggerMessage" : "starforge-missioncomplete2",
+    "conditions" : [
+      {
+        "type" : "checkForMessage",
+        "targetMessage" : "starforge-entityEntered",
+		"description" : "Escort ^green;Sasha Beniko^reset; to the landpad on the surface."
+      }
+    ],
 	
 	"turnInDescription" : "I should make my way up to the landing pad above."
   
