@@ -7,13 +7,13 @@ function init()
   if entityType == "monster" then
     --FIX ON MONSTERS WHERE BULLET BREAKS SHIELD, NOT THIS EFFECT, THEREFORE NO EXPLOSION... CHECK FOR IF SHIELD IS BROKEN BEFORE DAMAGING SHIELD SOMEHOW?
 	--MAYBE IN THE BULLET CHECK?
-    sb.logInfo("Monster stat: %s", status.resource("shieldHealth"))
+    --sb.logInfo("Monster stat: %s", status.resource("shieldHealth"))
     if status.resourcePositive("shieldHealth") and status.resource("shieldHealth") > 0 then
       local damage = -(effect.duration() + (effect.duration() * 0.0025 * status.resource("shieldHealth")))
 	  impactShield("shieldHealth", damage)
     end
   else
-    sb.logInfo("Stat: %s", status.stat("shieldHealth"))
+    --sb.logInfo("Stat: %s", status.stat("shieldHealth"))
     if status.statPositive("shieldHealth") and status.stat("shieldHealth") > 0 then
       local damage = -((effect.duration() / status.stat("shieldHealth")) + (effect.duration() * 0.0025))
   	  impactShield("shieldStamina", damage)
@@ -31,12 +31,12 @@ end
 
 function impactShield(res, damage)
   --Convert duration into damage
-  sb.logInfo("Stat: %s", status.resource(res))
-  sb.logInfo("Damage: %s", damage)
+  --sb.logInfo("Stat: %s", status.resource(res))
+  --sb.logInfo("Damage: %s", damage)
   
   --Apply damage to shields
   status.modifyResource(res, damage)
-  sb.logInfo("Damaged Stat: %s", status.resource(res))
+  --sb.logInfo("Damaged Stat: %s", status.resource(res))
   
   if config.getParameter("breakProjectileType") and status.resource(res) == 0 then
     explode()

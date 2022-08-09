@@ -17,7 +17,8 @@
   "animation" : "thevow.animation",
     "animationParts" : {
       "middle" : "thevow.png",
-	  "muzzleFlash" : "muzzleflash.png"
+	  "muzzleFlash" : "muzzleflash.png",
+	  "flame" : ""
 	},
   "animationCustom" : {
     "sounds" : {
