@@ -10,7 +10,7 @@ function buildMessageCheckCondition(config)
   end
   
   --Set up the function that will get called when we receive our target message
-  function monsterKillCondition:onMessageReceived(message, isLocal, objectName)
+  function messageCheckCondition:onMessageReceived(message, isLocal, objectName)
     storage.nebStarforgeMessageReceived = true
   end
 
