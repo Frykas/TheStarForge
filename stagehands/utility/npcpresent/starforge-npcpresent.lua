@@ -15,7 +15,7 @@ function update(dt)
   
   if not nebUtil.tablesAreSame(foundEntities, self.lastFoundEntities) then
     local nearbyPlayers = world.playerQuery(stagehand.position(), self.playerSearchRadius)
-    if nebUtil.tableContains(foundEntities, self.targetEntityName) then
+    if containsName(foundEntities, self.targetEntityName) then
 	  callPlayers(nearbyPlayers, "starforge-entityEntered")
 	else
 	  callPlayers(nearbyPlayers, "starforge-entityExited")
@@ -29,4 +29,13 @@ function callPlayers(players, message)
   for _, player in ipairs(players) do
     world.sendEntityMessage(player, message)
   end
+end
+
+function containsName(table, key)
+  for _, v in ipairs(table) do
+    if world.entityName(v) == key then
+      return true
+    end
+  end
+  return false
 end
