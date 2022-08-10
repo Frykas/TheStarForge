@@ -4,7 +4,7 @@ function init()
   self.parameters.hostEntity = projectile.sourceEntity()
   self.parameters.hostVelocity = mcontroller.velocity()
   self.parameters.power = projectile.power()
-  sb.logInfo("POWER IS %s", projectile.power())
+  --sb.logInfo("POWER IS %s", projectile.power())
   self.parameters.damageTeamType = "friendly"
   self.parameters.level = 1
 end
