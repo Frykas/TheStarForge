@@ -1,6 +1,6 @@
 {
   "itemName" : "starforge-combatrifle",
-  "price" : 900,
+  "price" : 250,
   "maxStack" : 1,
   "rarity" : "Common",
   "description" : "A fully automatic, military grade rifle.",
@@ -8,7 +8,7 @@
   "tooltipKind" : "starforge-combatrifle",
   "category" : "Combat Rifle",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","combatrifle"],
+  "itemTags" : ["weapon","ranged","combatrifle", "upgradeableWeapon"],
   "level" : 1,
 
   "animation" : "/items/active/weapons/ranged/generated/combatrifle/combatrifle.animation",
