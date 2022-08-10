@@ -204,6 +204,59 @@
       ],
       "allowDuplication" : true
     }]
-  ]  
+  ],
+
+   "starforge-unboundmission3small" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.32, "pool" : "chestMoney"},
+        {"weight" : 0.23, "pool" : "healingItem"},
+        {"weight" : 0.35, "pool" : "ore"},
+		{"weight" : 0.10, "item" : "starforge-combatrifle"}
+      ],
+	        "poolRounds" : [
+        [0.1, 3],
+        [0.4, 4],
+        [0.4, 5],
+        [0.1, 6]
+      ],
+      "allowDuplication" : true
+    }]
+  ],  
+  
+  "starforge-unboundmission3special1" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-apexunboundprisonlog-codex", 1]},
+        {"item" : [ "starforge-unboundsilencedpistol", 1]}
+      ]
+    }]
+  ],
+  
+  "starforge-unboundmission3special2" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-apexunboundprisonlog2-codex", 1]},
+        {"item" : [ "starforge-unboundar", 1]}
+      ]
+    }]
+  ],
+  
+  "starforge-unboundmission3armory" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.35, "pool" : "chestMoney"},
+		{"weight" : 0.35, "item" : "starforge-combatrifle"},
+		{"weight" : 0.35, "pool" : "starforge-unboundmission3small"}
+      ],
+	        "poolRounds" : [
+        [0.1, 5],
+        [0.4, 6],
+        [0.4, 7],
+        [0.1, 8]
+      ],
+      "allowDuplication" : true
+    }]
+  ]
   }
   

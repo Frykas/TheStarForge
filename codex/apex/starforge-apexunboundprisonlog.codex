@@ -1,0 +1,50 @@
+{
+  "id" : "starforge-apexunboundprisonlog",
+  "species" : "apex",
+  "title" : "Prisoner Databox F1",
+  "description" : "A Databox containing information regarding Unbound prisoners on Floor 1",
+  "icon" : "starforge-unbounddatabox.png",
+  "contentPages" : [
+
+"PRISONER DATA - FACILITY OMEGA - FA15TE
+
+ PRISONERS 12 - 15
+REBEL GROUP - DESIGNATED TARGET 4546B
+
+- Assault against Unbound troops and citizen.
+- Conspiracy.
+- Disturbing the peace.
+- Vandalism.
+- Homicide.
+To be held in FLOOR 1 until a decision is taken regarding their fate.
+
+",
+
+" PRISONERS 11 - 14
+MINIKNOG AGENTS - DESIGNATED TARGET MINI0
+
+- Terrorism against Unbound facility
+- Illegal experiments
+To be held in FLOOR 1 until a decision is taken regarding their fate.
+
+",
+
+" PRISONER 13
+SUSPECT S - DESIGNATED TARGET HEMOGOBLIN1
+
+- Triple homicide
+- Impersonation
+To be held in FLOOR 1 until a decision is taken regarding their fate.
+
+"
+
+
+
+
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 50
+  }
+}

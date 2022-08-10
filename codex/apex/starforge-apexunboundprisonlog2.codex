@@ -1,0 +1,41 @@
+{
+  "id" : "starforge-apexunboundprisonlog2",
+  "species" : "apex",
+  "title" : "Prisoner Databox F3-F5",
+  "description" : "A Databox containing information regarding Unbound prisoners on Floor 3 and 5",
+  "icon" : "starforge-unbounddatabox.png",
+  "contentPages" : [
+
+"PRISONER DATA - FACILITY OMEGA - FA15TE
+
+ PRISONERS 31 - 32
+HYLOTL CLAN - DESIGNATED TARGET ONI - ASHEN
+
+Residents of the planet before terraformation. Held prisoner after incident 051. Subjects are cooperative, to be used in trade for information regarding project TIDE. Allowed to keep their belongings, to be cautious when nearby subjects.",
+
+" PRISONER 52 
+INSIDE TRAITOR - DESIGNATED TARGET SABEN1
+
+- Spying.
+- Conspiracy.
+- Infiltration.
+- Homicide.
+- Sharing confidential information.
+- Destruction of Ancient relics.
+- Sabotage.
+
+To be held in FLOOR 5 until execution."
+
+
+
+
+
+
+
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 50
+  }
+}
