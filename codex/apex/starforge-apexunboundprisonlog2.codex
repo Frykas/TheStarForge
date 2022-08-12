@@ -2,7 +2,7 @@
   "id" : "starforge-apexunboundprisonlog2",
   "species" : "apex",
   "title" : "Prisoner Databox F3-F5",
-  "description" : "A Databox containing information regarding Unbound prisoners on Floor 3 and 5",
+  "description" : "A Databox containing information regarding Unbound prisoners on Floor 3 and 5.",
   "icon" : "starforge-unbounddatabox.png",
   "contentPages" : [
 

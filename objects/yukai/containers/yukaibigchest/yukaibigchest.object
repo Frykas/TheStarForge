@@ -7,7 +7,7 @@
 
   "category" : "storage",
   "price" : 90,
-  "description" : "A large wooden chest decorated by the Yukai",
+  "description" : "A large wooden chest decorated by the Yukai.",
   "shortdescription" : "Large Yukai Chest",
   "race" : "hylotl",
   "health" : 1.5,

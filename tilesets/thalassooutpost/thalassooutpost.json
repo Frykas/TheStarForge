@@ -16,8 +16,8 @@
  "margin":0,
  "name":"thalassooutpost",
  "spacing":0,
- "tilecount":44,
- "tiledversion":"1.3.2",
+ "tilecount":45,
+ "tiledversion":"1.4.3",
  "tileheight":151,
  "tileproperties":
     {
@@ -399,6 +399,16 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"starforge-jarofmilk",
+         "tilesetDirection":"right"
+        },
+     "44":
+        {
+         "\/\/description":"A Starmite plushie. Very good for cuddles!",
+         "\/\/name":"starforge-starmiteplushie",
+         "\/\/shortdescription":"Starmite Plushie",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-starmiteplushie",
          "tilesetDirection":"right"
         },
      "5":
@@ -834,6 +844,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "44":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "5":
         {
          "\/\/description":"string",
@@ -1120,6 +1140,12 @@
          "image":"..\/..\/objects\/thalasso\/other\/jarofmilk\/jarofmilktiled.png",
          "imageheight":14,
          "imagewidth":11
+        },
+     "44":
+        {
+         "image":"starmiteplushy.png",
+         "imageheight":18,
+         "imagewidth":21
         },
      "5":
         {

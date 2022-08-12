@@ -9,8 +9,9 @@
   "price" : 125,
 
   "objectType" : "loungeable",
+  "sitCoverImage" : "/objects/unbound/furniture/unboundbed/unboundbedcover.png",
   "sitFlipDirection" : true,
-  "sitPosition" : [-8, 6.5],
+  "sitPosition" : [-10, 16.5],
   "sitOrientation" : "lay",
   "sitAngle" : 90,
   "sitEmote" : "sleep",
