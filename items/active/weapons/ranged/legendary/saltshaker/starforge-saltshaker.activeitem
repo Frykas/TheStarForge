@@ -43,6 +43,7 @@
     "fireType" : "auto",
 	
 	"animatedFire" : true,
+	"cycleAfterShot" : true,
 
     "projectileType" : "starforge-physicalbullet",
     "projectileParameters" : {},

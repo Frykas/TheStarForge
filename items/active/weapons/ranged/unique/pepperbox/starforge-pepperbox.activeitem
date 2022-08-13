@@ -45,6 +45,7 @@
     "fireType" : "auto",
 	
 	"animatedFire" : true,
+	"cycleAfterShot" : true,
 
     "projectileType" : "unboundfirebullet",
     "projectileParameters" : {

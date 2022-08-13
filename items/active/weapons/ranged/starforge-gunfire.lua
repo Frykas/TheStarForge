@@ -181,11 +181,13 @@ function StarforgeGunFire:muzzleFlash()
 
   --Optional firing animations
   if self.animatedFire == true then
-	if animator.animationState("gun") == "idle1" then
-      animator.setAnimationState("gun", "transitionToIdle2")
-    elseif animator.animationState("gun") == "idle2" then
-      animator.setAnimationState("gun", "transitionToIdle1")
-    else
+    if self.cycleAfterShot then
+  	  if animator.animationState("gun") == "idle1" then
+        animator.setAnimationState("gun", "transitionToIdle2")
+      elseif animator.animationState("gun") == "idle2" then
+        animator.setAnimationState("gun", "transitionToIdle1")
+      end
+	else
 	  animator.setAnimationState("gun", "reload")
 	end
   end
