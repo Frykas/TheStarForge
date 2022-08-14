@@ -29,7 +29,7 @@
   "scriptConfig" : {
     "uniqueId" : "starforge-sashaprisoner",
   
-    "behavior" : "follower",
+    "behavior" : "starforge-sashafollower",
     "turnInQuests" : ["thalassomission3", "thalassomission3b"],
 
     "dialogMode" : "random",
