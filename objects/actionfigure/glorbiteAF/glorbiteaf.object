@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-glorbiteaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"Juvenile of the Glorbee, their defenceless behavior often makes them prey to larger creatures.\"",
+  "shortdescription" : "Glorbite Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-glorbiteaf" },
+
+
+  "inventoryIcon" : "glorbiteaf.png",
+  "orientations" : [
+    {
+      "image" : "glorbiteaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "glorbiteaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

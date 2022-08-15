@@ -12,7 +12,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt2UEKwjAQheGeSq\/m0qU3kJyoO8+kLgIhtKXpvMwkM+\/Bv6s0H4pgXZfluTLGGGOMMcagLYMvgnFvUZz1IlnzIlnz6PVrzaPX9yJZ8+j1PXp9j17fo9f36PU9en1P6r0rhRri\/X10DjmJt7ezh\/vKb2CtzzD6sy19vpF+3ZRKV5HFEN63Uj28rWbEGbTuhXj+7MHbYp7Fi\/oPyer76lOEsB65y3v9z\/BSKlX3rpM6tzq63wghjLNYkW7r82uarc9Nbz\/rTOZ8TuR31sh2tHNkc0\/raG4tq7VZ2ykxn33d1nWWzlb\/2eutzy8xW5+DxesLgcF6YA==",
+         "data":"eJzt2cENwjAMheHM0iHYCObgyAZVJuqNmYCDpSgqVRM7dmq\/J\/03UPNJVSXKltJzQwghhBBCCImWJl8E479FcdaLZKVFstLg9Wulwet7kaw0eH0PXt+D1\/fg9T14fQ9e3+v13hebrLy0x6KT1DheLaukuec3sNW9zL2nue838rebUrkXWUzCuyo1wttqljiD1rUk3j978LaYr+KV+g\/J6nn1LpKwHrnLa\/3O8FIqV9eu4zr3OrreDEkYr2KVdFufX9NsfW54x1mvZKZzSj6zZrZLO2c2j7TO5tayWpu1nRzz2e\/tfc7S2eo\/+3nr83PM1udA8foAjCeS7A==",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -43,95 +43,7 @@
          "draworder":"topdown",
          "id":3,
          "name":"mods",
-         "objects":[
-                {
-                 "height":8,
-                 "id":909,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":192,
-                 "x":128,
-                 "y":280
-                }, 
-                {
-                 "height":8,
-                 "id":910,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornateroofing"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":224,
-                 "x":112,
-                 "y":288
-                }, 
-                {
-                 "height":8,
-                 "id":911,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornatetiles"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"1"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":208,
-                 "x":120,
-                 "y":272
-                }, 
-                {
-                 "height":8,
-                 "id":912,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"ornatetiles"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"1"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":256,
-                 "x":96,
-                 "y":296
-                }],
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -669,6 +581,10 @@
         {
          "firstgid":8700,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/huge-objects.json"
+        }, 
+        {
+         "firstgid":8801,
+         "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }],
  "tilewidth":8,
  "type":"map",

@@ -68,7 +68,7 @@
 	  }
     }
   ],
-  "statusEffects" : ["starforge-yukaibleed"],
+  "statusEffects" : ["starforge-heavybleeding"],
   "fullbright" : true,
   "damageKind" : "broadsword",
   

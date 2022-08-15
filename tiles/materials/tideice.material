@@ -1,0 +1,23 @@
+{
+  "materialId" : 2909,
+  "materialName" : "starforge-tideice",
+  "particleColor" : [6, 84, 144, 255],
+  "itemDrop" : "starforge-tideice",
+  "description" : "An otherworldly ice that doesn't melt.",
+  "shortdescription" : "Tidal Ice Block",
+  "glitchDescription" : "Attentive. This ice is quite peculiar.",
+  "floranDescription" : "Floran hatesss poking weird ice.",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "tideice.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 5000
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unboundspecialblueprint",
+  "rarity" : "legendary",
+  "price" : 1500,
+  "description" : "Unbound blueprints of special weapons.",
+  "shortdescription" : "Weapon Blueprints",
+  "category" : "Blueprint",
+  "twoHanded" : false,
+  "inventoryIcon" : "unboundcaptainblueprint.png",
+  "recipes" : ["starforge-unboundrailpistol"],
+  "animation" : "unboundspecialblueprint.animation",
+  "scripts" : ["unboundweaponschematic.lua"],
+  "swingTime" : 0.15
+}

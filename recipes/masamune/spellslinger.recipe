@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "refinedviolium", "count" : 5},
+	{ "item" : "bone", "count" : 50},
+	{ "item" : "string", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-spellslinger",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "starforge-yukaishop", "weapon" ],
+  "duration" : 0
+}
+

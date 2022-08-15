@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-cephalowormshell",
+  "price" : 500,
+  "rarity" : "rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "cephalowormshell.png",
+  "description" : "A pristine shell made of everlasting Tidal ice. Can be used to make a Cephaloworm Effigy.",
+  "shortdescription" : "Cephaloworm Shell",
+  "itemTags" : [ "reagent" ]
+}

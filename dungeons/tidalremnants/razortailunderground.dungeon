@@ -1,0 +1,30 @@
+{
+  "metadata" : {
+    "name" : "starforge-razortailunderground",
+	"species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "razortailunderground", "unboundtidelab" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [	
+	{
+      "name" : "razortailunderground",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "razortailunderground.json" ]
+    },
+	{
+      "name" : "unboundtidelab",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundtidelab.json" ]
+    }
+  ]
+}

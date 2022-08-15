@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "solariumstar", "count" : 2},
+	{ "item" : "goldbar", "count" : 25},
+	{ "item" : "coralfragment", "count" : 35}
+  ],
+  "output" : {
+    "item" : "starforge-existar",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "weapon", "starforge-yukaishop" ],
+  "duration" : 2
+}
+

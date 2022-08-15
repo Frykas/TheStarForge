@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-findentitysize",
+  "effectConfig" : {},
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "starforge-findentitysize.lua"
+  ]
+}

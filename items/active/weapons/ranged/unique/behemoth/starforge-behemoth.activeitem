@@ -1,0 +1,106 @@
+{
+  "itemName" : "starforge-behemoth",
+  "price" : 3000,
+  "inventoryIcon" : "starforge-behemoth.png:idle",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "Wrought from brimstone, of unending fury resurging from a former death.",
+  "shortdescription" : "^#b4f5c3;Behemoth ver.9000^reset;",
+  "level" : 7,
+  "tooltipKind" : "starforge-uniquegun",
+  "category": "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Superweapons"},
+  "tooltipFieldsOverride" : {
+    "damagePerShotLabel" : "Too Much",
+    "speedLabel" : "Pretty Slow",
+    "energyPerShotLabel" : "All of it",
+	
+    "altAbilityTitleLabel" : "Special:",
+    "altAbilityLabel" : "Remote Detonation"
+  },
+  "itemTags" : ["weapon","ranged","bfg"],
+  "twoHanded" : true,
+	
+  "animation" : "starforge-behemoth.animation",
+  "animationParts" : {
+    "gun" : "starforge-behemoth.png",
+    "gunFullbright" : "starforge-behemothfullbright.png",
+    "muzzleFlash" : "muzzleflash/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "sounds": {
+      "chargeLoop": [ "/sfx/gun/starforge-behemothcharge.ogg" ],
+      "fire": [ "/sfx/gun/starforge-behemothfire.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.25, 0.125],
+  "muzzleOffset" : [1.25, 0.5],
+  
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts": [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],
+    "class": "StarforgeGunFire",
+
+    "fireTime" : 1.5,
+    "baseDps" : 30,
+    "energyUsage" : 1575,
+    "inaccuracy" : 0,
+
+    "projectileCount" : 1,
+	"pitchVariance" : 0.05,
+
+    "fireType" : "charge",
+	"chargeTime" : 0.75,
+	
+	"chargeShake" : true,
+	"chargeShakeWavePeriod" : 0.25,
+	"chargeShakeWaveAmplitude" : 0.015,
+	"chargeShakeFactor" : 1,
+
+	"remoteDetonateProjectile" : true,
+
+    "projectileType" : "starforge-behemothenergysphere",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.05,
+        "armRotation" : 4,
+        "weaponRotation" : 8,
+		"weaponOffset" : [-0.05, 0.0],
+        "twoHanded" : true,
+
+        "animationStates": {
+          "gun" : "fire"
+        },
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.3,
+        "armRotation" : 4,
+        "weaponRotation" : 8,
+		"weaponOffset" : [-0.05, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

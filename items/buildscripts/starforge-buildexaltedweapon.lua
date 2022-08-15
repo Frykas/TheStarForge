@@ -40,25 +40,26 @@ function build(directory, config, parameters, level, seed)
       config.paletteSwaps = string.format("%s?replace=%s=%s", config.paletteSwaps, k, v)
     end
   end
+  
   if type(config.inventoryIcon) == "string" then
     config.inventoryIcon = config.inventoryIcon .. config.paletteSwaps
   end
-  local invIcon = config.inventoryIcon 
+  local invIcon = config.inventoryIcon
   --SCALE IT ACCORDING TO THE SIZE OF THE ICON
-  local itemBorder = configParameter("itemBorder")
-  if itemBorder then
-    config.itemBorder = itemBorder
-	local itemBorderSize = root.imageSize(config.itemBorder)
+  local itemBackground = configParameter("itemBackground", "/interface/inventory/starforge-exalted.png")
+  if itemBackground then
+    config.itemBackground = itemBackground
+	local itemBackgroundSize = root.imageSize(config.itemBackground)
 	local iconSize = root.imageSize(config.inventoryIcon)
 	local difference = iconSize[2]
 	if iconSize[1] > iconSize[2] then
 	  difference = iconSize[1]
 	end
-	local scaleAmount = difference / itemBorderSize[1]
 	--FIND HIGHEST VALUE X OR Y THEN FIND DIFFERENCE
-	config.itemBorder = config.itemBorder .. "?scalenearest=" .. scaleAmount
+	local scaleAmount = difference / itemBackgroundSize[1]
+	config.itemBackground = config.itemBackground .. "?scalenearest=" .. scaleAmount
 	config.inventoryIcon = {
-	  { image = config.itemBorder },
+	  { image = config.itemBackground },
 	  { image = config.inventoryIcon }
 	}
   end

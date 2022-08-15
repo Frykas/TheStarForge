@@ -32,7 +32,7 @@ function init()
     table.insert(persistentLevelCounteract,{stat = "powerMultiplier", amount = -0.5 * npcLevel})
     local healthTable = {2,1.111,0.87,0.77,0.714,0.667,0.625,0.588,0.555,0.525,0.525}
     table.insert(persistentLevelCounteract,{stat = "maxHealth", baseMultiplier = healthTable[npcLevel + 1]})
-    status.setPersistentEffects("levelCounteract",persistentLevelCounteract)
+    status.setPersistentEffects("levelCounteract", persistentLevelCounteract)
   end
   local persistentEffects = config.getParameter("persistentEffects")
   if persistentEffects then
@@ -304,10 +304,10 @@ function die()
   tenant.backup()
   spawnDrops()
   if self.dropWeapons then
-    world.spawnItem({name = self.primary.name},mcontroller.position())
-    world.spawnItem({name = self.alt.name},mcontroller.position())
-    world.spawnItem({name = self.sheathedPrimary.name},mcontroller.position())
-    world.spawnItem({name = self.sheathedAlt.name},mcontroller.position())
+    world.spawnItem({name = self.primary.name}, mcontroller.position())
+    world.spawnItem({name = self.alt.name}, mcontroller.position())
+    world.spawnItem({name = self.sheathedPrimary.name}, mcontroller.position())
+    world.spawnItem({name = self.sheathedAlt.name}, mcontroller.position())
   end
 end
 

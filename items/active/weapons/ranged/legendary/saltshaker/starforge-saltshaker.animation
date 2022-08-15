@@ -1,0 +1,182 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          },
+          "charge" : {
+            "frames" : 4,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "charged",
+            "properties" : {
+              "persistentSound" : "/sfx/melee/giantsword_charge_electric.ogg"
+            }
+          },
+          "charged" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/melee/giantsword_charged_electric.ogg"
+            }
+          }
+        }
+      },
+      "gun" : {
+        "default" : "idle1",
+        "states" : {
+          "idle1" : {
+			"frames" : 1
+		  },
+          "transitionToIdle2" : {
+            "frames" : 1,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "idle2"
+          },
+		  "idle2" : {
+			"frames" : 1
+		  },
+          "transitionToIdle1" : {
+            "frames" : 1,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "idle1"
+          },
+          "charge" : {
+            "frames" : 4,
+            "cycle" : 0.25,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.75, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "gun" : {
+            "idle1" : {
+              "properties" : {
+                "image" : "<partImage>:ready1"
+              }
+            },
+			"transitionToIdle2" : {
+              "properties" : {
+                "image" : "<partImage>:cycle1.<frame>"
+              }
+            },
+			"idle2" : {
+              "properties" : {
+                "image" : "<partImage>:ready2"
+              }
+            },
+			"transitionToIdle1" : {
+              "properties" : {
+                "image" : "<partImage>:cycle2.<frame>"
+              }
+            },
+			"charge" : {
+              "properties" : {
+                "image" : "<partImage>:spin.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "charge" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [1.0625, 0.3125],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "charge" : {
+              "properties" : {
+                "image" : "<partImage>:charge.<frame>"
+              }
+            },
+            "charged" : {
+              "properties" : {
+                "image" : "<partImage>:charged.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.5, -0.125],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [90, 90, 0]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ "/sfx/gun/shotgun2.ogg" ],
+    "chargeFire" : [ "/sfx/gun/omnicannon_shot2.ogg" ],
+	"unholsterTwirl" : [ "/sfx/interface/item_equip.ogg" ]
+  }
+}

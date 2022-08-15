@@ -1,0 +1,31 @@
+[
+  
+  {
+    "op": "add",
+    "path": "/spawnProfile/groups/-",
+    "value": {
+      "select": 1,
+      "pool": [
+        [
+          1,
+          "starforge-panthyre"
+        ]
+      ]
+    }
+  },
+
+  
+  { "op" : "add", 
+      "path" : "/surfacePlaceables/items/-", 
+      "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-microdungeons.config:starforge-microdungeon",
+		
+        "type" : "microdungeon",
+        "microdungeons" : [ "starforge-warmongerbunker" ]
+      }
+    }
+	
+	]

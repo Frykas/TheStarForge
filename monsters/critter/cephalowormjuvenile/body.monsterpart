@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-cephalowormjuvenile",
+  "category" : "cephalowormjuvenile",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

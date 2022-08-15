@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starforge-floranthivesmall",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "protected" : false,
+    "anchor" : [ "starforge-floranthivesmall" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100
+  },
+
+  "parts" : [
+    {
+      "name" : "starforge-floranthivesmall",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "floranthivesmall.json" ]
+    }
+  ]
+}

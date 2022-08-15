@@ -1,0 +1,95 @@
+{
+  // ==============================================================================================
+  //                                       TIDE STUFF YOU FIND IN THE WEIRD ASS BIOME
+  // ==============================================================================================
+ 
+  "tidalChestTreasure" : [
+    [1, {
+      "fill" : [
+        {"pool" : "valuableTreasure"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "basicTreasure"},
+        {"weight" : 0.5, "pool" : "tidebiomeTreasure"}
+      ],
+      "poolRounds" : [
+        [0.05, 1],
+        [0.40, 2],
+        [0.30, 3],
+        [0.15, 4],
+        [0.10, 5]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "tidebiomeTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.3, "item" : "starforge-tidekeeperhead"},
+        {"weight" : 0.3, "item" : "starforge-tidekeeperchest"},
+        {"weight" : 0.3, "item" : "starforge-tidekeeperpants"},
+        {"weight" : 0.3, "item" : "starforge-tidalchest-recipe"},
+		{"weight" : 0.3, "item" : "starforge-tidalchair-recipe"},
+		{"weight" : 0.3, "item" : "starforge-tidaltable-recipe"},
+		{"weight" : 0.3, "pool" : "starforge-tidalweapons"},
+		{"weight" : 0.3, "pool" : "tidalFragmentTreasure"}
+      ]
+    }]
+  ],
+  
+  "tidalFragmentTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.60, "item" : ["starforge-tidalfragment", 2]},
+        {"weight" : 0.25, "item" : ["starforge-tidalfragment", 4]},
+		{"weight" : 0.15, "item" : ["starforge-tidalfragment", 6]}
+      ]
+    }]
+  ],
+  
+  "starforge-tidalweapons" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.3, "item" : "starforge-anentropia"},
+		{"weight" : 0.3, "item" : "starforge-deluge"},
+		{"weight" : 0.3, "item" : "starforge-fragmenter"}
+      ]
+    }]
+  ],
+  
+  "tidalChest2Treasure" : [
+    [1, {
+      "fill" : [
+        {"pool" : "valuableTreasure"}
+      ],
+      "pool" : [
+        {"weight" : 0.3, "pool" : "basicTreasure"},
+        {"weight" : 0.3, "pool" : "razortailBonesTreasure"},
+		{"weight" : 0.3, "pool" : "tidalFragmentTreasure"}
+      ],
+      "poolRounds" : [
+        [0.05, 1],
+        [0.40, 2],
+        [0.30, 3],
+        [0.15, 4],
+        [0.10, 5]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "razortailBonesTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "starforge-razortailfossil1"},
+        {"weight" : 0.2, "item" : "starforge-razortailfossil2"},
+		{"weight" : 0.2, "item" : "starforge-razortailfossil3"},
+		{"weight" : 0.2, "item" : "starforge-razortailfossil4"},
+		{"weight" : 0.2, "item" : "starforge-razortailfossil5"}
+      ]
+    }]
+  ]
+     
+  }
+  

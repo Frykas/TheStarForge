@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "essence", "count" : 150},
+	{ "item" : "durasteelbar", "count" : 12},
+	{ "item" : "syntheticmaterial", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-unboundstalkerpack",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundgear", "armor" ],
+  "duration" : 0
+}
+

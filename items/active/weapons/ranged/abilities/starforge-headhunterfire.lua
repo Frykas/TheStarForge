@@ -110,14 +110,14 @@ end
 
 function StarForgeBowHeadHunterFire:muzzleFlash()
   animator.setPartTag("muzzleFlash", "variant", math.random(1, self.muzzleFlashVariants or 3))
-  animator.setAnimationState("firing", "fire")
+  animator.setAnimationState("firing", self.fireMuzzle or "fire")
   
   animator.burstParticleEmitter("muzzleFlash")
   
   --Add normal pitch variance to shots
   local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2))
   animator.setSoundPitch("fire", pitchVariance)
-  animator.playSound("fire")
+  animator.playSound(self.fireSound or "fire")
 
   animator.setLightActive("muzzleFlash", true)
 end

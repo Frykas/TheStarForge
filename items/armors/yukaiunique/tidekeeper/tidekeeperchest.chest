@@ -1,0 +1,26 @@
+{
+  "itemName" : "starforge-tidekeeperchest",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "chestarmour",
+  "description" : "The Tide has no air, no atmosphere, no wind. Instead, you can sometimes feel a flow, like a current.",
+  "shortdescription" : "Tidekeeper's Chest",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  }
+
+
+
+}

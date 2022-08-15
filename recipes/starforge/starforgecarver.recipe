@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "essence", "count" : 250},
+    { "item" : "refinedviolium", "count" : 6},
+	{ "item" : "ironbar", "count" : 20},
+	{ "item" : "darkwoodmaterial", "count" : 50}
+  ],
+  "output" : {
+    "item" : "starforge-carver",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

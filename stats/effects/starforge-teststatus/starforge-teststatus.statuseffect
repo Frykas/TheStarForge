@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-teststatus",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "starforge-teststatus.lua"
+  ]
+}

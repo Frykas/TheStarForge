@@ -1,0 +1,19 @@
+{
+  "itemName" : "starforge-chocolatechipcookie",
+  "rarity" : "uncommon",
+  "price" : 110,
+  "category" : "preparedFood",
+  "inventoryIcon" : "chocolatechipcookie.png",
+  "description" : "A chocolate chip cookie. Commonly enjoyed by a certain person with golden hair.",
+  "shortdescription" : "Chocolate Chip Cookie",
+
+  "foodValue" : 15,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 999,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "projectileName" : "starforge-firefluxbolt",
+  "image" : "starforge-firefluxbolt.png",
+  "physics" : "stickygrenade",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "lightColor" : [255, 162, 0],
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundfirebulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/guns/elementalfluxbolts/starforge-firefluxbolt/trail.animation",
+        "position" : [-0.25, 0],
+        "layer" : "back",
+        "size" : 0.75,
+		"collidesForeground" : true,
+		"initialVelocity" : [4.0, 0.0],
+		"finalVelocity" : [0, 0],
+		"approach" : [2, 2],
+        "timeToLive" : 0.5,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"variance" : {
+		  "size" : 0.25,
+		  "position" : [0.125, 0.0],
+		  "initialVelocity" : [4.0, 0.5],
+		  "finalVelocity" : [1.0, 0.0]
+		}
+      }
+    },
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/guns/elementalfluxbolts/starforge-firefluxbolt/trail2.animation",
+        "position" : [-1.0, 0],
+        "layer" : "back",
+        "size" : 0.75,
+		"collidesForeground" : true,
+		"initialVelocity" : [4.0, 0.0],
+		"finalVelocity" : [0, 0],
+		"approach" : [2, 2],
+        "timeToLive" : 0.4,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"variance" : {
+		  "size" : 0.25,
+		  "position" : [0.125, 0.0],
+		  "initialVelocity" : [4.0, 0.5],
+		  "finalVelocity" : [1.0, 0.0]
+		}
+      }
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 115.0,
+  "fullbright" : true,
+  "damageKind" : "fireplasmabullet",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-killonstick.lua" ]
+}

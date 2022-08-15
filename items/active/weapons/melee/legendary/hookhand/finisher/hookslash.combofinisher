@@ -1,0 +1,111 @@
+{
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "attack" : {
+          "states" : {
+            "special" : {
+              "frames" : 4,
+              "cycle" : 0.15,
+              "mode" : "transition",
+              "transition" : "idle"
+            }
+          }
+        }
+      },
+      "parts" : {
+        "specialswoosh" : {
+          "properties" : {
+            "transformationGroups" : ["weapon"],
+            "centered" : true,
+            "offset" : [0.5, 0.125],
+            "zLevel" : 1
+          },
+
+          "partStates" : {
+            "attack" : {
+              "idle" : { },
+              "fire" : { },
+              "special" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/fist/swoosh/slash.png<frame>",
+                  "damageArea" : [[-1, -1.4], [1.25, -0.9], [1.25, 1.1], [-1, 1.6]]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sounds" : {
+      "special" : [ "/sfx/melee/swing_broadsword.ogg" ]
+    }
+  },
+
+  "comboFinisher" : {
+    "name" : "Hook Slash",
+    "type" : "hookslash",
+    "scripts" : [ "/items/active/weapons/melee/legendary/hookhand/finisher/hookslash.lua" ],
+    "class" : "StarforgeHookSlash",
+	
+	"projectileType" : "starforge-hookhandtwirl",
+	"projectileParameters" : {},
+	
+	"projectileDamage" : 1,
+
+    "damageConfig" : {
+      "statusEffects" : [ ],
+      "baseDamage" : 8.0,
+      "damageSourceKind" : "broadsword",
+      "timeoutGroup" : "primary",
+      "timeout" : 0.2
+    },
+
+    "freezeTime" : 0.25,
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.03,
+        "armRotation" : 65,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [-0.625, -0.125],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation"
+      },
+      "windup2" : {
+        "duration" : 0.03,
+        "armRotation" : 75,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [-0.75, -0.125],
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "recoil" : true,
+
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0.15,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [-1.0, 0.0],
+        "weaponOffset" : [0.125, -0.25],
+        "backWeaponOffset" : [0.25, 0.2],
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation"
+      }
+    }
+  }
+}

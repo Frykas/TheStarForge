@@ -5,6 +5,6 @@
   "category" : "craftingMaterial",
   "inventoryIcon" : "salvagedunboundtech.png",
   "description" : "Fragments of technology stolen from the Unbound. Might be useful.",
-  "shortdescription" : "^#FFB2B2;Unbound Salvaged Tech^white;",
+  "shortdescription" : "^#FFE998;Unbound Salvaged Tech^white;",
   "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
 }

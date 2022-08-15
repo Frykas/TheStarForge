@@ -1,0 +1,32 @@
+{
+  "id" : "thalassomission3b",
+  "prerequisites" : [ "thalassomission3" ],
+  "title" : "^#b4f5c3;Escorting Sasha",
+  "text" : "^pink;Sasha Beniko^reset; is now free from her cell, I now need to bring her to the landing pad on a building on the surface directly on top of us.",
+  "completionText" : "Great! Thanks again, I'll clean up this place quickly before leaving so that we leave no trace, you can go about your business for a while, I will meet you at the ^green;Thalasso Outpost^reset;.",
+  "moneyRange" : [10, 10],
+  "canBeAbandoned" : false,
+  "rewards" : [
+    [ ["starforge-exaltingcharge", 1] ]
+  ],
+
+  "compassUpdate" : 0.2,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/starforge-main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "questReceiver"
+    },
+    "conditions" : [
+      {
+        "type" : "checkForMessage",
+        "targetMessage" : "starforge-entityEntered",
+		"description" : "Escort ^green;Sasha Beniko^reset; to the landpad on the surface."
+      }
+    ],
+	
+	"turnInDescription" : "I should make my way up to the landing pad above."
+  
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "frameGrid" : {
+    "size" : [18, 32],
+    "dimensions" : [4, 1],
+    "names" : [
+      [ "idle1", "idle2", "detected1", "detected2" ]
+    ]
+  },
+
+  "aliases" : {
+    "default.off" : "idle1",
+    "default.on" : "detected1",
+    "off.1" : "idle1",
+    "off.2" : "idle2",
+    "on.1" : "detected1",
+    "on.2" : "detected2"
+  }
+}
+  

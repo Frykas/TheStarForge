@@ -1,0 +1,274 @@
+{
+	"type": "starforge-yukaikabuto",
+	"baseType": "hostile",
+
+	"persistent": true,
+
+	"scripts": ["/npcs/bmain.lua"],
+	"initialScriptDelta": 5,
+
+	"dropPools": ["guardtreasure"],
+	
+	"identity" : {
+    "species" : "hylotl",
+	"facialHairType":"",
+	"facialHairGroup":"",
+	"bodyDirectives":"?replace;a85636=652626;e0975c=8E3C36;ffca8a=B55953;6f2919=3D1C1C?replace;735e3a=652626;d9c189=8E3C36;f7e7b2=B55953;a38d59=3D1C1C?replace;be1b00=4E4F42;dc1f00=8A897A;951500=2C2915;f32200=B4B3AD?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF",
+	"hairDirectives":"?replace;735e3a=2C2915;d9c189=8A897A;f7e7b2=B4B3AD;a38d59=4E4F42?replace;be1b00=95629C;dc1f00=D191DE;951500=603B61;f32200=FFD1FF",
+    "gender" : "male",
+	"level" : 7
+  },
+
+
+	"scriptConfig": {
+
+		"behavior": "mik-hostilenpc",
+
+		"bandageTime": 35,
+
+		"aggressive": true,
+
+		"behaviorConfig": {
+			"leapWindup": 0.15,
+			"leapCooldown": 15,
+			"rangedAimTime": 0.1,
+			"rangedWindupTime": 0.1,
+			"leapChance": 0.5,
+			"rangedSwapTime": 1,
+			"meleeSwapTime": 1.5
+		},
+
+		"chatSounds": {
+			"default": {
+				"male": [
+					"/sfx/cinematics/protectorate/stage_panic.ogg"
+				]
+			}
+		},
+
+		"dialog": {
+			"attack": {
+				"default": {
+					"default": [
+						"Sacrifice for the Tide!",
+						"Burn!",
+						"Hunt them!"
+					]
+				}
+			},
+			"reattack": {
+				"default": {
+					"default": [
+						"Mmphm!"
+					]
+				}
+			},
+			"killedTarget": {
+				"default": {
+					"default": [
+						"Drown in madness.",
+						"Your soul, offering for the Tide.",
+						"The Tide will answer our call."
+					]
+				}
+			},
+			"lostTarget": {
+				"default": {
+					"default": [
+						"You cannot hide from the Tide.",
+						"Fleeing will not prevent the Tide from invading.",
+						"Hiding is futile."
+					]
+				}
+			},
+			"outOfSight": {
+				"default": {
+					"default": [
+						"Aaargh come back here!",
+						"The Yukai are not giving up.",
+						"Come back! The hunt is not finished!"
+					]
+				}
+			},
+			"cheerOn": {
+				"default": {
+					"default": [
+						"The Tide will answer!"
+					]
+				}
+			},
+			"cantReach": {
+				"default": {
+					"default": [
+						"Get back here!",
+						"You truly are a coward!",
+						"You can't flee!"
+					]
+				}
+			}
+		},
+
+		"combat": {
+			"meleeWeaponWindups": {
+				"default": 0,
+				"broadsword": 0,
+				"dagger": 0,
+				"axe": 0.45,
+				"hammer": 0.45,
+				"shortsword": 0,
+				"spear": 0
+			},
+			"meleeWeaponCooldowns": {
+				"default": 1.0,
+				"broadsword": 3.7,
+				"dagger": 0.7,
+				"axe": 1.4,
+				"hammer": 2.0,
+				"shortsword": 1.0,
+				"spear": 1.4
+			}
+		}
+	},
+
+	"touchDamage": {
+		"damage": 0,
+		"teamType": "enemy",
+		"damageType": "knockback",
+		"damageSourceKind": "nodamage",
+		"damageRepeatGroup": "npcTouchKnockback",
+		"damageRepeatTimeout": 0.5,
+		"knockback": 35,
+		"statusEffects": []
+	},
+
+	"innateStatusEffects": ["rage", {
+			"stat": "maxHealth",
+			"amount": 1550
+		}, {
+			"stat": "powerMultiplier",
+			"amount": 1.65
+		},
+		{
+			"stat": "maxEnergy",
+			"amount": 80
+		}
+	],
+
+	"items": {
+		"override": [
+            [0, [{
+                "head": [
+				{"name": "starforge-yukaikabutohead"}
+				
+				],
+                "chest": [{
+                    "name": "starforge-yukaikabutochest"
+                }],
+                "legs": [{
+                    "name": "starforge-yukaikabutopants"
+                }],
+				"back": [
+				{ "name": "spearback" },
+				{ "name": "" }
+				
+				],
+                "primary": [
+					"starforge-yukaisword3",
+					"starforge-yukaispear3"
+                ]
+				 
+            }]]
+        ]
+	},
+
+	"movementParameters": {
+		"mass": 2.0,
+		"runSpeed": 14,
+		"airJumpProfile": {
+			"jumpSpeed": 60,
+			"jumpHoldTime": 0,
+			"autoJump": false,
+			"collisionCancelled": true,
+			"multiJump": false,
+			"jumpControlForce": 900,
+			"reJumpDelay": 0.05,
+			"jumpInitialPercentage": 1
+		}
+	},
+
+	"statusControllerSettings": {
+		"statusProperties": {
+			"hitInvulnerabilityThreshold": 0.1,
+			"hitInvulnerabilityTime": 1,
+			"hitInvulnerabilityFlash": 0.15,
+			"shieldHitInvulnerabilityTime": 1.0,
+			"damageFlashOnDirectives": "",
+			"damageFlashOffDirectives": "multiply=ffffff00=0.85"
+		},
+
+		"primaryScriptSources": [
+			"/stats/starforge-npc_primary.lua",
+			"/scripts/vec2.lua"
+		],
+
+		"primaryScriptDelta": 5,
+		"stats": {
+			"maxHealth": {
+				"baseValue": 100.0
+			},
+			"maxEnergy": {
+				"baseValue": 1.0
+			},
+			"powerMultiplier": {
+				"baseValue": 0.01
+			},
+			"protection": {
+				"baseValue": 0.0
+			},
+			"healthRegen": {
+				"baseValue": 0.0
+			},
+			"jumpModifier": {
+				"baseValue": 0.5
+			},
+			"knockbackStunTime": {
+				"baseValue": 1
+			},
+			"fireResistance": {
+				"baseValue": 0.5
+			},
+			"fireStatusImmunity": {
+				"baseValue": 0.0
+			},
+			"iceResistance": {
+				"baseValue": 0.5
+			},
+			"iceStatusImmunity": {
+				"baseValue": 0.0
+			},
+			"electricResistance": {
+				"baseValue": 0.5
+			},
+			"electricStatusImmunity": {
+				"baseValue": 0.0
+			},
+			"poisonResistance": {
+				"baseValue": 0.5
+			},
+			"poisonStatusImmunity": {
+				"baseValue": 0.0
+			},
+			"grit": {
+				"baseValue": -1
+			}
+		},
+
+		"resources": {
+			"stunned": {
+				"deltaValue": -1.0,
+				"initialValue": 0.0,
+				"maxValue": 0.0
+			}
+		}
+	}
+}

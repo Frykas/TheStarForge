@@ -1,4 +1,4 @@
--- STARFORGE V.1.0 CREDITS --
+-- STARFORGE V.1.0.5 CREDITS --
 
 Huge thanks to : 
 
@@ -8,11 +8,15 @@ Huge thanks to :
 • Raiizy#2985, for also being a good friend and helping me with a ton
 of weapon sprites, feedback and ideas.
 
+• Monica#2686, for working with us on impressive encounters, mission & ideas! 
+
 • Aegonian#2352, for allowing me to use Elithian Races as a stepping 
 stone to learn modding & spriting. Also allowing me to use a few of his
 scripts. 
 
-• Omega#9191, for making the Unbound Centurion & mech sprites !
+• Omega#9191, for making the Unbound Centurion & mech sprites!
+
+• C0bra5#5433, for heavily assisting with code development and logic
 
 ---General credits :---
 
@@ -38,12 +42,26 @@ giving general feedback, and naming the Potlots!
 • Nitrosteel#0002, for making an early sprite that was then used by Nebulox
 to make the Principle of Duality rocket launcher.
 
+• Tea-Loving Lad#3308, for chosing the name "Sasha" for Sasha Beniko.
+
+• Tesked#0666, for making the Unbound Holoquin.
+
+• Lyrthras#7199, general code logic help
+
 ---Music credits  :---
 
-• loib#5351, for making the "Rumble of the Centurion" boss track and "Unshackled, Unbound"
-
-• Facebook.com/FoolBoyMedia, for making the SF 1.0 cinematic music "Sky Loop"
+• loib#5351, for making the "Rumble of the Centurion" boss track, "Tidal Depths", "Snowswept" and "Unshackled, Unbound"
 
 • BloodPixelHero, for making "Alien Landing" - used as "Yukai March"
 
 • https://soundcloud.com/dannybamboo, for making "Etude" and "PianoAmbient" used as the city of commence night & day musics.
+
+---Contest winners :---
+
+• Inferus#9279, for being one of the winners of the "Create a Manufacturer" contest, being the creator of Vitrium Industries.
+
+• ▼ Sva △#4813, for being one of the winners of the "Create a Manufacturer" contest, being the creator of Xenotox.
+
+• [cs]#7916, for being one of the winners of the "Create a Manufacturer" contest, being the creator of Pachinko.
+
+• Razyer#9880, for winning the "Dungeon & Discoveries" contest, creator of the Unbound resource transporter ship dungeon you can find in space.

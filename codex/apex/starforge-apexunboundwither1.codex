@@ -1,0 +1,24 @@
+{
+  "id" : "starforge-apexunboundwither1",
+  "species" : "apex",
+  "title" : "Studies on the Wither",
+  "description" : "A broken data pad, barely working.",
+  "icon" : "starforge-unboundresearchpadbroken.png",
+  "contentPages" : [
+
+"RECORDING 064 // 251121
+
+One of the new sc-#~st we added to the team accide&@ly dropped a vial containing samples of the Great Withering. This led to them becoming inf#-@~. We tried to stop the propagation but it happened to- fast/. W- l$st the labn~. We qre unad6@~ quaeratine. I hust ed é -~ ^gray; I can s^reset;
+
+"
+
+
+
+
+
+  ],
+    "itemConfig" : {
+    "rarity" : "rare",
+    "price" : 300
+  }
+}

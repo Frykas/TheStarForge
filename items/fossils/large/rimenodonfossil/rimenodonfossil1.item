@@ -1,0 +1,30 @@
+{
+  "itemName" : "starforge-rimenodonfossil1",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Rimenodon Skull",
+  "description" : "A fossilised rimenodon skull.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "rimenodonfossil1icon.png",
+
+  "completeSetDescriptions" : {
+    "price" : 10000,
+    "shortdescription" : "Rimenodon Fossil",
+    "description" : "Called the \"Hunter's Bane\" by Yukai Hylotls, this large Tide predator is as deadly as it is elusive."
+  },
+
+  "displayImage" : "/objects/fossils/largefossils/rimenodonfossil/rimenodonfossil1.png",
+  "displayoffset" :[0.0, -0.4],
+
+  "fossilSetName" : "rimenodon",
+  "setIndex" : 1,
+  "setCount" : 5,
+  "setCollectables" : { "fossils" : "rimenodon" },
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

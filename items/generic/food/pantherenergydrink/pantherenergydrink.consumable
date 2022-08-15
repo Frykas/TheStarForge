@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-pantherenergydrink",
+  "rarity" : "uncommon",
+  "price" : 105,
+  "category" : "drink",
+  "inventoryIcon" : "pantherenergydrink.png",
+  "description" : "It has a tropical flavor. Enjoyed by our local gunsmith.",
+  "shortdescription" : "Panther Energy Drink",
+  "effects" : [ [
+	{
+        "effect" : "runboost",
+        "duration" : 15
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 60
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -6,8 +6,9 @@
   "rarity" : "Essential",
   "description" : "An unusual katana, able to throw the user into a fit of rage for increased efficiency.",
   "shortdescription" : "^orange;Furour^reset;",
-  "tooltipKind" : "base",
-  "category" : "Katana",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "broadsword",
+  "tooltipFieldsOverride" : {"subtitle":"Katana"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","katana"],
 
@@ -303,5 +304,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

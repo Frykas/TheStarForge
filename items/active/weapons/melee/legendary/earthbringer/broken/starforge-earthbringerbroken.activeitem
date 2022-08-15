@@ -16,7 +16,9 @@
   "animation" : "/items/active/weapons/melee/broadsword/starforge-broadsword.animation",
   "animationParts" : {
     "handle" : "",
-    "blade" : "starforge-earthbringerbroken.png"
+    "blade" : "starforge-earthbringerbroken.png",
+	
+    "swoosh" : ""
   },
   "animationCustom" : {
     "animatedParts" : {

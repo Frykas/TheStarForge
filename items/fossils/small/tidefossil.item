@@ -1,0 +1,33 @@
+{
+  "itemName" : "starforge-tidefossil",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Tide Fragment",
+  "description" : "A small rock originating from the realm of the Tide. ",
+  "category" : "smallFossil",
+
+  "race" : "generic",
+  "price" : 105,
+
+  "inventoryIcon" : "tidefossilicon.png",
+
+  "completeSetDescriptions" : {
+    "price" : 300,
+    "shortdescription" : "Tide Fragment",
+
+    "description" : "The Tide is home to beautiful flora and fauna, often ressembling coral and sea plants."
+
+  },
+
+  "displayImage" : "/objects/fossils/smallfossils/tidefossil/tidefossil.png",
+  "displayoffset" :[0, 0.0],
+
+  "fossilSetName" : "tidefragment",
+  "setIndex" : 1,
+  "setCount" : 1,
+  "setCollectables" : { "fossils" : "tidefragment" },
+
+  "completeFossilIcon" : "/objects/fossils/smallfossils/smallfossilcompleteicon.png"
+
+}

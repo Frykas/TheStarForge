@@ -6,7 +6,8 @@
   "description": "A burst pistol, often used by Unbound officers.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Hornet\" BP",
   "tooltipKind": "starforge-unboundgun",
-  "category": "Burst Pistol",
+  "category": "pistol",
+  "tooltipFieldsOverride" : {"subtitle":"Burst Pistol"},
   "twoHanded": false,
   "level": 5,
   "itemTags": [
@@ -98,5 +99,5 @@
     }
   },
    
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

@@ -1,14 +1,16 @@
 {
   "itemName" : "starforge-exaltedsedgehead",
   "price" : 2260,
-  "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headarmour",
   "description" : "\"Your ultimate challenge forever changed you. Now it is a race against death, how many hunts left until it gets you?\"",
-  "shortdescription" : "^#758468;Hood of Berserking^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^#758468;Hood of Berserking^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
 
+  "inventoryIcon" : "/items/armors/exalted/esedge/icons.png:head",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
+  
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
@@ -37,7 +39,7 @@
     }
   ],
 
-  "itemTags" : [ "tier8armour" ],
+  "itemTags" : [ "tier8armour", "exalted" ],
 
   "colorOptions" : [
     // WITHERED FLORA, DEFAULT
@@ -64,5 +66,7 @@
     { "ffca8a" : "eab3db", "e0975c" : "d35eae", "a85636" : "97276d", "6f2919" : "59163f" },
     // BROWN
     { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

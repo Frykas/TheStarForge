@@ -1,0 +1,68 @@
+{
+  "itemName" : "starforge-deluge",
+  "price" : 1000,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A spellglaive made to hunt large predators from the Tide using powerful tidal spikes.",
+  "shortdescription" : "Deluge",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "spear",
+  "tooltipFieldsOverride" : {"subtitle":"Spellglaive"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spellglaive","spear"],
+  "learnBlueprintsOnPickup" : [ "starforge-deluge" ],
+
+  "cursor" : "/cursors/reticle0.cursor",
+
+  "inventoryIcon" : "deluge.png",
+
+  "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
+  "animationParts" : {
+    "blade" : "deluge.png",
+	"bladeFullbright" : "",
+	
+	"swoosh" : "tidalfrost_",
+	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidebreakermuzzle.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "starforge-tidalfrost",
+
+  "primaryAbilityType" : "starforge-spellglaivecombo",
+  "primaryAbility" : {
+    "baseDps" : 8.0,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "starforge-tidalfrost",
+      "knockbackMode" : "aim",
+      "timeout" : 0.25,
+	  "statusEffects" : []
+    }
+  },
+  
+  "altAbilityType" : "starforge-spellglaiveblast",
+  "altAbility" : {
+	"projectileType" : "starforge-tideshard",
+	"projectileParameters" : {
+	  "damageKind" : "starforge-tidalfrost",
+	  "movementSettings" : {
+		"gravityMultiplier" : 1
+	  },
+	  "speed" : [45, 125]
+    },
+
+	"projectileCount" : 6,
+	"inaccuracy": 0.125,
+	"baseDamage" : 10,
+	"energyUsage" : 60,
+	
+	"fireTime" : 1.9,
+	"fireType" : "auto"
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

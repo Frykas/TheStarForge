@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-elpistable",
+  "colonyTags" : ["commerce", "hylotl", "human"],
+  "printable" : true,
+  "rarity" : "common",
+  "description" : "A high-tech table. ",
+  "shortdescription" : "Elpis Table",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 120,
+
+  "apexDescription" : "Quite the fancy table.",
+  "avianDescription" : "This is a pretty fancy desk.",
+  "floranDescription" : "Floran ussse table to cut meat...",
+  "glitchDescription" : "Approving. A very well-made table.",
+  "humanDescription" : "A cool table.",
+  "hylotlDescription" : "Beautiful craftsmanship, truly splendid.",
+  "novakidDescription" : "A good ol' table.",
+
+  "inventoryIcon" : "elpistableicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "elpistable.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
+

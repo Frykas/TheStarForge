@@ -1,0 +1,178 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : "",
+    "elementalDirectives" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "stock" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -2,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "stockFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : -1,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+	  
+      "body" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 7,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "bodyFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 8,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+	  
+      "barrel" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 5,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "barrelFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 6,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+	  
+      "magazine" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "magazineFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 4,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+	  
+	  "attachment" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon", "attachment"]
+        }
+      },
+	  "attachmentFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 2,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0.75, 0.25], // x offset is set dynamically
+          "transformationGroups" : ["weapon", "attachment"]
+        }
+      },
+	  
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -5,
+          "centered" : true,
+          "offset" : [1, -0.125],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/ranged/muzzleflash/starforge-<elementalType>muzzleflash.png:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {},
+    "attachment" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [90, 90, 0]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+    "chargeLoop" : [ ]
+  }
+}

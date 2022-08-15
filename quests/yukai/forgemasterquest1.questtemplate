@@ -1,0 +1,32 @@
+{
+  "id" : "yukaiforgemasterquest1",
+  "title" : "^#b4f5c3;Seeking Greater Purpose",
+  "text" : "This old Forgemaster has turned his back on the Yukai ways, seeking greater purpose after mastering his craft. You had a long discussion with him, and he asks you if perhaps, you know of anything that could allow him to become even better. Maybe someone at the ^green;Thalasso Outpost^reset; would be willing to help? ",
+  "completionText" : "A Yukai Forgemaster is no common sight. Now you're telling me you met one that found inner peace? If what you say is true, we can gain a very useful ally. They could use the Starforge to improve their craft, and we could use their knowledge and talent to get stronger. ",
+  "completionCinema" : "/cinematics/masamunejoins/masamunejoins.cinematic",
+  "moneyRange" : [10, 10],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ] ]
+  ],
+
+  "compassUpdate" : 0.2,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Speak to ^orange;Krythers^reset; at the ^green;Thalasso Outpost^reset;.",
+	"setUniverseFlags" : ["yukaiforgemastermission1"]
+  }
+}

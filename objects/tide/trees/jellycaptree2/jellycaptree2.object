@@ -1,0 +1,42 @@
+{
+  "objectName" : "starforge-jellycaptree2",
+  "rarity" : "common",
+
+  "printable" : false,
+  "description" : "A Jellycap tree, originating from the realm of the Tide.",
+  "shortdescription" : "Jellycap Tree",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 5,
+
+  "apexDescription" : "It looks like a jellyfish that transformed into a tree. The Tide sure is a weird place.",
+  "avianDescription" : "The jellycap is sticky and bouncy. Ew.",
+  "floranDescription" : "Floran doesssn't like thisss tree. Weird feelingsss.",
+  "glitchDescription" : "Curious. I wonder what caused this tree to evolve like this.",
+  "humanDescription" : "I've never seen trees like this in the galaxy, I wonder where it comes from?",
+  "hylotlDescription" : "A jellycap tree. It looks like it belongs underwater, well, kinda like everything from the Tide.",
+  "novakidDescription" : "Never seen a tree like this before.",
+
+  
+  "lightColor" : [74, 56, 137],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "jellycaptree2.png",
+      "imageLayers" : [ { "image" : "jellycaptree2.png" }, { "image" : "jellycaptree2fullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-24, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 3]
+    }
+   ]
+   
+   }

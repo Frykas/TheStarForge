@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-rimenodonfossil3",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Rimenodon Torso",
+  "description" : "A fossilised Rimenodon torso.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "rimenodonfossil3icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/rimenodonfossil/rimenodonfossil3.png",
+  "displayoffset" :[-3.8, -0.4],
+
+  "fossilSetName" : "rimenodon",
+  "setIndex" : 3,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

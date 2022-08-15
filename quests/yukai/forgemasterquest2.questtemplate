@@ -1,0 +1,34 @@
+{
+  "id" : "yukaiforgemasterquest2",
+  "prerequisites" : [  "yukaiforgemasterquest1" ],
+  "title" : "^#b4f5c3;A New Beginning",
+  "text" : "From the bottom of my heart, thank you. My name is Masamune. To think you would know such a nice Hylotl and have access to this mysterious... Starforge... I cannot believe it. I agreed with Mariko to provide you with the new equipement I make at the Starforge. Oh and, consider this a token of my gratitude.",
+ "completionText" : "Masamune, your new Yukai Forgemaster ally thanks you for telling the Thalasso about him. He agreed to provide you with new equipement in exchange for the access to the Starforge. His journey starts anew.",
+  "moneyRange" : [100, 100],
+  "rewards" : [
+    [ [ "starforge-tidefossil", 1 ] ]
+  ],
+
+  "compassUpdate" : 0.2,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/crafting/yukaishop/masamuneportrait.png"} ],
+        "title" : "Masamune"
+      },
+      "questComplete" : "player"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Masamune starts a new journey with the Thalasso."
+  }
+}

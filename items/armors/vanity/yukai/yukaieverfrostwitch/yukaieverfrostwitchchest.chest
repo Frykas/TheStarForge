@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-yukaieverfrostwitchchest",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "chestwear",
+  "description" : "While Ashen witches make sure the Yukai knowledge is passed on, Everfrost witches studies for the generations ahead.",
+  "shortdescription" : "Everfrost Witch Robes",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  }
+}

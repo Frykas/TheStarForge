@@ -1,0 +1,54 @@
+{
+    "type": "starforge-unboundprisonguard",
+    "baseType": "hostile",
+ 
+    "dropPools": ["unboundCaptain1DeathTreasure"],
+ 
+    "identity" : {
+     "species" : "apex"
+	 },
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "Attack!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "You! You're not in a cell!",
+                        "Back in your cell, criminal!",
+                        "Did you get out? How!",
+                        "We've got an intruder!",
+                        "Intruder sighted!",
+                        "Attack the intruder!"
+                    ]
+                }
+            }
+        }
+    },
+ 
+    "innateStatusEffects" : ["rage",{"stat":"maxHealth","amount":105}, {"stat":"powerMultiplier","amount":1.5}],
+	
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-unboundcaptainalthead", "parameters" : { "colorIndex" : 9 }
+                }],
+                "chest": [{
+                    "name": "starforge-unboundcaptainchest", "parameters" : { "colorIndex" : 9 }
+                }],
+                "legs": [{
+                    "name": "starforge-unboundcaptainpants", "parameters" : { "colorIndex" : 9 }
+                }],
+                "primary": [
+                    "starforge-unboundstunbaton"
+                ],
+				 "alt" : [ "starforge-unboundshield" ]
+            }]]
+        ]
+    }
+}

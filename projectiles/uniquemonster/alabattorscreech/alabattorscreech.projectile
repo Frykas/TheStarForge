@@ -1,0 +1,21 @@
+{
+  "projectileName" : "starforge-alabattorscreech",
+  "image" : "alabattorscreech.png",
+  "animationCycle" : 0.8,
+  "frameNumber" : 10,
+  "speed" : 0,
+  "damagePoly" : [ [-36, 18], [-18, 36], [18, 36], [36, 18], [36, -18], [18, -36], [-18, -36], [-36, -18] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-spawnmonsters.lua" ],
+  
+  "monsterType" : "starforge-alabatling",
+  "spawnPositions" : [[-2, 0], [2, 0]],
+  "spawnEffect" : ["starforge-fadein", 0.5],
+  
+  "monsterTestPoly" : [ [0.8125, 1.25], [1.3125, 0.75],  [1.3125, -1.05], [0.8125, -1.55],  [-0.8125, -1.55], [-1.3125, -1.05],  [-1.3125, 0.75], [-0.8125, 1.25] ],
+  "spawnTolerance" : 20
+}

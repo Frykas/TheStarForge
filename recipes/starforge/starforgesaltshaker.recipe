@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 250},
+    { "item" : "starforge-infusedtitanium", "count" : 15},
+	{ "item" : "aegisaltpistol", "count" : 1},
+	{ "item" : "money", "count" : 5000}
+  ],
+  "output" : {
+    "item" : "starforge-saltshaker",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

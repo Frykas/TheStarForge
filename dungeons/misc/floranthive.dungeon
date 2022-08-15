@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starforge-floranthive",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "protected" : false,
+    "anchor" : [ "starforge-floranthive" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100
+  },
+
+  "parts" : [
+    {
+      "name" : "starforge-floranthive",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "floranthive.json" ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "category" : "craftingMaterial",
   "inventoryIcon" : "exaltingcharge.png",
   "description" : "A fragment of extreme power. Used to empower your armor at the Exalting station.",
-  "shortdescription" : "^#FFB2B2;Exalting Charge^white;",
+  "shortdescription" : "^#FFE998;Exalting Charge^white;",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
   "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
 }

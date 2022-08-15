@@ -9,5 +9,9 @@
   { "op" : "add",
 	"path" : "/objectiveDescriptions/nebStarforgeKillMonsterWithWeapon",
 	"value" : "Kill<monsterName><itemName>: <current> / <required>"
+  },
+  { "op" : "add",
+	"path" : "/objectiveDescriptions/nebStarforgeMessageCheck",
+	"value" : "Await a response." //MEANT TO BE EDITED IN QUEST
   }
 ]

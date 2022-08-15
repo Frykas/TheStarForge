@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-yukaitable",
+  "colonyTags" : ["hylotl"],
+  "printable" : true,
+  "rarity" : "Uncommon",
+  "description" : "A table made of bone, decorated with cloth.",
+  "shortdescription" : "Yukai Table",
+  "race" : "hylotl",
+  "category" : "furniture",
+  "price" : 80,
+
+  "apexDescription" : "A table made of bone.",
+  "avianDescription" : "This is quite the primitive table!",
+  "floranDescription" : "Table good enough for Floran to ssslice meatsss.",
+  "glitchDescription" : "Confused. Where did they find bones large enough for a table?",
+  "humanDescription" : "The Yukai sure like to use bones on everything huh.",
+  "hylotlDescription" : "What a crude looking table. It is sad to see.",
+  "novakidDescription" : "A good ol' table.",
+
+  "inventoryIcon" : "yukaitableicon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "yukaitable.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
+

@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-starmiteaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"Also called \"space gremlins\" after their mischievous nature, these monsters like to create problems.\"",
+  "shortdescription" : "Starmite Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-starmiteaf" },
+
+
+  "inventoryIcon" : "starmiteaf.png",
+  "orientations" : [
+    {
+      "image" : "starmiteaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "starmiteaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

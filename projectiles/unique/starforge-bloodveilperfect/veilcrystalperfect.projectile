@@ -1,0 +1,25 @@
+{
+  "projectileName" : "starforge-veilcrystalperfect",
+  "physics" : "arrownosticky",
+  "image" : "veilcrystalperfect.png",
+  "fullbright" : true,
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "emitters" : [ "smoke" ],
+  "piercing" : true,
+  "damageKindImage" : "icon.png",
+  "timeToLive" : 10,
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arrowexplosion/arrowexplosion.config"
+    }
+  ],
+  "power" : 20,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "statusEffects" : [ "starforge-bleeding" ],
+  "damageKind" : "bow"
+}

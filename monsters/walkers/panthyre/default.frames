@@ -1,0 +1,20 @@
+{
+  "frameGrid" : {
+    "size" : [35, 30],
+    "dimensions" : [6, 5],
+
+    "names" : [
+      [ null, "idle.1", null, "growl.1", "growl.2", "growl.3" ],
+      [ null, "run.1", "run.2", "run.3", "run.4", null ],
+      [ null, "fall.1", null, "hurt.1", null, "inspect.1" ],
+      [ null, "bite.1", "bite.2", "bite.3", "bite.4", null ],
+      [ null, "leapjump.1", "leapjump.2", null, "leapfall.1", "leapfall.2" ]
+    ]
+  },
+
+  "aliases" : {
+    "jump.1" : "run.1",
+    "jump.2" : "run.2",
+    "fall.2" : "run.3"
+  }
+}

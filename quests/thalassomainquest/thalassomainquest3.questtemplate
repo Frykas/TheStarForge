@@ -1,0 +1,45 @@
+{
+  "id" : "thalassomission3",
+  "mainQuest" : true,
+  "prerequisites" : [ "thalassomission2" ],
+  "title" : "^#b4f5c3;Prison Break",
+  "text" : "As expected, navigating through the Unbound network is complicated and tedious. I'm gonna need help from a friend of mine, her name is ^pink;Sasha Beniko^reset;. We infiltrated the Unbound together, problem is, she got caught and is now held in a prison.",
+  "completionText" : "So... Morpheus is back at it uh? Thanks for rescuing me stranger, lead me outside near the landing pad directly on top of us, so that I can get us out.",
+  "completionCinema" : "/cinematics/sashajoins/sashajoins.cinematic",
+  "moneyRange" : [1000, 1000],
+  "canBeAbandoned" : false,
+  
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Morpheus^reset; to travel to the ^orange;Unbound Prison^reset;.",
+      "findGoal" : "Find and rescue ^green;Sasha Beniko^reset;",
+      "turnIn" : "Speak to ^green;Sasha Beniko^reset;"
+    },
+
+    "warpEntityUid" : "starforge-morpheusoutpost",
+    "warpAction" : "instanceworld:starforge-unbdmission3",
+    "warpDialog" : "/interface/confirmation/starforgeteleportconfirmation.config:starforge-mission3",
+
+    "goalTrigger" : "message",
+    "triggerMessage" : "starforge-missioncomplete",
+	
+    "goalEntityUid" : "starforge-sashaprisoner",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+	
+	"followUp" : "thalassomission3b",
+	
+	"setUniverseFlags" : ["unboundmission3"],
+
+    "turnInEntityUid" : "starforge-sashaprison"
+  
+
+  }
+}

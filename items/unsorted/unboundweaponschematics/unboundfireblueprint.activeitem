@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unboundfireblueprint",
+  "rarity" : "rare",
+  "price" : 1250,
+  "description" : "Unbound blueprints of fire elemental weapons.",
+  "shortdescription" : "Weapon Blueprints",
+  "category" : "Blueprint",
+  "twoHanded" : false,
+  "inventoryIcon" : "unboundfireblueprint.png",
+  "recipes" : ["starforge-unboundautoshotgun", "starforge-unboundshotgun", "starforge-unboundchaingun", "starforge-unboundlmg", "starforge-unboundburstpistol", "starforge-unboundrocketlauncher"],
+  "animation" : "unboundfireblueprint.animation",
+  "scripts" : ["unboundweaponschematic.lua"],
+  "swingTime" : 0.15
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-yukaiskyray",
+  "category" : "yukaiskyray",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "yukaiskyray.png"
+  }
+}

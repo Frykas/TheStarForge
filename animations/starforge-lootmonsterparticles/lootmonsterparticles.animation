@@ -1,9 +1,0 @@
-{
-  "frames" : "lootmonsterparticles.png",
-  "variants" : 1,
-  "loops" : 20.0,
-  "frameNumber" : 4,
-  "animationCycle" : 0.4,
-  "mode" : "LoopForever",
-  "offset" : [0, 0]
-}

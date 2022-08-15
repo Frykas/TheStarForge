@@ -1,0 +1,40 @@
+{
+  "objectName" : "starforge-unboundholoquin",
+  "colonyTags" : ["apex"],
+  "printable" : true,
+  "rarity" : "rare",
+
+  "category" : "other",
+  "price" : 100,
+  "description" : "An Unbound holographic mannequin to display armor sets on.",
+  "shortdescription" : "Unbound Holoquin",
+  "race" : "Apex",
+
+  "inventoryIcon" : "unboundholoquinicon.png",
+  "orientations" : [
+   {
+      "dualImage" : "unboundholoquin.png:<frame>?flipx",
+      "imagePosition" : [0, 0],
+      //"flipImages" : true,
+      "spaces" : [[1, 0], [1, 1], [1, 2], [1, 3], [0, 0], [0, 1], [0, 2], [0, 3]],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "unboundholoquin.animation",
+  "animationPosition" : [-10.5, 0],
+  "placementImagePosition" : [-21, 0],
+
+  "health" : 1.5,
+
+  "objectType" : "container",
+
+  "openSounds" : [ "/sfx/objects/mannequin_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/mannequin_close.ogg" ],
+  "slotCount" : 4,
+  "uiConfig" : "/interface/scripted/mannequin/mannequingui.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+  "scripts" : [ "/objects/generic/mannequin/mannequin.lua" ],
+  "scriptDelta" : 5
+}

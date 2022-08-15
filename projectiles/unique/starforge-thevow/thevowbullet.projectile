@@ -71,5 +71,6 @@
   "piercing" : true,
   "damageKind" : "fire",
   
-  "scripts" : [ "/projectiles/scripts/starforge-killonstick.lua" ]
+  "scripts" : [ "/projectiles/scripts/starforge-killonstick.lua", "/projectiles/scripts/starforge-shieldpuncher.lua" ],
+  "effectOverwrite" : "starforge-vowshieldbreaker"
 }

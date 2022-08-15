@@ -1,0 +1,29 @@
+{
+  "projectileName" : "starforge-icebulletstatus",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "starforge-icebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletimpact/unbound/starforge-unboundicebulletexplosion.config"
+    },
+	{
+	  "inheritDamageFactor": 0.05,
+	  "angleAdjust": 0,
+	  "fuzzAngle": 30,
+	  "type": "smallicecloud",
+	  "action": "projectile"
+	}
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [58, 207, 254],
+  "emitters": ["iceplasma"],
+  "fullbright" : true,
+  "damageKind" : "iceplasmabullet"
+}

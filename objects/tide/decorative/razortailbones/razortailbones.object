@@ -1,0 +1,41 @@
+{
+  "objectName" : "starforge-razortailbones",
+  "rarity" : "rare",
+
+  "printable" : false,
+  "description" : "The remnants of a Razortail, taken over by the Tidal flora.",
+  "shortdescription" : "Razortail Remnants",
+  "category" : "decorative",
+  "price" : 750,
+
+  "apexDescription" : "Razortails sure are less impressive once they're dead.",
+  "avianDescription" : "The Tide sure has some big and impressive predators!",
+  "floranDescription" : "Floran sssad there isss no more meat...",
+  "glitchDescription" : "Curious. I wonder how it lived its final moments.",
+  "humanDescription" : "The remains of a Tide predator. Flora has taken over it.",
+  "hylotlDescription" : "This really shows how from death, comes life. What a beautiful display.",
+  "novakidDescription" : "Some bones are stuck in the stone.",
+  
+  "lightColor" : [74, 56, 137],
+
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "razortailbones.png",
+      "imageLayers" : [ { "image" : "razortailbones.png" }, { "image" : "razortailbonesfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-48, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ],
+	  "lightPosition" : [1, 3]
+    }
+   ]
+   
+   }

@@ -1,0 +1,254 @@
+{
+  "itemName" : "starforge-anentropia",
+  "price" : 1000,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A dagger that utilises rapid icy slashes to lacerate and wear down foes.",
+  "shortdescription" : "Anentropia",
+  "tooltipKind" : "starforge-uniquesword",
+  "category" : "dagger",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","dagger", "tide"],
+  "learnBlueprintsOnPickup" : [ "starforge-anentropia" ],
+
+  "inventoryIcon" : "anentropia.png?flipx",
+
+  "animation" : "/items/active/weapons/melee/dagger/starforge-dagger.animation",
+  "animationParts" : {
+    "blade" : "anentropia.png",
+	
+	"swoosh" : "tidalfrost_"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "starforge-tidalfrost",
+
+  "primaryAbilityType" : "starforge-daggercombo",
+  "primaryAbility" : {
+    "baseDps" : 8.0,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "starforge-tidalfrost",
+      "knockbackMode" : "aim",
+      "timeout" : 0.25,
+	  "statusEffects" : []
+    },
+	
+	"stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -210,
+        "allowRotate" : false,
+        "twoHanded" : false,
+        "allowFlip" : true,
+		"aimAngle" : 0
+      },
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 50,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 50,
+        "twoHanded" : false,
+        "weaponOffset" : [0.5, 1.0],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.075,
+        "armRotation" : -30,
+        "weaponRotation" : -50,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
+		"continueStep" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.075,
+        "armRotation" : -30,
+        "weaponRotation" : -50,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.05,
+        "armRotation" : -110,
+        "weaponRotation" : 50,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash2" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 50,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 1.0],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.075,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
+		"continueStep" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.05,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash3" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : false,
+        "weaponOffset" : [0.5, 1.0],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire3" : {
+        "duration" : 0.075,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 4
+      "windup4" : {
+        "duration" : 0.2,
+        "armRotation" : -110,
+        "weaponRotation" : 220,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire4" : {
+        "duration" : 0.2,
+        "armRotation" : 20,
+        "weaponRotation" : -100,
+        "weaponOffset" : [0, 0.125],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait4" : {
+        "duration" : 0.2,
+        "armRotation" : 20,
+        "weaponRotation" : -100,
+        "weaponOffset" : [0, 0.125],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 5
+      "windup5" : {
+        "duration" : 0.05,
+        "armRotation" : -20,
+        "weaponRotation" : -20,
+        "weaponOffset" : [0, 0.125],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire5" : {
+        "duration" : 0.2,
+        "armRotation" : -135,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, 0.125],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

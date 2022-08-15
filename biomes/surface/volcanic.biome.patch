@@ -105,5 +105,44 @@
         "type" : "microdungeon",
         "microdungeons" : [ "unboundmicrodungeons" ]
       }
+    },
+  
+  { "op" : "add", 
+      "path" : "/surfacePlaceables/items/-", 
+      "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-microdungeons.config:starforge-microdungeon",
+		
+        "type" : "microdungeon",
+        "microdungeons" : [ "starforge-warmongerbunker" ]
+      }
+    },
+	
+	{ "op" : "add", 
+      "path" : "/surfacePlaceables/items/-", 
+      "value" : {
+        "mode" : "floor",
+        "priority" : 10.0,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-microdungeons.config:starforge-microdungeon",
+		
+        "type" : "microdungeon",
+        "microdungeons" : [ "starforge-unboundancientruins" ]
+      }
+    },
+	
+	{ "op" : "add", 
+      "path" : "/surfacePlaceables/items/-", 
+      "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-raremicrodungeons.config:starforge-raremicrodungeon",
+		
+        "type" : "microdungeon",
+        "microdungeons" : [ "starforge-roboblinsurface" ]
+      }
     }
 	]

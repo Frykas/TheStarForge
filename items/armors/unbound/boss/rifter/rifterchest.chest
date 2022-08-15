@@ -1,14 +1,14 @@
 {
   "itemName" : "starforge-rifterchest",
   "price" : 4000,
-  "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
   "description" : "Starva's next goal was to find a way to break free from what binds her to this reality, and explore beyond.",
   "shortdescription" : "^#9BBA3D;UNBD^reset; Rifter's Prison^reset;",
-  "tooltipKind" : "armor",
-  "tooltipFields" : {"rarityLabel" : "Exalted"},
+  "inventoryIcon" : "/items/armors/unbound/boss/rifter/icons.png:chest",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
+  "tooltipKind" : "starforge-exalted",
 
   "maleFrames" : {
     "body" : "chest.png",

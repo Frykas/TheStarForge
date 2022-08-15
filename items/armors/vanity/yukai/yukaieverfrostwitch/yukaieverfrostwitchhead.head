@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-yukaieverfrostwitchhead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "headwear",
+  "description" : "The Everfrost witches are tasked with studying the Tide and warping parts of it onto their worlds.",
+  "shortdescription" : "Everfrost Witch Cover",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

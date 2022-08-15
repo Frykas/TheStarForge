@@ -6,7 +6,8 @@
   "description": "An Unbound SMG loaded with elemental bullets. Often used by Unbound \"Harasser\" Commando types.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Harasser\" SMG",
   "tooltipKind": "starforge-unboundgun",
-  "category": "SMG",
+  "category": "machinePistol",
+  "tooltipFieldsOverride" : {"subtitle":"SMG"},
   "twoHanded": true,
   "level" : 6,
   "itemTags": [
@@ -58,7 +59,7 @@
     "inaccuracy": 0.003,
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "unboundriflebullet",
+    "projectileType": "unboundelectricbullet",
     "projectileParameters": {
       "knockback": 3
     },
@@ -104,5 +105,5 @@
       }
     }
   },
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

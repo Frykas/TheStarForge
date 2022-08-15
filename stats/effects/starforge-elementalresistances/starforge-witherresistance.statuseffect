@@ -1,0 +1,13 @@
+{
+  "name" : "starforge-witherresistance",
+  "effectConfig" : {
+    "elementalType" : "starforge-wither",
+	"elementalInfluences" : {
+	  "poison" : 0.2,
+	  "fire" : -0.3
+	},
+	"totalFactor" : 0.6
+  },
+  "defaultDuration" : 15,
+  "scripts" : ["starforge-elementalresistance.lua"]
+}

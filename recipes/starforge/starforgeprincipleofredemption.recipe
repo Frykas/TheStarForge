@@ -1,0 +1,19 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 5000},
+	{ "item" : "starforge-cerulium", "count" : 12},
+	{ "item" : "starforge-infusedtitanium", "count" : 3},
+	{ "item" : "scorchedcore", "count" : 5},
+	{ "item" : "staticcell", "count" : 5},
+	{ "item" : "cryonicextract", "count" : 5},
+	{ "item" : "venomsample", "count" : 5}
+  ],
+  
+  "output" : {
+    "item" : "starforge-principleofredemption",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

@@ -1,0 +1,39 @@
+{
+  "objectName" : "starforge-hangingrimenodon",
+  "colonyTags" : ["bone"],
+  "rarity" : "rare",
+
+  "printable" : false,
+  "description" : "A big, hanging creature.",
+  "shortdescription" : "Hanging Creature Meat",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 520,
+
+  "apexDescription" : "Looks like a strange Yukai device. It appears to be broken.",
+  "avianDescription" : "The strange crystal in the middle is cracked.",
+  "floranDescription" : "Floran not sure how to feel about weird tree.",
+  "glitchDescription" : "Curious. I wonder what this strange device is.",
+  "humanDescription" : "Looks like a Yukai device. The crystal is cracked though.",
+  "hylotlDescription" : "A device made to summon the Tide here. Seems like it worked.",
+  "novakidDescription" : "These Hylotls and their weird crystals and trees I swear.",
+
+  "inventoryIcon" : "hangingrimenodonicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "hangingrimenodon.png",
+      "imageLayers" : [ { "image" : "hangingrimenodon.png" }, { "image" : "hangingrimenodonfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-24, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }

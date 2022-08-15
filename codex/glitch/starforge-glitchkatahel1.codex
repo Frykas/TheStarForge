@@ -1,0 +1,18 @@
+{
+  "id" : "starforge-glitchkatahel1",
+  "species" : "glitch",
+  "title" : "A letter to our Lord",
+  "description" : "An old torn note, written by an Awakened Glitch knight.",
+  "icon" : "starforge-glitchkatahelcover1.png",
+  "contentPages" : [
+
+"My lord,
+
+I hope that the rumors are false and that you are still fighting up there in the castle. Ever since the rumors that you failed and perished started to spread, the Roboblins stopped listening to our orders and just started stealing everything from jewelry to our precious blueprints. All the villagers are panicking and tempting to flee. I'm sorry we couldn't spot the Outsider in time, but if you're still alive please I beg you, come back to us."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 25
+  }
+}

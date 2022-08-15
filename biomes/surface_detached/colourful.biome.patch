@@ -12,6 +12,19 @@
         ]
       ]
     }
-  }
+  },
+  
+  { "op" : "add", 
+      "path" : "/surfacePlaceables/items/-", 
+      "value" : {
+        "mode" : "floor",
+        "priority" : 10.0,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-raremicrodungeons.config:starforge-raremicrodungeon",
+		
+        "type" : "microdungeon",
+        "microdungeons" : [ "yukaihut" ]
+      }
+    }
 	
 	]

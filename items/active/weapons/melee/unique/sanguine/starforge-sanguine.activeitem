@@ -5,9 +5,10 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "A cursed Yukai artefact powered by the life force of its previous owners.",
-  "shortdescription" : "Sanguine",
-  "tooltipKind" : "base",
-  "category" : "Cursed Katana",
+  "shortdescription" : "^orange;Sanguine^reset;",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "broadsword",
+  "tooltipFieldsOverride" : {"subtitle":"Cursed Katana"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword", "katana"],
 
@@ -287,5 +288,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

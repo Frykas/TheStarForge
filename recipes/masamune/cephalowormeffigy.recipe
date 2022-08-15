@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-cephalowormshell", "count" : 1},
+	{ "item" : "starforge-tidalfragment", "count" : 15},
+    { "item" : "bone", "count" : 10}
+	
+  ],
+  "output" : {
+    "item" : "starforge-cephalowormeffigy",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "material" ],
+  "duration" : 0
+}
+

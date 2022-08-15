@@ -1,7 +1,9 @@
 {
   "input" : [
+    { "item" : "starforge-exaltingcharge", "count" : 1},
+    { "item" : "starforge-exaltingstone", "count" : 25},
     { "item" : "starforge-yukaitear", "count" : 1},
-	{ "item" : "starforge-exaltingcharge", "count" : 1},
+	{ "item" : "starforge-osmiumshard", "count" : 50},
 	{ "item" : "essence", "count" : 6000}
   ],
   "output" : {

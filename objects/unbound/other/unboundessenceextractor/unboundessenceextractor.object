@@ -1,0 +1,122 @@
+{
+	"objectName": "starforge-unboundessenceextractor",
+	"colonyTags": ["apex"],
+	"rarity": "legendary",
+	"category": "decorative",
+	"price": 660,
+	"description": "An essence extractor used by the Unbound.",
+	"shortdescription": "Unbound Essence Extractor",
+	"race": "apex",
+
+	"apexDescription": "An Unbound essence extractor. It's using lava as fuel?",
+	"avianDescription": "This extracts the ancient essence from the ruins!",
+	"floranDescription": "Liquid insside lookss like fire. Floran keepsss away.",
+	"glitchDescription": "Alerted. This machine is very loud.",
+	"humanDescription": "They're extracting essence directly from the ruins? Smart.",
+	"hylotlDescription": "What a barbaric way to extract essence.",
+	"novakidDescription": "Looks like massive forge eh.",
+
+	"inventoryIcon": "unboundessenceextractoricon.png",
+	"orientations": [{
+		"dualImage": "unboundessenceextractor.png:<frame>",
+		"imageLayers": [{
+			"image": "unboundessenceextractor.png:<frame>",
+			"fullbright": true
+		}, {
+			"image": "unboundessenceextractorlit.png:<frame>"
+		}],
+		"imagePosition": [-40, 0],
+
+		"frames": 6,
+		"animationCycle": 1.4,
+		"spaceScan": 0.1,
+		"anchors": ["bottom"]
+	}],
+	"particleEmitters": [
+
+		{
+			"emissionRate": 2,
+			"emissionVariance": 0.5,
+			"pixelOrigin": [0, 21],
+
+			"particle": {
+				"type": "ember",
+				"position": [-3.5, 1],
+				"size": 1.0,
+				"color": [255, 205, 2, 255],
+				"light": [64, 38, 19],
+				"fade": 0.9,
+				"initialVelocity": [0.0, 2.0],
+				"finalVelocity": [0.0, -50.0],
+				"approach": [0, 2],
+				"timeToLive": 0.9,
+				"layer": "front"
+			},
+			"particleVariance": {
+				"initialVelocity": [1.5, 1.0],
+				"size": 1.5,
+				"color": [255, 205, 2, 255]
+			}
+		},
+		{
+			"emissionRate": 2,
+			"emissionVariance": 0.5,
+			"pixelOrigin": [0, 21],
+
+			"particle": {
+				"type": "ember",
+				"position": [0, 2.5],
+				"size": 0.3,
+				"color": [38, 38, 38, 255],
+				"light": [38, 38, 38],
+				"fade": 0.9,
+				"initialVelocity": [0.0, 2.0],
+				"finalVelocity": [0.0, -50.0],
+				"approach": [0, 2],
+				"timeToLive": 0.9,
+				"layer": "front"
+			},
+			"particleVariance": {
+				"initialVelocity": [1.5, 1.0],
+				"size": 0.5,
+				"color": [38, 38, 38, 255]
+			}
+		},
+
+
+		{
+			"emissionRate": 2,
+			"emissionVariance": 0.5,
+			"pixelOrigin": [0, 21],
+
+			"particle": {
+				"type": "ember",
+				"position": [3.5, 1],
+				"size": 1.0,
+				"color": [255, 100, 0, 255],
+				"light": [64, 38, 19],
+				"fade": 0.9,
+				"initialVelocity": [0.0, 2.0],
+				"finalVelocity": [0.0, -50.0],
+				"approach": [0, 1],
+				"timeToLive": 0.9,
+				"layer": "front"
+			},
+			"particleVariance": {
+				"initialVelocity": [1.5, 1.0],
+				"size": 1.5,
+				"color": [255, 205, 2, 255]
+			}
+		}
+	],
+	"npcToy": {
+		"influence": [
+			"lavatank"
+		],
+		"defaultReactions": {
+			"lavatank": [
+				[1.0, "warmhands"]
+			]
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unboundvanguardblueprint",
+  "rarity" : "essential",
+  "price" : 3000,
+  "description" : "Unbound blueprints of Vanguard weapons.",
+  "shortdescription" : "Weapon Blueprints",
+  "category" : "Blueprint",
+  "twoHanded" : false,
+  "inventoryIcon" : "unboundvanguardblueprint.png",
+  "recipes" : ["starforge-unboundsmartar", "starforge-unboundsmartpistol", "starforge-unboundsmartsniper", "starforge-unboundsmartshotgun"],
+  "animation" : "unboundvanguardblueprint.animation",
+  "scripts" : ["unboundweaponschematic.lua"],
+  "swingTime" : 0.15
+}

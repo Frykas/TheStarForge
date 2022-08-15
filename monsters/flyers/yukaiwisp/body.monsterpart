@@ -1,0 +1,10 @@
+{
+  "name" : "yukaiwisp",
+  "category" : "yukaiwisp",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "yukaiwisp.png",
+    "lights" : "yukaiwisplight.png"
+  }
+}

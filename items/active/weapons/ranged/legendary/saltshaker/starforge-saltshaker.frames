@@ -1,0 +1,17 @@
+{
+  "frameGrid" : {
+    "size" : [20, 12],
+    "dimensions" : [4, 1],
+
+    "names" : [
+      [ "ready1", "cycle1.1", "ready2", "cycle2.1" ]
+    ]
+  },
+
+  "aliases" : {
+    "spin.1" : "ready1",
+    "spin.2" : "cycle1.1",
+    "spin.3" : "ready2",
+    "spin.4" : "cycle2.1"
+  }
+}

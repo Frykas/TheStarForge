@@ -10,7 +10,7 @@
         "title" : "Chemist Krythers",
         "subtitle" : "Will help you develop blueprints!",
         "icon" : {
-          "file" : "/interface/SEmerchant/merchanticon.png"
+          "file" : "/interface/crafting/starforge.png"
         }
       }
     },
@@ -25,7 +25,7 @@
   "price" : 5000,
   
   "offeredQuests" : ["starforge-furourswordquest2"],
-  "turnInQuests" : ["starforge-furourswordquest1"],
+  "turnInQuests" : ["starforge-furourswordquest1", "yukaiforgemasterquest1"],
 
   "apexDescription" : "What a nerdy looking Hylotl.",
   "avianDescription" : "This Hylotl looks more like a librarian than a chemist.",

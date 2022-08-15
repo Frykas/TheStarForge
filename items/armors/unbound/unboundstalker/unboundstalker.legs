@@ -1,6 +1,6 @@
 {
   "itemName" : "starforge-unboundstalkerpants",
-  "price" : 750,
+  "price" : 150,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Legendary",
@@ -12,29 +12,6 @@
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
 
-  "level" : 6,
-  "leveledStatusEffects" : [
-    {
-      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
-      "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.04
-    },
-    {
-      "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
-      "stat" : "protection",
-      "amount" : 0.2
-    },
-    {
-    "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
-      "stat" : "maxEnergy",
-      "amount" : 2
-    },
-    {
-      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
-      "stat" : "maxHealth",
-      "amount" : 2
-    }
-  ],
 
   "itemTags" : [ "tier6armour" ],
   

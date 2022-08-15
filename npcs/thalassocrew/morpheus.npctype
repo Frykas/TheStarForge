@@ -29,8 +29,8 @@
   "scriptConfig" : {
     "uniqueId" : "starforge-morpheusoutpost",
     "behavior" : "villager",
-	"offeredQuests" : ["thalassointromission2", "thalassomission1"],
-    "turnInQuests" : ["thalassointromission1","thalassointromission4"],
+	"offeredQuests" : ["thalassointromission2", "thalassomission1", "thalassomission3"],
+    "turnInQuests" : ["thalassointromission1","thalassointromission4", "thalassomission1"],
 
     "dialogMode" : "random",
     "dialog" : {
@@ -42,7 +42,7 @@
             "It's important to remember what you fight for. I have a family waiting for me to come back.",
 			"Mariko was right to contact you. You're strong.",
             "The Unbound are expanding fast, we don't have time to laze around.",
-			"Most of the people in the Thalasso aren't fighter, it's mostly just me, Rondin, Tweeters and the captain.",
+			"Most of the people in the Thalasso aren't fighters, it's mostly just me, Rondin, Tweeters and the captain.",
 			"Oh it's you <entityname>. I'm just working as usual."
           ]
         }

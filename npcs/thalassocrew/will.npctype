@@ -39,7 +39,7 @@
       "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : "Tailor Will",
-        "subtitle" : "You want to look cool? He's the man!"}
+        "subtitle" : "You wanna look cool? He's the man!"}
 		}
     },
 
@@ -49,7 +49,7 @@
           "default" : {
             "default" : [
               "What ya wanna buy?",
-              "Got somethin' ya want?",
+              "I got somethin' ya want?",
               "I've got good stuff, made all by myself."
             ]
           }
@@ -57,7 +57,7 @@
         "end" : {
           "default" : {
             "default" : [
-              "Yeah come back when you have style.",
+              "Yeah, come back when you have style.",
               "Ya better be lookin' good when we talk again.",
               "Sorry to disappoint, you can't look as cool as me."
             ]
@@ -67,14 +67,14 @@
           "default" : {
             "default" : [
               "The drip? You want it? Follow me.",
-              "Wanna buy somethin' ? Follow me."
+              "Wanna buy somethin'? Follow me."
             ]
           }
         },
         "welcome" : {
           "default" : {
             "default" : [
-              "Have you seen Pepperbox somewhere? Oh I'm holding it.",
+              "Have you seen Pepperbox somewhere? Oh-- I'm holding it.",
               "So ya wanna look cool or not?"
             ]
           }
@@ -83,7 +83,7 @@
           "default" : {
             "default" : [
               "Why would I be possessed by a ... Skeletron? Because I'm a tailor? Did Strelitzia make a joke again?",
-              "The drip? Of course I've heard of it, I bath in it since birth."
+              "The drip? Of course I've heard of it, I've bathed in it since birth."
             ]
           }
         }

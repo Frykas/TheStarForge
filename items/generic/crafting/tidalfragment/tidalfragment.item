@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-tidalfragment",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "tidalfragment.png",
+  "description" : "Bits of Tidal Frost and other materials from the realm of the Tide.",
+  "shortdescription" : "Tidal Fragment",
+  "itemTags" : [ "reagent" ]
+}

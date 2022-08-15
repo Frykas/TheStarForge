@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unboundelecblueprint",
+  "rarity" : "rare",
+  "price" : 1250,
+  "description" : "Unbound blueprints of electric elemental weapons.",
+  "shortdescription" : "Weapon Blueprints",
+  "category" : "Blueprint",
+  "twoHanded" : false,
+  "inventoryIcon" : "unboundelecblueprint.png",
+  "recipes" : ["starforge-unboundar", "starforge-unboundpistol", "starforge-unboundsmg"],
+  "animation" : "unboundelecblueprint.animation",
+  "scripts" : ["unboundweaponschematic.lua"],
+  "swingTime" : 0.15
+}

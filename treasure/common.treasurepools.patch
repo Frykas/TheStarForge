@@ -1,0 +1,20 @@
+[
+
+    {
+        "op": "add",
+        "path": "/weaponChestTreasure/0/1/pool/1",
+        "value": {
+            "weight": 0.35,
+            "item": "starforge-combatrifle"
+        }
+    },
+    {
+        "op": "add",
+        "path": "/basicChestTreasure/0/1/pool/1",
+        "value": {
+            "weight": 0.15,
+            "item": "starforge-combatrifle"
+        }
+    }
+  
+]

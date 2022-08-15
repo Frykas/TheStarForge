@@ -1,13 +1,13 @@
 {
   "itemName" : "starforge-yukaisword2",
   "price" : 450,
-  "level" : 6,
+  "level" : 3,
   "maxStack" : 1,
-  "rarity" : "rare",
+  "rarity" : "uncommon",
   "description" : "A titanium & bone blade. A powerful weapon.",
   "shortdescription" : "Yukai Steel Sword",
   "tooltipKind" : "sword",
-  "category" : "Bone Sword",
+  "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword"],
 

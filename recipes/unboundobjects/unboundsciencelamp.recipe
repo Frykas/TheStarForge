@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-unboundsciencelamp",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "lights" ],
+  "duration" : 0
+}
+

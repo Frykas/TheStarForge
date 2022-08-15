@@ -1,0 +1,24 @@
+{
+  "id" : "starforge-marikostory2",
+  "species" : "hylotl",
+  "title" : "^cornflowerblue;The First Crew Member^reset; - II",
+  "description" : "The Earth fell, and yet we rise. ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "starforge-marikocover1.png",
+  "contentPages" : [
+
+"PART II - Chemist Krythers
+
+Luckily, me and Krythers ended up not too far away from a space station. Main problem was that the sector we were in was pretty isolated from the rest of the galaxy. We had to settle on it for some time. Our problem now was money. Our ship was pretty damaged and we couldn't stay on the space station for more than a couple of days with the few pixels we had.",
+
+"Krythers applied at the stim boost supplier, but got turned down. Turns out it's really hard to find a job, even small, when you didn't graduate. He was quite disappointed, but ended up getting a job at the small library near the core part of the space station. It honestly wasn't too bad, but the pay was just enough to cover the expense of a single person.",
+
+"I on the other hand, registered myself and the ship to the Space Worker Terminal, aka SWT for short. Since I kinda knew how to pilot, I could run errands and transport wares for people. However it wasn't enough, I didn't take into consideration the repairs and the fuel cost, at this rate I would be thrown off the space station with nothing but what I'm wearing.",
+
+"I was born and raised in a clan of swordsmen, I knew how to fight and I really, really needed money right now. I ended up registering to the Bounty Hunting section of the SWT. Since you need a crew of more than one person to take on bounties, Krythers agreed to becoming my first crew member, officially registered as a Chemist aboard the Thalasso. We didn't know it yet, but it was the beginning of quite an adventure."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Essential",
+    "price" : 800
+  }
+}

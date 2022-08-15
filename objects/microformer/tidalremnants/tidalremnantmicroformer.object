@@ -1,0 +1,58 @@
+{
+  "objectName" : "starforge-tidalremnantmicroformer",
+  "colonyTags" : [],
+  "rarity" : "Legendary",
+  "description" : "Warps a part of the Tide onto your world.",
+  "shortdescription" : "Yukai Tidecaller",
+  "race" : "hylotl",
+  "category" : "terraformer",
+  "price" : 3000,
+  "printable" : false,
+
+  "inventoryIcon" : "tidalremnantmicroformericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "tidalremnantmicroformer.png:default" }, { "image" : "tidalremnantmicroformerfullbright.png:default", "fullbright" : true } ],
+
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "direction" : "right"
+    },
+    {
+      "imageLayers" : [ { "image" : "tidalremnantmicroformer.png:default" }, { "image" : "tidalremnantmicroformerfullbright.png:default", "fullbright" : true } ],
+      "flipImages" : true,
+
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "direction" : "left"
+    }
+  ],
+
+  "health" : 5,
+  "rooting" : true,
+
+  "animation" : "/objects/microformer/tidalremnants/tidalremnantmicroformer.animation",
+  "animationPosition" : [-16, 0],
+  "animationParts" : {
+    "base" : "tidalremnantmicroformer.png",
+    "baseFullbright" : "tidalremnantmicroformerfullbright.png"
+  },
+
+  "smashSounds" : [ "/sfx/objects/ice_break1.ogg", "/sfx/objects/ice_break2.ogg", "/sfx/objects/ice_break3" ],
+
+  "scripts" : ["/objects/microformer/microformer.lua"],
+  "scriptDelta" : 10,
+
+  "terraformOffset" : [-15, 0],
+  "terraformSize" : 400,
+
+  "pregenerateTime" : [5, 30],
+
+  "terraformBiome" : "starforge-tidefragment"
+}

@@ -1,0 +1,42 @@
+{
+  "itemName" : "starforge-kitchenknife",
+  "price" : 1000,
+  "level" : 4,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A sharp chef's knife.",
+  "shortdescription" : "Chef's Knife",
+  "tooltipKind" : "starforge-uniquesword",
+  "category" : "dagger",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","dagger"],
+
+  "inventoryIcon" : "kitchenknife.png?flipx",
+
+  "animation" : "/items/active/weapons/melee/dagger/starforge-dagger.animation",
+  "animationParts" : {
+    "blade" : "kitchenknife.png",
+	
+    "swoosh" : ""
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "starforge-daggercombo",
+  "primaryAbility" : {
+    "baseDps" : 6.5,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "knockbackMode" : "aim",
+      "timeout" : 0.25,
+	  "statusEffects" : [ "starforge-lightbleeding" ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

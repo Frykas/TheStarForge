@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-saltshakerobject",
+  "rarity" : "essential",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "An old revolver, it's stuck in ice.",
+  "shortdescription" : "Buried Saltshaker",
+  "race" : "novakid",
+
+  "floranDescription" : "Floran doessn't care much for gunsss...",
+  "glitchDescription" : "Curious. I wonder how it got stuck there.",
+  "novakidDescription" : "Uh, this feels like it could belong to me alright!",
+  "humanDescription" : "Mmmhm, I wonder if there are any Wampa around...",
+  "hylotlDescription" : "A rather crude revolver stuck in ice.",
+  "avianDescription" : "This revolver is stuck in ice and covered in snow.", 
+  "apexDescription" : "This rather old revolver has been stuck here for a while.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "saltshakerobject.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "starforge-saltshaker-recipe",
+
+  "animation" : "saltshakerobject.animation",
+  "animationParts" : {
+    "object" : "saltshakerobject.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

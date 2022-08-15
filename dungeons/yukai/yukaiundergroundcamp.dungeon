@@ -1,0 +1,31 @@
+{
+  "metadata" : {
+    "name" : "starforge-yukaiundergroundcamp",
+    "species" : "hylotl",
+    "rules" : [
+    ],
+    "anchor" : [ "yukaiundergroundcamp1", "yukaiundergroundcamp2" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "yukaiundergroundcamp1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaiundergroundcamp1.json" ]
+    },
+	
+	{
+      "name" : "yukaiundergroundcamp2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaiundergroundcamp2.json" ]
+    }
+  ]
+}

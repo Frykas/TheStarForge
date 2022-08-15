@@ -5,8 +5,9 @@
   "rarity": "legendary",
   "description": "A devastating rocket launcher fire thermite-type rockets.",
   "tooltipKind": "starforge-unboundgun",
-  "shortdescription": "^#686F5D;UNBD^reset; \"Imolator\" RL",
-  "category": "Thermite Rocket Launcher",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Immolator\" RL",
+  "category": "rocketLauncher",
+  "tooltipFieldsOverride" : {"subtitle":"Thermite Rocket Launcher"},
   "twoHanded": true,
   "level": 6,
   "itemTags": [
@@ -119,5 +120,5 @@
       }
     }
   },
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

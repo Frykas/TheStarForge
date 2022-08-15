@@ -1,0 +1,56 @@
+{
+  "itemName" : "starforge-spellslinger",
+  "price" : 600,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A Yukai glaive, capable of firing strong blasts of energy from its blade.",
+  "shortdescription" : "Spellslinger",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "spear",
+  "tooltipFieldsOverride" : {"subtitle":"Spellglaive"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spellglaive","spear"],
+
+  "cursor" : "/cursors/reticle0.cursor",
+
+  "inventoryIcon" : "spellslinger.png",
+
+  "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
+  "animationParts" : {
+    "blade" : "spellslinger.png",
+	"bladeFullbright" : "spellslingerfullbright.png",
+	
+    "swoosh" : "",	
+	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-yukaienergymuzzle.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "starforge-spellglaivecombo",
+  "primaryAbility" : {
+    "baseDps" : 7.0
+  },
+  
+  "altAbilityType" : "starforge-spellglaiveblast",
+  "altAbility" : {
+	"projectileType" : "starforge-electricfluxbolt",
+	"projectileParameters" : {
+	  "damageKind" : "plasmabullet",
+	  "knockback": 15
+	},
+
+	"projectileCount" : 1,
+	"inaccuracy": 0.005,
+	"baseDamage" : 9,
+	"energyUsage" : 35,
+	
+	"fireTime" : 0.9,
+	"fireType" : "auto"
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

@@ -6,8 +6,9 @@
   "rarity" : "Essential",
   "description" : "A former warlord's claymore fitted with a heated blade for executing glitch.",
   "shortdescription" : "^orange;Decapitator^reset;",
-  "tooltipKind" : "base",
-  "category" : "Claymore",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "broadsword",
+  "tooltipFieldsOverride" : {"subtitle":"Claymore"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","greatsword","claymore"],
 
@@ -254,5 +255,5 @@
     "durationAfter" : 0.5
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

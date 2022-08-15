@@ -15,6 +15,31 @@
             "cycle" : 0.07,
             "mode" : "transition",
             "transition" : "off"
+          },
+          "altFire" : {
+            "frames" : 3,
+            "cycle" : 0.155,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+      "weapon" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "transitionToAlt" : {
+            "frames" : 4,
+            "cycle" : 0.35,
+            "mode" : "transition",
+            "transition" : "idleAlt"
+          },
+          "idleAlt" : {},
+          "transitionToPrimary" : {
+            "frames" : 4,
+            "cycle" : 0.35,
+            "mode" : "transition",
+            "transition" : "idle"
           }
         }
       }
@@ -37,7 +62,7 @@
           "centered" : true,
           "fullbright" : true,
           "offset" : [0, -0.875], // x offset is set dynamically
-          "image" : "<partImage><paletteSwaps>",
+          "image" : "<partImage><paletteSwaps><energyHueShift>",
           "transformationGroups" : ["weapon"]
         }
       },
@@ -48,8 +73,32 @@
           "zLevel" : 5,
           "centered" : true,
           "offset" : [0, -0.875], // x offset is set dynamically
-          "image" : "<partImage><paletteSwaps>",
           "transformationGroups" : ["weapon", "topRail"]
+        },
+
+        "partStates" : {
+          "weapon" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "transitionToAlt" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToAlt.<frame>"
+              }
+            },
+            "idleAlt" : {
+              "properties" : {
+                "image" : "<partImage>:idleAlt"
+              }
+            },
+            "transitionToPrimary" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToPrimary.<frame>"
+              }
+            }
+          }
         }
       },
       "bottomRail" : {
@@ -57,8 +106,98 @@
           "zLevel" : 6,
           "centered" : true,
           "offset" : [0.1, -0.875], // x offset is set dynamically
-          "image" : "<partImage><paletteSwaps>",
           "transformationGroups" : ["weapon", "bottomRail"]
+        },
+
+        "partStates" : {
+          "weapon" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "transitionToAlt" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToAlt.<frame>"
+              }
+            },
+            "idleAlt" : {
+              "properties" : {
+                "image" : "<partImage>:idleAlt"
+              }
+            },
+            "transitionToPrimary" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToPrimary.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "topRailBack" : {
+        "properties" : {
+          "zLevel" : 5,
+          "centered" : true,
+          "offset" : [0, -0.875], // x offset is set dynamically
+          "transformationGroups" : ["weapon", "topRailBack"]
+        },
+
+        "partStates" : {
+          "weapon" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "transitionToAlt" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToAlt.<frame>"
+              }
+            },
+            "idleAlt" : {
+              "properties" : {
+                "image" : "<partImage>:idleAlt"
+              }
+            },
+            "transitionToPrimary" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToPrimary.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "bottomRailBack" : {
+        "properties" : {
+          "zLevel" : 6,
+          "centered" : true,
+          "offset" : [0.1, -0.875], // x offset is set dynamically
+          "transformationGroups" : ["weapon", "bottomRailBack"]
+        },
+
+        "partStates" : {
+          "weapon" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "transitionToAlt" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToAlt.<frame>"
+              }
+            },
+            "idleAlt" : {
+              "properties" : {
+                "image" : "<partImage>:idleAlt"
+              }
+            },
+            "transitionToPrimary" : {
+              "properties" : {
+                "image" : "<partImage>:transitionToPrimary.<frame>"
+              }
+            }
+          }
         }
       },
 	  
@@ -86,7 +225,7 @@
         "properties" : {
           "zLevel" : -1,
           "centered" : true,
-          "offset" : [0.75, 0],
+          "offset" : [-0.75, 0],
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
@@ -95,7 +234,12 @@
           "firing" : {
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:<variant>.<frame>"
+                "image" : "<partImage>:primary.<variant>.<frame><energyHueShift>"
+              }
+            },
+            "altFire" : {
+              "properties" : {
+                "image" : "<partImage>:alt.<variant>.<frame><energyHueShift>"
               }
             }
           }
@@ -114,6 +258,8 @@
     "weapon" : {},
     "topRail" : {},
     "bottomRail" : {},
+    "topRailBack" : {},
+    "bottomRailBack" : {},
     "topBarrel" : {},
     "bottomBarrel" : {},
     "muzzle" : {}
@@ -136,6 +282,6 @@
   },
 
   "sounds" : {
-    "fire" : [ "/sfx/gun/starforge_bowgunfire.ogg" ]
+    "fire" : [ ]
   }
 }

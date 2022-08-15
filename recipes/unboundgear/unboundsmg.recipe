@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-salvagedunboundtech", "count" : 1},
+    { "item" : "essence", "count" : 600},
+	{ "item" : "durasteelbar", "count" : 10},
+	{ "item" : "titaniumbar", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-unboundsmg",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundgear", "weapon" ],
+  "duration" : 0
+}
+

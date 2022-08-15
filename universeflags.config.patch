@@ -13,17 +13,31 @@
             ]
         }
     },
-	
 	{
         "op": "add",
-        "path": "/unboundstart",
+        "path": "/unboundmission3",
         "value": {
             "actions": [
                 {
                     "type": "placeDungeon",
-                    "dungeonId": "thalassooutpost_unboundstart",
+                    "dungeonId": "thalassooutpost_sasha",
                     "targetInstance": "thalassooutpost",
-                    "targetPosition": [170, 500]
+                    "targetPosition": [253, 572]
+                }
+            ]
+        }
+    },
+	
+	{
+        "op": "add",
+        "path": "/yukaiforgemastermission1",
+        "value": {
+            "actions": [
+                {
+                    "type": "placeDungeon",
+                    "dungeonId": "thalassooutpost_masamune",
+                    "targetInstance": "thalassooutpost",
+                    "targetPosition": [228, 572]
                 }
             ]
         }

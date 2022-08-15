@@ -1,0 +1,30 @@
+{
+  "projectileName" : "starforge-leviathianstooth",
+  "image" : "starforge-leviathianstooth.png",
+  "physics" : "arrow",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "flippable" : true,
+  "supportsProcessing" : true,
+  "piercing" : true,
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_arrow.ogg"
+      ]
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 110,
+  "damageKind" : "starforge-tidalfrost",
+  "emitters" : [ ],
+  "timeToLive" : 3.95,
+  
+  "renderLayer" : "Monster+1",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-stickingprojectile.lua" ],
+  "retainStickingDamage" : true,
+  "searchRadius" : 0.1
+}

@@ -1,0 +1,13 @@
+{
+  "name" : "starforge-pachinkoice",
+
+  "effectConfig" : {
+	"deathProjectileType" : "starforge-icepachinkoball",
+    "minMaxHealth" : 5
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "/stats/effects/starforge-deathprojectile/starforge-deathprojectile.lua"
+  ]
+}

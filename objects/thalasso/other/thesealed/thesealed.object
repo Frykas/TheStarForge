@@ -3,14 +3,14 @@
   "colonyTags" : ["ancient"],
   "rarity" : "essential",
   "printable" : false,
-  "description" : "DO NOT FREE HIM.",
-  "shortdescription" : "Cyenar, the Sealed One",
+  "description" : "Otherworldly being.",
+  "shortdescription" : "Cyenar",
   "race" : "generic",
   "category" : "decorative",
   "price" : 10000,
 
   "apexDescription" : "Whispers... trying to reach me...",
-  "avianDescription" : "It whispers... free me...",
+  "avianDescription" : "It whispers... to me...",
   "floranDescription" : "Floran not feeling well...",
   "glitchDescription" : "Co2Fus3D. I C4ann0T AN5leSye haE6D ",
   "humanDescription" : "Whatever this is... I was not meant to find it... I feel dizzy...",
@@ -42,11 +42,9 @@
   "scriptDelta" : 20,
 
   "chatOptions" : [
-   "COME CLOSER. FREE ME",
-   "YOU MUST. FREE ME.",
-   "I DO NOT. BELONG HERE.",
-   "I NEED TO. GO BACK.",
-   "FREE. ME."
+   "I AM BUT AN EMISSARY. PLACED THERE BY HIGHER BEINGS.",
+   "I HAVE A MESSAGE TO YOU. NOT THE PUPPET. YOU.",
+   "MY MASTERS THANK YOU. FOR BEING THERE."
   ],
 
   "mouthPosition" : [0, 0]

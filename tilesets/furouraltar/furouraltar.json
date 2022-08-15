@@ -1,4 +1,12 @@
 { "columns":0,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"",
+         "target":"."
+        }
+    },
  "grid":
     {
      "height":1,
@@ -8,9 +16,9 @@
  "margin":0,
  "name":"furouraltar",
  "spacing":0,
- "tilecount":1,
+ "tilecount":24,
  "tiledversion":"1.4.3",
- "tileheight":33,
+ "tileheight":120,
  "tileproperties":
     {
      "0":
@@ -22,11 +30,471 @@
          "imagePositionY":"0",
          "object":"starforge-furourstand",
          "tilesetDirection":"right"
+        },
+     "1":
+        {
+         "\/\/description":"A strange solidified resin coming out of bones.",
+         "\/\/name":"starforge-spiritree1",
+         "\/\/shortdescription":"Yukai Spiritree",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-spiritree1",
+         "tilesetDirection":"right"
+        },
+     "10":
+        {
+         "\/\/description":"Glowing ember coral, displayed in a pot made of bone.",
+         "\/\/name":"starforge-yukaiembercoralpot",
+         "\/\/shortdescription":"Yukai Coral Pot",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-yukaiembercoralpot",
+         "tilesetDirection":"right"
+        },
+     "11":
+        {
+         "\/\/description":"A crate made of wood, bones and ember coral.",
+         "\/\/name":"starforge-yukaicrate",
+         "\/\/shortdescription":"Yukai Crate",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-yukaicrate",
+         "tilesetDirection":"right"
+        },
+     "12":
+        {
+         "\/\/description":"A rack of traditional swords. One blade is made of bone, the other of titanium.",
+         "\/\/name":"starforge-yukaiswordrack",
+         "\/\/shortdescription":"Yukai Sword Rack",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-yukaiswordrack",
+         "tilesetDirection":"right"
+        },
+     "13":
+        {
+         "\/\/description":"The skull of a deadly predator. Decorated with ember coral and proudly exposed.",
+         "\/\/name":"starforge-razortailskulltrophy",
+         "\/\/shortdescription":"Razortail Trophy",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-razortailskulltrophy",
+         "tilesetDirection":"right"
+        },
+     "14":
+        {
+         "\/\/description":"A Yukai forgemaster. Will offer you rare items.",
+         "\/\/name":"starforge-yukaishop",
+         "\/\/shortdescription":"Yukai Forgemaster",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-yukaishop",
+         "tilesetDirection":"right"
+        },
+     "15":
+        {
+         "\/\/description":"A big tree originating from the realm of the Tide. The Yukai seem to use it for rituals.",
+         "\/\/name":"starforge-yukaitidetree",
+         "\/\/shortdescription":"Great Tide Tree",
+         "imagePositionX":"-64",
+         "imagePositionY":"0",
+         "object":"starforge-yukaitidetree",
+         "tilesetDirection":"right"
+        },
+     "16":
+        {
+         "\/\/description":"A broken Tidecaller. Looks like the Yukai used it.",
+         "\/\/name":"starforge-brokentidecaller",
+         "\/\/shortdescription":"Broken Tidecaller",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-brokentidecaller",
+         "tilesetDirection":"right"
+        },
+     "17":
+        {
+         "\/\/description":"A crutter skull.",
+         "\/\/name":"starforge-crutterskull",
+         "\/\/shortdescription":"Crutter Skull",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-crutterskull",
+         "tilesetDirection":"right"
+        },
+     "18":
+        {
+         "\/\/description":"A taroni skull.",
+         "\/\/name":"starforge-taroniskull",
+         "\/\/shortdescription":"Taroni Skull",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-taroniskull",
+         "tilesetDirection":"right"
+        },
+     "19":
+        {
+         "\/\/description":"A big, hanging creature.",
+         "\/\/name":"starforge-hangingrimenodon",
+         "\/\/shortdescription":"Hanging Creature Meat",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-hangingrimenodon",
+         "tilesetDirection":"right"
+        },
+     "2":
+        {
+         "\/\/description":"A strange solidified resin coming out of bones.",
+         "\/\/name":"starforge-spiritree2",
+         "\/\/shortdescription":"Yukai Spiritree",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-spiritree2",
+         "tilesetDirection":"right"
+        },
+     "20":
+        {
+         "\/\/description":"A yukai bed, made of bone and ragged cloth.",
+         "\/\/name":"starforge-yukaibed",
+         "\/\/shortdescription":"Yukai Bed",
+         "imagePositionX":"-26",
+         "imagePositionY":"0",
+         "object":"starforge-yukaibed",
+         "tilesetDirection":"right"
+        },
+     "21":
+        {
+         "\/\/description":"A fence made of cloth & bone.",
+         "\/\/name":"starforge-yukaifence",
+         "\/\/shortdescription":"Yukai Fence",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-yukaifence",
+         "tilesetDirection":"right"
+        },
+     "22":
+        {
+         "\/\/description":"A paper ceiling lamp.",
+         "\/\/name":"starforge-yukaipaperlantern",
+         "\/\/shortdescription":"Yukai Paper Lantern",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"starforge-yukaipaperlantern",
+         "tilesetDirection":"right"
+        },
+     "23":
+        {
+         "\/\/description":"An empty Yukai wall shelf.",
+         "\/\/name":"starforge-yukaiwallshelf",
+         "\/\/shortdescription":"Yukai Wall Shelf",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-yukaiwallshelf",
+         "tilesetDirection":"right"
+        },
+     "3":
+        {
+         "\/\/description":"A strange solidified resin coming out of bones.",
+         "\/\/name":"starforge-spiritree3",
+         "\/\/shortdescription":"Yukai Spiritree",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-spiritree3",
+         "tilesetDirection":"right"
+        },
+     "4":
+        {
+         "\/\/description":"A table made of bone, decorated with cloth.",
+         "\/\/name":"starforge-yukaitable",
+         "\/\/shortdescription":"Yukai Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-yukaitable",
+         "tilesetDirection":"right"
+        },
+     "5":
+        {
+         "\/\/description":"A chair made out of bones and cloth.",
+         "\/\/name":"starforge-yukaichair",
+         "\/\/shortdescription":"Yukai Chair",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-yukaichair",
+         "tilesetDirection":"right"
+        },
+     "6":
+        {
+         "\/\/description":"Glowing Yukai crystals, displayed in a pot made of bone.",
+         "\/\/name":"starforge-yukaicrystalpot",
+         "\/\/shortdescription":"Yukai Crystal Pot",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-yukaicrystalpot",
+         "tilesetDirection":"right"
+        },
+     "7":
+        {
+         "\/\/description":"Glowing Yukai crystals, hanging on a pot made of bone.",
+         "\/\/name":"starforge-yukaihangingpot",
+         "\/\/shortdescription":"Yukai Hanging Pot",
+         "imagePositionX":"0",
+         "imagePositionY":"5",
+         "object":"starforge-yukaihangingpot",
+         "tilesetDirection":"right"
+        },
+     "8":
+        {
+         "\/\/description":"A glowing yukai crystal on a long bone.",
+         "\/\/name":"starforge-yukailightstick1",
+         "\/\/shortdescription":"Yukai Light Stick",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-yukailightstick1",
+         "tilesetDirection":"right"
+        },
+     "9":
+        {
+         "\/\/description":"A glowing yukai crystal on a long bone.",
+         "\/\/name":"starforge-yukailightstick2",
+         "\/\/shortdescription":"Yukai Light Stick",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-yukailightstick2",
+         "tilesetDirection":"right"
         }
     },
  "tilepropertytypes":
     {
      "0":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "1":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "10":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "11":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "12":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "13":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "14":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "15":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "16":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "17":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "18":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "19":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "2":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "20":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "21":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "22":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "23":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "3":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "4":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "5":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "6":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "7":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "8":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "9":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -44,9 +512,147 @@
          "image":"furourstand.png",
          "imageheight":33,
          "imagewidth":34
+        },
+     "1":
+        {
+         "image":"spiritree1.png",
+         "imageheight":15,
+         "imagewidth":16
+        },
+     "10":
+        {
+         "image":"yukaiembercoralpot.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "11":
+        {
+         "image":"yukaicrate.png",
+         "imageheight":16,
+         "imagewidth":24
+        },
+     "12":
+        {
+         "image":"yukaiswordrack.png",
+         "imageheight":19,
+         "imagewidth":40
+        },
+     "13":
+        {
+         "image":"razortailskulltrophy.png",
+         "imageheight":31,
+         "imagewidth":34
+        },
+     "14":
+        {
+         "image":"yukaishop.png",
+         "imageheight":40,
+         "imagewidth":49
+        },
+     "15":
+        {
+         "image":"yukaitidetree.png",
+         "imageheight":120,
+         "imagewidth":98
+        },
+     "16":
+        {
+         "image":"brokentidecaller.png",
+         "imageheight":36,
+         "imagewidth":20
+        },
+     "17":
+        {
+         "image":"crutterskull.png",
+         "imageheight":10,
+         "imagewidth":16
+        },
+     "18":
+        {
+         "image":"taroniskull.png",
+         "imageheight":13,
+         "imagewidth":12
+        },
+     "19":
+        {
+         "image":"hangingrimenodon.png",
+         "imageheight":56,
+         "imagewidth":42
+        },
+     "2":
+        {
+         "image":"spiritree2.png",
+         "imageheight":20,
+         "imagewidth":16
+        },
+     "20":
+        {
+         "image":"yukaibed.png",
+         "imageheight":24,
+         "imagewidth":51
+        },
+     "21":
+        {
+         "image":"yukaifence.png",
+         "imageheight":16,
+         "imagewidth":16
+        },
+     "22":
+        {
+         "image":"yukailantern.png",
+         "imageheight":16,
+         "imagewidth":16
+        },
+     "23":
+        {
+         "image":"yukaiwallshelf.png",
+         "imageheight":8,
+         "imagewidth":32
+        },
+     "3":
+        {
+         "image":"spiritree3.png",
+         "imageheight":13,
+         "imagewidth":16
+        },
+     "4":
+        {
+         "image":"yukaitable.png",
+         "imageheight":16,
+         "imagewidth":36
+        },
+     "5":
+        {
+         "image":"yukaichair.png",
+         "imageheight":11,
+         "imagewidth":16
+        },
+     "6":
+        {
+         "image":"yukaicrystalpot.png",
+         "imageheight":24,
+         "imagewidth":16
+        },
+     "7":
+        {
+         "image":"yukaihangingpot.png",
+         "imageheight":11,
+         "imagewidth":16
+        },
+     "8":
+        {
+         "image":"yukailightstick1.png",
+         "imageheight":24,
+         "imagewidth":8
+        },
+     "9":
+        {
+         "image":"yukailightstick2.png",
+         "imageheight":24,
+         "imagewidth":8
         }
     },
- "tilewidth":34,
+ "tilewidth":98,
  "type":"tileset",
  "version":1.1
 }

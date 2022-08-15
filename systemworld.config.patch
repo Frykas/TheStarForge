@@ -1,0 +1,25 @@
+[
+  //SHIPS
+  
+  {
+    "op": "add",
+    "path": "/objectSpawnPool/-",
+    "value": [0.06, "unboundship1"]
+  },
+  
+  {
+    "op": "add",
+    "path": "/objectSpawnPool/-",
+    "value": [0.06, "unboundship2"]
+  },
+  
+  //ENCOUNTERS
+  
+  {
+    "op": "add",
+    "path": "/objectSpawnPool/-",
+    "value": [0.10, "unboundasteroids"]
+  }
+  
+
+]

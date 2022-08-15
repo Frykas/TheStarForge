@@ -12,7 +12,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt2TEOwjAQRFEfnZIbRDlROs4EKbZBseTIa68z+0f6XRD7GopwlPI6iIiIiIjItbL4Mhhry+L8XyarLZPVhlfXasOrvUxWG17t4dUeXu3h1R5e7eHVHl7tZfVmMGd+v5HRq2zm\/bOu2es\/pP3XNql9oLXVfd7wnpR5P5V6nVfVvmuVPIxPsXq6o++faY6+G+8465PMdqfnb9bKdm\/nyuaR1tXcs6zR5tnOHnPr566ei3Te9bc+H31\/jzn6DsrXF8U0PvY=",
+         "data":"eJzt2TEKwzAMheHcJRft2BuUTu1tsvVMJYOWEtPYViRb+h+8LcH6wARib8ty2yillFJKKaWqXQZPBmMpWZy\/yWSVZLJK8Ma1SvDGTiarBG\/s4I0dvLGDN3bwxg7e2MH7P6\/Vt9ZeyXu1rUZa\/4GtrRrmlvMN773cs6eze2v39LNt2ab0rqVx\/hzBW2Oexat1h7TP8DBqq1fznnCf4W5U8X4K7XUetbTWKNUwzmLVdHvPb2n2nhvvddaZzDKn5jdrZLu2c2TzldbR3FZWb7O1s8d89r2j5zydtf6zz3vP32P2noPm6xe5A7qC",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -117,18 +117,6 @@
                  "y":360
                 }, 
                 {
-                 "gid":8849,
-                 "height":24,
-                 "id":883,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":168,
-                 "y":360
-                }, 
-                {
                  "gid":8915,
                  "height":16,
                  "id":884,
@@ -141,18 +129,6 @@
                  "y":360
                 }, 
                 {
-                 "gid":8970,
-                 "height":24,
-                 "id":885,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":232,
-                 "y":360
-                }, 
-                {
                  "gid":8915,
                  "height":16,
                  "id":888,
@@ -162,6 +138,30 @@
                  "visible":true,
                  "width":16,
                  "x":200,
+                 "y":360
+                }, 
+                {
+                 "gid":9112,
+                 "height":15,
+                 "id":890,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":176,
+                 "y":360
+                }, 
+                {
+                 "gid":9114,
+                 "height":13,
+                 "id":891,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":248,
                  "y":360
                 }],
          "opacity":1,
@@ -476,7 +476,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":890,
+ "nextobjectid":892,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -621,6 +621,14 @@
         {
          "firstgid":8801,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/breakable.json"
+        }, 
+        {
+         "firstgid":9111,
+         "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
+        }, 
+        {
+         "firstgid":9115,
+         "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }],
  "tilewidth":8,
  "type":"map",

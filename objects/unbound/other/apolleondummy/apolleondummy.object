@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-apolleondummy",
+  "colonyTags" : ["weapon","apex"],
+  "printable" : false,
+  "rarity" : "legendary",
+  "description" : "The guy himself. Well, not really the real guy, this is just a cinematic prop.",
+  "shortdescription" : "Apolleon",
+  "race" : "apex",
+  "category" : "furniture",
+  "price" : 2500,
+
+  "apexDescription" : "bip bop",
+  "avianDescription" : "bip bop",
+  "floranDescription" : "bip bop",
+  "glitchDescription" : "bip bop",
+  "humanDescription" : "bip bop",
+  "hylotlDescription" : "bip bop",
+  "novakidDescription" : "bip bop",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "apolleondummy.png" ,
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
+

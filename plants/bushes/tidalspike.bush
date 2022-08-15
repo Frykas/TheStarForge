@@ -1,0 +1,24 @@
+{
+  "name" : "starforge-tidalspike",
+  "description" : "A spike made of Tidal Frost.",
+  "shortdescription" : "Tidal Spike",
+  "floranDescription" : "Very cold and ssspiky!",
+  "glitchDescription" : "Statement. A frost spike.",
+  "shapes" : [
+    {
+      "base" : "tidalspike1.png"
+    },
+    {
+      "base" : "tidalspike2.png"
+    },
+    {
+      "base" : "tidalspike3.png"
+    },
+	{
+      "base" : "tidalspike4.png"
+    },
+	{
+      "base" : "tidalspike5.png"
+    }
+  ]
+}

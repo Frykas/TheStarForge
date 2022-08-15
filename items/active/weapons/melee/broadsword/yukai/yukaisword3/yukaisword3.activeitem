@@ -1,0 +1,40 @@
+{
+  "itemName" : "starforge-yukaisword3",
+  "price" : 650,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "description" : "A titanium & bone blade. Decorated with Ember coral.",
+  "shortdescription" : "Yukai Ornate Sword",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "yukaisword3.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "yukaisword3.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.85,
+    "baseDps" : 8.5
+  },
+  
+  "damageConfig" : {
+      "statusEffects" : [ "burning" ]
+    },
+	
+    "altAbilityType" : "giantsword",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

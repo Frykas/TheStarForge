@@ -1,0 +1,58 @@
+{
+  //Starforge - Rise of the Unbound mission 3 last
+  "unboundmission3-intro" : {
+    "type" : "mission",
+    "senderName" : "Mariko",
+    "portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
+    "text" : "Here you go we can't beam you any closer, the prison is to your left. We need Sasha, prisoner 52, alive. Be cautious of guards and snipers.",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission3-morpheus1" : {
+    "type" : "mission",
+	"senderName" : "Morpheus",
+	"portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
+	"text" : "Sasha was an officer before being sent here, she will help me go through the Unbound network undetected. She probably also knows what exactly is the Unbound after, I'm counting on you to keep her unharmed.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission3-morpheus2" : {
+    "type" : "mission",
+	"senderName" : "Morpheus",
+	"portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
+	"text" : "Be careful, this place is guarded by many guards and sharpshooters. Sasha is held near floor 5, so you should aim down there as soon as possible.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission3-mariko1" : {
+    "type" : "mission",
+	"senderName" : "Mariko",
+	"portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
+	"text" : "You're heading away from the prison, whatever business you have there, please make it quick.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission3-morpheus3" : {
+    "type" : "mission",
+	"senderName" : "Morpheus",
+	"portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
+	"text" : "If you can free these people from their cells, I'm sure they can help you cause a ruckus and make progress.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission3-mariko2" : {
+    "type" : "mission",
+	"senderName" : "Mariko",
+	"portraitImage" : "/interface/chatbubbles/marikosurprised.png:<frame>",
+	"text" : "What are Yukai Hylotls doing there?? They're armed too? I'd ignore them if I were you, unless you feel up for a challenge.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission3-mariko3" : {
+    "type" : "mission",
+	"senderName" : "Mariko",
+	"portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
+	"text" : "You're approaching Sasha's cell, get her out and send her to us, you're free to have a look around after.",
+	"persistTime" : 5.0
+}
+}

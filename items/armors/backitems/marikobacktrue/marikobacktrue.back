@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-marikobacktrue",
   "price" : 3500,
-  "inventoryIcon" : "marikobacktrueicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
   "description" : "Two Cerulium Katanas that belonged to a Hylotl captain named Mariko. Their power is now yours.",
   "shortdescription" : "^cornflowerblue;Yogosha & Isamu^white;",
   "tooltipKind" : "starforge-backitemexalted",
+  
+  "inventoryIcon" : "/items/armors/backitems/marikobacktrue/marikobacktrueicon.png",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
@@ -31,5 +33,7 @@
       "stat" : "breathProtection",
       "amount" : 1.0
     }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

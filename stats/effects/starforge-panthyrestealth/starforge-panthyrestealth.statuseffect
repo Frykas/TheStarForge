@@ -1,0 +1,11 @@
+{
+  "name" : "starforge-panthyrestealth",
+  "effectConfig" : {
+    "directive" : "?replace;151515=FFFFFF00;383838=FFFFFF00;555555=FFFFFF00;373749=FFFFFF00;5C6476=FFFFFF00;E6E6E6=FFFFFF00;5D4F34=FFFFFF00;8D7B58=FFFFFF00;BCAD80=FFFFFF00;601119=FFFFFF00;8E2029=FFFFFF00;262626=FFFFFF00"
+  },
+  "defaultDuration" : 7,
+
+  "scripts" : [
+    "/stats/effects/starforge-applydirectives/starforge-applydirectives.lua"
+  ]
+}

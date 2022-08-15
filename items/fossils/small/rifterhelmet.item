@@ -1,0 +1,33 @@
+{
+  "itemName" : "starforge-rifterhelmetfossil",
+  "rarity" : "legendary",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Broken Helmet",
+  "description" : "A very old broken helmet that seems to have witnessed many horrors.",
+  "category" : "smallFossil",
+
+  "race" : "generic",
+  "price" : 165,
+
+  "inventoryIcon" : "rifterhelmeticon.png",
+
+  "completeSetDescriptions" : {
+    "price" : 600,
+    "shortdescription" : "Broken Helmet",
+
+    "description" : "This helmet's internal clock stopped working decades ahead of our current time. How it got here is a mystery."
+
+  },
+
+  "displayImage" : "/objects/fossils/smallfossils/rifterhelmet/rifterhelmet.png",
+  "displayoffset" :[0, 0.0],
+
+  "fossilSetName" : "rifterhelmet",
+  "setIndex" : 1,
+  "setCount" : 1,
+  "setCollectables" : { "fossils" : "rifterhelmet" },
+
+  "completeFossilIcon" : "/objects/fossils/smallfossils/smallfossilcompleteicon.png"
+
+}

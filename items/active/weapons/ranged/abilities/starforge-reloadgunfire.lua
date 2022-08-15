@@ -197,7 +197,12 @@ function StarforgeReloadGunFire:muzzleFlash()
   animator.setPartTag("muzzleFlash", "variant", math.random(1, 3))
   animator.setAnimationState("firing", "fire")
   animator.burstParticleEmitter("muzzleFlash")
+  
+  --Add normal pitch variance to shots
+  local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2))
+  animator.setSoundPitch("fire", pitchVariance)
   animator.playSound("fire")
+
 
   animator.setLightActive("muzzleFlash", true)
 end

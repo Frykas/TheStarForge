@@ -10,7 +10,7 @@
         "title" : "The Star Forge",
         "subtitle" : "Break past your limits",
         "icon" : {
-          "file" : "/interface/SEmerchant/merchanticon.png"
+          "file" : "/interface/crafting/starforge.png"
         }
       }
     },

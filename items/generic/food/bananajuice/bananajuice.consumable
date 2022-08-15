@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-bananajuice",
+  "rarity" : "rare",
+  "price" : 420,
+  "category" : "preparedFood",
+  "inventoryIcon" : "bananajuice.png",
+  "description" : "The extraction of everyones favourite fruit!",
+  "shortdescription" : "Banana Juice",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 125
+    }
+  ] ],
+  "foodValue" : 15,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.5,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

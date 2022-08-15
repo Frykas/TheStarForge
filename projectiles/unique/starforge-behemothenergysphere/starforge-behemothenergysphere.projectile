@@ -1,0 +1,50 @@
+{
+  "projectileName" : "starforge-behemothenergysphere",
+  "image" : "starforge-behemothenergysphere.png",
+  "fullbright" : true,
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "physics" : "laser",
+  "timeToLive" : 10,
+  "windupFrames" : 1,
+  "bounces" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/starforge-behemothexplosion/starforge-behemothexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "starforge-behemothlingeringexplosion",
+      "rotate" : true,
+      "inheritDamageFactor" : 0.1,
+      "config" : {}
+    }
+  ],
+  "power" : 0,
+  "speed" : 20,
+  "lightColor" : [253, 209, 77],
+  "damageType" : "nodamage",
+  "damageKind" : "fireplasma",
+  
+  "persistentAudio" : "/sfx/projectiles/starforge-behemonthenergysphere.ogg",
+  
+  "scripts" : ["/projectiles/scripts/starforge-electricalprojectile.lua"],
+  
+  "lightningParameters" : {
+	"chainLightningRadius" : 15,
+	
+	"tickRate" : 0.05,
+    "damageKind" : "fireplasma",
+	"statusEffects" : ["burning"],
+	
+    "lightningConfig" : {
+      "displacement" : 1.25,
+      "minDisplacement" : 0.125,
+      "forks" : 2,
+      "forkAngleRange" : 0.3,
+      "width" : 0.9,
+	  "color" : [253, 209, 77, 200]
+    }
+  }
+}

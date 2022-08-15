@@ -1,0 +1,18 @@
+{
+  "itemName" : "starforge-elpissecurityhead",
+  "price" : 80,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "headwear",
+  "description" : "A high-tech helmet worn by the Elpis security personel.",
+  "shortdescription" : "Elpis Security Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+  
+
+  "itemTags" : [ "tier6armour" ]
+}

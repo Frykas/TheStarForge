@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-exaltedsedgechest",
   "price" : 4000,
-  "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestarmour",
   "description" : "\"The Great Hunter came back to us bearing a terrible curse. Those who lived on learned, became stronger.\"",
-  "shortdescription" : "^#758468;Chest of Berserking^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^#758468;Chest of Berserking^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
+  
+  "inventoryIcon" : "/items/armors/exalted/esedge/icons.png:chest",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : {
     "body" : "chest.png",
@@ -44,7 +46,7 @@
       "amount" : 4.5
     }
   ],
-  "itemTags" : [ "tier7armour" ],
+  "itemTags" : [ "tier7armour", "exalted" ],
 
   "colorOptions" : [
     // WITHERED FLORA, DEFAULT
@@ -71,5 +73,7 @@
     { "ffca8a" : "eab3db", "e0975c" : "d35eae", "a85636" : "97276d", "6f2919" : "59163f" },
     // BROWN
     { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

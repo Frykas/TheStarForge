@@ -1,0 +1,39 @@
+{
+  "objectName" : "starforge-tidalchair",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "common",
+  "description" : "A chair made with materials from the realm of the Tide. The cushion is made of Jellycap!",
+  "shortdescription" : "Tidal Chair",
+  "category" : "furniture",
+  "price" : 75,
+
+  "apexDescription" : "The cushion is surprisingly comfy. I just wish it wasn't so... Sticky.",
+  "avianDescription" : "A comfortable sit, despite the stickiness.",
+  "floranDescription" : "Floran sssit on chair and almossst get ssstuck!!",
+  "glitchDescription" : "Surprised. This chair is surprisingly comfy.",
+  "humanDescription" : "I wouldn't sit on that if I'm honest.",
+  "hylotlDescription" : "Materials from the Tide are very resilient and durable. This chair is no exception.",
+  "novakidDescription" : "I don't really like this chair.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "tidalchair.png",
+      "imageLayers" : [ { "image" : "tidalchair.png" }, { "image" : "tidalchairfullbright.png", "fullbright" : true } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [2, 22]
+
+}

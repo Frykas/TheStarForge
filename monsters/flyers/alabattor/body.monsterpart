@@ -1,0 +1,9 @@
+{
+  "name" : "alabattor",
+  "category" : "alabattor",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "alabattor.png"
+  }
+}

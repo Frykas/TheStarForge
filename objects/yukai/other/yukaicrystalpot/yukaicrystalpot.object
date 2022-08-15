@@ -1,0 +1,48 @@
+{
+  "objectName" : "starforge-yukaicrystalpot",
+  "colonyTags" : ["bone", "light"],
+  "rarity" : "uncommon",
+
+  "printable" : true,
+  "description" : "Glowing Yukai crystals, displayed in a pot made of bone.",
+  "shortdescription" : "Yukai Crystal Pot",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 140,
+
+  "apexDescription" : "That glowing crystal looks expensive.",
+  "avianDescription" : "They use crystals too!",
+  "floranDescription" : "Floran like ssssshiny lightsss...",
+  "glitchDescription" : "Confused. How is this crystal producing light?",
+  "humanDescription" : "I know the Yukai uses crystals on a lot of things, but as a lamp really?",
+  "hylotlDescription" : "The glow emitted by this Yukai crystal is very soothing.",
+  "novakidDescription" : "Glowin' crystal on a stick? Prolly worth money if ya ask me.",
+
+  
+  "lightColor" : [187, 24, 37],
+
+  "flickerPeriod" : 0.9,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "yukaicrystalpoticon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "yukaicrystalpot.png",
+      "imageLayers" : [ { "image" : "yukaicrystalpot.png" }, { "image" : "yukaicrystalpotfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }

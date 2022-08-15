@@ -12,7 +12,7 @@
   "twoHanded" : true,
 
   "inventoryIcon" : "/items/active/weapons/ranged/unique/avarice/exalted/starforge-headhuntericon.png",
-  "itemBorder" : "/interface/inventory/itemborderexalted.png",
+  "itemBackground" : "/items/active/weapons/ranged/unique/avarice/exalted/starforge-headhuntericonbackground.png",
   
   "animation" : "starforge-headhunter.animation",
   "animationParts" : {
@@ -21,15 +21,19 @@
 	
     "topRail" : "starforge-headhuntertoprail.png",
     "bottomRail" : "starforge-headhunterbottomrail.png",
+    "topRailBack" : "starforge-headhuntertoprailback.png",
+    "bottomRailBack" : "starforge-headhunterbottomrailback.png",
 	
     "topBarrel" : "starforge-headhuntertopbarrel.png",
     "bottomBarrel" : "starforge-headhunterbottombarrel.png",
 	
-    "muzzleFlash" : ""
+    "muzzleFlash" : "muzzleflash/muzzleflash.png"
   },
   "animationCustom" : {
     "sounds" : {
-      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ]
+      "loadAmmo" : [ "/sfx/gun/starforge-headhunterswitch.ogg" ],
+      "fire" : [ "/sfx/gun/starforge-headhunterfire.ogg" ],
+      "altFire" : [ "/sfx/gun/starforge-headhunteraltfire.ogg" ]
     },
     "particleEmitters" : {
       "ammoIndicator" : {
@@ -38,16 +42,13 @@
         "transformationGroups" : ["muzzle"],
         "offsetRegion" : [-1.375, -0.25, -1.375, -0.25],
         "particles" : [
-          { "particle" : "daggerblue"},
-          { "particle" : "daggerblue"},
-          { "particle" : "daggerblue"}
         ]
       }
     }
   },
 
   "baseOffset" : [1.125, -0.875],
-  "muzzleOffset" : [2.5, 0.25],
+  "muzzleOffset" : [2, -0.125],
   
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -63,6 +64,8 @@
     "inaccuracy" : 0.01,
 
     "projectileCount" : 1,
+	"fireSound" : "fire",
+	"fireMuzzle" : "fire",
 
     "burstCount" : 3,
     "burstTime" : 0.125,
@@ -92,6 +95,28 @@
 		"maxOffset" : -1.1
 	  },
 	  {
+	    "transformationGroup" : "topRailBack",
+		
+		"sineMovement" : true,		
+		"sineFrequency" : 0.75,
+		"sineAmplitude" : 0.1,
+		"sineOffset" : 1,
+
+		"cooldownFactor" : 0,
+		"maxOffset" : -0.7
+	  },
+	  {
+	    "transformationGroup" : "bottomRailBack",
+		
+		"sineMovement" : true,
+		"sineFrequency" : 0.75,
+		"sineAmplitude" : -0.1,
+		"sineOffset" : 1,
+
+		"cooldownFactor" : 0,
+		"maxOffset" : -0.7
+	  },
+	  {
 	    "transformationGroup" : "topBarrel",
 		
 		"sineMovement" : false,
@@ -107,11 +132,11 @@
 		"animateOnFire" : false,
 		"animateOnAlt" : true,
 		
-		"maxOffset" : 1
+		"maxOffset" : 0.625
 	  }
 	],
 
-    "projectileType" : "woodenbolt",
+    "projectileType" : "starforge-headhunterarrow",
     "projectileParameters" : {
       "speed" : 135,
       "knockback" : 10
@@ -143,7 +168,7 @@
       "cooldown" : {
 		"frontArmFrame": "idle.3",
 		"backArmFrame": "fall.1",
-        "duration" : 0.4,
+        "duration" : 0.55,
         "armRotation" : 7,
         "weaponRotation" : 5,
         "twoHanded" : true,
@@ -156,22 +181,25 @@
   
   "altAbility" : {
     "name" : "Load Impervium Bolt",
-    "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadalternateammo.lua"],
-    "class" : "StarForgeLoadAlternateAmmo",
+    "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadheadhunterammo.lua"],
+    "class" : "StarForgeLoadHeadhunterAmmo",
 
 	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
 	
 	//The new stats which will overwrite the primary ability
 	"newAbility" : {
-	  "projectileType" : "starforge-imperviumbolt",
+	  "projectileType" : "starforge-headhunterbolt",
 	  "projectileParameters" : {
 		"speed" : 200,
 		"knockback" : 25
 	  },
 	  
 	  "projectileCount" : 1,
+	  "cooldownTimer" : 1,
 	  
 	  "fireType" : "auto",
+	  "fireSound" : "altFire",
+	  "fireMuzzle" : "altFire",
 	
       "baseDps" : 12.0,	
       "fireTime" : 1,
@@ -181,17 +209,16 @@
 
     "stances" : {
       "load" : {
+        "duration" : 0.4,
+		
 		"frontArmFrame": "idle.3",
 		"backArmFrame": "fall.1",
         "aimAngle" : 0,
-        "armRotation" : -7,
-        "weaponRotation" : 60,
-        "weaponAngularVelocity" : -150,
-        "armAngularVelocity" : 100,
+        "armRotation" : -8,
+        "weaponRotation" : 0,
         "twoHanded" : true,
-        "duration" : 0.4,
   
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : true
       }
     }

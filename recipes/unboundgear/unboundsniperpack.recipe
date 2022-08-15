@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "essence", "count" : 50},
+	{ "item" : "titaniumbar", "count" : 10},
+	{ "item" : "silk", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-unboundsniperpack",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundgear", "armor" ],
+  "duration" : 0
+}
+

@@ -1,0 +1,15 @@
+{
+  "id" : "starforge-ghostdiggerstory1",
+  "title" : "^pink;Tainted Old Journal^reset; - I",
+  "description" : "A long lost journal. ^orange;Can be traded for blueprints^reset;.",
+  "icon" : "starforge-ghostdiggercover.png",
+  "contentPages" : [
+
+"^gray;The content of this codex is not ready to be read just yet...^reset;"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 800
+  }
+}

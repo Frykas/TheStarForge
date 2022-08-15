@@ -6,7 +6,7 @@
   "description": "A pistol, often used by Unbound officers.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Fang\" P",
   "tooltipKind": "starforge-unboundgun",
-  "category": "Pistol",
+  "category": "pistol",
   "twoHanded": false,
   "level": 5,
   "itemTags": [
@@ -62,7 +62,7 @@
     "inaccuracy": 0.001,
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "unboundriflebullet",
+    "projectileType": "unboundelectricbullet",
     "projectileParameters": {
       "knockback": 4
     },
@@ -96,5 +96,5 @@
     }
   },
    
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

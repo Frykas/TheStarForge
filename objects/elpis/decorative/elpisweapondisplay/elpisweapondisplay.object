@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-elpisweapondisplay",
+  "colonyTags" : ["human","hylotl","combat"],
+  "rarity" : "rare",
+  "category" : "decorative",
+  "price" : 600,
+  "description" : "A common Elpis rifle, proudly displayed.",
+  "shortdescription" : "Elpis Rifle Display",
+  "race" : "generic",
+
+  "apexDescription" : "A very high-tech weapon is displayed.",
+  "avianDescription" : "An Elpis rifle is displayed.",
+  "floranDescription" : "Boring gunsss.",
+  "glitchDescription" : "Fascinated. This is quite the high-tech rifle.",
+  "humanDescription" : "An Elpis rifle is displayed. It is very high-tech.",
+  "hylotlDescription" : "Elpis puts a lot of effort on their weapon's designs. It is splendid.",
+  "novakidDescription" : "What a beauty!",
+
+
+  "inventoryIcon" : "elpisweapondisplayicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "elpisweapondisplay.png" ,
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

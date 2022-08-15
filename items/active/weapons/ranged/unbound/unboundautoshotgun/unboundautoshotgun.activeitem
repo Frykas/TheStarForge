@@ -6,7 +6,8 @@
   "description": "An Unbound Auto-shotgun loaded with fire elemental shells. Unstoppable.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Dragon\" ASG",
   "tooltipKind": "starforge-unboundgun",
-  "category": "Auto Shotgun",
+  "category": "shotgun",
+  "tooltipFieldsOverride" : {"subtitle":"Auto Shotgun"},
   "twoHanded": true,
   "level" : 5,
   "itemTags": [
@@ -157,5 +158,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

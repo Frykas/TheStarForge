@@ -1,0 +1,49 @@
+{
+  "objectName" : "starforge-yukaitidetree",
+  "colonyTags" : ["bone", "light"],
+  "rarity" : "legendary",
+
+  "printable" : false,
+  "description" : "A big tree originating from the realm of the Tide. The Yukai seem to use it for rituals.",
+  "shortdescription" : "Great Tide Tree",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 580,
+
+  "apexDescription" : "What a strange tree, never one like it before. And that big crystal...",
+  "avianDescription" : "Wow, that crystal is massive! I wonder what they plan to do with it.",
+  "floranDescription" : "Floran confused by big rock. Doesn't feel good near it.",
+  "glitchDescription" : "Confused. What kind of ritual are they doing here?",
+  "humanDescription" : "I've never seen trees like this in the galaxy, I wonder where it comes from?",
+  "hylotlDescription" : "A tree coming from the Tide... Twisted by this massive Yukai pearl.",
+  "novakidDescription" : "Glowin' crystal on a stick, glowin' crystal on a tree, what next?",
+
+  
+  "lightColor" : [87, 41, 136],
+
+  "flickerPeriod" : 0.9,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "yukaitidetreeicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "yukaitidetree.png",
+      "imageLayers" : [ { "image" : "yukaitidetree.png" }, { "image" : "yukaitidetreefullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-65, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [-2, 8]
+    }
+   ]
+   
+   }

@@ -3,7 +3,7 @@
     "op": "add",
     "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
     "value": [
-      1,
+      4,
       "starforge-katahelruinsdungeon"
     ]
   },
@@ -11,7 +11,7 @@
     "op": "add",
     "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
     "value": [
-      1,
+      4,
       "starforge-katahelruinsdungeon"
     ]
   },
@@ -65,6 +65,15 @@
     ]
   },
   
+      {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      4,
+      "starforge-vowvillage"
+    ]
+  },
+  
     {
     "op": "add",
     "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
@@ -90,6 +99,15 @@
     ]
   },
   
+      {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      4,
+      "starforge-furouraltar"
+    ]
+  },
+  
     {
     "op": "add",
     "path": "/planetTypes/tundra/layers/surface/dungeons/-",
@@ -97,5 +115,187 @@
       1,
       "starforge-furouraltar"
     ]
+  },
+  
+    {
+    "op": "add",
+    "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+    {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+    {
+    "op": "add",
+    "path": "/planetTypes/midnight/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+  
+    {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/alien/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+  
+      {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+  
+      {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      4,
+      "starforge-yukaiforgemasterhut"
+    ]
+  },
+  
+   {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/alien/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-unboundvillage"
+    ]
+  },
+  { "op":"add",
+    "path": "/regionTypes/forest/subRegion/-", 
+    "value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/regionTypes/jungle/subRegion/-", 
+    "value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/regionTypes/midnight/subRegion/-", 
+    "value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/regionTypes/tundra/subRegion/-", 
+    "value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/regionTypes/volcanic/subRegion/-", 
+    "value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+    "path": "/regionTypes/savannah/subRegion/-", 
+    "value": "starforge-tidefragment" 
+  },
+  
+  { "op":"add",
+	  "path": "/regionTypes/starforge-tidefragment",
+	  "value": {
+			"blockSelector": [ "remixedSpikesSurface" ],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["starforge-tidefragment"]]
+			]
+		}
   }
+ 
 ]

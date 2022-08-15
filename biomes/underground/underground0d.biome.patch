@@ -1,0 +1,17 @@
+[
+	
+  
+  { "op" : "add", 
+      "path" : "/undergroundPlaceables/items/-", 
+      "value" : {
+        "mode" : "floor",
+        "priority" : 12.0,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-raremicrodungeons.config:starforge-raremicrodungeon",
+		
+        "type" : "microdungeon",
+        "microdungeons" : [ "starforge-floranthivesmall", "starforge-floranthive", "starforge-roboblinhideout", "starforge-unboundunderground" ]
+      }
+    }
+	
+	]

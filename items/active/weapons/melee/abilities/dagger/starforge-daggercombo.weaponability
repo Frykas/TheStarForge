@@ -1,0 +1,283 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire5" : [ "/sfx/melee/swing_shortsword.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Combo Slash",
+    "type" : "starforge-daggercombo",
+    "scripts" : ["/items/active/weapons/melee/abilities/starforge-meleecombo.lua"],
+    "class" : "StarforgeMeleeCombo",
+	
+	"comboSteps" : 5,
+	
+    "flashTime" : 0.15,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+
+    "swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [1.5, -1.0, 5.5, 1.0]
+    ],
+
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 0.6,
+    "baseDps" : 8.0,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "knockbackMode" : "aim",
+      "timeout" : 0.25,
+	  "statusEffects" : []
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 0.4,
+        "knockback" : 3
+      },
+      {
+        "baseDamageFactor" : 0.4,
+        "knockback" : 3
+      },
+      {
+        "baseDamageFactor" : 0.4,
+        "knockback" : 3
+      },
+      {
+        "baseDamageFactor" : 1.2,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 10
+      }
+    ],
+	
+    "comboSpeedFactor" : 0.65,
+	
+	"stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -210,
+        "allowRotate" : false,
+        "twoHanded" : false,
+        "allowFlip" : true,
+		"aimAngle" : 0
+      },
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : false,
+        "weaponOffset" : [0.5, 1.0],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.075,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
+		"continueStep" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.075,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.05,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash2" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 1.0],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.075,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
+		"continueStep" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.05,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.5],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash3" : {
+        "duration" : 0.025,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : false,
+        "weaponOffset" : [0.5, 1.0],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire3" : {
+        "duration" : 0.075,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.125],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : -70,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.25],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 4
+      "windup4" : {
+        "duration" : 0.2,
+        "armRotation" : -110,
+        "weaponRotation" : 220,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire4" : {
+        "duration" : 0.2,
+        "armRotation" : 20,
+        "weaponRotation" : -100,
+        "weaponOffset" : [0, 0.125],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait4" : {
+        "duration" : 0.2,
+        "armRotation" : 20,
+        "weaponRotation" : -100,
+        "weaponOffset" : [0, 0.125],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 5
+      "windup5" : {
+        "duration" : 0.05,
+        "armRotation" : -20,
+        "weaponRotation" : -20,
+        "weaponOffset" : [0, 0.125],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire5" : {
+        "duration" : 0.2,
+        "armRotation" : -135,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, 0.125],
+		
+		"comboDirectives" : "?flipx",
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "objectName" : "starforge-elpisposter",
+  "colonyTags" : ["human", "hylotl"],
+  "printable" : true,
+  "rarity" : "uncommon",
+  "description" : "An Elpis poster. It represents the silver moon orbiting the company's planet.",
+  "shortdescription" : "Elpis Poster",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 250,
+
+  "humanDescription" : "A weapon manufacturer poster, this one is named \"Elpis\".",
+
+  "inventoryIcon" : "elpispostericon.png",
+  "orientations" : [
+    {
+      "image" : "elpisposter.png:<color>",
+      "imagePosition" : [-16, -8],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}
+

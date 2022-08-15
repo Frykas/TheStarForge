@@ -1,0 +1,12 @@
+{
+  "input" : [
+	{ "item" : "money", "count" : 100}
+  ],
+  "output" : {
+    "item" : "starforge-manufacturerlore-codex",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "codices" ],
+  "duration" : 1
+}
+

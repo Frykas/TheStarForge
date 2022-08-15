@@ -1,0 +1,15 @@
+{
+  "name" : "starforge-midastouch",
+  "effectConfig" : {
+    "damageTypeWhitelist" : [],
+    "treasurePools" : ["smashmoney"]
+  },
+  "defaultDuration" : 3.5,
+
+  "scripts" : [
+    "starforge-droptreasureonkill.lua"
+  ],
+
+  "label" : "Midas Touch",
+  "icon" : "/interface/statuses/starforge-midastouch.png"
+}

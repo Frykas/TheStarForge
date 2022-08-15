@@ -60,7 +60,7 @@ function update(dt)
   local playersFound = broadcastAreaQuery({
     includedTypes = {"player"}
   })
-  if #playersFound == 0 then
+  if #playersFound == 0 and self.player then
     reset()
   end
   if not self.player then
@@ -99,7 +99,7 @@ function reset()
   end
   
   for _, message in ipairs(self.resetMessages) do
-    local entitiesToMessage = world.entityQuery(stagehand.position(), self.messageRadius)
+    local entitiesToMessage = world.entityQuery(stagehand.position(), self.messageRadius, {includedTypes = {"object", "vehicle"}})
     for _, entity in pairs(entitiesToMessage) do
 	  world.sendEntityMessage(entity, message)
     end

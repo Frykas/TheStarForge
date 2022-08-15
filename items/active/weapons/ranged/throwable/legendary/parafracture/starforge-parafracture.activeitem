@@ -1,0 +1,142 @@
+{
+  "itemName" : "starforge-parafracture",
+  "level" : 6,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Fling powerful axes that shatter on impact, freezing your targets.",
+  "shortdescription" : "Parafracture",
+  "tooltipKind" : "gun",
+  "category" : "throwableItem",
+  "tooltipFieldsOverride" : {"subtitle":"Throwable"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","throwable"],
+  "learnBlueprintsOnPickup" : [ "starforge-parafracture" ],
+
+  "inventoryIcon" : "starforge-parafracture.png",
+
+  "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
+  "animationParts" : {
+    "middle" : "starforge-parafracture.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+	  "stateTypes" : {
+		"altSwoosh" : {
+		  "default" : "idle",
+		  "states" : {
+			"idle" : {
+			},
+			"fire" : {
+			  "frames" : 3,
+			  "cycle" : 0.09,
+			  "mode" : "transition",
+			  "transition" : "idle"
+			}
+		  }
+		}
+	  },
+	  "parts" : {
+		"middle" : {
+		  "properties" : {
+			"offset" : [0, 0.5]
+		  }
+		},
+		"altSwoosh" : {
+		  "properties" : {
+			"zLevel" : -3,
+			"centered" : true,
+			"offset" : [-1.75, 1.75],
+			"transformationGroups" : ["swoosh"]
+		  },
+		  "partStates" : {
+			"altSwoosh" : {
+			  "idle" : {
+				"properties" : {
+				  "image" : ""
+				}
+			  },
+			  "fire" : {
+				"properties" : {
+				  "image" : "/items/active/weapons/melee/dagger/swoosh/tidalfrost_downcut.png:<frame>",
+				  "damageArea" : [[-3.75, 1.5], [-1.875, 2.25], [0.75, 2.25], [3, 1.25], [3.75, -0.15], [3.75, -1.675], [3, -2.375], [0, -1.875]]
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	},
+	"particleEmitters" : {
+	  "altSwoosh" : {
+		"active" : false,
+		"emissionRate" : 5,
+		"transformationGroups" : ["swoosh"],
+		"offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+		"particles" : []
+	  }
+	},
+	"sounds" : {
+	  "altFire" : [ "/sfx/melee/swing_hammer.ogg" ],
+      "throw" : [ "/sfx/projectiles/throw_item.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/ranged/throwable/starforge-throwable.lua"],
+
+  "elementalType" : "starforge-tidalfrost",
+
+  "primaryAbilityType" : "starforge-throwprojectile",
+  "primaryAbility" : {
+    "baseDps" : 7.5,
+    "cooldownTime" : 0.2,
+	
+	"projectileFacesDirection" : true, //when facing left, flip to make the blade always face away
+	
+    "projectileCount" : 1,
+    "projectileType" : "starforge-parafractureaxe",
+    "projectileParameters" : {
+    }
+  },
+  
+  "altAbility" : {
+	"name" : "Axe Cleave",
+	"scripts" : ["/items/active/weapons/melee/abilities/starforge-meleeslash.lua"],
+	"class" : "StarforgeMeleeSlash",
+	
+	"fireTime" : 1.2,
+	"baseDps" : 9.5,
+	"damageConfig" : {
+	  "damageSourceKind" : "axe",
+	  "statusEffects" : [ ],
+	  "knockbackMode" : "aim",
+	  "knockback" : 30,
+	  "timeoutGroup" : "primary"
+	},
+
+	"stances" : {
+	  "windup" : {
+		"duration" : 0.2,
+		"armRotation" : 55,
+		"weaponRotation" : 3,
+		"weaponOffset" : [-0.1, 0],
+		"twoHanded" : false,
+
+		"allowRotate" : true,
+		"allowFlip" : false
+	  },
+	  "fire" : {
+		"duration" : 0.4,
+		"armRotation" : -35,
+		"weaponRotation" : -95,
+		"weaponOffset" : [0.375, 0],
+		"twoHanded" : false,
+
+		"allowRotate" : false,
+		"allowFlip" : false
+	  }
+	}
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

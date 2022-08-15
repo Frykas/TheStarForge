@@ -69,7 +69,7 @@
 	
     "damageConfig" : {
       "damageSourceKind" : "broadsword",
-      "statusEffects" : ["starforge-yukaibleed"],
+      "statusEffects" : ["starforge-heavybleeding"],
       "knockbackMode" : "facing"
     },
 	

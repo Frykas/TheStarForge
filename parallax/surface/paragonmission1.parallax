@@ -1,0 +1,14 @@
+{
+  "verticalOrigin" : -10,
+  
+  "layers" : [
+	//BEAM
+    {
+      "kind" : "paragonbeam",
+      "offset" : [0, 0],
+      "parallax" : [8.5, 5.25],
+      "fadePercent" : 0.0,
+      "unlit" : true
+    }
+  ]
+}

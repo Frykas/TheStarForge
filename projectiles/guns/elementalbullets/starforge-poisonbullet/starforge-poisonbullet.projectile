@@ -1,0 +1,21 @@
+{
+  "projectileName" : "starforge-poisonbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "starforge-poisonbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  "actionOnReap": [
+    {
+	  "file": "/projectiles/explosions/bulletimpact/unbound/starforge-unboundpoisonbulletexplosion.config",
+	  "action": "config"
+	}
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [155, 186, 61],
+  "fullbright" : true,
+  "damageKind" : "poisonplasmabullet"
+}

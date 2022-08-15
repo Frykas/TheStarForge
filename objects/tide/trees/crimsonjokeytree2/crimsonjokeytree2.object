@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-crimsonjokeytree2",
+  "rarity" : "common",
+
+  "printable" : false,
+  "description" : "A Crimson Jokey tree, originating from the realm of the Tide.",
+  "shortdescription" : "Crimson Jokey Tree",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 100,
+  
+  "floranDescription" : "Floran doesssn't like thisss tree. Weird feelingsss.",
+  "glitchDescription" : "Curious. I wonder what caused this tree to evolve like this.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "crimsonjokeytree2.png",
+      "imageLayers" : [ { "image" : "crimsonjokeytree2.png" }, { "image" : "crimsonjokeytree2fullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }

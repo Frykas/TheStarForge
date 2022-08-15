@@ -16,7 +16,7 @@
  "margin":0,
  "name":"unbound",
  "spacing":0,
- "tilecount":76,
+ "tilecount":88,
  "tiledversion":"1.4.3",
  "tileheight":126,
  "tileproperties":
@@ -761,6 +761,46 @@
          "object":"starforge-unboundwarpdashstand",
          "tilesetDirection":"right"
         },
+     "76":
+        {
+         "\/\/description":"An essence extractor used by the Unbound.",
+         "\/\/name":"starforge-unboundessenceextractor",
+         "\/\/shortdescription":"Unbound Essence Extractor",
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"starforge-unboundessenceextractor",
+         "tilesetDirection":"right"
+        },
+     "77":
+        {
+         "\/\/description":"An Unbound canister. This one looks unstable.",
+         "\/\/name":"starforge-unboundlavacanister",
+         "\/\/shortdescription":"Unbound Explosive Barrel",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundlavacanister",
+         "tilesetDirection":"right"
+        },
+     "78":
+        {
+         "\/\/description":"A crafting station that will help me craft Unbound furniture & tiles!",
+         "\/\/name":"starforge-unboundobjectcrafting",
+         "\/\/shortdescription":"Unbound Crafting Station",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundobjectcrafting",
+         "tilesetDirection":"right"
+        },
+     "79":
+        {
+         "\/\/description":"A crafting station that will help me craft Unbound weapon and armors.",
+         "\/\/name":"starforge-unboundgearcrafting",
+         "\/\/shortdescription":"Unbound Crafting Station",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundgearcrafting",
+         "tilesetDirection":"right"
+        },
      "8":
         {
          "\/\/description":"A rack exposing a few Unbound assault rifles",
@@ -769,6 +809,86 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"starforge-unboundriflerack",
+         "tilesetDirection":"right"
+        },
+     "80":
+        {
+         "\/\/description":"An Unbound Centurion tank. Luckily, it is not being piloted right now.",
+         "\/\/name":"starforge-unboundcenturionobject",
+         "\/\/shortdescription":"Unbound Centurion",
+         "imagePositionX":"-80",
+         "imagePositionY":"0",
+         "object":"starforge-unboundcenturionobject",
+         "tilesetDirection":"right"
+        },
+     "81":
+        {
+         "\/\/description":"A decorative Unbound hoverbike, from the Vanguard division.",
+         "\/\/name":"starforge-vanguardhoverbikeobject",
+         "\/\/shortdescription":"Vanguard Hoverbike",
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"starforge-vanguardhoverbikeobject",
+         "tilesetDirection":"right"
+        },
+     "82":
+        {
+         "\/\/description":"A  strange worm-like creature from the realm of the tide is inside. How weird.",
+         "\/\/name":"starforge-unboundsciencetideworm",
+         "\/\/shortdescription":"Unbound Experiment Pod",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundsciencetideworm",
+         "tilesetDirection":"right"
+        },
+     "83":
+        {
+         "\/\/description":"A very sturdy chair used by the Unbound.",
+         "\/\/name":"starforge-unboundchair2",
+         "\/\/shortdescription":"Unbound Chair",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundchair2",
+         "tilesetDirection":"right"
+        },
+     "84":
+        {
+         "\/\/description":"A sturdy table often found in Unbound settlements.",
+         "\/\/name":"starforge-unboundtable2",
+         "\/\/shortdescription":"Unbound Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-unboundtable2",
+         "tilesetDirection":"right"
+        },
+     "85":
+        {
+         "\/\/description":"An experimental Unbound weapon, probably used by Unbound mechs.",
+         "\/\/name":"starforge-unboundmechweapon2",
+         "\/\/shortdescription":"Unbound Mech Weapon",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"starforge-unboundmechweapon2",
+         "tilesetDirection":"right"
+        },
+     "86":
+        {
+         "\/\/description":"An Unbound mech body, being transported.",
+         "\/\/name":"starforge-unboundmechbody2",
+         "\/\/shortdescription":"Unbound Mech Body",
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"starforge-unboundmechbody2",
+         "tilesetDirection":"right"
+        },
+     "87":
+        {
+         "\/\/description":"A metal fence, often used in Unbound settlements.",
+         "\/\/name":"starforge-unboundfence",
+         "\/\/shortdescription":"Unbound Fence",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-unboundfence",
          "tilesetDirection":"right"
         },
      "9":
@@ -1524,7 +1644,127 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "76":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "77":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "78":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "79":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "8":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "80":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "81":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "82":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "83":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "84":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "85":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "86":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "87":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -1991,11 +2231,83 @@
          "imageheight":18,
          "imagewidth":16
         },
+     "76":
+        {
+         "image":"unboundessenceextractor.png",
+         "imageheight":44,
+         "imagewidth":80
+        },
+     "77":
+        {
+         "image":"unboundlavacanister.png",
+         "imageheight":23,
+         "imagewidth":16
+        },
+     "78":
+        {
+         "image":"unboundobjectcrafting.png",
+         "imageheight":31,
+         "imagewidth":34
+        },
+     "79":
+        {
+         "image":"unboundgearcrafting.png",
+         "imageheight":32,
+         "imagewidth":32
+        },
      "8":
         {
          "image":"unboundriflerack.png",
          "imageheight":39,
          "imagewidth":32
+        },
+     "80":
+        {
+         "image":"centurionobject.png",
+         "imageheight":57,
+         "imagewidth":147
+        },
+     "81":
+        {
+         "image":"vanguardhoverbikeobject.png",
+         "imageheight":30,
+         "imagewidth":75
+        },
+     "82":
+        {
+         "image":"sciencetideworm.png",
+         "imageheight":40,
+         "imagewidth":32
+        },
+     "83":
+        {
+         "image":"unboundchair2.png",
+         "imageheight":11,
+         "imagewidth":16
+        },
+     "84":
+        {
+         "image":"unboundtable2.png",
+         "imageheight":16,
+         "imagewidth":32
+        },
+     "85":
+        {
+         "image":"mechweapon2.png",
+         "imageheight":40,
+         "imagewidth":52
+        },
+     "86":
+        {
+         "image":"mechbody2.png",
+         "imageheight":88,
+         "imagewidth":80
+        },
+     "87":
+        {
+         "image":"unboundfence.png",
+         "imageheight":16,
+         "imagewidth":16
         },
      "9":
         {
@@ -2004,7 +2316,7 @@
          "imagewidth":32
         }
     },
- "tilewidth":111,
+ "tilewidth":147,
  "type":"tileset",
  "version":1.1
 }

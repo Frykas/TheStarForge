@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 1},
+	{ "item" : "durasteelbar", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-unboundwallpanel",
+    "count" : 50
+  },
+  "groups" : [ "starforge-unboundobject", "materials" ],
+  "duration" : 0
+}
+

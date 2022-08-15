@@ -19,11 +19,190 @@
     }]
   ],
   
+  "yukaiskyrayTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.54, "item" : ["coralfragment", 1]},
+        {"weight" : 0.15, "item" : ["coralfragment", 2]},
+		{"weight" : 0.10, "item" : ["coralfragment", 3]},
+		{"weight" : 0.20, "item" : "starforge-rawskyraymeat"},
+		{"weight" : 0.01, "item" : "starforge-yukaiskyrayaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "yukaiskyraybowTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.6, "item" : "starforge-rawskyraymeat"},
+		{"weight" : 0.4, "item" : "leather"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
   "pyreaperTreasure" : [
     [1, {
       "pool" : [
         {"weight" : 0.99, "item" : ["corefragmentore", 1]},
 		{"weight" : 0.01, "item" : "starforge-pyreaperaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "alabattorTreasure" : [
+    [1, {
+      "pool" : [
+	    {"weight" : 0.99, "pool" : "money"},
+		{"weight" : 0.01, "item" : "starforge-alabattoraf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "alabatlingTreasure" : [
+    [1, {
+      "pool" : [
+	    {"weight" : 0.99, "pool" : "money"},
+		{"weight" : 0.01, "item" : "starforge-alabatlingaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "panthyreTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.99, "item" : ["phasematter", 1]},
+		{"weight" : 0.01, "item" : "starforge-panthyreaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starmiteTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.50, "item" : ["phasematter", 1]},
+		{"weight" : 0.49, "pool" : "starmiteJunkTreasure"},
+		{"weight" : 0.01, "item" : "starforge-starmiteaf"}
+      ],
+      "poolRounds" : [
+        [0.9999, 1],
+        [0.0001, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "cephalowormTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.92, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.07, "item" : "starforge-cephalowormshell"},
+		{"weight" : 0.01, "item" : "starforge-cephalowormaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "glorbeeTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.99, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.01, "item" : "starforge-glorbeeaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "glorbiteTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.99, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.01, "item" : "starforge-glorbiteaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "puppertoothTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.99, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.01, "item" : "starforge-puppertoothaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "mothonTreasure" : [
+    [1, {
+      "pool" : [
+	    {"weight" : 0.30, "item" : ["cotton", 2]},
+        {"weight" : 0.49, "item" : ["cotton", 3]},
+		{"weight" : 0.20, "item" : ["cotton", 4]},
+		{"weight" : 0.01, "item" : "starforge-mothonaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starmiteJunkTreasure" : [
+    [1, {
+      "pool" : [
+	    {"weight" : 0.10, "item" : "woodtable"},
+        {"weight" : 0.10, "item" : "poop"},
+		{"weight" : 0.10, "item" : ["money", 999]},
+		{"weight" : 0.10, "item" : "apexpiano"},
+		{"weight" : 0.10, "item" : "hamburger"},
+		{"weight" : 0.10, "item" : "egg"}
       ],
       "poolRounds" : [
         [0.60, 1],

@@ -1,0 +1,43 @@
+{
+  "itemName" : "starforge-carver",
+  "price" : 1000,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A terrible weapon that tasted the blood of many innocent people.",
+  "shortdescription" : "Forsaken Carver",
+  "tooltipKind" : "starforge-uniquesword",
+  "category" : "dagger",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","dagger", "legendary"],
+  "learnBlueprintsOnPickup" : [ "starforge-carver" ],
+
+  "inventoryIcon" : "carver.png?flipx",
+
+  "animation" : "/items/active/weapons/melee/dagger/starforge-dagger.animation",
+  "animationParts" : {
+    "blade" : "carver.png",
+	
+    "swoosh" : ""
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "starforge-daggercombo",
+  "primaryAbility" : {
+    "baseDps" : 8.0,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "knockbackMode" : "aim",
+      "timeout" : 0.25,
+	  "statusEffects" : [ "starforge-lightbleeding" ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

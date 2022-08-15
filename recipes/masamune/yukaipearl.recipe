@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 3000},
+    { "item" : "bone", "count" : 25},
+	{ "item" : "petalred", "count" : 2},
+	{ "item" : "petalblue", "count" :2}
+  ],
+  "output" : {
+    "item" : "starforge-yukaipearl",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "material" ],
+  "duration" : 0
+}
+

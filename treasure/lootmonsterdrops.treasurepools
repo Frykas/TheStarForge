@@ -254,7 +254,7 @@
       "siaxaastoryDrop" : [
     [1, {
       "pool" : [
-        {"weight" : 0.33, "item" : "starforge-siaxaarstory1-codex"},
+        {"weight" : 0.33, "item" : "starforge-siaxaastory1-codex"},
         {"weight" : 0.33, "item" : "starforge-siaxaastory2-codex"},
         {"weight" : 0.33, "item" : "starforge-siaxaastory3-codex"}
       ],

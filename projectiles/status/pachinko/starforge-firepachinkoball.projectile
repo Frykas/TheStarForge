@@ -1,0 +1,73 @@
+{
+  "projectileName" : "starforge-firepachinkoball",
+  "physics" : "shrapnel",
+  "movementSettings" : {
+    "bounceFactor" : 0.0,
+    "collisionPoly" : [ [0.25, 0.25], [0.25, -0.25], [-0.25, -0.25], [-0.25, 0.25] ]
+  },
+  "image" : "starforge-firepachinkoball.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "bounces" : -1,
+  "supportsProcessing" : true,
+  "pointToLight" : true,
+  "orientationLocked" : true,
+  "flippable" : false,
+  "power" : 0,
+  "speed" : 0,
+  "timeToLive" : 10,
+  "actionOnReap" : [
+	 {
+      "action" : "loop",
+      "count" : 3,
+      "body" : [
+        {
+          "action" : "particle",
+		  "rotate" : true,
+		  "specification" : {
+			"type" : "textured",
+			"image" : "/celestial/stars/star21pxOrange.png:2",
+			"position" : [0, 0],
+			"layer" : "front",
+			"collidesForeground" : false,
+			"timeToLive" : 0.2,
+			"destructionTime" : 0.1,
+			"destructionAction" : "shrink",
+			"fullbright" : true,
+			"size" : 1.2,
+			"rotation" : 0,
+			"angularVelocity" : 180,
+			"variance" : {
+			  "size" : 0.9,
+			  "rotation" : 180,
+			  "angularVelocity" : 420
+			} 
+          }
+        }
+      ]
+    }
+  ],
+  "emitters" : [ ],
+  "onlyHitTerrain" : true,
+  "piercing" : true,
+  "fullbright" : true,
+  
+  "renderLayer" : "ForegroundEntity",
+  
+  "scripts" : ["starforge-pachinkoball.lua"],
+  "scriptDelta" : 1,
+
+  "statusEffectsOnPickup" : ["starforge-pachinkofirebuff"],
+
+  "accelerationFactor" : 2,
+
+  "searchDistance" : 4,
+  "homingStartDelay" : 0.2,
+  "homingSpeed" : 65,
+  "homingForce" : 226,
+  
+  "pickupRange" : 1,
+  "snapRange" : 2.5,
+  "snapSpeed" : 150,
+  "snapForce" : 500
+}

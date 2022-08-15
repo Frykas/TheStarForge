@@ -1,0 +1,69 @@
+{
+  "ability" : {
+    "type" : "starforge-throwprojectile",
+    "name" : "Throw Projectile",
+    "scripts" : ["/items/active/weapons/ranged/throwable/abilities/starforge-throwprojectile.lua"],
+    "class" : "StarforgeThrowProjectile",
+
+    "baseDamage" : 10.0,
+    "inaccuracy" : 0.008,
+    "cooldownTime" : 0.4,
+    "reloadWait" : 0.15,
+
+    "energyUsage" : 24,
+	
+    "projectileCount" : 1,
+    "projectileTimesAndAngles" : [
+      [0.1, 0]
+    ],
+    "projectileType" : "gp_fraggrenade",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : -35,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "prepare" : {
+        "duration" : 0.15,
+        "armRotation" : 165,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+		
+		"smooth" : true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "throw" : {
+        "duration" : 0.15,
+        "armRotation" : 45,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  "reload" : {
+	    //"aimAngle" : 0,
+        "duration" : 0.1,
+        "armRotation" : -115,
+        "endArmRotation" : -45,
+        "weaponRotation" : 0,
+        "endWeaponRotation" : 0,
+        "twoHanded" : false,
+		
+		"loadTime" : 0.5,	//Percentage of the duration where the weapon reappears
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+	  }
+    }
+  }
+}

@@ -16,7 +16,7 @@
  "margin":0,
  "name":"thalassooutpost",
  "spacing":0,
- "tilecount":41,
+ "tilecount":45,
  "tiledversion":"1.4.3",
  "tileheight":151,
  "tileproperties":
@@ -369,6 +369,46 @@
          "imagePositionX":"-24",
          "imagePositionY":"0",
          "object":"starforge-thalassooutpostteleporter",
+         "tilesetDirection":"right"
+        },
+     "41":
+        {
+         "\/\/description":"Masamune, a Yukai Forgemaster who joined the Thalasso looking for a greater purpose.",
+         "\/\/name":"starforge-masamune",
+         "\/\/shortdescription":"Masamune",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-masamune",
+         "tilesetDirection":"right"
+        },
+     "42":
+        {
+         "\/\/description":"Sasha Beniko, ex-Unbound officer, ex-Unbound prisoner, now working with the Thalasso.",
+         "\/\/name":"starforge-missionreplay",
+         "\/\/shortdescription":"Sasha Beniko",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"starforge-missionreplay",
+         "tilesetDirection":"right"
+        },
+     "43":
+        {
+         "\/\/description":"A creamy delite.",
+         "\/\/name":"starforge-jarofmilk",
+         "\/\/shortdescription":"Jar of Milk",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-jarofmilk",
+         "tilesetDirection":"right"
+        },
+     "44":
+        {
+         "\/\/description":"A Starmite plushie. Very good for cuddles!",
+         "\/\/name":"starforge-starmiteplushie",
+         "\/\/shortdescription":"Starmite Plushie",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"starforge-starmiteplushie",
          "tilesetDirection":"right"
         },
      "5":
@@ -774,6 +814,46 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "41":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "42":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "43":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "44":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "5":
         {
          "\/\/description":"string",
@@ -1042,6 +1122,30 @@
          "image":"thalassooutpostteleporter.png",
          "imageheight":48,
          "imagewidth":48
+        },
+     "41":
+        {
+         "image":"..\/furouraltar\/yukaishop.png",
+         "imageheight":40,
+         "imagewidth":49
+        },
+     "42":
+        {
+         "image":"missionreplay.png",
+         "imageheight":32,
+         "imagewidth":43
+        },
+     "43":
+        {
+         "image":"..\/..\/objects\/thalasso\/other\/jarofmilk\/jarofmilktiled.png",
+         "imageheight":14,
+         "imagewidth":11
+        },
+     "44":
+        {
+         "image":"starmiteplushy.png",
+         "imageheight":18,
+         "imagewidth":21
         },
      "5":
         {

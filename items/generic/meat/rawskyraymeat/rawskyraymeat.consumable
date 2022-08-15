@@ -1,0 +1,25 @@
+{
+  "itemName" : "starforge-rawskyraymeat",
+  "rarity" : "common",
+  "price" : 15,
+  "category" : "food",
+  "inventoryIcon" : "rawskyraymeat.png",
+  "description" : "Raw Glimber Ray meat. It's still hot!",
+  "shortdescription" : "Glimber Ray Meat",
+  "effects" : [ [
+       {
+        "effect" : "burning",
+        "duration" : 8
+      }
+  ] ],
+  "foodValue" : 15,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+    "learnBlueprintsOnPickup" : [ "starforge-cookedskyraymeat" ]
+}

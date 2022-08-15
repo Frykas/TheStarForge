@@ -1,0 +1,66 @@
+[
+
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-razortailfossil1"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-razortailfossil2"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-razortailfossil3"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-razortailfossil4"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-razortailfossil5"}
+  },
+  
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-rimenodonfossil1"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-rimenodonfossil2"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-rimenodonfossil3"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-rimenodonfossil4"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-rimenodonfossil5"}
+  },
+  
+  {"op" : "add",
+	"path" : "/smallfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-tidefossil"}
+  },
+  
+  {"op" : "add",
+	"path" : "/smallfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-rifterhelmetfossil"}
+  }
+]

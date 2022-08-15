@@ -1,0 +1,82 @@
+{
+  "objectName" : "starforge-yukaitidetuner",
+  "colonyTags" : ["yukai"],
+  "rarity" : "Legendary",
+  "description" : "A table arranged for summoning otherworldly creatures using crafted effigies.",
+  "shortdescription" : "Yukai Tidetuner",
+  "race" : "hylotl",
+  
+  "apexDescription" : "This makes no sense...",
+  "floranDescription" : "Perhapsss a new hunt?",
+  "glitchDescription" : "Fear. This does not look like safe technology.",
+  "novakidDescription" : "Throwin' a ritual for an otherworldly entity? Count me in!.",
+  
+  "printable" : false,
+
+  "animation" : "yukaitidetuner.animation",
+  "animationParts" : {
+    "object" : "yukaitidetuner.png"
+  },
+  "inventoryIcon" : "yukaitidetuner.png:stage.1",
+  "placementImagePosition" : [-21, 0],
+  "orientations" : [
+    {
+      "image" : "yukaitidetuner.png:stage.1",
+      "direction" : "right",
+
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 2.0,
+
+      "spaces" : [
+        [-3, 3], [-2, 3], [-1, 3], [0, 3], [1, 3], [2, 3],
+        [-3, 2], [-2, 2], 				   [1, 2], [2, 2],
+        [-3, 1], [-2, 1], 				   [1, 1], [2, 1],
+        [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [ "/scripts/objectaddons.lua", "/objects/scripts/starforge-summontable.lua" ],
+  
+  "stageCount" : 6,
+  "requireItem" : "starforge-yukaipearl",
+  "summonedMonster" : "poptop",
+  "finalRequiredItem" : "starforge-yukaitear",
+  "isActive" : false,
+  
+  "materialSpaces" : [
+	[[0, 0], "metamaterial:anviladdonbase"],
+	[[-1, 0], "metamaterial:anviladdonbase"]
+  ],
+  
+  "addonConfig" : {
+	"usesAddons" : [
+	  {
+		"name" : "cephalowormEffigy",
+		"position" : [0, 1],
+		"addonData" : {
+		  "isActive" : true,
+		  "summonedMonster" : "poptop"
+		}
+	  },
+	  {
+		"name" : "razortailEffigy",
+		"position" : [0, 1],
+		"addonData" : {
+		  "isActive" : true,
+		  "summonedMonster" : "poptop"
+		}
+	  },
+	  {
+		"name" : "rimenodonEffigy",
+		"position" : [0, 1],
+		"addonData" : {
+		  "isActive" : true,
+		  "summonedMonster" : "poptop"
+		}
+	  }
+	]
+  }
+}

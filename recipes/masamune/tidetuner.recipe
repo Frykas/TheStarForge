@@ -1,0 +1,16 @@
+{
+  "input" : [
+    { "item" : "darkwoodmaterial", "count" : 125},
+	{ "item" : "bone", "count" : 50},
+	{ "item" : "coralfragment", "count" : 25},
+    { "item" : "starforge-tidalfragment", "count" : 10},
+	{ "item" : "fabric", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-yukaitidetuner",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "material" ],
+  "duration" : 0
+}
+

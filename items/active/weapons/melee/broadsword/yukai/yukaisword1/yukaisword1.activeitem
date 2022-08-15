@@ -1,13 +1,13 @@
 {
   "itemName" : "starforge-yukaisword1",
   "price" : 450,
-  "level" : 5,
+  "level" : 2,
   "maxStack" : 1,
-  "rarity" : "rare",
+  "rarity" : "common",
   "description" : "A blade carved out of bones. A slight curse is usually applied to blades like these.",
   "shortdescription" : "Yukai Bone Sword",
   "tooltipKind" : "sword",
-  "category" : "Bone Sword",
+  "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword"],
 

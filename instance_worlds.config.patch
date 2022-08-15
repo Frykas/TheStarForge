@@ -1,4 +1,5 @@
 [
+  //OUTPOSTS
 	{
 		"op": "add",
 		"path": "/thalassooutpost",
@@ -36,6 +37,7 @@
 		}
 	},
 	
+  //UNBOUND STORY MISSIONS
 	{
 		"op": "add",
 		"path": "/starforge-unbdmission1",
@@ -101,5 +103,293 @@
 		
 			}
 		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/starforge-unbdmission3",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "starforge-unbdmission3",
+			"seed": 1234,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": false},
+			"skyParameters" : {
+            "spaceLevel" : 3000,
+            "ambientLightLevel" : [24, 28, 24],
+
+            "skyType" : "atmospheric",
+			   
+				"horizonImages": [],
+				"dayLength": 5000.36,
+				"surfaceLevel": 800,
+				"seed": -5288806180628667000
+		
+			}
+		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/starforge-biometestzone",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "starforge-biometestzone",
+			"seed": 1234,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": false},
+			"skyParameters" : {
+            "spaceLevel" : 3000,
+            "ambientLightLevel" : [24, 28, 24],
+
+            "skyType" : "atmospheric",
+			   
+				"horizonImages": [],
+				"dayLength": 5000.36,
+				"surfaceLevel": 800,
+				"seed": -5288806180628667000
+		
+			}
+		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/starforge-eleuthia1",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "starforge-eleuthia1",
+			"seed": 1234,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": false},
+			 "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
+		}
+	},
+	
+	
+  //ENCOUNTERS
+	  {
+	"op" : "add",
+	"path" : "/unboundship1",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "unboundship1",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 8000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
 	}
+		},
+	
+	
+	  {
+	"op" : "add",
+	"path" : "/unboundship2",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "unboundship2",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 8000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
+	}
+  },
+  
+  {
+	"op" : "add",
+	"path" : "/unboundasteroids",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "unboundasteroids",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 8000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
+	}
+  },
+  
+  {
+	"op" : "add",
+	"path" : "/cacochiuslab",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "cacochiuslab",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 8000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
+	}
+  },
+  
+  {
+	"op" : "add",
+	"path" : "/florantnest",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "florantnest",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 8000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
+	}
+  },
+  //PARAGON STORY MISSIONS
+  {
+	"op": "add",
+	"path": "/starforge-paragonmission1",
+	"value": {
+	  "type": "FloatingDungeon",
+	  "dungeonWorld": "starforge-paragonmission1",
+	  "seed": 1234,
+	  "spawningEnabled": false,
+	  "beamUpRule": "Anywhere",
+	  "disableDeathDrops": true,
+	  "worldProperties": {"nonCombat": false},
+	   "skyParameters" : {
+		"spaceLevel" : 3000,
+		"ambientLightLevel" : [24, 28, 24],
+		"skyType" : "atmospheric",
+		"horizonImages": [],
+		"dayLength": 5000.36,
+		"surfaceLevel": 800,
+		"seed": -5288806180628667000
+		 }
+	}
+  }
 ]

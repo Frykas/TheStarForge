@@ -7,7 +7,7 @@
   "shortdescription": "^#686F5D;UNBD^reset; \"Valiant\" AR",
   "tooltipKind": "starforge-unboundgun",
   "category": "assaultRifle",
-  "tooltipFields" : {"subtitle":"Unbound Rifle"},
+  "tooltipFieldsOverride" : {"subtitle":"Unbound Rifle"},
   "twoHanded": true,
   "level" : 5,
   "itemTags": [
@@ -59,8 +59,9 @@
     "inaccuracy": 0.003,
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "unboundriflebullet",
+    "projectileType": "unboundelectricbullet",
     "projectileParameters": {
+	  "speed" : 200,
       "knockback": 3
     },
     "stances": {
@@ -105,5 +106,5 @@
       }
     }
   },
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

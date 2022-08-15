@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-warmongercorpse",
+  "rarity" : "common",
+  "category" : "decorative",
+  "price" : 0,
+  "description" : "A fallen warrior.",
+  "shortdescription" : "Fallen Warmonger",
+  "breakDropPool" : "warmongerarmorDrop",
+  "printable" : false,
+
+  "apexDescription" : "This person seems to have fallen during combat.",
+  "avianDescription" : "This person seems dead.",
+  "floranDescription" : "Meat all gone... Only armor left.",
+  "glitchDescription" : "Concerned. This person is long gone.",
+  "humanDescription" : "This guy's long gone. He put up a good fight.",
+  "hylotlDescription" : "There is no greater honor than falling in combat. May they rest. ",
+  "novakidDescription" : "Dude perished some time ago that's for sure.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "warmongercorpse.png:<color>",
+      "imageLayers" : [ { "image" : "warmongercorpse.png" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+
+}

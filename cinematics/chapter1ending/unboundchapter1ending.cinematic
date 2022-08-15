@@ -6,39 +6,226 @@
   "backgroundColor" : [0, 0, 0, 255],
   "backgroundFadeTime" : 0.5,
   "panels" : [
-    {
+  
+  {
       "drawables" : [
         {
-          "image" : "/cinematics/chapter1ending/apolleon.png:<frame>"
+          "image" : "/cinematics/chapter1ending/thalassomeeting.png"
         }
       ],
-      "animationFrames" : 12,
       "keyframes" : [
         {
           "timecode" : 0.2,
-          "zoom" : 2,
+          "zoom" : 1.85,
           "alpha" : 0,
-          "position" : [479, 450],
+          "position" : [479, 240],
           "frame" : 0
         },
         {
           "timecode" : 1.0,
-          "zoom" : 2,
+          "zoom" : 1.85,
           "alpha" : 1,
-          "position" : [479, 450]
+          "position" : [479, 240]
         },
         {
           "timecode" : 1.1,
-          "zoom" : 2,
+          "zoom" : 1.85,
           "alpha" : 1,
-		  "frame" : 12,
-          "position" : [479, 450]
+          "position" : [479, 240]
+        },
+        {
+          "timecode" : 20.5,
+          "zoom" : 1.85,
+          "alpha" : 1,
+          "position" : [479, 240]
+        },
+		{
+          "timecode" : 22.5,
+          "zoom" : 1.85,
+          "alpha" : 0,
+          "position" : [479, 240]
+        }
+      ]
+    },
+	
+	{
+      "startTime" : 1.5,
+      "endTime" : 20.5,
+      "drawables" : [
+        {
+          "image" : "/cinematics/radiomessagebg.png:<frame>"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [550, 260],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 146.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 147,
+          "frame" : 12
+        }
+      ]
+    },
+	
+	{
+      "startTime" : 2.0,
+      "endTime" : 10.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/mariko.png:<frame>"
+        }
+      ],
+      "animationFrames" : 2,
+      "text" : "Yes, we infiltrated the Unbound network looking for informations, their future plans, where are their important facilities...",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 218
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [436.5, 260],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
         },
         {
           "timecode" : 2.5,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+
+      ]
+    },
+	
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/chapter1ending/starviashadow.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 40.2,
           "zoom" : 2,
           "alpha" : 0,
-          "position" : [479, 450]
+          "position" : [479, 180],
+          "frame" : 0
+        },
+        {
+          "timecode" : 41.0,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 180]
+        },
+        {
+          "timecode" : 41.1,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 180]
+        },
+        {
+          "timecode" : 47.5,
+          "zoom" : 2,
+          "alpha" : 1,
+          "position" : [479, 180]
+        }
+      ]
+    },
+	
+	
+	{
+      "text" : "CHAPTER II",
+      "fontSize" : 24,
+      "textPosition" : {
+        "position" : [220, 270],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 40.1,
+          "zoom" : 500,
+          "alpha" : 0,
+          "textPercentage" : 1,
+          "position" : [200, 200]
+        },
+        {
+          "timecode" : 41.1,
+		  "alpha" : 1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 41.1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 45.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 47.3,
+          "textPercentage" : 1,
+          "alpha" : 0
+        }
+      ]
+    },
+	
+	{
+      "text" : "Unbound, Unshackled",
+      "fontSize" : 20,
+      "textPosition" : {
+        "position" : [170, 65],
+        "hAnchor" : "mid",
+        "vAnchor" : "mid",
+        "wrapWidth" : 400
+      },
+      "keyframes" : [
+        {
+          "timecode" : 40.1,
+          "zoom" : 500,
+          "alpha" : 0,
+          "textPercentage" : 1,
+          "position" : [200, 380]
+        },
+        {
+          "timecode" : 41.1,
+		  "alpha" : 1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 41.1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 45.8,
+          "textPercentage" : 1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 47.3,
+          "textPercentage" : 1,
+          "alpha" : 0
         }
       ]
     },
@@ -46,68 +233,69 @@
   {
       "drawables" : [
         {
-          "image" : "/cinematics/chapter1ending/apolleonsingle.png"
+          "image" : "/cinematics/chapter1ending/starvia.png"
         }
       ],
       "keyframes" : [
         {
-          "timecode" : 1.1,
+          "timecode" : 40.2,
           "zoom" : 2,
           "alpha" : 0,
-          "position" : [479, 450]
+          "position" : [479, 300]
         },
         {
-          "timecode" : 1.1,
+          "timecode" : 41.0,
           "zoom" : 2,
           "alpha" : 1,
-          "position" : [479, 450]
+          "position" : [479, 300]
         },
         {
-          "timecode" : 1.1,
+          "timecode" : 41.1,
           "zoom" : 2,
           "alpha" : 1,
-          "position" : [479, 450]
+          "position" : [479, 300]
         },
         {
-          "timecode" : 7.5,
+          "timecode" : 47.5,
           "zoom" : 2.0,
-          "alpha" : 0,
-          "position" : [479, 450]
+          "alpha" : 1,
+          "position" : [479, 300]
         }
       ]
     },
 	  {
-      "text" : "MONKE",
+      "text" : "COMING SOON",
       "fontSize" : 24,
       "textPosition" : {
-        "position" : [50, 100],
+        "position" : [200, 65],
         "hAnchor" : "mid",
         "vAnchor" : "mid",
         "wrapWidth" : 400
       },
       "keyframes" : [
         {
-          "timecode" : 1.1,
+          "timecode" : 40.1,
           "zoom" : 500,
-          "alpha" : 1,
-          "textPercentage" : 0,
-          "position" : [350, 300]
+          "alpha" : 0,
+          "textPercentage" : 1,
+          "position" : [200, 65]
         },
         {
-          "timecode" : 1.1,
-          "textPercentage" : 0
-        },
-        {
-          "timecode" : 1.1,
+          "timecode" : 41.1,
+		  "alpha" : 1,
           "textPercentage" : 1
         },
         {
-          "timecode" : 5.8,
+          "timecode" : 41.1,
+          "textPercentage" : 1
+        },
+        {
+          "timecode" : 45.8,
           "textPercentage" : 1,
           "alpha" : 1
         },
         {
-          "timecode" : 7.3,
+          "timecode" : 47.3,
           "textPercentage" : 1,
           "alpha" : 0
         }
@@ -117,24 +305,13 @@
   
   "audio" : [
     {
-      "timecode" : 11.3,
-      "resource" : "/sfx/others/theretribution.ogg"
+      "timecode" : 1.0,
+	  "endTimecode" : 22.5,
+      "resource" : "/sfx/others/starforgev1intro.ogg"
     },
 	{
       "timecode" : 1.5,
-      "endTimecode" : 10.0,
-      "loops" : -1,
-      "resource" : "/sfx/interface/aichatter1_loop.ogg"
-    },
-	{
-      "timecode" : 16.5,
-      "endTimecode" : 22.5,
-      "loops" : -1,
-      "resource" : "/sfx/interface/aichatter1_loop.ogg"
-    },
-	{
-      "timecode" : 26.0,
-      "endTimecode" : 32.5,
+      "endTimecode" : 4.0,
       "loops" : -1,
       "resource" : "/sfx/interface/aichatter1_loop.ogg"
     }

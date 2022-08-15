@@ -1,0 +1,68 @@
+{
+  "metadata" : {
+    "name" : "starforge-tidalremnantsmicrodungeons",
+	"species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "giantshellremnants", "ancientshellremnants", "densejellycaptrees", "jellycapplateau", "yukairuins", "yukaicliffruins", "jellycapsanctuary" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "giantshellremnants",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "giantshellremnants.json" ]
+    },
+	{
+      "name" : "ancientshellremnants",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "ancientshellremnants.json" ]
+    },
+	{
+      "name" : "densejellycaptrees",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "densejellycaptrees.json" ]
+    },
+	{
+      "name" : "jellycapplateau",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "jellycapplateau.json" ]
+    },
+	
+	{
+      "name" : "yukairuins",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukairuins.json" ]
+    },
+	
+	{
+      "name" : "yukaicliffruins",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "yukaicliffruins.json" ]
+    },
+	
+	{
+      "name" : "jellycapsanctuary",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "jellycapsanctuary.json" ]
+    }
+  ]
+}

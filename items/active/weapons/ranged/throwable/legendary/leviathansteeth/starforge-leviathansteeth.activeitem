@@ -1,0 +1,68 @@
+{
+  "itemName" : "starforge-leviathansteeth",
+  "level" : 6,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Sling the teeth of a fallen leviathan to destroy your foes.",
+  "shortdescription" : "Leviathan's Teeth",
+  "tooltipKind" : "gun",
+  "category" : "throwableItem",
+  "tooltipFieldsOverride" : {"subtitle":"Throwable"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","throwable"],
+  "learnBlueprintsOnPickup" : [ "starforge-leviathansteeth" ],
+
+  "inventoryIcon" : "starforge-leviathansteeth.png",
+
+  "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
+  "animationParts" : {
+    "middle" : "starforge-leviathansteeth.png?flipy?flipx"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "throw" : [ "/sfx/projectiles/throw_item.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/ranged/throwable/starforge-throwable.lua"],
+
+  "elementalType" : "starforge-tidalfrost",
+
+  "primaryAbilityType" : "starforge-throwprojectile",
+  "primaryAbility" : {
+    "baseDps" : 6,
+    "cooldownTime" : 0.9,
+	
+	"hideItemWhileIdle" : true,
+	
+    "projectileCount" : 1,
+    "projectileType" : "starforge-leviathianstooth",
+    "projectileParameters" : {
+    }
+  },
+  
+  "altAbilityType" : "starforge-throwprojectile",
+  "altAbility" : {
+    "name" : "Jaw of the Leviathan",
+    "baseDps" : 7,
+    "cooldownTime" : 2,
+	
+	"hideItemWhileIdle" : true,
+
+    "energyUsage" : 21,
+	
+    "projectileTimesAndAngles" : [
+      [0.05, 17],
+      [0.075, 8],
+      [0.1, -0],
+      [0.125, -8],
+      [0.15, -17]
+    ],
+    "projectileType" : "starforge-leviathianstooth",
+    "projectileParameters" : {
+    }
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

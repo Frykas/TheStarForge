@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-rimenodonfossil2",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Rimenodon Frontal Fin",
+  "description" : "A fossilised frontal Rimenodon fin.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "rimenodonfossil2icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/rimenodonfossil/rimenodonfossil2.png",
+  "displayoffset" :[-5.8, -0.4],
+
+  "fossilSetName" : "rimenodon",
+  "setIndex" : 2,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

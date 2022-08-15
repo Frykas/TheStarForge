@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-alabatlingaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A juvenile bat from the Yukai homeworld. They always hunt in packs.\"",
+  "shortdescription" : "Alabatling Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-alabatlingaf" },
+
+
+  "inventoryIcon" : "alabatlingaf.png",
+  "orientations" : [
+    {
+      "image" : "alabatlingaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "alabatlingaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

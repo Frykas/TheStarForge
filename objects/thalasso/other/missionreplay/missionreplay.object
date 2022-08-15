@@ -1,0 +1,59 @@
+{
+  "objectName" : "starforge-missionreplay",
+  "colonyTags" : ["apex"],
+  "rarity" : "Essential",
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/starforge-missioncatalogue/missioncatalogue.config",
+
+  "printable" : false,
+  "description" : "Sasha Beniko, ex-Unbound officer, ex-Unbound prisoner, now working with the Thalasso.",
+  "shortdescription" : "Sasha Beniko",
+  "race" : "apex",
+  "category" : "other",
+  "price" : 5000,
+
+  "apexDescription" : "Sasha Beniko, just like Morpheus she worked with the Unbound before. She makes a great ally.",
+  "avianDescription" : "Sasha helps us take down the Unbound, awesome!",
+  "floranDescription" : "Floran ssstare at ssscreen too long...",
+  "glitchDescription" : "Inspired. Thanks to people like her, we have a chance against the Unbound!",
+  "humanDescription" : "Sasha knows a lot about the Unbound. Together with Morpheus and Mariko, we're unstoppable!",
+  "hylotlDescription" : "Betraying something is never honorable, but betraying the Unbound? Sasha made the right choice.",
+
+  "inventoryIcon" : "missionreplayicon.png",
+  "orientations" : [
+    {
+	  "dualImage": "missionreplay.png:<frame>",
+      "imageLayers" : [ { "image" : "missionreplay.png:<frame>" }, { "image" : "missionreplayfullbright.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 7,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ], 
+  "scripts" : [ "/objects/scripts/starforge-talkingobject.lua" ],
+  "scriptDelta" : 20,
+  "mouthPosition" : [-1, 0],
+
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "Hey there! Looking to strike the Unbound again?",
+    "If you're bored, I always have some work for you!",
+    "Looking for something to do?",
+	"If you're looking for Unbound weapons, you might find blueprints in some of their settlements.",
+	"You know, the Unbound do a lot of good for my people. If only they cared about the other races...",
+	"I can't believe you guys found a starforge and managed to keep it hidden from the Unbound.",
+	"If we stand together, we can win this!",
+	"You, Morpheus and Mariko make a mess of the Unbound while I cover up the tracks, together we got this!",
+	"Looking for some action?",
+	"Stay strong, and remember what you're fighting for."
+  ]
+   
+   }
+   

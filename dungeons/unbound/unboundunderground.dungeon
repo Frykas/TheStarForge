@@ -1,0 +1,37 @@
+{
+  "metadata" : {
+    "name" : "starforge-unboundunderground",
+    "species" : "apex",
+    "rules" : [
+    ],
+    "anchor" : [ "unboundunderground1", "unboundunderground2", "unboundunderground3" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "unboundunderground1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundunderground1.json" ]
+    },
+	{
+      "name" : "unboundunderground2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundunderground2.json" ]
+    },
+	{
+      "name" : "unboundunderground3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unboundunderground3.json" ]
+    }
+  ]
+}

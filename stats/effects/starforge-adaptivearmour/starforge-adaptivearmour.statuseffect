@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-adaptivearmour",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "starforge-adaptivearmour.lua"
+  ]
+}

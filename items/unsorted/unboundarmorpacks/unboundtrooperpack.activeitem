@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-unboundtrooperpack",
+  "price" : 500,
+  "level" : 1,
+  "maxStack" : 1000,
+  "rarity" : "rare",
+  "category" : "Armor Pack",
+  "description" : "An Unbound pack, containing trooper armor.",
+  "shortdescription" : "Trooper Pack",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "troopericon.png",
+  "animation" : "unboundarmorpack.animation",
+  "animationCustom" : {},
+  "scripts" : ["unboundarmorpack.lua"],
+
+  "fireTime" : 0.5,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "starforge-unboundtroopercache",
+    "level" : 1
+  }
+}

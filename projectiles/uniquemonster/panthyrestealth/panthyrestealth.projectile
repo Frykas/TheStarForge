@@ -1,0 +1,18 @@
+{
+  "projectileName" : "starforge-panthyrestealth",
+  "image" : "panthyrestealth.png",
+  "power" : 0,
+  "speed" : 0,
+  "actionOnReap" : [
+	{
+	  "action": "projectile",
+	  "type": "smokeexplosion",
+	  "inheritDamageFactor": 0,
+	  "angleAdjust": 0,
+	  "fuzzAngle": 30
+	}
+  ],
+  
+  "scripts" : [ "/projectiles/scripts/starforge-applyownerstatus.lua" ],
+  "ownerStatusEffects" : [ "starforge-panthyrestealth" ]
+}

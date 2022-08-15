@@ -1,0 +1,20 @@
+{
+  "itemName" : "starforge-unboundfoodration",
+  "rarity" : "rare",
+  "price" : 100,
+  "category" : "preparedFood",
+  "inventoryIcon" : "unboundfoodration.png",
+  "description" : "Rations used to feed the large amounts of Apex refugees.",
+  "shortdescription" : "Unbound Food Ration",
+
+
+  "foodValue" : 120,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 20,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 20.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

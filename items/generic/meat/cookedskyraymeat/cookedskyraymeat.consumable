@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-cookedskyraymeat",
+  "rarity" : "common",
+  "price" : 15,
+  "category" : "food",
+  "inventoryIcon" : "cookedskyraymeat.png",
+  "description" : "Cooked Glimber Ray meat. It taste like the sun.",
+  "shortdescription" : "Cooked Glimber Ray Meat",
+  "effects" : [ [
+       {
+        "effect" : "nova",
+        "duration" : 30
+      }
+  ] ],
+  "foodValue" : 30,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name" : "starforge-godflameresistance",
+  "effectConfig" : {
+    "elementalType" : "starforge-godflame",
+	"elementalInfluences" : {
+	  "electric" : 0.1,
+	  "fire" : -0.1
+	},
+	"totalFactor" : 0.325
+  },
+  "defaultDuration" : 15,
+  "scripts" : ["starforge-elementalresistance.lua"]
+}

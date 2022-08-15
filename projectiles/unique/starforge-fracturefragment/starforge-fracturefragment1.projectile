@@ -1,0 +1,21 @@
+{
+  "projectileName" : "starforge-fracturefragment1",
+  "physics" : "shrapnel",
+  "image" : "starforge-fracturefragment1.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "bounces" : 1,
+  "power" : 50,
+  "speed" : 25,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "damageKind" : "dagger",
+
+  "scripts" : ["/projectiles/scripts/starforge-velocityspin.lua"],
+  "orientationLocked" : true,
+  "pointToLight" : true,
+  "spinRate" : 0.25,
+  "minSpinSpeed": 25,
+  "spinDirection" : -1
+}

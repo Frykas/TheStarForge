@@ -1,0 +1,25 @@
+{
+  "itemName" : "starforge-elpissecuritychest",
+  "price" : 210,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "chestarmour",
+  "description" : "A very tough chestplate worn by the Elpis security personel.",
+  "shortdescription" : "Elpis Security Plate",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "itemTags" : [ "tier6armour" ]
+}

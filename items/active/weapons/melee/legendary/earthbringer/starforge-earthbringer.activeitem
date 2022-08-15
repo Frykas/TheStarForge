@@ -10,13 +10,16 @@
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword"],
+  "learnBlueprintsOnPickup" : [ "starforge-earthbringer" ],
 
   "inventoryIcon" : "starforge-earthbringer.png",
 
   "animation" : "/items/active/weapons/melee/broadsword/starforge-broadsword.animation",
   "animationParts" : {
     "handle" : "",
-    "blade" : "starforge-earthbringer.png"
+    "blade" : "starforge-earthbringer.png",
+	
+    "swoosh" : ""
   },
   "animationCustom" : {
     "animatedParts" : {

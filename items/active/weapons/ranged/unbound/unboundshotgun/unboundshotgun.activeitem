@@ -6,7 +6,8 @@
   "description": "A slug shotgun loaded with deadly fire-elemental shells.",
   "shortdescription": "^#686F5D;UNBD^reset; \"Salamander\" SSG",
   "tooltipKind": "starforge-unboundgun",
-  "category": "Slug Shotgun",
+  "category": "shotgun",
+  "tooltipFieldsOverride" : {"subtitle":"Slug Shotgun"},
   "twoHanded": true,
   "level" : 5,
   "itemTags": [
@@ -106,5 +107,5 @@
       }
     }
   },
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

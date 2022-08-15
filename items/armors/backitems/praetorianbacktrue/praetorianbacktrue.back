@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-praetorianbacktrue",
   "price" : 3500,
-  "inventoryIcon" : "icon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
   "description" : "Is that whispering you hear? Is it the skull, or is it loneliness getting to you?",
   "shortdescription" : "^yellow;Abomination Skull Trophy^white;",
   "tooltipKind" : "starforge-backitemexalted",
+  
+  "inventoryIcon" : "/items/armors/backitems/praetorianbacktrue/icon.png",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
@@ -31,5 +33,7 @@
       "stat" : "breathProtection",
       "amount" : 1.0
     }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

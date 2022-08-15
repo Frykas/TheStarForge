@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-exaltedpraetorianpants",
   "price" : 3000,
-  "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legwear",
   "description" : "\"The monsters... They are everywhere. Rip and tear.\"",
-  "shortdescription" : "^yellow;Praetorian Legwear^reset; ^#FFB2B2;^reset;",
+  "shortdescription" : "^yellow;Praetorian Legwear^reset; ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
+  
+  "inventoryIcon" : "/items/armors/exalted/epraetorian/icons.png:pants",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
 
   "maleFrames" : "pants.png",
@@ -38,7 +40,7 @@
   ],
 
 
-  "itemTags" : [ "tier8armour" ],
+  "itemTags" : [ "tier8armour", "exalted" ],
   
     "colorOptions" : [
     // BRIMSTEEL, DEFAULT
@@ -65,5 +67,7 @@
     { "ffca8a" : "eab3db", "e0975c" : "d35eae", "a85636" : "97276d", "6f2919" : "59163f" },
     // BROWN
     { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
   }

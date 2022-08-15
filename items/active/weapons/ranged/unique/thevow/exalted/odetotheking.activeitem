@@ -12,7 +12,7 @@
   "twoHanded" : true,
   
   "inventoryIcon" : "/items/active/weapons/ranged/unique/thevow/exalted/odetothekingicon.png",
-  "itemBorder" : "/interface/inventory/itemborderexalted.png",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "animation" : "/items/active/weapons/ranged/unique/thevow/thevow.animation",
     "animationParts" : {

@@ -17,7 +17,7 @@
           }
         }
       },
-      "weapon" : {
+      "gun" : {
         "default" : "loaded",
         "states" : {
           "unloaded" : {
@@ -31,7 +31,7 @@
             "mode" : "transition",
             "transition" : "loaded",
             "properties" : {
-              "immediateSound" : "/sfx/gun/starforge_bowgundraw.ogg"
+              "immediateSound" : "/sfx/gun/starforge-bowgundraw.ogg"
             }
           },
           "loaded" : {
@@ -57,7 +57,7 @@
           "transformationGroups" : ["weapon"]
         },
         "partStates" : {
-          "weapon" : {
+          "gun" : {
             "unloaded" : {
               "properties" : {
                 "image" : "<partImage>:reload.1<paletteSwaps>"
@@ -131,6 +131,6 @@
   },
 
   "sounds" : {
-    "fire" : [ "/sfx/gun/starforge_bowgunfire.ogg" ]
+    "fire" : [ ]
   }
 }

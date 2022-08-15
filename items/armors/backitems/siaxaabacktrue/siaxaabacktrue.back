@@ -1,13 +1,15 @@
 {
   "itemName" : "starforge-siaxaabacktrue",
   "price" : 3500,
-  "inventoryIcon" : "siaxaabacktrueicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
   "description" : "Wings which inspires freedom and courage.",
   "shortdescription" : "^red;Siaxaa's Grace^white;",
   "tooltipKind" : "starforge-backitemexalted",
+  
+  "inventoryIcon" : "/items/armors/backitems/siaxaabacktrue/siaxaabacktrueicon.png",
+  "itemBackground" : "/interface/inventory/starforge-exalted.png",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
@@ -31,5 +33,7 @@
       "stat" : "breathProtection",
       "amount" : 1.0
     }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

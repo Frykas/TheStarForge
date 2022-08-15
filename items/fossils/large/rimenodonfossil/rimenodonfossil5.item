@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-rimenodonfossil5",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Rimenodon Tail",
+  "description" : "A fossilised Rimenodon tail.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "rimenodonfossil5icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/rimenodonfossil/rimenodonfossil5.png",
+  "displayoffset" :[-2.5, -0.4],
+
+  "fossilSetName" : "rimenodon",
+  "setIndex" : 5,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

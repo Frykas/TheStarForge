@@ -32,8 +32,8 @@
         {"weight" : 0.30, "item" : "starforge-yukaipearl"}
       ],
 	        "poolRounds" : [
-        [0.2, 2],
-        [0.6, 3],
+        [0.2, 3],
+        [0.6, 5],
         [0.2, 4]
       ],
       "allowDuplication" : false
@@ -51,6 +51,60 @@
         [0.7, 2],
         [0.1, 3]
       ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-yukaiashenwitchTreasure" : [
+    [1, {
+      "fill" : [
+        {"weight" : 0.7, "pool" : "money"},
+		{"weight" : 1, "item" : "starforge-yukaitear"},
+        {"weight" : 1, "item" : ["starforge-yukaipearl", 2]}
+      ],
+	  "pool" : [
+		{"weight" : 1, "item" : "starforge-tidalremnantmicroformer"}
+	],
+      "poolRounds" : [
+        [0.25, 1],
+        [0.75, 0]
+      ],
+      "allowDuplication" : false
+    }]
+],
+
+   "starforge-yukaieverfrostcache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-yukaieverfrostwitchhead"},
+        {"weight" : 1, "item" : "starforge-yukaieverfrostwitchchest"},
+        {"weight" : 1, "item" : "starforge-yukaieverfrostwitchpants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-yukaiashencache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-yukaiashenwitchhead"},
+        {"weight" : 1, "item" : "starforge-yukaiashenwitchchest"},
+        {"weight" : 1, "item" : "starforge-yukaiashenwitchpants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-yukaikabutocache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-yukaikabutohead"},
+        {"weight" : 1, "item" : "starforge-yukaikabutochest"},
+        {"weight" : 1, "item" : "starforge-yukaikabutopants"}
+      ],  
+	       "poolRounds" : 3,
       "allowDuplication" : false
     }]
   ]

@@ -1,0 +1,48 @@
+{
+  "objectName" : "starforge-yukailightstick2",
+  "colonyTags" : ["bone", "light"],
+  "rarity" : "uncommon",
+
+  "printable" : true,
+  "description" : "A glowing yukai crystal on a long bone.",
+  "shortdescription" : "Yukai Light Stick",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 150,
+
+  "apexDescription" : "That glowing crystal looks expensive.",
+  "avianDescription" : "They use crystals too!",
+  "floranDescription" : "Floran like ssssshiny lightsss...",
+  "glitchDescription" : "Confused. How is this crystal producing light?",
+  "humanDescription" : "I know the Yukai uses crystals on a lot of things, but as a lamp really?",
+  "hylotlDescription" : "The glow emitted by this Yukai crystal is very soothing.",
+  "novakidDescription" : "Glowin' crystal on a stick? Prolly worth money if ya ask me.",
+
+  
+  "lightColor" : [162, 111, 188],
+
+  "flickerPeriod" : 0.7,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "yukailightstick2icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "yukailightstick2.png",
+      "imageLayers" : [ { "image" : "yukailightstick2.png" }, { "image" : "yukailightstick2fullbright.png", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }

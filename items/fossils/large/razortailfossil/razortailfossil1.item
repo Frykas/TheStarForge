@@ -1,0 +1,30 @@
+{
+  "itemName" : "starforge-razortailfossil1",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Razortail Skull",
+  "description" : "A fossilised Razortail skull.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "razortailfossil1icon.png",
+
+  "completeSetDescriptions" : {
+    "price" : 10000,
+    "shortdescription" : "Razortail Fossil",
+    "description" : "A super predator from the Realm of the Tide, summoned and hunted by the Yukai for centuries."
+  },
+
+  "displayImage" : "/objects/fossils/largefossils/razortailfossil/razortailfossil1.png",
+  "displayoffset" :[2.0, -0.4],
+
+  "fossilSetName" : "razortail",
+  "setIndex" : 1,
+  "setCount" : 5,
+  "setCollectables" : { "fossils" : "razortail" },
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

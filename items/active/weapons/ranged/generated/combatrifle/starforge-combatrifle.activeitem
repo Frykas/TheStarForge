@@ -1,0 +1,101 @@
+{
+  "itemName" : "starforge-combatrifle",
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A fully automatic, military grade rifle.",
+  "shortdescription" : "Combat Rifle",
+  "tooltipKind" : "starforge-combatrifle",
+  "category" : "Combat Rifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","combatrifle", "upgradeableWeapon"],
+  "level" : 1,
+
+  "animation" : "/items/active/weapons/ranged/generated/combatrifle/combatrifle.animation",
+  "animationParts" : { },
+  "animationCustom" : { },
+  "baseOffset" : [0.375, 0.25],
+  "muzzleOffset" : [2.25, 0.625],
+
+  "scripts" : ["/items/active/weapons/ranged/generated/combatrifle/starforge-combatrifle.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
+    "class" : "StarforgeGunFire",
+
+    "fireTime" : 0.2,
+    "baseDps" : 10,
+    "energyUsage" : 30,
+    "inaccuracy" : 0.02,
+
+    "fireType" : "auto",
+
+    "projectileCount" : 1,
+    "projectileType" : "standardbullet",
+    "projectileParameters" : {
+      "knockbackRange" : [4, 8]
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  "fireSounds" : [ 
+    "/sfx/gun/starforge-unboundrifle.ogg",
+	"/sfx/gun/starforge-assaultriflefire1.ogg",
+	"/sfx/gun/starforge-minigunfire.ogg",
+	"/sfx/gun/starforge-yukaiplasma.ogg",
+	"/sfx/gun/starforge-ar1.ogg",
+	"/sfx/weapon/starforge-energymelee.ogg"
+  ],
+
+  "builder" : "/items/buildscripts/starforge-buildcombatrifle.lua",
+  /* Note from C0bra5:
+   *
+   * Modified this section so that it actually represents what it actually contains
+   * while also assigning names to different configs or archetypes as they are now
+   * named as.
+   *
+   * Any archetype with a property named "unique" that is set to true will never
+   * be picked as part of the random generation allowing you to create special
+   * archetypes that can only be obtained using special means.
+   */
+  "archetypes" : {
+    "default" : {
+      "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
+      "iconParts" : [ "stock", "magazine", "attachment", "barrel", "body" ]
+    }//,
+    //"uniqueExample" : {
+    //  "unique" : true,
+    //  "generationConfig" : "/items/active/weapons/ranged/generated/combatrifle/combatrifles.config",
+    //  "iconParts" : [ "stock", "magazine", "attachment", "barrel", "body" ]
+    //}
+  }
+}

@@ -146,6 +146,7 @@
       "mass" : 1.0,
       "walkSpeed" : 4,
       "runSpeed" : 12,
+	  "gravityEnabled" : false,
 
       "airFriction" : 0,
 

@@ -1,7 +1,7 @@
 {
   "input" : [
 	{ "item" : "essence", "count" : 5000},
-	{ "item" : "starforge-impervium", "count" : 25},
+	{ "item" : "starforge-impervium", "count" : 15},
 	{ "item" : "starforge-infusedtitanium", "count" : 10}
   ],
   "output" : {

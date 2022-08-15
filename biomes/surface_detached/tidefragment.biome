@@ -1,0 +1,274 @@
+{
+  "name" : "starforge-tidefragment",
+  "friendlyName" : "Tidal Remnants",
+  "airless" : false,
+  
+    "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 4,
+        "pool" : [
+          [ 1.0, "starforge-cephaloworm" ],
+          [ 1.0, "starforge-glorbee"],
+		  [ 1.0, "starforge-glorbite"],
+		  [ 1.0, "starforge-puppertooth"]
+        ]
+      },
+      {
+        "select" : 4,
+        "pool" : [
+          [ 1.00, "starforge-tidamprey" ],
+          [ 1.00, "starforge-tidejelly" ],
+          [ 1.00, "starforge-tidejellyjuvenile" ],
+          [ 1.00, "starforge-cephalowormjuvenile" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+  
+   "musicTrack" : {
+    "day" : {
+      "tracks" : [  "/music/Tidal_Depths.ogg" ]
+    },
+    "night" : {
+      "tracks" : [  "/music/Tidal_Depths.ogg" ]
+    }
+  },
+
+  "hueShiftOptions" : [ 0 ],
+
+  "mainBlock" : "starforge-tiderock",
+  "subBlocks" : [ "ice", "starforge-tideice" ],
+  "ores" : "surface",
+  
+  "skyOptions" : [
+    {
+      // dark peachy massacre
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "dayColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "eveningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "nightColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+
+      "morningLightColor" : [40, 40, 80],
+      "dayLightColor" : [40, 40, 80],
+      "eveningLightColor" : [40, 40, 80],
+      "nightLightColor" : [40, 40, 80]
+    }
+	],
+
+
+ "surfacePlaceables" : {
+    "grassMod" : [ "aliengrass", "snow" ],
+    "grassModDensity" : 0.6,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "starforge-tidalChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/tidetreedistribution.config:starforge-tidetreedistrib1",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "starforge-jellycaptree1" ], [1.0, "starforge-jellycaptree2" ], [1.0, "starforge-jellycaptree3" ], [1.0, "starforge-jellycaptree4" ], [1.0, "starforge-jellycaptree5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/tidetreedistribution.config:starforge-tidetreedistrib2",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "starforge-crimsonjokeytree1" ], [1.0, "starforge-crimsonjokeytree2" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "snowdrift1" ], [0.35, "snowdrift2" ], [0.35, "snowdrift3" ], [0.35, "snowdrift4" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "starforge-braincoral",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          },
+		  {
+            "name" : "starforge-mediumtiderock",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          },
+		  {
+            "name" : "starforge-tidalspike",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 3,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "starforge-smalltiderock", "starforge-tidalice", "starforge-tidalstalk" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "aliengrass" ],
+    "grassModDensity" : 0.6,
+
+    "ceilingGrassMod" : [ "veingrowth" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "starforge-tidalChest" ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "starforge-tidalremnantsmicrodungeons" ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 5,
+        "variants" : 1,
+        "distribution" : "/biomes/starforge-raremicrodungeons.config:starforge-raremicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "starforge-razortailunderground" ]
+      },
+
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "starforge-crimsonjokeytree1" ], [0.2, "starforge-crimsonjokeytree2" ], [0.2, "starforge-jellycaptree1" ], [0.2, "starforge-jellycaptree2" ], [0.2, "starforge-jellycaptree3" ], [1.0, "starforge-jellycaptree4" ], [1.0, "starforge-jellycaptree5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 5.0,
+        "variants" : 1,
+        "distribution" : "/biomes/tidetreedistribution.config:starforge-tidetreedistrib2",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.33, "starforge-jadedippedtree1" ], [0.33, "starforge-jadedippedtree2" ], [0.33, "starforge-jadedippedtree3" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "starforge-mediumtiderock",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      }
+	  
+    ]
+  }
+}

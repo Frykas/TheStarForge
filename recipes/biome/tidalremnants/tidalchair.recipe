@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "starforge-tidalfragment", "count" : 15 }
+  ],
+  "output" : { "item" : "starforge-tidalchair", "count" : 1 },
+  "groups" : [ "craftingfurniture", "decoration", "all" ]
+}

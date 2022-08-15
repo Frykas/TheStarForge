@@ -8,6 +8,6 @@
 
  "elementalType" : "physical",
 
- "primaryAbilityType" : "broadswordcombo", "primaryAbility" : { "fireTime" : 100, "baseDps" : -100, "stances": { "idle": { "armRotation": -10, "weaponRotation": 55, "allowRotate": false, "allowFlip": true } } }, "altAbilityType" : "",
+ "primaryAbilityType" : "broadswordcombo", "primaryAbility" : { "fireTime" : 600, "baseDps" : -600, "stances": { "idle": { "armRotation": -10, "weaponRotation": 55, "allowRotate": false, "allowFlip": true } } }, "altAbilityType" : "",
 
  "builder" : "/items/buildscripts/buildunrandweapon.lua" } 

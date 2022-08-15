@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "titaniumbar", "count" : 2},
+	{ "item" : "ironbar", "count" : 2}
+  ],
+  "output" : {
+    "item" : "starforge-unboundopencrate3",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundobject", "decoration" ],
+  "duration" : 0
+}
+

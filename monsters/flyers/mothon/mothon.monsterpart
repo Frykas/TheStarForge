@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-mothon",
+  "category" : "mothon",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "mothon.png"
+  }
+}

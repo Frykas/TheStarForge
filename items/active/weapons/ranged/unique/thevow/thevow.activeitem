@@ -6,8 +6,9 @@
   "description" : "A strong weapon which fires super heated rounds, capable of piercing shields. ",
   "shortdescription" : "^orange;The Vow^reset;",
   "level" : 7,
-  "tooltipKind" : "base",
-  "category" : "Hand Cannon",
+  "tooltipKind" : "starforge-uniquegun",
+  "category": "uniqueWeapon",
+  "tooltipFieldsOverride" : {"subtitle":"Hand Cannon"},
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
   
@@ -16,7 +17,8 @@
   "animation" : "thevow.animation",
     "animationParts" : {
       "middle" : "thevow.png",
-	  "muzzleFlash" : "muzzleflash.png"
+	  "muzzleFlash" : "muzzleflash.png",
+	  "flame" : ""
 	},
   "animationCustom" : {
     "sounds" : {
@@ -115,5 +117,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

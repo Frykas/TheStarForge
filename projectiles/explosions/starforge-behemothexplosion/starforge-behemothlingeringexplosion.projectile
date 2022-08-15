@@ -1,0 +1,34 @@
+{
+  "projectileName" : "starforge-behemothlingeringexplosion",
+  "image" : "starforge-behemothlingeringexplosion.png",
+  "fullbright" : true,
+  "timeToLive" : 0.4,
+  "animationCycle" : 0.4,
+  "frameNumber" : 6,
+  "physics" : "illusion",
+  "bounces" : 0,
+  "power" : 0,
+  "speed" : 0,
+  "lightColor" : [253, 209, 77],
+  "damageType" : "nodamage",
+  "damageKind" : "fireplasma",
+  
+  "scripts" : ["/projectiles/scripts/starforge-electricalprojectile.lua"],
+  
+  "lightningParameters" : {
+	"chainLightningRadius" : 30,
+	
+	"tickRate" : 0.05,
+    "damageKind" : "fireplasma",
+	"statusEffects" : ["burning"],
+	
+    "lightningConfig" : {
+      "displacement" : 1.25,
+      "minDisplacement" : 0.125,
+      "forks" : 2,
+      "forkAngleRange" : 0.3,
+      "width" : 0.9,
+	  "color" : [253, 209, 77, 200]
+    }
+  }
+}

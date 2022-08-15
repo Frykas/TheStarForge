@@ -1,0 +1,21 @@
+{
+  "name" : "starforge-braincoral",
+  "description" : "A strange coral-like rock from the tide.",
+  "shortdescription" : "Tidal Coral",
+  "floranDescription" : "Rock isss like brain. Sssquisshy too.",
+  "glitchDescription" : "Statement. A squishy rock.",
+  "shapes" : [
+    {
+      "base" : "braincoral1.png"
+    },
+	{
+      "base" : "braincoral2.png"
+    },
+	{
+      "base" : "braincoral3.png"
+    },
+	{
+      "base" : "braincoral4.png"
+    }
+  ]
+}

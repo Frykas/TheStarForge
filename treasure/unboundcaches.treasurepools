@@ -90,7 +90,105 @@
 	       "poolRounds" : 2,
       "allowDuplication" : false
     }]
+  ],
+  
+  "starforge-unboundtroopercache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundhead"},
+        {"weight" : 1, "item" : "starforge-unboundchest"},
+        {"weight" : 1, "item" : "starforge-unboundpants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-unboundsnipercache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundsniperhead"},
+        {"weight" : 1, "item" : "starforge-unboundsniperchest"},
+        {"weight" : 1, "item" : "starforge-unboundsniperpants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-unboundheavycache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundheavyhead"},
+        {"weight" : 1, "item" : "starforge-unboundheavychest"},
+        {"weight" : 1, "item" : "starforge-unboundheavypants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-unboundcommandocache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundcaptainhead"},
+		{"weight" : 1, "item" : "starforge-unboundcaptainalthead"},
+        {"weight" : 1, "item" : "starforge-unboundcaptainchest"},
+        {"weight" : 1, "item" : "starforge-unboundcaptainpants"}
+      ],  
+	       "poolRounds" : 4,
+      "allowDuplication" : false
+    }]
+  ],
+   
+   "starforge-unboundstalkercache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundstalkerhead"},
+        {"weight" : 1, "item" : "starforge-unboundstalkerchest"},
+        {"weight" : 1, "item" : "starforge-unboundstalkerpants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-unboundfortresscache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundfortresshead"},
+		{"weight" : 1, "item" : "starforge-unboundfortressalthead"},
+        {"weight" : 1, "item" : "starforge-unboundfortresschest"},
+        {"weight" : 1, "item" : "starforge-unboundfortresspants"}
+      ],  
+	       "poolRounds" : 4,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-unboundofficercache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundofficerhead"},
+        {"weight" : 1, "item" : "starforge-unboundofficerchest"},
+        {"weight" : 1, "item" : "starforge-unboundofficerpants"}
+      ],  
+	       "poolRounds" : 3,
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "starforge-unboundvanguardcache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundvanguardhead"},
+        {"weight" : 1, "item" : "starforge-unboundvanguardchest"},
+        {"weight" : 1, "item" : "starforge-unboundvanguardpants"},
+		{"weight" : 1, "item" : "starforge-unboundjumpkit"}
+      ],  
+	       "poolRounds" : 4,
+      "allowDuplication" : false
+    }]
   ]
-     
   }
   

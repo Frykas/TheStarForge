@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-ancientcephalowormaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A Cephaloworm that grew bigger and stronger with age.\"",
+  "shortdescription" : "Old Cephaloworm Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-ancientcephalowormaf" },
+
+
+  "inventoryIcon" : "ancientcephalowormicon.png",
+  "orientations" : [
+    {
+      "image" : "ancientcephalowormaf.png:<color>",
+      "imagePosition" : [-4, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "ancientcephalowormaf.png:<color>",
+      "imagePosition" : [-4, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

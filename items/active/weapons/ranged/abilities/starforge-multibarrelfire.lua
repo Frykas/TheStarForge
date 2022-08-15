@@ -11,6 +11,8 @@ function StarForgeMultiBarrelFire:init()
 
   self.cooldownTimer = self.fireTime
   
+  self.unholster = self.stances.unholsterTwirl
+  
   self.firePositions = self.muzzleOffsets
 	
   self.barrelIndex = 0
@@ -44,6 +46,11 @@ function StarForgeMultiBarrelFire:update(dt, fireMode, shiftHeld)
     elseif self.fireType == "burst" then
       self:setState(self.burst)
     end
+  end
+  
+  if self.unholster then
+    self:setState(self.unholsterTwirl)
+	self.unholster = nil
   end
 end
 
@@ -96,10 +103,34 @@ function StarForgeMultiBarrelFire:cooldown()
   end)
 end
 
+function StarForgeMultiBarrelFire:unholsterTwirl()
+  self.weapon:setStance(self.stances.unholsterTwirl)
+  self.weapon:updateAim()
+
+  animator.playSound("unholsterTwirl")
+  
+  local progress = 0
+  util.wait(self.stances.unholsterTwirl.duration, function()
+    local from = self.stances.unholsterTwirl.weaponOffset or {0,0}
+    local to = self.stances.idle.weaponOffset or {0,0}
+    self.weapon.weaponOffset = {util.interpolateHalfSigmoid(progress, from[1], to[1]), util.interpolateHalfSigmoid(progress, from[2], to[2])}
+	
+	self.weapon.relativeWeaponRotation = util.toRadians(util.interpolateHalfSigmoid(progress, self.stances.unholsterTwirl.weaponRotation, self.stances.idle.weaponRotation))
+	self.weapon.relativeArmRotation = util.toRadians(util.interpolateHalfSigmoid(progress, self.stances.unholsterTwirl.armRotation, self.stances.idle.armRotation))
+
+	progress = math.min(1.0, progress + (self.dt / self.stances.unholsterTwirl.duration))
+  end)
+  
+  return
+end
+
 function StarForgeMultiBarrelFire:muzzleFlash()
-  animator.setPartTag("muzzleFlash", "variant", math.random(1, 3))
   animator.setAnimationState("firing", "fire")
   animator.burstParticleEmitter("muzzleFlash")
+  
+  --Add normal pitch variance to shots
+  local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2))
+  animator.setSoundPitch("fire", pitchVariance)
   animator.playSound("fire")
 
   animator.setLightActive("muzzleFlash", true)
@@ -144,6 +175,14 @@ function StarForgeMultiBarrelFire:fireProjectile(projectileType, projectileParam
         false,
         params
       )
+	
+	if self.muzzleFlashKeys then
+	  local key = self.muzzleFlashKeys[projectileType]
+      animator.setPartTag("muzzleFlash" .. i, "muzzleFlashKey", key)
+	  animator.setPartTag("muzzleFlash" .. i, "variant", math.random(1, 3))
+	else
+	  animator.setPartTag("muzzleFlash", "variant", math.random(1, 3))
+    end
   end
   
   self.barrelIndex = self.barrelIndex + (self.fireAllProjectileCount and self.projectileCount or 1)

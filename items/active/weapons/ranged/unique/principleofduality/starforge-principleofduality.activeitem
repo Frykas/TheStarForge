@@ -8,8 +8,8 @@
   "shortdescription" : "^#b4f5c3;Principle of Duality^reset;",
   "level" : 7,
   "fixedLevel" : false,
-  "tooltipKind" : "base",
-  "category" : "Rocket Launcher",
+  "tooltipKind" : "starforge-uniquegun",
+  "category" : "rocketLauncher",
   "itemTags" : ["weapon", "ranged", "rocketlauncher"],
   "twoHanded" : true,
   
@@ -87,7 +87,7 @@
   "baseOffset" : [0.0, 0.375],
   "muzzleOffset" : [2.0, 0.25],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
 
   "elementalType" : "physical",
 

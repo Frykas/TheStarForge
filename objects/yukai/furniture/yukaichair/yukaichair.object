@@ -1,0 +1,39 @@
+{
+  "objectName" : "starforge-yukaichair",
+  "colonyTags" : ["misc","hylotl"],
+  "printable" : true,
+  "rarity" : "Uncommon",
+  "description" : "A chair made out of bones and cloth.",
+  "shortdescription" : "Yukai Chair",
+  "race" : "hylotl",
+  "category" : "furniture",
+  "price" : 60,
+
+  "apexDescription" : "I'm impressed this chair doesn't break as soon as you sit on it.",
+  "avianDescription" : "A questionable chair.",
+  "floranDescription" : "Floran sssit on chair and think about hunting.",
+  "glitchDescription" : "Perplexed. This chair does not seem very comfortable.",
+  "humanDescription" : "That chair does not look very sturdy. I wouldn't sit on it for too long.",
+  "hylotlDescription" : "A chair made out of bones. Primitive.",
+  "novakidDescription" : "I don't really like this chair.",
+
+  "inventoryIcon" : "yukaichairicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "yukaichair.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [2, 22]
+
+}

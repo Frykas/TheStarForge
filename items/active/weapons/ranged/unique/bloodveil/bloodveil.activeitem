@@ -1,0 +1,51 @@
+{
+  "itemName" : "starforge-bloodveil",
+  "price" : 2500,
+  "inventoryIcon" : "bloodveilicon.png",
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "tooltipFields" : {"subtitle":"Cursed Bow"},
+  "description" : "Manifests your life essence into a powerful arrow.",
+  "shortdescription" : "^orange;Bloodveil^reset;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 7,
+
+  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animationParts" : {
+    "bow" : "bloodveil.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [0.0, 0]
+    }}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "projectileType" : "starforge-veilcrystal",
+    "powerProjectileType" : "starforge-veilcrystalperfect",
+    "projectileParameters" : {
+      "power" : 6.5
+    }
+  },
+
+  "altAbilityType" : "zenshot",
+  "altAbility" : {
+
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

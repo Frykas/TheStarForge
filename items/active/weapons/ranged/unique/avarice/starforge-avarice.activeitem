@@ -7,8 +7,9 @@
   "description" : "A heavy underslung bowgun, capable of firing bolts at incredibly high speeds.",
   "shortdescription" : "^#b4f5c3;Hunter's Avarice^reset;",
   "level" : 7,
-  "tooltipKind" : "base",
-  "category" : "Bowgun",
+  "tooltipKind" : "starforge-uniquegun",
+  "category": "uniqueWeapon",
+  "tooltipFieldsOverride" : {"subtitle":"Bowgun"},
   "itemTags" : ["weapon","ranged","bowgun"],
   "twoHanded" : true,
 
@@ -19,7 +20,9 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ]
+      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ],
+      "fire" : [ "/sfx/gun/starforge-bowgunfire.ogg" ],
+      "altFire" : [ "/sfx/gun/starforge-bowgunaltfire.ogg" ]
     },
     "particleEmitters" : {
       "ammoIndicator" : {
@@ -44,8 +47,8 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-bowgunfire.lua"],
-    "class" : "StarForgeBowGunFire",
+    "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
+    "class" : "StarforgeGunFire",
 
     "fireTime" : 0.625,
     "baseDps" : 12,
@@ -57,6 +60,7 @@
     "burstCount" : 3,
     "burstTime" : 0.2875,
     "fireType" : "burst",
+	"fireSound" : "fire",
 	
 	"animatedFire" : true,
 
@@ -122,6 +126,7 @@
 	  "projectileCount" : 1,
 	  
 	  "fireType" : "auto",
+	  "fireSound" : "altFire",
 	
       "baseDps" : 12.0,	
       "fireTime" : 2,
@@ -131,15 +136,13 @@
 
     "stances" : {
       "load" : {
+        "duration" : 0.6,
 		"frontArmFrame": "idle.3",
 		"backArmFrame": "fall.1",
         "aimAngle" : 0,
         "armRotation" : -7,
         "weaponRotation" : 60,
-        "weaponAngularVelocity" : -150,
-        "armAngularVelocity" : 100,
         "twoHanded" : true,
-        "duration" : 0.4,
   
         "allowRotate" : false,
         "allowFlip" : true
@@ -147,5 +150,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

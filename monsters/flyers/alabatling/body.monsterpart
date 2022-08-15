@@ -1,0 +1,9 @@
+{
+  "name" : "alabatling",
+  "category" : "alabatling",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "alabatling.png"
+  }
+}

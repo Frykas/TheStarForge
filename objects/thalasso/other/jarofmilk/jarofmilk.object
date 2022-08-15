@@ -1,0 +1,51 @@
+{
+  "objectName" : "starforge-jarofmilk",
+  "colonyTags" : ["pretty", "hylotl"],
+  "rarity" : "common",
+  "printable" : true,
+  "description" : "A creamy delite.",
+  "shortdescription" : "Jar of Milk",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 1,
+
+  "apexDescription" : "Why would you drink this?",
+  "avianDescription" : "Why is it glowing?!",
+  "floranDescription" : "Floran can't drink thisss...",
+  "glitchDescription" : "Curious. Why is... this here...",
+  "humanDescription" : "Mmmm milky.",
+  "hylotlDescription" : "It makes me sad to milk.",
+  "novakidDescription" : "Thickenned milk!",
+
+  "inventoryIcon" : "jarofmilktiled.png",
+  "orientations" : [
+    {
+      "dualImage" : "jarofmilktiled.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/timegated/starforge-timegatedactive.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "jarofmilk.animation",
+  "animationParts" : {
+    "object" : "jarofmilk.png",
+	"objectFullbright" : "jarofmilkfullbright.png"
+  },
+  
+  //Time Config
+  "dayType" : "weekday", // "weekday" or "year"
+  //"startEndYearDays" : [90, 90],	//only active on March 31st
+  
+  //0 - 6, where 0 is sunday, 6 is saturday
+  //Can be used in tandem with the year days, making it so its only active on fridays, during that time period, given 
+  "startEndWeekdays" : [6, 0], // - only the weekend
+  
+  "interactiveWhenActive" : false
+}

@@ -5,8 +5,9 @@
   "rarity": "Essential",
   "description": "A massive tank cannon, repurposed & made portable.",
   "shortdescription": "^orange;The Centurion^reset;",
-  "tooltipKind": "base",
-  "category": "Portable Cannon",
+  "tooltipKind": "starforge-uniquegun",
+  "category": "uniqueWeapon",
+  "tooltipFieldsOverride" : {"subtitle":"Tank Cannon"},
   "twoHanded": true,
   "level": 7,
   "itemTags": ["weapon","ranged","cannon"],
@@ -97,5 +98,5 @@
       }
     }
   },
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

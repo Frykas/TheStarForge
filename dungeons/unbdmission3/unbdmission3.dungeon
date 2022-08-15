@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "starforge-unbdmission3",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "unbdmission3" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true,
+	"persistent" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "unbdmission3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "unbdmission3.json" ]
+    }
+  ]
+}

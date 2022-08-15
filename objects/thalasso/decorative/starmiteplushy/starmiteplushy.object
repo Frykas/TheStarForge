@@ -1,0 +1,31 @@
+{
+  "objectName" : "starforge-starmiteplushie",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 90,
+  "description" : "A Starmite plushie. Very good for cuddles!",
+  "shortdescription" : "Starmite Plushie",
+
+  "apexDescription" : "An adorable Starmite doll.",
+  "avianDescription" : "A cute little monster toy.",
+  "floranDescription" : "Space doggy plushie!",
+  "glitchDescription" : "Appreciative. A cuddly little monster.",
+  "humanDescription" : "Cool, I want one of these!",
+  "hylotlDescription" : "Squee! I need this plushie for my collection!",
+  "novakidDescription" : "Ain't sure what the point of this thing is.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "starmiteplushy.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

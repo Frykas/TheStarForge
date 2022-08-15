@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-unboundcommandopack",
+  "price" : 1000,
+  "level" : 1,
+  "maxStack" : 1000,
+  "rarity" : "legendary",
+  "category" : "Armor Pack",
+  "description" : "An Unbound pack, containing commando armor, along an alternative helmet.",
+  "shortdescription" : "Commando Pack",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "commandoicon.png",
+  "animation" : "unboundcommandopack.animation",
+  "animationCustom" : {},
+  "scripts" : ["unboundarmorpack.lua"],
+
+  "fireTime" : 0.5,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "starforge-unboundcommandocache",
+    "level" : 1
+  }
+}
