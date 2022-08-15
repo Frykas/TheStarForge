@@ -19,7 +19,7 @@
   },
   "printable" : false,
   "description" : "A crafting station that will help me craft Unbound weapon and armors.",
-  "shortdescription" : "^#686F5D;UNBD^reset; Equipment Station",
+  "shortdescription" : "^#686F5D;UNBD ^orange;Equipment Station^reset;",
   "race" : "apex",
   "category" : "crafting",
   "price" : 1250,
