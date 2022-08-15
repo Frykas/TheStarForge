@@ -3,8 +3,9 @@
   "price" : 900,
   "rarity" : "Essential",
   "category" : "craftingMaterial",
+  "tooltipKind" : "fossil",
   "inventoryIcon" : "cerulium.png",
   "description" : "An incredible alloy capable of withstanding shocks better than most other materials. It is cold to the touch.",
-  "shortdescription" : "^orange;Shockward Cerulium^white;",
-  "itemTags" : ["starforge-starforge", "reagent" ]
+  "shortdescription" : "^orange;Shockward Cerulium^reset;",
+  "itemTags" : ["starforge-starforge", "reagent"]
 }
