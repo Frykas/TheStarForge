@@ -18,7 +18,7 @@
   },
   "printable" : false,
   "description" : "A crafting station that will help me craft Unbound furniture and tiles!",
-  "shortdescription" : "^#686F5D;UNBD^reset; Workbench",
+  "shortdescription" : "^#686F5D;UNBD ^orange;Workbench^reset;",
   "race" : "apex",
   "category" : "crafting",
   "price" : 1250,
