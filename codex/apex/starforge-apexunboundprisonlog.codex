@@ -11,13 +11,12 @@
  PRISONERS 12 - 15
 REBEL GROUP - DESIGNATED TARGET 4546B
 
-- Assault against Unbound troops and citizen.
-- Conspiracy.
-- Disturbing the peace.
-- Vandalism.
-- Homicide.
+- Assault against Unbound troops and citizen
+- Conspiracy
+- Disturbing the peace
+- Vandalism
+- Homicide
 To be held in FLOOR 1 until a decision is taken regarding their fate.
-
 ",
 
 " PRISONERS 11 - 14
@@ -26,7 +25,6 @@ MINIKNOG AGENTS - DESIGNATED TARGET MINI0
 - Terrorism against Unbound facility
 - Illegal experiments
 To be held in FLOOR 1 until a decision is taken regarding their fate.
-
 ",
 
 " PRISONER 13
@@ -35,12 +33,7 @@ SUSPECT S - DESIGNATED TARGET HEMOGOBLIN1
 - Triple homicide
 - Impersonation
 To be held in FLOOR 1 until a decision is taken regarding their fate.
-
 "
-
-
-
-
 
   ],
     "itemConfig" : {

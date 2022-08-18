@@ -2,7 +2,7 @@
   "id" : "starforge-katahelstory1",
   "species" : "glitch",
   "title" : "^#FFBC47;Lord of the Glitch^reset; - I",
-  "description" : "The story of a past Legend, now gone. ^orange;Can be traded for blueprints^reset;.",
+  "description" : "The story of a past legend, now gone. ^orange;Can be traded for blueprints^reset;.",
   "icon" : "starforge-katahelcover1.png",
   "contentPages" : [
 
@@ -10,11 +10,11 @@
 
 My name is Rondin. Just like anyone else, there are things I've done in my life that I'm not proud of. I helped a terrible being become stronger than it ever was, I developed weapons that killed many, many good people. His name was KATAHEL, and it was when I was at the lowest point of my life that he presented himself to me.",
 
-" *I heard of what the others did to you, of what happened* he said to me. At first, he was like a savior. But who he was I didn't know at the time. Lord Katahel, born on planet SOWRT IV in a noble Glitch family that owned quite a bit of land. Just like me, something happened and he somehow Awakened, I still have no idea to this day what caused it. ",
+" \"I heard of what the others did to you, of what happened,\" he said to me. At first, he was like a savior. But who he was I didn't know at the time. Lord Katahel, born on planet SOWRT IV in a noble Glitch family that owned quite a bit of land. Just like me, something happened and he somehow Awakened, I still have no idea to this day what caused it.",
 
-"He presented himself as a simple Glitch Lord, looking for someone with knowledge considered *atypical* for other Glitches. I, of course accepted considering I had nowhere to go. I became a *Black Scholar* working directly under him. At first he seemed distant, hesitant. But the more technology I developped, the harder I worked, the more he trusted me.",
+"He presented himself as a simple Glitch Lord, looking for someone with knowledge considered 'atypical' for other Glitch. I, of course, accepted, considering I had nowhere to go. I became a 'Black Scholar' working directly under him. At first he seemed distant, hesitant. But the more technology I developed, the harder I worked, the more he trusted me.",
 
-"Until one day, and I'll remember it forever. The day he took me in the deepest parts of his castle, where he showed me the ruins of an Ancient, now gone civilization. That was my first time laying my eyes on a ^magenta;Starforge^reset;."
+"Until one day... I'll remember it forever. The day he took me in the deepest parts of his castle, where he showed me the ruins of an ancient, long gone civilization. That was my first time laying my eyes on a ^magenta;Starforge^reset;."
 
   ],
     "itemConfig" : {
