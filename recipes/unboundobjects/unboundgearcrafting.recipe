@@ -1,8 +1,0 @@
-{
-  "input" : [
-	  ["titaniumbar",8]
-  ],
-  "output" : "starforge-unboundgearcrafting",
-  "groups" : [ "starforge-unboundobject", "beds" ],
-  "duration" : 0
-}
