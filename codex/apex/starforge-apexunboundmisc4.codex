@@ -2,17 +2,15 @@
   "id" : "starforge-apexunboundmisc4",
   "species" : "apex",
   "title" : "Sudden Change",
-  "description" : "A Vanguard data pad, containing confidential information.",
+  "description" : "A Vanguard data pad containing confidential information.",
   "icon" : "starforge-vanguarddatapad.png",
   "contentPages" : [
 
 "Status update to all VANGUARD units.
 
-VANGUARD leader Silmar gave us our new primary targets. You shall direct your assigned squads towards the new coordinates marked on your star map. Current top priority is :
-- Resource gathering, this concerns ores, essence, and other valuables. The Starforges are going strong, and we need as much resources as possible. Where you get them from is of little concern.
+VANGUARD leader Silmar gave us our new primary targets. You shall direct your assigned squads towards the new coordinates marked on your star map. Current top priority is:
+- Resource gathering. This concerns ores, essence, and other valuables. The Starforges are going strong, and we need as many resources as possible. Where you get them from is of little concern.
 Glory to the Unbound."
-
-
 
   ],
     "itemConfig" : {

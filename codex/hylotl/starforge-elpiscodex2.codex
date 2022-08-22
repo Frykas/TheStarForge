@@ -1,6 +1,6 @@
 {
 	"id": "starforge-elpiscodex2",
-	"title": "CONFIDENTIAL : Raid Reports",
+	"title": "CONFIDENTIAL: Raid Reports",
 	"description": "A confidential folder containing reports of Elpis agents.",
 	"icon": "starforge-elpisfolder.png",
 	"contentPages": [
@@ -13,7 +13,7 @@
 		
 		"This makes perfect sense to me, Xenotox is a company known to be quite aggressive against competitors on the same market, and ever since they started making weapon parts, we started getting attacked by bandits. Elpis is proud of its elemental knowledge, stopping our production of poison elemental weapons is clearly out of the question.",
 		
-		"The best course of action to take here is to increase the security of every Elpis facility. We should hire more people into our security branch and arm guards to protect our employees and facilities. We should also warn our workers to be warry of Xenotox spies, and to be careful around suspicious individuals."
+		"The best course of action to take here is to increase the security of every Elpis facility. We should hire more people into our security branch and arm guards to protect our employees and facilities. We should also warn our workers to be warry of Xenotox spies and to be careful around suspicious individuals."
 
 	],
 	"itemConfig": {
