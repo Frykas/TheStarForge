@@ -7,7 +7,7 @@
 
   "category" : "storage",
   "price" : 125,
-  "description" : "A regular Unbound crate, reinforced to protect whatever is inside. ",
+  "description" : "A regular Unbound crate, reinforced to protect whatever is inside.",
   "shortdescription" : "Unbound Crate",
   "race" : "apex",
   "health" : 1.5,

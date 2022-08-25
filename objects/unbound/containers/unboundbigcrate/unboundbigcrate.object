@@ -7,7 +7,7 @@
 
   "category" : "storage",
   "price" : 200,
-  "description" : "A large Unbound crate, reinforced to protect whatever is inside. ",
+  "description" : "A large Unbound crate, reinforced to protect whatever is inside.",
   "shortdescription" : "Large Unbound Crate",
   "race" : "apex",
   "health" : 1.5,
