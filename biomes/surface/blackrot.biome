@@ -167,7 +167,7 @@
   },
 
   "surfacePlaceables" : {
-    "grassMod" : [ "grass" ],
+    "grassMod" : [ "starforge-blackrotgrass" ],
     "grassModDensity" : 0.9,
 
     "ceilingGrassMod" : [ "undergrowth" ],
