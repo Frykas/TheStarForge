@@ -1,12 +1,5 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":50,
  "infinite":false,
  "layers":[
@@ -26,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztnOFtxCAMRvO7E9xYHaOrVZfboivcDh2jjXpIFoUEO7Yx5HuS1VOVAIF3QAi5ZQEAAAAAAAAAAAAA0fl88w8ANqgTd+WAe+AIDye+XgFADvwDPYF\/oCfwD\/QE\/oGewD\/QE+t1keSeZh7P3\/hmxFOQx+11Ho3b2YKDf1D\/8vrWWhccbV16K8daKMv6KiPH\/Vqk670tsa7dm7227\/FcJEqsjf+zyMcqItK7fNy84V9sB98XXn6j+vextEfU779X3VPXrUn+0XlFlO9GiSv75wX177H8xUbLPFVK6tc5HvbAc\/y9Kp79X2Kt5Jk7Tf3U3v9Co7aeIfVPcv99VSL5VyJvH+15bq0cq8ANiUvwjzf+aiDxTzJn3AuaHvzrR6T+b2\/8lfhQopReBP84kc8V8jX5UcMLyf3HrP7R87TaKR3HuQ\/fuzfXSKslD2tK6y+t8\/NVsYwl\/\/K+xNM\/beBfGe76szVR+j9t4N8YWPlntU5Ey5P31zT\/UeNqtPoXLY6u52z7ejoC\/2z8o+PL2TLmY9XR9YwE\/NPdz0n906pTmh78mweL67aqzzzdvfnfSMC\/+Gm2pj1iO17ZP9Af+Ad6Av\/GpDT\/GxH4NzepbTXeC7T+DTJroj1\/mx2Nte6Z3oE7u\/9A87vHSU+Sd+s5nONSXWjtv2rxtuaftpeeeO6\/aknv6Nm4pK5bz5EcZw3Np7Yv1HO\/qDZn959qBPyrc1X\/SqS60Nx\/v71jwEmP8yyOW17JcRuW978pnzv5W5oXbf1FipHwfP8ovdOSRynto7wlHJWPc1yP\/m9GJONvyR\/JHoEH+ezhnybwT4ee759Th0f1z2p\/a77mMBvS39+woiXtSO3AnXucjdnA+vN54B4AY\/ADRPrCGg==",
+         "data":"eJztnO1xgzAMhsnfTpCxOkZX64Vs0RW6Q8doaXFOdQxYQpJleJ87XZscyHw82MYxDAMAAAAAAAAAAAAAiM77i38AMEGduCkH3ANbeDjxMQcAOfAPtAT+gZbAP9AS+AdaAv9AS6zHRZJ7mmV8\/sQXIz4FZVzn9Whc9244eIL6lx9vrXFB1rj0pTI41OacY9qOsXCtjPM2ctxfirS\/18GnDYrKWv3X4neRKDFWfmdRjlWIr19D1vzzLJ+7PPzb6aARr9k54pzPFkj9exvqo+X+reF17KnrXv7RfkX1tdGAM\/vnBfXvPvzFRE0\/VUqq1zketsCz\/T0rnvVfYqRlEnKnqZ\/a819oLI1nSP2T3H+flUj+lcjPj0o\/N8u\/Np4h8Y8D\/OO1vxpI\/JP0GdeC5oN\/7YhU\/621vxIfSpTyRfCPE3lfIR+T7zW8xv4k9x9H9Y+uV32eKvNx7sPX7s01ctWUYU1p\/KW2fz4qbmPJv7wu8fRPG\/hXZnP8OW\/\/jevjKPWfNvBPyEH8sxonotuT19e0\/F6jOUH9ixZb+7P3\/Ho6EtI\/p7kQlv7R9mXvNuZt1db+9ERI\/+hnQ9J+a87npP5pHVOaD\/4Z0sg\/i5zWedf6fz0B\/+LnrM0d5jwyOLN\/oD0h\/Qs4FxvYENI\/+hkUKfX\/egT+HZt0bjWeC7R+B5k10X5\/OzoaY92uz8AZs3f+gea1x8knKbt2Hc5y6Vhozb+q8XbJP20vPfGcf1WTb+u3ccmxrl1Hspw1j3Iu2bxQEo\/vO2Tv\/FONgH\/LnNW\/EulYaM6\/n54x4OT7\/S2O8X4MzvZKlpuwvP9N5dzI31K\/aKovUvSE5\/NH6ZmWPP7l3nCJ+46WUo6l4CznXv8dFEn7W\/JHMkfgTv738E8z4J8OLZ8\/pw736p\/V\/NZ8zOFoSN+\/YUVN7kjngdv32BtHg\/v+IfAM3AOgD74BFRLC5g==",
          "encoding":"base64",
          "height":50,
          "id":2,
@@ -47,17 +40,16 @@
                  "height":16,
                  "id":1080,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -69,17 +61,16 @@
                  "height":8,
                  "id":1082,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -91,17 +82,16 @@
                  "height":8,
                  "id":1083,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -113,17 +103,16 @@
                  "height":16,
                  "id":1084,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -135,17 +124,16 @@
                  "height":32,
                  "id":1087,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -157,17 +145,16 @@
                  "height":32,
                  "id":1088,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -179,17 +166,16 @@
                  "height":8,
                  "id":1091,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -201,17 +187,16 @@
                  "height":16,
                  "id":1093,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -223,17 +208,16 @@
                  "height":24,
                  "id":1097,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -245,17 +229,16 @@
                  "height":16,
                  "id":1098,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -267,17 +250,16 @@
                  "height":8,
                  "id":1099,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"heavypipe"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"7",
+                     "front":"heavypipe"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -289,17 +271,16 @@
                  "height":8,
                  "id":1100,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"heavypipe"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"7",
+                     "front":"heavypipe"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -311,17 +292,16 @@
                  "height":8,
                  "id":1101,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"heavypipe"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"7",
+                     "front":"heavypipe"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -333,17 +313,16 @@
                  "height":8,
                  "id":1102,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"heavypipe"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"7",
+                     "front":"heavypipe"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -355,17 +334,16 @@
                  "height":16,
                  "id":1103,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"heavypipe"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"7",
+                     "front":"heavypipe"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -377,17 +355,16 @@
                  "height":8,
                  "id":1104,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"heavypipe"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"7",
+                     "front":"heavypipe"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -399,17 +376,16 @@
                  "height":8,
                  "id":1105,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"heavypipe"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"7",
+                     "front":"heavypipe"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -421,17 +397,16 @@
                  "height":8,
                  "id":1106,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"heavypipe"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"7",
+                     "front":"heavypipe"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -443,17 +418,16 @@
                  "height":16,
                  "id":1150,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }],
+                 "properties":
+                    {
+                     "back":"starforge-unboundwallpanel",
+                     "colorVariant":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -465,17 +439,16 @@
                  "height":32,
                  "id":1151,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }],
+                 "properties":
+                    {
+                     "back":"starforge-unboundwallpanel",
+                     "colorVariant":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -487,17 +460,16 @@
                  "height":48,
                  "id":1152,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }],
+                 "properties":
+                    {
+                     "back":"starforge-unboundwallpanel",
+                     "colorVariant":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -509,17 +481,16 @@
                  "height":8,
                  "id":1153,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }],
+                 "properties":
+                    {
+                     "back":"starforge-unboundwallpanel",
+                     "colorVariant":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -531,17 +502,16 @@
                  "height":8,
                  "id":1154,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }],
+                 "properties":
+                    {
+                     "back":"starforge-unboundwallpanel",
+                     "colorVariant":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -553,17 +523,16 @@
                  "height":40,
                  "id":1155,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }],
+                 "properties":
+                    {
+                     "back":"starforge-unboundwallpanel",
+                     "colorVariant":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -575,17 +544,16 @@
                  "height":40,
                  "id":1156,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }],
+                 "properties":
+                    {
+                     "back":"starforge-unboundwallpanel",
+                     "colorVariant":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -597,17 +565,16 @@
                  "height":32,
                  "id":1157,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"pressuriseddurasteel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
+                 "properties":
+                    {
+                     "back":"pressuriseddurasteel",
+                     "colorVariant":"7"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -619,17 +586,16 @@
                  "height":8,
                  "id":1158,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"pressuriseddurasteel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
+                 "properties":
+                    {
+                     "back":"pressuriseddurasteel",
+                     "colorVariant":"7"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -641,17 +607,16 @@
                  "height":8,
                  "id":1159,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"pressuriseddurasteel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
+                 "properties":
+                    {
+                     "back":"pressuriseddurasteel",
+                     "colorVariant":"7"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -663,17 +628,16 @@
                  "height":8,
                  "id":1160,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"pressuriseddurasteel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
+                 "properties":
+                    {
+                     "back":"pressuriseddurasteel",
+                     "colorVariant":"7"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -685,17 +649,16 @@
                  "height":32,
                  "id":1164,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"pressuriseddurasteel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
+                 "properties":
+                    {
+                     "back":"pressuriseddurasteel",
+                     "colorVariant":"7"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -707,17 +670,16 @@
                  "height":32,
                  "id":1165,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"back",
-                         "type":"string",
-                         "value":"pressuriseddurasteel"
-                        }, 
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"7"
-                        }],
+                 "properties":
+                    {
+                     "back":"pressuriseddurasteel",
+                     "colorVariant":"7"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -729,17 +691,16 @@
                  "height":16,
                  "id":1166,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"4"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"starforge-unboundwallpanel"
-                        }],
+                 "properties":
+                    {
+                     "colorVariant":"4",
+                     "front":"starforge-unboundwallpanel"
+                    },
+                 "propertytypes":
+                    {
+                     "colorVariant":"string",
+                     "front":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -784,7 +745,7 @@
                  "y":384
                 }, 
                 {
-                 "gid":4578,
+                 "gid":4579,
                  "height":32,
                  "id":724,
                  "name":"",
@@ -796,7 +757,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":4791,
+                 "gid":4792,
                  "height":96,
                  "id":978,
                  "name":"",
@@ -992,12 +953,14 @@
                  "height":32,
                  "id":994,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1022,12 +985,14 @@
                  "height":16,
                  "id":996,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"chestMoney\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"chestMoney\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1340,12 +1305,14 @@
                  "height":16,
                  "id":1024,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"chestMoney\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"chestMoney\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1370,12 +1337,14 @@
                  "height":32,
                  "id":1027,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1400,12 +1369,14 @@
                  "height":16,
                  "id":1029,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"chestMoney\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"chestMoney\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1670,12 +1641,14 @@
                  "height":16,
                  "id":1058,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1852,7 +1825,7 @@
                  "y":368
                 }, 
                 {
-                 "gid":2147487913,
+                 "gid":2147487914,
                  "height":12,
                  "id":1077,
                  "name":"",
@@ -1864,7 +1837,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":4921,
+                 "gid":4922,
                  "height":16,
                  "id":1147,
                  "name":"",
@@ -2303,17 +2276,16 @@
                  "height":8,
                  "id":857,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundofficer"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundofficer"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2325,12 +2297,14 @@
                  "height":8,
                  "id":1110,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2342,12 +2316,14 @@
                  "height":8,
                  "id":1111,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2359,12 +2335,14 @@
                  "height":8,
                  "id":1116,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2376,12 +2354,14 @@
                  "height":8,
                  "id":1117,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2393,12 +2373,14 @@
                  "height":8,
                  "id":1119,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2410,12 +2392,14 @@
                  "height":8,
                  "id":1120,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2427,12 +2411,14 @@
                  "height":8,
                  "id":1121,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2444,12 +2430,14 @@
                  "height":8,
                  "id":1122,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2461,12 +2449,14 @@
                  "height":8,
                  "id":1123,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2478,17 +2468,16 @@
                  "height":8,
                  "id":1126,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundsoldier"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundsoldier"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2500,17 +2489,16 @@
                  "height":8,
                  "id":1127,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundsoldier"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundsoldier"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2522,17 +2510,16 @@
                  "height":8,
                  "id":1129,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundcaptain2"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundcaptain2"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2544,17 +2531,16 @@
                  "height":8,
                  "id":1131,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundheavy"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundheavy"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2566,17 +2552,16 @@
                  "height":8,
                  "id":1133,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundsoldier"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundsoldier"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2588,17 +2573,16 @@
                  "height":8,
                  "id":1138,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundsoldier"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundsoldier"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2610,12 +2594,14 @@
                  "height":8,
                  "id":1169,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundvanguardturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundvanguardturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2627,17 +2613,16 @@
                  "height":8,
                  "id":1197,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"apexrebelvillager"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"apexrebelvillager"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2658,7 +2643,7 @@
          "name":"wiring - locked door",
          "objects":[
                 {
-                 "gid":4438,
+                 "gid":4439,
                  "height":40,
                  "id":1145,
                  "name":"",
@@ -2690,7 +2675,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":4586,
+                 "gid":4587,
                  "height":8,
                  "id":1167,
                  "name":"",
@@ -2702,7 +2687,7 @@
                  "y":352
                 }, 
                 {
-                 "gid":4779,
+                 "gid":4780,
                  "height":16,
                  "id":1192,
                  "name":"",
@@ -2759,12 +2744,14 @@
                  "height":8,
                  "id":974,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"connector",
-                         "type":"string",
-                         "value":"hazard"
-                        }],
+                 "properties":
+                    {
+                     "connector":"hazard"
+                    },
+                 "propertytypes":
+                    {
+                     "connector":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2793,7 +2780,7 @@
  "nextobjectid":1204,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.8.4",
  "tileheight":8,
  "tilesets":[
         {
@@ -2829,35 +2816,35 @@
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }, 
         {
-         "firstgid":2824,
+         "firstgid":2825,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/decorative.json"
         }, 
         {
-         "firstgid":4265,
+         "firstgid":4266,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/human.json"
         }, 
         {
-         "firstgid":4553,
+         "firstgid":4554,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-colonytag\/station.json"
         }, 
         {
-         "firstgid":4583,
+         "firstgid":4584,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/wire.json"
         }, 
         {
-         "firstgid":4805,
+         "firstgid":4806,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/rail.json"
         }, 
         {
-         "firstgid":4809,
+         "firstgid":4810,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/railpoint.json"
         }, 
         {
-         "firstgid":4814,
+         "firstgid":4815,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/door.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":1.1,
  "width":160
 }
