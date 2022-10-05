@@ -3,7 +3,7 @@ function init()
   
   self_destinationList = "destinationScrollArea.itemList"
   self_validDestinations = {}
-  for name, config in pairs(destinationConfig) do
+  for x, config in pairs(destinationConfig.missions) do
     local valid = true
     for _, quest in pairs(config.questPrerequisites or {}) do
 	  if not player.hasCompletedQuest(quest) then
@@ -11,7 +11,7 @@ function init()
 	  end
 	end
 	if valid then
-	  self_validDestinations[name] = config
+	  self_validDestinations[x] = config
 	end
   end
   self_teleportDestination = false
@@ -45,10 +45,10 @@ end
 function populateDestinationList()
   widget.clearListItems(self_destinationList)
 
-  for name, config in pairs(self_validDestinations) do
+  for x, config in pairs(self_validDestinations) do
 	local listItem = widget.addListItem(self_destinationList)
 	widget.setText(string.format("%s.%s.destinationName", self_destinationList, listItem), config.shortDescription)
 	widget.setImage(string.format("%s.%s.destinationIcon", self_destinationList, listItem), config.icon or "/assetmissing.png")
-	widget.setData(string.format("%s.%s", self_destinationList, listItem), name)
+	widget.setData(string.format("%s.%s", self_destinationList, listItem), x)
   end
 end

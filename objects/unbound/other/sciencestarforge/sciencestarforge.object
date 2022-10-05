@@ -51,7 +51,7 @@
   "scripts" : [
     "/objects/scripts/starforge-terrorism.lua"
   ],
-  "message" : "starforge-setwaveactive",
+  "message" : "starforge-setWaveActive",
   "messageRadius" : 55,
   "messageArgs" : 1.25
 }

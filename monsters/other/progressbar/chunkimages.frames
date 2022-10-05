@@ -1,0 +1,11 @@
+{
+  "frameGrid" : {
+    "size" : [10, 10],
+    "dimensions" : [3, 2],
+
+    "names" : [
+      [ "complete", "incomplete" ],
+      [ "start", "middle", "end" ]
+    ]
+  }
+}
