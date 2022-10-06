@@ -27,9 +27,11 @@
     },
 
     "parts" : {
-      "bg" : {
+      "baseFullbright" : {
         "properties" : {
-          "centered" : false
+          "centered" : false,
+          "fullbright" : true,
+          "zLevel" : 1
         },
 
         "partStates" : {
@@ -41,23 +43,20 @@
             },
             "activate" : {
               "properties" : {
-                "image" : "<partImage>:activate.<frame>",
-                "fullbright" : true
+                "image" : "<partImage>:activate.<frame>"
               }
             },
             "active" : {
               "properties" : {
-                "image" : "<partImage>:active.<frame>",
-                "fullbright" : true
+                "image" : "<partImage>:active.<frame>"
               }
             }
           }
         }
       },
-      "fg" : {
+      "base" : {
         "properties" : {
-          "centered" : false,
-          "zLevel" : 1
+          "centered" : false
         },
 
         "partStates" : {
