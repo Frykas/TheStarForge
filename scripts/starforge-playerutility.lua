@@ -9,6 +9,17 @@ function init()
   sb.logInfo("===== STARFORGE PLAYER INITIALIZATION =====")
   sb.logInfo("Initializing general player utility script")
   
+  self.validArmourSlots = {
+    "head",
+	"headCosmetic",
+	"chest",
+	"chestCosmetic",
+	"legs",
+	"legsCosmetic",
+	"back",
+	"backCosmetic"
+  }
+  
   self.areaStatusEffects = config.getParameter("starforge-areaStatusEffects", {})
   self.statusEffectQueryRange = 100
   self.statusEffectIntervalTime = 1
@@ -16,6 +27,9 @@ function init()
   
   ---Entity Messaging Handler---
   message.setHandler("starforge-callPlayerFunction", callPlayerFunction)
+  
+  --Armour handler
+  updateArmourFunctions()
 end
 
 function callPlayerFunction(_, _, functionType, args)
@@ -44,6 +58,20 @@ function update(args)
     end
   else
 	self.statusEffectIntervalTimer = self.statusEffectIntervalTimer - script.updateDt()
+  end
+end
+
+function updateArmourFunctions()
+  for _, armourType in ipairs(self.validArmourSlots) do
+    armourName = player.equippedItem(armourType)
+	if armourName ~= nil then
+	  local itemConfig = root.itemConfig(armourName).config
+	  if itemConfig.applyFunction == "replace" then
+	    newParams = armourName.parameters
+		newParams.playerPortrait = world.entityPortrait(entity.id(), "full")
+	    player.setEquippedItem(armourType, {count = 1, name = armourName.name, parameters = newParams })
+	  end
+	end
   end
 end
 

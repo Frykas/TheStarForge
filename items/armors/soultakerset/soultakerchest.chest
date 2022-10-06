@@ -45,6 +45,11 @@
       "amount" : 8
     }
   ],
+
+  "builder" : "/items/buildscripts/starforge-buildnovakidarmour.lua",
+  "applyFunction" : "replace",
+  "alphaHex" : "FE",
+  
   "itemTags" : [ "tier7armour" ],
   
     "colorOptions" : [
