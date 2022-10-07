@@ -37,7 +37,5 @@
 
   "builder" : "/items/buildscripts/starforge-buildnovakidarmour.lua",
   "applyFunction" : "replace",
-  "alphaHex" : "FE",
-  
-  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
+  "alphaHex" : "FE"
 }
