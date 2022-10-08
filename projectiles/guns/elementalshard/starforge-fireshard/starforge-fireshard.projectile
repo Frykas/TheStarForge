@@ -26,6 +26,7 @@
   ],
   "periodicActions" : [],
   "statusEffects" : [],
+    "lightColor" : [177, 47, 8],
   "fullbright" : true,
   "damageType" : "nodamage",
   "damageKind" : "firespear",

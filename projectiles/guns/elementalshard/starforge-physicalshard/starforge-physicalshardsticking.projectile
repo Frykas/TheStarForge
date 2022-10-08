@@ -14,6 +14,7 @@
   "pointToLight" : true,
   "damageKind" : "spear",
   "statusEffects" : [ ],
+      "lightColor" : [8, 176, 158],
   "emitters" : [ ],
   "fullbright" : true,
   "flippable" : true,
