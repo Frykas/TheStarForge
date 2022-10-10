@@ -2,7 +2,7 @@
   "id" : "thalassorondinquest2",
   "title" : "^green;Fuel for the Ship",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassorondinquest1" ],
-  "text" : "Think you can bring me more ressources? The Captain should be back anytime now, and we'll need more ^orange;Liquid Erchius Fuel^reset; to refill the ship. ",
+  "text" : "Think you can bring me more resources? The Captain should be back anytime now, and we'll need more ^orange;Liquid Erchius Fuel^reset; to refill the ship. ",
   "completionText" : "Thanks again. You're a big help. As usual, here's something that could be useful to you.",
   "moneyRange" : [750, 750],
   "rewards" : [

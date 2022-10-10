@@ -32,7 +32,7 @@
         "op":"add",
         "path":"/spaceDebrisFields/-",
         "value":{
-            "velocityRange":[10,15],
+            "velocityRange":[-10,-15],
             "cellSize":4000,
             "screenBuffer":10000,
             "cellCountRange":[1,2],

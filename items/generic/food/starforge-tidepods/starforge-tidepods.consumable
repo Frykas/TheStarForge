@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-tidepods",
+  "rarity" : "uncommon",
+  "price" : 150,
+  "category" : "food",
+  "inventoryIcon" : "starforge-tidepods.png",
+  "description" : "Strange otherworldly pods from the realm of the Tide. They are a bit sour and make you feel numb.",
+  "shortdescription" : "Tide Pods",
+  "effects" : [ [
+      {
+        "effect" : "paralysis",
+        "duration" : 2
+    }
+  ] ],
+  "foodValue" : 2.5,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
