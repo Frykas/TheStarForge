@@ -1,0 +1,64 @@
+{
+  "objectName" : "starforge-wildtidepodsseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "uncommon",
+  "category" : "seed",
+  "description" : "Strange fruits from another realm? Count me in!",
+  "shortdescription" : "Tide Pods Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 65,
+  "hasObjectItem" : false,
+
+  "biomePlaced" : true,
+
+  "apexDescription" : "While they look tempting, I better be careful. Don't know what could happen.",
+  "avianDescription" : "I've never tried seeds from another realm. Maybe they taste good?",
+  "floranDescription" : "Floran ssshouldn't tassste it. Bad idea.",
+  "glitchDescription" : "Curious. I have never seen such fruits. They may be dangerous.",
+  "humanDescription" : "I feel like eating one of those could lead to some unfortunate events.",
+  "hylotlDescription" : "A hazardous fruit from the realm of the Tide. It is said that you shouldn't eat them uncooked.",
+  "novakidDescription" : "Probably ain't worth eatin'.",
+
+  "inventoryIcon" : "starforge-tidepodsseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "starforge-tidepodsseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [280, 320]
+    },
+    {
+      "duration" : [280, 320]
+    },
+    {
+      "alts" : 5,
+      "duration" : [1170, 1230]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "starforge-tidepodsHarvest",
+      "resetToStage" : 2
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "starforge-tidepodsseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.9,
+  "consumeSoilMoisture" : false
+}

@@ -1,0 +1,100 @@
+[
+
+    [{
+        "op":"add",
+        "path":"/spaceDebrisFields/-",
+        "value":{
+            "velocityRange":[10,25],
+            "cellSize":4000,
+            "screenBuffer":10000,
+            "cellCountRange":[1,2],
+            "angularVelocityRange":[120,250],
+            "animationSpeedRange":[0,0],
+            "list":["/sky/glitters/starmitesky.png"]
+        }
+    }],
+	
+	[{
+        "op":"add",
+        "path":"/spaceDebrisFields/-",
+        "value":{
+            "velocityRange":[10,15],
+            "cellSize":4000,
+            "screenBuffer":10000,
+            "cellCountRange":[1,2],
+            "angularVelocityRange":[0,0],
+            "animationSpeedRange":[0,0],
+            "list":["/sky/glitters/elpisships.png"]
+        }
+    }],
+	
+	[{
+        "op":"add",
+        "path":"/spaceDebrisFields/-",
+        "value":{
+            "velocityRange":[-10,-15],
+            "cellSize":4000,
+            "screenBuffer":10000,
+            "cellCountRange":[1,2],
+            "angularVelocityRange":[0,0],
+            "animationSpeedRange":[0,0],
+            "list":["/sky/glitters/unboundships.png"]
+        }
+    }],
+	
+	[{
+        "op":"add",
+        "path":"/spaceDebrisFields/-",
+        "value":{
+            "velocityRange":[10,15],
+            "cellSize":4000,
+            "screenBuffer":10000,
+            "cellCountRange":[1,2],
+            "angularVelocityRange":[0,0],
+            "animationSpeedRange":[0,0],
+            "list":["/sky/glitters/gaiaships.png"]
+        }
+    }],
+	
+	[{
+        "op":"add",
+        "path":"/spaceDebrisFields/-",
+        "value":{
+            "velocityRange":[10,15],
+            "cellSize":4000,
+            "screenBuffer":10000,
+            "cellCountRange":[1,2],
+            "angularVelocityRange":[0,0],
+            "animationSpeedRange":[0,0],
+            "list":["/sky/glitters/vitriumships.png"]
+        }
+    }],
+	
+	[{
+        "op":"add",
+        "path":"/spaceDebrisFields/-",
+        "value":{
+            "velocityRange":[0,2],
+            "cellSize":4000,
+            "screenBuffer":10000,
+            "cellCountRange":[1,2],
+            "angularVelocityRange":[5,15],
+            "animationSpeedRange":[0,0],
+            "list":["/sky/glitters/pachinkostation.png"]
+        }
+    }],
+	
+	[{
+        "op":"add",
+        "path":"/spaceDebrisFields/-",
+        "value":{
+            "velocityRange":[10,15],
+            "cellSize":4000,
+            "screenBuffer":10000,
+            "cellCountRange":[1,2],
+            "angularVelocityRange":[0,0],
+            "animationSpeedRange":[0,0],
+            "list":["/sky/glitters/nexusships.png"]
+        }
+    }]
+]
