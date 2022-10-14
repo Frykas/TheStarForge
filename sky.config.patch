@@ -12,7 +12,7 @@
             "animationSpeedRange":[0,0],
             "list":["/sky/glitters/starmitesky.png"]
         }
-    }],
+    }]/*,
 	
 	[{
         "op":"add",
@@ -96,5 +96,5 @@
             "animationSpeedRange":[0,0],
             "list":["/sky/glitters/nexusships.png"]
         }
-    }]
+    }]*/
 ]
