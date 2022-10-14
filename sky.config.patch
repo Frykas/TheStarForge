@@ -12,7 +12,7 @@
             "animationSpeedRange":[0,0],
             "list":["/sky/glitters/starmitesky.png"]
         }
-    }],
+    }]/*,
 	
 	[{
         "op":"add",
@@ -32,7 +32,7 @@
         "op":"add",
         "path":"/spaceDebrisFields/-",
         "value":{
-            "velocityRange":[10,15],
+            "velocityRange":[-10,-15],
             "cellSize":4000,
             "screenBuffer":10000,
             "cellCountRange":[1,2],
@@ -96,5 +96,5 @@
             "animationSpeedRange":[0,0],
             "list":["/sky/glitters/nexusships.png"]
         }
-    }]
+    }]*/
 ]
