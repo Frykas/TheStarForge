@@ -1,6 +1,6 @@
 {
-  "kind" : "starforge-godflame",
-  "elementalType" : "starforge-godflame",
+  "kind" : "starforge-soulflame",
+  "elementalType" : "starforge-soulflame",
   "effects" : {
     "organic" : {
       "hit" : {

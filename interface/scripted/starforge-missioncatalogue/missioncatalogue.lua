@@ -1,5 +1,5 @@
 function init()
-  local destinationConfig = root.assetJson(config.getParameter("destinationConfig", "/interface/scripted/starforge-missioncatalogue/config/destinations.config"))
+  local destinationConfig = root.assetJson(config.getParameter("destinationConfig", "/interface/scripted/starforge-missioncatalogue/config/repeatablemissions.config"))
   
   self_destinationList = "destinationScrollArea.itemList"
   self_validDestinations = {}

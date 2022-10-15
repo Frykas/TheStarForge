@@ -4,6 +4,8 @@
   "rarity" : "Essential",
   "interactAction" : "ScriptPane",
   "interactData" : "/interface/scripted/starforge-missioncatalogue/missioncatalogue.config",
+  "interactOverrides" : {
+  },
 
   "printable" : false,
   "description" : "Sasha Beniko, ex-Unbound officer, ex-Unbound prisoner, now working with the Thalasso.",
@@ -36,7 +38,7 @@
       "anchors" : [ "bottom" ]
     }
    ], 
-  "scripts" : [ "/objects/scripts/starforge-talkingobject.lua" ],
+  "scripts" : [ "/objects/scripts/starforge-talkingobject.lua", "/objects/scripts/starforge-interactoverrideshook.lua" ],
   "scriptDelta" : 20,
   "mouthPosition" : [-1, 0],
 
@@ -54,6 +56,5 @@
 	"Looking for some action?",
 	"Stay strong, and remember what you're fighting for."
   ]
-   
-   }
+}
    

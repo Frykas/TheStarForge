@@ -1,0 +1,50 @@
+{
+  "itemName" : "starforge-heavenstairway",
+  "price" : 3000,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "...",
+  "shortdescription" : "^orange;Heaven's Stairway^reset;",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "broadsword",
+  "tooltipFieldsOverride" : {"subtitle":"Paragon Weapon"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","nebulox","paragon"],
+
+  "inventoryIcon" : "starforge-heavenstairway.png:4",
+
+  "animation" : "starforge-heavenstairway.animation",
+  "animationParts" : {
+    "blade" : "",
+    "bladeFullbright" : "starforge-heavenstairway.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "starforge-soulflame",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.55,
+    "baseDps" : 10.5,
+	
+	"comboSteps" : 0,
+
+	"stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "armRotation" : -105,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true,
+		"aimAngle" : 0
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

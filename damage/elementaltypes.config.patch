@@ -27,17 +27,17 @@
 	  }
 	}
   },
-  //GODFLAME
+  //SOULFLAME
   { "op" : "add",
-	"path" : "/starforge-godflame",
+	"path" : "/starforge-soulflame",
 	"value" : {
-	  "resistanceStat" : "starforge-godflameResistance",
+	  "resistanceStat" : "starforge-soulflameResistance",
 	  "damageNumberParticles" : {
-		"hit" : "starforge-godflamedamagenumber",
-		"stronghit" : "starforge-godflamedamagenumberstrong",
-		"weakhit" : "starforge-godflamedamagenumberweak",
-		"shieldhit" : "starforge-godflamedamagenumber",
-		"kill" : "starforge-godflamedamagenumber"
+		"hit" : "starforge-soulflamedamagenumber",
+		"stronghit" : "starforge-soulflamedamagenumberstrong",
+		"weakhit" : "starforge-soulflamedamagenumberweak",
+		"shieldhit" : "starforge-soulflamedamagenumber",
+		"kill" : "starforge-soulflamedamagenumber"
 	  }
 	}
   }

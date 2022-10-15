@@ -1,7 +1,7 @@
 {
-  "name" : "starforge-godflameresistance",
+  "name" : "starforge-soulflameresistance",
   "effectConfig" : {
-    "elementalType" : "starforge-godflame",
+    "elementalType" : "starforge-soulflame",
 	"elementalInfluences" : {
 	  "electric" : 0.1,
 	  "fire" : -0.1
