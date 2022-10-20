@@ -7,9 +7,9 @@
   "description" : "Strange otherworldly pods from the realm of the Tide. They are a bit sour and make you feel numb.",
   "shortdescription" : "Tide Pods",
   "effects" : [ [
-      {
-        "effect" : "paralysis",
-        "duration" : 2
+    {
+      "effect" : "starforge-dimensionalinstability",
+      "duration" : 20
     }
   ] ],
   "foodValue" : 2.5,

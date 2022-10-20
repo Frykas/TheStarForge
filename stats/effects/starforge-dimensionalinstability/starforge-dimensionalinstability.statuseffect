@@ -1,0 +1,50 @@
+{
+  "name" : "starforge-dimensionalinstability",
+  "effectConfig" : {
+	"directives" : "fade=60B8EA=0.25",
+	
+	"minTeleportCount" : 4,
+	"maxTeleportDistance" : 15,
+	"maxTeleportChance" : 0.3,
+	
+    "blinkOffset" : [0.0, 0.5],
+    "blinkTolerance" : 3.0,
+    
+    "teleportProjectileConfig" : {
+      "timeToLive": 0,
+      "damageType": "nodamage",
+      "processing": "?multiply=00000000",
+      "periodicActions" : [
+        {
+          "action" : "sound",
+          "options" : [ "/sfx/tech/tech_blink1.ogg" ],
+          "time" : 0,
+          "repeat" : false
+        },
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/blinkout/blinkout.animation",
+            "approach" : [0.0, 0.0],
+            "timeToLive" : 0.25,
+            "rotation" : 90,
+            "fullbright" : true
+          },
+          "time" : 0,
+          "repeat" : false
+        }
+      ]
+    }
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "starforge-dimensionalinstability.lua"
+  ],
+
+  "animationConfig" : "starforge-dimensionalinstability.animation",
+
+  "label" : "Dimensional Instability",
+  "icon" : "/interface/statuses/starforge-warp.png"
+}
