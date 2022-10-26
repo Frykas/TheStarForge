@@ -22,5 +22,5 @@
   "rotationRate" : 25.5,
   "trackingLimit" : 2.0,
 
-  "scripts" : [ "/scripts/projectiles/homingprojectile.lua" ]
+  "scripts" : [ "/projectiles/scripts/starforge-homingbullet.lua" ]
 }
