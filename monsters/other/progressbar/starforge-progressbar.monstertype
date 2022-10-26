@@ -31,7 +31,7 @@
     "scale" : 1.0,
 	
 	"damageBar" : "None",
-	"damageTeamType" : "friendly",
+	"damageTeamType" : "passive",
 
     "movementSettings" : {
       "gravityEnabled" : false,
