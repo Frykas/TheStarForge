@@ -26,6 +26,7 @@
   ],
   "periodicActions" : [],
   "statusEffects" : [],
+      "lightColor" : [8, 176, 158],
   "fullbright" : true,
   "damageType" : "nodamage",
   "damageKind" : "spear",
