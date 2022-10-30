@@ -60,6 +60,10 @@
 	
 	{ "op": "add", "path": "/displayDungeons/starforge-unboundvillage", "value": 
     {"description" : "Detecting multiple traces of Unbound technology, most likely a refugee village.", "icon" : "/interface/cockpit/dungeons/unbounddungeonicon.png" }
+    },
+	
+	{ "op": "add", "path": "/displayDungeons/starforge-yukaifortress", "value": 
+    {"description" : "Detecting slight traces of a Yukai Hylotl settlement. Exercise caution.", "icon" : "/interface/cockpit/dungeons/yukaifortressicon.png" }
     }
   
   ]

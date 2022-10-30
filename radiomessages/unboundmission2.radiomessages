@@ -12,7 +12,7 @@
     "type" : "mission",
     "senderName" : "Mariko",
     "portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
-    "text" : "Our way inside the Unbound network is near the the bottom of the station according to the map we stole. But be careful, there are probably Vanguard units inside.",
+    "text" : "Our way inside the Unbound network is near the bottom of the station according to the map we stole. But be careful, there are probably Vanguard units inside.",
     "persistTime" : 5.0
   },
   

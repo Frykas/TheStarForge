@@ -4,7 +4,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
-  "description" : "Enhanced with ancient technology, this cape protects the weilder.",
+  "description" : "Enhanced with ancient technology, this cape protects the wielder.",
   "shortdescription" : "^#FFBC47;Might of the Warlord^white;",
   "tooltipKind" : "starforge-backitemexalted",
   

@@ -256,6 +256,49 @@
       "starforge-unboundvillage"
     ]
   },
+  
+    {
+    "op": "add",
+    "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaifortress"
+    ]
+  },
+    {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaifortress"
+    ]
+  },
+    {
+    "op": "add",
+    "path": "/planetTypes/midnight/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaifortress"
+    ]
+  },
+    {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-yukaifortress"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      4,
+      "starforge-yukaifortress"
+    ]
+  },
+  
   { "op":"add",
     "path": "/regionTypes/forest/subRegion/-", 
     "value": "starforge-tidefragment" 

@@ -46,5 +46,5 @@
   "animationConfig" : "starforge-dimensionalinstability.animation",
 
   "label" : "Dimensional Instability",
-  "icon" : "/interface/statuses/starforge-warp.png"
+  "icon" : "/interface/statuses/starforge-tideinstability.png"
 }
