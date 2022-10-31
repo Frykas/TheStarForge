@@ -4,7 +4,7 @@
   "price" : 0,
   "category" : "food",
   "inventoryIcon" : "starforge-strangetidepod.png",
-  "description" : "This one isn't quite like the others, where does it come from?",
+  "description" : "This one isn't quite like the others, where does it come from? \n ^red;-Reality Breaker-^reset;",
   "shortdescription" : "Strange Tide Pod",
   "effects" : [ [
       {
