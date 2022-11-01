@@ -1,0 +1,95 @@
+{
+  "itemName": "starforge-fever",
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "The fever saw to the beginning, a story built.",
+  "shortdescription" : "Fever",
+  "tooltipKind": "starforge-uniquegun",
+  "category": "pistol",
+  "twoHanded": false,
+  "level" : 5,
+  "itemTags": [ "weapon", "ranged", "pistol" ],
+  "tooltipFields" : {"subtitle":"Sidearm"},
+  "inventoryIcon": "starforge-fevericon.png",
+  
+  "animation": "/items/active/weapons/ranged/unique/mauricessidearm/mauricessidearm.animation",
+  "animationParts": {
+    "butt": "",
+    "middle": "starforge-fever.png",
+    "barrel": "",
+	"middleFullbright": "starforge-feverfullbright.png",
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
+  },
+  "animationCustom": {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 1,
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "rocketbarrelpuff" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [ "/sfx/gun/plasma_ar3.ogg" ]
+    }
+  },
+  
+  "baseOffset" : [0.500,0.125],
+  
+  "muzzleOffset": [1.125,0.25],
+  
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+  "elementalType": "fire",
+  
+  "primaryAbility": {
+    "scripts": [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],
+    "class": "StarforgeGunFire",
+	
+    "fireTime": 0.42,
+    "baseDps": 5,
+    "energyUsage": 20,
+    "inaccuracy": 0.03,
+	
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "starforge-firefluxbolt",
+    "projectileParameters": {
+	  "statusEffects" : [ "starforge-firecombust" ],
+      "knockback": 4
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.05,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}
