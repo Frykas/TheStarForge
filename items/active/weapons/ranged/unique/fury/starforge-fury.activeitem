@@ -1,0 +1,144 @@
+{
+  "itemName" : "starforge-fury",
+  "price" : 3000,
+  "inventoryIcon" : "starforge-fury.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "The fury tore it down, to start again.",
+  "shortdescription" : "^#b4f5c3;Fury^reset;",
+  "level" : 7,
+  "fixedLevel" : false,
+  "tooltipKind" : "starforge-uniquegun",
+  "category": "uniqueWeapon",
+  "tooltipFieldsOverride" : {"subtitle":"Shotgun"},
+  "itemTags" : ["weapon", "ranged", "shotgun"],
+  "twoHanded" : true,
+  
+  "animation" : "/items/active/weapons/ranged/starforge-gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "starforge-fury.png",
+	"middleFullbright" : "starforge-furyfullbright.png",
+    "barrel" : "",
+    "muzzleflash" : ""
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "muzzleFlash1" : {
+          "properties" : {
+            "zLevel" : -1,
+            "centered" : true,
+            "offset" : [1.5, 0.0],
+            "fullbright" : true,
+            "transformationGroups" : ["muzzle"]
+          },
+
+          "partStates" : {
+            "firing" : {
+              "fire" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png:<variant>.<frame>"
+                }
+              }
+            }
+          }
+        },
+        "muzzleFlash2" : {
+          "properties" : {
+            "zLevel" : -2,
+            "centered" : true,
+            "offset" : [1.375, -0.375],
+            "fullbright" : true,
+            "transformationGroups" : ["muzzle"]
+          },
+
+          "partStates" : {
+            "firing" : {
+              "fire" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png:<variant>.<frame>"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+	
+	"sounds" : {
+      "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.375, 0.125],
+  "muzzleOffset" : [1.125, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-multibarrelfire.lua"],
+    "class" : "StarForgeMultiBarrelFire",
+
+    "fireTime" : 0.3625,
+    "baseDps" : 14,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.2,
+	
+    "projectileCount" : 4,
+	
+    "fireType" : "burst",
+    "burstCount" : 2,
+    "burstTime" : 0,
+
+	"muzzleOffsets" : [[2.25, 0.5], [2.25, 0.25]],
+	"fireAllProjectileCount" : false,
+	"projectileType" : "starforge-firefluxbolt",
+    "projectileParameters" : {
+	  "statusEffects" : [ "starforge-firecombust" ],
+      "knockback": 10,
+	  "bounces" : 2,
+	  "canBounce" : true,
+	  "movementSettings" : {
+		"bounceFactor" : 0.25,
+		"stickyCollision" : false,
+		"stickyForce" : 0
+	  }
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.05,
+        "armRotation" : 4,
+        "weaponRotation" : 8,
+		"weaponOffset" : [-0.05, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.45,
+        "armRotation" : 4,
+        "weaponRotation" : 8,
+		"weaponOffset" : [-0.05, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}
