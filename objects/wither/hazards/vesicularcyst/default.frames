@@ -1,0 +1,14 @@
+{
+
+  "frameGrid" : {
+    "size" : [16, 22],
+    "dimensions" : [5, 1],
+    "names" : [
+      [ "active", "inactive", "regrow.1", "regrow.2", "regrow.3" ]
+    ]
+  },
+
+  "aliases" : {
+    "default" : "active"
+  }
+}

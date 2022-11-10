@@ -16,10 +16,10 @@
   "hylotlDescription" : "Sharp spikes fashioned with wire. A barbaric, primitive form of security.",
   "novakidDescription" : "Barbed wire.",
 
-  "inventoryIcon" : "witherthorns.png",
+  "inventoryIcon" : "witherthorns.png:1",
   "orientations" : [
     {
-      "image" : "witherthorns.png",
+      "image" : "witherthorns.png:<variant>",
       "direction" : "left",
       "flipImages" : true,
       "imagePosition" : [-8, 0],
@@ -38,7 +38,7 @@
       }
     },
     {
-      "image" : "witherthorns.png",
+      "image" : "witherthorns.png:<variant>",
       "direction" : "right",
       "imagePosition" : [-8, 0],
 
@@ -55,5 +55,8 @@
         "damageSourceKind" : "default"
       }
     }
-  ]
+  ],
+  
+  "scripts" : ["/objects/scripts/starforge-varianthook.lua"],
+  "variants" : 3
 }

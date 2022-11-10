@@ -12,9 +12,9 @@
 
   "baseParameters" : {
     "scripts" : [
-      "/monsters/monster.lua"
+      "/monsters/starforge-monster.lua"
     ],
-
+	
     "behavior" : "monster",
 
     "facingMode" : "transformation",
