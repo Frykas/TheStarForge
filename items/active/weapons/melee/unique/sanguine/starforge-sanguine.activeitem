@@ -17,7 +17,9 @@
   "animation" : "starforge-sanguine.animation",
   "animationParts" : {
     "sword" : "starforge-sanguine.png",
-    "swordfullbright" : "starforge-sanguinefullbright.png"
+    "swordfullbright" : "starforge-sanguinefullbright.png",
+	
+    "swoosh" : "physical"
   },
   "animationCustom" : { },
 

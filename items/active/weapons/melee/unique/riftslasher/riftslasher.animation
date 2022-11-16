@@ -150,7 +150,7 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "swoosh/slash.png:<frame>?flipy",
+                "image" : "/items/active/weapons/melee/swoosh/starforge/smalldowncut/smalldowncut-<partImage>.png:<frame>?flipy",
 				"offset" : [-1.25, -2],
 				"damageArea" : [[-3.75, 1.5], [-1.875, 2.25], [0.75, 2.25], [3, 1.25], [3.75, -0.15], [3.75, -1.675], [3, -2.375], [0, -1.875]]
               }

@@ -16,7 +16,9 @@
   
   "animation" : "starforge-witheredthorn.animation",
   "animationParts" : {
-    "blade" : "starforge-witheredthorn.png"
+    "blade" : "starforge-witheredthorn.png",
+	
+    "swoosh" : "wither"
   },
   "animationCustom" : {
     "sounds" : {

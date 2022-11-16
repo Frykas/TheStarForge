@@ -128,7 +128,7 @@
           "attack" : {
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:<frame>",
+                "image" : "/items/active/weapons/melee/swoosh/starforge/jab/jab-<partImage>.png:<frame>",
                 "damageArea" : [[-1, -1.1], [1.0, -0.6], [1.0, 0.8], [-1, 1.3]]
               }
             }

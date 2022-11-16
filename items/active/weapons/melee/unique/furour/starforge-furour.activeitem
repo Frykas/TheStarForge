@@ -17,7 +17,9 @@
   "animation" : "starforge-furour.animation",
   "animationParts" : {
     "blade" : "starforge-furour.png",
-    "bladeFullbright" : "starforge-furourlights.png"
+    "bladeFullbright" : "starforge-furourlights.png",
+	
+    "swoosh" : "physical"
   },
   "animationCustom" : {
     "sounds" : {

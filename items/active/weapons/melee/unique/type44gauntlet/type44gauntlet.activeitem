@@ -20,8 +20,9 @@
   "animationParts" : {
     "weapon" : "type44gauntlet.png",
     "weaponFullbright" : "type44gauntletfullbright.png",
-    "swoosh" : "swoosh/swoosh.png",
-	"parryShield" : "swoosh/parryshield.png"
+	"parryShield" : "shield/parryshield.png",
+	
+    "swoosh" : "physical"
   },
   "animationCustom" : {
     "sounds" : {
