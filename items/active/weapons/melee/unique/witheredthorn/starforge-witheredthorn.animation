@@ -156,7 +156,7 @@
       "active" : false,
       "transformationGroups" : ["swoosh"],
 	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
-      "burstCount" : 4,
+      "burstCount" : 7,
       "particles" : [
         { "particle" : "starforge-withersmoke"}
       ]
@@ -170,7 +170,7 @@
       "active" : true,
       "transformationGroups" : ["weapon"],
       "offsetRegion" : [0.25, 2.5, 0.25, 4],
-      "emissionRate" : 15,
+      "emissionRate" : 12,
       "particles" : [
         { "particle" : "starforge-withersmoke"}
       ]
@@ -178,8 +178,8 @@
     "idleParticles" : {
       "active" : true,
       "transformationGroups" : ["weapon"],
-      "offsetRegion" : [0.25, -3, 0.25, 2.5],
-      "emissionRate" : 15,
+      "offsetRegion" : [0.25, -2.5, 0.25, 2],
+      "emissionRate" : 16,
       "particles" : [
         { "particle" : "starforge-withersmoke"}
       ]
@@ -188,7 +188,7 @@
       "active" : true,
       "transformationGroups" : ["weapon"],
       "offsetRegion" : [0.25, -3.5, 0.25, -3.75],
-      "emissionRate" : 10,
+      "emissionRate" : 8,
       "particles" : [
         { "particle" : "starforge-withersmoke" }
       ]

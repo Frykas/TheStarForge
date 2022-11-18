@@ -86,6 +86,8 @@ function StarforgeThrowProjectile:throw()
     end)
   end
   
+  item.consume(self.consumeCount or 0)
+  
   util.wait(self.reloadWait)
   self.cooldownTimer = self.cooldownTime
   

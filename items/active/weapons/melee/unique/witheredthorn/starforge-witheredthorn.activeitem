@@ -5,10 +5,11 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "A cursed Floran artifact born out of withered roots and Floran corpses.",
+  "description" : "A floran artifact, wrought from its origins and consumed by the Wither.",
   "shortdescription" : "^#758468;Cursebringer^reset;",
-  "tooltipKind" : "base",
-  "category" : "Spear",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "broadsword",
+  "tooltipFieldsOverride" : {"subtitle":"Spear"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","floran","wither"],
 
@@ -53,7 +54,7 @@
       [0.75, 0.0, 4.25, 5.0],
       [1.5, -1.0, 5.5, 1.0],
       [1.5, -1.0, 5.5, 1.0],
-      [0.75, 0.0, 4.25, 5.0]
+      [-0.75, 0.0, -4.25, 5.0]
     ],
 	
 	"damageConfig" : {
@@ -446,5 +447,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }
