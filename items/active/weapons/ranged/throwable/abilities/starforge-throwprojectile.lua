@@ -28,7 +28,7 @@ function StarforgeThrowProjectile:update(dt, fireMode, shiftHeld)
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
     and not self.weapon.currentAbility
     and self.cooldownTimer == 0
-    and not status.resourceLocked("energy")
+    and not (self:energyPerShot() > 0) and status.resourceLocked("energy") or true
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
 	self:setState(self.prepare)
