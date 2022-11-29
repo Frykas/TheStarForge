@@ -1,0 +1,140 @@
+{
+  "itemName" : "starforge-skullbreaker",
+  "price" : 3000,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "\"I call it trauma therapy, a bullet a day makes the pain go away.\"",
+  "shortdescription" : "Skullbreaker",
+  "tooltipKind" : "starforge-uniquegun",
+  "category" : "uniqueWeapon",
+  "tooltipFieldsOverride" : {"subtitle" : "Burst Rifle"},
+  "twoHanded" : true,
+  "level" : 6,
+  "fixedLevel" : false,
+  "itemTags" : ["weapon","ranged","pistol"],
+  
+  "inventoryIcon" : "starforge-skullbreaker.png:slide.1",
+  "animation": "/items/active/weapons/ranged/unique/mauricessidearm/mauricessidearm.animation",
+  "animationParts" : {
+    "butt": "",
+    "middle": "starforge-skullbreaker.png",
+    "barrel": "",
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-physicalmuzzleflash.png"
+  },
+  "animationCustom" : {
+    "sounds": {
+      "fire": ["/sfx/gun/starforge-minigunfire.ogg"],
+      "bite": ["/sfx/npc/monsters/monster_bite1.ogg", "/sfx/npc/monsters/monster_bite1.ogg"]
+	}
+  },
+  
+  "baseOffset" : [1.0, 0.375],
+  "muzzleOffset" : [1.25, 0],
+  
+  "scripts" : [ "/items/active/weapons/ranged/gun.lua" ],
+  
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],
+    "class" : "StarforgeGunFire",
+	
+    "fireTime" : 0.2,
+    "baseDps" : 9,
+    "energyUsage" : 25,
+    "inaccuracy" : 0.002,
+    "projectileCount" : 1,
+	
+    "burstTime" : 0.125,
+    "burstCount" : 3,
+	
+    "fireType" : "burst",
+    "projectileType": "starforge-physicalbullet",
+    "projectileParameters": {
+      "knockback" : 3,
+	  "statusEffects" : [ { "effect" : "starforge-skullbreakerreturn", "duration" : 0.5 } ]
+	},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "scripts" : [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],
+    "class" : "StarforgeGunFire",
+	
+    "fireTime" : 2,
+    "baseDps" : 12,
+    "energyUsage" : 50,
+    "inaccuracy" : 0,
+    "projectileCount" : 1,
+	
+    "fireType" : "auto",
+    "projectileType": "meleebite",
+	"fireOffset" : [1.25, 0],
+    "projectileParameters": {
+      "knockback" : 3,
+	  "statusEffects" : [ { "effect" : "starforge-skullbreakerreturn", "duration" : 4 } ]
+    },
+	"trackSourceEntity" : true,
+	"useStanceDuration" : true,
+	"fireSound" : "bite",
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.01,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+   
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

@@ -12,7 +12,7 @@
   "actionOnReap" : [],
   "damageKind" : "dagger",
 
-  "scripts" : ["/projectiles/scripts/starforge-velocityspin.lua"],
+  "scripts" : ["/projectiles/scripts/starforge-spin.lua"],
   "orientationLocked" : true,
   "pointToLight" : true,
   "spinRate" : 0.25,

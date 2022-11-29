@@ -1,7 +1,7 @@
 require "/scripts/status.lua"
 
 function init()
-  self.statusEffect = config.getParameter("statusEffects", {})
+  self.statusEffects = config.getParameter("statusEffects", {})
   self.damageGivenListener = damageListener("inflictedDamage", function(notifications)
     for _, notification in pairs(notifications) do
 	  for _, effect in ipairs(self.statusEffects) do

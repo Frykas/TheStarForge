@@ -10,7 +10,7 @@
   "twoHanded": true,
   "level" : 6,
   "itemTags": [ "weapon", "ranged", "pistol" ],
-  "tooltipFields" : {"subtitle":"Deagle"},
+  "tooltipFields" : {"subtitle" : "Deagle"},
   "inventoryIcon": "starforge-silverserpenticon.png",
   
   "animation": "/items/active/weapons/ranged/unique/mauricessidearm/mauricessidearm.animation",
@@ -33,16 +33,15 @@
       }
     },
     "sounds": {
-      "fire": [ "/sfx/gun/shotgun1.ogg" ]
+      "fire": [ "/sfx/gun/starforge-silverserpentfire.ogg" ]
     }
   },
   
-  "baseOffset" : [0.500,0.125],
-  
-  "muzzleOffset": [1.125,0.25],
+  "baseOffset" : [0.50, 0.125],
+  "muzzleOffset": [1.125, 0.25],
   
   "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
-  "elementalType": "fire",
+  "elementalType": "physical",
   
   "primaryAbility": {
     "scripts": [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],
@@ -55,9 +54,9 @@
 	
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "starforge-physicalbullet",
+    "projectileType": "starforge-silverserpentbullet",
     "projectileParameters": {
-	  "statusEffects" : [],
+	  "armourPiercingFactor" : 0.45,
       "knockback": 4
     },
 	

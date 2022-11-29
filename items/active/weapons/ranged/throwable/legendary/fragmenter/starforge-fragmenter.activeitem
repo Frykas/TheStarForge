@@ -6,7 +6,7 @@
   "rarity" : "Rare",
   "description" : "Fling fragments of tidal ice at your foes.",
   "shortdescription" : "Fragmenter",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "starforge-uniquegun",
   "category" : "throwableItem",
   "tooltipFieldsOverride" : {"subtitle":"Throwable"},
   "twoHanded" : true,

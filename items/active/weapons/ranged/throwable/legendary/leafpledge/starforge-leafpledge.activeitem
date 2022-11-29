@@ -1,23 +1,22 @@
 {
-  "itemName" : "starforge-leviathansteeth",
+  "itemName" : "starforge-leafpledge",
   "level" : 6,
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "Sling the teeth of a fallen leviathan to destroy your foes.",
-  "shortdescription" : "Leviathan's Teeth",
+  "description" : "A duty to the trees, a pledge. A proof of loyalty and honor.",
+  "shortdescription" : "Leaf Pledge",
   "tooltipKind" : "starforge-uniquegun",
   "category" : "throwableItem",
   "tooltipFieldsOverride" : {"subtitle":"Throwable"},
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","throwable"],
-  "learnBlueprintsOnPickup" : [ "starforge-leviathansteeth" ],
 
-  "inventoryIcon" : "starforge-leviathansteeth.png",
+  "inventoryIcon" : "starforge-leafpledgeicon.png",
 
   "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
   "animationParts" : {
-    "middle" : "starforge-leviathansteeth.png?flipy?flipx"
+    "middle" : "starforge-leafpledge.png?flipy?flipx"
   },
   "animationCustom" : {
     "sounds" : {
@@ -27,41 +26,44 @@
 
   "scripts" : ["/items/active/weapons/ranged/throwable/starforge-throwable.lua"],
 
-  "elementalType" : "starforge-tidalfrost",
+  "elementalType" : "physical",
 
   "primaryAbilityType" : "starforge-throwprojectile",
   "primaryAbility" : {
     "baseDps" : 6,
-    "cooldownTime" : 0.9,
+    "cooldownTime" : 0.3,
 	
 	"hideItemWhileIdle" : true,
 	
     "projectileCount" : 1,
-    "projectileType" : "starforge-leviathianstooth",
-    "projectileParameters" : {
-    }
+    "projectileTimesAndAngles" : [
+      [0.025, 0],
+      [0.09, 0],
+      [0.14, 0]
+    ],
+    "projectileType" : "starforge-leafpledgeleaf",
+    "projectileParameters" : {}
   },
   
   "altAbilityType" : "starforge-throwprojectile",
   "altAbility" : {
-    "name" : "Jaw of the Leviathan",
-    "baseDps" : 7,
-    "cooldownTime" : 2,
+    "name" : "Age of Grass",
+    "baseDps" : 5,
+    "cooldownTime" : 1,
 	
 	"hideItemWhileIdle" : true,
 
     "energyUsage" : 21,
 	
     "projectileTimesAndAngles" : [
-      [0.05, 17],
-      [0.075, 8],
+      [0.1, 17],
+      [0.1, 8],
       [0.1, -0],
-      [0.125, -8],
-      [0.15, -17]
+      [0.1, -8],
+      [0.1, -17]
     ],
-    "projectileType" : "starforge-leviathianstooth",
-    "projectileParameters" : {
-    }
+    "projectileType" : "starforge-leafpledgeleafspinning",
+    "projectileParameters" : {}
   },
 
   "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"

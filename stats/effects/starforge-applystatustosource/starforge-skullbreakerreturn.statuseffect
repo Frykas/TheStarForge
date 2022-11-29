@@ -1,0 +1,12 @@
+{
+  "name" : "starforge-skullbreakerreturn",
+
+  "effectConfig" : {
+	"statusEffects" : [ "starforge-skullbreakerboost" ]
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "starforge-applystatustosource.lua"
+  ]
+}

@@ -94,6 +94,7 @@ function StarforgeGunFire:charge()
   if animator.hasSound("chargeLoop") then
     animator.playSound("chargeLoop", -1)
   end
+  
   --Timer used for optional shaking
   local timer = 0
   util.wait(self.chargeTime, function()
@@ -114,10 +115,6 @@ function StarforgeGunFire:charge()
   end)
   animator.stopAllSounds("chargeLoop")
   
-  if self.windDownAnimation then
-    
-  end
-  
   self.weapon:setStance(self.stances.fire)
 
   self.projectileId = self:fireProjectile()
@@ -134,12 +131,11 @@ function StarforgeGunFire:burst()
   while shots > 0 and status.overConsumeResource("energy", self:energyPerShot()) do
     self.projectileId = self:fireProjectile(self.burstCount - shots)
     self:muzzleFlash()
-    self.weapon.relativeWeaponRotation = util.toRadians(c5Easing.easeOut(1 - (shots/self.burstCount),0,self.burstCount))
-    shots = shots - 1
-
-
+	
+    self.weapon.relativeWeaponRotation = util.toRadians(c5Easing.easeOut(1 - (shots / self.burstCount), 0, self.burstCount))
     self.weapon.relativeArmRotation = util.toRadians(c5Easing.easeOut(1 - shots / self.burstCount, self.stances.idle.armRotation, self.stances.fire.armRotation))
 
+    shots = shots - 1
     util.wait(self.burstTime)
   end
 
@@ -225,7 +221,7 @@ function StarforgeGunFire:fireProjectile(burstNumber)
         firePosition or self:firePosition(),
         activeItem.ownerEntityId(),
         self:aimVector(inaccuracy or self.inaccuracy, shotNumber, burstNumber),
-        false,
+        self.trackSourceEntity or false,
         params
       )
   end
@@ -233,7 +229,7 @@ function StarforgeGunFire:fireProjectile(burstNumber)
 end
 
 function StarforgeGunFire:firePosition()
-  return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
+  return vec2.add(mcontroller.position(), activeItem.handPosition(vec2.add(self.weapon.muzzleOffset, self.fireOffset or {0, 0})))
 end
 
 function StarforgeGunFire:aimVector(inaccuracy, shotNumber, burstNumber)
