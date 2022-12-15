@@ -33,7 +33,7 @@
       }
     },
     "sounds": {
-      "fire": [ "/sfx/gun/plasma_shotgun3.ogg" ]
+      "fire": [ "/sfx/gun/starforge-makeshiftshotgun.ogg" ]
     }
   },
   

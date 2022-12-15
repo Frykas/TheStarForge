@@ -2,8 +2,8 @@
   "id" : "thalassointromission4",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassointromission3" ],
   "title" : "^#b4f5c3;Reason I'm Here",
-  "text" : "The Thalasso gave me access to new powerful tools. But why exactly? There must be a reason their captain called me here. I should ask ^green;Morpheus^reset; what's up.",
- "completionText" : "It is as I thought, they need my help. So long as they want to make the universe a better place, I have nothing to lose, right?",
+  "text" : "The Thalasso gave me access to these new powerful tools. But why exactly? There must be a reason their captain called me here. I should ask ^green;Morpheus^reset; what's up.",
+ "completionText" : "As I thought, they need my help. So long as they want to make the universe a better place, I have nothing to lose, right?",
  "completionCinema" : "/cinematics/unboundintroduction/unboundintro.cinematic",
   "moneyRange" : [50, 50],
   "rewards" : [
