@@ -21,7 +21,7 @@
     "blade" : "spellslinger.png",
 	"bladeFullbright" : "spellslingerfullbright.png",
 	
-    "swoosh" : "",	
+    "swoosh" : "physical",
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-yukaienergymuzzle.png"
   },
   "animationCustom" : {},

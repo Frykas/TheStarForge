@@ -22,7 +22,7 @@
     "blade" : "marauder.png",
 	"bladeFullbright" : "",
 	
-    "swoosh" : "",	
+    "swoosh" : "electric",
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-electricmuzzleflash.png"
   },
   "animationCustom" : {},

@@ -22,7 +22,7 @@
     "blade" : "existar.png",
 	"bladeFullbright" : "existarfullbright.png",
 	
-    "swoosh" : "",	
+    "swoosh" : "fire",
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
   },
   "animationCustom" : {},

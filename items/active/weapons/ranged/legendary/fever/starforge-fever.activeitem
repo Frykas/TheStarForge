@@ -33,7 +33,7 @@
       }
     },
     "sounds": {
-      "fire": [ "/sfx/gun/starforge-makeshiftgun" ]
+      "fire": [ "/sfx/gun/starforge-makeshiftgun.ogg" ]
     }
   },
   
