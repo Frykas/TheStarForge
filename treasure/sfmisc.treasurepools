@@ -7,7 +7,8 @@
     [1, {
       "pool" : [
         {"weight" : 0.70, "pool" : "smallChestTreasure"},
-        {"weight" : 0.30, "item" : "starforge-scavenger"}
+        {"weight" : 0.30, "item" : "starforge-scavenger"},
+	    {"weight" : 0.30, "item" : "starforge-leafpledge"}
       ],
       "poolRounds" : [
         [0.30, 1],

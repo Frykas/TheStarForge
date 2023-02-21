@@ -11,6 +11,7 @@
   "tooltipFieldsOverride" : {"subtitle":"Throwable"},
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","throwable"],
+  "learnBlueprintsOnPickup" : [ "starforge-leafpledge"],
 
   "inventoryIcon" : "starforge-leafpledgeicon.png",
 

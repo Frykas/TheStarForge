@@ -1,4 +1,69 @@
 [
+
+  // Planets
+  {
+    "op": "add",
+    "path": "/planetTypes/starforge-withered",
+    "value": {
+      "threatRange" : [4, 6], // Planet tier
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["starforge-blackrot"], // Planet primary region
+          "secondaryRegions" : ["garden", "desert"], // Planet secondary regions
+          "dungeons" : [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [4.0, "floranhuntinggrounds"], [4.0, "florancanyon"], [4.0, "floranvillagetower"], [4.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "humanprison"], [1.0, "humancamp"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "barrenunderground" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "barrenunderground" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "barrenunderground" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "barrenunderground" ]
+        }
+      }
+    }
+  },
+  
+  // Regions
+  {
+    "op": "add",
+    "path": "/regionTypes/starforge-blackrot",
+    "value": {
+      "caveLiquid": ["swampwater"],
+      "blockSelector": ["remixedMildSurface"], // For a list of terrain types, check under /terrain in assets
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["starforge-blackrot"]]],
+      "subRegion" : ["giantflowers", "mushroom"] // Subbiomes
+    }
+  },
+  
+  
+  { "op":"add",
+	  "path": "/regionTypes/starforge-tidefragment",
+	  "value": {
+			"blockSelector": [ "remixedSpikesSurface" ],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["starforge-tidefragment"]]
+			]
+		}
+  },
+  
   {
     "op": "add",
     "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
@@ -327,18 +392,6 @@
   { "op":"add",
     "path": "/regionTypes/savannah/subRegion/-", 
     "value": "starforge-tidefragment" 
-  },
-  
-  { "op":"add",
-	  "path": "/regionTypes/starforge-tidefragment",
-	  "value": {
-			"blockSelector": [ "remixedSpikesSurface" ],
-			"fgCaveSelector": ["surfaceCaves"],
-			"bgCaveSelector": ["empty"],
-			"biome": [
-				[0, ["starforge-tidefragment"]]
-			]
-		}
   }
  
 ]

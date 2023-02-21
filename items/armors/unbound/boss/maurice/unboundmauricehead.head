@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-unboundmauricehead",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "headwear",
+  "description" : "Just your average Unbound vehicle pilot headgear. Nothing really fancy, but it's Maurice's so it's legendary.",
+  "shortdescription" : "Maurice's Pilot Headgear",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+}
