@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-blackrotchest",
+  "colonyTags" : ["storage"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "category" : "storage",
+  "price" : 80,
+  "description" : "A Blackrot hive, it looks like it was used by the insects to store things!",
+  "shortdescription" : "Blackrot Chest",
+  "race" : "generic",
+  "health" : 1.5,
+
+  "apexDescription" : "A pretty vile chest.",
+  "avianDescription" : "Do I really have to put my hand inside?",
+  "floranDescription" : "Floran doesssn't want to open chessst. But Floran want loot!!",
+  "glitchDescription" : "Disgust. A Blackrot Hive that store items.",
+  "humanDescription" : "A Blackrot Hive used as a chest. These little bugs are quite smart.",
+  "hylotlDescription" : "A disgusting chest, I would not put my arm inside.",
+  "novakidDescription" : "It's not a very inviting chest, but I still want what's inside.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+     "dualImage" : "blackrotchest.png",
+	 "imageLayers" : [ { "image" : "blackrotchest.png:<color>.<key>" }],
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+
+  ],
+
+  "openSounds" : [ "/sfx/objects/fleshdoor_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/fleshdoor_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

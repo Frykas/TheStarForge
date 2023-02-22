@@ -14,13 +14,13 @@
   "race" : "generic",
   "health" : 1.5,
 
-  "apexDescription" : "A pretty vile chest.",
-  "avianDescription" : "This chest sounds shivers down my spine.",
-  "floranDescription" : "Floran want to eat chest.",
-  "glitchDescription" : "Disgust. A fleshy, pulsating chest.",
-  "humanDescription" : "A pretty gross chest made of flesh.",
-  "hylotlDescription" : "What an abhorrent chest.",
-  "novakidDescription" : "It's not a very inviting chest, but I still want what's inside.",
+  "apexDescription" : "A small Jellycap tree. Wonder what's inside?",
+  "avianDescription" : "It's a pretty chest that looks like a tree!",
+  "floranDescription" : "Floran find hidden ssstuff.",
+  "glitchDescription" : "Amazed. A small Jellycap tree. How wonderful.",
+  "humanDescription" : "A small Jellycap tree, looks like you could store stuff inside.",
+  "hylotlDescription" : "It's surprising to see Jellycap trees this small. What's even more surprising is that you can store items in it.",
+  "novakidDescription" : "What a weird chest.",
 
   "inventoryIcon" : "tidalchesticon.png",
   "orientations" : [

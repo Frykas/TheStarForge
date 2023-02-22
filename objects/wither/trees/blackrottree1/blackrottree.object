@@ -22,7 +22,7 @@
   "orientations" : [
     {
 	  "dualImage" : "blackrottree1.png",
-      "imagePosition" : [-16, 0],
+      "imagePosition" : [-0, 0],
 
       "direction" : "left",
       "flipImages" : false,
