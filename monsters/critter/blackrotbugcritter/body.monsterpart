@@ -1,0 +1,9 @@
+{
+  "name" : "blackrotbugcritter",
+  "category" : "blackrotbugcritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

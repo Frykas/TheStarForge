@@ -73,6 +73,21 @@
       "monsterParameters" : {
         "aggressive" : false
       }
+    },
+	
+	{
+	  "name" : "starforge-blackrotbugcritter",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [2, 3],
+      "spawnChance" : 0.01,
+      "monsterType" : "starforge-blackrotbugcritter",
+      "monsterParameters" : {
+        "aggressive" : false
+      }
     }
   
   ]

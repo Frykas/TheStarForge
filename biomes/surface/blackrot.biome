@@ -44,7 +44,7 @@
       {
         "select" : 4,
         "pool" : [
-          [ 1, "birdcritter" ],
+          [ 1, "starforge-blackrotbugcritter" ],
           [ 1, "squirrelcritter" ],
           [ 1, "snailcritter" ],
           [ 1, "sporelingcritter" ],
@@ -205,12 +205,12 @@
 
       {
         "mode" : "floor",
-        "priority" : 0,
+        "priority" : 0.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:overgroundChests",
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
 
         "type" : "treasureBox",
-        "treasureBoxSets" : [ "forestChest" ]
+        "treasureBoxSets" : [ "starforge-blackrotChest" ]
       },
       {
         "mode" : "floor",

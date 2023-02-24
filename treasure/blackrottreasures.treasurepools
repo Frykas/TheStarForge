@@ -1,0 +1,53 @@
+{
+  // ==============================================================================================
+  //                                       BLACKROT STUFF YOU FIND IN THE GROSS ASS BIOME
+  // ==============================================================================================
+ 
+  "blackrotChestTreasure" : [
+    [1, {
+      "fill" : [
+        {"pool" : "valuableTreasure"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "basicTreasure"},
+        {"weight" : 0.5, "pool" : "blackrotbiomeTreasure"}
+      ],
+      "poolRounds" : [
+        [0.05, 1],
+        [0.40, 2],
+        [0.30, 3],
+        [0.15, 4],
+        [0.10, 5]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "blackrotbiomeTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.3, "item" : "starforge-tidekeeperhead"},
+        {"weight" : 0.3, "item" : "starforge-tidekeeperchest"},
+        {"weight" : 0.3, "item" : "starforge-tidekeeperpants"},
+        {"weight" : 0.3, "item" : "starforge-blackrotchest-recipe"},
+		{"weight" : 0.3, "item" : "starforge-blackrotchair-recipe"},
+		{"weight" : 0.3, "item" : "starforge-blackrottable-recipe"},
+		{"weight" : 0.3, "item" : "starforge-blackrotlamp-recipe"},
+		{"weight" : 0.3, "pool" : "starforge-tidalweapons"},
+		{"weight" : 0.3, "pool" : "blackrotmaterialTreasure"}
+      ]
+    }]
+  ],
+  
+  "blackrotmaterialTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.60, "item" : ["starforge-blackrotmaterial", 2]},
+        {"weight" : 0.25, "item" : ["starforge-blackrotmaterial", 4]},
+		{"weight" : 0.15, "item" : ["starforge-blackrotmaterial", 6]}
+      ]
+    }]
+  ]
+     
+  }
+  
