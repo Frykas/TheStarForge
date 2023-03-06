@@ -1,4 +1,5 @@
 require "/scripts/util.lua"
+require "/scripts/starforge-armourcolouradapt.lua"
 
 local originalInit = init
 local originalUpdate = update
@@ -6,8 +7,6 @@ local originalUninit = uninit
 
 function init()
   originalInit()
-  sb.logInfo("===== STARFORGE PLAYER INITIALIZATION =====")
-  sb.logInfo("Initializing general player utility script")
   
   self.validArmourSlots = {
     "head",
@@ -64,13 +63,8 @@ end
 function updateArmourFunctions()
   for _, armourType in ipairs(self.validArmourSlots) do
     armourName = player.equippedItem(armourType)
-	if armourName ~= nil then
-	  local itemConfig = root.itemConfig(armourName).config
-	  if itemConfig.applyFunction == "replace" then
-	    newParams = armourName.parameters
-		newParams.playerPortrait = world.entityPortrait(entity.id(), "full")
-	    player.setEquippedItem(armourType, {count = 1, name = armourName.name, parameters = newParams })
-	  end
+	for _, functionCall in ipairs(nebArmourFunctions or {}) do
+	  functionCall()
 	end
   end
 end

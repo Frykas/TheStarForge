@@ -1,0 +1,24 @@
+{
+  "materialId" : 2910,
+  "materialName" : "starforge-blackrotmatter",
+  "particleColor" : [80, 90, 80, 255],
+  "itemDrop" : "starforge-blackrotmatter",
+  "description" : "A durable plant-like mass. Twisted by the Great Withering.",
+  "shortdescription" : "Blackrot Matter",
+  "glitchDescription" : "Weary. These do not look safe to walk on.",
+  "floranDescription" : "Floran need to look!! Can't ssstep on ssspindle!",
+  "novakidDescription" : "They're slightly squishy. Gross.",
+  "footstepSound" : "/sfx/blocks/footstep_brains.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "blackrotmatter.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1720
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "objectName" : "starforge-blackrottable",
+  "printable" : true,
+  "rarity" : "common",
+  "description" : "A table made using Blackrot hives. Gross!",
+  "shortdescription" : "Blackrot Table",
+  "category" : "furniture",
+  "price" : 85,
+
+  "apexDescription" : "The Wither splinters were removed for safety, I still don't trust it very much.",
+  "avianDescription" : "I wouldn't use materials from the Great Withering to make furniture...",
+  "floranDescription" : "Floran isss taking risssk being near table!",
+  "glitchDescription" : "Weary. This table is made using very unsafe materials",
+  "humanDescription" : "A table made using materials from the Blackrot strand. Even though the splinter are gone, it doesn't look very safe.",
+  "hylotlDescription" : "A very crude and unsafe table, who would use that?",
+  "novakidDescription" : "A not so good ol' table.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "blackrottable.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
+

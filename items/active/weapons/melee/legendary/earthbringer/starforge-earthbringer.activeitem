@@ -19,7 +19,7 @@
     "handle" : "",
     "blade" : "starforge-earthbringer.png",
 	
-    "swoosh" : ""
+    "swoosh" : "physical"
   },
   "animationCustom" : {
     "animatedParts" : {

@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-blackrotmaterial",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "blackrotmaterial.png",
+  "description" : "A Hive sample of the Blackrot strand, from the Great Withering. ",
+  "shortdescription" : "Blackrot Sample",
+  "itemTags" : [ "reagent" ]
+}

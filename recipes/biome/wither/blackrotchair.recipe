@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "starforge-blackrotmaterial", "count" : 15 }
+  ],
+  "output" : { "item" : "starforge-blackrotchair", "count" : 1 },
+  "groups" : [ "craftingfurniture", "decoration", "all" ]
+}

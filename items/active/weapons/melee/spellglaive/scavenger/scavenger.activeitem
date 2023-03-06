@@ -23,7 +23,7 @@
     "blade" : "scavenger.png",
 	"bladeFullbright" : "",
 	
-    "swoosh" : "",	
+    "swoosh" : "poison",
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-poisonmuzzleflash.png"
   },
   "animationCustom" : {},

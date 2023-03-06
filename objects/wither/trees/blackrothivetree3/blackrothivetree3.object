@@ -1,0 +1,38 @@
+{
+  "objectName" : "starforge-blackrothivetree3",
+  "rarity" : "common",
+
+  "printable" : false,
+  "description" : "A Sickamore tree taken over by the Blackrot Wither.",
+  "shortdescription" : "Sickamore Hive Tree",
+  "category" : "decorative",
+  "price" : 5,
+
+  "apexDescription" : "Mmhm. This tree is full of hives.",
+  "avianDescription" : "The hives look gross!",
+  "floranDescription" : "Floran ssshouldn't touch tree! Dangerousss!",
+  "glitchDescription" : "Curious. I wonder why the Great Withering evolved to take over insects.",
+  "humanDescription" : "To think that just a poke from these spindles means a terrible death... Creepy!",
+  "hylotlDescription" : "A creepy result of evolution. The Great Withering learns and adapts very quickly.",
+  "novakidDescription" : "Never seen a tree like this before.",
+
+  
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "blackrothivetree3.png",
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }

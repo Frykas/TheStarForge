@@ -23,7 +23,7 @@
     "blade" : "deluge.png",
 	"bladeFullbright" : "",
 	
-	"swoosh" : "tidalfrost_",
+	"swoosh" : "tidalfrost",
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidebreakermuzzle.png"
   },
   "animationCustom" : {},

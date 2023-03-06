@@ -92,7 +92,7 @@
         "weaponRotation" : 5,
         "twoHanded" : true,
 
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : true
       }
     }

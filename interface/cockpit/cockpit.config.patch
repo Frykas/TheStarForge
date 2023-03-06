@@ -1,4 +1,30 @@
 [
+  [   {
+    "op": "add",
+    "path": "/visitableTypeDescription/starforge-withered",
+    "value": [
+      "A planet completely taken over by the ^orange;Great Withering^reset;. Its environment was twisted into something incredibly dangerous.",
+      "A planet completely taken over by the ^orange;Great Withering^reset;. It is now a corrupted atrocity, with danger on every corner.", 
+      "A planet completely taken over by the ^orange;Great Withering^reset;. A plagued world full of twisted and dangerous flora.",
+      "The twisting corruption of the ^orange;Great Withering^reset; has overcome this planet."	  
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/starforge-withered",
+    "value": "Withered"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/starforge-withered", 
+    "value": [
+      117,
+      132,
+      104
+    ]
+  }
+  ],
+  
   [  // TEST INFO
     {
       "inverse": true,
@@ -67,5 +93,7 @@
     }
   
   ]
+  
+
 
 ]
