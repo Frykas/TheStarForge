@@ -36,6 +36,44 @@
 			}
 		}
 	},
+		
+	{
+		"op": "add",
+		"path": "/starforge-katahelmission",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "starforge-katahelmission",
+			"seed": 1111,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": false},
+			"skyParameters" : {
+            "spaceLevel" : 3000,
+            "ambientLightLevel" : [128, 128, 128],
+
+            "skyType" : "atmospheric",
+			"skyColoring" : {
+        "mainColor" : [200, 200, 255],
+
+        "morningColors" : [ [120, 125, 200], [230, 150, 85] ],
+        "dayColors" : [ [120, 125, 200], [230, 150, 85] ],
+        "eveningColors" : [ [120, 125, 200], [230, 150, 85] ],
+        "nightColors" : [ [120, 125, 200], [230, 150, 85] ],
+
+        "morningLightColor" : [120, 140, 200],
+        "dayLightColor" : [120, 140, 200],
+        "eveningLightColor" : [120, 140, 200],
+        "nightLightColor" : [120, 140, 200]
+      },
+				"horizonImages": [],
+				"dayLength": 10000,
+				"surfaceLevel": 1000,
+				"seed": -5288806180628666923
+		
+			}
+		}
+	},
 	
   //UNBOUND STORY MISSIONS
 	{
@@ -127,6 +165,40 @@
 				"surfaceLevel": 800,
 				"seed": -5288806180628667000
 		
+			}
+		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/starforge-unbdmission4",
+		"value": {
+			"type": "FloatingDungeon",
+			"dungeonWorld": "starforge-unbdmission4",
+			"seed": 1234,
+			"spawningEnabled": false,
+			"beamUpRule": "Anywhere",
+			"disableDeathDrops": true,
+			"worldProperties": {"nonCombat": false},
+			"skyParameters" : {
+            "spaceLevel" : 3000,
+            "ambientLightLevel" : [24, 28, 24],
+			"seed" : -5288806180628666923,
+
+			"skyType" : "atmospheric",
+			"skyColoring" : {
+				"mainColor" : [255, 255, 255],
+
+				"morningColors" : [[125, 17, 158], [210, 52, 50]],
+				"dayColors" : [[125, 17, 158], [210, 52, 50]],
+				"eveningColors" : [[125, 17, 158], [210, 52, 50]],
+				"nightColors" : [[125, 17, 158], [210, 52, 50]],
+
+				"morningLightColor" : [160, 120, 180],
+				"dayLightColor" : [160, 120, 180],
+				"eveningLightColor" : [160, 120, 180],
+				"nightLightColor" : [160, 120, 180]
+				}
 			}
 		}
 	},

@@ -85,7 +85,7 @@
         "weaponRotation" : 5,
         "twoHanded" : true,
 
-        "allowRotate" : true,
+        "allowRotate" : false,
         "allowFlip" : true
       },
       "cooldown" : {
@@ -94,7 +94,7 @@
         "weaponRotation" : 5,
         "twoHanded" : true,
 
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : true
       }
     }

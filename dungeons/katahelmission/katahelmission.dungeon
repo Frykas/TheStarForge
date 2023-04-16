@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "starforge-katahelmission",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "katahelmission" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true,
+	"persistent" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "katahelmission",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "katahelmission.json" ]
+    }
+  ]
+}

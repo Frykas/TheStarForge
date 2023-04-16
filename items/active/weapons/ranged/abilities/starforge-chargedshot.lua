@@ -72,7 +72,7 @@ function StarforgeChargedShot:charge()
   animator.setParticleEmitterActive("chargeparticles", true)
   
   --While charging, but not yet ready, count down the charge timer
-  while self.chargeTimer > 0 and self.fireMode == (self.activatingFireMode or self.abilitySlot) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
+  while (self.holdCharge or (self.chargeTimer > 0)) and self.fireMode == (self.activatingFireMode or self.abilitySlot) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
     self.chargeTimer = math.max(0, self.chargeTimer - self.dt)
 
 	--Prevent energy regen while charging
