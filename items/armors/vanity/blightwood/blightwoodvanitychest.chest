@@ -1,0 +1,26 @@
+{
+  "itemName" : "starforge-blightwoodvanitychest",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "chestarmour",
+  "description" : "\"It's from the Great Withering for sure, but even the Progenitor strand doesn't recognize it anymore.\"",
+  "shortdescription" : "\"Of Beating Heart\"",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  }
+
+
+
+}

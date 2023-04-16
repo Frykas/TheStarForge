@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-blightwoodvanityhead",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "headarmour",
+  "description" : "\"It is clear that this strand's origins are not natural, it could have been modified or even created... I can't say for sure.\"",
+  "shortdescription" : "\"A Stalking Watch\"",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+}

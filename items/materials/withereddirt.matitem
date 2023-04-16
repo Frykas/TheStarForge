@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-withereddirt",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "common",
+  "inventoryIcon" : "withereddirt.png",
+  "description" : "Simple dirt, but with a little spicy twist.",
+  "shortdescription" : "Withered Dirt",
+  "glitchDescription" : "Weary. These do not look safe to walk on.",
+  "floranDescription" : "Floran need to look!! Can't ssstep on ssspindle!",
+  "novakidDescription" : "Weird dirt.",
+
+  "materialId" : 2911
+}

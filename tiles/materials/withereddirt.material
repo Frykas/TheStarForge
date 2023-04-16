@@ -1,0 +1,24 @@
+{
+  "materialId" : 2911,
+  "materialName" : "starforge-withereddirt",
+  "particleColor" : [112, 72, 39, 255],
+  "itemDrop" : "starforge-withereddirt",
+  "description" : "It's almost like regular dirt, but if you look closely you can see weird small roots and small splinters in it.",
+  "shortdescription" : "Withered Dirt",
+  "glitchDescription" : "Weary. This dirt looks sick.",
+  "floranDescription" : "Filthy dirt!",
+  "novakidDescription" : "Sick lookin' dirt.",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 2,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "withereddirt.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1920
+  }
+}
