@@ -38,7 +38,7 @@
     "projectileType" : "starforge-veilcrystal",
     "powerProjectileType" : "starforge-veilcrystalperfect",
     "projectileParameters" : {
-      "power" : 6.5
+      "power" : 9.5
     }
   },
 

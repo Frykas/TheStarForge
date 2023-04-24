@@ -34,7 +34,7 @@
 
   "primaryAbilityType" : "starforge-spellglaivecombo",
   "primaryAbility" : {
-    "baseDps" : 7.0
+    "baseDps" : 9.5
   },
   
   "altAbilityType" : "starforge-spellglaiveblast",

@@ -29,7 +29,7 @@
 
   "primaryAbilityType" : "starforge-daggercombo",
   "primaryAbility" : {
-    "baseDps" : 8.0,
+    "baseDps" : 9.5,
 	
     "damageConfig" : {
       "damageSourceKind" : "dagger",

@@ -1,9 +1,9 @@
 {
   "input" : [
-	{ "item" : "essence", "count" : 5000},
-	{ "item" : "starforge-brimsteel", "count" : 6},
-	{ "item" : "starforge-infusedtitanium", "count" : 15},
-	{ "item" : "corefragmentore", "count" : 100}
+	{ "item" : "essence", "count" : 1750},
+	{ "item" : "starforge-brimsteel", "count" : 5},
+	{ "item" : "starforge-infusedtitanium", "count" : 8},
+	{ "item" : "corefragmentore", "count" : 50}
   ],
   "output" : {
     "item" : "starforge-thevow",
