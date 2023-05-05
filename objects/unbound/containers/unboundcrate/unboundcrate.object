@@ -15,10 +15,10 @@
   "apexDescription" : "A standard Unbound crate. It is extremely durable.",
   "avianDescription" : "This container has lots of space to store things inside.",
   "floranDescription" : "Big ssstriped metal box.",
-  "glitchDescription" : "Interested. The metals used in this crate makes it strong, but quite light.",
+  "glitchDescription" : "Interested. The metals used in this crate make it strong, but quite light.",
   "humanDescription" : "An Unbound crate, this can store a lot inside.",
   "hylotlDescription" : "An Unbound container, made for goods transport.",
-  "novakidDescription" : "I'd reckon you could store near anything this ol' crate.",
+  "novakidDescription" : "I'd reckon you could store near anything in this ol' crate.",
 
   "inventoryIcon" : "unboundcrateicon.png",
   "orientations" : [
