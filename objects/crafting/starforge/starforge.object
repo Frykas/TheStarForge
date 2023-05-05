@@ -23,12 +23,12 @@
   "category" : "crafting",
   "price" : 5000,
 
-  "apexDescription" : "Every bit of technology I've seen this far doesn't even come close to this...",
+  "apexDescription" : "Every bit of technology I've seen thus far doesn't even come close to this...",
   "avianDescription" : "The shiny star in it reminds me of the sky at night !",
   "floranDescription" : "Floran like ssssshiny lights... ",
   "glitchDescription" : "Inspired. This forge will allow me to craft wonderful items. ",
   "humanDescription" : "This forge resonates with a power I can barely understand, this is scary.",
-  "hylotlDescription" : "Such a wonderful craftsmanship, simple and yet so... perfect.",
+  "hylotlDescription" : "Such wonderful craftsmanship, simple and yet so... perfect.",
   
   "turnInQuests" : ["thalassointromission3"],
   "offeredQuests" : ["thalassointromission4"],
