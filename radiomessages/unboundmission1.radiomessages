@@ -28,7 +28,7 @@
     "type" : "mission",
     "senderName" : "Morpheus",
     "portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
-    "text" : "See that white building over there? Unbound science buildings are white with green stripes. This one is probably going deep down the ground, what we're looking for is probably down there. Have a look around.",
+    "text" : "See that white building over there? Unbound science buildings are white with green stripes. This one is probably going deep down into the ground, what we're looking for is probably down there. Have a look around.",
     "persistTime" : 5.0
   },
   
