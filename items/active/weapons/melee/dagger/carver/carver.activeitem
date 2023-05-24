@@ -9,8 +9,11 @@
   "shortdescription" : "Forsaken Carver",
   "tooltipKind" : "starforge-uniquesword",
   "category" : "dagger",
-  "twoHanded" : true,
+  "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger", "legendary"],
+  "tooltipFieldsOverride" : {	
+    "altAbilityTitleLabel" : "Finisher:"
+  },
   "learnBlueprintsOnPickup" : [ "starforge-carver" ],
 
   "inventoryIcon" : "carver.png?flipx",
@@ -31,13 +34,16 @@
   "primaryAbility" : {
     "baseDps" : 9.5,
 	
+    "finisherHoldTime" : 0.6,
+  
     "damageConfig" : {
       "damageSourceKind" : "dagger",
       "knockbackMode" : "aim",
       "timeout" : 0.25,
-	  "statusEffects" : [ "starforge-lightbleeding" ]
+	    "statusEffects" : [ "starforge-lightbleeding" ]
     }
   },
+  "altAbilityType" : "superspinslash",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }

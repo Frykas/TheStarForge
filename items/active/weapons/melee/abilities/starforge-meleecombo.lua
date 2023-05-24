@@ -58,11 +58,11 @@ function StarforgeMeleeCombo:windup()
   
   -- Optionally flash the weapon
   if stance.flashTime then
-	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+    self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
   end
   -- Optional Emotes
   if stance.emote then
-	activeItem.emote(stance.emote)
+    activeItem.emote(stance.emote)
   end
 
   self.weapon:setStance(stance)
@@ -96,11 +96,11 @@ function StarforgeMeleeCombo:wait()
   
   -- Optionally flash the weapon
   if stance.flashTime then
-	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+    self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
   end
   -- Optional Emotes
   if stance.emote then
-	activeItem.emote(stance.emote)
+    activeItem.emote(stance.emote)
   end
 
   self.weapon:setStance(stance)
@@ -138,11 +138,11 @@ function StarforgeMeleeCombo:fire()
   
   -- Optionally flash the weapon
   if stance.flashTime then
-	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+    self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
   end
   -- Optional Emotes
   if stance.emote then
-	activeItem.emote(stance.emote)
+    activeItem.emote(stance.emote)
   end
 
   self.weapon:setStance(stance)
@@ -158,38 +158,38 @@ function StarforgeMeleeCombo:fire()
 
   -- If this step is configured as a "spin" move, spin the weapon
   if stance.spinRate then
-	util.wait(stance.duration, function()
-	  local damageArea = partDamageArea("swoosh")
-	  self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
-	
-	  -- Remove the weapon from the player's hand, allowing it to rotate freely
-	  activeItem.setOutsideOfHand(true)
-	
-	  -- Spin the weapon
-	  self.weapon.relativeWeaponRotation = self.weapon.relativeWeaponRotation + util.toRadians(stance.spinRate * self.dt)
-	
-	  -- Optionally force the player to walk while in this stance
-	  if stance.forceWalking then
-		mcontroller.controlModifiers({runningSuppressed=true})
-	  end
-	  
-	  -- Optionally freeze the player in place if so configured
-	  if stance.freezePlayer then
-		mcontroller.setVelocity({0,0})
-	  end
-	end)
-	animator.setAnimationState("swoosh", "idle")
+    util.wait(stance.duration, function()
+      local damageArea = partDamageArea("swoosh")
+      self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
+    
+      -- Remove the weapon from the player's hand, allowing it to rotate freely
+      activeItem.setOutsideOfHand(true)
+    
+      -- Spin the weapon
+      self.weapon.relativeWeaponRotation = self.weapon.relativeWeaponRotation + util.toRadians(stance.spinRate * self.dt)
+    
+      -- Optionally force the player to walk while in this stance
+      if stance.forceWalking then
+      mcontroller.controlModifiers({runningSuppressed=true})
+      end
+      
+      -- Optionally freeze the player in place if so configured
+      if stance.freezePlayer then
+      mcontroller.setVelocity({0,0})
+      end
+    end)
+    animator.setAnimationState("swoosh", "idle")
   -- If this step is a regular attack, simply set the damage area for the duration of the step
   else
-	util.wait(stance.duration, function()
-	  local damageArea = partDamageArea("swoosh")
-	  self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
-	  
-	  --Optionally freeze the player in place if so configured
-	  if stance.freezePlayer then
-		mcontroller.setVelocity({0,0})
-	  end
-	end)
+    util.wait(stance.duration, function()
+      local damageArea = partDamageArea("swoosh")
+      self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
+      
+      --Optionally freeze the player in place if so configured
+      if stance.freezePlayer then
+      mcontroller.setVelocity({0,0})
+      end
+    end)
   end
   
   if stance.continueStep then
@@ -203,6 +203,11 @@ function StarforgeMeleeCombo:fire()
     animator.setGlobalTag("comboDirectives", "")
     self.cooldownTimer = self.cooldowns[self.comboStep]
     self.comboStep = 1
+    
+    local alt = getAltAbility()
+    if alt and self.altComboFinisher then
+      triggerFinisher(self.finisherHoldTime)
+    end
   end
 end
 
@@ -258,3 +263,4 @@ end
 function StarforgeMeleeCombo:uninit()
   self.weapon:setDamage()
 end
+
