@@ -44,7 +44,7 @@
     "type" : "mission",
 	"senderName" : "Mariko",
 	"portraitImage" : "/interface/chatbubbles/marikosurprised.png:<frame>",
-	"text" : "What are Yukai Hylotls doing there?? They're armed, too? I'd ignore them if I were you, unless you're up for a challenge.",
+	"text" : "What are Yukai Hylotls doing there?? They're armed, too? I'd ignore them if I were you, unless you feel like you're up for a challenge.",
 	"persistTime" : 5.0
 },
 
