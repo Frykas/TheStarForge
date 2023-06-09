@@ -29,11 +29,23 @@ function init()
   if secondaryAttack then
     self.weapon:addAbility(secondaryAttack)
   end
+  
+  self.finisherGraceTimer = 0
 
   self.weapon:init()
 end
 
+function triggerFinisher(holdTime)
+  self.finisherGraceTimer = holdTime or 0.5
+end
+
 function update(dt, fireMode, shiftHeld)
+  --Thanks to C0bra5 for helping figure this out (shared under CC BY 04)
+	if self.finisherGraceTimer > 0 then
+		self.finisherGraceTimer = self.finisherGraceTimer - dt
+		fireMode = "alt"
+	end
+
   self.weapon:update(dt, fireMode, shiftHeld)
 end
 
@@ -41,8 +53,8 @@ function uninit()
   if config.getParameter("passiveStatusEffects") then
     status.clearPersistentEffects(self.tagGroup)
     if config.getParameter("statusEffectsLingerOnUnequip") then
-	  status.addEphemeralEffects(config.getParameter("passiveStatusEffects"), activeItem.ownerEntityId())
-	end
+      status.addEphemeralEffects(config.getParameter("passiveStatusEffects"), activeItem.ownerEntityId())
+    end
   end
 
   self.weapon:uninit()
