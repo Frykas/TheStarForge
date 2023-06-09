@@ -17,11 +17,11 @@
   "race" : "apex",
 
   "apexDescription" : "What kind of alien is that? I've never seen one like that before. What kind of experiments are the Unbound doing?",
-  "avianDescription" : "What is the Unbound thinking? What kind of monstrous experiment...",
+  "avianDescription" : "What are the Unbound thinking? What kind of monstrous experiment...",
   "floranDescription" : "Sssoup!",
   "glitchDescription" : "Shocked. What is going on here!? I've never seen any species like this one before...",
-  "humanDescription" : "What is the Unbound doing? Did they find a new alien species?!",
-  "hylotlDescription" : "What kind of otherworldly alien is that? Whatever it is, it doesn't deserve such a treatment...",
+  "humanDescription" : "What are the Unbound doing? Did they find a new alien species?!",
+  "hylotlDescription" : "What kind of otherworldly alien is that? Whatever it is, it doesn't deserve such treatment...",
   "novakidDescription" : "This just don't seem right to me.",
 
   "inventoryIcon" : "scienceengiicon.png",
