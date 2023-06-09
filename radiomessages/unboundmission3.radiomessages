@@ -4,7 +4,7 @@
     "type" : "mission",
     "senderName" : "Mariko",
     "portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
-    "text" : "Here you go we can't beam you any closer, the prison is to your left. We need Sasha, prisoner 52, alive. Be cautious of guards and snipers.",
+    "text" : "Here you go. We can't beam you any closer, the prison is to your left. We need Sasha, prisoner 52, alive. Be wary of guards and snipers.",
     "persistTime" : 5.0
   },
   
@@ -12,7 +12,7 @@
     "type" : "mission",
 	"senderName" : "Morpheus",
 	"portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
-	"text" : "Sasha was an officer before being sent here, she will help me go through the Unbound network undetected. She probably also knows what exactly is the Unbound after, I'm counting on you to keep her unharmed.",
+	"text" : "Sasha was an officer before being sent here, she will help me go through the Unbound network undetected. She probably also knows what exactly the Unbound are after, I'm counting on you to keep her unharmed.",
 	"persistTime" : 5.0
 },
 
@@ -28,7 +28,7 @@
     "type" : "mission",
 	"senderName" : "Mariko",
 	"portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
-	"text" : "You're heading away from the prison, whatever business you have there, please make it quick.",
+	"text" : "You're heading away from the prison, whatever business you have there - please make it quick.",
 	"persistTime" : 5.0
 },
 
@@ -44,7 +44,7 @@
     "type" : "mission",
 	"senderName" : "Mariko",
 	"portraitImage" : "/interface/chatbubbles/marikosurprised.png:<frame>",
-	"text" : "What are Yukai Hylotls doing there?? They're armed too? I'd ignore them if I were you, unless you feel up for a challenge.",
+	"text" : "What are Yukai Hylotls doing there?? They're armed, too? I'd ignore them if I were you, unless you're up for a challenge.",
 	"persistTime" : 5.0
 },
 
@@ -52,7 +52,7 @@
     "type" : "mission",
 	"senderName" : "Mariko",
 	"portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
-	"text" : "You're approaching Sasha's cell, get her out and send her to us, you're free to have a look around after.",
+	"text" : "You're approaching Sasha's cell, get her out and send her to us, you're free to have a look around afterwards.",
 	"persistTime" : 5.0
 }
 }
