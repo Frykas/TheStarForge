@@ -40,7 +40,7 @@ function triggerFinisher(holdTime)
 end
 
 function update(dt, fireMode, shiftHeld)
-  --Thanks to C0bra5 for helping figure this out (shared under CC BY 04)
+  --Thanks to C0bra5 for helping figure this out
 	if self.finisherGraceTimer > 0 then
 		self.finisherGraceTimer = self.finisherGraceTimer - dt
 		fireMode = "alt"
