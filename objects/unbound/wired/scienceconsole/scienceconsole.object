@@ -12,10 +12,10 @@
   "apexDescription" : "I wonder what this switch does...",
   "avianDescription" : "Does something happen if I pull the lever?",
   "floranDescription" : "A sssingle lever.",
-  "glitchDescription" : "Curious. A lever. ",
+  "glitchDescription" : "Curious. A lever.",
   "humanDescription" : "A big red lever. What could possibly go wrong?",
   "hylotlDescription" : "Look before you leap.",
-  "novakidDescription" : "A terminal with a big red lever. Should I pull it?",
+  "novakidDescription" : "A terminal with a big lever. Should I pull it?",
 
   "inventoryIcon" : "scienceconsoleicon.png",
   "orientations" : [
