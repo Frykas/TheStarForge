@@ -1,11 +1,4 @@
 {
-  "animationParts" : { },
-  "animationCustom" : {
-    "sounds" : {
-      "fireBolt" : [ "/sfx/gun/omnicannon_shot1.ogg", "/sfx/gun/omnicannon_shot3.ogg", "/sfx/gun/omnicannon_shot4.ogg" ]
-    }
-  },
-
   "ability" : {
 	"name" : "Spell Blast",
     "type" : "starforge-spellglaiveblast",

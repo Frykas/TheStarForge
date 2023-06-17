@@ -24,6 +24,8 @@
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
     "class" : "StarforgeGunFire",
+    
+    "useElementalMuzzleEmitter" : true, 
 
     "fireTime" : 0.2,
     "baseDps" : 10,

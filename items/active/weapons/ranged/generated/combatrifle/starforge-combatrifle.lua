@@ -10,7 +10,7 @@ function init()
 
   self.weapon:addTransformationGroup("weapon", {0, 0}, 0)
   self.weapon:addTransformationGroup("muzzle", self.weapon.muzzleOffset, 0)
-  self.weapon:addTransformationGroup("attachment", config.getParameter("attachmentOffset", {0, 0}), 0, {0, 0})
+  self.weapon:addTransformationGroup("attachment", config.getParameter("attachmentOffset", {0, 0}), 0)
 
   local primaryAbility = getPrimaryAbility()
   self.weapon:addAbility(primaryAbility)
@@ -26,10 +26,10 @@ end
 function update(dt, fireMode, shiftHeld)
   self.weapon:update(dt, fireMode, shiftHeld)
   
-  if config.getParameter("attachmentOffset") then
+  --[[if config.getParameter("attachmentOffset") then
     animator.resetTransformationGroup("attachment")
     animator.translateTransformationGroup("attachment", config.getParameter("attachmentOffset", {0, 0}))
-  end
+  end]]
   
   world.debugPoint(vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset)), "red")
 end

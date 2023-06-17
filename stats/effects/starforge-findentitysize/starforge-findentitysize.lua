@@ -4,9 +4,9 @@ function update(dt)
   self.entitySize = 1
   local boundBox = mcontroller.boundBox()
   for i, coord in ipairs(boundBox) do
-	if coord > self.entitySize then
-	  self.entitySize = coord
-	end
+    if coord > self.entitySize then
+      self.entitySize = coord
+    end
   end
 
   world.sendEntityMessage(self.sourceEntity, "setParentSize", self.entitySize)

@@ -157,53 +157,53 @@
     "physicalswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
-	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
-	  "burstCount" : 1,
+      "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "burstCount" : 1,
       "particles" : []
     },
     "fireswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
-	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
-	  "burstCount" : 1,
+      "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "burstCount" : 1,
       "particles" : []
     },
     "iceswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
-	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
-	  "burstCount" : 1,
+      "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "burstCount" : 1,
       "particles" : []
     },
     "poisonswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
-	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
-	  "burstCount" : 1,
+      "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "burstCount" : 1,
       "particles" : []
     },
     "electricswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
-	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
-	  "burstCount" : 1,
+      "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "burstCount" : 1,
       "particles" : []
     },
     "starforge-tidalfrostswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
-	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
-	  "burstCount" : 1,
+      "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "burstCount" : 1,
       "particles" : []
     }
   },
 
   "sounds" : {
-    "fire" : [],
-	"fire2" : [],
-	"fire3" : [],
-	"fire4" : [],
-	
-	"fireBolt" : []
+    "fire" : [ "/sfx/melee/swing_spear.ogg" ],
+    "fire2" : [ "/sfx/melee/swing_spear.ogg" ],
+    "fire3" : [ "/sfx/melee/swing_broadsword.ogg" ],
+    "fire4" : [ "/sfx/melee/swing_shortsword.ogg" ],
+    
+    "fireBolt" : [ "/sfx/gun/omnicannon_shot1.ogg", "/sfx/gun/omnicannon_shot3.ogg", "/sfx/gun/omnicannon_shot4.ogg" ]
   }
 }

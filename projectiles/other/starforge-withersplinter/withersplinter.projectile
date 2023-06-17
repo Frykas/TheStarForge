@@ -13,9 +13,9 @@
       ]
     }
   ],
-		"timeToLive": 1.3,
-		"knockback": 6,
-		
+  "timeToLive": 1.3,
+  "knockback": 6,
+
 	"emitters": [], //need to add custom ones later
 	"statusEffects" : [ "starforge-wither" ],
 	"power": 3.0,

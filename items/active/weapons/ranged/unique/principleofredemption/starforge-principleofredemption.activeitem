@@ -4,7 +4,7 @@
   "inventoryIcon" : "starforge-principleofredemption.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "N/A.",
+  "description" : "A handcannon that fires dual elemental slugs, perfect for every encounter.",
   "shortdescription" : "^#b4f5c3;Principle of Redemption^reset;",
   "level" : 7,
   "fixedLevel" : false,
@@ -65,7 +65,7 @@
       }
     },
 	
-	"sounds" : {
+    "sounds" : {
       "fire" : [ "/sfx/gun/starforge-principleofredemptionfire.ogg" ]
     }
   },
@@ -90,23 +90,23 @@
 	
     "fireType" : "auto",
 
-	"muzzleOffsets" : [[1.375, 0.875], [1.25, 0.625]],
-	"fireAllProjectileCount" : true,
-	"preventIdenticalProjectiles" : true,
-	"projectileTypePerBarrel" : [
-	  ["unboundfirebulletstatus", "unboundicebulletstatus", "unboundelectricbulletstatus", "unboundpoisonbulletstatus"],
-	  ["unboundfirebulletstatus", "unboundicebulletstatus", "unboundelectricbulletstatus", "unboundpoisonbulletstatus"]
-	],
+    "muzzleOffsets" : [[1.375, 0.875], [1.25, 0.625]],
+    "fireAllProjectileCount" : true,
+    "preventIdenticalProjectiles" : true,
+    "projectileTypePerBarrel" : [
+      ["unboundfirebulletstatus", "unboundicebulletstatus", "unboundelectricbulletstatus", "unboundpoisonbulletstatus"],
+      ["unboundfirebulletstatus", "unboundicebulletstatus", "unboundelectricbulletstatus", "unboundpoisonbulletstatus"]
+    ],
     "projectileParameters" : {},
 	
-	"muzzleFlashKeys" : {
-	//"projectileType" : "muzzleFlashKey"
-	
-	  "unboundfirebulletstatus" : "fire",
-	  "unboundicebulletstatus" : "ice",
-	  "unboundelectricbulletstatus" : "electric",
-	  "unboundpoisonbulletstatus" : "poison"
-	},
+    "muzzleFlashKeys" : {
+    //"projectileType" : "muzzleFlashKey"
+    
+      "unboundfirebulletstatus" : "fire",
+      "unboundicebulletstatus" : "ice",
+      "unboundelectricbulletstatus" : "electric",
+      "unboundpoisonbulletstatus" : "poison"
+    },
 	
     "stances" : {
       "idle" : {
@@ -121,7 +121,7 @@
         "duration" : 0.05,
         "armRotation" : 4,
         "weaponRotation" : 8,
-		"weaponOffset" : [-0.05, 0.0],
+        "weaponOffset" : [-0.05, 0.0],
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -131,7 +131,7 @@
         "duration" : 0.45,
         "armRotation" : 4,
         "weaponRotation" : 8,
-		"weaponOffset" : [-0.05, 0.0],
+        "weaponOffset" : [-0.05, 0.0],
         "twoHanded" : true,
 
         "allowRotate" : true,

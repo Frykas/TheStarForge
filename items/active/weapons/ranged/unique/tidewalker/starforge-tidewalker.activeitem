@@ -4,7 +4,7 @@
   "inventoryIcon" : "starforge-tidewalker.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "N/A.",
+  "description" : "A peculiar weapon, found outside the known realm, firing high speed projectiles made from tidalfrost.",
   "shortdescription" : "Tidewalker",
   "level" : 6,
   "fixedLevel" : false,

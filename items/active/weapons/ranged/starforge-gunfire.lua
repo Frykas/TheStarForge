@@ -81,10 +81,10 @@ function StarforgeGunFire:unholsterTwirl()
     local to = self.stances.idle.weaponOffset or {0,0}
     self.weapon.weaponOffset = {c5Easing.easeOut(progress, from[1], to[1]), c5Easing.easeOut(progress, from[2], to[2])}
 	
-  self.weapon.relativeWeaponRotation = util.toRadians(c5Easing.easeOut(progress, self.stances.unholsterTwirl.weaponRotation, self.stances.idle.weaponRotation))
-  self.weapon.relativeArmRotation = util.toRadians(c5Easing.easeOut(progress, self.stances.unholsterTwirl.armRotation, self.stances.idle.armRotation))
+    self.weapon.relativeWeaponRotation = util.toRadians(c5Easing.easeOut(progress, self.stances.unholsterTwirl.weaponRotation, self.stances.idle.weaponRotation))
+    self.weapon.relativeArmRotation = util.toRadians(c5Easing.easeOut(progress, self.stances.unholsterTwirl.armRotation, self.stances.idle.armRotation))
 
-  progress = math.min(1.0, progress + (self.dt / self.stances.unholsterTwirl.duration))
+    progress = math.min(1.0, progress + (self.dt / self.stances.unholsterTwirl.duration))
   end)
   
   return
@@ -99,18 +99,18 @@ function StarforgeGunFire:charge()
   local timer = 0
   util.wait(self.chargeTime, function()
   --Optional particle emitter
-  if self.chargeParticleEmitter then
-    animator.setParticleEmitterActive(self.stances.fire.particleEmitter, true)
-    self.currentParticleEmitter = self.stances.fire.particleEmitter
-  end
-  if self.chargeShake then
-    local wavePeriod = (self.chargeShakeWavePeriod or 0.125) / (2 * math.pi) / (1 + (timer * (self.chargeShakeFactor or 1)))
-    local waveAmplitude = (self.chargeShakeWaveAmplitude or 0.075) * (1 + (timer * (self.chargeShakeFactor or 1)))
+    if self.chargeParticleEmitter then
+      animator.setParticleEmitterActive(self.stances.fire.particleEmitter, true)
+      self.currentParticleEmitter = self.stances.fire.particleEmitter
+    end
+    if self.chargeShake then
+      local wavePeriod = (self.chargeShakeWavePeriod or 0.125) / (2 * math.pi) / (1 + (timer * (self.chargeShakeFactor or 1)))
+      local waveAmplitude = (self.chargeShakeWaveAmplitude or 0.075) * (1 + (timer * (self.chargeShakeFactor or 1)))
 	
-    timer = timer + self.dt
-    local rotation = waveAmplitude * math.sin(timer / wavePeriod)
+      timer = timer + self.dt
+      local rotation = waveAmplitude * math.sin(timer / wavePeriod)
 	
-    self.weapon.relativeArmRotation = rotation + util.toRadians(self.stances.idle.armRotation) --Add weaponRotation again, as relativeWeaponRotation overwrites it
+      self.weapon.relativeArmRotation = rotation + util.toRadians(self.stances.idle.armRotation) --Add weaponRotation again, as relativeWeaponRotation overwrites it
     end
   end)
   animator.stopAllSounds("chargeLoop")
@@ -147,7 +147,7 @@ function StarforgeGunFire:cooldown()
   self.weapon:setStance(self.stances.cooldown)
   self.weapon:updateAim()
 
-  local duration = self.useStanceDuration and self.stances.cooldown.duration or self.cooldownTimer
+  local duration = self.useStanceDuration and self.stances.cooldown.duration or (self.cooldownTimer * 0.9)
   local progress = 0
   --local maxRecoil = self.burstTime and 5 or 1;
   util.wait(duration, function()
@@ -162,9 +162,9 @@ function StarforgeGunFire:cooldown()
   end)
 end
 
-function StarforgeGunFire:muzzleFlash()
+function StarforgeGunFire:muzzleFlash(pitchIncrease)
   --Add normal pitch variance to shots
-  local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2))
+  local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2)) + (pitchIncrease or 0)
   animator.setSoundPitch("fire", pitchVariance)
   animator.playSound(self.fireSound or "fire")
   
@@ -173,7 +173,8 @@ function StarforgeGunFire:muzzleFlash()
   animator.setPartTag("muzzleFlash" .. (self.muzzleFlashSuffix or ""), "variant", math.random(1, self.muzzleFlashVariants or 3))
   animator.setAnimationState("firing", "fire" .. (self.muzzleFlashSuffix or ""))
   
-  animator.burstParticleEmitter("muzzleFlash" .. (self.muzzleFlashSuffix or ""))
+  local flashString = (self.useElementalMuzzleEmitter and self.weapon.elementalType ~= "physical") and (self.weapon.elementalType .. "MuzzleFlash") or "muzzleFlash"
+  animator.burstParticleEmitter(flashString .. (self.muzzleFlashSuffix or ""))
 
   --Optional firing animations
   if self.animatedFire == true then
@@ -183,9 +184,9 @@ function StarforgeGunFire:muzzleFlash()
       elseif animator.animationState("gun") == "idle2" then
         animator.setAnimationState("gun", "transitionToIdle1")
       end
-	else
-	  animator.setAnimationState("gun", "reload")
-	end
+    else
+      animator.setAnimationState("gun", "reload")
+    end
   end
 
   animator.setLightActive("muzzleFlash", true)
@@ -249,4 +250,7 @@ function StarforgeGunFire:damagePerShot()
 end
 
 function StarforgeGunFire:uninit()
+  if animator.hasSound("chargeLoop") then
+    animator.stopAllSounds("chargeLoop")
+  end
 end

@@ -41,13 +41,13 @@
 
   "aimOffset" : -1.0,
 
-  "primaryAbilityType" : "starforge-broadswordcombo",
+  "primaryAbilityType" : "starforge-spellglaivecombo",
   "primaryAbility" : {
     "baseDps" : 9.5,
 	
-	"comboSteps" : 7,
+    "comboSteps" : 7,
 	
-	"swooshOffsetRegions" : [
+    "swooshOffsetRegions" : [
       [1.5, -1.0, 5.5, 1.0],
       [1.5, -1.0, 5.5, 1.0],
       [1.5, -1.0, 5.5, 1.0],
@@ -57,7 +57,7 @@
       [-0.75, 0.0, -4.25, 5.0]
     ],
 	
-	"damageConfig" : {
+    "damageConfig" : {
       "damageSourceKind" : "starforge-wither",
       "knockbackMode" : "aim",
       "statusEffects" : [ "starforge-wither" ],
@@ -97,14 +97,6 @@
     "comboSpeedFactor" : 0.79,
 	
 	"stances" : {
-      //IDLE - DEFAULT
-	  "idle" : {
-        "armRotation" : -90,
-        "weaponRotation" : -15,
-        "weaponOffset" : [0, 0],
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
 	  //COMBO STEP 1
       "windup1" : {
         "duration" : 0.075,
@@ -135,7 +127,7 @@
 
         "allowRotate" : false,
         "allowFlip" : false,
-		"continueStep" : true
+        "continueStep" : true
       },
       "wait1" : {
         "duration" : 0.1,
@@ -177,7 +169,7 @@
 
         "allowRotate" : false,
         "allowFlip" : false,
-		"continueStep" : true
+        "continueStep" : true
       },
       "wait2" : {
         "duration" : 0.1,
@@ -386,65 +378,25 @@
       }
     }
   },
-
+  
+  "altAbilityType" : "starforge-spellglaiveblast",
   "altAbility" : {
-    "name" : "Withered Ground",
-    "scripts" : ["/items/active/weapons/melee/abilities/spear/upgradedshockwave/starforge-upgradedshockwave.lua"],
-    "class" : "StarForgeUpgradedShockWave",
-
-    "energyUsage" : 60.0,
-    "cooldownTime" : 7,
-	"projectileTimeToLive" : 5.5,
-
-    "chargeTime" : 2.0,
-    "minChargeTime" : 0.5,
-
-    "projectileType" : "starforge-witheredground",
+    "projectileType" : "starforge-sporkprojectile",
     "projectileParameters" : {
-      "power" : 0,
-      "speed" : 0,
-      "knockback" : 0,
-	  "actionOnReap" : [
-	    {
-          "action" : "projectile",
-          "inheritDamageFactor" : 0,
-          "type" : "starforge-grassrot"
-        }
-	  ]
-    },
-	"moveInDirection" : false,
-    "shockWaveBounds" : [-0.4, -1.375, 0.4, 0.0],
-    "shockwaveHeight" : 1.375,
-	"yOffset" : 0,
-    "maxDistance" : 15,
-    "bothDirections" : true,
-
-    "impactLine" : [ [1.25, -1.5], [1.25, -4.5] ],
-    "impactWeaponOffset" : 0.75,
-
-    "stances" : {
-      "windup" : {
-        "aimAngle" : 0,
-        "armRotation" : -90,
-        "endArmRotation" : 110,
-        "weaponRotation" : -15,
-        "endWeaponRotation" : -620,
-        "weaponOffset" : [0, 0],
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : true
+      "damageKind" : "starforge-wither",
+      "movementSettings" : {
+        "gravityMultiplier" : 1
       },
-      "fire" : {
-        "duration" : 0.5,
-        "armRotation" : 0,
-        "weaponRotation" : -180,
-        "twoHanded" : true,
+      "speed" : [45, 125]
+    },
 
-        "allowRotate" : false,
-        "allowFlip" : true
-      }
-    }
+    "projectileCount" : 3,
+    "inaccuracy": 0.125,
+    "baseDamage" : 10,
+    "energyUsage" : 60,
+    
+    "fireTime" : 1.0,
+    "fireType" : "auto"
   },
 
   "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"

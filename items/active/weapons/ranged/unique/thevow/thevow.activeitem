@@ -3,7 +3,7 @@
   "price" : 3000,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "A strong weapon which fires super heated rounds, capable of piercing shields. ",
+  "description" : "A strong weapon which fires super heated rounds, capable of piercing and rupturing shields.",
   "shortdescription" : "^orange;The Vow^reset;",
   "level" : 7,
   "tooltipKind" : "starforge-uniquegun",

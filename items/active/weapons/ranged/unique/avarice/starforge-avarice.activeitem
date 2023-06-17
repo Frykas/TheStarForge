@@ -113,14 +113,14 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadalternateammo.lua"],
     "class" : "StarForgeLoadAlternateAmmo",
 
-	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+    "adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
 	
-	//The new stats which will overwrite the primary ability
-	"newAbility" : {
-	  "projectileType" : "starforge-imperviumbolt",
-	  "projectileParameters" : {
-		"speed" : 200,
-		"knockback" : 25
+    //The new stats which will overwrite the primary ability
+    "newAbility" : {
+      "projectileType" : "starforge-imperviumbolt",
+      "projectileParameters" : {
+      "speed" : 200,
+      "knockback" : 25
 	  },
 	  
 	  "projectileCount" : 1,
@@ -132,13 +132,13 @@
       "fireTime" : 2,
       "energyUsage" : 50,
       "inaccuracy" : 0.0
-	},
+    },
 
     "stances" : {
       "load" : {
         "duration" : 0.6,
-		"frontArmFrame": "idle.3",
-		"backArmFrame": "fall.1",
+        "frontArmFrame": "idle.3",
+        "backArmFrame": "fall.1",
         "aimAngle" : 0,
         "armRotation" : -7,
         "weaponRotation" : 60,

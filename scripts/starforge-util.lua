@@ -61,6 +61,10 @@ if not nebUtil then
     end
     return multipliedTable
   end
+
+  function nebUtil.interpLinear(a, b, c)
+    return a + (b - a) * c
+  end
   
   --Find size of tabe
   function nebUtil.objectSize(table)
@@ -78,23 +82,23 @@ if not nebUtil then
   
   --Compare tables
   function nebUtil.tablesAreSame(table, lastTable)
-	local valid = true
-  
-	if #lastTable == #table then
-      valid = false
-	end
-  
-	if valid then
+    local valid = true
+    
+    if #lastTable == #table then
+        valid = false
+    end
+    
+    if valid then
       for _, lastValue in ipairs(lastTable) do
         for _, value in pairs(table) do
-	      if lastValue == value then
-	        valid = false
-	      end
+          if lastValue == value then
+            valid = false
+          end
         end
-	  end
-	end
-  
-	return valid
+      end
+    end
+    
+    return valid
   end
   
   --Check if table contains a value

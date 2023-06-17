@@ -1,14 +1,4 @@
 {
-  "animationParts" : { },
-  "animationCustom" : {
-    "sounds" : {
-      "fire" : [ "/sfx/melee/swing_spear.ogg" ],
-      "fire2" : [ "/sfx/melee/swing_spear.ogg" ],
-      "fire3" : [ "/sfx/melee/swing_broadsword.ogg" ],
-      "fire4" : [ "/sfx/melee/swing_shortsword.ogg" ]
-    }
-  },
-
   "ability" : {
     "name" : "Combo Slash",
     "type" : "starforge-spellglaivecombo",
