@@ -1,0 +1,69 @@
+{
+  "projectileName" : "starforge-iceplasma",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "starforge-iceplasma.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [],
+  "power" : 5,
+  "speed" : 75,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "periodicActions" : [],
+  "statusEffects" : [],
+  "lightColor" : [58, 207, 254],
+  "fullbright" : true,
+  "piercing" : false,
+  "damageKind" : "iceplasma",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-advancedPeriodicActions.lua" ],
+  "advancedPeriodicActions" : [
+    {
+      "loopTime" : 0.01,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "streak",
+        "layer" : "back",
+        "fullbright" : true,
+        "destructionAction" : "shrink",
+        "size" : 1.5,
+        "color" : [176, 255, 255, 255],
+        "collidesForeground" : false,
+        "length" : 12,
+        "position" : [1, 0],
+        "timeToLive" : 0.01,
+        "destructionTime" : 0.1,
+        "initialVelocity" : [0.5, 0],
+        "variance" : {
+          "size" : 0,
+          "destructionTime" : 0.1,
+          "initialVelocity" : [0.5, -0],
+          "length" : 0
+        }
+      }
+    },
+    {
+      "loopTime" : 0.07,
+      "loopTimeVariance" : 0.025,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/guns/elementalplasma/starforge-iceplasma/trail.animation",
+        "position" : [0.5, 0],
+        "size" : 1,
+        "light" : [25, 15, 5],
+        "color" : [255, 255, 255, 255],
+        "layer" : "back",
+        "initialVelocity" : [-1, 0],
+        "collidesForeground" : false,
+        "timeToLive" : 0.3,
+        "destructionTime" : 0.10,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ]
+}
