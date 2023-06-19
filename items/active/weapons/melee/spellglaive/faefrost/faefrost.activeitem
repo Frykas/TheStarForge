@@ -1,0 +1,61 @@
+{
+  "itemName" : "starforge-faefrost",
+  "price" : 1000,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A Spellglaive made of unique, prism-like materials. ",
+  "shortdescription" : "Faefrost",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "spear",
+  "tooltipFieldsOverride" : {"subtitle":"Spellglaive"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spellglaive","spear"],
+  "learnBlueprintsOnPickup" : [ "starforge-faefrost" ],
+
+  "cursor" : "/cursors/reticle0.cursor",
+
+  "inventoryIcon" : "faefrost.png",
+
+  "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
+  "animationParts" : {
+    "blade" : "faefrost.png",
+	"bladeFullbright" : "",
+	
+	"swoosh" : "ice",
+	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-icemuzzleflash.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "ice",
+
+  "primaryAbilityType" : "starforge-spellglaivecombo",
+  "primaryAbility" : {
+    "baseDps" : 10
+ },
+  
+  "altAbilityType" : "starforge-spellglaiveblast",
+  "altAbility" : {
+	"projectileType" : "starforge-tideshard",
+	"projectileParameters" : {
+	  "damageKind" : "starforge-tidalfrost",
+	  "movementSettings" : {
+		"gravityMultiplier" : 1
+	  },
+	  "speed" : [45, 125]
+    },
+
+	"projectileCount" : 6,
+	"inaccuracy": 0.125,
+	"baseDamage" : 10,
+	"energyUsage" : 60,
+	
+	"fireTime" : 1.9,
+	"fireType" : "auto"
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}
