@@ -14,47 +14,49 @@
             "cycle" : 0.8,
             "mode" : "loop"
           },
-          "run" : {
-            "frames" : 8,
-            "cycle" : 0.8,
-            "mode" : "loop"
-          },
           "jump" : {
-            "frames" : 1,
+            "frames" : 3,
             "cycle" : 0.5
           },
           "fall" : {
-            "frames" : 1,
+            "frames" : 2,
             "cycle" : 0.5
           },
-          "chargewindup" : {
-            "frames" : 4,
-            "cycle" : 1,
+          "leapjump" : {
+            "frames" : 3,
+            "cycle" : 0.2,
             "mode" : "loop",
-			"frameProperties" : {
-              "immediateSound" : [ "/sfx/monsters/puppertooth_screech.ogg" ]
-          }
-		  },
-          "chargewinddown" : {
+			"properties" : {
+              "immediateSound" : "/sfx/npc/monsters/monster_hop.ogg",
+              "immediateSoundRangeMultiplier" : 0.5
+            }
+          },
+          "leapfall" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "loop"
+          },
+          "spitWindup" : {
             "frames" : 1,
             "cycle" : 0.1
           },
-          "charge" : {
-            "frames" : 8,
+          "spit" : {
+            "frames" : 3,
             "cycle" : 0.4,
             "mode" : "loop"
           },
 		  
-		  "biteWindup" : {
+		  "chargewindup" : {
             "frames" : 1,
             "cycle" : 0.1
           },
-          "bite" : {
-            "frames" : 4,
-            "cycle" : 0.5,
-            "properties" : {
-              "immediateSound" : "/sfx/npc/monsters/monster_hop.ogg"
-            }
+          "charge" : {
+            "frames" : 2,
+            "cycle" : 0.5
+          },
+		  "chargewinddown" : {
+            "frames" : 1,
+            "cycle" : 0.1
           }
         }
       },
@@ -93,77 +95,8 @@
     },
 
     "parts" : {
-      "body" : {
-        "properties" : {
-          "transformationGroups" : [ "body" ],
-		  "zLevel" : 1,
-		  "fullbright" : true,
-          "offset" : [0.0, 0.375]
-        },
-        "partStates" : {
-          "body" : {
-            "idle" : {
-              "properties" : {
-                "image" : "<partImage>:idle.<frame>"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "<partImage>:walk.<frame>"
-              }
-            },
-            "run" : {
-              "properties" : {
-                "image" : "<partImage>:walk.<frame>"
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "<partImage>:jump.<frame>"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "<partImage>:fall.<frame>"
-              }
-            },
-            "chargewindup" : {
-              "properties" : {
-                "image" : "<partImage>:windup.<frame>"
-              }
-            },
-            "chargewinddown" : {
-              "properties" : {
-                "image" : "<partImage>:winddown.<frame>"
-              }
-            },
-            "charge" : {
-              "properties" : {
-                "image" : "<partImage>:charge.<frame>"
-              }
-            },
-			"biteWindup" : {
-              "properties" : {
-                "image" : "<partImage>:windup.2"
-              }
-            },
-            "bite" : {
-              "properties" : {
-                "image" : "<partImage>:bite.<frame>"
-              }
-            }
-          },
-          "damage" : {
-            "stunned" : {
-              "properties" : {
-                "image" : "<partImage>:hurt.<frame>"
-              }
-            }
-          }
-        }
-	   },
 	  
-	  "bodynobright" : {
+	  "body" : {
         "properties" : {
           "transformationGroups" : [ "body" ],
 		  "zLevel" : 2,
@@ -181,46 +114,51 @@
                 "image" : "<partImage>:walk.<frame>"
               }
             },
-            "run" : {
-              "properties" : {
-                "image" : "<partImage>:walk.<frame>"
-              }
-            },
             "jump" : {
               "properties" : {
-                "image" : "<partImage>:jump.<frame>"
+                "image" : "<partImage>:leapjump.<frame>"
               }
             },
             "fall" : {
               "properties" : {
-                "image" : "<partImage>:fall.<frame>"
+                "image" : "<partImage>:leapfall.<frame>"
               }
             },
-            "chargewindup" : {
+            "leapjump" : {
               "properties" : {
-                "image" : "<partImage>:windup.<frame>"
+                "image" : "<partImage>:leapjump.<frame>"
               }
             },
-            "chargewinddown" : {
+            "leapfall" : {
               "properties" : {
-                "image" : "<partImage>:winddown.<frame>"
+                "image" : "<partImage>:leapfall.<frame>"
+              }
+            },		  
+		  "spitWindup" : {
+              "properties" : {
+                "image" : "<partImage>:spit.1"
+              }
+            },
+            "spit" : {
+              "properties" : {
+                "image" : "<partImage>:spit.<frame>"
+              }
+			 },
+			 "chargewindup" : {
+              "properties" : {
+                "image" : "<partImage>:slice.1"
               }
             },
             "charge" : {
               "properties" : {
-                "image" : "<partImage>:charge.<frame>"
+                "image" : "<partImage>:slice.<frame>"
               }
-          },		  
-		  "biteWindup" : {
+			 },
+			 "chargewinddown" : {
               "properties" : {
-                "image" : "<partImage>:windup.2"
+                "image" : "<partImage>:slice.1"
               }
-            },
-            "bite" : {
-              "properties" : {
-                "image" : "<partImage>:bite.<frame>"
-              }
-			 }
+            }
             },
 			
           "damage" : {

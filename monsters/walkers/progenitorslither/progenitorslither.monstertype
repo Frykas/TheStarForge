@@ -1,16 +1,30 @@
 {
   "type" : "starforge-progenitorslither",
   "shortdescription" : "Progenitor Slither",
-  "description" : "An abomination born of the Progenitor strand of the Great Withering.",
+  "description" : "An abomination born of the Progenitor strand from the Great Withering.",
 
   "categories" : [ "slither" ],
   "parts" : [ "body" ],
 
   "animation" : "progenitorslither.animation",
 
-  "dropPools" : [ "puppertoothTreasure" ],
+  "dropPools" : [ "progenitorslitherTreasure" ],
 
   "baseParameters" : {
+  
+   "animationCustom" : {
+      "particleEmitters" : {
+        "smoke" : {
+          "active" : true,
+          "burstCount" : 15,
+          "emissionRate" : 15,
+          "offsetRegion" : [ -0.625, -2.25, 0.625, 0.25 ],
+          "particles" : [
+            { "particle" : "starforge-withersmoke" }
+          ]
+        }
+	   }
+	  },
     "scripts" : [
       "/monsters/monster.lua"
     ],
@@ -33,39 +47,58 @@
       "hostileActions" : [
         {
           "name" : "action-charge",
-		  "cooldown" : 5.0,
+          "cooldown" : 2,
           "parameters" : {
-            "maximumRange" : 30,
-            "windupTime" : 0.8,
+            "maximumRange" : 5,
+            "windupTime" : 0.4,
 
-            "chargeTime" : 1.2,
-            "chargeSpeed" : 24,
-            "chargeControlForce" : 400,
-            "wallKnockback" : true,
-            "wallCrashSound" : "wallCrash",
+            "aimAtTarget" : false,
+            "aimDirection" : [1, 0.5],
+            "chargeTime" : [0.3, 0.3],
+            "chargeSpeed" : 25,
+            "chargeControlForce" : 200,
+            "wallCrashSound" : "",
             "wallCrashEmitter" : "",
 
             "winddownTime" : 0.5
           }
         },
-		
+		{
+          "name" : "action-leap",
+          "cooldown" : 3,
+          "parameters" : {
+            "minimumRange" : 5,
+            "maximumRange" : 20,
+            "windupState" : "idle",
+            "windupTime" : 0.75,
+
+            "leapVelocity" : 35,
+            "collisionCheck" : true,
+            "highArc" : false,
+            "leapState" : "leapjump",
+            "fallState" : "leapfall",
+
+			"winddownState" : "idle",
+            "winddownTime" : 0.5
+          }
+        },
 		{
           "name" : "action-fire",
           "cooldown" : 1.0,
           "parameters" : {
             "requireLineOfSight" : true,
-            "maximumRange" : 8,
-            "minimumRange" : 3,
-            "windupState" : "biteWindup",
+            "maximumRange" : 15,
+            "minimumRange" : 5,
+            "windupState" : "spitWindup",
             "windupTime" : 0.125,
 
-            "projectileType" : "meleebite",
+            "projectileType" : "starforge-withersplinter",
             "projectileParameters" : {},
-            "aimAtTarget" : false,
-            "fireOffset" : [3.250, 0.125],
-            "projectileCount" : 1,
+            "aimAtTarget" : true,
+            "fireOffset" : [1.250, 0.125],
+            "projectileCount" : 3,
             "projectileInterval" : 0.015,
-            "fireState" : "bite",
+            "fireState" : "spit",
             "fireDelay" : 0.3,
 
             "fireArc": false,
@@ -89,9 +122,7 @@
             "jumpXVelocity" : 12,
             "jumpYVelocity" : 30,
             "jumpXControlForce" : 50,
-            "minXRange" : 10,
-            "moveState" : "run",
-            "run" : true
+            "minXRange" : 10
           }
         }
       ],
@@ -133,7 +164,7 @@
       "teamType" : "enemy",
       "damageSourceKind" : "slash",
       "knockback" : 20,
-      "statusEffects" : [ ]
+      "statusEffects" : ["starforge-wither" ]
     },
 
     "metaBoundBox" : [-2.0, -2.0, 2.0, 2.0],
@@ -143,8 +174,8 @@
       "collisionPoly" : [ [0.8125, 1.25], [1.3125, 0.75],  [1.3125, -1.05], [0.8125, -1.55],  [-0.8125, -1.55], [-1.3125, -1.05],  [-1.3125, 0.75], [-0.8125, 1.25] ],
 
       "mass" : 1.0,
-      "walkSpeed" : 5,
-      "runSpeed" : 7,
+      "walkSpeed" : 8,
+      "runSpeed" : 10,
 
       "airFriction" : 0,
 
@@ -157,7 +188,7 @@
 
     "bodyMaterialKind" : "organic",
 
-    "knockoutTime" : 0.3,
+    "knockoutTime" : 0.2,
     "knockoutAnimationStates" : {
       "damage" : "stunned"
     },
@@ -186,7 +217,7 @@
           "baseValue" : 9
         },
         "maxHealth" : {
-          "baseValue" : 100
+          "baseValue" : 110
         },
         "protection" : {
           "baseValue" : 0.0
@@ -195,31 +226,31 @@
           "baseValue" : 3.0
         },
         "powerMultiplier" : {
-          "baseValue" : 2.8
+          "baseValue" : 2.3
         },
         "physicalResistance" : {
           "baseValue" : 0.0
         },
         "fireResistance" : {
-          "baseValue" : 0.9
+          "baseValue" : 0.98
         },
         "fireStatusImmunity" : {
           "baseValue" : 1.0
         },
         "iceResistance" : {
-          "baseValue" : -0.4
+          "baseValue" : -0.6
         },
         "iceStatusImmunity" : {
           "baseValue" : 0.0
         },
         "electricResistance" : {
-          "baseValue" : 0.0
+          "baseValue" : 0.3
         },
         "electricStatusImmunity" : {
           "baseValue" : 0.0
         },
         "poisonResistance" : {
-          "baseValue" : 0.0
+          "baseValue" : 0.3
         },
         "poisonStatusImmunity" : {
           "baseValue" : 0.0
@@ -244,6 +275,6 @@
     "capturable" : true,
     "captureHealthFraction" : 0.3,
     "nametagColor" : [64, 200, 255],
-    "captureCollectables" : { "monsters" : "puppertooth" }
+    "captureCollectables" : { "monsters" : "progenitorslither" }
   }
 }

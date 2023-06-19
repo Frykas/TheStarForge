@@ -111,6 +111,17 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/progenitorslither",
+	  "value": 	  
+	  {
+	    "order" : 111,
+	    "monsterType" : "starforge-progenitorslither",
+	    "icon" : "/monsters/walkers/progenitorslither/icon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/mothon",
 	  "value": 	  
 	  {
