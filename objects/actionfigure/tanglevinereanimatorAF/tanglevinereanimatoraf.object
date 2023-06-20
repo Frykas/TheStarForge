@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-tanglevinereanimatoraf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"This Tanglevine from the Progenitor strand reanimates corpses and uses them to move around.\"",
+  "shortdescription" : "Tanglevine Reanimator Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-tanglevinereanimatoraf" },
+
+
+  "inventoryIcon" : "tanglevinereanimatoraf.png",
+  "orientations" : [
+    {
+      "image" : "tanglevinereanimatoraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "tanglevinereanimatoraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

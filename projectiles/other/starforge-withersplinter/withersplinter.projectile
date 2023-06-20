@@ -21,7 +21,7 @@
 	"power": 3.0,
 	"speed": 80.0,
 	"physics": "arrow",
-	"damageKind": "default",
+	"damageKind": "starforge-wither",
 
 	"controlForce": 150,
 	"maxSpeed": 150

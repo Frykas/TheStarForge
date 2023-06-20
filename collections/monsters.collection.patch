@@ -122,6 +122,17 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/tanglevinereanimator",
+	  "value": 	  
+	  {
+	    "order" : 112,
+	    "monsterType" : "starforge-tanglevinereanimator",
+	    "icon" : "/monsters/flyers/tanglevinereanimator/icon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/mothon",
 	  "value": 	  
 	  {
