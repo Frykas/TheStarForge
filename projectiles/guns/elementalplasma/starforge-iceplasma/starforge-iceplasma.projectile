@@ -11,7 +11,7 @@
   "supportsProcessing" : true,
   "actionOnReap" : [],
   "periodicActions" : [],
-  "statusEffects" : [],
+  "statusEffects" : [ "starforge-protodisintegrate" ],
   "lightColor" : [58, 207, 254],
   "fullbright" : true,
   "piercing" : false,
@@ -45,7 +45,7 @@
       }
     },
     {
-      "loopTime" : 0.07,
+      "loopTime" : 0.1,
       "loopTimeVariance" : 0.025,
       "action" : "particle",
       "rotate" : true,

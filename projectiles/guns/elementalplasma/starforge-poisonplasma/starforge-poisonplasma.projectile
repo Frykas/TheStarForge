@@ -11,11 +11,11 @@
   "supportsProcessing" : true,
   "actionOnReap" : [],
   "periodicActions" : [],
-  "statusEffects" : [],
+  "statusEffects" : [ "starforge-protodisintegrate" ],
   "lightColor" : [155, 186, 61],
   "fullbright" : true,
   "piercing" : false,
-  "damageKind" : "iceplasma",
+  "damageKind" : "poisonplasma",
   
   "scripts" : [ "/projectiles/scripts/starforge-advancedPeriodicActions.lua" ],
   "advancedPeriodicActions" : [
@@ -45,7 +45,7 @@
       }
     },
     {
-      "loopTime" : 0.07,
+      "loopTime" : 0.1,
       "loopTimeVariance" : 0.025,
       "action" : "particle",
       "rotate" : true,

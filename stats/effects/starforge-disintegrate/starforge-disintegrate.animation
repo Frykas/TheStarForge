@@ -4,9 +4,6 @@
       "enabled" : true,
       "emissionRate" : 7.0,
       "particles" : [
-        {
-          "particle" : "burningdust"
-        }
       ]
     }
   },
@@ -14,7 +11,7 @@
     "glow" : {
       "active" : true,
       "position" : [0, 0],
-      "color" : [191, 103, 2]
+      "color" : [155, 155, 155]
     }
   }
 }

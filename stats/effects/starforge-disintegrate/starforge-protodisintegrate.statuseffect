@@ -1,0 +1,20 @@
+{
+  "name" : "starforge-protodisintegrate",
+
+  "effectConfig" : {
+    //Directives while affected
+    "directive" : "fade=282828=0.25",
+    
+    //Directives when dying
+    "deathDirective" : "fade=282828=1.0?border=2;E8F9BD80;00000000",
+    "deathProjectileType" : "starforge-disintegrateash",
+	
+    //Misc
+    "minMaxHealth" : 5
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "starforge-disintegrate.lua"
+  ]
+}

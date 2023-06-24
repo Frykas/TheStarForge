@@ -117,5 +117,15 @@
     "centered" : true,
     "maxSize" : [60, 60],
     "minSize" : [60, 60]
+  },
+  
+  //Custom field, Manufacturer Icon
+  "manufacturerIconImage" : {
+    "type" : "image",
+    "position" : [15, 110],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
   }
 }
