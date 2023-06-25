@@ -1,8 +1,6 @@
 require "/scripts/util.lua"
 
-function init()  
-  animator.setParticleEmitterOffsetRegion("sparks", mcontroller.boundBox())
-  animator.setParticleEmitterActive("sparks", true)
+function init()
   effect.setParentDirectives(config.getParameter("directive"))
   
   self.effectsOnExpire = config.getParameter("effectsOnExpire")
@@ -18,7 +16,7 @@ function update(dt)
   
   --If the target doesn't die quickly enough, expire this effect and activate the next
   if effect.duration() < 0.25 then
-	effect.expire()
+    effect.expire()
   end
 end
 

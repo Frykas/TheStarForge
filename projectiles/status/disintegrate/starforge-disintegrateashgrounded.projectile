@@ -1,6 +1,6 @@
 {
-  "projectileName" : "disintegrateash",
-  "image" : "disintegrateash.png",
+  "projectileName" : "starforge-disintegrateashgrounded",
+  "image" : "starforge-disintegrateashgrounded.png",
   "physics" : "starforge-disintegrateash",
   "animationCycle" : 2,
   "frameNumber" : 1,
@@ -9,21 +9,13 @@
   "speed" : 0,
   "piercing" : true,
   "initialVelocity" : 0,
-  "timeToLive" : 10,
-  "bounces" : 0,
+  "timeToLive" : 30,
+  "bounces" : -1,
   "flippable" : true,
-  "orientationLocked" : false,
+  "orientationLocked" : true,
   "emitters" : [],
-
-  "actionOnReap" : [
-	{
-      "action" : "projectile",
-      "type" : "disintegrateashgrounded",
-      "inheritDamageFactor" : 0.0,
-	  "fuzzAngle" : 0,
-      "angleAdjust" : 0
-    }
-  ],
+  
+  "actionOnReap" : [],
   "damageType" : "NoDamage",
   "damageKind" : "default",
   

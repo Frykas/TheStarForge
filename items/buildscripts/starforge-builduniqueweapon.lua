@@ -77,8 +77,13 @@ function build(directory, config, parameters, level, seed)
       config.tooltipFields.altAbilityTitleLabel = "Special:"
       config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
     end
+
+    --Apply manufacturer icon
+    if config.manufacturer and config.manufacturer ~= "" then
+      config.tooltipFields.manufacturerIconImage = "/interface/sf-manufacturers/" .. config.manufacturer:lower() .. ".png"
+    end
     
-	-- Lets you customise tooltip from the weapon... EXTREMELY useful I think!
+    -- Lets you customise tooltip from the weapon... EXTREMELY useful I think!
     config.tooltipFields = sb.jsonMerge(config.tooltipFields, config.tooltipFieldsOverride or {})
   end
 
