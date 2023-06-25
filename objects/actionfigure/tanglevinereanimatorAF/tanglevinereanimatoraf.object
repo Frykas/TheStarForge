@@ -6,7 +6,7 @@
   "price" : 5000,
   "printable" : false,
   "description" : "The label reads, \"This Tanglevine from the Progenitor strand reanimates corpses and uses them to move around.\"",
-  "shortdescription" : "Tanglevine Reanimator Figurine",
+  "shortdescription" : "Tanglevine Seeker Figurine",
   "collectablesOnPickup" : { "actionfigures" : "starforge-tanglevinereanimatoraf" },
 
 

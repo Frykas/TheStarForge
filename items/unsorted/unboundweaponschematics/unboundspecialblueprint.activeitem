@@ -7,7 +7,7 @@
   "category" : "Blueprint",
   "twoHanded" : false,
   "inventoryIcon" : "unboundcaptainblueprint.png",
-  "recipes" : ["starforge-unboundrailpistol"],
+  "recipes" : ["starforge-unboundrailpistol", "starforge-unboundrevolver"],
   "animation" : "unboundspecialblueprint.animation",
   "scripts" : ["unboundweaponschematic.lua"],
   "swingTime" : 0.15

@@ -61,8 +61,6 @@
     }
   },
 
-  "hueShiftOptions" : [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
-
   "weather" : [
     [0, [
       "/weather.config:forest"

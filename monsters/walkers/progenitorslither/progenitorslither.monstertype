@@ -1,6 +1,6 @@
 {
   "type" : "starforge-progenitorslither",
-  "shortdescription" : "Progenitor Slither",
+  "shortdescription" : "Pureborn Slither",
   "description" : "An abomination born of the Progenitor strand from the Great Withering.",
 
   "categories" : [ "slither" ],
@@ -223,7 +223,7 @@
           "baseValue" : 0.0
         },
         "healthRegen" : {
-          "baseValue" : 3.0
+          "baseValue" : 4.0
         },
         "powerMultiplier" : {
           "baseValue" : 2.3

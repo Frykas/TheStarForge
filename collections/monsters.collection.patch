@@ -114,7 +114,7 @@
 	  "path": "/collectables/progenitorslither",
 	  "value": 	  
 	  {
-	    "order" : 111,
+	    "order" : 112,
 	    "monsterType" : "starforge-progenitorslither",
 	    "icon" : "/monsters/walkers/progenitorslither/icon.png"
 	  }
@@ -125,9 +125,20 @@
 	  "path": "/collectables/tanglevinereanimator",
 	  "value": 	  
 	  {
-	    "order" : 112,
+	    "order" : 113,
 	    "monsterType" : "starforge-tanglevinereanimator",
 	    "icon" : "/monsters/flyers/tanglevinereanimator/icon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/erchiusflayer",
+	  "value": 	  
+	  {
+	    "order" : 111,
+	    "monsterType" : "starforge-erchiusflayer",
+	    "icon" : "/monsters/flyers/erchiusflayer/icon.png"
 	  }
 	},
 	

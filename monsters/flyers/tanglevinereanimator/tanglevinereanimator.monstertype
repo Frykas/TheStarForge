@@ -1,7 +1,7 @@
 {
   "type" : "starforge-tanglevinereanimator",
-  "shortdescription" : "Tanglevine Reanimator",
-  "description" : "This Tanglevine from the Progenitor strand reanimates corpses and uses them to move around.",
+  "shortdescription" : "Tanglevine Seeker",
+  "description" : "Tanglevines reanimate corpses using vines and try to mimic how it acted before its death.",
 
   "categories" : [ "tanglevinereanimator" ],
   "parts" : [ "body" ],
@@ -174,7 +174,7 @@
           "baseValue" : 0.0
         },
         "healthRegen" : {
-          "baseValue" : 3.0
+          "baseValue" : 2.0
         },
         "powerMultiplier" : {
           "baseValue" : 2.5
@@ -183,25 +183,25 @@
           "baseValue" : 0.0
         },
         "fireResistance" : {
-          "baseValue" : 0.98
+          "baseValue" : 0.80
         },
         "fireStatusImmunity" : {
           "baseValue" : 1.0
         },
         "iceResistance" : {
-          "baseValue" : -0.6
+          "baseValue" : -0.4
         },
         "iceStatusImmunity" : {
           "baseValue" : 0.0
         },
         "electricResistance" : {
-          "baseValue" : -0.3
+          "baseValue" : -0.2
         },
         "electricStatusImmunity" : {
           "baseValue" : 0.0
         },
         "poisonResistance" : {
-          "baseValue" : -0.3
+          "baseValue" : -0.2
         },
         "poisonStatusImmunity" : {
           "baseValue" : 0.0
