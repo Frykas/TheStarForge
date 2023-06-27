@@ -26,31 +26,31 @@
             "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
+              },
+          "fire4" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
           },
-		  "fire4" : {
-			"frames" : 3,
+          "fire5" : {
+            "frames" : 3,
             "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
-		  },
-		  "fire5" : {
-			"frames" : 3,
+          },
+          "fire6" : {
+            "frames" : 3,
             "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
-		  },
-		  "fire6" : {
-			"frames" : 3,
+          },
+          "fire7" : {
+            "frames" : 3,
             "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
-		  },
-		  "fire7" : {
-			"frames" : 3,
-            "cycle" : 0.1,
-            "mode" : "transition",
-            "transition" : "idle"
-		  }
+          }
         }
       },
       "lights" : {
@@ -91,14 +91,14 @@
                 "image" : ""
               }
             },
-			"fire" : {
+            "fire" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/swoosh/starforge/stab/stab-<partImage>.png:<frame>",
                 "offset" : [3.5, 0],
                 "damageArea" : [[-4.75, 1.5], [3, 1], [1, -2], [-4.75, -1.5]]
               }
             },
-			"fire2" : {
+            "fire2" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/swoosh/starforge/stab/stab-<partImage>.png:<frame>",
                 "offset" : [3.5, 0],
@@ -119,7 +119,7 @@
                 "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
               }
             },
-			"fire5" : {
+            "fire5" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/swoosh/starforge/stab/stab-<partImage>.png:<frame>",
                 "offset" : [3.5, 0],
@@ -155,7 +155,7 @@
     "starforge-witherswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
-	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
       "burstCount" : 7,
       "particles" : [
         { "particle" : "starforge-withersmoke"}
@@ -197,12 +197,12 @@
 
   "sounds" : {
     "fire" : [],
-	"fire2" : [],
-	"fire3" : [],
-	"fire4" : [],
-	"fire5" : [],
-	"fire6" : [],
-	"fire7" : [],
-	"chargeShockwave" : []
+    "fire2" : [],
+    "fire3" : [],
+    "fire4" : [],
+    "fire5" : [],
+    "fire6" : [],
+    "fire7" : [],
+    "chargeShockwave" : []
   }
 }

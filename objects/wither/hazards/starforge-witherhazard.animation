@@ -1,0 +1,28 @@
+{
+  "globalTagDefaults" : {
+    "variant" : "1"
+  },
+  
+  "animatedParts" : {
+    "parts" : {
+      "hazard" : {
+        "properties" : {
+          "centered" : false,
+          "image" : "<partImage>:<variant>"
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "idleParticles" : {
+      "active" : true,
+      "offsetRegion" : [0, 0, 2, 2],
+      "emissionRate" : 2,
+      "emissionVariance" : 1,
+      "particles" : [
+        { "particle" : "starforge-withersmoke"}
+      ]
+    }
+  }
+}

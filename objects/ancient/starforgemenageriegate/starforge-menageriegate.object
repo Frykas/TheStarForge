@@ -23,7 +23,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "starforge-menageriegate.png:idle", "fullbright" : true }, { "image" : "starforge-menageriegatelit.png:idle" } ],
+      "imageLayers" : [ { "image" : "starforge-menageriegate.png:idle" }, { "image" : "starforge-menageriegatefullbright.png:idle", "fullbright" : true  } ],
       "imagePosition" : [-16, 0],
       "animationPosition" : [-16, 0],
       "spaceScan" : 0.1,

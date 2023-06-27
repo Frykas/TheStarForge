@@ -8,22 +8,25 @@
   "rewards" : [
     [ [ "starforge-thalassocache", 1 ], [ "syntheticmaterial", 10] ]
   ],
-  "updateDelta" : 10,
+  
+  "updateDelta" : 1,
   "script" : "/quests/scripts/starforge-main.lua",
   "scriptConfig" : {
-     "portraits" : {
+    "portraits" : {
       "questStarted" : "questGiver",
       "questComplete" : "questReceiver"
     },
     "requireTurnIn" : true,
-     "conditions" : [
+    "conditions" : [
       {
-        "type" : "killMonstersWithWeapon",
+        "type" : "starforge-killEnemies",
+        
         "displayMonsterName" : "Gleaps",
-        "targetMonster" : "gleap",
+        "targetMonsters" : [ "gleap" ],
+        
         "count" : 12
       }
     ],
-	"turnInDescription" : "Speak to ^green;Will^reset;."
+    "turnInDescription" : "Speak to ^green;Will^reset;."
   }
 }

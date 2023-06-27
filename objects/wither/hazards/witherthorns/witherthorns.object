@@ -16,13 +16,19 @@
   "hylotlDescription" : "Sharp spikes fashioned with wire. A barbaric, primitive form of security.",
   "novakidDescription" : "Barbed wire.",
 
+  "animation" : "/objects/wither/hazards/starforge-witherhazard.animation",
+  "animationParts" : {
+    "hazard" : "witherthorns.png"
+  },
+  
   "inventoryIcon" : "witherthorns.png:1",
   "orientations" : [
     {
-      "image" : "witherthorns.png:<variant>",
+      "imageLayers" : [ { "image" : "witherthorns.png:1" } ],
+      "imagePosition" : [-8, 0],
+      "animationPosition" : [-8, 0],
       "direction" : "left",
       "flipImages" : true,
-      "imagePosition" : [-8, 0],
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
@@ -31,16 +37,17 @@
         "poly" : [ [-1, 0], [-1, 1.6], [-0.3, 2], [0.8, 1.2], [1, 0.9], [1, 0] ],
         "damage" : 10,
 		
-		"statusEffects" : [ "starforge-wither" ],
+        "statusEffects" : [ "starforge-wither" ],
 
         "damageType" : "Environment",
         "damageSourceKind" : "default"
       }
     },
     {
-      "image" : "witherthorns.png:<variant>",
-      "direction" : "right",
+      "imageLayers" : [ { "image" : "witherthorns.png:1" } ],
       "imagePosition" : [-8, 0],
+      "animationPosition" : [-8, 0],
+      "direction" : "right",
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
@@ -49,7 +56,7 @@
         "poly" : [ [1, 0], [1, 1.6], [0.3, 2], [-0.8, 1.2], [-1, 0.9], [-1, 0] ],
         "damage" : 10,
 		
-		"statusEffects" : [ "starforge-wither" ],
+        "statusEffects" : [ "starforge-wither" ],
 		
         "damageType" : "Environment",
         "damageSourceKind" : "default"
@@ -58,5 +65,5 @@
   ],
   
   "scripts" : ["/objects/scripts/starforge-varianthook.lua"],
-  "variants" : 3
+  "variants" : 6
 }
