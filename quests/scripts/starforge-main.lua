@@ -2,7 +2,7 @@
 
 require "/quests/scripts/main.lua"
 require('/quests/scripts/conditions/starforge-killenemies.lua')
-require('/quests/scripts/conditions/starforge-starforgemessagecheck.lua')
+require('/quests/scripts/conditions/starforge-messagecheck.lua')
 
 function buildConditions()
   local conditions = {}

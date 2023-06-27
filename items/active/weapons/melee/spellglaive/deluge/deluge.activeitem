@@ -14,7 +14,7 @@
   "itemTags" : ["weapon","melee","spellglaive","spear"],
   "learnBlueprintsOnPickup" : [ "starforge-deluge" ],
 
-  "cursor" : "/cursors/reticle0.cursor",
+  "cursor" : "/cursors/starforge-spellglaivecursor.cursor",
 
   "inventoryIcon" : "deluge.png",
 

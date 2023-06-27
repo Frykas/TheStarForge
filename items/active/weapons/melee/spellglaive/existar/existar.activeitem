@@ -13,7 +13,7 @@
   "itemTags" : ["weapon","melee","spellglaive","spear"],
   "learnBlueprintsOnPickup" : [ "starforge-existar" ],
 
-  "cursor" : "/cursors/reticle0.cursor",
+  "cursor" : "/cursors/starforge-spellglaivecursor.cursor",
 
   "inventoryIcon" : "existar.png",
 

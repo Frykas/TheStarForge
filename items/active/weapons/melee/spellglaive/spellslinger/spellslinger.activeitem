@@ -12,7 +12,7 @@
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spellglaive","spear"],
 
-  "cursor" : "/cursors/reticle0.cursor",
+  "cursor" : "/cursors/starforge-spellglaivecursor.cursor",
 
   "inventoryIcon" : "spellslinger.png",
 
