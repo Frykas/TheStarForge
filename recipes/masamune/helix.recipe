@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "refinedaegisalt", "count" : 3},
+	{ "item" : "staticcell", "count" : 5},
+	{ "item" : "cellmatter", "count" : 25}
+  ],
+  "output" : {
+    "item" : "starforge-helix",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "starforge-yukaishop", "weapon" ],
+  "duration" : 0
+}
+

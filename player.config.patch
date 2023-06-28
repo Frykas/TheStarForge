@@ -124,6 +124,7 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundvanguardpack"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundholoquin"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundcenturionobject"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundvultureobject"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-spellslinger"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-yukaipearl"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-tidalremnantmicroformer"} },

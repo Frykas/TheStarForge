@@ -1,0 +1,26 @@
+{
+  "materialId" : 2912,
+  "materialName" : "starforge-unboundbackblock",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "starforge-unboundbackblock", 
+  "shortdescription" : "Unbound Backpanel",
+  
+  "description" : "A metal wall panel.",
+  "glitchDescription" : "Observation. A wall panel.",
+  "floranDescription" : "Floran not interessted in boring panelsss.",
+  "novakidDescription" : "Metal panels for buildin' interior walls.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "unboundbackblock.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 30
+  }
+}

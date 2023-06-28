@@ -1,0 +1,26 @@
+{
+  "materialId" : 2913,
+  "materialName" : "starforge-unbounddoubleplatform",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "starforge-unbounddoubleplatform", 
+  "shortdescription" : "Unbound Platform",
+  
+  "description" : "Multi-layered platforms.",
+  "glitchDescription" : "Statement. These metal panels consist of several individual layers.",
+  "floranDescription" : "Metal wallsss are made of many planksss.",
+  "novakidDescription" : "A metal wall made of multiple sheets.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "unbounddoubleplatform.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 60
+  }
+}

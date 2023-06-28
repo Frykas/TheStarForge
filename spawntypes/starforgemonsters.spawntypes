@@ -155,6 +155,23 @@
     },
 	
 	{
+	  "name" : "starforge-erchiusflayer",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 4],
+      "spawnChance" : 0.003,
+      "monsterType" : [
+      [1, "starforge-erchiusflayer"]
+    ],
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    },
+	
+	{
 	  "name" : "starforge-mothon",
 	  "spawnParameters" : {
 		"area" : "surface",

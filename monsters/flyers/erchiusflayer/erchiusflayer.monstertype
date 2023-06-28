@@ -8,7 +8,7 @@
 
   "animation" : "erchiusflayer.animation",
 
-  "dropPools" : [  "tanglevinereanimatorTreasure" ],
+  "dropPools" : [  "erchiusflayerTreasure" ],
 
   "baseParameters" : {
     "scripts" : [
@@ -100,8 +100,7 @@
 
       "teamType" : "enemy",
       "damageSourceKind" : "slash",
-      "knockback" : 20,
-      "statusEffects" : ["starforge-wither"]
+      "knockback" : 20
     },
 
     "metaBoundBox" : [-4, -4, 4, 4],

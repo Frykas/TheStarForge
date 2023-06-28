@@ -4,7 +4,7 @@
 	"species" : "apex",
     "rules" : [
     ],
-    "anchor" : [ "unboundasteroids" ],
+    "anchor" : [ "unboundasteroids", "cacochiuslab", "florantnest" ],
     "gravity" : 80,
     "breathable" : true,
     "maxRadius" : 1000000,
@@ -48,6 +48,24 @@
         [ "doNotCombineWith", [ "unboundasteroids" ] ]
       ],
       "def" : [ "tmx", "unboundasteroids.json" ],
+      "chance" : 1.0
+    },
+	
+	{
+      "name" : "florantnest",
+      "rules" : [
+        [ "doNotCombineWith", [ "florantnest" ] ]
+      ],
+      "def" : [ "tmx", "florantnest.json" ],
+      "chance" : 1.0
+    },
+	
+	{
+      "name" : "cacochiuslab",
+      "rules" : [
+        [ "doNotCombineWith", [ "cacochiuslab" ] ]
+      ],
+      "def" : [ "tmx", "cacochiuslab.json" ],
       "chance" : 1.0
     },
 

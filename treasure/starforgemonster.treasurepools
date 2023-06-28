@@ -222,6 +222,22 @@
     }]
   ],
   
+  "erchiusflayerTreasure" : [
+    [1, {
+      "pool" : [
+	    {"weight" : 0.30, "item" : ["supermatter", 15]},
+        {"weight" : 0.49, "item" : ["solidfuel", 10]},
+		{"weight" : 0.20, "item" : ["liquidfuel", 20]},
+		{"weight" : 0.01, "item" : "starforge-erchiusflayeraf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
   "starmiteJunkTreasure" : [
     [1, {
       "pool" : [

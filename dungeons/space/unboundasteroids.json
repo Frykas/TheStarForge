@@ -1,5 +1,4 @@
 { "backgroundcolor":"#000000",
- "compressionlevel":-1,
  "height":150,
  "infinite":false,
  "layers":[
@@ -8,7 +7,6 @@
          "data":"eJzt3eFx2zgQhmH9Thc3cwWlgBSQLtzF9ZBJyrhyXMSd5o5jBAYoEMTi2wXeH89YcUyJ3F18kURaeX88Hu8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACTeKtT7BcBebf2TC8D6rq5\/MgFYw4i1Ty7Y1l29r1iT9dpnnuf3QX0siEO1\/pnfWD2hL2tSzxSzt06Pdu9TVOqZYdb26NfOPYtAPRvM1559U9cP68wS86WvN32LT917Zote7t43D9T9jjJb0WZUXWtPvcN+82I9V9HmVF1nT73DfrNCJvjqs9U+qGu6GvVa9GJ07VQ93LHX6jW0CnUfvRlZR1UvPfV85pyq11J06rXnlbov3nvveb\/VdY1KveY8U\/fGywyo9693btX7GJF6zUWg7hH651a9n5Go11kk6l6hf3bV+xqFeo1FMqsX6pkY7ceXPr\/+9e3xuzuzq65DBOo1FsnMHty9v1H79r3Dcx2\/J7e95AGZ0DeLLZ69Kt1e2az6j7gfdR6ktz3lAZkwPw9WzQevWZDf18h9XDEPyIR7efBXwbNXpdvHn3\/8\/z31GrbKglGz5X0+yYO9tNSupef53x09Va9j73ng3ap5sHrfelnlwfPrSplQq526f9ZKzw1fyWej5z6O+7HMgx3618MqD1bKBHWPIjnOL+S3e+7HOg\/o7WeWebBKJqh7tKNZeUB\/r9X1bh6skAnqHt3pqXpfes3Mg8h1spydkt7zC7VMiHQ+8ueX+e728tvjYy2NPJbeffL6fiK50JcHJa+uPzh6WsqEUn6k2\/a+\/zTi\/ax027dH\/ywfxzl7u2Pd5Ldn74dVHhz3nc\/ZGTJhbCb01riWCWevL0ozcFV+f18bt\/ta2DY91r8blNZT73ZXatySB\/m2lvtvdb6x5755ruAjD2qZEDUPWjPhWB+t6ymv15U8yLe7kgdnx3M1D\/LtVsmDnXPBIg9KmRAtD9Jj7smDw6ssyPPg6nOx1tcLrc8TWvZ\/lzzYMRNKNajV\/Got00yImgc98zx7u5Y8mLEfK+bBbplgmQfP9+rSPltczzb6\/cTj2Hv2IV1PM7ernf+ZvR+jrk8c0duRebBbNljlgZWvj49\/19Pbx\/mBq+c283mz6r\/V\/Zbqsdpsq2cucu3u1tp7HtSeH3vuueUsleqx0lyr5y1y7UbUPGIeeO+35QytnAfqWYtev1XrPjMPPF+L2JoHr7aJcmzqWds1E9Lj2\/35gboXM\/IgCvWsrTozV+peupZllzxQ96FHLQ9+GPx7rZxLz9R1sqw7eVCvj7pPJSvnQT6bXqlrZFnz1jzovebkqll50FIbdZ9KVs+DvAceqetjWe+reVD6fcbS5yecqd2PhzzwbmQeRKmFev1HqdOI+tbyID3Hn77nWFrDvVR5oK5\/j2O9W+RBlLqQA\/Y1PcuD9Fq4fA0\/b\/\/x+JD\/uaS0zew8UNe\/V0se9BxnxNqQAXa17MmD0trvyYM0E2bkgbr2d7TmgXo\/VXNMDoyp49U8qK373jw4vm+dB1Z1nNU3i9cL0ZEF42t4NQ+urvXWnynlQe33ez30OVIejN5XT+uHHBhbP295kL+PeTcPLGs4s2+9eTCyHl7XEVkwrnYr54Fl\/Wb3bVQe9O6797VEFoypGXkQw4jXC3dq472uZMGYmnnPgx0+\/6PF3fcTV69Pbb53mY9R9WrNg7ufcdbzGVq127v1+8jK5+2zPGh9jqA+npnzvcN8jKxX7bOG8n+nrz4fU1PXeqS7ebBqXVpnfOXZGF2niGt9ZL8jzMeoPFAfh3rWd6tDT43IA31vXhnxemE35MH9Oq2gtx7qvpwhD8bNunqfPFKvWY954HluyIMxs67eF6\/Ua9ZTHrwXtvU2O+QBLKnXrLc8KNVE3aNUhDxQ9Q0++ufViJqoe5PzmgceewhfvVRT19Wahzygj2tSr13m6Lpd8mCHXnqkXr+R5+ct+zpDLQ+8zcyfDTz2dHfqNRw9D2Y\/vvc8aMkBMsE\/9VqOmAd53WY83mp50JIL6rWxK\/V6jpYFCuQBvPTaM3XdZmnJg\/TzaUe6OiMjXzeo67479fomC8pKefArO68wIw+u\/B7c2drnOUIs6rVOFvzuLA++Pz5\/Nv5Ix+O83XycWl6kf969z96p1z1Z8J9aHhz\/z5V1HqSP8\/PLx9fU2fdeZULtuYK67qgjB3Q85cHbo\/y64dX3SnmQZwI9j4csmG\/lPEgzgb7HtmoOeNiH1C55kGeCuu7ot0IO1I5HvS+1z55O16nlZ1\/nj1N6vFffu5oHkfqD9l5FywGPSv8fRfr3+blH655eeX6Qvr84KgtKM6buEe7NFH1s5+36xGPtp+u4JSNar03qmSV1j4BZvOVBaW2\/eu7Xeo1i7z6pewTM4iEPnq6s8\/xao\/z7o84nkAc4s+JseM6DdM3n67\/2\/gDvH2GWFWfLw+8zpbUdTV1frEs9Z6PO+R\/3l19zUMoDy+sPzupLFiCCHfIg\/5lZeZDWlywAzllcE6i8PvHsWMkC4NxOeZAiB4DPds0DAJ+RBwAOVr9DpPp9JnU9gd3l5w5qeVD6eQD7IQ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABs8fmrAJ74PGYAT3w+O4ADeQDgQA4AAAAAADAH78cBSJEHAAAAAAAAAAAAABDLP6vDndQ=",
          "encoding":"base64",
          "height":150,
-         "id":1,
          "name":"back",
          "opacity":0.5,
          "type":"tilelayer",
@@ -22,7 +20,6 @@
          "data":"eJztnVGynDgMAGd+9xy5Z86T2j1GrrB3yDG2qA0JYWyQbcmSTHeVK6\/y3oCxpcaAzbxeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAaX0\/l21+fZf8dAKzL2QUlJ9T+BgDWoZbnPQUAcqLpAZwAkBcrF+AEgFxYuwAnAMRlVv7jhU+24796TkMbwQjHGJLEWZTyRGp9RbvBKLV4yeCCJ8b2zHYdOS9ALrxzGB+049G2WucFiIl37uKEfrzbmD5aB+9YIN7G8G5b+mgdvGOAeBvHu13po\/x49zvxpod3m6r2z1u3baCOd19HKivh3ZYmTsAL5nj3c8SyAt5tiBPy4d2\/0cst71foGPVuP1MnBG3zzHj3bYZyybtSguDddjghD959mqXcEsQJtfp6t59Zv+AEVbz7M1O5pOaD2XH6rtd3Rhv981f5Z8tt4wQdvPMrWxHh7YNjHQrM8ME+T9nCB7Vt44QxvHMrY1mFmT4orW3qLWIf4IRmvHMrY1kJSV5n8gFO6Mc7r7KW1ZDm9UjOuvoAJ4iQrkHVvv6728eM\/eGDP7H2wd+KRXJvAie0I12Xjg8mukAhdnvrWusXjZzVpNsHOOGSFh+MjO+kPrC6H53CB0qxO1LXWr\/0cPSIhw9wQjuzfNC6j6g+MIslrZh9j9dVyweWtMQKTpDTc+62csJjfaAZqwrbsPLBv5Vy97sSrbGCE2RI82AkJqRO0PbByP2I0meL8fNW8kSw+FxpfHDpBPjA2gcbEidk9sGvmFuEFX2AE2TM8MHGnRMsfNC7vdJnq7FzsU4gMyv6ACfImOGDjSsnaM9fGdlekw8mcxvvyvsZed5Y+rlnO+f7Cq0+qK55wglVZvhgwyJ\/rX3gHTOjY6VeT5w9Pav9z9vZON5jbN327RoHnPDBLB9sZPPB\/vPoMfZ+TpLvLcfXW4+RNhwZH2xM8QFO+M17ng82rOKnNj9u5LPbv99f7eV4fL2fa6l3Lec96qE1P1HiA0l\/iu4j4IXf3PhAco3Ycx7a0Z7PNrI9y7l1T0GrDWs+aNl285xmnPA\/FSfU2lwybgPQ4G6O0hXdPni6F34ev6YPcAJoYOEDvCCg4ASpD67ubQGMYOmDq7i1fq4bngYvXj0HxgmgyQwfnOO21R1LouSDR7UZmDPLBy2l5I4lUfJBy3Pxlvls578trY0bmR+nNbdu9Hlp7+dKawdnH4dlG7Zu28oHj7mWUPSB1Aktc0wkz7Yt5iPNLCPzAnd+VNpjdv219z06HwkvdKDoA0nBB7o+2MYEP17lOTz4AB80c\/DB1Tgsig\/O79Gw8oH42dRNkbRHbzvunMcHohgeOA4vH1i1JU44IIgFzT63Hh+MuMmib8P6QOlYNM8VM7eNEyos4IPe3Kp9VhOr2Lu6XrCMXWkbah2j1bZxQoUOH8y8dy25XtD0QbV9OrH2wUbr+EAD77yLWtLT4YNZtI4P1PtTYQ7rqj7oOcbj2M87b\/FBBXxg2pfWPmi9XqiiOHf\/zgWrOmEJhD44juFn0Xq9ELEvrX2w0TI+qOK8psc7lyPGznSkz5ucmDk+sMLDB939F6DPd7xz\/FEe2MEH5v1q7YPS9YJ3v1nhnf9Lu2AjoQ+0rxdG+bWdSjtZ+2CjOD5YFDxgSAIf3N23GPHBKH9sK4sPjO4bzgYXGBDcBxIi+OCujdTj8i24Xripx2i\/RsgVXKBMQh9oXS+oIGwf9bh8940PSl7p4WMbE2Kk1nf4QAmpC4L54IyrD4Sox6SmDzr6d9QnPVz1HS5Q4ME+mI16TCpcL8w8t2tx1X\/4YJCkPtC4XpiNaiz+7BPR\/IObukTr21FwQTvR3onVU4eRd2R5oBqLSj4YcUHkPMMFbVivUbYqtf2q+uBtEwuqsXjyQet8pNbjszjnWuZfpLpkAB9c8LaLi+M2r9b03DI4Puipr0fxrPvTwAcVDH3wen264OgEMRN84O0Cbyc8jdb2ifDeqtp+tX1g7YQRSvM1S9cLvWtRvfNfOz9xgYyRXFzaBxsFJ0Shtr6r9r71LO8Yi+KEp4IPbgjog\/1Ys\/rgy6FEc8LTwQcCgsy9OB\/r2QdX379g2VctMfFFUKydAHU88jlCyUQtB6OMDyQ+kHgAJ\/jjnZf4oM5dDkbywdV+Wl2AE3zxzs3lfPDznoPlc76e64UZz3+lPijR6wbQxTs3V\/VBz76k9e8ZH0TxwR34wBfv3FzOBxud851X80GrC16Fz+CE+Xjn51Iu6KTlGDJeL7TQ6gTQxztPn+yD1mPoGR\/M\/C49rfbGB7545yousPOBFZb7kfgAbPHO2Se5YEPLB5rrF1o47+f7q6\/UwAf+eOcuLmj3wcZxfJCJKycc7z9k6tvV8M7hlT2wgw9+czVG2MnYxyvhnc+4QO6D8\/VCNvBBDrzzOqQLBt4xq3F8jA\/wgTfeOR7CA0c6nKB1nPhA0OdB3wu+Kt65n+kcoX28Zx8c3zu\/\/zzrXdha+\/l28wykud8Df1fAE8ADn5TyeNb4wGt+4vF3O9L\/a2nLW\/BBGJ7uAkkea+bgTgQfbMe5\/Xyep1zK+zsXDM87wAcheYIHWs\/r2j6ItH7h6IPdCfv\/Han54G5eYhP4IDRX+XKMMzMXGMRGzzh\/9fHB9u8xn2uOeL0+81\/NBZCKmgvOTlBF8XzRc91vtYZoI8J6pqMPzv27\/7zn+tkRdz4AUEfpmrLnWkdrHUHP9YIVGu9lY2wArjh9b5GmD0prlc7jg1nrmSx8gAsgA70u0PRBDY\/5SFrvbb3ywd1zCAAPRlxg7QOv9Qua73GuuQAfQEQi+2Aj8\/igVvABRAUffIIP4IloxDY+6HcCQCRqc6RafWCxhsh7PZO1D76a9ChAP1fzJlt8YDEnUJKnM+cn4gRYncg+6P0bfADQBz7ABwA7oy7YfaCRF5IcnJWn+ACeiFbuaG\/nygfS\/R7P9xZ1wQewGpZx7llK1wDedcIHEB3vXPDOKe964wOIhnc+RMml7PUH0MA7p6Pl0grHADCCd25HzKXs9QfoxTu3o+ZT5roDjOCd31HzKlt9AbTwzu+o+ZWprgDaeOd5xBwr7V8yvwFgBbxzPZoPdkouKDkBYEW8cz6aDwDAP\/cf4QO+hw2SUcpLr3UCS8H3tEJyJNfR+EAA3+MODwAfCMEH8DDwwQV4AB4KPgCAIxY+wBEAedEeGzBuAMiN6rXCGx8AZEf1ngH35QDSw71DADiDBwAAAAAAAAAAAADW5j+WlXMK",
          "encoding":"base64",
          "height":150,
-         "id":2,
          "name":"front",
          "opacity":1,
          "type":"tilelayer",
@@ -33,7 +30,6 @@
         }, 
         {
          "draworder":"topdown",
-         "id":11,
          "name":"mods",
          "objects":[
                 {
@@ -1146,7 +1142,6 @@
         {
          "color":"#ff0000",
          "draworder":"topdown",
-         "id":4,
          "name":"objects",
          "objects":[
                 {
@@ -1222,7 +1217,7 @@
                  "y":496
                 }, 
                 {
-                 "gid":4797,
+                 "gid":4798,
                  "height":72,
                  "id":1202,
                  "name":"",
@@ -1774,7 +1769,7 @@
                  "y":800
                 }, 
                 {
-                 "gid":5098,
+                 "gid":5099,
                  "height":13,
                  "id":1254,
                  "name":"",
@@ -1786,7 +1781,7 @@
                  "y":856
                 }, 
                 {
-                 "gid":2147488747,
+                 "gid":2147488748,
                  "height":30,
                  "id":1255,
                  "name":"",
@@ -1798,7 +1793,7 @@
                  "y":776
                 }, 
                 {
-                 "gid":4971,
+                 "gid":4972,
                  "height":15,
                  "id":1256,
                  "name":"",
@@ -1810,7 +1805,7 @@
                  "y":848
                 }, 
                 {
-                 "gid":4971,
+                 "gid":4972,
                  "height":15,
                  "id":1257,
                  "name":"",
@@ -1822,7 +1817,7 @@
                  "y":840
                 }, 
                 {
-                 "gid":4971,
+                 "gid":4972,
                  "height":15,
                  "id":1259,
                  "name":"",
@@ -1834,7 +1829,7 @@
                  "y":856
                 }, 
                 {
-                 "gid":4972,
+                 "gid":4973,
                  "height":15,
                  "id":1260,
                  "name":"",
@@ -1846,7 +1841,7 @@
                  "y":744
                 }, 
                 {
-                 "gid":4972,
+                 "gid":4973,
                  "height":15,
                  "id":1261,
                  "name":"",
@@ -1858,7 +1853,7 @@
                  "y":808
                 }, 
                 {
-                 "gid":4972,
+                 "gid":4973,
                  "height":15,
                  "id":1263,
                  "name":"",
@@ -1870,7 +1865,7 @@
                  "y":752
                 }, 
                 {
-                 "gid":4975,
+                 "gid":4976,
                  "height":16,
                  "id":1266,
                  "name":"",
@@ -1882,7 +1877,7 @@
                  "y":776
                 }, 
                 {
-                 "gid":2147488607,
+                 "gid":2147488608,
                  "height":23,
                  "id":1267,
                  "name":"",
@@ -2044,7 +2039,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"treasurePools\":[\"starforge-unboundbigchestTreasure\"]}"
+                     "parameters":"{\"treasurePools\":[\"basicSpaceTreasure\"]}"
                     },
                  "propertytypes":
                     {
@@ -2454,7 +2449,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":4814,
+                 "gid":4815,
                  "height":24,
                  "id":1362,
                  "name":"",
@@ -2466,7 +2461,7 @@
                  "y":512
                 }, 
                 {
-                 "gid":4814,
+                 "gid":4815,
                  "height":24,
                  "id":1363,
                  "name":"",
@@ -2478,7 +2473,7 @@
                  "y":840
                 }, 
                 {
-                 "gid":4814,
+                 "gid":4815,
                  "height":24,
                  "id":1364,
                  "name":"",
@@ -2490,7 +2485,7 @@
                  "y":944
                 }, 
                 {
-                 "gid":4667,
+                 "gid":4668,
                  "height":8,
                  "id":1365,
                  "name":"",
@@ -2502,7 +2497,7 @@
                  "y":912
                 }, 
                 {
-                 "gid":4667,
+                 "gid":4668,
                  "height":8,
                  "id":1366,
                  "name":"",
@@ -2514,7 +2509,7 @@
                  "y":912
                 }, 
                 {
-                 "gid":4667,
+                 "gid":4668,
                  "height":8,
                  "id":1367,
                  "name":"",
@@ -2526,7 +2521,7 @@
                  "y":808
                 }, 
                 {
-                 "gid":4667,
+                 "gid":4668,
                  "height":8,
                  "id":1368,
                  "name":"",
@@ -2538,7 +2533,7 @@
                  "y":480
                 }, 
                 {
-                 "gid":4667,
+                 "gid":4668,
                  "height":8,
                  "id":1369,
                  "name":"",
@@ -2680,7 +2675,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"treasurePools\":[\"starforge-unboundbigchestTreasure\"]}"
+                     "parameters":"{\"treasurePools\":[\"basicSpaceTreasure\"]}"
                     },
                  "propertytypes":
                     {
@@ -3022,7 +3017,7 @@
                  "y":904
                 }, 
                 {
-                 "gid":4579,
+                 "gid":4580,
                  "height":32,
                  "id":1460,
                  "name":"",
@@ -3034,7 +3029,7 @@
                  "y":488
                 }, 
                 {
-                 "gid":5549,
+                 "gid":5550,
                  "height":16,
                  "id":1466,
                  "name":"",
@@ -3046,7 +3041,7 @@
                  "y":888
                 }, 
                 {
-                 "gid":5549,
+                 "gid":5550,
                  "height":16,
                  "id":1467,
                  "name":"",
@@ -3066,7 +3061,6 @@
         {
          "color":"#ffff00",
          "draworder":"topdown",
-         "id":5,
          "name":"wiring - lights & guns",
          "objects":[],
          "opacity":1,
@@ -3078,7 +3072,6 @@
         {
          "color":"#ff0000",
          "draworder":"topdown",
-         "id":6,
          "name":"monsters & npcs",
          "objects":[
                 {
@@ -3617,7 +3610,6 @@
         {
          "color":"#00ffff",
          "draworder":"topdown",
-         "id":7,
          "name":"wiring - locked door",
          "objects":[],
          "opacity":1,
@@ -3628,7 +3620,6 @@
         }, 
         {
          "draworder":"topdown",
-         "id":8,
          "name":"outside the map",
          "objects":[],
          "opacity":1,
@@ -3639,7 +3630,6 @@
         }, 
         {
          "draworder":"topdown",
-         "id":9,
          "name":"anchors etc",
          "objects":[
                 {
@@ -3669,7 +3659,6 @@
         }, 
         {
          "draworder":"topdown",
-         "id":10,
          "name":"items",
          "objects":[],
          "opacity":1,
@@ -3678,11 +3667,10 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":12,
  "nextobjectid":1469,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.1.0",
  "tileheight":8,
  "tilesets":[
         {
@@ -3718,43 +3706,43 @@
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }, 
         {
-         "firstgid":2825,
+         "firstgid":2826,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/decorative.json"
         }, 
         {
-         "firstgid":4266,
+         "firstgid":4267,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/human.json"
         }, 
         {
-         "firstgid":4554,
+         "firstgid":4555,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-colonytag\/station.json"
         }, 
         {
-         "firstgid":4584,
+         "firstgid":4585,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/wire.json"
         }, 
         {
-         "firstgid":4806,
+         "firstgid":4807,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/rail.json"
         }, 
         {
-         "firstgid":4810,
+         "firstgid":4811,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/railpoint.json"
         }, 
         {
-         "firstgid":4815,
+         "firstgid":4816,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/door.json"
         }, 
         {
-         "firstgid":4947,
+         "firstgid":4948,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/pot.json"
         }, 
         {
-         "firstgid":5244,
+         "firstgid":5245,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/breakable.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.1,
+ "version":1,
  "width":260
 }
