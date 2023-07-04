@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-himindottirfossil4",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Himindottir Arms",
+  "description" : "Fossilised Himindottir arms.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "himindottirfossil4icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/himindottirfossil/himindottirfossil4.png",
+  "displayoffset" :[-5.4, -0.4],
+
+  "fossilSetName" : "himindottir",
+  "setIndex" : 3,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

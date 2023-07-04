@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-himindottirfossil2",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Himindottir Neck",
+  "description" : "A fossilised Himindottir neck.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "himindottirfossil2icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/himindottirfossil/himindottirfossil2.png",
+  "displayoffset" :[-3.58, -0.4],
+
+  "fossilSetName" : "himindottir",
+  "setIndex" : 2,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

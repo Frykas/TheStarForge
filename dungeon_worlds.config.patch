@@ -32,7 +32,7 @@
     "path": "/starforge-katahelmission",
     "value": {
       "primaryDungeon": "starforge-katahelmission",
-      "threatLevel": 8,
+      "threatLevel": 5,
       "biome": "forest",
       "gravity": 80,
       "worldSize": [

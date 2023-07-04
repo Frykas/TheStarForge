@@ -1,0 +1,30 @@
+{
+  "itemName" : "starforge-himindottirfossil1",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Himindottir Skull",
+  "description" : "A fossilised Himindottir skull.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "himindottirfossil1icon.png",
+
+  "completeSetDescriptions" : {
+    "price" : 10000,
+    "shortdescription" : "Himindottir Fossil",
+    "description" : "Said to be born from the Sky, these large creatures were hunted to extinction by Avians."
+  },
+
+  "displayImage" : "/objects/fossils/largefossils/himindottirfossil/himindottirfossil1.png",
+  "displayoffset" :[-0.7, -0.4],
+
+  "fossilSetName" : "himindottir",
+  "setIndex" : 1,
+  "setCount" : 5,
+  "setCollectables" : { "fossils" : "himindottir" },
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

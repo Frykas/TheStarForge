@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-himindottirfossil3",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Himindottir Torso",
+  "description" : "A fossilised Himindottir torso.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "himindottirfossil3icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/himindottirfossil/himindottirfossil3.png",
+  "displayoffset" :[-6.6, -0.4],
+
+  "fossilSetName" : "himindottir",
+  "setIndex" : 5,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}

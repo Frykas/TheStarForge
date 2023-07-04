@@ -1,0 +1,23 @@
+{
+  "itemName" : "starforge-himindottirfossil5",
+  "rarity" : "Rare",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Himindottir Legs",
+  "description" : "Fossilised Himindottir legs.",
+  "category" : "largeFossil",
+
+  "race" : "generic",
+  "price" : 200,
+
+  "inventoryIcon" : "himindottirfossil5icon.png",
+
+  "displayImage" : "/objects/fossils/largefossils/himindottirfossil/himindottirfossil5.png",
+  "displayoffset" :[-6.4, -0.4],
+
+  "fossilSetName" : "himindottir",
+  "setIndex" : 4,
+  "setCount" : 5,
+
+  "completeFossilIcon" : "/objects/fossils/largefossils/largefossilicon.png"
+}
