@@ -207,7 +207,7 @@
           "baseValue" : 0.0
         },
         "iceResistance" : {
-          "baseValue" : 0.5
+          "baseValue" : 1.0
         },
         "iceStatusImmunity" : {
           "baseValue" : 1.0

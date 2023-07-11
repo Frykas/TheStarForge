@@ -51,7 +51,7 @@
           "cooldown" : 1.0,
           "parameters" : {
             "requireLineOfSight" : true,
-            "maximumRange" : 20,
+            "maximumRange" : 10,
             "minimumRange" : 4,
             "onGround" : false,
             "windupStopForce" : 50,

@@ -1,0 +1,22 @@
+{
+  "id" : "starforge-slitherdnacodex",
+  "title" : "Pureborn Genes - Slither",
+  "description" : "A fragment of knowledge imprinted in the DNA of a Pureborn Slither.",
+  "icon" : "pureborndna.png",
+  "contentPages" : [
+
+"XPNJX WTFWNSL. FSTRFQNJX KJQY. MJFY XTZWHJ QTHFYJI. NSHWJFXJ NS FHYNANYD. NSYJWQTUJW. YWJXUFXXJW. 
+UTYJSYNFQ XUWJFI. UTYJSYNFQ MTXY. WJFSNRFYNTS UTXXNGQJ.
+
+UWTHJXXNSL FYYJRUYJI. JKKTWYX UWJAJSYJI. WJVZNWJ JCFRNSFYNTS. 
+FIFUY FUUWTFHM. UWTHJXXNSL FYYJRUYJI. JKKTWYX UWJAJSYJI.
+
+IJAJQTUNSL. SJB KTWR. XBNKY. UWJHNXJ. FLNQJ. HZSSNSL. 
+UZWUTXJ : YWFHP. JQNRNSFYJ. XPD YWJXUFXXJWX."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "rare",
+    "price" : 100
+  }
+}

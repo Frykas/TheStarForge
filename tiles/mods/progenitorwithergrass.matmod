@@ -1,0 +1,15 @@
+{
+  "modId" : 3001,
+  "modName" : "starforge-progenitorwithergrass",
+  "description" : "Grass filled with very tiny splinters. White flowers grow on it.",
+  "footstepSound" : "/sfx/blocks/footstep_grass.ogg",
+  "health" : 0,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "progenitorwithergrass.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

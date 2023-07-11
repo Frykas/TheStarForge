@@ -8,8 +8,8 @@
       "threatRange" : [4, 6], // Planet tier
       "layers": {
         "surface": {
-          "primaryRegion" : ["starforge-blackrot"], // Planet primary region
-          "secondaryRegions" : ["garden", "desert"], // Planet secondary regions
+          "primaryRegion" : ["starforge-progenitorwither"], // Planet primary region
+          "secondaryRegions" : ["starforge-blackrot", "desert"], // Planet secondary regions
           "dungeons" : [
 			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
 			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
@@ -38,19 +38,31 @@
   },
   
   // Regions
+ 
   {
     "op": "add",
-    "path": "/regionTypes/starforge-blackrot",
+    "path": "/regionTypes/starforge-progenitorwither",
     "value": {
       "caveLiquid": ["swampwater"],
-      "blockSelector": ["remixedMildSurface"], // For a list of terrain types, check under /terrain in assets
+      "blockSelector": ["remixedSpikesSurface"], // For a list of terrain types, check under /terrain in assets
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
-      "biome": [[0,["starforge-blackrot"]]],
-      "subRegion" : ["giantflowers", "mushroom"] // Subbiomes
+      "biome": [[0,["starforge-progenitorwither"]]],
+      "subRegion" : ["starforge-blackrot", "mushroom"] // Subbiomes
     }
   },
   
+  { "op":"add",
+	  "path": "/regionTypes/starforge-blackrot",
+	  "value": {
+			"blockSelector": [ "remixedMildSurface" ],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["starforge-blackrot"]]
+			]
+		}
+  },
   
   { "op":"add",
 	  "path": "/regionTypes/starforge-tidefragment",
