@@ -4,8 +4,15 @@
     "op": "add",
     "path": "/thalassooutpost",
     "value": [
-	  "/warp instanceworld:thalassooutpost"
-	]
+      "/warp instanceworld:thalassooutpost"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/starforge",
+    "value": [
+      "/warp instanceworld:thalassooutpost=391.576"
+    ]
   },
   
   //TECH UNLOCKS
@@ -13,8 +20,8 @@
     "op": "add",
     "path": "/starforge-unlocktechs",
     "value": [
-	  "/enabletech starforge-powerdash",
-	  "/enabletech starforge-dodgeroll"
-	]
+      "/enabletech starforge-powerdash",
+      "/enabletech starforge-dodgeroll"
+    ]
   }
 ]

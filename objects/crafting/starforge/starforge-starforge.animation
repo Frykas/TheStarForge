@@ -1,0 +1,113 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "object" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 5,
+            "mode" : "loop",
+            "animationCycle" : 0.4
+          }
+        }
+      },
+      
+      "floatingObject1" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 14,
+            "mode" : "loop",
+            "animationCycle" : 1.6
+          }
+        }
+      },
+      "floatingObject2" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 12,
+            "mode" : "loop",
+            "animationCycle" : 1.1
+          }
+        }
+      }
+    },
+    
+    "parts" : {
+      "object" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "object" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "objectFullbright" : {
+        "properties" : {
+          "zLevel" : 2,
+          "fullbright" : true,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "object" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      
+      "floatingObject1" : {
+        "properties" : {
+          "zLevel" : 3,
+          "transformationGroups" : [ "object" ],
+          "centered" : false
+        },
+
+        "partStates" : {
+          "floatingObject1" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      
+      "floatingObject2" : {
+        "properties" : {
+          "zLevel" : 4,
+          "transformationGroups" : [ "object" ],
+          "centered" : false
+        },
+
+        "partStates" : {
+          "floatingObject2" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "transformationGroups" : {
+    "object" : {}
+  }
+}

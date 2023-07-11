@@ -13,6 +13,8 @@
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
   
+  "cursor" : "/cursors/starforge-revolvercursor.cursor",
+  
   "inventoryIcon" : "thevow.png:ready1",
 
   "animation" : "thevow.animation",
@@ -39,7 +41,7 @@
   "baseOffset" : [0.875, 0.250],
   "muzzleOffset" : [1.750,0.250],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
   
   "elementalType" : "fire",
 
