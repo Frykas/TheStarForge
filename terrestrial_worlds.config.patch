@@ -9,7 +9,7 @@
       "layers": {
         "surface": {
           "primaryRegion" : ["starforge-progenitorwither"], // Planet primary region
-          "secondaryRegions" : ["starforge-blackrot", "desert"], // Planet secondary regions
+          "secondaryRegions" : ["starforge-blackrot"], // Planet secondary regions
           "dungeons" : [
 			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
 			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
@@ -44,11 +44,11 @@
     "path": "/regionTypes/starforge-progenitorwither",
     "value": {
       "caveLiquid": ["swampwater"],
-      "blockSelector": ["remixedSpikesSurface"], // For a list of terrain types, check under /terrain in assets
+      "blockSelector": ["remixedSwampySurface"], // For a list of terrain types, check under /terrain in assets
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["starforge-progenitorwither"]]],
-      "subRegion" : ["starforge-blackrot", "mushroom"] // Subbiomes
+      "subRegion" : ["starforge-blackrot"] // Subbiomes
     }
   },
   

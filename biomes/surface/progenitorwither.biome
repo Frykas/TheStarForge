@@ -63,10 +63,10 @@
   ],
 
   "mainBlock" : "starforge-withereddirt",
-  "subBlocks" : [ "starforge-blackrotmatter" ],
+  "subBlocks" : [ "starforge-witherstone" ],
   "ores" : "surface",
 
-  "parallax" : "/parallax/surface/blackrot.parallax",
+  "parallax" : "/parallax/surface/progenitorwither.parallax",
 
   "ambientNoises" : {
     "day" : {
@@ -154,15 +154,6 @@
 
       // MICRO DUNGEONS
 
-      {
-        "mode" : "floor",
-        "priority" : 1,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
-
-        "type" : "microdungeon",
-        "microdungeons" : [ "forestmicrodungeons" ]
-      },
 
       {
         "mode" : "floor",
@@ -173,16 +164,7 @@
         "type" : "microdungeon",
         "microdungeons" : [ "encounterdungeons" ]
       },
-
-      {
-        "mode" : "floor",
-        "priority" : 3.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:denseSmall",
-
-        "type" : "grass",
-        "grasses" : [ "grass", "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
-      },
+	  
       {
         "mode" : "floor",
         "priority" : 2.0,
@@ -212,7 +194,7 @@
         "type" : "tree",
         "treeFoliageHueShiftMax" : 180,
         "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "birch", "cocoa", "fleshy", "grumpy", "pine", "roottree", "slimey", "something", "spikey", "twisted", "wood", "slobby", "pineytree" ],
+        "treeStemList" : [ "starforge-progenitorwither" ],
         "treeFoliageList" : [ "rose", "bubbles", "cloudy", "frumpy", "greenleaves", "hanging", "leafy", "lotus", "lushgreen", "orangeflower", "pinefoliage", "redleaves", "scraggy", "spikeyfoliage" ]
       },
 

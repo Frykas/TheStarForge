@@ -3,10 +3,10 @@
     "op": "add",
     "path": "/visitableTypeDescription/starforge-withered",
     "value": [
-      "A planet completely taken over by the ^orange;Great Withering^reset;. Its environment was twisted into something incredibly dangerous. ^red;The atmosphere is filled with dangerous clouds of Wither particles, corroding armor quickly.^reset;",
-      "A planet completely taken over by the ^orange;Great Withering^reset;. It is now a corrupted atrocity, with danger on every corner. ^red;The atmosphere is filled with dangerous clouds of Wither particles, corroding armor quickly.^reset;", 
-      "A planet completely taken over by the ^orange;Great Withering^reset;. A plagued world full of twisted and dangerous flora. ^red;The atmosphere is filled with dangerous clouds of Wither particles, corroding armor quickly.^reset;",
-      "The twisting corruption of the ^orange;Great Withering^reset; has overcome this planet. ^red;The atmosphere is filled with dangerous clouds of Wither particles, corroding armor quickly.^reset;"	  
+      "A planet completely taken over by the ^orange;Great Withering^reset;. Its environment was twisted into something incredibly dangerous. ^red;The atmosphere is dense with armour degrading particles.^reset;",
+      "A planet completely taken over by the ^orange;Great Withering^reset;. It is now a corrupted atrocity, with danger on every corner. ^red;The atmosphere is dense with armour degrading particles.^reset;", 
+      "A planet completely taken over by the ^orange;Great Withering^reset;. A plagued world full of twisted and dangerous flora. ^red;The atmosphere is dense with armour degrading particles.^reset;",
+      "The twisting corruption of the ^orange;Great Withering^reset; has overcome this planet. ^red;The atmosphere is dense with armour degrading particles.^reset;"	  
     ]
   },
   {

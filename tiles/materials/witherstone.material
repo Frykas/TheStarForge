@@ -1,0 +1,24 @@
+{
+  "materialId" : 2914,
+  "materialName" : "starforge-witherstone",
+  "particleColor" : [100, 106, 106, 255],
+  "itemDrop" : "Withered Stone",
+  "description" : "This rock is completely covered in small Wither particules.",
+  "shortdescription" : "Withered Stone",
+  "glitchDescription" : "Cautious. This rock might not be safe to touch.",
+  "floranDescription" : "Rockss are sstrong.",
+  "novakidDescription" : "These tough rocks are mighty sharp.",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 24,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "witherstone.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "multiColored" : true,
+    "occludesBelow" : true,
+    "zLevel" : 2200
+  }
+}

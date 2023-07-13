@@ -5361,14 +5361,119 @@
         {
          "draworder":"topdown",
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":3154,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"glitch",
+                     "typeName":"bandit"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2200,
+                 "y":1432
+                }, 
+                {
+                 "height":8,
+                 "id":3155,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"glitch",
+                     "typeName":"bandit"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2168,
+                 "y":1432
+                }, 
+                {
+                 "height":8,
+                 "id":3156,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"glitch",
+                     "typeName":"bandit"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1744,
+                 "y":1424
+                }, 
+                {
+                 "height":8,
+                 "id":3157,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"glitch",
+                     "typeName":"bandit"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2728,
+                 "y":1496
+                }, 
+                {
+                 "height":8,
+                 "id":3158,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"glitch",
+                     "typeName":"bandit"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":8656,
+                 "y":920
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
          "x":0,
          "y":0
         }],
- "nextobjectid":3154,
+ "nextobjectid":3159,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.0",
