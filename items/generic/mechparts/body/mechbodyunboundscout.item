@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechbodyunboundscout",
+  "price" : 9600,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbody",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechbodyunboundscout.png",
+  "description" : "An Unbound mech body used for scouting missions. It's durable and energy efficient.",
+  "shortdescription" : "UNBD Scout Mech Body",
+  "itemTags" : [ ],
+
+  "mechPart" : ["body", "unboundscout"]
+}

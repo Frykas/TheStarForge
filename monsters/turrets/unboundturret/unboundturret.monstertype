@@ -51,11 +51,11 @@
             "requireLineOfSight" : true,
             "maximumRange" : 80,
             "minimumRange" : 2,
-            "windupTime" : 0.10,
+            "windupTime" : 1.9,
             "windupState" : "",
 
-            "projectileCount" : 1,
-            "projectileInterval" : 0.5,
+            "projectileCount" : 6,
+            "projectileInterval" : 0.1,
             "projectileType" : "unboundfirebullet",
             "projectileParameters" : {
               "speed" : 125,
