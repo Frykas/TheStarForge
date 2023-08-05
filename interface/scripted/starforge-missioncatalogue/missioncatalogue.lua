@@ -6,13 +6,13 @@ function init()
   for x, config in pairs(destinationConfig.missions) do
     local valid = true
     for _, quest in pairs(config.questPrerequisites or {}) do
-	  if not player.hasCompletedQuest(quest) then
-	    valid = false 
-	  end
-	end
-	if valid then
-	  self_validDestinations[x] = config
-	end
+      if not player.hasCompletedQuest(quest) then
+        valid = false
+      end
+    end
+    if valid then
+      self_validDestinations[x] = config
+    end
   end
   self_teleportDestination = false
   
@@ -38,7 +38,7 @@ function destinationSelected()
     widget.setText("destinationShortDescription", string.format("%s\n^gray;Level ^reset;%s", config.shortDescription, config.level))
     widget.setText("destinationDescription", string.format("%s", config.description):gsub("%^white;", "^reset;"))
 	
-	self_teleportDestination = config.destination
+    self_teleportDestination = config.destination
   end
 end
 
@@ -46,9 +46,11 @@ function populateDestinationList()
   widget.clearListItems(self_destinationList)
 
   for x, config in pairs(self_validDestinations) do
-	local listItem = widget.addListItem(self_destinationList)
-	widget.setText(string.format("%s.%s.destinationName", self_destinationList, listItem), config.shortDescription)
-	widget.setImage(string.format("%s.%s.destinationIcon", self_destinationList, listItem), config.icon or "/assetmissing.png")
-	widget.setData(string.format("%s.%s", self_destinationList, listItem), x)
+    local listItem = widget.addListItem(self_destinationList)
+    widget.setText(string.format("%s.%s.destinationName", self_destinationList, listItem), config.shortDescription)
+    widget.setText(string.format("%s.%s.subtitleName", self_destinationList, listItem), config.subtitle)
+    widget.setText(string.format("%s.%s.chapterName", self_destinationList, listItem), config.chapter)
+    widget.setImage(string.format("%s.%s.destinationIcon", self_destinationList, listItem), config.icon or "/assetmissing.png")
+    widget.setData(string.format("%s.%s", self_destinationList, listItem), x)
   end
 end

@@ -23,5 +23,24 @@
       "/enabletech starforge-powerdash",
       "/enabletech starforge-dodgeroll"
     ]
+  },
+  
+  //COMPLETE QUESTS
+  {
+    "op": "add",
+    "path": "/starforge-completequests",
+    "value": [
+      "/startquest '\"thalassomission1b\"'",
+      "/completequest thalassomission1b",
+      
+      "/startquest '\"thalassomission2\"'",
+      "/completequest thalassomission2",
+      
+      "/startquest '\"thalassomission3\"'",
+      "/completequest thalassomission3",
+      
+      "/startquest '\"starforge-decapitatorswordquest\"'",
+      "/completequest starforge-decapitatorswordquest"
+    ]
   }
 ]
