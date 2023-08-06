@@ -62,7 +62,7 @@ function spawnProjectile(table)
     local positionVariance = {math.random() * 1 - 0.5, math.random() * 1 - 0.5}
     local position = vec2.add(projectilePosition, positionVariance)
 	
-	local aimVec = vec2.rotate({0, 1}, math.random() * math.pi)
+    local aimVec = vec2.rotate({0, 1}, math.random() * math.pi)
 
     projectileId = world.spawnProjectile(
         projectileType,
@@ -85,11 +85,13 @@ function checkSpace(position, ignoreAdjacent)
   local liquidRight = world.liquidAt(vec2.add(position, {1, 0}))
   local materialAbove = world.material(vec2.add(position, {0, 1}), "foreground")
   
+  if not liquid then stagehand.die() return end
+  
   local validLiquid = self.ignoreLiquidType
   for _, id in ipairs(self.liquidWhitelist) do 
     if liquid[1] == id then
-	  validLiquid = true
-	end
+      validLiquid = true
+    end
   end
   if not validLiquid then
     return false
