@@ -58,12 +58,12 @@
       "morningLightColor" : [26, 103, 13],
       "dayLightColor" : [166, 166, 166],
       "eveningLightColor" : [122, 160, 56],
-      "nightLightColor" : [46, 20, 24]
+      "nightLightColor" : [15, 15, 15]
     }
   ],
 
   "mainBlock" : "starforge-withereddirt",
-  "subBlocks" : [ "starforge-witherstone" ],
+  "subBlocks" : [ "starforge-witherstone", "vine" ],
   "ores" : "surface",
 
   "parallax" : "/parallax/surface/progenitorwither.parallax",
@@ -177,8 +177,18 @@
             "name" : "starforge-largewitherplant",
             "baseHueShiftMax" : 0,
             "modHueShiftMax" : 0
-          },
-		  {
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
             "name" : "starforge-mediumwitherplant",
             "baseHueShiftMax" : 0,
             "modHueShiftMax" : 0
@@ -187,15 +197,15 @@
       },
       {
         "mode" : "floor",
-        "priority" : 2.0,
+        "priority" : 1.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:denseLarge",
 
         "type" : "tree",
         "treeFoliageHueShiftMax" : 180,
         "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "starforge-progenitorwither" ],
-        "treeFoliageList" : [ "rose", "bubbles", "cloudy", "frumpy", "greenleaves", "hanging", "leafy", "lotus", "lushgreen", "orangeflower", "pinefoliage", "redleaves", "scraggy", "spikeyfoliage" ]
+        "treeStemList" : [ "weeping" ],
+        "treeFoliageList" : [ "weepingleaves" ]
       },
 
       // CROPS
@@ -212,38 +222,6 @@
             "pool" : [ [1, "wildcarrotseed" ] ],
             "parameters" : {
               "startingStage" : 3
-            }
-          }
-        ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 1.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:surfaceCrops",
-
-        "type" : "object",
-        "objectSets" : [
-          {
-            "pool" : [ [1, "wildtomatoseed" ] ],
-            "parameters" : {
-              "startingStage" : 4
-            }
-          }
-        ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 1.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:surfaceCrops",
-
-        "type" : "object",
-        "objectSets" : [
-          {
-            "pool" : [ [1, "wildcocoaseed" ] ],
-            "parameters" : {
-              "startingStage" : 4
             }
           }
         ]
