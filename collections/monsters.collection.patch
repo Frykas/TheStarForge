@@ -144,6 +144,17 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/unboundelecdrone",
+	  "value": 	  
+	  {
+	    "order" : 115,
+	    "monsterType" : "starforge-unboundelecdrone",
+	    "icon" : "/monsters/crawlers/unboundelecdrone/unboundelecdrone-full.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/mothon",
 	  "value": 	  
 	  {

@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-unboundelecdrone-head",
+  "category" : "unboundelecdrone",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "unboundelecdrone-head.png"
+  }
+}
