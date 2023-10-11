@@ -1,0 +1,82 @@
+{
+  //Starforge - Unbound Unshackled mission 1
+  "unboundmission4-intro" : {
+    "type" : "mission",
+    "senderName" : "Mariko",
+    "portraitImage" : "/interface/chatbubbles/mariko.png:<frame>",
+    "text" : "From the informations we have, the key is in this facility. It's most likely a trap, and probably heavily guarded, by careful.",
+    "persistTime" : 5.0
+  },
+  
+  "unboundmission4-hack1" : {
+    "type" : "mission",
+	"senderName" : "Rifter",
+	"portraitImage" : "/interface/chatbubbles/rifterfirstcontact.png:<frame>",
+	"text" : "Krzzzt... Aaaaah... Bzzzz... There.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission4-morpheus1" : {
+    "type" : "mission",
+	"senderName" : "Morpheus",
+	"portraitImage" : "/interface/chatbubbles/morpheussurprised.png:<frame>",
+	"text" : "Hang on, someone's hacking through our coms!!",
+	"persistTime" : 5.0
+},
+
+  "unboundmission4-hack2" : {
+    "type" : "mission",
+	"senderName" : "Rifter",
+	"portraitImage" : "/interface/chatbubbles/rifter.png:<frame>",
+	"text" : "I see the mouse came after the cheese. Welcome, I've been waiting for you.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission4-hack3" : {
+    "type" : "mission",
+	"senderName" : "Rifter",
+	"portraitImage" : "/interface/chatbubbles/rifter.png:<frame>",
+	"text" : "In case you're wondering, you're cut off your team. They sound like fun, but you won't be needing them today.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission4-hack4" : {
+    "type" : "mission",
+	"senderName" : "Rifter",
+	"portraitImage" : "/interface/chatbubbles/rifter.png:<frame>",
+	"text" : "I'm not here to stop you, and I won't. What you're looking for is gone. You're wasting your time here.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission4-hack5" : {
+    "type" : "mission",
+	"senderName" : "Rifter",
+	"portraitImage" : "/interface/chatbubbles/rifter.png:<frame>",
+	"text" : "Yes, we did find the key. It's with me as I speak.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission4-hack6" : {
+    "type" : "mission",
+	"senderName" : "Rifter",
+	"portraitImage" : "/interface/chatbubbles/rifter.png:<frame>",
+	"text" : "Apollion has great plans for the Apex. The other races abandonned us, left us fighting on our own before the protectorate fell. Now, everyone is trying to stop us from fighting for our FREEDOM!!",
+	"persistTime" : 5.0
+},
+
+  "unboundmission4-hack7" : {
+    "type" : "mission",
+	"senderName" : "Rifter",
+	"portraitImage" : "/interface/chatbubbles/rifter.png:<frame>",
+	"text" : "It's because of little pests like you and your group that it has come to this. Honestly, if it was up to me, I'd just ignore you. But Apollion says you tarnish our public image, so here we are.",
+	"persistTime" : 5.0
+},
+
+  "unboundmission4-hack8" : {
+    "type" : "mission",
+	"senderName" : "Rifter",
+	"portraitImage" : "/interface/chatbubbles/rifter.png:<frame>",
+	"text" : "You can continue this, attack our facilities, steal our resources. But we won't stop. No matter how far you try to go. We're ahead of you. Let's see if you can catch up.",
+	"persistTime" : 5.0
+}
+}

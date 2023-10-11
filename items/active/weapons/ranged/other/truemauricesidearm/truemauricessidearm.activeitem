@@ -68,7 +68,7 @@
     "inaccuracy": 0,
     "projectileCount": 1,
     "fireType": "auto",
-    "projectileType": "starforge-godbullet",
+    "projectileType": "starforge-ancientbullet",
     "projectileParameters": {},
     "stances" : {
       "idle" : {

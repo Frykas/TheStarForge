@@ -47,8 +47,9 @@
 
             "projectileCount" : 4,
 			"projectileInterval" : 0.1,
-            "projectileType" : "unboundelectricbullet",
+            "projectileType" : "starforge-unboundshockrocket",
             "fireOffset" : [0.25, 1.0],
+			"inaccuracy" : 0.10,
             "fireSound" : "fire",
             "fireState" : "",
             "fireDelay" : 0.0,
