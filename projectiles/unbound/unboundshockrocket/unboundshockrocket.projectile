@@ -20,7 +20,7 @@
 				"fuzzAngle": 30,
 				"type": "smallelectriccloud",
 				"action": "projectile",
-				"statusEffects" : ["slow"]
+				"statusEffects" : ["paralysis"]
 			},
 			{
 				"inheritDamageFactor": 0.5,
@@ -28,7 +28,7 @@
 				"fuzzAngle": 30,
 				"type": "smallelectriccloud",
 				"action": "projectile",
-				"statusEffects" : ["slow"]
+				"statusEffects" : ["paralysis"]
 			},
 			{
 				"inheritDamageFactor": 0.5,
@@ -36,7 +36,7 @@
 				"fuzzAngle": 30,
 				"type": "smallelectriccloud",
 				"action": "projectile",
-				"statusEffects" : ["slow"]
+				"statusEffects" : ["paralysis"]
 			},
 			{
 				"inheritDamageFactor": 0.5,
@@ -44,7 +44,7 @@
 				"fuzzAngle": 30,
 				"type": "smallelectriccloud",
 				"action": "projectile",
-				"statusEffects" : ["slow"]
+				"statusEffects" : ["paralysis"]
 			}
 		],
 		"timeToLive": 1.0,
@@ -54,9 +54,8 @@
 	"power": 10.0,
 	"speed": 65.0,
 	"physics": "arrow",
-	"damageType": "NoDamage",
 	"damageKind": "default",
-	"statusEffects" : ["slow"],
+	"statusEffects" : ["paralysis"],
 
 	"controlForce": 150,
 	"maxSpeed": 150

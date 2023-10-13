@@ -1,14 +1,14 @@
 {
   "type" : "starforge-unboundelecdrone",
   "shortdescription" : "Shock UMAW",
-  "description" : "A shock Unbound Mobile Assault Weapon. They don't look so scary!",
+  "description" : "A shock Unbound Mobile Assault Weapon. Shockingly effective.",
 
   "categories" : [ "unboundelecdrone" ],
   "parts" : [ "body", "head" ],
 
   "animation" : "unboundelecdrone.animation",
 
-  "dropPools" : [ { "default" : "triplodTreasure", "bow" : "triplodHunting" } ],
+  "dropPools" : [ { "default" : "shockumawTreasure" } ],
 
   "baseParameters" : {
     "scripts" : [
