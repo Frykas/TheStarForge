@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-armourpiercing",
+  "effectConfig" : {},
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "starforge-durationtodamage.lua"
+  ]
+}

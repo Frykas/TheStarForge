@@ -41,7 +41,7 @@
     "class" : "StarforgeHeavyReloadGunFire",
 
     "fireTime" : 0.55,
-    "baseDps" : 11,
+    "baseDps" : 13,
     "energyUsage" : 30,
     "inaccuracy" : 0.0012,
 

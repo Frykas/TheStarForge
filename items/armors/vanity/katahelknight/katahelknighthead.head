@@ -1,0 +1,17 @@
+{
+  "itemName" : "starforge-katahelknighthead",
+  "price" : 1000,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "category" : "headwear",
+  "description" : "A durasteel helmet worn by the High Knights of Katahel. Their vigilance knew no end.",
+  "shortdescription" : "High Knight Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+  
+ 
+  }

@@ -27,7 +27,7 @@ function build(directory, config, parameters, level, seed)
   if config.altAbility and config.altAbility.elementalConfig then
     util.mergeTable(config.altAbility, config.altAbility.elementalConfig[elementalType])
   end
-
+  
   -- calculate damage level multiplier
   config.damageLevelMultiplier = root.evalFunction("weaponDamageLevelMultiplier", configParameter("level", 1))
 
@@ -61,13 +61,11 @@ function build(directory, config, parameters, level, seed)
   if config.tooltipKind ~= "base" then
     config.tooltipFields = {}
     config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
-	config.tooltipFields.rarityLabel = configParameter("rarity", "Common")
+    config.tooltipFields.rarityLabel = configParameter("rarity", "Common")
     config.tooltipFields.dpsLabel = util.round((config.primaryAbility.baseDps or 0) * config.damageLevelMultiplier, 1)
     config.tooltipFields.speedLabel = util.round(1 / (config.primaryAbility.fireTime or 1.0), 1)
     config.tooltipFields.damagePerShotLabel = util.round((config.primaryAbility.baseDps or 0) * (config.primaryAbility.fireTime or 1.0) * config.damageLevelMultiplier, 1)
     config.tooltipFields.energyPerShotLabel = util.round((config.primaryAbility.energyUsage or 0) * (config.primaryAbility.fireTime or 1.0), 1)
-	-- Lets you customise tooltip from the weapon... EXTREMELY useful I think!
-	config.tooltipFields = sb.jsonMerge(config.tooltipFields, config.tooltipFieldsOverride or {})
     if elementalType ~= "physical" then
       config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
     end
@@ -79,6 +77,14 @@ function build(directory, config, parameters, level, seed)
       config.tooltipFields.altAbilityTitleLabel = "Special:"
       config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
     end
+
+    --Apply manufacturer icon
+    if config.manufacturer and config.manufacturer ~= "" then
+      config.tooltipFields.manufacturerIconImage = "/interface/sf-manufacturers/" .. config.manufacturer:lower() .. ".png"
+    end
+    
+    -- Lets you customise tooltip from the weapon... EXTREMELY useful I think!
+    config.tooltipFields = sb.jsonMerge(config.tooltipFields, config.tooltipFieldsOverride or {})
   end
 
   -- set price

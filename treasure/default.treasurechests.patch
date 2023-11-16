@@ -8,5 +8,16 @@
 		"minimumLevel" : 1
 		}
 	]
+  },
+  
+  { "op" : "add", "path" : "/starforge-blackrotChest",
+  "value" :
+	[
+		{
+		"containers" : [ "starforge-blackrotchest" ],
+		"treasurePool" : "blackrotChestTreasure",
+		"minimumLevel" : 1
+		}
+	]
   }
 ]

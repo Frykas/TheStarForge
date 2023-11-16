@@ -44,6 +44,8 @@
                 "legs": [{
                     "name": "starforge-unboundstalkerpants","parameters" : { "colorIndex" : 8 }
                 }],
+				"back": [{ "name": "starforge-unboundscoutbot" },
+				{ "name": "" }],
                 "primary": [
                     "starforge-unboundheavysniper"
                 ]

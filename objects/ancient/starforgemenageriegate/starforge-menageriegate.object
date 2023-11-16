@@ -1,0 +1,54 @@
+{
+  "objectName" : "starforge-menageriegate",
+  "colonyTags" : ["ancient"],
+  "rarity" : "Legendary",
+  "category" : "other",
+  "price" : 0,
+  "printable" : false,
+
+  "description" : "???",
+  "shortdescription" : "Ancient Menagerie Gateway",
+  "race" : "ancient",
+
+  "apexDescription" : "A strange door to find out here. To what dimension could it lead me?",
+  "avianDescription" : "An ominous door that could lead to any dimension.",
+  "floranDescription" : "Mysssterious door. Where could it lead?",
+  "glitchDescription" : "Cautious. Am I prepared to face whatever is on the other side of this gate?",
+  "humanDescription" : "A mysterious door leading into an unknown dimension. What could possibly go wrong?",
+  "hylotlDescription" : "An enigmatic doorway to an unknown destination... or a concealed opportunity?",
+  "novakidDescription" : "What's a door like this doin' out here?",
+
+  "lightColor" : [76, 60, 86],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "starforge-menageriegate.png:idle" }, { "image" : "starforge-menageriegatefullbright.png:idle", "fullbright" : true  } ],
+      "imagePosition" : [-16, 0],
+      "animationPosition" : [-16, 0],
+      "spaceScan" : 0.1,
+
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+
+      "lightPosition" : [0, 3],
+
+      "detectArea" : [ [-3, 0], [3, 5] ]
+    }
+  ],
+
+  "animation" : "/objects/ancient/starforgemenageriegate/starforge-menageriegate.animation",
+  "animationParts" : {
+    "frame" : "starforge-menageriegate.png",
+    "portal" : "starforge-menageriegatefullbright.png"
+  },
+
+  "scripts" : [ "/objects/ancient/starforgemenageriegate/starforge-menageriegate.lua" ],
+  "scriptDelta" : 20,
+
+  "messagePlayerInterval" : 0.5,
+  "messagePlayerRange" : 15,
+
+  "health" : 10,
+  "smashOnBreak" : true
+}

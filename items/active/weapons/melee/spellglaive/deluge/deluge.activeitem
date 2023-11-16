@@ -14,19 +14,23 @@
   "itemTags" : ["weapon","melee","spellglaive","spear"],
   "learnBlueprintsOnPickup" : [ "starforge-deluge" ],
 
-  "cursor" : "/cursors/reticle0.cursor",
+  "cursor" : "/cursors/starforge-spellglaivecursor.cursor",
 
   "inventoryIcon" : "deluge.png",
 
   "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
   "animationParts" : {
     "blade" : "deluge.png",
-	"bladeFullbright" : "",
+    "bladeFullbright" : "",
 	
-	"swoosh" : "tidalfrost_",
-	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidebreakermuzzle.png"
+    "swoosh" : "tidalfrost",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidebreakermuzzle.png"
   },
-  "animationCustom" : {},
+  "animationCustom" : {
+    "sounds" : {
+      "fireBolt" : [ "/sfx/gun/starforge_tidalfrostblast.ogg" ]
+    }
+  },
 
   "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
 
@@ -34,34 +38,30 @@
 
   "primaryAbilityType" : "starforge-spellglaivecombo",
   "primaryAbility" : {
-    "baseDps" : 8.0,
+    "baseDps" : 10.5,
 	
     "damageConfig" : {
       "damageSourceKind" : "starforge-tidalfrost",
       "knockbackMode" : "aim",
       "timeout" : 0.25,
-	  "statusEffects" : []
+      "statusEffects" : []
     }
   },
   
   "altAbilityType" : "starforge-spellglaiveblast",
   "altAbility" : {
-	"projectileType" : "starforge-tideshard",
-	"projectileParameters" : {
-	  "damageKind" : "starforge-tidalfrost",
-	  "movementSettings" : {
-		"gravityMultiplier" : 1
-	  },
-	  "speed" : [45, 125]
-    },
+    "projectileType" : "starforge-tidalblast",
+    "projectileParameters" : {
+      "damageKind" : "starforge-tidalfrost"
+     },
 
-	"projectileCount" : 6,
-	"inaccuracy": 0.125,
-	"baseDamage" : 10,
-	"energyUsage" : 60,
-	
-	"fireTime" : 1.9,
-	"fireType" : "auto"
+    "projectileCount" : 1,
+    "inaccuracy": 0.01,
+    "baseDamage" : 5,
+    "energyUsage" : 60,
+    
+    "fireTime" : 1.9,
+    "fireType" : "auto"
   },
 
   "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"

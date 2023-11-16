@@ -1,0 +1,94 @@
+{
+  "itemName": "starforge-silverserpent",
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "A serpent bound cannon, sporting armour penetrating rounds.",
+  "shortdescription" : "Silver Serpent",
+  "tooltipKind": "starforge-uniquegun",
+  "category": "pistol",
+  "twoHanded": true,
+  "level" : 6,
+  "itemTags": [ "weapon", "ranged", "pistol" ],
+  "tooltipFields" : {"subtitle" : "Deagle"},
+  "inventoryIcon": "starforge-silverserpenticon.png",
+  
+  "animation": "/items/active/weapons/ranged/unique/mauricessidearm/mauricessidearm.animation",
+  "animationParts": {
+    "butt": "",
+    "middle": "starforge-silverserpent.png",
+    "barrel": "",
+	"middleFullbright": "starforge-silverserpentfullbright.png",
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
+  },
+  "animationCustom": {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 1,
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "rocketbarrelpuff" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [ "/sfx/gun/starforge-silverserpentfire.ogg" ]
+    }
+  },
+  
+  "baseOffset" : [0.50, 0.125],
+  "muzzleOffset": [1.125, 0.25],
+  
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+  "elementalType": "physical",
+  
+  "primaryAbility": {
+    "scripts": [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],
+    "class": "StarforgeGunFire",
+	
+    "fireTime": 0.7,
+    "baseDps": 13,
+    "energyUsage": 20,
+    "inaccuracy": 0.01,
+	
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "starforge-silverserpentbullet",
+    "projectileParameters": {
+	  "armourPiercingFactor" : 0.45,
+      "knockback": 4
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.05,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

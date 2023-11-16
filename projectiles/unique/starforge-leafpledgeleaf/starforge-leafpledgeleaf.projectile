@@ -1,0 +1,15 @@
+{
+  "projectileName" : "starforge-leafpledgeleaf",
+  "physics" : "arrow",
+  "image" : "starforge-leafpledgeleaf.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 45,
+  "timeToLive" : 5,
+  "supportsProcessing" : true,
+  "flippable" : false,
+  "piercing" : true,
+  "actionOnReap" : [],
+  "damageKind" : "spear"
+}

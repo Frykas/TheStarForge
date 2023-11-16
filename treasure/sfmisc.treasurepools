@@ -6,8 +6,9 @@
    "starforge-florantstash" : [
     [1, {
       "pool" : [
-        {"weight" : 0.90, "pool" : "smallChestTreasure"},
-        {"weight" : 0.10, "item" : "starforge-scavenger"}
+        {"weight" : 0.70, "pool" : "smallChestTreasure"},
+        {"weight" : 0.30, "item" : "starforge-scavenger"},
+	    {"weight" : 0.30, "item" : "starforge-leafpledge"}
       ],
       "poolRounds" : [
         [0.30, 1],
@@ -36,7 +37,24 @@
       ],
       "allowDuplication" : false
     }]
+  ],
+  
+  "starforge-tidepodsHarvest" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.85, "item" : "starforge-tidepods"},
+        {"weight" : 0.04, "item" : "starforge-tidepodsseed"},
+        {"weight" : 0.1, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.01, "item" : "starforge-strangetidepod"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
   ]
+  
+  
      
   }
   

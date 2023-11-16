@@ -1,0 +1,94 @@
+{
+  "itemName": "starforge-frenzy",
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "The frenzy brought a new piece, a boost.",
+  "shortdescription" : "Frenzy",
+  "tooltipKind": "starforge-uniquegun",
+  "category": "pistol",
+  "twoHanded": false,
+  "level" : 5,
+  "itemTags": [ "weapon", "ranged", "shotgun" ],
+  "tooltipFields" : {"subtitle":"Shotgun"},
+  "inventoryIcon": "starforge-frenzyicon.png",
+  
+  "animation": "/items/active/weapons/ranged/unique/mauricessidearm/mauricessidearm.animation",
+  "animationParts": {
+    "butt": "",
+    "middle": "starforge-frenzy.png",
+    "barrel": "",
+	"middleFullbright": "starforge-frenzyfullbright.png",
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
+  },
+  "animationCustom": {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 5,
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "rocketbarrelpuff" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [ "/sfx/gun/starforge-makeshiftshotgun.ogg" ]
+    }
+  },
+  
+  "baseOffset" : [0.625, 0.25],
+  "muzzleOffset": [1.125, 0.25],
+  
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+  "elementalType": "fire",
+  
+  "primaryAbility": {
+    "scripts": [ "/items/active/weapons/ranged/starforge-gunfire.lua" ],
+    "class": "StarforgeGunFire",
+	
+    "fireTime": 0.97,
+    "baseDps": 7,
+    "energyUsage": 25,
+    "inaccuracy": 0.125,
+	
+    "projectileCount": 5,
+    "fireType": "auto",
+    "projectileType": "starforge-firefluxbolt",
+    "projectileParameters": {
+	  "statusEffects" : [ "starforge-firecombust" ],
+      "knockback": 10
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.05,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.6,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

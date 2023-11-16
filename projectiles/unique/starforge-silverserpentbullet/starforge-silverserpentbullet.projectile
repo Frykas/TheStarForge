@@ -1,0 +1,22 @@
+{
+  "projectileName" : "starforge-silverserpentbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "starforge-silverserpentbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "damageKind" : "default",
+  
+  "scripts" : ["/projectiles/scripts/starforge-armourpiercing.lua"],
+  "armourPiercingFactor" : 0.25
+}

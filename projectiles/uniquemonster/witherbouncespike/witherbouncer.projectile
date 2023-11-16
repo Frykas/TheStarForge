@@ -1,0 +1,42 @@
+{
+  "projectileName" : "starforge-witherbouncer",
+  "physics" : "laser",
+  "timeToLive" : 5,
+  "image" : "witherbouncer.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 4,
+  "periodicActions" : [ ],
+  "actionOnCollide" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/electricimpact2.config"
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/electricimpact.config"
+    }
+  ],
+  "speed" : 0,
+  "power" : 30,
+  "piercing" : true,
+  "damageKind" : "starforge-wither",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "statusEffects" : [ "electrified" ],
+
+  "fullbright" : false,
+  "emitters" : [ ],
+
+  "bounces" : 6,
+
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua", "/projectiles/uniquemonster/witherbouncespike/bouncespikes.lua" ],
+
+  "spikeProjectile" : "starforge-witherstickyspikes",
+  "spikeDamageFactor" : 0.4,
+
+  "controlMovement" : {
+    "maxSpeed" : 60,
+    "controlForce" : 60
+  }
+}

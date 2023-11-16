@@ -1,4 +1,30 @@
 [
+  [   {
+    "op": "add",
+    "path": "/visitableTypeDescription/starforge-withered",
+    "value": [
+      "A planet completely taken over by the ^orange;Great Withering^reset;. Its environment was twisted into something incredibly dangerous. ^red;The atmosphere is dense with armour degrading particles.^reset;",
+      "A planet completely taken over by the ^orange;Great Withering^reset;. It is now a corrupted atrocity, with danger on every corner. ^red;The atmosphere is dense with armour degrading particles.^reset;", 
+      "A planet completely taken over by the ^orange;Great Withering^reset;. A plagued world full of twisted and dangerous flora. ^red;The atmosphere is dense with armour degrading particles.^reset;",
+      "The twisting corruption of the ^orange;Great Withering^reset; has overcome this planet. ^red;The atmosphere is dense with armour degrading particles.^reset;"	  
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/starforge-withered",
+    "value": "Withered"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/starforge-withered", 
+    "value": [
+      117,
+      132,
+      104
+    ]
+  }
+  ],
+  
   [  // TEST INFO
     {
       "inverse": true,
@@ -40,7 +66,16 @@
       "inverse": false
     },
     
-	{ "op": "add", "path": "/wordsList", "value": { "starforge-tidefragment" : { "word" : "starforge-tidefragment", "friendlyWord" : "Tidal Remnants" } }},
+	// Misc
+  {
+    "op": "add",
+    "path": "/namesList",
+	"value": {
+		"starforge-tidefragment" : { "word" : "starforge-tidefragment", "friendlyWord" : " Tidal Remnants" },
+		"starforge-progenitorwither" : { "word" : "starforge-progenitorwither", "friendlyWord" : " Wither - Progenitor" },
+		"starforge-blackrot" : { "word" : "starforge-blackrot", "friendlyWord" : " Wither - Blackrot" }
+	}
+  },
 	
     { "op": "add", "path": "/displayDungeons/starforge-katahelruinsdungeon", "value": 
     {"description" : "Ruined Glitch castle detected. Reading faint traces of Ancient Essence from the structure. ", "icon" : "/interface/cockpit/dungeons/katahelruinsicon.png" }
@@ -60,8 +95,14 @@
 	
 	{ "op": "add", "path": "/displayDungeons/starforge-unboundvillage", "value": 
     {"description" : "Detecting multiple traces of Unbound technology, most likely a refugee village.", "icon" : "/interface/cockpit/dungeons/unbounddungeonicon.png" }
+    },
+	
+	{ "op": "add", "path": "/displayDungeons/starforge-yukaifortress", "value": 
+    {"description" : "Detecting slight traces of a Yukai Hylotl settlement. Exercise caution.", "icon" : "/interface/cockpit/dungeons/yukaifortressicon.png" }
     }
   
   ]
+  
+
 
 ]

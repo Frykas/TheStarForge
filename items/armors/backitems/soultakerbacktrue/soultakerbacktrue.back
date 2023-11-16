@@ -34,6 +34,8 @@
       "amount" : 1.0
     }
   ],
-  
-  "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
+
+  "builder" : "/items/buildscripts/starforge-buildcolourmatcharmour.lua",
+  "applyFunction" : "replace",
+  "alphaHex" : "FE"
 }

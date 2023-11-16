@@ -173,6 +173,9 @@ function build(directory, config, parameters, level, seed)
     if part.animationCustom then
       config.animationCustom = util.mergeTable(config.animationCustom or {}, part.animationCustom)
     end
+    if part.animationParts then
+      config.animationParts = util.mergeTable(config.animationParts or {}, part.animationParts)
+    end
 
 
     --Determine sprite to use for each part
@@ -181,7 +184,7 @@ function build(directory, config, parameters, level, seed)
     --Find the same position in the array and use it to find the fullbright to use
     local spriteIndex = nebUtil.findIndex(part.images, chosenSprite)
     if spriteIndex and part.fullbrightImages then
-        config.animationParts[partName .. "Fullbright"] = util.absolutePath(string.gsub(generationConfig.basePartDirectory, "<partName>", partName), part.fullbrightImages[spriteIndex])
+      config.animationParts[partName .. "Fullbright"] = util.absolutePath(string.gsub(generationConfig.basePartDirectory, "<partName>", partName), part.fullbrightImages[spriteIndex])
     end
 
     --If specified, keep adding this
@@ -536,7 +539,6 @@ function correctAbility(config, primaryAbilityMultipliers, seed)
   correctedAbility.stances.fire.armRotation = correctedAbility.stances.fire.weaponRotation * 0.5
   correctedAbility.stances.cooldown.weaponRotation = correctedAbility.stances.fire.weaponRotation
   correctedAbility.stances.cooldown.armRotation = correctedAbility.stances.fire.armRotation
-
   
   --local cooldownTime = correctedAbility.stances.cooldown.duration * (correctedAbility.burstCount or 1);
   --sb.logInfo(string.format("seed %10d | fireType %s | RoF %7.4f | cooldown %7.4f | weaponRotation %7.4f", seed, correctedAbility.fireType, 1 / correctedAbility.fireTime, cooldownTime, correctedAbility.stances.fire.weaponRotation));

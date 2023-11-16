@@ -1,0 +1,50 @@
+{
+  "itemName" : "starforge-eternalvigilance",
+  "price" : 1000,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Lord Katahel may be gone, but his legend is as my watch : eternal.",
+  "shortdescription" : "Eternal Vigilance",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","broadsword"],
+  "learnBlueprintsOnPickup" : [ "starforge-earthbringer" ],
+
+  "inventoryIcon" : "starforge-eternalvigilance.png",
+
+  "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "starforge-eternalvigilance.png",
+	
+    "swoosh" : "physical"
+  },
+
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shortswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.85,
+    "baseDps" : 10
+  },
+  
+  "stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "aimAngle" : 0,
+        "armRotation" : -15,
+        "weaponRotation" : 50,
+        "twoHanded" : false,
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+	 },
+	 
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

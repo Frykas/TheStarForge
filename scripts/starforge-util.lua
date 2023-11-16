@@ -61,6 +61,10 @@ if not nebUtil then
     end
     return multipliedTable
   end
+
+  function nebUtil.interpLinear(a, b, c)
+    return a + (b - a) * c
+  end
   
   --Find size of tabe
   function nebUtil.objectSize(table)
@@ -71,28 +75,30 @@ if not nebUtil then
     return size
   end
   
+  --Find a random letter key
   function nebUtil.randomLetterKey(list, seed)
     return string.char(96 + (seed % nebUtil.objectSize(list)) + 1)
   end
   
+  --Compare tables
   function nebUtil.tablesAreSame(table, lastTable)
-	local valid = true
-  
-	if #lastTable == #table then
-      valid = false
-	end
-  
-	if valid then
+    local valid = true
+    
+    if #lastTable == #table then
+        valid = false
+    end
+    
+    if valid then
       for _, lastValue in ipairs(lastTable) do
         for _, value in pairs(table) do
-	      if lastValue == value then
-	        valid = false
-	      end
+          if lastValue == value then
+            valid = false
+          end
         end
-	  end
-	end
-  
-	return valid
+      end
+    end
+    
+    return valid
   end
   
   --Check if table contains a value
@@ -113,5 +119,42 @@ if not nebUtil then
       end
     end
     return nil
+  end
+  
+  --Determine the replace colours of an armourset
+  function nebUtil.determineReplaceColours(colours)
+    local replace = "?replace"
+    for x, y in pairs(colours) do
+      local string = ";" .. x .. "=" .. y
+	  replace = replace .. string
+    end
+    return replace
+  end
+
+  --Find all the directives in the image and remove them
+  function nebUtil.determineExistingDirectives(string)
+    local splitStrings = nebAnimatedArmours.splitString(string)
+    local image = splitStrings[1]
+    table.remove(splitStrings, 1)
+    local directives = ""
+    for _, x in ipairs(splitStrings) do
+      directives = directives .. x
+    end
+    return image, directives
+  end
+
+  --Separate the string into chunks based on where separator or ? is
+  function nebUtil.splitString(string, separator)
+    local separator, fields = separator or "?", {}
+    local pattern = string.format("([^%s]+)", separator)
+    string:gsub(pattern, function(c) fields[#fields+1] = c end)
+    return fields
+  end
+  
+  -- Usage: hex2rgb("#a85636") result: 
+  function nebUtil.hex2rgb(hex)
+    hex = hex:gsub("#","")
+	local rgbValue = tonumber("0x"..hex:sub(1,2)) .. "," .. tonumber("0x"..hex:sub(3,4)) .. "," .. tonumber("0x"..hex:sub(5,6))
+    return rgbValue
   end
 end

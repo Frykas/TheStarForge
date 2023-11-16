@@ -168,6 +168,23 @@
 
         "type" : "grass",
         "grasses" : [ "starforge-smalltiderock", "starforge-tidalice", "starforge-tidalstalk" ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "starforge-wildtidepodsseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
       }
     ]
   },

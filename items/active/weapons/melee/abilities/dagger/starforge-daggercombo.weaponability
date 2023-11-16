@@ -16,7 +16,9 @@
     "scripts" : ["/items/active/weapons/melee/abilities/starforge-meleecombo.lua"],
     "class" : "StarforgeMeleeCombo",
 	
-	"comboSteps" : 5,
+    "comboSteps" : 5,
+    
+    "altComboFinisher" : true,
 	
     "flashTime" : 0.15,
     "flashDirectives" : "fade=FFFFFFFF=0.15",
@@ -38,7 +40,7 @@
       "damageSourceKind" : "dagger",
       "knockbackMode" : "aim",
       "timeout" : 0.25,
-	  "statusEffects" : []
+      "statusEffects" : []
     },
     "stepDamageConfig" : [
       {

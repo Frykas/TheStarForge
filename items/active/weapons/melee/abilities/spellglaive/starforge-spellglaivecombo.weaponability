@@ -1,14 +1,4 @@
 {
-  "animationParts" : { },
-  "animationCustom" : {
-    "sounds" : {
-      "fire" : [ "/sfx/melee/swing_spear.ogg" ],
-      "fire2" : [ "/sfx/melee/swing_spear.ogg" ],
-      "fire3" : [ "/sfx/melee/swing_broadsword.ogg" ],
-      "fire4" : [ "/sfx/melee/swing_shortsword.ogg" ]
-    }
-  },
-
   "ability" : {
     "name" : "Combo Slash",
     "type" : "starforge-spellglaivecombo",
@@ -35,7 +25,7 @@
     "fireTime" : 0.8,
     "baseDps" : 11.5,
 	
-	"damageConfig" : {
+    "damageConfig" : {
       "damageSourceKind" : "bow",
       "knockbackMode" : "aim",
       "statusEffects" : [ "starforge-bleeding" ],
@@ -61,9 +51,9 @@
       }
     ],
 	
-	"stances" : {
+    "stances" : {
       //IDLE - DEFAULT
-	  "idle" : {
+      "idle" : {
         "armRotation" : -10,
         "weaponRotation" : -78,
         "weaponOffset" : [0.125, 0],
@@ -71,9 +61,9 @@
         "twoHanded" : true,
         "allowFlip" : true,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
-	  //COMBO STEP 1
+      //COMBO STEP 1
       "windup1" : {
         "duration" : 0.075,
         "armRotation" : -25,
@@ -84,7 +74,7 @@
         "allowRotate" : true,
         "allowFlip" : true,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
       "preslash1" : {
         "duration" : 0.025,
@@ -96,7 +86,7 @@
         "allowRotate" : false,
         "allowFlip" : false,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
       "fire1" : {
         "duration" : 0.1,
@@ -107,7 +97,7 @@
 
         "allowRotate" : false,
         "allowFlip" : false,
-		"continueStep" : true
+        "continueStep" : true
       },
       "wait1" : {
         "duration" : 0.1,
@@ -119,7 +109,7 @@
         "allowRotate" : false,
         "allowFlip" : false
       },
-	  //COMBO STEP 2
+      //COMBO STEP 2
       "windup2" : {
         "duration" : 0.089,
         "armRotation" : -25,
@@ -130,7 +120,7 @@
         "allowRotate" : true,
         "allowFlip" : true,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
       "preslash2" : {
         "duration" : 0.01,
@@ -142,7 +132,7 @@
         "allowRotate" : false,
         "allowFlip" : false,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
       "fire2" : {
         "duration" : 0.15,
@@ -175,7 +165,7 @@
         "allowRotate" : true,
         "allowFlip" : true,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
       "preslash3" : {
         "duration" : 0.025,
@@ -187,7 +177,7 @@
         "allowRotate" : false,
         "allowFlip" : false,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
       "fire3" : {
         "duration" : 0.2,
@@ -199,7 +189,7 @@
         "allowRotate" : false,
         "allowFlip" : false,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
       "wait3" : {
         "duration" : 0.15,
@@ -211,9 +201,9 @@
         "allowRotate" : false,
         "allowFlip" : true,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
-	  //COMBO STEP 4
+      //COMBO STEP 4
       "windup4" : {
         "duration" : 0.3,
         "armRotation" : -25,
@@ -224,7 +214,7 @@
         "allowRotate" : true,
         "allowFlip" : true,
 		
-		"frontArmFrame" : "jump.3"
+        "frontArmFrame" : "jump.3"
       },
       "fire4" : {
         "duration" : 0.35,

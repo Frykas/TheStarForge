@@ -1,0 +1,69 @@
+{
+  "objectName" : "starforge-witherthorns",
+  "colonyTags" : ["human","humanprison","evil"],
+  "rarity" : "Common",
+  "description" : "Ouch! I shouldn't get too close to that.",
+  "shortdescription" : "Wither Thorns",
+  "race" : "human",
+  "category" : "trap",
+  "price" : 75,
+
+  "apexDescription" : "Barbed wire. The Miniknog often use this to keep people out... or in.",
+  "avianDescription" : "Sharp wire. Have to be careful it doesn't snag my feathers.",
+  "floranDescription" : "Sharp, ssspiky ssstring.",
+  "glitchDescription" : "Cautious. This sharp wire could scratch even the toughest Glitch shell.",
+  "humanDescription" : "Barbed wire. The bane of human clothing.",
+  "hylotlDescription" : "Sharp spikes fashioned with wire. A barbaric, primitive form of security.",
+  "novakidDescription" : "Barbed wire.",
+
+  "animation" : "/objects/wither/hazards/starforge-witherhazard.animation",
+  "animationParts" : {
+    "hazard" : "witherthorns.png"
+  },
+  
+  "inventoryIcon" : "witherthorns.png:1",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "witherthorns.png:1" } ],
+      "imagePosition" : [-8, 0],
+      "animationPosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "touchDamage" : {
+        "poly" : [ [-1, 0], [-1, 1.6], [-0.3, 2], [0.8, 1.2], [1, 0.9], [1, 0] ],
+        "damage" : 10,
+		
+        "statusEffects" : [ "starforge-wither" ],
+
+        "damageType" : "Environment",
+        "damageSourceKind" : "default"
+      }
+    },
+    {
+      "imageLayers" : [ { "image" : "witherthorns.png:1" } ],
+      "imagePosition" : [-8, 0],
+      "animationPosition" : [-8, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "touchDamage" : {
+        "poly" : [ [1, 0], [1, 1.6], [0.3, 2], [-0.8, 1.2], [-1, 0.9], [-1, 0] ],
+        "damage" : 10,
+		
+        "statusEffects" : [ "starforge-wither" ],
+		
+        "damageType" : "Environment",
+        "damageSourceKind" : "default"
+      }
+    }
+  ],
+  
+  "scripts" : ["/objects/scripts/starforge-varianthook.lua"],
+  "variants" : 6
+}

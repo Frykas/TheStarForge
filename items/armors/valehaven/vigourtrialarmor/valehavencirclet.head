@@ -1,0 +1,42 @@
+{
+  "itemName" : "starforge-valehavencirclet",
+  "price" : 1800,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "inventoryIcon" : "icons.png:head",
+  "category" : "headarmour",
+  "description" : "A circlet made with gold and precious Valestone. Only worn by the greatest warriors of Valehaven.",
+  "shortdescription" : "Circlet of Valehaven",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "level" : 6,
+  "statusEffects" : [
+    {
+      "levelFunction" : "acceleratorArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 2.10
+    },
+    {
+      "levelFunction" : "acceleratorArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 24
+    },
+    {
+      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 60
+    },
+    {
+      "levelFunction" : "acceleratorArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 20
+    }
+  ],
+
+  "itemTags" : [ "tier6armour" ]
+
+}

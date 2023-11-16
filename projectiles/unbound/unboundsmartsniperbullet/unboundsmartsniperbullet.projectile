@@ -27,6 +27,10 @@
   "damageKind" : "fireplasmabullet",
   "rotationRate" : 5.5,
   "trackingLimit" : 2.0,
+  "homingStyle" : "controlVelocity",
+  "baseHomingControlForce" : 5,
+  "constantSpeed" : true,
+  "searchRadius" : 15,
 
-  "scripts" : [ "/scripts/projectiles/homingprojectile.lua" ]
+  "scripts" : [ "/projectiles/scripts/starforge-homingbullet.lua" ]
 }

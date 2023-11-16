@@ -12,6 +12,10 @@ require "/scripts/actions/animator.lua"
 
 -- Engine callback - called on initialization of entity
 function init()
+  --Pickup mechanics
+  self.pickupLoot = config.getParameter("pickupLoot")
+  monster.setInteractive(config.getParameter("interactive") or self.pickupLoot)
+
   self.randomName = sb.makeUuid()
   status.setPersistentEffects(self.randomName, config.getParameter("statusEffects", {}))
   self.pathing = {}
@@ -67,12 +71,7 @@ function init()
       return notify(notification)
     end)
   message.setHandler("despawn", function()
-      monster.setDropPool(nil)
-      monster.setDeathParticleBurst(nil)
-      monster.setDeathSound(nil)
-      self.deathBehavior = nil
-      self.shouldDie = true
-      status.addEphemeralEffect("monsterdespawn")
+      despawn()
     end)
 
   local deathBehavior = config.getParameter("deathBehavior")
@@ -91,8 +90,6 @@ function init()
   if config.getParameter("damageBar") then
     monster.setDamageBar(config.getParameter("damageBar"));
   end
-
-  monster.setInteractive(config.getParameter("interactive", false))
 
   monster.setAnimationParameter("chains", config.getParameter("chains"))
   
@@ -258,6 +255,14 @@ end
 function interact(args)
   self.interacted = true
   self.board:setEntity("interactionSource", args.sourceId)
+  
+  if self.pickupLoot then
+	for item, count in pairs(self.pickupLoot) do
+	  world.spawnItem(item, mcontroller.position(), count)
+	  despawn()
+	  mcontroller.setPosition({0, 0})
+	end
+  end
 end
 
 function shouldDie()
@@ -337,6 +342,15 @@ function overrideCollisionPoly()
       break
     end
   end
+end
+
+function despawn()
+  monster.setDropPool(nil)
+  monster.setDeathParticleBurst(nil)
+  monster.setDeathSound(nil)
+  self.deathBehavior = nil
+  self.shouldDie = true
+  status.addEphemeralEffect("monsterdespawn")
 end
 
 function setupTenant(...)

@@ -1,7 +1,7 @@
 {
   //Starforge - The Witherlord 
   "witherlord-firstcontact" : {
-    "type" : "mission",
+    "type" : "tutorial",
     "senderName" : "The Witherlord",
     "portraitImage" : "/interface/chatbubbles/witherlord.png:<frame>",
     "text" : "-.-. --- -. ... ..- -- . --..--  .-. . ..- ... . --..--  .-. . .- -. .. -- .- - .",

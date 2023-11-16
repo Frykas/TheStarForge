@@ -1,0 +1,17 @@
+{
+  "frameGrid" : {
+    "size" : [37, 21],
+    "dimensions" : [6, 1],
+
+    "names" : [
+      [ "idle", "transitionToAlt.1", "transitionToAlt.2", "transitionToAlt.3", "transitionToAlt.4", "idleAlt" ]
+    ]
+  },
+
+  "aliases" : {
+    "transitionToPrimary.1" : "transitionToAlt.4",
+    "transitionToPrimary.2" : "transitionToAlt.3",
+    "transitionToPrimary.3" : "transitionToAlt.2",
+    "transitionToPrimary.4" : "transitionToAlt.1"
+  }
+}

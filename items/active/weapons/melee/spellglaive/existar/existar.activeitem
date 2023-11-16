@@ -13,7 +13,7 @@
   "itemTags" : ["weapon","melee","spellglaive","spear"],
   "learnBlueprintsOnPickup" : [ "starforge-existar" ],
 
-  "cursor" : "/cursors/reticle0.cursor",
+  "cursor" : "/cursors/starforge-spellglaivecursor.cursor",
 
   "inventoryIcon" : "existar.png",
 
@@ -22,7 +22,7 @@
     "blade" : "existar.png",
 	"bladeFullbright" : "existarfullbright.png",
 	
-    "swoosh" : "",	
+    "swoosh" : "fire",
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
   },
   "animationCustom" : {},
@@ -33,7 +33,7 @@
 
   "primaryAbilityType" : "starforge-spellglaivecombo",
   "primaryAbility" : {
-    "baseDps" : 6.5
+    "baseDps" : 8.5
   },
   
   "altAbilityType" : "starforge-spellglaiveblast",

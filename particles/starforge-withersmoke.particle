@@ -1,22 +1,24 @@
 {
   "kind" : "starforge-withersmoke",
   "definition" : {
-    "type" : "textured",
-    "image" : "/animations/starforge-withersmoke/starforge-withersmoke.png",
-    "fade" : 1.0,
+    "type" : "animated",
+    "animation" : "/animations/starforge-withersmoke/starforge-withersmoke.animation",
+    "fade" : 0.9,
     "destructionAction" : "fade",
-    "destructionTime" : 1.0,
-    "initialVelocity" : [0, 0],
-    "finalVelocity" : [0, 0],
-    "approach" : [0, 0],
-    "timeToLive" : 0.125,
-    "size" : 0.85,
+    "destructionTime" : 0.1,
+    "initialVelocity" : [-0.125, -0.125],
+    "finalVelocity" : [-0.125, -0.125],
+    "approach" : [20, 20],
+    "timeToLive" : 1,
+    "size" : 0.25,
+    "collidesForeground" : true,
     "layer" : "front",
     "variance" : {
-	  "size" : 0.25,
       "rotation" : 180,
-      "angularVelocity" : 30
-    },
-	"collidesLiquid" : false
+      "angularVelocity" : 0,
+      "size" : 0.125,
+      "initialVelocity" : [0.125, 0.125],
+      "finalVelocity" : [0.125, 0.125]
+    }
   }
 }

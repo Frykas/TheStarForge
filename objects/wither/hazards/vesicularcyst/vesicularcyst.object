@@ -1,0 +1,64 @@
+{
+  "objectName" : "starforge-vesicularcyst",
+  "colonyTags" : ["wither"],
+  "rarity" : "Legendary",
+  "tooltipKind" : "base",
+  "race" : "Floran",
+
+  "category" : "storage",
+  "price" : 0,
+  "printable" : false,
+  "description" : "TODO.",
+  "shortdescription" : "Vesicular Spore Sack",
+
+  "apexDescription" : "TODO.",
+  "avianDescription" : "TODO.",
+  "floranDescription" : "TODO.",
+  "glitchDescription" : "TODO.",
+  "humanDescription" : "TODO.",
+  "hylotlDescription" : "TODO.",
+  "novakidDescription" : "TODO.",
+
+  "inventoryIcon" : "vesicularcysticon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "vesicularcyst.png:active"}, { "image" : "vesicularcystfullbright.png:active", "fullbright" : true } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "vesicularcyst.png:active"}, { "image" : "vesicularcystfullbright.png:active", "fullbright" : true } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "vesicularcyst.animation",
+  "animationParts" : {
+    "base" : "vesicularcyst.png",
+    "baseFullbright" : "vesicularcystfullbright.png"
+  },
+  "animationPosition" : [-8, 0],
+  
+  "smashable" : true,
+  "smashOnBreak" : true,
+  "smashSounds" : [ ],
+
+  "smashParticles" : [ ],
+
+  "scripts" : ["/objects/scripts/starforge-explodeonsmash.lua"],
+  
+  "damageToBurst" : 5,
+  "regrowTime" : 25,		//If specified, will regrow the object after being burst
+  "burstProjectileType" : ["poisonplasmaexplosion", "poisonburstexplosion"]		//Spawns all of these
+}

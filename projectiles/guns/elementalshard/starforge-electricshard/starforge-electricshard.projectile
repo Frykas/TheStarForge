@@ -26,6 +26,7 @@
   ],
   "periodicActions" : [],
   "statusEffects" : [],
+    "lightColor" : [79, 29, 184],
   "fullbright" : true,
   "damageType" : "nodamage",
   "damageKind" : "electricspear",

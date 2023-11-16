@@ -1,0 +1,38 @@
+{
+  "objectName" : "starforge-blackrottree1",
+  "rarity" : "common",
+
+  "printable" : false,
+  "description" : "A Sickamore tree often seen on Withered planets, corrupted by the Blackrot strand.",
+  "shortdescription" : "Sickamore Tree",
+  "category" : "decorative",
+  "price" : 5,
+
+  "apexDescription" : "Mmhm. This tree is strange looking.",
+  "avianDescription" : "I've never seen leaves like this before!",
+  "floranDescription" : "Weird tree. Never ssseen one like thisss before.",
+  "glitchDescription" : "Weary. This tree looks sick.",
+  "humanDescription" : "This tree doesn't look real, quite strange.",
+  "hylotlDescription" : "A Sickamore tree. They're strangely linked to the Blackrot strand.",
+  "novakidDescription" : "Never seen a tree like this before.",
+
+  
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "blackrottree1.png",
+      "imagePosition" : [-0, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ]
+    }
+   ]
+   
+   }

@@ -3,42 +3,45 @@
   "price" : 3000,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "A strong weapon which fires super heated rounds, capable of piercing shields. ",
+  "description" : "An experimental Elpis weapon that fires shield-rupturing rounds.",
   "shortdescription" : "^orange;The Vow^reset;",
   "level" : 7,
   "tooltipKind" : "starforge-uniquegun",
   "category": "uniqueWeapon",
+  "manufacturer" : "elpisElements",
   "tooltipFieldsOverride" : {"subtitle":"Hand Cannon"},
   "itemTags" : ["weapon","ranged","revolver"],
   "twoHanded" : true,
   
+  "cursor" : "/cursors/starforge-revolvercursor.cursor",
+  
   "inventoryIcon" : "thevow.png:ready1",
 
   "animation" : "thevow.animation",
-    "animationParts" : {
-      "middle" : "thevow.png",
-	  "muzzleFlash" : "muzzleflash.png",
+  "animationParts" : {
+    "middle" : "thevow.png",
+    "muzzleFlash" : "muzzleflash.png",
 	  "flame" : ""
 	},
   "animationCustom" : {
     "sounds" : {
       "fire" : ["/sfx/gun/starforge-thevow.ogg"],
-	  "reloadLoop" : [ ],
-	  "reload" : [ "/sfx/gun/reload/pistol_reload_clip3.ogg" ]
+      "reloadLoop" : [ ],
+      "reload" : [ "/sfx/gun/reload/pistol_reload_clip3.ogg" ]
     },
-	"particleEmitters" : {
-	  "reload" : {
-		"transformationGroups" : ["muzzle"],
-		"offsetRegion" : [-0.75, 0.25, -0.75, 0.25],
-		"particles" : [
+    "particleEmitters" : {
+      "reload" : {
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [-0.75, 0.25, -0.75, 0.25],
+        "particles" : [
         ]
-	  }
-	}
+      }
+    }
   }, 
   "baseOffset" : [0.875, 0.250],
   "muzzleOffset" : [1.750,0.250],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
   
   "elementalType" : "fire",
 
@@ -47,15 +50,15 @@
     "class" : "StarforgeReloadGunFire",
 
     "fireTime" : 1.4,
-    "baseDps" : 11,
+    "baseDps" : 13,
     "energyUsage" : 110,
     "inaccuracy" : 0.001,
 	
-	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
+    "readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
 	
-	"maxAmmo" : 6,
-	"cycleAfterShot" : true,
-	"fireAnimation" : false,
+    "maxAmmo" : 6,
+    "cycleAfterShot" : true,
+    "fireAnimation" : false,
 
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -98,20 +101,20 @@
         "duration" : 1.9,
         "armRotation" : -25,
         "weaponRotation" : 55,
-		"weaponOffset" : [-0.25, 0.0],
+        "weaponOffset" : [-0.25, 0.0],
         "twoHanded" : true,
 
         "aimAngle" : 0,
         "allowRotate" : false,
         "allowFlip" : true,
 
-		"frontArmFrameSequence" : [
-		  [0.0, "rotation"],
-		  [0.4, "walk.2"],
-		  [0.7, "run.3"],
-		  [1.0, "run.1"],
-		  [1.5, "run.1"]
-		],
+        "frontArmFrameSequence" : [
+          [0.0, "rotation"],
+          [0.4, "walk.2"],
+          [0.7, "run.3"],
+          [1.0, "run.1"],
+          [1.5, "run.1"]
+        ],
         "backArmFrame" : "rotation"
       }
     }

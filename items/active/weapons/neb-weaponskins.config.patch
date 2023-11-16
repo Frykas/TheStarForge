@@ -1,0 +1,23 @@
+[
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-thevow",
+    "value": {
+      "undyingVows": {
+        "skinName" : "Undying Vows",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "A story of vows and death, all linked to the fate of the world.",
+          "shortdescription": "Undying Vows",
+          "manufacturer" : "",
+          "inventoryIcon": "/items/active/weapons/ranged/unique/thevow/skins/undyingvows.png:ready1",
+          "animationParts": {
+            "middle": "/items/active/weapons/ranged/unique/thevow/skins/undyingvows.png"
+          }
+        }
+      }
+    }
+  }
+]

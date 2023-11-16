@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-strangetidepod",
+  "rarity" : "legendary",
+  "price" : 0,
+  "category" : "food",
+  "inventoryIcon" : "starforge-strangetidepod.png",
+  "description" : "This one isn't quite like the others, where does it come from? \n ^red;-Reality Breaker-^reset;",
+  "shortdescription" : "Strange Tide Pod",
+  "effects" : [ [
+      {
+        "effect" : "starforge-terminate",
+        "duration" : 2
+    }
+  ] ],
+  "foodValue" : 0,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 30.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

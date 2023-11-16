@@ -1,0 +1,109 @@
+{
+  "itemName": "starforge-unboundrevolver",
+  "price": 1000,
+  "maxStack": 1,
+  "rarity": "legendary",
+  "description": "An Unbound service revolver commonly used by pilots.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Hercules\" R",
+  "tooltipKind": "starforge-unboundgun",
+  "tooltipFieldsOverride" : {"subtitle":"Revolver"},
+  "category": "pistol",
+  "twoHanded": true,
+  "level": 6,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "pistol"
+  ],
+  "inventoryIcon": "unboundrevolvericon.png",
+  "animation": "unboundrevolver.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundrevolver.png",
+    "barrel": "",
+	"middleFullbright": "unboundrevolverfullbright.png",
+    "muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-1.875, -0.5, -1.875, -0.5]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/starforge-unboundrevolver.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": 
+  [0.500,0.125],
+  
+  "muzzleOffset": 
+  [1.125,0.5],
+  
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "physical",
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
+    "class" : "StarforgeGunFire",
+
+    "fireTime": 0.55,
+    "baseDps": 11.5,
+    "energyUsage": 20,
+    "inaccuracy": 0.001,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "starforge-physicalbullet",
+    "projectileParameters": {
+      "knockback": 4
+    },
+          "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  "unholsterTwirl" : {
+        "duration" : 0.5,
+        "armRotation" : -25,
+        "weaponRotation" : -540,
+		"weaponOffset" : [-0.25, -0.125],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  "altAbilityType" : {
+    "name" : "flashlight"},
+   
+  "builder": "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

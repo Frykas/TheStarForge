@@ -1,11 +1,11 @@
 {
   "author" : "Frykas",
   "description" : "A huge Starbound expansion adding multiple factions, encounters, weapons and much more to the game. From combat rifles, a new rng weapon types, to the Tidal Remnants mini-biome, full of unique encounters & monsters, Starforge aims to improve the base game's sandbox by adding more stories and stuff to find.",
-  "friendlyName" : "The Starforge v1.1",
+  "friendlyName" : "The Starforge v1.1.5",
   "includes" : ["MorePlanetInfo"],
   "link" : "steam://url/CommunityFilePage/2431875552",
   "name" : "The Starforge v1.0",
   "steamContentId" : "2431875552",
   "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|Musical Instruments and Songs|NPCs and Creatures|Weapons|Quests|Dungeons|Furniture and Objects|Character Improvements|Food and Farming|In-Game Tools|Mechanics|Armor and Clothes",
-  "version" : "V.1.1.03"
+  "version" : "V.1.1.51"
 }

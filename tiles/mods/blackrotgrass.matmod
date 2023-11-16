@@ -1,0 +1,14 @@
+{
+  "modId" : 3000,
+  "modName" : "starforge-blackrotgrass",
+  "description" : "Strangely shaped grass, crawling with bugs.",
+  "health" : 0,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "blackrotgrass.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

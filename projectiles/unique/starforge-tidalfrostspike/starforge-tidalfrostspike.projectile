@@ -1,0 +1,19 @@
+{
+  "projectileName" : "starforge-tidalfrostspike",
+  "physics" : "laser",
+  "image" : "starforge-tidalfrostspike.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 50,
+  "speed" : 100,
+  "bounces" : 0,
+  "timeToLive" : 0.4,
+  "supportsProcessing" : true,
+  "fullbright" : true,
+  "flippable" : true,
+  "piercing" : true,
+  "actionOnReap" : [],
+  "damageKind" : "starforge-tidalfrost",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-randomspeedslowdown.lua" ]
+}

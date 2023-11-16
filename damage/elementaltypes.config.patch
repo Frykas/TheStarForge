@@ -1,44 +1,58 @@
 [
   //WITHERING ROT
   { "op" : "add",
-	"path" : "/starforge-wither",
-	"value" : {
-	  "resistanceStat" : "starforge-witherResistance",
-	  "damageNumberParticles" : {
-		"hit" : "starforge-witherdamagenumber",
-		"stronghit" : "starforge-witherdamagenumberstrong",
-		"weakhit" : "starforge-witherdamagenumberweak",
-		"shieldhit" : "starforge-witherdamagenumber",
-		"kill" : "starforge-witherdamagenumber"
-	  }
-	}
+    "path" : "/starforge-wither",
+    "value" : {
+      "resistanceStat" : "starforge-witherResistance",
+      "damageNumberParticles" : {
+        "hit" : "starforge-witherdamagenumber",
+        "stronghit" : "starforge-witherdamagenumberstrong",
+        "weakhit" : "starforge-witherdamagenumberweak",
+        "shieldhit" : "starforge-witherdamagenumber",
+        "kill" : "starforge-witherdamagenumber"
+      }
+    }
+  },
+  //SOULFLAME
+  { "op" : "add",
+    "path" : "/starforge-soulflame",
+    "value" : {
+      "resistanceStat" : "starforge-soulflameResistance",
+      "damageNumberParticles" : {
+        "hit" : "starforge-soulflamedamagenumber",
+        "stronghit" : "starforge-soulflamedamagenumberstrong",
+        "weakhit" : "starforge-soulflamedamagenumberweak",
+        "shieldhit" : "starforge-soulflamedamagenumber",
+        "kill" : "starforge-soulflamedamagenumber"
+      }
+    }
   },
   //TIDALFROST
   { "op" : "add",
-	"path" : "/starforge-tidalfrost",
-	"value" : {
-	  "resistanceStat" : "starforge-tidalfrostResistance",
-	  "damageNumberParticles" : {
-		"hit" : "starforge-tidalfrostdamagenumber",
-		"stronghit" : "starforge-tidalfrostdamagenumberstrong",
-		"weakhit" : "starforge-tidalfrostdamagenumberweak",
-		"shieldhit" : "starforge-tidalfrostdamagenumber",
-		"kill" : "starforge-tidalfrostdamagenumber"
-	  }
-	}
+    "path" : "/starforge-tidalfrost",
+    "value" : {
+      "resistanceStat" : "starforge-tidalfrostResistance",
+      "damageNumberParticles" : {
+        "hit" : "starforge-tidalfrostdamagenumber",
+        "stronghit" : "starforge-tidalfrostdamagenumberstrong",
+        "weakhit" : "starforge-tidalfrostdamagenumberweak",
+        "shieldhit" : "starforge-tidalfrostdamagenumber",
+        "kill" : "starforge-tidalfrostdamagenumber"
+      }
+    }
   },
-  //GODFLAME
+  //SURGE
   { "op" : "add",
-	"path" : "/starforge-godflame",
-	"value" : {
-	  "resistanceStat" : "starforge-godflameResistance",
-	  "damageNumberParticles" : {
-		"hit" : "starforge-godflamedamagenumber",
-		"stronghit" : "starforge-godflamedamagenumberstrong",
-		"weakhit" : "starforge-godflamedamagenumberweak",
-		"shieldhit" : "starforge-godflamedamagenumber",
-		"kill" : "starforge-godflamedamagenumber"
-	  }
-	}
+    "path" : "/starforge-surge",
+    "value" : {
+      "resistanceStat" : "starforge-surgeResistance",
+      "damageNumberParticles" : {
+        "hit" : "starforge-surgedamagenumber",
+        "stronghit" : "starforge-surgedamagenumberstrong",
+        "weakhit" : "starforge-surgedamagenumberweak",
+        "shieldhit" : "starforge-surgedamagenumber",
+        "kill" : "starforge-surgedamagenumber"
+      }
+    }
   }
 ]

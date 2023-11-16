@@ -16,7 +16,9 @@
   "animation" : "starforge-torpor.animation",
   "animationParts" : {
     "blade" : "starforge-torpor.png",
-    "bladeFullbright" : "starforge-torporlights.png"
+    "bladeFullbright" : "starforge-torporlights.png",
+	
+    "swoosh" : "blood"
   },
   "animationCustom" : {
     "sounds" : {

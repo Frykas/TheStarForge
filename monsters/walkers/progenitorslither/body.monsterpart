@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-progenitorslither",
+  "category" : "slither",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "progenitorslither.png"
+  }
+}

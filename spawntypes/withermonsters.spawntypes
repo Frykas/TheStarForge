@@ -1,0 +1,33 @@
+[
+  //===================================== CREEPY MONSTERS =====================================
+  {
+	  "name" : "starforge-tanglevineseeker",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 1],
+      "spawnChance" : 0.01,
+      "monsterType" : "starforge-tanglevinereanimator",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    },
+  {
+	  "name" : "starforge-progenitorslither",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "all",
+		"time" : "all"
+	  },
+	  
+	  "groupSize" : [1, 1],
+	  "spawnChance" : 0.05,
+      "monsterType" : "starforge-progenitorslither",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    }
+  
+  ]

@@ -1,7 +1,7 @@
 [
  {"op":"add","path":"/collectables/starforge-cacochiusaf","value":{"order":104,"item":"starforge-cacochiusaf"}}
-,{"op":"add","path":"/collectables/starforge-centurionaf","value":{"order":119,"item":"starforge-centurionaf"}}
-,{"op":"add","path":"/collectables/starforge-ancientcephalowormaf","value":{"order":120,"item":"starforge-ancientcephalowormaf"}}
+,{"op":"add","path":"/collectables/starforge-centurionaf","value":{"order":130,"item":"starforge-centurionaf"}}
+,{"op":"add","path":"/collectables/starforge-ancientcephalowormaf","value":{"order":131,"item":"starforge-ancientcephalowormaf"}}
 ,{"op":"add","path":"/collectables/starforge-florantaf","value":{"order":102,"item":"starforge-florantaf"}}
 ,{"op":"add","path":"/collectables/starforge-jootyfishaf","value":{"order":100,"item":"starforge-jootyfishaf"}}
 ,{"op":"add","path":"/collectables/starforge-novalimeaf","value":{"order":103,"item":"starforge-novalimeaf"}}
@@ -20,5 +20,10 @@
 ,{"op":"add","path":"/collectables/starforge-alabattoraf","value":{"order":112,"item":"starforge-alabattoraf"}}
 ,{"op":"add","path":"/collectables/starforge-mothonaf","value":{"order":113,"item":"starforge-mothonaf"}}
 ,{"op":"add","path":"/collectables/starforge-starmiteaf","value":{"order":118,"item":"starforge-starmiteaf"}}
+,{"op":"add","path":"/collectables/starforge-erchiusflayeraf","value":{"order":119,"item":"starforge-erchiusflayeraf"}}
+,{"op":"add","path":"/collectables/starforge-shockumawaf","value":{"order":123,"item":"starforge-shockumawaf"}}
+,{"op":"add","path":"/collectables/starforge-iceumawaf","value":{"order":124,"item":"starforge-iceumawaf"}}
+,{"op":"add","path":"/collectables/starforge-progenitorslitheraf","value":{"order":120,"item":"starforge-progenitorslitheraf"}}
+,{"op":"add","path":"/collectables/starforge-tanglevinereanimatoraf","value":{"order":121,"item":"starforge-tanglevinereanimatoraf"}}
 ]
 //SILBR SOKLOVA PATCH!!!!!!

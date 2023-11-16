@@ -2,53 +2,35 @@
   "id" : "thalassorondinquest4",
   "title" : "^green;Going Even Beyond I",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassomission1" ],
-  "text" : "The Unbound have access to Starforges? That is... Very bad news. If you want to stand a chance against them, you'll have to learn and use the ^#FFB2B2;Exalting Station^reset;. I'll teach you how to craft Exalting Charges. First, go and kill a ^green;Vault Guardian^reset;.",
-  "completionText" : "That's the first step down. Vault Guardians store ^#FFB2B2;Exalted Energy^reset; in them, a superior, but extremely rare alternative to Ancient Essence.",
+  "text" : "The Unbound have access to Starforges? This is... very bad news. If you want to stand a chance against them, you'll have to learn and use the ^#FFB2B2;Exalting Station^reset;. I'll teach you how to craft Exalting Charges. First you will need to go and kill a ^green;Vault Guardian^reset;.",
+  "completionText" : "That's the first step down. Vault Guardians contain ^#FFB2B2;Exalted Energy^reset;, a superior, but extremely rare alternative to Ancient Essence.",
   "moneyRange" : [500, 500],
   "rewards" : [
     [ [ "starforge-exaltedenergy", 2 ] ]
   ],
 
-  "updateDelta" : 10,
+  "updateDelta" : 1,
   "script" : "/quests/scripts/starforge-main.lua",
   "scriptConfig" : {
-     "portraits" : {
+    "portraits" : {
       "questStarted" : {
-	   "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
+        "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
         "title" : "Rondin"
       },
       "questComplete" : {
         "portrait" : [ {"image" : "/objects/crafting/weaponshop/weaponforgeportait.png"} ],
         "title" : "Rondin"
       }
-	 },
+    },
     "requireTurnIn" : true,
     "conditions" : [
       {
-        "type" : "killMonstersWithWeapon",
+        "type" : "starforge-killEnemies",
         "displayMonsterName" : "Vault Guardian",
-        "targetMonster" : "electricguardianboss",
-        "count" : 1
-      },
-	  {
-        "type" : "killMonstersWithWeapon",
-        "displayMonsterName" : "Vault Guardian",
-        "targetMonster" : "poisonguardianboss",
-        "count" : 1
-      },
-	  {
-        "type" : "killMonstersWithWeapon",
-        "displayMonsterName" : "Vault Guardian",
-        "targetMonster" : "iceguardianboss",
-        "count" : 1
-      },
-	  {
-        "type" : "killMonstersWithWeapon",
-        "displayMonsterName" : "Vault Guardian",
-        "targetMonster" : "fireguardianboss",
+        "targetMonsters" : [ "electricguardianboss", "poisonguardianboss", "iceguardianboss", "fireguardianboss" ],
         "count" : 1
       }
     ],
-	"turnInDescription" : "Meet ^orange;Rondin^reset; at the ^green;Starforge^reset;."
+    "turnInDescription" : "Meet ^orange;Rondin^reset; at the ^green;Starforge^reset;."
   }
 }

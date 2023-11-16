@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-blackrotrollycritter",
+  "category" : "blackrotrollycritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unbounddoubleplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "unbounddoubleplatform.png",
+  "shortdescription" : "Unbound Platform",
+  "description" : "Multi-layered platforms.",
+  "glitchDescription" : "Statement. These metal panels consist of several individual layers.",
+  "floranDescription" : "Metal wallsss are made of many planksss.",
+  "novakidDescription" : "A metal wall made of multiple sheets.",
+
+  "materialId" : 2913
+}

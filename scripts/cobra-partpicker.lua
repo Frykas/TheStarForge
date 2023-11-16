@@ -144,7 +144,7 @@ if not partPicker then
     if type(newFilters) == "string" then
       filterList.id = newFilters; -- for set parts
     else
-      for k,v in pairs(newFilters) do
+      for k, v in pairs(newFilters) do
         filterList[k] = v; -- for procedural generation
       end
     end
@@ -174,6 +174,7 @@ if not partPicker then
 
     for _, partId in ipairs(partIds) do
       local partConfig = generationConfig.partConfigs[partType].pool[partId];
+      
       -- Unique parts will be set manually using the block above.
       if not partConfig.unique then
         -- All filters must pass
@@ -235,7 +236,7 @@ if not partPicker then
   --[[
     Notes from C0bra5:
 
-    I moved the filters to their own section inorder to prevent name collisions in the future.
+    I moved the filters to their own section in order to prevent name collisions in the future.
   ]]
 
 

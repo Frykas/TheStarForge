@@ -1,0 +1,25 @@
+{
+  "itemName" : "starforge-katahelknightchest",
+  "price" : 1000,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "category" : "chestarmour",
+  "description" : "A durasteel chestpiece worn by the High Knights of Katahel. They swore an oath to protect Katahel's castle until their last ventilation.",
+  "shortdescription" : "High Knight Chestpiece",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  }
+
+ 
+}

@@ -1,10 +1,10 @@
 {
   "input" : [
-	{ "item" : "essence", "count" : 5000},
-	{ "item" : "starforge-brimsteel", "count" : 10},
-	{ "item" : "starforge-infusedtitanium", "count" : 15},
-	{ "item" : "scorchedcore", "count" : 10},
-	{ "item" : "corefragmentore", "count" : 200}
+	{ "item" : "essence", "count" : 1750},
+	{ "item" : "starforge-brimsteel", "count" : 5},
+	{ "item" : "starforge-infusedtitanium", "count" : 7},
+	{ "item" : "scorchedcore", "count" : 6},
+	{ "item" : "corefragmentore", "count" : 75}
   ],
   "output" : {
     "item" : "starforge-thecenturion",

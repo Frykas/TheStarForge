@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "mechbodyunboundscout", "count" : 1},
+	{ "item" : "starforge-salvagedunboundtech", "count" : 1},
+	{ "item" : "durasteelbar", "count" : 12},
+	{ "item" : "salvagetier6", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "mechbodyunboundscoutup",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundgear", "upgrade" ],
+  "duration" : 0
+}
+

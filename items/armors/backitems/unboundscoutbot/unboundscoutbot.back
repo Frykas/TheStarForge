@@ -1,0 +1,16 @@
+{
+  "itemName" : "starforge-unboundscoutbot",
+  "price" : 1500,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "backwear",
+  "description" : "The F stands for FRIEND, isn't he cute?",
+  "shortdescription" : "^#686F5D;UNBD^reset; Scout UMAF",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+
+  "acceptsAugmentType" : "back"
+}

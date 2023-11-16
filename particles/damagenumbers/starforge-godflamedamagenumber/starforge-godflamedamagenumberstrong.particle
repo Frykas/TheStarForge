@@ -1,5 +1,5 @@
 {
-  "kind" : "starforge-godflamedamagenumberstrong",
+  "kind" : "starforge-soulflamedamagenumberstrong",
   "definition" : {
     "type" : "text",
     "text" : "^shadow;$dmg$",

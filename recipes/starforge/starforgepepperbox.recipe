@@ -1,8 +1,8 @@
 {
   "input" : [
-	{ "item" : "essence", "count" : 5000},
-    { "item" : "starforge-impervium", "count" : 8},
-	{ "item" : "volatilepowder", "count" : 50},
+	{ "item" : "essence", "count" : 1750},
+    { "item" : "starforge-impervium", "count" : 4},
+	{ "item" : "volatilepowder", "count" : 25},
 	{ "item" : "ironbar", "count" : 10}
 	
   ],

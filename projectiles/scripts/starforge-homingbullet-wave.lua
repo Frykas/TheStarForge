@@ -10,22 +10,22 @@ function init()
   --Checking which type of homing code to use
   self.homingStyle = config.getParameter("homingStyle", "controlVelocity")
   if self.homingStyle == "controlVelocity" then
-	self.controlForce = config.getParameter("baseHomingControlForce") * self.targetSpeed
+    self.controlForce = config.getParameter("baseHomingControlForce") * self.targetSpeed
   elseif self.homingStyle == "rotateToTarget" then
-	self.rotationRate = config.getParameter("rotationRate")
-	self.trackingLimit = config.getParameter("trackingLimit")
+    self.rotationRate = config.getParameter("rotationRate")
+    self.trackingLimit = config.getParameter("trackingLimit")
   end
   
   if config.getParameter("homingStartDelay") ~= nil then
-	self.homingEnabled = false
-	self.countdownTimer = config.getParameter("homingStartDelay")
+    self.homingEnabled = false
+    self.countdownTimer = config.getParameter("homingStartDelay")
   else
-	self.homingEnabled = true
+    self.homingEnabled = true
   end
   
   --Seting up the sine wave movement
   self.wavePeriod = config.getParameter("wavePeriod") / (2 * math.pi)
-  self.waveAmplitude = config.getParameter("waveAmplitude") * (config.getParameter("barrel", 1) % 2 == 1 and -1 or 1)
+  self.waveAmplitude = config.getParameter("waveAmplitude") * (config.getParameter("barrel", 1) % 2 == 1 and -1 or 1) * (config.getParameter("randomAmplitude") and util.randomDirection() or 1)
 
   self.timer = self.wavePeriod * 0.25
   local vel = mcontroller.velocity()

@@ -1,0 +1,64 @@
+{
+  "itemName" : "starforge-helix",
+  "price" : 1000,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A curious Spellglaive with unknown origins, the blade is rather weak.",
+  "shortdescription" : "Helix",
+  "tooltipKind" : "starforge-uniquesword",
+  "category": "spear",
+  "tooltipFieldsOverride" : {"subtitle":"Spellglaive"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spellglaive","spear"],
+  "learnBlueprintsOnPickup" : [ "starforge-helix" ],
+
+  "cursor" : "/cursors/starforge-spellglaivecursor.cursor",
+
+  "inventoryIcon" : "helix.png",
+
+  "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
+  "animationParts" : {
+    "blade" : "helix.png",
+	"bladeFullbright" : "",
+	
+    "swoosh" : "electric",
+	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-electricmuzzleflash.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbilityType" : "starforge-spellglaivecombo",
+  "primaryAbility" : {
+    "baseDps" : 3.5,
+	
+	"damageConfig" : {
+      "damageSourceKind" : "electric",
+      "knockbackMode" : "aim",
+      "timeout" : 0.25,
+      "statusEffects" : []
+    }
+  },
+  
+  "altAbilityType" : "starforge-spellglaiveblast",
+  "altAbility" : {
+	"projectileType" : "cellblast",
+	"projectileParameters" : {
+	  "speed" : 120
+	},
+
+	"projectileCount" : 1,
+	"inaccuracy": 0.01,
+	"baseDamage" : 8,
+	"energyUsage" : 5,
+	
+	"fireTime" : 0.3,
+	"fireType" : "auto"
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

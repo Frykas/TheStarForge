@@ -92,9 +92,9 @@ function StarForgeUpgradedShockWave:fireShockwave(charge)
         action = "projectile",
         inheritDamageFactor = 1,
         type = self.projectileType,
-		config = {
-		  timeToLive = self.projectileTimeToLive
-		}
+        config = {
+          timeToLive = self.projectileTimeToLive
+        }
       }
       for i, position in pairs(positions) do
         local xDistance = world.distance(position, impact)[1]

@@ -1,0 +1,62 @@
+{
+	"projectileName": "starforge-unboundshockrocket",
+	"image": "unboundshockrocket.png",
+	"animationCycle": 0.4,
+	"frameNumber": 4,
+	"damageKindImage": "icon.png",
+	"lightColor": [115, 119, 38],
+	"pointLight": true,
+	"piercing": false,
+	"movementSettings" : {
+		"gravityMultiplier" : 0.2
+	},
+	"actionOnReap": [{
+				"file": "/projectiles/explosions/regularexplosion2/electricexplosionknockback.config",
+				"action": "config"
+			},
+			{
+				"inheritDamageFactor": 0.5,
+				"angleAdjust": 0,
+				"fuzzAngle": 30,
+				"type": "smallelectriccloud",
+				"action": "projectile",
+				"statusEffects" : ["paralysis"]
+			},
+			{
+				"inheritDamageFactor": 0.5,
+				"angleAdjust": 90,
+				"fuzzAngle": 30,
+				"type": "smallelectriccloud",
+				"action": "projectile",
+				"statusEffects" : ["paralysis"]
+			},
+			{
+				"inheritDamageFactor": 0.5,
+				"angleAdjust": 180,
+				"fuzzAngle": 30,
+				"type": "smallelectriccloud",
+				"action": "projectile",
+				"statusEffects" : ["paralysis"]
+			},
+			{
+				"inheritDamageFactor": 0.5,
+				"angleAdjust": 270,
+				"fuzzAngle": 30,
+				"type": "smallelectriccloud",
+				"action": "projectile",
+				"statusEffects" : ["paralysis"]
+			}
+		],
+		"timeToLive": 1.0,
+		"knockback": 6,
+		
+	"emitters": ["electricplasma"],
+	"power": 10.0,
+	"speed": 65.0,
+	"physics": "arrow",
+	"damageKind": "default",
+	"statusEffects" : ["paralysis"],
+
+	"controlForce": 150,
+	"maxSpeed": 150
+}

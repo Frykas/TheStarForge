@@ -1,0 +1,18 @@
+{
+  "name" : "starforge-skullbreakerboost",
+  "blockingStat" : "healingStatusImmunity",
+
+  "effectConfig" : {
+    "healTime" : 40,
+	"energyRegenTime" : 25,
+	"powerMultiplier" : 1.125
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "starforge-skullbreakerboost.lua"
+  ],
+  
+  "label" : "Skullbreaker's Treatment",
+  "icon" : "/interface/statuses/starforge-skullbreakerboost.png"
+}

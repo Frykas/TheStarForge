@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-witherfruit",
+  "rarity" : "uncommon",
+  "price" : 150,
+  "category" : "food",
+  "inventoryIcon" : "witherfruit.png",
+  "description" : "A fruit that evolved to resist the effects of the Great Withering. It tastes like mud.",
+  "shortdescription" : "Buco Fruit",
+  "effects" : [ [
+    {
+      "effect" : "starforge-dimensionalinstability",
+      "duration" : 180
+    }
+  ] ],
+  "foodValue" : 3,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

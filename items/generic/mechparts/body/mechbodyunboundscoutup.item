@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechbodyunboundscoutup",
+  "price" : 10000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbody",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechbodyunboundscoutup.png",
+  "description" : "An Unbound mech body, upgraded with stronger plating and energy cells.",
+  "shortdescription" : "UNBD Scout Mech Body ^yellow;^reset;",
+  "itemTags" : [ ],
+
+  "mechPart" : ["body", "unboundscoutup"]
+}

@@ -1,8 +1,8 @@
 {
   "input" : [
-	{ "item" : "essence", "count" : 5000},
-	{ "item" : "starforge-cerulium", "count" : 5},
-	{ "item" : "starforge-infusedtitanium", "count" : 15}
+	{ "item" : "essence", "count" : 1750},
+	{ "item" : "starforge-cerulium", "count" : 3},
+	{ "item" : "starforge-infusedtitanium", "count" : 5}
   ],
   "output" : {
     "item" : "starforge-type44gauntlet",

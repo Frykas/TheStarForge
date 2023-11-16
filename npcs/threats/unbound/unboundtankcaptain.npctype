@@ -148,7 +148,7 @@
     "override": [
       [0, [{
         "head": [{
-          "name": "starforge-unboundstalkerhead"
+          "name": "starforge-unboundmauricehead"
         }],
         "chest": [{
           "name": "starforge-unboundofficerchest"

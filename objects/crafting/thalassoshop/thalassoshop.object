@@ -14,7 +14,7 @@
   "glitchDescription" : "Interested. This console can sell Thalasso furniture.",
   "humanDescription" : "I can buy Thalasso furniture here. Cool.",
   "hylotlDescription" : "I can purchase Thalasso furniture at this console. Perfect.",
-  "novakidDescription" : "Thalasso furniture are purchasable here.",
+  "novakidDescription" : "Thalasso furniture is purchasable here.",
   
 "interactAction" : "OpenMerchantInterface",
   "interactData" : {

@@ -1,0 +1,122 @@
+{
+  "projectileName" : "starforge-tidalblast",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "animationCycle" : 0.15,
+  "frameNumber" : 1,
+  "speed" : 90,
+  "lightColor" : [44, 172, 219],
+  "pointLight" : true,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "animationLoops" : false,
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 0.075,
+          "type" : "starforge-tidalfrostspike",
+          
+          "angleAdjust" : 25,
+          "fuzzAngle" : 15
+        },
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 0.075,
+          "type" : "starforge-tidalfrostspike",
+          
+          "angleAdjust" : 0,
+          "fuzzAngle" : 15
+        },
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 0.075,
+          "type" : "starforge-tidalfrostspike",
+          
+          "angleAdjust" : -25,
+          "fuzzAngle" : 15
+        }
+      ]
+    },
+    {
+      "time" : 0.05,
+      "repeat" : true,
+      
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/frozendust2/frozendust2.animation",
+            "approach" : [0.5, 0.5],
+            "fullbright" : true,
+            "timeToLive" : 2.0,
+            "variance" : {
+              "timeToLive" : 0.4,
+              "position" : [3, 3],
+              "initialVelocity" : [1, 1],
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/statuseffects/frozen/frozen.animation",
+            "approach" : [0.5, 0.5],
+            "fullbright" : true,
+            "timeToLive" : 0.5,
+            "variance" : {
+              "timeToLive" : 0.15,
+              "position" : [3, 3],
+              "initialVelocity" : [1, 1],
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "action" : "spark"
+        }
+      ]
+    },
+    {
+      "time" : 0.05,
+      "repeat" : true,
+      
+      "action" : "loop",
+      "count" : 6,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/projectiles/unique/starforge-tidalblast/starforge-tidalblast.animation",
+            "approach" : [0.5, 0.5],
+            "fullbright" : true,
+            "layer" : "back",
+            "timeToLive" : 2,
+            "variance" : {
+              "timeToLive" : 0.15,
+              "position" : [3, 3],
+              "initialVelocity" : [1, 1],
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "starforge-tidalfrost",
+  "knockback" : 30
+}

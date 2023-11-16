@@ -1,4 +1,5 @@
 require "/scripts/util.lua"
+require "/scripts/starforge-armourcolouradapt.lua"
 
 local originalInit = init
 local originalUpdate = update
@@ -6,8 +7,17 @@ local originalUninit = uninit
 
 function init()
   originalInit()
-  sb.logInfo("===== STARFORGE PLAYER INITIALIZATION =====")
-  sb.logInfo("Initializing general player utility script")
+  
+  self.validArmourSlots = {
+    "head",
+	"headCosmetic",
+	"chest",
+	"chestCosmetic",
+	"legs",
+	"legsCosmetic",
+	"back",
+	"backCosmetic"
+  }
   
   self.areaStatusEffects = config.getParameter("starforge-areaStatusEffects", {})
   self.statusEffectQueryRange = 100
@@ -16,6 +26,9 @@ function init()
   
   ---Entity Messaging Handler---
   message.setHandler("starforge-callPlayerFunction", callPlayerFunction)
+  
+  --Armour handler
+  updateArmourFunctions()
 end
 
 function callPlayerFunction(_, _, functionType, args)
@@ -44,6 +57,15 @@ function update(args)
     end
   else
 	self.statusEffectIntervalTimer = self.statusEffectIntervalTimer - script.updateDt()
+  end
+end
+
+function updateArmourFunctions()
+  for _, armourType in ipairs(self.validArmourSlots) do
+    armourName = player.equippedItem(armourType)
+	for _, functionCall in ipairs(nebArmourFunctions or {}) do
+	  functionCall()
+	end
   end
 end
 

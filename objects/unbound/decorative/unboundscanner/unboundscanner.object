@@ -21,7 +21,7 @@
   "orientations" : [
     {
       "dualImage" : "unboundscanner.png",
-	  "imageLayers" : [ { "image" : "unboundscannerback.png"}, { "image" : "unboundscannerbackfullbright.png", "fullbright" : true }, {"image" : "unboundscannerfront.png", "renderLayer" : "Player+6"} ],
+	  "imageLayers" : [ { "image" : "unboundscannerback.png"}, { "image" : "unboundscannerbackfullbright.png", "fullbright" : true }, { "image" : "unboundscannerfront.png" }, { "image" : "unboundscannerfrontfullbright.png", "fullbright" : true } ],
       "imagePosition" : [-16, 0],
 
       "direction" : "left",
@@ -33,5 +33,34 @@
       "animationCycle" : 1.0,
       "anchors" : [ "bottom" ]
     }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/animator/starforge-partrender.lua"
+  ],
+  "animationScripts" : [
+    "/objects/scripts/animator/starforge-partrenderanimator.lua"
+  ],
+  "partsToRender" : [
+    {
+	  "image" : "unboundscannerfront.png",
+      "frames" : 1,
+      "animationTime" : 1.0,
+	  "offset" : [0.125, 0],
+	  "flipImages" : false,
+	  "fullbright" : false,
+	  "centered" : true,
+	  "renderLayer" : "Player+1"
+	},
+    {
+	  "image" : "unboundscannerfrontfullbright.png",
+      "frames" : 1,
+      "animationTime" : 1.0,
+	  "offset" : [0.125, 0],
+	  "flipImages" : false,
+	  "fullbright" : true,
+	  "centered" : true,
+	  "renderLayer" : "Player+2"
+	}
   ]
 }

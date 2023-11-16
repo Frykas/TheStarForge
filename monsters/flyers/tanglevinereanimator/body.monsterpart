@@ -1,0 +1,9 @@
+{
+  "name" : "tanglevinereanimator",
+  "category" : "tanglevinereanimator",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "tanglevinereanimator.png"
+  }
+}

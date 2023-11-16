@@ -1,0 +1,69 @@
+{
+  "objectName" : "starforge-blackrotlamp",
+  "colonyTags" : ["light"],
+  "rarity" : "common",
+  "category" : "light",
+  "price" : 60,
+
+  "description" : "A lamp made with Blackrot hives. Don't ask how it shines, no one knows.",
+  "shortdescription" : "Blackrot Lamp",
+  "printable" : false,
+
+  "apexDescription" : "What a strange looking lamp. How does it shines?",
+  "avianDescription" : "This lamp looks like a tiny tree!",
+  "floranDescription" : "Light hasss no flame. Floran sssafe. Or isss it?",
+  "glitchDescription" : "Observant. This lamp appears to glow despite not having a lightbulb.",
+  "humanDescription" : "A lamp that looks like a tiny tree. I would call that cute if it wasn't made of hives.",
+  "hylotlDescription" : "A crude looking lamp. I honestly don't like it.",
+  "novakidDescription" : "A glowing tree eh? See anything these days.",
+
+  "lightColor" : [252, 220, 133],
+
+  "inventoryIcon" : "blackrotlampicon.png",
+  "orientations" : [
+    {
+      "image" : "blackrotlamp.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "blackrotlamp.png",
+        "fg" : "blackrotlamplit.png"
+      },
+      "animationPosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 1]
+    },
+    {
+      "image" : "blackrotlamp.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "blackrotlamp.png",
+        "fg" : "blackrotlamplit.png"
+      },
+      "animationPosition" : [0, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 1]
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "blackrotlamp.png",
+    "fg" : "blackrotlamplit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

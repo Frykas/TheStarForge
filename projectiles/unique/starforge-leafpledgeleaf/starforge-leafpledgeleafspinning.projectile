@@ -1,0 +1,25 @@
+{
+  "projectileName" : "starforge-leafpledgeleafspinning",
+  "physics" : "sticky",
+  "image" : "starforge-leafpledgeleafspinning.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 25,
+  "timeToLive" : 5,
+  "supportsProcessing" : true,
+  "flippable" : false,
+  "piercing" : true,
+  "actionOnReap" : [],
+  "damageKind" : "spear",
+  "damageRepeatTimeout" : 0.15,
+
+  "scripts" : ["/projectiles/scripts/starforge-spin.lua"],
+  "orientationLocked" : true,
+  "pointToLight" : true,
+  
+  "ignoreVelocity" : true,
+  "spinRate" : 0.5,
+  "minSpinSpeed": 25,
+  "spinDirection" : -1
+}

@@ -17,7 +17,9 @@
   "animation" : "starforge-beheader.animation",
   "animationParts" : {
     "sword" : "starforge-beheader.png",
-    "swordfullbright" : "starforge-beheaderfullbright.png"
+    "swordfullbright" : "starforge-beheaderfullbright.png",
+	
+    "swoosh" : "physical"
   },
   "animationCustom" : { },
 
@@ -28,7 +30,7 @@
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime" : 0.8,
-    "baseDps" : 10,
+    "baseDps" : 13,
 	
 	"comboSteps" : 5,
 	"swooshOffsetRegions" : [

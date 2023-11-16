@@ -14,7 +14,7 @@
   "itemTags" : ["weapon","melee","spellglaive","spear"],
   "learnBlueprintsOnPickup" : [ "starforge-scavenger" ],
 
-  "cursor" : "/cursors/reticle0.cursor",
+  "cursor" : "/cursors/starforge-spellglaivecursor.cursor",
 
   "inventoryIcon" : "scavenger.png",
 
@@ -23,7 +23,7 @@
     "blade" : "scavenger.png",
 	"bladeFullbright" : "",
 	
-    "swoosh" : "",	
+    "swoosh" : "poison",
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-poisonmuzzleflash.png"
   },
   "animationCustom" : {},
@@ -34,7 +34,7 @@
 
   "primaryAbilityType" : "starforge-spellglaivecombo",
   "primaryAbility" : {
-    "baseDps" : 7.0
+    "baseDps" : 9.5
   },
   
   "altAbilityType" : "starforge-spellglaiveblast",

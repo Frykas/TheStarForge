@@ -1,58 +1,51 @@
 {
-  "animationParts" : { },
-  "animationCustom" : {
-    "sounds" : {
-      "fireBolt" : [ "/sfx/gun/omnicannon_shot1.ogg", "/sfx/gun/omnicannon_shot3.ogg", "/sfx/gun/omnicannon_shot4.ogg" ]
-    }
-  },
-
   "ability" : {
-	"name" : "Spell Blast",
+    "name" : "Spell Blast",
     "type" : "starforge-spellglaiveblast",
-	"scripts" : ["/items/active/weapons/ranged/abilities/starforge-altfire.lua"],
-	"class" : "StarforgeAltFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-altfire.lua"],
+    "class" : "StarforgeAltFire",
 
-	"projectileType" : "starforge-electricfluxbolt",
-	"projectileParameters" : {
-	  "damageKind" : "plasmabullet",
-	  "knockback": 15
-	},
+    "projectileType" : "starforge-electricfluxbolt",
+    "projectileParameters" : {
+      "damageKind" : "plasmabullet",
+      "knockback": 15
+    },
 
-	"projectileCount" : 1,
-	"inaccuracy": 0.0025,
-	"baseDamage" : 9,
-	"energyUsage" : 35,
-	
-	"fireTime" : 1.0,
-	"fireType" : "auto",
-	
-	"useStanceDuration" : true,
-	"hidePrimaryMuzzleFlash" : false,
-	"fireOffset" : [1.0, 0.125],
-	"fireSound" : "fireBolt",
+    "projectileCount" : 1,
+    "inaccuracy": 0.0025,
+    "baseDamage" : 9,
+    "energyUsage" : 35,
+    
+    "fireTime" : 1.0,
+    "fireType" : "auto",
+    
+    "useStanceDuration" : true,
+    "hidePrimaryMuzzleFlash" : false,
+    "fireOffset" : [1.0, 0.125],
+    "fireSound" : "fireBolt",
 
-	"stances" : {
-	  "fire" : {
+    "stances" : {
+      "fire" : {
         "armRotation" : -4,
         "weaponRotation" : -75,
         "weaponOffset" : [0, -0.125],
         "allowRotate" : true,
         "twoHanded" : true,
         "allowFlip" : true,
-		
-		"frontArmFrame" : "jump.3"
-	  },
-	  "cooldown" : {
-	    "duration" : 0.45,
+    
+        "frontArmFrame" : "jump.3"
+      },
+      "cooldown" : {
+        "duration" : 0.45,
         "armRotation" : -4,
         "weaponRotation" : -75,
         "weaponOffset" : [0, -0.125],
         "allowRotate" : true,
         "twoHanded" : true,
         "allowFlip" : true,
-		
-		"frontArmFrame" : "jump.3"
-	  }
-	}
+    
+        "frontArmFrame" : "jump.3"
+      }
+    }
   }
 }

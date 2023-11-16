@@ -44,17 +44,26 @@
       "body" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 7,
+          "zLevel" : 8,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
           "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
+        }
+      },
+      "heatIndicator" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 7,
+          "image" : "<partImage><paletteSwaps><elementalDirectives>",
+          "offset" : [0, 0],
+          "transformationGroups" : ["heatIndicator"]
         }
       },
       "bodyFullbright" : {
         "properties" : {
           "centered" : true,
           "fullbright" : true,
-          "zLevel" : 8,
+          "zLevel" : 9,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
           "offset" : [0.75, 0.25], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
@@ -101,23 +110,23 @@
         }
       },
 	  
-	  "attachment" : {
+      "attachment" : {
         "properties" : {
           "centered" : true,
           "zLevel" : 1,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
           "offset" : [0.75, 0.25], // x offset is set dynamically
-          "transformationGroups" : ["weapon", "attachment"]
+          "transformationGroups" : ["attachment"]
         }
       },
-	  "attachmentFullbright" : {
+      "attachmentFullbright" : {
         "properties" : {
           "centered" : true,
           "fullbright" : true,
           "zLevel" : 2,
           "image" : "<partImage><paletteSwaps><elementalDirectives>",
           "offset" : [0.75, 0.25], // x offset is set dynamically
-          "transformationGroups" : ["weapon", "attachment"]
+          "transformationGroups" : ["attachment"]
         }
       },
 	  
@@ -150,6 +159,7 @@
   },
 
   "transformationGroups" : {
+    "heatIndicator" : {},
     "weapon" : {},
     "muzzle" : {},
     "attachment" : {}
@@ -159,7 +169,499 @@
     "muzzleFlash" : {
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0, 0, 0, 0],
-      "particles" : [ ]
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [255, 208, 133, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [255, 255, 183, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    
+    "poisonMuzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [155, 186, 61, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [209, 225, 96, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    "fireMuzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [218, 83, 2, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [253, 209, 77, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    "iceMuzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [58, 207, 254, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [176, 255, 255, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    "electricMuzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [146, 69, 175, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [210, 156, 231, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    
+    "starforge-witherMuzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [67, 82, 56, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [94, 101, 74, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    "starforge-soulflameMuzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [204, 143, 245, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [240, 187, 242, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    "starforge-tidalfrostMuzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [44, 172, 219, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [161, 241, 254, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    "starforge-surgeMuzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "burstCount" : 4,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [228, 234, 85, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [2.0, 10.0],
+              "position" : [0.0, 0.2],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [227, 245, 167, 255],
+            "size" : 1.2,
+            "collidesForeground" : true,
+            "initialVelocity" : [20.0, 0.0],
+            "approach" : [8.0, 2.0],
+            "finalVelocity" : [0.0, 0.0],
+            "timeToLive" : 0.0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.1,
+            "layer" : "back",
+            "position" : [0.0, 0.0],
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [5.0, 10.0],
+              "position" : [0.0, 0.5],
+              "size" : 0.2,
+              "timeToLive" : 0.1,
+              "rotation" : 180
+            }
+          }
+        }
+      ]
     }
   },
 
@@ -173,6 +675,8 @@
 
   "sounds" : {
     "fire" : [ ],
-    "chargeLoop" : [ ]
+    "chargeLoop" : [ ],
+    "overheat" : [ "/sfx/tech/tech_starforge_powerdash_overcharge.ogg" ],
+    "overheatedLoop" : [ "/sfx/gun/starforge_overheatedloop.ogg" ]
   }
 }

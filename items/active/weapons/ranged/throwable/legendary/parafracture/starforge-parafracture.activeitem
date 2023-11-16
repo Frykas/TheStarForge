@@ -6,7 +6,7 @@
   "rarity" : "Legendary",
   "description" : "Fling powerful axes that shatter on impact, freezing your targets.",
   "shortdescription" : "Parafracture",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "starforge-uniquegun",
   "category" : "throwableItem",
   "tooltipFieldsOverride" : {"subtitle":"Throwable"},
   "twoHanded" : true,
@@ -88,7 +88,7 @@
 
   "primaryAbilityType" : "starforge-throwprojectile",
   "primaryAbility" : {
-    "baseDps" : 7.5,
+    "baseDps" : 10.5,
     "cooldownTime" : 0.2,
 	
 	"projectileFacesDirection" : true, //when facing left, flip to make the blade always face away

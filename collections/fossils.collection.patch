@@ -22,6 +22,17 @@
   },
   
   { "op": "add", 
+	"path": "/collectables/himindottir",
+	"value":	 
+	{
+	  "order" : 34,
+	  "title" : "Himindottir Fossil",
+	  "description" : "Said to be born from the Sky, these large creatures were hunted to extinction by Avians.",
+	  "icon" : "/items/fossils/large/himindottirfossil/himindottirfossilhead.png"
+	}
+  },
+  
+  { "op": "add", 
 	"path": "/collectables/tidefragment",
 	"value":	 
 	{

@@ -3,7 +3,7 @@
   "price" : 3000,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "Cum.",
+  "description" : "A bowgun heavily modified using the Exalting Station, slinging bolts of energy at incredible speeds.",
   "shortdescription" : "^#b4f5c3;Headhunter^reset;",
   "level" : 8,
   "tooltipKind" : "starforge-exalted",

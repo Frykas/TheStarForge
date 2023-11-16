@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-shockumawaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A shock Unbound Mobile Assault Weapon. Shockingly effective.\"",
+  "shortdescription" : "Shock UMAW Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-shockumawaf" },
+
+
+  "inventoryIcon" : "shockumawaf.png",
+  "orientations" : [
+    {
+      "image" : "shockumawaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "shockumawaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

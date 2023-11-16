@@ -73,6 +73,36 @@
       "monsterParameters" : {
         "aggressive" : false
       }
+    },
+	
+	{
+	  "name" : "starforge-blackrotbugcritter",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "day"
+      },
+      "groupSize" : [2, 3],
+      "spawnChance" : 0.05,
+      "monsterType" : "starforge-blackrotbugcritter",
+      "monsterParameters" : {
+        "aggressive" : false
+      }
+    },
+	
+	{
+	  "name" : "starforge-blackrotrollycritter",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 2],
+      "spawnChance" : 0.03,
+      "monsterType" : "starforge-blackrotrollycritter",
+      "monsterParameters" : {
+        "aggressive" : false
+      }
     }
   
   ]

@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-blackrotmatter",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "common",
+  "inventoryIcon" : "blackrotmatter.png",
+  "description" : "A durable plant-like mass. Twisted by the Great Withering.",
+  "shortdescription" : "Blackrot Matter",
+  "glitchDescription" : "Weary. These do not look safe to walk on.",
+  "floranDescription" : "Floran need to look!! Can't ssstep on ssspindle!",
+  "novakidDescription" : "They're slightly squishy. Gross.",
+
+  "materialId" : 2910
+}

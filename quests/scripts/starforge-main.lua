@@ -1,9 +1,8 @@
 --Adds some quest conditions for more fun during a quest
 
 require "/quests/scripts/main.lua"
-require('/quests/scripts/conditions/neb-starforgedamageTypeKills.lua')
-require('/quests/scripts/conditions/neb-starforgekillmonsterwithweapon.lua')
-require('/quests/scripts/conditions/neb-starforgemessagecheck.lua')
+require('/quests/scripts/conditions/starforge-killenemies.lua')
+require('/quests/scripts/conditions/starforge-messagecheck.lua')
 
 function buildConditions()
   local conditions = {}
@@ -25,12 +24,10 @@ function buildConditions()
       newCondition = buildCompleteCollectionCondition(config)
 	
 	--Starforge conditions
-    elseif config.type == "damageTypeKills" then
-      newCondition = buildDamageTypeKillCondition(config)
-    elseif config.type == "killMonstersWithWeapon" then
-      newCondition = buildKillMonsterWithWeapon(config)
-    elseif config.type == "checkForMessage" then
-      newCondition = buildMessageCheckCondition(config)
+    elseif config.type == "starforge-killEnemies" then
+      newCondition = buildStarforgeKillEnemies(config)
+    elseif config.type == "starforge-checkForMessage" then
+      newCondition = buildStarforgeMessageCheckCondition(config)
     end
 
     table.insert(conditions, newCondition)

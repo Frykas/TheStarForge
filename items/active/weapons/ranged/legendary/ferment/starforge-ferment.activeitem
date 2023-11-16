@@ -1,0 +1,133 @@
+{
+  "itemName" : "starforge-ferment",
+  "price" : 1500,
+  "level" : 6,
+  "fixedLevel" : false,
+  "inventoryIcon" : "starforge-fermenticon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The ferment held it together, let it grow.",
+  "shortdescription" : "Ferment",
+  "tooltipKind" : "base",
+  "category" : "uniqueWeapon",
+  "tooltipFields" : {"subtitle":"Beam Rifle"},
+  "itemTags" : ["weapon","ranged","elpiselements","unbound","beamrifle"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/starforge-staticbeamcursor.cursor",
+  
+  "animation" : "starforge-ferment.animation",
+  "animationParts" : {
+    "middle" : "starforge-ferment.png",
+    "middleFullbright" : "starforge-fermentfullbright.png",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.875, 0.5]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+	  //PRIMARY
+      "fireStart" : [ "/sfx/gun/plasma_ar2.ogg" ],
+      "fireLoop" : [ "/sfx/gun/aegisaltpistol_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/mech_shielddrone_recover1.ogg" ],
+      "beamImpact" : []
+    }
+  },
+  "animationScripts" : ["/items/active/effects/starforge-enhancedchain.lua"],
+
+  "baseOffset" : [0.875, 0.5],
+  "muzzleOffset" : [0.375, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/starforge-beamfire.lua"],
+    "class" : "StarforgeBeamFire",
+
+	"activeAnimation" : true, //Allows a special animation to be played while firing
+	"pitchVariance" : 0.4,
+	
+    "fireTime" : 0.22,
+    "baseDps" : 14.5,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.0,
+	
+	"beamCollisionType" : "box",
+	"beamWidth" : 1,
+	
+	"impactDamageTimeout" : 0.2,
+	"spawnImpactProjectile" : false,
+	"impactProjectile" : "",
+	
+	"laserPiercing" : false,
+
+    "damageConfig" : {
+      "statusEffects" : [ "starforge-firecombust" ],
+      "damageSourceKind" : "fireplasma",
+      "knockback" : 1
+    },
+
+    "beamLength" : 80,
+
+	"animatedChain" : true,
+	"offsetFrames" : true,
+	"chainAnimationTime" : 0.4,
+	"chainAnimationFrames" : 4,
+    "chain" : {
+      "startOffset" : [0, 0],
+      "segmentImage" : "/items/active/weapons/ranged/legendary/ferment/starforge-fermentbeam.png",
+      "endSegmentImage" : "/items/active/weapons/ranged/legendary/ferment/starforge-fermentbeamend.png",
+      "segmentSize" : 0.625,
+      "overdrawLength" : 0.125,
+      "taper" : 0.01,
+      "waveform" : {
+        "frequency" : 5.0,
+        "amplitude" : 0.125,
+        "movement" : 5.0
+      },
+      "fullbright" : true,
+	  "renderLayer" : "Player-1"
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

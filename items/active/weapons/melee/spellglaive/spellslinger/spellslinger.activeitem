@@ -12,7 +12,7 @@
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spellglaive","spear"],
 
-  "cursor" : "/cursors/reticle0.cursor",
+  "cursor" : "/cursors/starforge-spellglaivecursor.cursor",
 
   "inventoryIcon" : "spellslinger.png",
 
@@ -21,7 +21,7 @@
     "blade" : "spellslinger.png",
 	"bladeFullbright" : "spellslingerfullbright.png",
 	
-    "swoosh" : "",	
+    "swoosh" : "physical",
 	"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-yukaienergymuzzle.png"
   },
   "animationCustom" : {},
@@ -32,7 +32,7 @@
 
   "primaryAbilityType" : "starforge-spellglaivecombo",
   "primaryAbility" : {
-    "baseDps" : 7.0
+    "baseDps" : 10.0
   },
   
   "altAbilityType" : "starforge-spellglaiveblast",

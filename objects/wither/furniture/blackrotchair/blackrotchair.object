@@ -1,0 +1,38 @@
+{
+  "objectName" : "starforge-blackrotchair",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "common",
+  "description" : "A chair made with hives from the Blackrot strand. Surprisingly comfy!",
+  "shortdescription" : "Blackrot Chair",
+  "category" : "furniture",
+  "price" : 75,
+
+  "apexDescription" : "The hives used to make this chair are empty... It's kinda gross.",
+  "avianDescription" : "I wish it wasn't so comfortable, it feels gross.",
+  "floranDescription" : "Floran ssshouldn't sssit on this chair!!",
+  "glitchDescription" : "Surprised. This chair is surprisingly comfy.",
+  "humanDescription" : "I wouldn't sit on that if I'm honest.",
+  "hylotlDescription" : "This chair is exceptionally gross. It could be very dangerous to sit on it.",
+  "novakidDescription" : "I don't really like this chair.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "blackrotchair.png",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [2, 18]
+
+}

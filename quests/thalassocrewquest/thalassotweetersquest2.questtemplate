@@ -2,41 +2,29 @@
   "id" : "thalassotweetersquest2",
   "title" : "^green;Proof of Power",
   "prerequisites" : [ "thalassointromission1", "thalassointromission2", "thalassotweetersquest1" ],
-  "text" : "I didn't admit my defeat yet! I have another challenge for you, think you can take down an ^orange;Adult Poptop^reset;? ",
-  "completionText" : "You really did it? Wooow! Awesome, here take this action figure, I have one already so I think you deserve it! ",
+  "text" : "I haven't admited my defeat yet! I have another challenge for you, think you can take down an ^orange;Adult Poptop^reset;?",
+  "completionText" : "You really did it? Wooow! Awesome, here take this action figure, I have one already so I think you deserve it!",
   "moneyRange" : [500, 500],
   "rewards" : [
     [ [ "starforge-thalassocache", 1 ], [ "adultpoptopaf", 1] ]
   ],
 
-  "updateDelta" : 10,
+  "updateDelta" : 1,
   "script" : "/quests/scripts/starforge-main.lua",
   "scriptConfig" : {
-     "portraits" : {
+    "portraits" : {
       "questStarted" : "questGiver",
       "questComplete" : "questReceiver"
     },
     "requireTurnIn" : true,
-     "conditions" : [
+    "conditions" : [
       {
-        "type" : "killMonstersWithWeapon",
+        "type" : "starforge-killEnemies",
         "displayMonsterName" : "Adult Poptop",
-        "targetMonster" : "adultpoptop",
-        "count" : 1
-      },
-	  {
-        "type" : "killMonstersWithWeapon",
-        "displayMonsterName" : "Adult Poptop",
-        "targetMonster" : "motherpoptop",
-        "count" : 1
-      },
-	  {
-        "type" : "killMonstersWithWeapon",
-        "displayMonsterName" : "Adult Poptop",
-        "targetMonster" : "albinoadultpoptop",
+        "targetMonsters" : [ "adultpoptop", "albinoadultpoptop", "motherpoptop" ],
         "count" : 1
       }
     ],
-	"turnInDescription" : "Speak to ^green;Tweeters^reset;."
+    "turnInDescription" : "Speak to ^green;Tweeters^reset;."
   }
 }

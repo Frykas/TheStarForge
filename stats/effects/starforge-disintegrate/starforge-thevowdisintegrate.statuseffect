@@ -8,7 +8,7 @@
 	
 	//Directives when dying
 	"deathDirective" : "fade=EB9127=1.0?border=2;EB912780;00000000",
-	"deathProjectileType" : "thevowdisintegrate",
+	"deathProjectileType" : "starforge-thevowdisintegrate",
 	
 	//Follow-up status effect configuration
 	"effectsOnExpire" : ["burning"],
@@ -23,7 +23,7 @@
     "starforge-disintegrate.lua"
   ],
 
-  "animationConfig" : "starforge-thevowdisintegrate.animation",
+  "animationConfig" : "starforge-disintegrate.animation",
 
   "label" : "Burning",
   "icon" : "/interface/statuses/fire.png"

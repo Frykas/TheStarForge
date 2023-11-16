@@ -24,13 +24,13 @@
   "category" : "crafting",
   "price" : 1250,
 
-  "apexDescription" : "I can make all kind of stuff here.",
+  "apexDescription" : "I can make all kinds of stuff here.",
   "avianDescription" : "This crafting station allows me to make Unbound themed furniture!",
-  "floranDescription" : "Floran can make object here...",
+  "floranDescription" : "Floran can make objectsss here...",
   "glitchDescription" : "Interested. I can craft Unbound-themed objects here.",
   "humanDescription" : "An Unbound crafting station, this one is for furniture & tiles.",
   "hylotlDescription" : "This crafting station allows me to make all kind of Unbound furniture.",
-  "novakidDescription" : "I can make all kinds of Unbound stuff there.",
+  "novakidDescription" : "I can make all kinds of Unbound stuff here.",
 
   "inventoryIcon" : "unboundobjectcraftingicon.png",
   "orientations" : [

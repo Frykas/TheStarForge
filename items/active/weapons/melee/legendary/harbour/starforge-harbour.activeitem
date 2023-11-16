@@ -19,7 +19,7 @@
     "handle" : "",
     "blade" : "starforge-harbour.png",
 	
-    "swoosh" : "tidalfrost_"
+    "swoosh" : "tidalfrost"
   },
   "animationCustom" : {
     "animatedParts" : {

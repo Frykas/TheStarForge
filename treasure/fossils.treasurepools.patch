@@ -53,6 +53,32 @@
   },
   
   {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-himindottirfossil1"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-himindottirfossil2"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-himindottirfossil3"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-himindottirfossil4"}
+  },
+  {"op" : "add",
+	"path" : "/largefossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.1, "item" : "starforge-himindottirfossil5"}
+  },
+  
+  {"op" : "add",
 	"path" : "/smallfossil/0/1/pool/-",
 	"value" :
 	  {"weight" : 0.1, "item" : "starforge-tidefossil"}

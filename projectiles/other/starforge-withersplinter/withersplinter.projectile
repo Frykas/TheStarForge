@@ -13,15 +13,15 @@
       ]
     }
   ],
-		"timeToLive": 1.3,
-		"knockback": 6,
-		
+  "timeToLive": 1.3,
+  "knockback": 6,
+
 	"emitters": [], //need to add custom ones later
 	"statusEffects" : [ "starforge-wither" ],
 	"power": 3.0,
 	"speed": 80.0,
 	"physics": "arrow",
-	"damageKind": "default",
+	"damageKind": "starforge-wither",
 
 	"controlForce": 150,
 	"maxSpeed": 150

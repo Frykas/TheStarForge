@@ -1,0 +1,79 @@
+{
+  "objectName" : "starforge-starforge",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Essential",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/starforge.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "The Starforge",
+        "subtitle" : "Break past your limits",
+        "icon" : {
+          "file" : "/interface/crafting/starforge.png"
+        }
+      }
+    },
+    "filter" : ["starforge-starforge"]
+  },
+  "printable" : false,
+  "description" : "An ancient forge, capable of making almost anything out of very few materials.",
+  "shortdescription" : "^magenta;The Starforge^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 5000,
+
+  "apexDescription" : "Every bit of technology I've seen this far doesn't even come close to this...",
+  "avianDescription" : "It shines like the sky at night, so sparkly!",
+  "floranDescription" : "Floran likess ssshiny lightss...",
+  "glitchDescription" : "Inspired. This forge will allow me to craft wonderful items.",
+  "humanDescription" : "This forge resonates with a power I can barely understand, this is scary.",
+  "hylotlDescription" : "Such wonderful craftsmanship, simple and yet so... perfect.",
+  "novakidDescription" : "An ancient forge, I ain't got a clue where it could be from.",
+  
+  "turnInQuests" : ["thalassointromission3"],
+  "offeredQuests" : ["thalassointromission4"],
+  
+  "lightColor" : [119, 16, 195],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "starforge-starforgeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "starforge-starforge.png:<frame>",
+      "imagePosition" : [-40, 0],
+      "animationPosition" : [-40, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 5,
+      "animationCycle" : 0.5,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  "animation" : "starforge-starforge.animation",
+  "animationParts" : {
+    "object" : "starforge-starforge.png",
+    "objectFullbright" : "starforge-starforgefullbright.png",
+    "floatingObject1" : "starforge-starforgefloating.png",
+    "floatingObject2" : "starforge-starforgefloatingbase.png"
+  },
+   
+  "questIndicatorPosition" : [-1, -4.5],
+  
+  "scripts" : [
+    "/objects/scripts/starforge-floatingobject.lua"
+  ],
+  "scriptDelta" : 1,
+  
+  "hoverMaxTransform" : 0.25,
+  "hoverCycle" : 2.0
+}

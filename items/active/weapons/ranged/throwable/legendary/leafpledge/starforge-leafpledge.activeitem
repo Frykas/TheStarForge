@@ -1,0 +1,71 @@
+{
+  "itemName" : "starforge-leafpledge",
+  "level" : 6,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A duty to the trees, a pledge. A proof of loyalty and honor.",
+  "shortdescription" : "Leaf Pledge",
+  "tooltipKind" : "starforge-uniquegun",
+  "category" : "throwableItem",
+  "tooltipFieldsOverride" : {"subtitle":"Throwable"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","throwable"],
+  "learnBlueprintsOnPickup" : [ "starforge-leafpledge"],
+
+  "inventoryIcon" : "starforge-leafpledgeicon.png",
+
+  "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
+  "animationParts" : {
+    "middle" : "starforge-leafpledge.png?flipy?flipx"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "throw" : [ "/sfx/projectiles/throw_item.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/ranged/throwable/starforge-throwable.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "starforge-throwprojectile",
+  "primaryAbility" : {
+    "baseDps" : 9.5,
+    "cooldownTime" : 0.3,
+	
+	"hideItemWhileIdle" : true,
+	
+    "projectileCount" : 1,
+    "projectileTimesAndAngles" : [
+      [0.025, 0],
+      [0.09, 0],
+      [0.14, 0]
+    ],
+    "projectileType" : "starforge-leafpledgeleaf",
+    "projectileParameters" : {}
+  },
+  
+  "altAbilityType" : "starforge-throwprojectile",
+  "altAbility" : {
+    "name" : "Age of Grass",
+    "baseDps" : 5,
+    "cooldownTime" : 1,
+	
+	"hideItemWhileIdle" : true,
+
+    "energyUsage" : 21,
+	
+    "projectileTimesAndAngles" : [
+      [0.1, 17],
+      [0.1, 8],
+      [0.1, -0],
+      [0.1, -8],
+      [0.1, -17]
+    ],
+    "projectileType" : "starforge-leafpledgeleafspinning",
+    "projectileParameters" : {}
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

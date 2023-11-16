@@ -1,5 +1,6 @@
 {
   "globalTagDefaults" : {
+	"partImage" : "",
     "paletteSwaps" : ""
   },
 
@@ -31,6 +32,16 @@
       "middle" : {
         "properties" : {
           "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "middleFullbright" : {
+        "properties" : {
+          "zLevel" : 5,
+          "centered" : true,
+          "fullbright" : true,
           "image" : "<partImage><paletteSwaps>",
           "offset" : [0, 0], // x offset is set dynamically
           "transformationGroups" : ["weapon"]

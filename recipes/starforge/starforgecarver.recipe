@@ -1,8 +1,8 @@
 {
   "input" : [
     { "item" : "essence", "count" : 250},
-    { "item" : "refinedviolium", "count" : 6},
-	{ "item" : "ironbar", "count" : 20},
+    { "item" : "refinedviolium", "count" : 3},
+	{ "item" : "ironbar", "count" : 10},
 	{ "item" : "darkwoodmaterial", "count" : 50}
   ],
   "output" : {

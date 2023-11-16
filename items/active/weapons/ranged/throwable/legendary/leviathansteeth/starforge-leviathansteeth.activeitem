@@ -6,7 +6,7 @@
   "rarity" : "Legendary",
   "description" : "Sling the teeth of a fallen leviathan to destroy your foes.",
   "shortdescription" : "Leviathan's Teeth",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "starforge-uniquegun",
   "category" : "throwableItem",
   "tooltipFieldsOverride" : {"subtitle":"Throwable"},
   "twoHanded" : true,
@@ -31,7 +31,7 @@
 
   "primaryAbilityType" : "starforge-throwprojectile",
   "primaryAbility" : {
-    "baseDps" : 6,
+    "baseDps" : 13,
     "cooldownTime" : 0.9,
 	
 	"hideItemWhileIdle" : true,

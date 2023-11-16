@@ -1,7 +1,7 @@
 {
   "input" : [
 	{ "item" : "essence", "count" : 250},
-	{ "item" : "starforge-infusedtitanium", "count" : 12},
+	{ "item" : "starforge-infusedtitanium", "count" : 6},
 	{ "item" : "durasteelbar", "count" : 5}
   ],
   "output" : {

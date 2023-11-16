@@ -38,6 +38,10 @@
     }
   ],
 
+  "builder" : "/items/buildscripts/starforge-buildcolourmatcharmour.lua",
+  "applyFunction" : "replace",
+  "alphaHex" : "FE",
+
   "itemTags" : [ "tier7armour" ],
   
     "colorOptions" : [

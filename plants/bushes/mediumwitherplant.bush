@@ -1,0 +1,24 @@
+{
+  "name" : "starforge-mediumwitherplant",
+  "description" : "A plant from the Progenitor strand. Better be careful.",
+  "shortdescription" : "Wither Plant",
+  "floranDescription" : "Floran feel like it ssshouldn't touch.",
+  "glitchDescription" : "Cautious. This plant might be dangerous.",
+  "shapes" : [
+    {
+      "base" : "mediumwitherplant1.png"
+    },
+    {
+      "base" : "mediumwitherplant2.png"
+    },
+    {
+      "base" : "mediumwitherplant3.png"
+    },
+	{
+      "base" : "mediumwitherplant4.png"
+    },
+	{
+      "base" : "mediumwitherplant5.png"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "itemName" : "starforge-unboundbackblock",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "unboundbackblock.png",
+  "shortdescription" : "Unbound Backpanel",
+  "description" : "A metal wall panel.",
+  "glitchDescription" : "Observation. A wall panel.",
+  "floranDescription" : "Floran not interessted in boring panelsss.",
+  "novakidDescription" : "Metal panels for buildin' interior walls.",
+
+  "materialId" : 2912
+}

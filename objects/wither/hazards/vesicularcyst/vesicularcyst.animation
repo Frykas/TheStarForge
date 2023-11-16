@@ -1,0 +1,106 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "activeState" : {
+        "default" : "active",
+        "states" : {
+          "active" : {
+            "frames" : 1
+          },
+          "inactive" : {
+            "frames" : 1
+          },
+          "regrow" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "active"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "base" : {
+        "properties" : {
+          "transformationGroups" : ["body"],
+          "centered" : false
+        },
+
+        "partStates" : {
+          "activeState" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active"
+              }
+            },
+
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive"
+              }
+            },
+
+            "regrow" : {
+              "properties" : {
+                "image" : "<partImage>:regrow.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "baseFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "fullbright" : true,
+          "transformationGroups" : ["body"],
+          "centered" : false
+        },
+
+        "partStates" : {
+          "activeState" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active"
+              }
+            },
+
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive"
+              }
+            },
+
+            "regrow" : {
+              "properties" : {
+                "image" : "<partImage>:regrow.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : {}
+  },
+
+  "particleEmitters" : {
+    "burst" : {
+      "active" : false,
+      "offsetRegion" : [0.5, 1, 3.5, 1],
+      "particles" : []
+    },
+    "takeDamage" : {
+      "active" : false,
+      "offsetRegion" : [0.5, 1, 3.5, 1],
+      "particles" : []
+    }
+  },
+
+  "sounds" : {
+    "burst" : [],
+    "takeDamage" : []
+  }
+}

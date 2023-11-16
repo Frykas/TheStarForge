@@ -25,6 +25,8 @@
 
     "metaBoundBox" : [-1, -1, 1, 1],
     "scale" : 1.0,
+	
+	"DamageBar" : "None",
 
     "movementSettings" : {
       "gravityEnabled" : false,

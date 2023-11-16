@@ -1,0 +1,22 @@
+{
+  "projectileName" : "starforge-ancientbullet",
+  "physics" : "laser",
+  "image" : "starforge-ancientbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "bounces" : 3,
+  "power" : 50,
+  "speed" : 45,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "damageKind" : "dagger",
+  "timeToLive" : 100,
+  "flippable" : true,
+
+  "scripts" : ["/projectiles/scripts/starforge-spin.lua"],
+  "orientationLocked" : false,
+  "spinRate" : 0.25,
+  "minSpinSpeed": 25,
+  "spinDirection" : -1
+}

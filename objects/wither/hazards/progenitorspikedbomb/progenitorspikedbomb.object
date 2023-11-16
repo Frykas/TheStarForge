@@ -1,0 +1,73 @@
+{
+  "objectName" : "starforge-progenitorspikedbomb",
+  "colonyTags" : ["wither"],
+  "rarity" : "Legendary",
+  "tooltipKind" : "base",
+  "race" : "Floran",
+
+  "category" : "storage",
+  "price" : 0,
+  "printable" : false,
+  "description" : "TODO.",
+  "shortdescription" : "Progenitor Spiked Bomb",
+
+  "apexDescription" : "TODO.",
+  "avianDescription" : "TODO.",
+  "floranDescription" : "TODO.",
+  "glitchDescription" : "TODO.",
+  "humanDescription" : "TODO.",
+  "hylotlDescription" : "TODO.",
+  "novakidDescription" : "TODO.",
+
+  "inventoryIcon" : "progenitorspikedbombicon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "progenitorspikedbomb.png:active"}, { "image" : "progenitorspikedbombfullbright.png:active", "fullbright" : true } ],
+      "imagePosition" : [-4, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "progenitorspikedbomb.png:active"}, { "image" : "progenitorspikedbombfullbright.png:active", "fullbright" : true } ],
+      "imagePosition" : [-4, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "progenitorspikedbomb.animation",
+  "animationParts" : {
+    "base" : "progenitorspikedbomb.png",
+    "baseFullbright" : ""
+  },
+  "animationPosition" : [-4, 0],
+  
+  "smashable" : true,
+  "smashOnBreak" : true,
+  "smashSounds" : [ ],
+
+  "smashParticles" : [ ],
+
+  "scripts" : ["/objects/scripts/starforge-explodeonsmash.lua"],
+  "scriptDelta" : 1,
+  
+  "damageToBurst" : 100,
+  "regrowTime" : 30,		//If specified, will regrow the object after being burst
+  "burstProjectileType" : ["poisonplasmaexplosion", "poisonburstexplosion"],		//Spawns all of these
+  
+  "proximityScan" : 15,
+  "proximityToDetonate" : 5,
+  "proximityShakeConfig" : {
+    "floorOffset" : [1.375, 0.5],
+    "cycle" : 0.15,
+	"amplitude" : 0.05
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "starforge-blackrotmaterial", "count" : 15 }
+  ],
+  "output" : { "item" : "starforge-blackrotlamp", "count" : 1 },
+  "groups" : [ "craftingfurniture", "lights", "all" ]
+}

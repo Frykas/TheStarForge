@@ -17,7 +17,9 @@
   "animationParts" : {
     "handle" : "handle.png",
     "handleFullbright" : "handlefullbright.png",
-    "blade" : "blade.png"
+    "blade" : "blade.png",
+	
+    "swoosh" : "rift"
   },
   "animationCustom" : {
     "sounds" : {

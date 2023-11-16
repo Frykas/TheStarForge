@@ -1,11 +1,11 @@
 {
   "itemName" : "starforge-withersample",
-  "price" : 50,
-  "rarity" : "rare",
+  "price" : 10,
+  "rarity" : "common",
   "category" : "craftingMaterial",
   "inventoryIcon" : "withersample.png",
-  "description" : "A small sample of the Wither, safely contained.",
-  "shortdescription" : "Wither Sample",
+  "description" : "A sample of the Progenitor strand, mother of the Great Withering. ",
+  "shortdescription" : "Progenitor Sample",
   "itemTags" : ["reagent"],
   "radioMessagesOnPickup" : [ "witherlord-firstcontact" ]
 }

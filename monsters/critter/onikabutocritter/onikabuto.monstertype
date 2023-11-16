@@ -15,8 +15,13 @@
 
   "baseParameters" : {
     "scripts" : [
-      "/monsters/monster.lua"
+      "/monsters/starforge-monster.lua"
     ],
+
+	"pickupLoot" : {
+	  "money" : 5,
+	  "essence" : 5
+	},
 
     "behavior" : "walkingcritter",
 

@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "essence", "count" : 250},
+    { "item" : "refinedaegisalt", "count" : 15},
+	{ "item" : "plantfibre", "count" : 95},
+	{ "item" : "biosample", "count" : 30}
+  ],
+  "output" : {
+    "item" : "starforge-leafpledge",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

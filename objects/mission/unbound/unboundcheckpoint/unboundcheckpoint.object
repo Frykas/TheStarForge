@@ -29,9 +29,7 @@
       "flipImages" : true,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
-      "collision" : "solid",
-      "collisionSpaces" : [ [-1,0], [0,0] ]
+      "anchors" : [ "bottom" ]
     },
     {
       "image" : "unboundcheckpoint.png:inactive",
@@ -40,9 +38,7 @@
       "direction" : "right",
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
-      "collision" : "solid",
-      "collisionSpaces" : [ [-1,0], [0,0] ]
+      "anchors" : [ "bottom" ]
     }
   ],
 
@@ -50,8 +46,8 @@
 
   "animation" : "unboundcheckpoint.animation",
   "animationParts" : {
-    "bg" : "unboundcheckpoint.png",
-    "fg" : "unboundcheckpointlit.png"
+    "base" : "unboundcheckpoint.png",
+    "baseFullbright" : "unboundcheckpointfullbright.png"
   },
   "animationPosition" : [-16, 0],
 

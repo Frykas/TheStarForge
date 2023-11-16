@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-tidewardenhead",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "headarmour",
+  "description" : "Some Hylotls try to prevent the Yukais from warping the Tide on entire planets. They call themselves Tide Wardens.",
+  "shortdescription" : "Tidewarden's Hood",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+}

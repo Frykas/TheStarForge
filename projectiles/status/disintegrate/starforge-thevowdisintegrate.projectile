@@ -1,0 +1,13 @@
+{
+  "projectileName" : "starforge-thevowdisintegrate",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/status/disintegrate/starforge-thevowdisintegrate.config"
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

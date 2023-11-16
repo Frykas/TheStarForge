@@ -1,0 +1,51 @@
+ [ {
+    "op" : "add",
+    "path" : "/unboundscout",
+    "value" : {
+	  "stats" : {
+		"energy" : 6,
+		"protection" : 5
+	  },
+	  "partParameters" : {
+		"hazardImmunities" : ["biomeradiation", "biomecold"]
+	  },
+	  "partImages" : {
+		"bodyBack" : "body/unboundscout_back.png",
+		"bodyFront" : "body/unboundscout_front.png",
+		"bodyFullbright" : "body/unboundscout_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["728266", "555C4B", "41453B", "242621"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["B0FFFF", "3ACFFE", "1278CF", "0B4D7F"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+ },
+ {
+    "op" : "add",
+    "path" : "/unboundscoutup",
+    "value" : {
+	  "stats" : {
+		"energy" : 7,
+		"protection" : 6
+	  },
+	  "partParameters" : {
+		"hazardImmunities" : ["biomeradiation", "biomecold", "biomeheat"]
+	  },
+	  "partImages" : {
+		"bodyBack" : "body/unboundscout_back.png",
+		"bodyFront" : "body/unboundscoutup_front.png",
+		"bodyFullbright" : "body/unboundscout_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["555555", "373737", "262626", "151515"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["FFD495", "EA9931", "AF4E00", "6E2900"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+ }
+ ]
