@@ -1,43 +1,48 @@
 {
-  "type" : "xrc_devsokolova_starforge",
-  "baseType" : "outpostvisitor",
+  "type": "xrc_devsokolova_starforge",
+  "baseType": "outpostvisitor",
 
-  "identity" : {
-    "facialHairType" : "",
-    "hairType" : "0",
-    "facialHairGroup" : "",
-    "hairGroup" : "hair",
-    "personalityArmOffset" : [0,0],
-    "personalityArmIdle" : "idle.5",
-    "personalityIdle" : "idle.2",
-    "name" : "^shadow,#11f403;Silver Sokolova^reset;",
-    "gender" : "female",
-    "imagePath" : "xrc_sokolova",
-    "personalityHeadOffset" : [-1,0],
-    "facialHairDirectives" : "",
-    "bodyDirectives" : "?replace;FFE2C5=FFF5E8;FFC181=F8D7B5;D39C6C=dab490;C7815B=D0A57F;506464=178800;78A08C=178800;3C5000=167C02;648C78=167C02;503C3C=000;463232=000;645050=000;DC1F00=F794F8;BE1B00=D355C1;951500=B72C95",
-    "emoteDirectives" : "",
-    "hairDirectives" : ""
+  "identity": {
+    "facialHairType": "0",
+    "hairType": "0",
+    "facialHairGroup": "fronthair",
+    "hairGroup": "hair",
+    "personalityArmOffset": [0, 0],
+    "personalityArmIdle": "idle.5",
+    "personalityIdle": "idle.2",
+    "name": "^shadow,#11f403;Silver Sokolova^reset;",
+    "gender": "female",
+    "imagePath": "xrc_sokolova",
+    "personalityHeadOffset": [-1, 0],
+    "facialHairDirectives": "",
+    "bodyDirectives": "?replace;f9d8b3=fee6cd;ffc181=fee6cd;d39c6c=fad6b7;ffe2c5=fef7f1;DC1F00=f9b1fa;BE1B00=df85d3;951500=d44cb3;d1a57c=fad6b7;dab490=f1ad95;c7815b=f1ad95",
+    "emoteDirectives": "?replace;f9d8b3=fee6cd;0a8900=3ca81a;0c7d00=0b5d03;dab490=f1ad95;f79586=feb79a;d96d6d=feb79a;f8a892=fecdb8;f7a797=feb79a;c7815b=f1ad95;fad6b7=fee6cd;dab490=fad6b7;d1a57c=fad6b7",
+    "hairDirectives": ""
   },
-  
-  "damageTeamType" : "ghostly",
 
-  "scriptConfig" : {
-    "dialogMode" : "random",
+  "damageTeamType": "ghostly",
 
-    "personalities" : [
-        [1.0, { "personality" : "cheerful", "reactions" : {} }]
+  "scriptConfig": {
+    "dialogMode": "random",
+
+    "personalities": [
+      [1.0, {
+          "personality": "cheerful",
+          "reactions": {}
+        }
+      ]
     ],
-    
-    "dialog" : {
-      "converse" : {
-        "default" : {
-          "default" : [
+
+    "dialog": {
+      "converse": {
+        "default": {
+          "default": [
             "Hi there! I'm a historian.",
+            "Hi there! I'm an engineer.",
             "Have you heard of the Starforge? It's super cool! I'm here to study it!",
             "Have you tried Betabound? It's amazing!",
             "Hi! My name is <selfname>, and your name is <entityname>^reset;!",
-            "Have you ever had hair as long as mine? ... Oh, I see!",
+            "Have you ever had hair as long as mine?",
             "^#f00;Hi.^reset;",
             "Hi!",
             "Huh?",
@@ -48,29 +53,36 @@
             "Matter Manipulator? Ohh, can it run ^orange;Doom^reset;?",
             "You look tired-- no offence! You should take some time off.",
             "I got the flower in my hair from a different universe! ...Probably!",
-            "S\ni\nd\ne\nw\na\ny\ns!",
-            "I hope you're having a great day!"
+            "S\ni\nd\ne\nw\na\ny\ns\n!",
+            "I hope you're having a great day!",
+            "Have you seen the :catlick: emoji? I love it so much!",
+            "Have you tried the cookies they sell here? They're amazing!"
           ]
         }
       }
     }
   },
 
-  "items" : {
-    "override" : [
-      [0, [
-          {
-            "head" : [
-              { "name" : "xrc_silverhead" }
+  "items": {
+    "override": [
+      [0, [{
+            "head": [{
+                "name": "xrc_silverhead"
+              }
             ],
-            "chest" : [
-              { "name" : "tshirtchest", "parameters" : { "colorIndex" : 4 } }
+            "chest": [{
+                "name": "tshirtchest",
+                "parameters": {
+                  "colorIndex": 4
+                }
+              }
             ],
-            "legs" : [
-              { "name" : "xrc_silverpants" }
+            "legs": [{
+                "name": "xrc_silverpants"
+              }
             ]
           }
-        ] ]
+        ]]
     ]
   }
 }
