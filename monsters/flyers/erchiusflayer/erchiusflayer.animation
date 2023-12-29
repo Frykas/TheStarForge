@@ -129,6 +129,15 @@
     "body" : { "interpolated" : true }
   },
 
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [128, 0, 128],
+      "pointLight" : true
+    }
+  },
+  
   "effects" : {
     "blink" : {
       "type" : "flash",
