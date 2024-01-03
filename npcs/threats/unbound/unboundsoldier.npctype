@@ -36,9 +36,9 @@
     "items": {
         "override": [
             [0, [{
-                "head": [{
-                    "name": "starforge-unboundhead"
-                }],
+                "head": [
+                    "starforge-unboundhead", "starforge-unboundheadB", "starforge-unboundheadC"
+                ],
                 "chest": [{
                     "name": "starforge-unboundchest"
                 }],

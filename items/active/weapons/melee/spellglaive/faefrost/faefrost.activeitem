@@ -21,7 +21,7 @@
   "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
   "animationParts" : {
     "blade" : "faefrost.png",
-    "bladeFullbright" : "",
+    "bladeFullbright" : "faefrostfullbright.png",
 	
     "swoosh" : "ice",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-icemuzzleflash.png"

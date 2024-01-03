@@ -5,18 +5,18 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "chestwear",
-  "description" : "\"Our species suffered enough. Together we will fight and ascend as one.\"\n\n - ^#686F5D;Grand Leader Apolleon^reset; ",
-  "shortdescription" : "^#686F5D;UNBD^reset; Trooper Chestplate",
+  "description" : "The pilot's jacket is equiped with multiple support systems, allowing the wearer to breath in almost all environments.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Pilot Jacket",
   "tooltipKind" : "armor",
 
   "maleFrames" : {
-    "body" : "chestm.png",
+    "body" : "chest.png",
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
 
   "femaleFrames" : {
-    "body" : "chestf.png",
+    "body" : "chest.png",
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },

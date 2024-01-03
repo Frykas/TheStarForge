@@ -36,9 +36,9 @@
     "items": {
         "override": [
             [0, [{
-                "head": [{
-                    "name": "starforge-unboundsniperhead","parameters" : { "colorIndex" : 8 }
-                }],
+                "head": [
+                    "starforge-unboundsniperhead", "starforge-unboundsniperheadB", "starforge-unboundsniperheadC"
+                ],
                 "chest": [{
                     "name": "starforge-unboundsniperchest","parameters" : { "colorIndex" : 8 }
                 }],

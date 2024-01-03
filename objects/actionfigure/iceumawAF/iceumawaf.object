@@ -5,8 +5,8 @@
   "category" : "actionFigure",
   "price" : 5000,
   "printable" : false,
-  "description" : "The label reads, \"An Ice Unbound Mobile Assault Weapon. It has a cold stare.\"",
-  "shortdescription" : "Ice UMAW Figurine",
+  "description" : "The label reads, \"A Scout Unbound Mobile Assault Weapon. It has a cold stare.\"",
+  "shortdescription" : "Scout UMAW Figurine",
   "collectablesOnPickup" : { "actionfigures" : "starforge-iceumawaf" },
 
 

@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-unboundbombdrone-body",
+  "category" : "unboundbombdrone",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "unboundbombdrone-body.png"
+  }
+}

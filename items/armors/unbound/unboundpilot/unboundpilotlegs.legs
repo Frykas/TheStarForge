@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "\"We shall break our chains, ascend, and finally reach beyond.\"\n\n - ^#686F5D;Grand Leader Apolleon^reset; ",
-  "shortdescription" : "^#686F5D;UNBD^reset; Trooper Boots",
+  "description" : "Unbound pilots take pride in their piloting skills, they are trained by some of the best, including Silmar the Technomancer.",
+  "shortdescription" : "^#686F5D;UNBD^reset; Pilot Trousers",
   "tooltipKind" : "armor",
 
   "maleFrames" : "pants.png",
