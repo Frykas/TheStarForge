@@ -153,7 +153,7 @@
     "value": {
       "primaryDungeon": "starforge-biometestzone",
       "threatLevel": 8,
-      "biome": "starforge-tidefragment",
+      "biome": "starforge_tidefragment",
       "gravity": 80,
       "worldSize": [
         2000,

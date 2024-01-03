@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-bombumawaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A tick Unbound Mobile Assault Weapon. Beware of its explosive personnality.\"",
+  "shortdescription" : "Tick UMAW Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-bombumawaf" },
+
+
+  "inventoryIcon" : "bombumawaf.png",
+  "orientations" : [
+    {
+      "image" : "bombumawaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "bombumawaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

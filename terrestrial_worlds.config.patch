@@ -65,13 +65,13 @@
   },
   
   { "op":"add",
-	  "path": "/regionTypes/starforge-tidefragment",
+	  "path": "/regionTypes/starforge_tidefragment",
 	  "value": {
 			"blockSelector": [ "remixedSpikesSurface" ],
 			"fgCaveSelector": ["surfaceCaves"],
 			"bgCaveSelector": ["empty"],
 			"biome": [
-				[0, ["starforge-tidefragment"]]
+				[0, ["starforge_tidefragment"]]
 			]
 		}
   },
@@ -378,32 +378,32 @@
   
   { "op":"add",
     "path": "/regionTypes/forest/subRegion/-", 
-    "value": "starforge-tidefragment" 
+    "value": "starforge_tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/jungle/subRegion/-", 
-    "value": "starforge-tidefragment" 
+    "value": "starforge_tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/midnight/subRegion/-", 
-    "value": "starforge-tidefragment" 
+    "value": "starforge_tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/tundra/subRegion/-", 
-    "value": "starforge-tidefragment" 
+    "value": "starforge_tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/volcanic/subRegion/-", 
-    "value": "starforge-tidefragment" 
+    "value": "starforge_tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/savannah/subRegion/-", 
-    "value": "starforge-tidefragment" 
+    "value": "starforge_tidefragment" 
   }
  
 ]

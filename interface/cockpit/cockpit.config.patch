@@ -59,23 +59,15 @@
     }
   ],
 
- [ //ONLY WITH MPI
-    {
-      "op": "test",
-      "path": "/mods_present/MorePlanetInfo",
-      "inverse": false
-    },
+ [
+      // ONLY WITH MPI
+        {"op":"test","path":"/displayDungeons"},
     
 	// Misc
-  {
-    "op": "add",
-    "path": "/namesList",
-	"value": {
-		"starforge-tidefragment" : { "word" : "starforge-tidefragment", "friendlyWord" : " Tidal Remnants" },
-		"starforge-progenitorwither" : { "word" : "starforge-progenitorwither", "friendlyWord" : " Wither - Progenitor" },
-		"starforge-blackrot" : { "word" : "starforge-blackrot", "friendlyWord" : " Wither - Blackrot" }
-	}
-  },
+  { "op": "add", "path": "/namesList", "value": { 
+        "starforge_tidefragment" : { "word" : "starforge_tidefragment", "friendlyWord" : "Tidal Remnants" }
+            }
+        },
 	
     { "op": "add", "path": "/displayDungeons/starforge-katahelruinsdungeon", "value": 
     {"description" : "Ruined Glitch castle detected. Reading faint traces of Ancient Essence from the structure. ", "icon" : "/interface/cockpit/dungeons/katahelruinsicon.png" }

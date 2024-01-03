@@ -1,0 +1,36 @@
+{
+  "objectName" : "starforge-unboundvistarobject",
+  "colonyTags" : ["weapon","apex"],
+  "printable" : true,
+  "rarity" : "legendary",
+  "description" : "An Unbound Vistar gunship. The finest piece of gunship in the Unbound fleet.",
+  "shortdescription" : "Unbound Vistar",
+  "race" : "apex",
+  "category" : "furniture",
+  "price" : 3000,
+
+  "apexDescription" : "That's quite the vehicle.",
+  "avianDescription" : "This does not make me feel safe.",
+  "floranDescription" : "Floran can't ssstab...",
+  "glitchDescription" : "Curious. This is quite the robust frame.",
+  "humanDescription" : "What a large vehicle. Bet it can take me anywhere I want really fast.",
+  "hylotlDescription" : "This vehicle is looking quite remarkable.",
+  "novakidDescription" : "Quite scary lookin'.",
+
+  "inventoryIcon" : "vistarobjecticon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "vistarobject.png" ,
+	 "imageLayers" : [ { "image" : "vistarobject.png" }, { "image" : "vistarobjectfullbright.png", "fullbright" : true } ],
+
+      "imagePosition" : [-100, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
+
