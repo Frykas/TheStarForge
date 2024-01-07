@@ -1,8 +1,8 @@
 {
-    "type": "starforge-unboundheavy",
+    "type": "starforge-unboundrookie",
     "baseType": "hostile",
  
-    "dropPools": ["unboundHeavyDeathTreasure"],
+    "dropPools": ["unboundSoldierDeathTreasure"],
 	
 	"identity" : {
      "species" : "apex"
@@ -19,8 +19,8 @@
                 },
                 "apex": {
                     "default": [
-                        "Heavy unit reporting, eyes on target.",
-                        "Eyes on target, awaiting orders from Fortress.",
+                        "Trooper unit reporting, target on sight!",
+                        "Reporting, target sighted!",
                         "Orders received, begin operation!",
                         "Backup requested, target approaching!",
                         "Orders received, target in sight.",
@@ -31,22 +31,19 @@
         }
     },
  
-    "innateStatusEffects" : [{"stat":"maxHealth","amount":90}, {"stat":"powerMultiplier","amount":1.60}],
+    "innateStatusEffects" :  [{"stat":"maxEnergy","amount":80}],
  
     "items": {
         "override": [
             [0, [{
-                "head": [
-                    "starforge-unboundheavyhead", "starforge-unboundheavyheadB", "starforge-unboundheavyheadC"
-                ],
                 "chest": [{
-                    "name": "starforge-unboundheavychest"
+                    "name": "starforge-unboundchest", "parameters" : { "colorIndex" : 5 }
                 }],
                 "legs": [{
-                    "name": "starforge-unboundheavypants"
+                    "name": "starforge-unboundpants", "parameters" : { "colorIndex" : 5 }
                 }],
                 "primary": [
-                    "starforge-unboundshotgun", "starforge-unboundautoshotgun"
+                    "starforge-unboundshortar"
                 ]
             }]]
         ]

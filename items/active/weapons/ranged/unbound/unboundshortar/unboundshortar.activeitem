@@ -1,0 +1,111 @@
+{
+  "itemName": "starforge-unboundshortar",
+  "price": 325,
+  "maxStack": 1,
+  "rarity": "uncommon",
+  "description": "An Unbound SMG given to the new recruits. Its quality is not the best.",
+  "shortdescription": "^#686F5D;UNBD^reset; \"Cub\" SMG",
+  "tooltipKind": "starforge-unboundgun",
+  "category": "assaultRifle",
+  "tooltipFieldsOverride" : {"subtitle":"SMG"},
+  "twoHanded": true,
+  "level" : 3,
+  "fixedlevels" : false,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "assaultrifle"
+  ],
+  "inventoryIcon": "unboundshortaricon.png",
+  "animation": "unboundshortar.animation",
+
+  "animationParts": {
+    "butt": "",
+    "middle": "unboundrifle.png",
+    "barrel": "",
+	"middleFullbright": "unboundshortarfullbright.png",
+	"muzzleFlash": "muzzleflash.png"
+  },
+  "animationCustom": {
+      "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-2.1, 0.1, -2.1, 0.1],
+        "particles" : [
+          { "particle" : "starforge-unboundrifle" }
+        ]
+      }
+    },
+    "sounds": {
+      "fire": [
+        "/sfx/gun/starforge-assaultriflefire1.ogg"
+      ]
+    }
+  },
+  
+  "baseOffset": [0.0, 0.3],
+  "muzzleOffset": [1.875, 0.275],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "elementalType": "physical",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/starforge-gunfire.lua"
+    ],
+    "class": "StarforgeGunFire",
+    "fireTime": 0.11,
+    "baseDps": 7,
+    "energyUsage": 12,
+    "inaccuracy": 0.03,
+    "projectileCount": 1,
+    "fireType": "auto",
+    "projectileType": "starforge-physicalbullet",
+    "projectileParameters": {
+	  "speed" : 200,
+      "knockback": 2
+    },
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+
+        "animationStates" : {
+          "firing" : "fire"
+		},
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      },
+      "cooldown": {
+        "duration": 0.05,
+        "armRotation": 2,
+        "weaponRotation": 1,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+		
+		"frontArmFrame" : "run.2",
+        "backArmFrame" : "swim.4"
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}
