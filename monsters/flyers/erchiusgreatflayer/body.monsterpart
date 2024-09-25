@@ -1,0 +1,10 @@
+{
+  "name" : "erchiusgreatflayer",
+  "category" : "erchiusgreatflayer",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "erchiusgreatflayer.png",
+	"bodynobright" : "erchiusgreatflayernobright.png"
+  }
+}

@@ -1,12 +1,5 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":60,
  "infinite":false,
  "layers":[
@@ -189,7 +182,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundsoldier"
+                         "value":"starforge-unboundrookie"
                         }],
                  "rotation":0,
                  "type":"",
@@ -211,7 +204,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundsoldier"
+                         "value":"starforge-unboundrookie"
                         }],
                  "rotation":0,
                  "type":"",
@@ -467,7 +460,7 @@
  "nextobjectid":1143,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -620,6 +613,6 @@
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":"1.10",
  "width":60
 }

@@ -1,12 +1,5 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":60,
  "infinite":false,
  "layers":[
@@ -189,7 +182,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":2147492765,
+                 "gid":2147492769,
                  "height":28,
                  "id":1121,
                  "name":"",
@@ -201,7 +194,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":2147492766,
+                 "gid":2147492770,
                  "height":48,
                  "id":1122,
                  "name":"",
@@ -213,7 +206,7 @@
                  "y":208
                 }, 
                 {
-                 "gid":9156,
+                 "gid":9160,
                  "height":7,
                  "id":1123,
                  "name":"",
@@ -225,7 +218,7 @@
                  "y":248
                 }, 
                 {
-                 "gid":2147492804,
+                 "gid":2147492808,
                  "height":7,
                  "id":1124,
                  "name":"",
@@ -237,7 +230,7 @@
                  "y":248
                 }, 
                 {
-                 "gid":9150,
+                 "gid":9154,
                  "height":8,
                  "id":1125,
                  "name":"",
@@ -249,7 +242,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":9151,
+                 "gid":9155,
                  "height":5,
                  "id":1126,
                  "name":"",
@@ -261,7 +254,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":9152,
+                 "gid":9156,
                  "height":10,
                  "id":1127,
                  "name":"",
@@ -273,7 +266,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":9153,
+                 "gid":9157,
                  "height":8,
                  "id":1128,
                  "name":"",
@@ -285,7 +278,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":9159,
+                 "gid":9163,
                  "height":16,
                  "id":1129,
                  "name":"",
@@ -297,7 +290,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":9147,
+                 "gid":9151,
                  "height":8,
                  "id":1130,
                  "name":"",
@@ -309,7 +302,7 @@
                  "y":328
                 }, 
                 {
-                 "gid":9147,
+                 "gid":9151,
                  "height":8,
                  "id":1131,
                  "name":"",
@@ -321,7 +314,7 @@
                  "y":328
                 }, 
                 {
-                 "gid":9127,
+                 "gid":9131,
                  "height":16,
                  "id":1133,
                  "name":"",
@@ -333,7 +326,7 @@
                  "y":256
                 }, 
                 {
-                 "gid":9127,
+                 "gid":9131,
                  "height":16,
                  "id":1134,
                  "name":"",
@@ -345,7 +338,7 @@
                  "y":256
                 }, 
                 {
-                 "gid":9128,
+                 "gid":9132,
                  "height":25,
                  "id":1135,
                  "name":"",
@@ -357,7 +350,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":9120,
+                 "gid":9124,
                  "height":16,
                  "id":1137,
                  "name":"",
@@ -375,7 +368,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147492768,
+                 "gid":2147492772,
                  "height":16,
                  "id":1138,
                  "name":"",
@@ -393,7 +386,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9115,
+                 "gid":9119,
                  "height":32,
                  "id":1139,
                  "name":"",
@@ -411,7 +404,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147492763,
+                 "gid":2147492767,
                  "height":32,
                  "id":1140,
                  "name":"",
@@ -429,7 +422,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9129,
+                 "gid":9133,
                  "height":32,
                  "id":1141,
                  "name":"",
@@ -441,7 +434,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":9160,
+                 "gid":9164,
                  "height":14,
                  "id":1142,
                  "name":"",
@@ -453,7 +446,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":2147492812,
+                 "gid":2147492816,
                  "height":40,
                  "id":1143,
                  "name":"",
@@ -477,7 +470,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundfortress1"
+                         "value":"starforge-unboundheavy"
                         }],
                  "rotation":0,
                  "type":"",
@@ -499,7 +492,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundheavy"
+                         "value":"starforge-unboundrookie"
                         }],
                  "rotation":0,
                  "type":"",
@@ -521,7 +514,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundheavy"
+                         "value":"starforge-unboundrookie"
                         }],
                  "rotation":0,
                  "type":"",
@@ -531,7 +524,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":9166,
+                 "gid":9170,
                  "height":40,
                  "id":1152,
                  "name":"",
@@ -543,7 +536,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9166,
+                 "gid":9170,
                  "height":40,
                  "id":1153,
                  "name":"",
@@ -825,7 +818,7 @@
  "nextobjectid":1154,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -973,11 +966,11 @@
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":9115,
+         "firstgid":9119,
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":"1.10",
  "width":60
 }

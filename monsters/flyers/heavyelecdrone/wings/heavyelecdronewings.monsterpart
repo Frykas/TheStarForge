@@ -1,0 +1,10 @@
+{
+  "name" : "heavyelecdronewings",
+  "category" : "heavyelecdrone",
+  "type" : "wings",
+
+  "frames" : {
+    "backWings" : "heavyelecdronebwing.png",
+    "frontWings" : "heavyelecdronefwing.png"
+  }
+}

@@ -64,10 +64,8 @@
         {"op":"test","path":"/displayDungeons"},
     
 	// Misc
-  { "op": "add", "path": "/namesList", "value": { 
-        "starforge_tidefragment" : { "word" : "starforge_tidefragment", "friendlyWord" : "Tidal Remnants" }
-            }
-        },
+  {"op": "add","path": "/namesList/starforge_tidefragment","value": 
+    {"word": "starforge_tidefragment","friendlyWord": "Tidal Remnants"}},
 	
     { "op": "add", "path": "/displayDungeons/starforge-katahelruinsdungeon", "value": 
     {"description" : "Ruined Glitch castle detected. Reading faint traces of Ancient Essence from the structure. ", "icon" : "/interface/cockpit/dungeons/katahelruinsicon.png" }

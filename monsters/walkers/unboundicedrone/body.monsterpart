@@ -1,0 +1,10 @@
+{
+  "name" : "unboundicedrone",
+  "category" : "unboundicedrone",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "glorbite.png",
+	"bodynobright" : "glorbitenobright.png"
+  }
+}

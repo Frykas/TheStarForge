@@ -41,16 +41,17 @@
                  "height":24,
                  "id":1163,
                  "name":"",
-                 "properties":
-                    {
-                     "colorVariant":"4",
-                     "front":"starforge-unboundwallpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"4"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"starforge-unboundwallpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -62,16 +63,17 @@
                  "height":24,
                  "id":1164,
                  "name":"",
-                 "properties":
-                    {
-                     "colorVariant":"4",
-                     "front":"starforge-unboundwallpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"4"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"starforge-unboundwallpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -83,16 +85,17 @@
                  "height":8,
                  "id":1165,
                  "name":"",
-                 "properties":
-                    {
-                     "colorVariant":"4",
-                     "front":"starforge-unboundwallpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"4"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"starforge-unboundwallpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -104,16 +107,17 @@
                  "height":8,
                  "id":1166,
                  "name":"",
-                 "properties":
-                    {
-                     "colorVariant":"4",
-                     "front":"starforge-unboundwallpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"4"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"starforge-unboundwallpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -125,16 +129,17 @@
                  "height":16,
                  "id":1167,
                  "name":"",
-                 "properties":
-                    {
-                     "colorVariant":"4",
-                     "front":"starforge-unboundwallpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"4"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"starforge-unboundwallpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -146,16 +151,17 @@
                  "height":16,
                  "id":1168,
                  "name":"",
-                 "properties":
-                    {
-                     "colorVariant":"4",
-                     "front":"starforge-unboundwallpanel"
-                    },
-                 "propertytypes":
-                    {
-                     "colorVariant":"string",
-                     "front":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"4"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"starforge-unboundwallpanel"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -180,14 +186,12 @@
                  "height":32,
                  "id":1134,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"treasurePools\":[\"starforge-unboundbigchestTreasure\"]}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundbigchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -200,14 +204,12 @@
                  "height":32,
                  "id":1135,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"treasurePools\":[\"starforge-unboundbigchestTreasure\"]}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundbigchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -220,14 +222,12 @@
                  "height":16,
                  "id":1136,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -240,14 +240,12 @@
                  "height":16,
                  "id":1137,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -260,14 +258,12 @@
                  "height":16,
                  "id":1138,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -411,16 +407,17 @@
                  "height":8,
                  "id":1147,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"apex",
-                     "typeName":"starforge-unboundheavy"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"apex"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-unboundsoldier"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -432,16 +429,17 @@
                  "height":8,
                  "id":1148,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"apex",
-                     "typeName":"starforge-unboundsoldier"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"apex"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-unboundrookie"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -453,16 +451,17 @@
                  "height":8,
                  "id":1149,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"apex",
-                     "typeName":"starforge-unboundsoldier"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "typeName":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"apex"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"starforge-unboundrookie"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -825,7 +824,7 @@
  "nextobjectid":1171,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -978,6 +977,6 @@
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.1,
+ "version":"1.10",
  "width":60
 }

@@ -1,12 +1,5 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":60,
  "infinite":false,
  "layers":[
@@ -189,7 +182,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":9147,
+                 "gid":9151,
                  "height":8,
                  "id":1118,
                  "name":"",
@@ -201,7 +194,7 @@
                  "y":328
                 }, 
                 {
-                 "gid":9147,
+                 "gid":9151,
                  "height":8,
                  "id":1119,
                  "name":"",
@@ -213,7 +206,7 @@
                  "y":328
                 }, 
                 {
-                 "gid":9148,
+                 "gid":9152,
                  "height":24,
                  "id":1120,
                  "name":"",
@@ -225,7 +218,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147492796,
+                 "gid":2147492800,
                  "height":24,
                  "id":1121,
                  "name":"",
@@ -237,7 +230,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147492805,
+                 "gid":2147492809,
                  "height":18,
                  "id":1123,
                  "name":"",
@@ -249,7 +242,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":9159,
+                 "gid":9163,
                  "height":16,
                  "id":1124,
                  "name":"",
@@ -261,7 +254,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":9160,
+                 "gid":9164,
                  "height":14,
                  "id":1125,
                  "name":"",
@@ -273,7 +266,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":2147492765,
+                 "gid":2147492769,
                  "height":28,
                  "id":1127,
                  "name":"",
@@ -285,7 +278,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":2147492766,
+                 "gid":2147492770,
                  "height":48,
                  "id":1128,
                  "name":"",
@@ -297,7 +290,7 @@
                  "y":208
                 }, 
                 {
-                 "gid":9117,
+                 "gid":9121,
                  "height":28,
                  "id":1129,
                  "name":"",
@@ -309,7 +302,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":9129,
+                 "gid":9133,
                  "height":32,
                  "id":1131,
                  "name":"",
@@ -321,7 +314,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9129,
+                 "gid":9133,
                  "height":32,
                  "id":1132,
                  "name":"",
@@ -333,7 +326,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147492768,
+                 "gid":2147492772,
                  "height":16,
                  "id":1133,
                  "name":"",
@@ -351,7 +344,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9147,
+                 "gid":9151,
                  "height":8,
                  "id":1147,
                  "name":"",
@@ -363,7 +356,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":9147,
+                 "gid":9151,
                  "height":8,
                  "id":1148,
                  "name":"",
@@ -387,7 +380,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":9166,
+                 "gid":9170,
                  "height":40,
                  "id":1151,
                  "name":"",
@@ -399,7 +392,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9166,
+                 "gid":9170,
                  "height":40,
                  "id":1152,
                  "name":"",
@@ -508,7 +501,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundcaptain1"
+                         "value":"starforge-unboundsoldier"
                         }],
                  "rotation":0,
                  "type":"",
@@ -764,7 +757,7 @@
  "nextobjectid":1153,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -912,11 +905,11 @@
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":9115,
+         "firstgid":9119,
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":"1.10",
  "width":60
 }

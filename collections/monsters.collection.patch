@@ -155,6 +155,27 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/unboundbombdrone",
+	  "value": 	  
+	  {
+	    "order" : 117,
+	    "monsterType" : "starforge-unboundbombdrone",
+	    "icon" : "/monsters/crawlers/unboundbombdrone/unboundbombdrone-full.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/heavyelecdrone",
+	  "value": 	  
+	  {
+	    "order" : 118,
+	    "monsterType" : "starforge-unboundheavyelecdrone",
+	    "icon" : "/monsters/flyers/heavyelecdrone/heavyelecdrone.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/mothon",
 	  "value": 	  
 	  {

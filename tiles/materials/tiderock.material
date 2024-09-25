@@ -9,7 +9,7 @@
   "floranDescription" : "Floran doessn't like sstrange rock.",
   "novakidDescription" : "Some kinda alien lookin' rock.",
   "footstepSound" : "/sfx/blocks/footstep_rock.ogg",
-  "health" : 8,
+  "health" : 4,
   "category" : "materials",
   
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",

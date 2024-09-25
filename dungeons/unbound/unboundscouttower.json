@@ -1,12 +1,5 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":60,
  "infinite":false,
  "layers":[
@@ -123,7 +116,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":9122,
+                 "gid":9126,
                  "height":24,
                  "id":1111,
                  "name":"",
@@ -135,7 +128,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9122,
+                 "gid":9126,
                  "height":24,
                  "id":1112,
                  "name":"",
@@ -147,7 +140,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9119,
+                 "gid":9123,
                  "height":24,
                  "id":1113,
                  "name":"",
@@ -159,7 +152,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147492766,
+                 "gid":2147492770,
                  "height":48,
                  "id":1119,
                  "name":"",
@@ -207,7 +200,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9124,
+                 "gid":9128,
                  "height":16,
                  "id":1124,
                  "name":"",
@@ -219,7 +212,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147492765,
+                 "gid":2147492769,
                  "height":28,
                  "id":1125,
                  "name":"",
@@ -231,7 +224,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9154,
+                 "gid":9158,
                  "height":8,
                  "id":1126,
                  "name":"",
@@ -243,7 +236,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":9155,
+                 "gid":9159,
                  "height":6,
                  "id":1127,
                  "name":"",
@@ -255,7 +248,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":9120,
+                 "gid":9124,
                  "height":16,
                  "id":1129,
                  "name":"",
@@ -273,7 +266,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":9120,
+                 "gid":9124,
                  "height":16,
                  "id":1130,
                  "name":"",
@@ -291,7 +284,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":2147492768,
+                 "gid":2147492772,
                  "height":16,
                  "id":1131,
                  "name":"",
@@ -345,7 +338,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundsniper"
+                         "value":"starforge-unboundrookie"
                         }],
                  "rotation":0,
                  "type":"",
@@ -367,7 +360,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundsniper"
+                         "value":"starforge-unboundrookie"
                         }],
                  "rotation":0,
                  "type":"",
@@ -389,7 +382,7 @@
                         {
                          "name":"typeName",
                          "type":"string",
-                         "value":"starforge-unboundstalker"
+                         "value":"starforge-unboundsniper"
                         }],
                  "rotation":0,
                  "type":"",
@@ -645,7 +638,7 @@
  "nextobjectid":1132,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -793,11 +786,11 @@
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":9115,
+         "firstgid":9119,
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":"1.10",
  "width":60
 }

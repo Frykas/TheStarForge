@@ -28,7 +28,7 @@
     "warpDialog" : "/interface/confirmation/starforgeteleportconfirmation.config:starforge-mission3",
 
     "goalTrigger" : "message",
-    "triggerMessage" : "starforge-missioncomplete2",
+    "triggerMessage" : "starforge-missioncomplete3",
 	
     "goalEntityUid" : "starforge-sashaprisoner",
     "indicateGoal" : false,
