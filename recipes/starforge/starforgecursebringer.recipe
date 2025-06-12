@@ -1,0 +1,16 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 1750},
+	{ "item" : "starforge-undyingfibre", "count" : 6},
+	{ "item" : "hardenedcarapace", "count" : 5},
+	{ "item" : "starforge-withersample", "count" : 150},
+	{ "item" : "starforge-blackrotmaterial", "count" : 50}
+  ],
+  "output" : {
+    "item" : "starforge-witheredthorn",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+
