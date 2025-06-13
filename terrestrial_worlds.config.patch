@@ -8,8 +8,8 @@
       "threatRange" : [4, 6], // Planet tier
       "layers": {
         "surface": {
-          "primaryRegion" : ["starforge_progenitorwither"], // Planet primary region
-          "secondaryRegions" : ["starforge_blackrot"], // Planet secondary regions
+          "primaryRegion" : ["starforge-progenitorwither"], // Planet primary region
+          "secondaryRegions" : ["starforge-blackrot"], // Planet secondary regions
           "dungeons" : [
 			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
 			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
@@ -41,37 +41,37 @@
  
   {
     "op": "add",
-    "path": "/regionTypes/starforge_progenitorwither",
+    "path": "/regionTypes/starforge-progenitorwither",
     "value": {
       "caveLiquid": ["swampwater"],
       "blockSelector": ["remixedSwampySurface"], // For a list of terrain types, check under /terrain in assets
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
-      "biome": [[0,["starforge_progenitorwither"]]],
-      "subRegion" : ["starforge_blackrot"] // Subbiomes
+      "biome": [[0,["starforge-progenitorwither"]]],
+      "subRegion" : ["starforge-blackrot"] // Subbiomes
     }
   },
   
   { "op":"add",
-	  "path": "/regionTypes/starforge_blackrot",
+	  "path": "/regionTypes/starforge-blackrot",
 	  "value": {
 			"blockSelector": [ "remixedMildSurface" ],
 			"fgCaveSelector": ["surfaceCaves"],
 			"bgCaveSelector": ["empty"],
 			"biome": [
-				[0, ["starforge_blackrot"]]
+				[0, ["starforge-blackrot"]]
 			]
 		}
   },
   
   { "op":"add",
-	  "path": "/regionTypes/starforge_tidefragment",
+	  "path": "/regionTypes/starforge-tidefragment",
 	  "value": {
 			"blockSelector": [ "remixedSpikesSurface" ],
 			"fgCaveSelector": ["surfaceCaves"],
 			"bgCaveSelector": ["empty"],
 			"biome": [
-				[0, ["starforge_tidefragment"]]
+				[0, ["starforge-tidefragment"]]
 			]
 		}
   },
@@ -378,27 +378,27 @@
   
   { "op":"add",
     "path": "/regionTypes/jungle/subRegion/-", 
-    "value": "starforge_tidefragment" 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/midnight/subRegion/-", 
-    "value": "starforge_tidefragment" 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/tundra/subRegion/-", 
-    "value": "starforge_tidefragment" 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/volcanic/subRegion/-", 
-    "value": "starforge_tidefragment" 
+    "value": "starforge-tidefragment" 
   },
   
   { "op":"add",
     "path": "/regionTypes/savannah/subRegion/-", 
-    "value": "starforge_tidefragment" 
+    "value": "starforge-tidefragment" 
   }
  
 ]
