@@ -106,7 +106,6 @@ function StarForgeMultiBarrelFire:cooldown()
   end)
 end
 
-
 function StarForgeMultiBarrelFire:unholsterTwirl()
   self.weapon:setStance(self.stances.unholsterTwirl)
   self.weapon:updateAim()
@@ -139,7 +138,6 @@ function StarForgeMultiBarrelFire:muzzleFlash()
   
   local flashString = (self.useElementalMuzzleEmitter and self.weapon.elementalType ~= "physical") and (self.weapon.elementalType .. "MuzzleFlash") or "muzzleFlash"
   animator.burstParticleEmitter(flashString .. (self.muzzleFlashSuffix or ""))
-  sb.logInfo("%s", flashString .. (self.muzzleFlashSuffix or ""))
 
   --Optional firing animations
   if self.animatedFire == true then

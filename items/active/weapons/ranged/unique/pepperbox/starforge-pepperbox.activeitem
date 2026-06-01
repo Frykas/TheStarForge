@@ -22,7 +22,7 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "altFire" : [ "/sfx/gun/starforge-assaultriflefire1.ogg" ]
+      "altFire" : [ "/sfx/gun/starforge-heavysniper.ogg" ]
     }
   },
 
@@ -115,8 +115,8 @@
     "class" : "StarforgeExecute",
 	  "name" : "Execution",
 
-    "fireTime" : 3,
-    "baseDps" : 9,
+    "fireTime" : 2.15,
+    "baseDps" : 11,
     "energyUsage" : 100,
     "inaccuracy" : 0.0,
 
@@ -133,9 +133,9 @@
 
     "stances" : {
       "twirl" : {
-        "duration" : 1,
+        "duration" : 0.6,
         "armRotation" : -35,
-        "weaponRotation" : -778,
+        "weaponRotation" : -368,
 		    "weaponOffset" : [-0.0, 0.5],
         "weaponRotationCenter" : [0.0, 0.5],
         "twoHanded" : true,

@@ -22,7 +22,7 @@
   "scripts" : [ "/projectiles/scripts/starforge-longbowprojectile.lua", "/projectiles/scripts/starforge-spin.lua" ],
   "scriptDelta" : 1,
   
-  "teleportRange" : 1000,
+  "teleportRange" : 100,
   "teleportPiercing" : false,
   "teleportDelay" : 0.15,
   "teleportGenerosity" : 5,		//How far away from its destination it will teleport to, 0 would be directly on top, 3 would be 3 blocks away
