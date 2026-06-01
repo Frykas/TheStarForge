@@ -6,6 +6,31 @@
   "frameNumber" : 1,
   "damageKindImage" : "icon.png",
   "pointLight" : false,
+  "periodicActions" : [
+    {
+      "time" : 0.03,
+      "repeat" : true,
+      "action" : "particle",
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/animations/smallflame/smallflame.animation",
+        "position" : [0, 0],
+        "finalVelocity" : [0, 0],
+        "approach" : [50, 50],
+        "destructionAction" : "shrink",
+        "destructionTime" : 0.85,
+        "fade" : 1,
+        "size" : 0.7,
+        "layer" : "back",
+        "timeToLive" : 0.35,
+        "light" : [100, 65, 0],
+        "variance" : {
+          "initialVelocity" : [2.0, 2.0],
+          "rotation" : 180
+        }
+      }
+    }
+  ],
   "actionOnReap" : [
     {
       "action" : "loop",
@@ -41,8 +66,6 @@
   "speed" : 25,
   "statusEffects" : [ "burning" ],
   "damageKind" : "firehammer",
-  "emitters" : [ "firetrail" ],
-  "timeToLive" : 0.6,
-
-  "renderLayer" : "Monster+50"
+  "emitters" : [ ],
+  "timeToLive" : 0.6
 }

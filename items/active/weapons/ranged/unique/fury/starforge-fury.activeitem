@@ -55,7 +55,7 @@
             "firing" : {
               "fire" : {
                 "properties" : {
-                  "image" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png:<variant>.<frame>"
+                  "image" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png:1.<frame>"
                 }
               }
             }
@@ -74,7 +74,7 @@
             "firing" : {
               "fire" : {
                 "properties" : {
-                  "image" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png:<variant>.<frame>"
+                  "image" : "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png:2.<frame>"
                 }
               }
             }

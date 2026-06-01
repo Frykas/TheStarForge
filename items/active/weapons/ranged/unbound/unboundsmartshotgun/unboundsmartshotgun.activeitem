@@ -177,7 +177,7 @@
 
     "pingCenterRange" : 50,
     "pingRange" : 25,
-    "pingBandWidth" : 25,
+    "pingBandWidth" : 15,
     "pingDuration" : 2,
     "pingCooldown" : 2.0,
 
