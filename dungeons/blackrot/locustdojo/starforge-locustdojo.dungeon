@@ -21,6 +21,95 @@
       ],
       "def" : [ "tmx", "starforge-locustdojo.json" ],
       "chance" : 0
+    },
+
+    {
+      "name" : "starforge-locustdojoroom1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom6.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom7.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom8.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom9.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom10",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom10.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom11",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom11.json" ],
+      "chance" : 0
     }
   ]
 }
