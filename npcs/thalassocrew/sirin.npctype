@@ -24,7 +24,7 @@
   
   "personalities": [
       [1.0, {
-          "personality": "cheerful",
+          "personality": "scared",
           "reactions": {}
         }
       ]
