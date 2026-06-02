@@ -1,0 +1,81 @@
+{
+  "type" : "starforge-crewmembermaroonedunboundpilot",
+  "baseType" : "crewmember",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+	  "behavior" : "mik-hostilenpc",
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+    "crew" : {
+      "role" : {
+        "type" : "starforge-maroonedunboundpilot",
+        "name" : "Ace",
+        "field" : "Unbound",
+        "uniformColorIndex" : 1
+      },
+
+      "ranks" : [
+        "<field> <role>",
+        "<field> Scout",
+        "<field> Ace",
+        "<field> Pilot"
+      ],
+	  
+	  "defaultUniform" : {
+      "head" : "starforge-unboundpilothead",
+      "chest" : "starforge-unboundpilotchest",
+      "legs" : "starforge-unboundpilotpants"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "apex" : {
+            "default" : [
+              "Big monke.",
+              "Oo oo aa aa.",
+              "Banana hehe."
+            ]
+          }
+        },
+		    "roleDescription" : {
+          "apex" : {
+            "default" : [
+              "I will fight anything and anyone. I have no more fear.",
+              "Point me to a target and I will kill it.",
+              "Death will come for your enemies.",
+              "Your enemies will die by my hand."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+
+  "items": {
+    "override": [
+      [0, [{
+          "head": [
+            "starforge-unboundpilothead"
+          ],
+          "chest": [
+            "starforge-unboundpilotchest"
+          ],
+          "legs": [
+            "starforge-unboundpilotpants"
+          ],
+          "primary": [
+            "starforge-unboundricochetrevolver"
+          ]
+      }]]
+    ]
+  }
+}

@@ -171,7 +171,7 @@ if not nebUtil then
     local ret = {}
     for k, v in pairs(abilityToBackup) do
       if k == "stances" then
-        ret["stances"] = nebUtil.copyTable(abilityToBackup["stances"], 11)
+        ret["stances"] = nebUtil.copyTable(abilityToBackup["stances"], 15)
       elseif type(v) == "table" then
         -- including weapon causes an infinite loop
         if v ~= "weapon" then

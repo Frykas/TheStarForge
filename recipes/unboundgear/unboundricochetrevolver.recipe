@@ -1,13 +1,13 @@
 {
   "input" : [
     { "item" : "starforge-exaltingcharge", "count" : 1},
-    { "item" : "starforge-unboundar", "count" : 1},
+    { "item" : "starforge-unboundrevolver", "count" : 1},
     { "item" : "starforge-salvagedunboundtech", "count" : 1},
-    { "item" : "durasteelbar", "count" : 8},
-    { "item" : "staticcell", "count" : 6 }
+    { "item" : "durasteelbar", "count" : 6},
+    { "item" : "cryonicextract", "count" : 4}
   ],
   "output" : {
-    "item" : "starforge-unboundheadway",
+    "item" : "starforge-unboundricochetrevolver",
     "count" : 1
   },
   "groups" : [ "starforge-unboundgear", "upgrade" ],

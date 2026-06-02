@@ -8,7 +8,7 @@ end
 starforge_advancedPeriodicActions_update = update
 function update(dt) if starforge_advancedPeriodicActions_update then starforge_advancedPeriodicActions_update(dt) end
   --Advanced Periodic Action
-  for _, action in pairs(self.advancedPeriodicActions) do
+  for _, action in pairs(self.advancedPeriodicActions or {}) do
     action = advancedPeriodicActions(action, dt, _)
   end
 end

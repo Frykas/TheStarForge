@@ -251,7 +251,7 @@ end
 
 function StarforgeGunFire:muzzleFlash(pitchIncrease)
   --Add normal pitch variance to shots
-  local pitchVariance = (1 + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2)) + (pitchIncrease or 0)
+  local pitchVariance = ((self.pitchFactor or 1) + (self.pitchVariance or 0.15)) - (math.random() * ((self.pitchVariance or 0.15) * 2)) + (pitchIncrease or 0)
   animator.setSoundPitch("fire", pitchVariance)
   animator.playSound(self.fireSound or "fire")
   

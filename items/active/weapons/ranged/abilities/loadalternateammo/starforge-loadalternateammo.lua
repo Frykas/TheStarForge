@@ -42,7 +42,8 @@ function StarForgeLoadAlternateAmmo:loadAmmo()
 
   self.newAbilityLoaded = (not self.newAbilityLoaded)
   activeItem.setInstanceValue("newAbilityLoaded", self.newAbilityLoaded)
-	
+
+  self.swapCooldown = self.newAbilityLoaded and self.swapOnCooldown or self.swapOffCooldown
   animator.playSound("loadAmmo")
   animator.setParticleEmitterActive("ammoIndicator", self.newAbilityLoaded)
 
@@ -70,8 +71,6 @@ function StarForgeLoadAlternateAmmo:loadAmmo()
 
     progress = math.min(1.0, progress + (self.dt / self.stances.load.duration))
   end)
-
-  self.swapCooldown = self.newAbilityLoaded and self.swapOnCooldown or self.swapOffCooldown
 
   self.weapon:setStance(self.weapon.abilities[self.adaptedAbilityIndex].stances.idle)
   self.weapon:updateAim()

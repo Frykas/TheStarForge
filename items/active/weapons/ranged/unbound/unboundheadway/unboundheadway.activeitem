@@ -9,7 +9,7 @@
   "category": "uniqueWeapon",
   "tooltipFieldsOverride" : {"subtitle":"Assault Rifle"},
   "twoHanded": true,
-  "level" : 6,
+  "level" : 7,
   "itemTags": [ "weapon", "ranged", "assaultrifle" ],
   "manufacturer" : "unboundarmaments",
   "inventoryIcon": "unboundheadway.png:idle",

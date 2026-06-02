@@ -1,0 +1,94 @@
+{
+    "type": "starforge-maroonedunboundpilot",
+    "baseType": "hostile",
+	
+	  "scripts" : ["/npcs/bmain.lua"],
+    "initialScriptDelta" : 5,
+ 
+    "dropPools": [],
+	
+	  "identity" : {
+      "species" : "apex"
+    },
+	
+  "scriptConfig" : {	
+	  "behavior" : "mik-hostilenpc",
+	  "aggressive" : true,
+    "interactive" : false,
+	
+	  "pathing" : {
+      "forceWalkingBackwards" : false,
+      "canOpenDoors" : true
+    },
+	
+	  "behaviorConfig" : {
+      "friendlyNpcTypes" : ["starforge-crewmembermaroonedunboundpilot"],
+
+      "rangedAimTime" : 0.9,
+      "rangedWindupTime" : 0.1,
+      "rangedSwapTime" : 1,
+	    "leapWindup" : 0.15,
+      "leapCooldown": 50,
+	    "leapChance" : 0.01,
+      "meleeSwapTime" : 1.5
+    },
+	
+    "dialog": {
+      "attack": {
+        "default": {
+          "default": [
+            "Attack!"
+          ]
+        },
+        "apex": {
+          "default": [
+            "Trooper unit reporting, target on sight!",
+            "Reporting, target sighted!",
+            "Orders received, begin operation!",
+            "Backup requested, target approaching!",
+            "Orders received, target in sight.",
+            "Target approaching, opening fire!"
+          ]
+        }
+      }
+    }
+  },
+ 
+  "items": {
+    "override": [
+      [0, [{
+          "head": [
+            "starforge-unboundpilothead"
+          ],
+          "chest": [
+            "starforge-unboundpilotchest"
+          ],
+          "legs": [
+            "starforge-unboundpilotpants"
+          ],
+          "primary": [
+            "starforge-unboundricochetrevolver"
+          ]
+      }]]
+    ]
+  },
+  
+  "statusControllerSettings" : {
+    "primaryScriptSources" : [
+      "/stats/starforge-npc_primary.lua",
+      "/scripts/vec2.lua"
+    ],
+
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.05
+      },
+      "maxEnergy" : {
+        "baseValue" : 150
+      }
+    }
+  }
+}

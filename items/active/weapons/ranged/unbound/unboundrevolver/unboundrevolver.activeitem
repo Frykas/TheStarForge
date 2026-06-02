@@ -9,6 +9,7 @@
   "tooltipFieldsOverride" : {"subtitle":"Revolver"},
   "category": "uniqueWeapon",
   "twoHanded": true,
+  "learnBlueprintsOnPickup" : [ "starforge-unboundricochetrevolver" ],
   "manufacturer" : "unboundarmaments",
   "level": 5,
   "itemTags": [ "weapon", "ranged", "pistol" ],
@@ -25,6 +26,15 @@
     "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-unboundmuzzleflash.png"
   },
   "animationCustom": {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+          "properties" : {
+            "offset" : [0.5, 0.125]
+          }
+        }
+      }
+    },
     "particleEmitters" : {
       "muzzleFlash" : {
         "transformationGroups" : ["muzzle"],

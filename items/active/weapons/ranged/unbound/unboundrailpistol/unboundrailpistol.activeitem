@@ -66,6 +66,36 @@
           "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionknockback.config"
         }
       ],
+      "scripts" : [ "/projectiles/scripts/starforge-advancedperiodicactions.lua" ], 
+      "advancedPeriodicActions" : [
+        {
+          "loopTime" : 0.01,
+          "delayTime" : 0,
+          "rotate" : true,
+          "minimumVelocity" : 75,
+          "action" : "particle",
+          "specification" : {
+            "type" : "streak",
+            "layer" : "back",
+            "fullbright" : false,
+            "destructionAction" : "shrink",
+            "size" : 1,
+            "color" : [155, 155, 155, 255],
+            "collidesForeground" : false,
+            "length" : 28,
+            "position" : [3, 0],
+            "timeToLive" : 0.01,
+            "destructionTime" : 0.2,
+            "initialVelocity" : [0.5, 0],
+            "variance" : {  
+              "size" : 0,
+              "destructionTime" : 0,
+              "initialVelocity" : [0.5, -0],
+              "length" : 0
+            }
+          }
+        }
+      ],
       "piercing" : true,
       "speed" : 200,
       "knockback": 10
