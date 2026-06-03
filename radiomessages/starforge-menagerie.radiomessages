@@ -1,9 +1,0 @@
-{
-  "starforge-menageriegate" : {
-    "type" : "tutorial",
-    "senderName" : "Morpheus",
-    "portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
-    "text" : "I peed a little.",
-    "persistTime" : 5.0
-  }
-}

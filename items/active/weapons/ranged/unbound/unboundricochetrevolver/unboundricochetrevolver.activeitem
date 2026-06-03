@@ -47,8 +47,7 @@
     },
     "sounds": {
       "loadAmmo" : [ "/sfx/gun/reload/rocket_reload_clip3.ogg" ],
-      "fire": [ "/sfx/gun/starforge-unboundrevolver.ogg" ],
-      "altFire": [ "/sfx/gun/starforge-makeshiftgun.ogg" ]
+      "fire": [ "/sfx/gun/starforge-acefire.ogg" ]
     },
     "lights" : {
       "flashlightSpread" : {
@@ -73,7 +72,7 @@
   
   "baseOffset" : [0.5, 0.125],
   
-  "muzzleOffset" : [1, 0.5],
+  "muzzleOffset" : [1, 0.375],
   
   "scripts": [ "/items/active/weapons/ranged/starforge-gun.lua" ],
   "elementalType": "ice",
@@ -89,10 +88,10 @@
     "projectileCount": 1,
     "fireType": "auto",
     "fireSound" : "fire",
-    "pitchFactor" : 0.7,
-    "pitchVariance" : 0.1,
+    "pitchFactor" : 1,
+    "pitchVariance" : 0.15,
 
-    "projectileType": "starforge-icebullet",
+    "projectileType": "starforge-icebulletstatus",
     "projectileParameters": {
       "scripts" : [ "/projectiles/scripts/starforge-smartricochet.lua", "/projectiles/scripts/starforge-advancedperiodicactions.lua" ], 
       "movementSettings" : {
@@ -100,7 +99,7 @@
       },
       "speed" : 180,
 
-      "statusEffects" : [ "frostslow" ],
+      "statusEffects" : ["frostslow"],
 
       "advancedPeriodicActions" : [
         {
@@ -261,10 +260,10 @@
         "statusEffects" : [ "starforge-lightbleeding" ],
 
         "damageRepeatTimeout" : 0.1
-      },
-      "fireSound" : "altFire",
-      
+      },      
       "autoAltInterval" : 1,
+
+      "pitchFactor" : 0.8,
 	
       "baseDps" : 15.0,	
       "fireTime" : 0.4,

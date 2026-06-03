@@ -1,5 +1,74 @@
 [
-  //Headway
+  //ACE - wingman and ol reliable
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-unboundricochetrevolver",
+    "value": {
+      "olreliable": {
+        "skinName" : "Ol' Reliable",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "A design so reliable it outlived Earth itself.",
+          "shortdescription": "Ol' Reliable",
+          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-olreliable.png:idle",
+          "animationParts": {
+            "middle": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-olreliable.png",
+            "middleFullbright" : ""
+          },
+          "animationCustom" : {
+            "particleEmitters" : {
+              "muzzleFlash" : {
+                "offsetRegion" : [-1.5, -0, -1.5, -0],
+                "particles" : [
+                  { "particle" : "starforge-unboundrifle" }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "wingman": {
+        "skinName" : "Wingman",
+        "unlockDescription" : "Kill a marooned pilot outlaw.",
+        "prerequisiteQuests": [ ],
+	  
+        "skinConfig": {
+          "description": "",
+          "shortdescription": "Wingman",
+          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-wingman.png:idle",
+          "animationParts": {
+            "middle": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-wingman.png",
+            "middleFullbright" : "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-wingmanfullbright.png"
+          }
+        }
+      }
+    }
+  },
+  //CRACKSHOT
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-crackshot",
+    "value": {
+      "crackshotsCrackshot": {
+        "skinName" : "Crackshot's Crackshot",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "It may be better than the last, but it's not spell-casting and he still isn't a wizard.",
+          "shortdescription": "Crackshot's Crackshot",
+          "inventoryIcon": "/items/active/weapons/ranged/legendary/crackshot/skins/starforge-crackshotscrackshot.png:idle",
+          "animationParts": {
+            "middle": "/items/active/weapons/ranged/legendary/crackshot/skins/starforge-crackshotscrackshot.png",
+            "middleFullbright" : ""
+          }
+        }
+      }
+    }
+  },
+  //HEADWAY
   {
     "op": "add",
     "path": "/weaponSkins/starforge-unboundheadway",

@@ -1,0 +1,64 @@
+{
+  "objectName" : "starforge-miniknogbunkerhatch",
+  "colonyTags" : ["door"],
+  "printable" : false,
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 0,
+  "description" : "A miniknog bunker hatch.",
+  "shortdescription" : "Bunker Hatch",
+  "race" : "apex",
+
+  "inventoryIcon" : "starforge-miniknogbunkerhatchicon.png",
+
+  "tooltipKind" : "door",
+  "largeImage" : "starforge-miniknogbunkerhatch.png:right",
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/airlock_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/airlock_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "starforge-miniknogbunkerhatch.png"
+  },
+
+  "orientations" : [
+    {
+      "image" : "starforge-miniknogbunkerhatch.png:default",
+      "imagePosition" : [-16, -16],
+      "renderLayer" : "Object+5",
+      "animationPosition" : [-16, -16],
+      "flipImages" : true,
+      "direction" : "left",
+
+      "spaces" : [[-2, 0],[-1, 0],[0, 0],[1, 0],[2, 0]],
+      "anchors" : [ "left", "right" ]
+    },
+    {
+      "image" : "starforge-miniknogbunkerhatch.png:default",
+      "imagePosition" : [-16, -16],
+      "renderLayer" : "Object+5",
+      "animationPosition" : [-16, -16],
+      "direction" : "right",
+
+      "spaces" : [[-2, 0],[-1, 0],[0, 0],[1, 0],[2, 0]],
+      "anchors" : [ "left", "right" ]
+    }
+  ],
+
+  "inputNodes" : [ [-2, 0] ],
+  "outputNodes" : [ [2, 0] ]
+}

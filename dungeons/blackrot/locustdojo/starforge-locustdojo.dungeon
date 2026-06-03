@@ -110,6 +110,14 @@
       ],
       "def" : [ "tmx", "starforge-locustdojoroom11.json" ],
       "chance" : 0
+    },
+    {
+      "name" : "starforge-locustdojoroom12",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-locustdojoroom12.json" ],
+      "chance" : 0
     }
   ]
 }

@@ -17,7 +17,7 @@ function StarForgeLoadAlternateAmmo:update(dt, fireMode, shiftHeld)
   end
   
   if self.abilityBackup == false then
-	--sb.jsonMerge() and copy() cause stack overflow
+	  --sb.jsonMerge() and copy() cause stack overflow
     self.abilityBackup = nebUtil.backupAbility(self.weapon.abilities[self.adaptedAbilityIndex])
     if config.getParameter("newAbilityLoaded", false) then
       self:initAltAmmo()
@@ -78,7 +78,6 @@ end
 
 function StarForgeLoadAlternateAmmo:adaptAbility(abilityType)
   local ability = self.weapon.abilities[self.adaptedAbilityIndex]
-  
   util.mergeTable(self.weapon.abilities[self.adaptedAbilityIndex], abilityType)
 end
 

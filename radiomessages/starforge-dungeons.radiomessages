@@ -1,0 +1,14 @@
+{
+  "starforge-menageriegate" : {
+    "type" : "tutorial",
+    "senderName" : "Morpheus",
+    "portraitImage" : "/interface/chatbubbles/morpheus.png:<frame>",
+    "text" : "I peed a little.",
+    "persistTime" : 5.0
+  },
+  "starforge-witheredyukaifortress" : {
+    "type" : "generic",
+    "text" : "There are signs of an attempt to prevent the wither from breaching this fortress. There appears to be a survivor inside, exercise caution.",
+    "textSpeed" : 70
+  }
+}

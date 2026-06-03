@@ -41,7 +41,6 @@ if not nebUtil then
     for k, v in pairs(table) do
       if type(v) == "table" then
         if count > 10 then
-          --sb.logInfo("%s", k)
           ret[k] = nebUtil.copyTable(v, count + 1)
         end
       else
@@ -172,6 +171,8 @@ if not nebUtil then
     for k, v in pairs(abilityToBackup) do
       if k == "stances" then
         ret["stances"] = nebUtil.copyTable(abilityToBackup["stances"], 15)
+      elseif k == "projectileParameters" then
+        ret["projectileParameters"] = nebUtil.copyTable(abilityToBackup["projectileParameters"], 15)
       elseif type(v) == "table" then
         -- including weapon causes an infinite loop
         if v ~= "weapon" then
