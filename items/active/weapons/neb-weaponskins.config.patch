@@ -35,7 +35,7 @@
         "prerequisiteQuests": [ ],
 	  
         "skinConfig": {
-          "description": "",
+          "description": "A powerful and historically popular sidearm, known for its strength and hard recoil.",
           "shortdescription": "Wingman",
           "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-wingman.png:idle",
           "animationParts": {

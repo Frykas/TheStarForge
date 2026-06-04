@@ -32,6 +32,7 @@ function hit(entityId) if starforge_smartRicochet_hit then starforge_smartRicoch
 end
 
 function ricochet(collision)
+  collision = collision or {mcontroller.position(), vec2.rotate({0, 0}, math.random() * math.pi * 2)}
   if self.ricochetCount > 0 or self.ricochetCount == -1 then
     local velocityMultiplier = {math.abs(collision[2][1]) == 0 and 1 or math.abs(collision[2][1]) * -1, math.abs(collision[2][2]) == 0 and 1 or math.abs(collision[2][2]) * -1}
     local trajectoryVector = vec2.norm(vec2.mul(self.lastVelocity, velocityMultiplier))

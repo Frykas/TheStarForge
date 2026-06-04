@@ -94,6 +94,7 @@
       "knockback": 6
     },
     "animatedFire" : true,
+    "knockbackForce" : 3,
 
     "stances": {
       "idle": {
@@ -115,19 +116,19 @@
         "twoHanded": true,
         "allowRotate": true,
         "allowFlip": true,
-        "burstParticleEmitters": [ "casing" ],
+        "burstParticleEmitters": [ "casing" ],        
         
         "frontArmFrame" : "run.2",
         "backArmFrame" : "swim.4"
       },
       "cooldown": {
-        "duration": 0.03,
+        "duration": 0.034,
         "armRotation": 2,
         "weaponRotation": 1,
         "weaponOffset" : [-0.1, 0],
         "twoHanded": true,
         "allowRotate": true,
-        "allowFlip": true,
+        "allowFlip": true,        
 		
 		    "frontArmFrame" : "run.2",
         "backArmFrame" : "swim.4"
@@ -152,6 +153,7 @@
     },
     "pitchVariance" : 0.1,
     "animatedFire" : true,
+    "knockbackForce" : 3,
 
     "stances": {
       "idle": {
@@ -190,7 +192,7 @@
         "twoHanded": true,
         "allowRotate": true,
         "allowFlip": true,
-		
+
 		    "frontArmFrame" : "run.2",
         "backArmFrame" : "swim.4"
       }

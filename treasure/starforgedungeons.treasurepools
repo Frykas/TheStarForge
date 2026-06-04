@@ -68,6 +68,52 @@
         {"item" : [ "starforge-wyvernsbane", 1]}
       ]
     }]
+  ],
+
+  // ==============================================================================================
+  //                                      MINIKNOG BUNKER
+  // ==============================================================================================
+  "starforge-miniknogbunkertreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.05, "pool" : "stim"},
+        {"weight" : 0.05, "item" : "apexbrainjar"},
+        {"weight" : 0.05, "item" : "banana"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  "starforge-miniknogbunkerraretreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "valuableTreasure"},
+        {"weight" : 0.05, "pool" : "stim"},
+        {"weight" : 0.10, "pool" : "starforge-miniknogweapons"},
+        {"weight" : 0.02, "item" : [ "monitorhead", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  "starforge-miniknogweapons" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.007, "item" : [ "starforge-miniknogplasmacutter", 1]},
+        {"weight" : 0.007, "item" : [ "starforge-miniknogstunbaton", 1]}
+      ],
+      "allowDuplication" : false
+    }]    
   ]
 }
   

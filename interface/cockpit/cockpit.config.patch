@@ -163,6 +163,14 @@
         "icon" : "/interface/cockpit/dungeons/locustdojocastleicon.png" 
       }
     },
+    { 
+      "op" : "add",
+      "path" : "/displayDungeons/starforge-miniknogbunker", 
+      "value" : {
+        "description" : "Miniknog lifesigns are detected in an underground bunker. They may be hostile..", 
+        "icon" : "/interface/cockpit/dungeons/miniknogbunkericon.png" 
+      }
+    },
 
 	  //Weather Threat Levels
     { 

@@ -12,7 +12,8 @@
           "secondaryRegions" : ["starforge-blackrot"], // Planet secondary regions
           "dungeons" : [
 			      [1.0, "apextestfacility"],
-			      [1.0, "starforge-locustdojo"]
+			      [1.0, "starforge-locustdojo"],
+			      [1.0, "starforge-miniknogbunker"]
           ]
         },
 		
@@ -288,6 +289,32 @@
     "value": [
       1,
       "starforge-rimespire"
+    ]
+  },
+
+  //MINIKNOG BUNKER
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-miniknogbunker"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/alien/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-miniknogbunker"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [
+      1,
+      "starforge-miniknogbunker"
     ]
   },
   

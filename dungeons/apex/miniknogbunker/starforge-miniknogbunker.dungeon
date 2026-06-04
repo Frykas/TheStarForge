@@ -1,0 +1,100 @@
+{
+  "metadata" : {
+    "name" : "starforge-miniknogbunker",
+    "species" : "apex",
+    "rules" : [
+    ],
+    "anchor" : [ "starforge-miniknogbunker" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 15,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    // BASE LAYOUTS
+    {
+      "name" : "starforge-miniknogbunker",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [ "starforge-miniknogbunker" ] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunker.json" ],
+      "chance" : 0
+    },
+
+    {
+      "name" : "starforge-miniknogbunkerroom1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom1.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom2.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom3.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom4.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom5.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom6.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom7.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom8.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom9.json" ],
+      "chance" : 0.1
+    }
+  ]
+}
