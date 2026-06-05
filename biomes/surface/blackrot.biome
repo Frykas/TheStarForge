@@ -321,7 +321,7 @@
   },
 
   "undergroundPlaceables" : {
-    "grassMod" : [ "grass" ],
+    "grassMod" : [ "starforge-blackrotgrass" ],
     "grassModDensity" : 0.2,
 
     "ceilingGrassMod" : [ "roots" ],

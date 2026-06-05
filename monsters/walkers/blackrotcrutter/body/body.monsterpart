@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-blackrotcrutter",
+  "category" : "blackrotcrutter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "blackrotcrutter.png"
+  }
+}

@@ -10,13 +10,13 @@
   "category" : "decorative",
   "price" : 520,
 
-  "apexDescription" : "Looks like a strange Yukai device. It appears to be broken.",
-  "avianDescription" : "The strange crystal in the middle is cracked.",
-  "floranDescription" : "Floran not sure how to feel about weird tree.",
-  "glitchDescription" : "Curious. I wonder what this strange device is.",
-  "humanDescription" : "Looks like a Yukai device. The crystal is cracked though.",
-  "hylotlDescription" : "A device made to summon the Tide here. Seems like it worked.",
-  "novakidDescription" : "These Hylotls and their weird crystals and trees I swear.",
+  "apexDescription" : "It's a big chunk of hanging meat.",
+  "avianDescription" : "The hanging corpse of a sea creature. Gross!",
+  "floranDescription" : "Strange creature doesssn't make Floran hungry.",
+  "glitchDescription" : "Disgusted. My day would've been better without seeing this.",
+  "humanDescription" : "It's a big chunk of meat hanging. The monster must've been big!",
+  "hylotlDescription" : "A crude display of Yukai finesse and cuisine.",
+  "novakidDescription" : "Uh? What da heaven is that?",
 
   "inventoryIcon" : "hangingrimenodonicon.png",
   "orientations" : [

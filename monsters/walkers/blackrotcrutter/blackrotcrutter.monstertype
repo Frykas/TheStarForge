@@ -1,15 +1,14 @@
 {
-  "type" : "starforge-blackrotstinger",
-  "shortdescription" : "Blackrot Stinger",
-  "description" : "The reanimated corpse of a giant insect. It has a very potent venom.",
+  "type" : "starforge-blackrotcrutter",
+  "shortdescription" : "Blackrot Crutter",
+  "description" : "A dead crutter brought back by the Blackrot strand.",
 
-  "categories" : [ "blackrotstinger" ],
+  "categories" : [ "blackrotcrutter" ],
   "parts" : [ "body" ],
 
-  "animation" : "blackrotstinger.animation",
-  "reversed" : false,
+  "animation" : "blackrotcrutter.animation",
 
-  "dropPools" : [ "ixolingTreasure" ],
+  "dropPools" : [ { "default" : "crutterTreasure", "bow" : "crutterHunting" } ],
 
   "baseParameters" : {
     "scripts" : [
@@ -21,30 +20,39 @@
     "behaviorConfig" : {
       "damageOnTouch" : true,
 
-      "targetQueryRange" : 100,
+      "targetQueryRange" : 20,
       "targetOnDamage" : true,
       "keepTargetInSight" : true,
-      "keepTargetInRange" : 60,
+      "keepTargetInRange" : 50,
       "targetOutOfSightTime" : 2.5,
+
+      "foundTargetActions" : [ { "name" : "action-aggrohop" } ],
+
+      "fleeActions" : [],
 
       "hostileActions" : [
         {
-          "name" : "action-leap",
-          "cooldown" : 1.0,
+          "name" : "action-fire",
           "parameters" : {
-            "minimumRange" : 0,
-            "maximumRange" : 20,
-            "windupState" : "attack",
-            "windupTime" : 0.3,
+            "requireLineOfSight" : true,
+            "maximumRange" : 30,
+            "minimumRange" : 10,
+            "windupState" : "windup",
+            "windupTime" : 0.6,
 
-            "leapVelocity" : 25,
-            "collisionCheck" : true,
-            "highArc" : false,
-            "leapState" : "attack",
-            "fallState" : "fall",
+            "projectileType" : "starforge-witherneedle",
+            "fireOffset" : [0.5, 0.6875],
+            "aimAtTarget" : true,
+            "fireState" : "fire",
+            "fireDelay" : 0.4,
+            "fireSound" : "fire",
 
-            "winddownTime" : 0.5,
-            "winddownState" : "idle"
+            "fireArc": true,
+            "projectileSpeed": 65,
+            "gravityMultiplier": 0.4,
+
+            "winddownState" : "",
+            "winddownTime" : 0.1
           }
         }
       ],
@@ -55,13 +63,7 @@
         {
           "name" : "approach-walk",
           "parameters" : {
-            "canJump" : true,
-            "maxJumps" : 2,
-            "jumpXVelocity" : 12,
-            "jumpYVelocity" : 30,
-            "jumpXControlForce" : 15,
-            "jumpState" : "attack",
-            "fallState" : "fall"
+            "canJump" : false
           }
         }
       ],
@@ -75,48 +77,59 @@
         {
           "name" : "approach-walk",
           "parameters" : {
-            "canJump" : true,
-            "maxJumps" : 2,
-            "jumpXVelocity" : 12,
-            "jumpYVelocity" : 30,
-            "jumpXControlForce" : 15,
-            "jumpState" : "attack",
-            "fallState" : "fall"
+            "canJump" : false
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-walk",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "wanderTime" : [5, 15]
           }
         }
       ]
     },
 
-    "pathing" : {
-      "canOpenDoors" : false
-    },
-
-    "scale" : 1.0,
-
-    "knockoutTime" : 0.3,
-    "knockoutEffect" : "",
-    "knockoutAnimationStates" : {
-      "damage" : "stunned"
-    },
-    "deathParticles" : "deathPoof",
-
-    "movementSettings" : {
-      "collisionPoly" : [ [-1, -0.6], [-0.6, -1], [0.6, -1], [1, -0.6], [1, 0.6], [0.6, 1], [-0.6, 1], [-1, 0.6] ],
-      "mass" : 1.0,
-      "walkSpeed" : 4,
-      "runSpeed" : 12
-    },
-    "metaBoundBox" : [-2, -2, 2, 2],
-
     "touchDamage" : {
-      "poly" : [ [-1, -0.6], [-0.6, -1], [0.6, -1], [1, -0.6], [1, 0.6], [0.6, 1], [-0.6, 1], [-1, 0.6] ],
+      "poly" : [ [0.1875, 1.3125], [0.5625, 0.9375], [0.5625, -0.9375], [0.1875, -1.3125], [-0.1875, -1.3125], [-0.5625, -0.9375], [-0.5625, 0.9375], [-0.1875, 1.3125] ],
       "damage" : 10,
 
       "teamType" : "enemy",
       "damageSourceKind" : "slash",
       "knockback" : 20,
-      "statusEffects" : ["starforge-wither"]
+      "statusEffects" : ["starforge-wither" ]
     },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.1875, 1.3125], [0.5625, 0.9375], [0.5625, -0.9375], [0.1875, -1.3125], [-0.1875, -1.3125], [-0.5625, -0.9375], [-0.5625, 0.9375], [-0.1875, 1.3125] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 3,
+      "runSpeed" : 5,
+
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 45.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
 
     "statusSettings" : {
       "statusProperties" : {
@@ -140,16 +153,16 @@
           "baseValue" : 9
         },
         "maxHealth" : {
-          "baseValue" : 80
+          "baseValue" : 90
         },
         "protection" : {
-          "baseValue" : 0.3
+          "baseValue" : 0.2
         },
         "healthRegen" : {
           "baseValue" : 2.0
         },
         "powerMultiplier" : {
-          "baseValue" : 2.4
+          "baseValue" : 2.0
         },
         "physicalResistance" : {
           "baseValue" : 0.4
@@ -209,11 +222,11 @@
       }
     },
 
-    "mouthOffset" : [1.0, -1.5],
-    "feetOffset" : [0, -21],
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
     "capturable" : true,
     "captureHealthFraction" : 0.5,
     "nametagColor" : [64, 200, 255],
-    "captureCollectables" : { "monsters" : "blackrotstinger" }
+    "captureCollectables" : { "monsters" : "crutter" }
   }
 }
