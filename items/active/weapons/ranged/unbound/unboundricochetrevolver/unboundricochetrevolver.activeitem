@@ -91,107 +91,15 @@
     "pitchFactor" : 1,
     "pitchVariance" : 0.15,
 
-    "projectileType": "starforge-icebulletstatus",
+    "projectileType": "starforge-smartricocheticebullet",
     "projectileParameters": {
-      "scripts" : [ "/projectiles/scripts/starforge-smartricochet.lua", "/projectiles/scripts/starforge-advancedperiodicactions.lua" ], 
-      "movementSettings" : {
-        "bounceFactor" : 0
-      },
+      "ricochetCount" : 1,
+      "ricochetDamageMultiplier" : 0.65,
+      "piercing" : false,
       "speed" : 180,
 
-      "statusEffects" : ["frostslow"],
+      "statusEffects" : [ "frostslow" ],
 
-      "advancedPeriodicActions" : [
-        {
-          "loopTime" : 0.01,
-          "delayTime" : 0,
-          "rotate" : true,
-          "minimumVelocity" : 190,
-          "action" : "particle",
-          "specification" : {
-            "type" : "streak",
-            "layer" : "back",
-            "fullbright" : false,
-            "destructionAction" : "shrink",
-            "size" : 1,
-            "color" : [176, 255, 255, 255],
-            "collidesForeground" : false,
-            "length" : 28,
-            "position" : [1, 0],
-            "timeToLive" : 0.01,
-            "destructionTime" : 0.3,
-            "initialVelocity" : [0.5, 0],
-            "variance" : {  
-              "size" : 0,
-              "destructionTime" : 0,
-              "initialVelocity" : [0.5, -0],
-              "length" : 0
-            }
-          }
-        }
-      ],
-      
-      "actionOnRicochet" : [
-        {
-          "action" : "spark"
-        },
-        {
-          "action" : "loop",
-          "count" : 3,
-          "body" : [
-            {
-              "action" : "option",
-              "options" : [
-                {
-                  "action" : "particle",
-                  "specification" : {
-                    "type" : "ember",
-                    "size" : 1.5,
-                    "color" : [176, 255, 255],
-                    "position" : [0, 0],
-                    "destructionAction" : "shrink",
-                    "destructionTime" : 0.2,
-                    "fade" : 1,
-                    "layer" : "middle",
-                    "fullbright" : true,
-                    "light" : [0, 36, 56],
-                    "timeToLive" : 0.2,
-                    "initialVelocity" : [0.0, 0.0],
-                    "finalVelocity" : [0, -10.0],
-                    "approach" : [2, 10],
-                    "variance" : {
-                      "initialVelocity" : [6.0, 6.0],
-                      "size" : 0.25,
-                      "timeToLive" : 0.5
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "action" : "sound",
-          "options" : [ 
-            "/sfx/projectiles/bullet_ricochet1.ogg",
-            "/sfx/projectiles/bullet_ricochet2.ogg",
-            "/sfx/projectiles/bullet_ricochet3.ogg",
-            "/sfx/projectiles/bullet_ricochet4.ogg",
-            "/sfx/projectiles/bullet_ricochet5.ogg",
-            "/sfx/projectiles/bullet_ricochet6.ogg",
-            "/sfx/projectiles/bullet_ricochet7.ogg",
-            "/sfx/projectiles/bullet_ricochet8.ogg",
-            "/sfx/projectiles/bullet_ricochet9.ogg",
-            "/sfx/projectiles/bullet_ricochet10.ogg",
-            "/sfx/projectiles/bullet_ricochet11.ogg",
-            "/sfx/projectiles/bullet_ricochet12.ogg"
-          ]
-        }
-      ],
-      "ricochetCount" : 1,
-      "ricochetDamageMultiplier" : 0.6,
-      "piercing" : false,
-      "bounces" : -1,
       "damageRepeatTimeout" : 0.1
     },
     "animatedFire" : true,
@@ -250,7 +158,7 @@
     
     //The new stats which will overwrite the primary ability
     "newAbility" : {
-      "projectileType": "starforge-icebullet",
+      "projectileType": "starforge-smartricocheticebullet",
       "projectileParameters" : {
         "ricochetCount" : 5,
         "ricochetDamageMultiplier" : 0.75,

@@ -95,6 +95,14 @@
       ],
       "def" : [ "tmx", "starforge-miniknogbunkerroom9.json" ],
       "chance" : 0.1
+    },
+    {
+      "name" : "starforge-miniknogbunkerroom10",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-miniknogbunkerroom10.json" ],
+      "chance" : 0.1
     }
   ]
 }

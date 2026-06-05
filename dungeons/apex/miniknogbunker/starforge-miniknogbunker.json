@@ -1256,7 +1256,49 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":1049,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"apexscout"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":608,
+                 "y":424
+                }, 
+                {
+                 "height":8,
+                 "id":1050,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"apexscout"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1144,
+                 "y":424
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -1469,7 +1511,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1049,
+ "nextobjectid":1051,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",

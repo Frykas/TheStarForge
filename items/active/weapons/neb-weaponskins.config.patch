@@ -1,4 +1,40 @@
 [
+  //VALIANT
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-unboundar",
+    "value": {
+      "bananar": {
+        "skinName" : "Banan AR",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "Oo oo OO OOOOOOOOOOO - Maurice, after eating a banana.",
+          "shortdescription": "Banan AR",
+          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundar/skins/starforge-bananar.png:idle",
+          "animationParts": {
+            "middle": "/items/active/weapons/ranged/unbound/unboundar/skins/starforge-bananar.png",
+            "middleFullbright" : ""
+          },
+          "animationCustom" : { 
+            "sounds": {
+  	          "altFire" : [ 
+                "/sfx/humanoid/apexhurt_male1.ogg",
+                "/sfx/humanoid/apexhurt_male2.ogg",
+                "/sfx/humanoid/apexhurt_male3.ogg" 
+              ],
+              "fire": [ 
+                "/sfx/humanoid/apexhurt_male1.ogg",
+                "/sfx/humanoid/apexhurt_male2.ogg",
+                "/sfx/humanoid/apexhurt_male3.ogg" 
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
   //ACE - wingman and ol reliable
   {
     "op": "add",

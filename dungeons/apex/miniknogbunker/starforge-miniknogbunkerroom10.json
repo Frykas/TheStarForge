@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJx7w8DA8GYUjzjMxMDQAMISQPaaYYYlkPyHz98w9nDBo\/4e9feovxFq3NHwQLubVIzuflr4G10ttcOKHPPJ9Tep7pqGhqntb0rNH\/X3qL9H\/T0y\/Y1c9uEqQ4cqRvbTqL9HdnttFI8MDABU+rA3",
+         "data":"eJzt0rEJQCEMRdGHU2Qj13IgR3OI\/wWFVBY2QnKLC6\/MgQxJg9JVpDazf\/dgmfOd3HtHCTdu3Lhf34kbN27cuO\/ddWVuR8mbcOf+c8rRBxuMuCc=",
          "encoding":"base64",
          "height":19,
          "id":1,
@@ -62,261 +62,163 @@
                  "y":144
                 }, 
                 {
-                 "gid":2707,
-                 "height":40,
-                 "id":910,
-                 "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"defaultLightState\" : false }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":328,
-                 "y":112
-                }, 
-                {
-                 "gid":2707,
-                 "height":40,
+                 "gid":2477,
+                 "height":64,
                  "id":911,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"defaultLightState\" : false }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":136,
-                 "y":112
+                 "x":80,
+                 "y":136
                 }, 
                 {
-                 "gid":2480,
-                 "height":16,
+                 "gid":2636,
+                 "height":64,
+                 "id":912,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":120,
+                 "y":136
+                }, 
+                {
+                 "gid":2636,
+                 "height":64,
                  "id":913,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"treasurePools\" : [ \"starforge-miniknogbunkertreasure\" ] }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":288,
+                 "width":32,
+                 "x":160,
                  "y":136
                 }, 
                 {
-                 "gid":2480,
-                 "height":16,
+                 "gid":2147486125,
+                 "height":64,
                  "id":914,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"treasurePools\" : [ \"starforge-miniknogbunkertreasure\" ] }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":280,
-                 "y":120
+                 "width":32,
+                 "x":304,
+                 "y":136
                 }, 
                 {
-                 "gid":2480,
-                 "height":16,
+                 "gid":2147486284,
+                 "height":64,
                  "id":915,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"treasurePools\" : [ \"starforge-miniknogbunkertreasure\" ] }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":272,
+                 "width":32,
+                 "x":344,
                  "y":136
                 }, 
                 {
-                 "gid":2147486128,
-                 "height":16,
+                 "gid":2147486284,
+                 "height":64,
                  "id":916,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"treasurePools\" : [ \"starforge-miniknogbunkertreasure\" ] }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":208,
+                 "width":32,
+                 "x":384,
                  "y":136
                 }, 
                 {
-                 "gid":2147486128,
+                 "gid":2510,
                  "height":16,
                  "id":917,
                  "name":"",
-                 "properties":
-                    {
-                     "parameters":"{ \"treasurePools\" : [ \"starforge-miniknogbunkertreasure\" ] }"
-                    },
-                 "propertytypes":
-                    {
-                     "parameters":"string"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":192,
+                 "width":42,
+                 "x":248,
                  "y":136
                 }, 
                 {
-                 "gid":6602,
-                 "height":8,
+                 "gid":2147486158,
+                 "height":16,
                  "id":918,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":184,
-                 "y":24
+                 "width":42,
+                 "x":208,
+                 "y":136
                 }, 
                 {
-                 "gid":6602,
+                 "gid":2473,
                  "height":8,
                  "id":919,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":101,
-                 "y":23.75
+                 "width":8,
+                 "x":224,
+                 "y":120
                 }, 
                 {
-                 "gid":6602,
+                 "gid":2473,
                  "height":8,
                  "id":920,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":379,
-                 "y":24.25
+                 "width":8,
+                 "x":264,
+                 "y":120
                 }, 
                 {
-                 "gid":6602,
+                 "gid":2622,
                  "height":8,
                  "id":921,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":296,
-                 "y":24
+                 "width":8,
+                 "x":232,
+                 "y":120
                 }, 
                 {
+                 "gid":2622,
                  "height":8,
                  "id":923,
                  "name":"",
-                 "properties":
-                    {
-                     "npc":"apex",
-                     "typeName":"apexscout"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "typeName":"string"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":88,
-                 "y":112
+                 "x":280,
+                 "y":120
                 }, 
                 {
-                 "height":8,
-                 "id":924,
-                 "name":"",
-                 "properties":
-                    {
-                     "npc":"apex",
-                     "typeName":"apexscout"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "typeName":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":392,
-                 "y":112
-                }, 
-                {
-                 "gid":2631,
-                 "height":48,
-                 "id":925,
+                 "gid":2721,
+                 "height":16,
+                 "id":926,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":24,
-                 "x":232,
-                 "y":136
+                 "width":16,
+                 "x":208,
+                 "y":120
                 }, 
                 {
-                 "gid":2782,
-                 "height":48,
-                 "id":927,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":112,
-                 "x":192,
-                 "y":72
-                }, 
-                {
-                 "gid":2557,
+                 "gid":2762,
                  "height":16,
                  "id":928,
                  "name":"",
@@ -324,68 +226,50 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":376,
-                 "y":112
+                 "x":248,
+                 "y":120
                 }, 
                 {
-                 "gid":2557,
-                 "height":16,
+                 "height":8,
                  "id":929,
                  "name":"",
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"labscientist"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
+                 "width":8,
                  "x":296,
-                 "y":112
+                 "y":120
                 }, 
                 {
-                 "gid":2557,
-                 "height":16,
-                 "id":931,
+                 "height":8,
+                 "id":930,
                  "name":"",
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"labscientist"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":184,
-                 "y":112
-                }, 
-                {
-                 "gid":2557,
-                 "height":16,
-                 "id":932,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":104,
-                 "y":112
-                }, 
-                {
-                 "gid":2492,
-                 "height":16,
-                 "id":933,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":424,
-                 "y":72
-                }, 
-                {
-                 "gid":2492,
-                 "height":16,
-                 "id":934,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":40,
-                 "y":72
+                 "width":8,
+                 "x":152,
+                 "y":120
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -463,7 +347,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":935,
+ "nextobjectid":931,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",
