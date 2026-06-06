@@ -141,16 +141,20 @@ end
 
 function uninit()
   status.clearPersistentEffects("frostSlow")
+  local totalDamage = 0
   for _, frostId in ipairs(self.frost) do
-    if world.entityExists(frostId) then      
-      status.applySelfDamageRequest({
-        damageType = "IgnoresDef",
-        damage = self.shatterDamage,
-        damageSourceKind = "starforge-tidalfrost",
-        sourceEntityId = entity.id()
-      })
+    if world.entityExists(frostId) then
+      totalDamage = totalDamage + self.shatterDamage
       world.callScriptedEntity(frostId, "kill")
     end
+  end  
+  if totalDamage > 0 then
+    status.applySelfDamageRequest({
+      damageType = "IgnoresDef",
+      damage = totalDamage,
+      damageSourceKind = "starforge-tidalfrost",
+      sourceEntityId = entity.id()
+    })
   end
 end
 

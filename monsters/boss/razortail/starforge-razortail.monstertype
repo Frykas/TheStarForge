@@ -27,7 +27,7 @@
 	
 	  "dropPools" : [ "starforge-razortailtreasure" ],
 	
-    "skillCount" : 4,
+    "skillCount" : 5,
     "skills" : [ "razortailIdle", "razortailWalk", "razortailTeleportTailStrike", "razortailTeleportDropStrike", "razortailMeleeCombo" ],
 
     "phases" : [
@@ -49,7 +49,7 @@
 
     "alwaysAggressive" : true,
 
-    "scale" : 1,
+    "scale" : 0.4,
 
     "movementSettings" : {
       "gravityEnabled" : true,

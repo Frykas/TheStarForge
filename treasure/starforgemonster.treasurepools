@@ -384,7 +384,7 @@
       "pool" : [
         {"weight" : 0.75, "pool" : "chestMoney"},
         {"weight" : 0.01, "item" : "starforge-cubeofrazortail"},
-        {"weight" : 0.24, "item" : "starforge-razortailweapons"}
+        {"weight" : 0.24, "pool" : "starforge-razortailweapons"}
       ],
       "poolRounds" : [
         [1, 1]

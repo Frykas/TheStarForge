@@ -3,22 +3,23 @@
   "blockingStat" : "starforge-tidalfrostStatusImmunity",
 
   "effectConfig" : {
-    "directive" : "fade=000000=0.75",
-    "deathDirective" : "fade=000000=0.95",
+    "directive" : "fade=041614;0.75?border=1;b8e6d0ff",
+    "deathDirective" : "fade=041614;0.75?border=1;b8e6d0ff",
 
     "frostProjectileType" : "starforge-tidalfreeze",
     "sizeToFrostFactor" : 0.1,       //size is based on entity boundbox, players/npcs are 1.22 punchy is 2.25, adultpoptop is 2.75, size / sizeToFrostFactor = maximum number of frost shards
     "timeBetweenFrost" : [2, 4],
     "speedMultiplierLostPerFrost" : 0.05,  //1 - (number of frosts * speedMultiplierLostPerFrost) is the speed multiplier, capped at 0]
-    
+    "minimumFrostCount" : 2,
+
     "heatGainScale" : 0.5,
     "heatDecayRate" : 2.0,
     "heatThreshold" : 20,
 
-    "frostBreakCooldown" : 3,
+    "frostBreakCooldown" : 2.75,
 
     "shatterChanceOnHit" : 0.25,
-    "shatterDamage" : 10
+    "shatterDamage" : 7
   },
   "defaultDuration" : 20,
 

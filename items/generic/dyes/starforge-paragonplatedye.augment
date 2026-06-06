@@ -1,0 +1,20 @@
+{
+  "itemName" : "starforge-paragonplatedye",
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "category" : "clothingDye",
+  "inventoryIcon" : "starforge-paragonplatedye.png",
+  "description" : "This coloured dye can be applied to a piece of armour or clothing with a right-click.",
+  "shortdescription" : "Paragon Plate Dye",
+
+  "dyeDirectives" : {
+    "ffca8a" : "4e3d5b", "e0975c" : "292030", "a85636" : "201424", "6f2919" : "130c19",
+    "ea6a56FE" : "dfe7cbFE", "b9182aFE" : "cc8ff5FE", "842138FE" : "8d6fc8FE",
+    "ea6a56" : "dfe7cb", "b9182a" : "cc8ff5", "842138" : "8d6fc8",
+    "24232f" : "51443f", "3d3d51" : "8c7a67", "676f83" : "b6a6a4", "9da8af" : "d0d1de"
+  },
+
+  "radioMessagesOnPickup" : [ "pickupdye" ],
+
+  "scripts" : [ "/scripts/augments/dye.lua" ]
+}
