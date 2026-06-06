@@ -7,10 +7,10 @@
   "description" : "A cold highbrand, sapping the heat from around it.",
   "shortdescription" : "Rimestealer",
 
-  "inventoryIcon" : "starforge-stormcrestmountedicon.png:default",
+  "inventoryIcon" : "starforge-rimestealer.png:default",
   "orientations" : [
     {
-      "dualImage" : "starforge-stormcrestmounted.png:<color>.filled",
+      "dualImage" : "starforge-rimestealer.png:<color>.filled",
       "imagePosition" : [0, 0],
 
       "spaceScan" : 0.1,

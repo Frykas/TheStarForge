@@ -1,0 +1,13 @@
+{
+  "name" : "razortailMeleeCombo",
+  "label" : "OH FUCK OH SHIT OH FUCK",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/razortail/skills/razortailMeleeCombo.lua" ],
+
+    "razortailMeleeCombo" : {
+      "skillDuration" : 0.25
+	  }
+  }
+}

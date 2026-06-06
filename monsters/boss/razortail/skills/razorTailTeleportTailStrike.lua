@@ -1,26 +1,26 @@
-razorTailTeleportTailStrike = {}
+razortailTeleportTailStrike = {}
 
-function razorTailTeleportTailStrike.enter()
+function razortailTeleportTailStrike.enter()
   if not hasTarget() then return nil end
 
   return {
-    timer = config.getParameter("razorTailTeleportTailStrike.winddownDuration", 2.5),
-    projectileDelay = config.getParameter("razorTailTeleportTailStrike.projectileDelay", 0.5),
-    teleportXOffset = config.getParameter("razorTailTeleportTailStrike.teleportXOffset", 7),
-    tooCloseRange = config.getParameter("razorTailTeleportTailStrike.tooCloseRange", 4),
+    timer = config.getParameter("razortailTeleportTailStrike.winddownDuration", 0.5),
+    projectileDelay = config.getParameter("razortailTeleportTailStrike.projectileDelay", 0.5),
+    teleportXOffset = config.getParameter("razortailTeleportTailStrike.teleportXOffset", 7),
+    tooCloseRange = config.getParameter("razortailTeleportTailStrike.tooCloseRange", 4),
 
-    projectileType = config.getParameter("razorTailTeleportTailStrike.projectileType", "standardBullet"),
-    projectileConfig = config.getParameter("razorTailTeleportTailStrike.projectileConfig", {}),
-    projectileOffset = config.getParameter("razorTailTeleportTailStrike.projectileOffset", {2, 0})
+    projectileType = config.getParameter("razortailTeleportTailStrike.projectileType", "standardBullet"),
+    projectileConfig = config.getParameter("razortailTeleportTailStrike.projectileConfig", {}),
+    projectileOffset = config.getParameter("razortailTeleportTailStrike.projectileOffset", {2, 0})
   }
 end
 
-function razorTailTeleportTailStrike.enteringState(stateData)
-  monster.setActiveSkillName("razorTailTeleportTailStrike")
-  razorTailTeleportTailStrike.teleport(stateData)
+function razortailTeleportTailStrike.enteringState(stateData)
+  monster.setActiveSkillName("razortailTeleportTailStrike")
+  razortailTeleportTailStrike.teleport(stateData)
 end
 
-function razorTailTeleportTailStrike.update(dt, stateData) 
+function razortailTeleportTailStrike.update(dt, stateData) 
   if stateData.timerActive then
     stateData.timer = math.max(0, stateData.timer - dt)
     
@@ -31,7 +31,7 @@ function razorTailTeleportTailStrike.update(dt, stateData)
   return false
 end
 
-function razorTailTeleportTailStrike.teleport(stateData)
+function razortailTeleportTailStrike.teleport(stateData)
   local directionToPlayer = util.toDirection(world.distance(mcontroller.position(), self.targetPosition)[1])
   local teleportPosition = calculatePosition(self.targetPosition, {-directionToPlayer * stateData.teleportXOffset, 0})
   if world.magnitude(teleportPosition, mcontroller.position()) > stateData.tooCloseRange then
@@ -39,7 +39,7 @@ function razorTailTeleportTailStrike.teleport(stateData)
       teleportPosition,
       0,
       function()
-        razorTailTeleportTailStrike.slashProjectile(stateData, directionToPlayer)
+        razortailTeleportTailStrike.slashProjectile(stateData, directionToPlayer)
       end
     )
   else
@@ -48,7 +48,7 @@ function razorTailTeleportTailStrike.teleport(stateData)
   end
 end
 
-function razorTailTeleportTailStrike.slashProjectile(stateData, directionToPlayer)
+function razortailTeleportTailStrike.slashProjectile(stateData, directionToPlayer)
   animator.setAnimationState("body", "tailStrike")
   wait(
     stateData.projectileDelay,
@@ -70,5 +70,5 @@ function razorTailTeleportTailStrike.slashProjectile(stateData, directionToPlaye
     end)
 end
 
-function razorTailTeleportTailStrike.leavingState(stateData)
+function razortailTeleportTailStrike.leavingState(stateData)
 end

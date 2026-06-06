@@ -81,6 +81,14 @@
       "path": "/mods_present/MorePlanetInfo",
       "inverse": false
     },
+  
+    {
+      "op": "add",
+      "path": "/weatherThreatValues",
+      "value": {
+        "starforge-rottingwinds" : 3.0
+      }
+    },
 	
     //Display Dungeons
     { 
@@ -170,13 +178,6 @@
         "description" : "Miniknog lifesigns are detected in an underground bunker. They may be hostile..", 
         "icon" : "/interface/cockpit/dungeons/miniknogbunkericon.png" 
       }
-    },
-
-	  //Weather Threat Levels
-    { 
-      "op" : "add",
-      "path" : "/weatherThreatValues/starforge-rottingwinds", 
-      "value" : 3 
     },
 
 	  //Name List

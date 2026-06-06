@@ -362,8 +362,53 @@
       ],
       "allowDuplication" : false
     }]
+  ],
+    
+  // ==============================================================================================
+  //                                      RAZORTAIL
+  // ==============================================================================================
+  "starforge-razortailtreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "chestMoney"},
+        {"weight" : 0.01, "item" : "starforge-cubeofrazortail"},
+        {"weight" : 0.14, "item" : "starforge-razortailweapons"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ]
+    } ]
+  ],
+  "starforge-murakrazortailtreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.75, "pool" : "chestMoney"},
+        {"weight" : 0.01, "item" : "starforge-cubeofrazortail"},
+        {"weight" : 0.24, "item" : "starforge-razortailweapons"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ]
+    } ]
+  ],
+  "starforge-razortailweapons" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "starforge-tidebossweapons"},
+        {"weight" : 0.15, "item" : [ "banana", 1]}  //replace with unique later
+      ],
+      "allowDuplication" : false
+    }]    
+  ],
+  "starforge-tidebossweapons" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.03, "item" : [ "starforge-parafracture", 1]},
+        {"weight" : 0.03, "item" : [ "starforge-harbour", 1]}
+      ],
+      "allowDuplication" : false
+    }]    
   ]
   
-  
-  }
+}
   

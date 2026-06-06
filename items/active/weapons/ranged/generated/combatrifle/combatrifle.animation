@@ -1,6 +1,7 @@
 {
   "globalTagDefaults" : {
     "paletteSwaps" : "",
+    "partImage" : "",
     "elementalDirectives" : ""
   },
 

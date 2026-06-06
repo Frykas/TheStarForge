@@ -70,7 +70,7 @@ function stunBoss(duration, endFunc)
     self.stunned = true
     animator.setAnimationState("body", "stunIn")
 
-    util.wait(duration)
+    wait(duration)
 
     self.stunned = false
     animator.setAnimationState("body", "stunOut")
@@ -104,7 +104,9 @@ function wait(time, holdFunc, endFunc)
     local timer = time
     local dt = script.updateDt()
     while timer > 0 do
-      if holdFunc ~= nil and holdFunc(dt, timer) then return end
+      if holdFunc ~= nil and holdFunc(dt, timer) == true then
+        timer = 0
+      end
       timer = timer - dt
       coroutine.yield(false)
     end
@@ -131,7 +133,7 @@ function calculatePosition(middlePoint, offset, grounded, alwaysAcrossMiddle)
     end
   end
 
-  local poly = {{-2.25, 2.25}, {2.25, 2.25}, {2.25, -2.25}, {-2.25, -2.25}}
+  local poly = mcontroller.collisionPoly()
 
   local resolvedPosition = world.resolvePolyCollision(poly, position, 4) or position
   local correctedPositionAndNormal = {resolvedPosition, nil}
@@ -307,7 +309,7 @@ function update(dt)
         if bossReset then bossReset() end
         monster.setDamageBar("None")
         cullMusicStagehand()
-    setBattleMusicEnabled(false)
+        setBattleMusicEnabled(false)
         monster.setAggressive(false)
       end
 
@@ -318,24 +320,12 @@ function update(dt)
       end
 
       cullMusicStagehand()
-    setBattleMusicEnabled(false)
+      setBattleMusicEnabled(false)
     end
 
     self.hadTarget = hasTarget()
   end
-
-  self.onGround = mcontroller.groundMovement() or mcontroller.onGround()
   
-  world.debugText("%s", self.onGround, mcontroller.position(), "green")
-  if self.onGround and (animator.animationState("body") == "falling" or animator.animationState("body") == "jumping") then
-    animator.setAnimationState("body", "idle")
-  elseif not self.onGround and (animator.animationState("body") == "idle" or animator.animationState("body") == "falling" or animator.animationState("body") == "jumping") then
-    if mcontroller.yVelocity() > 0 then
-      animator.setAnimationState("body", "jumping")
-    else
-      animator.setAnimationState("body", "falling")
-    end
-  end
   --world.debugText("Current state: %s", self.phaseStates[currentPhase()].stateDesc() or "N/A", mcontroller.position(), "red")
 end
 

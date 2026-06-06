@@ -47,7 +47,7 @@
   "animation" : "/objects/dungeons/hillofswords/buriedsword/starforge-buriedsword.animation",
   "animationParts" : {
     "sword" : "starforge-ancientrootstatue.png",
-    "swordFullbright" : "starforge-ancientrootstatuefullbright.png"
+    "swordFullbright" : "starforge-ancientrootstatuelit.png"
   },
   "animationCustom" : {
     "sounds" : {

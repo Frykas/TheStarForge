@@ -23,7 +23,7 @@
 
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "progenitorspikedbomb.png:1.active"}, { "image" : "progenitorspikedbombfullbright.png:1.active", "fullbright" : true } ],
+      "imageLayers" : [ { "image" : "progenitorspikedbomb.png:active.1"}, { "image" : "progenitorspikedbombfullbright.png:active.1", "fullbright" : true } ],
       "imagePosition" : [-4, 0],
 
       "direction" : "left",
@@ -36,7 +36,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "imageLayers" : [ { "image" : "progenitorspikedbomb.png:1.active"}, { "image" : "progenitorspikedbombfullbright.png:1.active", "fullbright" : true } ],
+      "imageLayers" : [ { "image" : "progenitorspikedbomb.png:active.1"}, { "image" : "progenitorspikedbombfullbright.png:active.1", "fullbright" : true } ],
       "imagePosition" : [-4, 0],
 
       "direction" : "right",

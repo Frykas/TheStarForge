@@ -1,25 +1,25 @@
 {
-  "name" : "razortailTeleportTailStrike",
+  "name" : "razortailTeleportDropStrike",
   "label" : "OH FUCK OH SHIT OH FUCK",
   "image" : "/monsters/generated/ground/skills/icon.png",
 
   "parameters" : {
-    "scripts" : [ "/monsters/boss/razortail/skills/razortailTeleportTailStrike.lua" ],
+    "scripts" : [ "/monsters/boss/razortail/skills/razortailTeleportDropStrike.lua" ],
 
-    "razortailTeleportTailStrike" : {
+    "razortailTeleportDropStrike" : {
       "skillDuration" : 1.25,
       "projectileDelay" : 0.2,
-      "teleportXOffset" : 17,
+      "teleportXOffset" : 15,
       "tooCloseRange" : 5,
       "winddownDuration" : 0.5,
 
       "projectileType" : "starforge-tidalblast",
       "projectileConfig" : {
-        "power" : 15,
-        "speed" : 100,
-        "timeToLive" : 1.5
+        "power" : 30,
+        "speed" : 3,
+        "timeToLive" : 0.05
       },
-      "projectileOffset" : [2, -1]
+      "projectileOffset" : [0, -1]
 	  }
   }
 }

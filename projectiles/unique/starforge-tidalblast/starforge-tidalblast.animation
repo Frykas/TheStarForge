@@ -2,6 +2,6 @@
   "frames" : "starforge-tidalblast.png",
   "variants" : 1,
   "frameNumber" : 13,
-  "animationCycle" : 2,
+  "animationCycle" : 0.7,
   "offset" : [0, 0]
 }

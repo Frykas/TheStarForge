@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgFtATWEpiYEnARim0lcOOLSOpfQzGpbqUWwOdOSgC13YorTKkFqBX3IJDJgD2uBxvIRGKPupNykElYCdH5\/TUNMShdEqt2IN1JCh5156g7h7s7YXXUYHUncp0\/WMOTnm4kx53obVFauAm5\/USOO7G1mantVmxtPWLcOQooAwAuHl50",
+         "data":"eJxjYBgFtATWEpiYEnARim0lcOOLSOpfQzGpbqUWwOdOSgC13YorTKkFqBX3IJDJgD2uBxvIRGKPupNykElYCdH5\/TUNMShdEqt2IN1JCh5156g7h4s76eUnWJ03WN2J3IYYrOGJz42DwZ3obVt0+waDO7G1wZHdimzuKKAtAABtUjur",
          "encoding":"base64",
          "height":22,
          "id":2,
@@ -58,7 +58,7 @@
                  "type":"",
                  "visible":true,
                  "width":20,
-                 "x":232,
+                 "x":80,
                  "y":160
                 }, 
                 {

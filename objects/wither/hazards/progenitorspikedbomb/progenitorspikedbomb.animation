@@ -42,19 +42,19 @@
           "activeState" : {
             "active" : {
               "properties" : {
-                "image" : "<partImage>:<variant>.active"
+                "image" : "<partImage>:active.<variant>"
               }
             },
 
             "inactive" : {
               "properties" : {
-                "image" : "<partImage>:<variant>.inactive"
+                "image" : "<partImage>:inactive.<variant>"
               }
             },
 
             "regrow" : {
               "properties" : {
-                "image" : "<partImage>:<variant>.regrow.<frame>"
+                "image" : "<partImage>:regrow.<frame>.<variant>"
               }
             }
           }
@@ -73,19 +73,19 @@
           "activeState" : {
             "active" : {
               "properties" : {
-                "image" : "<partImage>:<variant>.active"
+                "image" : "<partImage>:active.<variant>"
               }
             },
 
             "inactive" : {
               "properties" : {
-                "image" : "<partImage>:<variant>.inactive"
+                "image" : "<partImage>:inactive.<variant>"
               }
             },
 
             "regrow" : {
               "properties" : {
-                "image" : "<partImage>:<variant>.regrow.<frame>"
+                "image" : "<partImage>:regrow.<frame>.<variant>"
               }
             }
           }

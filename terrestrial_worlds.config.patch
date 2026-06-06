@@ -12,7 +12,9 @@
           "secondaryRegions" : ["starforge-blackrot"], // Planet secondary regions
           "dungeons" : [
 			      [1.0, "apextestfacility"],
+			      [1.0, "glitchsewer"],
 			      [1.0, "starforge-locustdojo"],
+			      [1.0, "starforge-hillofswords"],
 			      [1.0, "starforge-miniknogbunker"]
           ]
         },

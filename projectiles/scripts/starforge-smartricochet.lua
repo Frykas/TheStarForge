@@ -8,7 +8,7 @@ function init(...) if starforge_smartRicochet_init then starforge_smartRicochet_
   self.ricochetProjectileType = config.getParameter("ricochetProjectileType", config.getParameter("projectileName"))
   self.ricochetCount = config.getParameter("ricochetCount", 1)
   self.ricochetDamageMultiplier = config.getParameter("ricochetDamageMultiplier", 0.95)
-  self.ricochetQueryRange = config.getParameter("ricochetQueryRange", 50)
+  self.ricochetQueryRange = config.getParameter("ricochetQueryRange", 25)
   self.excludedEntityId = nil
 
   self.targetSpeed = config.getParameter("speed", 50)
@@ -16,7 +16,7 @@ end
 
 starforge_smartRicochet_update = update
 function update(dt) if starforge_smartRicochet_update then starforge_smartRicochet_update(dt) end
-  local collision = world.lineTileCollisionPoint(mcontroller.position(), vec2.add(mcontroller.position(), vec2.mul(vec2.norm(mcontroller.velocity()), 2)))
+  local collision = world.lineTileCollisionPoint(mcontroller.position(), vec2.add(mcontroller.position(), vec2.mul(vec2.norm(mcontroller.velocity()), 2)), {"Block", "Dynamic", "Slippery"})
   if collision then
     ricochet(collision)
   end

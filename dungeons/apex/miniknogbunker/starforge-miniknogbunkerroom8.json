@@ -166,27 +166,6 @@
          "name":"monsters & npcs",
          "objects":[
                 {
-                 "height":8,
-                 "id":915,
-                 "name":"",
-                 "properties":
-                    {
-                     "npc":"apex",
-                     "typeName":"merchant"
-                    },
-                 "propertytypes":
-                    {
-                     "npc":"string",
-                     "typeName":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":328,
-                 "y":120
-                }, 
-                {
                  "gid":469,
                  "height":16,
                  "id":916,

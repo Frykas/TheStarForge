@@ -63,7 +63,8 @@
       "type" : "teslaboltsmall",
       "fuzzAngle" : 180,
 	  "config": {
-	  "piercing":true
+	  "piercing":true,
+    "damageKind" : "electricplasma"
 	  },
       "angleAdjust" : 0
 	  }],

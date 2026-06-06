@@ -15,6 +15,13 @@
           "idle" : {
             "frames" : 1
           },
+          "sleeping" : {
+            "frames" : 6,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+
+          //MOVEMENT
           "walk" : {
             "frames" : 8,
             "cycle" : 0.8,
@@ -25,6 +32,29 @@
           },
           "falling" : {
             "frames" : 1
+          },
+
+          //ATTACKS
+          "flipslash" : {
+            "frames" : 1
+          },
+          "bite" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "clawSlash" : {
+            "frames" : 5,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "tailWhip" : {
+            "frames" : 7,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "idle"
           },
           "tailStrike" : {
             "frames" : 5,
@@ -62,6 +92,13 @@
                 "image" : "<partImage>:idle"
               }
             },
+            "sleeping" : {
+              "properties" : {
+                "image" : "<partImage>:sleeping.<frame>"
+              }
+            },
+
+            //MOVEMENT
             "jumping" : {
               "properties" : {
                 "image" : "<partImage>:jumping"
@@ -75,6 +112,23 @@
             "walk" : {
               "properties" : {
                 "image" : "<partImage>:walk.<frame>"
+              }
+            },
+
+            //ATTACKS
+            "flipslash" : {
+              "properties" : {
+                "image" : "<partImage>:flipslash"
+              }
+            },
+            "clawSlash" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.<frame>"
+              }
+            },
+            "tailWhip" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhip.<frame>"
               }
             },
             "tailStrike" : {
@@ -108,6 +162,11 @@
             "idle" : {
               "properties" : {
                 "image" : "<partImage>:idle"
+              }
+            },
+            "sleeping" : {
+              "properties" : {
+                "image" : "<partImage>:sleeping.<frame>"
               }
             },
             "jumping" : {

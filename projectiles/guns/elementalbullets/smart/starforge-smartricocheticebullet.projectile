@@ -123,5 +123,6 @@
   "ricochetDamageMultiplier" : 0.6,
   "piercing" : false,
   "bounces" : -1,
+  "ricochetQueryRange" : 25,
   "damageRepeatTimeout" : 0.1
 }

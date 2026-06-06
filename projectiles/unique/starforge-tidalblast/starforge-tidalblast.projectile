@@ -8,7 +8,7 @@
   "pointLight" : true,
   "timeToLive" : 1,
   "statusEffects" : [ "starforge-tidalfreeze" ],
-  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "damagePoly" : [ [-25, 0], [-22, -22], [0, -25], [22, -22], [25, 0], [22, 22], [0, 30], [-22, 22] ],
   "animationLoops" : false,
   "periodicActions" : [
     {
@@ -103,7 +103,7 @@
             "approach" : [0.5, 0.5],
             "fullbright" : true,
             "layer" : "back",
-            "timeToLive" : 2,
+            "timeToLive" : 0.7,
             "variance" : {
               "timeToLive" : 0.15,
               "position" : [3, 3],
