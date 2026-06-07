@@ -143,6 +143,18 @@
       "allowDuplication" : false
     }]
   ],
+  
+  "starforge-unboundpilotcache" : [
+    [0, {
+      "fill" : [
+        {"weight" : 1, "item" : "starforge-unboundpilothead"},
+        {"weight" : 1, "item" : "starforge-unboundpilotchest"},
+        {"weight" : 1, "item" : "starforge-unboundpilotpants"}
+      ],  
+	       "poolRounds" : 4,
+      "allowDuplication" : false
+    }]
+  ],
    
    "starforge-unboundstalkercache" : [
     [0, {

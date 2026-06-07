@@ -5,10 +5,11 @@
   "spawnProfile" : {
     "groups" : [
       {
-        "select" : 2,
+        "select" : 3,
         "pool" : [
-          [ 0.5, "starforge-blackrotfly" ],
-          [ 0.5, "starforge-blackrotstinger" ]
+          [ 0.33, "starforge-blackrotfly" ],
+          [ 0.33, "starforge-blackrotstinger" ],
+          [ 0.33, "starforge-blackrotcrutter" ]
         ]
       },
       {

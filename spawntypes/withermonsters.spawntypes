@@ -76,6 +76,22 @@
       "monsterParameters" : {
         "aggressive" : true
       }
+    },
+	
+	{
+	  "name" : "starforge-blackrotcrutter",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "exposed",
+		"time" : "all"
+	  },
+	  
+	  "groupSize" : [1, 1],
+	  "spawnChance" : 0.03,
+      "monsterType" : "starforge-blackrotcrutter",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
     }
   
   ]

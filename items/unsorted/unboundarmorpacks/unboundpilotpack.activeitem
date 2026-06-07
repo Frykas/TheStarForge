@@ -1,0 +1,24 @@
+{
+  "itemName" : "starforge-unboundpilotpack",
+  "price" : 1000,
+  "level" : 1,
+  "maxStack" : 1000,
+  "rarity" : "legendary",
+  "category" : "Armor Pack",
+  "description" : "An Unbound pack, containing pilot armor.",
+  "shortdescription" : "Pilot Pack",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "piloticon.png",
+  "animation" : "unboundpilotpack.animation",
+  "animationCustom" : {},
+  "scripts" : ["unboundarmorpack.lua"],
+
+  "fireTime" : 0.5,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "starforge-unboundpilotcache",
+    "level" : 1
+  }
+}

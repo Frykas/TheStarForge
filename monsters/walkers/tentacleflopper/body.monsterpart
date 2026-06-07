@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-tentacleflopper",
+  "category" : "tentacleflopper",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "tentacleflopper.png"
+  }
+}

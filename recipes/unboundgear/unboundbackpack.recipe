@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "titaniumbar", "count" : 4},
+	{ "item" : "silk", "count" : 1}
+  ],
+  "output" : {
+    "item" : "starforge-unboundback",
+    "count" : 1
+  },
+  "groups" : [ "starforge-unboundgear", "armor" ],
+  "duration" : 0
+}
+
