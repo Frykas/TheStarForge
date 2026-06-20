@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-shadowmeatsmoke",
+
+  "effectConfig" : {},
+  "defaultDuration" : 15,
+
+  "scripts" : [],
+
+  "animationConfig" : "starforge-shadowmeatsmoke.animation"
+}
