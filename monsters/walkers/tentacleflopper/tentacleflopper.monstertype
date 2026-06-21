@@ -46,8 +46,8 @@
             "leapVelocity" : 10,
             "collisionCheck" : true,
             "highArc" : false,
-            "leapState" : "fall",
-            "fallState" : "fall",
+            "leapState" : "jump",
+            "jumpState" : "jump",
 
             "winddownState" : "idle",
             "winddownTime" : 0.0

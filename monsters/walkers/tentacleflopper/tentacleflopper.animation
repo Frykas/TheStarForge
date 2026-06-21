@@ -13,7 +13,7 @@
             "cycle" : 0.7,
             "mode" : "loop"
           },
-          "fall" : {
+          "jump" : {
             "frames" : 1
           }
 		  
@@ -71,9 +71,9 @@
                 "image" : "<partImage>:walk.<frame>"
               }
             },
-            "fall" : {
+            "jump" : {
               "properties" : {
-                "image" : "<partImage>:fall.<frame>"
+                "image" : "<partImage>:jump.<frame>"
               }
             }
           },

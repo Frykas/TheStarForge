@@ -4,8 +4,8 @@
   "rarity" : "Essential",
   "category" : "craftingMaterial",
   "inventoryIcon" : "exaltingcharge.png",
-  "description" : "A fragment of extreme power. Used to empower your armor at the Exalting station.",
-  "shortdescription" : "^#FFE998;Exalting Charge^white;",
+  "description" : "A supremely powerful energy charge, made from the galaxy's strongest and most esoteric power sources.",
+  "shortdescription" : "^#FFE998;Exalting Charge^reset;",
   "tooltipFields" : {"rarityLabel" : "Exalted"},
   "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
 }

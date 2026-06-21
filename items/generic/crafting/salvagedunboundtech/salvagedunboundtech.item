@@ -4,7 +4,7 @@
   "rarity" : "Legendary",
   "category" : "craftingMaterial",
   "inventoryIcon" : "salvagedunboundtech.png",
-  "description" : "Fragments of technology stolen from the Unbound. Might be useful.",
-  "shortdescription" : "Unbound Salvaged Tech",
+  "description" : "A module full of override routines. Used to gain control of advanced technology.",
+  "shortdescription" : "Override Module",
   "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
 }

@@ -4,7 +4,7 @@
   "rarity" : "Essential",
   "category" : "craftingMaterial",
   "inventoryIcon" : "exaltedenergy.png",
-  "description" : "A rare variation of Ancient Essence, powering the Vault Guardians. ",
-  "shortdescription" : "^#FFE998;Exalted Energy^white;",
+  "description" : "The still active heart of an Anciant Guardian. A strong power source.",
+  "shortdescription" : "Guardian Heart",
   "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
 }

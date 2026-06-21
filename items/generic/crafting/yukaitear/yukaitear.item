@@ -1,10 +1,10 @@
 {
   "itemName" : "starforge-yukaitear",
   "price" : 1200,
-  "rarity" : "Essential",
+  "rarity" : "legendary",
   "category" : "craftingMaterial",
   "inventoryIcon" : "yukaitear.png",
   "description" : "Said to be a crystallised tear of an Ashen Witch. Used in certain Yukai rituals.",
-  "shortdescription" : "^#FFE998;Ashen Witch Tear^white;",
+  "shortdescription" : "Ashen Witch Tear",
   "itemTags" : ["starforge-starforge", "reagent"]
 }
