@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legwear",
-  "description" : "Not every Apex is willing to join the Unbound and blindly follow Apolleon's orders. This armor is a proof of that.",
+  "description" : "Apolleon viewed them as too extremist, and sent them to be forever banished. They did not agree, for the fight wasn't over.",
   "shortdescription" : "^#80F4FF;WARMONGER Greaves^reset;",
   "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "starforge-exaltedwarmongerpants" ],

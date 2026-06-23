@@ -4,7 +4,7 @@
   "rarity" : "Essential",
   "category" : "craftingMaterial",
   "inventoryIcon" : "infusedscrap.png",
-  "description" : "High quality metal scraps, infused with Ancient Essence.",
-  "shortdescription" : "^orange;Infused Metal Scraps ^white;",
+  "description" : "An improvised charge reservoir assembled from spare parts.",
+  "shortdescription" : "^orange;WARMONGER Capacitor^reset;",
   "itemTags" : ["starforge-weaponshop", "starforge-starforge", "reagent"]
 }

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
-  "description" : "This powersuit was designed as a last resort by Apex resistants trying to fight off the Unbound.",
+  "description" : "The conflict created by the rise of the Unbound was not enough. Their appetite for revenge only grew more.",
   "shortdescription" : "^#80F4FF;WARMONGER Powersuit^reset;",
   "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "starforge-exaltedwarmongerchest" ],

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headwear",
-  "description" : "The armor was made to remain extremely resillient despite the materials used for its conception.",
+  "description" : "Originally an independant Apex rebel cell, the Warmongers eventually joined the ranks of the Unbound.",
   "shortdescription" : "^#80F4FF;WARMONGER Helmet^reset;",
   "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "starforge-exaltedwarmongerhead" ],
