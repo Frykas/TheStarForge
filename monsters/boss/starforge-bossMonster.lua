@@ -135,7 +135,7 @@ function calculatePosition(middlePoint, offset, grounded, alwaysAcrossMiddle)
 
   local poly = mcontroller.collisionPoly()
 
-  local resolvedPosition = world.resolvePolyCollision(poly, position, 4) or position
+  local resolvedPosition = world.resolvePolyCollision(poly, position, 10) or position
   local correctedPositionAndNormal = {resolvedPosition, nil}
   if grounded then
     correctedPositionAndNormal = world.lineTileCollisionPoint(resolvedPosition, vec2.add(resolvedPosition, {0, -50})) or {resolvedPosition, 0}

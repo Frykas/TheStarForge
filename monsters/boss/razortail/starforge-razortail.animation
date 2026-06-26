@@ -126,6 +126,11 @@
                 "image" : "<partImage>:clawSlash.<frame>"
               }
             },
+            "bite" : {
+              "properties" : {
+                "image" : "<partImage>:bite.<frame>"
+              }
+            },
             "tailWhip" : {
               "properties" : {
                 "image" : "<partImage>:tailWhip.<frame>"
@@ -169,6 +174,8 @@
                 "image" : "<partImage>:sleeping.<frame>"
               }
             },
+
+            //MOVEMENT
             "jumping" : {
               "properties" : {
                 "image" : "<partImage>:jumping"
@@ -182,6 +189,28 @@
             "walk" : {
               "properties" : {
                 "image" : "<partImage>:walk.<frame>"
+              }
+            },
+
+            //ATTACKS
+            "flipslash" : {
+              "properties" : {
+                "image" : "<partImage>:flipslash"
+              }
+            },
+            "clawSlash" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.<frame>"
+              }
+            },
+            "bite" : {
+              "properties" : {
+                "image" : "<partImage>:bite.<frame>"
+              }
+            },
+            "tailWhip" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhip.<frame>"
               }
             },
             "tailStrike" : {

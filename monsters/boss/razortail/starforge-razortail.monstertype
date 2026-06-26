@@ -22,7 +22,8 @@
     ],
     "dashConfig" : {
       "colour" : [184, 230, 208, 255],
-      "height" : 3
+      "height" : 3,
+      "dashLines" : 15
     },
 	
 	  "dropPools" : [ "starforge-razortailtreasure" ],
@@ -32,7 +33,7 @@
 
     "phases" : [
       {
-        "skills" : [ "razortailMeleeCombo" ]
+        "skills" : [ "razortailWalk", "razortailMeleeCombo", "razortailIdle", "razortailTeleportTailStrike", "razortailTeleportDropStrike", "razortailTeleportTailStrike", "razortailTeleportTailStrike" ]
       }
     ],
 
@@ -49,7 +50,7 @@
 
     "alwaysAggressive" : true,
 
-    "scale" : 0.4,
+    "scale" : 1,
 
     "movementSettings" : {
       "gravityEnabled" : true,

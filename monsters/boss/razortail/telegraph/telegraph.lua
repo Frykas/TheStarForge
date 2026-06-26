@@ -63,7 +63,7 @@ function update()
   if self.dash then
     local dashTime = 0.1
     if #self.dash.lines == 0 then
-      for i = 1, 6 do
+      for i = 1, self.dash.config.dashLines or 15 do
         local first = vec2.withAngle(math.random() * math.pi * 2, math.random() * self.dash.config.height or 6.0)
         local last = vec2.add(first, vec2.sub(self.dash.last, self.dash.first))
         table.insert(self.dash.lines, {
