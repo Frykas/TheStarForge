@@ -12,6 +12,7 @@ end
 
 function razortailWalk.enteringState(stateData)
   monster.setActiveSkillName("razortailWalk")
+  stateData.timer = stateData.timer * self.cooldownFactor
 end
 
 function razortailWalk.update(dt, stateData)  

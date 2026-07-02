@@ -1,5 +1,11 @@
+local baseInit = init
+function init() baseInit()
+  animator.resetTransformationGroup("all")
+end
+
 local baseUpdate = update
 function update(dt) baseUpdate(dt)
+
   self.onGround = mcontroller.groundMovement() or mcontroller.onGround()
   --world.debugText("%s", self.sleepTimer or 0, mcontroller.position(), "green")
   if not hasTarget() then

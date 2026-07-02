@@ -1,0 +1,38 @@
+{
+  "name" : "razortailDashExplosions",
+  "label" : "OH FUCK OH SHIT OH FUCK",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/razortail/skills/razortailDashExplosions.lua" ],
+
+    "razortailDashExplosions" : {
+      "skillDuration" : 0.25,
+
+      "dashWindup" : 0.7,
+
+      "xCast" : 7,
+      "dashSpeed" : 100,
+      "dashTime" : 0.5,
+
+      "projectileType" : "starforge-tidalblast",
+      "projectileConfig" : {
+        "power" : 5,
+        "timeToLive" : 0.1
+      },
+      "projectileInterval" : 0.1,
+
+      "projectileOffset" : [0, -1],
+
+      "damageConfig" : {
+        "poly" : [ [2.5, 1], [6, -1.75], [6, -4], [-6, -4], [-6, -1.75], [-2.5, 1] ],
+        "damage" : 20,
+        "knockback" : 75,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "starforge-tidalfrost",
+        "statusEffects" : [ "starforge-tidalfreeze" ]
+      }
+	  }
+  }
+}

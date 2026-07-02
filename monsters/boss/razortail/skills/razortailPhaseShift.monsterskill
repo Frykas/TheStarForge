@@ -1,0 +1,19 @@
+{
+  "name" : "razortailPhaseShift",
+  "label" : "OH FUCK OH SHIT OH FUCK",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/razortail/skills/razortailPhaseShift.lua" ],
+    "razortailPhaseShift" : {
+    	"skillTime" : 1,
+
+      "projectileType" : "roar",
+      "projectileConfig" : {
+        "power" : 25,
+        "damageKind" : "starforge-tidalfrost"
+      },
+      "roarPosition" : [3.5, 0.25]
+    }
+  }
+}

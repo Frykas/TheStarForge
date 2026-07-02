@@ -18,6 +18,7 @@ end
 function razortailTeleportTailStrike.enteringState(stateData)
   monster.setActiveSkillName("razortailTeleportTailStrike")
   razortailTeleportTailStrike.teleport(stateData)
+  stateData.timer = stateData.timer * self.cooldownFactor
 end
 
 function razortailTeleportTailStrike.update(dt, stateData) 

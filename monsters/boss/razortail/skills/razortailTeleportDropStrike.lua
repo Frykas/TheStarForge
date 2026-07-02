@@ -26,6 +26,7 @@ end
 function razortailTeleportDropStrike.enteringState(stateData)
   monster.setActiveSkillName("razortailTeleportDropStrike")
   razortailTeleportDropStrike.jump(stateData)
+  stateData.timer = stateData.timer * self.cooldownFactor
 end
 
 function razortailTeleportDropStrike.update(dt, stateData) 
@@ -42,7 +43,7 @@ end
 function razortailTeleportDropStrike.jump(stateData)
   mcontroller.setVelocity({0, 35})
   wait(
-    stateData.jumpTime,
+    stateData.jumpTime * self.cooldownFactor,
     nil,
     function()
       razortailTeleportDropStrike.teleport(stateData)
@@ -92,7 +93,7 @@ end
 
 function razortailTeleportDropStrike.leap(stateData, directionToPlayer)
   wait(
-    stateData.landingDelay,
+    stateData.landingDelay * self.cooldownFactor,
     nil,
     function()
       animator.setAnimationState("body", "jumping")

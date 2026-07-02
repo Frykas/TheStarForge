@@ -1,0 +1,34 @@
+{
+  "name" : "razortailFlipSlash",
+  "label" : "OH FUCK OH SHIT OH FUCK",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/razortail/skills/razortailFlipSlash.lua" ],
+
+    "razortailFlipSlash" : {
+      "skillDuration" : 0.25,
+
+      "teleportXOffset" : 18,
+      "windupTime" : 0.5,
+
+      "rotations" : 3,
+      "rotationTime" : 0.4,
+
+      "lowJumpVelocity" : [75, 10],
+      "highJumpVelocity" : [35, 40],
+      "highJumpHeight" : 4,
+      "jumpDuration" : 0.2,
+      
+      "damageConfig" : {
+        "poly" : [ [0, 4], [3, 3], [4, 0], [3, -3], [0, -4], [-3, -3], [-4, 0], [-3, 3] ],
+        "damage" : 25,
+        "knockback" : 55,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "starforge-tidalfrost",
+        "statusEffects" : [ "starforge-tidalfreeze" ]
+      }
+	  }
+  }
+}

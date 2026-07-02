@@ -10,6 +10,7 @@ end
 
 function razortailIdle.enteringState(stateData)
   --monster.setActiveSkillName("razortailIdle")
+  stateData.timer = stateData.timer * self.cooldownFactor
 end
 
 function razortailIdle.update(dt, stateData)  

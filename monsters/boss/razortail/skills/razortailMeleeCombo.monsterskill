@@ -7,7 +7,17 @@
     "scripts" : [ "/monsters/boss/razortail/skills/razortailMeleeCombo.lua" ],
 
     "razortailMeleeCombo" : {
-      "skillDuration" : 0.25
+      "skillDuration" : 0.25, 
+      
+      "damageConfig" : {
+        "poly" : [ [2.5, 1], [7, -1.75], [7, -4], [-7, -4], [-7, -1.75], [-2.5, 1] ],
+        "damage" : 15,
+        "knockback" : 55,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "starforge-tidalfrost",
+        "statusEffects" : [ "starforge-tidalfreeze" ]
+      }
 	  }
   }
 }

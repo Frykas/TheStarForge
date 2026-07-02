@@ -5,10 +5,11 @@ require "/scripts/rect.lua"
 require "/scripts/async.lua"
 
 function init()
+  self.healthCooldownFactor = config.getParameter("healthCooldownFactor")
   self.musicStagehands = {}
 
   self.idleTouchDamage = config.getParameter("idleTouchDamage")
-  self.defaultDamageSources = {self.idleTouchDamage}
+  self.defaultDamageSources = {self.idleTouchDamage or nil}
   self.damageSources = self.defaultDamageSources
   
   self.tookDamage = false
@@ -102,6 +103,7 @@ end
 function wait(time, holdFunc, endFunc)
   self.activeCoroutines["wait"] = coroutine.create(function()
     local timer = time
+
     local dt = script.updateDt()
     while timer > 0 do
       if holdFunc ~= nil and holdFunc(dt, timer) == true then
@@ -139,6 +141,7 @@ function calculatePosition(middlePoint, offset, grounded, alwaysAcrossMiddle)
   local correctedPositionAndNormal = {resolvedPosition, nil}
   if grounded then
     correctedPositionAndNormal = world.lineTileCollisionPoint(resolvedPosition, vec2.add(resolvedPosition, {0, -50})) or {resolvedPosition, 0}
+    correctedPositionAndNormal[1] = vec2.add(correctedPositionAndNormal[1], {0, 4})
   end
   correctedPositionAndNormal = world.lineTileCollisionPoint(middlePoint, correctedPositionAndNormal[1]) or {correctedPositionAndNormal[1], 0}
   resolvedPosition = world.resolvePolyCollision(poly, correctedPositionAndNormal[1], 4) or correctedPositionAndNormal[1]
@@ -199,7 +202,7 @@ function updateDamageSources(damageSource, ignoreDefault)
   if not ignoreDefault then
     table.insert(damageSources, self.idleTouchDamage)
   end
-  if type(damageSource) == "table" then
+  if damageSource and not damageSource.poly then
     for _, source in ipairs(damageSource) do 
       table.insert(damageSources, source)
     end
@@ -254,6 +257,10 @@ function update(dt)
     elseif coroutine.status(co) == "dead" then
       self.activeCoroutines[name] = nil
     end
+  end
+  
+  if self.healthCooldownFactor then
+    self.cooldownFactor = self.healthCooldownFactor[1] + (status.resourcePercentage("health") * (self.healthCooldownFactor[2] - self.healthCooldownFactor[1]))
   end
 
   --Clean dead stagehands

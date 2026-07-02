@@ -1,5 +1,6 @@
 {
   "globalTagDefaults" : {
+    "bodyDirectives" : ""
   },
 
   "animatedParts" : {
@@ -20,6 +21,17 @@
             "cycle" : 1.0,
             "mode" : "loop"
           },
+          "roar" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "roarHold"
+          },
+          "roarHold" : {
+            "frames" : 1,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
 
           //MOVEMENT
           "walk" : {
@@ -35,6 +47,16 @@
           },
 
           //ATTACKS
+          "dashWindup" : {
+            "cycle" : 0.3,
+            "frames" : 3
+          },
+          "dash" : {
+            "frames" : 1
+          },
+          "flipslashWindup" : {
+            "frames" : 1
+          },
           "flipslash" : {
             "frames" : 1
           },
@@ -89,61 +111,86 @@
             },
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle"
+                "image" : "<partImage>:idle<bodyDirectives>"
               }
             },
             "sleeping" : {
               "properties" : {
-                "image" : "<partImage>:sleeping.<frame>"
+                "image" : "<partImage>:sleeping.<frame><bodyDirectives>"
+              }
+            },
+            "roar" : {
+              "properties" : {
+                "image" : "<partImage>:bite.<frame><bodyDirectives>"
+              }
+            },
+            "roarHold" : {
+              "properties" : {
+                "image" : "<partImage>:bite.4<bodyDirectives>"
               }
             },
 
             //MOVEMENT
             "jumping" : {
               "properties" : {
-                "image" : "<partImage>:jumping"
+                "image" : "<partImage>:jumping<bodyDirectives>"
               }
             },
             "falling" : {
               "properties" : {
-                "image" : "<partImage>:falling"
+                "image" : "<partImage>:falling<bodyDirectives>"
               }
             },
             "walk" : {
               "properties" : {
-                "image" : "<partImage>:walk.<frame>"
+                "image" : "<partImage>:walk.<frame><bodyDirectives>"
               }
             },
 
             //ATTACKS
+            "dashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.<frame><bodyDirectives>"
+              }
+            },
+            "dash" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.4<bodyDirectives>"
+              }
+            },
+            "flipslashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.1<bodyDirectives>"
+              }
+            },
             "flipslash" : {
               "properties" : {
-                "image" : "<partImage>:flipslash"
+                "image" : "<partImage>:flipslash<bodyDirectives>"
               }
             },
             "clawSlash" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.<frame>"
+                "image" : "<partImage>:clawSlash.<frame><bodyDirectives>"
               }
             },
             "bite" : {
               "properties" : {
-                "image" : "<partImage>:bite.<frame>"
+                "image" : "<partImage>:bite.<frame><bodyDirectives>"
               }
             },
             "tailWhip" : {
               "properties" : {
-                "image" : "<partImage>:tailWhip.<frame>"
+                "image" : "<partImage>:tailWhip.<frame><bodyDirectives>"
               }
             },
             "tailStrike" : {
               "properties" : {
-                "image" : "<partImage>:tailStrike.<frame>"
+                "image" : "<partImage>:tailStrike.<frame><bodyDirectives>"
               }
             },
             "tailStrikeWinddown" : {
               "properties" : {
-                "image" : "<partImage>:tailStrikeWinddown.<frame>"
+                "image" : "<partImage>:tailStrikeWinddown.<frame><bodyDirectives>"
               }
             }
           }
@@ -174,6 +221,16 @@
                 "image" : "<partImage>:sleeping.<frame>"
               }
             },
+            "roar" : {
+              "properties" : {
+                "image" : "<partImage>:bite.<frame>"
+              }
+            },
+            "roarHold" : {
+              "properties" : {
+                "image" : "<partImage>:bite.4"
+              }
+            },
 
             //MOVEMENT
             "jumping" : {
@@ -193,6 +250,21 @@
             },
 
             //ATTACKS
+            "dashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.<frame><bodyDirectives>"
+              }
+            },
+            "dash" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.4<bodyDirectives>"
+              }
+            },
+            "flipslashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.1"
+              }
+            },
             "flipslash" : {
               "properties" : {
                 "image" : "<partImage>:flipslash"
@@ -242,47 +314,31 @@
       "particles" : [
         {
           "particle" : {
-            "type" : "ember",
-            "size" : 2.0,
-            "color" : [184, 230, 208, 255],
-            "light" : [184, 230, 208],
+            "type" : "animated",
+            "animation" : "/animations/frozendust2/frozendust2.animation",
+            "approach" : [0.5, 0.5],
             "fullbright" : true,
-            "fade" : 0.5,
-            "destructionAction" : "shrink",
-            "destructionTime" : 0.5,
-            "initialVelocity" : [0, 0],
-            "finalVelocity" : [0.0, 0],
-            "approach" : [10, 10],
-            "timeToLive" : 0.15,
-            "layer" : "middle",
+            "timeToLive" : 2.0,
             "variance" : {
-              "initialVelocity" : [5, 5],
-              "size" : 1.0,
-              "timeToLive" : 0.1,
-              "destructionTime" : 0.3
+              "timeToLive" : 0.4,
+              "position" : [3, 3],
+              "initialVelocity" : [1, 1],
+              "rotation" : 180
             }
           }
         },
         {
           "particle" : {
-            "type" : "ember",
-            "size" : 2.0,
-            "color" : [184, 184, 208, 255],
-            "light" : [184, 184, 208],
+            "type" : "animated",
+            "animation" : "/animations/statuseffects/frozen/frozen.animation",
+            "approach" : [0.5, 0.5],
             "fullbright" : true,
-            "fade" : 0.5,
-            "destructionAction" : "shrink",
-            "destructionTime" : 0.5,
-            "initialVelocity" : [0, 0],
-            "finalVelocity" : [0, 0],
-            "approach" : [10, 10],
-            "timeToLive" : 0.15,
-            "layer" : "middle",
+            "timeToLive" : 0.5,
             "variance" : {
-              "initialVelocity" : [5, 5],
-              "size" : 1.0,
-              "timeToLive" : 0.1,
-              "destructionTime" : 0.3
+              "timeToLive" : 0.15,
+              "position" : [3, 3],
+              "initialVelocity" : [1, 1],
+              "rotation" : 180
             }
           }
         }
@@ -325,13 +381,17 @@
       "pool" : [ ],
       "rangeMultiplier" : 1.5
     },
+    "roar" : {
+      "pool" : [ "/sfx/npc/boss/crystalboss_pain1.ogg", "/sfx/npc/boss/crystalboss_pain2.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
     "tailStrike" : {
       "pool" : [ "/sfx/gun/starforge_tidalfrostblast.ogg" ],
       "rangeMultiplier" : 1.5
     },
 
     "blinkDash" : {
-      "pool" : [ "/sfx/npc/boss/cultistboss_blink.ogg" ],
+      "pool" : [ "/sfx/npc/boss/cultistboss_sphere_attack.ogg" ],
       "rangeMultiplier" : 1.5
     }
   },

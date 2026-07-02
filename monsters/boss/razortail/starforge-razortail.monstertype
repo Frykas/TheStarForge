@@ -25,15 +25,46 @@
       "height" : 3,
       "dashLines" : 15
     },
+
+    "healthCooldownFactor" : [2, 0.5],
 	
 	  "dropPools" : [ "starforge-razortailtreasure" ],
 	
-    "skillCount" : 5,
-    "skills" : [ "razortailIdle", "razortailWalk", "razortailTeleportTailStrike", "razortailTeleportDropStrike", "razortailMeleeCombo" ],
+    "skillCount" : 9,
+    "skills" : [
+      "razortailIdle",
+      "razortailWalk", 
+      "razortailTeleportTailStrike", 
+      "razortailTeleportDropStrike", 
+      "razortailMeleeCombo",
+      "razortailFlipSlash",
+      "razortailDashExplosions",
+      
+      "razortailPhaseShift",
+      "razortailFinalPhaseShift"
+    ],
 
     "phases" : [
       {
-        "skills" : [ "razortailWalk", "razortailMeleeCombo", "razortailIdle", "razortailTeleportTailStrike", "razortailTeleportDropStrike", "razortailTeleportTailStrike", "razortailTeleportTailStrike" ]
+        "skills" : [ "razortailWalk", "razortailIdle", "razortailFlipSlash", "razortailMeleeCombo" ]
+      },
+      {
+        "enterPhase" : "razortailPhaseShift",
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.8,
+        "skills" : [ "razortailIdle", "razortailFlipSlash", "razortailDashExplosions", "razortailWalk", "razortailMeleeCombo", "razortailTeleportTailStrike", "razortailMeleeCombo" ]
+      },
+      {
+        "enterPhase" : "razortailPhaseShift",
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.55,
+        "skills" : [ "razortailWalk", "razortailDashExplosions", "razortailMeleeCombo", "razortailWalk", "razortailFlipSlash", "razortailTeleportDropStrike", "razortailTeleportTailStrike", "razortailTeleportTailStrike", "razortailTeleportTailStrike" ]
+      },
+      {
+        "enterPhase" : "razortailFinalPhaseShift",
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.2,
+        "skills" : [ "razortailTeleportDropStrike", "razortailFlipSlash", "razortailTeleportTailStrike", "razortailTeleportTailStrike", "razortailDashExplosions", "razortailMeleeCombo" ]
       }
     ],
 
@@ -74,10 +105,10 @@
     "blockedSensors" : [ [1.5, -4.5], [1.5, -3.5], [1.5, -2.5], [1.5, -1.5], [1.5, -0.5], [1.5, 0.5] ],
     "fallSensors" : [ [2, -3.5], [2, -5.5], [2, -6.5], [4, -4.5], [4, -5.5], [4, -6.5] ],
 
-    "touchDamage" : {
+    "idleTouchDamage" : {
       "poly" : [ [2.5, 1], [4.5, -1.75], [4.5, -4], [-4.5, -4], [-4.5, -1.75], [-2.5, 1] ],
-      "damage" : 55,
-	    "knockback" : 55,
+      "damage" : 5,
+	    "knockback" : 5,
 
       "teamType" : "enemy",
       "damageSourceKind" : "starforge-tidalfrost",
@@ -106,7 +137,7 @@
           "baseValue" : 1.0
         },
         "maxHealth" : {
-          "baseValue" : 1000
+          "baseValue" : 2000
         },
         "protection" : {
           "baseValue" : 35
@@ -150,6 +181,20 @@
         "powerMultiplier" : {
           "baseValue" : 1.0
         },
+
+        "starforge-surgeResistance" : {
+          "baseValue" : -0.5
+        },
+        "starforge-tidalfrostResistance" : {
+          "baseValue" : 0.5
+        },
+        "starforge-witherResistance" : {
+          "baseValue" : 0.75
+        },
+        "starforge-soulflameResistance" : {
+          "baseValue" : 0
+        },
+		
 		
         "starforge-tidalfrostStatusImmunity" : { "baseValue" : 1 },
         "starforge-witherStatusImmunity" : { "baseValue" : 1 },

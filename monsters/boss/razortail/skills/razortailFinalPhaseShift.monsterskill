@@ -1,0 +1,20 @@
+{
+  "name" : "razortailFinalPhaseShift",
+  "label" : "OH FUCK OH SHIT OH FUCK",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/razortail/skills/razortailFinalPhaseShift.lua" ],
+    "razortailFinalPhaseShift" : {
+    	"skillTime" : 1,
+
+      "projectileType" : "roar",
+      "projectileConfig" : {
+        "power" : 25,
+        "damageKind" : "starforge-tidalfrost"
+      },
+      "roarPosition" : [3.5, 0.25],
+      "bodyDirectives" : "?crop=0;0;1;1"
+    }
+  }
+}
