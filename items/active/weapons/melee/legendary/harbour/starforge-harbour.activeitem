@@ -97,6 +97,7 @@
     "projectileType" : "starforge-tidalblast",
     "projectileParameters" : {
       "timeToLive" : 0.25,
+      "power" : 7,
       "speed" : 25
     },
     "shockWaveBounds" : [-0.4, -1.375, 0.4, 0.0],

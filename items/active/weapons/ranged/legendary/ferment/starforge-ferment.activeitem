@@ -61,7 +61,7 @@
     "pitchVariance" : 0.4,
 	
     "fireTime" : 0.22,
-    "baseDps" : 14.5,
+    "baseDps" : 10.5,
     "energyUsage" : 40.0,
     "inaccuracy" : 0.0,
 	

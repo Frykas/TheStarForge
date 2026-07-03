@@ -69,7 +69,7 @@
     "class": "StarforgeGunFire",
 	
     "fireTime": 0.42,
-    "baseDps": 5,
+    "baseDps": 4.55,
     "energyUsage": 20,
     "inaccuracy": 0.03,
 	

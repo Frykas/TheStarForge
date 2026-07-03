@@ -23,7 +23,7 @@
     "middle": "starforge-frenzy.png",
     "barrel": "",
 	  "middleFullbright": "starforge-frenzyfullbright.png",
-    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/sweartarforge-firemuzzleflash.png"
   },
   "animationCustom": {
     "animatedParts" : {
@@ -68,7 +68,7 @@
     "class": "StarforgeGunFire",
 	
     "fireTime": 0.97,
-    "baseDps": 7,
+    "baseDps": 6,
     "energyUsage": 25,
     "inaccuracy": 0.125,
 	

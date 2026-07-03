@@ -26,7 +26,7 @@
       "dashLines" : 15
     },
 
-    "healthCooldownFactor" : [2, 0.5],
+    "healthCooldownFactor" : [1.5, 0.1],
 	
 	  "dropPools" : [ "starforge-razortailtreasure" ],
 	
@@ -137,7 +137,7 @@
           "baseValue" : 1.0
         },
         "maxHealth" : {
-          "baseValue" : 2000
+          "baseValue" : 2500
         },
         "protection" : {
           "baseValue" : 35
@@ -146,13 +146,13 @@
           "baseValue" : 0.0
         },
         "fireResistance" : {
-          "baseValue" : -0.25
+          "baseValue" : -0.1
         },
         "iceResistance" : {
-          "baseValue" : 0.25
+          "baseValue" : 0.35
         },
         "electricResistance" : {
-          "baseValue" : 0.5
+          "baseValue" : -0.125
         },
         "poisonResistance" : {
           "baseValue" : 0.0
@@ -183,13 +183,13 @@
         },
 
         "starforge-surgeResistance" : {
-          "baseValue" : -0.5
+          "baseValue" : -0.15
         },
         "starforge-tidalfrostResistance" : {
-          "baseValue" : 0.5
+          "baseValue" : 0.45
         },
         "starforge-witherResistance" : {
-          "baseValue" : 0.75
+          "baseValue" : 0.65
         },
         "starforge-soulflameResistance" : {
           "baseValue" : 0
