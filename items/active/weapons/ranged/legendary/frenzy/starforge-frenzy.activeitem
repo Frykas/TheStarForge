@@ -23,7 +23,7 @@
     "middle": "starforge-frenzy.png",
     "barrel": "",
 	  "middleFullbright": "starforge-frenzyfullbright.png",
-    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/sweartarforge-firemuzzleflash.png"
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
   },
   "animationCustom": {
     "animatedParts" : {
