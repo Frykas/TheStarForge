@@ -2,6 +2,7 @@
   "objectName" : "starforge-masamune",
   "colonyTags" : ["hylotl"],
   "rarity" : "essential",
+  "uniqueId" : "starforge-masamune",
   "category" : "crafting",
   "price" : 20000,
     "interactAction" : "OpenCraftingInterface",
@@ -19,8 +20,8 @@
     "filter" : ["starforge-masamune"]
   },
   "printable" : false,
-  "offeredQuests" : ["yukaiforgemasterquest2"],
-  "turnInQuests" : ["yukaiforgemasterquest2"],
+  "offeredQuests" : ["yukaiforgemasterquest2", "yukaigreathunt3"],
+  "turnInQuests" : ["yukaiforgemasterquest2", "yukaigreathunt3"],
   
   "description" : "Masamune, a Yukai Forgemaster who joined the Thalasso looking for a greater purpose.",
   "shortdescription" : "Masamune",

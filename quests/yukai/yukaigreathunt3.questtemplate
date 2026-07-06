@@ -1,0 +1,43 @@
+{
+  "id" : "yukaigreathunt3",
+  "prerequisites" : [  "yukaiforgemasterquest2" ],
+  "title" : "^#b4f5c3;Chasing Shadows",
+  "text" : "You've slain more impressive creatures than some of the strongest Yukai warriors. I can think only of one last challenge for you, one that triumphed over dozen of Yukai hunting parties. They called her Murak, the Last Shadow. I trust she'll be your match. ",
+  "completionText" : "You're leaving me speechless. She was a legend among the Yukai, unkillable, faster than any arrow, and smarter than any hunter. You've proved yourself a legend of your own. Be proud, I'll remember you for as long as I can breath.",
+  "moneyRange" : [1250, 1250],
+  "rewards" : [
+    [ [ "starforge-muraktrophy", 1 ], [ "starforge-bloodveil-recipe", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+  
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/crafting/yukaishop/masamuneportrait.png"} ],
+        "title" : "Masamune"
+      },
+      "questComplete" : "questReceiver"
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Masamune^reset; to travel to the ^orange;Hunting Grounds^reset;.",
+      "findGoal" : "Find and hunt Murak.",
+      "turnIn" : "Return to ^orange;Masamune^reset; at the ^orange;Thalasso Outpost^reset;"
+    },
+
+    "warpEntityUid" : "starforge-masamune",
+    "warpAction" : "instanceworld:starforge-razortailhunt",
+    "warpDialog" : "/interface/confirmation/starforgeteleportconfirmation.config:starforge-yukaihunt3",
+
+    "goalTrigger" : "message",
+    "triggerMessage" : "starforge-yukaihuntcomplete",
+	
+    "goalEntityUid" : "starforge-masamune",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+
+    "turnInEntityUid" : "starforge-masamune"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "objectName" : "starforge-charveilskull",
+  "rarity" : "essential",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "The skull of an extinct creature. It had sharp teeth.",
+  "shortdescription" : "Feline Skull",
+  "race" : "glitch",
+
+  "floranDescription" : "Ssskull of dead creature... Sssharp teeth!",
+  "glitchDescription" : "Curious. This skull belonged to a feline. Its teeth were sharp.",
+  "novakidDescription" : "Oh. Cool skull.",
+  "humanDescription" : "A smilodon skull! How rare!",
+  "hylotlDescription" : "This beast has sharp teeth.",
+  "avianDescription" : "This predator looks like it would make a meal out of me if it was still alive!", 
+  "apexDescription" : "A feline skull. Its teeth could probably be used for something.",
+
+  "inventoryIcon" : "charveilskullicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "charveilskull.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "starforge-charveil",
+
+  "animation" : "charveilskull.animation",
+  "animationParts" : {
+    "object" : "charveilskull.png"
+  }
+}
