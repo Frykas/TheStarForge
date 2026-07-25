@@ -6,20 +6,35 @@
         "default" : "idle",
         "states" : {
           "idle" : {
-            "frames" : 1
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "loop"
           },
           "walk" : {
             "frames" : 8,
-            "cycle" : 0.8,
+            "cycle" : 0.5,
             "mode" : "loop"
           },
-          "windup" : {
-            "frames" : 5,
-            "cycle" : 0.8
+          "jump" : {
+            "frames" : 1,
+            "cycle" : 0.3
+          },
+          "fall" : {
+            "frames" : 1,
+            "cycle" : 0.3
           },
           "fire" : {
-            "frames" : 5,
-            "cycle" : 0.5
+            "frames" : 8,
+            "cycle" : 1
+          },
+          "firewindup" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          },
+          "firewinddown" : {
+            "frames" : 8,
+            "cycle" : 1
           }
         }
       },
@@ -61,7 +76,7 @@
       "body" : {
         "properties" : {
           "transformationGroups" : [ "body" ],
-          "offset" : [0.0, 0.625]
+          "offset" : [-0.0625, 0.6875]
         },
         "partStates" : {
           "body" : {
@@ -75,14 +90,29 @@
                 "image" : "<partImage>:walk.<frame>"
               }
             },
-            "windup" : {
+            "jump" : {
               "properties" : {
-                "image" : "<partImage>:fire.<frame>"
+                "image" : "<partImage>:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "<partImage>:fall.<frame>"
               }
             },
             "fire" : {
               "properties" : {
                 "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "firewindup" : {
+              "properties" : {
+                "image" : "<partImage>:firewindup.<frame>"
+              }
+            },
+            "firewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:firewinddown.<frame>"
               }
             }
           },
@@ -113,15 +143,15 @@
   "particleEmitters" : {
     "deathPoof" : {
       "particles" : [
-        { "particle" : "greenmonstersplosion" },
-        { "particle" : "greendeathember" },
-        { "particle" : "greendeathember" },
-        { "particle" : "greendeathember" },
-        { "particle" : "greendeathember" },
-        { "particle" : "greendeathember" },
-        { "particle" : "greendeathember" },
-        { "particle" : "greendeathember" },
-        { "particle" : "greendeathember" },
+        { "particle" : "monstersplosion" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
         { "particle" : "deathfizz1left" },
         { "particle" : "deathfizz1right" },
         { "particle" : "deathfizz2left" },

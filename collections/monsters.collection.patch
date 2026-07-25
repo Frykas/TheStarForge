@@ -125,7 +125,7 @@
 	  "path": "/collectables/tanglevinereanimator",
 	  "value": 	  
 	  {
-	    "order" : 113,
+	    "order" : 114,
 	    "monsterType" : "starforge-tanglevinereanimator",
 	    "icon" : "/monsters/flyers/tanglevinereanimator/icon.png"
 	  }
@@ -136,9 +136,19 @@
 	  "path": "/collectables/witherhusk",
 	  "value": 	  
 	  {
-	    "order" : 114,
+	    "order" : 116,
 	    "monsterType" : "starforge-witherhusk",
 	    "icon" : "/monsters/walkers/witherhusk/icon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/withercharhound",
+	  "value": 	  
+	  {
+	    "order" : 115,
+	    "monsterType" : "starforge-withercharhound",
+	    "icon" : "/monsters/walkers/withercharhound/withercharhoundicon.png"
 	  }
 	},
 	{
@@ -146,7 +156,7 @@
 	  "path": "/collectables/blackrotfly",
 	  "value": 	  
 	  {
-	    "order" : 115,
+	    "order" : 117,
 	    "monsterType" : "starforge-blackrotfly",
 	    "icon" : "/monsters/flyers/blackrotfly/blackrotflyicon.png"
 	  }
@@ -157,9 +167,20 @@
 	  "path": "/collectables/blackrotstinger",
 	  "value": 	  
 	  {
-	    "order" : 116,
+	    "order" : 118,
 	    "monsterType" : "starforge-blackrotstinger",
 	    "icon" : "/monsters/walkers/blackrotstinger/blackrotstingericon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/blackrotcrutter",
+	  "value": 	  
+	  {
+	    "order" : 119,
+	    "monsterType" : "starforge-blackrotcrutter",
+	    "icon" : "/monsters/walkers/blackrotcrutter/blackrotcruttericon.png"
 	  }
 	},
 	
@@ -179,7 +200,7 @@
 	  "path": "/collectables/unboundelecdrone",
 	  "value": 	  
 	  {
-	    "order" : 117,
+	    "order" : 121,
 	    "monsterType" : "starforge-unboundelecdrone",
 	    "icon" : "/monsters/crawlers/unboundelecdrone/unboundelecdrone-full.png"
 	  }
@@ -190,7 +211,7 @@
 	  "path": "/collectables/unboundicedrone",
 	  "value": 	  
 	  {
-	    "order" : 118,
+	    "order" : 122,
 	    "monsterType" : "starforge-unboundicedrone",
 	    "icon" : "/monsters/walkers/unboundicedrone/unboundicedroneicon.png"
 	  }
@@ -201,7 +222,7 @@
 	  "path": "/collectables/unboundbombdrone",
 	  "value": 	  
 	  {
-	    "order" : 119,
+	    "order" : 123,
 	    "monsterType" : "starforge-unboundbombdrone",
 	    "icon" : "/monsters/crawlers/unboundbombdrone/unboundbombdrone-full.png"
 	  }
@@ -211,7 +232,7 @@
 	  "path": "/collectables/heavyelecdrone",
 	  "value": 	  
 	  {
-	    "order" : 120,
+	    "order" : 124,
 	    "monsterType" : "starforge-unboundheavyelecdrone",
 	    "icon" : "/monsters/flyers/heavyelecdrone/heavyelecdrone.png"
 	  }

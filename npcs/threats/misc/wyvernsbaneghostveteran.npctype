@@ -242,6 +242,9 @@
         },
         "grit" : {
           "baseValue" : 0
+        },
+		"starforge-witherWeatherStatusImmunity" : {
+          "baseValue" : 1.0
         }
     },
 	

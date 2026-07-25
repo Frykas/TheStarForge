@@ -1,14 +1,14 @@
 {
-  "type" : "starforge-blackrotcrutter",
-  "shortdescription" : "Blackrot Crutter",
-  "description" : "A dead crutter brought back by the Blackrot strand.",
+  "type" : "starforge-withercharhound",
+  "shortdescription" : "Mimic Charhound",
+  "description" : "A blasphemous imitation of a fire-breathing beast",
 
-  "categories" : [ "blackrotcrutter" ],
+  "categories" : [ "withercharhound" ],
   "parts" : [ "body" ],
 
-  "animation" : "blackrotcrutter.animation",
+  "animation" : "withercharhound.animation",
 
-  "dropPools" : [ { "default" : "crutterTreasure", "bow" : "crutterHunting" } ],
+  "dropPools" : [ { "default" : "smoglinTreasure", "bow" : "smoglinHunting" } ],
 
   "baseParameters" : {
     "scripts" : [
@@ -33,26 +33,27 @@
       "hostileActions" : [
         {
           "name" : "action-fire",
+          "cooldown" : 6.0,
           "parameters" : {
             "requireLineOfSight" : true,
-            "maximumRange" : 30,
-            "minimumRange" : 10,
-            "windupState" : "windup",
-            "windupTime" : 0.6,
+            "maxYRange" : 2,
+            "maximumRange" : 10,
+            "minimumRange" : 2,
+            "windupState" : "firewindup",
+            "windupTime" : 0.8,
+            "fireDelay" : 1,
 
-            "projectileType" : "starforge-witherneedle",
-            "fireOffset" : [0.5, 0.6875],
-            "aimAtTarget" : true,
-            "fireState" : "fire",
-            "fireDelay" : 0.4,
+            "projectileType" : "smoglingas",
+            "fireOffset" : [3.5 , 0.35],
+            "projectileCount" : 1 ,
+            "projectileInterval" : 0.01,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : false,
             "fireSound" : "fire",
+            "fireState" : "fire",
 
-            "fireArc": true,
-            "projectileSpeed": 65,
-            "gravityMultiplier": 0.4,
-
-            "winddownState" : "",
-            "winddownTime" : 0.1
+            "winddownState" : "firewinddown",
+            "winddownTime" : 1
           }
         }
       ],
@@ -63,7 +64,13 @@
         {
           "name" : "approach-walk",
           "parameters" : {
-            "canJump" : false
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10,
+            "run" : true
           }
         }
       ],
@@ -77,7 +84,13 @@
         {
           "name" : "approach-walk",
           "parameters" : {
-            "canJump" : false
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10,
+            "run" : true
           }
         }
       ],
@@ -94,24 +107,24 @@
     },
 
     "touchDamage" : {
-      "poly" : [ [0.1875, 1.3125], [0.5625, 0.9375], [0.5625, -0.9375], [0.1875, -1.3125], [-0.1875, -1.3125], [-0.5625, -0.9375], [-0.5625, 0.9375], [-0.1875, 1.3125] ],
+      "poly" : [ [1.3125, 1.25], [1.8125, 0.75],  [1.8125, -0.6], [1.3125, -1.2],  [-1.3125, -1.2], [-1.8125, -0.6],  [-1.8125, 0.75], [-1.3125, 1.25] ],
       "damage" : 10,
 
       "teamType" : "enemy",
       "damageSourceKind" : "slash",
       "knockback" : 20,
-      "statusEffects" : ["starforge-wither" ]
+      "statusEffects" : [ ]
     },
 
     "metaBoundBox" : [-4, -4, 4, 4],
     "scale" : 1.0,
 
     "movementSettings" : {
-      "collisionPoly" : [ [0.1875, 1.3125], [0.5625, 0.9375], [0.5625, -0.9375], [0.1875, -1.3125], [-0.1875, -1.3125], [-0.5625, -0.9375], [-0.5625, 0.9375], [-0.1875, 1.3125] ],
+      "collisionPoly" : [ [1.3125, 1.25], [1.8125, 0.75],  [1.8125, -0.6], [1.3125, -1.2],  [-1.3125, -1.2], [-1.8125, -0.6],  [-1.8125, 0.75], [-1.3125, 1.25] ],
 
       "mass" : 1.0,
-      "walkSpeed" : 3,
-      "runSpeed" : 5,
+      "walkSpeed" : 4,
+      "runSpeed" : 8,
 
       "airFriction" : 0,
 
@@ -153,7 +166,7 @@
           "baseValue" : 9
         },
         "maxHealth" : {
-          "baseValue" : 90
+          "baseValue" : 110
         },
         "protection" : {
           "baseValue" : 0.2
@@ -168,7 +181,7 @@
           "baseValue" : 0.4
         },
         "fireResistance" : {
-          "baseValue" : 0.80
+          "baseValue" : 0.90
         },
         "fireStatusImmunity" : {
           "baseValue" : 1.0
@@ -227,6 +240,6 @@
     "capturable" : true,
     "captureHealthFraction" : 0.5,
     "nametagColor" : [64, 200, 255],
-    "captureCollectables" : { "monsters" : "blackrotcrutter" }
+    "captureCollectables" : { "monsters" : "withercharhound" }
   }
 }

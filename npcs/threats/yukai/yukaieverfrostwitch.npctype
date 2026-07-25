@@ -143,14 +143,14 @@
 
 	"innateStatusEffects": ["rage", {
 			"stat": "maxHealth",
-			"amount": 1900
+			"amount": 1000
 		}, {
 			"stat": "powerMultiplier",
 			"amount": 1.60
 		},
 		{
 			"stat": "maxEnergy",
-			"amount": 180
+			"amount": 200
 		}
 	],
 
@@ -178,7 +178,7 @@
 
 	"movementParameters": {
 		"mass": 2.0,
-		"runSpeed": 4,
+		"runSpeed": 6,
 		"airJumpProfile": {
 			"jumpSpeed": 15,
 			"jumpHoldTime": 0,

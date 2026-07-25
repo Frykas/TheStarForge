@@ -143,7 +143,7 @@
 
 	"innateStatusEffects": ["rage", {
 			"stat": "maxHealth",
-			"amount": 2000
+			"amount": 1200
 		}, {
 			"stat": "powerMultiplier",
 			"amount": 1.50
