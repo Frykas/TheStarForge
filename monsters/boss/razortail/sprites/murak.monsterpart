@@ -1,0 +1,10 @@
+{
+  "name" : "starforge-yukairazortailbody",
+  "category" : "starforge-yukairazortail",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "murak.png",
+    "bodyFullbright" : "bodyfullbright.png"
+  }
+}

@@ -635,7 +635,7 @@
                  "name":"",
                  "properties":
                     {
-                     "monster":"starforge-razortail",
+                     "monster":"starforge-yukairazortail",
                      "parameters":"{ \"uniqueId\":\"razortailboss\",\"musicStagehands\" : [\"bossmusic\"] }"
                     },
                  "propertytypes":
@@ -2941,7 +2941,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }],
