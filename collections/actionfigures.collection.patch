@@ -30,5 +30,6 @@
 ,{"op":"add","path":"/collectables/starforge-witherhuskaf","value":{"order":122,"item":"starforge-witherhuskaf"}}
 ,{"op":"add","path":"/collectables/starforge-blackrotflyaf","value":{"order":123,"item":"starforge-blackrotflyaf"}}
 ,{"op":"add","path":"/collectables/starforge-blackstingeraf","value":{"order":124,"item":"starforge-blackrotstingeraf"}}
+,{"op":"add","path":"/collectables/starforge-blackrotcrutteraf","value":{"order":125,"item":"starforge-blackrotcrutteraf"}}
 ]
 //SILBR SOKLOVA PATCH!!!!!!

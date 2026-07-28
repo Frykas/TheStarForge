@@ -8,7 +8,7 @@
 
   "animation" : "blackrotcrutter.animation",
 
-  "dropPools" : [ { "default" : "crutterTreasure", "bow" : "crutterHunting" } ],
+  "dropPools" : [ "blackrotcrutterTreasure" ],
 
   "baseParameters" : {
     "scripts" : [
