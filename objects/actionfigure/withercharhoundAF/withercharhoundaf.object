@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-withercharhoundaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A blasphemous imitation of a fire-breathing beast.\"",
+  "shortdescription" : "Mimic Charhound Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-withercharhoundaf" },
+
+
+  "inventoryIcon" : "withercharhoundaf.png",
+  "orientations" : [
+    {
+      "image" : "withercharhoundaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "withercharhoundaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

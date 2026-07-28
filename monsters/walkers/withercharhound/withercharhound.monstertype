@@ -8,7 +8,7 @@
 
   "animation" : "withercharhound.animation",
 
-  "dropPools" : [ { "default" : "smoglinTreasure", "bow" : "smoglinHunting" } ],
+  "dropPools" : [ "withercharhoundTreasure" ],
 
   "baseParameters" : {
     "scripts" : [
@@ -45,7 +45,7 @@
 
             "projectileType" : "smoglingas",
             "fireOffset" : [3.5 , 0.35],
-            "projectileCount" : 1 ,
+            "projectileCount" : 3 ,
             "projectileInterval" : 0.01,
             "aimDirection" : [1, 0],
             "aimAtTarget" : false,
@@ -57,6 +57,35 @@
           }
         }
       ],
+	  
+	   "damageTakenActions" : [
+        {
+          "name" : "action-invulnerable",
+          "cooldown" : 10,
+          "parameters" : {
+            "windupState" : "",
+            "windupTime" : 0.0,
+
+            "invulnerableState" : "",
+            "invulnerableEffect" : "nova",
+            "invulnerableTime" : 2,
+
+            "winddownTime" : 0.5,
+            "winddownState" : ""
+
+          }
+        }
+      ],
+	  
+	  "invulnerableActions" : [
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "moveState" : "walk"
+          }
+        }
+      ],
+
 
       "periodicActions" : [],
 

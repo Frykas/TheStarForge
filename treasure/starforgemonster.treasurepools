@@ -196,7 +196,8 @@
   "witherhuskTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.99, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.80, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.19, "item" : "bone"},
 		{"weight" : 0.01, "item" : "starforge-witherhuskaf"}
       ],
       "poolRounds" : [
@@ -210,8 +211,25 @@
   "tanglevinereanimatorTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.99, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.80, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.19, "item" : "bone"},
 		{"weight" : 0.01, "item" : "starforge-tanglevinereanimatoraf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "withercharhoundTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.70, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.19, "item" : "bone"},
+		{"weight" : 0.10, "item" : "scorchedcore"},
+		{"weight" : 0.01, "item" : "starforge-withercharhoundaf"}
       ],
       "poolRounds" : [
         [0.60, 1],
