@@ -2,11 +2,15 @@
   "id" : "starforge-warmongerstory3",
   "species" : "apex",
   "title" : "^#80F4FF;Apex Data Pad^reset; - III",
-  "description" : "The story of those who stand against the storm. ^orange;Can be traded for blueprints^reset;.",
+  "description" : "The origin of the rebellion within the rebellion. ^orange;Can be traded for blueprints^reset;.",
   "icon" : "starforge-warmongercover1.png",
   "contentPages" : [
 
-"^gray;The content of this codex is not ready to be read just yet...^reset;"
+"Working under the Unbound was liberating, for him and those of us serving under him. They supported many of our ambitions, made us aware of the Starforges. Even let us use them. Freedom in many ways, bar one. We could not make those whose inaction was more deafening than any shout pay. Not in a way that mattered.",
+
+"We still tried, using that which was at our disposal to prepare for a fight against the non-Apex. But it did not work out. Starvia nosed in on what we were doing, and didn't approve of it. Cut off our resources, our freedom to access the Starforges. Banned us from the Unbound as a whole and even tried sending us to prison.",
+
+"We would not be jailed again, even if in a kinder place. No, on our way to prison we broke free. Used a prototype smuggled aboard the ship by a friend to break out. We had freedom again, but now with our leader at the top. None above to stop him, strip away our freedom. None to prevent us from delivering what was due unto others."
 
   ],
     "itemConfig" : {

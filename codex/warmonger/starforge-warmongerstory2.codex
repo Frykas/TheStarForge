@@ -2,11 +2,15 @@
   "id" : "starforge-warmongerstory2",
   "species" : "apex",
   "title" : "^#80F4FF;Apex Data Pad^reset; - II",
-  "description" : "The story of those who stand against the storm. ^orange;Can be traded for blueprints^reset;.",
+  "description" : "The origin of the rebellion within the rebellion. ^orange;Can be traded for blueprints^reset;.",
   "icon" : "starforge-warmongercover1.png",
   "contentPages" : [
 
-"^gray;The content of this codex is not ready to be read just yet...^reset;"
+"Being forced to partake in that which one does not condone is torture in its own right. Those that could have stopped it standing by is reason to resent. Not that I would have expected better of them, they are not Apex. But for their inaction to allow what the Miniknog did to him? To us? Irredeemable.",
+
+"They tried to break his mind, to tear it down. To rebuild the foundations in obedience to Big Ape. But he did not break. His dignity may have been stripped away, but it left him with a bitter resolve. There were others there imprisoned with him, the only company to be had. Some broke and were whisked away. Of the few whose resolve stood, some became his friends as did I.",
+
+"After ages the Unbound became aware of the prison. They located it, made plans. They freed those that had not been broken, our leader and his friends among them. We had a new home, at least for a time."
 
   ],
     "itemConfig" : {

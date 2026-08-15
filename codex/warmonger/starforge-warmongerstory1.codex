@@ -2,11 +2,15 @@
   "id" : "starforge-warmongerstory1",
   "species" : "apex",
   "title" : "^#80F4FF;Apex Data Pad^reset; - I",
-  "description" : "The story of those who stand against the storm. ^orange;Can be traded for blueprints^reset;.",
+  "description" : "The origin of the rebellion within the rebellion. ^orange;Can be traded for blueprints^reset;.",
   "icon" : "starforge-warmongercover1.png",
   "contentPages" : [
 
-"^gray;The content of this codex is not ready to be read just yet...^reset;"
+"The Miniknog never cared what the ambitions or desires of their scientists were, not unless it went against their own wishes. They made him, our leader, tamper with death. Pouring false life into bodies whose souls had long since departed. Vile abominations, the look of revulsion on his face at mere mention of them equal only to when the most heinous of acts are committed against our own.",
+
+"He tried to reach out, but was met with an uncaring silence. Again he tried, numerous times. With each attempt he lost faith, until he was met with a response. Perhaps one worse than the most deafening of silence.",
+
+"The Miniknog, ever the snooping interlopers, intercepted a plea. They acted without hesitation, throwing him into prison within the hour. Those under and close to him taken in on grounds of association, none from which have been heard from since. With all he once cared for stripped away, they put him through another hell."
 
   ],
     "itemConfig" : {
