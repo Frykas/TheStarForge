@@ -29742,6 +29742,82 @@
                  "width":8,
                  "x":2464,
                  "y":1664
+                }, 
+                {
+                 "height":8,
+                 "id":3417,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-unboundelecdrone"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2824,
+                 "y":264
+                }, 
+                {
+                 "height":8,
+                 "id":3418,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-unboundelecdrone"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":640,
+                 "y":904
+                }, 
+                {
+                 "height":8,
+                 "id":3419,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-unboundelecdrone"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1768,
+                 "y":48
+                }, 
+                {
+                 "height":8,
+                 "id":3420,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-unboundelecdrone"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":3464,
+                 "y":200
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -29750,10 +29826,10 @@
          "y":0
         }],
  "nextlayerid":7,
- "nextobjectid":3416,
+ "nextobjectid":3421,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.0",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {

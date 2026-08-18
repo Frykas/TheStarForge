@@ -8,7 +8,8 @@
         "states" : {
           "idle" : {
             "frames" : 4,
-			"cycle" : 0.4
+			"cycle" : 0.4,
+			"mode" : "loop"
           },
           "fly" : {
             "frames" : 4,

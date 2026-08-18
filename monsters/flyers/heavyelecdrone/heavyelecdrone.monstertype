@@ -17,6 +17,7 @@
     ],
 
     "behavior" : "monster",
+	"deathBehavior" : "monster-death",
 
     "behaviorConfig" : {
       "damageOnTouch" : true,
@@ -27,7 +28,20 @@
       "keepTargetInRange" : 50,
       "targetOutOfSightTime" : 5.0,
 
-
+      "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "starforge-heavydronebody",
+            "projectileParameters" : {},
+            "aimDirection" : [-0.25, 0.25],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0]
+          }
+        }
+      ],
+	  
       "foundTargetActions" : [ ],
 
       "fleeActions" : [ ],
@@ -131,7 +145,7 @@
             "yVelocity" : 12
           }
         }
-      ],
+      ],  
 
       "concurrentActions" : [ ],
 

@@ -1,0 +1,125 @@
+{
+  "projectileName" : "starforge-heavydronebody",
+  "image" : "heavydronebody.png",
+  "physics" : "largeGrenade",
+  "animationCycle" : 2,
+  "frameNumber" : 1,
+  "renderLayer" : "Object+1",
+  "power" : 0,
+  "speed" : 20,
+  "piercing" : true,
+  "initialVelocity" : 20,
+  "timeToLive" : 100,
+  "bounces" : 0,
+  "flippable" : true,
+  "orientationLocked" : false,
+
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/tools/wiretool.ogg" ]
+    }
+  ],
+
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle": 360,
+      "type" : "fireexplosionknockback",
+      "config" : {
+        "statusEffects" : [ "burning" ]
+      }
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/blast_small_fire1.ogg", "/sfx/projectiles/blast_small_fire2.ogg", "/sfx/projectiles/blast_small_fire3.ogg" ]
+    },
+    {
+      "action" : "light",
+      "color" : "orange"
+    },
+    {
+      "action" : "loop",
+      "count" : 3,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/mediumflame/mediumflame.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 1.5,
+                "variance" : {
+                  "position" : [1.5, 1.5],
+                  "initialVelocity" : [1, 1],
+                  "timeToLive" : 0.5,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/starforge-largeflame/starforge-largeflame.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 1.2,
+                "size" : 1,
+                "variance" : {
+                  "position" : [1.5, 1.5],
+                  "initialVelocity" : [1, 1],
+                  "timeToLive" : 0.3,
+                  "size" : 0.25,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "inheritDamageFactor": 0.4,
+      "angleAdjust": 36,
+      "fuzzAngle": 0,
+      "type": "starforge-unboundelecgrenade",
+      "config" : {
+        "bounces" : 1,
+		"initialVelocity" : [8, 8],
+		"timeToLive" : 2
+      },
+      "action": "projectile"
+    },
+    {
+      "inheritDamageFactor": 0.5,
+     "angleAdjust": 72,
+      "fuzzAngle": 0,
+      "type": "starforge-unboundelecgrenade",
+      "config" : {
+        "bounces" : 0,
+		"initialVelocity" : [8, 8],
+		"timeToLive" : 1.4
+      },
+      "action": "projectile"
+    }
+  ],
+  
+  "emitters": ["fireplasma", "smoke", "flames"],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}
