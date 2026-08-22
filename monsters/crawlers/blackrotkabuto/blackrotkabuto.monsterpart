@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-blackrotkabuto",
+  "category" : "blackrotkabuto",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "blackrotkabuto.png"
+  }
+}

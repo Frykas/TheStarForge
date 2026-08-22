@@ -9,10 +9,10 @@
     "bloomProjectileType" : "starforge-witherbloom",
     "sizeToBloomFactor" : 0.45,       //size is based on entity boundbox, players/npcs are 1.22 punchy is 2.25, adultpoptop is 2.75, size / sizeToBloomFactor = maximum number of blooms
     "timeBetweenBlooms" : [4, 8],
-    "damageMultiplierPerBloom" : 0.05,  //this multiplied by the hit, so 0.5 is a 50% damage increase
+    "damageMultiplierPerBloom" : 0.15,  //this multiplied by the hit, so 0.5 is a 50% damage increase
     "bonusDamageKind" : "starforge-wither"    //if unspecified, will just deal the hits damage kind instead
   },
-  "defaultDuration" : 5,
+  "defaultDuration" : 12,
 
   "scripts" : [
     "starforge-wither.lua"

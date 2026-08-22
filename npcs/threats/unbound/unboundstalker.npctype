@@ -37,6 +37,8 @@
             [0, [{
                 "head": [{
                     "name": "starforge-unboundstalkerhead","parameters" : { "colorIndex" : 8 }
+                }, {
+                    "name": "starforge-unboundstalkerheadB","parameters" : { "colorIndex" : 8 }
                 }],
                 "chest": [{
                     "name": "starforge-unboundstalkerchest","parameters" : { "colorIndex" : 8 }

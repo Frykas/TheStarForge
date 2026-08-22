@@ -56,7 +56,7 @@
         "override": [
             [0, [{
                 "head": [{
-                    "name": "starforge-unboundfortressalthead", "parameters" : { "colorIndex" : 5 }
+                    "name": "starforge-unboundfortresshead", "parameters" : { "colorIndex" : 5 }
                 }],
                 "chest": [{
                     "name": "starforge-unboundfortresschest", "parameters" : { "colorIndex" : 5 }
