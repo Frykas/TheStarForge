@@ -116,7 +116,7 @@
 	  "name" : "Execution",
 
     "fireTime" : 2.15,
-    "baseDps" : 11,
+    "baseDps" : 8,
     "energyUsage" : 100,
     "inaccuracy" : 0.0,
 
