@@ -382,7 +382,7 @@
       "rangeMultiplier" : 1.5
     },
     "roar" : {
-      "pool" : [ "/sfx/npc/boss/crystalboss_pain1.ogg", "/sfx/npc/boss/crystalboss_pain2.ogg" ],
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailroar.ogg" ],
       "rangeMultiplier" : 1.5
     },
     "tailStrike" : {
