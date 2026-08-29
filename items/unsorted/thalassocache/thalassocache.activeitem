@@ -2,8 +2,8 @@
   "itemName" : "starforge-thalassocache",
   "rarity" : "Legendary",
   "category" : "mysteriousReward",
-  "description" : "A cache containing a wide range of planetary materials & rare items.",
-  "shortdescription" : "Thalasso Cache",
+  "description" : "A cache containing a wide range of useful materials and healing items.",
+  "shortdescription" : "Elpis Care Package",
   "twoHanded" : true,
 
   "inventoryIcon" : "thalassocacheicon.png",

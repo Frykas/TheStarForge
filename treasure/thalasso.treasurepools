@@ -15,44 +15,61 @@
   ],
   
   "starforge-thalassoTreasure" : [
-    [1, {
-      "pool" : [
-        {"weight" : 0.06, "item" : ["cellmatter", 10]},
-		{"weight" : 0.06, "item" : ["bone", 10]},
-		{"weight" : 0.06, "item" : ["larva", 10]},
-		{"weight" : 0.06, "item" : ["coralfragment", 12]},
-		{"weight" : 0.05, "item" : ["metallic", 10]},
-		{"weight" : 0.05, "item" : ["diamond", 3]},
-		{"weight" : 0.06, "item" : ["giantflowerpetal", 10]},
-		{"weight" : 0.06, "item" : ["glowfibre", 12]},
-		{"weight" : 0.06, "item" : ["corefragmentore", 15]},
-		{"weight" : 0.06, "item" : ["fleshstrand", 10]},
-		{"weight" : 0.05, "item" : ["phasematter", 2]},
-		{"weight" : 0.05, "item" : ["prisiliteore", 10]},
-		{"weight" : 0.05, "item" : ["sharpenedclaw", 2]},
-		{"weight" : 0.05, "item" : ["scorchedcore", 2]},
-		{"weight" : 0.05, "item" : ["staticcell", 2]},
-		{"weight" : 0.05, "item" : ["cryonicextract", 2]},
-		{"weight" : 0.05, "item" : ["venomsample", 2]},
-        {"weight" : 0.04, "item" : "vaultkey"},
-        {"weight" : 0.03, "pool" : "starforge-thalassoweapons"}
+    [0, {
+      "fill" : [
+	    {"weight" : 1, "pool" : "starforge-elpismaterials"},
+        {"weight" : 1, "pool" : "starforge-elpishealing"}
+      ],
+	  "pool" : [
+        {"weight" : 1, "pool" : "starforge-elpisvanity"}
       ],
       "poolRounds" : [
-        [1, 1]
-      ],
+      [0.90, 0],
+      [0.10, 1]
+    ],
       "allowDuplication" : false
     }]
   ],
   
-  "starforge-thalassoweapons" : [
+  "starforge-elpisvanity" : [
   [1, {
    "pool" : [
-    {"weight" : 0.2, "item" : "starforge-marikopistol"},
-	{"weight" : 0.2, "item" : "starforge-marikogun"},
-	{"weight" : 0.1, "item" : "starforge-rubiumcleaver"},
-	{"weight" : 0.1, "item" : "starforge-infusedbroadsword"},
-	{"weight" : 0.3, "item" : "starforge-gravediggershovel"},
-	{"weight" : 0.1, "item" : "starforge-infusedsword"}
+    {"weight" : 0.33, "item" : "starforge-elpissecuritychest"},
+	{"weight" : 0.33, "item" : "starforge-elpissecurityhead"},
+	{"weight" : 0.33, "item" : "starforge-elpissecuritypants"}
+	],
+	"poolRounds" : [
+	  [1, 1]
+	 ],
+	 "allowDuplication" : false
+	}]
+	],
+	
+	"starforge-elpismaterials" : [
+  [1, {
+   "pool" : [
+    {"weight" : 0.125, "item" : ["cellmatter", 40]},
+	{"weight" : 0.125, "item" : ["coralfragment", 15]},
+	{"weight" : 0.125, "item" : ["phasematter", 2]},
+	{"weight" : 0.125, "item" : ["sharpenedclaw", 2]},
+	{"weight" : 0.125, "item" : ["scorchedcore", 2]},
+	{"weight" : 0.125, "item" : ["staticcell", 2]},
+	{"weight" : 0.125, "item" : ["cryonicextract", 2]},
+	{"weight" : 0.125, "item" : ["venomsample", 2]}
+	],
+	"poolRounds" : [
+	  [1, 1]
+	 ],
+	 "allowDuplication" : false
+	}]
+	],
+	
+	"starforge-elpishealing" : [
+  [1, {
+   "pool" : [
+    {"weight" : 0.4, "item" : ["bandage", 5]},
+	{"weight" : 0.35, "item" : ["medkit", 2]},
+	{"weight" : 0.25, "item" : "redstim"}
 	],
 	"poolRounds" : [
 	  [1, 1]

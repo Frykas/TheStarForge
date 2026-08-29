@@ -93,8 +93,8 @@
     "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
     "class" : "StarforgeGunFire",
 
-    "fireTime": 0.95,
-    "baseDps": 12,
+    "fireTime": 0.75,
+    "baseDps": 13,
     "energyUsage": 45,
     "inaccuracy": 0.05,
     "projectileCount": 4,
@@ -172,8 +172,8 @@
       
       "fireType" : "auto",
 	
-      "baseDps" : 10.0,	
-      "fireTime" : 1.65,
+      "baseDps" : 11.0,	
+      "fireTime" : 0.95,
       "energyUsage" : 55,
       "inaccuracy": 0.04
     },

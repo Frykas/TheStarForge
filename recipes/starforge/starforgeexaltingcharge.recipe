@@ -1,7 +1,7 @@
 {
   "input" : [
   	{ "item" : "starforge-katahelcore", "count" : 1},
-	{ "item" : "starforge-exaltedenergy", "count" : 3},
+	{ "item" : "starforge-exaltedenergy", "count" : 2},
 	{ "item" : "starforge-salvagedunboundtech", "count" : 1},
     { "item" : "starforge-yukaipearl", "count" : 5},
     { "item" : "solariumstar", "count" : 30 },

@@ -6,7 +6,7 @@
   "completionText" : "That's the first step down. Vault Guardians contain ^#FFB2B2;Exalted Energy^reset;, a superior, but extremely rare alternative to Ancient Essence.",
   "moneyRange" : [500, 500],
   "rewards" : [
-    [ [ "starforge-exaltedenergy", 2 ] ]
+    [ [ "starforge-exaltedenergy", 1 ] ]
   ],
 
   "updateDelta" : 1,
