@@ -26,12 +26,11 @@
   "progenitorbiomeTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.3, "item" : "starforge-tidekeeperhead"},
-        {"weight" : 0.3, "item" : "starforge-tidekeeperchest"},
-        {"weight" : 0.3, "item" : "starforge-tidekeeperpants"},
+        {"weight" : 0.2, "item" : "starforge-progenitorwitherhead"},
+        {"weight" : 0.1, "item" : "starforge-progenitorwitherback"},
 		{"weight" : 0.3, "pool" : "starforge-progenitorlore"},
-        {"weight" : 0.3, "item" : "starforge-progenitorchest-recipe"},
-		{"weight" : 0.3, "pool" : "starforge-progenitorweapons"},
+        {"weight" : 0.2, "item" : "starforge-progenitorchest-recipe"},
+		{"weight" : 0.2, "pool" : "starforge-progenitorweapons"},
 		{"weight" : 0.3, "pool" : "progenitormaterialTreasure"}
       ]
     }]

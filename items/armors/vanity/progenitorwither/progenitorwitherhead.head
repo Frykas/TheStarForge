@@ -1,0 +1,15 @@
+{
+  "itemName" : "starforge-progenitorwitherhead",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "headarmour",
+  "description" : "Become the bearer of bad news.",
+  "shortdescription" : "Mask of Pervesion",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+}
