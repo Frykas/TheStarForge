@@ -8,8 +8,23 @@
 		"time" : "all"
       },
       "groupSize" : [1, 1],
-      "spawnChance" : 0.01,
+      "spawnChance" : 0.006,
       "monsterType" : "starforge-tanglevinereanimator",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    },
+	
+	{
+	  "name" : "starforge-witherspore",
+	  "spawnParameters" : {
+		"area" : "air",
+		"region" : "exposed",
+		"time" : "all"
+      },
+      "groupSize" : [1, 2],
+      "spawnChance" : 0.01,
+      "monsterType" : "starforge-witherspore",
       "monsterParameters" : {
         "aggressive" : true
       }

@@ -122,6 +122,17 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/witherspore",
+	  "value": 	  
+	  {
+	    "order" : 113,
+	    "monsterType" : "starforge-witherspore",
+	    "icon" : "/monsters/ghosts/witherspore/withersporeicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/tanglevinereanimator",
 	  "value": 	  
 	  {
@@ -181,6 +192,17 @@
 	    "order" : 119,
 	    "monsterType" : "starforge-blackrotcrutter",
 	    "icon" : "/monsters/walkers/blackrotcrutter/blackrotcruttericon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/blackrotkabuto",
+	  "value": 	  
+	  {
+	    "order" : 120,
+	    "monsterType" : "starforge-blackrotkabuto",
+	    "icon" : "/monsters/crawlers/blackrotkabuto/blackrotkabutoicon.png"
 	  }
 	},
 	

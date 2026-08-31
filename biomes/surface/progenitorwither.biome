@@ -5,12 +5,13 @@
   "spawnProfile" : {
     "groups" : [
       {
-        "select" : 4,
+        "select" : 5,
         "pool" : [
-          [ 0.25, "starforge-progenitorslither" ],
-          [ 0.25, "starforge-tanglevineseeker" ],
-		  [ 0.25, "starforge-withercharhound" ],
-		  [ 0.25, "starforge-witherhusk"]
+          [ 0.2, "starforge-progenitorslither" ],
+          [ 0.2, "starforge-tanglevineseeker" ],
+		  [ 0.2, "starforge-withercharhound" ],
+		  [ 0.2, "starforge-witherspore" ],
+		  [ 0.2, "starforge-witherhusk"]
         ]
       },
       {

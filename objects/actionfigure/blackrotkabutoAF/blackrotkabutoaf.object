@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-blackrotkabutoaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"Reanimated by the Blackrot, its hard shell became a soft hive.\"",
+  "shortdescription" : "Blackrot Onikabuto Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-blackrotkabutoaf" },
+
+
+  "inventoryIcon" : "blackrotkabutoaf.png",
+  "orientations" : [
+    {
+      "image" : "blackrotkabutoaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "blackrotkabutoaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

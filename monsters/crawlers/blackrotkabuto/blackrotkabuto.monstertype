@@ -8,7 +8,7 @@
 
   "animation" : "blackrotkabuto.animation",
 
-  "dropPools" : [ { "default" : "onikabutofemaleTreasure" } ],
+  "dropPools" : [ { "default" : "blackrotkabutoTreasure" } ],
 
   "baseParameters" : {
     "scripts" : [
@@ -40,25 +40,58 @@
           }
         }
       ],
-
-      "damageTakenActions" : [
+	  
+	  "hostileActions" : [
         {
-          "name" : "action-invulnerable",
-          "cooldown" : 10,
+          "name" : "action-charge",
+		  "cooldown" : 3.0,
           "parameters" : {
-            "windupState" : "",
-            "windupTime" : 0.0,
+            "maximumRange" : 20,
+            "windupTime" : 1.5,
 
-            "invulnerableState" : "",
-            "invulnerableEffect" : "nova",
-            "invulnerableTime" : 5,
+            "chargeTime" : 2,
+            "chargeSpeed" : 16,
+            "chargeControlForce" : 400,
+            "wallKnockback" : true,
+            "wallCrashSound" : "wallCrash",
+            "wallCrashEmitter" : "",
 
-            "winddownTime" : 0.5,
-            "winddownState" : "winddown"
-
+            "winddownTime" : 0.5
           }
         }
       ],
+
+      "damageTakenActions" : [
+		{
+          "name" : "action-fire",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 5,
+            "minimumRange" : 0,
+            "onGround" : true,
+            "windupStopForce" : 50,
+            "windupTime" : 0.3,
+			"windupState" : "idle",
+
+            "projectileType" : "starforge-witherneedle",
+            "projectileParameters" : {
+              "speed" : 70.5,
+              "timeToLive" : 1.0
+            },
+            "fireOffset" : [0.0, 0.0],
+            "aimAtTarget" : false,
+            "inaccuracy" : 3.14,
+            "projectileCount" : 10,
+            "projectileInterval" : 0.0,
+            "fireState" : "shoot",
+            "fireDelay" : 0.0,
+            "fireSound" : "",
+            "winddownState" : "",
+            "winddownTime" : 0.5
+          }
+        }
+       ],
 
       "invulnerableActions" : [
         {
@@ -112,7 +145,7 @@
       "teamType" : "enemy",
       "damageSourceKind" : "slash",
       "knockback" : 20,
-      "statusEffects" : [ ]
+      "statusEffects" : ["starforge-wither" ]
     },
 
     "metaBoundBox" : [-4, -4, 4, 4],
@@ -178,7 +211,7 @@
           "baseValue" : 1.4
         },
         "physicalResistance" : {
-          "baseValue" : 0.0
+          "baseValue" : 0.2
         },
         "fireResistance" : {
           "baseValue" : 0.80
@@ -240,6 +273,6 @@
     "capturable" : true,
     "captureHealthFraction" : 0.75,
     "nametagColor" : [64, 200, 255],
-	"captureCollectables" : { "monsters" : "onikabuto" }
+    "captureCollectables" : { "monsters" : "blackrotkabuto" }
   }
 }
