@@ -26,7 +26,7 @@
       "dashLines" : 15
     },
 
-    "healthCooldownFactor" : [1.5, 0.1],
+    "healthCooldownFactor" : [1.25, 0.625],
 	
 	  "dropPools" : [ "starforge-razortailtreasure" ],
 	

@@ -24,7 +24,7 @@ end
 function razortailDashExplosions.enteringState(stateData)
   monster.setActiveSkillName("razortailDashExplosions")
   razortailDashExplosions.windup(stateData)
-  stateData.timer = stateData.timer * self.cooldownFactor
+  stateData.timer = calculateCooldown(stateData.timer)
 end
 
 function razortailDashExplosions.update(dt, stateData)
@@ -45,8 +45,14 @@ function razortailDashExplosions.windup(stateData)
   animator.setAnimationState("body", "dashWindup")
 
   wait(
-    stateData.dashWindup * self.cooldownFactor,
-    nil,
+    stateData.dashWindup,
+    function(dt, timer)
+      if timer > (stateData.dashWindup * 0.25) and not stateData.sparked then
+        animator.burstParticleEmitter("eyeSparkDash")
+        playSound("eyeSpark")
+        stateData.sparked = true
+      end
+    end,
     function()
       razortailDashExplosions.dash(stateData)
     end)

@@ -5,6 +5,9 @@ end
 
 local baseUpdate = update
 function update(dt) baseUpdate(dt)
+  if self.healthCooldownFactor then
+    self.cooldownFactor = self.healthCooldownFactor[1] + (status.resourcePercentage("health") * (self.healthCooldownFactor[2] - self.healthCooldownFactor[1]))
+  end
 
   self.onGround = mcontroller.groundMovement() or mcontroller.onGround()
   --world.debugText("%s", self.sleepTimer or 0, mcontroller.position(), "green")
@@ -33,4 +36,9 @@ function update(dt) baseUpdate(dt)
       animator.setAnimationState("body", "falling")
     end
   end
+end
+
+function calculateCooldown(time, minTime)
+  local newTime = math.max(minTime or 0.15, time * (self.cooldownFactor or 1))
+  return newTime
 end

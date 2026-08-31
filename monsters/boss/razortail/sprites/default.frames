@@ -6,18 +6,20 @@
       [ "idle", null, "sleeping.1", "sleeping.2", "sleeping.3", "sleeping.4", "sleeping.5", "sleeping.6" ],
       [ "walk.1", "walk.2", "walk.3", "walk.4", "walk.5", "walk.6", "walk.7", "walk.8" ],
       [ "jumping", "falling", null, "flipslash", null, null, null, null ],
-      [ "bite.1", "bite.2", "bite.3", "bite.4", "bite.5", "bite.6", "bite.7", "bite.8" ],
-      [ "clawSlash.1", "clawSlash.2", "clawSlash.3", "clawSlash.4", "clawSlash.5", null, null, null ],
+      [ "roar.1", "roar.2", "biteWindup.1", "biteWindup.2", "bite.1", "bite.2", "bite.3", "bite.4" ],
+      [ "clawSlashWindup.1", "clawSlashWindup.2", "clawSlashWindup.3", "clawSlash.1", "clawSlash.2", null, null, null ],
       [ "tailStrike.1", "tailStrike.2", "tailStrike.3", "tailStrike.4", "tailStrike.5", null, null, null ],
-      [ "tailWhip.1", "tailWhip.2", "tailWhip.3", "tailWhip.4", "tailWhip.5", "tailWhip.6", "tailWhip.7", null ]
+      [ "tailWhipWindup.1", "tailWhipWindup.2", "tailWhip.1", "tailWhip.2", "tailWhip.3", "tailWhip.4", "tailWhip.5", null ]
     ]
   },
 
   "aliases" : {
-    "tailStrikeWinddown.1" :  "tailStrike.5",
-    "tailStrikeWinddown.2" :  "tailStrike.4",
-    "tailStrikeWinddown.3" :  "tailStrike.3",
-    "tailStrikeWinddown.4" :  "tailStrike.2",
-    "tailStrikeWinddown.5" :  "tailStrike.1"
+    "tailStrikeWinddown.1" :  "tailWhip.4",
+    "tailStrikeWinddown.2" :  "tailWhip.5",
+
+    "roar.3" :  "biteWindup.1",
+    "roar.4" :  "biteWindup.2",
+
+    "flipslashWindup" : "roar.2"
   }
 }

@@ -26,20 +26,24 @@
       "dashLines" : 15
     },
 
-    "healthCooldownFactor" : [1.5, 0.1],
+    "healthCooldownFactor" : [1.25, 0.75],
 	
 	  "dropPools" : [ "starforge-razortailtreasure" ],
 	
     "skillCount" : 9,
     "skills" : [
+      //Idle States
       "razortailIdle",
       "razortailWalk", 
+
+      //Attack States
       "razortailTeleportTailStrike", 
       "razortailTeleportDropStrike", 
       "razortailMeleeCombo",
       "razortailFlipSlash",
       "razortailDashExplosions",
       
+      //Phase Change States
       "razortailPhaseShift",
       "razortailFinalPhaseShift"
     ],

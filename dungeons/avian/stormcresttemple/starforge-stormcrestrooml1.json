@@ -1946,7 +1946,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [0, 2], \"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluextotem\", \"kluexsentry\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [20, 2], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
+                     "parameters":"{\"progressBarPosition\" : [0, 2], \"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [20, 2], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -1963,7 +1963,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 

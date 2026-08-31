@@ -7,7 +7,7 @@ function razortailFlipSlash.enter()
     timer = config.getParameter("razortailFlipSlash.windDownDuration", 0.7),
 
     teleportXOffset = config.getParameter("razortailFlipSlash.teleportXOffset", 10),
-    windupTime = config.getParameter("razortailFlipSlash.windupTime", 0.2),
+    windupTime = config.getParameter("razortailFlipSlash.windupTime", 0.5),
 
     rotations = config.getParameter("razortailFlipSlash.rotations", 3),
     rotationTime = config.getParameter("razortailFlipSlash.rotationTime", 0.4),
@@ -24,7 +24,7 @@ end
 function razortailFlipSlash.enteringState(stateData)
   monster.setActiveSkillName("razortailFlipSlash")
   razortailFlipSlash.teleport(stateData)
-  stateData.timer = stateData.timer * self.cooldownFactor
+  stateData.timer = calculateCooldown(stateData.timer)
 end
 
 function razortailFlipSlash.update(dt, stateData)
@@ -58,8 +58,10 @@ function razortailFlipSlash.jump(stateData)
   local directionToPlayer = util.toDirection(world.distance(self.targetPosition, mcontroller.position())[1])
   mcontroller.controlFace(-directionToPlayer)
   
+  animator.burstParticleEmitter("eyeSparkFlipSlash")
+  playSound("eyeSpark")
   wait(
-    stateData.windupTime * self.cooldownFactor,
+    calculateCooldown(stateData.windupTime),
     function(dt, timer)
       animator.setAnimationState("body", "flipslashWindup")
     end,

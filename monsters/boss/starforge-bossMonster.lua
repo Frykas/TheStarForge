@@ -218,7 +218,7 @@ function sanctusTeleport(teleportPos, endSpeed, endFunc)
 
     animator.setEffectActive("teleport", true)
     animator.burstParticleEmitter("teleport")
-    animator.playSound("blinkDash")
+    playSound("blinkDash")
     animator.setAnimationState("body", "invisible")
     mcontroller.controlFace(util.toDirection(world.distance(teleportPos, self.targetPosition or self.spawnPosition)[1]))
 
@@ -257,10 +257,6 @@ function update(dt)
     elseif coroutine.status(co) == "dead" then
       self.activeCoroutines[name] = nil
     end
-  end
-  
-  if self.healthCooldownFactor then
-    self.cooldownFactor = self.healthCooldownFactor[1] + (status.resourcePercentage("health") * (self.healthCooldownFactor[2] - self.healthCooldownFactor[1]))
   end
 
   --Clean dead stagehands

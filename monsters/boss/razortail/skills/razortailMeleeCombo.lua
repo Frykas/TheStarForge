@@ -6,24 +6,82 @@ function razortailMeleeCombo.enter()
   return {
     timer = config.getParameter("razortailMeleeCombo.windDownDuration", 0.7),
 
-    teleportXOffset = config.getParameter("razortailTeleportTailStrike.teleportXOffset", 3),
+    randomSequence = config.getParameter("razortailMeleeCombo.randomSequence", false),
+    attackSequence = config.getParameter("razortailMeleeCombo.attackSequence", {
+      {
+        windupState = "tailWhipWindup",
+        attackState = "tailWhip",
+        windupDuration = 0.35,
 
-    attackSequence = config.getParameter("razortailMeleeCombo.attackSequence", {"clawSlash", "tailWhip", "bite"}),
-    randomSequence = config.getParameter("razortailMeleeCombo.randomSequence", true),
+        teleportOffset = 11,
+        attackImpulse = 145,
+
+        damageDuration = 0.35,
+        idleTime = 0.3,
+
+        damageConfig = {
+          poly = { {2.5, 1}, {7, -1.75}, {7, -4}, {-7, -4}, {-7, -1.75}, {-2.5, 1} },
+          damage = 12,
+          knockback = 55,
+
+          teamType = "enemy",
+          damageSourceKind = "starforge-tidalfrost",
+          statusEffects = { "starforge-tidalfreeze" }
+        }
+      },
+      {
+        windupState = "clawSlashWindup",
+        attackState = "clawSlash",
+        windupDuration = 0.3,
+
+        teleportOffset = 10,
+        attackImpulse = 155,
+
+        damageDuration = 0.35,
+        idleTime = 0.2,
+
+        damageConfig = {
+          poly = { {2.5, 1}, {7, -1.75}, {7, -4}, {-7, -4}, {-7, -1.75}, {-2.5, 1} },
+          damage = 10,
+          knockback = 55,
+
+          teamType = "enemy",
+          damageSourceKind = "starforge-tidalfrost",
+          statusEffects = { "starforge-tidalfreeze" }
+        }
+      },
+      {
+        windupState = "biteWindup",
+        attackState = "bite",
+        windupDuration = 0.2,
+
+        teleportOffset = 9,
+        attackImpulse = 125,
+
+        damageDuration = 0.35,
+        idleTime = 0.7,
+
+        damageConfig = {
+          poly = { {2.5, 1}, {7, -1.75}, {7, -4}, {-7, -4}, {-7, -1.75}, {-2.5, 1} },
+          damage = 25,
+          knockback = 55,
+
+          teamType = "enemy",
+          damageSourceKind = "starforge-tidalfrost",
+          statusEffects = { "starforge-tidalfreeze" }
+        }
+      }
+    }),
     sequenceStep = 1,
-    attackDuration = config.getParameter("razortailMeleeCombo.sequenceBreackDistance", 0.5),
-    attackMovement = config.getParameter("razortailMeleeCombo.attackMovement", 165),
-    movementDelay = config.getParameter("razortailMeleeCombo.movementDelay", 0.4),
-    sequenceBreackDistance = config.getParameter("razortailMeleeCombo.sequenceBreackDistance", {15, 9}),
-
-    damageConfig = config.getParameter("razortailMeleeCombo.damageConfig")
+    
+    sequenceBreakDistance = config.getParameter("razortailMeleeCombo.sequenceBreakDistance", {15, 9})
   }
 end
 
 function razortailMeleeCombo.enteringState(stateData)
   monster.setActiveSkillName("razortailMeleeCombo")
   razortailMeleeCombo.teleport(stateData)
-  stateData.timer = stateData.timer * self.cooldownFactor
+  stateData.timer = calculateCooldown(stateData.timer)
 end
 
 function razortailMeleeCombo.update(dt, stateData)
@@ -38,8 +96,10 @@ function razortailMeleeCombo.update(dt, stateData)
 end
 
 function razortailMeleeCombo.teleport(stateData)
+  local currentStep = stateData.attackSequence[stateData.sequenceStep]
+  
   stateData.directionToPlayer = stateData.directionToPlayer or util.toDirection(world.distance(self.targetPosition, mcontroller.position())[1])
-  local teleportPosition = calculatePosition(self.targetPosition, {(stateData.sequenceStep % 2 == 0 and -1 or 1) * stateData.directionToPlayer * stateData.teleportXOffset, 0})
+  local teleportPosition = calculatePosition(self.targetPosition, {(stateData.sequenceStep % 2 == 0 and -1 or 1) * stateData.directionToPlayer * currentStep.teleportOffset, 0})
 
   if world.lineTileCollision(self.targetPosition, teleportPosition) then
     stateData.timerActive = true
@@ -49,33 +109,49 @@ function razortailMeleeCombo.teleport(stateData)
       teleportPosition,
       0,
       function()
-        razortailMeleeCombo.attack(stateData)
-      end
-    )
+        razortailMeleeCombo.windup(stateData)
+      end)
   end
 end
 
+function razortailMeleeCombo.windup(stateData)
+  local currentStep = stateData.attackSequence[stateData.sequenceStep]
+
+  if stateData.sequenceStep == 1 then
+    animator.burstParticleEmitter("eyeSparkMeleeCombo")
+    playSound("eyeSpark")
+  end
+
+  local animation = currentStep.windupState
+  animator.setAnimationState("body", animation)
+  wait(
+    currentStep.windupDuration,
+    function(dt, timer)
+      mcontroller.setVelocity({0, 0})
+    end,
+    function()
+      razortailMeleeCombo.attack(stateData)
+    end)
+end
+
 function razortailMeleeCombo.attack(stateData)
+  local currentStep = stateData.attackSequence[stateData.sequenceStep]
+
   local directionToPlayer = util.toDirection(world.distance(self.targetPosition, mcontroller.position())[1])
+  mcontroller.addMomentum({directionToPlayer * currentStep.attackImpulse, 0})
   mcontroller.controlFace(-directionToPlayer)
 
-  local animation = stateData.attackSequence[stateData.randomSequence and math.random(#stateData.attackSequence) or stateData.sequenceStep]
+  local animation = currentStep.attackState
   animator.setAnimationState("body", animation)
 
-  stateData.momentumApplied = false
   wait(
-    stateData.attackDuration,
-    function(dt, timer)
-      if not stateData.momentumApplied and timer > stateData.movementDelay then
-        mcontroller.addMomentum({directionToPlayer * stateData.attackMovement, 0})
-        stateData.momentumApplied = true
-      end
-      
+    currentStep.damageDuration,
+    function(dt, timer)      
       if not mcontroller.onGround() then
         mcontroller.controlApproachXVelocity(0, 800)
       end
 
-      local newConfig = sb.jsonMerge(stateData.damageConfig, {})
+      local newConfig = sb.jsonMerge(currentStep.damageConfig, {})
       newConfig.damage = scalePower(newConfig.damage)
       updateDamageSources(newConfig, true)
     end,
@@ -84,7 +160,7 @@ function razortailMeleeCombo.attack(stateData)
       stateData.sequenceStep = stateData.sequenceStep + 1
       if razortailMeleeCombo.comboValid(stateData) then
         wait(
-          stateData.attackDuration * 0.4 * self.cooldownFactor,
+          calculateCooldown(currentStep.idleTime),
           nil,
           function()
             razortailMeleeCombo.teleport(stateData)
@@ -110,3 +186,6 @@ end
 
 function razortailMeleeCombo.leavingState(stateData)
 end
+
+  --  or math.abs(dist[1]) > stateData.sequenceBreakDistance[1]
+  --  or math.abs(dist[2]) > stateData.sequenceBreakDistance[2]

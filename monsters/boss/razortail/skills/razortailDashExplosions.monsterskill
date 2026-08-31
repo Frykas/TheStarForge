@@ -9,7 +9,7 @@
     "razortailDashExplosions" : {
       "skillDuration" : 0.25,
 
-      "dashWindup" : 0.7,
+      "dashWindup" : 0.4,
 
       "xCast" : 7,
       "dashSpeed" : 100,

@@ -1300,6 +1300,18 @@
                  "width":8,
                  "x":272,
                  "y":96
+                }, 
+                {
+                 "gid":7962,
+                 "height":16,
+                 "id":3162,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":784,
+                 "y":192
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1318,7 +1330,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [1, 4],\"theme\" : \"avian\", \"waveCount\" : 2, \"monsterTypes\" : [\"kluextotem\", \"kluexsentry\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [15, 3], \"delayTime\" : 5, \"enemyCount\" : [ 10, 11 ], \"spawnOnGround\" : true}",
+                     "parameters":"{\"progressBarPosition\" : [0, 4],\"theme\" : \"avian\", \"waveCount\" : 2, \"monsterTypes\" : [\"kluexsentry\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [15, 3], \"delayTime\" : 5, \"enemyCount\" : [ 10, 11 ], \"spawnOnGround\" : true}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -1335,7 +1347,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -1392,30 +1404,6 @@
                  "width":0,
                  "x":760,
                  "y":312
-                }, 
-                {
-                 "height":0,
-                 "id":3013,
-                 "name":"",
-                 "polyline":[
-                        {
-                         "x":-48,
-                         "y":-24
-                        }, 
-                        {
-                         "x":0,
-                         "y":0
-                        }, 
-                        {
-                         "x":40,
-                         "y":-24
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":760,
-                 "y":208
                 }, 
                 {
                  "height":0,
@@ -1508,6 +1496,66 @@
                  "width":0,
                  "x":440,
                  "y":72
+                }, 
+                {
+                 "height":0,
+                 "id":3161,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":640,
+                         "y":112
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":72,
+                 "y":72
+                }, 
+                {
+                 "height":0,
+                 "id":3163,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":24,
+                         "y":-136
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":760,
+                 "y":312
+                }, 
+                {
+                 "height":0,
+                 "id":3164,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":8,
+                         "y":0
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":792,
+                 "y":184
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2435,7 +2483,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -2473,7 +2521,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":3161,
+ "nextobjectid":3165,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",

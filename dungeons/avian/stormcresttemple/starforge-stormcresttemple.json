@@ -5918,6 +5918,14 @@
                  "height":8,
                  "id":2423,
                  "name":"",
+                 "properties":
+                    {
+                     "parameters":"{ \"detectDuration\" : 3 }"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,

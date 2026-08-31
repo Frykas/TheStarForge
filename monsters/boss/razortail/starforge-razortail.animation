@@ -60,23 +60,41 @@
           "flipslash" : {
             "frames" : 1
           },
+
+          "biteWindup" : {
+            "frames" : 2,
+            "cycle" : 0.2
+          },
           "bite" : {
-            "frames" : 8,
-            "cycle" : 0.8,
+            "frames" : 4,
+            "cycle" : 0.4,
             "mode" : "transition",
             "transition" : "idle"
           },
+          "clawSlashWindup" : {
+            "frames" : 3,
+            "cycle" : 0.3
+          },
           "clawSlash" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "tailWhipWindup" : {
+            "frames" : 2,
+            "cycle" : 0.4
+          },
+          "tailWhip" : {
             "frames" : 5,
             "cycle" : 0.5,
             "mode" : "transition",
             "transition" : "idle"
           },
-          "tailWhip" : {
-            "frames" : 7,
-            "cycle" : 0.7,
-            "mode" : "transition",
-            "transition" : "idle"
+
+          "tailStrikeWindup" : {
+            "frames" : 2,
+            "cycle" : 0.4
           },
           "tailStrike" : {
             "frames" : 5,
@@ -85,8 +103,8 @@
             "transition" : "tailStrikeWinddown"
           },
           "tailStrikeWinddown" : {
-            "frames" : 5,
-            "cycle" : 0.6,
+            "frames" : 2,
+            "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -121,12 +139,12 @@
             },
             "roar" : {
               "properties" : {
-                "image" : "<partImage>:bite.<frame><bodyDirectives>"
+                "image" : "<partImage>:roar.<frame><bodyDirectives>"
               }
             },
             "roarHold" : {
               "properties" : {
-                "image" : "<partImage>:bite.4<bodyDirectives>"
+                "image" : "<partImage>:roar.4<bodyDirectives>"
               }
             },
 
@@ -150,17 +168,17 @@
             //ATTACKS
             "dashWindup" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.<frame><bodyDirectives>"
+                "image" : "<partImage>:clawSlashWindup.<frame><bodyDirectives>"
               }
             },
             "dash" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.4<bodyDirectives>"
+                "image" : "<partImage>:clawSlash.1<bodyDirectives>"
               }
             },
             "flipslashWindup" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.1<bodyDirectives>"
+                "image" : "<partImage>:flipslashWindup<bodyDirectives>"
               }
             },
             "flipslash" : {
@@ -168,9 +186,20 @@
                 "image" : "<partImage>:flipslash<bodyDirectives>"
               }
             },
+
+            "clawSlashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlashWindup.<frame><bodyDirectives>"
+              }
+            },
             "clawSlash" : {
               "properties" : {
                 "image" : "<partImage>:clawSlash.<frame><bodyDirectives>"
+              }
+            },
+            "biteWindup" : {
+              "properties" : {
+                "image" : "<partImage>:biteWindup.<frame><bodyDirectives>"
               }
             },
             "bite" : {
@@ -178,9 +207,20 @@
                 "image" : "<partImage>:bite.<frame><bodyDirectives>"
               }
             },
+            "tailWhipWindup" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhipWindup.<frame><bodyDirectives>"
+              }
+            },
             "tailWhip" : {
               "properties" : {
                 "image" : "<partImage>:tailWhip.<frame><bodyDirectives>"
+              }
+            },
+
+            "tailStrikeWindup" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhipWindup.<frame><bodyDirectives>"
               }
             },
             "tailStrike" : {
@@ -213,86 +253,108 @@
             },
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle"
+                "image" : "<partImage>:idle<bodyDirectives>"
               }
             },
             "sleeping" : {
               "properties" : {
-                "image" : "<partImage>:sleeping.<frame>"
+                "image" : "<partImage>:sleeping.<frame><bodyDirectives>"
               }
             },
             "roar" : {
               "properties" : {
-                "image" : "<partImage>:bite.<frame>"
+                "image" : "<partImage>:roar.<frame><bodyDirectives>"
               }
             },
             "roarHold" : {
               "properties" : {
-                "image" : "<partImage>:bite.4"
+                "image" : "<partImage>:roar.4<bodyDirectives>"
               }
             },
 
             //MOVEMENT
             "jumping" : {
               "properties" : {
-                "image" : "<partImage>:jumping"
+                "image" : "<partImage>:jumping<bodyDirectives>"
               }
             },
             "falling" : {
               "properties" : {
-                "image" : "<partImage>:falling"
+                "image" : "<partImage>:falling<bodyDirectives>"
               }
             },
             "walk" : {
               "properties" : {
-                "image" : "<partImage>:walk.<frame>"
+                "image" : "<partImage>:walk.<frame><bodyDirectives>"
               }
             },
 
             //ATTACKS
             "dashWindup" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.<frame><bodyDirectives>"
+                "image" : "<partImage>:clawSlashWindup.<frame><bodyDirectives>"
               }
             },
             "dash" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.4<bodyDirectives>"
+                "image" : "<partImage>:clawSlash.1<bodyDirectives>"
               }
             },
             "flipslashWindup" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.1"
+                "image" : "<partImage>:flipslashWindup<bodyDirectives>"
               }
             },
             "flipslash" : {
               "properties" : {
-                "image" : "<partImage>:flipslash"
+                "image" : "<partImage>:flipslash<bodyDirectives>"
+              }
+            },
+
+            "clawSlashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlashWindup.<frame><bodyDirectives>"
               }
             },
             "clawSlash" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.<frame>"
+                "image" : "<partImage>:clawSlash.<frame><bodyDirectives>"
+              }
+            },
+            "biteWindup" : {
+              "properties" : {
+                "image" : "<partImage>:biteWindup.<frame><bodyDirectives>"
               }
             },
             "bite" : {
               "properties" : {
-                "image" : "<partImage>:bite.<frame>"
+                "image" : "<partImage>:bite.<frame><bodyDirectives>"
+              }
+            },
+            "tailWhipWindup" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhipWindup.<frame><bodyDirectives>"
               }
             },
             "tailWhip" : {
               "properties" : {
-                "image" : "<partImage>:tailWhip.<frame>"
+                "image" : "<partImage>:tailWhip.<frame><bodyDirectives>"
+              }
+            },
+
+            "tailStrikeWindup" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhipWindup.<frame><bodyDirectives>"
               }
             },
             "tailStrike" : {
               "properties" : {
-                "image" : "<partImage>:tailStrike.<frame>"
+                "image" : "<partImage>:tailStrike.<frame><bodyDirectives>"
               }
             },
             "tailStrikeWinddown" : {
               "properties" : {
-                "image" : "<partImage>:tailStrikeWinddown.<frame>"
+                "image" : "<partImage>:tailStrikeWinddown.<frame><bodyDirectives>"
               }
             }
           }
@@ -344,6 +406,146 @@
         }
       ]
     },
+    "eyeSpark" : {
+      "active" : false,
+      "burstCount" : 1,
+      "offsetRegion" : [2.125, -2.25, 2.125, -2.25],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "textured",
+            "image" : "/celestial/stars/star21pxRed.png:2",
+            "position" : [0, 0],
+            "layer" : "front",
+            "collidesForeground" : false,
+            "timeToLive" : 0.2,
+            "destructionTime" : 0.1,
+            "destructionAction" : "shrink",
+            "fullbright" : true,
+            "size" : 1.2,
+            "rotation" : 0,
+            "angularVelocity" : 180,
+            "variance" : {
+              "size" : 0.9,
+              "rotation" : 180,
+              "angularVelocity" : 420
+            } 
+          }
+        }
+      ]
+    },
+    "eyeSparkDash" : {
+      "active" : false,
+      "burstCount" : 1,
+      "offsetRegion" : [2.625, -0.75, 2.625, -0.75],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "textured",
+            "image" : "/celestial/stars/star21pxRed.png:2",
+            "position" : [0, 0],
+            "layer" : "front",
+            "collidesForeground" : false,
+            "timeToLive" : 0.2,
+            "destructionTime" : 0.1,
+            "destructionAction" : "shrink",
+            "fullbright" : true,
+            "size" : 1.2,
+            "rotation" : 0,
+            "angularVelocity" : 180,
+            "variance" : {
+              "size" : 0.9,
+              "rotation" : 180,
+              "angularVelocity" : 420
+            } 
+          }
+        }
+      ]
+    },
+    "eyeSparkTailStrike" : {
+      "active" : false,
+      "burstCount" : 1,
+      "offsetRegion" : [1.875, -2.125, 1.875, -2.125],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "textured",
+            "image" : "/celestial/stars/star21pxRed.png:2",
+            "position" : [0, 0],
+            "layer" : "front",
+            "collidesForeground" : false,
+            "timeToLive" : 0.2,
+            "destructionTime" : 0.1,
+            "destructionAction" : "shrink",
+            "fullbright" : true,
+            "size" : 1.2,
+            "rotation" : 0,
+            "angularVelocity" : 180,
+            "variance" : {
+              "size" : 0.9,
+              "rotation" : 180,
+              "angularVelocity" : 420
+            } 
+          }
+        }
+      ]
+    },
+    "eyeSparkMeleeCombo" : {
+      "active" : false,
+      "burstCount" : 1,
+      "offsetRegion" : [1.6255, -2.125, 1.625, -2.125],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "textured",
+            "image" : "/celestial/stars/star21pxRed.png:2",
+            "position" : [0, 0],
+            "layer" : "front",
+            "collidesForeground" : false,
+            "timeToLive" : 0.2,
+            "destructionTime" : 0.1,
+            "destructionAction" : "shrink",
+            "fullbright" : true,
+            "size" : 1.2,
+            "rotation" : 0,
+            "angularVelocity" : 180,
+            "variance" : {
+              "size" : 0.9,
+              "rotation" : 180,
+              "angularVelocity" : 420
+            } 
+          }
+        }
+      ]
+    },
+    "eyeSparkFlipSlash" : {
+      "active" : false,
+      "burstCount" : 1,
+      "offsetRegion" : [2.125, -2.25, 2.125, -2.25],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "textured",
+            "image" : "/celestial/stars/star21pxRed.png:2",
+            "position" : [0, 0],
+            "layer" : "front",
+            "collidesForeground" : false,
+            "timeToLive" : 0.2,
+            "destructionTime" : 0.1,
+            "destructionAction" : "shrink",
+            "fullbright" : true,
+            "size" : 1.2,
+            "rotation" : 0,
+            "angularVelocity" : 180,
+            "variance" : {
+              "size" : 0.9,
+              "rotation" : 180,
+              "angularVelocity" : 420
+            } 
+          }
+        }
+      ]
+    },
     "damage" : {
       "emissionRate" : 0.7,
       "particles" : [
@@ -374,6 +576,10 @@
   "sounds" : {
     "turnHostile" : [  ],
     "hurt" : {
+      "pool" : [ ],
+      "rangeMultiplier" : 1.5
+    },
+    "eyeSpark" : {
       "pool" : [ ],
       "rangeMultiplier" : 1.5
     },
