@@ -6,34 +6,14 @@
         "default" : "idle",
         "states" : {
           "idle" : {
-            "frames" : 1
-          },
-          "walk" : {
-            "frames" : 6,
-            "cycle" : 0.54,
+            "frames" : 8,
+            "cycle" : 1.6,
             "mode" : "loop"
           },
-          "charge" : {
-            "frames" : 6,
-            "cycle" : 0.30,
+          "fly" : {
+            "frames" : 8,
+            "cycle" : 0.8,
             "mode" : "loop"
-          },
-		  "chargewindup" : {
-            "frames" : 6,
-            "cycle" : 1,
-            "mode" : "loop"
-          },
-          "chargewinddown" : {
-            "frames" : 1,
-            "cycle" : 0.1
-          },
-		  "shoot" : {
-            "frames" : 4,
-            "cycle" : 0.86
-          },
-          "winddown" : {
-            "frames" : 4,
-            "cycle" : 0.5
           }
         }
       },
@@ -74,44 +54,19 @@
     "parts" : {
       "body" : {
         "properties" : {
-          "transformationGroups" : [ "facing", "body" ],
-          "offset" : [0.0, 0.75]
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0625, 0.25]
         },
         "partStates" : {
           "body" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:fly.<frame>"
               }
             },
-            "walk" : {
+            "fly" : {
               "properties" : {
-                "image" : "<partImage>:walk.<frame>"
-              }
-            },
-            "charge" : {
-              "properties" : {
-                "image" : "<partImage>:charge.<frame>"
-              }
-            },
-			"chargewindup" : {
-              "properties" : {
-                "image" : "<partImage>:chargewindup.<frame>"
-              }
-            },
-			"chargewinddown" : {
-              "properties" : {
-                "image" : "<partImage>:chargewinddown.<frame>"
-              }
-            },
-            "shoot" : {
-              "properties" : {
-                "image" : "<partImage>:shoot.<frame>"
-              }
-            },
-            "winddown" : {
-              "properties" : {
-                "image" : "<partImage>:winddown.<frame>"
+                "image" : "<partImage>:fly.<frame>"
               }
             }
           },
@@ -128,8 +83,7 @@
   },
 
   "transformationGroups" : {
-    "body" : { "interpolated" : true },
-    "facing" : { "interpolated" : false }
+    "body" : { "interpolated" : true }
   },
 
   "effects" : {
@@ -141,6 +95,29 @@
   },
 
   "particleEmitters" : {
+    "behindGroundEmitter" : {
+      "emissionRate" : 15,
+      "offsetRegion" : [ -0.625, -1.25, 0.625, 1.25 ],
+      "particles" : [
+        { "particle" : "ghostsparkle" }
+      ]
+    },
+    "groundBurstEmitter" : {
+      "offsetRegion" : [ -0.625, -1.25, 0.625, 1.25 ],
+      "particles" : [
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" },
+        { "particle" : "ghostsparkle" }
+      ]
+    },
     "deathPoof" : {
       "particles" : [
         { "particle" : "monstersplosion" },
@@ -191,7 +168,6 @@
 
   "sounds" : {
     "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
-    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
-	"wallCrash" : [ "/sfx/npc/monsters/peblit_drop1.ogg" ]
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ]
   }
 }

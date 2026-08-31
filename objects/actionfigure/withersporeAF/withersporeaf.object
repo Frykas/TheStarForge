@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-withersporeaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A strange, floating creature that roam the skies of Wither-infested planets.\"",
+  "shortdescription" : "Progenitor Spore Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-withersporeaf" },
+
+
+  "inventoryIcon" : "withersporeaf.png",
+  "orientations" : [
+    {
+      "image" : "withersporeaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "withersporeaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

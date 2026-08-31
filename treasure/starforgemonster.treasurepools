@@ -181,9 +181,25 @@
   "progenitorslitherTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.96, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.60, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.36, "item" : "plantfibre"},
 		{"weight" : 0.03, "item" : "starforge-slitherdnacodex-codex"},
 		{"weight" : 0.01, "item" : "starforge-progenitorslitheraf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "progenitorsporeTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.60, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.39, "item" : "plantfibre"},
+		{"weight" : 0.01, "item" : "starforge-withersporeaf"}
       ],
       "poolRounds" : [
         [0.60, 1],
@@ -276,6 +292,21 @@
 		{"weight" : 0.80, "pool" : "blackrotmaterialTreasure"},
 		{"weight" : 0.19, "item" : "hardenedcarapace"},
 		{"weight" : 0.01, "item" : "starforge-blackrotstingeraf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "blackrotkabutoTreasure" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.80, "pool" : "blackrotmaterialTreasure"},
+		{"weight" : 0.19, "item" : "hardenedcarapace"},
+		{"weight" : 0.01, "item" : "starforge-blackrotkabutoaf"}
       ],
       "poolRounds" : [
         [0.60, 1],

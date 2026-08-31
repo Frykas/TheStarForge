@@ -5,14 +5,20 @@
 
     "names" : [
       [ null, "idle.1", null, "hurt.1", null, "walk.1", "walk.2", "walk.3", "walk.4", "walk.5", "walk.6", null ],
-      [ "null", "shieldwalk.1", "shieldwalk.2", "shieldwalk.3", "shieldwalk.4", "shieldwalk.5", null, "windup.1", "windup.2", "windup.3", "windup.4", "windup.5"]
+      [ "null", "charge.1", "charge.2", "charge.3", "charge.4", "charge.5", "charge.6", null, "shoot.1", "shoot.2", "shoot.3", "shoot.4"]
     ]
   },
   "aliases" : {
-  	"winddown.1" : "windup.5",
-  	"winddown.2" : "windup.4",
-  	"winddown.3" : "windup.3",
-  	"winddown.4" : "windup.2",
-  	"winddown.5" : "windup.1"
+  	"winddown.1" : "shoot.4",
+  	"winddown.2" : "shoot.3",
+  	"winddown.3" : "shoot.2",
+  	"winddown.4" : "shoot.1",
+	"chargewindup.1" : "charge.1",
+	"chargewindup.2" : "charge.2",
+	"chargewindup.3" : "charge.3",
+	"chargewindup.4" : "charge.4",
+	"chargewindup.5" : "charge.5",
+	"chargewindup.6" : "charge.6",
+	"chargewinddown.1" : "idle.1"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "name" : "starforge-witherspore",
+  "category" : "witherspore",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "witherspore.png"
+  }
+}
