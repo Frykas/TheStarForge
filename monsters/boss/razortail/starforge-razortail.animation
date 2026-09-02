@@ -253,108 +253,231 @@
             },
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle<bodyDirectives>"
+                "image" : "<partImage>:idle"
               }
             },
             "sleeping" : {
               "properties" : {
-                "image" : "<partImage>:sleeping.<frame><bodyDirectives>"
+                "image" : "<partImage>:sleeping.<frame>"
               }
             },
             "roar" : {
               "properties" : {
-                "image" : "<partImage>:roar.<frame><bodyDirectives>"
+                "image" : "<partImage>:roar.<frame>"
               }
             },
             "roarHold" : {
               "properties" : {
-                "image" : "<partImage>:roar.4<bodyDirectives>"
+                "image" : "<partImage>:roar.4"
               }
             },
 
             //MOVEMENT
             "jumping" : {
               "properties" : {
-                "image" : "<partImage>:jumping<bodyDirectives>"
+                "image" : "<partImage>:jumping"
               }
             },
             "falling" : {
               "properties" : {
-                "image" : "<partImage>:falling<bodyDirectives>"
+                "image" : "<partImage>:falling"
               }
             },
             "walk" : {
               "properties" : {
-                "image" : "<partImage>:walk.<frame><bodyDirectives>"
+                "image" : "<partImage>:walk.<frame>"
               }
             },
 
             //ATTACKS
             "dashWindup" : {
               "properties" : {
-                "image" : "<partImage>:clawSlashWindup.<frame><bodyDirectives>"
+                "image" : "<partImage>:clawSlashWindup.<frame>"
               }
             },
             "dash" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.1<bodyDirectives>"
+                "image" : "<partImage>:clawSlash.1"
               }
             },
             "flipslashWindup" : {
               "properties" : {
-                "image" : "<partImage>:flipslashWindup<bodyDirectives>"
+                "image" : "<partImage>:flipslashWindup"
               }
             },
             "flipslash" : {
               "properties" : {
-                "image" : "<partImage>:flipslash<bodyDirectives>"
+                "image" : "<partImage>:flipslash"
               }
             },
 
             "clawSlashWindup" : {
               "properties" : {
-                "image" : "<partImage>:clawSlashWindup.<frame><bodyDirectives>"
+                "image" : "<partImage>:clawSlashWindup.<frame>"
               }
             },
             "clawSlash" : {
               "properties" : {
-                "image" : "<partImage>:clawSlash.<frame><bodyDirectives>"
+                "image" : "<partImage>:clawSlash.<frame>"
               }
             },
             "biteWindup" : {
               "properties" : {
-                "image" : "<partImage>:biteWindup.<frame><bodyDirectives>"
+                "image" : "<partImage>:biteWindup.<frame>"
               }
             },
             "bite" : {
               "properties" : {
-                "image" : "<partImage>:bite.<frame><bodyDirectives>"
+                "image" : "<partImage>:bite.<frame>"
               }
             },
             "tailWhipWindup" : {
               "properties" : {
-                "image" : "<partImage>:tailWhipWindup.<frame><bodyDirectives>"
+                "image" : "<partImage>:tailWhipWindup.<frame>"
               }
             },
             "tailWhip" : {
               "properties" : {
-                "image" : "<partImage>:tailWhip.<frame><bodyDirectives>"
+                "image" : "<partImage>:tailWhip.<frame>"
               }
             },
 
             "tailStrikeWindup" : {
               "properties" : {
-                "image" : "<partImage>:tailWhipWindup.<frame><bodyDirectives>"
+                "image" : "<partImage>:tailWhipWindup.<frame>"
               }
             },
             "tailStrike" : {
               "properties" : {
-                "image" : "<partImage>:tailStrike.<frame><bodyDirectives>"
+                "image" : "<partImage>:tailStrike.<frame>"
               }
             },
             "tailStrikeWinddown" : {
               "properties" : {
-                "image" : "<partImage>:tailStrikeWinddown.<frame><bodyDirectives>"
+                "image" : "<partImage>:tailStrikeWinddown.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+          "transformationGroups" : [ "all" ]
+        },
+
+        "partStates" : {
+          "body" : {
+            "invisible" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "sleeping" : {
+              "properties" : {
+                "image" : "<partImage>:sleeping.<frame>"
+              }
+            },
+            "roar" : {
+              "properties" : {
+                "image" : "<partImage>:roar.<frame>"
+              }
+            },
+            "roarHold" : {
+              "properties" : {
+                "image" : "<partImage>:roar.4"
+              }
+            },
+
+            //MOVEMENT
+            "jumping" : {
+              "properties" : {
+                "image" : "<partImage>:jumping"
+              }
+            },
+            "falling" : {
+              "properties" : {
+                "image" : "<partImage>:falling"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "<partImage>:walk.<frame>"
+              }
+            },
+
+            //ATTACKS
+            "dashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlashWindup.<frame>"
+              }
+            },
+            "dash" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.1"
+              }
+            },
+            "flipslashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:flipslashWindup"
+              }
+            },
+            "flipslash" : {
+              "properties" : {
+                "image" : "<partImage>:flipslash"
+              }
+            },
+
+            "clawSlashWindup" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlashWindup.<frame>"
+              }
+            },
+            "clawSlash" : {
+              "properties" : {
+                "image" : "<partImage>:clawSlash.<frame>"
+              }
+            },
+            "biteWindup" : {
+              "properties" : {
+                "image" : "<partImage>:biteWindup.<frame>"
+              }
+            },
+            "bite" : {
+              "properties" : {
+                "image" : "<partImage>:bite.<frame>"
+              }
+            },
+            "tailWhipWindup" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhipWindup.<frame>"
+              }
+            },
+            "tailWhip" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhip.<frame>"
+              }
+            },
+
+            "tailStrikeWindup" : {
+              "properties" : {
+                "image" : "<partImage>:tailWhipWindup.<frame>"
+              }
+            },
+            "tailStrike" : {
+              "properties" : {
+                "image" : "<partImage>:tailStrike.<frame>"
+              }
+            },
+            "tailStrikeWinddown" : {
+              "properties" : {
+                "image" : "<partImage>:tailStrikeWinddown.<frame>"
               }
             }
           }

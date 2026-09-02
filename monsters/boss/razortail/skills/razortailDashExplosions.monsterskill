@@ -31,7 +31,8 @@
 
         "teamType" : "enemy",
         "damageSourceKind" : "starforge-tidalfrost",
-        "statusEffects" : [ "starforge-tidalfreeze" ]
+        "statusEffects" : [ "starforge-tidalfreeze" ],
+        "damageRepeatGroup" : "starforge-razortailDashExplosions"
       }
 	  }
   }

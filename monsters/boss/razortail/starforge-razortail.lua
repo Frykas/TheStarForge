@@ -1,6 +1,8 @@
 local baseInit = init
 function init() baseInit()
   animator.resetTransformationGroup("all")
+
+  storage.spawnPosition = storage.spawnPosition or mcontroller.position()
 end
 
 local baseUpdate = update
@@ -14,8 +16,13 @@ function update(dt) baseUpdate(dt)
   if not hasTarget() then
     self.sleepTimer = math.max(0, (self.sleepTimer or 0) - dt)
     if self.sleepTimer == 0 and animator.animationState("body") ~= "sleeping" then
-      animator.setAnimationState("body", "sleeping")
-      self.awake = false
+      self.sleepTimer = 5
+      sanctusTeleport(storage.spawnPosition,
+      0,
+      function()
+        animator.setAnimationState("body", "sleeping")
+        self.awake = false
+      end)
     end
     return false
   elseif hasTarget() and not self.awake then
@@ -39,6 +46,6 @@ function update(dt) baseUpdate(dt)
 end
 
 function calculateCooldown(time, minTime)
-  local newTime = math.max(minTime or 0.15, time * (self.cooldownFactor or 1))
+  local newTime = math.max(minTime or (self.healthCooldownFactor and self.healthCooldownFactor[3]) or 0.15, time * (self.cooldownFactor or 1))
   return newTime
 end

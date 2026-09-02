@@ -5,6 +5,7 @@
 
   "frames" : {
     "body" : "body.png",
-    "bodyFullbright" : "bodyfullbright.png"
+    "bodyFullbright" : "bodyfullbright.png",
+    "swoosh" : "swoosh.png"
   }
 }

@@ -47,7 +47,7 @@ function razortailDashExplosions.windup(stateData)
   wait(
     stateData.dashWindup,
     function(dt, timer)
-      if timer > (stateData.dashWindup * 0.25) and not stateData.sparked then
+      if timer > (stateData.dashWindup * 0.6) and not stateData.sparked then
         animator.burstParticleEmitter("eyeSparkDash")
         playSound("eyeSpark")
         stateData.sparked = true

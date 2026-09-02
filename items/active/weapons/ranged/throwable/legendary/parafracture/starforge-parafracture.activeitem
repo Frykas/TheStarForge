@@ -11,6 +11,7 @@
     "subtitle" : "Throwable"
   },
   "twoHanded" : true,
+  "fixedLevel" : false,
   "itemTags" : [ "starforge", "weapon", "ranged", "throwable" ],
   "learnBlueprintsOnPickup" : [ "starforge-parafracture" ],
 

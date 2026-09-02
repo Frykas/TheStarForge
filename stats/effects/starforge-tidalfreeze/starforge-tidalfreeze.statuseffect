@@ -9,16 +9,16 @@
     "frostProjectileType" : "starforge-tidalfreeze",
     "sizeToFrostFactor" : 0.1,       //size is based on entity boundbox, players/npcs are 1.22 punchy is 2.25, adultpoptop is 2.75, size / sizeToFrostFactor = maximum number of frost shards
     "timeBetweenFrost" : [2, 4],
-    "speedMultiplierLostPerFrost" : 0.05,  //1 - (number of frosts * speedMultiplierLostPerFrost) is the speed multiplier, capped at 0]
-    "minimumFrostCount" : 2,
+    "speedMultiplierLostPerFrost" : 0.035,  //1 - (number of frosts * speedMultiplierLostPerFrost) is the speed multiplier, capped at 0]
+    "minimumFrostCount" : 1,
 
-    "heatGainScale" : 0.5,
+    "heatGainScale" : 0.75,
     "heatDecayRate" : 2.0,
     "heatThreshold" : 20,
 
-    "frostBreakCooldown" : 2.75,
+    "frostBreakCooldown" : 1.75,
 
-    "shatterChanceOnHit" : 0.25,
+    "shatterChanceOnHit" : 0.3,
     "shatterDamage" : 7
   },
   "defaultDuration" : 20,
