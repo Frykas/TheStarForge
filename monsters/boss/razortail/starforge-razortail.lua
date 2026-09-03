@@ -2,6 +2,8 @@ local baseInit = init
 function init() baseInit()
   animator.resetTransformationGroup("all")
 
+  self.sleepTime = config.getParameter("targetResetTime", 2)
+
   storage.spawnPosition = storage.spawnPosition or mcontroller.position()
 end
 
@@ -11,12 +13,20 @@ function update(dt) baseUpdate(dt)
     self.cooldownFactor = self.healthCooldownFactor[1] + (status.resourcePercentage("health") * (self.healthCooldownFactor[2] - self.healthCooldownFactor[1]))
   end
 
+  if not storage.sleepingInvulnerable and animator.animationState("body") == "sleeping" then
+    status.addPersistentEffect("starforge-razortailSleeping", "invulnerable")
+    storage.sleepingInvulnerable = true
+  elseif storage.sleepingInvulnerable and animator.animationState("body") ~= "sleeping" then
+    status.clearPersistentEffects("starforge-razortailSleeping")
+    storage.sleepingInvulnerable = false
+  end
+
   self.onGround = mcontroller.groundMovement() or mcontroller.onGround()
   --world.debugText("%s", self.sleepTimer or 0, mcontroller.position(), "green")
   if not hasTarget() then
     self.sleepTimer = math.max(0, (self.sleepTimer or 0) - dt)
     if self.sleepTimer == 0 and animator.animationState("body") ~= "sleeping" then
-      self.sleepTimer = 5
+      self.sleepTimer = self.sleepTime
       sanctusTeleport(storage.spawnPosition,
       0,
       function()
@@ -26,7 +36,7 @@ function update(dt) baseUpdate(dt)
     end
     return false
   elseif hasTarget() and not self.awake then
-    self.sleepTimer = 5
+    self.sleepTimer = self.sleepTime
     local directionToPlayer = util.toDirection(world.distance(mcontroller.position(), self.targetPosition)[1])
     mcontroller.controlFace(directionToPlayer)
     animator.setAnimationState("body", "jumping")

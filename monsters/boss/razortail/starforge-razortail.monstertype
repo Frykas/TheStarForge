@@ -78,6 +78,7 @@
     "trackTargetDistance" : 10000.0,
     "switchTargetDistance" : 0,
     "keepTargetInSight" : true,
+    "targetResetTime" : 3,
 
     "knockoutTime" : 0,
     "knockoutEffect" : "blink",

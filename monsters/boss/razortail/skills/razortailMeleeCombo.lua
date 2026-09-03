@@ -105,11 +105,11 @@ function razortailMeleeCombo.update(dt, stateData)
 end
 
 function razortailMeleeCombo.teleport(stateData)
-  local currentStep = stateData.attackSequence[stateData.sequenceStep]
+  local currentStep = stateData.attackSequence[math.min(#stateData.attackSequence, stateData.sequenceStep)]
   
   stateData.directionToPlayer = stateData.directionToPlayer or util.toDirection(world.distance(self.targetPosition, mcontroller.position())[1])
   local teleportPosition = calculatePosition(self.targetPosition, {(stateData.sequenceStep % 2 == 0 and -1 or 1) * stateData.directionToPlayer * currentStep.teleportOffset, 0})
-
+  
   if world.lineTileCollision(self.targetPosition, teleportPosition) then
     stateData.timerActive = true
     stateData.timer = 0
@@ -188,8 +188,7 @@ function razortailMeleeCombo.comboValid(stateData)
   local valid = true
 
   local dist = world.distance(self.targetPosition, mcontroller.position())
-  if (stateData.sequenceStep > #stateData.attackSequence) 
-    and hasTarget() then
+  if (stateData.sequenceStep > #stateData.attackSequence) then
 
     valid = false
   end

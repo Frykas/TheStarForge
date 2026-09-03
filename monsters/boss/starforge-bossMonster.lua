@@ -30,6 +30,8 @@ function init()
   self.trackTargetDistance = config.getParameter("trackTargetDistance")
   self.switchTargetDistance = config.getParameter("switchTargetDistance")
   self.keepTargetInSight = config.getParameter("keepTargetInSight", true)
+  self.targetResetTime = config.getParameter("targetResetTime", 2)
+  self.targetResetTimer = 0
 
   self.targets = {}
 
@@ -298,8 +300,11 @@ function update(dt)
       updatePhase(dt)
 
       animator.setGlobalTag("phase", "phase"..currentPhase())
+      self.targetResetTimer = self.targetResetTime
+      self.hadTargetTest = hasTarget()
     else
-      if self.hadTarget then
+      self.targetResetTimer = math.max(0, self.targetResetTimer - dt)
+      if self.hadTargetTest and self.targetResetTimer == 0 then
         --Lost target, reset boss
         if currentPhase() then
           self.phaseStates[currentPhase()].endState()
@@ -330,6 +335,7 @@ function update(dt)
   end
   
   --world.debugText("Current state: %s", self.phaseStates[currentPhase()].stateDesc() or "N/A", mcontroller.position(), "red")
+  --world.debugText("Current timer: %s", self.targetResetTimer, mcontroller.position(), "red")
 end
 
 function damage(args)
