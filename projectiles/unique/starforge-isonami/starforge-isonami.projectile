@@ -1,0 +1,51 @@
+{
+  "projectileName" : "starforge-isonami",
+  "image" : "starforge-isonami.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "flippable" : true,
+  "fullbright" : true,
+  "supportsProcessing" : true,
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_arrow.ogg"
+      ]
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 110,
+  "targetSpeed" : 110,
+  "bounces" : -1,
+  "damageKind" : "starforge-tidalfrost",
+  "statusEffects" : [ "starforge-tidalfreeze", "burning" ],
+  "timeToLive" : 3.95,
+  
+  "renderLayer" : "Monster+1",
+  "piercing" : true,
+  "damageRepeatTimeout" : 0.3,
+  
+  "scripts" : [ "/projectiles/scripts/starforge-chakram.lua", "/projectiles/scripts/starforge-spin.lua" ],
+  "hitsBeforeReturning" : 3,  //-1 for infinite
+  "stickToTarget" : true,
+  "actionOnUnstick" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/fireexplosionknockbackstatus.config"
+    }
+  ],
+    
+  "ignoreTerrain" : false,
+  "controlForce" : 200,
+  "pickupDistance" : 1.5,
+  "snapDistance" : 4.0,
+
+  "orientationLocked" : true,
+  "pointToLight" : true,
+  "spinRate" : 2,
+  "ignoreVelocity" : true,
+  "countMovementDirection" : true
+}

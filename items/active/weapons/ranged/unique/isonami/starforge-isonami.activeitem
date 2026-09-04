@@ -1,0 +1,48 @@
+{
+  "itemName" : "starforge-isonami",
+  "level" : 6,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "Sling the teeth of a fallen leviathan to destroy your foes.",
+  "shortdescription" : "Isonami",
+  "tooltipKind" : "starforge-uniquegun",
+  "tooltipFieldsOverride" : {
+    "subtitle" : "Chakram"
+  },
+  "twoHanded" : true,
+  "fixedLevel" : true,
+  "itemTags" : [ "starforge", "weapon", "ranged", "throwable", "chakram" ],
+  "learnBlueprintsOnPickup" : [ "starforge-isonami" ],
+
+  "inventoryIcon" : "starforge-isonami.png",
+
+  "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
+  "animationParts" : {
+    "middle" : "starforge-isonami.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "throw" : [ "/sfx/projectiles/throw_item.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/ranged/throwable/starforge-throwable.lua"],
+
+  "elementalType" : "starforge-tidalfrost",
+
+  "primaryAbilityType" : "starforge-throwprojectile",
+  "primaryAbility" : {
+    "baseDps" : 8,
+    "fireTime" : 0.9,
+	
+	  "hideItemWhileIdle" : false,
+	
+    "projectileCount" : 1,
+    "projectileType" : "starforge-isonami",
+    "projectileParameters" : {
+    }
+  },
+
+  "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
+}

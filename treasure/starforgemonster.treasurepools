@@ -460,7 +460,7 @@
     [1, {
       "pool" : [
         {"weight" : 0.85, "pool" : "starforge-tidebossweapons"},
-        {"weight" : 0.15, "item" : [ "banana", 1]}  //replace with unique later
+        {"weight" : 0.15, "item" : [ "starforge-isonami", 1]}
       ],
       "allowDuplication" : false
     }]    
