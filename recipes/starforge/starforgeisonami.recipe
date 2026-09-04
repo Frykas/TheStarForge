@@ -1,0 +1,16 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 1750},
+    { "item" : "starforge-yukaipearl", "count" : 5},
+	{ "item" : "refinedferozium", "count" : 12},
+	{ "item" : "coralfragment", "count" : 50},
+	{ "item" : "starforge-tidalfragment", "count" : 50}
+  ],
+  "output" : {
+    "item" : "starforge-isonami",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "weapons" ],
+  "duration" : 2
+}
+

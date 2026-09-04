@@ -28,7 +28,7 @@
 
     "healthCooldownFactor" : [1.4, 0.625, 0.1],
 	
-	  "dropPools" : [ "starforge-razortailtreasure" ],
+	  "dropPools" : [ "starforge-murakrazortailtreasure" ],
 	
     "skillCount" : 9,
     "skills" : [

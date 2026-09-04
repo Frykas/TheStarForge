@@ -4,18 +4,26 @@
   "price" : 150,
   "category" : "food",
   "inventoryIcon" : "cubeofrazortail.png",
-  "description" : "A razortail condensed into the shape of a cube. It is very chewy and kind of bitter.",
-  "shortdescription" : "Cube of Razortail",
+  "description" : "A piece of meat harvested from a Razortail. It is very chewy and kind of bitter.",
+  "shortdescription" : "Raw Razortail Meat",
   "effects" : [ [
     {
       "effect" : "starforge-tidalfreeze",
-      "duration" : 120
+      "duration" : 20
+    },
+	{
+        "effect" : "foodpoison",
+        "duration" : 45
+      },
+	  {
+      "effect" : "starforge-dimensionalinstability",
+      "duration" : 20
     }
   ] ],
-  "foodValue" : 5,
+  "foodValue" : 55,
   "tooltipKind" : "food",
   "builder" : "/items/buildscripts/buildfood.lua",
-  "maxStack" : 1,
+  "maxStack" : 1000,
   "itemAgingScripts" : ["/scripts/items/rotting.lua"],
   "rottingMultiplier" : 0.5,
   "blockingEffects" : [

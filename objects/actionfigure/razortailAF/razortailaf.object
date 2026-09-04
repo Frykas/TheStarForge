@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-razortailaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"The apex predator of the Tide's lower layers. A beast of absolute strength and speed.\"",
+  "shortdescription" : "Razortail Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-razortailaf" },
+
+
+  "inventoryIcon" : "razortailaficon.png",
+  "orientations" : [
+    {
+      "image" : "razortailaf.png:<color>",
+      "imagePosition" : [-4, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "razortailaf.png:<color>",
+      "imagePosition" : [-4, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

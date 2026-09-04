@@ -445,16 +445,21 @@
     } ]
   ],
   "starforge-murakrazortailtreasure" : [
-    [1, {
-      "pool" : [
-        {"weight" : 0.75, "pool" : "chestMoney"},
-        {"weight" : 0.01, "item" : "starforge-cubeofrazortail"},
-        {"weight" : 0.24, "pool" : "starforge-razortailweapons"}
+    [0, {
+      "fill" : [
+	    {"weight" : 1, "pool" : "starforge-razortailmeat"},
+        {"weight" : 1, "pool" : "starforge-razortailweapons"},
+		{"weight" : 1, "pool" : "chestMoney"}
+      ],
+	  "pool" : [
+        {"weight" : 0.1, "item" : "starforge-razortailaf"}
       ],
       "poolRounds" : [
-        [1, 1]
-      ]
-    } ]
+      [0.90, 0],
+      [0.10, 1]
+    ],
+      "allowDuplication" : false
+    }]
   ],
   "starforge-razortailweapons" : [
     [1, {
@@ -473,6 +478,15 @@
       ],
       "allowDuplication" : false
     }]    
+  ],
+  "starforge-razortailmeat" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.50, "item" : ["starforge-cubeofrazortail", 1]},
+        {"weight" : 0.35, "item" : ["starforge-cubeofrazortail", 2]},
+		{"weight" : 0.15, "item" : ["starforge-cubeofrazortail", 3]}
+      ]
+    }]
   ]
   
 }
