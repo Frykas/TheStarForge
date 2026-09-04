@@ -14,7 +14,7 @@
   "fixedLevel" : false,
   "twoHanded" : false,
   "itemTags" : [ "starforge", "weapon", "ranged", "throwable" ],
-  //"learnBlueprintsOnPickup" : [ "starforge-nightshard" ],
+  "learnBlueprintsOnPickup" : [ "starforge-nightshard" ],
 
   "inventoryIcon" : "starforge-nightshard.png",
 
