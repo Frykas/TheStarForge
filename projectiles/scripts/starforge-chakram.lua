@@ -1,7 +1,8 @@
 require "/scripts/vec2.lua"
 require "/scripts/util.lua"
 
-function init()  
+function init()
+  self.validEntityTypes = config.getParameter("validEntityTypes", { "player", "npc", "monster" })
   self.hitsBeforeReturning = config.getParameter("hitsBeforeReturning", -1)
   self.stickToTarget = config.getParameter("stickToTarget", false)
   self.actionOnUnstick = config.getParameter("actionOnUnstick", {})
@@ -94,33 +95,37 @@ function update(dt)
 end
 
 function hit(entityId)
-  if self.hitsBeforeReturning ~= -1 then
-    self.hitsBeforeReturning = self.hitsBeforeReturning - 1
-    if self.hitsBeforeReturning <= 0 then
-      unstickFromEnemy()
+  if entityValid(entityId) then
+    if self.hitsBeforeReturning ~= -1 then
+      self.hitsBeforeReturning = self.hitsBeforeReturning - 1
+      if self.hitsBeforeReturning <= 0 then
+        unstickFromEnemy()
+      end
+    end
+
+    if self.stickToTarget and entityId and world.entityExists(entityId) then
+      local enemyPos = world.entityPosition(entityId)
+      local dist = world.magnitude(enemyPos, mcontroller.position())
+      if dist > 4 then
+        mcontroller.setPosition(enemyPos)
+      end
+
+      self.stickingTarget = entityId
+      self.stickingOffset = world.distance(mcontroller.position(), world.entityPosition(self.stickingTarget))
+      
+      projectile.setPower(self.baseDamage * self.damageMultiplierOnStick)
     end
   end
+end
 
-  if self.stickToTarget and entityId and world.entityExists(entityId) then
-    local enemyPos = world.entityPosition(entityId)
-    local dist = world.magnitude(enemyPos, mcontroller.position())
-    if dist > 4 then
-      mcontroller.setPosition(enemyPos)
+function entityValid(entityId)
+  local valid = false
+  for _, type in ipairs(self.validEntityTypes) do
+    if world.entityType(entityId) == type then
+      valid = true
     end
-
-    --Set the sticking target
-    self.stickingTarget = entityId
-
-    --Determine where to stick on the enemy
-    self.stickingOffset = world.distance(mcontroller.position(), world.entityPosition(self.stickingTarget))
-    --If specified set the time to live for when you have stuck to an enemy
-    if config.getParameter("stickToTargetTime") then
-      projectile.setTimeToLive(config.getParameter("stickToTargetTime"))
-    end
-    
-    projectile.setPower(self.baseDamage * self.damageMultiplierOnStick)
-    --mcontroller.setVelocity({0, 0})
   end
+  return valid
 end
 
 function uninit()

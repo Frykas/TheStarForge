@@ -4,7 +4,7 @@
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "Sling the teeth of a fallen leviathan to destroy your foes.",
+  "description" : "Tidalfrost wreathed in embered coral, biting deep before shattering into flame.",
   "shortdescription" : "Isonami",
   "tooltipKind" : "starforge-uniquegun",
   "tooltipFieldsOverride" : {
@@ -33,7 +33,7 @@
 
   "primaryAbilityType" : "starforge-throwprojectile",
   "primaryAbility" : {
-    "baseDps" : 8,
+    "baseDps" : 5,
     "fireTime" : 0.9,
 	
 	  "hideItemWhileIdle" : false,

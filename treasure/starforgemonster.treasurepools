@@ -433,39 +433,57 @@
   //                                      RAZORTAIL
   // ==============================================================================================
   "starforge-razortailtreasure" : [
-    [1, {
-      "pool" : [
-        {"weight" : 0.85, "pool" : "chestMoney"},
-        {"weight" : 0.01, "item" : "starforge-cubeofrazortail"},
-        {"weight" : 0.14, "pool" : "starforge-razortailweapons"}
+    [0, {
+      "fill" : [
+	      {"weight" : 1, "pool" : "starforge-razortailmeat"},
+        {"weight" : 1, "pool" : "starforge-razortailweapons"},
+		    {"weight" : 1, "pool" : "chestMoney"}
+      ],
+	    "pool" : [
+        {"weight" : 0.1, "item" : "starforge-razortailaf"}
       ],
       "poolRounds" : [
-        [1, 1]
-      ]
+        [0.90, 0],
+        [0.10, 1]
+      ],
+      "allowDuplication" : false
     } ]
   ],
   "starforge-murakrazortailtreasure" : [
     [0, {
       "fill" : [
-	    {"weight" : 1, "pool" : "starforge-razortailmeat"},
-        {"weight" : 1, "pool" : "starforge-razortailweapons"},
-		{"weight" : 1, "pool" : "chestMoney"}
+	      {"weight" : 1, "pool" : "starforge-razortailmeat"},
+        {"weight" : 1, "pool" : "starforge-murakrazortailweapons"},
+		    {"weight" : 1, "pool" : "chestMoney"}
       ],
-	  "pool" : [
+	    "pool" : [
         {"weight" : 0.1, "item" : "starforge-razortailaf"}
       ],
       "poolRounds" : [
-      [0.90, 0],
-      [0.10, 1]
-    ],
+        [0.90, 0],
+        [0.10, 1]
+      ],
       "allowDuplication" : false
     }]
   ],
+  "starforge-murakrazortailweapons" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.75, "pool" : "starforge-tidebossweapons"},
+        {"weight" : 0.25, "item" : [ "starforge-isonami", 1]}
+      ],
+      "allowDuplication" : false
+    }]    
+  ],
   "starforge-razortailweapons" : [
-    [1, {
+    [0, {
       "pool" : [
         {"weight" : 0.85, "pool" : "starforge-tidebossweapons"},
         {"weight" : 0.15, "item" : [ "starforge-isonami", 1]}
+      ],
+      "poolRounds" : [
+        [0.50, 0],
+        [0.50, 1]
       ],
       "allowDuplication" : false
     }]    
@@ -484,7 +502,8 @@
       "pool" : [
         {"weight" : 0.50, "item" : ["starforge-cubeofrazortail", 1]},
         {"weight" : 0.35, "item" : ["starforge-cubeofrazortail", 2]},
-		{"weight" : 0.15, "item" : ["starforge-cubeofrazortail", 3]}
+		    {"weight" : 0.14, "item" : ["starforge-cubeofrazortail", 3]},
+		    {"weight" : 0.01, "item" : ["starforge-cubeofrazortail", 7]}  //jackpot???
       ]
     }]
   ]

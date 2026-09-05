@@ -8,11 +8,58 @@
   "flippable" : true,
   "fullbright" : true,
   "supportsProcessing" : true,
+  "damagePoly" : [[-8, 4], [-4, 8], [4, 8], [8, 4], [8, -4], [4, -8], [-4, -8], [-8, -4]],
   "actionOnCollide" : [
     {
       "action" : "sound",
       "options" : [
         "/sfx/gun/impact_arrow.ogg"
+      ]
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.05,
+      "repeat" : true,
+      
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/frozendust2/frozendust2.animation",
+            "approach" : [0.5, 0.5],
+            "fullbright" : true,
+            "timeToLive" : 2.0,
+            "variance" : {
+              "timeToLive" : 0.4,
+              "position" : [1, 1],
+              "initialVelocity" : [1, 1],
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/statuseffects/frozen/frozen.animation",
+            "approach" : [0.5, 0.5],
+            "fullbright" : true,
+            "timeToLive" : 0.5,
+            "variance" : {
+              "timeToLive" : 0.15,
+              "position" : [1, 1],
+              "initialVelocity" : [1, 1],
+              "rotation" : 180
+            }
+          }
+        },
+        {
+          "action" : "spark"
+        }
       ]
     }
   ],
@@ -22,8 +69,9 @@
   "bounces" : -1,
   "damageKind" : "starforge-tidalfrost",
   "statusEffects" : [ "starforge-tidalfreeze", "burning" ],
-  "timeToLive" : 3.95,
-  
+  "emitters" : [ "fireplasma", "rocketsmoke" ],
+  "timeToLive" : 1,
+
   "renderLayer" : "Monster+1",
   "piercing" : true,
   "damageRepeatTimeout" : 0.3,
@@ -33,8 +81,139 @@
   "stickToTarget" : true,
   "actionOnUnstick" : [
     {
-      "action" : "config",
-      "file" : "/projectiles/explosions/regularexplosion2/fireexplosionknockbackstatus.config"
+      "action" : "sound",
+      "options" : [
+        "/sfx/objects/ancient_pot_break_small1.ogg",
+        "/sfx/objects/ancient_pot_break_small2.ogg",
+        "/sfx/objects/ancient_pot_break_small3.ogg",
+        "/sfx/objects/ancient_pot_break_small4.ogg",
+        "/sfx/objects/ancient_pot_break_small5.ogg",
+        "/sfx/objects/ancient_pot_break_small6.ogg",
+        "/sfx/objects/ancient_pot_break_small7.ogg",
+        "/sfx/objects/ancient_pot_break_small8.ogg",
+        "/sfx/objects/ancient_pot_break_small9.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 3,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/mediumflame/mediumflame.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 1.5,
+                "variance" : {
+                  "position" : [1.5, 1.5],
+                  "initialVelocity" : [1, 1],
+                  "timeToLive" : 0.5,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/starforge-largeflame/starforge-largeflame.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 1.2,
+                "size" : 1,
+                "variance" : {
+                  "position" : [1.5, 1.5],
+                  "initialVelocity" : [1, 1],
+                  "timeToLive" : 0.3,
+                  "size" : 0.25,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {      
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/projectiles/unique/starforge-tidalblast/starforge-tidalblast.animation",
+            "approach" : [0.5, 0.5],
+            "fullbright" : true,
+            "layer" : "back",
+            "timeToLive" : 0.7,
+            "variance" : {
+              "timeToLive" : 0.15,
+              "position" : [3, 3],
+              "initialVelocity" : [1, 1],
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    {
+      "inheritDamageFactor": 0.1,
+      "angleAdjust": 0,
+      "fuzzAngle": 360,
+      "type": "starforge-embershard",
+      "config" : {
+        "piercing" : true,
+        "bounces" : 1
+      },
+      "action": "projectile"
+    },
+    {
+      "inheritDamageFactor": 0.1,
+      "angleAdjust": 0,
+      "fuzzAngle": 360,
+      "type": "starforge-embershard",
+      "config" : {
+        "piercing" : true,
+        "bounces" : 1
+      },
+      "action": "projectile"
+    },
+    {
+      "inheritDamageFactor": 0.2,
+      "angleAdjust": 0,
+      "fuzzAngle": 360,
+      "type": "starforge-tideshard",
+      "config" : {
+        "piercing" : true,
+        "bounces" : 1
+      },
+      "action": "projectile"
+    },
+    {
+      "inheritDamageFactor": 0.2,
+      "angleAdjust": 0,
+      "fuzzAngle": 360,
+      "type": "starforge-tideshard",
+      "config" : {
+        "piercing" : true,
+        "bounces" : 1
+      },
+      "action": "projectile"
     }
   ],
     
