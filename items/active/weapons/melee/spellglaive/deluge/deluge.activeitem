@@ -23,7 +23,7 @@
   "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
   "animationParts" : {
     "blade" : "deluge.png",
-    "bladeFullbright" : "",
+    "bladeFullbright" : "delugefullbright.png",
 	
     "swoosh" : "tidalfrost",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/starforge-tidebreakermuzzle.png"

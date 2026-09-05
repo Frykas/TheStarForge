@@ -1,6 +1,6 @@
 require "/scripts/util.lua"
 require "/scripts/vec2.lua"
-require "/items/active/weapons/weapon.lua"
+require "/items/active/weapons/starforge-weapon.lua"
 
 function init()
   if config.getParameter("passiveStatusEffects") then

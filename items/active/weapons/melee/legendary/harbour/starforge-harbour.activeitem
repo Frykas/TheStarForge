@@ -22,7 +22,7 @@
   "animationParts" : {
     "handle" : "",
     "blade" : "starforge-harbour.png",
-    "bladeFullbright" : "",
+    "bladeFullbright" : "starforge-harbourfullbright.png",
 	
     "swoosh" : "tidalfrost"
   },

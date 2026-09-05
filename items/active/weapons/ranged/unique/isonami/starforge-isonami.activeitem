@@ -19,28 +19,99 @@
 
   "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
   "animationParts" : {
-    "middle" : "starforge-isonami.png"
+    "middle" : "starforge-isonami.png",
+    "middleFullbright" : "starforge-isonamifullbright.png"
   },
   "animationCustom" : {
     "sounds" : {
-      "throw" : [ "/sfx/projectiles/throw_item.ogg" ]
+      "throw" : [ "/sfx/projectiles/throw_item.ogg" ],
+      "catch" : [ "/sfx/projectiles/throw_item.ogg" ]
     }
   },
+
+  "aimOffset" : 1,
 
   "scripts" : ["/items/active/weapons/ranged/throwable/starforge-throwable.lua"],
 
   "elementalType" : "starforge-tidalfrost",
 
-  "primaryAbilityType" : "starforge-throwprojectile",
   "primaryAbility" : {
-    "baseDps" : 5,
-    "fireTime" : 0.9,
+    "scripts" : ["/items/active/weapons/ranged/throwable/abilities/starforge-throwreturningprojectile.lua"],
+    "class" : "StarforgeThrowReturningProjectile",
+
+    "baseDamage" : 5.5,
+    "fireTime" : 0.1,
+    "stanceSpeedFactor" : 1.1,
+  
+    "projectileDetectionRadius" : 20,
 	
-	  "hideItemWhileIdle" : false,
+    "energyPerShot" : 50,
+
+    "fireOffset" : [0.0, -0.25],
+
+    "stanceResetTime" : 0.15,
 	
-    "projectileCount" : 1,
     "projectileType" : "starforge-isonami",
     "projectileParameters" : {
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -35,
+        "weaponRotation" : 0,
+        "aimAngle" : 0,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "catch" : {
+        "armRotation" : -175,
+        "weaponRotation" : 0,
+        "aimAngle" : 0,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      //Throw
+      "windup" : {
+        "duration" : 0.075,
+        "armRotation" : 135,
+        "endArmRotation" : 90,
+        "weaponRotation" : -15,
+        "endWeaponRotation" : -10,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.125,
+        "armRotation" : -10,
+        "weaponRotation" : -10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "recall" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
     }
   },
 

@@ -19,7 +19,8 @@
 
   "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
   "animationParts" : {
-    "middle" : "starforge-emberstar.png"
+    "middle" : "starforge-emberstar.png",
+    "middleFullbright" : "starforge-emberstar.png"
   },
   "animationCustom" : {
 		"animatedParts" : {

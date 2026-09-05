@@ -23,7 +23,7 @@
       "repeat" : true,
       
       "action" : "loop",
-      "count" : 2,
+      "count" : 1,
       "body" : [
         {
           "action" : "particle",
@@ -70,7 +70,7 @@
   "damageKind" : "starforge-tidalfrost",
   "statusEffects" : [ "starforge-tidalfreeze", "burning" ],
   "emitters" : [ "fireplasma", "rocketsmoke" ],
-  "timeToLive" : 1,
+  "timeToLive" : 3,
 
   "renderLayer" : "Monster+1",
   "piercing" : true,

@@ -1,6 +1,7 @@
 {
   "globalTagDefaults" : {
-    "paletteSwaps" : ""
+    "paletteSwaps" : "",
+    "partImage" : ""
   },
 
   "animatedParts" : {
@@ -26,7 +27,25 @@
           "weapon" : {
             "visible" : {
               "properties" : {
-				"image" : "<partImage>"
+				        "image" : "<partImage>"
+              }
+            }
+          }
+        }
+      },
+      "middleFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "weapon" : {
+            "visible" : {
+              "properties" : {
+				        "image" : "<partImage>"
               }
             }
           }
@@ -47,6 +66,7 @@
   },
 
   "sounds" : {
-    "throw" : [ ]
+    "throw" : [ ],
+    "catch" : [ ]
   }
 }
