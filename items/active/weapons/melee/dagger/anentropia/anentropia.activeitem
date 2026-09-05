@@ -22,6 +22,7 @@
   "animation" : "/items/active/weapons/melee/dagger/starforge-quickblade.animation",
   "animationParts" : {
     "blade" : "anentropia.png",
+    "bladeFullbright" : "anentropiafullbright.png",
 	
 	  "swoosh" : "tidalfrost"
   },

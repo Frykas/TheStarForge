@@ -6,8 +6,9 @@
     "movementMultiplier" : 0.85,
     
     "tickDamagePercentage" : 0.02,
+    "tickDamageMax" : 0.065,
     "movementDamageFactor" : 0.5,
-	"tickTime" : 0.5
+	  "tickTime" : 0.5
   },
   "defaultDuration" : 3.5,
 

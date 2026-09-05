@@ -1,26 +1,25 @@
 {
-  "itemName" : "starforge-isonami",
+  "itemName" : "starforge-staticoil",
   "level" : 6,
   "price" : 1000,
   "maxStack" : 1,
-  "rarity" : "Essential",
-  "description" : "Tidalfrost wreathed in embered coral, biting deep before shattering into flame.",
-  "shortdescription" : "Isonami",
+  "rarity" : "Legendary",
+  "description" : "Torn from the head of a rare Snaunt, it retains some electrical properties.",
+  "shortdescription" : "Staticoil",
   "tooltipKind" : "starforge-uniquegun",
   "tooltipFieldsOverride" : {
     "subtitle" : "Chakram"
   },
-  "twoHanded" : true,
+  "twoHanded" : false,
   "fixedLevel" : false,
   "itemTags" : [ "starforge", "weapon", "ranged", "throwable", "chakram" ],
-  "learnBlueprintsOnPickup" : [ "starforge-isonami" ],
+  "learnBlueprintsOnPickup" : [ "starforge-staticoil" ],
 
-  "inventoryIcon" : "starforge-isonami.png",
+  "inventoryIcon" : "starforge-staticoil.png",
 
   "animation" : "/items/active/weapons/ranged/throwable/starforge-throwable.animation",
   "animationParts" : {
-    "middle" : "starforge-isonami.png",
-    "middleFullbright" : "starforge-isonamifullbright.png"
+    "middle" : "starforge-staticoil.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -33,25 +32,25 @@
 
   "scripts" : ["/items/active/weapons/ranged/throwable/starforge-throwable.lua"],
 
-  "elementalType" : "starforge-tidalfrost",
+  "elementalType" : "electric",
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/throwable/abilities/starforge-throwreturningprojectile.lua"],
     "class" : "StarforgeThrowReturningProjectile",
 
-    "baseDps" : 15.5,
+    "baseDps" : 5.5,
     "fireTime" : 0.35,
-    "stanceSpeedFactor" : 1.1,
+    "stanceSpeedFactor" : 0.95,
   
     "projectileDetectionRadius" : 20,
 	
-    "energyUsage" : 50,
+    "energyUsage" : 15,
 
     "fireOffset" : [0.0, -0.25],
 
     "stanceResetTime" : 0.15,
 	
-    "projectileType" : "starforge-isonami",
+    "projectileType" : "starforge-staticoil",
     "projectileParameters" : {
     },
 

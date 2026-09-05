@@ -23,6 +23,7 @@ function init()
   self.pickupDistance = config.getParameter("pickupDistance")
   self.snapDistance = config.getParameter("snapDistance")
   self.timeToLive = config.getParameter("timeToLive")
+  self.stickTime = config.getParameter("damageRepeatTimeout") and (config.getParameter("damageRepeatTimeout") * math.abs(self.hitsBeforeReturning)) or (self.timeToLive * 0.5)
   self.speed = config.getParameter("targetSpeed") or config.getParameter("speed")
   self.ignoreTerrain = config.getParameter("ignoreTerrain")
   self.ownerId = projectile.sourceEntity()
@@ -63,10 +64,14 @@ function update(dt)
           end
           self.hasActioned = true
         end
+        self.stickTime = self.stickTime - dt
         local targetStickingPosition = vec2.add(world.entityPosition(self.stickingTarget), self.stickingOffset)
         mcontroller.setPosition(targetStickingPosition)
         local stickingVelocity = self.stickingOffset
         mcontroller.setVelocity(stickingVelocity)
+        if self.stickTime <= 0 then
+          unstickFromEnemy()
+        end
       else
         unstickFromEnemy()
       end

@@ -226,5 +226,5 @@
   "pointToLight" : true,
   "spinRate" : 2,
   "ignoreVelocity" : true,
-  "countMovementDirection" : true
+  "countMovementDirection" : false
 }

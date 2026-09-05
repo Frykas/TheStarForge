@@ -91,7 +91,7 @@ function build(directory, config, parameters, level, seed)
 
         config.tooltipFields.speedTitleLabel = "Ticks Per Second:"
       else
-        config.tooltipFields.damagePerShotLabel = util.round(config.primaryAbility.baseDamage or ((config.primaryAbility.baseDps or 0) * (config.primaryAbility.fireTime or 1.0)) * config.damageLevelMultiplier, 1)
+        config.tooltipFields.damagePerShotLabel = util.round((config.primaryAbility.baseDamage or ((config.primaryAbility.baseDps or 0) * (config.primaryAbility.fireTime or 1.0))) * config.damageLevelMultiplier, 1)
         if config.primaryAbility.projectileCount and config.primaryAbility.projectileCount > 1 then
           config.tooltipFields.damagePerShotLabel = util.round((config.tooltipFields.damagePerShotLabel / config.primaryAbility.projectileCount), 1) .. "^gray;x" .. config.primaryAbility.projectileCount
         end

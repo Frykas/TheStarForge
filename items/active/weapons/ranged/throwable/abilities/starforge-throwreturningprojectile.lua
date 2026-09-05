@@ -40,7 +40,7 @@ function StarforgeThrowReturningProjectile:update(dt, fireMode, shiftHeld)
   if not self.weapon.currentAbility
     and self.fireMode == (self.activatingFireMode or self.abilitySlot)
     and self.cooldownTimer == 0
-    and not status.resourceLocked("energy") then
+    and (not self.energyUsage or (self.energyUsage > 0 and not status.resourceLocked("energy"))) then
     
 	  self:setState(self.windup)
   end
@@ -83,7 +83,7 @@ end
 function StarforgeThrowReturningProjectile:preslash()
   self.weapon:setStance(self.stances.preslash)
   
-  if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("energy", self.energyPerShot) then
+  if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("energy", self:energyPerShot()) then
     --Set up projectile parameters
     local params = sb.jsonMerge(self.projectileParameters, {})
     params.power = self:damagePerShot()
@@ -183,6 +183,10 @@ function StarforgeThrowReturningProjectile:aimVector()
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle)
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
+end
+
+function StarforgeThrowReturningProjectile:energyPerShot()
+  return self.energyUsage * (self.energyUsageMultiplier or 1.0)
 end
 
 function StarforgeThrowReturningProjectile:damagePerShot()

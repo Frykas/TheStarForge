@@ -28,5 +28,20 @@
      "op": "add",
      "path": "/orbideTreasure/0/1/pool/-",
      "value":  {"weight" : 0.05, "item" : "starforge-orblade"}
+   }],
+   [{
+    "op": "test",
+    "path": "/snauntTreasure/0/1/pool",
+    "inverse": true
+   },
+   {
+     "op": "add",
+     "path": "/snauntTreasure/0/1/pool",
+     "value": []
+   }],
+   [{
+     "op": "add",
+     "path": "/snauntTreasure/0/1/pool/-",
+     "value":  {"weight" : 0.05, "item" : "starforge-staticoil"}
    }]
 ]
