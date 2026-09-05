@@ -101,14 +101,14 @@ end
 
 function hit(entityId)
   if entityValid(entityId) then
-    if self.hitsBeforeReturning ~= -1 then
+    if self.hitsBeforeReturning ~= -1 and (self.stickingTarget and self.stickingTarget == entityId or not self.stickingTarget) then
       self.hitsBeforeReturning = self.hitsBeforeReturning - 1
       if self.hitsBeforeReturning <= 0 then
         unstickFromEnemy()
       end
     end
 
-    if self.stickToTarget and entityId and world.entityExists(entityId) then
+    if not self.stickingTarget and self.stickToTarget and entityId and world.entityExists(entityId) then
       local enemyPos = world.entityPosition(entityId)
       local dist = world.magnitude(enemyPos, mcontroller.position())
       if dist > 4 then
@@ -130,6 +130,7 @@ function entityValid(entityId)
       valid = true
     end
   end
+  
   return valid
 end
 
