@@ -11,7 +11,11 @@ function init()
 
   self.spinning = config.getParameter("spinRate")
 
-  --Store rotation to lock it
+  local powerMultiplier = projectile.powerMultiplier()
+  local curve = 4.15
+  local targetMultiplier = 1 + (curve * math.log(powerMultiplier))
+  self.adjustedStickMultiplier = targetMultiplier / powerMultiplier
+
   projectile.setPower(config.getParameter("initialDamageMultiplier", 1) * projectile.power())
   self.baseDamage = projectile.power()
   
@@ -102,7 +106,7 @@ function hit(entityId)
       projectile.setTimeToLive(config.getParameter("stickToTargetTime"))
     end
     
-    projectile.setPower(self.baseDamage * self.damageMultiplierOnStick)
+    projectile.setPower(self.baseDamage * self.damageMultiplierOnStick * self.adjustedStickMultiplier)
     --mcontroller.setVelocity({0, 0})
   end
 end

@@ -6,7 +6,7 @@
   "frameNumber" : 1,
   "pointLight" : false,
   "flippable" : true,
-  "fullbright" : true,
+  "fullbright" : false,
   "supportsProcessing" : true,
   "damagePoly" : [[-8, 4], [-4, 8], [4, 8], [8, 4], [8, -4], [4, -8], [-4, -8], [-8, -4]],
   "actionOnCollide" : [

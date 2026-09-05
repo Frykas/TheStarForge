@@ -25,7 +25,7 @@
   "animationCustom" : {
     "sounds" : {
       "throw" : [ "/sfx/projectiles/throw_item.ogg" ],
-      "catch" : [ "/sfx/projectiles/throw_item.ogg" ]
+      "catch" : [ "/sfx/melee/critical_hit_light.ogg" ]
     }
   },
 

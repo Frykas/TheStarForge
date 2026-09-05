@@ -24,7 +24,7 @@
   "animationCustom" : {
     "sounds" : {
       "throw" : [ "/sfx/projectiles/throw_item.ogg" ],
-      "catch" : [ "/sfx/projectiles/throw_item.ogg" ]
+      "catch" : [ "/sfx/melee/tesla_shock1.ogg", "/sfx/melee/tesla_shock1.ogg" ]
     }
   },
 
