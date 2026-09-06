@@ -28,7 +28,7 @@
      "tilesetDirection":"string"
     },
  "spacing":0,
- "tilecount":11,
+ "tilecount":12,
  "tiledversion":"1.10.2",
  "tileheight":63,
  "tileproperties":
@@ -51,6 +51,16 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"starforge-siaxaaclothing",
+         "tilesetDirection":"right"
+        },
+     "11":
+        {
+         "\/\/description":"A pretty banner bearing the symbol of the People of Siaxaa.",
+         "\/\/name":"starforge-siaxaabanner",
+         "\/\/shortdescription":"Siaxaa Banner",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"starforge-guardianprisoner",
          "tilesetDirection":"right"
         },
      "2":
@@ -147,6 +157,16 @@
          "tilesetDirection":"string"
         },
      "10":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
+     "11":
         {
          "\/\/description":"string",
          "\/\/name":"string",
@@ -257,6 +277,16 @@
          "imageheight":24,
          "imagewidth":24
         },
+     "11":
+        {
+         "height":48,
+         "image":"..\/..\/objects\/dungeons\/stormcresttemple\/guardianprisoner\/guardianprisoner.png",
+         "imageheight":48,
+         "imagewidth":62,
+         "width":31,
+         "x":0,
+         "y":0
+        },
      "2":
         {
          "image":"siaxaachair.png",
@@ -302,7 +332,7 @@
      "9":
         {
          "image":"..\/..\/objects\/siaxaa\/decorative\/siaxaaawning\/siaxaaawning.png",
-         "imageheight":8,
+         "imageheight":9,
          "imagewidth":40
         }
     },

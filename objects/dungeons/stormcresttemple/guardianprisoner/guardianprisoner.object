@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-guardianprisoner",
+  "rarity" : "essential",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "The guardian of a Grounded Avian attempting the trial of the Maiden. He was made prisoner by the Stargazers.",
+  "shortdescription" : "Siaxaan Guardian.",
+  "race" : "hylotl",
+
+  "floranDescription" : "Giant Avian makes for big meal!",
+  "glitchDescription" : "Curious. This Avian is surprisingly tall. It's a surprise he was captured.",
+  "novakidDescription" : "Hehe, big guy got captured uh?",
+  "humanDescription" : "This Avian is bigger than any I've seen so far. He must've been hard to capture.",
+  "hylotlDescription" : "The Stargazers are relentlessly chasing the Grounded. This tall Avian was no exception.",
+  "avianDescription" : "A Siaxaan guardian! He must've been captured protecting his Maiden.", 
+  "apexDescription" : "A particularily tall Avian. I'm curious what could lead to such physical difference?",
+
+  "inventoryIcon" : "guardianprisonericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "guardianprisoner.png:<color>",
+      "imagePosition" : [0.375, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "starforge-devotion",
+
+  "animation" : "guardianprisoner.animation",
+  "animationParts" : {
+    "object" : "guardianprisoner.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

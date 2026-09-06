@@ -93,15 +93,6 @@
         }
        ],
 
-      "invulnerableActions" : [
-        {
-          "name" : "approach-crawl",
-          "parameters" : {
-            "moveState" : "shieldwalk"
-          }
-        }
-      ],
-
 
       "approachActions" : [
         {
@@ -120,7 +111,7 @@
         {
           "name" : "approach-crawl",
           "parameters" : {
-            "moveState" : "shieldwalk"
+            "moveState" : "charge"
           }
         }
       ],
