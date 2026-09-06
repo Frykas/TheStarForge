@@ -50,7 +50,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":6257,
+                 "gid":6259,
                  "height":16,
                  "id":868,
                  "name":"",
@@ -62,7 +62,7 @@
                  "y":120
                 }, 
                 {
-                 "gid":6375,
+                 "gid":6377,
                  "height":16,
                  "id":869,
                  "name":"",
@@ -74,7 +74,7 @@
                  "y":120
                 }, 
                 {
-                 "gid":2147490069,
+                 "gid":2147490071,
                  "height":32,
                  "id":870,
                  "name":"",
@@ -122,7 +122,7 @@
                  "y":160
                 }, 
                 {
-                 "gid":6576,
+                 "gid":6578,
                  "height":8,
                  "id":875,
                  "name":"",
@@ -182,7 +182,7 @@
                  "y":160
                 }, 
                 {
-                 "gid":6389,
+                 "gid":6391,
                  "height":16,
                  "id":880,
                  "name":"",
@@ -194,7 +194,7 @@
                  "y":160
                 }, 
                 {
-                 "gid":2147490037,
+                 "gid":2147490039,
                  "height":16,
                  "id":881,
                  "name":"",
@@ -206,7 +206,7 @@
                  "y":160
                 }, 
                 {
-                 "gid":6654,
+                 "gid":6656,
                  "height":24,
                  "id":882,
                  "name":"",
@@ -218,7 +218,7 @@
                  "y":64
                 }, 
                 {
-                 "gid":2147490302,
+                 "gid":2147490304,
                  "height":24,
                  "id":883,
                  "name":"",
@@ -228,6 +228,63 @@
                  "width":40,
                  "x":88,
                  "y":64
+                }, 
+                {
+                 "height":8,
+                 "id":884,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":224,
+                 "y":48
+                }, 
+                {
+                 "height":8,
+                 "id":885,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":120,
+                 "y":48
+                }, 
+                {
+                 "height":8,
+                 "id":886,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":88,
+                 "y":48
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -317,10 +374,10 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":884,
+ "nextobjectid":887,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.0",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -408,11 +465,11 @@
          "source":"..\/..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":6234,
+         "firstgid":6236,
          "source":"..\/..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/floran.json"
         }, 
         {
-         "firstgid":6429,
+         "firstgid":6431,
          "source":"..\/..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/glitch.json"
         }],
  "tilewidth":8,

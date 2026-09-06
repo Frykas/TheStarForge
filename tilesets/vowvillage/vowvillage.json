@@ -28,8 +28,8 @@
      "tilesetDirection":"string"
     },
  "spacing":0,
- "tilecount":12,
- "tiledversion":"1.11.0",
+ "tilecount":13,
+ "tiledversion":"1.10.2",
  "tileheight":64,
  "tileproperties":
     {
@@ -68,6 +68,16 @@
          "imagePositionX":"-16",
          "imagePositionY":"-16",
          "object":"starforge-miniknogbunkerhatch",
+         "tilesetDirection":"right"
+        },
+     "12":
+        {
+         "\/\/description":"A strange looking weapon exposed behind an avian showcasing frame.",
+         "\/\/name":"starforge-vowshowcase",
+         "\/\/shortdescription":"Vow Showcase Frame",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"starforge-locuststand",
          "tilesetDirection":"right"
         },
      "2":
@@ -190,6 +200,16 @@
          "object":"string",
          "tilesetDirection":"string"
         },
+     "12":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string",
+         "tilesetDirection":"string"
+        },
      "2":
         {
          "\/\/description":"string",
@@ -302,6 +322,16 @@
          "imageheight":40,
          "imagewidth":240,
          "width":40,
+         "x":0,
+         "y":0
+        },
+     "12":
+        {
+         "height":43,
+         "image":"..\/..\/objects\/dungeons\/locustfortress\/locuststand\/locuststand.png",
+         "imageheight":43,
+         "imagewidth":114,
+         "width":57,
          "x":0,
          "y":0
         },

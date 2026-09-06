@@ -26,12 +26,13 @@
   "blackrotbiomeTreasure" : [
     [1, {
       "pool" : [
-        {"weight" : 0.3, "item" : "starforge-blackrotchest-recipe"},
-        {"weight" : 0.3, "item" : "starforge-blackrotchair-recipe"},
-        {"weight" : 0.3, "item" : "starforge-blackrottable-recipe"},
-        {"weight" : 0.3, "item" : "starforge-blackrotlamp-recipe"},
-        {"weight" : 0.5, "pool" : "starforge-blackrotweapons"},
-        {"weight" : 0.3, "pool" : "blackrotmaterialTreasure"}
+        {"weight" : 0.1, "item" : "starforge-blackrotchest-recipe"},
+        {"weight" : 0.1, "item" : "starforge-blackrotchair-recipe"},
+        {"weight" : 0.1, "item" : "starforge-blackrottable-recipe"},
+        {"weight" : 0.1, "item" : "starforge-blackrotlamp-recipe"},
+        {"weight" : 0.15, "pool" : "starforge-blackrotweapons"},
+        {"weight" : 0.3, "pool" : "blackrotmaterialTreasure"},
+		{"weight" : 0.15, "item" : "starforge-witherurbanweapons-codex"}
       ]
     }]
   ],

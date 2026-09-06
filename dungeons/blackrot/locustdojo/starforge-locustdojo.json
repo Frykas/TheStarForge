@@ -925,7 +925,7 @@
                  "y":1432
                 }, 
                 {
-                 "gid":6088,
+                 "gid":6090,
                  "height":24,
                  "id":1345,
                  "name":"",
@@ -937,7 +937,7 @@
                  "y":808
                 }, 
                 {
-                 "gid":2147489736,
+                 "gid":2147489738,
                  "height":24,
                  "id":1346,
                  "name":"",
@@ -1081,7 +1081,7 @@
                  "y":1304
                 }, 
                 {
-                 "gid":6097,
+                 "gid":6099,
                  "height":16,
                  "id":1361,
                  "name":"",
@@ -1093,7 +1093,7 @@
                  "y":1224
                 }, 
                 {
-                 "gid":6233,
+                 "gid":6235,
                  "height":16,
                  "id":1362,
                  "name":"",
@@ -1161,7 +1161,7 @@
                  "type":"",
                  "visible":true,
                  "width":40,
-                 "x":1520,
+                 "x":1528,
                  "y":176
                 }, 
                 {
@@ -1177,7 +1177,7 @@
                  "y":176
                 }, 
                 {
-                 "gid":6227,
+                 "gid":6229,
                  "height":24,
                  "id":1369,
                  "name":"",
@@ -1189,7 +1189,7 @@
                  "y":776
                 }, 
                 {
-                 "gid":2147489875,
+                 "gid":2147489877,
                  "height":24,
                  "id":1370,
                  "name":"",
@@ -1249,7 +1249,7 @@
                  "y":1136
                 }, 
                 {
-                 "gid":2147489745,
+                 "gid":2147489747,
                  "height":16,
                  "id":1378,
                  "name":"",
@@ -1261,7 +1261,7 @@
                  "y":1400
                 }, 
                 {
-                 "gid":6233,
+                 "gid":6235,
                  "height":16,
                  "id":1379,
                  "name":"",
@@ -1273,7 +1273,7 @@
                  "y":1400
                 }, 
                 {
-                 "gid":2147489745,
+                 "gid":2147489747,
                  "height":16,
                  "id":1380,
                  "name":"",
@@ -1780,6 +1780,428 @@
                  "width":8,
                  "x":1592,
                  "y":192
+                }, 
+                {
+                 "gid":6287,
+                 "height":43,
+                 "id":1456,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":57,
+                 "x":1568,
+                 "y":192
+                }, 
+                {
+                 "height":8,
+                 "id":1457,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-alabattor"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1728,
+                 "y":112
+                }, 
+                {
+                 "height":8,
+                 "id":1458,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2464,
+                 "y":832
+                }, 
+                {
+                 "height":8,
+                 "id":1462,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2320,
+                 "y":824
+                }, 
+                {
+                 "height":8,
+                 "id":1463,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2608,
+                 "y":1352
+                }, 
+                {
+                 "height":8,
+                 "id":1464,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2080,
+                 "y":1056
+                }, 
+                {
+                 "height":8,
+                 "id":1465,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1144,
+                 "y":1352
+                }, 
+                {
+                 "height":8,
+                 "id":1466,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":824,
+                 "y":680
+                }, 
+                {
+                 "height":8,
+                 "id":1467,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2048,
+                 "y":1120
+                }, 
+                {
+                 "height":8,
+                 "id":1468,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":3200,
+                 "y":1352
+                }, 
+                {
+                 "height":8,
+                 "id":1469,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2592,
+                 "y":1096
+                }, 
+                {
+                 "height":8,
+                 "id":1470,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2328,
+                 "y":1112
+                }, 
+                {
+                 "height":8,
+                 "id":1471,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2040,
+                 "y":1352
+                }, 
+                {
+                 "height":8,
+                 "id":1472,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1976,
+                 "y":1352
+                }, 
+                {
+                 "height":8,
+                 "id":1473,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":880,
+                 "y":1112
+                }, 
+                {
+                 "height":8,
+                 "id":1474,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1760,
+                 "y":824
+                }, 
+                {
+                 "height":8,
+                 "id":1475,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotcrutter"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":416,
+                 "y":1456
+                }, 
+                {
+                 "height":8,
+                 "id":1476,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotstinger"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":488,
+                 "y":1456
+                }, 
+                {
+                 "height":8,
+                 "id":1477,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotstinger"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1448,
+                 "y":1456
+                }, 
+                {
+                 "gid":6060,
+                 "height":24,
+                 "id":1478,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":1384,
+                 "y":632
+                }, 
+                {
+                 "gid":6060,
+                 "height":24,
+                 "id":1479,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":1496,
+                 "y":632
+                }, 
+                {
+                 "gid":6060,
+                 "height":24,
+                 "id":1480,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":1792,
+                 "y":424
+                }, 
+                {
+                 "gid":6060,
+                 "height":24,
+                 "id":1481,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":1680,
+                 "y":424
+                }, 
+                {
+                 "gid":6288,
+                 "height":16,
+                 "id":1482,
+                 "name":"",
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"starforge-yukaibigchestTreasure\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":1496,
+                 "y":216
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2330,10 +2752,10 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1456,
+ "nextobjectid":1483,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.0",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -2425,8 +2847,16 @@
          "source":"..\/..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":6078,
+         "firstgid":6080,
          "source":"..\/..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/floran.json"
+        }, 
+        {
+         "firstgid":6275,
+         "source":"..\/..\/..\/tilesets\/vowvillage\/vowvillage.json"
+        }, 
+        {
+         "firstgid":6288,
+         "source":"..\/..\/..\/tilesets\/yukaivillage\/yukaivillage.json"
         }],
  "tilewidth":8,
  "type":"map",

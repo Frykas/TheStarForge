@@ -208,6 +208,25 @@
                  "width":24,
                  "x":216,
                  "y":160
+                }, 
+                {
+                 "height":8,
+                 "id":876,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":152,
+                 "y":48
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -297,10 +316,10 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":876,
+ "nextobjectid":877,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.0",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -388,7 +407,7 @@
          "source":"..\/..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":6234,
+         "firstgid":6236,
          "source":"..\/..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/floran.json"
         }],
  "tilewidth":8,

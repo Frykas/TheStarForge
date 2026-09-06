@@ -1,0 +1,43 @@
+{
+  "objectName" : "starforge-locuststand",
+  "rarity" : "essential",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "A Hylotl ceremonial bow taken over by the Blackrot strand of the Great Withering.",
+  "shortdescription" : "Locust",
+  "race" : "hylotl",
+
+  "floranDescription" : "Ssscary plant killsss weapon too... ",
+  "glitchDescription" : "Interested. This infection even corrupted this bow.",
+  "novakidDescription" : "Eh this bundle of vines got some bow inside!",
+  "humanDescription" : "It looks like there used to be a ceremonial bow here. What's left is a gross mess.",
+  "hylotlDescription" : "A sickening corruption took over this Hylotl ceremonial bow. It's sad to see such a piece go.",
+  "avianDescription" : "An old Hylotl bow! It doesn't look like it's Hylotl anymore.", 
+  "apexDescription" : "It looks like the Blackrot strand managed to fuse itself with a ceremonial bow. How strange.",
+
+  "inventoryIcon" : "locuststandicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "locuststand.png:<color>",
+      "imagePosition" : [0.375, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/starforgeinteractpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "starforge-locust",
+
+  "animation" : "locuststand.animation",
+  "animationParts" : {
+    "object" : "locuststand.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

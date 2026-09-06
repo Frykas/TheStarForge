@@ -50,7 +50,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":6433,
+                 "gid":6435,
                  "height":64,
                  "id":868,
                  "name":"",
@@ -79,6 +79,25 @@
                  "visible":true,
                  "width":16,
                  "x":160,
+                 "y":80
+                }, 
+                {
+                 "height":8,
+                 "id":871,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-blackrotkabuto"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":232,
                  "y":80
                 }],
          "opacity":1,
@@ -169,10 +188,10 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":871,
+ "nextobjectid":872,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.0",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -260,11 +279,11 @@
          "source":"..\/..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":6234,
+         "firstgid":6236,
          "source":"..\/..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/floran.json"
         }, 
         {
-         "firstgid":6429,
+         "firstgid":6431,
          "source":"..\/..\/..\/tilesets\/wither\/wither.json"
         }],
  "tilewidth":8,
