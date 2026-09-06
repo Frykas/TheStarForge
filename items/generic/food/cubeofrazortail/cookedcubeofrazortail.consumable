@@ -1,0 +1,38 @@
+{
+  "itemName" : "starforge-cubeofrazortailcooked",
+  "rarity" : "Legendary",
+  "price" : 150,
+  "category" : "food",
+  "inventoryIcon" : "cookedcubeofrazortail.png",
+  "description" : "A prime piece of meat from an apex predator, cooked to perfection.",
+  "shortdescription" : "Slayer's Morsel",
+  "effects" : [ [
+    {
+      "effect" : "maxhealthscalingboostfood",
+      "duration" : 600
+    },
+	{
+        "effect" : "ragefood",
+        "duration" : 300
+      },
+	  
+	{
+        "effect" : "jumpboost",
+        "duration" : 600
+    },
+	  
+    {
+      "effect" : "runboost",
+      "duration" : 600
+    }
+  ] ],
+  "foodValue" : 85,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1000,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

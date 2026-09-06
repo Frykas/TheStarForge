@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "starforge-cubeofrazortail", "count" : 1 },
+	{ "item" : "oceansalsa", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-cubeofrazortailcooked",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "mains" ], 
+  "duration" : 0
+}

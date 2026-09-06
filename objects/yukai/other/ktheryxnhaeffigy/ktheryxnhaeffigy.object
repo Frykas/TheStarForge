@@ -1,0 +1,51 @@
+{
+  "objectName" : "starforge-ktheryxnhaeffigy",
+  "colonyTags" : ["bone", "light"],
+  "rarity" : "legendary",
+
+  "printable" : false,
+  "description" : "An effigy made out of Jellycap Tree wood. It depicts what appears to be a non-humanoid creature.",
+  "shortdescription" : "Unknown Effigy",
+  "race" : "hylotl",
+  "category" : "decorative",
+  "price" : 580,
+
+  "apexDescription" : "It's an effigy. What it depicts however I can't say.",
+  "avianDescription" : "It's a creepy statue. I don't know what it's supposed to be.",
+  "floranDescription" : "Floran hatesss that thing... It hummsss in unknown tonguesss...",
+  "glitchDescription" : "Concerned. What a troubling sculpture to look at.",
+  "humanDescription" : "Effigies tend to be weird, especially in space, but this one takes the cake.",
+  "hylotlDescription" : "The Yukai's madness only grows as time goes on. This... Abomination is proof of that.",
+  "novakidDescription" : "That thin' givin' me the heebie jeebies!",
+
+  
+  "lightColor" : [87, 41, 136],
+
+  "flickerPeriod" : 0.9,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "ktheryxnhaeffigyicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "ktheryxnhaeffigy.png",
+      "imageLayers" : [ { "image" : "ktheryxnhaeffigy.png" }, { "image" : "ktheryxnhaeffigyfullbright.png", "fullbright" : true } ],
+      "imagePosition" : [-65, 0],
+
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+
+      "frames" : 1,
+      "animationCycle" : 1.5,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [-2, 8]
+    }
+   ],
+   "soundEffect" : "/sfx/object/thesealedsound.ogg",
+  "soundEffectRangeMultiplier" : 0.5
+   
+   }
