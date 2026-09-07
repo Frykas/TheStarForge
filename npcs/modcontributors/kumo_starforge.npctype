@@ -28,10 +28,7 @@
                 }],
                 "legs": [{
                     "name": "starforge-kumolegs"
-                }],
-				"primary": [{
-				    "name": "starforge-unboundheavysniper"
-				}]	
+                }]	
             }]]
         ]
     }
