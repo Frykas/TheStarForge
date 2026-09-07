@@ -1,0 +1,20 @@
+{
+  "id" : "starforge-imperviumorigins",
+  "species" : "glitch",
+  "title" : "The Origins of Impervium",
+  "description" : "A short history of the galaxy's toughest alloy.",
+  "icon" : "starforge-glitchkatahelcover3.png",
+  "contentPages" : [
+
+"Impervium was first discovered by Avian Stargazers around three centuries ago. It is, by far, the strongest alloy we currently have access to, surpassing Solarium-infused Violium by quite a margin. To this day, we've found so little of it that we're still unsure how exactly it's created. It is theorized that it forms when a meteor containing various, unknown metals flies close to a powerful sun, causing them to melt and fuse together, creating our alloy - named Impervium after its incredibly impervious nature.",
+"Now, my lord Katahel got his hands on a rare sample, just enough to make the tip of a spear or a crossbow bolt. He tasked me with finding more and giving him the means to rule eternally, a body of Impervium, one that will not melt, rust or age. But how? How do I get my hands on something so incredibly rare and expensive?
+Well the answer was just below my feet. Well, below Katahel's castle to be precise. The incredible ^magenta;Starforge^reset;.",
+"It took me ages, but after a ton of research I figured out how it works. It's basically like a pixel printer, but with Ancient Essence! Obviously, it's a lot more complex than that, but with a base blueprint and the component's parameters, it's possible to create an almost exact copy using the Essence and various raw materials! After various trials and errors, I made it! Starforged Impervium! Our synthetic version, while much cheaper, still used up the majority of the Castle's Essence.",
+"This Impervium was used to arm Katahel's High Knights. Impervium shields, highbrands, broadswords, you name it. I even had enough to make my lord Katahel a whole suit of heavy armor. I'm confident it was the toughest armor any Glitch has ever worn. I needed more time to figure out if an Impervium body was even possible... I needed to experiment with this ^magenta;Starforge^reset; a little more. That's how I came to create the Roboblins, Robogres and so much more... But that's a story for another day." 
+
+  ],
+    "itemConfig" : {
+    "rarity" : "rare",
+    "price" : 75
+  }
+}

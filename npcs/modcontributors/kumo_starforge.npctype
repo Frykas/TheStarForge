@@ -1,0 +1,40 @@
+{
+  "type" : "starforge-kumo",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+
+    "dialogMode":"tutorial",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Good morning~ or is it evening yet? I can't tell."
+          ]
+        }
+      }
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+			
+			    "head": [{
+				    "name": "starforge-kumohead"
+				}],
+                "chest": [{
+                    "name": "starforge-kumochest"
+                }],
+                "legs": [{
+                    "name": "starforge-kumolegs"
+                }],
+				"primary": [{
+				    "name": "starforge-unboundheavysniper"
+				}]	
+            }]]
+        ]
+    }
+}
+
+

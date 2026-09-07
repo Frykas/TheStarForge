@@ -89,6 +89,10 @@
 	 {
 	  "type" : "starforge-teskredotexe",
 	  "species" : [ "human" ]
+	 },
+	 {
+	  "type" : "starforge-kumo",
+	  "species" : [ "human" ]
 	 }
 
   ]

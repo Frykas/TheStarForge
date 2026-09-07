@@ -131,6 +131,7 @@
     [1, {
       "fill" : [
         {"item" : [ "starforge-katahelimperviumshield", 1]},
+		{"item" : [ "starforge-imperviumorigins-codex", 1]},
         {"pool" : "ore"},
 		{"pool" : "chestMoney"},
 		{"pool" : "chestMoney"},

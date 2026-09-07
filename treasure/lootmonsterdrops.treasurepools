@@ -323,7 +323,7 @@
       "pool" : [
         {"weight" : 0.5, "item" : ["essence", 60]},
         {"weight" : 0.75, "item" : ["essence", 80]},
-        {"weight" : 1.00, "item" : ["essence", 100]},
+        {"weight" : 0.90, "item" : ["essence", 100]},
         {"weight" : 0.75, "item" : ["essence", 120]},
         {"weight" : 0.5, "item" : ["essence", 140]}
       ]
