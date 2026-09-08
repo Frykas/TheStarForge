@@ -2,8 +2,8 @@
   "input" : [
     { "item" : "starforge-yukaipearl", "count" : 5},
 	{ "item" : "refinedaegisalt", "count" : 5},
-	{ "item" : "plantfibre", "count" : 125},
-	{ "item" : "darkwoodmaterial", "count" : 100}
+	{ "item" : "venomsample", "count" : 5},
+	{ "item" : "plantfibre", "count" : 125}
   ],
   "output" : {
     "item" : "starforge-scavenger",

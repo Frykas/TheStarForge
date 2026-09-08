@@ -1,6 +1,7 @@
 {
   "input" : [
 	{ "item" : "refinedferozium", "count" : 8},
+	{ "item" : "cryonicextract", "count" : 3},
 	{ "item" : "grassyrock", "count" : 50},
 	{ "item" : "ice", "count" : 25}
   ],

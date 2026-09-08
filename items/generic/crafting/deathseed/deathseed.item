@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-deathseed",
+  "price" : 50,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "deathseed.png",
+  "description" : "A highly adaptive seed of the Great Withering. Can be used for crafting.",
+  "shortdescription" : "Death Seed",
+  "itemTags" : ["starforge-starforge", "reagent"]
+}

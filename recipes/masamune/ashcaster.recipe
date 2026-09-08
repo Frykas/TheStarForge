@@ -1,8 +1,8 @@
 {
   "input" : [
 	{ "item" : "refinedaegisalt", "count" : 10},
-	{ "item" : "starforge-withersample", "count" : 50},
-	{ "item" : "biosample", "count" : 30}
+	{ "item" : "starforge-deathseed", "count" : 5},
+	{ "item" : "starforge-withersample", "count" : 50}
   ],
   "output" : {
     "item" : "starforge-ashcaster",

@@ -2,6 +2,7 @@
   "input" : [
 	{ "item" : "essence", "count" : 1750},
 	{ "item" : "starforge-undyingfibre", "count" : 6},
+	{ "item" : "starforge-deathseed", "count" : 10},
 	{ "item" : "hardenedcarapace", "count" : 5},
 	{ "item" : "starforge-withersample", "count" : 75},
 	{ "item" : "starforge-blackrotmaterial", "count" : 250}

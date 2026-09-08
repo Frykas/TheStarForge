@@ -181,8 +181,9 @@
   "progenitorslitherTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.60, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.50, "pool" : "progenitormaterialTreasure"},
 		{"weight" : 0.36, "item" : "plantfibre"},
+		{"weight" : 0.1, "item" : "starforge-deathseed"},
 		{"weight" : 0.03, "item" : "starforge-slitherdnacodex-codex"},
 		{"weight" : 0.01, "item" : "starforge-progenitorslitheraf"}
       ],
@@ -197,8 +198,9 @@
   "progenitorsporeTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.60, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.50, "pool" : "progenitormaterialTreasure"},
 		{"weight" : 0.39, "item" : "plantfibre"},
+		{"weight" : 0.1, "item" : "starforge-deathseed"},
 		{"weight" : 0.01, "item" : "starforge-withersporeaf"}
       ],
       "poolRounds" : [
@@ -212,7 +214,8 @@
   "witherhuskTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.80, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.75, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.05, "item" : "starforge-deathseed"},
 		{"weight" : 0.19, "item" : "bone"},
 		{"weight" : 0.01, "item" : "starforge-witherhuskaf"}
       ],
@@ -227,8 +230,9 @@
   "tanglevinereanimatorTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.80, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.75, "pool" : "progenitormaterialTreasure"},
 		{"weight" : 0.19, "item" : "bone"},
+		{"weight" : 0.05, "item" : "starforge-deathseed"},
 		{"weight" : 0.01, "item" : "starforge-tanglevinereanimatoraf"}
       ],
       "poolRounds" : [
@@ -242,8 +246,9 @@
   "withercharhoundTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.70, "pool" : "progenitormaterialTreasure"},
+		{"weight" : 0.65, "pool" : "progenitormaterialTreasure"},
 		{"weight" : 0.19, "item" : "bone"},
+		{"weight" : 0.05, "item" : "starforge-deathseed"},
 		{"weight" : 0.10, "item" : "scorchedcore"},
 		{"weight" : 0.01, "item" : "starforge-withercharhoundaf"}
       ],
@@ -258,8 +263,9 @@
   "blackrotflyTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.80, "pool" : "blackrotmaterialTreasure"},
+		{"weight" : 0.75, "pool" : "blackrotmaterialTreasure"},
 		{"weight" : 0.19, "item" : "hardenedcarapace"},
+		{"weight" : 0.05, "item" : "starforge-deathseed"},
 		{"weight" : 0.01, "item" : "starforge-blackrotflyaf"}
       ],
       "poolRounds" : [
@@ -273,8 +279,9 @@
   "blackrotcrutterTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.70, "pool" : "blackrotmaterialTreasure"},
+		{"weight" : 0.65, "pool" : "blackrotmaterialTreasure"},
 		{"weight" : 0.19, "item" : "hardenedcarapace"},
+		{"weight" : 0.05, "item" : "starforge-deathseed"},
 		{"weight" : 0.10, "item" : "venomsample"},
 		{"weight" : 0.01, "item" : "starforge-blackrotcrutteraf"}
       ],
@@ -289,8 +296,9 @@
   "blackrotstingerTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.80, "pool" : "blackrotmaterialTreasure"},
+		{"weight" : 0.75, "pool" : "blackrotmaterialTreasure"},
 		{"weight" : 0.19, "item" : "hardenedcarapace"},
+		{"weight" : 0.05, "item" : "starforge-deathseed"},
 		{"weight" : 0.01, "item" : "starforge-blackrotstingeraf"}
       ],
       "poolRounds" : [
@@ -304,8 +312,9 @@
   "blackrotkabutoTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.80, "pool" : "blackrotmaterialTreasure"},
+		{"weight" : 0.75, "pool" : "blackrotmaterialTreasure"},
 		{"weight" : 0.19, "item" : "hardenedcarapace"},
+		{"weight" : 0.05, "item" : "starforge-deathseed"},
 		{"weight" : 0.01, "item" : "starforge-blackrotkabutoaf"}
       ],
       "poolRounds" : [
