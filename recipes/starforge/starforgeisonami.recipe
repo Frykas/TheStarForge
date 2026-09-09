@@ -3,6 +3,7 @@
 	{ "item" : "essence", "count" : 1750},
     { "item" : "starforge-yukaipearl", "count" : 5},
 	{ "item" : "refinedferozium", "count" : 12},
+	{ "item" : "starforge-blacksunessence", "count" : 12},
 	{ "item" : "coralfragment", "count" : 50},
 	{ "item" : "starforge-tidalfragment", "count" : 50}
   ],

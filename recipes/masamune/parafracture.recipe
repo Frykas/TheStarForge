@@ -1,8 +1,8 @@
 {
   "input" : [
-    { "item" : "starforge-blacksunessence", "count" : 6},
 	{ "item" : "refinedferozium", "count" : 8},
-	{ "item" : "cryonicextract", "count" : 5},
+	{ "item" : "starforge-blacksunessence", "count" : 6},
+	{ "item" : "bone", "count" : 15},
 	{ "item" : "starforge-tidalfragment", "count" : 30}
   ],
   "output" : {

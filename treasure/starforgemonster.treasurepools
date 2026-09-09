@@ -124,7 +124,8 @@
   "cephalowormTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.92, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.77, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.15, "item" : "starforge-blacksunessence"},
 		{"weight" : 0.07, "item" : "starforge-cephalowormshell"},
 		{"weight" : 0.01, "item" : "starforge-cephalowormaf"}
       ],
@@ -139,7 +140,8 @@
   "glorbeeTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.99, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.89, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.10, "item" : "starforge-blacksunessence"},
 		{"weight" : 0.01, "item" : "starforge-glorbeeaf"}
       ],
       "poolRounds" : [
@@ -153,7 +155,8 @@
   "glorbiteTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.99, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.84, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.15, "item" : "starforge-blacksunessence"},
 		{"weight" : 0.01, "item" : "starforge-glorbiteaf"}
       ],
       "poolRounds" : [
@@ -167,7 +170,8 @@
   "puppertoothTreasure" : [
     [1, {
       "pool" : [
-		{"weight" : 0.99, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.84, "pool" : "tidalFragmentTreasure"},
+		{"weight" : 0.15, "item" : "starforge-blacksunessence"},
 		{"weight" : 0.01, "item" : "starforge-puppertoothaf"}
       ],
       "poolRounds" : [
@@ -444,9 +448,10 @@
   "starforge-razortailtreasure" : [
     [0, {
       "fill" : [
-	      {"weight" : 1, "pool" : "starforge-razortailmeat"},
+	    {"weight" : 1, "pool" : "starforge-razortailmeat"},
         {"weight" : 1, "pool" : "starforge-razortailweapons"},
-		    {"weight" : 1, "pool" : "chestMoney"}
+		{"weight" : 1, "item" : ["starforge-blacksunessence", 3]},
+		{"weight" : 1, "pool" : "chestMoney"}
       ],
 	    "pool" : [
         {"weight" : 0.1, "item" : "starforge-razortailaf"}
@@ -461,9 +466,10 @@
   "starforge-murakrazortailtreasure" : [
     [0, {
       "fill" : [
-	      {"weight" : 1, "pool" : "starforge-razortailmeat"},
+	    {"weight" : 1, "pool" : "starforge-razortailmeat"},
         {"weight" : 1, "pool" : "starforge-murakrazortailweapons"},
-		    {"weight" : 1, "pool" : "chestMoney"}
+		{"weight" : 1, "item" : ["starforge-blacksunessence", 6]},
+		{"weight" : 1, "pool" : "chestMoney"}
       ],
 	    "pool" : [
         {"weight" : 0.1, "item" : "starforge-razortailaf"}

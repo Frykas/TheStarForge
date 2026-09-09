@@ -39,12 +39,33 @@
             "item": "starforge-skullbreaker"
         }
     },
+	
+	{
+        "op": "add",
+        "path": "/boneChestTreasure/0/1/pool/-",
+        "value": {
+            "weight": 0.08,
+            "item": "starforge-charveil"
+        }
+    },
+	
 	{
         "op": "add",
         "path": "/oceanChestTreasure/0/1/pool/-",
         "value": {
             "weight": 0.20,
             "item": "starforge-wavecrasher"
+        }
+    },
+	
+	
+	
+	{
+        "op": "add",
+        "path": "/geodeChestTreasure/0/1/pool/-",
+        "value": {
+            "weight": 0.08,
+            "item": "starforge-resonance"
         }
     },
 	
