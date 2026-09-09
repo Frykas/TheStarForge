@@ -6,5 +6,10 @@
     "portraitImage" : "/interface/chatbubbles/witherlord.png:<frame>",
     "text" : "-.-. --- -. ... ..- -- . --..--  .-. . ..- ... . --..--  .-. . .- -. .. -- .- - .",
     "persistTime" : 5.0
+  },
+  
+  "starforge-witherdust" : {
+    "unique" : false,
+    "text" : "I am detecting dangerous, armour-degrading particles in the air. I recommend seeking shelter immediately, or finding a way to resist them before they penetrate your body."
   }
 }

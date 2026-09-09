@@ -1,6 +1,8 @@
 function init()
   animator.setParticleEmitterOffsetRegion("decay", mcontroller.boundBox())
   animator.setParticleEmitterActive("decay", true)
+  
+  world.sendEntityMessage(entity.id(), "queueRadioMessage", "starforge-witherdust", 5.0)
 
   self.statModifier = effect.addStatModifierGroup({
     {stat = "protection", effectiveMultiplier = 1},
