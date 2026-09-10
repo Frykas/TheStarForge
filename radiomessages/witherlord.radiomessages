@@ -1,15 +1,40 @@
 {
-  //Starforge - The Witherlord 
+  //Starforge - The Formless
   "witherlord-firstcontact" : {
     "type" : "tutorial",
-    "senderName" : "The Witherlord",
-    "portraitImage" : "/interface/chatbubbles/witherlord.png:<frame>",
-    "text" : "-.-. --- -. ... ..- -- . --..--  .-. . ..- ... . --..--  .-. . .- -. .. -- .- - .",
+    "senderName" : "The Formless",
+    "portraitImage" : "/interface/chatbubbles/formless.png:<frame>",
+    "text" : "PIETYNETZY0OPGZFCD0QZCX.TE0OPGZFCD0PIETYNETZY.NZYDFXP.MPNZXP.0NZYDFXP0HSLE0MPNZXPD.",
+    "persistTime" : 5.0
+  },
+  
+  "witherlord-secondcontact" : {
+    "type" : "tutorial",
+    "senderName" : "The Formless",
+    "portraitImage" : "/interface/chatbubbles/formless.png:<frame>",
+    "text" : "YJ0UQJI0JE0RUSECU.YJ0RUSECUI0JE0UQJ.DE0TYVVUHUDSU.MXQJ0VQBBI0HUJKHDI.MXQJ0HUJKHDI0XKDWUHI.",
+    "persistTime" : 5.0
+  },
+  
+  "witherlord-lastcontact" : {
+    "type" : "tutorial",
+    "senderName" : "The Formless",
+    "portraitImage" : "/interface/chatbubbles/formless.png:<frame>",
+    "text" : "ZILG0XYWUSM.ZILG0LYNOLHM.CN0MBUFF0YUN0CNMYFZ.IHY0VYWIGYM0HIHY.HIHY0VYWIGYM0GUHS.GUHS0VYWIGYM0BOHAYL.BOHAYL0NUEYM0LIIN.",
+    "persistTime" : 5.0
+  },
+  
+  "witherlord-deathseedcontact" : {
+    "type" : "tutorial",
+    "senderName" : "The Formless",
+    "portraitImage" : "/interface/chatbubbles/formless.png:<frame>",
+    "text" : "NY0RZXYX0HTSXZRJ.WJZXJ.WJFSNRFYJ.",
     "persistTime" : 5.0
   },
   
   "starforge-witherdust" : {
     "unique" : false,
+	"type" : "tutorial",
     "text" : "I am detecting dangerous, armour-degrading particles in the air. I recommend seeking shelter immediately, or finding a way to resist them before they penetrate your body."
   }
 }

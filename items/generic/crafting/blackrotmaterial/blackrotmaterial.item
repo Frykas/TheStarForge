@@ -6,5 +6,6 @@
   "inventoryIcon" : "blackrotmaterial.png",
   "description" : "A Hive sample of the Blackrot strand, from the Great Withering. ",
   "shortdescription" : "Blackrot Sample",
-  "itemTags" : [ "reagent" ]
+  "itemTags" : [ "reagent" ],
+  "radioMessagesOnPickup" : [ "witherlord-secondcontact" ]
 }

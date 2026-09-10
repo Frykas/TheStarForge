@@ -6,5 +6,6 @@
   "inventoryIcon" : "deathseed.png",
   "description" : "A highly adaptive seed of the Great Withering. Can be used for crafting.",
   "shortdescription" : "Death Seed",
-  "itemTags" : ["starforge-starforge", "reagent"]
+  "itemTags" : ["starforge-starforge", "reagent"],
+  "radioMessagesOnPickup" : [ "witherlord-deathseedcontact" ]
 }

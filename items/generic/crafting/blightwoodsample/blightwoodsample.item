@@ -1,0 +1,11 @@
+{
+  "itemName" : "starforge-blightwoodsample",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "blightwoodsample.png",
+  "description" : "A pale bark sample of the Blightwood strand, from the Great Withering. ",
+  "shortdescription" : "Blightwood Sample",
+  "itemTags" : [ "reagent" ],
+  "radioMessagesOnPickup" : [ "witherlord-lastcontact" ]
+}
