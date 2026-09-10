@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "starforge-witherfruit", "count" : 1 }
+  ],
+  "output" : { "item" : "starforge-cookedwitherfruit", "count" : 1 },
+  "groups" : [ "campfire", "consumables", "all" ]
+}

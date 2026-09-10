@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-witherfruitgratin",
+  "rarity" : "rare",
+  "price" : 300,
+  "category" : "food",
+  "inventoryIcon" : "witherfruitgratin.png",
+  "description" : "Delicious steak, mixed with cheese and covered in sweet Buco fruit sauce.",
+  "shortdescription" : "Buco Gratin",
+  "effects" : [ [
+    {
+      "effect" : "starforge-witherblock",
+      "duration" : 480
+    },
+	{
+      "effect" : "maxhealthscalingboostfood",
+      "duration" : 480
+    }
+  ] ],
+  "foodValue" : 60,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

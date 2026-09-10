@@ -1,0 +1,28 @@
+{
+  "itemName" : "starforge-witherfruitsmoothie",
+  "rarity" : "uncommon",
+  "price" : 180,
+  "category" : "food",
+  "inventoryIcon" : "witherfruitsmoothie.png",
+  "description" : "Now it really feels like you're drinking mud!",
+  "shortdescription" : "Buco Smoothie",
+  "effects" : [ [
+    {
+      "effect" : "starforge-witherblock",
+      "duration" : 360
+    },
+	{
+      "effect" : "maxhealthscalingboostfood",
+      "duration" : 240
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -33,7 +33,7 @@
   },
   
   "starforge-witherdust" : {
-    "unique" : false,
+    "unique" : true,
 	"type" : "tutorial",
     "text" : "I am detecting dangerous, armour-degrading particles in the air. I recommend seeking shelter immediately, or finding a way to resist them before they penetrate your body."
   }

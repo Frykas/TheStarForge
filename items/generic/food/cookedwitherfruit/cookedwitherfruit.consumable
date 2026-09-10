@@ -1,0 +1,25 @@
+{
+  "itemName" : "starforge-cookedwitherfruit",
+  "rarity" : "uncommon",
+  "price" : 180,
+  "category" : "food",
+  "inventoryIcon" : "cookedwitherfruit.png",
+  "description" : "The fruit gained a buttery and sweet taste!",
+  "shortdescription" : "Baked Buco Fruit",
+  "effects" : [ [
+    {
+      "effect" : "starforge-witherblock",
+      "duration" : 360
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+    "learnBlueprintsOnPickup" : [ "starforge-witherfruitgratin" ]
+}

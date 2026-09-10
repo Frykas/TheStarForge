@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "starforge-cookedwitherfruit", "count" : 1 },
+	{ "item" : "cheese", "count" : 1},
+	{ "item" : "cookedalienmeat", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-witherfruitgratin",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "mains" ], 
+  "duration" : 0
+}
