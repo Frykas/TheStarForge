@@ -32,7 +32,7 @@
   ],
   "scriptDelta" : 5,
   
-  "spawnableItem" : "starforge-devotion",
+  "spawnableItem" : "starforge-siaxaabackfalse",
 
   "animation" : "guardianprisoner.animation",
   "animationParts" : {

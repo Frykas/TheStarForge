@@ -1,0 +1,32 @@
+{
+  "id" : "siaxaanadirquest1",
+  "title" : "^#b4f5c3;Escaping the Stargazers",
+  "text" : "This prisoner reveals that dangerous Stargazer Warpriests are looking for Valehaven, a city of Grounded Avians worshipping Siaxaa. A friend of her, ^green;Sirin^reset;, and her guardian are looking for a place to hide as they're the main targets of the Warpriests. Maybe someone at the ^green;Thalasso Outpost^reset; would be willing to help? ",
+  "completionText" : "You're telling me a Maiden of Siaxaa is the target of the Stargazers? We gotta help them! I'll talk to Mariko, but consider them already welcome here! We'll be SUUUPER happy to shelter people of Siaxaa!",
+  "completionCinema" : "/cinematics/sirinjoins/sirinjoins.cinematic",
+  "moneyRange" : [10, 10],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 1 ] ]
+  ],
+
+  "compassUpdate" : 0.2,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Speak to ^orange;Tweeters^reset; at the ^green;Thalasso Outpost^reset;.",
+	"setUniverseFlags" : ["valehavensirinmission1"]
+  }
+}

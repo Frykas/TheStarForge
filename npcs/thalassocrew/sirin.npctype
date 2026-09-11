@@ -36,6 +36,8 @@
   },
 
   "scriptConfig" : {
+    "offeredQuests" : ["siaxaanadirquest2"],
+    "turnInQuests" : ["siaxaanadirquest2"],
     "behavior" : "villager",
 
     "dialogMode" : "sequence",
@@ -46,8 +48,8 @@
             "From the bottom of my heart, thank you!",
             "I can't imagine what the Stargazer would've done to me and Nadir if you didn't come.",
 			"Nadir is my designated bodyguard while I go through the Trial of the Maiden! I can't take this blindfold off until then.",
-			"I hope once I get my first mark of Siaxaa I'll be accepted in Valehaven...",
-            "The Stargazer are probably still looking for me and the Maiden, I'll stay here a while.",
+			"I hope once I get my first tear of Siaxaa I'll be accepted back in Valehaven...",
+            "The Stargazer are probably still looking for me and the True Maiden, I'll stay here a while.",
 			"The Thalasso crew is so nice. They let me have plenty of snacks!",
 			"Can you help me find the bathroom? There's too many stairs I keep tripping!",
 			"Eeek! You scared me, I didn't see you coming."
@@ -69,7 +71,11 @@
                 }],
                 "legs": [{
                     "name": "starforge-valehavendresspants"
-                }]
+                }],
+				"back": [
+				{ "name": "starforge-siaxaabackfalse" }
+				
+				]
             }]]
         ]
     }

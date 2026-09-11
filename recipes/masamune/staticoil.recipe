@@ -1,0 +1,14 @@
+{
+  "input" : [
+	{ "item" : "refinedaegisalt", "count" : 8},
+	{ "item" : "hardenedcarapace", "count" : 2},
+	{ "item" : "staticcell", "count" : 5}
+  ],
+  "output" : {
+    "item" : "starforge-staticoil",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "starforge-yukaishop", "throwable" ],
+  "duration" : 0
+}
+

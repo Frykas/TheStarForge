@@ -1,0 +1,31 @@
+{
+  "id" : "siaxaanadirquest2",
+  "prerequisites" : [  "siaxaanadirquest1" ],
+  "title" : "^#b4f5c3;Safe, At Last!",
+  "text" : "Hey there! I'm Sirin. Thank you for saving my friend out there! Me and Nadir, my guardian, know the exact coordinates of Valehaven. It's why we've been pursued by the Stargazers. Thanks to you, we'll be safe hidden here!",
+ "completionText" : "The pair are safe for now. Nadir is an experienced gladiator and a master of heavy weapons such as Highbrands and Maces. He'll be of great help if I'm ever interested in crafting high quality ones.",
+  "moneyRange" : [100, 100],
+  "rewards" : [
+    [ [ "starforge-thalassocache", 3 ] ]
+  ],
+
+  "compassUpdate" : 0.2,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "player"
+    },
+    "requireTurnIn" : false,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Sirin and Nadir are safe, for now."
+  }
+}

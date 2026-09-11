@@ -1,0 +1,66 @@
+{
+  "type" : "starforge-prisonermaiden",
+  "baseType" : "base",
+
+  "identity" : {
+    "species" : "avian",
+    "gender" : "female"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+  
+  "personalities": [
+      [1.0, {
+          "personality": "scared",
+          "reactions": {}
+        }
+      ]
+    ],
+
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "offeredQuests" : ["siaxaanadirquest1"],
+    "behavior" : "villager",
+
+    "dialogMode" : "tutorial",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Without my guardian in top shape, there is nothing I can do!",
+            "The Stargazers must not find Valehaven, they will raze it to the ground.",
+			"I will be fine for now, I will stay by my guardian's side until he finds his strength.",
+			"We will hide until we can return to Valehaven.",
+            "The Stargazers... They're looking for the True Maiden, to silence her and our goddess!",
+			"The Stargazers are on the move, they're looking for Valehaven. We need to hide!"
+			]
+        }
+      }
+
+    }
+  },
+
+    "items": {
+        "override": [
+            [0, [{
+                "head": [{
+                    "name": "starforge-valehavendresshead"
+                }],
+                "chest": [{
+                    "name": "starforge-valehavendresschest"
+                }],
+                "legs": [{
+                    "name": "starforge-valehavendresspants"
+                }]
+            }]]
+        ]
+    }
+}
