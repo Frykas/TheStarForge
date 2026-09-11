@@ -1,0 +1,29 @@
+{
+  "itemName" : "starforge-jarredtidepods",
+  "rarity" : "uncommon",
+  "price" : 180,
+  "category" : "food",
+  "inventoryIcon" : "jarredtidepods.png",
+  "description" : "Perfect for an otherwordly last minute snack.",
+  "shortdescription" : "Jarred Tide Pods",
+  "effects" : [ [
+    {
+      "effect" : "starforge-tidalfreezeblock",
+      "duration" : 120
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 240
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 3.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+  "learnBlueprintsOnPickup" : [ "starforge-tidericeball" ]
+}

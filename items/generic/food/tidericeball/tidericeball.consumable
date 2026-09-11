@@ -1,0 +1,32 @@
+{
+  "itemName" : "starforge-tidericeball",
+  "rarity" : "rare",
+  "price" : 350,
+  "category" : "food",
+  "inventoryIcon" : "tidericeball.png",
+  "description" : "Any Yukai Hylotl would tell you it's their favorite.",
+  "shortdescription" : "Tide Rice Ball",
+  "effects" : [ [
+    {
+      "effect" : "starforge-tidalfreezeblock",
+      "duration" : 240
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 360
+    },
+	{
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 360
+    }
+  ] ],
+  "foodValue" : 50,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

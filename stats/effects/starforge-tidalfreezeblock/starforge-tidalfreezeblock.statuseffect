@@ -1,0 +1,15 @@
+{
+  "name" : "starforge-tidalfreezeblock",
+
+  "effectConfig" : {
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "starforge-tidalfreezeblock.lua"
+  ],
+
+  "label" : "Tidalfreeze Protection",
+  "icon" : "/interface/statuses/starforge-tidalfreezeimmunity.png"
+}
+	

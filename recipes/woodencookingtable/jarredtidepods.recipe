@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "starforge-tidepods", "count" : 1 },
+	{ "item" : "bottle", "count" : 1},
+	{ "item" : "sugar", "count" : 1}
+
+  ],
+  "output" : {
+    "item" : "starforge-jarredtidepods",
+    "count" : 1
+  },
+  "groups" : [ "craftingfood", "snacks" ], 
+  "duration" : 0
+}

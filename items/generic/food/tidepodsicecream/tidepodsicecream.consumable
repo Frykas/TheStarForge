@@ -1,0 +1,32 @@
+{
+  "itemName" : "starforge-tidepodsicecream",
+  "rarity" : "uncommon",
+  "price" : 180,
+  "category" : "food",
+  "inventoryIcon" : "tidepodsicecream.png",
+  "description" : "Double the cold!",
+  "shortdescription" : "Tide Pod Ice Cream",
+  "effects" : [ [
+    {
+      "effect" : "starforge-tidalfreezeblock",
+      "duration" : 120
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 240
+    },
+    {
+        "effect" : "runboost",
+        "duration" : 60
+    }
+  ] ],
+  "foodValue" : 18,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
