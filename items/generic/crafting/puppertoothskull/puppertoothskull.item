@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-puppertoothskull",
+  "price" : 500,
+  "rarity" : "rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "puppertoothskull.png",
+  "description" : "A pristine skull from a small predator. Can be used to make a Razortail Effigy.",
+  "shortdescription" : "Puppertooth Skull",
+  "itemTags" : [ "reagent" ]
+}

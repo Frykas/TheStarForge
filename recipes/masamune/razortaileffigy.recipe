@@ -1,0 +1,16 @@
+{
+  "input" : [
+    { "item" : "starforge-puppertoothskull", "count" : 1},
+	{ "item" : "starforge-blacksunessence", "count" : 7},
+	{ "item" : "starforge-tidalfragment", "count" : 25},
+    { "item" : "bone", "count" : 10}
+	
+  ],
+  "output" : {
+    "item" : "starforge-razortaileffigy",
+    "count" : 1
+  },
+  "groups" : [ "starforge-masamune", "material" ],
+  "duration" : 0
+}
+
