@@ -1,0 +1,7 @@
+{
+  "image" : "celeste_head.png",
+  "frameList" : {
+    "normal" : [50, 0, 100, 50],
+    "climb" : [50, 200, 100, 250]
+  }
+}

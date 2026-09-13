@@ -5,16 +5,16 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "Splashed with various colours and stars alike! A fitting skirt for any stargazer. \n^gray;(Dyable)^reset;",
-  "shortdescription" : "Omeruin's Skirt",
+  "description" : "A skirt with thigh-highs and no shoes.\n...Seriously, no shoes?\n^gray;(Dyable)^reset;",
+  "shortdescription" : "Celeste's Skirt",
   "tooltipKind" : "armor",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
 
   "colorOptions" : [
-    // OMERUIN BLUE
-    { "ffca8a" : "0E388C", "e0975c" : "05215A", "a85636" : "001238", "6f2919" : "000716" },
+    // CELESTE BLACK
+    { "ffca8a" : "262626", "e0975c" : "171717", "a85636" : "0C0C0C", "6f2919" : "000000" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

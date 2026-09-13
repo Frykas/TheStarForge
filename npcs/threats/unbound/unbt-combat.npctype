@@ -1,0 +1,58 @@
+{
+  "type": "starforge-unbtcombat",
+  "baseType": "base",
+
+  "humanoidConfig": "/humanoid/starforge_UNBT/unboroid.config",
+
+  "identity": {
+    "facialHairType": "0",
+    "hairType": "0",
+    "facialHairGroup": "fronthair",
+    "hairGroup": "hair",
+    "personalityArmOffset": [0, 0],
+    "personalityArmIdle": "idle.1",
+    "personalityIdle": "idle.1",
+    "imagePath": "starforge_UNBT",
+	"bodyDirectives": "?replace;A85636=932625;E0975C=D93A3A;FFCA8A=F4988C;6F2919=601119"
+  },
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+  
+  "items": {
+        "override": [
+            [0, [{
+                "primary": [
+                    "starforge-vanguardgrenade"
+                ],
+				 "alt" : [ "starforge-unboundshield" ]
+            }]]
+        ]
+    },
+
+  "scriptConfig" : {
+  "behavior" : "villager",
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Gree♪ krtz -tings. I am an UNB-T unit. I ^#7B7B7B;01101101 01101111 01100111^reset;♪ *serve the Unbound as an assistant.",
+            "Unfortunately, my programming prevents me from serving you.",
+            "I shall go back to work, please disturb me no further.",
+			"The Apex needs to be free from the Miniknog.",
+			"I wish my programming allowed me to s-s-s-s ^#7B7B7B;* krtz -^reset;wear. This job is very frustrating.",
+            "Be- ♪free.",
+			"Glory to the Unbound."
+          ]
+        }
+      }
+    }
+  }
+
+}

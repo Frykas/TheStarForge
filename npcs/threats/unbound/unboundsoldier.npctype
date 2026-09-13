@@ -33,6 +33,12 @@
       "meleeSwapTime" : 1.5
     },
 	
+	"movementParameters" : {
+    "airJumpProfile" : {
+      "jumpSpeed": 10
+    }
+  },
+	
         "dialog": {
             "attack": {
                 "default": {
@@ -70,7 +76,9 @@
                 }],
                 "primary": [
                     "starforge-unboundar"
-                ]
+                ],
+				"back": [{ "name": "starforge-unboundback" },
+				{ "name": "" }]
             }]]
         ]
     },

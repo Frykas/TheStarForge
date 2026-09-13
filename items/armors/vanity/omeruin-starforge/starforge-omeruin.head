@@ -1,0 +1,42 @@
+{
+  "itemName" : "starforge-omeruinhead",
+  "price" : 0,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "headwear",
+  "description" : "A magnificent halo, fit for an angel.\n^gray;(Dyable)^reset;",
+  "shortdescription" : "Celeste's Halo",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "celeste_head.png",
+  "femaleFrames" : "celeste_head.png",
+  "mask" : "mask.png",
+
+  "colorOptions" : [
+    // CELESTE WHITE
+    { "ffca8a" : "FFFFFFFE", "e0975c" : "FFFFFFFE", "a85636" : "CCCCCCFE", "6f2919" : "A5A5A5FE" },
+    // BLACK
+    { "ffca8a" : "838383FE", "e0975c" : "555555FE", "a85636" : "383838FE", "6f2919" : "151515FE" },
+    // GREY
+    { "ffca8a" : "b5b5b5FE", "e0975c" : "808080FE", "a85636" : "555555FE", "6f2919" : "303030FE" },
+    // WHITE
+    { "ffca8a" : "e6e6e6FE", "e0975c" : "b6b6b6FE", "a85636" : "7b7b7bFE", "6f2919" : "373737FE" },
+    // RED
+    { "ffca8a" : "f4988cFE", "e0975c" : "d93a3aFE", "a85636" : "932625FE", "6f2919" : "601119FE" },
+    // ORANGE
+    { "ffca8a" : "ffd495FE", "e0975c" : "ea9931FE", "a85636" : "af4e00FE", "6f2919" : "6e2900FE" },
+    // YELLOW
+    { "ffca8a" : "ffffa7FE", "e0975c" : "e2c344FE", "a85636" : "a46e06FE", "6f2919" : "642f00FE" },
+    // GREEN
+    { "ffca8a" : "b2e89dFE", "e0975c" : "51bd3bFE", "a85636" : "247824FE", "6f2919" : "144216FE" },
+    // BLUE
+    { "ffca8a" : "96cbe7FE", "e0975c" : "5588d4FE", "a85636" : "344495FE", "6f2919" : "1a1c51FE" },
+    // PURPLE
+    { "ffca8a" : "d29ce7FE", "e0975c" : "a451c4FE", "a85636" : "6a2284FE", "6f2919" : "320c40FE" },
+    // PINK
+    { "ffca8a" : "eab3dbFE", "e0975c" : "d35eaeFE", "a85636" : "97276dFE", "6f2919" : "59163fFE" },
+    // BROWN
+    { "ffca8a" : "ccae7cFE", "e0975c" : "a47844FE", "a85636" : "754c23FE", "6f2919" : "472b13FE" }
+  ]
+}

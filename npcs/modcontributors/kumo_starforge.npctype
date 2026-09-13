@@ -1,6 +1,10 @@
 {
   "type" : "starforge-kumo",
   "baseType" : "outpostvisitor",
+  
+    "identity": {
+    "name": "Kumo",
+    "gender": "female"},
 
   "scriptConfig" : {
 
@@ -9,7 +13,9 @@
       "converse" : {
         "default" : {
           "default" : [
-            "Good morning~ or is it evening yet? I can't tell."
+            "Good mornin'~ or is it evenin' yet? I cannae tell",
+			"I used tae be an unbound soldier, until someone shoved a banana in the magazine o' my gun.",
+			"It's said the Vanguard's Longbow grenade can circle the entire planet and hit the user. Fortunately, I didnae join 'em."
           ]
         }
       }

@@ -1,21 +1,29 @@
 {
-  "itemName" : "starforge-omeruinhead",
+  "itemName" : "starforge-omeruinchest",
   "price" : 0,
-  "inventoryIcon" : "icons.png:head",
+  "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "category" : "headwear",
-  "description" : "A magnificent witch's hat with various stars and colours! \n^gray;(Dyable)^reset;",
-  "shortdescription" : "Omeruin's Hat",
+  "category" : "chestwear",
+  "description" : "The person who owns this hoodie really seems to like stars.\n^gray;(Dyable)^reset;",
+  "shortdescription" : "Celeste's Hoodie",
   "tooltipKind" : "armor",
 
-  "maleFrames" : "head.png",
-  "femaleFrames" : "head.png",
-  "mask" : "mask.png",
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
 
   "colorOptions" : [
-    // OMERUIN BLUE
-    { "ffca8a" : "0E388C", "e0975c" : "05215A", "a85636" : "001238", "6f2919" : "000716" },
+    // CELESTE DARK GREY-BLUE
+    { "ffca8a" : "262A33", "e0975c" : "161820", "a85636" : "090911", "6f2919" : "000000" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY
