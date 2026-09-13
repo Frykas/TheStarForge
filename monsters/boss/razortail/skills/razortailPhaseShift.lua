@@ -13,6 +13,7 @@ function razortailPhaseShift.enterWith(args)
 end
 
 function razortailPhaseShift.enteringState(stateData)
+  clearCoroutines()
   status.addPersistentEffect("starforge-razortailPhaseShift", "maxprotection")
 end
 

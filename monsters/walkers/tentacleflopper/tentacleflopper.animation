@@ -15,8 +15,10 @@
           },
           "jump" : {
             "frames" : 1
-          }
-		  
+          },
+          "fall" : {
+            "frames" : 1
+          }		  
         }
       },
       "damage" : {
@@ -73,7 +75,12 @@
             },
             "jump" : {
               "properties" : {
-                "image" : "<partImage>:jump.<frame>"
+                "image" : "<partImage>:walk.3"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "<partImage>:fall.<frame>"
               }
             }
           },

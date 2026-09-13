@@ -131,21 +131,20 @@
   
   "altAbilityType" : "starforge-spellglaiveblast",
   "altAbility" : {
-    "name" : "Create Offspring",
-    "projectileType" : "standardbullet",
+    "name" : "Birth Offspring",
+    "projectileType" : "starforge-tentacleoffspring",
     "projectileParameters" : {
-      
     },
 
-    "projectileCount" : 2,
-    "inaccuracy": 0.05,
+    "projectileCount" : 1,
+    "inaccuracy": 0.1,
     "baseDamage" : 8,
     "energyUsage" : 25,
     
     "fireTime" : 1,
     "fireType" : "auto",
     "fireOffset" : [1.0, 0.125],
-    "knockbackForce" : 40,
+    "knockbackForce" : 5,
 
     "skipCollisionCheck" : true,
 

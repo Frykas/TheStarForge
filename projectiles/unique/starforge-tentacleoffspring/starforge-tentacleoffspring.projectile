@@ -1,0 +1,37 @@
+{
+  "projectileName" : "starforge-tentacleoffspring",
+  "physics" : "grenade",
+  "image" : "starforge-tentacleoffspring.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "power" : 30,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "pointLight" : true,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "damageKind" : "fist",
+  "damageType" : "knockback",
+  "speed" : 5,
+  "timeToLive" : 3,
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/tar_hit_organic1.ogg", "/sfx/projectiles/tar_hit_organic2.ogg", "/sfx/projectiles/tar_hit_organic3.ogg", "/sfx/projectiles/tar_hit_organic4.ogg", "/sfx/projectiles/tar_hit_organic5.ogg" ]
+    }
+  ],
+  
+  "scripts" : [ "/projectiles/scripts/starforge-spawnmonsters.lua" ],
+  
+  "onDeath" : true,
+  "forceSpawnPos" : true,
+  "monsterConfigs" : [
+    { 
+      "monsterType" : "starforge-tentacleflopper",
+      "monsterParameters" : {},
+      "spawnEffects" : [ "wet", "starforge-delayeddeath" ],
+      "spawnOffset" : [0, 0]
+    } 
+  ]
+}

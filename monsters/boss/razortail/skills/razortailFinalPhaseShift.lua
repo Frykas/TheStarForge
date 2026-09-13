@@ -36,6 +36,7 @@ function razortailFinalPhaseShift.enterWith(args)
 end
 
 function razortailFinalPhaseShift.enteringState(stateData)
+  clearCoroutines()
   animator.resetTransformationGroup("all")
   animator.setAnimationState("body", "idle")
   status.addPersistentEffect("starforge-razortailPhaseShift", "maxprotection")

@@ -248,13 +248,19 @@ function endCurrentState()
   end
 end
 
+function clearCoroutines()
+  for name, co in pairs(self.activeCoroutines) do
+    self.activeCoroutines[name] = nil
+  end
+end
+
 function update(dt)
   for name, co in pairs(self.activeCoroutines) do
     if co and coroutine.status(co) ~= "dead" then
       local ok, err = coroutine.resume(co)
       if not ok then
         sb.logError("Coroutine '%s' error: %s", name, err)
-        self.activeCoroutines[name] = nil --Properly remove it
+        self.activeCoroutines[name] = nil
       end
     elseif coroutine.status(co) == "dead" then
       self.activeCoroutines[name] = nil
