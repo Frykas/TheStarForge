@@ -64,7 +64,7 @@
         "enterPhase" : "razortailFinalPhaseShift",
         "trigger" : "healthPercentage",
         "healthPercentage" : 0.2,
-        "skills" : [ "razortailTeleportDropStrike", "razortailFlipSlash", "razortailTeleportTailStrike", "razortailTeleportTailStrike", "razortailDashExplosions", "razortailMeleeCombo" ]
+        "skills" : [ "razortailMeleeCombo", "razortailTeleportDropStrike", "razortailFlipSlash", "razortailTeleportTailStrike", "razortailTeleportTailStrike", "razortailDashExplosions" ]
       }
     ],
 

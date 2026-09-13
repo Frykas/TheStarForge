@@ -14,7 +14,22 @@
         "damageKind" : "starforge-tidalfrost"
       },
       "roarPosition" : [3.5, 0.25],
-      "bodyDirectives" : "?crop=0;0;1;1"
+      "bodyDirectives" : "?crop=0;0;1;1",
+      
+      "diveProjectileType" : "starforge-tidalblast",
+      "diveProjectileConfig" : {
+        "power" : 30,
+        "speed" : 3,
+        "timeToLive" : 0.05
+      },
+      "diveProjectileOffset" : [0, -1],
+      
+      "geyserProjectileType" : "starforge-tidalgeyser",
+      "geyserProjectileConfig" : {
+        "power" : 30,
+        "speed" : 0
+      },
+      "geyserProjectileOffset" : [0, -3]
     }
   }
 }

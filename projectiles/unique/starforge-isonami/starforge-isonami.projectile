@@ -5,7 +5,7 @@
   "animationCycle" : 0.25,
   "frameNumber" : 1,
   "pointLight" : false,
-  "flippable" : true,
+  "flippable" : false,
   "fullbright" : true,
   "supportsProcessing" : true,
   "damagePoly" : [[-8, 4], [-4, 8], [4, 8], [8, 4], [8, -4], [4, -8], [-4, -8], [-8, -4]],

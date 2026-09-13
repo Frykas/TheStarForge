@@ -32,6 +32,7 @@ function razortailFlipSlash.update(dt, stateData)
     stateData.timer = math.max(0, stateData.timer - dt)
     
     if stateData.timer == 0 then
+      animator.resetTransformationGroup("all")
       return true
     end
   end

@@ -25,7 +25,7 @@
   "bounces" : -1,
   "damageKind" : "electricspear",
   "statusEffects" : [ "electrified" ],
-  "emitters" : [ ],
+  "emitters" : [ "barrierelectric", "electricswoosh" ],
   "timeToLive" : 3,
 
   "renderLayer" : "Monster+1",

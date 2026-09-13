@@ -13,6 +13,7 @@ function razortailPhaseShift.enterWith(args)
 end
 
 function razortailPhaseShift.enteringState(stateData)
+  status.addPersistentEffect("starforge-razortailPhaseShift", "maxprotection")
 end
 
 function razortailPhaseShift.update(dt, stateData)
@@ -31,10 +32,10 @@ function razortailPhaseShift.update(dt, stateData)
 
   if stateData.roarPlayed then
     stateData.timer = stateData.timer - dt
-  end
-
-  if stateData.timer <= 0 then
-    return true
+    if stateData.timer <= 0 then
+      status.clearPersistentEffects("starforge-razortailPhaseShift")
+      return true
+    end
   end
 end
 

@@ -1,55 +1,36 @@
 {
-  "projectileName" : "starforge-tidalblast",
+  "projectileName" : "starforge-tidalgeyser",
   "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
   "animationCycle" : 0.15,
   "frameNumber" : 1,
-  "speed" : 90,
+  "speed" : 0,
   "lightColor" : [44, 172, 219],
   "pointLight" : true,
-  "timeToLive" : 1,
+  "timeToLive" : 25,
+  "physics" : "illusion",
   "statusEffects" : [ "starforge-tidalfreeze" ],
   "damagePoly" : [ [-25, 0], [-22, -22], [0, -25], [22, -22], [25, 0], [22, 22], [0, 30], [-22, 22] ],
   "animationLoops" : false,
   "periodicActions" : [
     {
-      "time" : 0,
-      "repeat" : false,
+      "time" : 0.05,
+      "repeat" : true,
+      "action" : "projectile",
+      "inheritDamageFactor" : 1,
+      "type" : "starforge-tidalfrostspike",
+      "config" : {
+        "knockback" : 15
+      },
       
-      "action" : "loop",
-      "count" : 5,
-      "body" : [
-        {
-          "action" : "projectile",
-          "inheritDamageFactor" : 0.075,
-          "type" : "starforge-tidalfrostspike",
-          
-          "angleAdjust" : 25,
-          "fuzzAngle" : 15
-        },
-        {
-          "action" : "projectile",
-          "inheritDamageFactor" : 0.075,
-          "type" : "starforge-tidalfrostspike",
-          
-          "angleAdjust" : 0,
-          "fuzzAngle" : 15
-        },
-        {
-          "action" : "projectile",
-          "inheritDamageFactor" : 0.075,
-          "type" : "starforge-tidalfrostspike",
-          
-          "angleAdjust" : -25,
-          "fuzzAngle" : 15
-        }
-      ]
+      "angleAdjust" : 0,
+      "fuzzAngle" : 15
     },
     {
       "time" : 0.05,
       "repeat" : true,
       
       "action" : "loop",
-      "count" : 5,
+      "count" : 2,
       "body" : [
         {
           "action" : "particle",
@@ -59,10 +40,11 @@
             "approach" : [0.5, 0.5],
             "fullbright" : true,
             "timeToLive" : 2.0,
+            "initialVelocity" : [0, 15],
             "variance" : {
               "timeToLive" : 0.4,
-              "position" : [3, 3],
-              "initialVelocity" : [1, 1],
+              "position" : [1, 3],
+              "initialVelocity" : [4, 4],
               "rotation" : 180
             }
           }
@@ -75,10 +57,11 @@
             "approach" : [0.5, 0.5],
             "fullbright" : true,
             "timeToLive" : 0.5,
+            "initialVelocity" : [0, 15],
             "variance" : {
               "timeToLive" : 0.15,
-              "position" : [3, 3],
-              "initialVelocity" : [1, 1],
+              "position" : [1, 3],
+              "initialVelocity" : [4, 4],
               "rotation" : 180
             }
           }
@@ -103,11 +86,12 @@
             "approach" : [0.5, 0.5],
             "fullbright" : true,
             "layer" : "back",
-            "timeToLive" : 0.5,
+            "timeToLive" : 0.7,
+            "initialVelocity" : [0, 15],
             "variance" : {
               "timeToLive" : 0.15,
-              "position" : [3, 3],
-              "initialVelocity" : [1, 1],
+              "position" : [1, 3],
+              "initialVelocity" : [4, 4],
               "rotation" : 180
             }
           }
