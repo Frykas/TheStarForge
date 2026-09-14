@@ -28,7 +28,7 @@
         "override": [
             [0, [{
                 "primary": [
-                    "starforge-vanguardgrenade"
+                    "starforge-unboundar"
                 ],
 				 "alt" : [ "starforge-unboundshield" ]
             }]]

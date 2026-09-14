@@ -1,0 +1,75 @@
+{
+  "itemName" : "starforge-breezeguard",
+  "fixedLevel" : 6,
+  "price" : 720,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "shield",
+  "description" : "The beasts of the Tide have adapted to its harsh environnement, it's time you do the same.",
+  "shortdescription" : "Breezeguard",
+  "tooltipKind" : "starforge-uniqueshield",
+  "twoHanded" : false,
+  "itemTags" : ["shield"],
+
+  "inventoryIcon" : "images/breezeguard.png:nearidle",
+
+  "animation" : "starforge-shield.animation",
+  "animationParts" : {
+    "shield" : "images/breezeguard.png",
+	  "shieldFullbright" : "images/breezeguardfb.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "shield" : { "properties" : {
+        "shieldPoly" : [ [-0.5, -2.5], [-0.5, 2.25], [0.75, 1.5], [0.75, -1.75] ],
+        "offset" : [0.25, 0]
+    }}}},
+    "sounds" : {
+      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
+      "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],
+      "block" : [ "/sfx/melee/shield_block_metal.ogg" ],
+      "break" : [ "/sfx/melee/shield_break_metal.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/shields/starforge-shield.lua"],
+
+  "minActiveTime" : 0.3,
+
+  "forceWalk" : true,
+  "baseShieldHealth" : 120,
+  "cooldownTime" : 0.9,
+
+  "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
+  "perfectBlockTime" : 0.2,
+
+  "knockback" : 10,
+
+  "shieldStats" : {
+    "fireResistance" : 0.5
+  },
+
+  "alwaysOutside" : true,
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -100,
+      "shieldRotation" : -5,
+      "aimAngle" : 0,
+      "shieldOffset" : [-0.5, 0],
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "raised" : {
+      "armRotation" : -10,
+      "shieldRotation" : 5,
+      "allowRotate" : true,
+      "allowFlip" : true,
+      "shieldOffset" : [0, 0.375],
+
+      "frontArmFrame" : "swim.3",
+      "backArmFrame" : "swim.3"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandshield.lua"
+}
