@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headwear",
-  "description" : "Unbound Fortress units come into two types, the Unstoppable and the Demolitionist.",
+  "description" : "Fortress units wear these heavily armored helmets with gas filters to protect them from thermite gas.",
   "shortdescription" : "^#686F5D;UNBD^reset; Fortress Helmet",
   "tooltipKind" : "armor",
 

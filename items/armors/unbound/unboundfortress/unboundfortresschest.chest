@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "The Fortress captains of the Unbound leave only dust & wreckage behind them.",
+  "description" : "Worn by the Fortress units of the Unbound, this chestplate is fire-resistant.",
   "shortdescription" : "^#686F5D;UNBD^reset; Fortress Chestplate",
   "tooltipKind" : "armor",
 

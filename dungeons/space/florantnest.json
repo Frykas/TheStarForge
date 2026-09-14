@@ -1,18 +1,11 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":100,
  "infinite":false,
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJztne1t2zAURT1MxuoA3aI7dKYi+VM0KxVCIVhh+fFIPvJS5rnAgWPLtGXjnpCy4OTj8Xh8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALwA7868crzfqxTqTgB+tAQ\/9gM\/7MGP\/cAPe\/BjP\/DDHvzYD\/ywBz\/2Az\/swY\/92KHXd4u6E4AfK0fdCcCPlaPuBODHylF3AvBj5ag7AfixctSdAPxYOepOAH6sHHUnAD9WjroTgB8rR90JwI+Vo+4E4MfKUXcC5vjxwwD5P+pOwFg\/LF7gSjrqToCPH7Fut7qBK8+oOwH9fsT67OXG7p6oOwF9fsxyY1dP1J2A+\/mxkyPqTsCT2szwYHdP1J2ANj\/UXuziiLoT4ONH7LYafnaOz+3bnV1SdwLq\/RjhxpWRHlk8+f32ZMa2XNSdgDo\/Ul1rnS9CL3KO1HjU6si1x2GfR2wrRd0JsPvh6Yal67H7Wfyw+hPL2d3Pt6\/XR20rRd0JeFL6bDfVr961VYsTpfukbv\/zZuNz0rbTmVTUnYCvfuQcaZ07rGuhkgu181BpvvmMrHtOZm3Dj\/uQ86PHDa9j6pJTtWOtXf71+IfnNvy4H1Y\/wuu5OSO1JhrhCX6A2o\/rz7W\/12uOsWfA+go8\/Tgva9c+KW9mOBI+F8fnsLIfMx2xPEcqud6e274HWMfVRN0JsPlxprWfrf1tHWd93J7E\/PCOuhMwzo\/cHFJ7n9zck1rHlR6rN\/ixF9bvf7Q4MmK91LM+8wh+7MUoPzyd6H28x+WyN\/ixFzXfH1T54TUXeQQ\/9uIOfsxyw\/JZU48f1s+y1J2Adf1Qzh258xi5cxk151di72kYdSegzY8js91oPQ5v9SN1Hvw87x3OH6UxqXPp130Mo+4ErOeHlxsxP6y59vfb40mNH9dx17GhH7n9U3cC2v04MtoPj7VUjx9hx8+el\/yIjQv9wo974fX3RVci3D9revxIuRGOx4978Yp+hHOINfgBnn4cUXtQ8qMmCj9iUXcC\/Pw4onYht8aqCX7ACD+OqH3AD1jZjyNqJ\/ADVvbjiNqLXj\/OXLt93R7zIzYm5Pr4pf1UdwLG+XHEq8Mz3fBMzI0zlv1UdwLG+nHEu7N38KIU6\/6qOwHj\/bjGa510ZzeO4Mf9mP3\/z2cfU6ySmtei7gTo\/AizgyO1r0PdCVjHj9Xi6WOr4+pOAH5YMuJzN0vUnQD8aEmp817rQnUnAD88MuoYSd0JwI+Vo+4E4MfKUXcC8GPlqDsB+LFy1J0A\/Fg56k4AfqwcdScAAAAAAAAAAAAAAAAAAADAj7\/XIJAL",
+         "data":"eJztnVtu2zAUBb2YLK676B66pqL5KZqv7KcQCsEKy8cleclDmXOAgWPLtGXjTEhZcPL+eDzeAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF6AX868crzfqxTqTgB+tAQ\/9gM\/7MGP\/cAPe\/BjP\/DDHvzYD\/ywBz\/2Az\/swY\/92KHXd4u6E4AfK0fdCcCPlaPuBODHylF3AvBj5ag7AfixctSdAPxYOepOAH6sHHUnAD9WjroTgB8rR90JwI+Vo+4E4MfKUXcC5vjx3QD5P+pOwFg\/LF7gSjrqToCPH7Fut7qBK8+oOwH9fsT67OXG7p6oOwF9fsxyY1dP1J2A+\/mxkyPqTsCT2szwYHdP1J2ANj\/UXuziiLoT4ONH7LYafnSOz+3bnV1SdwLq\/RjhxpWRHlk8+f32ZMa2XNSdgDo\/Ul1rnS9CL3KO1HjU6si1x2GfR2wrRd0JsPvh6Yal67H7Wfyw+hPL2d2Pt6\/XR20rRd0JeFL6bDfVr961VYsTpfukbv\/zZuNj0rbTmVTUnYCvfuQcaZ07rGuhkgu181BpvvmIrHtOZm3Dj\/uQ86PHDa9j6pJTtWOtXf75+IfnNvy4H1Y\/wuu5OSO1JhrhCX6A2o\/rz7W\/12uOsWfA+go8\/Tgva9c+KW9mOBI+F8fnsLIfMx2xPEcqud6e274FWMfVRN0JsPlxprWfrf1tHWd93J7E\/PCOuhMwzo\/cHFJ7n9zck1rHlR6rN\/ixF9bvf7Q4MmK91LM+8wh+7MUoPzyd6H28x+WyN\/ixFzXfH1T54TUXeQQ\/9uIOfsxyw\/JZU48f1s+y1J2Adf1Qzh258xi5cxk151di72kYdSegzY8js91oPQ5v9SN1Hvw87x3OH6UxqXPp130Mo+4ErOeHlxsxP6y59vfzQo0fn4mxoR+5\/VN3Atr9ODLaD4+1VI8fYcc\/jX7ExoV+4ce98Pr7oisR7p81PX6k3AjH48e9eEU\/wjnEGvwATz+OqD0o+VEThR+xqDsBfn4cUbuQW2PVBD9ghB9H1D7gB6zsxxG1E\/gBK\/txRO1Frx9nrt2+bo\/5ERsTcn380n6qOwHj\/Dji1eGZbngm5sYZy36qOwFj\/Tji3dk7eFGKdX\/VnYDxflzjtU66sxtH8ON+zP7\/57OPKVZJzWtRdwJ0foTZwZHa16HuBKzjx2rx9LHVcXUnAD8sGfG5myXqTgB+tKTUea91oboTgB8eGXWMpO4E4MfKUXcC8GPlqDsB+LFy1J0A\/Fg56k4AfqwcdScAP1aOuhMAAAAAAAAAAAAAAAAAAADgx1+q09OB",
          "encoding":"base64",
          "height":100,
          "id":1,
@@ -48,12 +41,14 @@
                  "height":48,
                  "id":1924,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"dungeonid",
-                         "type":"string",
-                         "value":"none"
-                        }],
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "propertytypes":
+                    {
+                     "dungeonid":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -65,12 +60,14 @@
                  "height":48,
                  "id":1935,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"dungeonid",
-                         "type":"string",
-                         "value":"none"
-                        }],
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "propertytypes":
+                    {
+                     "dungeonid":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -82,12 +79,14 @@
                  "height":8,
                  "id":1936,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"dungeonid",
-                         "type":"string",
-                         "value":"none"
-                        }],
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "propertytypes":
+                    {
+                     "dungeonid":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -99,12 +98,14 @@
                  "height":8,
                  "id":1937,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"dungeonid",
-                         "type":"string",
-                         "value":"none"
-                        }],
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "propertytypes":
+                    {
+                     "dungeonid":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -116,12 +117,14 @@
                  "height":8,
                  "id":1938,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"dungeonid",
-                         "type":"string",
-                         "value":"none"
-                        }],
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "propertytypes":
+                    {
+                     "dungeonid":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -133,12 +136,14 @@
                  "height":24,
                  "id":1939,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"dungeonid",
-                         "type":"string",
-                         "value":"none"
-                        }],
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "propertytypes":
+                    {
+                     "dungeonid":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -150,12 +155,14 @@
                  "height":8,
                  "id":1940,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"dungeonid",
-                         "type":"string",
-                         "value":"none"
-                        }],
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "propertytypes":
+                    {
+                     "dungeonid":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -252,12 +259,14 @@
                  "height":18,
                  "id":1888,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"starforge-florantstash\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"starforge-florantstash\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -290,16 +299,18 @@
                  "y":496
                 }, 
                 {
-                 "gid":9428,
+                 "gid":9433,
                  "height":32,
                  "id":1891,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"starforge-unboundbigchestTreasure\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"starforge-unboundbigchestTreasure\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -308,7 +319,7 @@
                  "y":592
                 }, 
                 {
-                 "gid":9440,
+                 "gid":9445,
                  "height":16,
                  "id":1892,
                  "name":"",
@@ -320,7 +331,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":9440,
+                 "gid":9445,
                  "height":16,
                  "id":1893,
                  "name":"",
@@ -332,7 +343,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":9440,
+                 "gid":9445,
                  "height":16,
                  "id":1894,
                  "name":"",
@@ -344,7 +355,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":9440,
+                 "gid":9445,
                  "height":16,
                  "id":1895,
                  "name":"",
@@ -356,7 +367,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":9460,
+                 "gid":9465,
                  "height":8,
                  "id":1896,
                  "name":"",
@@ -368,7 +379,7 @@
                  "y":520
                 }, 
                 {
-                 "gid":9460,
+                 "gid":9465,
                  "height":8,
                  "id":1897,
                  "name":"",
@@ -380,7 +391,7 @@
                  "y":520
                 }, 
                 {
-                 "gid":9460,
+                 "gid":9465,
                  "height":8,
                  "id":1898,
                  "name":"",
@@ -392,7 +403,7 @@
                  "y":520
                 }, 
                 {
-                 "gid":9505,
+                 "gid":9510,
                  "height":23,
                  "id":1900,
                  "name":"",
@@ -404,7 +415,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":9505,
+                 "gid":9510,
                  "height":23,
                  "id":1901,
                  "name":"",
@@ -416,7 +427,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":9511,
+                 "gid":9516,
                  "height":11,
                  "id":1902,
                  "name":"",
@@ -428,7 +439,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":9515,
+                 "gid":9520,
                  "height":16,
                  "id":1903,
                  "name":"",
@@ -440,7 +451,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":9515,
+                 "gid":9520,
                  "height":16,
                  "id":1904,
                  "name":"",
@@ -452,7 +463,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":2147493085,
+                 "gid":2147493090,
                  "height":16,
                  "id":1905,
                  "name":"",
@@ -464,7 +475,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":2147493080,
+                 "gid":2147493085,
                  "height":24,
                  "id":1906,
                  "name":"",
@@ -476,7 +487,7 @@
                  "y":592
                 }, 
                 {
-                 "gid":9436,
+                 "gid":9441,
                  "height":39,
                  "id":1907,
                  "name":"",
@@ -488,7 +499,7 @@
                  "y":592
                 }, 
                 {
-                 "gid":9431,
+                 "gid":9436,
                  "height":48,
                  "id":1908,
                  "name":"",
@@ -500,7 +511,7 @@
                  "y":400
                 }, 
                 {
-                 "gid":9442,
+                 "gid":9447,
                  "height":32,
                  "id":1909,
                  "name":"",
@@ -512,7 +523,7 @@
                  "y":592
                 }, 
                 {
-                 "gid":9463,
+                 "gid":9468,
                  "height":8,
                  "id":1912,
                  "name":"",
@@ -524,7 +535,7 @@
                  "y":592
                 }, 
                 {
-                 "gid":9464,
+                 "gid":9469,
                  "height":5,
                  "id":1913,
                  "name":"",
@@ -536,7 +547,7 @@
                  "y":592
                 }, 
                 {
-                 "gid":9469,
+                 "gid":9474,
                  "height":7,
                  "id":1915,
                  "name":"",
@@ -548,7 +559,7 @@
                  "y":552
                 }, 
                 {
-                 "gid":9465,
+                 "gid":9470,
                  "height":10,
                  "id":1916,
                  "name":"",
@@ -560,7 +571,7 @@
                  "y":544
                 }, 
                 {
-                 "gid":9466,
+                 "gid":9471,
                  "height":8,
                  "id":1917,
                  "name":"",
@@ -572,16 +583,18 @@
                  "y":544
                 }, 
                 {
-                 "gid":9433,
+                 "gid":9438,
                  "height":16,
                  "id":1918,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
-                        }],
+                 "properties":
+                    {
+                     "parameters":"{\"treasurePools\":[\"starforge-unboundsmallchestTreasure\"]}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -590,7 +603,7 @@
                  "y":560
                 }, 
                 {
-                 "gid":9486,
+                 "gid":9491,
                  "height":16,
                  "id":1919,
                  "name":"",
@@ -602,7 +615,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":2147493121,
+                 "gid":2147493126,
                  "height":14,
                  "id":1920,
                  "name":"",
@@ -617,12 +630,14 @@
                  "height":8,
                  "id":1921,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-florant"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-florant"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -634,12 +649,14 @@
                  "height":8,
                  "id":1922,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-florant"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-florant"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -651,17 +668,16 @@
                  "height":8,
                  "id":1926,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundheavy"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundheavy"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -673,17 +689,16 @@
                  "height":8,
                  "id":1927,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"starforge-unboundsoldier"
-                        }],
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-unboundsoldier"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -704,7 +719,7 @@
                  "y":560
                 }, 
                 {
-                 "gid":2147493153,
+                 "gid":2147493158,
                  "height":23,
                  "id":1934,
                  "name":"",
@@ -743,12 +758,14 @@
                  "height":8,
                  "id":1929,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -760,12 +777,14 @@
                  "height":8,
                  "id":1932,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"monster",
-                         "type":"string",
-                         "value":"starforge-unboundturret"
-                        }],
+                 "properties":
+                    {
+                     "monster":"starforge-unboundturret"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -811,12 +830,14 @@
                  "height":8,
                  "id":1844,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"connector",
-                         "type":"string",
-                         "value":"hazard"
-                        }],
+                 "properties":
+                    {
+                     "connector":"hazard"
+                    },
+                 "propertytypes":
+                    {
+                     "connector":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -845,7 +866,7 @@
  "nextobjectid":1944,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -1021,11 +1042,11 @@
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }, 
         {
-         "firstgid":9428,
+         "firstgid":9433,
          "source":"..\/..\/tilesets\/unbound\/unbound.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":1.1,
  "width":200
 }
