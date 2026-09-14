@@ -508,7 +508,7 @@
     [1, {
       "pool" : [
         {"weight" : 0.03, "item" : [ "starforge-parafracture", 1]},
-		{"weight" : 0.03, "item" : [ "starforge-breezeguard", 1]},
+		    {"weight" : 0.03, "item" : [ "starforge-breezeguard", 1]},
         {"weight" : 0.03, "item" : [ "starforge-harbour", 1]}
       ],
       "allowDuplication" : false

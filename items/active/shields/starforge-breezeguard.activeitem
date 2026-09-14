@@ -1,6 +1,7 @@
 {
   "itemName" : "starforge-breezeguard",
-  "fixedLevel" : 6,
+  "fixedLevel" : false,
+  "level" : 6,
   "price" : 720,
   "maxStack" : 1,
   "rarity" : "Legendary",
