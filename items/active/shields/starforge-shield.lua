@@ -1,5 +1,6 @@
 require "/scripts/util.lua"
 require "/scripts/status.lua"
+require "/scripts/vec2.lua"
 
 function init()
   self.debug = true
@@ -21,6 +22,22 @@ function init()
   self.cooldownTime = config.getParameter("cooldownTime")
   self.forceWalk = config.getParameter("forceWalk", false)
 
+  self.heldStatusEffects = config.getParameter("heldStatusEffects", {})
+
+  self.baseDamage = config.getParameter("baseDamage", 1)
+
+  self.hitProjectileType = config.getParameter("hitProjectileType")
+  self.hitProjectileParameters = config.getParameter("hitProjectileParameters", {})
+  self.hitProjectileTrackSource = config.getParameter("hitProjectileTrackSource", false)
+  self.hitProjectileCooldownTime = config.getParameter("hitProjectileCooldownTime", 0.1)
+  self.hitProjectileCooldownTimer = self.hitProjectileCooldownTime
+
+  self.breakProjectileType = config.getParameter("breakProjectileType")
+  self.breakProjectileParameters = config.getParameter("breakProjectileParameters", {})
+  self.breakProjectileTrackSource = config.getParameter("breakProjectileTrackSource", false)
+  self.breakProjectileRechargePercentage = config.getParameter("breakProjectileRechargePercentage", 1.0)
+  self.canBreakProjectile = true
+
   self.shieldStats = config.getParameter("shieldStats", {})
 
   animator.setGlobalTag("directives", "")
@@ -38,7 +55,7 @@ function update(dt, fireMode, shiftHeld)
 
   updateAim()
 
-  world.debugText("health : %s", status.stat("shieldHealth") * status.resource("shieldStamina"), mcontroller.position(), "red")
+  --world.debugText("health : %s", status.stat("shieldHealth") * status.resource("shieldStamina"), mcontroller.position(), "red")
 
   if not self.active
     and fireMode == "primary"
@@ -47,6 +64,8 @@ function update(dt, fireMode, shiftHeld)
 
     raiseShield()
   end
+
+  self.hitProjectileCooldownTimer = math.max(0, self.hitProjectileCooldownTimer - dt)
 
   if self.active then
     self.activeTimer = self.activeTimer + dt
@@ -63,6 +82,10 @@ function update(dt, fireMode, shiftHeld)
       mcontroller.controlModifiers({runningSuppressed = true})
     end
 
+    if not self.canBreakProjectile and status.resource("shieldStamina") > self.breakProjectileRechargePercentage then
+
+    end
+
     if (fireMode ~= "primary" and self.activeTimer >= self.minActiveTime) or not status.resourcePositive("shieldStamina") then
       lowerShield()
     end
@@ -71,6 +94,7 @@ end
 
 function uninit()
   status.clearPersistentEffects(activeItem.hand() .. "Shield")
+  status.clearPersistentEffects(config.getParameter("itemName") .. "ShieldEffects")
   activeItem.setItemShieldPolys({})
   activeItem.setItemDamageSources({})
 end
@@ -119,6 +143,7 @@ function raiseShield()
   self.active = true
   self.activeTimer = 0
   status.setPersistentEffects(activeItem.hand().."Shield", {{stat = "shieldHealth", amount = shieldHealth()}})
+  status.addPersistentEffects(config.getParameter("itemName") .. "ShieldEffects", self.heldStatusEffects)
   local shieldPoly = animator.partPoly("shield", "shieldPoly")
   activeItem.setItemShieldPolys({shieldPoly})
 
@@ -163,6 +188,7 @@ function lowerShield()
   self.active = false
   self.activeTimer = 0
   status.clearPersistentEffects(activeItem.hand() .. "Shield")
+  status.clearPersistentEffects(config.getParameter("itemName") .. "ShieldEffects")
   activeItem.setItemShieldPolys({})
   activeItem.setItemDamageSources({})
   self.cooldownTimer = self.cooldownTime
@@ -187,12 +213,35 @@ function processDamage(notification)
     animator.burstParticleEmitter("perfectBlock")
     refreshPerfectBlock()
   elseif status.resourcePositive("shieldStamina") then
-    animator.playSound("block")
+    if self.hitProjectileType and self.hitProjectileCooldownTimer == 0 and processProjectile(self.hitProjectileType, self.hitProjectileParameters, self.hitProjectileTrackSource) then
+      self.hitProjectileCooldownTimer = self.hitProjectileCooldownTime
+      animator.playSound("burst")
+      animator.burstParticleEmitter("burst")
+    else
+      animator.playSound("block")
+    end
   else
     animator.playSound("break")
+    if self.breakProjectileType and self.canBreakProjectile then
+      processProjectile(self.breakProjectileType, self.breakProjectileParameters, self.breakProjectileTrackSource)
+    end
   end
   animator.setAnimationState("shield", "block")
 
   self.lastStamina = status.resource("shieldStamina")
   return
+end
+
+function processProjectile(type, parameters, trackSourceEntity)
+  local id = false
+  local params = copy(parameters)
+  params.power = self.baseDamage * config.getParameter("damageLevelMultiplier", root.evalFunction("weaponDamageLevelMultiplier", self.level))
+  params.powerMultiplier = activeItem.ownerPowerMultiplier()
+  
+  local position = vec2.add(mcontroller.position(), activeItem.handPosition())
+  local aim = self.aimAngle
+  if not world.lineTileCollision(mcontroller.position(), position) then
+    id = world.spawnProjectile(type, position, activeItem.ownerEntityId(), {mcontroller.facingDirection() * math.cos(aim), math.sin(aim)}, trackSourceEntity, params)
+  end
+  return id
 end

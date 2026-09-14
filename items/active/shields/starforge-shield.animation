@@ -92,7 +92,8 @@
     "lowerShield" : [ ],
     "perfectBlock" : [ ],
     "block" : [ ],
-    "break" : [ ]
+    "break" : [ ],
+    "burst" : [ ]
   },
 
   "particleEmitters" : {
@@ -104,6 +105,14 @@
       "particles" : [
         { "particle" : "sparkle5"},
         { "particle" : "sparkle5"}
+      ]
+    },
+    "burst" : {
+      "active" : false,
+      "transformationGroups" : ["shield"],
+      "burstCount" : 5,
+      "offsetRegion" : [-0.5, -1.0, 0.5, 1.0],
+      "particles" : [
       ]
     }
   }

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "shield",
-  "description" : "The beasts of the Tide have adapted to its harsh environnement, it's time you do the same.",
+  "description" : "Those of the Tide adapt to its harsh environnement, it's time you do the same.",
   "shortdescription" : "Breezeguard",
   "tooltipKind" : "starforge-uniqueshield",
   "twoHanded" : false,
@@ -27,7 +27,8 @@
       "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
       "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],
       "block" : [ "/sfx/melee/shield_block_metal.ogg" ],
-      "break" : [ "/sfx/melee/shield_break_metal.ogg" ]
+      "break" : [ "/sfx/melee/shield_break_metal.ogg" ],
+      "burst" : ["/sfx/gun/starforge_tidalfrostblast.ogg" ]
     }
   },
 
@@ -36,16 +37,36 @@
   "minActiveTime" : 0.3,
 
   "forceWalk" : true,
-  "baseShieldHealth" : 120,
-  "cooldownTime" : 0.9,
+  "baseShieldHealth" : 90,
+  "cooldownTime" : 1.2,
 
   "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
   "perfectBlockTime" : 0.2,
 
-  "knockback" : 10,
+  "knockback" : 5,
+
+  //Blocks wither storms while held up
+  "heldStatusEffects" : [ "starforge-witherblock" ],
+
+  "baseDamage" : 1,
+
+  "hitProjectileCooldownTime" : 1,
+  "hitProjectileType" : "starforge-tidalblast",
+  "hitProjectileParameters" : {
+    "speed" : 3,
+    "timeToLive" : 0.02
+  },
+
+  "breakProjectileRechargePercentage" : 0.5,
+  "breakProjectileType" : "starforge-tidalgeyser",
+  "breakProjectileParameters" : {
+    "timeToLive" : 0.9
+  },
+  "breakProjectileTrackSource" : true,
 
   "shieldStats" : {
-    "fireResistance" : 0.5
+    "fireResistance" : 0.5,
+    "starforge-witherResistance" : 0.5
   },
 
   "alwaysOutside" : true,
