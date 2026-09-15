@@ -3,7 +3,7 @@
 
   "effectConfig" : {
     "breakProjectileType" : "fireplasmaexplosionstatus",
-	"healthDamageFactor" : 0.75
+	  "damageFactor" : 0.25
   },
   "defaultDuration" : 25,
 

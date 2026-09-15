@@ -11,11 +11,11 @@
   "twoHanded" : false,
   "itemTags" : ["shield"],
 
-  "inventoryIcon" : "images/katahelimperviumshield.png:nearidle",
+  "inventoryIcon" : "images/starforge-katahelimperviumshield.png:nearidle",
 
   "animation" : "starforge-shield.animation",
   "animationParts" : {
-    "shield" : "images/katahelimperviumshield.png",
+    "shield" : "images/starforge-katahelimperviumshield.png",
 	  "shieldFullbright" : ""
   },
   "animationCustom" : {

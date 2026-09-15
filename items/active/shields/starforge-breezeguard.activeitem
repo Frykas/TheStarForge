@@ -12,18 +12,29 @@
   "twoHanded" : false,
   "itemTags" : ["shield"],
 
-  "inventoryIcon" : "images/breezeguard.png:nearidle",
+  "inventoryIcon" : "images/starforge-breezeguard.png:nearidle",
 
   "animation" : "starforge-shield.animation",
   "animationParts" : {
-    "shield" : "images/breezeguard.png",
-	  "shieldFullbright" : "images/breezeguardfb.png"
+    "shield" : "images/starforge-breezeguard.png",
+	  "shieldFullbright" : "images/starforge-breezeguardfb.png"
   },
   "animationCustom" : {
-    "animatedParts" : { "parts" : { "shield" : { "properties" : {
-        "shieldPoly" : [ [-0.5, -2.5], [-0.5, 2.25], [0.75, 1.5], [0.75, -1.75] ],
-        "offset" : [0.25, 0]
-    }}}},
+    "animatedParts" : { 
+      "parts" : { 
+        "shield" : { 
+          "properties" : {
+            "shieldPoly" : [ [-0.5, -2.5], [-0.5, 2.25], [0.75, 1.5], [0.75, -1.75] ],
+            "offset" : [0.25, 0]
+          }
+        },
+        "shieldFullbright" : { 
+          "properties" : {
+            "offset" : [0.25, 0]
+          }
+        }
+      }
+    },
     "sounds" : {
       "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
       "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],

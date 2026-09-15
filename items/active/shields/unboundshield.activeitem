@@ -11,12 +11,12 @@
   "twoHanded" : false,
   "itemTags" : ["shield"],
 
-  "inventoryIcon" : "images/unboundshield.png:nearidle",
+  "inventoryIcon" : "images/starforge-unboundshield.png:nearidle",
 
   "animation" : "starforge-shield.animation",
   "animationParts" : {
-    "shield" : "images/unboundshield.png",
-  	"shieldFullbright" : "images/unboundshieldfullbright.png"
+    "shield" : "images/starforge-unboundshield.png",
+  	"shieldFullbright" : "images/starforge-unboundshieldfullbright.png"
   },
   "animationCustom" : {
     "animatedParts" : { 

@@ -53,8 +53,6 @@ end
 function update(dt, fireMode, shiftHeld)
   self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
 
-  updateAim()
-
   --world.debugText("health : %s", status.stat("shieldHealth") * status.resource("shieldStamina"), mcontroller.position(), "red")
 
   if not self.active
@@ -83,13 +81,15 @@ function update(dt, fireMode, shiftHeld)
     end
 
     if not self.canBreakProjectile and status.resource("shieldStamina") > self.breakProjectileRechargePercentage then
-
+      self.canBreakProjectile = true
     end
 
     if (fireMode ~= "primary" and self.activeTimer >= self.minActiveTime) or not status.resourcePositive("shieldStamina") then
       lowerShield()
     end
   end
+
+  updateAim()
 end
 
 function uninit()

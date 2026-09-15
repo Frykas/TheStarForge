@@ -514,7 +514,7 @@
       "allowDuplication" : false
     }]    
   ],
-  "starforge-razortailmeat" : [
+  "starforge-razortailmeat" : [ 
     [1, {
       "pool" : [
         {"weight" : 0.50, "item" : ["starforge-cubeofrazortail", 1]},
