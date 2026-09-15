@@ -5,7 +5,7 @@
   "rarity" : "Legendary",
   "description" : "A cutting-edge Elpis build, egineered to punch straight through shields.",
   "shortdescription" : "The Vow",
-  "level" : 7,
+  "level" : 6,
   "tooltipKind" : "starforge-uniquegun",
   "category": "uniqueWeapon",
   "tooltipFieldsOverride" : {
@@ -42,8 +42,8 @@
       }
     }
   }, 
-  "baseOffset" : [0.875, 0.250],
-  "muzzleOffset" : [1.750,0.250],
+  "baseOffset" : [1, 0.250],
+  "muzzleOffset" : [1.375,0.250],
 
   "scripts" : ["/items/active/weapons/ranged/starforge-gun.lua"],
   

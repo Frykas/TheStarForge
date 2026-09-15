@@ -902,7 +902,7 @@
                  "y":1576
                 }, 
                 {
-                 "gid":7879,
+                 "gid":7887,
                  "height":60,
                  "id":2663,
                  "name":"",
@@ -914,7 +914,7 @@
                  "y":1440
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":2664,
                  "name":"",
@@ -1438,7 +1438,7 @@
                  "y":1448
                 }, 
                 {
-                 "gid":7907,
+                 "gid":7915,
                  "height":16,
                  "id":2714,
                  "name":"",
@@ -1666,7 +1666,7 @@
                  "y":1424
                 }, 
                 {
-                 "gid":7878,
+                 "gid":7886,
                  "height":60,
                  "id":2735,
                  "name":"",
@@ -1678,7 +1678,7 @@
                  "y":1416
                 }, 
                 {
-                 "gid":7878,
+                 "gid":7886,
                  "height":60,
                  "id":2736,
                  "name":"",
@@ -1690,7 +1690,7 @@
                  "y":1304
                 }, 
                 {
-                 "gid":7879,
+                 "gid":7887,
                  "height":60,
                  "id":2737,
                  "name":"",
@@ -1702,7 +1702,7 @@
                  "y":1304
                 }, 
                 {
-                 "gid":7879,
+                 "gid":7887,
                  "height":60,
                  "id":2739,
                  "name":"",
@@ -1786,7 +1786,7 @@
                  "y":1448
                 }, 
                 {
-                 "gid":7902,
+                 "gid":7910,
                  "height":40,
                  "id":2748,
                  "name":"",
@@ -1798,7 +1798,7 @@
                  "y":1248
                 }, 
                 {
-                 "gid":7891,
+                 "gid":7899,
                  "height":16,
                  "id":2749,
                  "name":"",
@@ -2822,7 +2822,7 @@
                  "y":1184
                 }, 
                 {
-                 "gid":7875,
+                 "gid":7883,
                  "height":37,
                  "id":2844,
                  "name":"",
@@ -2834,7 +2834,7 @@
                  "y":1040
                 }, 
                 {
-                 "gid":2147491529,
+                 "gid":2147491537,
                  "height":24,
                  "id":2845,
                  "name":"",
@@ -2846,7 +2846,7 @@
                  "y":1040
                 }, 
                 {
-                 "gid":2147491528,
+                 "gid":2147491536,
                  "height":9,
                  "id":2846,
                  "name":"",
@@ -2858,7 +2858,7 @@
                  "y":1048
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":2847,
                  "name":"",
@@ -2870,7 +2870,7 @@
                  "y":968
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":2848,
                  "name":"",
@@ -2882,7 +2882,7 @@
                  "y":968
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":2849,
                  "name":"",
@@ -2894,7 +2894,7 @@
                  "y":968
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":2850,
                  "name":"",
@@ -2906,7 +2906,7 @@
                  "y":968
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":2851,
                  "name":"",
@@ -2918,7 +2918,7 @@
                  "y":968
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":2852,
                  "name":"",
@@ -3154,7 +3154,7 @@
                  "y":1584
                 }, 
                 {
-                 "gid":7876,
+                 "gid":7884,
                  "height":64,
                  "id":2874,
                  "name":"",
@@ -3178,7 +3178,7 @@
                  "y":1872
                 }, 
                 {
-                 "gid":7878,
+                 "gid":7886,
                  "height":60,
                  "id":2876,
                  "name":"",
@@ -3190,7 +3190,7 @@
                  "y":1544
                 }, 
                 {
-                 "gid":7879,
+                 "gid":7887,
                  "height":60,
                  "id":2877,
                  "name":"",
@@ -3202,7 +3202,7 @@
                  "y":1544
                 }, 
                 {
-                 "gid":7878,
+                 "gid":7886,
                  "height":60,
                  "id":2878,
                  "name":"",
@@ -3214,7 +3214,7 @@
                  "y":1544
                 }, 
                 {
-                 "gid":7879,
+                 "gid":7887,
                  "height":60,
                  "id":2881,
                  "name":"",
@@ -3226,7 +3226,7 @@
                  "y":1544
                 }, 
                 {
-                 "gid":7878,
+                 "gid":7886,
                  "height":60,
                  "id":2882,
                  "name":"",
@@ -3702,6 +3702,14 @@
                  "height":64,
                  "id":2916,
                  "name":"",
+                 "properties":
+                    {
+                     "parameters":"{\"locked\" : true}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4878,7 +4886,7 @@
                  "y":744
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":3020,
                  "name":"",
@@ -4890,7 +4898,7 @@
                  "y":1168
                 }, 
                 {
-                 "gid":7879,
+                 "gid":7887,
                  "height":60,
                  "id":3021,
                  "name":"",
@@ -4902,7 +4910,7 @@
                  "y":1168
                 }, 
                 {
-                 "gid":7878,
+                 "gid":7886,
                  "height":60,
                  "id":3022,
                  "name":"",
@@ -4914,7 +4922,7 @@
                  "y":1168
                 }, 
                 {
-                 "gid":7877,
+                 "gid":7885,
                  "height":60,
                  "id":3023,
                  "name":"",
@@ -5722,7 +5730,7 @@
                  "y":1848
                 }, 
                 {
-                 "gid":7878,
+                 "gid":7886,
                  "height":60,
                  "id":3094,
                  "name":"",
@@ -5734,7 +5742,7 @@
                  "y":704
                 }, 
                 {
-                 "gid":7879,
+                 "gid":7887,
                  "height":60,
                  "id":3095,
                  "name":"",
@@ -7850,23 +7858,23 @@
          "source":"..\/..\/tilesets\/vowvillage\/vowvillage.json"
         }, 
         {
-         "firstgid":7395,
+         "firstgid":7403,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-race\/human.json"
         }, 
         {
-         "firstgid":7683,
+         "firstgid":7691,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-colonytag\/lunarbase.json"
         }, 
         {
-         "firstgid":7707,
+         "firstgid":7715,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-colonytag\/misc.json"
         }, 
         {
-         "firstgid":7875,
+         "firstgid":7883,
          "source":"..\/..\/tilesets\/katahelruins\/katahelruins.json"
         }, 
         {
-         "firstgid":7883,
+         "firstgid":7891,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/crafting.json"
         }],
  "tilewidth":8,

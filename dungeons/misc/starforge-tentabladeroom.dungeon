@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starforge-tentabladeroom",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "protected" : false,
+    "anchor" : [ "starforge-tentabladeroom" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100
+  },
+
+  "parts" : [
+    {
+      "name" : "starforge-tentabladeroom",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starforge-tentabladeroom.json" ]
+    }
+  ]
+}

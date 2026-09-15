@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "op": "test",
+      "path": "/surfacePlaceables",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/surfacePlaceables",
+      "value": {
+        "items": []
+      }
+    }
+  ],
+
+  [
+    {
+      "op": "add",
+      "path": "/surfacePlaceables/items/-",
+      "value": {
+        "mode": "floor",
+        "priority": 1,
+        "variants": 1,
+        "distribution": "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+        "type": "microdungeon",
+        "microdungeons": ["starforge-tentabladeroom"]
+      }
+    }
+  ]
+]

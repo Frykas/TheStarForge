@@ -6,7 +6,7 @@
   "rarity" : "Legendary",
   "description" : "A powerful rocket launcher with the ability to fire twin elemental missiles.",
   "shortdescription" : "Principle of Duality",
-  "level" : 7,
+  "level" : 6,
   "fixedLevel" : false,
   "tooltipKind" : "starforge-uniquegun",
   "category" : "uniqueWeapon",
