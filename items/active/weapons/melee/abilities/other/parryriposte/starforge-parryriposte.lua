@@ -45,7 +45,6 @@ function StarforgeParryRiposte:parry()
 		    world.spawnProjectile(self.deflectProjectileType, mcontroller.position(), activeItem.ownerEntityId(), {0, 0}, true)
 
         local sourceEntity = notification.sourceEntityId
-        sb.logInfo("%s", sourceEntity)
         if sourceEntity and (not world.entityExists(sourceEntity) or sourceEntity == 0) then
           local targets = world.entityQuery(notification.position or mcontroller.position(), 5, {
             withoutEntityId = activeItem.ownerEntityId(),
@@ -60,9 +59,10 @@ function StarforgeParryRiposte:parry()
             end
           end
         end
-        sb.logInfo("%s", sourceEntity)
-		
-		    self:setState(self.windup, sourceEntity)
+        
+        if sourceEntity and world.entityExists(sourceEntity) then
+		      self:setState(self.windup, sourceEntity)
+        end
         return
       end
     end
