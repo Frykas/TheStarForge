@@ -1,28 +1,45 @@
 {
-  "projectileName" : "starforge-electricexplosion",
+  "projectileName" : "starforge-stormcreststrike",
   "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
   "physics" : "illusion",
+  "animationCycle" : 0.5,
+  "timeToLive" : 0.3,
+  "frameNumber" : 1,
   "speed" : 0,
-  "timeToLive" : 0,
+  "lightColor" : [152, 82, 160],
   "pointLight" : true,
-  "statusEffects" : [ ],
+  "statusEffects" : [ "electrified" ],
+  "damagePoly" : [ [-75, 0], [-30, -25], [0, -35], [30, -25], [75, 0], [30, 25], [0, 35], [-30, 25] ],
   "animationLoops" : false,
   "piercing" : true,
   "bounces" : -1,
   "flippable" : true,
-  "damageKind" : "electricplasma",
-  "damageType" : "noDamage",
-  "knockback" : 0,
-  "actionOnReap" : [
+  "damageKind" : "electricbroadsword",
+  "knockback" : 15,
+
+  "periodicActions" : [
     {
-      "action" : "projectile",
-      "inheritDamageFactor" : 1,
-      "type" : "electricexplosionknockback",
-      "config" : {
-        "knockback" : 15
+      "time" : 0, 
+      "rotate" : true,
+      "repeat" : false,
+      "action" : "particle",
+      "specification" : {
+        "type" : "animated",
+        "layer" : "front",
+        "animation" : "/projectiles/unique/starforge-stormcreststrike/starforge-stormcreststrike.animation",
+        "timeToLive" : 0.5,
+        "position" : [-2, 0],
+        "initialVelocity" : [25, 0],
+        "variance" : {
+          "timeToLive" : 0,
+          "rotation" : 0
+        }
       }
     },
+
     {
+      "time" : 0, 
+      "repeat" : false,
       "action" : "loop",
       "count" : 7,
       "body" : [
@@ -52,6 +69,8 @@
       ]
     },
     {
+      "time" : 0, 
+      "repeat" : false,
       "action" : "loop",
       "count" : 7,
       "body" : [
@@ -77,6 +96,8 @@
       ]
     },
     {
+      "time" : 0, 
+      "repeat" : false,
       "action" : "loop",
       "count" : 1,
       "body" : [
@@ -102,26 +123,43 @@
       ]
     },
     {
+      "time" : 0, 
+      "repeat" : false,
       "action" : "sound",
       "options" : [ "/sfx/gun/grenadeblast_electric1.ogg", "/sfx/gun/grenadeblast_electric2.ogg", "/sfx/gun/grenadeblast_electric3.ogg" ]
     },
     {
+      "time" : 0, 
+      "repeat" : false,
       "action" : "light",
       "color" : "blue"
     },
 
-    //Exclusive
     {
-      "count" : 4,
+      "time" : 0.1, 
+      "repeat" : true,
+      "count" : 1,
       "action" : "loop",
 	    "body" : [
         {
           "action" : "projectile",
           "inheritDamageFactor" : 0.03,
-          "type" : "lightning2",
-          "fuzzAngle" : 180,
+          "type" : "teslaboltsmall",
+          "fuzzAngle" : 360,
           "angleAdjust" : 0,
           "config": {
+            "piercing" : true,
+            "damageKind" : "electricplasma"
+          }
+        },
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 0.03,
+          "type" : "lightning2",
+          "fuzzAngle" : 360,
+          "angleAdjust" : 0,
+          "config": {
+            "speed" : 30,
             "piercing" : true,
             "damageKind" : "electricplasma"
           }

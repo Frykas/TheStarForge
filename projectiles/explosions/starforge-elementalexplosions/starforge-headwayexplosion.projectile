@@ -1,6 +1,6 @@
 {
   "projectileName" : "starforge-headwayexplosion",
-  "image" : "starforge-explosion.png",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
   "physics" : "illusion",
   "speed" : 0,
   "timeToLive" : 0,

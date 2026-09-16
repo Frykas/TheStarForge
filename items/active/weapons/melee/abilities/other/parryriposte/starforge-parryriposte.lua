@@ -1,72 +1,108 @@
--- Melee primary ability
-StarforgeMeleeCombo = WeaponAbility:new()
+require "/scripts/util.lua"
+require "/scripts/status.lua"
+require "/scripts/poly.lua"
+require "/items/active/weapons/weapon.lua"
 
-function StarforgeMeleeCombo:init()
-  self.comboStep = 1
-  animator.setGlobalTag("comboDirectives", self.stances.idle.comboDirectives or "")
+StarforgeParryRiposte = WeaponAbility:new()
 
-  for part, state in pairs(self.pullOutAnimationStates or {}) do
-    animator.setAnimationState(part, state)
-  end
+function StarforgeParryRiposte:init()
+  self.cooldownTimer = 0
+end
 
-  self.energyUsage = self.energyUsage or 0
+function StarforgeParryRiposte:update(dt, fireMode, shiftHeld)
+  WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
-  self:computeDamageAndCooldowns()
+  self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
 
-  self.weapon:setStance(self.stances.idle)
+  if self.weapon.currentAbility == nil
+    and fireMode == "alt"
+    and self.cooldownTimer == 0
+    and status.overConsumeResource("energy", self.energyUsage) then
 
-  self.edgeTriggerTimer = 0
-  self.flashTimer = 0
-  self.cooldownTimer = self.cooldowns[1]
-
-  self.animKeyPrefix = self.animKeyPrefix or ""
-
-  self.weapon.onLeaveAbility = function()
-    if not self.stallLeaveAbiity then
-      animator.setGlobalTag("comboDirectives", self.stances.idle.comboDirectives or "")
-      self.weapon:setStance(self.stances.idle)
-    end
-    self.stallLeaveAbiity = nil
+    self:setState(self.parry)
   end
 end
 
--- Ticks on every update regardless if this is the active ability
-function StarforgeMeleeCombo:update(dt, fireMode, shiftHeld)
-  WeaponAbility.update(self, dt, fireMode, shiftHeld)
+function StarforgeParryRiposte:parry()
+  self.weapon:setStance(self.stances.parry)
+  self.weapon:updateAim()
+  
+  --Display the shield health bar
+  status.setPersistentEffects("broadswordParry", {{stat = "shieldHealth", amount = 1000}})
+  
+  --Create a shield poly to block attacks
+  local blockPoly = animator.partPoly("parryShield", "shieldPoly")
+  activeItem.setItemShieldPolys({blockPoly})
+  
+  --Play the iniate guard stance sound
+  animator.playSound("guard")
+  
+  --Set up a damagelistener for incoming blocked damage
+  local damageListener = damageListener("damageTaken", function(notifications)
+    for _, notification in pairs(notifications) do
+      if notification.sourceEntityId ~= entity.id() and notification.healthLost == 0 then
+        animator.playSound("parry")
+		    world.spawnProjectile(self.deflectProjectileType, mcontroller.position(), activeItem.ownerEntityId(), {0, 0}, true)
 
-  world.debugText(self.cooldownTimer, vec2.add(mcontroller.position(), {0, 1}), "red")
-  if self.cooldownTimer > 0 then
-    self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
-    if self.cooldownTimer == 0 then
-      self:readyFlash()
+        local sourceEntity = notification.sourceEntityId
+        sb.logInfo("%s", sourceEntity)
+        if sourceEntity and (not world.entityExists(sourceEntity) or sourceEntity == 0) then
+          local targets = world.entityQuery(notification.position or mcontroller.position(), 5, {
+            withoutEntityId = activeItem.ownerEntityId(),
+            includedTypes = {"creature"},
+            order = "nearest"
+          })
+          for _, target in ipairs(targets) do
+            if world.entityExists(target) then
+              sourceEntity = target
+              break
+              return
+            end
+          end
+        end
+        sb.logInfo("%s", sourceEntity)
+		
+		    self:setState(self.windup, sourceEntity)
+        return
+      end
     end
-  end
-
-  if self.flashTimer > 0 then
-    self.flashTimer = math.max(0, self.flashTimer - self.dt)
-    if self.flashTimer == 0 then
-      animator.setGlobalTag("bladeDirectives", "")
+  end)
+  
+  --Wait for incoming attacks
+  util.wait(self.parryTime, function(dt)
+    --Interrupt when running out of shield stamina
+    if not status.resourcePositive("shieldStamina") then
+      return true
     end
-  end
 
-  self.edgeTriggerTimer = math.max(0, self.edgeTriggerTimer - dt)
-  if self.lastFireMode ~= (self.activatingFireMode or self.abilitySlot) and fireMode == (self.activatingFireMode or self.abilitySlot) then
-    self.edgeTriggerTimer = self.edgeTriggerGrace
-  end
-  self.lastFireMode = fireMode
+    damageListener:update()
+  end)
+  
+  --Reset the parry behaviour
+  self.cooldownTimer = self.cooldownTime
+  activeItem.setItemShieldPolys({})
+end
 
-  if not self.weapon.currentAbility and self:shouldActivate() then
-    self:setState(self.windup)
-  end
+--Brief frame before the parry attack
+function StarforgeParryRiposte:preslash()
+  self.weapon:setStance(self.stances.preslash)
+  self.weapon:updateAim()
+
+  util.wait(self.stances.preslash.duration)
+
+  self:setState(self.fire)
 end
 
 -- State: windup
-function StarforgeMeleeCombo:windup()
-  local stance = self.stances["windup"..self.comboStep]
+function StarforgeParryRiposte:windup(hitEntity)
+  local stance = self.stances.windup
   animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
+  
+  status.clearPersistentEffects("broadswordParry")
+  activeItem.setItemShieldPolys({})
 
   if stance.teleport and stance.animateEarly then
-    local animStateKey = self.animKeyPrefix .. (self.comboStep > 1 and "fire"..self.comboStep or "fire")
+    local animStateKey = self.animKeyPrefix .. "altFire"
     animator.setAnimationState("swoosh", animStateKey)
     animator.playSound(animStateKey)
 
@@ -95,7 +131,7 @@ function StarforgeMeleeCombo:windup()
     local windupSwing = {}
     if stance.windupSwing ~= false or stance.windupSwing ~= 0 then
       local windupSwingValue = stance.windupSwing or 0.1
-      local fireStance = self.stances["fire"..self.comboStep]
+      local fireStance = self.stances.fire
       windupSwing.armRotation = (stance.armRotation - fireStance.armRotation) * windupSwingValue
       windupSwing.weaponRotation = (stance.weaponRotation - fireStance.weaponRotation) * windupSwingValue
     end
@@ -119,8 +155,8 @@ function StarforgeMeleeCombo:windup()
   end
 
   if stance.teleport then
-    self:setState(self.teleport)
-  elseif self.stances["preslash"..self.comboStep] then
+    self:setState(self.teleport, hitEntity)
+  elseif self.stances.preslash then
     self:setState(self.preslash)
   else
     self:setState(self.fire)
@@ -129,8 +165,8 @@ end
 
 -- State: wait
 -- waiting for next combo input
-function StarforgeMeleeCombo:teleport()
-  local stance = self.stances["fire"..self.comboStep]
+function StarforgeParryRiposte:teleport(hitEntity)
+  local stance = self.stances.fire
   
   --Create the teleportation effect and add 0.5 for both animations to take effect
   status.addEphemeralEffect(stance.teleportStatus or "starforge-teleporteffect", stance.duration * (self.stanceSpeedFactor or 1) + 0.5)
@@ -139,8 +175,11 @@ function StarforgeMeleeCombo:teleport()
   self.weapon:setStance(stance)
   self.weapon:updateAim()
 
+  --Allow first teleport effect to take place
+  util.wait(0.25)
+  
   local oldPosition = mcontroller.position()
-  local targetPosition = vec2.add(oldPosition, vec2.rotate({mcontroller.facingDirection() * stance.teleportTarget[1], stance.teleportTarget[2]}, self.weapon.aimAngle * mcontroller.facingDirection()))
+  local targetPosition = world.entityPosition(hitEntity or entity.id())
 
   local groundCollision = world.lineTileCollisionPoint(mcontroller.position(), targetPosition)
   if groundCollision then
@@ -148,19 +187,7 @@ function StarforgeMeleeCombo:teleport()
     targetPosition = groundPos
   end
 	
-  local targets = world.entityQuery(mcontroller.position(), stance.forgivenessRange, {
-    withoutEntityId = activeItem.ownerEntityId(),
-    includedTypes = {"creature"},
-    order = "nearest"
-  })
-  if targets[1] and entity.entityInSight(targets[1]) and world.entityCanDamage(activeItem.ownerEntityId(), targets[1]) then
-	  targetPosition = world.entityPosition(targets[1])
-  end
   world.resolvePolyCollision(mcontroller.collisionPoly(), vec2.add(targetPosition, stance.teleportOffset), stance.teleportTolerance)
-
-  --Allow first teleport effect to take place
-  util.wait(0.25)
-  
   if stance.projectileType and targetPosition then
     local angleToTarget = vec2.angle({targetPosition[2] - mcontroller.position()[2], targetPosition[1] - mcontroller.position()[1]})
     local aimVector = vec2.rotate({0, 1}, -angleToTarget)
@@ -195,55 +222,13 @@ function StarforgeMeleeCombo:teleport()
     mcontroller.setPosition(oldPosition)
   end
 
-  if stance.continueStep then
-    self.edgeTriggerTimer = self.edgeTriggerGrace
-  end
-
-  if self.comboStep < self.comboSteps then
-    self.comboStep = self.comboStep + 1
-    self:setState(self.wait)
-  else
-    self.cooldownTimer = self.cooldowns[self.comboStep]
-    self.comboStep = 1
-  end
-end
-
--- State: wait
--- waiting for next combo input
-function StarforgeMeleeCombo:wait()
-  local stance = self.stances["wait"..(self.comboStep - 1)]
-  animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
-  
-  -- Optionally flash the weapon
-  if stance.flashTime then
-    self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
-  end
-  -- Optional Emotes
-  if stance.emote then
-    activeItem.emote(stance.emote)
-  end
-
-  self.weapon:setStance(stance)
-
-  util.wait(stance.duration, function()
-    if self:shouldActivate() then
-      self:setState(self.windup)
-      return
-    end
-  end)
-  
-  for part, state in pairs(self.resetAnimationStates or {}) do
-    animator.setAnimationState(part, state)
-  end
-
-  self.cooldownTimer = math.max(0, self.cooldowns[self.comboStep - 1] - stance.duration * (self.stanceSpeedFactor or 1))
-  self.comboStep = 1
+  self.cooldownTimer = self.successfulCooldownTime
 end
 
 -- State: preslash
 -- brief frame in between windup and fire
-function StarforgeMeleeCombo:preslash()
-  local stance = self.stances["preslash"..self.comboStep]
+function StarforgeParryRiposte:preslash()
+  local stance = self.stances.preslash
   animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
 
   self.weapon:setStance(stance)
@@ -255,8 +240,8 @@ function StarforgeMeleeCombo:preslash()
 end
 
 -- State: fire
-function StarforgeMeleeCombo:fire()
-  local stance = self.stances["fire"..self.comboStep]
+function StarforgeParryRiposte:fire()
+  local stance = self.stances.fire
   animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
   
   -- Optionally flash the weapon
@@ -271,7 +256,7 @@ function StarforgeMeleeCombo:fire()
   self.weapon:setStance(stance)
   self.weapon:updateAim()
 
-  local animStateKey = self.animKeyPrefix .. (self.comboStep > 1 and "fire" .. self.comboStep or "fire")
+  local animStateKey = self.animKeyPrefix .. "altfire"
   if animator.hasTransformationGroup("swooshOffset") then
     animator.resetTransformationGroup("swooshOffset")
     if self.swooshReachOffset then
@@ -378,85 +363,15 @@ function StarforgeMeleeCombo:fire()
       triggerFinisher(self.finisherHoldTime)
     end
   end
+
+  self.cooldownTimer = self.successfulCooldownTime
 end
 
-function StarforgeMeleeCombo:spawnProjectile(stance)
-  local inaccuracy = sb.nrand(stance.projectileInaccuracy or 0, 0)
-	local aimVector = vec2.rotate({0, 1}, (stance.fixedProjectileAngle and 0 or self.weapon.aimAngle) + inaccuracy + (mcontroller.facingDirection() * (stance.projectileAimAngleOffset or 0)))
-	aimVector[1] = aimVector[1] * mcontroller.facingDirection()
-	
-	local params = stance.projectileParameters or {}
-	params.power = (stance.projectileDamage or 1) * config.getParameter("damageLevelMultiplier")
-	params.powerMultiplier = activeItem.ownerPowerMultiplier()
-  if params.speed then
-  	params.speed = util.randomInRange(params.speed)
-  end
-
-  local firePosition = vec2.add(mcontroller.position(), activeItem.handPosition(animator.partPoint("blade", "projectileFirePoint") or {0,0}))
-
-  world.spawnProjectile(
-	  stance.projectileType,
-	  firePosition,
-	  activeItem.ownerEntityId(),
-	  aimVector,
-	  false,
-	  params
-	)
+function StarforgeParryRiposte:reset()
+  status.clearPersistentEffects("broadswordParry")
+  activeItem.setItemShieldPolys({})
 end
 
-function StarforgeMeleeCombo:shouldActivate()
-  if self.cooldownTimer == 0 and (self.energyUsage == 0 or not status.resourceLocked("energy")) then
-    if self.comboStep > 1 then
-      return self.edgeTriggerTimer > 0
-    else
-      return self.fireMode == (self.activatingFireMode or self.abilitySlot)
-    end
-  end
+function StarforgeParryRiposte:uninit()
+  self:reset()
 end
-
-function StarforgeMeleeCombo:animatedFlash(flashTime, flashDirectives)
-  animator.setGlobalTag("bladeDirectives", flashDirectives)
-  self.flashTimer = flashTime or self.flashTime
-end
-
-function StarforgeMeleeCombo:readyFlash()
-  animator.setGlobalTag("bladeDirectives", self.flashDirectives)
-  self.flashTimer = self.flashTime
-end
-
-function StarforgeMeleeCombo:computeDamageAndCooldowns()
-  local attackTimes = {}
-  for i = 1, self.comboSteps do
-    local attackTime = self.stances["windup"..i].duration + self.stances["fire"..i].duration
-    if self.stances["preslash"..i] then
-      attackTime = attackTime + self.stances["preslash"..i].duration
-    end
-    table.insert(attackTimes, attackTime)
-  end
-
-  self.cooldowns = {}
-  local totalAttackTime = 0
-  local totalDamageFactor = 0
-  for i, attackTime in ipairs(attackTimes) do
-    self.stepDamageConfig[i] = util.mergeTable(copy(self.damageConfig), self.stepDamageConfig[i]) --swapped for testing?
-    self.stepDamageConfig[i].timeoutGroup = "primary" .. i
-    if self.stepDamageConfig[i].statusEffects ~= self.damageConfig.statusEffects then --can't copy empty tables ig?
-      self.stepDamageConfig[i].statusEffects = self.damageConfig.statusEffects
-    end
-
-    local damageFactor = self.stepDamageConfig[i].baseDamageFactor
-    self.stepDamageConfig[i].baseDamage = damageFactor * self.baseDps * self.fireTime
-
-    totalAttackTime = totalAttackTime + attackTime
-    totalDamageFactor = totalDamageFactor + damageFactor
-
-    local targetTime = totalDamageFactor * self.fireTime
-    local speedFactor = 1.0 * (self.comboSpeedFactor ^ i)
-    table.insert(self.cooldowns, (totalAttackTime - attackTime) * speedFactor)
-  end
-end
-
-function StarforgeMeleeCombo:uninit()
-  self.weapon:setDamage()
-end
-

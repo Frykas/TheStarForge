@@ -33,6 +33,17 @@
   "animationCustom" : {
     "animatedParts" : {
       "parts" : {
+        "parryShield" : {
+          "properties" : {
+            "zLevel" : -1,
+            "centered" : true,
+            "offset" : [-0.75, 1.75],
+            "transformationGroups" : ["weapon"],
+            "rotationCenter" : [0, 0],
+            "shieldPoly" : [ [-0.25, -2.5], [-0.25, 5.0], [1.0, 5.75], [1.0, -1.0] ]
+          }
+        },
+        
         "tassel1" : {
           "properties" : {
             "zLevel" : -4,
@@ -218,7 +229,10 @@
       "fire2" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ],
       "fire3" : [ "/sfx/melee/swing_broadsword_electric1.ogg", "/sfx/melee/swing_broadsword_electric2.ogg", "/sfx/melee/swing_broadsword_electric3.ogg" ],
       "fire4" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ],
-      "fire5" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ]
+      "fire5" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ],
+
+      "guard" : [ "/sfx/melee/sword_guard.ogg" ],
+      "parry" : [ "/sfx/melee/sword_parry.ogg" ]
     }
   },
 
@@ -251,6 +265,141 @@
       "idle" : {
         "weaponRotation" : 40,
         "weaponOffset" : [-0.25, 0.25]
+      },
+      "windup5" : {
+        "duration" : 0.25,
+        "armRotation" : -150,
+        "weaponRotation" : 25,
+        "twoHanded" : true,
+
+        "teleport" : true,
+        "animateEarly" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire5" : {
+        "duration" : 0.425,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "teleportOffset" : [0, 1],
+        "teleportTarget" : [15, 0],
+        "forgivenessRange" : 10,
+        "teleportTolerance" : 2,
+
+        "projectileType" : "starforge-stormcreststrike",
+        "projectileParameters" : {
+          "actionOnReap" : [
+            {
+              "action" : "projectile",
+              "inheritDamageFactor" : 0.5,
+              "type" : "starforge-stormcreststrike",
+              "fuzzAngle" : 0,
+              "angleAdjust" : 180,
+              "config": {}
+            }
+          ]
+        },
+        "projectileDamage" : 15,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Stormguard",
+    "type" : "starforge-parryriposte",
+    "scripts" : ["/items/active/weapons/melee/abilities/other/parryriposte/starforge-parryriposte.lua"],
+    "class" : "StarforgeParryRiposte",
+
+    "energyUsage" : 50,
+    "parryTime" : 0.55,
+    "cooldownTime" : 1.8,
+    "successfulCooldownTime" : 1.1,
+	
+	  "deflectProjectileType" : "standardbullet",
+	
+    "stances" : {
+      "parry" : {
+        "armRotation" : 80,
+        "weaponRotation" : -205,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "windup" : {
+        "duration" : 0.125,
+        "armRotation" : -150,
+        "weaponRotation" : 25,
+        "twoHanded" : true,
+
+        "teleport" : true,
+        "animateEarly" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.65,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "teleportOffset" : [0, 1],
+        "teleportTolerance" : 2,
+
+        "projectileType" : "starforge-stormcreststrike",
+        "projectileParameters" : {
+          "speed" : 0,
+          "timeToLive" : 0.15,
+          "actionOnReap" : [
+            {
+              "action" : "projectile",
+              "inheritDamageFactor" : 0.5,
+              "type" : "starforge-stormcreststrike",
+              "fuzzAngle" : 360,
+              "angleAdjust" : 0,
+              "config": {
+                "speed" : 0,
+                "timeToLive" : 0.15,
+                "actionOnReap" : [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 1,
+                    "type" : "starforge-stormcreststrike",
+                    "fuzzAngle" : 360,
+                    "angleAdjust" : 0,
+                    "config": {
+                      "speed" : 0,
+                      "timeToLive" : 0.15,
+                      "actionOnReap" : [
+                        {
+                          "action" : "projectile",
+                          "inheritDamageFactor" : 1,
+                          "type" : "starforge-stormcreststrike",
+                          "fuzzAngle" : 360,
+                          "angleAdjust" : 0,
+                          "config": {
+                            "speed" : 0
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "projectileDamage" : 25,
+
+        "allowRotate" : false,
+        "allowFlip" : true
       }
     }
   },

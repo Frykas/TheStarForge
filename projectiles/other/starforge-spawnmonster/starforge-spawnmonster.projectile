@@ -1,6 +1,6 @@
 {
   "projectileName" : "starforge-spawnmonster",
-  "image" : "/assetmissing.png",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
   "animationCycle" : 0.8,
   "frameNumber" : 1,
   "speed" : 0,

@@ -1,8 +1,8 @@
 {
   "projectileName" : "starforge-tidaltear",
   "image" : "starforge-tidaltear.png",
-  "animationCycle" : 0.25,
-  "frameNumber" : 1,
+  "animationCycle" : 0.35,
+  "frameNumber" : 4,
   "timeToLive" : 3,
   "lightColor" : [44, 172, 219],
   "pointLight" : true,
