@@ -3,34 +3,26 @@ require "/scripts/vec2.lua"
 require "/scripts/interp.lua"
 require "/items/active/weapons/weapon.lua"
 
-StarforgeThrowReturningProjectile = WeaponAbility:new()
+StarforgeThrowTeleportProjectile = WeaponAbility:new()
 
-function StarforgeThrowReturningProjectile:init()
+function StarforgeThrowTeleportProjectile:init()
   self:reset()
   
   self.cooldownTimer = self.fireTime
   self.stanceResetTimer = nil
 
-  self.weapon:setStance(self.stances.idle)
+  self.weapon:setStance(self.weapon.abilities[1].stances.idle)
   
   if config.getParameter("weaponThrown") then
     self:setState(self.cooldown)
   end
 end
 
-function StarforgeThrowReturningProjectile:update(dt, fireMode, shiftHeld)
+function StarforgeThrowTeleportProjectile:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
   
   if config.getParameter("weaponThrown") == nil or not world.entityExists(config.getParameter("weaponThrown")) then
     activeItem.setHoldingItem(true)
-  end
-
-  if self.stanceResetTimer then
-    self.stanceResetTimer = math.max(0, self.stanceResetTimer - self.dt)
-    if self.stanceResetTimer == 0 then
-      self.weapon:setStance(self.stances.idle)
-      self.stanceResetTimer = nil
-    end
   end
   
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
@@ -44,7 +36,7 @@ function StarforgeThrowReturningProjectile:update(dt, fireMode, shiftHeld)
   end
 end
 
-function StarforgeThrowReturningProjectile:windup()
+function StarforgeThrowTeleportProjectile:windup()
   local stance = self.stances.windup
   self.stanceResetTimer = nil
   self.weapon:setStance(stance)
@@ -78,7 +70,7 @@ function StarforgeThrowReturningProjectile:windup()
   self:setState(self.preslash)
 end
 
-function StarforgeThrowReturningProjectile:preslash()
+function StarforgeThrowTeleportProjectile:preslash()
   self.weapon:setStance(self.stances.preslash)
   
   if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("energy", self:energyPerShot()) then
@@ -111,6 +103,8 @@ function StarforgeThrowReturningProjectile:preslash()
     animator.playSound("throw")
     animator.setAnimationState("weapon", "invisible")
 
+    self.teleportTimer = 0
+    
     util.wait(self.stances.preslash.duration * (self.stanceSpeedFactor or 1))
   end
   
@@ -119,7 +113,50 @@ function StarforgeThrowReturningProjectile:preslash()
   end
 end
 
-function StarforgeThrowReturningProjectile:fire()
+function StarforgeThrowTeleportProjectile:teleport()
+  status.setPersistentEffects("starforge-throwteleportprojectile", { { stat = "invulnerable", amount = 1.0 }, { stat = "activeMovementAbilities", amount = 1 } })
+  status.addEphemeralEffect("blink")
+  
+  world.sendEntityMessage(config.getParameter("weaponThrown"), "killProjectile")
+
+  local blinkPosition = self:findBlinkPosition(config.getParameter("weaponThrown") and world.entityPosition(config.getParameter("weaponThrown")) or mcontroller.position())
+  if blinkPosition then
+    util.wait(0.25, function(dt)
+      mcontroller.controlModifiers({ movementSuppressed = true })
+    end)
+
+    local params = sb.jsonMerge(self.teleportProjectileParameters, {})
+    params.powerMultiplier = activeItem.ownerPowerMultiplier()
+    params.power = (self.teleportBaseDamage or 1) * config.getParameter("damageLevelMultiplier")
+    
+    world.spawnProjectile(self.teleportProjectileType, blinkPosition, activeItem.ownerEntityId(), vec2.norm(world.distance(mcontroller.position(), blinkPosition)), false, params)
+
+    self.weapon:setStance(self.stances.catch)
+    mcontroller.setPosition(blinkPosition)
+
+    util.wait(0.1, function(dt)
+      mcontroller.setYVelocity(0)
+    end)
+
+    self.cooldownTimer = self.fireTime
+    self.weapon:setStance(self.weapon.abilities[1].stances.idle)
+    animator.setAnimationState("weapon", "visible")
+    activeItem.setInstanceValue("weaponThrown", nil)
+    activeItem.setHoldingItem(true)
+  end
+  
+  self:reset()
+end
+ 
+function StarforgeThrowTeleportProjectile:findBlinkPosition(position)
+  if not world.lineTileCollision(mcontroller.position(), position, {"Null", "Block", "Dynamic", "Slippery"}) then
+    local resolvedPosition = world.resolvePolyCollision(mcontroller.collisionPoly(), position, 2)
+    return resolvedPosition
+  end
+  return mcontroller.position()
+end
+
+function StarforgeThrowTeleportProjectile:fire()
   self.weapon:updateAim()
 
   self.weapon:setStance(self.stances.fire)
@@ -131,79 +168,55 @@ function StarforgeThrowReturningProjectile:fire()
   self:setState(self.cooldown)
 end
 
-function StarforgeThrowReturningProjectile:cooldown()
+function StarforgeThrowTeleportProjectile:cooldown()
   self.weapon:updateAim()
   
   --Force the aim angle into a set position
   self.weapon.aimAngle = 0
   
   while world.entityExists(config.getParameter("weaponThrown")) do
-    --world.debugText("Active projectiles detected!", mcontroller.position(), "yellow")
-    world.sendEntityMessage(config.getParameter("weaponThrown"), "setTargetPosition", self:firePosition())
-    
-    local targetPosition = world.entityPosition(config.getParameter("weaponThrown"))
-    local toTarget = world.distance(targetPosition, mcontroller.position())
-    local projectileFound = (vec2.mag(toTarget) < self.projectileDetectionRadius)
-    
-    --Set recall armRotation
-    if projectileFound then
-      activeItem.setHoldingItem(true)
-      self.weapon:setStance(self.stances.recall)
-      local targetAngle = math.atan(self:firePosition()[2] - targetPosition[2], self:firePosition()[1] - targetPosition[1])
-      local angleAdjust = (mcontroller.facingDirection() > 0) and math.pi or 0
-      
-      self.weapon.relativeArmRotation = (targetAngle * mcontroller.facingDirection()) - angleAdjust
-    else
-      activeItem.setHoldingItem(false)
-    end
-    
-    --Optionally recall by clicking again
-    if not self.weapon.currentAbility
-      and self.recallEnabled
-      and self.fireMode == (self.activatingFireMode or self.abilitySlot) then
-      
-      world.sendEntityMessage(config.getParameter("weaponThrown"), "returnToSender")
+    self.teleportTimer = self.teleportTimer + self.dt
+
+    if (not self.weapon.currentAbility
+      and self.fireMode == (self.activatingFireMode or self.abilitySlot))
+      or self.teleportTimer >= self.teleportTime then
+
+      self:setState(self.teleport)
     end
     coroutine.yield()
   end
-  
-  self.stanceResetTimer = self.stanceResetTime
-  self.weapon:setStance(self.stances.catch)
   
   --Return the weapon to the player's hand
   --Add normal pitch variance to shots
   local pitchVariance = (1 + (self.pitchVariance or 0.1)) - (math.random() * ((self.pitchVariance or 0.1) * 2))
   animator.setSoundPitch("catch", pitchVariance)
   animator.playSound("catch")
-  animator.setAnimationState("weapon", "visible")
-  activeItem.setInstanceValue("weaponThrown", nil)
-  activeItem.setHoldingItem(true)
-  
-  self:reset()
+  self:setState(self.teleport)
 end
 
-function StarforgeThrowReturningProjectile:aimVector()
+function StarforgeThrowTeleportProjectile:aimVector()
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle)
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
 
-function StarforgeThrowReturningProjectile:energyPerShot()
+function StarforgeThrowTeleportProjectile:energyPerShot()
   return self.energyUsage * (self.energyUsageMultiplier or 1.0)
 end
 
-function StarforgeThrowReturningProjectile:damagePerShot()
+function StarforgeThrowTeleportProjectile:damagePerShot()
   return (self.baseDamage or (self.baseDps * (self.fireTime))) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier")
 end
 
-function StarforgeThrowReturningProjectile:firePosition()
+function StarforgeThrowTeleportProjectile:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition())
 end
 
-function StarforgeThrowReturningProjectile:reset()
+function StarforgeThrowTeleportProjectile:reset()
   self.cooldownTimer = self.fireTime
+  status.setPersistentEffects("starforge-throwteleportprojectile", {})
 end
 
-function StarforgeThrowReturningProjectile:uninit()
+function StarforgeThrowTeleportProjectile:uninit()
   self:reset()
 end

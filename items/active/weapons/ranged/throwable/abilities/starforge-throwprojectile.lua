@@ -151,16 +151,16 @@ function StarforgeThrowProjectile:spawnProjectile(angleAdjust)
     if baseSpeed then
       params.speed = util.randomInRange(baseSpeed)
     end
-	params.speed = util.randomInRange(params.speed)
+    params.speed = util.randomInRange(params.speed)
 
-	world.spawnProjectile(
-	  projectileType,
-	  firePosition or self:firePosition(),
-	  activeItem.ownerEntityId(),
-	  self:aimVector(self.inaccuracy, angleAdjust),
-	  false,
-	  params
-	)
+    world.spawnProjectile(
+      projectileType,
+      firePosition or self:firePosition(),
+      activeItem.ownerEntityId(),
+      self:aimVector(self.inaccuracy, angleAdjust),
+      false,
+      params
+    )
   end
 end
 

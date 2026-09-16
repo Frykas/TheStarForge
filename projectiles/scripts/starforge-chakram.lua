@@ -41,6 +41,10 @@ function init()
       setReturning()
     end)
 
+  message.setHandler("killProjectile", function()
+      projectile.die()
+    end)
+
   if boomerangExtra then
     boomerangExtra:init()
   end

@@ -115,5 +115,77 @@
     }
   },
 
+  "altAbility" : {
+    "name" : "Rift Warp",
+    "scripts" : ["/items/active/weapons/ranged/throwable/abilities/starforge-throwteleportprojectile.lua"],
+    "class" : "StarforgeThrowTeleportProjectile",
+
+    "baseDamage" : 3.5,
+    "fireTime" : 2.5,
+    "stanceSpeedFactor" : 1.1,
+	
+    "energyUsage" : 250,
+
+    "fireOffset" : [0.0, -0.25],
+
+    "stanceResetTime" : 0.15,
+	
+    "projectileType" : "starforge-isonami",
+    "projectileParameters" : {  
+      "hitsBeforeReturning" : -1,
+      "stickToTarget" : false
+    },
+
+    "teleportTime" : 0.2,
+
+    "teleportBaseDamage" : 5,
+    "teleportProjectileType" : "starforge-tidaltear",
+    "teleportProjectileParameters" : {
+      "timeToLive" : 0.5
+    },
+
+
+    "stances" : {
+      "catch" : {
+        "armRotation" : -175,
+        "weaponRotation" : 0,
+        "aimAngle" : 0,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.075,
+        "armRotation" : 135,
+        "endArmRotation" : 90,
+        "weaponRotation" : -15,
+        "endWeaponRotation" : -10,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.125,
+        "armRotation" : -10,
+        "weaponRotation" : -10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
   "builder" : "/items/buildscripts/starforge-builduniqueweapon.lua"
 }
