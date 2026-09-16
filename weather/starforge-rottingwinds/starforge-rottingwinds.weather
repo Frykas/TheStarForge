@@ -3,6 +3,41 @@
 
   "particles" : [
     {
+      "density" : 0.0025,
+      "particle" : {
+        "type" : "textured",
+        "animation" : "/animations/volcanopoof/volcanopoof.png",
+        "velocity" : [0, 0],
+        "fade" : 0.5,
+        "looping" : true,
+        "destructionAction" : "fade",
+        "destructionTime" : 1,
+        "timeToLive" : 1.5,
+        "size" : 0.25,
+        "collidesForeground" : false,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.0025,
+      "particle" : {
+        "type" : "textured",
+        "animation" : "/animations/volcanopoof/volcanopoof.png",
+        "velocity" : [0, 0],
+        "fade" : 0.5,
+        "looping" : true,
+        "destructionAction" : "fade",
+        "destructionTime" : 1,
+        "timeToLive" : 1,
+        "size" : 0.35,
+        "rotation" : 180,
+        "collidesForeground" : false,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
       "density" : 0.005,
       "particle" : {
         "type" : "animated",
@@ -33,7 +68,59 @@
       }
     },
     {
-
+      "density" : 0.005,
+      "particle" : {
+        "type" : "animated",
+        "animation" : "/animations/electriccloudpuff/electriccloudpuff.animation",
+        "position" : [0, 0],
+        "layer" : "middle",
+        "initialVelocity" : [0, 0],
+        "finalVelocity" : [0, 0.0],
+        "approach" : [0, 50],
+        "fade" : 0.5,
+        "destructionAction" : "shrink",
+        "destructionTime" : 0.1,
+        "size" : 1,
+        "timeToLive" : 0.7,
+        "fullbright" : false
+      }
+    },
+    {
+      "density" : 0.005,
+      "particle" : {
+        "type" : "animated",
+        "animation" : "/animations/smallpoof/smallpoof.animation",
+        "position" : [0, 0],
+        "layer" : "middle",
+        "initialVelocity" : [0, 0],
+        "finalVelocity" : [0, 0.0],
+        "approach" : [0, 50],
+        "fade" : 0.5,
+        "destructionAction" : "shrink",
+        "destructionTime" : 0.1,
+        "size" : 0.5,
+        "timeToLive" : 0.45,
+        "fullbright" : false
+      }
+    },
+    {
+      "density" : 0.015,
+      "particle" : {
+        "type" : "ember",
+        "size" : 1.7,
+        "color" : [61, 66, 60, 250],
+        "fade" : 0.9,
+        "destructionAction" : "shrink",
+        "destructionTime" : 1.25,
+        "position" : [0.0, 0.0],
+        "offsetRegion" : [0, 0, 0, 0],
+        "initialVelocity" : [0, 0],
+        "finalVelocity" : [0, 0],
+        "approach" : [0, 10],
+        "timeToLive" : 1.75
+      }
+    },
+    {
       "density" : 0.0025,
       "particle" : {
         "type" : "textured",
