@@ -9950,25 +9950,6 @@
                 }, 
                 {
                  "height":8,
-                 "id":2489,
-                 "name":"Fire Monster",
-                 "properties":
-                    {
-                     "monster":"firelumoth"
-                    },
-                 "propertytypes":
-                    {
-                     "monster":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":2440,
-                 "y":1664
-                }, 
-                {
-                 "height":8,
                  "id":2491,
                  "name":"Fire Monster",
                  "properties":
@@ -11056,7 +11037,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 

@@ -27,7 +27,7 @@
         "op": "add",
         "path": "/shadowChestTreasure/0/1/pool/-",
         "value": {
-            "weight": 0.20,
+            "weight": 0.15,
             "item": "starforge-nightshard"
         }
     },
@@ -35,7 +35,7 @@
         "op": "add",
         "path": "/boneChestTreasure/0/1/pool/-",
         "value": {
-            "weight": 0.20,
+            "weight": 0.15,
             "item": "starforge-skullbreaker"
         }
     },
