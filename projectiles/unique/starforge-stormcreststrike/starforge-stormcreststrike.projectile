@@ -126,7 +126,7 @@
       "time" : 0, 
       "repeat" : false,
       "action" : "sound",
-      "options" : [ "/sfx/gun/grenadeblast_electric1.ogg", "/sfx/gun/grenadeblast_electric2.ogg", "/sfx/gun/grenadeblast_electric3.ogg" ]
+      "options" : [ "/sfx/projectiles/starforge-stormcreststrike1.ogg", "/sfx/projectiles/starforge-stormcreststrike2.ogg", "/sfx/projectiles/starforge-stormcreststrike3.ogg" ]
     },
     {
       "time" : 0, 
@@ -136,35 +136,19 @@
     },
 
     {
-      "time" : 0.1, 
+      "time" : 0.01, 
       "repeat" : true,
-      "count" : 1,
-      "action" : "loop",
-	    "body" : [
-        {
-          "action" : "projectile",
-          "inheritDamageFactor" : 0.03,
-          "type" : "teslaboltsmall",
-          "fuzzAngle" : 360,
-          "angleAdjust" : 0,
-          "config": {
-            "piercing" : true,
-            "damageKind" : "electricplasma"
-          }
-        },
-        {
-          "action" : "projectile",
-          "inheritDamageFactor" : 0.03,
-          "type" : "lightning2",
-          "fuzzAngle" : 360,
-          "angleAdjust" : 0,
-          "config": {
-            "speed" : 30,
-            "piercing" : true,
-            "damageKind" : "electricplasma"
-          }
-        } 
-      ]
+      "rotate" : true,
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.03,
+      "type" : "teslaboltsmall",
+      "fuzzAngle" : 15,
+      "angleAdjust" : 180,
+      "offsetRange" : [-2, -2, 2, 2],
+      "config": {
+        "piercing" : true,
+        "damageKind" : "electricplasma"
+      }
     }
   ]
 }

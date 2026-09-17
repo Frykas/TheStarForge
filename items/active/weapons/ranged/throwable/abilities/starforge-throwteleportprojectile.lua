@@ -175,7 +175,7 @@ function StarforgeThrowTeleportProjectile:cooldown()
   self.weapon.aimAngle = 0
   
   while world.entityExists(config.getParameter("weaponThrown")) do
-    self.teleportTimer = self.teleportTimer + self.dt
+    self.teleportTimer = (self.teleportTimer or 0) + self.dt
 
     if (not self.weapon.currentAbility
       and self.fireMode == (self.activatingFireMode or self.abilitySlot))
