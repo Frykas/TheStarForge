@@ -17,6 +17,8 @@
 
   "inventoryIcon" : "starforge-stormcrest.png",
 
+  "learnBlueprintsOnPickup" : [ "starforge-stormcrest" ],
+
   "animation" : "/items/active/weapons/melee/highbrand/starforge-highbrand.animation",
   "animationParts" : {
     "handle" : "",

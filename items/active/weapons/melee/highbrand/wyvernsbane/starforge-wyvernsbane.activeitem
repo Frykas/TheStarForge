@@ -17,6 +17,8 @@
 
   "inventoryIcon" : "starforge-wyvernsbane.png",
 
+  "learnBlueprintsOnPickup" : [ "starforge-wyvernsbane" ],
+
   "animation" : "/items/active/weapons/melee/highbrand/starforge-highbrand.animation",
   "animationParts" : {
     "handle" : "",

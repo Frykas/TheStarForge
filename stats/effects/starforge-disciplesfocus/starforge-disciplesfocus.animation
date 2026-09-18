@@ -1,0 +1,46 @@
+{
+  "globalTagDefaults" : {
+    "colour" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "crystal" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 14,
+            "cycle" : 1.4,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "crystal" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["crystal"]
+        },
+
+        "partStates" : {
+          "crystal" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-disciplesfocus.png:idle.<frame><colour>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "crystal" : {}
+  }
+}

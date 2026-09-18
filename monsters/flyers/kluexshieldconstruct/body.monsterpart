@@ -1,0 +1,11 @@
+{
+  "name" : "body",
+  "category" : "starforge-kluexshieldconstruct",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png",
+    "bodyfullbright" : "bodyfullbright.png",
+    "wings" : "wings.png"
+  }
+}

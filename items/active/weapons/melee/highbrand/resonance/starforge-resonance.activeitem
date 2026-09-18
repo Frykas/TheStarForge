@@ -17,6 +17,8 @@
 
   "inventoryIcon" : "starforge-resonance.png",
 
+  "learnBlueprintsOnPickup" : [ "starforge-resonance" ],
+
   "animation" : "/items/active/weapons/melee/highbrand/starforge-highbrand.animation",
   "animationParts" : {
     "handle" : "",

@@ -30,7 +30,7 @@
     [1, {
       "fill" : [ 
         {"item" : [ "banana", 1]},
-        {"pool" : "smallChestTreasure"}
+        {"pool" : "starforge-stormcresttempleloot"}
       ]
     }]
   ],
@@ -38,7 +38,7 @@
     [1, {
       "fill" : [
         {"item" : [ "starforge-kluexwarpriesthead", 1]},
-        {"pool" : "smallChestTreasure"}
+        {"pool" : "starforge-stormcresttempleloot"}
       ]
     }]
   ],
@@ -46,7 +46,7 @@
     [1, {
       "fill" : [
         {"item" : [ "starforge-kluexwarpriestchest", 1]},
-        {"pool" : "smallChestTreasure"}
+        {"pool" : "starforge-stormcresttempleloot"}
       ]
     }]
   ],
@@ -54,7 +54,102 @@
     [1, {
       "fill" : [
         {"item" : [ "starforge-kluexwarpriestpants", 1]},
-        {"pool" : "smallChestTreasure"}
+        {"pool" : "starforge-stormcresttempleloot"}
+      ]
+    }]
+  ],
+
+  "starforge-kluexwarpriestdrops" : [
+    [0, {
+      "fill" : [
+        {"pool" : "starforge-stormcresttempleloot"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "starfroge-kluexwarpriestdropsfocus"},
+		    {"weight" : 0.5, "item" : "starforge-devotion"}
+      ],
+      "poolRounds" : [
+        [0.9, 0],
+        [0.1, 1]
+      ],
+      "allowDuplication" : false
+    }],
+    [1.9, {
+      "fill" : [
+        {"pool" : "starforge-stormcresttempleloot"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "starforge-kluexwarpriestdropsfocus"},
+		    {"weight" : 0.5, "item" : "starforge-devotion"}
+      ],
+      "poolRounds" : [
+        [0.8, 0],
+        [0.2, 1]
+      ],
+      "allowDuplication" : false
+    }],
+    [2.9, {
+      "fill" : [
+        {"pool" : "starforge-stormcresttempleloot"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "starforge-kluexwarpriestdropsfocus"},
+		    {"weight" : 0.5, "item" : "starforge-devotion"}
+      ],
+      "poolRounds" : [
+        [0.5, 0],
+        [0.5, 1]
+      ],
+      "allowDuplication" : false
+    }],
+    [3.9, {
+      "fill" : [
+        {"pool" : "starforge-stormcresttempleloot"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "starforge-kluexwarpriestdropsfocus"},
+		    {"weight" : 0.5, "item" : "starforge-devotion"}
+      ],
+      "poolRounds" : [
+        [0.4, 0],
+        [0.6, 1]
+      ],
+      "allowDuplication" : false
+    }],
+    [4.9, {
+      "fill" : [
+        {"pool" : "starforge-stormcresttempleloot"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "starforge-kluexwarpriestdropsfocus"},
+		    {"weight" : 0.5, "item" : "starforge-devotion"}
+      ],
+      "poolRounds" : [
+        [0.15, 0],
+        [0.85, 1]
+      ],
+      "allowDuplication" : false
+    }],
+    [5.9, {
+      "fill" : [
+        {"pool" : "starforge-stormcresttempleloot"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "starforge-kluexwarpriestdropsfocus"},
+		    {"weight" : 0.5, "item" : "starforge-devotion"}
+      ],
+      "poolRounds" : [
+        [0.01, 0],
+        [0.99, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  "starforge-kluexwarpriestdropsfocus" : [
+    [0, {
+      "fill" : [
+        {"item" : "starforge-kluexwarpriestback-recipe"},
+		    {"item" : "starforge-disciplesfocus"}
       ]
     }]
   ],

@@ -19,6 +19,8 @@
 
   "inventoryIcon" : "starforge-devotion.png",
 
+  "learnBlueprintsOnPickup" : [ "starforge-devotion" ],
+
   "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
   "animationParts" : {
     "blade" : "starforge-devotion.png",

@@ -5,7 +5,7 @@
   "animationCycle" : 0.5,
   "timeToLive" : 0.3,
   "frameNumber" : 1,
-  "speed" : 0,
+  "speed" : 3,
   "lightColor" : [152, 82, 160],
   "pointLight" : true,
   "statusEffects" : [ "electrified" ],
@@ -19,7 +19,7 @@
 
   "periodicActions" : [
     {
-      "time" : 0, 
+      "time" : 0.02, 
       "rotate" : true,
       "repeat" : false,
       "action" : "particle",

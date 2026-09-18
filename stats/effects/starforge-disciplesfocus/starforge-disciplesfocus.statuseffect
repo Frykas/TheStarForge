@@ -1,0 +1,36 @@
+{
+  "name" : "starforge-disciplesfocus",
+
+  "effectConfig" : {
+    "minimumDamageToTrigger" : 5,
+    "range" : 35,
+
+    "maxBrightness" : 100,
+    "flashTime" : 0.5,
+
+    "fireTime" : 0.65,
+    "damagePercent" : 0.65,
+    "projectileCount" : 1,
+    "inaccuracy" : 0.01,
+
+    "projectileType" : "energycrystal",
+    "projectileParameters" : {
+
+    },
+    "trackSourceEntity" : false,
+
+    "hoverAmplitude" : 0.25,
+    "hoverCycle" : 2,
+    "crystalPosition" : [-0.5, 4]
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "starforge-disciplesfocus.lua"
+  ],
+
+  "animationConfig" : "starforge-disciplesfocus.animation",
+
+  "label" : "Disciples Focus",
+  "icon" : "/items/augments/back/starforge-disciplesfocus.png"
+}

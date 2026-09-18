@@ -1,0 +1,21 @@
+{
+  "itemName" : "starforge-disciplesfocus",
+  "price" : 8000,
+  "rarity" : "Legendary",
+  "category" : "eppAugment",
+  "inventoryIcon" : "starforge-disciplesfocus.png",
+  "description" : "Summons an aviolite crystal to shoot at hit foes.",
+  "shortdescription" : "Disciples Focus Augment",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "starforge-disciplesfocus",
+    "displayName" : "Disciples Focus",
+    "displayIcon" : "/items/augments/back/starforge-disciplesfocus.png",
+    "effects" : [ "starforge-disciplesfocus" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

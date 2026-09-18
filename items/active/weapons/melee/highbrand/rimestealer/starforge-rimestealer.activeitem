@@ -17,6 +17,8 @@
 
   "inventoryIcon" : "starforge-rimestealer.png",
 
+  "learnBlueprintsOnPickup" : [ "starforge-rimestealer" ],
+
   "animation" : "/items/active/weapons/melee/highbrand/starforge-highbrand.animation",
   "animationParts" : {
     "handle" : "",

@@ -1,4 +1,4 @@
-require "/scripts/starforge-abilityutil.lua" -- nebAbilityUtil
+require "/scripts/starforge-util.lua" -- nebUtil
 
 StarForgeLoadHeadhunterAmmo = WeaponAbility:new()
 
@@ -20,7 +20,7 @@ function StarForgeLoadHeadhunterAmmo:update(dt, fireMode, shiftHeld)
   
   if self.abilityBackup == false then
 	--sb.jsonMerge() and copy() cause stack overflow
-    self.abilityBackup = nebAbilityUtil.backupAbility(self.weapon.abilities[self.adaptedAbilityIndex])
+    self.abilityBackup = nebUtil.backupAbility(self.weapon.abilities[self.adaptedAbilityIndex])
     if config.getParameter("newAbilityLoaded", false) then
       self:initAltAmmo()
     end

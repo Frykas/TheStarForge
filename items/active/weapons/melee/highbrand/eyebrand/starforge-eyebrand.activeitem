@@ -17,6 +17,8 @@
 
   "inventoryIcon" : "starforge-eyebrand.png",
 
+  "learnBlueprintsOnPickup" : [ "starforge-eyebrand" ],
+
   "animation" : "/items/active/weapons/melee/highbrand/starforge-highbrand.animation",
   "animationParts" : {
     "handle" : "",
