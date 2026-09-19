@@ -15,11 +15,21 @@
       "/monsters/flyers/kluexshieldconstruct/starforge-kluexshieldconstruct.lua"
     ],
     "animationScripts" : [
-      "/monsters/boss/guardianminion/minionline.lua"
-    ],  //give red lightning connection effect
+      "/items/active/effects/starforge-enhancedlightning.lua"
+    ],
 
-    "allyStatusEffects" : [ "starforge-disciplesfocus" ], //make actual status effect for shields
-    "allyPromixity" : 15,
+    "lightningConfig" : {
+      "displacement" : 0.05,
+      "minDisplacement" : 0.025,
+      "forks" : 0,
+      "forkAngleRange" : 0.45,
+      "width" : 1.1,
+      "color" : [242, 196, 189, 155],
+      "renderLayer" : "monster-1"
+    },
+
+    "allyStatusEffects" : [ "starforge-kluexshield" ],
+    "allyPromixity" : 25,
 
     "touchDamage" : {
       "poly" : [ [0.75, 0.75], [0.75, -0.75], [-0.75, -0.75], [-0.75, 0.75] ],
@@ -75,14 +85,17 @@
         "knockbackThreshold" : {
           "baseValue" : 9
         },
+        "grit" : {
+          "baseValue" : 0.5
+        },
         "maxHealth" : {
-          "baseValue" : 250
+          "baseValue" : 400
         },
         "protection" : {
-          "baseValue" : 0.0
+          "baseValue" : 0
         },
         "healthRegen" : {
-          "baseValue" : 0.0
+          "baseValue" : 1
         },
         "powerMultiplier" : {
           "baseValue" : 1.0

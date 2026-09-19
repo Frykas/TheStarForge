@@ -14,8 +14,6 @@ function init()
   --Do the duration as raw damage to the shield, then another 25% of the duration as percentage damage, for example, 55 duration would be raw 55 damage plus 13.75% of the shield health as damage
   --duration + duration * 0.0025 * shield
   if entityType == "monster" then
-    --FIX ON MONSTERS WHERE BULLET BREAKS SHIELD, NOT THIS EFFECT, THEREFORE NO EXPLOSION... CHECK FOR IF SHIELD IS BROKEN BEFORE DAMAGING SHIELD SOMEHOW?
-	  --MAYBE IN THE BULLET CHECK?
     --sb.logInfo("Monster stat: %s", status.resource("shieldHealth"))
     if status.resourcePositive("shieldHealth") and status.resource("shieldHealth") > 0 then
       local damage = -(shieldDamage + (shieldDamage * 0.0025 * status.resource("shieldHealth")))

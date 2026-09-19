@@ -4,6 +4,8 @@ require "/scripts/vec2.lua"
 function init()
   message.setHandler("despawn", despawn)
 
+  self.lightningConfig = config.getParameter("lightningConfig")
+
   self.allyStatusEffects = config.getParameter("allyStatusEffects", {})
   self.allyProximity = config.getParameter("allyProximity", 15)
   self.requireLineOfSight = config.getParameter("requireLineOfSight", true)
@@ -42,7 +44,7 @@ function despawn()
   monster.setDropPool(nil)
   monster.setDeathParticleBurst(nil)
   monster.setDeathSound(nil)
-  monster.setAnimationParameter("targetId", nil)
+  monster.setAnimationParameter("lightning", nil)
   status.addEphemeralEffect("monsterdespawn")
 end
 
@@ -52,6 +54,27 @@ function die()
       world.sendEntityMessage(entityId, "despawn")
     end
   end
+end
+
+function determineLightning()
+  self.bolts = {}
+  for i, ally in ipairs(self.nearbyAllies) do
+    if world.entityExists(ally) and (not self.requireLineOfSight or entity.entityInSight(ally)) then
+      table.insert(self.bolts, {entity.position(), world.entityPosition(ally)})
+    end
+  end
+
+  lightning = {}
+  for i, segment in ipairs(self.bolts) do
+    local bolt = copy(self.lightningConfig)
+    bolt.worldStartPosition = segment[1]
+    bolt.worldEndPosition = segment[2]
+    bolt.displacement = vec2.mag(vec2.sub(segment[1], segment[2])) / 5
+    table.insert(lightning, bolt)
+  end
+  
+  monster.setAnimationParameter("lightningSeed", math.floor((os.time() + (os.clock() % 1)) * 1000))
+  monster.setAnimationParameter("lightning", lightning)
 end
 
 -- States
@@ -79,9 +102,13 @@ function activeState(targetId)
         world.sendEntityMessage(ally, "applyStatusEffect", effect, nil, entity.id())
       end
     end
-    
+    if self.lightningConfig then
+      determineLightning()
+    end
+
     coroutine.yield()
   end
+  monster.setAnimationParameter("lightning", nil)
 
   self.state:set(idleState)
 end

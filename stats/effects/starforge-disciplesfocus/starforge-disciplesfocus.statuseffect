@@ -32,5 +32,5 @@
   "animationConfig" : "starforge-disciplesfocus.animation",
 
   "label" : "Disciples Focus",
-  "icon" : "/items/augments/back/starforge-disciplesfocus.png"
+  "icon" : "/interface/statuses/starforge-disciplesfocus.png"
 }

@@ -1,0 +1,206 @@
+{
+  "globalTagDefaults" : {
+    "transparency" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "shield" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 12,
+            "cycle" : 1.2,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "shieldSegment1" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment1"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment1.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      },
+      "shieldSegment2" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment2"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment2.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      },
+      "shieldSegment3" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment3"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment3.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      },
+      "shieldSegment4" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment4"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment4.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      },
+      "shieldSegment5" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment5"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment5.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      },
+      "shieldSegment6" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment6"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment6.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      },
+      "shieldSegment7" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment7"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment7.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      },
+      "shieldSegment8" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment8"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment8.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      },
+      "shieldSegment9" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["shieldSegment9"]
+        },
+
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "starforge-kluexshieldsegment9.png:idle.<frame><transparency>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "shieldSegment1" : {},
+    "shieldSegment2" : {},
+    "shieldSegment3" : {},
+    "shieldSegment4" : {},
+    "shieldSegment5" : {},
+    "shieldSegment6" : {},
+    "shieldSegment7" : {},
+    "shieldSegment8" : {},
+    "shieldSegment9" : {}
+  }
+}
