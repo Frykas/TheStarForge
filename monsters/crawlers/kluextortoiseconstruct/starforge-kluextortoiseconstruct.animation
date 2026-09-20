@@ -6,37 +6,25 @@
         "default" : "idle",
         "states" : {
           "idle" : {
-            "frames" : 1,
-            "cycle" : 1.0,
+            "frames" : 1
+          },
+          "walk" : {
+            "frames" : 6,
+            "cycle" : 0.6,
             "mode" : "loop"
           },
-          "activate" : {
-            "frames" : 1,
-            "cycle" : 0.25,
+          "invulnerablewindup" : {
+            "frames" : 6,
+            "cycle" : 0.6,
             "mode" : "transition",
-            "transition" : "active"
+            "transition" : "invulnerable"
           },
-          "deactivate" : {
-            "frames" : 1,
-            "cycle" : 0.25,
-            "mode" : "transition",
-            "transition" : "idle"
+          "invulnerable" : {
+            "frames" : 1
           },
-          "active" : {
-            "frames" : 1,
-            "cycle" : 1.0,
-            "mode" : "loop"
-          }
-        }
-      },
-      "wings" : {
-        "priority" : 0,
-        "default" : "idle",
-        "states" : {
-          "idle" : {
-            "frames" : 8,
-            "cycle" : 0.8,
-            "mode" : "loop"
+          "invulnerablewinddown" : {
+            "frames" : 6,
+            "cycle" : 0.6
           }
         }
       },
@@ -44,8 +32,32 @@
         "priority" : 3,
         "default" : "none",
         "states" : {
-          "none" : {},
-          "stunned" : {}
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 1
+          }
+        }
+      },
+      "releaseParticles" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "releaseParticles" ]
+            }
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+              "particleEmittersOn" : [ "releaseParticles" ]
+            }
+          }
         }
       }
     },
@@ -54,9 +66,8 @@
       "body" : {
         "properties" : {
           "zLevel" : 1,
-          "transformationGroups" : [ "body" ],
-          "centered" : true,
-          "offset" : [0.0, 0.25]
+          "transformationGroups" : [ "facing", "body" ],
+          "offset" : [0.0, 0.75]
         },
         "partStates" : {
           "body" : {
@@ -65,48 +76,41 @@
                 "image" : "<partImage>:idle.<frame>"
               }
             },
-            "activate" : {
+            "walk" : {
               "properties" : {
-                "image" : "<partImage>:activate.<frame>"
+                "image" : "<partImage>:walk.<frame>"
               }
             },
-            "deactivate" : {
+            "invulnerablewindup" : {
               "properties" : {
-                "image" : "<partImage>:activate.<frame>"
+                "image" : "<partImage>:hide.<frame>"
               }
             },
-            "active" : {
+            "invulnerable" : {
               "properties" : {
-                "image" : "<partImage>:active.<frame>"
+                "image" : "<partImage>:invulnerable.<frame>"
+              }
+            },
+            "invulnerablewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:unhide.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
               }
             }
           }
         }
       },
-      "wings" : {
+      "bodyFullbright" : {
         "properties" : {
           "zLevel" : 2,
-          "transformationGroups" : [ "body" ],
-          "centered" : true,
-          "offset" : [0.0, 0.25]
-        },
-        "partStates" : {
-          "wings" : {
-            "idle" : {
-              "properties" : {
-                "image" : "<partImage>:idle.<frame>"
-              }
-            }
-          }
-        }
-      },
-      "bodyfullbright" : {
-        "properties" : {
-          "zLevel" : 3,
-          "transformationGroups" : [ "body" ],
-          "centered" : true,
-          "anchorPart" : "body",
-          "fullbright" : true
+          "transformationGroups" : [ "facing", "body" ],
+          "offset" : [0.0, 0.75]
         },
         "partStates" : {
           "body" : {
@@ -115,19 +119,31 @@
                 "image" : "<partImage>:idle.<frame>"
               }
             },
-            "activate" : {
+            "walk" : {
               "properties" : {
-                "image" : "<partImage>:activate.<frame>"
+                "image" : "<partImage>:walk.<frame>"
               }
             },
-            "deactivate" : {
+            "invulnerablewindup" : {
               "properties" : {
-                "image" : "<partImage>:activate.<frame>"
+                "image" : "<partImage>:hide.<frame>"
               }
             },
-            "active" : {
+            "invulnerable" : {
               "properties" : {
-                "image" : "<partImage>:active.<frame>"
+                "image" : "<partImage>:invulnerable.<frame>"
+              }
+            },
+            "invulnerablewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:unhide.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
               }
             }
           }
@@ -137,7 +153,8 @@
   },
 
   "transformationGroups" : {
-    "body" : { "interpolated" : true }
+    "body" : { "interpolated" : true },
+    "facing" : { "interpolated" : false }
   },
 
   "effects" : {
@@ -205,6 +222,6 @@
 
   "sounds" : {
     "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
-    "deathPuff" : [ "/sfx/melee/blunt_kill_stone1.ogg" ]
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ]
   }
 }

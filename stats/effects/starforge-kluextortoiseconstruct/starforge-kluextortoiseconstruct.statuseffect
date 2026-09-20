@@ -1,0 +1,15 @@
+{
+  "name" : "starforge-kluextortoiseconstruct",
+
+  "effectConfig" : {
+    "projectileType" : "starforge-kluextortoiseconstructbeam",
+    "fireInterval" : 0.01,
+    "baseDps" : 20,
+    "spawnOffset" : [0.125, 1.25]
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "starforge-kluextortoiseconstruct.lua"
+  ]
+}

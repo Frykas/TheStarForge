@@ -1,0 +1,20 @@
+{
+  "projectileName" : "starforge-kluextortoiseconstructbeam",
+  "image" : "kluextortoiseconstructbeam.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "damagePoly" : [ [-8, -4], [-8, 4], [4, 4], [4, -4] ],
+  "pointLight" : false,
+  "lightColor" : [115, 211, 255],
+  "power" : 40,
+  "speed" : 40,
+  "fullbright" : true,
+  "piercing" : true,
+  "physics" : "stickybullet",
+  "damageKind" : "plasma",
+
+  "renderLayer" : "monster+1",
+  
+  "scripts" : [ "/projectiles/scripts/starforge-killonstick.lua"]
+}

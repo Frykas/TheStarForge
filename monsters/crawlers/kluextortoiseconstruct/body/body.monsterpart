@@ -1,0 +1,10 @@
+{
+  "name" : "snaggler",
+  "category" : "starforge-kluextortoiseconstruct",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "starforge-kluextortoiseconstruct.png",
+    "bodyFullbright" : "starforge-kluextortoiseconstructfullbright.png"
+  }
+}
