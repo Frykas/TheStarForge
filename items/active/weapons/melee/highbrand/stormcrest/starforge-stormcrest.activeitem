@@ -234,9 +234,13 @@
       "fire5" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ],
 
       "guard" : [ "/sfx/melee/sword_guard.ogg" ],
-      "parry" : [ "/sfx/melee/sword_parry.ogg" ]
+      "parry" : [ "/sfx/melee/sword_parry.ogg" ],
+      "blinkDash" : [ "/sfx/npc/boss/cultistboss_sphere_attack.ogg" ]
     }
   },
+  "animationScripts" : [
+    "/items/active/effects/starforge-dashlines.lua"
+  ],
 
   "scripts" : ["/items/active/weapons/melee/starforge-meleeweapon.lua", "/items/active/weapons/starforge-hangingparts.lua"],
   "hangingParts" : {
@@ -261,6 +265,11 @@
       "timeout" : 0.5
     },
 
+    "dashConfig" : {
+      "colour" : [131, 131, 233, 255],
+      "dashLines" : 5
+    },
+
     "swooshReachOffset" : 0.5,
 
     "stances" : {
@@ -281,7 +290,7 @@
         "allowFlip" : true
       },
       "fire5" : {
-        "duration" : 0.425,
+        "duration" : 0.6,
         "armRotation" : 0,
         "weaponRotation" : -90,
         "twoHanded" : true,
@@ -290,6 +299,8 @@
         "teleportTarget" : [15, 0],
         "forgivenessRange" : 10,
         "teleportTolerance" : 2,
+        "teleportDelay" : 0.1,
+        "teleportSound" : "blinkDash",
 
         "projectileType" : "starforge-stormcreststrike",
         "projectileParameters" : {
@@ -324,6 +335,11 @@
     "successfulCooldownTime" : 1.1,
 	
 	  "deflectProjectileType" : "standardbullet",
+
+    "dashConfig" : {
+      "colour" : [131, 131, 233, 255],
+      "dashLines" : 5
+    },
 	
     "stances" : {
       "parry" : {
@@ -347,13 +363,15 @@
         "allowFlip" : true
       },
       "fire" : {
-        "duration" : 0.65,
+        "duration" : 0.75,
         "armRotation" : 0,
         "weaponRotation" : -90,
         "twoHanded" : true,
 
         "teleportOffset" : [0, 1],
         "teleportTolerance" : 2,
+        "teleportDelay" : 0.1,
+        "teleportSound" : "blinkDash",
 
         "projectileType" : "starforge-stormcreststrike",
         "projectileParameters" : {

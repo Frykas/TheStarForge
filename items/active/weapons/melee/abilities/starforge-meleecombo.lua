@@ -133,7 +133,9 @@ function StarforgeMeleeCombo:teleport()
   local stance = self.stances["fire"..self.comboStep]
   
   --Create the teleportation effect and add 0.5 for both animations to take effect
-  status.addEphemeralEffect(stance.teleportStatus or "starforge-teleporteffect", stance.duration * (self.stanceSpeedFactor or 1) + 0.5)
+  if stance.teleportStatus ~= false then
+    status.addEphemeralEffect(stance.teleportStatus or "starforge-teleporteffect", stance.duration * (self.stanceSpeedFactor or 1) + ((stance.teleportDelay or 0.25) + 0.25))
+  end
 
   animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
   self.weapon:setStance(stance)
@@ -158,8 +160,23 @@ function StarforgeMeleeCombo:teleport()
   end
   world.resolvePolyCollision(mcontroller.collisionPoly(), vec2.add(targetPosition, stance.teleportOffset), stance.teleportTolerance)
 
-  --Allow first teleport effect to take place
-  util.wait(0.25)
+  local dashConfig = sb.jsonMerge(self.dashConfig, {})
+  dashConfig.height = mcontroller.boundBox()[4] - mcontroller.boundBox()[2]
+
+  if self.dashConfig then
+    activeItem.setScriptedAnimationParameter("dash", {first = mcontroller.position(), last = targetPosition, config = dashConfig})
+  end
+
+  if stance.teleportSound and animator.hasSound(stance.teleportSound) then
+    local pitchVariance = self.pitchVariance or 0.1
+    local pitch = (1 - pitchVariance) + (pitchVariance * 2 * math.random())
+    animator.setSoundPitch(stance.teleportSound, pitch)
+    animator.playSound(stance.teleportSound)
+  end
+    
+  util.wait(stance.teleportDelay or 0.25)
+
+  activeItem.setScriptedAnimationParameter("dash", nil)
   
   if stance.projectileType and targetPosition then
     local angleToTarget = vec2.angle({targetPosition[2] - mcontroller.position()[2], targetPosition[1] - mcontroller.position()[1]})
@@ -180,8 +197,26 @@ function StarforgeMeleeCombo:teleport()
       params
     )
   end
-  
-  util.wait(stance.duration * (self.stanceSpeedFactor or 1), function()
+
+  local teleportTriggered = false
+  local timer = stance.duration * (self.stanceSpeedFactor or 1)
+  util.wait(timer, function()
+    timer = timer - self.dt
+    if timer < (stance.teleportDelay or 0.25) and not teleportTriggered then
+      teleportTriggered = true
+
+      if stance.teleportSound and animator.hasSound(stance.teleportSound) then
+        local pitchVariance = self.pitchVariance or 0.1
+        local pitch = (1 - pitchVariance) + (pitchVariance * 2 * math.random())
+        animator.setSoundPitch(stance.teleportSound, pitch)
+        animator.playSound(stance.teleportSound)
+      end
+
+      if self.dashConfig then
+        activeItem.setScriptedAnimationParameter("dash", {first = targetPosition, last = oldPosition, config = dashConfig})
+      end
+    end
+
     --Reset player momentum, prevents fall damage
     if stance.trackProjectile ~= false then
       mcontroller.setXVelocity(0, 0)
@@ -189,6 +224,7 @@ function StarforgeMeleeCombo:teleport()
       mcontroller.setPosition(targetPosition)
     end
   end)
+  activeItem.setScriptedAnimationParameter("dash", nil)
   animator.setGlobalTag("comboDirectives", "")
   
   if stance.trackProjectile ~= false then
@@ -457,6 +493,7 @@ function StarforgeMeleeCombo:computeDamageAndCooldowns()
 end
 
 function StarforgeMeleeCombo:uninit()
+  activeItem.setScriptedAnimationParameter("dash", nil)
   self.weapon:setDamage()
 end
 

@@ -169,17 +169,40 @@ function StarforgeParryRiposte:teleport(hitEntity)
   local stance = self.stances.fire
   
   --Create the teleportation effect and add 0.5 for both animations to take effect
+  if stance.teleportStatus ~= false then
+    status.addEphemeralEffect(stance.teleportStatus or "starforge-teleporteffect", stance.duration * (self.stanceSpeedFactor or 1) + ((stance.teleportDelay or 0.25) + 0.25))
+  end
+  
+  --Create the teleportation effect and add 0.5 for both animations to take effect
   status.addEphemeralEffect(stance.teleportStatus or "starforge-teleporteffect", stance.duration * (self.stanceSpeedFactor or 1) + 0.5)
 
   animator.setGlobalTag("comboDirectives", stance.comboDirectives or "")
   self.weapon:setStance(stance)
   self.weapon:updateAim()
 
-  --Allow first teleport effect to take place
-  util.wait(0.25)
-  
+  local dashConfig = sb.jsonMerge(self.dashConfig, {})
+  dashConfig.height = mcontroller.boundBox()[4] - mcontroller.boundBox()[2]
+
   local oldPosition = mcontroller.position()
   local targetPosition = world.entityPosition(hitEntity or entity.id())
+  
+  if self.dashConfig then
+    activeItem.setScriptedAnimationParameter("dash", {first = mcontroller.position(), last = targetPosition, config = dashConfig})
+  end
+
+  if stance.teleportSound and animator.hasSound(stance.teleportSound) then
+    local pitchVariance = self.pitchVariance or 0.1
+    local pitch = (1 - pitchVariance) + (pitchVariance * 2 * math.random())
+    animator.setSoundPitch(stance.teleportSound, pitch)
+    animator.playSound(stance.teleportSound)
+  end
+    
+  util.wait(stance.teleportDelay or 0.25)
+
+  activeItem.setScriptedAnimationParameter("dash", nil)
+  
+  oldPosition = mcontroller.position()
+  targetPosition = world.entityPosition(hitEntity or entity.id())
 
   local groundCollision = world.lineTileCollisionPoint(mcontroller.position(), targetPosition)
   if groundCollision then
@@ -208,7 +231,25 @@ function StarforgeParryRiposte:teleport(hitEntity)
     )
   end
   
-  util.wait(stance.duration * (self.stanceSpeedFactor or 1), function()
+  local teleportTriggered = false
+  local timer = stance.duration * (self.stanceSpeedFactor or 1)
+  util.wait(timer, function()
+    timer = timer - self.dt
+    if timer < (stance.teleportDelay or 0.25) and not teleportTriggered then
+      teleportTriggered = true
+
+      if stance.teleportSound and animator.hasSound(stance.teleportSound) then
+        local pitchVariance = self.pitchVariance or 0.1
+        local pitch = (1 - pitchVariance) + (pitchVariance * 2 * math.random())
+        animator.setSoundPitch(stance.teleportSound, pitch)
+        animator.playSound(stance.teleportSound)
+      end
+
+      if self.dashConfig then
+        activeItem.setScriptedAnimationParameter("dash", {first = targetPosition, last = oldPosition, config = dashConfig})
+      end
+    end
+
     --Reset player momentum, prevents fall damage
     if stance.trackProjectile ~= false then
       mcontroller.setXVelocity(0, 0)
@@ -216,6 +257,7 @@ function StarforgeParryRiposte:teleport(hitEntity)
       mcontroller.setPosition(targetPosition)
     end
   end)
+  activeItem.setScriptedAnimationParameter("dash", nil)
   animator.setGlobalTag("comboDirectives", "")
   
   if stance.trackProjectile ~= false then
@@ -369,6 +411,7 @@ end
 
 function StarforgeParryRiposte:reset()
   status.clearPersistentEffects("broadswordParry")
+  activeItem.setScriptedAnimationParameter("dash", nil)
   activeItem.setItemShieldPolys({})
 end
 

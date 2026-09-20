@@ -115,28 +115,44 @@ end
 
 function StarforgeThrowTeleportProjectile:teleport()
   status.setPersistentEffects("starforge-throwteleportprojectile", { { stat = "invulnerable", amount = 1.0 }, { stat = "activeMovementAbilities", amount = 1 } })
-  status.addEphemeralEffect("blink")
+  
+  --Create the teleportation effect and add 0.5 for both animations to take effect
+  if self.teleportStatus ~= false then
+    status.addEphemeralEffect(self.teleportStatus or "starforge-teleporteffect", ((self.teleportDelay or 0.25) + 0.1))
+  end
   
   world.sendEntityMessage(config.getParameter("weaponThrown"), "killProjectile")
 
   local blinkPosition = self:findBlinkPosition(config.getParameter("weaponThrown") and world.entityPosition(config.getParameter("weaponThrown")) or mcontroller.position())
   if blinkPosition then
-    util.wait(0.25, function(dt)
-      mcontroller.controlModifiers({ movementSuppressed = true })
-    end)
+    if self.dashConfig then
+      local dashConfig = sb.jsonMerge(self.dashConfig, {})
+      dashConfig.height = mcontroller.boundBox()[4] - mcontroller.boundBox()[2]
+      activeItem.setScriptedAnimationParameter("dash", {first = mcontroller.position(), last = blinkPosition, config = dashConfig})
+    end
+
+    if self.teleportSound and animator.hasSound(self.teleportSound) then
+      local pitchVariance = self.pitchVariance or 0.1
+      local pitch = (1 - pitchVariance) + (pitchVariance * 2 * math.random())
+      animator.setSoundPitch(self.teleportSound, pitch)
+      animator.playSound(self.teleportSound)
+    end
+    
+    util.wait(self.teleportDelay or 0.25)
 
     local params = sb.jsonMerge(self.teleportProjectileParameters, {})
     params.powerMultiplier = activeItem.ownerPowerMultiplier()
     params.power = (self.teleportBaseDamage or 1) * config.getParameter("damageLevelMultiplier")
     
     world.spawnProjectile(self.teleportProjectileType, blinkPosition, activeItem.ownerEntityId(), vec2.norm(world.distance(mcontroller.position(), blinkPosition)), false, params)
-
+    
     self.weapon:setStance(self.stances.catch)
     mcontroller.setPosition(blinkPosition)
 
     util.wait(0.1, function(dt)
       mcontroller.setYVelocity(0)
     end)
+    activeItem.setScriptedAnimationParameter("dash", nil)
 
     self.cooldownTimer = self.fireTime
     self.weapon:setStance(self.weapon.abilities[1].stances.idle)
@@ -216,6 +232,7 @@ end
 
 function StarforgeThrowTeleportProjectile:reset()
   self.cooldownTimer = self.fireTime
+  activeItem.setScriptedAnimationParameter("dash", nil)
   status.setPersistentEffects("starforge-throwteleportprojectile", {})
 end
 

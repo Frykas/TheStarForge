@@ -25,9 +25,13 @@
   "animationCustom" : {
     "sounds" : {
       "throw" : [ "/sfx/projectiles/throw_item.ogg" ],
-      "catch" : [ "/sfx/melee/critical_hit_light.ogg" ]
+      "catch" : [ "/sfx/melee/critical_hit_light.ogg" ],
+      "blinkDash" : [ "/sfx/npc/boss/cultistboss_sphere_attack.ogg" ]
     }
   },
+  "animationScripts" : [
+    "/items/active/effects/starforge-dashlines.lua"
+  ],
 
   "aimOffset" : 1,
 
@@ -144,6 +148,12 @@
       "timeToLive" : 0.5
     },
 
+    "teleportSound" : "blinkDash",
+    "teleportDelay" : 0.1,
+    "dashConfig" : {
+      "colour" : [184, 230, 208, 255],
+      "dashLines" : 5
+    },
 
     "stances" : {
       "catch" : {
