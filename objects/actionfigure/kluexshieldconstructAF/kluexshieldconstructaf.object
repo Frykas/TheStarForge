@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-kluexshieldconstructaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A construct of ancient technology designed to protect its allies from harm.\"",
+  "shortdescription" : "Shield Construct Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-kluexshieldconstructaf" },
+
+
+  "inventoryIcon" : "kluexshieldconstructaf.png",
+  "orientations" : [
+    {
+      "image" : "kluexshieldconstructaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "kluexshieldconstructaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-kluextortoiseconstructaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"An avian crystal trap with legs. A strange use of ancient technology.\"",
+  "shortdescription" : "Tortoise Construct Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-kluextortoiseconstructaf" },
+
+
+  "inventoryIcon" : "kluextortoiseconstructaf.png",
+  "orientations" : [
+    {
+      "image" : "kluextortoiseconstructaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "kluextortoiseconstructaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

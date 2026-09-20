@@ -12,13 +12,13 @@
           },
           "activate" : {
             "frames" : 1,
-            "cycle" : 0.25,
+            "cycle" : 0.125,
             "mode" : "transition",
             "transition" : "active"
           },
           "deactivate" : {
             "frames" : 1,
-            "cycle" : 0.25,
+            "cycle" : 0.125,
             "mode" : "transition",
             "transition" : "idle"
           },

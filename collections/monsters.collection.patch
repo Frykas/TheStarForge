@@ -56,34 +56,23 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/mothon",
+	  "value": 	  
+	  {
+	    "order" : 105,
+	    "monsterType" : "starforge-mothon",
+	    "icon" : "/monsters/flyers/mothon/mothonicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/cephaloworm",
 	  "value": 	  
 	  {
 	    "order" : 106,
 	    "monsterType" : "starforge-cephaloworm",
 	    "icon" : "/monsters/flyers/cephaloworm/cephalowormicon.png"
-	  }
-	},
-	
-	{
-	  "op": "add",
-	  "path": "/collectables/puppertooth",
-	  "value": 	  
-	  {
-	    "order" : 109,
-	    "monsterType" : "starforge-puppertooth",
-	    "icon" : "/monsters/walkers/puppertooth/puppertoothicon.png"
-	  }
-	},
-	
-	{
-	  "op": "add",
-	  "path": "/collectables/glorbee",
-	  "value": 	  
-	  {
-	    "order" : 108,
-	    "monsterType" : "starforge-glorbee",
-	    "icon" : "/monsters/ghosts/glorbee/glorbeeicon.png"
 	  }
 	},
 	
@@ -100,12 +89,45 @@
 	
 	{
 	  "op": "add",
+	  "path": "/collectables/glorbee",
+	  "value": 	  
+	  {
+	    "order" : 108,
+	    "monsterType" : "starforge-glorbee",
+	    "icon" : "/monsters/ghosts/glorbee/glorbeeicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/puppertooth",
+	  "value": 	  
+	  {
+	    "order" : 109,
+	    "monsterType" : "starforge-puppertooth",
+	    "icon" : "/monsters/walkers/puppertooth/puppertoothicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
 	  "path": "/collectables/starmite",
 	  "value": 	  
 	  {
 	    "order" : 110,
 	    "monsterType" : "starforge-starmite",
 	    "icon" : "/monsters/walkers/starmite/starmiteicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/erchiusflayer",
+	  "value": 	  
+	  {
+	    "order" : 111,
+	    "monsterType" : "starforge-erchiusflayer",
+	    "icon" : "/monsters/flyers/erchiusflayer/icon.png"
 	  }
 	},
 	
@@ -141,6 +163,17 @@
 	    "icon" : "/monsters/flyers/tanglevinereanimator/icon.png"
 	  }
 	},
+
+	{
+	  "op": "add",
+	  "path": "/collectables/withercharhound",
+	  "value": 	  
+	  {
+	    "order" : 115,
+	    "monsterType" : "starforge-withercharhound",
+	    "icon" : "/monsters/walkers/withercharhound/withercharhoundicon.png"
+	  }
+	},
 	
 	{
 	  "op": "add",
@@ -152,16 +185,7 @@
 	    "icon" : "/monsters/walkers/witherhusk/icon.png"
 	  }
 	},
-	{
-	  "op": "add",
-	  "path": "/collectables/withercharhound",
-	  "value": 	  
-	  {
-	    "order" : 115,
-	    "monsterType" : "starforge-withercharhound",
-	    "icon" : "/monsters/walkers/withercharhound/withercharhoundicon.png"
-	  }
-	},
+	
 	{
 	  "op": "add",
 	  "path": "/collectables/blackrotfly",
@@ -203,17 +227,6 @@
 	    "order" : 120,
 	    "monsterType" : "starforge-blackrotkabuto",
 	    "icon" : "/monsters/crawlers/blackrotkabuto/blackrotkabutoicon.png"
-	  }
-	},
-	
-	{
-	  "op": "add",
-	  "path": "/collectables/erchiusflayer",
-	  "value": 	  
-	  {
-	    "order" : 111,
-	    "monsterType" : "starforge-erchiusflayer",
-	    "icon" : "/monsters/flyers/erchiusflayer/icon.png"
 	  }
 	},
 	
@@ -262,12 +275,23 @@
 	
 	{
 	  "op": "add",
-	  "path": "/collectables/mothon",
+	  "path": "/collectables/kluexshieldconstruct",
 	  "value": 	  
 	  {
-	    "order" : 105,
-	    "monsterType" : "starforge-mothon",
-	    "icon" : "/monsters/flyers/mothon/mothonicon.png"
+	    "order" : 125,
+	    "monsterType" : "starforge-kluexshieldconstruct",
+	    "icon" : "/monsters/flyers/kluexshieldconstruct/starforge-kluexshieldconstructicon.png"
+	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/kluextortoiseconstruct",
+	  "value": 	  
+	  {
+	    "order" : 126,
+	    "monsterType" : "starforge-kluextortoiseconstruct",
+	    "icon" : "/monsters/crawlers/kluextortoiseconstruct/starforge-kluextortoiseconstructicon.png"
 	  }
 	}
 ]
