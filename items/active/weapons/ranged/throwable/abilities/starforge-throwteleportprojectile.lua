@@ -149,11 +149,13 @@ function StarforgeThrowTeleportProjectile:teleport()
 end
  
 function StarforgeThrowTeleportProjectile:findBlinkPosition(position)
-  if not world.lineTileCollision(mcontroller.position(), position, {"Null", "Block", "Dynamic", "Slippery"}) then
-    local resolvedPosition = world.resolvePolyCollision(mcontroller.collisionPoly(), position, 2)
-    return resolvedPosition
+  local collisionPoint = world.lineCollision(mcontroller.position(), position, {"Null", "Block", "Dynamic", "Slippery"})
+  
+  if collisionPoint then
+    return world.resolvePolyCollision(mcontroller.collisionPoly(), collisionPoint, 4) or collisionPoint
+  else
+    return world.resolvePolyCollision(mcontroller.collisionPoly(), position, 4) or position
   end
-  return mcontroller.position()
 end
 
 function StarforgeThrowTeleportProjectile:fire()

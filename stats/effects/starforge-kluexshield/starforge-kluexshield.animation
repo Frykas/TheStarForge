@@ -202,5 +202,10 @@
     "shieldSegment7" : {},
     "shieldSegment8" : {},
     "shieldSegment9" : {}
+  },
+
+  "sounds" : {
+    "shieldHit" : [ "/sfx/gun/gnomebeam_hit2.ogg", "/sfx/gun/gnomebeam_hit3.ogg" ],
+    "shieldBreak" : [ "/sfx/gun/gnomebeam_kill_stone1.ogg", "/sfx/gun/gnomebeam_kill_stone2.ogg", "/sfx/gun/gnomebeam_kill_stone3.ogg", "/sfx/gun/gnomebeam_kill_stone4.ogg","/sfx/gun/gnomebeam_kill_stone5.ogg" ]
   }
 }

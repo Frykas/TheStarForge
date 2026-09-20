@@ -29,7 +29,7 @@
     },
 
     "allyStatusEffects" : [ "starforge-kluexshield" ],
-    "allyPromixity" : 25,
+    "allyPromixity" : 35,
 
     "touchDamage" : {
       "poly" : [ [0.75, 0.75], [0.75, -0.75], [-0.75, -0.75], [-0.75, 0.75] ],
@@ -89,7 +89,7 @@
           "baseValue" : 0.5
         },
         "maxHealth" : {
-          "baseValue" : 400
+          "baseValue" : 300
         },
         "protection" : {
           "baseValue" : 0

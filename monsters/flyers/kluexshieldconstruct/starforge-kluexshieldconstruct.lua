@@ -32,7 +32,11 @@ function update(dt)
     
   local filteredTargets = {}
   for _, target in ipairs(targets) do
-    if world.entityExists(target) and (not self.requireLineOfSight or entity.entityInSight(target)) and entity.damageTeam().type == world.entityDamageTeam(target).type and entity.damageTeam().team == world.entityDamageTeam(target).team then
+    if world.entityExists(target) 
+      and (not self.requireLineOfSight or entity.entityInSight(target)) 
+      and (entity.damageTeam().type == world.entityDamageTeam(target).type and entity.damageTeam().team == world.entityDamageTeam(target).team)
+      and world.entityTypeName(target) ~= world.entityTypeName(entity.id()) then
+        
       table.insert(filteredTargets, target)
     end
   end

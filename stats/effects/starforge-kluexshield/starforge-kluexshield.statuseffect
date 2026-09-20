@@ -2,13 +2,14 @@
   "name" : "starforge-kluexshield",
 
   "effectConfig" : {
-    "healthToShieldPercent" : [0.5, 5],
+    "healthToShieldPercent" : [0.75, 5],
     "playerHealthToShieldPercent" : 0.25,
+    "brokenShieldRegenDelay" : 6,
     "shieldRegenDelay" : 2,
-    "shieldRegenRate" : 0.1,
+    "shieldRegenRate" : 0.25,
 
-    "distanceFromEntity" : [-0.5, 0.25],
     //Auto adjusts to monster size
+    "distanceFromEntity" : [-0.5, 0.25],
     "segmentOffsets" : {
       "shieldSegment1" : [0, 0],
       "shieldSegment2" : [0, 1.25],

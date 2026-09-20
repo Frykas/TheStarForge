@@ -1,7 +1,6 @@
 function init()
   local entityType = entity.entityType()
 
-  --This mess might be temporary but it is a way to figure out how much damage was dealt from that shot
   local intEffectiveness = math.floor(math.fmod(effect.duration(), 10000) + 0.5)
   local effectiveness = intEffectiveness / 1000
 
@@ -10,41 +9,49 @@ function init()
 
   self.damageFromHit = root.evalFunction2("protection", damageFromHit, status.stat("protection"))
 
-  --Monsters use a resource called shieldHealth rather than a stat
-  --Do the duration as raw damage to the shield, then another 25% of the duration as percentage damage, for example, 55 duration would be raw 55 damage plus 13.75% of the shield health as damage
-  --duration + duration * 0.0025 * shield
   if entityType == "monster" then
-    --sb.logInfo("Monster stat: %s", status.resource("shieldHealth"))
     if status.resourcePositive("shieldHealth") and status.resource("shieldHealth") > 0 then
       local damage = -(shieldDamage + (shieldDamage * 0.0025 * status.resource("shieldHealth")))
-	    impactShield("shieldHealth", damage, self.damageFromHit)
+      impactShield("shieldHealth", damage, self.damageFromHit)
+
+    elseif status.statPositive("starforge-shieldHealth") and status.stat("starforge-shieldHealth") > 0 then
+      local currentShield = status.stat("starforge-shieldHealth")
+      local damage = shieldDamage + (shieldDamage * 0.0025 * currentShield)
+      
+      status.modifyResource("health", -damage)
+
+      if config.getParameter("breakProjectileType") and (currentShield - self.damageFromHit) <= 0 then
+        explode()
+      end
     end
   else
-    --sb.logInfo("Stat: %s", status.stat("shieldHealth"))
     if status.statPositive("shieldHealth") and status.stat("shieldHealth") > 0 then
       local damage = -((shieldDamage / status.stat("shieldHealth")) + (shieldDamage * 0.0025))
-  	  impactShield("shieldStamina", damage, self.damageFromHit / status.stat("shieldHealth"))
-	    status.setResourcePercentage("shieldStaminaRegenBlock", config.getParameter("shieldStaminaRegenBlockOverride", 1.0))
+      impactShield("shieldStamina", damage, self.damageFromHit / status.stat("shieldHealth"))
+      status.setResourcePercentage("shieldStaminaRegenBlock", config.getParameter("shieldStaminaRegenBlockOverride", 1.0))
+
+    elseif status.statPositive("starforge-shieldHealth") and status.stat("starforge-shieldHealth") > 0 then
+      local currentShield = status.stat("starforge-shieldHealth")
+      local damage = shieldDamage + (shieldDamage * 0.0025 * currentShield)
+
+      status.modifyResource("health", -damage)
+
+      if config.getParameter("breakProjectileType") and (currentShield - self.damageFromHit) <= 0 then
+        explode()
+      end
     end
   
     if status.resourcePositive("damageAbsorption") and status.resource("damageAbsorption") > 0 then
       local damage = -(shieldDamage + (shieldDamage * 0.0025 * status.resource("damageAbsorption")))
-	    impactShield("damageAbsorption", damage, self.damageFromHit)
+      impactShield("damageAbsorption", damage, self.damageFromHit)
     end
   end
   
   effect.expire()
 end
 
-
 function impactShield(res, damage, initialHitDamage)
-  --Convert duration into damage
-  --sb.logInfo("Stat: %s", status.resource(res))
-  --sb.logInfo("Damage: %s", damage)
-  
-  --Apply damage to shields
   status.modifyResource(res, damage)
-  --sb.logInfo("Damaged Stat: %s", status.resource(res))
   
   if config.getParameter("breakProjectileType") and (status.resource(res) - initialHitDamage) <= 0 then
     explode()
@@ -66,7 +73,7 @@ function explode()
         {
           action = "projectile",
           type = config.getParameter("breakProjectileType"),
-		      config = config.getParameter("breakProjectileParameters")
+          config = config.getParameter("breakProjectileParameters")
         }
       }
     }
