@@ -54,6 +54,10 @@
   },
   "shakeVelocity" : 4,
 
+  "synergisticWeapons" : {
+    "starforge-katahelimperviumshield" : [ "starforge-vigilancesynergy" ]
+  },
+
   "elementalType" : "physical",
 
   "primaryAbilityType" : "starforge-highbrandcombo",

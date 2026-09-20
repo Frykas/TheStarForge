@@ -11,7 +11,7 @@ function init()
   self.shieldRegenRate = config.getParameter("shieldRegenRate", 0.25)
   
   self.distanceFromEntity = config.getParameter("distanceFromEntity", {0, 1})
-  self.transparency = config.getParameter("transparency", {0.3, 0.65})
+  self.transparency = config.getParameter("transparency", {0, 0.75})
   self.segmentOffsets = config.getParameter("segmentOffsets", {})
 
   activateShield()

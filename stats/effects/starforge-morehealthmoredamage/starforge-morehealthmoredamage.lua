@@ -1,5 +1,5 @@
 function init()  
-  self.damageFactor = config.getParameter("damageFactor", 1)
+  self.damageFactor = config.getParameter("damageFactor", 0.5)
 
   script.setUpdateDelta(1)
 end

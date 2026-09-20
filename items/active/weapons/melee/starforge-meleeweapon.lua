@@ -6,11 +6,27 @@ require "/scripts/starforge-util.lua"
 --meleeweapon.lua edited by Nebulox to allow for:
 --Custom reticles
 --Custom passive status effects that can be cleared on unequip, or left to last their duration
+--Custom synergies between other handed weapons
 
 function init()
   if config.getParameter("passiveStatusEffects") then
     self.tagGroup = ("starforge-" .. config.getParameter("itemName") .. activeItem.hand())
     status.addPersistentEffects(self.tagGroup, config.getParameter("passiveStatusEffects"))
+  end
+
+  local synergisticWeapons = config.getParameter("synergisticWeapons")
+  if synergisticWeapons then
+    self.synergyTagGroup = ("starforge-synergy" .. config.getParameter("itemName") .. activeItem.hand())
+
+    local activeEffects = {}
+    for weapon, effects in pairs(synergisticWeapons or {}) do
+      if ((activeItem.hand() == "primary") and world.entityHandItem(entity.id(), "alt") or world.entityHandItem(entity.id(), "primary")) == weapon then
+        for _, newEffect in ipairs(effects) do
+          table.insert(activeEffects, newEffect)
+        end
+      end
+    end
+    status.addPersistentEffects(self.synergyTagGroup, activeEffects)
   end
 
   activeItem.setCursor(config.getParameter("cursor", "/cursors/pointer.cursor"))
@@ -124,6 +140,12 @@ function uninit()
     if config.getParameter("statusEffectsLingerOnUnequip") then
       status.addEphemeralEffects(config.getParameter("passiveStatusEffects"), activeItem.ownerEntityId())
     end
+    self.tagGroup = nil
+  end
+
+  if self.synergyTagGroup then
+    status.clearPersistentEffects(self.synergyTagGroup)
+    self.synergyTagGroup = nil
   end
 
   self.weapon:uninit()

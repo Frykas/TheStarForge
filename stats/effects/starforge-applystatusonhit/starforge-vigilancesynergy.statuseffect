@@ -1,0 +1,15 @@
+{
+  "name" : "starforge-vigilancesynergy",
+
+  "effectConfig" : {
+	"statusEffects" : [ "starforge-morehealthmoredamage" ]
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "starforge-applystatusonhit.lua"
+  ],
+
+  "label" : "Impervious",
+  "icon" : "/interface/statuses/starforge-vigilancesynergy.png"
+}

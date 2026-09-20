@@ -132,7 +132,7 @@
     "statusEffects" : [ ]
   },
  
-  "innateStatusEffects" : ["starforge-veteraneffects", {"stat":"maxHealth","amount":3000}, {"stat":"powerMultiplier","amount":1.7}, {"stat":"maxEnergy","amount":180}],
+  "innateStatusEffects" : ["starforge-vigilancesynergy", "starforge-veteraneffects", {"stat":"maxHealth","amount":3000}, {"stat":"powerMultiplier","amount":1.7}, {"stat":"maxEnergy","amount":180}],
 	
   "items": {
     "override": [
