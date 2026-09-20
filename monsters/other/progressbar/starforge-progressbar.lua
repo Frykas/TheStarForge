@@ -8,12 +8,12 @@ function init()
   self.animConfig = config.getParameter("progressAnimationParameters")
   
   message.setHandler("starforge-setProgress", function(_, _, current)
-	self.currentProgress = current
+	  self.currentProgress = current
   end)
   message.setHandler("starforge-reset", function(_, _)
-	status.setResource("health", 0)
+	  status.setResource("health", 0)
   end)
-  
+
   --world.sendEntityMessage(config.getParameter("host"), "setBar", entity.id())
   if not self.animConfig then status.setResource("health", 0) end
 end
@@ -34,6 +34,7 @@ function updateProgressBar()
   info.totalProgress = self.totalProgress
   info.currentProgress = self.currentProgress
   info.animConfig = self.animConfig
+  info.animConfig.chunkImages = info.animConfig.chunkImagePath .. config.getParameter("theme", "default") .. ".png"
 
   monster.setAnimationParameter("progressConfig", info)
 end

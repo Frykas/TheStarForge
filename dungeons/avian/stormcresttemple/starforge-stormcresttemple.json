@@ -5428,7 +5428,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{ \"detectDuration\" : 15 }"
+                     "parameters":"{ \"detectDuration\" : 16 }"
                     },
                  "propertytypes":
                     {
@@ -6802,7 +6802,7 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":1848,
+                 "x":1856,
                  "y":240
                 }, 
                 {
@@ -7985,6 +7985,18 @@
                  "width":31,
                  "x":1896,
                  "y":240
+                }, 
+                {
+                 "gid":6002,
+                 "height":18,
+                 "id":2875,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":1832,
+                 "y":240
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -8003,7 +8015,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [1, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
+                     "parameters":"{\"progressBarPosition\" : [2, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexshieldconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -8024,7 +8036,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [-1, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : true}",
+                     "parameters":"{\"progressBarPosition\" : [-0.5, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexshieldconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : true}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -8062,7 +8074,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -9966,6 +9978,196 @@
                  "width":8,
                  "x":2768,
                  "y":1584
+                }, 
+                {
+                 "height":8,
+                 "id":2865,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluexshieldconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2792,
+                 "y":744
+                }, 
+                {
+                 "height":8,
+                 "id":2866,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluexshieldconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1400,
+                 "y":744
+                }, 
+                {
+                 "height":8,
+                 "id":2867,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluextortoiseconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1424,
+                 "y":816
+                }, 
+                {
+                 "height":8,
+                 "id":2868,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluextortoiseconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1448,
+                 "y":640
+                }, 
+                {
+                 "height":8,
+                 "id":2869,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluextortoiseconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2768,
+                 "y":816
+                }, 
+                {
+                 "height":8,
+                 "id":2870,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluextortoiseconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2744,
+                 "y":640
+                }, 
+                {
+                 "height":8,
+                 "id":2871,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluextortoiseconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2184,
+                 "y":2656
+                }, 
+                {
+                 "height":8,
+                 "id":2872,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluextortoiseconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2016,
+                 "y":2656
+                }, 
+                {
+                 "height":8,
+                 "id":2873,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluextortoiseconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2168,
+                 "y":2624
+                }, 
+                {
+                 "height":8,
+                 "id":2874,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluextortoiseconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2032,
+                 "y":2624
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -11267,10 +11469,10 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":2865,
+ "nextobjectid":2876,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.10.2",
+ "tiledversion":"1.11.0",
  "tileheight":8,
  "tilesets":[
         {

@@ -36,7 +36,28 @@
          "draworder":"topdown",
          "id":3,
          "name":"mods",
-         "objects":[],
+         "objects":[
+                {
+                 "height":16,
+                 "id":2964,
+                 "name":"",
+                 "properties":
+                    {
+                     "back":"temple2",
+                     "colorVariant":"8"
+                    },
+                 "propertytypes":
+                    {
+                     "back":"string",
+                     "colorVariant":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":104,
+                 "y":272
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -4550,7 +4571,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":2963,
+ "nextobjectid":2965,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",

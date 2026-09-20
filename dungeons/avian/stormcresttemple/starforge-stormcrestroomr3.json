@@ -2043,11 +2043,11 @@
          "objects":[
                 {
                  "height":112,
-                 "id":2578,
+                 "id":2607,
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [0, 2], \"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [20, 2], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
+                     "parameters":"{\"progressBarPosition\" : [0, 2], \"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexshieldconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [20, 2], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -2322,7 +2322,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":2607,
+ "nextobjectid":2608,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",

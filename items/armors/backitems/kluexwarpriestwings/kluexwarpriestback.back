@@ -5,7 +5,7 @@
   "inventoryIcon" : "/items/armors/vanity/kluexwarpriest/icons.png:back",
   "rarity" : "Legendary",
   "category" : "backwear",
-  "description" : "...",
+  "description" : "A ceremonial set of wings representing the Avatar of Kluex, its cape fluttering ominously in the wind.",
   "shortdescription" : "Kluex Warpriest Wings",
   "tooltipKind" : "back",
 
@@ -13,6 +13,7 @@
   "femaleFrames" : "back.png",
 
   "statusEffects" : [
+    "starforge-disciplesfocus",
     {
       "stat" : "biomeheatImmunity",
       "amount" : 1.0
@@ -30,6 +31,7 @@
       "amount" : 1.0
     }
   ],
+  "learnBlueprintsOnPickup" : [ "starforge-disciplesfocus" ],
 
   "colorOptions" : [
     // GOLD - DEFAULT

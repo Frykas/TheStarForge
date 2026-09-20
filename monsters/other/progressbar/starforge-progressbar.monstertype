@@ -20,9 +20,9 @@
       "/monsters/other/progressbar/starforge-progressbaranimator.lua"
     ],
     "progressAnimationParameters" : {
-	  "chunkImages" : "/monsters/other/progressbar/chunkimages.png",
-	  "chunkXSeparation" : 1,
-	  "renderLayer" : "Player"
+      "chunkImagePath" : "/monsters/other/progressbar/chunkimages/",
+      "chunkXSeparation" : 1,
+      "renderLayer" : "Player"
     },
 
     "touchDamage" : {},

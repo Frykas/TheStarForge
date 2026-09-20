@@ -83,9 +83,9 @@ function reset()
   self.delayTime = config.getParameter("delayTime", 2)
   
   --Cull the progress bar
-  if self.progressBarId then
-    world.sendEntityMessage(self.progressBarId, "starforge-reset")
-	  self.progressBarId = nil
+  if storage.progressBarId then
+    world.sendEntityMessage(storage.progressBarId, "starforge-reset")
+	  storage.progressBarId = nil
   end
   
   --Cull existing monsters
@@ -101,8 +101,8 @@ end
 
 function updateArena(dt)
   --Update progress bar and spawn it if we haven't already
-  if self.player and not self.progressBarId then
-    self.progressBarId = world.spawnMonster("starforge-progressbar", vec2.add(stagehand.position(), config.getParameter("progressBarPosition", {0.5, 0})), { totalProgress = self.totalWaves })
+  if self.player and not storage.progressBarId then
+    storage.progressBarId = world.spawnMonster("starforge-progressbar", vec2.add(stagehand.position(), config.getParameter("progressBarPosition", {0.5, 0})), { totalProgress = self.totalWaves, theme = config.getParameter("theme") })
     updateProgress()
   end
   
@@ -137,14 +137,14 @@ function updateArena(dt)
 end
 
 function updateProgress()
-  if self.player and self.progressBarId then
-    world.sendEntityMessage(self.progressBarId, "starforge-setProgress", self.totalWaves - self.remainingWaves)
+  if self.player and storage.progressBarId then
+    world.sendEntityMessage(storage.progressBarId, "starforge-setProgress", self.totalWaves - self.remainingWaves)
   end
 end
 
 function checkPlayers()
   local playersFound = broadcastAreaQuery({ includedTypes = {"player"} })
-  if #playersFound == 0 and self.progressBarId then
+  if #playersFound == 0 and storage.progressBarId then
     reset()
   elseif not self.player then
     self.player = playersFound[1]

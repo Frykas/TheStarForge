@@ -46,22 +46,22 @@ function build(directory, config, parameters, level, seed)
   end
   local invIcon = config.inventoryIcon
   --SCALE IT ACCORDING TO THE SIZE OF THE ICON
-  local itemBackground = configParameter("itemBackground", "/interface/inventory/starforge-exalted.png")
+  --local itemBackground = configParameter("itemBackground", "/interface/inventory/starforge-exalted.png")
   if itemBackground then
     config.itemBackground = itemBackground
-	local itemBackgroundSize = root.imageSize(config.itemBackground)
-	local iconSize = root.imageSize(config.inventoryIcon)
-	local difference = iconSize[2]
-	if iconSize[1] > iconSize[2] then
-	  difference = iconSize[1]
-	end
-	--FIND HIGHEST VALUE X OR Y THEN FIND DIFFERENCE
-	local scaleAmount = difference / itemBackgroundSize[1]
-	config.itemBackground = config.itemBackground .. "?scalenearest=" .. scaleAmount
-	config.inventoryIcon = {
-	  { image = config.itemBackground },
-	  { image = config.inventoryIcon }
-	}
+    local itemBackgroundSize = root.imageSize(config.itemBackground)
+    local iconSize = root.imageSize(config.inventoryIcon)
+    local difference = iconSize[2]
+    if iconSize[1] > iconSize[2] then
+      difference = iconSize[1]
+    end
+    --FIND HIGHEST VALUE X OR Y THEN FIND DIFFERENCE
+    local scaleAmount = difference / itemBackgroundSize[1]
+    config.itemBackground = config.itemBackground .. "?scalenearest=" .. scaleAmount
+    config.inventoryIcon = {
+      { image = config.itemBackground },
+      { image = config.inventoryIcon }
+    }
   end
   
   for i, drawable in ipairs(config.inventoryIcon) do

@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "essence", "count" : 1500},
+	{ "item" : "starforge-brimsteel", "count" : 2},
+	{ "item" : "diamond", "count" : 1},
+	{ "item" : "goldbar", "count" : 10}
+  ],
+  "output" : {
+    "item" : "starforge-disciplesfocus",
+    "count" : 1
+  },
+  "groups" : [ "starforge-loreshop", "augment" ],
+  "duration" : 2
+}
+

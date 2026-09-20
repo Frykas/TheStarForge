@@ -1316,8 +1316,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":168,
-                 "y":184
+                 "x":192,
+                 "y":160
                 }, 
                 {
                  "height":8,
@@ -1363,7 +1363,7 @@
                  "name":"",
                  "properties":
                     {
-                     "monster":"swarpion"
+                     "monster":"starforge-kluexshieldconstruct"
                     },
                  "propertytypes":
                     {
@@ -1374,7 +1374,7 @@
                  "visible":true,
                  "width":8,
                  "x":256,
-                 "y":184
+                 "y":152
                 }, 
                 {
                  "height":8,
@@ -1382,7 +1382,7 @@
                  "name":"",
                  "properties":
                     {
-                     "monster":"swarpion"
+                     "monster":"starforge-tortoiseconstruct"
                     },
                  "propertytypes":
                     {
@@ -1401,7 +1401,7 @@
                  "name":"",
                  "properties":
                     {
-                     "monster":"swarpion"
+                     "monster":"starforge-tortoiseconstruct"
                     },
                  "propertytypes":
                     {
@@ -1420,7 +1420,7 @@
                  "name":"",
                  "properties":
                     {
-                     "monster":"swarpion"
+                     "monster":"starforge-kluexshieldconstruct"
                     },
                  "propertytypes":
                     {
@@ -1431,7 +1431,7 @@
                  "visible":true,
                  "width":8,
                  "x":568,
-                 "y":184
+                 "y":152
                 }, 
                 {
                  "height":8,
@@ -1488,7 +1488,7 @@
                  "visible":true,
                  "width":8,
                  "x":352,
-                 "y":184
+                 "y":168
                 }, 
                 {
                  "height":8,
@@ -1507,7 +1507,7 @@
                  "visible":true,
                  "width":8,
                  "x":472,
-                 "y":184
+                 "y":168
                 }, 
                 {
                  "height":8,
@@ -1582,8 +1582,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":656,
-                 "y":184
+                 "x":632,
+                 "y":160
                 }, 
                 {
                  "height":8,
