@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "essence", "count" : 5000},
+    { "item" : "starforge-brimsteel", "count" : 7},
+    { "item" : "diamond", "count" : 8},
+    { "item" : "goldbar", "count" : 35}
+  ],
+  "output" : {
+    "item" : "starforge-kluexwarpriestback",
+    "count" : 1
+  },
+  "groups" : [ "starforge-starforge", "backwear" ],
+  "duration" : 2
+}
+

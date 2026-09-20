@@ -1,24 +1,25 @@
 {
-  "itemName" : "starforge-yukaiashenpack",
+  "itemName" : "starforge-kluexwarpriestpack",
   "price" : 500,
   "rarity" : "legendary",
   "category" : "Armor Pack",
-  "description" : "A Yukai pack, containing Ashen Witch armor.",
-  "shortdescription" : "Ashen Pack",
+  "description" : "An Avian pack, containing Kluex Warpriest armor.",
+  "shortdescription" : "Kluex Warpriest Pack",
   "twoHanded" : true,
 
-  "inventoryIcon" : "ashenicon.png",
+  "inventoryIcon" : "kluexwarpriestpackicon.png",
   "animation" : "/items/unsorted/starforge-armourpack.animation",
   "animationParts" : {
-    "gun" : "yukaipack.png"
+    "gun" : "kluexarmourpack.png"
   },
+  "animationCustom" : {},
   "scripts" : ["/items/unsorted/thalassocache/thalassocache.lua"],
 
   "fireTime" : 0.5,
   "fireOffset" : 0,
 
   "treasure" : {
-    "pool" : "starforge-yukaiashencache",
+    "pool" : "starforge-kluexwarpriestpack",
     "level" : 1
   }
 }

@@ -10,8 +10,10 @@
   "twoHanded" : true,
 
   "inventoryIcon" : "stalkericon.png",
-  "animation" : "unboundstalkerpack.animation",
-  "animationCustom" : {},
+  "animation" : "/items/unsorted/starforge-armourpack.animation",
+  "animationParts" : {
+    "gun" : "stalkerpack.png"
+  },
   "scripts" : ["unboundarmorpack.lua"],
 
   "fireTime" : 0.5,

@@ -10,8 +10,10 @@
   "twoHanded" : true,
 
   "inventoryIcon" : "officericon.png",
-  "animation" : "unboundofficerpack.animation",
-  "animationCustom" : {},
+  "animation" : "/items/unsorted/starforge-armourpack.animation",
+  "animationParts" : {
+    "gun" : "officerpack.png"
+  },
   "scripts" : ["unboundarmorpack.lua"],
 
   "fireTime" : 0.5,

@@ -38,14 +38,14 @@
       "gun" : {
         "properties" : {
           "centered" : true,
-          "image" : "yukaipack.png",
+          "image" : "<partImage>",
           "offset" : [0.0, 0.0]
         }
       }
     }
   },
 
-    "particleEmitters" : {
+  "particleEmitters" : {
     "confetti" : {
       "active" : false,
       "offsetRegion" : [1.0, 0, 0.5, 1.5],

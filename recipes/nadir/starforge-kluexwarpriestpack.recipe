@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1250},
+    { "item" : "goldbar", "count" : 15},
+    { "item" : "diamond", "count" : 2}
+  ],
+  "output" : {
+    "item" : "starforge-kluexwarpriestpack",
+    "count" : 1
+  },
+  "groups" : [ "starforge-nadir", "armor" ],
+  "duration" : 0
+}
+

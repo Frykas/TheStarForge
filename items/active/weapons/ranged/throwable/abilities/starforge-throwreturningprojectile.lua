@@ -116,6 +116,8 @@ function StarforgeThrowReturningProjectile:preslash()
   
   if config.getParameter("weaponThrown") then
     self:setState(self.fire)
+  else
+    self:setState(self.cooldown)
   end
 end
 

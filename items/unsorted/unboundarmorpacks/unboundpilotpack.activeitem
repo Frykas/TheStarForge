@@ -10,8 +10,10 @@
   "twoHanded" : true,
 
   "inventoryIcon" : "piloticon.png",
-  "animation" : "unboundpilotpack.animation",
-  "animationCustom" : {},
+  "animation" : "/items/unsorted/starforge-armourpack.animation",
+  "animationParts" : {
+    "gun" : "commandopack.png"
+  },
   "scripts" : ["unboundarmorpack.lua"],
 
   "fireTime" : 0.5,
