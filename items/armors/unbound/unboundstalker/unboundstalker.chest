@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "The Unbound Stalkers are masters of stealth, infiltration & assassination.",
+  "description" : "A dark poncho protected with a light durasteel chestplate. Provides protection while keeping the wearer light on their feet.",
   "shortdescription" : "^#686F5D;UNBD^reset; Stalker Poncho",
   "tooltipKind" : "armor",
 

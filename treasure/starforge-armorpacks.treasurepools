@@ -53,11 +53,10 @@
         [0, {
             "fill" : [
                 {"weight" : 1, "item" : "starforge-unboundcaptainhead"},
-                {"weight" : 1, "item" : "starforge-unboundcaptainalthead"},
                 {"weight" : 1, "item" : "starforge-unboundcaptainchest"},
                 {"weight" : 1, "item" : "starforge-unboundcaptainpants"}
             ],  
-            "poolRounds" : 4,
+            "poolRounds" : 3,
             "allowDuplication" : false
         }]
     ],
@@ -69,7 +68,7 @@
                 {"weight" : 1, "item" : "starforge-unboundpilotchest"},
                 {"weight" : 1, "item" : "starforge-unboundpilotpants"}
             ],  
-            "poolRounds" : 4,
+            "poolRounds" : 3,
             "allowDuplication" : false
         }]
     ],
@@ -90,11 +89,10 @@
         [0, {
             "fill" : [
                 {"weight" : 1, "item" : "starforge-unboundfortresshead"},
-                {"weight" : 1, "item" : "starforge-unboundfortressalthead"},
                 {"weight" : 1, "item" : "starforge-unboundfortresschest"},
                 {"weight" : 1, "item" : "starforge-unboundfortresspants"}
             ],  
-            "poolRounds" : 4,
+            "poolRounds" : 3,
             "allowDuplication" : false
         }]
     ],

@@ -5,7 +5,7 @@
   "maxStack" : 1000,
   "rarity" : "legendary",
   "category" : "Armor Pack",
-  "description" : "An Unbound pack, containing fortress armor, along an alternative helmet.",
+  "description" : "An Unbound pack, containing fortress armor.",
   "shortdescription" : "Fortress Pack",
   "twoHanded" : true,
 
