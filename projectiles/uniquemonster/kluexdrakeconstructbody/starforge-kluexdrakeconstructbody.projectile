@@ -1,0 +1,44 @@
+{
+  "projectileName" : "starforge-kluexdrakeconstructbody",
+  "image" : "starforge-kluexdrakeconstructbody.png",
+  "physics" : "rocket",
+  "animationCycle" : 0.25,
+  "acceleration" : 100,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "flippable" : true,
+  "supportsProcessing" : true,
+  "piercing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "rotate" : true,
+      "type" : "starforge-fireexplosion",
+      "config" : {},
+      "inheritDamageFactor" : 1
+    }
+  ],
+  "periodicActions" : [
+  	{ 
+      "time" : 0.025,
+      "repeat" : true,
+      "action" : "projectile",
+      "rotate" : true,
+      "type" : "flamethrower",
+      "config" : {},
+      "inheritDamageFactor" : 0.0125,
+      "angleAdjust" : 180,
+      "fuzzAngle" : 25
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 1,
+  "damageKind" : "firehammer",
+  "emitters" : [ ],
+  "statusEffects" : [ "burning" ],
+  "timeToLive" : 2,
+
+  "hydrophobic" : true,
+  
+  "renderLayer" : "Monster+1"
+}

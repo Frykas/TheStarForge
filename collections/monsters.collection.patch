@@ -293,5 +293,16 @@
 	    "monsterType" : "starforge-kluextortoiseconstruct",
 	    "icon" : "/monsters/crawlers/kluextortoiseconstruct/starforge-kluextortoiseconstructicon.png"
 	  }
+	},
+	
+	{
+	  "op": "add",
+	  "path": "/collectables/kluexdrakeconstruct",
+	  "value": 	  
+	  {
+	    "order" : 127,
+	    "monsterType" : "starforge-kluexdrakeconstruct",
+	    "icon" : "/monsters/flyers/kluexdrakeconstruct/starforge-kluexdrakeconstructicon.png"
+	  }
 	}
 ]

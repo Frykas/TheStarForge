@@ -1,0 +1,268 @@
+{
+  "type" : "starforge-kluexdrakeconstruct",
+  "shortdescription" : "Kluex Drake Construct",
+  "description" : "Ancient technology made to imitate a flame-spitting drake.",
+
+  "categories" : [ "starforge-kluexdrakeconstruct" ],
+  "parts" : [ "body" ],
+
+  "animation" : "starforge-kluexdrakeconstruct.animation",
+
+  "dropPools" : [ ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/starforge-monster.lua"
+    ],
+
+    "behavior" : "monster",
+	  "deathBehavior" : "monster-death",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 40,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 100,
+      "targetOutOfSightTime" : 5.0,
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 2.35,
+          "parameters" : {
+            "onGround" : false,
+            "requireLineOfSight" : true,
+            "maximumRange" : 14,
+            "minimumRange" : 2,
+            "windupState" : "windup",
+            "windupTime" : 0.3,
+            "windupStopForce" : 100,
+
+            "projectileCount" : 15,
+            "projectileInterval" : 0.05,
+
+            "projectileType" : "flamethrower",
+            "projectileParameters": {
+              "periodicActions" : [
+                { 
+                  "time" : 0.05,
+                  "repeat" : false,
+                  "action" : "projectile",
+                  "rotate" : true,
+                  "type" : "starforge-shockwavespawner",
+                  "inheritDamageFactor" : 1,
+                  "config" : {
+                    "damageType" : "noDamage",
+                    "timeTolive" : 1.5,
+                    "speed" : 0,
+                    "periodicActions" : [
+                      { 
+                        "time" : 0.05,
+                        "repeat" : false,
+                        "action" : "projectile",
+                        "rotate" : true,
+                        "type" : "flamethrower",
+                        "config" : {},
+                        "fuzzAngle" : 15,
+                        "inheritDamageFactor" : 1
+                      },
+                      { 
+                        "time" : 0.1,
+                        "repeat" : false,
+                        "action" : "projectile",
+                        "rotate" : true,
+                        "type" : "flamethrower",
+                        "config" : {},
+                        "fuzzAngle" : 15,
+                        "inheritDamageFactor" : 1
+                      },
+                      { 
+                        "time" : 0.15,
+                        "repeat" : false,
+                        "action" : "projectile",
+                        "rotate" : true,
+                        "type" : "flamethrower",
+                        "config" : {},
+                        "fuzzAngle" : 15,
+                        "inheritDamageFactor" : 1
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "fireOffset" : [0, 1.0],
+            "fireSound" : "",
+            "fireState" : "fire",
+
+            "winddownState" : "winddown",
+            "winddownTime" : 0.3
+          }
+        }
+      ],
+
+      "approachActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : 30,
+            "groundDistance" : 15,
+            "ceilingDistance" : 4,
+            "xVelocity" : 8,
+            "yVelocity" : 12
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : 1,
+            "groundDistance" : 8,
+            "ceilingDistance" : 4,
+            "xVelocity" : 2,
+            "yVelocity" : 2
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ],
+
+	    "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "starforge-kluexdrakeconstructbody",
+            "projectileParameters" : {},
+            "aimDirection" : [0, -1],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, -1]
+          }
+        }
+      ]
+    },
+
+
+    "touchDamage" : {
+      "poly" : [ [0.875, 2.625], [1.625, 1.875], [1.625, -1.875], [0.875, -2.625], [-0.875, -2.625], [-1.625, -1.875], [-1.625, 1.875], [-0.875, 2.625] ],
+      "damage" : 6,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.875, 2.625], [1.625, 1.875], [1.0, -1.875], [0.375, -2.625], [-0.375, -2.625], [-1.0, -1.875], [-1.625, 1.875], [-0.875, 2.625] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 6,
+      "runSpeed" : 18,
+      "gravityEnabled" : false,
+
+      "airFriction" : 2,
+      "airForce" : 20,
+      "flySpeed" : 15
+    },
+
+    "bodyMaterialKind" : "stone",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "stone"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/starforge-monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 100
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "fireProtection" : {
+          "baseValue" : 0.5
+        }, 
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+    
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "kluexdrakeconstruct" }
+  }
+}

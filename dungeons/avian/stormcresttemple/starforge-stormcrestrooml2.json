@@ -1325,7 +1325,7 @@
                  "name":"",
                  "properties":
                     {
-                     "monster":"kluexsentry"
+                     "monster":"starforge-kluexdrakeconstruct"
                     },
                  "propertytypes":
                     {
@@ -1382,7 +1382,7 @@
                  "name":"",
                  "properties":
                     {
-                     "monster":"starforge-tortoiseconstruct"
+                     "monster":"starforge-kluextortoiseconstruct"
                     },
                  "propertytypes":
                     {
@@ -1401,7 +1401,7 @@
                  "name":"",
                  "properties":
                     {
-                     "monster":"starforge-tortoiseconstruct"
+                     "monster":"starforge-kluextortoiseconstruct"
                     },
                  "propertytypes":
                     {

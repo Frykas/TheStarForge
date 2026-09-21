@@ -8015,7 +8015,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [2, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexshieldconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
+                     "parameters":"{\"progressBarPosition\" : [2, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluexshieldconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -8036,7 +8036,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [-0.5, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexshieldconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : true}",
+                     "parameters":"{\"progressBarPosition\" : [-0.5, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluexshieldconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : true}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -10168,6 +10168,44 @@
                  "width":8,
                  "x":2032,
                  "y":2624
+                }, 
+                {
+                 "height":8,
+                 "id":2876,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluexdrakeconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":2736,
+                 "y":744
+                }, 
+                {
+                 "height":8,
+                 "id":2877,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"starforge-kluexdrakeconstruct"
+                    },
+                 "propertytypes":
+                    {
+                     "monster":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1448,
+                 "y":744
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -11239,7 +11277,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -11469,7 +11507,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":2876,
+ "nextobjectid":2878,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",

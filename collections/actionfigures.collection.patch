@@ -34,10 +34,11 @@
     { "op":"add","path":"/collectables/starforge-heavyshockumawaf","value":{"order":132,"item":"starforge-heavyshockumawaf"} },
     { "op":"add","path":"/collectables/starforge-kluexshieldconstructaf","value":{"order":133,"item":"starforge-kluexshieldconstructaf"} },
     { "op":"add","path":"/collectables/starforge-kluextortoiseconstructaf","value":{"order":134,"item":"starforge-kluextortoiseconstructaf"} },
+    { "op":"add","path":"/collectables/starforge-kluextortoiseconstructaf","value":{"order":135,"item":"starforge-kluexdrakeconstructaf"} },
 
     //Bosses
-    { "op":"add","path":"/collectables/starforge-centurionaf","value":{"order":135,"item":"starforge-centurionaf"} },
-    { "op":"add","path":"/collectables/starforge-ancientcephalowormaf","value":{"order":136,"item":"starforge-ancientcephalowormaf"} },
-    { "op":"add","path":"/collectables/starforge-razortailaf","value":{"order":137,"item":"starforge-razortailaf"} }
+    { "op":"add","path":"/collectables/starforge-centurionaf","value":{"order":136,"item":"starforge-centurionaf"} },
+    { "op":"add","path":"/collectables/starforge-ancientcephalowormaf","value":{"order":137,"item":"starforge-ancientcephalowormaf"} },
+    { "op":"add","path":"/collectables/starforge-razortailaf","value":{"order":138,"item":"starforge-razortailaf"} }
 ]
 //SILBR SOKLOVA PATCH??????

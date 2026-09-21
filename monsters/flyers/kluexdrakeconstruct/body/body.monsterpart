@@ -1,0 +1,10 @@
+{
+  "name" : "body",
+  "category" : "starforge-kluexdrakeconstruct",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "starforge-kluexdrakeconstruct.png",
+    "bodyFullbright" : "starforge-kluexdrakeconstructfullbright.png"
+  }
+}

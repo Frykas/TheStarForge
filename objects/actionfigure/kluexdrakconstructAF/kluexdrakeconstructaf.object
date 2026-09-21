@@ -1,0 +1,33 @@
+{
+  "objectName" : "starforge-kluexdrakeconstructaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"Ancient technology made to imitate a flame-spitting drake.\"",
+  "shortdescription" : "Shield Construct Figurine",
+  "collectablesOnPickup" : { "actionfigures" : "starforge-kluexdrakeconstructaf" },
+
+
+  "inventoryIcon" : "kluexdrakeconstructaf.png",
+  "orientations" : [
+    {
+      "image" : "kluexdrakeconstructaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "kluexdrakeconstructaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
