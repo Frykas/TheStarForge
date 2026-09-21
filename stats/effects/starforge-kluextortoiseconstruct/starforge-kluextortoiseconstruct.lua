@@ -8,6 +8,9 @@ function init()
 
   self.powerMultiplier = status.stat("powerMultiplier")
   if not self.powerMultiplier or self.powerMultiplier == 0 then self.powerMultiplier = 1.0 end
+  if world.entityType(entity.id()) == "monster" then
+    self.powerMultiplier = self.powerMultiplier * root.evalFunction("monsterLevelPowerMultiplier", world.callScriptedEntity(entity.id(), "monster.level"))
+  end
 
   effect.addStatModifierGroup({
     {stat = "protection", amount = config.getParameter("protection", 85)},

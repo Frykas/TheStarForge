@@ -221,17 +221,17 @@ function processAction(action)
     if type(projectileType) == "table" then
       projectileType = projectileType[math.random(#projectileType)]
     end
-	local parameters = sb.jsonMerge(action.projectileParameters, {})
-	parameters.power = (parameters.power or 1) * root.evalFunction("monsterLevelPowerMultiplier", monster.level()) * status.stat("powerMultiplier")
-	
-	world.spawnProjectile(
-      projectileType,
-      mcontroller.position(),
-      entity.id(),
-      vec2.norm(mcontroller.velocity()),
-      false,
-      parameters
-	)
+    local parameters = sb.jsonMerge(action.projectileParameters, {})
+    parameters.power = (parameters.power or 1) * root.evalFunction("monsterLevelPowerMultiplier", monster.level()) * status.stat("powerMultiplier")
+    
+    world.spawnProjectile(
+        projectileType,
+        mcontroller.position(),
+        entity.id(),
+        vec2.norm(mcontroller.velocity()),
+        false,
+        parameters
+    )
   elseif action.action == "particle" then
   
   end
