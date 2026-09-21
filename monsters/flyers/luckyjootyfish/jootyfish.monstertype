@@ -13,7 +13,7 @@
   "baseParameters" : {
     "monsterClass" : "boss",
     "scripts" : [
-      "/monsters/monster.lua"
+      "/monsters/starforge-monster.lua"
     ],
 
     "behavior" : "monster",
@@ -145,7 +145,7 @@
       "minimumLiquidStatusEffectPercentage" : 0.1,
 
       "primaryScriptSources" : [
-        "/stats/monster_primary.lua"
+        "/stats/starforge-monster_primary.lua"
       ],
       "primaryScriptDelta" : 5,
 
