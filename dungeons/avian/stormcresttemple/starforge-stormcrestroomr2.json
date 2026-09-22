@@ -871,7 +871,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [0, 8], \"theme\" : \"avian\", \"waveCount\" : 4, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexshieldconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [20, 2], \"delayTime\" : 5, \"enemyCount\" : [ 5,6 ], \"spawnOnGround\" : false}",
+                     "parameters":"{\"progressBarPosition\" : [0, 8], \"theme\" : \"avian\", \"waveCount\" : 4, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexshieldconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [20, 2], \"delayTime\" : 5, \"enemyCount\" : [ 5,6 ], \"spawnOnGround\" : false, \"spawnEffects\" : [ \"starforge-kluexappeartelegraph\" ]}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":

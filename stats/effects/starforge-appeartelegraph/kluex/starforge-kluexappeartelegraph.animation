@@ -1,0 +1,53 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "telegraph" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : { },
+          "active" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "effect" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [0, -0.5]
+        },
+        "partStates" : {
+          "telegraph" : {
+            "inactive" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "starforge-kluexappeartelegraph.png:<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "teleport" : {
+      "emissionRate" : 25,
+      "particles" : [
+      ]
+    }
+  },
+
+  "sounds" : {
+  }
+}
+ 

@@ -1,0 +1,15 @@
+{
+  "name" : "starforge-kluexspawneffect",
+  "effectConfig" : {
+    "directiveToTime" : [
+      [0.1, "?brightness=255?saturation=-100?border=1;ea6a56;b9182a"],
+      [0.225,"?border=1;ff9d8d;ea6a56"],
+      [0.35, "?border=2;ff9d8d"]
+    ]
+  },
+  "defaultDuration" : 0.35,
+
+  "scripts" : [
+    "starforge-timetoparentdirective.lua"
+  ]
+}

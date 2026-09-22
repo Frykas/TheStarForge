@@ -100,14 +100,20 @@ function activeState(targetId)
     animator.setAnimationState("body", "activate")
   end
   
+  local stunned = false
+  if status.isResource("stunned") and status.resource("stunned") > 0.5 then
+	  stunned = true
+  end
   while #self.nearbyAllies > 0 do
-    for _, ally in ipairs(self.nearbyAllies) do
-      for _, effect in ipairs(self.allyStatusEffects) do
-        world.sendEntityMessage(ally, "applyStatusEffect", effect, nil, entity.id())
+    if not stunned then
+      for _, ally in ipairs(self.nearbyAllies) do
+        for _, effect in ipairs(self.allyStatusEffects) do
+          world.sendEntityMessage(ally, "applyStatusEffect", effect, nil, entity.id())
+        end
       end
-    end
-    if self.lightningConfig then
-      determineLightning()
+      if self.lightningConfig then
+        determineLightning()
+      end
     end
 
     coroutine.yield()

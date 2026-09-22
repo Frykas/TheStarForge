@@ -6,7 +6,7 @@
   "damageKindImage" : "icon.png",
   "damagePoly" : [ [-8, -4], [-8, 4], [4, 4], [4, -4] ],
   "pointLight" : false,
-  "lightColor" : [115, 211, 255],
+  "lightColor" : [234, 106, 86],
   "power" : 40,
   "speed" : 40,
   "fullbright" : true,

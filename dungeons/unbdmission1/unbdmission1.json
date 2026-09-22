@@ -15123,7 +15123,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -17589,7 +17589,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"messageRadius\" : 75, \"waveCount\" : 5, \"monsterTypes\" : [], \"npcTypes\" : [ \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundofficer\", \"starforge-unboundofficer\", \"starforge-unboundofficer\", \"starforge-unboundheavy\", \"starforge-unboundcaptain1\", \"starforge-unboundcaptain2\", \"starforge-unboundfortress1\", \"starforge-unboundfortress2\" ], \"npcSpecies\" : [ \"apex\" ], \"enemyCount\" : [ 4, 6 ], \"startActive\" : false, \"spawnRange\" : [50, 0], \"yOffset\" : -8, \"endMessages\" : [ \"starforge-readydetonation\" ], \"progressBarPosition\" : [0, -7]}",
+                     "parameters":"{\"messageRadius\" : 75, \"waveCount\" : 5, \"monsterTypes\" : [], \"npcTypes\" : [ \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundofficer\", \"starforge-unboundofficer\", \"starforge-unboundofficer\", \"starforge-unboundheavy\", \"starforge-unboundcaptain1\", \"starforge-unboundcaptain2\", \"starforge-unboundfortress1\", \"starforge-unboundfortress2\" ], \"npcSpecies\" : [ \"apex\" ], \"enemyCount\" : [ 4, 6 ], \"startActive\" : false, \"spawnRange\" : [50, 0], \"yOffset\" : -8, \"endMessages\" : [ \"starforge-readydetonation\" ], \"progressBarPosition\" : [0, -7], \"theme\" : \"unbound\"}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -17694,7 +17694,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"waveCount\" : 5, \"monsterTypes\" : [], \"npcTypes\" : [ \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundofficer\", \"starforge-unboundheavy\" ], \"npcSpecies\" : [ \"apex\" ], \"spawnRange\" : [20, 0], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ]}",
+                     "parameters":"{\"waveCount\" : 5, \"monsterTypes\" : [], \"npcTypes\" : [ \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundofficer\", \"starforge-unboundheavy\" ], \"npcSpecies\" : [ \"apex\" ], \"spawnRange\" : [20, 0], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"theme\" : \"unbound\"}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -17779,10 +17779,10 @@
          "y":0
         }],
  "nextlayerid":9,
- "nextobjectid":1792,
+ "nextobjectid":1793,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.10.2",
+ "tiledversion":"1.11.0",
  "tileheight":8,
  "tilesets":[
         {

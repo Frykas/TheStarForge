@@ -34,7 +34,7 @@ function updateProgressBar()
   info.totalProgress = self.totalProgress
   info.currentProgress = self.currentProgress
   info.animConfig = self.animConfig
-  info.animConfig.chunkImages = info.animConfig.chunkImagePath .. config.getParameter("theme", "default") .. ".png"
+  info.animConfig.chunkImages = info.animConfig.chunkImagePath .. config.getParameter("theme", "none") .. ".png"
 
   monster.setAnimationParameter("progressConfig", info)
 end

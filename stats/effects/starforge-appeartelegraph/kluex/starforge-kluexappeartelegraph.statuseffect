@@ -1,0 +1,13 @@
+{
+  "name" : "starforge-kluexappeartelegraph",
+  "effectConfig" : {
+    "appearEffects" : [ "starforge-kluexspawneffect" ]
+  },
+  "defaultDuration" : 3.35,
+
+  "scripts" : [
+    "/stats/effects/starforge-appeartelegraph/starforge-appeartelegraph.lua"
+  ],
+
+  "animationConfig" : "starforge-kluexappeartelegraph.animation"
+}

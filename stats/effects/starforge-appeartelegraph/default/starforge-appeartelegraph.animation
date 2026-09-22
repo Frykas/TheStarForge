@@ -1,18 +1,12 @@
 {
   "animatedParts" : {
     "stateTypes" : {
-      "blink" : {
-        "default" : "none",
+      "telegraph" : {
+        "default" : "inactive",
         "states" : {
-          "none" : { },
-          "blinkout" : {
-            "frames" : 5,
-            "cycle" : 0.25,
-            "mode" : "transition",
-            "transition" : "none"
-          },
-          "blinkin" : {
-            "frames" : 5,
+          "inactive" : { },
+          "active" : {
+            "frames" : 1,
             "cycle" : 0.25,
             "mode" : "loop"
           }
@@ -28,20 +22,15 @@
           "offset" : [0, -0.5]
         },
         "partStates" : {
-          "blink" : {
-            "none" : {
+          "telegraph" : {
+            "inactive" : {
               "properties" : {
                 "image" : ""
               }
             },
-            "blinkout" : {
+            "active" : {
               "properties" : {
-                "image" : "blinkout.png:<frame>"
-              }
-            },
-            "blinkin" : {
-              "properties" : {
-                "image" : "blinkin.png:<frame>"
+                "image" : ""
               }
             }
           }
@@ -52,7 +41,25 @@
 
   "particleEmitters" : {
     "teleport" : {
+      "emissionRate" : 15,
       "particles" : [
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/electroshock/electroshock.animation",
+            "timeToLive" : 0.2,
+            "initialVelocity" : [0, 5],
+            "finalVelocity" : [0, 0],
+            "layer" : "front",
+            "rotation" : 90,
+            "fullbright" : true,
+            "size" : 0.5,
+            "variance" : {
+              "size" : 0.25,
+              "rotation" : 15
+            }
+          }
+        },
         {
           "count" : 10,
           "particle" : {
@@ -104,17 +111,11 @@
               "timeToLive" : 0.2
             }
           }
-        },
-        {
-          "count" : 30,
-		  "particle" : "starforge-torporcloud"
-		}
+        }
       ]
     }
   },
 
   "sounds" : {
-    "activate" : [ "/sfx/tech/tech_blink1.ogg" ],
-    "deactivate" : [ "/sfx/tech/tech_blink2.ogg" ]
   }
 }

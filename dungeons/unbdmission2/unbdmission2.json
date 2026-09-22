@@ -29564,7 +29564,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"waveCount\" : 3, \"monsterTypes\" : [], \"npcTypes\" : [ \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\",\"starforge-unboundsoldier\",\"starforge-unboundsoldier\",\"starforge-unboundofficer\", \"starforge-unboundofficer\", \"starforge-unboundofficer\",  \"starforge-unboundcaptain2\" ], \"npcSpecies\" : [ \"apex\" ], \"spawnRange\" : [15, 0], \"delayTime\" : 5, \"enemyCount\" : [ 2, 5 ]}",
+                     "parameters":"{\"waveCount\" : 3, \"monsterTypes\" : [], \"npcTypes\" : [ \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\",\"starforge-unboundsoldier\",\"starforge-unboundsoldier\",\"starforge-unboundofficer\", \"starforge-unboundofficer\", \"starforge-unboundofficer\",  \"starforge-unboundcaptain2\" ], \"npcSpecies\" : [ \"apex\" ], \"spawnRange\" : [15, 0], \"delayTime\" : 5, \"enemyCount\" : [ 2, 5 ], \"theme\" : \"unbound\"}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -29829,7 +29829,7 @@
  "nextobjectid":3421,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.10.2",
+ "tiledversion":"1.11.0",
  "tileheight":8,
  "tilesets":[
         {

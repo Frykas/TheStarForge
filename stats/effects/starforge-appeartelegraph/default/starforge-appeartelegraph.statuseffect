@@ -1,0 +1,12 @@
+{
+  "name" : "starforge-appeartelegraph",
+  "effectConfig" : {
+  },
+  "defaultDuration" : 1.35,
+
+  "scripts" : [
+    "/stats/effects/starforge-appeartelegraph/starforge-appeartelegraph.lua"
+  ],
+
+  "animationConfig" : "starforge-appeartelegraph.animation"
+}

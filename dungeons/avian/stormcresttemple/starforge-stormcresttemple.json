@@ -8015,7 +8015,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [2, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluexshieldconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : false}",
+                     "parameters":"{\"progressBarPosition\" : [2, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluexshieldconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 3, 5 ], \"spawnOnGround\" : false, \"spawnEffects\" : [ \"starforge-kluexappeartelegraph\" ]}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
@@ -8036,7 +8036,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"progressBarPosition\" : [-0.5, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluexshieldconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"spawnOnGround\" : true}",
+                     "parameters":"{\"progressBarPosition\" : [-0.5, 4],\"theme\" : \"avian\", \"waveCount\" : 5, \"monsterTypes\" : [\"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"kluexsentry\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluexdrakeconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluextortoiseconstruct\", \"starforge-kluexshieldconstruct\"], \"npcTypes\" : [ ], \"npcSpecies\" : [ ], \"spawnRange\" : [35, 10], \"delayTime\" : 5, \"enemyCount\" : [ 3, 5 ], \"spawnOnGround\" : true, \"spawnEffects\" : [ \"starforge-kluexappeartelegraph\" ] }",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":
