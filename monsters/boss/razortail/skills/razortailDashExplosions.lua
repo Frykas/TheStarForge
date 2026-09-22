@@ -63,6 +63,7 @@ function razortailDashExplosions.dash(stateData)
   mcontroller.controlFace(-directionToPlayer)
 
   animator.setAnimationState("body", "dash")
+  playSound("dash")
 
   local projectileTimer = stateData.projectileInterval
   local projectileConfig = stateData.projectileConfig

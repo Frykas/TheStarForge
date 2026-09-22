@@ -747,6 +747,35 @@
       "pool" : [ ],
       "rangeMultiplier" : 1.5
     },
+
+    "flipslash": {
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailflip.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+
+    "growl": {
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailgrowl1.ogg", "/sfx/monsters/boss/razortail/starforge-razortailgrowl2.ogg", "/sfx/monsters/boss/razortail/starforge-razortailgrowl3.ogg", "/sfx/monsters/boss/razortail/starforge-razortailgrowl4.ogg", "/sfx/monsters/boss/razortail/starforge-razortailgrowl5.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+
+    "tailWhip" : {
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailtailwhip.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+    "bite" : {
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailbite1.ogg", "/sfx/monsters/boss/razortail/starforge-razortailbite2.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+    "clawSlash" : {
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailslash1.ogg", "/sfx/monsters/boss/razortail/starforge-razortailslash2.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+
+    "dash" : {
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailslash1.ogg", "/sfx/monsters/boss/razortail/starforge-razortailslash2.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+
     "roar" : {
       "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailroar.ogg" ],
       "rangeMultiplier" : 1.5
@@ -756,8 +785,18 @@
       "rangeMultiplier" : 1.5
     },
 
+    "slam" : {
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailslam.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+    
+    "erupt" : {
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortailerupt1.ogg", "/sfx/monsters/boss/razortail/starforge-razortailerupt2.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+
     "blinkDash" : {
-      "pool" : [ "/sfx/npc/boss/cultistboss_sphere_attack.ogg" ],
+      "pool" : [ "/sfx/monsters/boss/razortail/starforge-razortaildash.ogg" ],
       "rangeMultiplier" : 1.5
     }
   },

@@ -13,6 +13,8 @@ end
 function razortailWalk.enteringState(stateData)
   monster.setActiveSkillName("razortailWalk")
   stateData.timer = calculateCooldown(stateData.timer)
+
+  playSound("growl")
 end
 
 function razortailWalk.update(dt, stateData)  

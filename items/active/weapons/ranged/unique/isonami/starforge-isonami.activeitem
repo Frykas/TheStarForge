@@ -26,7 +26,7 @@
     "sounds" : {
       "throw" : [ "/sfx/projectiles/throw_item.ogg" ],
       "catch" : [ "/sfx/melee/critical_hit_light.ogg" ],
-      "blinkDash" : [ "/sfx/npc/boss/cultistboss_sphere_attack.ogg" ]
+      "blinkDash" : [ "/sfx/monsters/boss/razortail/starforge-razortaildash.ogg" ]
     }
   },
   "animationScripts" : [

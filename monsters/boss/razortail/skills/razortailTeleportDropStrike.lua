@@ -85,6 +85,7 @@ function razortailTeleportDropStrike.flipslash(stateData, directionToPlayer)
       end
     end,
     function()
+      playSound("slam")
       animator.setAnimationState("body", "idle")
       razortailTeleportDropStrike.explode(stateData, {0, 1})
       razortailTeleportDropStrike.leap(stateData, directionToPlayer)

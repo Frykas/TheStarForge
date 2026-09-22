@@ -75,6 +75,7 @@ function razortailFinalPhaseShift.dive(stateData)
       end
     end,
     function()
+      playSound("slam")
       animator.setAnimationState("body", "invisible")
       razortailFinalPhaseShift.explode(stateData, {0, 1})
       razortailFinalPhaseShift.swim(stateData)
@@ -114,6 +115,7 @@ function razortailFinalPhaseShift.leaveSwim(stateData)
   updateDamageSources()
   status.clearPersistentEffects("starforge-razortailSwimming")
   mcontroller.setVelocity(stateData.leapVelocity)
+  playSound("erupt")
   wait(
     stateData.jumpTime,
     function()

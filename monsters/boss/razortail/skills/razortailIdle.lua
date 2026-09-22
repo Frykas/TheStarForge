@@ -11,6 +11,8 @@ end
 function razortailIdle.enteringState(stateData)
   --monster.setActiveSkillName("razortailIdle")
   stateData.timer = calculateCooldown(stateData.timer)
+
+  playSound("growl")
 end
 
 function razortailIdle.update(dt, stateData)  

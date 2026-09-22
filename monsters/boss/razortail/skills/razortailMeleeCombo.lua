@@ -152,6 +152,7 @@ function razortailMeleeCombo.attack(stateData)
 
   local animation = currentStep.attackState
   animator.setAnimationState("body", animation)
+  playSound(animation)
 
   wait(
     currentStep.damageDuration,

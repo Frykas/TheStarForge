@@ -67,6 +67,7 @@ function razortailFlipSlash.jump(stateData)
       animator.setAnimationState("body", "flipslashWindup")
     end,
     function()
+      playSound("flipslash")
       animator.setAnimationState("body", "flipslash")
       stateData.flipTime = stateData.rotations * stateData.rotationTime
 
