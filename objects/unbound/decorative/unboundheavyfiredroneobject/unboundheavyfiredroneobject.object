@@ -1,0 +1,35 @@
+{
+  "objectName" : "starforge-unboundheavyfiredroneobject",
+  "colonyTags" : ["weapon","apex"],
+  "printable" : true,
+  "rarity" : "rare",
+  "description" : "An Unbound Heavy Fire UMAW. It's currently in sleep mode.",
+  "shortdescription" : "Unbound Heavy Fire UMAW",
+  "race" : "apex",
+  "category" : "furniture",
+  "price" : 3000,
+
+  "apexDescription" : "This drone looks heavily armored. I'm glad it's not active at the moment.",
+  "avianDescription" : "It's kinda cute while sleeping!",
+  "floranDescription" : "Floran want to ride it to hunt with them!",
+  "glitchDescription" : "Curious. This is quite the robust frame.",
+  "humanDescription" : "A heavily armored drone. It's not activated.",
+  "hylotlDescription" : "This drone is looking quite remarkable.",
+  "novakidDescription" : "Quite scary lookin'.",
+
+  "inventoryIcon" : "unboundheavyfiredroneobjecticon.png",
+  "orientations" : [
+    {
+	 "dualImage" : "unboundheavyfiredroneobject.png" ,
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
+

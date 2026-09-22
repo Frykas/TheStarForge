@@ -11,6 +11,7 @@
   "tooltipKind" : "starforge-uniqueshield",
   "twoHanded" : false,
   "itemTags" : ["shield"],
+  "learnBlueprintsOnPickup" : [ "starforge-breezeguard" ],
 
   "inventoryIcon" : "images/starforge-breezeguard.png:nearidle",
 
