@@ -134,6 +134,15 @@
       ]
     }]
   ],
+  
+  "starforge-unboundmission1special5" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-unboundmauricehead", 1]}
+      ]
+    }]
+  ],
+  
   "starforge-unboundmission2special1" : [
     [1, {
       "fill" : [
