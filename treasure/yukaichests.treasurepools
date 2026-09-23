@@ -71,5 +71,22 @@
       ],
       "allowDuplication" : false
     }]
+],
+
+"starforge-razortailmissionTreasure" : [
+    [1, {
+      "fill" : [
+		{"weight" : 1, "item" : "starforge-ktheryxnhaeffigy"},
+        {"weight" : 1, "item" : ["starforge-hylotlyukai1-codex"]}
+      ],
+	  "pool" : [
+		{"weight" : 1, "item" : "starforge-tidalremnantmicroformer"}
+	],
+      "poolRounds" : [
+        [0.05, 1],
+        [0.95, 0]
+      ],
+      "allowDuplication" : false
+    }]
 ]
 }
