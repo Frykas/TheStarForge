@@ -1,0 +1,47 @@
+{
+	"projectileName": "starforge-thermitegrenade",
+	"image": "thermitegrenade.png",
+	"animationCycle": 0.2,
+	"frameNumber": 4,
+	"lightColor": [115, 119, 38],
+	"pointLight": true,
+	"piercing": true,
+  "movementSettings" : {
+    "gravityMultiplier" : 0.7
+  },
+  "actionOnReap" : [
+    {
+      "inheritDamageFactor": 0.5,
+      "angleAdjust": 0,
+      "fuzzAngle": 30,
+      "type": "largefirecloud",
+      "action": "projectile"
+    }
+  ],
+  "timeToLive" : 5,
+  "periodicActions" : [  
+    {
+      "time" : 0.225,
+      "inheritDamageFactor": 0.1,
+      "angleAdjust": 180,
+      "fuzzAngle": 100,
+      "config" : {
+        "speed" : 7
+      },
+      "type": "largefirecloud",
+      "action": "projectile"
+    }
+  ],
+  "knockback": 8,
+      
+  "emitters": ["fireplasma", "smoke", "flames"],
+  "power": 10.0,
+  "speed": 65.0,
+  "physics": "arrow",
+  //"damageType": "NoDamage",
+  "damageKind": "fire",
+
+  "scripts" : [ "/projectiles/scripts/starforge-stickingprojectile.lua" ],
+  "initialDamageMultiplier" : 0.1,
+  "damageMultiplierOnStick" : 0.1
+}

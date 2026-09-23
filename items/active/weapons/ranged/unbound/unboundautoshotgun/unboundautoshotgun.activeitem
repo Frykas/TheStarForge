@@ -28,6 +28,29 @@
     "particleEmitters" : {
       "casing" : {
 		    "offsetRegion" : [0.25, 0.75, 0.25, 0.75]
+      },
+      "grenadeCasing" : {
+		    "offsetRegion" : [-0.75, -0.5, -0.75, -0.5],
+        "particles" : [
+          { "particle" : "starforge-unboundshell" }
+        ]
+      },
+      "grenadeMuzzle" : {
+        "offsetRegion" : [-0.325, -0.5, -0.325, -0.5],
+        "transformationGroups" : ["muzzle"],
+        "burstCount" : 2,
+        "particles" : [
+          { "particle" : "rocketbarrelpuff" }
+        ]
+      },
+      "ammoIndicator" : {
+        "active" : false,
+        "emissionRate" : 8,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [-0.325, -0.5, -0.325, -0.5],
+        "particles" : [
+          { "particle" : "starforge-smallfireflame"}
+        ]
       }
     },
     "sounds": {
@@ -57,7 +80,13 @@
       "knockback": 8,
       "speed" : [125, 175]
     },
+    "fireOffset" : [0, 0],
+    "fireSound" : "fire",
+    "muzzleFlashState" : "fire",
     "animatedFire" : true,
+
+    "autoAltInterval" : false,
+    "altHoldTime" : 0.1,
 
     "stances": {
       "idle": {
@@ -79,7 +108,7 @@
         "twoHanded": true,
         "allowRotate": true,
         "allowFlip": true,
-        "burstParticleEmitters": [ "casing" ],
+        "burstParticleEmitters": [ "casing", "muzzleFlash" ],
 		
 		    "frontArmFrame" : "run.2",
         "backArmFrame" : "swim.4"
@@ -99,73 +128,81 @@
     }
   },
   
-  "altAbility" : {
-    "name" : "Thermite Launcher",
-    "scripts" : ["/items/active/weapons/ranged/starforge-gunfire.lua"],
-    "class" : "StarforgeGunFire",
+  "altAbility": {
+    "name" : "Arm Thermite",
+    "scripts" : ["/items/active/weapons/ranged/abilities/loadalternateammo/starforge-loadalternateammo.lua"],
+    "class" : "StarForgeLoadAlternateAmmo",
 
-    "projectileType" : "starforge-unboundfirerocket",
-    "projectileParameters" : {
-      "speed" : 40,
-      "movementSettings" : {
-        "gravityMultiplier" : 0.7
+    "swapOnCooldown" : 0.5,
+    "swapOffCooldown" : 2,
+    "adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+    
+    //The new stats which will overwrite the primary ability
+    "newAbility" : {
+      "projectileCount" : 1,
+
+      "projectileType" : "starforge-thermitegrenade",
+      "projectileParameters" : {
+        "speed" : 40
       },
-      "actionOnReap" : [
-        {
-          "inheritDamageFactor": 0.5,
-          "angleAdjust": 0,
-          "fuzzAngle": 30,
-          "type": "largefirecloud",
-          "action": "projectile"
-        }
-      ],
-      "timeToLive" : 5,
-      "periodicActions" : [  
-        {
-          "time" : 0.225,
-          "inheritDamageFactor": 0.1,
-          "angleAdjust": 180,
-          "fuzzAngle": 100,
-          "config" : {
-            "speed" : 7
-          },
-          "type": "largefirecloud",
-          "action": "projectile"
-        }
-      ]
-    },
-    "projectileCount" : 1,
-    "inaccuracy" : 0.01,
-    "baseDamage" : 9,
-    "energyUsage" : 65,
-    "fireTime" : 3,
-    "fireType" : "auto",
-    "useStanceDuration" : true,
 
-    "fireOffset" : [-0.125, -0.5],
-    "fireSound" : "fireNade",
-    "muzzleFlashState" : "off",
+      "autoAltInterval" : 1,
+
+      "fireOffset" : [-0.325, -0.5],
+      "fireSound" : "fireNade",
+      "muzzleFlashState" : "off",
+
+      "fireType" : "auto",
+      "animatedFire" : false,
+	
+      "baseDps" : 10.0,	
+      "fireTime" : 0.25,
+      "energyUsage" : 55,
+      "inaccuracy": 0.003,
+      
+      "stances": {
+        "idle": {
+          "duration" : 0,
+          "armRotation" : 0,
+          "weaponRotation" : 0,
+          "twoHanded" : true,
+
+          "allowRotate" : true,
+          "allowFlip" : true,
+
+          "frontArmFrame" : "run.2",
+          "backArmFrame" : "swim.4"
+        },
+        "fire": {
+          "duration": 0,
+          "armRotation": 1,
+          "weaponRotation": 1,
+          "twoHanded": true,
+          "allowRotate": true,
+          "allowFlip": true,
+          "burstParticleEmitters": [ "grenadeCasing", "grenadeMuzzle" ],
+
+          "frontArmFrame" : "run.2",
+          "backArmFrame" : "swim.4"
+        }
+      }
+    },
 
     "stances" : {
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : false,
-        "backArmFrame" : "swim.4"
-      },
-      "cooldown" : {
-        "duration" : 0.225,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true,
-        "backArmFrame" : "swim.4"
+      "load" : {
+        "duration" : 0.2,
+        "aimAngle" : 0,
+        "weaponAngularVelocity" : -150,
+        "armAngularVelocity" : 100,
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true,
+        
+        "frontArmFrame": "rotation",
+        "backArmFrame": "rotation"
       }
     }
   },
