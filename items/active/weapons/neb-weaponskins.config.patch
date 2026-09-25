@@ -1,4 +1,26 @@
 [
+  //JUSTICE
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-unbounddmr",
+    "value": {
+      "bananar": {
+        "skinName" : "White Death",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "What's colder than ice is the gaze that stares at your heart through the scope.",
+          "shortdescription": "White Death",
+          "inventoryIcon": "/items/active/weapons/ranged/unbound/unbounddmr/skins/starforge-whitedeath.png:idle",
+          "animationParts": {
+            "middle": "/items/active/weapons/ranged/unbound/unbounddmr/skins/starforge-whitedeath.png",
+            "middleFullbright" : ""
+          }
+        }
+      }
+    }
+  },
   //DRAGON
   {
     "op": "add",

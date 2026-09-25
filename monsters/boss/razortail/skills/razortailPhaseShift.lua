@@ -41,4 +41,5 @@ function razortailPhaseShift.update(dt, stateData)
 end
 
 function razortailPhaseShift.leavingState(stateData)
+  status.clearPersistentEffects("starforge-razortailPhaseShift")
 end

@@ -30,6 +30,8 @@ function update(dt) baseUpdate(dt)
       sanctusTeleport(storage.spawnPosition,
       0,
       function()
+        status.clearPersistentEffects("starforge-razortailPhaseShift")
+        status.clearPersistentEffects("starforge-razortailSwimming")
         animator.setAnimationState("body", "sleeping")
         self.awake = false
       end)

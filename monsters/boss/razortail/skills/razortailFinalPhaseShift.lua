@@ -158,5 +158,7 @@ function razortailFinalPhaseShift.geyser(stateData, vector)
 end
 
 function razortailFinalPhaseShift.leavingState(stateData)
+  status.clearPersistentEffects("starforge-razortailPhaseShift")
+  status.clearPersistentEffects("starforge-razortailSwimming")
   stateData.roarPlayed = false
 end

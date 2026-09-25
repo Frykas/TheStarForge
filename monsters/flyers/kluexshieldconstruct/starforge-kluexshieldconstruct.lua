@@ -101,7 +101,7 @@ function activeState(targetId)
   end
   
   local stunned = false
-  if status.isResource("stunned") and status.resource("stunned") > 0.5 then
+  if status.isResource("stunned") and status.resource("stunned") ~= 0 then
 	  stunned = true
   end
   while #self.nearbyAllies > 0 do
