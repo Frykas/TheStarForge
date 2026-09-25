@@ -224,10 +224,10 @@
           "baseValue" : 1.0
         },
         "knockbackbackthreshold" : {
-          "baseValue" : 9
+          "baseValue" : 11
         },
         "grit" : {
-          "baseValue" : 0
+          "baseValue" : 0.5
         }
     },
 	

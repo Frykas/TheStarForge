@@ -1,4 +1,26 @@
 [
+  //DRAGON
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-unboundautoshotgun",
+    "value": {
+      "bananar": {
+        "skinName" : "Slagtooth",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "So hot its heat shielding can barely contain the raw heat spitting from its barrel.",
+          "shortdescription": "Slagtooth",
+          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundautoshotgun/skins/starforge-slagtooth.png:idle",
+          "animationParts": {
+            "middle": "/items/active/weapons/ranged/unbound/unboundautoshotgun/skins/starforge-slagtooth.png",
+            "middleFullbright" : "/items/active/weapons/ranged/unbound/unboundautoshotgun/skins/starforge-slagtoothfullbright.png"
+          }
+        }
+      }
+    }
+  },
   //VALIANT
   {
     "op": "add",

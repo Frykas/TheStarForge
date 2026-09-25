@@ -114,7 +114,7 @@
             "color" : [58, 207, 254, 255],
             "finalVelocity" : [0, 0],
             "timeToLive" : 0.2,
-            "light" : [74, 0, 160]
+            "light" : [29, 103, 127]
           },
           "repeat" : true,
           "action" : "particle"
