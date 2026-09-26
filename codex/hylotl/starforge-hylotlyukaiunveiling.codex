@@ -1,0 +1,25 @@
+{
+  "id" : "starforge-hylotlyukaiunveiling",
+  "species" : "hylotl",
+  "title" : "Yukai - Unveiling",
+  "description" : "A bone cylinder, with text carved on it. It is written in Old Hylotl, a language mostly lost to time.",
+  "icon" : "starforge-yukaicylinder.png",
+  "contentPages" : [
+
+"^gray;OLD HYLOTL DETECTED - SAIL IS ONLY CAPABLE OF PARTIAL TRANSLATION^reset;
+
+The great rite draws near. Stars placed. Essence gathered. They wait.
+Impatience. THEIR VOICES URGE. Hurry. Hurry.
+THE VEIL IS THIN. Thinner.
+Thinner than those before us.
+We hear them now. Not whispers. They shout. They are impatient. The rite draws near.
+THE TIDE IS RISING
+Near.
+Near."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "uncommon",
+    "price" : 25
+  }
+}
