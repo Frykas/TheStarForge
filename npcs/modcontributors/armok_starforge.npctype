@@ -74,10 +74,9 @@
             "You may wonder why I call myself \"Overlord\". In truth I have no domain to rule anymore, but it is a title I hold nevertheless.",
             "I feel a certain kinship with the Shadow people, yet I do not understand why...",
             "I always enjoy reading a good codex, as do I enjoy writing them.",
-            "The annihilation of Earth was a terrible tragedy that no one could have predicted. Naturally the ^red;Occasus scum^reset; are capitalizing on it.",
+            "The annihilation of Earth was a terrible tragedy that no one could have predicted. Naturally the ^purple;Occasus scum^reset; are capitalizing on it.",
 	    "I wish you a good day, mortal.",
 	    "I am not the only Loremaster out there, have you heard of my colleague Ellie?",
-	    "I have heard rumors of Moontants that have retained their Humanity, I wonder if they are true?",
 	    "The Thalasso crew treat me as a friend here, I hope they do the same to you.",
 	    "The galaxy is vast and full of secrets, I seek to unearth them.",
 	    "^#FFBC47;Lord Katahel^reset; could have made for a good adversary for me, but perhaps it is best that Mariko dealt with him...",
@@ -90,13 +89,17 @@
 	    "Tread carefully on Withered planets. Even my armor could not repair itself fast enough against the withering blight...",
 	    "I have been mistaken at times for a Glitch or Shadow wearing armor, I am neither. I merely am my armor.",
 	    "I have heard rumors of a prototype anti-Unbound powersuit codenamed \"^#80F4FF;WARMONGER^reset;\".",
-	    "I wonder... What would happen if I ^#FFB2B2;exalted^reset; myself?",
+	    "I wonder... What would happen if I ^#FFE998;exalted^reset; myself?",
 	    "Have you met Ganransu yet? He is a fine and hardworking individual despite his sleep deprivation",
-	    "I hope you have not had the misfortune of receiving ^#2d2d2d;a certain ring^reset;...",
+	    //"I hope you have not had the misfortune of receiving ^#2d2d2d;a certain ring^reset;...",
 	    "I am... neutral to Testament.",
 	    "Whatever you do, do not try drinking ^#2d2d2d;Essentia Obscura^reset;.",
 	    "I have came across statues of myself in the bowels of certain planets. The fools...",
-	    "Supposedly, there is an off-the-books Peacekeeper codenamed the ^#ff00ff;Immolator^reset;, specialized in fire based weaponry."
+	    "Supposedly, there is an off-the-books Peacekeeper codenamed the ^#ff00ff;Immolator^reset;, specialized in fire based weaponry.",
+"According to rumor, one can find ruins of the lost \"^orange;K'Rakoth^reset;\" civilization in the depths of certain oceanic planets.",
+"I have heard that somewhere out there is an exploration fleet comprised of Protectorate Envoys. I wonder if they are aware that they are the sole ^orange;remnants of the Protectorate^reset; now...",
+"You have little idea of just how horrific ^orange;Project Parasprite^reset; truly was...",
+"All hail Nii'lah the Darkest Void."
           ]
         }
       }
