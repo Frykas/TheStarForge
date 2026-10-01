@@ -1,0 +1,52 @@
+{
+    "type": "starforge-warmongerprisoner",
+    "baseType": "hostile",
+ 
+    "dropPools": [],
+ 
+    "identity" : {
+     "species" : "apex"
+	 },
+ 
+    "scriptConfig" : {
+        "dialog": {
+            "attack": {
+                "default": {
+                    "default": [
+                        "You're mine to slay!"
+                    ]
+                },
+                "apex": {
+                    "default": [
+                        "Die like the worm you are!",
+                        "I will crush you!",
+                        "Burn!"
+                    ]
+                }
+            }
+        }
+    },
+	
+    "items": {
+        "override": [
+            [0, [{
+                "chest": [{
+				    "name" : "workoutchest", "parameters" : { "colorIndex" : 5 } 
+                }],
+                "legs": [{
+                    "name": "starforge-warmongerpants"
+                }],
+                "primary": [
+                    "starforge-fever", "starforge-frenzy"
+                ]
+            }]]
+        ]
+    },
+  
+  "statusControllerSettings" : {
+    "primaryScriptSources" : [
+      "/stats/starforge-npc_primary.lua",
+      "/scripts/vec2.lua"
+    ]
+  }
+}

@@ -14178,8 +14178,8 @@
                  "name":"",
                  "properties":
                     {
-                     "npc":"hylotl",
-                     "typeName":"starforge-yukaiashenwitch"
+                     "npc":"apex",
+                     "typeName":"starforge-warmongerprisoner"
                     },
                  "propertytypes":
                     {
@@ -14199,8 +14199,8 @@
                  "name":"",
                  "properties":
                     {
-                     "npc":"hylotl",
-                     "typeName":"starforge-yukaiwitch"
+                     "npc":"apex",
+                     "typeName":"starforge-warmongerprisoner"
                     },
                  "propertytypes":
                     {
@@ -14626,6 +14626,27 @@
                  "width":8,
                  "x":3944,
                  "y":1288
+                }, 
+                {
+                 "height":8,
+                 "id":2680,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"apex",
+                     "typeName":"starforge-warmongerprisoner"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":8488,
+                 "y":2288
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -14634,7 +14655,7 @@
          "y":0
         }],
  "nextlayerid":8,
- "nextobjectid":2680,
+ "nextobjectid":2681,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

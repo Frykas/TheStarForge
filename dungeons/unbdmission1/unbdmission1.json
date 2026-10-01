@@ -8893,18 +8893,6 @@
                  "y":1208
                 }, 
                 {
-                 "gid":72,
-                 "height":20,
-                 "id":1768,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":50,
-                 "x":12792,
-                 "y":1512
-                }, 
-                {
                  "gid":76,
                  "height":40,
                  "id":1769,
@@ -9006,7 +8994,7 @@
                  "visible":true,
                  "width":24,
                  "x":12800,
-                 "y":1480
+                 "y":1472
                 }, 
                 {
                  "gid":114,
@@ -9134,6 +9122,42 @@
                  "width":8,
                  "x":12048,
                  "y":1632
+                }, 
+                {
+                 "gid":63,
+                 "height":8,
+                 "id":1796,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":12,
+                 "x":12848,
+                 "y":1496
+                }, 
+                {
+                 "gid":64,
+                 "height":8,
+                 "id":1797,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":12,
+                 "x":12960,
+                 "y":1496
+                }, 
+                {
+                 "gid":33,
+                 "height":39,
+                 "id":1798,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":12800,
+                 "y":1512
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -17571,6 +17595,27 @@
                  "width":8,
                  "x":12704,
                  "y":1008
+                }, 
+                {
+                 "height":8,
+                 "id":1793,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"glitch",
+                     "typeName":"starforge-unbtjanitor"
+                    },
+                 "propertytypes":
+                    {
+                     "npc":"string",
+                     "typeName":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":13272,
+                 "y":1496
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -17779,10 +17824,10 @@
          "y":0
         }],
  "nextlayerid":9,
- "nextobjectid":1793,
+ "nextobjectid":1799,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.0",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
