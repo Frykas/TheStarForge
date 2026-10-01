@@ -1,57 +1,100 @@
 {
-  "type" : "starforge-crewmembermaroonedunboundpilot",
-  "baseType" : "crewmember",
+  "type": "starforge-crewmembermaroonedunboundpilot",
+  "baseType": "crewmember",
 
-  // This npctype is a template. Do not use it for spawning NPCs directly
+  "scripts": [ 
+    "/npcs/scripts/mik-veterannpcmain.lua"
+  ],
+  "initialScriptDelta": 1,
 
-  "scriptConfig" : {
-	  "behavior" : "mik-hostilenpc",
-    "behaviorConfig" : {
-      "emptyHands" : false
+  "scriptConfig": {
+    "behavior": "mik-hostilenpc",
+    "behaviorConfig": {
+      "emptyHands": false
     },
 
-    "crew" : {
-      "role" : {
-        "type" : "starforge-maroonedunboundpilot",
-        "name" : "Ace",
-        "field" : "Unbound",
-        "uniformColorIndex" : 1
+    "crew": {
+      "role": {
+        "type": "starforge-maroonedunboundpilot",
+        "name": "Ace",
+        "field": "Unbound",
+        "uniformColorIndex": 1
       },
 
-      "ranks" : [
+      "ranks": [
         "<field> <role>",
         "<field> Scout",
         "<field> Ace",
         "<field> Pilot"
       ],
-	  
-	  "defaultUniform" : {
-      "head" : "starforge-unboundpilothead",
-      "chest" : "starforge-unboundpilotchest",
-      "legs" : "starforge-unboundpilotpants"
-	  },
-	  
-	  "uniformSlots" : []
+
+      "defaultUniform": {
+        "head": "starforge-unboundpilothead",
+        "chest": "starforge-unboundpilotchest",
+        "legs": "starforge-unboundpilotpants"
+      },
+
+      "uniformSlots": []
     },
 
-    "dialog" : {
-      "crewmember" : {
-        "offer" : {
-          "apex" : {
-            "default" : [
-              "Big monke.",
-              "Oo oo aa aa.",
-              "Banana hehe."
+    "dialog": {
+      "converse": {
+        "apex": {
+          "default": [
+            "All systems nominal, captain.",
+            "Ready to deploy whenever you are.",
+            "My weapon is loaded and ready."
+          ]
+        }
+      },
+      "crewmember": {
+        "offer": {
+          "apex": {
+            "default": [
+              "Impressive combat skills. Requesting permission to join your crew!",
+              "You fight well. I need a new squad."
             ]
           }
         },
-		    "roleDescription" : {
-          "apex" : {
-            "default" : [
+        "roleDescription": {
+          "apex": {
+            "default": [
               "I will fight anything and anyone. I have no more fear.",
               "Point me to a target and I will kill it.",
               "Death will come for your enemies.",
               "Your enemies will die by my hand."
+            ]
+          }
+        },
+        "respawned": {
+          "apex": {
+            "default": [
+              "Re-engaged and ready for action.",
+              "I return to fight once more."
+            ]
+          }
+        },
+        "unfollow": {
+          "apex": {
+            "default": [
+              "Holding position here.",
+              "Standing guard."
+            ]
+          }
+        },
+        "follow": {
+          "apex": {
+            "default": [
+              "Moving out.",
+              "Lead on, captain!"
+            ]
+          }
+        },
+        "cantReach": {
+          "apex": {
+            "default": [
+              "Target area out of range! Wait up!",
+              "I can't reach you up there!"
             ]
           }
         }
@@ -59,22 +102,13 @@
     }
   },
 
-
   "items": {
     "override": [
       [0, [{
-          "head": [
-            "starforge-unboundpilothead"
-          ],
-          "chest": [
-            "starforge-unboundpilotchest"
-          ],
-          "legs": [
-            "starforge-unboundpilotpants"
-          ],
-          "primary": [
-            "starforge-unboundricochetrevolver"
-          ]
+        "head": [ "starforge-unboundpilothead" ],
+        "chest": [ "starforge-unboundpilotchest" ],
+        "legs": [ "starforge-unboundpilotpants" ],
+        "primary": [ "starforge-unboundricochetrevolver" ]
       }]]
     ]
   }

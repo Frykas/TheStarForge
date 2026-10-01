@@ -149,7 +149,6 @@ end
 -- Engine callback - called on each update
 -- Update frequencey is dependent on update delta
 function update(dt)
-  --world.debugText("Health: %s/%s\nEnergy: %s/%s\nPower: %s\nArmor: %s",status.resource("health"),status.resourceMax("health"),status.resource("energy"),status.resourceMax("energy"),status.stat("powerMultiplier")*100,status.stat("protection"),{mcontroller.position()[1],mcontroller.position()[2]+5},"white")
   self.stuckCheckTimer = math.max(0, self.stuckCheckTimer - dt)
   if self.stuckCheckTimer == 0 then
     checkStuck()
@@ -186,7 +185,8 @@ function update(dt)
       airJumpModifier = self.scalingMovementModifier
     })
   end
-  self.ranged = root.itemHasTag(self.primary.name, "ranged")
+
+  -- Reset per-frame behavior flags
   self.tradingEnabled = false
   self.setFacingDirection = false
   self.primaryFire = false
@@ -207,21 +207,14 @@ function update(dt)
   end
   BGroup:updateGroups()
 
-  if self.primaryFire then
-    self.shouldPrimary = not self.shouldPrimary
-  else
-    self.shouldPrimary = false
-  end
-  if self.OORChargePrimary or (self.primaryCharge > 0) then 
-    self.shouldPrimary = true
-  end
-  if self.altFire then
-    self.shouldAlt = not self.shouldAlt
-  else
-    self.shouldAlt = false
-  end
-  if self.OORChargeAlt or (self.altCharge > 0) then 
-    self.shouldAlt = true
+  self.shouldPrimary = self.primaryFire or self.OORChargePrimary or (self.primaryCharge > 0)
+  self.shouldAlt = self.altFire or self.OORChargeAlt or (self.altCharge > 0)
+
+  -- Lock aim vector when not actively attacking to override running animation bob
+  if not self.shouldPrimary and not self.shouldAlt and not self.controlAggressive then
+    local pos = mcontroller.position()
+    local facing = mcontroller.facingDirection()
+    npc.setAimPosition({pos[1] + facing, pos[2]})
   end
 
   if self.shouldPrimary and not self.shouldAlt then
@@ -234,6 +227,7 @@ function update(dt)
   else
     npc.endAltFire()
   end
+
   if self.controlAggressive then
     npc.setAggressive(true)
   else
@@ -256,7 +250,6 @@ function update(dt)
 
   self.die = (self.shouldDie and not status.resourcePositive("health")) or self.forceDie
 end
-
 -- Engine callback - called on interact
 function interact(args)
   local recruitAction = recruitable.interact(args.sourceId)

@@ -134,7 +134,7 @@
     "statusEffects" : [ ]
   },
  
-  "innateStatusEffects" : ["starforge-vigilancesynergy", "starforge-veteraneffects", {"stat":"maxHealth","amount":3000}, {"stat":"powerMultiplier","amount":1.7}, {"stat":"maxEnergy","amount":180}],
+  "innateStatusEffects" : ["starforge-vigilancesynergy", "starforge-veteraneffects"],
 	
   "items": {
     "override": [
@@ -148,13 +148,13 @@
         "legs": [{
           "name": "starforge-katahelknightpants"
         }],
-		"back": [{ 
+		    "back": [{ 
 				    "name": "starforge-katahelbackfalse" 
 				}],
         "primary": [
           "starforge-vigilance"
         ],
-				 "alt" : [ "starforge-katahelimperviumshield" ]
+				"alt" : [ "starforge-katahelimperviumshield" ]
       }]]
     ]
   },
@@ -192,16 +192,16 @@
     "primaryScriptDelta" : 5,
       "stats" : {
         "maxHealth" : {
-          "baseValue" : 100.0
+          "baseValue" : 3000.0
         },
         "maxEnergy" : {
-          "baseValue" : 1.0
+          "baseValue" : 200.0
         },
         "powerMultiplier" : {
-          "baseValue" : 0.01
+          "baseValue" : 1.67
         },
         "protection" : {
-          "baseValue" : 0.6
+          "baseValue" : 0.65
         },
         "healthRegen" : {
           "baseValue" : 0.0
@@ -216,7 +216,7 @@
           "baseValue" : 0.5
         },
         "fireStatusImmunity" : {
-          "baseValue" : 0.0
+          "baseValue" : 1.0
         },
         "iceResistance" : {
           "baseValue" : 0.5
@@ -237,10 +237,10 @@
           "baseValue" : 1.0
         },
         "knockbackbackthreshold" : {
-          "baseValue" : 9
+          "baseValue" : 11
         },
         "grit" : {
-          "baseValue" : 0
+          "baseValue" : 0.5
         }
     },
 	

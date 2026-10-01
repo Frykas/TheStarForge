@@ -1,38 +1,37 @@
 {
-    "type": "starforge-maroonedunboundpilot",
-    "baseType": "hostile",
-	
-	  "scripts" : ["/npcs/bmain.lua"],
-    "initialScriptDelta" : 5,
- 
-    "dropPools": [],
-	
-	  "identity" : {
-      "species" : "apex"
-    },
-	
-  "scriptConfig" : {	
-	  "behavior" : "mik-hostilenpc",
-	  "aggressive" : true,
-    "interactive" : false,
-	
-	  "pathing" : {
-      "forceWalkingBackwards" : false,
-      "canOpenDoors" : true
-    },
-	
-	  "behaviorConfig" : {
-      "friendlyNpcTypes" : ["starforge-crewmembermaroonedunboundpilot"],
+  "type": "starforge-maroonedunboundpilot",
+  "baseType": "hostile",
 
-      "rangedAimTime" : 0.9,
-      "rangedWindupTime" : 0.1,
-      "rangedSwapTime" : 1,
-	    "leapWindup" : 0.15,
-      "leapCooldown": 50,
-	    "leapChance" : 0.01,
-      "meleeSwapTime" : 1.5
+  "scripts": [ "/npcs/scripts/mik-veterannpcmain.lua" ],
+  "initialScriptDelta": 5,
+
+  "dropPools": [],
+
+  "identity": {
+    "species": "apex"
+  },
+
+  "scriptConfig": {
+    "behavior": "mik-hostilenpc",
+    "aggressive": true,
+    "interactive": false,
+
+    "pathing": {
+      "forceWalkingBackwards": false,
+      "canOpenDoors": true
     },
-	
+
+    "behaviorConfig": {
+      "friendlyNpcTypes": [ "starforge-crewmembermaroonedunboundpilot" ],
+      "rangedAimTime": 0.9,
+      "rangedWindupTime": 0.1,
+      "rangedSwapTime": 1,
+      "leapWindup": 0.15,
+      "leapCooldown": 50,
+      "leapChance": 0.01,
+      "meleeSwapTime": 1.5
+    },
+
     "dialog": {
       "attack": {
         "default": {
@@ -53,41 +52,33 @@
       }
     }
   },
- 
+
   "items": {
     "override": [
       [0, [{
-          "head": [
-            "starforge-unboundpilothead"
-          ],
-          "chest": [
-            "starforge-unboundpilotchest"
-          ],
-          "legs": [
-            "starforge-unboundpilotpants"
-          ],
-          "primary": [
-            "starforge-unboundricochetrevolver"
-          ]
+        "head": [ "starforge-unboundpilothead" ],
+        "chest": [ "starforge-unboundpilotchest" ],
+        "legs": [ "starforge-unboundpilotpants" ],
+        "primary": [ "starforge-unboundricochetrevolver" ]
       }]]
     ]
   },
-  
-  "statusControllerSettings" : {
-    "primaryScriptSources" : [
+
+  "statusControllerSettings": {
+    "primaryScriptSources": [
       "/stats/starforge-npc_primary.lua",
       "/scripts/vec2.lua"
     ],
 
-    "stats" : {
-      "maxHealth" : {
-        "baseValue" : 250.0
+    "stats": {
+      "maxHealth": { 
+        "baseValue": 250.0 
       },
-      "powerMultiplier" : {
-        "baseValue" : 1.05
+      "powerMultiplier": { 
+        "baseValue": 1.05 
       },
-      "maxEnergy" : {
-        "baseValue" : 150
+      "maxEnergy": { 
+        "baseValue": 150 
       }
     }
   }

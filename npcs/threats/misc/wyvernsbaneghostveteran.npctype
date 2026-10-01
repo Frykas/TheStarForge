@@ -21,7 +21,7 @@
     
     "behavior" : "mik-hostilenpc",
     
-    "bandageTime" : 1,
+    //"bandageTime" : 1,
 
     "aggressive" : true,
     "interactive" : false,
@@ -239,12 +239,12 @@
           "baseValue" : 1.0
         },
         "knockbackbackthreshold" : {
-          "baseValue" : 9
+          "baseValue" : 11
         },
         "grit" : {
-          "baseValue" : 0
+          "baseValue" : 0.5
         },
-		"starforge-witherWeatherStatusImmunity" : {
+		    "starforge-witherWeatherStatusImmunity" : {
           "baseValue" : 1.0
         }
     },
