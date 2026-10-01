@@ -28,29 +28,29 @@
     }
   },
   {
-  "op": "add",
-  "path": "/starforge-praetorianmission",
-  "value": {
-    "primaryDungeon": "starforge-praetorianmission",
-    "threatLevel": 7,
-    "biome": "asteroids",
-    "gravity": 80,
-    "worldSize": [
-      2000,
-      2000
-    ],
-    "dungeonBaseHeight": 1120,
-    "dungeonSurfaceHeight": 1070,
-    "ambientLightLevel": [
-      128,
-      128,
-      128
-    ],
-    "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
-    "musicTrack": ""
-  }
- },
-   {
+    "op": "add",
+    "path": "/starforge-praetorianmission",
+    "value": {
+      "primaryDungeon": "starforge-praetorianmission",
+      "threatLevel": 7,
+      "biome": "asteroids",
+      "gravity": 80,
+      "worldSize": [
+        2000,
+        2000
+      ],
+      "dungeonBaseHeight": 1120,
+      "dungeonSurfaceHeight": 1070,
+      "ambientLightLevel": [
+        128,
+        128,
+        128
+      ],
+      "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
+      "musicTrack": "/music/kyumay-guwata.ogg"
+    }
+  },
+  {
     "op": "add",
     "path": "/starforge-katahelmission",
     "value": {
@@ -69,11 +69,11 @@
         128,
         128
       ],
-    "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
-    "musicTrack": "/music/loib-unshackled_unbound.ogg"
+      "ambientNoises": "/sfx/others/unboundmission1ambience.ogg",
+      "musicTrack": "/music/astrefone-the_heresy_of_life.ogg"
     }
   },
-   {
+  {
     "op": "add",
     "path": "/starforge-tide-cephalowormmission",
     "value": {

@@ -50,6 +50,7 @@
 
     "phases" : [
       {
+        "enterPhase" : "razortailPhaseShift",
         "skills" : [ "razortailWalk", "razortailIdle", "razortailFlipSlash", "razortailMeleeCombo" ]
       },
       {

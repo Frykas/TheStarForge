@@ -4,7 +4,7 @@
 
   "persistent" : true,
 	
-  "scripts" : ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+  "scripts" : ["/npcs/scripts/mik-veterannpcmain.lua", "/npcs/scripts/starforge-npcutilities.lua"],
   "initialScriptDelta" : 5,
  
   "dropPools": ["starforge-kluexwarpriestdrops"],

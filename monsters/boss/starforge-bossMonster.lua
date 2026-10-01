@@ -85,10 +85,10 @@ function stunBoss(duration, endFunc)
 end
 
 function startFight()
-  playSound("fightStart")
   monster.setDamageBar("Special")
   monster.setAggressive(true)
-  setBattleMusicEnabled(config.getParameter("music"))
+  createMusicStagehand(config.getParameter("music"))
+  --setBattleMusicEnabled(config.getParameter("music"))
 end
 
 function playSound(sound, pitchVariance)
@@ -288,7 +288,7 @@ function update(dt)
     self.state.update(dt)
 
     cullMusicStagehand()
-    setBattleMusicEnabled(false)
+    --setBattleMusicEnabled(false)
   else
     trackTargets(self.keepTargetInSight, self.queryTargetDistance, self.trackTargetDistance, self.switchTargetDistance)
 
@@ -297,7 +297,7 @@ function update(dt)
         _ENV[skillName].onUpdate(dt)
       end
     end
-    setBattleMusicEnabled(config.getParameter("musicStagehands"))
+    --setBattleMusicEnabled(config.getParameter("musicStagehands"))
     monster.setDamageBar("Special")
     monster.setAggressive(true)
 
@@ -319,11 +319,11 @@ function update(dt)
         self.lastPhase = nil
         setPhaseStates(self.phases)
         status.setResource("health", status.stat("maxHealth"))
+        cullMusicStagehand()
 
         if bossReset then bossReset() end
         monster.setDamageBar("None")
-        cullMusicStagehand()
-        setBattleMusicEnabled(false)
+        --setBattleMusicEnabled(false)
         monster.setAggressive(false)
       end
 
@@ -334,7 +334,7 @@ function update(dt)
       end
 
       cullMusicStagehand()
-      setBattleMusicEnabled(false)
+      --setBattleMusicEnabled(false)
     end
 
     self.hadTarget = hasTarget()
@@ -609,8 +609,9 @@ end
 
 function cullMusicStagehand(track)
   for stagehand, stagehandTrack in pairs(self.musicStagehands) do
-    if not track or stagehandTrack == track then
+    if (not track) or (stagehandTrack == track) then
       world.sendEntityMessage(stagehand, "killStagehand")
+      self.musicStagehands[stagehand] = nil
     end
   end
 end
@@ -623,17 +624,17 @@ function createMusicStagehand(track, timeToLive)
     end
   end
   if valid then
-    local stagehand = world.spawnStagehand(mcontroller.position(), "nebo_improvedbossmusic", {
-      broadcastArea = {-self.trackTargetDistance, -self.trackTargetDistance, self.trackTargetDistance, self.trackTargetDistance},
+    local stagehand = world.spawnStagehand(self.spawnPosition, "starforge-bossmusic", {
+      broadcastArea = config.getParameter("musicBounds", {-self.trackTargetDistance, -self.trackTargetDistance, self.trackTargetDistance, self.trackTargetDistance}),
       hostEntity = entity.id(),
       currentTrack = track,
       timeToLive = timeToLive
     })
-    table.insert(self.musicStagehands, stagehand)
+    self.musicStagehands[stagehand] = track
   end
 end
 
-function setBattleMusicEnabled(enabled)
+--[[function setBattleMusicEnabled(enabled)
   if self.musicEnabled ~= enabled then
     local musicStagehands = config.getParameter("musicStagehands", {})
     for _, stagehand in pairs(musicStagehands) do
@@ -645,4 +646,4 @@ function setBattleMusicEnabled(enabled)
       end
     end
   end
-end
+end]]

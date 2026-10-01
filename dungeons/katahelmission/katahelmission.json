@@ -7520,7 +7520,7 @@
                  "y":320
                 }, 
                 {
-                 "height":240.5,
+                 "height":240,
                  "id":3245,
                  "name":"",
                  "properties":
@@ -7536,9 +7536,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":636,
-                 "x":9054,
-                 "y":831.5
+                 "width":632,
+                 "x":9056,
+                 "y":832
                 }, 
                 {
                  "height":8,

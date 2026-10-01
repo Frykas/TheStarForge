@@ -4,30 +4,31 @@
 
   "persistent" : true,
 	
-  "scripts" : ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+  "scripts" : ["/npcs/scripts/mik-veterannpcmain.lua", "/npcs/scripts/starforge-npcutilities.lua"],
   "initialScriptDelta" : 5,
  
   "dropPools": [],
  
  
   "scriptConfig" : {
-	"bossName" : "Unbound Vanguard",
-	
-	"behavior" : "mik-hostilenpc",
-	
-	"bandageTime" : 60,
+    "bossName" : "Unbound Vanguard",
+    "damageBarActive" : true,
+    
+    "behavior" : "mik-hostilenpc",
+    
+    "bandageTime" : 60,
 
-	"aggressive" : true,
+    "aggressive" : true,
 
-	"behaviorConfig" : {
-	  "leapWindup" : 0.15,
-	  "leapCooldown": 8,
-	  "rangedAimTime" : 0.1,
-	  "rangedWindupTime" : 0.1,
-	  "leapChance" : 0.95,
-	  "rangedSwapTime" : 1,
-	  "meleeSwapTime" : 1.5
-	},
+    "behaviorConfig" : {
+      "leapWindup" : 0.15,
+      "leapCooldown": 8,
+      "rangedAimTime" : 0.1,
+      "rangedWindupTime" : 0.1,
+      "leapChance" : 0.95,
+      "rangedSwapTime" : 1,
+      "meleeSwapTime" : 1.5
+    },
 
     "chatSounds" : {
       "default" : {
@@ -146,15 +147,15 @@
         "legs": [{
           "name": "starforge-unboundvanguardpants"
         }],
-		"back": [{ 
-				    "name": "starforge-unboundjumpkit" 
+		    "back": [{ 
+          "name": "starforge-unboundjumpkit" 
 				}],
         "primary": [
           "starforge-unboundsmartpistol", "starforge-unboundsmartar", "starforge-unboundsmartshotgun", "starforge-unboundsmartsniper"
         ],
         "sheathedprimary" : [
-		  "starforge-infusedbroadsword" 
-		]
+          "starforge-infusedbroadsword" 
+        ]
       }]]
     ]
   },
@@ -212,30 +213,30 @@
       "knockbackStunTime" : {
         "baseValue" : 1
       },
-	  "fireResistance" : {
-          "baseValue" : 0.5
-        },
-        "fireStatusImmunity" : {
-          "baseValue" : 0.0
-        },
-        "iceResistance" : {
-          "baseValue" : 0.5
-        },
-        "iceStatusImmunity" : {
-          "baseValue" : 0.0
-        },
-        "electricResistance" : {
-          "baseValue" : 0.5
-        },
-        "electricStatusImmunity" : {
-          "baseValue" : 0.0
-        },
-        "poisonResistance" : {
-          "baseValue" : 0.5
-        },
-        "poisonStatusImmunity" : {
-          "baseValue" : 0.0
-        },
+      "fireResistance" : {
+        "baseValue" : 0.5
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 0.0
+      },
+      "iceResistance" : {
+        "baseValue" : 0.5
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 0.0
+      },
+      "electricResistance" : {
+        "baseValue" : 0.5
+      },
+      "electricStatusImmunity" : {
+        "baseValue" : 0.0
+      },
+      "poisonResistance" : {
+        "baseValue" : 0.5
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 0.0
+      },
       "grit" : {
         "baseValue" : -1
       }

@@ -11,7 +11,8 @@ require "/scripts/statusText.lua"
 require "/scripts/tenant.lua"
 require "/scripts/companions/recruitable.lua"
 
--- Mik made this stuff, thanks to him!
+-- Made by Mik/Mylie
+-- Edited by Nebulox
 
 -- Engine callback - called on initialization of entity
 function init()

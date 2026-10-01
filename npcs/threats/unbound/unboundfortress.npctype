@@ -2,13 +2,13 @@
     "type": "starforge-unboundfortress1",
     "baseType": "hostile",
  
-    "scripts" : ["/npcs/bmain.lua"],
+    "scripts" : ["/npcs/scripts/mik-veterannpcmain.lua"],
     "initialScriptDelta" : 5,
  
     "dropPools": ["unboundFortress1DeathTreasure"],
  
     "identity" : {
-    "species" : "apex"
+        "species" : "apex"
 	},
  
     "scriptConfig" : {

@@ -5,7 +5,7 @@
   "category" : "Quest Item",
   "inventoryIcon" : "decapitatorpart.png",
   "description" : "Old, broken parts of a beheading blade. It is of Glitch origin.",
-  "shortdescription" : "^orange;Beheading blade parts^white;",
+  "shortdescription" : "^orange;Blade Heating Components^white;",
   "itemTags" : [ "questitem" ],
   "pickupQuestTemplates" : [ "starforge-decapitatorswordquest" ]
 }

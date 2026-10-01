@@ -35,11 +35,18 @@ function razortailPhaseShift.update(dt, stateData)
     stateData.timer = stateData.timer - dt
     if stateData.timer <= 0 then
       status.clearPersistentEffects("starforge-razortailPhaseShift")
+      if currentPhase() == 1 and not stateData.fightStarted then
+        stateData.fightStarted = true
+        startFight()
+      end
       return true
     end
   end
 end
 
 function razortailPhaseShift.leavingState(stateData)
+  if currentPhase() == 1 and not stateData.fightStarted then
+    startFight()
+  end
   status.clearPersistentEffects("starforge-razortailPhaseShift")
 end

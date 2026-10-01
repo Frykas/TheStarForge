@@ -4,18 +4,20 @@
 
   "persistent" : true,
 	
-  "scripts" : ["/npcs/bmain.lua", "/npcs/scripts/npchealthbar.lua"],
+  "scripts" : ["/npcs/scripts/mik-veterannpcmain.lua", "/npcs/scripts/starforge-npcutilities.lua"],
   "initialScriptDelta" : 5,
  
   "dropPools": [],
  
- 
   "scriptConfig" : {
     "bossName" : "Last Vigil",
-    
+
+    "music" : [ "/music/astrefone-the_piety_of_machine.ogg" ],
+    "damageBarActive" : true,
+
     "behavior" : "mik-hostilenpc",
     
-    "bandageTime" : 1,
+    //"bandageTime" : 1,
 
     "aggressive" : true,
     "interactive" : false,

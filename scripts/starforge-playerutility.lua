@@ -63,9 +63,9 @@ end
 function updateArmourFunctions()
   for _, armourType in ipairs(self.validArmourSlots) do
     armourName = player.equippedItem(armourType)
-	for _, functionCall in ipairs(nebArmourFunctions or {}) do
-	  functionCall()
-	end
+    for _, functionCall in ipairs(nebArmourFunctions or {}) do
+      functionCall()
+    end
   end
 end
 

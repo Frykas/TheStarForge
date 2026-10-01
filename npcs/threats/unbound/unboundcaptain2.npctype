@@ -1,12 +1,15 @@
 {
     "type": "starforge-unboundcaptain2",
     "baseType": "hostile",
+	
+    "scripts" : ["/npcs/scripts/mik-veterannpcmain.lua"],
+    "initialScriptDelta" : 5,
  
     "dropPools": ["unboundCaptain2DeathTreasure"],
  
     "identity" : {
-     "species" : "apex"
-	 },
+        "species" : "apex"
+    },
  
     "scriptConfig" : {
 	
