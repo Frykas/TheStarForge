@@ -22,14 +22,18 @@ function init()
   self.onlyConsiderSurface = config.getParameter("onlyConsiderSurface", false)
   self.scanFrequency = 5
   self.scanTimer = 0
+
+  self.playerScanRadius = 100
   
   self.timeToExist = config.getParameter("timeToExist")
   reset()
 end
 
 function update(dt)
+  local active = #world.playerQuery(stagehand.position(), self.playerScanRadius)
+
   self.projectileTimer = math.max(0, self.projectileTimer - dt)
-  if self.projectileTimer == 0 then
+  if self.projectileTimer == 0 and active then
 	  spawnProjectile(self.onlyConsiderSurface and self.liquidSurfaceSpaces or self.liquidSpaces)
     self.projectileTimer = math.random() * self.projectileTime[2] - self.projectileTime[1]
   end
@@ -42,7 +46,7 @@ function update(dt)
   end
 
   self.scanTimer = math.max(0, self.scanTimer - dt)
-  if self.scanTimer == 0 then
+  if self.scanTimer == 0 and active then
     reset()
   end
 

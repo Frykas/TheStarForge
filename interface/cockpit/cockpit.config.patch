@@ -95,6 +95,7 @@
       "op": "add", 
       "path": "/displayDungeons/starforge-katahelruinsdungeon", 
       "value" : {
+        "name" : "Ruined Glitch Castle",
         "description" : "Ruined Glitch castle detected. Reading faint traces of Ancient Essence from the structure.",
         "icon" : "/interface/cockpit/dungeons/katahelruinsicon.png" 
       }
@@ -103,6 +104,7 @@
       "op" : "add",
       "path" : "/displayDungeons/starforge-vowvillage", 
       "value" : {
+        "name" : "Overtaken Avian Village",
         "description" : "Avian mining village detected. Recent Unbound invasion reported, no trace of Avian survivors.", 
         "icon" : "/interface/cockpit/dungeons/vowvillageicon.png" 
       }
@@ -111,22 +113,16 @@
       "op" : "add",
       "path" : "/displayDungeons/starforge-furouraltar", 
       "value" : { 
+        "name" : "Yukai Altar",
         "description" : "Strange Hylotls are preparing an obscure ritual on the planet.", 
         "icon" : "/interface/cockpit/dungeons/furouraltaricon.png" 
       }
     },
     { 
       "op" : "add",
-      "path" : "/displayDungeons/starforge-yukaiforgemasterhut", 
-      "value" : {
-        "description" : "A strange Hylotl Forgemaster is living here.", 
-        "icon" : "/interface/cockpit/dungeons/yukaiforgemasterhuticon.png" 
-      }
-    },
-    { 
-      "op" : "add",
       "path" : "/displayDungeons/starforge-unboundvillage", 
       "value" : {
+        "name" : "Unbound Refugee Village",
         "description" : "Multiple traces of Unbound technology identified, most likely a refugee village.", 
         "icon" : "/interface/cockpit/dungeons/unbounddungeonicon.png" 
       }
@@ -135,6 +131,7 @@
       "op" : "add",
       "path" : "/displayDungeons/starforge-yukaifortress", 
       "value" : {
+        "name" : "Yukai Fortress",
         "description" : "Slight traces of a Yukai Hylotl settlement detected. Exercise caution.", 
         "icon" : "/interface/cockpit/dungeons/yukaifortressicon.png" 
       }
@@ -143,6 +140,7 @@
       "op" : "add",
       "path" : "/displayDungeons/starforge-stormcresttemple", 
       "value" : {
+        "name" : "Avian Storm Temple",
         "description" : "Detecting a large floating Avian temple, appears to be heavily guarded.", 
         "icon" : "/interface/cockpit/dungeons/stormcresttempleicon.png" 
       }
@@ -151,6 +149,7 @@
       "op" : "add",
       "path" : "/displayDungeons/starforge-hillofswords", 
       "value" : {
+        "name" : "Hill of Swords",
         "description" : "An anomalous field of swords observed. Explore with caution.", 
         "icon" : "/interface/cockpit/dungeons/hillofswordsicon.png" 
       }
@@ -159,6 +158,7 @@
       "op" : "add",
       "path" : "/displayDungeons/starforge-rimespire", 
       "value" : {
+        "name" : "Rimespire",
         "description" : "A large ice spire identified on the surface. Fire is recommended.", 
         "icon" : "/interface/cockpit/dungeons/rimespireicon.png" 
       }
@@ -167,6 +167,7 @@
       "op" : "add",
       "path" : "/displayDungeons/starforge-locustdojo", 
       "value" : {
+        "name" : "Withered Yukai Temple",
         "description" : "A withered Yukai Hylotl settlement identified with small signatures of abnormal frost.", 
         "icon" : "/interface/cockpit/dungeons/locustdojocastleicon.png" 
       }
@@ -175,7 +176,8 @@
       "op" : "add",
       "path" : "/displayDungeons/starforge-miniknogbunker", 
       "value" : {
-        "description" : "Miniknog lifesigns are detected in an underground bunker. They may be hostile..", 
+        "name" : "Miniknog Bunker",
+        "description" : "Miniknog lifesigns are detected in an underground bunker. They may be hostile.", 
         "icon" : "/interface/cockpit/dungeons/miniknogbunkericon.png" 
       }
     },
