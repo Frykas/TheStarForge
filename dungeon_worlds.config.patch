@@ -59,7 +59,7 @@
       "biome": "forest",
       "gravity": 80,
       "worldSize": [
-        2000,
+        1400,
         2000
       ],
       "dungeonBaseHeight": 1230,

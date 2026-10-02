@@ -17739,7 +17739,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"waveCount\" : 5, \"monsterTypes\" : [], \"npcTypes\" : [ \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundofficer\", \"starforge-unboundheavy\" ], \"npcSpecies\" : [ \"apex\" ], \"spawnRange\" : [20, 0], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"theme\" : \"unbound\"}",
+                     "parameters":"{\"waveCount\" : 3, \"monsterTypes\" : [], \"npcTypes\" : [ \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundsoldier\", \"starforge-unboundofficer\", \"starforge-unboundheavy\" ], \"npcSpecies\" : [ \"apex\" ], \"spawnRange\" : [20, 0], \"delayTime\" : 5, \"enemyCount\" : [ 2, 4 ], \"theme\" : \"unbound\"}",
                      "stagehand":"starforge-waveassault"
                     },
                  "propertytypes":

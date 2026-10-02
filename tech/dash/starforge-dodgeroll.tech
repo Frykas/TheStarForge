@@ -10,7 +10,7 @@
   "rarity" : "Rare",
   "icon" : "/tech/starforge-dodgeroll.png",
 
-  "chipCost" : 8,
+  "chipCost" : 3,
 
   "maximumDoubleTapTime" : 0.25,
   
