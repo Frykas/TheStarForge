@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztmdGtwyAMRdO\/LtN5us5boRtmlBZVkfxQAjbY5WJ8JCv9gNT49oLTbFsQBL3cb6Mz8EGq4+tzfWzfa0tdQwtbqD4BHqEPNlf6pH2rFNbszuKKWm2R\/NN7FqKSn\/MSrPWR+DDPxYNGxxpQ9ZFwlsvMGtHcveqTqHkQNThra63JCGguu7PQ1mdE\/0Zz8RjcOl\/V5EmihmQslyMXz9HjHxqceZyxrXt0628TOXr1QfFPus7ct+VoPf+M\/n+0dQ0zoKHPaJBy0UZbn9H9mzc0+rfRIOWiDer+pvGMLZmH2leg6iNBaw2IGoU+\/+ehaRT6nO+LKKzcv5XmIWl0xgr9W20eukYlvPVvpTxmZAX\/HMyo0Ur6JGbTyEKf1v\/BNfTxGNr9G713DU4unHuMfu+G9l6vRPjH3j89UH9xffj5\/Cfx8gr0vNezACkXFJBqgpQLCkg1QcoFnXQelMLiO0MfbKg+3B4gP0NX6R20kPgw90+t9zu0CN\/9Bo3nn8AOWuddEJx51HNaYzTvJV1bbV+iY7Ww1GfW0FhbEAT9vAEKfP7n",
+         "data":"eJztmWEOwiAMhec\/L+N5vI5X8IY7iiOGpJINWijyKP2SZv6AWfp8ULdtcxynlfttdAY2CHV8H9fH9r3W1NW16AvVx8HD9cHmSp+wb+Xin+yTBodSbZH803oWopKe8xJ66yPxYZqLBY3iGlD1kXCWy8wa0dyt6bOTKHkQNegaLOtjIbT1GdG\/0VwsBrfOVzV5kighGcsl5mI5WvxDgzOPM7a2f6v9bSJHqz4o\/gnXmfu2FK3\/P6Ofj9auYQY09BkNUi7aaOszun+zhkb\/NhqkXLRB3d9anr\/l7nE1D7WvQNVHgtYaEDVyfX7noWnk+pzviyis3L\/l5iFpdMYK\/VtpHrpGOaz1b7k8ZmQF\/0Rm1GglfQKzadRDn9rn4Br6WAzt\/o3euwQnF849Rr93Q3uvl8P9098\/LVB\/cX14fH5JvLwCLe\/1eoCUCwpINUHKBQWkmiDlgk44D3LR4ztdH2yoPtweID1DV+kdtJD4MPVPqfeLWrjv\/oPG\/x+nH7TOuyA486jntMZo3ku6ttK+RMdq0VOfWUNjbY7jtPMB6G\/+5w==",
          "encoding":"base64",
          "height":44,
          "id":2,
@@ -2278,6 +2278,30 @@
                  "width":32,
                  "x":400,
                  "y":184
+                }, 
+                {
+                 "gid":3004,
+                 "height":18,
+                 "id":2965,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":704,
+                 "y":72
+                }, 
+                {
+                 "gid":3004,
+                 "height":18,
+                 "id":2966,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":792,
+                 "y":72
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2333,7 +2357,7 @@
                  "y":320
                 }, 
                 {
-                 "height":16,
+                 "height":30.75,
                  "id":2906,
                  "name":"",
                  "properties":
@@ -2349,9 +2373,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":416,
-                 "x":152,
-                 "y":80
+                 "width":415.75,
+                 "x":152.25,
+                 "y":65.25
                 }, 
                 {
                  "height":16,
@@ -2385,7 +2409,31 @@
          "draworder":"topdown",
          "id":5,
          "name":"wiring - lights",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":2967,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":16,
+                         "y":-56
+                        }, 
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-72,
+                         "y":-56
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":784,
+                 "y":112
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -4571,7 +4619,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":2965,
+ "nextobjectid":2968,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",

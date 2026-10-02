@@ -2,7 +2,7 @@
   "background" : {
     "type" : "background",
     "fileHeader" : "/interface/tooltips/starforge-uniqueheader.png",
-    "fileBody" : "/interface/tooltips/starforge-uniquebody.png",
+    "fileBody" : "/interface/tooltips/starforge-uniquebody-shiny.png",
     "fileFooter" : "/interface/tooltips/starforge-uniquefooter2.png"
   },
 
@@ -81,7 +81,7 @@
   //Custom field, Manufacturer Icon
   "manufacturerIconImage" : {
     "type" : "image",
-    "position" : [7, 90],
+    "position" : [7, 55],
     "file" : "",
     "centered" : false,
     "maxSize" : [16, 16],

@@ -14,7 +14,7 @@
     
     "behavior" : "mik-hostilenpc",
     
-    "bandageTime" : 1,
+    //"bandageTime" : 1,
 
     "aggressive" : true,
     "interactable" : false,

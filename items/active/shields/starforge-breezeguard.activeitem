@@ -105,5 +105,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandshield.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueshield.lua"
 }

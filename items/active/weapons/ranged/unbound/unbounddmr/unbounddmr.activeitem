@@ -50,7 +50,7 @@
   },
   "animationScripts" : [ "/items/active/effects/starforge-enhancedentitymarker.lua" ],
   
-  "baseOffset": [1, 0.25],
+  "baseOffset": [1, 0.375],
   "muzzleOffset": [2.5, 0.125],
 
   "scripts": [ "/items/active/weapons/ranged/starforge-gun.lua" ],

@@ -7,7 +7,7 @@
   "category" : "backwear",
   "description" : "A ceremonial set of wings representing the Avatar of Kluex, its cape fluttering ominously in the wind.",
   "shortdescription" : "Kluex Warpriest Wings",
-  "tooltipKind" : "back",
+  "tooltipKind" : "starforge-backitemexalted",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",

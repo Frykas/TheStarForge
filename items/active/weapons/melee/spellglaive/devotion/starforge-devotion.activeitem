@@ -21,6 +21,15 @@
 
   "learnBlueprintsOnPickup" : [ "starforge-devotion" ],
 
+  "starforgeNpcWeaponData" : {
+    "maxRange" : 6,
+    "minRange" : 2,
+    "maxYRange" : 6,
+    "altChance" : 0.5,
+    "altRange" : 6, 
+    "altCharge" : 2
+  },
+
   "animation" : "/items/active/weapons/melee/spellglaive/spellglaive.animation",
   "animationParts" : {
     "blade" : "starforge-devotion.png",

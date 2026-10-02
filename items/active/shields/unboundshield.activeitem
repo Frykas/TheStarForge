@@ -8,6 +8,7 @@
   "description" : "A compact energy shield used by the Unbound capable of resisting powerful shocks.",
   "shortdescription" : "^#686F5D;UNBD^reset; Energy Shield",
   "tooltipKind" : "starforge-uniqueshield",
+  "manufacturer" : "unboundarmaments",
   "twoHanded" : false,
   "itemTags" : ["shield"],
 
@@ -96,5 +97,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandshield.lua"
+  "builder" : "/items/buildscripts/starforge-builduniqueshield.lua"
 }

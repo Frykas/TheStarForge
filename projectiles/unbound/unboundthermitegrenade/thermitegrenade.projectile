@@ -22,7 +22,7 @@
   "periodicActions" : [  
     {
       "time" : 0.225,
-      "inheritDamageFactor": 0.1,
+      "inheritDamageFactor": 0.25,
       "angleAdjust": 180,
       "fuzzAngle": 100,
       "config" : {
