@@ -28,6 +28,8 @@
   ],
   "scriptDelta" : 5,
   
+  "breakDropPool" : "starforge-resonancedrop",
+  
   "spawnableItem" : "starforge-resonance",
 
   "animation" : "resonancetree.animation",

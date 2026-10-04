@@ -32,6 +32,8 @@
   ],
   "scriptDelta" : 5,
   
+  "breakDropPool" : "starforge-charveildrop",
+  
   "spawnableItem" : "starforge-charveil",
 
   "animation" : "charveilskull.animation",

@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starforge-charveilgrave",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "protected" : false,
+    "anchor" : [ "starforge-charveilgrave" ],
+    "maxRadius" : 1000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100
+  },
+
+  "parts" : [
+    {
+      "name" : "starforge-charveilgrave",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "charveilgrave.json" ]
+    }
+  ]
+}

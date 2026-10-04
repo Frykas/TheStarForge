@@ -169,6 +169,22 @@
       ],
       "allowDuplication" : false
     }]
-  ]    
+  ],
+
+    "starforge-charveildrop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-charveil", 1]}
+      ]
+    }]
+  ],  
+  
+    "starforge-resonancedrop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "starforge-resonance", 1]}
+      ]
+    }]
+  ]
 }
   
