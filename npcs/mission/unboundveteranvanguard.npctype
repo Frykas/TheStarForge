@@ -16,7 +16,7 @@
     
     "behavior" : "mik-hostilenpc",
     
-    "bandageTime" : 60,
+    "bandageTime" : 75,
 
     "aggressive" : true,
 

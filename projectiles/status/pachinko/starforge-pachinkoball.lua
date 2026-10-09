@@ -29,7 +29,7 @@ function update(dt)
     if world.entityExists(self.targetEntity) then
       --world.debugPoint(world.entityPosition(self.targetEntity), "blue")
 	  
-	  local targetPos = world.entityPosition(self.targetEntity)
+	    local targetPos = world.entityPosition(self.targetEntity)
       local toTarget = world.distance(targetPos, mcontroller.position())
       local targetDist = vec2.mag(toTarget)
       if targetDist <= self.pickupRange then
@@ -47,10 +47,10 @@ function update(dt)
       mcontroller.approachVelocity({0, 0}, self.homingForce)
     end
   elseif not self.homingEnabled then
-	self.countdownTimer = math.max(0, self.countdownTimer - dt)
-	if self.countdownTimer == 0 then
-	  self.homingEnabled = true
-	end
+    self.countdownTimer = math.max(0, self.countdownTimer - dt)
+    if self.countdownTimer == 0 then
+      self.homingEnabled = true
+    end
   else
     local players = world.entityQuery(entity.position(), self.searchDistance, {includedTypes = {"player"}, order = "nearest"})
     players = util.filter(shuffled(players), function(entityId)

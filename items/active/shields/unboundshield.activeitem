@@ -1,5 +1,6 @@
 {
   "itemName" : "starforge-unboundshield",
+  "fixedLevel" : false,
   "level" : 6,
   "price" : 720,
   "maxStack" : 1,
@@ -66,8 +67,8 @@
   "minActiveTime" : 0.3,
 
   "forceWalk" : false,
-  "baseShieldHealth" : 125,
-  "cooldownTime" : 0.1,
+  "baseShieldHealth" : 80,
+  "cooldownTime" : 0.6,
 
   "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
   "perfectBlockTime" : 0.2,

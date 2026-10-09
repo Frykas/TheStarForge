@@ -1,5 +1,4 @@
 [
-
   // Planets
   {
     "op": "add",
@@ -36,7 +35,6 @@
   },
   
   // Regions
- 
   {
     "op": "add",
     "path": "/regionTypes/starforge-progenitorwither",
@@ -428,19 +426,21 @@
     ]
   },
   
-  { "op":"add",
+  { 
+    "op":"add",
     "path": "/regionTypes/midnight/subRegion/-", 
     "value": "starforge-tidefragment" 
   },
   
-  { "op":"add",
+  { 
+    "op":"add",
     "path": "/regionTypes/tundra/subRegion/-", 
     "value": "starforge-tidefragment" 
   },
   
-  { "op":"add",
+  { 
+    "op":"add",
     "path": "/regionTypes/savannah/subRegion/-", 
     "value": "starforge-tidefragment" 
   }
- 
 ]

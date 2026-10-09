@@ -1,6 +1,7 @@
 {
   "itemName" : "starforge-katahelimperviumshield",
-  "fixedLevel" : 6,
+  "fixedLevel" : false,
+  "level" : 6,
   "price" : 720,
   "maxStack" : 1,
   "rarity" : "Legendary",
@@ -36,8 +37,8 @@
   "minActiveTime" : 0.3,
 
   "forceWalk" : true,
-  "baseShieldHealth" : 225,
-  "cooldownTime" : 0.9,
+  "baseShieldHealth" : 200,
+  "cooldownTime" : 1.2,
 
   "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
   "perfectBlockTime" : 0.2,

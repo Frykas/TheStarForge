@@ -18,6 +18,12 @@
 
   "learnBlueprintsOnPickup" : [ "starforge-vigilance" ],
 
+  "starforgeNpcWeaponData" : {
+    "maxRange" : 6,
+    "minRange" : 1,
+    "maxYRange" : 6
+  },
+
   "animation" : "/items/active/weapons/melee/highbrand/starforge-highbrand.animation",
   "animationParts" : {
     "handle" : "",

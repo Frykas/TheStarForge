@@ -210,14 +210,7 @@ function update(dt)
   self.shouldPrimary = self.primaryFire or self.OORChargePrimary or (self.primaryCharge > 0)
   self.shouldAlt = self.altFire or self.OORChargeAlt or (self.altCharge > 0)
 
-  -- Lock aim vector when not actively attacking to override running animation bob
-  if not self.shouldPrimary and not self.shouldAlt and not self.controlAggressive then
-    local pos = mcontroller.position()
-    local facing = mcontroller.facingDirection()
-    npc.setAimPosition({pos[1] + facing, pos[2]})
-  end
-
-  if self.shouldPrimary and not self.shouldAlt then
+  if self.shouldPrimary and not (not self.alt and self.shouldAlt) then
     npc.beginPrimaryFire()
   else
     npc.endPrimaryFire()
