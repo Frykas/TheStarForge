@@ -4,7 +4,7 @@
     "op": "add",
     "path": "/weaponSkins/starforge-unbounddmr",
     "value": {
-      "bananar": {
+      "whitedeath": {
         "skinName" : "White Death",
         "unlockDescription" : "Unlocked by default.",
         "prerequisiteQuests": [],
@@ -26,7 +26,7 @@
     "op": "add",
     "path": "/weaponSkins/starforge-unboundautoshotgun",
     "value": {
-      "bananar": {
+      "slagtooth": {
         "skinName" : "Slagtooth",
         "unlockDescription" : "Unlocked by default.",
         "prerequisiteQuests": [],
