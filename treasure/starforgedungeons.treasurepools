@@ -29,7 +29,7 @@
   "starforge-stormcrestcodex" : [
     [1, {
       "fill" : [ 
-        {"item" : [ "banana", 1]},
+        {"item" : [ "starforge-stormcrestlore-codex", 1]},
         {"pool" : "starforge-stormcresttempleloot"}
       ]
     }]

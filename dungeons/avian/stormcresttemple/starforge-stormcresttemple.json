@@ -7975,7 +7975,7 @@
                  "y":1864
                 }, 
                 {
-                 "gid":8915,
+                 "gid":8916,
                  "height":48,
                  "id":2863,
                  "name":"",
@@ -8057,6 +8057,30 @@
                  "width":16,
                  "x":1192,
                  "y":832
+                }, 
+                {
+                 "gid":2978,
+                 "height":32,
+                 "id":2893,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":38,
+                 "x":944,
+                 "y":2792
+                }, 
+                {
+                 "gid":2978,
+                 "height":32,
+                 "id":2894,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":38,
+                 "x":3240,
+                 "y":2792
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -11567,10 +11591,10 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":2893,
+ "nextobjectid":2895,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.0",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -11718,7 +11742,7 @@
          "source":"..\/..\/..\/tilesets\/vowvillage\/vowvillage.json"
         }, 
         {
-         "firstgid":8904,
+         "firstgid":8905,
          "source":"..\/..\/..\/tilesets\/cityofcommence\/cityofcommence.json"
         }],
  "tilewidth":8,

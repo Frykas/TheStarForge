@@ -1,0 +1,23 @@
+{
+  "id" : "starforge-stormcrestlore",
+  "species" : "avian",
+  "title" : "Warpriest Log",
+  "description" : "The personnal log of a Kluex Warpriest.",
+  "icon" : "starforge-stormcrestcover.png",
+  "contentPages" : [
+"They thought we were fools, trying to hide the power a weapon could be granted using infused avolite. Too fearful to use it themselves. But I am no fool, the soon-to-be maiden and her guard could not hide it from me for long. The maiden was the first, and I thought the easiest to deal with. Unable to put up a fight or hide the infused Avolite for long.
+
+While the guard may be a fool, he is still more than we could take on in combat. But he is also a coward, and cowards have weakness.", 
+"It was in the end he who was the easiest to best. Surrendered his highbrand without a finger raised against him, the precious maiden the only bargaining chip needed. Such pointless loyalty, he could have been something greater. I know no such inhibitions. I know untapped power when I see it...
+
+I shall show the power infused Avolite can bestow using the guard's surrendered highbrand. Not for lack of options, but because I want to to rub in their faces.", 
+
+"Show them what they could have obtained with what they already had were they not cowards. I will capitalize upon what they were unwilling to. Attain power that guard could have only imagined. He and the maiden plead with me, tell me I know not what I do... I know exactly what I do. That which they were too stupid to do themselves. I will socket infused Avolite into this highbrand with ritual, make it sing with power. I shall call it Stormcrest.",
+
+"Even as Stormcrest now blesses this temple, it is more than I could have envisioned. It makes the place hum with power, and more... It grants knowledge of prophesy. I shall make a great sacrifice to please Kluex. I shall unite many who would balk at his word in following him. I shall become greater than any that came after him... And should I be struck down, I will rise again. So the prophesy tells me. Those two were fools, their only purpose now will be to witness my ascent, to know what they could have attained."
+  ],
+    "itemConfig" : {
+    "rarity" : "legendary",
+    "price" : 1250
+  }
+}
