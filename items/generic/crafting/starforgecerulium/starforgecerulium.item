@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-cerulium",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "starforgecerulium.png",
+  "description" : "Said to cut through nearly anything, Cerulium is an alloy that needs immense precision to forge.",
+  "shortdescription" : "^orange;Refined Cerulium^white;",
+  "itemTags" : ["starforge-starforge", "reagent" ]
+}

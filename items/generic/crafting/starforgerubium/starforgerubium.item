@@ -1,0 +1,10 @@
+{
+  "itemName" : "starforge-rubium",
+  "price" : 900,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "starforgerubium.png",
+  "description" : "Known for its remarkable energy retention, Rubium is an alloy that resonates with the force it contains.",
+  "shortdescription" : "^orange;Energised Rubium^white;",
+  "itemTags" : ["starforge-starforge", "reagent" ]
+}

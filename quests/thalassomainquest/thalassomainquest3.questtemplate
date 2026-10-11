@@ -31,8 +31,8 @@
     "triggerMessage" : "starforge-missioncomplete3",
 	
     "goalEntityUid" : "starforge-sashaprisoner",
-    "indicateGoal" : false,
-    "trackGoalEntity" : false,
+    "indicateGoal" : true,
+    "trackGoalEntity" : true,
 	
 	"followUp" : "thalassomission3b",
 	

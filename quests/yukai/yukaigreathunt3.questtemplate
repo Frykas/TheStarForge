@@ -32,10 +32,10 @@
     "warpDialog" : "/interface/confirmation/starforgeteleportconfirmation.config:starforge-yukaihunt3",
 
     "goalTrigger" : "message",
-    "triggerMessage" : "starforge-yukaihuntcomplete",
+    "triggerMessage" : "starforge-razortailmissioncomplete",
 	
-    "goalEntityUid" : "starforge-masamune",
-    "indicateGoal" : false,
+    "goalEntityUid" : "none",
+    "indicateGoal" : true,
     "trackGoalEntity" : false,
 
     "turnInEntityUid" : "starforge-masamune"

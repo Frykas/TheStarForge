@@ -6,7 +6,7 @@
  "completionText" : "^gray;The Starforge resonates with power.^reset; I can use this to make powerful items, now!",
   "moneyRange" : [150, 150],
   "rewards" : [
-    [ [ "starforge-cerulium", 8 ] ]
+    [ [ "durasteelbar", 8 ] ]
   ],
 
   "updateDelta" : 10,

@@ -3,7 +3,7 @@
     { "item" : "solariumstar", "count" : 1 },
 	{ "item" : "refinedferozium", "count" : 3 },
 	{ "item" : "diamond", "count" : 1},
-	{ "item" : "durasteelbar", "count" : 3 },
+	{ "item" : "prisiliteore", "count" : 5 },
 	{ "item" : "essence", "count" : 20}
   ],
   "output" : {
