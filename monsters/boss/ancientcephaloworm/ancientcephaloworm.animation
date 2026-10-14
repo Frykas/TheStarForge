@@ -18,17 +18,17 @@
         "default" : "idle",
         "states" : {
           "idle" : {
-            "frames" : 5,
-            "cycle" : 0.5,
+            "frames" : 6,
+            "cycle" : 0.8,
             "mode" : "loop"
           },
           "swimslow" : {
-            "frames" : 5,
+            "frames" : 6,
             "cycle" : 0.60,
             "mode" : "loop"
           },
           "swimfast" : {
-            "frames" : 5,
+            "frames" : 6,
             "cycle" : 0.50,
             "mode" : "loop"
           }

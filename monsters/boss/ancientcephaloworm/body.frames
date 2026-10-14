@@ -1,10 +1,10 @@
 {
   "frameGrid" : {
     "size" : [150, 120],
-    "dimensions" : [8, 1],
+    "dimensions" : [6, 1],
 
     "names" : [
-      [ "move.1", "move.2", "move.3", "move.4", "move.5", "move.6", "move.7", "move.8" ]
+      [ "move.1", "move.2", "move.3", "move.4", "move.5", "move.6"]
     ]
   },
 
