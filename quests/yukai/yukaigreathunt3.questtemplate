@@ -22,21 +22,21 @@
     },
 
     "descriptions" : {
-      "enterInstance" : "Talk to ^orange;Masamune^reset; to travel to the ^orange;Hunting Grounds^reset;.",
+      "enterInstance" : "Use the ^orange;teleporter^reset; to reach the ^orange;Hunting Grounds^reset;.",
       "findGoal" : "Find and hunt Murak.",
       "turnIn" : "Return to ^orange;Masamune^reset; at the ^orange;Thalasso Outpost^reset;"
     },
 
-    "warpEntityUid" : "starforge-masamune",
+    "warpEntityUid" : "starforge-starforgeteleporter",
     "warpAction" : "instanceworld:starforge-razortailhunt",
     "warpDialog" : "/interface/confirmation/starforgeteleportconfirmation.config:starforge-yukaihunt3",
 
     "goalTrigger" : "message",
     "triggerMessage" : "starforge-razortailmissioncomplete",
 	
-    "goalEntityUid" : "none",
-    "indicateGoal" : true,
-    "trackGoalEntity" : false,
+    "goalEntityUid" : "starforge-razortailboss",
+    "indicateGoal" : false,
+    "trackGoalEntity" : true,
 
     "turnInEntityUid" : "starforge-masamune"
   }

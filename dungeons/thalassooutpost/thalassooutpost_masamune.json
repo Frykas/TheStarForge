@@ -12,7 +12,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJwTZmBgEB7Fo5hKuAaI5ytBcA0R6ucp4cc1DNjZIIzPDWYkYELuRPYTMXjUPEzzCMUzepzT2zxS0zi9zaNWejagMgYAlLxjug==",
+         "data":"eJwTZmBgEB7Fo5hKuAaI1yhBcA0R6lcr4cc1DNjZIIzPDWYkYELuRPYTMXjUPEzzCMUzepzT2zxS0zi9zaNWejagMgYA4HZn1w==",
          "encoding":"base64",
          "height":20,
          "id":1,
@@ -26,7 +26,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgFo2DwgtlAPE8JgmcPtGNGwbADr4nAw8k8AypjABi4H0A=",
+         "data":"eJxjYBgFo2DwgtlAvFoJgmcPtGNGwbADr4nAw8k8AypjAHZcH1o=",
          "encoding":"base64",
          "height":20,
          "id":2,
@@ -73,6 +73,14 @@
                  "height":40,
                  "id":925,
                  "name":"",
+                 "properties":
+                    {
+                     "parameters":"{ \"uniqueId\" : \"starforge-masamune\"}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -81,7 +89,7 @@
                  "y":152
                 }, 
                 {
-                 "gid":8856,
+                 "gid":8859,
                  "height":31,
                  "id":926,
                  "name":"",
@@ -93,7 +101,7 @@
                  "y":104
                 }, 
                 {
-                 "gid":2147492495,
+                 "gid":2147492498,
                  "height":16,
                  "id":927,
                  "name":"",
@@ -105,7 +113,7 @@
                  "y":152
                 }, 
                 {
-                 "gid":8855,
+                 "gid":8858,
                  "height":19,
                  "id":928,
                  "name":"",
@@ -117,7 +125,7 @@
                  "y":136
                 }, 
                 {
-                 "gid":8851,
+                 "gid":8854,
                  "height":24,
                  "id":929,
                  "name":"",
@@ -129,7 +137,7 @@
                  "y":152
                 }, 
                 {
-                 "gid":8852,
+                 "gid":8855,
                  "height":24,
                  "id":930,
                  "name":"",
@@ -141,7 +149,7 @@
                  "y":152
                 }, 
                 {
-                 "gid":2147492502,
+                 "gid":2147492505,
                  "height":16,
                  "id":931,
                  "name":"",
@@ -231,7 +239,7 @@
  "nextobjectid":933,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.11.0",
  "tileheight":8,
  "tilesets":[
         {
@@ -313,7 +321,8 @@
         {
          "firstgid":6655,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/other.json"
-        }, 
+        },
+    
         {
          "firstgid":6967,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/pot.json"
@@ -375,15 +384,15 @@
          "source":"..\/..\/tilesets\/thalassooutpost\/thalassooutpost.json"
         }, 
         {
-         "firstgid":8843,
+         "firstgid":8846,
          "source":"..\/..\/tilesets\/furouraltar\/furouraltar.json"
         }, 
         {
-         "firstgid":8858,
+         "firstgid":8871,
          "source":"..\/..\/tilesets\/unboundtiles\/unboundtiles.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":1.1,
  "width":20
 }

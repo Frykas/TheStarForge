@@ -1,4 +1,67 @@
 [
+  //SCORCHER
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-ferment",
+    "value": {
+      "whitedeath": {
+        "skinName" : "\"Furnace\" LR",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "An powerful Unbound laser rifle, creating volatile heat within its targets.",
+          "shortdescription": "\"Furnace\" LR",
+          "inventoryIcon": "skins/starforge-unboundlasrifle.png:idle",
+          "animationParts": {
+            "middle": "skins/starforge-unboundlasrifle.png",
+            "middleFullbright" : "skins/starforge-unboundlasriflefullbright.png"
+          }
+        }
+      }
+    }
+  },
+  //SCORCHER
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-unboundlmg",
+    "value": {
+      "whitedeath": {
+        "skinName" : "Rattlesnake",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "So many bullets, you may think a rattlesnake is nearby. A loud rattlesnake.",
+          "shortdescription": "Rattlesnake",
+          "inventoryIcon": "skins/starforge-rattlesnake.png:idle",
+          "animationParts": {
+            "middle": "skins/starforge-rattlesnake.png",
+            "middleFullbright" : "skins/starforge-rattlesnakefullbright.png",
+            "shield" : "skins/starforge-rattlesnakeshield.png"
+          },
+          "animationCustom": {
+            "animatedParts" : {
+              "parts" : {
+                "middleFullbright" : {
+                  "properties" : {
+                    "offset" : [0, 0]
+                  }
+                },
+                "shield" : {
+                  "properties" : {
+                    "offset" : [1.1875, 0.125]
+                  }
+                }
+              }
+            }
+          },
+          "baseOffset": [0, 0.125],
+          "muzzleOffset": [2.5, 0]
+        }
+      }
+    }
+  },
   //JUSTICE
   {
     "op": "add",
@@ -12,10 +75,10 @@
         "skinConfig": {
           "description": "What's colder than ice is the gaze that stares at your heart through the scope.",
           "shortdescription": "White Death",
-          "inventoryIcon": "/items/active/weapons/ranged/unbound/unbounddmr/skins/starforge-whitedeath.png:idle",
+          "inventoryIcon": "skins/starforge-whitedeath.png:idle",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/unbound/unbounddmr/skins/starforge-whitedeath.png",
-            "middleFullbright" : ""
+            "middle": "skins/starforge-whitedeath.png",
+            "middleFullbright" : "skins/starforge-whitedeathfullbright.png"
           }
         }
       }
@@ -34,10 +97,10 @@
         "skinConfig": {
           "description": "So hot its heat shielding can barely contain the raw heat spitting from its barrel.",
           "shortdescription": "Slagtooth",
-          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundautoshotgun/skins/starforge-slagtooth.png:idle",
+          "inventoryIcon": "skins/starforge-slagtooth.png:idle",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/unbound/unboundautoshotgun/skins/starforge-slagtooth.png",
-            "middleFullbright" : "/items/active/weapons/ranged/unbound/unboundautoshotgun/skins/starforge-slagtoothfullbright.png"
+            "middle": "skins/starforge-slagtooth.png",
+            "middleFullbright" : "skins/starforge-slagtoothfullbright.png"
           }
         }
       }
@@ -56,9 +119,9 @@
         "skinConfig": {
           "description": "Oo oo OO OOOOOOOOOOO - Maurice, after eating a banana.",
           "shortdescription": "Banan AR",
-          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundar/skins/starforge-bananar.png:idle",
+          "inventoryIcon": "starforge-bananar.png:idle",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/unbound/unboundar/skins/starforge-bananar.png",
+            "middle": "starforge-bananar.png",
             "middleFullbright" : ""
           },
           "animationCustom" : { 
@@ -92,9 +155,9 @@
         "skinConfig": {
           "description": "A design so reliable it outlived Earth itself.",
           "shortdescription": "Ol' Reliable",
-          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-olreliable.png:idle",
+          "inventoryIcon": "skins/starforge-olreliable.png:idle",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-olreliable.png",
+            "middle": "skins/starforge-olreliable.png",
             "middleFullbright" : ""
           },
           "animationCustom" : {
@@ -117,10 +180,10 @@
         "skinConfig": {
           "description": "A powerful and historically popular sidearm, known for its strength and hard recoil.",
           "shortdescription": "Wingman",
-          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-wingman.png:idle",
+          "inventoryIcon": "skins/starforge-wingman.png:idle",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-wingman.png",
-            "middleFullbright" : "/items/active/weapons/ranged/unbound/unboundricochetrevolver/skins/starforge-wingmanfullbright.png"
+            "middle": "skins/starforge-wingman.png",
+            "middleFullbright" : "skins/starforge-wingmanfullbright.png"
           }
         }
       }
@@ -139,9 +202,9 @@
         "skinConfig": {
           "description": "It may be better than the last, but it's not spell-casting and he still isn't a wizard.",
           "shortdescription": "Crackshot's Crackshot",
-          "inventoryIcon": "/items/active/weapons/ranged/legendary/crackshot/skins/starforge-crackshotscrackshot.png:idle",
+          "inventoryIcon": "skins/starforge-crackshotscrackshot.png:idle",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/legendary/crackshot/skins/starforge-crackshotscrackshot.png",
+            "middle": "skins/starforge-crackshotscrackshot.png",
             "middleFullbright" : ""
           }
         }
@@ -161,9 +224,9 @@
         "skinConfig": {
           "description": "People always miss the past, as if old things preserve some kind of better life.",
           "shortdescription": "Pastdays",
-          "inventoryIcon": "/items/active/weapons/ranged/unbound/unboundheadway/skins/starforge-pastdays.png:idle",
+          "inventoryIcon": "skins/starforge-pastdays.png:idle",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/unbound/unboundheadway/skins/starforge-pastdays.png",
+            "middle": "skins/starforge-pastdays.png",
             "middleFullbright" : ""
           }
         }
@@ -183,9 +246,9 @@
         "skinConfig": {
           "description": "Storm and Stress, a combo never forgotten.",
           "shortdescription": "Stress",
-          "inventoryIcon": "/items/active/weapons/ranged/legendary/fever/skins/starforge-stress.png:idle",
+          "inventoryIcon": "skins/starforge-stress.png:idle",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/legendary/fever/skins/starforge-stress.png",
+            "middle": "skins/starforge-stress.png",
             "middleFullbright" : ""
           }
         }
@@ -205,9 +268,9 @@
         "skinConfig": {
           "description": "A magnum carried by operators who prefer a no-frills backup firearm.",
           "shortdescription": "Magnum Opus",
-          "inventoryIcon": "/items/active/weapons/ranged/unique/pepperbox/skins/starforge-magnumopus.png:ready1",
+          "inventoryIcon": "skins/starforge-magnumopus.png:ready1",
           "animationParts": {
-            "gun": "/items/active/weapons/ranged/unique/pepperbox/skins/starforge-magnumopus.png"
+            "gun": "skins/starforge-magnumopus.png"
           },
           "animationCustom" : {
             "particleEmitters" : {
@@ -237,9 +300,9 @@
           "description": "A story of vows and death, all linked to the fate of the world.",
           "shortdescription": "Undying Vows",
           "manufacturer" : "",
-          "inventoryIcon": "/items/active/weapons/ranged/unique/thevow/skins/undyingvows.png:ready1",
+          "inventoryIcon": "skins/undyingvows.png:ready1",
           "animationParts": {
-            "middle": "/items/active/weapons/ranged/unique/thevow/skins/undyingvows.png"
+            "middle": "skins/undyingvows.png"
           }
         }
       }
@@ -258,9 +321,9 @@
         "skinConfig": {
           "description": "From some far-flung corner of time and space, strangely fit for Human hands.",
           "shortdescription": "Myth Debunked",
-          "inventoryIcon": "/items/active/weapons/ranged/unique/tidewalker/skins/mythdebunked.png",
+          "inventoryIcon": "skins/mythdebunked.png",
           "animationParts": {
-            "gun" : "/items/active/weapons/ranged/unique/tidewalker/skins/mythdebunked.png",
+            "gun" : "skins/mythdebunked.png",
             "lights" : ""
           },
           "baseOffset" : [1.25, -0.125],
@@ -310,9 +373,9 @@
         "skinConfig": {
           "description": "With each shot, a deafening shriek.",
           "shortdescription": "Hawkmoon",
-          "inventoryIcon": "/items/active/weapons/ranged/unique/hawkmoon/skins/hawkmoon.png:ready1",
+          "inventoryIcon": "skins/hawkmoon.png:ready1",
           "animationParts": {
-            "gun" : "/items/active/weapons/ranged/unique/hawkmoon/skins/hawkmoon.png"
+            "gun" : "skins/hawkmoon.png"
           }
         }
       },
@@ -324,9 +387,9 @@
         "skinConfig": {
           "description": "A deafening blast to the past.",
           "shortdescription": "Old Tales",
-          "inventoryIcon": "/items/active/weapons/ranged/unique/hawkmoon/skins/oldtales.png:ready1",
+          "inventoryIcon": "skins/oldtales.png:ready1",
           "animationParts": {
-            "gun" : "/items/active/weapons/ranged/unique/hawkmoon/skins/oldtales.png"
+            "gun" : "skins/oldtales.png"
           }
         }
       }
@@ -345,10 +408,10 @@
         "skinConfig": {
           "description": "From blood and bone comes forward a crashing flood, breeding an unknowing rage.",
           "shortdescription": "Bonecrasher",
-          "inventoryIcon": "/items/active/weapons/ranged/legendary/wavecrasher/skins/starforge-bonecrasher.png:empty",
+          "inventoryIcon": "skins/starforge-bonecrasher.png:empty",
           "animationParts": {
-            "gun" : "/items/active/weapons/ranged/legendary/wavecrasher/skins/starforge-bonecrasher.png",
-            "gunfullbright" : "/items/active/weapons/ranged/legendary/wavecrasher/skins/starforge-bonecrasherfullbright.png"
+            "gun" : "skins/starforge-bonecrasher.png",
+            "gunfullbright" : "skins/starforge-bonecrasherfullbright.png"
           }
         }
       }

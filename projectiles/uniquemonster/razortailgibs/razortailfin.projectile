@@ -1,7 +1,7 @@
 {
   "projectileName" : "starforge-razortailfin",
-  "image" : "razortailfin.png",
-  "physics" : "largeGrenade",
+  "image" : "razortailgibs.png:fin",
+  "physics" : "rollingboulder",
   "animationCycle" : 2,
   "frameNumber" : 1,
   "renderLayer" : "Object+1",
@@ -11,6 +11,7 @@
   "initialVelocity" : 10,
   "timeToLive" : 100,
   "bounces" : 0,
+  "emitters" : [ "blood" ],
   "flippable" : true,
   "orientationLocked" : false,
 
@@ -20,8 +21,21 @@
       "options" : [ "/sfx/blocks/footstep_brains.ogg" ]
     }
   ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "bloodvomit",
+      "config" : {
+        "damageType" : "NoDamage",
+        "speed" : 0,
+        "movementSettings" : {
+          "collisionEnabled" : false,
+          "gravityMultiplier" : 0
+        }
+      }
+    }
+  ],
 
-  "actionOnReap" : [],
   "damageType" : "NoDamage",
   "damageKind" : "default"
 }

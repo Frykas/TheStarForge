@@ -4584,6 +4584,14 @@
                  "height":82,
                  "id":694,
                  "name":"",
+                 "properties":
+                    {
+                     "parameters":"{ \"uniqueId\" : \"starforge-starforgeteleporter\"}"
+                    },
+                 "propertytypes":
+                    {
+                     "parameters":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -4924,7 +4932,7 @@
                  "y":224
                 }, 
                 {
-                 "gid":6065,
+                 "gid":6071,
                  "height":24,
                  "id":760,
                  "name":"",
@@ -5957,7 +5965,7 @@
  "nextobjectid":772,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.10.2",
+ "tiledversion":"1.11.0",
  "tileheight":8,
  "tilesets":[
         {
@@ -6045,7 +6053,7 @@
          "source":"..\/..\/tilesets\/cityofcommence\/cityofcommence.json"
         }, 
         {
-         "firstgid":6065,
+         "firstgid":6071,
          "source":"..\/..\/..\/..\/assets\/_unpacked\/tilesets\/packed\/objects-by-category\/techmanagement.json"
         }],
  "tilewidth":8,

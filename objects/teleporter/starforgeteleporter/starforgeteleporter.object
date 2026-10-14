@@ -21,7 +21,7 @@
   "lightPosition" : [0, 1],
 
   "interactAction" : "OpenTeleportDialog",
-  "interactData" : "/interface/warping/thalassooutpostteleporter.config", "uniqueId" : "thalassooutpostteleporter",
+  "interactData" : "/interface/warping/thalassooutpostteleporter.config",
 
   "inventoryIcon" : "starforgeteleportericon.png",
   "orientations" : [

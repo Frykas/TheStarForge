@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [30, 30],
+    "dimensions" : [4, 1],
+
+    "names" : [
+      [ "chest1:0", "chest2:0", "fin:0", "arm:0" ]
+    ]
+  }
+}

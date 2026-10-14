@@ -15,7 +15,9 @@
     "scripts" : [
       "/monsters/boss/starforge-bossMonster.lua",
       "/monsters/boss/razortail/starforge-razortail.lua",
-      "/scripts/stateMachine.lua"
+      "/scripts/stateMachine.lua",
+
+      "/monsters/boss/razortail/dieState.lua"
     ],
     "animationScripts" : [
       "/monsters/boss/razortail/telegraph/telegraph.lua"
@@ -85,6 +87,19 @@
     "alwaysAggressive" : true,
 
     "scale" : 1,
+
+    "deathProjectileType" : [ 
+      "starforge-razortailfin",
+      "starforge-razortailarm",
+      "starforge-razortailchest1",
+      "starforge-razortailchest2"
+    ],
+    "deathProjectileConfig" : {
+      "speed" : [15, 25],
+      "bounces" : 1
+    },
+    "deathProjectileCount" : 5,
+    "deathMessage" : "starforge-razortailmissioncomplete",
 
     "movementSettings" : {
       "gravityEnabled" : true,

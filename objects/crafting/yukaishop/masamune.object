@@ -2,10 +2,9 @@
   "objectName" : "starforge-masamune",
   "colonyTags" : ["hylotl"],
   "rarity" : "essential",
-  "uniqueId" : "starforge-masamune",
   "category" : "crafting",
   "price" : 20000,
-    "interactAction" : "OpenCraftingInterface",
+  "interactAction" : "OpenCraftingInterface",
   "interactData" : {
     "config" : "/interface/windowconfig/masamuneshop.config",
     "paneLayoutOverride" : {
@@ -83,11 +82,11 @@
     "Greetings. Thanks to you, I have found a new purpose, a new way to increase my mastery.",
     "The Starforge is quite something. I feel alive again, eager to learn.",
     "I can help you craft many things. Pearls, weapons, and other rarities.",
-	"I am trying to move on from my past. I am hoping the Starforge will help.",
-	"I have participated in great hunts before with my tribe brothers. Even slain a Razortail once.",
-	"Krythers, is it? This Hylotl is warry of me. I try my best not to scare him.",
-	"Rondin knows the Starforge well. I envy him.",
-	"Mariko is kind and strong. It is great to see a Hylotl who hasn't forsaken the Yukai yet.",
-	"I attain peace of mind through forging. If only the others could find a way."
+    "I am trying to move on from my past. I am hoping the Starforge will help.",
+    "I have participated in great hunts before with my tribe brothers. Even slain a Razortail once.",
+    "Krythers, is it? This Hylotl is warry of me. I try my best not to scare him.",
+    "Rondin knows the Starforge well. I envy him.",
+    "Mariko is kind and strong. It is great to see a Hylotl who hasn't forsaken the Yukai yet.",
+    "I attain peace of mind through forging. If only the others could find a way."
   ]
 }

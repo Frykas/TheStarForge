@@ -214,6 +214,44 @@ function updateDamageSources(damageSource, ignoreDefault)
   self.damageSources = damageSources
 end
 
+function fireProjectile(projectileType, params, count, firePosition, aimVector)
+  local params = sb.jsonMerge(params or {}, {})
+  params.powerMultiplier = params.powerMultiplier or root.evalFunction("monsterLevelPowerMultiplier", monster.level())
+
+  local count = count or 1
+
+  local baseSpeed = params.speed
+  local baseTTL = params.timeToLive
+  local angle = aimVector
+  for i = 1, (count) do
+    local projectileType = projectileType or "standardbullet"
+    if type(projectileType) == "table" then
+      projectileType = projectileType[math.random(#projectileType)]
+    end
+    if baseTTL then
+      params.timeToLive = util.randomInRange(baseTTL)
+    end
+    if baseSpeed then
+      params.speed = util.randomInRange(baseSpeed)
+    end
+	
+    if type(angle) ~= "table" then
+      local randAngle = (math.random() * angle) + (angle * i)
+      aimVector = {math.cos(randAngle), math.sin(randAngle)}
+    end
+
+    world.spawnProjectile(
+      projectileType,
+      firePosition,
+      entity.id(),
+      aimVector,
+      false,
+      params
+    )
+  end
+end
+
+
 function sanctusTeleport(teleportPos, endSpeed, endFunc)
   self.activeCoroutines["sanctusTeleport"] = coroutine.create(function()
     local dashDir = vec2.norm(world.distance(teleportPos, mcontroller.position()))

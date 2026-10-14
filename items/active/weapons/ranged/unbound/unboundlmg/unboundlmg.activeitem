@@ -24,17 +24,6 @@
     "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-firemuzzleflash.png"
   },
 
-	"starforgeNpcWeaponData" : {
-    "minRange" : 30, 
-    "maxRange" : 70, 
-    "forceMoveRange" : 80, 
-    "primaryCharge" : 2, 
-    "minAltRange" : 5, 
-    "maxAltRange" : 45, 
-    "altChance" : 0.25, 
-    "altCharge" : 10
-  },
-
   "animationCustom": {
     "animatedParts" : {
       "stateTypes" : {
@@ -78,12 +67,17 @@
       },
 
       "parts" : {
+        "middleFullbright" : {
+          "properties" : {
+            "offset" : [0, 0]
+          }
+        },
         "shield" : {
           "properties" : {
             "centered" : true,
             "fullbright" : true,
             "zLevel" : 5,
-            "offset" : [1.1875, 0.125],
+            "offset" : [1.1875, 0.25],
             "transformationGroups" : ["weapon"],
             "shieldPoly" : [ [-1.25, -1], [-1.25, 1], [1, 1.75], [1, -1.75] ]
           },
@@ -136,9 +130,20 @@
       "break" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
     }
   },
+
+	"starforgeNpcWeaponData" : {
+    "minRange" : 30, 
+    "maxRange" : 70, 
+    "forceMoveRange" : 80, 
+    "primaryCharge" : 2, 
+    "minAltRange" : 5, 
+    "maxAltRange" : 45, 
+    "altChance" : 0.25, 
+    "altCharge" : 10
+  },
   
-  "baseOffset": [0, -0.125],
-  "muzzleOffset": [2.5, 0.250],
+  "baseOffset": [0, 0],
+  "muzzleOffset": [2.5, 0.125],
 
   "scripts": [ "/items/active/weapons/ranged/starforge-gun.lua" ],
   "elementalType": "fire",
