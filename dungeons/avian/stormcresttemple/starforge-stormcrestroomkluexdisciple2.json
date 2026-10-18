@@ -68,7 +68,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultunlock\"}"
+                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultunlock\", \"interactive\" : false, \"scripts\" : [\"\/objects\/wired\/door\/starforge-door.lua\"], \"sensorConfig\" : false}"
                     },
                  "propertytypes":
                     {
@@ -88,7 +88,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultunlock\"}"
+                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultunlock\", \"interactive\" : false, \"scripts\" : [\"\/objects\/wired\/door\/starforge-door.lua\"], \"sensorConfig\" : false}"
                     },
                  "propertytypes":
                     {
@@ -108,7 +108,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultunlock\"}"
+                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultunlock\", \"interactive\" : false, \"scripts\" : [\"\/objects\/wired\/door\/starforge-door.lua\"], \"sensorConfig\" : false}"
                     },
                  "propertytypes":
                     {
@@ -299,7 +299,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 

@@ -774,7 +774,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultentrance\", \"defaultState\" : \"open\", \"interactive\" : false, \"scripts\" : \"\/objects\/wired\/door\/starforge-door.lua\"}"
+                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultentrance\", \"defaultState\" : \"open\", \"interactive\" : false, \"scripts\" : [\"\/objects\/wired\/door\/starforge-door.lua\"]}"
                     },
                  "propertytypes":
                     {

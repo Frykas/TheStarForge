@@ -7847,7 +7847,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultunlock\"}"
+                     "parameters":"{\"filterParameter\" : \"starforge-waveassaultunlock\", \"interactive\" : false, \"scripts\" : [\"\/objects\/wired\/door\/starforge-door.lua\"], \"sensorConfig\" : false}"
                     },
                  "propertytypes":
                     {
@@ -16484,6 +16484,26 @@
                  "width":8,
                  "x":11560,
                  "y":1144
+                }, 
+                {
+                 "height":0,
+                 "id":1799,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-256,
+                         "y":176
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":13264,
+                 "y":1296
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -17819,15 +17839,15 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }],
  "nextlayerid":9,
- "nextobjectid":1799,
+ "nextobjectid":1800,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.10.2",
+ "tiledversion":"1.11.0",
  "tileheight":8,
  "tilesets":[
         {

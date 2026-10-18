@@ -14,7 +14,8 @@
     
     "behavior" : "mik-hostilenpc",
     
-    //"bandageTime" : 1,
+    "music" : [ "/music/astrefone-deserted_mangled_and_wrangled.ogg" ],
+    "damageBarActive" : true,
 
     "aggressive" : true,
     "interactable" : false,

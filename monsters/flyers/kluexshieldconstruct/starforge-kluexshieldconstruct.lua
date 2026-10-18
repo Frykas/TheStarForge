@@ -1,4 +1,7 @@
 require "/scripts/util.lua"
+require "/scripts/drops.lua"
+require "/scripts/status.lua"
+require "/scripts/companions/capturable.lua"
 require "/scripts/vec2.lua"
 
 function init()
@@ -18,6 +21,8 @@ function init()
   self.activeZapTargets = {}
   self.nearbyAllies = {}
 
+  self.shouldDie = true
+
   monster.setDeathParticleBurst("deathPoof")
   monster.setDeathSound("deathPuff")
 
@@ -27,9 +32,24 @@ function init()
   monster.setDamageOnTouch(false)
 
   script.setUpdateDelta(5)
+
+  message.setHandler("notify", function(_,_,notification)
+      return notify(notification)
+    end)
+  message.setHandler("despawn", function()
+      despawn()
+    end)
+
+  capturable.init()
 end
 
 function update(dt)
+  capturable.update(dt)
+
+  if capturable.justCaptured then
+    return
+  end
+  
   self.state:update()
 
   local myPos = mcontroller.position()
@@ -62,7 +82,16 @@ function despawn()
   monster.setDeathParticleBurst(nil)
   monster.setDeathSound(nil)
   monster.setAnimationParameter("lightning", nil)
-  status.addEphemeralEffect("monsterdespawn")
+  
+  if capturable.isCaptured and capturable.isCaptured() then
+    status.addEphemeralEffect("monsterdespawn")
+  else
+    status.setResource("health", 0)
+  end
+end
+
+function shouldDie()
+  return (self.shouldDie and status.resource("health") <= 0) or capturable.justCaptured
 end
 
 function die()
@@ -71,6 +100,10 @@ function die()
       world.sendEntityMessage(entityId, "despawn")
     end
   end
+  if not capturable.justCaptured then
+    capturable.die()
+  end
+  spawnDrops()
 end
 
 function pickZapTargets()

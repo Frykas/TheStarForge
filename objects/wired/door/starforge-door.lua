@@ -213,14 +213,16 @@ function closeDoor()
 end
 
 function openDoor(direction)
-  if not storage.state and config.getParameter("interactive", true) then
+  if not storage.state and not self.alterLocked then
     storage.state = true
-    storage.locked = false -- make sure we don't get out of sync when wired
+    storage.locked = false
     updateInteractive()
     setDirection((direction == nil or direction * object.direction() < 0) and -1 or 1)
     animator.playSound("open")
     animator.setAnimationState("doorState", "open")
     updateCollisionAndWires()
     updateLight()
+
+    self.alterLocked = not config.getParameter("interactive", true)
   end
 end
