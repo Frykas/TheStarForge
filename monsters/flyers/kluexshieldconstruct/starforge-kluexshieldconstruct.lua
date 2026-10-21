@@ -25,6 +25,7 @@ function init()
 
   monster.setDeathParticleBurst("deathPoof")
   monster.setDeathSound("deathPuff")
+  monster.setAnimationParameter("lightning", nil)
 
   self.state = FSM:new()
   self.state:set(idleState)
@@ -187,15 +188,18 @@ function activeState(targetId)
   end
   
   local stunned = false
-  if status.isResource("stunned") and status.resource("stunned") ~= 0 then
-    stunned = true
-  end
 
-  zapTimer = 0
+  local zapTimer = 0
   self.flashTimer = 0
 
   while #self.nearbyAllies > 0 do
     local dt = script.updateDt()
+
+    if status.isResource("stunned") and status.resource("stunned") ~= 0 then
+      stunned = true
+    else
+      stunned = false
+    end
 
     if zapTimer > 0 then zapTimer = zapTimer - dt end
     if self.flashTimer > 0 then self.flashTimer = self.flashTimer - dt end

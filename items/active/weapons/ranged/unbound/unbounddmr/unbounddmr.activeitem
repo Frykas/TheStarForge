@@ -23,6 +23,15 @@
     "muzzleFlash": "/items/active/weapons/ranged/muzzleflash/starforge-icemuzzleflash.png"
   },
   "animationCustom": {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+          "properties" : {
+            "offset" : [1, 0.375]
+          }
+        }
+      }
+    },
     "particleEmitters" : {
       "casing" : {
 		    "offsetRegion" : [0.5, 0.625, 0.5, 0.625],
