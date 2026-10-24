@@ -28,6 +28,8 @@
       "dashLines" : 15
     },
     "music" : [ "/music/kyumay-not_a_fish.ogg" ],
+    "rareMusic" : [ "/music/kyumay-not_a_fish_cake.ogg" ],
+    "rareMusicChance" : 0.05,
 
     "healthCooldownFactor" : [1.4, 0.625, 0.1],
 	

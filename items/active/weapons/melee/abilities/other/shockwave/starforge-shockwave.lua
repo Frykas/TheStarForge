@@ -86,6 +86,7 @@ function StarforgeShockwave:fireShockwave(charge)
       local params = copy(self.projectileParameters)
       params.powerMultiplier = activeItem.ownerPowerMultiplier()
       params.power = (params.power or 1) * config.getParameter("damageLevelMultiplier")
+      
       local childParams = self.projectileParameters or {}
       params.actionOnReap = {}
       params.damageType = "nodamage"
@@ -129,7 +130,7 @@ end
 function StarforgeShockwave:shockWaveProjectilePositions(impactPosition, maxProjectiles)
   local spawnData = {}
   
-  for x, dir in pairs(self.directions or {1, 0}) do
+  for x, dir in pairs(self.directions or {{1, 0}}) do
     local newDir = {dir[1] * mcontroller.facingDirection(), dir[2]}
     local position = copy(impactPosition)
     for i = 1, maxProjectiles do

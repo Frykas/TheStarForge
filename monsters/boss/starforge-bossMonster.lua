@@ -87,7 +87,11 @@ end
 function startFight()
   monster.setDamageBar("Special")
   monster.setAggressive(true)
-  createMusicStagehand(config.getParameter("music"))
+  local musicToPlay = config.getParameter("music")
+  if config.getParameter("rareMusic", false) and math.random() < config.getParameter("rareMusicChance", 1) then
+    musicToPlay = config.getParameter("rareMusic")
+  end
+  createMusicStagehand(musicToPlay)
   --setBattleMusicEnabled(config.getParameter("music"))
 end
 
