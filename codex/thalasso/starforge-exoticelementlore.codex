@@ -1,0 +1,32 @@
+{
+  "id" : "starforge-exoticelementlore",
+  "title" : "Tips: Exotic Elements",
+  "description" : "A bunch of tips regarding Exotic Elements, from Krythers.",
+  "icon" : "starforge-exoticelementlore.png",
+  "contentPages" : [
+
+"Our universe is filled with interesting and intricate environments, from which are born the 4 element, Poison, Ice, Fire and Electric.
+
+However, during our time exploring the vastness of space, we encountered some rather strange elements with little to no documentation. So here I am! So far, we only recorded the existence of 4 additional, exotic variants. I call them variants as they share a lot of similarities with the well known four elements. ",
+
+"^#A1F1FE;Tidal^reset; - ^gray;Tidal Remnants mini-biome^reset;
+
+Tidal energy, also known as \"^#A1F1FE;Tidal Frost^reset;\", is a form of... Crystalised stasis? We're not too sure yet. It's some sort of essence that gathers into crystals which quite literally prevents the movement of atoms. This makes it a far more potent variant of the Ice element. We discovered it while exploring a strange, warped biome we called the ^#A1F1FE;Tidal Remnants^reset;. It seems to be unnatural to our world, coming from beyond our dimension.",
+"^#A1F1FE;Tidal Freeze^reset;: Builds up stacks of crystalised stasis ^gray;for the duration of the effect^reset;. ^gray;Each stack^reset; slows down the affected by 5% of their movement speed, up to a maximum of 60%. ^gray;After reaching a certain amount of stacks,^reset; moving ^gray;or^reset; taking damage ^gray;has a chance of ^reset;shattering a crystal, ^gray;losing a stack and^reset; dealing damage to the affected. 
+When the effect ends, all the crystals break at once for greater damage.
+
+The element resists ^#A1F1FE;ice^reset;, is neutral to ^#98D919;poison^reset;, slightly weak to ^#E99400;fire^reset; and very weak to ^#E773FF;electric^reset;.",
+
+"^#71916D;Wither^reset; - ^gray;Withered planets^reset;
+
+For more information regarding our research on the Great Withering, please read my other paper on it! To keep things short, it's a highly evolutive organism , extremely volatile and dangerous. It eats flesh, corrodes metal, and transforms everything it can to grow and evolve further. It evolves so fast we haven't been able to keep up with the new strands that pop up. In a way, it is a more potent variant of the Poison element. ",
+"^#A1F1FE;Virulent Bloom^reset;: Builds up stacks of blooms ^gray;for the duration of the effect^reset;. ^gray;When the^reset; affected takes damage, ^gray;they take^reset; additional Wither damage ^gray;based on the^reset; amount of Blooms ^gray;on their bodies^reset;. 
+
+The element resists ^#E99400;fire^reset;, slightly resist ^#98D919;poison^reset;, slightly weak to ^#E773FF;electric^reset; and very weak to ^#A1F1FE;ice^reset;."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "rare",
+    "price" : 10
+  }
+}

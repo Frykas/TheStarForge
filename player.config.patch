@@ -48,6 +48,7 @@
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-witherlore1-codex"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-onikabutolore-codex"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-lootmonsterlore-codex"} },
+  {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-exoticelementlore-codex"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-manufacturerlore-codex"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-infusedscrap"} },
   {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"starforge-unboundshortar"} },
