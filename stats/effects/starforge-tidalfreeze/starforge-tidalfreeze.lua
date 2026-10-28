@@ -89,9 +89,9 @@ function update(dt)
     shatter()
   end
 
-  world.debugText("Frost: " .. #self.frost .. "/" .. self.maximumFrost, vec2.add(mcontroller.position(), {0, -1}), "yellow")
-  world.debugText("Speed mult: " .. string.format("%.2f", 1.0 - speedReduction), vec2.add(mcontroller.position(), {0, -2}), "yellow")
-  world.debugText("Heat: " .. string.format("%.1f", self.heat) .. "/" .. self.heatThreshold, vec2.add(mcontroller.position(), {0, -3}), "yellow")
+  --world.debugText("Frost: " .. #self.frost .. "/" .. self.maximumFrost, vec2.add(mcontroller.position(), {0, -1}), "yellow")
+  --world.debugText("Speed mult: " .. string.format("%.2f", 1.0 - speedReduction), vec2.add(mcontroller.position(), {0, -2}), "yellow")
+  --world.debugText("Heat: " .. string.format("%.1f", self.heat) .. "/" .. self.heatThreshold, vec2.add(mcontroller.position(), {0, -3}), "yellow")
 end
 
 function createFrost(frostType)

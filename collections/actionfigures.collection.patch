@@ -34,7 +34,7 @@
     { "op":"add","path":"/collectables/starforge-heavyshockumawaf","value":{"order":132,"item":"starforge-heavyshockumawaf"} },
     { "op":"add","path":"/collectables/starforge-kluexshieldconstructaf","value":{"order":133,"item":"starforge-kluexshieldconstructaf"} },
     { "op":"add","path":"/collectables/starforge-kluextortoiseconstructaf","value":{"order":134,"item":"starforge-kluextortoiseconstructaf"} },
-    { "op":"add","path":"/collectables/starforge-kluextortoiseconstructaf","value":{"order":135,"item":"starforge-kluexdrakeconstructaf"} },
+    { "op":"add","path":"/collectables/starforge-kluexdrakeconstructaf","value":{"order":135,"item":"starforge-kluexdrakeconstructaf"} },
 
     //Bosses
     { "op":"add","path":"/collectables/starforge-centurionaf","value":{"order":136,"item":"starforge-centurionaf"} },
