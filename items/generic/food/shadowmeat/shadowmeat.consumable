@@ -8,7 +8,7 @@
   "shortdescription" : "Shadow Creature Steak",
   "effects" : [ [
     {
-        "effect" : "colorpurple",
+        "effect" : "starforge-shadowmeatsmoke",
         "duration" : 15
     }
 	
