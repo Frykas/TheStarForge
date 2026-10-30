@@ -10,6 +10,10 @@ of weapon sprites, feedback and ideas.
 
 • Monica#2686, for working with us on impressive encounters, mission & ideas! 
 
+• kumochan0180, for making many sprites and helping a ton on the animations! Such as the unbound ice drone, the wither husk, and many more.
+
+• jss2a98aj, for writting many codices including the Apex local legend series, the Stormcrest temple codices, the wither planet codices, and various others.
+
 • Aegonian#2352, for allowing me to use Elithian Races as a stepping 
 stone to learn modding & spriting. Also allowing me to use a few of his
 scripts. 
@@ -37,8 +41,6 @@ MPI, as well as helping me with Tiled and doing proofreading on quests & dialogu
 • TeSkreDOTexe#7034, for making the Buffalot, the original sprites of the Unbound drones 
 giving general feedback, and naming the Potlots! 
 
-• PRODIGY#1887, for recoloring the Jootyfish when I was lazy about it.
-
 • Nitrosteel#0002, for making an early sprite that was then used by Nebulox
 to make the Principle of Duality rocket launcher.
 
@@ -52,9 +54,9 @@ to make the Principle of Duality rocket launcher.
 
 • loib#5351, for making the "Rumble of the Centurion" boss track, "Tidal Depths", "Snowswept" and "Unshackled, Unbound"
 
-• BloodPixelHero, for making "Alien Landing" - used as "Yukai March"
+• Astrefone, for making the "deserted, mangled and wrangled", "The Heresy of Life" and "The Piety of Machine"
 
-• https://soundcloud.com/dannybamboo, for making "Etude" and "PianoAmbient" used as the city of commence night & day musics.
+• Kyumay, for making the razortail boss music, a thalasso outpost music, and the human local legend mission music. Names pending.
 
 ---Contest winners :---
 

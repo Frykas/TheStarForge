@@ -152,9 +152,6 @@
 				}],
         "primary": [
           "starforge-unboundsmartpistol", "starforge-unboundsmartar", "starforge-unboundsmartshotgun", "starforge-unboundsmartsniper"
-        ],
-        "sheathedprimary" : [
-          "starforge-infusedbroadsword" 
         ]
       }]]
     ]

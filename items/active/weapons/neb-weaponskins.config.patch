@@ -1,5 +1,5 @@
 [
-  //SCORCHER
+  //FERMENT
   {
     "op": "add",
     "path": "/weaponSkins/starforge-ferment",
@@ -119,9 +119,9 @@
         "skinConfig": {
           "description": "Oo oo OO OOOOOOOOOOO - Maurice, after eating a banana.",
           "shortdescription": "Banan AR",
-          "inventoryIcon": "starforge-bananar.png:idle",
+          "inventoryIcon": "skins/starforge-bananar.png:idle",
           "animationParts": {
-            "middle": "starforge-bananar.png",
+            "middle": "skins/starforge-bananar.png",
             "middleFullbright" : ""
           },
           "animationCustom" : { 
