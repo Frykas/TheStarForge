@@ -1,10 +1,63 @@
 [
+  //IMMOLATOR
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-unboundrocketlauncher",
+    "value": {
+      "rimRocketLauncher": {
+        "skinName" : "Inferno Type-5",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "A rocket launcher favoured in the Rim for its versatile remote detonation rockets.",
+          "shortdescription": "Inferno Type-5",
+          "inventoryIcon": "skins/starforge-rimrocketlauncher.png:idle",
+          "animationParts": {
+            "middle": "skins/starforge-rimrocketlauncher.png",
+            "middleFullbright" : "skins/starforge-rimrocketlauncherfullbright.png"
+          }
+        }
+      }
+    }
+  },
+  //SALAMANDER
+  {
+    "op": "add",
+    "path": "/weaponSkins/starforge-unboundshotgun",
+    "value": {
+      "avikanShotgun": {
+        "skinName" : "Vangaurd \"Salamander\"",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "A vanguard sponsored shotgun, focusing on volatile flame.",
+          "shortdescription": "Vangaurd \"Salamander\"",
+          "inventoryIcon": "skins/starforge-avikanshotgun.png:idle",
+          "animationParts": {
+            "middle": "skins/starforge-avikanshotgun.png",
+            "middleFullbright" : "skins/starforge-avikanshotgunfullbright.png"
+          },
+          "animationCustom" : {
+            "particleEmitters": {
+              "casing": {
+                "particles": [
+                  { "particle": "rocketbarrelpuff"}
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   //FERMENT
   {
     "op": "add",
     "path": "/weaponSkins/starforge-ferment",
     "value": {
-      "unboundferment": {
+      "unboundFerment": {
         "skinName" : "\"Furnace\" LR",
         "unlockDescription" : "Unlocked by default.",
         "prerequisiteQuests": [],
@@ -67,7 +120,7 @@
     "op": "add",
     "path": "/weaponSkins/starforge-unbounddmr",
     "value": {
-      "whitedeath": {
+      "whiteDeath": {
         "skinName" : "White Death",
         "unlockDescription" : "Unlocked by default.",
         "prerequisiteQuests": [],
@@ -111,7 +164,7 @@
     "op": "add",
     "path": "/weaponSkins/starforge-unboundar",
     "value": {
-      "bananar": {
+      "bananAR": {
         "skinName" : "Banan AR",
         "unlockDescription" : "Unlocked by default.",
         "prerequisiteQuests": [],
@@ -139,15 +192,30 @@
             }
           }
         }
+      },
+      "allianceAR": {
+        "skinName" : "Valiance",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "An assault rifle modified by the AAE.",
+          "shortdescription": "Valiance",
+          "inventoryIcon": "skins/starforge-alliancear.png:idle",
+          "animationParts": {
+            "middle": "skins/starforge-alliancear.png",
+            "middleFullbright" : "skins/starforge-alliancearfullbright.png"
+          }
+        }
       }
     }
   },
-  //ACE - wingman and ol reliable
+  //ACE
   {
     "op": "add",
     "path": "/weaponSkins/starforge-unboundricochetrevolver",
     "value": {
-      "olreliable": {
+      "olReliable": {
         "skinName" : "Ol' Reliable",
         "unlockDescription" : "Unlocked by default.",
         "prerequisiteQuests": [],
@@ -228,6 +296,30 @@
           "animationParts": {
             "middle": "skins/starforge-pastdays.png",
             "middleFullbright" : ""
+          }
+        }
+      },
+      "purifier": {
+        "skinName" : "Purifier",
+        "unlockDescription" : "Unlocked by default.",
+        "prerequisiteQuests": [],
+	  
+        "skinConfig": {
+          "description": "Using a specific catalyst, the vaash inside is turned into electrified crystal bullets.",
+          "shortdescription": "Purifier",
+          "inventoryIcon": "skins/starforge-purifier.png:idle",
+          "animationParts": {
+            "middle": "skins/starforge-purifier.png",
+            "middleFullbright" : "skins/starforge-purifierfullbright.png",
+            "muzzleFlash": "skins/starforge-purifiermuzzleflash.png"
+          },
+          "animationCustom" : {
+            "particleEmitters": {
+              "casing": {
+                "particles": [
+                ]
+              }
+            }
           }
         }
       }

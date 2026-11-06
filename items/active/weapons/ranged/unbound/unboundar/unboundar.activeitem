@@ -50,6 +50,11 @@
       },
 
       "parts" : {
+        "middleFullbright" : {
+          "properties" : {
+            "offset" : [0.625, 0.25]
+          }
+        },
         "altSwoosh" : {
           "properties" : {
             "zLevel" : -3,

@@ -41,6 +41,13 @@
             }
           }
         }
+      }, 
+      "parts" : {
+        "middleFullbright" : {
+          "properties" : {
+            "offset" : [-0.625, 0.5]
+          }
+        }
       }
     },
     "particleEmitters": {
