@@ -1,0 +1,11 @@
+{  
+  "frameGrid" : {
+    "size" : [32, 32],
+    "dimensions" : [4, 1],
+    "names" : [
+      [ "flat", "tilt", "boost.1", "boost.2" ]
+    ]
+  },
+
+  "aliases" : { }
+}

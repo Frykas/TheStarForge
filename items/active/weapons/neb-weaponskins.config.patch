@@ -27,13 +27,13 @@
     "path": "/weaponSkins/starforge-unboundshotgun",
     "value": {
       "avikanShotgun": {
-        "skinName" : "Vangaurd \"Salamander\"",
+        "skinName" : "Vanguard \"Salamander\"",
         "unlockDescription" : "Unlocked by default.",
         "prerequisiteQuests": [],
 	  
         "skinConfig": {
           "description": "A vanguard sponsored shotgun, focusing on volatile flame.",
-          "shortdescription": "Vangaurd \"Salamander\"",
+          "shortdescription": "Vanguard \"Salamander\"",
           "inventoryIcon": "skins/starforge-avikanshotgun.png:idle",
           "animationParts": {
             "middle": "skins/starforge-avikanshotgun.png",
