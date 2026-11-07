@@ -1,0 +1,14 @@
+[
+  //UNBOUND GREEN
+  {
+    "op" : "add",
+    "path" : "/swapSets/-",
+    "value" : [ "728266", "555C4B", "41453B", "242621" ]
+  },
+  //UNBOUND VANGUARD BLUE
+  {
+    "op" : "add",
+    "path" : "/swapSets/-",
+    "value" : [ "69729E", "414662", "2D3041", "202232" ]
+  }
+]

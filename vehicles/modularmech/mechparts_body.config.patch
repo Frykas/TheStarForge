@@ -15,7 +15,7 @@
 		"bodyFullbright" : "body/unboundscout_fullbright.png"
 	  },
 	  "defaultPrimaryColors" : ["728266", "555C4B", "41453B", "242621"],	//From LIGHT to DARK
-	  "defaultSecondaryColors" : ["B0FFFF", "3ACFFE", "1278CF", "0B4D7F"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["FFFFA7", "E2C344", "A46E06", "642F00"],	//From LIGHT to DARK
 	  "animationCustom" : {
 		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
 		  "sitPosition" : [0.25, 1.0]
@@ -40,7 +40,7 @@
 		"bodyFullbright" : "body/unboundscout_fullbright.png"
 	  },
 	  "defaultPrimaryColors" : ["555555", "373737", "262626", "151515"],	//From LIGHT to DARK
-	  "defaultSecondaryColors" : ["FFD495", "EA9931", "AF4E00", "6E2900"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["FFFFA7", "E2C344", "A46E06", "642F00"],	//From LIGHT to DARK
 	  "animationCustom" : {
 		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
 		  "sitPosition" : [0.25, 1.0]

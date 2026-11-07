@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechboosterunbound",
+  "price" : 9600,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbooster",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechboosterunbound.png",
+  "description" : "A pair of Unbound mech boosters. It was designed for maximum perfomance.",
+  "shortdescription" : "UNBD Mech Boosters",
+  "itemTags" : [ ],
+
+  "mechPart" : ["booster", "unbound"]
+}

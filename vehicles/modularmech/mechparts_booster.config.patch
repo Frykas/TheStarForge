@@ -1,0 +1,24 @@
+ [
+  {
+    "op" : "add",
+    "path" : "/unbound",
+    "value" : {
+	  "stats" : {
+		"speed" : 6,
+		"control" : 6
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"backBoosterBack" : "booster/unbound_back_back.png",
+		"backBoosterFullbright" : "boosterflame/unbound_back_middle_fullbright.png",
+		"backBoosterFront" : "booster/unbound_back_front.png",
+		"frontBoosterBack" : "booster/unbound_front_back.png",
+		"frontBoosterFullbright" : "boosterflame/unbound.png",
+		"frontBoosterFront" : "booster/unbound_front_front.png"
+	  },
+	  "defaultPrimaryColors" : ["728266", "555C4B", "41453B", "242621"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["FFFFA7", "E2C344", "A46E06", "642F00"],	//From LIGHT to DARK
+	  "animationCustom" : {}
+	}
+  }
+ ]

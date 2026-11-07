@@ -1,0 +1,25 @@
+[
+  {
+    "op" : "add",
+    "path" : "/unbound",
+    "value" : {
+	  "stats" : {
+		"speed" : 6,
+		"jump" : 6
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"backLeg" : "leg/unbound.png",
+		"backLegFullbright" : "leg/unbound_fullbright.png",
+		"backLegJoint" : "legjoint/unbound_back.png",
+		"frontLeg" : "leg/unbound.png",
+		"frontLegFullbright" : "leg/unbound_fullbright.png",
+		"frontLegJoint" : "legjoint/unbound_front.png",
+		"hips" : "hips/unbound.png"
+	  },
+	  "defaultPrimaryColors" : ["728266", "555C4B", "41453B", "242621"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["FFFFA7", "E2C344", "A46E06", "642F00"],	//From LIGHT to DARK
+	  "animationCustom" : {}
+	}
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "itemName" : "mechlegsunbound",
+  "price" : 9600,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mechPart",
+  "tooltipKind" : "mechlegs",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechlegsunbound.png",
+  "description" : "Sturdy mech legs used by the Unbound.",
+  "shortdescription" : "UNBD Mech Legs",
+  "itemTags" : [ ],
+
+  "mechPart" : ["legs", "unbound"]
+}
+
