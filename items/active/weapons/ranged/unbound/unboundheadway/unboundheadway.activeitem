@@ -172,7 +172,7 @@
       
       "autoAltInterval" : 3,
 
-      "fireOffset" : [-1.5, 0.75],
+      "fireOffset" : [-1.5, 0.6],
       "fireSound" : "fireNade",
       "muzzleFlashState" : "off",
 

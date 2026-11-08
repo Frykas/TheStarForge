@@ -43,7 +43,8 @@
 	  "defaultSecondaryColors" : ["FFFFA7", "E2C344", "A46E06", "642F00"],	//From LIGHT to DARK
 	  "animationCustom" : {
 		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
-		  "sitPosition" : [0.25, 1.0]
+		  "sitPosition" : [0.25, 1.0],
+		  "offset" : [0, 0.5] 
 		}}}}
 	  }
 	}
