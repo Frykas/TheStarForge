@@ -4,15 +4,26 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
-  "description" : "Wings which inspire freedom and courage.",
+  "description" : "Wings which inspire freedom and courage.^reset;",
   "shortdescription" : "^red;Siaxaa's Grace^white;",
   "tooltipKind" : "starforge-backitemexalted",
   
   "inventoryIcon" : "/items/armors/backitems/siaxaabacktrue/siaxaabacktrueicon.png",
   "itemBackground" : "/interface/inventory/starforge-exalted.png",
+  
+   "acceptsAugmentType" : "back",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
+  
+        "level" : 8,
+    "leveledStatusEffects" : [
+    {
+      "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.025
+    }
+  ],
 
   "statusEffects" : [
   "starforge-siaxaafalldamage", "starforge-siaxaaregen", "jumpboostaugment",
@@ -32,6 +43,10 @@
     {
       "stat" : "breathProtection",
       "amount" : 1.0
+    },
+	{
+      "stat" : "maxHealth",
+      "amount" : 50
     }
   ],
   

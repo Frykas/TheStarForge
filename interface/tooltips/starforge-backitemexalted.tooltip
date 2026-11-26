@@ -13,15 +13,23 @@
     "wrapWidth" : 126,
     "value" : "Exalted"
   },
+    "envProtectionLabel" : {
+    "type" : "label",
+    "position" : [66, 124],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126,
+    "value" : "^gray;Full Environment Protection^reset;"
+  },
   "levelTitleLabel" : {
     "type" : "label",
-    "position" : [18, 102],
+    "position" : [18, 126],
     "hAnchor" : "left",
     "value" : "^gray;level^reset; ^#FFB2B2;8^reset;"
   },
   "levelLabel" : {
     "type" : "label",
-    "position" : [40, 102],
+    "position" : [40, 126],
     "hAnchor" : "left"
   },
   "moneyIcon" : {
@@ -37,7 +45,7 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [30, 151],
+    "position" : [30, 175],
     "file" : "",
     "centered" : true,
     "scale" : 2,
@@ -46,8 +54,8 @@
   },
   "descriptionLabel" : {
     "type" : "label",
-    "position" : [9, 91],
-    "wrapWidth" : 120,
+    "position" : [9, 115],
+    "wrapWidth" : 170,
     "hAnchor" : "left",
     "vAnchor" : "top"
   },
@@ -62,23 +70,40 @@
       "listTemplate" : {
         "statusLabel" : {
           "type" : "label",
-          "position" : [90, 2],
+          "position" : [90, 26],
           "hAnchor" : "left"
         },
         "statusImage" : {
           "scissoring" : false,
           "type" : "image",
-          "position" : [62, -1],
+          "position" : [62, 23],
           "file" : "",
           "zlevel" : 8
         },
         "backgroundImage" : {
           "scissoring" : false,
           "type" : "image",
-          "position" : [61, 0],
+          "position" : [61, 24],
           "file" : "/interface/tooltips/exaltedstatlist.png"
         }
       }
     }
+  },
+    "augmentIconImageBackground" : {
+    "type" : "image",
+    "position" : [11, 166],
+    "zlevel" : 2,
+    "file" : "/interface/tooltips/augment.png"
+  },
+  "augmentIconImage" : {
+    "type" : "image",
+    "position" : [11, 40],
+    "zlevel" : 3,
+    "file" : ""
+  },
+  "augmentNameLabel" : {
+    "type" : "label",
+    "position" : [35, 44],
+    "value" : ""
   }
 }

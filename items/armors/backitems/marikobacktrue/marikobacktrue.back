@@ -4,15 +4,26 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "backwear",
-  "description" : "Two Cerulium Katanas that belonged to a Hylotl captain named Mariko. Their power is now yours.",
+  "description" : "^gray;Two cerulium katana. I need to redesign them.^reset;",
   "shortdescription" : "^cornflowerblue;Yogosha & Isamu^white;",
   "tooltipKind" : "starforge-backitemexalted",
   
   "inventoryIcon" : "/items/armors/backitems/marikobacktrue/marikobacktrueicon.png",
   "itemBackground" : "/interface/inventory/starforge-exalted.png",
+  
+  "acceptsAugmentType" : "back",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
+  
+      "level" : 8,
+    "leveledStatusEffects" : [
+    {
+      "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.05
+    }
+  ],
 
   "statusEffects" : [
   "starforge-marikorunboost", "starforge-marikoswimboost", "starforge-marikojumpboost",
@@ -32,8 +43,14 @@
     {
       "stat" : "breathProtection",
       "amount" : 1.0
+    },
+	{
+      "stat" : "maxEnergy",
+      "amount" : 50
     }
   ],
+
+
   
   "builder" : "/items/buildscripts/starforge-buildexaltedarmour.lua"
 }

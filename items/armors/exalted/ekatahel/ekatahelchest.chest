@@ -4,7 +4,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
-  "description" : "\"The others on this planet do not understand, for they are not Awakened. Help me open their eyes.\"",
+  "description" : "^green;Set bonus^reset;: Everything you touch dies. During a blood moon, cry uncontrollably. \n^gray;\"The others on this planet do not understand, for they are not Awakened. Help me open their eyes.\"^reset;",
   "shortdescription" : "^#FFBC47;Fortress of the Warlord ^#FFE998;^reset;",
   "tooltipKind" : "starforge-exalted",
   

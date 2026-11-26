@@ -10,6 +10,8 @@
   
   "inventoryIcon" : "/items/armors/backitems/warmongerbacktrue/icon.png",
   "itemBackground" : "/interface/inventory/starforge-exalted.png",
+  
+  "acceptsAugmentType" : "back",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
